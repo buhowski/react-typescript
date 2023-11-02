@@ -1,4 +1,4 @@
-// import cvDoc from '../../assets/CV_Alexander_Tsiomakh_FrontEnd.pdf';
+import cvDoc from '../../assets/CV_Alexander_Tsiomakh_FrontEnd.pdf';
 
 const socialData = [
 	{
@@ -23,7 +23,7 @@ const socialData = [
 		iconClass: 'icon-in',
 	},
 	{
-		// link: cvDoc,
+		link: cvDoc,
 		targetBlank: '_blank',
 		title: 'CV',
 		iconClass: 'icon-cv',
