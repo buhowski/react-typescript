@@ -1,0 +1,79 @@
+@keyframes typing {
+	from {
+		width: 0;
+	}
+	to {
+		width: 100%;
+	}
+}
+
+@keyframes blink-caret {
+	from,
+	to {
+		border-color: transparent;
+	}
+	50% {
+		border-color: $blue-main;
+	}
+}
+
+@keyframes menuAnim {
+	0% {
+		bottom: 0;
+		transform: translateY(100%);
+	}
+	100% {
+		bottom: 0;
+		transform: translateY(0);
+	}
+}
+
+@keyframes LowLine {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes transitionReload {
+	0% {
+		width: 0;
+		height: 12px;
+		bottom: 0;
+	}
+	33% {
+		width: 100%;
+		height: 12px;
+		bottom: 0;
+	}
+	66% {
+		width: 100%;
+		height: 100%;
+		bottom: 0;
+	}
+	100% {
+		bottom: 100%;
+		width: 100%;
+		height: 0;
+	}
+}
+
+@keyframes bgPosition {
+	0% {
+		background-position-y: top;
+	}
+	6% {
+		background-position-y: top;
+	}
+	50% {
+		background-position-y: 50%;
+	}
+	94% {
+		background-position-y: bottom;
+	}
+	100% {
+		background-position-y: bottom;
+	}
+}

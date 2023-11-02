@@ -1,0 +1,28 @@
+html, body, div, span,
+h1, h2, h3, p, pre, ul, li,
+article, canvas, header, nav, button, a {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	text-decoration: none;
+}
+* {
+	box-sizing: border-box;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+ul {
+	list-style: none;
+}
+button {
+	background: none;
+	cursor: pointer;
+}
+a:focus,
+a:active,
+a:hover,
+:focus {
+	outline: none;
+}

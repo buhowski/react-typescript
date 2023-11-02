@@ -1,0 +1,85 @@
+@import '../../styles/variables';
+
+.home-wrapper {
+	min-height: calc(100% - 100px);
+	height: auto;
+	@include tabletSmall {
+		min-height: calc(100% - 80px);
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	.base-title {
+		line-height: 1.6;
+		padding: 0;
+		margin-bottom: 3rem;
+		@include tabletSmall {
+			margin-bottom: 30px;
+		}
+	}
+}
+
+.name-container {
+	align-self: center;
+	margin-bottom: 100px;
+	width: 40%;
+
+	@include tabletSmall {
+		width: 100%;
+		margin-bottom: 0;
+		margin-top: 30px;
+	}
+
+	@include mobile {
+		margin-top: 15px;
+	}
+
+	.tag-color {
+		font-size: 21px;
+		margin-bottom: 3rem;
+		font-family: $lg;
+		letter-spacing: 1.5px;
+		@include tabletSmall {
+			margin-bottom: 35px;
+		}
+	}
+}
+
+// Photo drawing | drawCanvas |
+#app,
+.photoContainer,
+.drawCanvas,
+.illustrationImage,
+canvas {
+	width: 100%;
+}
+#app {
+	margin: 0 auto;
+	overflow: hidden;
+	align-self: flex-end;
+	@include fullHD {
+		width: 60%;
+	}
+	@include heightTop {
+		width: 50%;
+	}
+	@include tabletSmall {
+		width: 100%;
+		margin-top: 30px;
+	}
+}
+.drawCanvas {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top;
+	max-height: 785px;
+	padding-bottom: 80%;
+	position: relative;
+	.illustrationImage {
+		display: none;
+	}
+	canvas {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+}

@@ -1,0 +1,115 @@
+@import '../../styles/variables.scss';
+
+.projects-container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.project {
+	position: relative;
+	justify-content: flex-end;
+	flex-direction: column;
+	width: calc(100% / 3 - 80px / 3);
+	height: 300px;
+	flex-shrink: 0;
+	margin-right: 40px;
+	margin-bottom: 40px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center top;
+	outline: 1px solid transparent;
+	transition: all 0.3s ease;
+	transform-style: preserve-3d;
+	animation: bgPosition 3s cubic-bezier(0.55, 0.1, 0.55, 0.9) alternate infinite;
+	animation-play-state: paused;
+
+	&:nth-child(3n) {
+		margin-right: 0;
+	}
+
+	@include tablet {
+		width: calc(100% / 2 - 20px);
+
+		&:nth-child(odd) {
+			margin-right: 40px;
+		}
+
+		&:nth-child(2n) {
+			margin-right: 0;
+		}
+	}
+
+	@include tabletSmall {
+		height: 280px;
+		width: 100%;
+		margin-right: 0;
+		margin-bottom: 25px;
+	}
+
+	&:hover {
+		transform: translateY(-5px);
+		transition: all 0.5s ease;
+		box-shadow: 11px 8px 20px 0 rgba(0, 0, 0, 0.24);
+		animation: bgPosition 3s cubic-bezier(0.55, 0.1, 0.55, 0.9) alternate infinite;
+	}
+	&:after,
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+	}
+	&:before {
+		background: $blue-main;
+		z-index: -1;
+		transform: translateZ(-1px);
+		transform-origin: left bottom;
+		transition: all 0.3s ease 0.2s;
+	}
+	&:hover:before {
+		transform: translate3d(10px, 10px, -1px);
+	}
+	&:after {
+		background: linear-gradient(0deg, $dark 20%, transparent 80%);
+		background-position: 0 -20px;
+		background-size: 1px 508px;
+		opacity: 1;
+		transition: all 0.4s ease-out;
+	}
+	&:hover:after {
+		background-size: 1px 800px;
+		background-position: 0 -326px;
+		opacity: 1;
+	}
+}
+
+.project-link {
+	width: 100%;
+	height: 100%;
+}
+
+.project-container {
+	transform: translateZ(3px);
+	width: 100%;
+	height: 100%;
+	align-items: flex-end;
+}
+
+.project-name {
+	position: relative;
+	font-size: 1.5rem;
+	line-height: 1.4;
+	letter-spacing: 3.2px;
+	padding-bottom: 1.5rem;
+	padding-left: 1rem;
+	span {
+		opacity: 0;
+	}
+}
+
+.project:hover .project-name span {
+	animation: LowLine 0.4s infinite;
+}

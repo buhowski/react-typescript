@@ -1,0 +1,197 @@
+@import '../../styles/variables';
+
+.about-wrapper {
+	margin-bottom: -80px;
+	display: flex;
+	flex-direction: column;
+	height: calc(100% - 100px);
+
+	@include mobile {
+		height: calc(100% - 80px);
+		padding-bottom: 45px;
+	}
+
+	.base-title {
+		padding-bottom: 0;
+
+		@include tabletSmall {
+			margin-bottom: 2rem;
+		}
+	}
+}
+
+.about-info {
+	position: relative;
+	color: $blue-main;
+	max-width: 450px;
+	width: 100%;
+	margin: auto;
+	@include mobile {
+		max-width: 250px;
+	}
+	.title {
+		font-family: $cs;
+		font-size: 18px;
+		letter-spacing: 2px;
+		line-height: normal;
+		width: 50%;
+		backface-visibility: hidden;
+		@include mobile {
+			font-size: 14px;
+		}
+	}
+	.title,
+	.ball {
+		position: absolute;
+	}
+	.show {
+		opacity: 0;
+		transition: all 0.4s;
+	}
+	.ball {
+		width: 25px;
+		height: 25px;
+		z-index: 5;
+		transition: all 0.1s;
+		border-radius: 50%;
+		&:after {
+			content: '';
+			display: block;
+			width: 12px;
+			height: 12px;
+			background: $blue-main;
+			border-radius: 50%;
+		}
+	}
+	.ball.active {
+		transform: scale(0);
+		~ .show {
+			opacity: 1;
+		}
+	}
+	.brain {
+		.ball {
+			left: 51%;
+			top: 7.4%;
+			@include mobile {
+				left: 48.4%;
+				top: 5.7%;
+			}
+		}
+		.title {
+			right: -17%;
+			top: 6%;
+			transform: rotate(20deg);
+			text-align: center;
+			@include mobile {
+				top: 3%;
+				right: -15%;
+			}
+			@include mobileSmall {
+				top: 0%;
+				right: -10%;
+			}
+		}
+	}
+	.writer {
+		.ball {
+			left: 49%;
+			top: 28%;
+			@include mobile {
+				left: 46%;
+				top: 27%;
+			}
+		}
+		.title {
+			top: 32%;
+			left: -23%;
+			transform: rotate(-15deg);
+			@include mobile {
+				top: 34%;
+				left: -19%;
+				transform: rotate(17deg);
+			}
+			@include mobileSmall {
+				top: auto;
+				left: -23px;
+				bottom: 16px;
+				transform: rotate(0deg);
+				width: 65%;
+			}
+		}
+	}
+	.keyboard {
+		.ball {
+			left: 29.6%;
+			top: 43%;
+			@include mobile {
+				left: 27%;
+				top: 41%;
+			}
+		}
+		.title {
+			top: 5%;
+			left: -14%;
+			transform: rotate(-9deg);
+			@include mobile {
+				top: -7%;
+				left: -13%;
+				transform: rotate(-11deg);
+			}
+			@include mobileSmall {
+				left: -8%;
+				transform: rotate(-8deg);
+			}
+		}
+	}
+	.backpack {
+		.ball {
+			right: 21%;
+			top: 46%;
+			@include mobile {
+				right: 19%;
+				top: 43%;
+			}
+		}
+		.title {
+			bottom: 33%;
+			right: -27%;
+			transform: rotate(-11deg);
+			@include mobile {
+				bottom: 27%;
+				right: -20%;
+				transform: rotate(12deg);
+			}
+			@include mobileSmall {
+				bottom: 29%;
+				right: -15%;
+				transform: rotate(0deg);
+			}
+		}
+	}
+	.roots {
+		.ball {
+			left: 26%;
+			bottom: 27%;
+			@include mobile {
+				left: 23%;
+				bottom: 26%;
+			}
+		}
+		.title {
+			bottom: 36%;
+			left: -21%;
+			transform: rotate(-18deg);
+			@include mobile {
+				bottom: 38%;
+				left: -13%;
+				transform: rotate(-18deg);
+			}
+			@include mobileSmall {
+				bottom: 37%;
+				left: -8%;
+				transform: rotate(-12deg);
+			}
+		}
+	}
+}

@@ -1,0 +1,57 @@
+@import '../../styles/variables.scss';
+
+.contact-menu {
+	a {
+		margin-right: 20px;
+		width: 50px;
+		height: 50px;
+		padding: 0;
+		border-radius: 50%;
+		position: relative;
+		background: $dark;
+		flex-shrink: 0;
+		&:last-child {
+			margin-right: 0;
+		}
+
+		@include mobileSmall {
+			margin-right: 10px;
+		}
+	}
+
+	svg {
+		fill: $snow;
+		display: block;
+		width: 20px;
+	}
+
+	.title {
+		font-family: $indie;
+		color: $blue-main;
+		backface-visibility: hidden;
+		position: absolute;
+		top: -25px;
+		left: 50%;
+		transform: translateX(-35%) rotate(0deg);
+		letter-spacing: 3px;
+		opacity: 0;
+		transition: all 0.4s ease;
+		margin-left: 5%;
+		white-space: nowrap;
+	}
+	a:hover > .title {
+		opacity: 1;
+		transform: translateX(-55%) rotate(-10deg);
+	}
+}
+
+// .donation-link {
+// 	svg {
+// 		transition: fill 0.4s;
+// 	}
+// 	&:hover {
+// 		svg {
+// 			fill: #7dfb25;
+// 		}
+// 	}
+// }

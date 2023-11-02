@@ -1,0 +1,252 @@
+@import '../../styles/variables';
+
+@keyframes lightOn {
+	0% {
+		color: $snow;
+	}
+
+	100% {
+		color: $blue-main;
+	}
+}
+
+@keyframes lightOnOut {
+	0% {
+		color: $blue-main;
+	}
+
+	100% {
+		color: $snow;
+	}
+}
+
+.header {
+	position: relative;
+	z-index: 98;
+	height: 100px;
+}
+
+.logo {
+	font-size: 21px;
+	letter-spacing: 3px;
+	font-family: $lg-bold;
+	a {
+		padding-left: 0;
+	}
+}
+
+.nav-item {
+	margin-right: 4rem;
+	&:last-of-type {
+		margin-right: 0;
+	}
+}
+.nav-link {
+	position: relative;
+	font-family: $lg-bold;
+	letter-spacing: 4px;
+	z-index: 1;
+	&:after {
+		content: '';
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		height: 2px;
+		background-color: $blue-main;
+		z-index: -1;
+		transition: all 0.4s ease;
+	}
+
+	&.idea-icon {
+		animation: lightOn 1s ease-in-out alternate infinite;
+
+		&:hover,
+		&.active {
+			animation: lightOnOut 0.4s ease-in-out alternate;
+		}
+	}
+
+	&.active,
+	&:hover {
+		&:after {
+			height: 100%;
+		}
+	}
+}
+
+@include tabletSmall {
+	.header {
+		height: 80px;
+		.wrapper {
+			display: flex;
+			align-items: center;
+		}
+		.logo,
+		.mobile-menu-btn {
+			position: relative;
+			z-index: 100;
+		}
+		.mobile-menu-btn {
+			width: 35px;
+			height: 20px;
+			position: relative;
+			margin-left: auto;
+			transform: rotate(0deg);
+			transition: 0.5s ease-in-out;
+			span {
+				display: block;
+				position: absolute;
+				height: 2px;
+				width: 50%;
+				background: #4758fc;
+				opacity: 1;
+				transform: rotate(0deg);
+				transition: 0.25s ease-in-out;
+			}
+			span:nth-child(even) {
+				left: 50%;
+				border-radius: 0 10px 10px 0;
+			}
+			span:nth-child(odd) {
+				left: 0px;
+				border-radius: 10px 0 0 10px;
+			}
+			span:nth-child(1),
+			span:nth-child(2) {
+				top: 0px;
+			}
+			span:nth-child(3),
+			span:nth-child(4) {
+				top: 9px;
+			}
+			span:nth-child(5),
+			span:nth-child(6) {
+				bottom: 0;
+			}
+		}
+		&-overflow .mobile-menu-btn {
+			span:nth-child(1),
+			span:nth-child(6) {
+				transform: rotate(45deg);
+			}
+			span:nth-child(2),
+			span:nth-child(5) {
+				transform: rotate(-45deg);
+			}
+			span:nth-child(1) {
+				left: 3px;
+				top: 3px;
+			}
+			span:nth-child(2) {
+				left: calc(50% - 3px);
+				top: 3px;
+			}
+			span:nth-child(3) {
+				left: -50%;
+				opacity: 0;
+			}
+			span:nth-child(4) {
+				left: 100%;
+				opacity: 0;
+			}
+			span:nth-child(5) {
+				left: 2.5px;
+				bottom: 3px;
+			}
+			span:nth-child(6) {
+				left: calc(50% - 2.5px);
+				bottom: 3px;
+			}
+		}
+		.mobile-menu {
+			height: 0;
+			opacity: 0;
+			visibility: hidden;
+			overflow: hidden;
+			z-index: 99;
+			> div {
+				width: 100%;
+				height: 100%;
+				overflow: hidden;
+				overflow-y: auto;
+				scrollbar-width: thin;
+				scrollbar-color: $blue-main $bg-color;
+				padding-bottom: 40px;
+			}
+			.nav-item,
+			.contact-menu {
+				transform: scale(0);
+			}
+
+			&:after,
+			&:before {
+				content: '';
+				display: block;
+				position: absolute;
+				width: 100%;
+				top: 0;
+				left: 0;
+				z-index: 1;
+			}
+
+			&.open {
+				height: 100vh;
+				opacity: 1;
+				visibility: visible;
+				transform-style: preserve-3d;
+				transform: translateZ(1px);
+				.nav-item,
+				.contact-menu {
+					transform: scale(1);
+					transition: all 0.3s;
+				}
+				.nav-item:first-child {
+					transition-delay: 0.5s;
+				}
+				.nav-item:nth-child(2) {
+					transition-delay: 0.6s;
+				}
+				.nav-item:last-child {
+					transition-delay: 0.7s;
+				}
+				.contact-menu {
+					transition-delay: 0.8s;
+				}
+
+				&:after,
+				&:before {
+					height: 100vh;
+					z-index: -1;
+				}
+
+				&:before {
+					background-color: $blue-main;
+					animation: menuAnim 0.6s ease;
+				}
+				&:after {
+					background-color: $bg-color;
+					animation: menuAnim 0.7s ease;
+				}
+			}
+		}
+		.nav-item {
+			margin-right: 0;
+			justify-content: center;
+			margin-bottom: 30px;
+		}
+		.nav-link {
+			font-size: 21px;
+			padding: 0.75rem 1.5rem;
+			&:after {
+				transform: scale(0);
+			}
+			&.active:after {
+				transform: scale(1);
+			}
+		}
+		.contact-menu {
+			margin-top: 55px;
+		}
+	}
+}

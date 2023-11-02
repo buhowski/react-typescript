@@ -1,0 +1,558 @@
+@import '../../styles/variables.scss';
+@import '../../styles/animation.scss';
+.h2 {
+	font-weight: 500;
+}
+
+.wrapper--idea {
+	height: calc(100% - 100px);
+	position: relative;
+	padding-bottom: 30px;
+
+	@include laptop {
+		padding-bottom: 20px;
+	}
+
+	@include tabletBig {
+		height: auto;
+		padding-bottom: 30px;
+	}
+
+	.base-title {
+		padding-bottom: 5px;
+	}
+
+	.base-desc {
+		margin-bottom: 45px;
+		font-family: $lg;
+
+		@include laptop {
+			margin-bottom: 25px;
+		}
+
+		@include tabletBig {
+			margin-bottom: 40px;
+		}
+
+		@include mobile {
+			font-size: 14px;
+			margin-bottom: 40px;
+		}
+	}
+}
+// underline link effect
+.nav-link--underline {
+	z-index: unset;
+	&::after {
+		z-index: unset;
+	}
+
+	&:hover {
+		cursor: default;
+
+		@include mobile {
+			cursor: pointer;
+		}
+	}
+
+	&::before {
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 2px;
+		background-color: $blue-main;
+		transition: transform 0.4s ease;
+		transform: scale(0, 1);
+	}
+
+	&:hover::after {
+		transform: scale(0, 1);
+		height: 2px;
+	}
+
+	&:hover::before {
+		transform: scale(1, 1);
+	}
+}
+
+.idea-contacts {
+	position: relative;
+	display: inline-block;
+	margin-top: auto;
+	width: max-content;
+
+	&__list {
+		user-select: text;
+		position: absolute;
+		bottom: 45px;
+		left: 50%;
+		transform: translateX(-50%);
+		box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.7);
+		border-radius: 10px;
+		background: rgba($color: $black, $alpha: 0.9);
+		color: $textGrey;
+		font-size: 13px;
+		display: inline-block;
+		height: 0;
+		overflow: hidden;
+		visibility: hidden;
+		transition: height 0.4s, visibility 0.4s;
+		width: max-content;
+		&-items {
+			padding: 15px 20px;
+		}
+
+		p {
+			margin-bottom: 10px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+
+		a {
+			color: $blue-main;
+			transition: color 0.3s;
+			&:hover {
+				color: $titlePink;
+			}
+		}
+	}
+
+	&.show {
+		.idea-contacts__list {
+			// height: 101px;
+			visibility: visible;
+			&::after {
+				transform: translate(-50%, 0) scale(1, 1);
+			}
+		}
+
+		.nav-link--underline {
+			&:after {
+				transform: scale(0, 1);
+				height: 2px;
+			}
+
+			&:before {
+				transform: scale(1, 1);
+			}
+		}
+	}
+}
+
+.slider-with-btn {
+	display: flex;
+	width: 100%;
+	.idea-contacts {
+		display: none;
+
+		@include tabletBig {
+			position: absolute;
+			bottom: 75px;
+			left: 50%;
+			transform: translateX(-50%);
+			display: inline-block;
+		}
+	}
+
+	.slider-container {
+		.idea-contacts {
+			display: inline-block;
+			@include tabletBig {
+				display: none;
+			}
+		}
+	}
+}
+
+.idea-section {
+	background: $dark;
+	padding: 60px;
+	padding-top: 0;
+	display: flex;
+	position: relative;
+	height: 100%;
+	max-height: calc(100% - 132px - 2rem);
+	box-shadow: 0px 2px 16px rgba($color: $black, $alpha: 0.5);
+
+	@include laptop {
+		padding: 0 40px 45px;
+		max-height: calc(100% - 112px - 2rem);
+	}
+
+	@media screen and (max-width: 1366px) {
+		max-height: calc(100% - 98px - 2rem);
+	}
+
+	@include tabletBig {
+		flex-direction: column-reverse;
+		padding: 40px;
+		padding-bottom: 150px;
+		max-height: unset;
+		max-width: 777px;
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	@include mobile {
+		padding: 15px;
+		padding-bottom: 150px;
+	}
+}
+
+.idea-info {
+	height: 100%;
+	width: calc(50% + 2px);
+	margin-right: 40px;
+	flex-shrink: 0;
+	padding-top: 50px;
+	position: relative;
+	overflow: hidden;
+
+	@include laptop {
+		padding-top: 40px;
+	}
+
+	@include tabletBig {
+		width: 100%;
+		margin-right: 0;
+		padding-top: 35px;
+		flex-shrink: unset;
+	}
+}
+
+.idea-copy {
+	display: inline-block;
+	font-size: 10px;
+	position: absolute;
+	bottom: 21px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	justify-content: center;
+
+	@include laptop {
+		bottom: 12px;
+	}
+
+	@include tabletBig {
+		bottom: 21px;
+	}
+
+	p {
+		overflow: hidden;
+		border-right: 1.5px solid $blue-main;
+		white-space: nowrap;
+		width: 0;
+		animation: typing 2.5s steps(18, end) 2s forwards, blink-caret 1s step-end infinite;
+	}
+
+	span {
+		font-size: 15px;
+	}
+}
+
+.idea-tabs {
+	position: absolute;
+	top: 0;
+	right: 0;
+	font-size: 12px;
+	@include tabletBig {
+		top: 0;
+	}
+
+	&__btn {
+		background: $darker;
+		color: $snow;
+		padding: 3px 20px;
+		text-transform: uppercase;
+
+		&[data-active='true'] {
+			background: $black;
+			color: $blue-main;
+		}
+	}
+}
+
+.idea-overflow {
+	height: 100%;
+	overflow: auto;
+	padding-right: 30px;
+	display: none;
+	scrollbar-width: thin;
+	scrollbar-color: $blue-main $bg-color;
+
+	&[data-content='true'] {
+		display: block;
+	}
+
+	&::-webkit-scrollbar {
+		width: 3px;
+	}
+
+	&::-webkit-scrollbar-track {
+		background: $bg-color;
+	}
+
+	@include tabletBig {
+		padding-right: 0;
+	}
+}
+
+.idea-concept {
+	margin-bottom: 20px;
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.idea-block {
+	font-size: 16px;
+	letter-spacing: normal;
+	line-height: normal;
+	color: $textGrey;
+	margin-bottom: 30px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	.h2 {
+		color: $blue-main;
+		font-size: 21px;
+		font-family: $ui-medium;
+		margin-bottom: 15px;
+	}
+
+	.h3 {
+		font-size: 17px;
+		font-family: $ui-medium;
+		color: $titlePink;
+		margin: 15px 0 5px;
+	}
+
+	&__text {
+		margin-bottom: 10px;
+		white-space: pre-line;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	li {
+		margin-bottom: 5px;
+		position: relative;
+		display: flex;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		&::before {
+			content: '';
+			display: inline-block;
+			min-width: 3px;
+			width: 3px;
+			height: 3px;
+			border-radius: 50%;
+			background: $titlePink;
+			margin-right: 10px;
+			margin-top: 10px;
+		}
+
+		.idea-block__star {
+			margin-left: 6px;
+		}
+	}
+
+	&__star {
+		color: $starYellow;
+		font-size: 16px;
+		line-height: 1;
+	}
+
+	&__desc {
+		font-size: 12px;
+		margin: 10px 0;
+	}
+
+	&--features {
+		p {
+			margin-bottom: 5px;
+		}
+
+		span {
+			color: $starYellow;
+			display: inline-block;
+			align-items: start;
+		}
+
+		li {
+			display: block;
+			&::before {
+				display: none;
+			}
+		}
+	}
+
+	&--ps {
+		font-style: italic;
+		text-align: right;
+		font-size: 12px;
+		margin-top: 45px;
+	}
+
+	&-colored {
+		color: $titlePink;
+	}
+
+	&__support {
+		a {
+			color: $blue-main;
+			transition: color 0.3s;
+			&:hover {
+				color: $titlePink;
+			}
+		}
+	}
+}
+
+// Slider default style
+.slider-container {
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	margin-top: -45px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	@include tabletBig {
+		margin-top: -60px;
+	}
+
+	@include mobile {
+		margin-top: -33px;
+	}
+}
+
+.slider-js {
+	width: 100%;
+	display: flex;
+	height: 400px;
+	transition: transform 0.4s ease-in;
+	position: relative;
+	overflow: hidden;
+
+	@include tabletBig {
+		height: 250px;
+	}
+
+	@include tabletSmall {
+		height: 150px;
+	}
+}
+
+.slider-item-js {
+	width: 100%;
+	height: 100%;
+	flex-shrink: 0;
+	display: flex;
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	img {
+		width: 100%;
+		object-fit: cover;
+		height: inherit;
+		opacity: 0;
+		transform: scale(1.3);
+		transition: transform 0.4s ease-out, opacity 0.4s ease;
+	}
+
+	&[data-active='true'] {
+		img {
+			transform: scale(1);
+			opacity: 1;
+		}
+	}
+}
+
+.slides-number {
+	font-size: 10px;
+	position: absolute;
+	top: 12px;
+	right: 12px;
+	color: #000;
+	font-weight: 600;
+}
+
+.slider-actions {
+	display: flex;
+	align-items: center;
+	padding: 5px;
+	align-self: flex-end;
+	margin-top: 20px;
+	margin-bottom: 30px;
+
+	@include tabletBig {
+		position: absolute;
+		left: 0;
+		top: 0;
+		margin: 0;
+	}
+}
+
+.slider-btn-js {
+	@include tabletBig {
+		padding: 10px;
+		background: $dark;
+		border-radius: 50%;
+	}
+
+	&::before {
+		content: '';
+		display: block;
+		width: 15px;
+		height: 15px;
+		border: 2px solid $blue-main;
+		border-width: 2px 2px 0 0;
+		opacity: 0.5;
+
+		@include tabletBig {
+			width: 5px;
+			height: 5px;
+			opacity: 1;
+		}
+	}
+
+	&:hover::before {
+		opacity: 1;
+	}
+
+	&-next {
+		&::before {
+			transform: rotate(45deg);
+			@include tabletBig {
+				transform: rotate(45deg) translate(-1px, 1px);
+			}
+		}
+	}
+
+	&-prev {
+		margin-right: 20px;
+		@include tabletBig {
+			margin-right: 10px;
+		}
+		&::before {
+			transform: rotate(-135deg);
+			@include tabletBig {
+				transform: rotate(-135deg) translate(-1px, 1px);
+			}
+		}
+	}
+}

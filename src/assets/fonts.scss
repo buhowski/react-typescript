@@ -1,0 +1,90 @@
+@font-face {
+	font-family: 'Segoe UI';
+	src: url('fonts/SegoeUI.eot');
+	src: url('fonts/SegoeUI.eot?#iefix') format('embedded-opentype'),
+		url('fonts/SegoeUI.woff2') format('woff2'), url('fonts/SegoeUI.woff') format('woff'),
+		url('fonts/SegoeUI.ttf') format('truetype'),
+		url('fonts/SegoeUI.svg#SegoeUI') format('svg');
+}
+
+@font-face {
+	font-family: 'Louis George Caf';
+	src: url('fonts/LouisGeorgeCafe.eot');
+	src: url('fonts/LouisGeorgeCafe.eot?#iefix') format('embedded-opentype'),
+		url('fonts/LouisGeorgeCafe.woff2') format('woff2'),
+		url('fonts/LouisGeorgeCafe.woff') format('woff'),
+		url('fonts/LouisGeorgeCafe.ttf') format('truetype'),
+		url('fonts/LouisGeorgeCafe.svg#LouisGeorgeCafe') format('svg');
+}
+
+@font-face {
+	font-family: 'Louis George Caf Bold';
+	src: url('fonts/LouisGeorgeCafe-Bold.eot');
+	src: url('fonts/LouisGeorgeCafe-Bold.eot?#iefix') format('embedded-opentype'),
+		url('fonts/LouisGeorgeCafe-Bold.woff2') format('woff2'),
+		url('fonts/LouisGeorgeCafe-Bold.woff') format('woff'),
+		url('fonts/LouisGeorgeCafe-Bold.ttf') format('truetype'),
+		url('fonts/LouisGeorgeCafe-Bold.svg#LouisGeorgeCafe-Bold') format('svg');
+}
+
+@font-face {
+	font-family: 'Coming Soon';
+	src: url('fonts/ComingSoon-Regular.eot');
+	src: url('fonts/ComingSoon-Regular.eot?#iefix') format('embedded-opentype'),
+		url('fonts/ComingSoon-Regular.woff2') format('woff2'),
+		url('fonts/ComingSoon-Regular.woff') format('woff'),
+		url('fonts/ComingSoon-Regular.ttf') format('truetype'),
+		url('fonts/ComingSoon-Regular.svg#ComingSoon-Regular') format('svg');
+}
+
+@font-face {
+	font-family: 'Indie Flower';
+	src: url('fonts/IndieFlower.eot');
+	src: url('fonts/IndieFlower.eot?#iefix') format('embedded-opentype'),
+		url('fonts/IndieFlower.woff2') format('woff2'),
+		url('fonts/IndieFlower.woff') format('woff'),
+		url('fonts/IndieFlower.ttf') format('truetype'),
+		url('fonts/IndieFlower.svg#IndieFlower') format('svg');
+}
+
+@font-face {
+	font-family: 'icomoon';
+	src: url('fonts/icomoon.eot');
+	src: url('fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('fonts/icomoon.woff') format('woff'),
+		url('fonts/icomoon.ttf') format('truetype'),
+		url('fonts/icomoon.svg#icomoon') format('svg');
+}
+[class^='icon-'],
+[class*=' icon-'] {
+	font-family: 'icomoon' !important;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 20px;
+	height: 20px;
+	font-size: 20px !important;
+	line-height: 1;
+	color: #fff;
+}
+
+[class^='icon-']:before,
+[class*=' icon-']:before {
+	display: block;
+}
+
+.icon-cv:before {
+	content: '\e902';
+}
+
+.icon-octopus:before {
+	content: '\e900';
+}
+
+.icon-in:before {
+	content: '\e901';
+}
+
+.icon-plane:before {
+	content: '\e903';
+}
