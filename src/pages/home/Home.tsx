@@ -1,8 +1,8 @@
 import React from 'react';
-// import useScripts from '../../components/use-scripts';
 import Socials from '../../components/socials/Socials';
 
 import './Home.scss';
+import DrawCanvas from './DrawCanvas';
 
 const Home = () => {
 	// useScripts('js/chunk-app-drawing.js');
@@ -17,6 +17,7 @@ const Home = () => {
 			</div>
 
 			{/*############## CONTENT WITH PHOTO DRAWING ##############*/}
+			<DrawCanvas />
 			<div id='app'></div>
 		</div>
 	);
