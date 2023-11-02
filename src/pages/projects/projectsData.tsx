@@ -29,35 +29,17 @@ const projectsData = [
 		url: 'https://www.faber.co.uk/',
 		name: 'Faber',
 	},
+
 	{
 		img: `url(${bgEnde})`,
 		url: 'https://www-somosende-com.vercel.app',
 		name: 'Somos ENDE',
 	},
+
 	{
-		img: `url(${BgDrinkHaus})`,
-		url: 'https://drink-haus.vercel.app',
-		name: 'Drink Haus',
-	},
-	{
-		img: `url(${bgMensch})`,
-		url: 'https://mensch.vercel.app',
-		name: 'Mensch',
-	},
-	{
-		img: `url(${BgSprey})`,
-		url: 'https://spraybox.vercel.app',
-		name: 'Spraybox Magazine',
-	},
-	{
-		img: `url(${BgNakashima})`,
-		url: 'https://nakashima-woods.vercel.app',
-		name: 'Nakashima Woodworkers',
-	},
-	{
-		img: `url(${BgFoundation})`,
-		url: 'https://tse-foundation-org.vercel.app',
-		name: 'TSE Foundation',
+		img: `url(${BgBottleService})`,
+		url: 'https://www-youngspirits-co-uk.vercel.app',
+		name: 'Young Spirits',
 	},
 	{
 		img: `url(${BgArchitect})`,
@@ -65,25 +47,46 @@ const projectsData = [
 		name: 'Architects',
 	},
 	{
-		img: `url(${BgBottleService})`,
-		url: 'https://www-youngspirits-co-uk.vercel.app',
-		name: 'Young Spirits',
+		img: `url(${bgMeNotebooks})`,
+		url: 'https://modnotebooks-com.vercel.app',
+		name: 'Mode Notebooks',
 	},
+	{
+		img: `url(${bgMensch})`,
+		url: 'https://mensch.vercel.app',
+		name: 'Mensch',
+	},
+	{
+		img: `url(${BgFoundation})`,
+		url: 'https://tse-foundation-org.vercel.app',
+		name: 'TSE Foundation',
+	},
+	{
+		img: `url(${BgSprey})`,
+		url: 'https://spraybox.vercel.app',
+		name: 'Spraybox Magazine',
+	},
+
 	{
 		img: `url(${bgInfiniteFood})`,
 		url: 'https://infinityfoodsretail-coop.vercel.app',
 		name: 'Infinite Food',
 	},
-	{
-		img: `url(${bgMeNotebooks})`,
-		url: 'https://modnotebooks-com.vercel.app',
-		name: 'Mode Notebooks',
-		keyId: 10,
-	},
+
 	{
 		img: `url(${bgPalms})`,
 		url: 'https://twobunchpalms-com.vercel.app',
 		name: 'Two Bunch Palms',
+	},
+	{
+		img: `url(${BgDrinkHaus})`,
+		url: 'https://drink.haus/',
+		name: 'Drink Haus',
+	},
+	{
+		img: `url(${BgNakashima})`,
+		url: 'https://nakashimawoodworkers.com/',
+		name: 'Nakashima Woodworkers',
 	},
 ];
 

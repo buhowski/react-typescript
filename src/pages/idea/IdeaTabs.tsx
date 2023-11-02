@@ -2,36 +2,17 @@ import React from 'react';
 import Copyright from './Copyright';
 import SliderContainer from './Slider';
 
-interface IdeaTab {
-	id: number;
-	title: string;
-	content: React.ReactNode;
-}
-
 interface IdeaGeneralProps {
-	IdeaTabRu: React.ReactNode;
-	IdeaTabEn: React.ReactNode;
-	IdeaTabUa: React.ReactNode;
+	IdeaTabRu: JSX.Element;
+	IdeaTabEn: JSX.Element;
+	IdeaTabUa: JSX.Element;
 	baseTitle: string;
 	baseDesc: string;
 	contactBtnTitle: string;
 }
 
-interface IdeaGeneralState {
-	currentTab: string;
-	setCurrentTab: string;
-}
-
-interface SliderContainerProps {
-	contactBtnTitle: string;
-}
-
-class IdeaGeneral extends React.Component<
-	IdeaGeneralProps,
-	IdeaGeneralState,
-	SliderContainerProps
-> {
-	state: IdeaGeneralState = {
+class IdeaGeneral extends React.Component<IdeaGeneralProps> {
+	state = {
 		currentTab: '1',
 		setCurrentTab: '1',
 	};
@@ -40,21 +21,16 @@ class IdeaGeneral extends React.Component<
 		const input = event.target;
 		const value = input.type === 'checkbox' ? input.checked : input.value;
 
-		this.setState({ [input.name]: value } as Pick<
-			IdeaGeneralState,
-			keyof IdeaGeneralState
-		>);
+		this.setState({ [input.name]: value });
 	};
 
 	handleTabClick = (e: React.MouseEvent<HTMLButtonElement>) => {
-		const button = e.target as HTMLButtonElement;
-
 		this.setState({
-			currentTab: button.id,
-			setCurrentTab: button.id,
+			currentTab: e.currentTarget.id,
+			setCurrentTab: e.currentTarget.id,
 		});
 
-		localStorage.setItem('currentIndex', button.id);
+		localStorage.setItem('currentIndex', e.currentTarget.id);
 	};
 
 	componentDidMount() {
@@ -64,17 +40,14 @@ class IdeaGeneral extends React.Component<
 			currentTab: currentIndex ? currentIndex : '1',
 			setCurrentTab: currentIndex ? currentIndex : '1',
 		});
-
 		const ideaIcon = document.querySelector('.idea-icon') as HTMLElement;
-
 		if (ideaIcon) {
 			ideaIcon.style.animation = 'none';
 		}
 	}
 
 	render() {
-		const { IdeaTabRu, IdeaTabEn, IdeaTabUa, baseTitle, baseDesc, contactBtnTitle } =
-			this.props;
+		const { IdeaTabRu, IdeaTabEn, IdeaTabUa, baseTitle, baseDesc } = this.props;
 
 		const tabs = [
 			{
@@ -112,7 +85,7 @@ class IdeaGeneral extends React.Component<
 									key={i}
 									id={tab.id.toString()}
 									onClick={this.handleTabClick}
-									data-active={this.state.currentTab === tab.id.toString()}
+									data-active={this.state.currentTab === `${tab.id}`}
 								>
 									{tab.title}
 								</button>
@@ -123,7 +96,7 @@ class IdeaGeneral extends React.Component<
 						{tabs.map((tab, i) => (
 							<div
 								className='idea-overflow'
-								data-content={this.state.currentTab === tab.id.toString()}
+								data-content={this.state.currentTab === `${tab.id}`}
 								key={i}
 							>
 								{this.state.currentTab === `${tab.id}` && tab.content}
@@ -131,7 +104,7 @@ class IdeaGeneral extends React.Component<
 						))}
 					</div>
 
-					{/* <SliderContainer contactBtnTitle={contactBtnTitle} /> */}
+					<SliderContainer />
 				</div>
 			</div>
 		);

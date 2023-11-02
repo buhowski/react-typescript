@@ -1,4 +1,3 @@
-import React from 'react';
 import socialData from './socialData';
 import './Socials.scss';
 import DonateSvg from './Donate-svg';
@@ -16,22 +15,12 @@ const Socials = () => {
 						key={i}
 					>
 						<span className='title'>{title}</span>
-						<span className={iconClass}></span>
+						<span className={iconClass}>
+							{iconClass === 'icon-donate' ? <DonateSvg /> : null}
+						</span>
 					</a>
 				);
 			})}
-
-			<a
-				className='d-flex-c-c donation-link'
-				href='https://coindrop.to/buhowski'
-				target='_blank'
-				rel='noopener noreferrer'
-			>
-				<span className='title'>Support My Inner Creator</span>
-				<span className='icon-donate'>
-					<DonateSvg />
-				</span>
-			</a>
 		</div>
 	);
 };

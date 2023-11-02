@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 import sliderImg1 from './images/barcode-art.jpg';
 import sliderImg2 from './images/bridge.jpg';
 import sliderImg3 from './images/cat.jpg';
@@ -26,7 +26,12 @@ import sliderImg24 from './images/writer-sea.jpg';
 import sliderImg25 from './images/circle.jpg';
 import PopupContacts from './PopupContacts';
 
-const dataImgs = [
+interface ImageData {
+	imgSrc: string;
+	imgAlt: string;
+}
+
+const dataImgs: ImageData[] = [
 	{
 		imgSrc: sliderImg1,
 		imgAlt: 'ai picture',
@@ -130,7 +135,6 @@ const dataImgs = [
 ];
 
 class SliderContainer extends Component {
-	// Simple react slider
 	state = {
 		activeIndex: Math.floor(Math.random() * (dataImgs.length - 0) + 0),
 	};
@@ -152,8 +156,6 @@ class SliderContainer extends Component {
 	};
 
 	render() {
-		// const { contactBtnTitle } = this.props;
-
 		return (
 			<div className='slider-with-btn'>
 				<div className='slider-container'>
@@ -189,10 +191,10 @@ class SliderContainer extends Component {
 						></button>
 					</div>
 
-					{/* <PopupContacts contactBtnTitle={contactBtnTitle} /> */}
+					<PopupContacts />
 				</div>
 
-				{/* <PopupContacts contactBtnTitle={contactBtnTitle} /> */}
+				<PopupContacts />
 			</div>
 		);
 	}

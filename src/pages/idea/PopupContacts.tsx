@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 
 const dataContacts = [
 	{
@@ -16,13 +16,6 @@ const dataContacts = [
 		url: 'https://www.linkedin.com/in/buhowski',
 		linkTitle: 'Alexander Tsiomakh',
 	},
-	// // Donation link
-	// {
-	// 	name: 'Support My Inner Creator:',
-	// 	url: 'https://coindrop.to/buhowski',
-	// 	linkTitle: 'Donate',
-	// 	supportClass: 'support-link',
-	// },
 ];
 
 class PopupContacts extends Component {
@@ -47,8 +40,8 @@ class PopupContacts extends Component {
 			const el = document.querySelector(
 				'.slider-container ~ .idea-contacts .idea-contacts__list-items'
 			) as HTMLElement;
-			const elHeight = el ? el.offsetHeight : 0;
 
+			const elHeight = el ? el.offsetHeight : 0;
 			this.setState({
 				setContacts: 'show',
 				setHeight: `${elHeight}px`,
@@ -64,8 +57,6 @@ class PopupContacts extends Component {
 	};
 
 	render() {
-		// const { contactBtnTitle } = this.props;
-
 		return (
 			<div
 				className={`idea-contacts ${this.state.setContacts}`}
@@ -76,8 +67,8 @@ class PopupContacts extends Component {
 					style={{ height: `${this.state.setHeight}` }}
 				>
 					<div className='idea-contacts__list-items'>
-						{dataContacts.map((item, i) => (
-							<p key={i}>
+						{dataContacts.map((item: any, i) => (
+							<p key={i} className={item.supportClass}>
 								{item.name}{' '}
 								<a href={item.url} target='_blank' rel='noopener noreferrer'>
 									{item.linkTitle}
@@ -92,7 +83,7 @@ class PopupContacts extends Component {
 					type='button'
 					className='a nav-link nav-link--underline'
 				>
-					{/* {contactBtnTitle} */}
+					Get In Touch
 				</button>
 			</div>
 		);

@@ -1,13 +1,9 @@
-import React from 'react';
 import Socials from '../../components/socials/Socials';
-
-import './Home.scss';
 import DrawCanvas from './DrawCanvas';
 
-const Home = () => {
-	// useScripts('js/chunk-app-drawing.js');
-	// useScripts('js/app-drawing.js');
+import './Home.scss';
 
+const Home = () => {
 	return (
 		<div className='wrapper home-wrapper d-flex'>
 			<div className='name-container'>
@@ -16,9 +12,7 @@ const Home = () => {
 				<Socials />
 			</div>
 
-			{/*############## CONTENT WITH PHOTO DRAWING ##############*/}
 			<DrawCanvas />
-			<div id='app'></div>
 		</div>
 	);
 };

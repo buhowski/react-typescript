@@ -7,6 +7,7 @@ body {
 	letter-spacing: 1px;
 	user-select: none;
 	overflow: hidden;
+
 	@include tabletSmall {
 		height: 100vh;
 		height: calc(var(--vh, 1vh) * 100);
@@ -38,12 +39,14 @@ body {
 img {
 	width: 100%;
 }
+
 .wrapper {
 	margin: 0 auto;
 	max-width: 1600px;
 	width: 100%;
 	padding: 0 4%;
 }
+
 .page-container {
 	overflow-x: hidden;
 	overflow-y: auto;

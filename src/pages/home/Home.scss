@@ -45,28 +45,32 @@
 }
 
 // Photo drawing | drawCanvas |
-#app,
 .photoContainer,
 .drawCanvas,
 .illustrationImage,
 canvas {
 	width: 100%;
 }
-#app {
+
+.photoContainer {
 	margin: 0 auto;
 	overflow: hidden;
 	align-self: flex-end;
+
 	@include fullHD {
 		width: 60%;
 	}
+
 	@include heightTop {
 		width: 50%;
 	}
+
 	@include tabletSmall {
 		width: 100%;
 		margin-top: 30px;
 	}
 }
+
 .drawCanvas {
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -74,9 +78,11 @@ canvas {
 	max-height: 785px;
 	padding-bottom: 80%;
 	position: relative;
+
 	.illustrationImage {
 		display: none;
 	}
+
 	canvas {
 		position: absolute;
 		top: 0;

@@ -1,12 +1,11 @@
-import React from 'react';
 import './Idea.scss';
 import IdeaTabs from './IdeaTabs';
 import textData from './textData';
 
 export default function Idea() {
-	const contactBtnTitle: string = 'Get In Touch';
-	const baseTitle: string = 'Presentation';
-	const baseDesc: string = 'An offer to invest in huge potential!';
+	const contactBtnTitle = 'Get In Touch';
+	const baseTitle = 'Presentation';
+	const baseDesc = 'An offer to invest in huge potential!';
 
 	const textItems = textData.map((data, i) => (
 		<div key={i}>
@@ -76,7 +75,8 @@ export default function Idea() {
 				))}
 			</div>
 
-			<div className='idea-block idea-block--ps'>
+			{/* Donation support text */}
+			{/* <div className='idea-block idea-block--ps'>
 				<p className='idea-block__text'>
 					<span className='idea-block-colored'>P.S. </span>
 					{data.ps1}
@@ -94,7 +94,7 @@ export default function Idea() {
 						Donate
 					</a>
 				</p>
-			</div>
+			</div> */}
 		</div>
 	));
 

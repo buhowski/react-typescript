@@ -1,68 +1,67 @@
-# dependencies
-/node_modules
-/.pnp
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+.pnp/
 .pnp.js
 
-# testing
-/coverage
+# Compiled files
+dist/
 
-# production
-/build
+# Dependency directories
+lib/
+vendor/
+ios/Pods/
+ios/Podfile.lock
+android/.gradle/
+android/local.properties
+android/.idea/
+android/build/
+android/captures/
+android/app/build/
+android/gradle/
 
-# misc
-.directory
+# IDE files
+.idea/
+.vscode/
+
+# macOS
 .DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+.AppleDouble
+.LSOverride
 
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# Thumbnails
+._*
 
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
+# Windows
+Thumbs.db
+ehthumbs.db
 
-# testing
-/coverage
+# Logs and databases
+*.log
+*.sql
+*.sqlite
+*.sqlite3
+*.db
 
-# production
-/build
+# Compiled Python files
+__pycache__/
+*.pyc
 
-# misc
-.DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+# Compiled Ruby files
+*.gem
+*.rbc
+/.config
+database.yml
 
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# Environment
+.env
 
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
+# Webpack
+node_modules/
+public/
+.cache/
+stats.json
 
-# testing
-/coverage
-
-# production
-/build
-
-# misc
-.DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+# Misk
+*.directory

@@ -1,13 +1,15 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { useLocation, Route, Routes } from 'react-router-dom';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
-import './App.scss';
-import Header from '../components/header/Header';
 
-import Home from './home/Home';
-import About from './about/About';
-import Projects from './projects/Projects';
-import Idea from './idea/Idea';
+// import before pages
+import './styles/App.scss';
+
+import Header from './components/header/Header';
+import Home from './pages/home/Home';
+import About from './pages/about/About';
+import Projects from './pages/projects/Projects';
+import Idea from './pages/idea/Idea';
 
 const routesData = [
 	{
