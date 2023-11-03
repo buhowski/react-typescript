@@ -7,28 +7,28 @@ import Backpack from './images/backpack.png';
 const dotsData = [
 	{
 		classItem: 'brain',
-		title: 'IDEA THINKER, ENTHUSIAST, EXPLORER',
+		title: 'Creative Generator, Explorer & Enthusiast',
 		img: Brain,
 	},
 	{
 		classItem: 'writer',
-		// title: "I like writing short screenplays and come up with new ideas",
-		title: 'I like to write a different scenarios and come up with new ideas',
+		title: 'Innovative Thinker & Scenario Creator',
 		img: Writer,
 	},
 	{
 		classItem: 'keyboard',
-		title: 'Skills: HTML, CSS/SASS, JavaScript (React/React Native), Gulp/Webpack, Git',
+		titleSub: 'Tech Stack:',
+		title: 'HTML, SCSS, TypeScript, React, Redux, Webpack, Git',
 		img: Keyboard,
 	},
 	{
 		classItem: 'backpack',
-		title: 'Like to travel everywhere and go hiking',
+		title: 'Wanderlust Adventurer',
 		img: Backpack,
 	},
 	{
 		classItem: 'roots',
-		title: 'BORN TO IMPROVE',
+		title: 'Dedicated to Growth',
 		img: Roots,
 	},
 ];

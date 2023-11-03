@@ -25,11 +25,13 @@ class About extends React.Component {
 		return (
 			<div className='wrapper about-wrapper'>
 				<h1 className='base-title base-title--main'>Me Starter Pack</h1>
+
 				<div className='about-info'>
 					<div className='img'>
 						<img src={PhotoBg} alt='looking into the future' />
 					</div>
-					{dotsData.map(({ classItem, title, img }, i) => {
+
+					{dotsData.map(({ classItem, title, titleSub, img }, i) => {
 						return (
 							<div className={`pos-abs about-item ${classItem}`} key={i}>
 								<div
@@ -40,9 +42,14 @@ class About extends React.Component {
 										this.state.active === classItem ? ' active' : ''
 									}`}
 								></div>
+
 								<div className='show'>
-									<p className='title'>{title}</p>
-									<img className='line-drawing-pic' src={img} alt={title} />
+									<p className='title'>
+										{titleSub && <span className='title__sub'>{titleSub} </span>}
+										{title}
+									</p>
+
+									<img className='line-drawing-pic' src={img} alt={'alt text'} />
 								</div>
 							</div>
 						);

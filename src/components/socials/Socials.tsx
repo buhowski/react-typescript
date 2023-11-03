@@ -1,6 +1,6 @@
 import socialData from './socialData';
 import './Socials.scss';
-import DonateSvg from './Donate-svg';
+import DonateSvg from './svg/Donate-svg';
 
 const Socials = () => {
 	return (
@@ -16,7 +16,7 @@ const Socials = () => {
 					>
 						<span className='title'>{title}</span>
 						<span className={iconClass}>
-							{iconClass === 'icon-donate' ? <DonateSvg /> : null}
+							{iconClass === 'icon-donate' && <DonateSvg />}
 						</span>
 					</a>
 				);

@@ -1,0 +1,93 @@
+@font-face {
+	font-family: 'Segoe UI';
+	src: url('SegoeUI.eot');
+	src: url('SegoeUI.eot?#iefix') format('embedded-opentype'),
+		url('SegoeUI.woff2') format('woff2'), url('SegoeUI.woff') format('woff'),
+		url('SegoeUI.ttf') format('truetype'), url('SegoeUI.svg#SegoeUI') format('svg');
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Louis George Caf';
+	src: url('LouisGeorgeCafe.eot');
+	src: url('LouisGeorgeCafe.eot?#iefix') format('embedded-opentype'),
+		url('LouisGeorgeCafe.woff2') format('woff2'),
+		url('LouisGeorgeCafe.woff') format('woff'),
+		url('LouisGeorgeCafe.ttf') format('truetype'),
+		url('LouisGeorgeCafe.svg#LouisGeorgeCafe') format('svg');
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Louis George Caf Bold';
+	src: url('LouisGeorgeCafe-Bold.eot');
+	src: url('LouisGeorgeCafe-Bold.eot?#iefix') format('embedded-opentype'),
+		url('LouisGeorgeCafe-Bold.woff2') format('woff2'),
+		url('LouisGeorgeCafe-Bold.woff') format('woff'),
+		url('LouisGeorgeCafe-Bold.ttf') format('truetype'),
+		url('LouisGeorgeCafe-Bold.svg#LouisGeorgeCafe-Bold') format('svg');
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Coming Soon';
+	src: url('ComingSoon-Regular.eot');
+	src: url('ComingSoon-Regular.eot?#iefix') format('embedded-opentype'),
+		url('ComingSoon-Regular.woff2') format('woff2'),
+		url('ComingSoon-Regular.woff') format('woff'),
+		url('ComingSoon-Regular.ttf') format('truetype'),
+		url('ComingSoon-Regular.svg#ComingSoon-Regular') format('svg');
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Indie Flower';
+	src: url('IndieFlower.eot');
+	src: url('IndieFlower.eot?#iefix') format('embedded-opentype'),
+		url('IndieFlower.woff2') format('woff2'), url('IndieFlower.woff') format('woff'),
+		url('IndieFlower.ttf') format('truetype'),
+		url('IndieFlower.svg#IndieFlower') format('svg');
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'icomoon';
+	src: url('icomoon.eot');
+	src: url('icomoon.eot?#iefix') format('embedded-opentype'),
+		url('icomoon.woff') format('woff'), url('icomoon.ttf') format('truetype'),
+		url('icomoon.svg#icomoon') format('svg');
+	font-display: swap;
+}
+[class^='icon-'],
+[class*=' icon-'] {
+	font-family: 'icomoon' !important;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 20px;
+	height: 20px;
+	font-size: 20px !important;
+	line-height: 1;
+	color: #fff;
+}
+
+[class^='icon-']:before,
+[class*=' icon-']:before {
+	display: block;
+}
+
+.icon-cv:before {
+	content: '\e902';
+}
+
+.icon-octopus:before {
+	content: '\e900';
+}
+
+.icon-in:before {
+	content: '\e901';
+}
+
+.icon-plane:before {
+	content: '\e903';
+}

@@ -41,17 +41,6 @@
 	}
 	a:hover > .title {
 		opacity: 1;
-		transform: translateX(-55%) rotate(-10deg);
+		transform: translateX(-55%) rotate(-5deg);
 	}
 }
-
-// .donation-link {
-// 	svg {
-// 		transition: fill 0.4s;
-// 	}
-// 	&:hover {
-// 		svg {
-// 			fill: #7dfb25;
-// 		}
-// 	}
-// }

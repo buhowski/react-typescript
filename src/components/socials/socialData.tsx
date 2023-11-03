@@ -1,4 +1,4 @@
-// import cvDoc from '../../assets/CV_Alexander_Tsiomakh_FrontEnd.pdf';
+import cvDoc from '../../assets/CV_Alexander_Tsiomakh_FrontEnd.pdf';
 
 const socialData = [
 	{
@@ -17,19 +17,11 @@ const socialData = [
 	},
 
 	{
-		link: 'https://t.me/atsiomakh',
+		link: cvDoc,
 		targetBlank: '_blank',
-		relSecure: 'noopener noreferrer',
-		title: 'Telegram',
-		iconClass: 'icon-plane',
+		title: 'CV & Contacts',
+		iconClass: 'icon-cv',
 	},
-
-	// {
-	// 	link: cvDoc,
-	// 	targetBlank: '_blank',
-	// 	title: 'CV',
-	// 	iconClass: 'icon-cv',
-	// },
 
 	{
 		link: 'https://coindrop.to/buhowski',

@@ -34,26 +34,35 @@
 		font-size: 18px;
 		letter-spacing: 2px;
 		line-height: normal;
-		width: 50%;
+		width: 62%;
 		backface-visibility: hidden;
+
 		@include mobile {
 			font-size: 14px;
+		}
+
+		&__sub {
+			display: block;
+			font-weight: bold;
 		}
 	}
 	.title,
 	.ball {
 		position: absolute;
 	}
+
 	.show {
 		opacity: 0;
 		transition: all 0.4s;
 	}
+
 	.ball {
-		width: 25px;
-		height: 25px;
+		width: 32px;
+		height: 32px;
 		z-index: 5;
 		transition: all 0.1s;
 		border-radius: 50%;
+
 		&:after {
 			content: '';
 			display: block;
@@ -63,134 +72,152 @@
 			border-radius: 50%;
 		}
 	}
+
 	.ball.active {
 		transform: scale(0);
+
 		~ .show {
 			opacity: 1;
 		}
 	}
+
 	.brain {
 		.ball {
-			left: 51%;
-			top: 7.4%;
+			left: 49%;
+			top: 7%;
+
 			@include mobile {
-				left: 48.4%;
-				top: 5.7%;
+				left: 47%;
+				top: 5%;
 			}
 		}
+
 		.title {
-			right: -17%;
-			top: 6%;
-			transform: rotate(20deg);
+			right: -25%;
+			top: 3%;
+			transform: rotate(12deg);
 			text-align: center;
+
 			@include mobile {
-				top: 3%;
-				right: -15%;
+				top: -3%;
+				right: -20%;
 			}
+
 			@include mobileSmall {
-				top: 0%;
-				right: -10%;
+				top: -10%;
+				right: -20%;
 			}
 		}
 	}
+
 	.writer {
 		.ball {
-			left: 49%;
-			top: 28%;
+			left: 45%;
+			top: 27%;
+
 			@include mobile {
-				left: 46%;
-				top: 27%;
+				left: 43%;
+				top: 26%;
 			}
 		}
+
 		.title {
 			top: 32%;
-			left: -23%;
-			transform: rotate(-15deg);
+			left: -24%;
+			transform: rotate(-10deg);
+			text-align: center;
+
 			@include mobile {
-				top: 34%;
-				left: -19%;
-				transform: rotate(17deg);
+				top: 29%;
+				left: -20%;
 			}
+
 			@include mobileSmall {
 				top: auto;
-				left: -23px;
-				bottom: 16px;
-				transform: rotate(0deg);
+				left: -30px;
+				bottom: 40px;
 				width: 65%;
 			}
 		}
 	}
+
 	.keyboard {
 		.ball {
-			left: 29.6%;
-			top: 43%;
+			left: 27.5%;
+			top: 44%;
+
 			@include mobile {
-				left: 27%;
-				top: 41%;
+				left: 24%;
+				top: 42%;
 			}
 		}
+
 		.title {
-			top: 5%;
-			left: -14%;
-			transform: rotate(-9deg);
+			top: 8%;
+			left: -25%;
+			transform: rotate(-8deg);
+
 			@include mobile {
 				top: -7%;
-				left: -13%;
-				transform: rotate(-11deg);
+				left: -15%;
 			}
+
 			@include mobileSmall {
+				width: 50%;
+				top: -3%;
 				left: -8%;
-				transform: rotate(-8deg);
 			}
 		}
 	}
+
 	.backpack {
 		.ball {
-			right: 21%;
+			right: 20%;
 			top: 46%;
+
 			@include mobile {
-				right: 19%;
+				right: 18%;
 				top: 43%;
 			}
 		}
+
 		.title {
-			bottom: 33%;
-			right: -27%;
-			transform: rotate(-11deg);
+			bottom: 36%;
+			right: -31%;
+			transform: rotate(10deg);
+			text-align: center;
+
 			@include mobile {
-				bottom: 27%;
-				right: -20%;
-				transform: rotate(12deg);
-			}
-			@include mobileSmall {
-				bottom: 29%;
-				right: -15%;
-				transform: rotate(0deg);
+				bottom: 31%;
+				right: -21%;
 			}
 		}
 	}
+
 	.roots {
 		.ball {
-			left: 26%;
-			bottom: 27%;
+			left: 23.8%;
+			bottom: 26.6%;
+
 			@include mobile {
-				left: 23%;
-				bottom: 26%;
+				left: 22%;
+				bottom: 25%;
 			}
 		}
+
 		.title {
-			bottom: 36%;
-			left: -21%;
-			transform: rotate(-18deg);
+			bottom: 38%;
+			left: -25%;
+			transform: rotate(-8deg);
+
 			@include mobile {
-				bottom: 38%;
-				left: -13%;
-				transform: rotate(-18deg);
+				bottom: 32%;
+				left: -16%;
 			}
+
 			@include mobileSmall {
-				bottom: 37%;
-				left: -8%;
-				transform: rotate(-12deg);
+				bottom: 54%;
+				left: -10%;
 			}
 		}
 	}
