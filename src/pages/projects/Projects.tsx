@@ -8,11 +8,8 @@ const Projects = () => {
 			<div className='projects-container'>
 				{projectsData.map(({ img, url, name }, i) => {
 					return (
-						<article
-							className='project d-flex-c'
-							style={{ backgroundImage: img }}
-							key={i}
-						>
+						<div className='project d-flex-c' style={{ backgroundImage: img }} key={i}>
+							<div className='project__before'></div>
 							<a
 								className='a project-link'
 								href={url}
@@ -26,7 +23,7 @@ const Projects = () => {
 									</h3>
 								</div>
 							</a>
-						</article>
+						</div>
 					);
 				})}
 			</div>

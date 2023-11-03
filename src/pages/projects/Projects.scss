@@ -16,12 +16,14 @@
 	margin-bottom: 40px;
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: center top;
-	outline: 1px solid transparent;
-	transition: all 0.3s ease;
-	transform-style: preserve-3d;
-	animation: bgPosition 3s cubic-bezier(0.55, 0.1, 0.55, 0.9) alternate infinite;
+	background-position: 50% 0;
+	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+	animation: bgPosition 3s ease-in-out alternate infinite;
 	animation-play-state: paused;
+	transform: translateY(0);
+	transform-style: preserve-3d;
+	transition: all 0.3s ease;
+	z-index: 0;
 
 	&:nth-child(3n) {
 		margin-right: 0;
@@ -47,69 +49,62 @@
 	}
 
 	&:hover {
-		transform: translateY(-5px);
-		transition: all 0.5s ease;
-		box-shadow: 11px 8px 20px 0 rgba(0, 0, 0, 0.24);
-		animation: bgPosition 3s cubic-bezier(0.55, 0.1, 0.55, 0.9) alternate infinite;
+		transform: translateY(-10px);
+		box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.6);
+		animation-play-state: running;
 	}
 
-	&:after,
-	&:before {
-		content: '';
+	&__before {
 		position: absolute;
+		z-index: -10;
 		top: 0;
 		left: 0;
 		width: 100%;
 		height: 100%;
-	}
-
-	&:before {
 		background: $blue-main;
 		transform: translateZ(-10px);
 		transform-origin: left bottom;
 		transition: all 0.3s ease 0.2s;
-		z-index: -1;
 	}
 
-	&:hover:before {
-		transform: translate3d(10px, 10px, -10px);
+	&:hover > .project__before {
+		transform: translate3d(18px, 18px, -10px);
+
+		@include mobile {
+			transform: translate3d(10px, 15px, -10px);
+		}
 	}
 
-	&:after {
-		background: linear-gradient(0deg, $dark 20%, transparent 80%);
+	&:hover > .project-link {
+		background-size: 100% 500px;
 		background-position: 0 -20px;
-		background-size: 1px 508px;
-		transition: all 0.4s ease-out;
-		z-index: 1;
-	}
-
-	&:hover:after {
-		background-size: 1px 800px;
-		background-position: 0 -326px;
 	}
 }
 
 .project-link {
 	width: 100%;
 	height: 100%;
+	background: linear-gradient(0deg, $dark 20%, transparent 80%);
+	background-size: 100% 800px;
+	background-position: 0 -330px;
+	transition: all 0.4s ease-out;
 	position: relative;
-	z-index: 2;
+	z-index: 10;
 }
 
 .project-container {
-	transform: translateZ(3px);
 	width: 100%;
 	height: 100%;
 	align-items: flex-end;
 }
 
 .project-name {
-	position: relative;
 	font-size: 1.5rem;
 	line-height: 1.4;
 	letter-spacing: 3.2px;
 	padding-bottom: 1.5rem;
 	padding-left: 1rem;
+
 	span {
 		opacity: 0;
 	}
