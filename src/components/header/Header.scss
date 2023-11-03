@@ -41,6 +41,7 @@
 		margin-right: 0;
 	}
 }
+
 .nav-link {
 	position: relative;
 	font-family: $lg-bold;
@@ -59,19 +60,49 @@
 	}
 
 	&.idea-icon {
-		animation: lightOn 1s ease-in-out alternate infinite;
+		width: 114px;
+		height: 44px;
 
-		&:hover,
-		&.active {
-			animation: lightOnOut 0.4s ease-in-out alternate;
+		&::before {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 0;
+			height: 2px;
+			background: $blue-main;
+			animation: snake 2s ease-in-out infinite;
+			animation-play-state: paused;
+		}
+
+		&::after {
+			// height: 0;
 		}
 	}
 
 	&.active,
 	&:hover {
+		&::before {
+		}
+
 		&:after {
 			height: 100%;
 		}
+	}
+}
+
+@keyframes snake {
+	0% {
+		width: 0;
+		left: 0;
+	}
+	50% {
+		width: 100%;
+		left: 0;
+	}
+	100% {
+		width: 0;
+		left: 100%;
 	}
 }
 
@@ -99,7 +130,7 @@
 				position: absolute;
 				height: 2px;
 				width: 50%;
-				background: #4758fc;
+				background: $blue-main;
 				opacity: 1;
 				transform: rotate(0deg);
 				transition: 0.25s ease-in-out;

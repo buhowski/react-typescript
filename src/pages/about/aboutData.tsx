@@ -1,8 +1,14 @@
-import Brain from './images/brain.png';
-import Roots from './images/roots.png';
-import Keyboard from './images/keyboard.png';
-import Writer from './images/writer.png';
-import Backpack from './images/backpack.png';
+// import Brain from './images/brain.png';
+// import Roots from './images/roots.png';
+// import Keyboard from './images/keyboard.png';
+// import Writer from './images/writer.png';
+// import Backpack from './images/backpack.png';
+
+import Brain from './images/brain.svg';
+import Roots from './images/roots.svg';
+import Keyboard from './images/keyboard.svg';
+import Writer from './images/writer.svg';
+import Backpack from './images/backpack.svg';
 
 const dotsData = [
 	{

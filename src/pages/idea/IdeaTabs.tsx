@@ -40,7 +40,9 @@ class IdeaGeneral extends React.Component<IdeaGeneralProps> {
 			currentTab: currentIndex ? currentIndex : '1',
 			setCurrentTab: currentIndex ? currentIndex : '1',
 		});
+
 		const ideaIcon = document.querySelector('.idea-icon') as HTMLElement;
+
 		if (ideaIcon) {
 			ideaIcon.style.animation = 'none';
 		}

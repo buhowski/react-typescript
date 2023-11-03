@@ -9,6 +9,7 @@ const linksData = [
 		pageLink: 'idea',
 		pageName: 'Startup',
 		ideaIcon: 'idea-icon',
+		ideaActive: true,
 	},
 	{
 		pageLink: 'about',
@@ -32,15 +33,26 @@ const linksData = [
 ];
 const Header = () => {
 	const [menuOpen, setMenuOpen] = React.useState(false);
-	const navLinkItems = linksData.map(({ pageLink, pageName, ideaIcon }, i) => {
-		return (
-			<li className='nav-item d-flex' key={i}>
-				<NavLink className={`a nav-link ${ideaIcon}`} to={`${pageLink}`} end>
-					{pageName}
-				</NavLink>
-			</li>
-		);
-	});
+	const navLinkItems = linksData.map(
+		({ pageLink, pageName, ideaIcon, ideaActive }, i) => {
+			return (
+				<li className='nav-item d-flex' key={i}>
+					<NavLink className={`a nav-link ${ideaIcon}`} to={`${pageLink}`} end>
+						{pageName}
+
+						{ideaActive && (
+							<span className='nav-link__snake'>
+								<span></span>
+								<span></span>
+								<span></span>
+							</span>
+						)}
+					</NavLink>
+				</li>
+			);
+		}
+	);
+
 	const LogoNavLink = () => {
 		return (
 			<div className='logo d-flex'>
@@ -59,13 +71,16 @@ const Header = () => {
 				<MediaQuery minWidth={769}>
 					<div className='d-flex-c-b'>
 						<LogoNavLink />
+
 						<nav>
 							<ul className='nav d-flex-c'>{navLinkItems}</ul>
 						</nav>
 					</div>
 				</MediaQuery>
+
 				<MediaQuery maxWidth={768}>
 					<LogoNavLink />
+
 					<div
 						className='mobile-menu-btn'
 						onClick={() => {
@@ -87,6 +102,7 @@ const Header = () => {
 						<span></span>
 						<span></span>
 					</div>
+
 					<nav className={`pos-abs mobile-menu${menuOpen ? ' open' : ''}`}>
 						<div className='d-flex-c-c'>
 							<div>
