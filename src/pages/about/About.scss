@@ -36,6 +36,7 @@
 		line-height: normal;
 		width: 62%;
 		backface-visibility: hidden;
+		font-weight: bold;
 
 		@include mobile {
 			font-size: 14px;
@@ -43,7 +44,6 @@
 
 		&__sub {
 			display: block;
-			font-weight: bold;
 		}
 	}
 	.title,
