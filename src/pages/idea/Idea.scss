@@ -90,7 +90,7 @@
 		bottom: 45px;
 		left: 50%;
 		transform: translateX(-50%);
-		box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.7);
+		box-shadow: 0px 4px 10px rgba($color: $black, $alpha: 0.6);
 		border-radius: 10px;
 		background: rgba($color: $black, $alpha: 0.9);
 		color: $textGrey;
@@ -169,14 +169,14 @@
 }
 
 .idea-section {
-	background: $dark;
+	background: $darker;
 	padding: 60px;
 	padding-top: 0;
 	display: flex;
 	position: relative;
 	height: 100%;
 	max-height: calc(100% - 132px - 2rem);
-	box-shadow: 0px 2px 16px rgba($color: $black, $alpha: 0.5);
+	box-shadow: 0px 4px 18px rgba($color: $black, $alpha: 0.6);
 
 	@include laptop {
 		padding: 0 40px 45px;
@@ -265,14 +265,14 @@
 	}
 
 	&__btn {
-		background: $darker;
+		background: $black;
 		color: $snow;
 		padding: 3px 20px;
 		text-transform: uppercase;
 
 		&[data-active='true'] {
-			background: $black;
-			color: $blue-main;
+			background: $blue-main;
+			font-weight: bold;
 		}
 	}
 }
@@ -283,7 +283,7 @@
 	padding-right: 30px;
 	display: none;
 	scrollbar-width: thin;
-	scrollbar-color: $blue-main $bg-color;
+	scrollbar-color: $blue-main $darkest;
 
 	&[data-content='true'] {
 		display: block;
@@ -294,7 +294,7 @@
 	}
 
 	&::-webkit-scrollbar-track {
-		background: $bg-color;
+		background: $darkest;
 	}
 
 	@include tabletBig {
@@ -488,8 +488,8 @@
 	position: absolute;
 	top: 12px;
 	right: 12px;
-	color: #000;
-	font-weight: 600;
+	color: $black;
+	font-weight: bold;
 }
 
 .slider-actions {
@@ -511,7 +511,7 @@
 .slider-btn-js {
 	@include tabletBig {
 		padding: 10px;
-		background: $dark;
+		background: $black;
 		border-radius: 50%;
 	}
 

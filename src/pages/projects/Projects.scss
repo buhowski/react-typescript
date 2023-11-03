@@ -17,7 +17,7 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 50% 0;
-	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+	box-shadow: 10px 10px 10px rgba($color: $black, $alpha: 0.3);
 	animation: bgPosition 3s ease-in-out alternate infinite;
 	animation-play-state: paused;
 	transform: translateY(0);
@@ -50,7 +50,7 @@
 
 	&:hover {
 		transform: translateY(-10px);
-		box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.6);
+		box-shadow: 10px 10px 10px rgba($color: $black, $alpha: 0.6);
 		animation-play-state: running;
 	}
 
@@ -69,6 +69,7 @@
 
 	&:hover > .project__before {
 		transform: translate3d(18px, 18px, -10px);
+		transition: all 0.3s ease 0.2s;
 
 		@include mobile {
 			transform: translate3d(10px, 15px, -10px);
@@ -78,16 +79,18 @@
 	&:hover > .project-link {
 		background-size: 100% 500px;
 		background-position: 0 -20px;
+		transition: all 0.3s ease;
 	}
 }
 
 .project-link {
+	display: block;
 	width: 100%;
 	height: 100%;
-	background: linear-gradient(0deg, $dark 20%, transparent 80%);
+	background: linear-gradient(0deg, $darker 20%, transparent 80%);
 	background-size: 100% 800px;
 	background-position: 0 -330px;
-	transition: all 0.4s ease-out;
+	transition: all 0.3s ease;
 	position: relative;
 	z-index: 10;
 }

@@ -1,7 +1,7 @@
 body {
 	text-rendering: optimizeLegibility;
 	color: $snow;
-	background: $bg-color;
+	background: $darken;
 	width: 100%;
 	font: 16px/1.3 $ui;
 	letter-spacing: 1px;
@@ -23,7 +23,7 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-	background: $dark;
+	background: $darkest;
 	border-radius: 10px;
 }
 
@@ -52,7 +52,7 @@ img {
 	overflow-y: auto;
 	height: 100%;
 	scrollbar-width: thin;
-	scrollbar-color: $blue-main $dark;
+	scrollbar-color: $blue-main $darkest;
 
 	.wrapper-container {
 		padding-bottom: 60px;
