@@ -29,7 +29,6 @@
 	&:hover {
 		> .project__before {
 			transform: translate(18px, 8px);
-			transition: all 0.3s ease 0.2s;
 
 			@include mobile {
 				transform: translate(15px, 5px);
@@ -37,15 +36,22 @@
 		}
 
 		> .project__bg {
-			transform: translateY(-10px);
 			box-shadow: 10px 10px 10px rgba($color: $black, $alpha: 0.6);
 			animation-play-state: running;
+			transform: translateY(-10px);
 		}
 
 		.project-link {
 			background-size: 100% 500px;
 			background-position: 0 -20px;
-			transition: all 0.3s ease;
+		}
+
+		.project-name span {
+			animation: LowLine 0.4s infinite;
+		}
+
+		.project__skills {
+			transform: translateY(0);
 		}
 	}
 
@@ -57,7 +63,7 @@
 		width: 100%;
 		height: 100%;
 		background: $blue-main;
-		transition: all 0.3s ease 0.2s;
+		transition: 0.3s ease 0.2s;
 	}
 
 	&__bg {
@@ -73,7 +79,9 @@
 		box-shadow: 10px 10px 10px rgba($color: $black, $alpha: 0.3);
 		animation: bgPosition 3s ease-in-out alternate infinite;
 		animation-play-state: paused;
-		transition: all 0.3s ease;
+		transform: translateY(0);
+		transition: 0.3s ease;
+		overflow: hidden;
 	}
 
 	@include tablet {
@@ -93,13 +101,12 @@
 }
 
 .project-link {
-	display: block;
 	width: 100%;
 	height: 100%;
 	background: linear-gradient(0deg, $darker 20%, transparent 80%);
 	background-size: 100% 800px;
 	background-position: 0 -330px;
-	transition: all 0.3s ease;
+	transition: 0.3s ease;
 }
 
 .project-container {
@@ -120,6 +127,48 @@
 	}
 }
 
-.project:hover .project-name span {
-	animation: LowLine 0.4s infinite;
+.project__skills {
+	position: absolute;
+	background-color: rgba($color: $darker, $alpha: 0.9);
+	box-shadow: 5px 5px 10px rgba($color: $darker, $alpha: 0.9);
+	top: 0;
+	left: 18px;
+	width: calc(100% - 36px);
+	padding: 12px 15px;
+	z-index: 3;
+	transform: translateY(calc(-100% - 10px));
+	transition: transform 0.3s ease 0.2s;
+	font-size: 12px;
+
+	@include mobile {
+		left: 15px;
+		width: calc(100% - 30px);
+	}
+
+	&-p {
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: 3;
+		overflow: hidden;
+		margin-bottom: 10px;
+	}
+
+	&-title {
+		color: $blue-main;
+		text-transform: capitalize;
+		font-family: $lg-bold;
+	}
+
+	&-items {
+		font-family: $lg;
+		font-size: 11px;
+
+		span {
+			display: inline-block;
+			margin-right: 10px;
+			margin-top: 10px;
+			background-color: rgba($color: $black, $alpha: 0.6);
+			padding: 4px 10px 2px;
+		}
+	}
 }

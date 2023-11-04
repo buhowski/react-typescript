@@ -1,6 +1,20 @@
-html, body, div, span,
-h1, h2, h3, p, pre, ul, li,
-article, canvas, header, nav, button, a {
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+p,
+pre,
+ul,
+li,
+article,
+canvas,
+header,
+nav,
+button,
+a {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -19,6 +33,11 @@ ul {
 button {
 	background: none;
 	cursor: pointer;
+}
+a {
+	color: inherit;
+	text-decoration: none;
+	display: inline-block;
 }
 a:focus,
 a:active,
