@@ -37,6 +37,7 @@
 
 .nav-item {
 	margin-right: 4rem;
+
 	&:last-of-type {
 		margin-right: 0;
 	}
@@ -47,6 +48,9 @@
 	font-family: $lg-bold;
 	letter-spacing: 4px;
 	z-index: 1;
+	white-space: nowrap;
+
+	// &.idea-icon:before,
 	&:after {
 		content: '';
 		position: absolute;
@@ -56,57 +60,35 @@
 		height: 2px;
 		background-color: $blue-main;
 		z-index: -1;
-		transition: all 0.4s ease;
+		transition: height 0.4s ease, transform 0.4s ease;
 	}
 
-	&.idea-icon {
-		width: 114px;
-		height: 44px;
-
-		&::before {
-			content: '';
-			position: absolute;
-			bottom: 0;
-			left: 0;
-			width: 0;
-			height: 2px;
-			background: $blue-main;
-			animation: snake 2s ease-in-out infinite;
-			animation-play-state: paused;
-		}
-
-		&::after {
-			// height: 0;
-		}
-	}
+	// &.idea-icon {
+	// 	&:after {
+	// 		height: 6px;
+	// 		animation: snake 0.2s linear alternate infinite;
+	// 	}
+	// }
 
 	&.active,
 	&:hover {
-		&::before {
-		}
-
 		&:after {
 			height: 100%;
 		}
 	}
 }
 
-@keyframes snake {
-	0% {
-		width: 0;
-		left: 0;
-	}
-	50% {
-		width: 100%;
-		left: 0;
-	}
-	100% {
-		width: 0;
-		left: 100%;
-	}
-}
+// @keyframes snake {
+// 	0% {
+// 		height: 6px;
+// 	}
 
-@include tabletSmall {
+// 	100% {
+// 		height: 2px;
+// 	}
+// }
+
+@include tablet {
 	.header {
 		height: 80px;
 		.wrapper {
@@ -199,7 +181,7 @@
 			> div {
 				width: 100%;
 				height: 100%;
-				overflow: hidden;
+				overflow-x: hidden;
 				overflow-y: auto;
 				scrollbar-width: thin;
 				scrollbar-color: $blue-main $darkest;
@@ -276,8 +258,11 @@
 				transform: scale(1);
 			}
 		}
+
 		.contact-menu {
 			margin-top: 55px;
+			justify-content: center;
+			padding: 0 4%;
 		}
 	}
 }

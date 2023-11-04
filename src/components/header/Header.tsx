@@ -7,7 +7,7 @@ import './Header.scss';
 const linksData = [
 	{
 		pageLink: 'idea',
-		pageName: 'Startup',
+		pageName: 'Business Proposition',
 		ideaIcon: 'idea-icon',
 		ideaActive: true,
 	},
@@ -41,11 +41,9 @@ const Header = () => {
 						{pageName}
 
 						{ideaActive && (
-							<span className='nav-link__snake'>
-								<span></span>
-								<span></span>
-								<span></span>
-							</span>
+							<>
+								<span className='snake'></span>
+							</>
 						)}
 					</NavLink>
 				</li>
@@ -68,7 +66,7 @@ const Header = () => {
 	return (
 		<header className={`header d-flex-c${menuOpen ? ' header-overflow' : ''}`}>
 			<div className='wrapper'>
-				<MediaQuery minWidth={769}>
+				<MediaQuery minWidth={1025}>
 					<div className='d-flex-c-b'>
 						<LogoNavLink />
 
@@ -78,7 +76,7 @@ const Header = () => {
 					</div>
 				</MediaQuery>
 
-				<MediaQuery maxWidth={768}>
+				<MediaQuery maxWidth={1024}>
 					<LogoNavLink />
 
 					<div
@@ -105,7 +103,7 @@ const Header = () => {
 
 					<nav className={`pos-abs mobile-menu${menuOpen ? ' open' : ''}`}>
 						<div className='d-flex-c-c'>
-							<div>
+							<div className='mobile-menu__content'>
 								<ul className='nav'>{navLinkItems}</ul>
 								<Socials />
 							</div>

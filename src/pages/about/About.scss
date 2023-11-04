@@ -34,8 +34,9 @@
 		font-size: 18px;
 		letter-spacing: 2px;
 		line-height: normal;
-		width: 62%;
+		width: 61%;
 		backface-visibility: hidden;
+		text-align: center;
 		font-weight: bold;
 
 		@include mobile {
@@ -96,7 +97,6 @@
 			right: -25%;
 			top: 3%;
 			transform: rotate(12deg);
-			text-align: center;
 
 			@include mobile {
 				top: -3%;
@@ -104,8 +104,8 @@
 			}
 
 			@include mobileSmall {
-				top: -10%;
-				right: -20%;
+				top: -5%;
+				right: -14%;
 			}
 		}
 	}
@@ -122,21 +122,21 @@
 		}
 
 		.title {
-			top: 32%;
-			left: -24%;
+			top: 31%;
+			left: -28%;
 			transform: rotate(-10deg);
-			text-align: center;
 
 			@include mobile {
-				top: 29%;
-				left: -20%;
+				top: 28%;
+				left: -24%;
 			}
 
 			@include mobileSmall {
-				top: auto;
-				left: -30px;
-				bottom: 40px;
-				width: 65%;
+				top: -12%;
+				left: auto;
+				right: -8%;
+				width: 68%;
+				transform: rotate(10deg);
 			}
 		}
 	}
@@ -156,6 +156,7 @@
 			top: 8%;
 			left: -25%;
 			transform: rotate(-8deg);
+			text-align: left;
 
 			@include mobile {
 				top: -7%;
@@ -182,13 +183,12 @@
 		}
 
 		.title {
-			bottom: 36%;
-			right: -31%;
+			bottom: 31%;
+			right: -30%;
 			transform: rotate(10deg);
-			text-align: center;
 
 			@include mobile {
-				bottom: 31%;
+				bottom: 28%;
 				right: -21%;
 			}
 		}
@@ -207,17 +207,17 @@
 
 		.title {
 			bottom: 38%;
-			left: -25%;
+			left: -36%;
 			transform: rotate(-8deg);
 
 			@include mobile {
-				bottom: 32%;
-				left: -16%;
+				bottom: 47%;
+				left: -21%;
 			}
 
 			@include mobileSmall {
-				bottom: 54%;
-				left: -10%;
+				bottom: 64%;
+				left: -13%;
 			}
 		}
 	}
