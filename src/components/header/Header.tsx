@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import MediaQuery from 'react-responsive';
+import { useTabletQuery } from '../../hooks/useMediaQuery';
 import Socials from '../socials/Socials';
 import './Header.scss';
 
@@ -66,7 +66,42 @@ const Header = () => {
 	return (
 		<header className={`header d-flex-c${menuOpen ? ' header-overflow' : ''}`}>
 			<div className='wrapper'>
-				<MediaQuery minWidth={1025}>
+				{useTabletQuery() ? (
+					<>
+						<LogoNavLink />
+
+						<div
+							className='mobile-menu-btn'
+							onClick={() => {
+								const pageContainer = document.querySelector('.page-container');
+								if (pageContainer) {
+									pageContainer.scrollTo({ top: 0, behavior: 'smooth' });
+									(pageContainer as HTMLElement).style.overflowY = `${
+										menuOpen ? 'auto' : 'hidden'
+									}`;
+								}
+
+								setMenuOpen((o) => !o);
+							}}
+						>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+
+						<nav className={`pos-abs mobile-menu${menuOpen ? ' open' : ''}`}>
+							<div className='d-flex-c-c'>
+								<div className='mobile-menu__content'>
+									<ul className='nav'>{navLinkItems}</ul>
+									<Socials />
+								</div>
+							</div>
+						</nav>
+					</>
+				) : (
 					<div className='d-flex-c-b'>
 						<LogoNavLink />
 
@@ -74,42 +109,7 @@ const Header = () => {
 							<ul className='nav d-flex-c'>{navLinkItems}</ul>
 						</nav>
 					</div>
-				</MediaQuery>
-
-				<MediaQuery maxWidth={1024}>
-					<LogoNavLink />
-
-					<div
-						className='mobile-menu-btn'
-						onClick={() => {
-							const pageContainer = document.querySelector('.page-container');
-							if (pageContainer) {
-								pageContainer.scrollTo({ top: 0, behavior: 'smooth' });
-								(pageContainer as HTMLElement).style.overflowY = `${
-									menuOpen ? 'auto' : 'hidden'
-								}`;
-							}
-
-							setMenuOpen((o) => !o);
-						}}
-					>
-						<span></span>
-						<span></span>
-						<span></span>
-						<span></span>
-						<span></span>
-						<span></span>
-					</div>
-
-					<nav className={`pos-abs mobile-menu${menuOpen ? ' open' : ''}`}>
-						<div className='d-flex-c-c'>
-							<div className='mobile-menu__content'>
-								<ul className='nav'>{navLinkItems}</ul>
-								<Socials />
-							</div>
-						</div>
-					</nav>
-				</MediaQuery>
+				)}
 			</div>
 		</header>
 	);

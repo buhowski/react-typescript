@@ -24,7 +24,7 @@ class About extends React.Component {
 	render() {
 		return (
 			<div className='wrapper about-wrapper'>
-				<h1 className='base-title base-title--main'>Me Starter Pack</h1>
+				<h1 className='base-title base-title--main'>Starter Pack</h1>
 
 				<div className='about-info'>
 					<div className='img'>
