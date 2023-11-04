@@ -8,11 +8,7 @@ const useMediaQuery = (query: string, dimension: string) => {
 			if (dimension === 'width') {
 				setMatches(window.innerWidth <= parseInt(query));
 			} else if (dimension === 'height') {
-				setMatches(
-					window.innerHeight <= parseInt(query) &&
-						window.innerWidth >= 1281 &&
-						window.innerWidth <= 1920
-				);
+				setMatches(window.innerHeight <= parseInt(query));
 			}
 		};
 
@@ -30,4 +26,8 @@ const useTabletQuery = () => {
 	return useMediaQuery('1024', 'width');
 };
 
-export { useTabletQuery };
+const useMobMenuHeightQuery = () => {
+	return useMediaQuery('518', 'height');
+};
+
+export { useTabletQuery, useMobMenuHeightQuery };

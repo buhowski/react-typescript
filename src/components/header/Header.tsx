@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { useTabletQuery } from '../../hooks/useMediaQuery';
+import { useTabletQuery, useMobMenuHeightQuery } from '../../hooks/useMediaQuery';
 import Socials from '../socials/Socials';
 import './Header.scss';
 
@@ -21,17 +21,11 @@ const linksData = [
 		pageName: 'Projects',
 		ideaIcon: '',
 	},
-	// {
-	//   pageLink: "gallery",
-	//   pageName: "Gallery",
-	// },
-
-	// {
-	//   pageLink: "/access-to-idea",
-	//   pageName: "access to idea",
-	// },
 ];
 const Header = () => {
+	const tabletQuery = useTabletQuery();
+	const mobMenuHeightQuery = useMobMenuHeightQuery();
+
 	const [menuOpen, setMenuOpen] = React.useState(false);
 	const navLinkItems = linksData.map(
 		({ pageLink, pageName, ideaIcon, ideaActive }, i) => {
@@ -66,7 +60,7 @@ const Header = () => {
 	return (
 		<header className={`header d-flex-c${menuOpen ? ' header-overflow' : ''}`}>
 			<div className='wrapper'>
-				{useTabletQuery() ? (
+				{tabletQuery ? (
 					<>
 						<LogoNavLink />
 
@@ -94,7 +88,11 @@ const Header = () => {
 
 						<nav className={`pos-abs mobile-menu${menuOpen ? ' open' : ''}`}>
 							<div className='d-flex-c-c'>
-								<div className='mobile-menu__content'>
+								<div
+									className={`mobile-menu__content ${
+										mobMenuHeightQuery ? 'mobile-menu__content--overflow' : ''
+									}`}
+								>
 									<ul className='nav'>{navLinkItems}</ul>
 									<Socials />
 								</div>
