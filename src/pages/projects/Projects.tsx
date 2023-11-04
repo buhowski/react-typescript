@@ -8,21 +8,24 @@ const Projects = () => {
 			<div className='projects-container'>
 				{projectsData.map(({ img, url, name }, i) => {
 					return (
-						<div className='project d-flex-c' style={{ backgroundImage: img }} key={i}>
+						<div className='project' key={i}>
 							<div className='project__before'></div>
-							<a
-								className='a project-link'
-								href={url}
-								target='_blank'
-								rel='noopener noreferrer'
-							>
-								<div className='project-container d-flex'>
-									<h3 className='project-name'>
-										{name}
-										<span>_</span>
-									</h3>
-								</div>
-							</a>
+
+							<div className='project__bg d-flex-c' style={{ backgroundImage: img }}>
+								<a
+									className='a project-link'
+									href={url}
+									target='_blank'
+									rel='noopener noreferrer'
+								>
+									<div className='project-container d-flex'>
+										<div className='project-name'>
+											{name}
+											<span>_</span>
+										</div>
+									</div>
+								</a>
+							</div>
 						</div>
 					);
 				})}

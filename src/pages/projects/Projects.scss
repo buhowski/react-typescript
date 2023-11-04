@@ -7,34 +7,77 @@
 
 .project {
 	position: relative;
-	justify-content: flex-end;
-	flex-direction: column;
+	z-index: 0;
 	width: calc(100% / 3 - 80px / 3);
 	height: 300px;
 	flex-shrink: 0;
 	margin-right: 40px;
 	margin-bottom: 40px;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: 50% 0;
-	box-shadow: 10px 10px 10px rgba($color: $black, $alpha: 0.3);
-	animation: bgPosition 3s ease-in-out alternate infinite;
-	animation-play-state: paused;
-	transform: translateY(0);
-	transform-style: preserve-3d;
-	transition: all 0.3s ease;
-	z-index: 0;
 
 	&:nth-child(3n) {
 		margin-right: 0;
+
+		@include tablet {
+			margin-right: 40px;
+		}
+
+		@include tabletSmall {
+			margin-right: 0;
+		}
+	}
+
+	&:hover {
+		> .project__before {
+			transform: translate(18px, 8px);
+			transition: all 0.3s ease 0.2s;
+
+			@include mobile {
+				transform: translate(15px, 5px);
+			}
+		}
+
+		> .project__bg {
+			transform: translateY(-10px);
+			box-shadow: 10px 10px 10px rgba($color: $black, $alpha: 0.6);
+			animation-play-state: running;
+		}
+
+		.project-link {
+			background-size: 100% 500px;
+			background-position: 0 -20px;
+			transition: all 0.3s ease;
+		}
+	}
+
+	&__before {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -1;
+		width: 100%;
+		height: 100%;
+		background: $blue-main;
+		transition: all 0.3s ease 0.2s;
+	}
+
+	&__bg {
+		position: relative;
+		z-index: 1;
+		height: 100%;
+		justify-content: flex-end;
+		flex-direction: column;
+		background-color: $darken;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: 50% 0;
+		box-shadow: 10px 10px 10px rgba($color: $black, $alpha: 0.3);
+		animation: bgPosition 3s ease-in-out alternate infinite;
+		animation-play-state: paused;
+		transition: all 0.3s ease;
 	}
 
 	@include tablet {
 		width: calc(100% / 2 - 20px);
-
-		&:nth-child(odd) {
-			margin-right: 40px;
-		}
 
 		&:nth-child(2n) {
 			margin-right: 0;
@@ -47,40 +90,6 @@
 		margin-right: 0;
 		margin-bottom: 25px;
 	}
-
-	&:hover {
-		transform: translateY(-10px);
-		box-shadow: 10px 10px 10px rgba($color: $black, $alpha: 0.6);
-		animation-play-state: running;
-	}
-
-	&__before {
-		position: absolute;
-		z-index: -10;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		background: $blue-main;
-		transform: translateZ(-10px);
-		transform-origin: left bottom;
-		transition: all 0.3s ease 0.2s;
-	}
-
-	&:hover > .project__before {
-		transform: translate3d(18px, 18px, -10px);
-		transition: all 0.3s ease 0.2s;
-
-		@include mobile {
-			transform: translate3d(10px, 15px, -10px);
-		}
-	}
-
-	&:hover > .project-link {
-		background-size: 100% 500px;
-		background-position: 0 -20px;
-		transition: all 0.3s ease;
-	}
 }
 
 .project-link {
@@ -91,8 +100,6 @@
 	background-size: 100% 800px;
 	background-position: 0 -330px;
 	transition: all 0.3s ease;
-	position: relative;
-	z-index: 10;
 }
 
 .project-container {
