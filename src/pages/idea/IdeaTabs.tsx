@@ -52,14 +52,14 @@ class IdeaGeneral extends React.Component<IdeaGeneralProps> {
 				content: IdeaTabEn,
 			},
 			{
-				id: 2,
-				title: 'ru',
-				content: IdeaTabRu,
-			},
-			{
 				id: 3,
 				title: 'ua',
 				content: IdeaTabUa,
+			},
+			{
+				id: 2,
+				title: 'ru',
+				content: IdeaTabRu,
 			},
 		];
 
