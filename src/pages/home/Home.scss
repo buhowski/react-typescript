@@ -3,11 +3,16 @@
 .home-wrapper {
 	min-height: calc(100% - 100px);
 	height: auto;
-	@include tabletSmall {
+
+	@include tablet {
 		min-height: calc(100% - 80px);
+	}
+
+	@include tabletSmall {
 		flex-direction: column;
 		justify-content: space-between;
 	}
+
 	.base-title {
 		line-height: 1.6;
 		padding: 0;
