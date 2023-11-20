@@ -14,7 +14,7 @@ const dotsData = [
 	{
 		classItem: 'brain',
 		titleSub: 'Idea Thinker,',
-		title: 'Enthusiast & Explorer',
+		title: 'Enthusiast, Explorer',
 		img: Brain,
 	},
 	{
