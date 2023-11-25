@@ -20,8 +20,8 @@ const projectsData = [
 		img: `url(${bgStartup})`,
 		url: '/idea',
 		urlCode: 'https://github.com/buhowski/react-typescript',
-		name: 'Startup',
-		desk: `Presentation for Staffed, Feature-rich Magazine.`,
+		name: 'Startup Offer',
+		desk: `Staffed, Feature-rich Magazine. Huge potential with endless possibilities.`,
 		skills: ['UX/UI', 'SCSS', 'TypeScrpt', 'React', 'Scenario'],
 	},
 
