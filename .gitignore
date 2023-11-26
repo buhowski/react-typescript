@@ -64,4 +64,4 @@ public/
 stats.json
 
 # Misk
-*.directory
+.directory
