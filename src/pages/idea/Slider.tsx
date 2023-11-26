@@ -1,107 +1,35 @@
 import { Component } from 'react';
-import sliderImg1 from './images/barcode-art.jpg';
-import sliderImg2 from './images/bridge.jpg';
-import sliderImg3 from './images/cat.jpg';
-import sliderImg5 from './images/einstein.jpg';
-import sliderImg6 from './images/flamingo.jpg';
-import sliderImg7 from './images/paper.jpg';
-import sliderImg8 from './images/Image-for-ai.jpg';
-import sliderImg12 from './images/Retro-Pineapples-Cats-Creative-Clock-Parrots-Pocket-watch.jpg';
-import sliderImg11 from './images/writer.jpg';
-import sliderImg13 from './images/sea.jpg';
-import sliderImg15 from './images/startup.jpg';
-import sliderImg16 from './images/teresa.jpg';
-import sliderImg18 from './images/flowers.jpg';
-import sliderImg19 from './images/guitar.jpg';
-import sliderImg20 from './images/jump.jpg';
-import sliderImg22 from './images/robotics.jpg';
-import sliderImg23 from './images/two-sides.jpg';
-import sliderImg24 from './images/writer-sea.jpg';
-
 import PopupContacts from './PopupContacts';
+
+const imageFiles = [
+	'typing.gif',
+	'draw.gif',
+	'balance.gif',
+	'space.gif',
+	'routine.gif',
+	'geometric.gif',
+	'metaverse.webp',
+];
+
+const altTexts = [
+	'typing',
+	'draw',
+	'balance',
+	'space',
+	'routine',
+	'geometric',
+	'metaverse',
+];
 
 interface ImageData {
 	imgSrc: string;
 	imgAlt: string;
 }
 
-const dataImgs: ImageData[] = [
-	{
-		imgSrc: sliderImg1,
-		imgAlt: 'ai picture',
-	},
-	{
-		imgSrc: sliderImg2,
-		imgAlt: 'einstein picture',
-	},
-	{
-		imgSrc: sliderImg3,
-		imgAlt: 'architect picture',
-	},
-	{
-		imgSrc: sliderImg5,
-		imgAlt: 'mona-cat picture',
-	},
-	{
-		imgSrc: sliderImg6,
-		imgAlt: 'ow picture',
-	},
-	{
-		imgSrc: sliderImg7,
-		imgAlt: 'paint picture',
-	},
-	{
-		imgSrc: sliderImg8,
-		imgAlt: 'paper picture',
-	},
-
-	{
-		imgSrc: sliderImg11,
-		imgAlt: 'write picture',
-	},
-	{
-		imgSrc: sliderImg12,
-		imgAlt: 'chinking picture',
-	},
-	{
-		imgSrc: sliderImg13,
-		imgAlt: 'chinking picture',
-	},
-	{
-		imgSrc: sliderImg15,
-		imgAlt: 'chinking picture',
-	},
-	{
-		imgSrc: sliderImg16,
-		imgAlt: 'chinking picture',
-	},
-
-	{
-		imgSrc: sliderImg18,
-		imgAlt: 'chinking picture',
-	},
-	{
-		imgSrc: sliderImg19,
-		imgAlt: 'chinking picture',
-	},
-	{
-		imgSrc: sliderImg20,
-		imgAlt: 'chinking picture',
-	},
-
-	{
-		imgSrc: sliderImg22,
-		imgAlt: 'chinking picture',
-	},
-	{
-		imgSrc: sliderImg23,
-		imgAlt: 'chinking picture',
-	},
-	{
-		imgSrc: sliderImg24,
-		imgAlt: 'chinking picture',
-	},
-];
+const dataImgs: ImageData[] = imageFiles.map((file, index) => ({
+	imgSrc: require(`./images/${file}`),
+	imgAlt: altTexts[index],
+}));
 
 class SliderContainer extends Component {
 	state = {
