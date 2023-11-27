@@ -8,17 +8,14 @@ const linksData = [
 	{
 		pageLink: 'idea',
 		pageName: 'Startup Offer',
-		ideaIcon: 'idea-icon',
 	},
 	{
 		pageLink: 'about',
 		pageName: 'About Me',
-		ideaIcon: '',
 	},
 	{
 		pageLink: 'projects',
 		pageName: 'Projects',
-		ideaIcon: '',
 	},
 ];
 const Header = () => {
@@ -26,10 +23,10 @@ const Header = () => {
 	const mobMenuHeightQuery = useMobMenuHeightQuery();
 
 	const [menuOpen, setMenuOpen] = React.useState(false);
-	const navLinkItems = linksData.map(({ pageLink, pageName, ideaIcon }, i) => {
+	const navLinkItems = linksData.map(({ pageLink, pageName }, i) => {
 		return (
 			<li className='nav-item d-flex' key={i}>
-				<NavLink className={`a nav-link ${ideaIcon}`} to={`${pageLink}`} end>
+				<NavLink className={`a nav-link`} to={`${pageLink}`} end>
 					{pageName}
 				</NavLink>
 			</li>
