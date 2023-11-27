@@ -1,25 +1,5 @@
 @import '../../styles/variables';
 
-@keyframes lightOn {
-	0% {
-		color: $snow;
-	}
-
-	100% {
-		color: $blue-main;
-	}
-}
-
-@keyframes lightOnOut {
-	0% {
-		color: $blue-main;
-	}
-
-	100% {
-		color: $snow;
-	}
-}
-
 .header {
 	position: relative;
 	z-index: 98;

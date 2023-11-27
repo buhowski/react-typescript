@@ -35,6 +35,10 @@
 	margin-bottom: 100px;
 	width: 40%;
 
+	@include tablet {
+		margin-bottom: 80px;
+	}
+
 	@include tabletSmall {
 		width: 100%;
 		margin-bottom: 0;
