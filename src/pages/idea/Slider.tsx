@@ -2,23 +2,16 @@ import { Component } from 'react';
 import PopupContacts from './PopupContacts';
 
 const imageFiles = [
-	'typing.gif',
-	'draw.gif',
-	'balance.gif',
-	'space.gif',
-	'routine.gif',
-	'geometric.gif',
-	'metaverse.webp',
-];
-
-const altTexts = [
-	'typing',
-	'draw',
-	'balance',
-	'space',
-	'routine',
-	'geometric',
-	'metaverse',
+	'startup.jpg',
+	'brain.jpeg',
+	'creatio.jpeg',
+	'god.jpeg',
+	'writer.jpg',
+	'robotics.jpg',
+	'cubic.jpeg',
+	'draw.webp',
+	'coffee.jpeg',
+	'team.jpeg',
 ];
 
 interface ImageData {
@@ -26,9 +19,9 @@ interface ImageData {
 	imgAlt: string;
 }
 
-const dataImgs: ImageData[] = imageFiles.map((file, index) => ({
+const dataImgs: ImageData[] = imageFiles.map((file) => ({
 	imgSrc: require(`./images/${file}`),
-	imgAlt: altTexts[index],
+	imgAlt: 'startup presentation image. An offer to invest in huge potential!',
 }));
 
 class SliderContainer extends Component {
