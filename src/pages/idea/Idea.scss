@@ -283,7 +283,7 @@
 	top: 0;
 	right: 0;
 	font-size: 12px;
-	box-shadow: -5px 4px 15px rgba(0, 0, 0, 0.6);
+	box-shadow: -5px 4px 15px rgba($color: $black, $alpha: 0.6);
 	@include tabletBig {
 		top: 0;
 	}
