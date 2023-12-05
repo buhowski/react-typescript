@@ -6,7 +6,7 @@
 }
 
 .wrapper--idea {
-	height: calc(100% - 100px);
+	height: calc(100% - 120px);
 	position: relative;
 	padding-bottom: 30px;
 
@@ -41,6 +41,25 @@
 		}
 	}
 }
+
+.startup-highlight {
+	color: $starYellow;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	margin-bottom: -17px;
+	font-size: 14px;
+
+	@include tabletSmall {
+		margin-bottom: 0;
+		font-size: 12px;
+	}
+
+	&__text {
+		max-width: 555px;
+	}
+}
+
 // underline link effect
 .nav-link--underline {
 	z-index: unset;
@@ -260,6 +279,7 @@
 	top: 0;
 	right: 0;
 	font-size: 12px;
+	box-shadow: -5px 4px 15px rgba(0, 0, 0, 0.6);
 	@include tabletBig {
 		top: 0;
 	}

@@ -17,19 +17,27 @@ const socialData = [
 	},
 
 	{
-		link: cvDoc,
+		link: 'https://t.me/atsiomakh',
 		targetBlank: '_blank',
-		title: 'CV & Contacts',
-		iconClass: 'icon-cv',
+		relSecure: 'noopener noreferrer',
+		title: 'Telegram',
+		iconClass: 'icon-plane',
 	},
 
 	{
-		link: 'https://coindrop.to/buhowski',
+		link: cvDoc,
 		targetBlank: '_blank',
-		relSecure: 'noopener noreferrer',
-		title: 'Support My Inner Creator',
-		iconClass: 'icon-donate',
+		title: 'CV',
+		iconClass: 'icon-cv',
 	},
+
+	// {
+	// 	link: 'https://coindrop.to/buhowski',
+	// 	targetBlank: '_blank',
+	// 	relSecure: 'noopener noreferrer',
+	// 	title: 'Support My Inner Creator',
+	// 	iconClass: 'icon-donate',
+	// },
 ];
 
 export default socialData;

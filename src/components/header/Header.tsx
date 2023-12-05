@@ -7,7 +7,8 @@ import './Header.scss';
 const linksData = [
 	{
 		pageLink: 'idea',
-		pageName: 'Startup Offer',
+		pageName: `Startup Offer`,
+		startupLink: true,
 	},
 	{
 		pageLink: 'about',
