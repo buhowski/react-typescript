@@ -10,6 +10,8 @@
 		position: relative;
 		background: $darker;
 		flex-shrink: 0;
+		box-shadow: 0 0 11px rgba($color: $black, $alpha: 0.3);
+
 		&:last-child {
 			margin-right: 0;
 		}
