@@ -13,14 +13,14 @@ import Backpack from './images/backpack.svg';
 const dotsData = [
 	{
 		classItem: 'brain',
-		titleSub: 'Idea Thinker,',
+		titleSub: 'Innovative Vision,',
 		title: 'Enthusiast, Explorer',
 		img: Brain,
 	},
 	{
 		classItem: 'writer',
-		titleSub: 'Inventing Solutions,',
-		title: 'Innovative Vision & Scenario Creator',
+		titleSub: 'Idea Thinker,',
+		title: 'Inventing Solutions & Scenario Creator',
 		img: Writer,
 	},
 	{

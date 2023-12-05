@@ -57,6 +57,10 @@
 
 	&__text {
 		max-width: 555px;
+
+		@include mobile {
+			max-width: 350px;
+		}
 	}
 }
 

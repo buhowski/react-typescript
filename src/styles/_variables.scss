@@ -56,8 +56,9 @@ $starYellow: #e3b716;
 		@content;
 	}
 }
+
 @mixin mobileSmall {
-	@media screen and (max-width: 359px) {
+	@media screen and (max-width: 361px) {
 		@content;
 	}
 }

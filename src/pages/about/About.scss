@@ -30,9 +30,11 @@
 	max-width: 450px;
 	width: 100%;
 	margin: auto;
+
 	@include mobile {
-		max-width: 250px;
+		max-width: 315px;
 	}
+
 	.title {
 		font-family: $cs;
 		font-size: 18px;
@@ -45,6 +47,7 @@
 
 		@include mobile {
 			font-size: 14px;
+			width: 50%;
 		}
 
 		&__sub {
@@ -104,13 +107,8 @@
 			transform: rotate(12deg);
 
 			@include mobile {
-				top: -3%;
-				right: -20%;
-			}
-
-			@include mobileSmall {
-				top: -5%;
-				right: -14%;
+				top: -4%;
+				right: -4%;
 			}
 		}
 	}
@@ -132,15 +130,10 @@
 			transform: rotate(-10deg);
 
 			@include mobile {
-				top: 28%;
-				left: -24%;
-			}
-
-			@include mobileSmall {
-				top: -9%;
+				width: 58%;
+				top: -7%;
 				left: auto;
-				right: -14%;
-				width: 68%;
+				right: -5%;
 				transform: rotate(6deg);
 			}
 		}
@@ -164,14 +157,14 @@
 			text-align: left;
 
 			@include mobile {
-				top: -7%;
-				left: -15%;
+				top: 3%;
+				left: -5%;
 			}
 
 			@include mobileSmall {
-				width: 50%;
+				width: 45%;
 				top: -3%;
-				left: -8%;
+				left: 2%;
 			}
 		}
 	}
@@ -193,8 +186,8 @@
 			transform: rotate(10deg);
 
 			@include mobile {
-				bottom: 28%;
-				right: -21%;
+				bottom: 27%;
+				right: -12%;
 			}
 		}
 	}
@@ -216,13 +209,12 @@
 			transform: rotate(-8deg);
 
 			@include mobile {
-				bottom: 47%;
-				left: -21%;
+				bottom: 57%;
+				left: -8%;
 			}
 
 			@include mobileSmall {
-				bottom: 64%;
-				left: -13%;
+				left: -4%;
 			}
 		}
 	}
