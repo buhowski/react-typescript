@@ -17,6 +17,10 @@
 		@include tabletSmall {
 			margin-bottom: 2rem;
 		}
+
+		@include mobileSmall {
+			font-size: 27px;
+		}
 	}
 }
 

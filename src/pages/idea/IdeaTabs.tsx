@@ -65,6 +65,13 @@ class IdeaGeneral extends React.Component<IdeaGeneralProps> {
 
 		return (
 			<div className='wrapper wrapper--idea'>
+				<div className='startup-highlight'>
+					<p className='startup-highlight__text'>
+						This project is looking for investment or any help with development and
+						promotion. If you're interested in collaborating, feel free to contact me!
+					</p>
+				</div>
+
 				<h1 className='base-title base-title--main'>{baseTitle}</h1>
 				<h2 className='base-desc'>{baseDesc}</h2>
 
