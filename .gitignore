@@ -7,6 +7,7 @@ yarn-error.log
 
 # Compiled files
 dist/
+build/
 
 # Dependency directories
 lib/
@@ -58,8 +59,6 @@ database.yml
 .env
 
 # Webpack
-node_modules/
-public/
 .cache/
 stats.json
 
