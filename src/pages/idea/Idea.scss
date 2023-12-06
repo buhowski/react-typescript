@@ -6,7 +6,7 @@
 }
 
 .wrapper--idea {
-	height: calc(100% - 120px);
+	height: calc(100% - 100px);
 	position: relative;
 	padding-bottom: 30px;
 
@@ -198,16 +198,16 @@
 	display: flex;
 	position: relative;
 	height: 100%;
-	max-height: calc(100% - 132px - 2rem);
+	max-height: calc(100% - 152px - 2rem);
 	box-shadow: 0px 4px 18px rgba($color: $black, $alpha: 0.6);
 
 	@include laptop {
 		padding: 0 40px 45px;
-		max-height: calc(100% - 112px - 2rem);
+		max-height: calc(100% - 132px - 2rem);
 	}
 
 	@media screen and (max-width: 1366px) {
-		max-height: calc(100% - 98px - 2rem);
+		max-height: calc(100% - 118px - 2rem);
 	}
 
 	@include tabletBig {
@@ -244,6 +244,7 @@
 		margin-right: 0;
 		padding-top: 35px;
 		flex-shrink: unset;
+		overflow: visible;
 	}
 }
 
@@ -284,8 +285,10 @@
 	right: 0;
 	font-size: 12px;
 	box-shadow: -5px 4px 15px rgba($color: $black, $alpha: 0.6);
+
 	@include tabletBig {
 		top: 0;
+		box-shadow: 0 4px 15px rgba($color: $black, $alpha: 0.6);
 	}
 
 	&__btn {
@@ -334,9 +337,9 @@
 }
 
 .idea-block {
-	font-size: 16px;
-	letter-spacing: normal;
-	line-height: normal;
+	line-height: 1.4;
+	font-size: 17px;
+	letter-spacing: 0.6px;
 	color: $textGrey;
 	margin-bottom: 30px;
 
@@ -352,14 +355,14 @@
 	}
 
 	.h3 {
-		font-size: 17px;
+		font-size: 18px;
 		font-family: $ui-medium;
 		color: $titlePink;
 		margin: 15px 0 5px;
 	}
 
 	&__text {
-		margin-bottom: 10px;
+		margin-bottom: 15px;
 		white-space: pre-line;
 
 		&:last-child {
@@ -423,13 +426,6 @@
 		}
 	}
 
-	&--ps {
-		font-style: italic;
-		text-align: right;
-		font-size: 12px;
-		margin-top: 45px;
-	}
-
 	&-colored {
 		color: $titlePink;
 	}
@@ -448,7 +444,7 @@
 // Slider default style
 .slider-container {
 	width: 100%;
-	overflow: hidden;
+	// overflow: hidden;
 	position: relative;
 	margin-top: -70px;
 	display: flex;
@@ -472,6 +468,7 @@
 	position: relative;
 	overflow: hidden;
 	pointer-events: none;
+	box-shadow: 0px 0px 15px rgba($color: $black, $alpha: 0.8);
 
 	@include tabletBig {
 		height: 300px;
