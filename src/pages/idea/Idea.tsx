@@ -74,27 +74,6 @@ export default function Idea() {
 					</p>
 				))}
 			</div>
-
-			{/* Donation support text */}
-			{/* <div className='idea-block idea-block--ps'>
-				<p className='idea-block__text'>
-					<span className='idea-block-colored'>P.S. </span>
-					{data.ps1}
-					<br />
-					{data.ps2}
-				</p>
-
-				<p className='idea-block__support'>
-					{data.supportText}
-					<a
-						href='https://coindrop.to/buhowski'
-						target='_blank'
-						rel='noopener noreferrer'
-					>
-						Donate
-					</a>
-				</p>
-			</div> */}
 		</div>
 	));
 
