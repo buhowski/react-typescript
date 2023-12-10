@@ -15,7 +15,7 @@ const textData = [
 		],
 		branchDesc: `с целью заполнения контентом раздел имеет свою сферу деятельности: Журналистика, освещение мировых событий. Игры/Кино/Мульт индустрия, etc.`,
 
-		design: `Для вау-эффекта и представления главной страницы входа в приложение служат яркие и орущие на весь мир примеры обложек различных популярных журналов. Будут создаваться с оригинальным дизайном и меняться в зависимости от текущего инфоповода, вызывающие различные эмоции для массового обсуждения.`,
+		design: `Для вау-эффекта и представления главной страницы входа в приложение служат яркие, привлекающие внимание, примеры обложек различных популярных журналов. Будут создаваться с оригинальным дизайном и меняться в зависимости от текущего инфоповода, вызывающие различные эмоции для массового обсуждения.`,
 
 		conceptTitle: `Сферы деятельности`,
 		filmTitle: `Креативное производство`,
@@ -61,7 +61,7 @@ const textData = [
 		],
 		branchDesc: `in order to fill with content the section has its own field of activity: Journalism, world events coverage. Movies/Cartoons/Games Industry, etc.`,
 
-		design: `For the wow effect and presentation of the main entry page of the application are vivid and globally screaming examples of covers from various popular magazines. Will be created with original designs and changed depending on the current newsbreak, causing different emotions for public discussion.`,
+		design: `For the wow effect and presentation of the main entry page of the application are vivid and eye-catching examples of covers from various popular magazines. Will be created with original designs and changed depending on the current newsbreak, causing different emotions for public discussion.`,
 
 		conceptTitle: `Fields of Activity`,
 		filmTitle: `Creative Production`,
@@ -110,7 +110,7 @@ const textData = [
 		],
 		branchDesc: `з метою наповнення контентом розділ має свою сферу діяльності: Журналістика, висвітлення світових подій. Ігри/Кіно/Мульт індустрія, etc.`,
 
-		design: `Для вау-ефекту та уявлення головної сторінки входу в додаток слугують яскраві, привертаючі увагу криком на весь світ приклади обкладинок різних популярних журналів. Створюватимуться з оригінальним дизайном і змінюватимуться залежно від поточного інфоприводу, що викликатимуть різноманітні емоції для масового обговорення.`,
+		design: `Для вау-ефекту та уявлення головної сторінки входу в додаток слугують яскраві, привертаючі увагу, приклади обкладинок різних популярних журналів. Створюватимуться з оригінальним дизайном і змінюватимуться залежно від поточного інфоприводу, що викликатимуть різноманітні емоції для масового обговорення.`,
 
 		conceptTitle: `Сфери діяльності`,
 		filmTitle: `Креативне виробництво`,
