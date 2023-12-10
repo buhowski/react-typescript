@@ -51,7 +51,7 @@
 		}
 
 		.project__skills {
-			transform: translateY(0) translateZ(0);
+			transform: translateY(0) translateZ(2px);
 			z-index: 3
 		}
 	}
@@ -107,6 +107,7 @@
 	background: linear-gradient(0deg, $darker 20%, transparent 80%);
 	background-size: 100% 800px;
 	background-position: 0 -330px;
+	transform: translateZ(1px);
 	transition: 0.3s ease;
 }
 
