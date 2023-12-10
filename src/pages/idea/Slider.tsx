@@ -9,7 +9,7 @@ const imageFiles = [
 	'writer.jpg',
 	'robotics.jpg',
 	'cubic.jpeg',
-	'draw.webp',
+	'draw.jpg',
 	'coffee.jpeg',
 	'team.jpeg',
 ];
