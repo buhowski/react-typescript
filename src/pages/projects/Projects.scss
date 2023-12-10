@@ -52,6 +52,7 @@
 
 		.project__skills {
 			transform: translateY(0);
+			z-index: 3
 		}
 	}
 
@@ -135,7 +136,7 @@
 	left: 18px;
 	width: calc(100% - 36px);
 	padding: 12px 15px;
-	z-index: 3;
+	z-index: -3;
 	transform: translateY(calc(-100% - 10px));
 	transition: transform 0.3s ease 0.2s;
 	font-size: 12px;
