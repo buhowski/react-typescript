@@ -29,6 +29,8 @@
 	&:hover {
 		> .project__before {
 			transform: translate(18px, 8px);
+			height: 100%;
+			width: 100%;
 
 			@include mobile {
 				transform: translate(15px, 5px);
@@ -61,8 +63,8 @@
 		top: 0;
 		left: 0;
 		z-index: -1;
-		width: 100%;
-		height: 100%;
+		width: calc(100% - 5px);
+		height: calc(100% - 5px);
 		background: $blue-main;
 		transition: 0.3s ease 0.2s;
 	}
