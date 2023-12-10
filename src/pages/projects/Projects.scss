@@ -51,7 +51,7 @@
 		}
 
 		.project__skills {
-			transform: translateY(0);
+			transform: translateY(0) translateZ(0);
 			z-index: 3
 		}
 	}
@@ -137,7 +137,7 @@
 	width: calc(100% - 36px);
 	padding: 12px 15px;
 	z-index: -3;
-	transform: translateY(calc(-100% - 10px));
+	transform: translateY(calc(-100% - 10px)) translateZ(-10px);
 	transition: transform 0.3s ease 0.2s;
 	font-size: 12px;
 
