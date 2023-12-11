@@ -22,7 +22,7 @@ const projectsData = [
 		urlCode: 'https://github.com/buhowski/react-typescript',
 		name: 'My Startup Offer',
 		desk: `Huge potential with endless possibilities. Staffed, Feature-rich Magazine.`,
-		skills: ['Script', 'UX/UI', 'SCSS', 'TypeScrpt', 'React'],
+		skills: ['Script', 'UI/UX', 'SCSS', 'TypeScrpt', 'React'],
 	},
 
 	{
