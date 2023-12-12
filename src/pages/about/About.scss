@@ -31,6 +31,10 @@
 	width: 100%;
 	margin: auto;
 
+	img {
+		pointer-events: none;
+	}
+
 	@include mobile {
 		max-width: 315px;
 	}
@@ -43,7 +47,7 @@
 		width: 61%;
 		backface-visibility: hidden;
 		text-align: center;
-		font-weight: bold;
+		font-weight: 600;
 
 		@include mobile {
 			font-size: 14px;
