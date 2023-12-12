@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import SimpleBar from 'simplebar-react';
 import Copyright from './Copyright';
 import SliderContainer from './Slider';
+import { useTabletLargeQuery } from '../../hooks/useMediaQuery';
 
 interface IdeaGeneralProps {
 	IdeaTabRu: JSX.Element;
@@ -11,107 +13,111 @@ interface IdeaGeneralProps {
 	contactBtnTitle: string;
 }
 
-class IdeaGeneral extends React.Component<IdeaGeneralProps> {
-	state = {
-		currentTab: '1',
-		setCurrentTab: '1',
+function IdeaGeneral({
+	IdeaTabRu,
+	IdeaTabEn,
+	IdeaTabUa,
+	baseTitle,
+	baseDesc,
+}: IdeaGeneralProps) {
+	const useTabletLarge = useTabletLargeQuery();
+	const [currentTab, setCurrentTab] = useState('');
+	const tabs = [
+		{
+			id: '1',
+			title: 'en',
+			content: IdeaTabEn,
+		},
+		{
+			id: '3',
+			title: 'ua',
+			content: IdeaTabUa,
+		},
+		{
+			id: '2',
+			title: 'ru',
+			content: IdeaTabRu,
+		},
+	];
+
+	const handleTabClick = (e: React.MouseEvent<HTMLButtonElement>) => {
+		const target = e.currentTarget;
+		const tabId = target.getAttribute('data-tab-id');
+
+		setCurrentTab(tabId ?? '');
+
+		localStorage.setItem('currentIndex', String(tabId));
 	};
 
-	handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-		const input = event.target;
-		const value = input.type === 'checkbox' ? input.checked : input.value;
-
-		this.setState({ [input.name]: value });
-	};
-
-	handleTabClick = (e: React.MouseEvent<HTMLButtonElement>) => {
-		this.setState({
-			currentTab: e.currentTarget.id,
-			setCurrentTab: e.currentTarget.id,
-		});
-
-		localStorage.setItem('currentIndex', e.currentTarget.id);
-	};
-
-	componentDidMount() {
+	useEffect(() => {
 		const currentIndex = localStorage.getItem('currentIndex');
 
-		this.setState({
-			currentTab: currentIndex ? currentIndex : '1',
-			setCurrentTab: currentIndex ? currentIndex : '1',
-		});
-	}
+		setCurrentTab(currentIndex ? currentIndex : '1');
+	}, []);
 
-	render() {
-		const { IdeaTabRu, IdeaTabEn, IdeaTabUa, baseTitle, baseDesc } = this.props;
+	return (
+		<div className='wrapper wrapper--idea'>
+			<div className='startup-highlight'>
+				<p className='startup-highlight__text'>
+					This project is looking for investment or any help with development and
+					promotion. If you're interested in collaborating, feel free to contact me!
+				</p>
+			</div>
 
-		const tabs = [
-			{
-				id: 1,
-				title: 'en',
-				content: IdeaTabEn,
-			},
-			{
-				id: 3,
-				title: 'ua',
-				content: IdeaTabUa,
-			},
-			{
-				id: 2,
-				title: 'ru',
-				content: IdeaTabRu,
-			},
-		];
+			<h1 className='base-title base-title--main'>{baseTitle}</h1>
+			<h2 className='base-desc'>{baseDesc}</h2>
 
-		return (
-			<div className='wrapper wrapper--idea'>
-				<div className='startup-highlight'>
-					<p className='startup-highlight__text'>
-						This project is looking for investment or any help with development and
-						promotion. If you're interested in collaborating, feel free to contact me!
-					</p>
-				</div>
+			<div className='idea-section'>
+				<Copyright />
 
-				<h1 className='base-title base-title--main'>{baseTitle}</h1>
-				<h2 className='base-desc'>{baseDesc}</h2>
-
-				<div className='idea-section'>
-					<Copyright />
-
-					<div className='idea-info'>
-						<div className='idea-tabs'>
-							{/* Here goes tab items*/}
-							{tabs.map((tab, i) => (
-								<button
-									className='idea-tabs__btn'
-									type='button'
-									key={i}
-									id={tab.id.toString()}
-									onClick={this.handleTabClick}
-									data-active={this.state.currentTab === `${tab.id}`}
-								>
-									{tab.title}
-								</button>
-							))}
-						</div>
-
-						{/* Here goes tabs content */}
-						{tabs.map((tab, i) => (
-							<div
-								className='idea-overflow'
-								data-content={this.state.currentTab === `${tab.id}`}
-								key={i}
+				<div className='idea-info'>
+					<div className='idea-tabs'>
+						{/* Here goes tab items*/}
+						{tabs.map((tab) => (
+							<button
+								className='idea-tabs__btn'
+								key={tab.id}
+								data-tab-id={tab.id}
+								data-active={currentTab === tab.id}
+								onClick={handleTabClick}
 							>
-								{this.state.currentTab === `${tab.id}` && tab.content}
-							</div>
+								{tab.title}
+							</button>
 						))}
 					</div>
 
-					<SliderContainer />
+					{/* Here goes tabs content */}
+					{useTabletLarge ? (
+						tabs.map((tab) => (
+							<div
+								key={tab.id}
+								data-tab-id={tab.id}
+								className='idea-content'
+								data-active={currentTab === tab.id}
+							>
+								{currentTab === tab.id && tab.content}
+							</div>
+						))
+					) : (
+						<SimpleBar style={{ height: '100%' }} autoHide={false}>
+							{tabs.map((tab) => (
+								<div
+									key={tab.id}
+									data-tab-id={tab.id}
+									className='idea-content'
+									data-active={currentTab === tab.id}
+								>
+									{currentTab === tab.id && tab.content}
+								</div>
+							))}
+						</SimpleBar>
+					)}
 				</div>
+
+				<SliderContainer />
 			</div>
-		);
-	}
+		</div>
+	);
 }
 
 export default IdeaGeneral;

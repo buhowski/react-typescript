@@ -304,31 +304,6 @@
 	}
 }
 
-.idea-overflow {
-	height: 100%;
-	overflow: auto;
-	padding-right: 30px;
-	display: none;
-	scrollbar-width: thin;
-	scrollbar-color: $blue-main $darkest;
-
-	&[data-content='true'] {
-		display: block;
-	}
-
-	&::-webkit-scrollbar {
-		width: 3px;
-	}
-
-	&::-webkit-scrollbar-track {
-		background: $darkest;
-	}
-
-	@include tabletBig {
-		padding-right: 0;
-	}
-}
-
 .idea-concept {
 	margin-bottom: 20px;
 	&:last-child {
@@ -444,7 +419,6 @@
 // Slider default style
 .slider-container {
 	width: 100%;
-	// overflow: hidden;
 	position: relative;
 	margin-top: -70px;
 	display: flex;
@@ -520,7 +494,6 @@
 	padding: 5px;
 	align-self: flex-end;
 	margin-top: 20px;
-	// margin-bottom: 30px;
 
 	@include tabletBig {
 		position: absolute;
@@ -581,5 +554,104 @@
 				transform: rotate(-135deg) translate(-1px, 1px);
 			}
 		}
+	}
+}
+
+@media screen and (min-width: 1281px) {
+	// scrollbar styles
+	[data-simplebar] {
+		position: relative;
+		padding-right: 30px;
+		z-index: 0;
+
+		@include tabletBig {
+			padding-right: 0;
+		}
+	}
+
+	.simplebar-wrapper {
+		overflow: hidden;
+	}
+
+	.simplebar-mask {
+		direction: inherit;
+		position: absolute;
+		overflow: hidden;
+		padding: 0;
+		margin: 0;
+		left: 0;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		width: auto !important;
+		height: auto !important;
+		z-index: 0;
+	}
+
+	.simplebar-offset {
+		direction: inherit !important;
+		box-sizing: inherit !important;
+		resize: none !important;
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		padding: 0;
+		margin: 0;
+		-webkit-overflow-scrolling: touch;
+	}
+
+	.simplebar-content-wrapper {
+		direction: inherit;
+		box-sizing: border-box !important;
+		position: relative;
+		display: block;
+		height: 100%; /* Required for horizontal native scrollbar to not appear if parent is taller than natural height */
+		width: auto;
+		max-width: 100%; /* Not required for horizontal scroll to trigger */
+		max-height: 100%; /* Needed for vertical scroll to trigger */
+		overflow: auto;
+		scrollbar-width: none;
+		-ms-overflow-style: none;
+
+		&::-webkit-scrollbar {
+			display: none;
+			width: 0;
+			height: 0;
+		}
+	}
+
+	.simplebar-track {
+		z-index: 1;
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		pointer-events: none;
+		overflow: hidden;
+	}
+
+	.simplebar-scrollbar {
+		position: absolute;
+		left: 0;
+		right: 0;
+		min-height: 10px;
+	}
+
+	.simplebar-scrollbar:before {
+		position: absolute;
+		content: '';
+		background: $blue-main;
+		border-radius: 5px;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+	}
+
+	.simplebar-track.simplebar-vertical {
+		top: 0;
+		width: 3px;
+		background: $darkest;
 	}
 }

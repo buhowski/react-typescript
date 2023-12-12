@@ -22,6 +22,10 @@ const useMediaQuery = (query: string, dimension: string) => {
 	return matches;
 };
 
+const useTabletLargeQuery = () => {
+	return useMediaQuery('1280', 'width');
+};
+
 const useTabletQuery = () => {
 	return useMediaQuery('1024', 'width');
 };
@@ -30,4 +34,4 @@ const useMobMenuHeightQuery = () => {
 	return useMediaQuery('518', 'height');
 };
 
-export { useTabletQuery, useMobMenuHeightQuery };
+export { useTabletQuery, useMobMenuHeightQuery, useTabletLargeQuery };

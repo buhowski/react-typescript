@@ -17,7 +17,7 @@ body {
 ::-webkit-scrollbar {
 	width: 4px;
 
-	@include tabletSmall {
+	@include tablet {
 		width: 1px;
 	}
 }
