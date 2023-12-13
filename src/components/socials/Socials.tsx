@@ -5,14 +5,14 @@ import DonateSvg from './svg/Donate-svg';
 const Socials = () => {
 	return (
 		<div className='contact-menu d-flex-c'>
-			{socialData.map(({ link, targetBlank, relSecure, title, iconClass }, i) => {
+			{socialData.map(({ link, title, iconClass }, index) => {
 				return (
 					<a
 						className='d-flex-c-c'
+						key={index}
 						href={link}
-						target={targetBlank}
-						rel={relSecure}
-						key={i}
+						target='_blank'
+						rel='noopener noreferrer'
 					>
 						<span className='title'>{title}</span>
 						<span className={iconClass}>
