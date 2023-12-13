@@ -9,8 +9,6 @@ const About = () => {
 	const addActiveClass = (e: React.MouseEvent) => {
 		const hoveredItemId = e.currentTarget.id;
 
-		console.log(e.currentTarget.id);
-
 		if (active === hoveredItemId) {
 			setActive('');
 		} else {
