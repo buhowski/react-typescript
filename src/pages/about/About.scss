@@ -69,8 +69,8 @@
 	}
 
 	.ball {
-		width: 32px;
-		height: 32px;
+		width: 33px;
+		height: 33px;
 		z-index: 5;
 		transition: all 0.1s;
 		border-radius: 50%;
@@ -78,11 +78,10 @@
 		&:after {
 			content: '';
 			display: block;
-			width: 12px;
-			height: 12px;
+			width: 13px;
+			height: 13px;
 			background: $blue-main;
 			border-radius: 50%;
-			box-shadow: 0 0 15px $black;
 		}
 	}
 

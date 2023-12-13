@@ -7,7 +7,8 @@ const About = () => {
 	const [active, setActive] = useState('');
 
 	const addActiveClass = (e: React.MouseEvent) => {
-		const hoveredItemId = (e.target as HTMLDivElement).id;
+		const hoveredItemId = e.currentTarget.id;
+
 		if (active === hoveredItemId) {
 			setActive('');
 		} else {
