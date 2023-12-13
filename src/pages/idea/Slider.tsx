@@ -1,4 +1,4 @@
-import { Component } from 'react';
+import { useState } from 'react';
 import PopupContacts from './PopupContacts';
 
 const imageFiles = [
@@ -19,75 +19,69 @@ interface ImageData {
 	imgAlt: string;
 }
 
-const dataImgs: ImageData[] = imageFiles.map((file) => ({
+const dataImages: ImageData[] = imageFiles.map((file) => ({
 	imgSrc: require(`./images/${file}`),
 	imgAlt: 'startup presentation image. An offer to invest in huge potential!',
 }));
 
-class SliderContainer extends Component {
-	state = {
-		activeIndex: Math.floor(Math.random() * (dataImgs.length - 0) + 0),
-	};
+const SliderContainer = () => {
+	const [activeIndex, setActiveIndex] = useState(
+		Math.floor(Math.random() * (dataImages.length - 0) + 0)
+	);
 
-	clickNext = () => {
-		if (this.state.activeIndex < dataImgs.length - 1) {
-			this.setState({ activeIndex: this.state.activeIndex + 1 });
+	const clickNext = () => {
+		if (activeIndex < dataImages.length - 1) {
+			setActiveIndex(activeIndex + 1);
 		} else {
-			this.setState({ activeIndex: 0 });
+			setActiveIndex(0);
 		}
 	};
 
-	clickPrev = () => {
-		if (this.state.activeIndex > 0) {
-			this.setState({ activeIndex: this.state.activeIndex - 1 });
+	const clickPrev = () => {
+		if (activeIndex > 0) {
+			setActiveIndex(activeIndex - 1);
 		} else {
-			this.setState({ activeIndex: dataImgs.length - 1 });
+			setActiveIndex(dataImages.length - 1);
 		}
 	};
 
-	render() {
-		return (
-			<div className='slider-with-btn'>
-				<div className='slider-container'>
-					<div className='idea-slider slider-js'>
-						{dataImgs.map(({ imgSrc, imgAlt }, i) => (
-							<div
-								className='slider-item-js'
-								data-active={i === this.state.activeIndex}
-								key={i}
-							>
-								<img src={imgSrc} alt={imgAlt} />
-							</div>
-						))}
-					</div>
+	return (
+		<div className='slider-with-btn'>
+			<div className='slider-container'>
+				<div className='idea-slider slider-js'>
+					{dataImages.map(({ imgSrc, imgAlt }, i) => (
+						<div className='slider-item-js' data-active={i === activeIndex} key={i}>
+							<img src={imgSrc} alt={imgAlt} />
+						</div>
+					))}
+				</div>
 
-					<span className='slides-number'>
-						{`${this.state.activeIndex + 1 < 10 ? '0' : ''}${
-							this.state.activeIndex + 1
-						} / ${dataImgs.length < 10 ? '0' : ''}${dataImgs.length}`}
-					</span>
+				<span className='slides-number'>
+					{`${activeIndex + 1 < 10 ? '0' : ''}${activeIndex + 1} / ${
+						dataImages.length < 10 ? '0' : ''
+					}${dataImages.length}`}
+				</span>
 
-					<div className='slider-actions'>
-						<button
-							className='slider-btn-js slider-btn-js-prev'
-							type='button'
-							onClick={this.clickPrev}
-						></button>
+				<div className='slider-actions'>
+					<button
+						className='slider-btn-js slider-btn-js-prev'
+						type='button'
+						onClick={clickPrev}
+					></button>
 
-						<button
-							className='slider-btn-js slider-btn-js-next'
-							type='button'
-							onClick={this.clickNext}
-						></button>
-					</div>
-
-					<PopupContacts />
+					<button
+						className='slider-btn-js slider-btn-js-next'
+						type='button'
+						onClick={clickNext}
+					></button>
 				</div>
 
 				<PopupContacts />
 			</div>
-		);
-	}
-}
+
+			<PopupContacts />
+		</div>
+	);
+};
 
 export default SliderContainer;

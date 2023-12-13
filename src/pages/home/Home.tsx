@@ -10,7 +10,9 @@ const Home = () => {
 				<h1 className='base-title'>
 					Alexander <span>Tsiomakh</span>
 				</h1>
+
 				<h2 className='tag-color'>Front-End Developer</h2>
+
 				<Socials />
 			</div>
 

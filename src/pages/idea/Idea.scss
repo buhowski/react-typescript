@@ -110,7 +110,7 @@
 	&__list {
 		user-select: text;
 		position: absolute;
-		bottom: 45px;
+		bottom: 44px;
 		left: 50%;
 		transform: translateX(-50%);
 		box-shadow: 0px 4px 10px rgba($color: $black, $alpha: 0.6);
@@ -124,6 +124,7 @@
 		visibility: hidden;
 		transition: height 0.4s, visibility 0.4s;
 		width: max-content;
+
 		&-items {
 			padding: 15px 20px;
 		}
@@ -138,8 +139,9 @@
 		a {
 			color: $blue-main;
 			transition: color 0.3s;
+
 			&:hover {
-				color: $titlePink;
+				color: $starYellow;
 			}
 		}
 	}
@@ -577,8 +579,6 @@
 		direction: inherit;
 		position: absolute;
 		overflow: hidden;
-		padding: 0;
-		margin: 0;
 		left: 0;
 		top: 0;
 		bottom: 0;
@@ -593,12 +593,10 @@
 		box-sizing: inherit !important;
 		resize: none !important;
 		position: absolute;
-		top: 0;
-		left: 0;
-		bottom: 0;
-		right: 0;
-		padding: 0;
-		margin: 0;
+		top: 0 !important;
+		left: 0 !important;
+		bottom: 0 !important;
+		right: 0 !important;
 		-webkit-overflow-scrolling: touch;
 	}
 
@@ -618,7 +616,6 @@
 		&::-webkit-scrollbar {
 			display: none;
 			width: 0;
-			height: 0;
 		}
 	}
 
@@ -627,7 +624,7 @@
 		position: absolute;
 		right: 0;
 		bottom: 0;
-		pointer-events: none;
+		cursor: pointer;
 		overflow: hidden;
 	}
 
@@ -639,10 +636,10 @@
 	}
 
 	.simplebar-scrollbar:before {
-		position: absolute;
 		content: '';
 		background: $blue-main;
-		border-radius: 5px;
+		border-radius: 10px;
+		position: absolute;
 		top: 0;
 		bottom: 0;
 		left: 0;
@@ -652,6 +649,7 @@
 	.simplebar-track.simplebar-vertical {
 		top: 0;
 		width: 3px;
+		border-radius: 10px;
 		background: $darkest;
 	}
 }

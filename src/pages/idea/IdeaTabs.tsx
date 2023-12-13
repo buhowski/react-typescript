@@ -13,13 +13,13 @@ interface IdeaGeneralProps {
 	contactBtnTitle: string;
 }
 
-function IdeaGeneral({
+const IdeaGeneral = ({
 	IdeaTabRu,
 	IdeaTabEn,
 	IdeaTabUa,
 	baseTitle,
 	baseDesc,
-}: IdeaGeneralProps) {
+}: IdeaGeneralProps) => {
 	const useTabletLarge = useTabletLargeQuery();
 	const [currentTab, setCurrentTab] = useState('');
 	const tabs = [
@@ -118,6 +118,6 @@ function IdeaGeneral({
 			</div>
 		</div>
 	);
-}
+};
 
 export default IdeaGeneral;
