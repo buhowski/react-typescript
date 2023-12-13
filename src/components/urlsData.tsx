@@ -1,5 +1,3 @@
-export const urlCV = '../assets/CV_Alexander_Tsiomakh_FrontEnd.pdf';
-
 export const urlTelegram = 'https://t.me/atsiomakh';
 
 export const urlLinkedIn = 'https://www.linkedin.com/in/buhowski';
