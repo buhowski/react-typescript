@@ -1,19 +1,20 @@
 import { useState } from 'react';
+import { urlTelegram, urlGmail, urlLinkedIn } from '../../components/urlsData';
 
 const dataContacts = [
 	{
 		name: 'Telegram: ',
-		url: 'https://t.me/atsiomakh',
+		url: urlTelegram,
 		linkTitle: 'Write To Me',
 	},
 	{
 		name: 'Gmail: ',
-		url: 'mailto:a.tsiomakh@gmail.com',
+		url: urlGmail,
 		linkTitle: 'a.tsiomakh@gmail.com',
 	},
 	{
 		name: 'LinkedIn: ',
-		url: 'https://www.linkedin.com/in/buhowski',
+		url: urlLinkedIn,
 		linkTitle: 'Alexander Tsiomakh',
 	},
 ];
