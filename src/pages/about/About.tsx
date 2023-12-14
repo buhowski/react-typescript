@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import dotsData from './aboutData';
 import PhotoBg from './images/body.png';
+import { useTabletQuery } from '../../hooks/useMediaQuery';
 import './About.scss';
 
 const About = () => {
+	const useTablet = useTabletQuery();
 	const [active, setActive] = useState('');
 
 	const addActiveClass = (e: React.MouseEvent) => {
@@ -33,7 +35,7 @@ const About = () => {
 						<div className={`pos-abs about-item ${classItem}`} key={i}>
 							<div
 								id={classItem}
-								onMouseEnter={addActiveClass}
+								onMouseEnter={!useTablet ? addActiveClass : undefined}
 								onClick={addActiveClass}
 								className={`d-flex-c-c ball${active === classItem ? ' active' : ''}`}
 							></div>

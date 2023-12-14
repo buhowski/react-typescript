@@ -34,4 +34,4 @@ const useMobMenuHeightQuery = () => {
 	return useMediaQuery('518', 'height');
 };
 
-export { useTabletQuery, useMobMenuHeightQuery, useTabletLargeQuery };
+export { useMobMenuHeightQuery, useTabletQuery, useTabletLargeQuery };
