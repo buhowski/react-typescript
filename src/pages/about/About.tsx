@@ -22,7 +22,10 @@ const About = () => {
 
 			<div className='about-info'>
 				<div className='img'>
-					<img src={PhotoBg} alt='looking into the future' />
+					<img
+						src={PhotoBg}
+						alt='Олександр Цьомах, buhowski, about, Starter Pack, Front End, Startup, CV, Resume, Человек Мужик'
+					/>
 				</div>
 
 				{dotsData.map(({ classItem, title, titleSub, img }, i) => {
@@ -45,7 +48,7 @@ const About = () => {
 									className='line-drawing-pic'
 									src={img}
 									alt={
-										'About Цьомах Олександр, Starter Pack, Front End Development, Startup, buhowski'
+										'About, Цьомах Олександр, Starter Pack, Front End Development, Startup, buhowski, Человек Мужик'
 									}
 								/>
 							</div>

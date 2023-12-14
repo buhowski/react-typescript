@@ -9,7 +9,7 @@ interface Point {
 	y: number;
 }
 
-export default function DrawCanvas() {
+const DrawCanvas = () => {
 	useEffect(() => {
 		const imageCanvas: HTMLCanvasElement | null = document.createElement('canvas');
 		const lineCanvas: HTMLCanvasElement | null = document.createElement('canvas');
@@ -22,7 +22,7 @@ export default function DrawCanvas() {
 
 		const start = () => {
 			imageCanvas?.addEventListener('mousemove', onMouseMove);
-			imageCanvas?.addEventListener('touchmove', onTouchMove);
+			imageCanvas?.addEventListener('touchmove', onTouchMove, { passive: true });
 			window.addEventListener('resize', resizeCanvases);
 			document.querySelector('.drawCanvas')?.appendChild(imageCanvas);
 
@@ -150,9 +150,11 @@ export default function DrawCanvas() {
 				<img
 					className='illustrationImage'
 					src={illustrationImage}
-					alt='illustrationImage'
+					alt='Олександр Цьомах, buhowski, Front End, Startup, CV, Resume, Человек Мужик'
 				/>
 			</div>
 		</div>
 	);
-}
+};
+
+export default DrawCanvas;

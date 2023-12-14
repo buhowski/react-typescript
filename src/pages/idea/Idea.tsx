@@ -2,7 +2,7 @@ import './Idea.scss';
 import IdeaTabs from './IdeaTabs';
 import textData from './textData';
 
-export default function Idea() {
+const Idea = () => {
 	const contactBtnTitle = 'Get In Touch';
 	const baseTitle = 'Presentation';
 	const baseDesc = 'An offer to invest in huge potential!';
@@ -87,4 +87,6 @@ export default function Idea() {
 			contactBtnTitle={contactBtnTitle}
 		/>
 	);
-}
+};
+
+export default Idea;
