@@ -216,7 +216,7 @@
 		flex-direction: column-reverse;
 		padding: 40px;
 		padding-bottom: 150px;
-		max-height: unset;
+		max-height: 100%;
 		max-width: 777px;
 		width: 100%;
 		margin: 0 auto;
@@ -229,7 +229,6 @@
 }
 
 .idea-info {
-	height: 100%;
 	width: calc(50% + 2px);
 	margin-right: 40px;
 	flex-shrink: 0;
