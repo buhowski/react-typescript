@@ -229,6 +229,7 @@
 }
 
 .idea-info {
+	height: 100%;
 	width: calc(50% + 2px);
 	margin-right: 40px;
 	flex-shrink: 0;
@@ -241,6 +242,7 @@
 	}
 
 	@include tabletBig {
+		height: auto;
 		width: 100%;
 		margin-right: 0;
 		padding-top: 35px;
