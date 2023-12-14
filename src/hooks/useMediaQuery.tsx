@@ -22,16 +22,20 @@ const useMediaQuery = (query: string, dimension: string) => {
 	return matches;
 };
 
-const useTabletLargeQuery = () => {
-	return useMediaQuery('1280', 'width');
+const useMobMenuHeightQuery = () => {
+	return useMediaQuery('518', 'height');
+};
+
+const useMobileQuery = () => {
+	return useMediaQuery('768', 'width');
 };
 
 const useTabletQuery = () => {
 	return useMediaQuery('1024', 'width');
 };
 
-const useMobMenuHeightQuery = () => {
-	return useMediaQuery('518', 'height');
+const useTabletLargeQuery = () => {
+	return useMediaQuery('1280', 'width');
 };
 
-export { useMobMenuHeightQuery, useTabletQuery, useTabletLargeQuery };
+export { useMobMenuHeightQuery, useMobileQuery, useTabletQuery, useTabletLargeQuery };
