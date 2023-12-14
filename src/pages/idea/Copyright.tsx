@@ -1,4 +1,4 @@
-export default function Copyright() {
+const Copyright = () => {
 	return (
 		<div className='idea-copy'>
 			<p>
@@ -6,4 +6,6 @@ export default function Copyright() {
 			</p>
 		</div>
 	);
-}
+};
+
+export default Copyright;

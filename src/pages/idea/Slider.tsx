@@ -3,15 +3,15 @@ import PopupContacts from './PopupContacts';
 
 const imageFiles = [
 	'startup.jpg',
-	'brain.jpeg',
-	'creatio.jpeg',
-	'god.jpeg',
+	'brain.jpg',
+	'creatio.jpg',
+	'god.jpg',
 	'writer.jpg',
 	'robotics.jpg',
-	'cubic.jpeg',
+	'cubic.jpg',
 	'draw.jpg',
-	'coffee.jpeg',
-	'team.jpeg',
+	'coffee.jpg',
+	'team.jpg',
 ];
 
 interface ImageData {
@@ -21,7 +21,8 @@ interface ImageData {
 
 const dataImages: ImageData[] = imageFiles.map((file) => ({
 	imgSrc: require(`./images/${file}`),
-	imgAlt: 'startup presentation image. An offer to invest in huge potential!',
+	imgAlt:
+		' $$$, Me Starter Pack, Front End, investment, invest, Startup offer, Staffed, feature-rich magazine, Elevator Pitch, venture, CV, Resume, private entrepreneur, Олександр Цьомах, buhowski, Человек Мужик, свіже повітря свободи, Журналістика, Journalism, Гонзо, gonzo, Modernized magazine redesign, social network, microblogging, Online cinema, video hosting and live streaming, Imageboard and anonymous web forum, Новый формат журнала, социальная сеть, микроблогинг, Онлайн кинотеатр, видеохостинг и лайв стриминг, Имиджборд и анонимный веб-форум, Новий формат журналу, соціальна мережа, мікроблогінг, Онлайн кінотеатр, відеохостинг та лайв стрімінг, Іміджборд та анонімний веб-форум',
 }));
 
 const SliderContainer = () => {
