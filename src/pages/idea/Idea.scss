@@ -319,7 +319,7 @@
 	font-size: 17px;
 	letter-spacing: 0.6px;
 	color: $textGrey;
-	margin-bottom: 30px;
+	margin-bottom: 25px;
 
 	&:last-child {
 		margin-bottom: 0;
@@ -328,6 +328,7 @@
 	.h2 {
 		color: $blue-main;
 		font-size: 21px;
+		line-height: normal;
 		font-family: $ui-medium;
 		margin-bottom: 15px;
 	}
