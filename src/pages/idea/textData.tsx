@@ -5,7 +5,7 @@ const textData = [
 		pitchText: `У меня есть необъятное желание создать социальную платформу (мобильное приложение и веб-сервис) для развития потенциала в Украине с возможностью выхода на международный уровень. Это новое пространство бесконечных возможностей, свежий воздух свободы, многофункциональный продукт для создания чего угодно, от технологических инноваций до самовыражения личности, всё лучшее в одном месте!`,
 
 		basic: `Основа: Приложение`,
-		appSample: `Укомплектованный, многофункциональный журнал с возможностью создания и продвижения любой деятельности со встроенной функцией поддержки автора. Также место для просмотра всевозможной информации и развлечения. В основном сосредоточено под мобильное приложение с расширенным и доступным веб сайтом – это снаружи, а внутри – огромный потенциал желающий присоединиться к компаниям, что двигают прогресс.`,
+		appSample: `Укомплектованный, многофункциональный журнал с возможностью создания и продвижения любой деятельности с интегрированной поддержкой автора. Также место для просмотра всевозможной информации и развлечения. В основном сосредоточено под мобильное приложение с расширенным и доступным веб сайтом – это снаружи, а внутри – огромный потенциал желающий присоединиться к компаниям, что двигают прогресс.`,
 
 		possibilitiesTitle: `Особенности и возможности:`,
 		possibilitiesStar: [
@@ -51,7 +51,7 @@ const textData = [
 		pitchText: `I have a great desire to create a social platform (mobile application and web service) for potential development in Ukraine with the ability to go global. It's a new space of endless possibilities, a fresh air of freedom, a multifunctional product for creating anything you want, from technological innovation to personal improvement, all the best of everything in one place!`,
 
 		basic: `Base: Application`,
-		appSample: `Staffed, feature-rich magazine with the ability to create and promote any kind of activity with integrated support for the author. Also a place for browsing all sorts of information and entertainment. Mostly focused under a mobile app with an extended and accessible web site – on the outside, and on the inside – a huge potential of wanting to join the companies that are moving progress.`,
+		appSample: `Staffed, feature-rich magazine with the ability to create and promote any kind of activity with integrated author support. Also a place for browsing all sorts of information and entertainment. Mostly focused under a mobile app with an extended and accessible web site – on the outside, and on the inside – a huge potential of wanting to join the companies that are moving progress.`,
 
 		possibilitiesTitle: `Features and Capabilities:`,
 		possibilitiesStar: [
@@ -100,7 +100,7 @@ const textData = [
 		pitchText: `Маю неосяжне бажання створити соціальну платформу (мобільний додаток і веб-сервіс) для розвитку потенціалу в Україні з можливістю виходу на міжнародний рівень. Це новий простір нескінченних можливостей, свіже повітря свободи, багатофункціональний продукт для створення чого завгодно, від технологічних інновацій до самовираження особистості, все найкраще в одному місці!`,
 
 		basic: `Основа: Додаток`,
-		appSample: `Укомплектований, багатофункціональний журнал з можливістю створення та просування будь-якої діяльності із вбудованою функцією підтримки автора. Також місце для перегляду різноманітної інформації та розваг. Здебільшого зосереджене під мобільний додаток із розширеним і доступним веб сайтом – це ззовні, а всередині – величезний потенціал охочий приєднатися до компаній, які сприяють прогресу.`,
+		appSample: `Укомплектований, багатофункціональний журнал з можливістю створення та просування будь-якої діяльності з інтегрованою підтримкою автора. Також місце для перегляду різноманітної інформації та розваг. Здебільшого зосереджене під мобільний додаток із розширеним і доступним веб сайтом – це ззовні, а всередині – величезний потенціал охочий приєднатися до компаній, які сприяють прогресу.`,
 
 		possibilitiesTitle: `Особливості та можливості:`,
 		possibilitiesStar: [
