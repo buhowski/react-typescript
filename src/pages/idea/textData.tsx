@@ -84,7 +84,7 @@ const textData = [
 
 		whyTitle: `Why(?): Motive`,
 		whyInfo: [
-			`All current social networks have turned or are turning into “bygone era TVs'', with censorship to the point of absurdity and a stream of endless advertising all around that clutters the content. That's why we need to revise the obvious and create a new open platform, a shift in direction, a breath of fresh air.`,
+			`All current social networks have turned or are turning into “bygone era TVs'', with censorship to the point of absurdity and a stream of endless advertising all around that clutters the content. That's why we need to revise the obvious and create a new open platform, a shift in direction and breath of fresh air.`,
 
 			`For Ukraine it will be the first of such a place format, where everything will be focused on unleashing the creative potential of personality, freedom of expression and promotion of a modern world view. And the usual entertainment as well.`,
 
