@@ -1,7 +1,7 @@
 const textData = [
-	// ################## RUSIAN
+	// RUSIAN
 	{
-		pitchTitle: `Elevator Pitch`,
+		pitchTitle: `Pitch`,
 		pitchText: `У меня есть необъятное желание создать социальную платформу (мобильное приложение и веб-сервис) для развития потенциала в Украине с возможностью выхода на международный уровень. Это новое пространство бесконечных возможностей, свежий воздух свободы, многофункциональный продукт для создания чего угодно, от технологических инноваций до самовыражения личности, всё лучшее в одном месте!`,
 
 		basic: `Основа: Приложение`,
@@ -34,20 +34,20 @@ const textData = [
 		],
 
 		excursusTitle: `Разработка: Minimal Viable Product`,
-		excursusInfo: `Первоначальный запуск включает редизайн журнала с социальной сетью, рубрику “Журналистика” и функциональный Имиджборд с готовой информацией для различных ситуаций, а также идеями и продвижением остального, что способствует привлечению аудитории и последующему развитию.`,
+		excursusInfo: `Первоначальный запуск включает редизайн журнала с многофункциональной социальной сетью, рубрику “Журналистика” и укомплектованный Имиджборд с готовой информацией для различных ситуаций, а также идеями и продвижением остального, что способствует привлечению аудитории и последующему развитию.`,
 
 		whyTitle: `Why(?): Мотив`,
 		whyInfo: [
 			`Все текущие социальные сети превратились или превращаются в “телевизоры былой эпохи”, где вокруг сплошная цензура до абсурда и поток нескончаемой рекламы, который захламляет контент. Именно поэтому и нужен пересмотр очевидного и создание новой свободной площадки, смена курса на свежий воздух.`,
-			`Для Украины это и вовсе будет первое, своего рода, место подобного формата, где все будет нацелено на раскрытие творческого потенциала личности, свободы высказывания и продвижения современного мировоззрения. Ну и обычное развлечение никто не отменял.`,
-			`Это приложение объединит лучшие возможности в удобном формате – без лишней мишуры и ненужных функций. Стильный минималистически-модернистский дизайн, футуристический подход с максимальная отзывчивость к потребителю.`,
+			`Для Украины это будет первое место подобного формата, где все будет нацелено на раскрытие творческого потенциала личности, свободы высказывания и продвижения современного мировоззрения. А также и привычные развлечения.`,
+			`Это приложение объединит лучшие возможности в удобном формате – без лишних и ненужных функций. Стильный минималистически-модернистский дизайн, футуристический подход с максимальная отзывчивость к потребителю.`,
 			`В процессе формирования и правильным подходом к реализации, это место идеально займет свою нишу производства всего вышеперечисленного, становясь ведущей сферой производства и подчеркивая стремление популяризировать развитие в стране.`,
 		],
 	},
 
-	// ################# ENGLISH
+	// ENGLISH
 	{
-		pitchTitle: `Elevator Pitch`,
+		pitchTitle: `Pitch`,
 		pitchText: `I have a great desire to create a social platform (mobile application and web service) for potential development in Ukraine with the ability to go global. It's a new space of endless possibilities, a fresh air of freedom, a multifunctional product for creating anything you want, from technological innovation to personal improvement, all the best of everything in one place!`,
 
 		basic: `Base: Application`,
@@ -66,9 +66,9 @@ const textData = [
 		conceptTitle: `Fields of Activity`,
 		filmTitle: `Creative Production`,
 		filmInfo: [
-			`In general, my perspective is focused on the development of scale and collaboration of different spheres of activity, from innovative technologies to creative self-expression. And if we bring all the best and long-known things in one place and create a professional team of critical thinkers and enthusiasts, the jump in evolutionary process will happen all by itself, which will allow us to create a new history of culture, art and technological growth in Ukraine and the global industry.`,
+			`In general, my perspective is focused on the development of scale and collaboration of different spheres of activity, from innovative technologies to creative self-expression. And if we bring all the best and long-known things in one place and create a professional team of critical thinkers and enthusiasts, the jump in evolutionary process will happen all by itself, which will allow us to create a new history of culture, art and technological growth in Ukraine and world industry.`,
 
-			`Primary Plan: Creation and re-engineering of the IT sector. Making movies, cartoons, computer games (for which there are ready made ideas and scripts to start) + studio of exact translation and voice acting.
+			`Primary Plan: Creation and re-engineering of the IT sector. Making movies, cartoons, computer games (for which there are ready made ideas and scripts to start) + studio of exact translation and voice acting. 
 			Additionally: automation of all obsolete life processes and more.`,
 		],
 
@@ -76,17 +76,17 @@ const textData = [
 		journalistInfo: [
 			`A new narrative of modern breathing, different opinions, truth and dirty realism. A peculiar presentation of information without censorship – direct, sarcastic, with the character of everyday language writing style, honesty, and simplicity in describing life, featuring both heroes and anti-heroes.`,
 
-			`Gonzo Journalism, making story diaries from the first person or group of people, immersing oneself in events, becoming part of the history. An unpredictable and experimental style. diving into the depths of the absurdity of an issue, studying it from within, or creating specific conditions for its appearance. Topics revolve around contemporary culture and social issues.`,
+			`Gonzo Journalism, making story diaries from the first person or group of people, immersing oneself in events, becoming part of the history. An unpredictable and experimental style. Diving into the depths of the absurdity of an issue, studying it from inside, or creating specific conditions for its appearance. Subjects dealing with contemporary culture and social issues.`,
 		],
 
 		excursusTitle: `Development: Minimal Viable Product`,
-		excursusInfo: `The initial launch includes a redesign of the magazine with a social network inside, a Journalism section and a functional Imageboard with ready-made information for various situations, as well as ideas and promotion of the rest, which helps to engage the audience and further development.`,
+		excursusInfo: `The initial launch includes a redesign of the magazine with a feature-rich social network inside, a Journalism section and a staffed Imageboard with ready-made information for a variety of situations, together with ideas and promotion of the rest, which helps to engage the audience and further development.`,
 
 		whyTitle: `Why(?): Motive`,
 		whyInfo: [
-			`All current social networks have turned or are turning into “bygone era TVs'', with censorship to the point of absurdity and a stream of endless advertising all around that clutters the content. That's why we need to revise the obvious and create a new open platform, a shift in direction towards a breath of fresh air.`,
+			`All current social networks have turned or are turning into “bygone era TVs'', with censorship to the point of absurdity and a stream of endless advertising all around that clutters the content. That's why we need to revise the obvious and create a new open platform, a shift in direction, a breath of fresh air.`,
 
-			`For Ukraine it will be the first kind of such place format, where everything will be focused on unlocking the creative potential of personality, freedom of expression and promotion of a modern worldview. And the usual entertainment nobody canceled.`,
+			`For Ukraine it will be the first of such a place format, where everything will be focused on unleashing the creative potential of personality, freedom of expression and promotion of a modern world view. And the usual entertainment as well.`,
 
 			`This application will combine the best features in a convenient format – without unnecessary functions and useless things. With a stylish modern minimalist design, futuristic offshoot and maximum responsiveness to the consumer.`,
 
@@ -94,9 +94,9 @@ const textData = [
 		],
 	},
 
-	// ################# UKRAINE
+	// UKRAINE
 	{
-		pitchTitle: `Elevator Pitch`,
+		pitchTitle: `Pitch`,
 		pitchText: `Маю неосяжне бажання створити соціальну платформу (мобільний додаток і веб-сервіс) для розвитку потенціалу в Україні з можливістю виходу на міжнародний рівень. Це новий простір нескінченних можливостей, свіже повітря свободи, багатофункціональний продукт для створення чого завгодно, від технологічних інновацій до самовираження особистості, все найкраще в одному місці!`,
 
 		basic: `Основа: Додаток`,
@@ -129,15 +129,15 @@ const textData = [
 		],
 
 		excursusTitle: `Розробка: Minimal Viable Product`,
-		excursusInfo: `Початковий запуск включає редизайн журналу з соціальною мережею, рубрику "Журналістика" і функціональний Іміджборд з готовою інформацією для різних ситуацій, а також ідеями та просуванням решти, що сприятиме залученню аудиторії та подальшому розвитку.`,
+		excursusInfo: `Початковий запуск включає редизайн журналу з багатофункціональною соціальною мережею, рубрику "Журналістика" та укомплектований Іміджборд з готовою інформацією для різних ситуацій, а також ідеями та просуванням решти, що сприятиме залученню аудиторії та подальшому розвитку.`,
 
 		whyTitle: `Why(?): Мотив`,
 		whyInfo: [
 			`Усі поточні соціальні мережі перетворилися чи перетворюються на “телевізори минувшої епохи”, де навколо суцільна цензура до абсурду і потік нескінченної реклами, що захаращує контент. Саме тому і потрібно переосмислення очевидного і створення нового вільного простору, зміна курсу на свіже повітря.`,
 
-			`Для України це і взагалі буде перше, свого роду, місце подібного формату, де все буде націлене на розкриття творчого потенціалу особистості, свободи висловлювання та просування сучасного світогляду. Ну і звичайних розваг ніхто не відміняв.`,
+			`Для України це буде перше місце подібного формату, де все націлене на розкриття творчого потенціалу особистості, свободи висловлювання та просування сучасного світогляду. Ну і звичайні розваги також.`,
 
-			`Цей додаток об'єднає найкращі можливості в зручному форматі – без зайвої мішури та непотрібних функцій. Стильний мінімалістично-модерністський дизайн, футуристичний підхід з максимальним відгуком до споживача.`,
+			`Цей додаток об'єднає найкращі можливості в зручному форматі – без зайвих та непотрібних функцій. Стильний мінімалістично-модерністський дизайн, футуристичний підхід з максимальним відгуком до споживача.`,
 
 			'В процесі формування та правильним підходом до реалізації, це місце ідеально займатиме свою нішу виробництва всього вищепереліченого, стаючи провідною сферою виробництва і підкреслюючи прагнення популяризувати розвиток в країні.',
 		],
