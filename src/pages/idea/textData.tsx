@@ -15,22 +15,22 @@ const textData = [
 		],
 		branchDesc: `с целью заполнения контентом раздел имеет свою сферу деятельности: Журналистика, освещение мировых событий. Игры/Кино/Мульт индустрия, etc.`,
 
-		design: `Для вау-эффекта и представления главной страницы входа в приложение служат яркие, привлекающие внимание, примеры обложек различных популярных журналов. Будут создаваться с оригинальным дизайном и меняться в зависимости от текущего инфоповода, вызывающие различные эмоции для массового обсуждения.`,
+		design: `Для вау-эффекта и представления главной страницы входа в приложение служат яркие и привлекающие внимание постеры актуальных событий. Будут создаваться с оригинальным дизайном и меняться в зависимости от текущего инфоповода, вызывающие различные эмоции для массового обсуждения.`,
 
 		conceptTitle: `Сферы деятельности`,
 		filmTitle: `Креативное производство`,
 		filmInfo: [
 			`В общем и целом моя перспектива сфокусирована на развитие масштаба и коллаборации разных сфер деятельности, от инновационных технологий до креативного самовыражения. И если собрать всё лучшее и давно известное в одном месте и создать профессиональный коллектив критически мыслящих идейников и энтузиастов, то скачок эволюционного процесса произойдет сам собой, что позволит творить новую историю культуры, искусства и технологического развития в Украине и мировой индустрии.`,
 
-			`Первоначальный замысел: Создание и реинжиниринг IT-сектора. Разработка компьютерных игр, кино, мультфильмов (на что уже есть готовые идеи и сценарии для старта) + студия правильного перевода и озвучки.
+			`Первоначальный замысел: Создание и реинжиниринг IT-сектора. Разработка игр, кино, мультфильмов (на что уже есть готовые идеи и сценарии для старта) + студия правильного перевода и озвучки.
 			Дополнительно: автоматизация всех устаревших процессов жизнедеятельности и далее больше.`,
 		],
 
 		journalist: `Журналистика`,
 		journalistInfo: [
-			`Новое повествование современного дыхания, различные мнения, правда и грязный реализм. Своеобразная подача информации без цензуры – прямая, саркастичная с характером стиля письменности повседневного языка, честностью и простотой в описании жизни, с героями и антигероями.`,
+			`Новое повествование современного дыхания, различные мнения, правда и грязный реализм. Своеобразная подача информации без цензуры – прямая, саркастичная с характером стиля письменности повседневного языка, честность и простота в описании жизни, с героями и антигероями.`,
 
-			`Гонзо-журналистика, ведение сюжетных дневников от первого лица или группы лиц, включаясь в события, становясь частью истории. Непредсказуемый и экспериментальный стиль. Нырять в самое пекло идиотизма проблемы, изучая вопрос изнутри или создавать определенные условия для его появления. Темы связанные с современной культурой и социальными проблемами.`,
+			`Гонзо-журналистика, ведение сюжетных дневников от первого лица или группы лиц, включаясь в события, становясь частью истории, непредсказуемый и экспериментальный стиль. Нырять в самое пекло идиотизма проблемы, изучая вопрос изнутри или создавать определенные условия для его появления. Темы связанные с современной культурой и социальными проблемами.`,
 		],
 
 		excursusTitle: `Разработка: Minimal Viable Product`,
@@ -39,9 +39,12 @@ const textData = [
 		whyTitle: `Why(?): Мотив`,
 		whyInfo: [
 			`Все текущие социальные сети превратились или превращаются в “телевизоры былой эпохи”, где вокруг сплошная цензура до абсурда и поток нескончаемой рекламы, который захламляет контент. Именно поэтому и нужен пересмотр очевидного и создание новой свободной площадки, смена курса на свежий воздух.`,
+
 			`Для Украины это будет первое место подобного формата, где все будет нацелено на раскрытие творческого потенциала личности, свободы высказывания и продвижения современного мировоззрения. А также и привычные развлечения.`,
-			`Это приложение объединит лучшие возможности в удобном формате – без лишних и ненужных функций. Стильный минималистически-модернистский дизайн, футуристический подход с максимальная отзывчивость к потребителю.`,
-			`В процессе формирования и правильным подходом к реализации, это место идеально займет свою нишу производства всего вышеперечисленного, становясь ведущей сферой производства и подчеркивая стремление популяризировать развитие в стране.`,
+
+			`Это приложение объединит лучшие возможности в удобном формате – без лишних и ненужных функций. Стильный минималистически-модернистский дизайн и футуристический подход с максимальной отзывчивостью к потребителю.`,
+
+			`В процессе формирования и правильным подходом к реализации, это место идеально займет свою нишу производства всего вышеперечисленного и новосозданного, становясь ведущей сферой, голосом разума, подчеркивая стремление популяризировать развитие в стране.`,
 		],
 	},
 
@@ -61,22 +64,22 @@ const textData = [
 		],
 		branchDesc: `in order to fill with content the section has its own field of activity: Journalism, world events coverage. Movies/Cartoons/Games Industry, etc.`,
 
-		design: `For the wow effect and presentation of the main entry page of the application are vivid and eye-catching examples of covers from various popular magazines. Will be created with original designs and changed depending on the current newsbreak, causing different emotions for public discussion.`,
+		design: `For the wow effect and presentation of the main entry page of the application serve bright and eye-catching posters of actual events. Will be created with original designs and changed depending on the current newsbreak, causing different emotions for public discussion.`,
 
 		conceptTitle: `Fields of Activity`,
 		filmTitle: `Creative Production`,
 		filmInfo: [
 			`In general, my perspective is focused on the development of scale and collaboration of different spheres of activity, from innovative technologies to creative self-expression. And if we bring all the best and long-known things in one place and create a professional team of critical thinkers and enthusiasts, the jump in evolutionary process will happen all by itself, which will allow us to create a new history of culture, art and technological growth in Ukraine and world industry.`,
 
-			`Primary Plan: Creation and re-engineering of the IT sector. Making movies, cartoons, computer games (for which there are ready made ideas and scripts to start) + studio of exact translation and voice acting. 
-			Additionally: automation of all obsolete life processes and more.`,
+			`Primary Plan: Creation and re-engineering of the IT sector. Games development, making movies, cartoons (for which there are ready made ideas and scripts to start) + studio of exact translation and voice acting. 
+			Additionally: automation of all obsolete life processes and much more.`,
 		],
 
 		journalist: `Journalism`,
 		journalistInfo: [
-			`A new narrative of modern breathing, different opinions, truth and dirty realism. A peculiar presentation of information without censorship – direct, sarcastic, with the character of everyday language writing style, honesty, and simplicity in describing life, featuring both heroes and anti-heroes.`,
+			`A new narrative of modern breathing, different opinions, truth and dirty realism. A peculiar presentation of information without censorship – direct, sarcastic, with the character of everyday language writing style, honesty and simplicity in describing life, featuring both heroes and anti-heroes.`,
 
-			`Gonzo Journalism, making story diaries from the first person or group of people, immersing oneself in events, becoming part of the history. An unpredictable and experimental style. Diving into the depths of the absurdity of an issue, studying it from inside, or creating specific conditions for its appearance. Subjects dealing with contemporary culture and social issues.`,
+			`Gonzo Journalism, making story diaries from the first person or group of people, immersing oneself in events, becoming part of the history, an unpredictable and experimental style. Diving into the depths of the absurdity of an issue, studying it from inside, or creating specific conditions for its appearance. Subjects dealing with contemporary culture and social issues.`,
 		],
 
 		excursusTitle: `Development: Minimal Viable Product`,
@@ -88,9 +91,9 @@ const textData = [
 
 			`For Ukraine it will be the first of such a place format, where everything will be focused on unleashing the creative potential of personality, freedom of expression and promotion of a modern world view. And the usual entertainment as well.`,
 
-			`This application will combine the best features in a convenient format – without unnecessary functions and useless things. With a stylish modern minimalist design, futuristic offshoot and maximum responsiveness to the consumer.`,
+			`This application will combine the best features in a convenient format – without unnecessary functions and useless things. With a stylish modern minimalist design and futuristic offshoot with maximum responsiveness to the consumer.`,
 
-			`In the process of further formation and the right approach to implementation, this place will perfectly occupy its niche for the production of all above listed, becoming a leading area of production and highlighting the desire to popularize the development in the country.`,
+			`In the process of further formation and the right approach to implementation, this place will perfectly occupy its niche for the production of all above listed and newly invented, becoming a leading area, a voice of consciousness, highlighting the desire to popularize the development in the country.`,
 		],
 	},
 
@@ -110,22 +113,22 @@ const textData = [
 		],
 		branchDesc: `з метою наповнення контентом розділ має свою сферу діяльності: Журналістика, висвітлення світових подій. Ігри/Кіно/Мульт індустрія, etc.`,
 
-		design: `Для вау-ефекту та уявлення головної сторінки входу в додаток слугують яскраві, привертаючі увагу, приклади обкладинок різних популярних журналів. Створюватимуться з оригінальним дизайном і змінюватимуться залежно від поточного інфоприводу, що викликатимуть різноманітні емоції для масового обговорення.`,
+		design: `Для вау-ефекту і уявлення головної сторінки входу в додаток слугують яскраві та привертаючі увагу постери актуальних подій. Створюватимуться з оригінальним дизайном і змінюватимуться залежно від поточного інфоприводу, що викликатимуть різноманітні емоції для масового обговорення.`,
 
 		conceptTitle: `Сфери діяльності`,
 		filmTitle: `Креативне виробництво`,
 		filmInfo: [
 			`Загалом моя перспектива сфокусована на розвиток масштабу і колаборації різних сфер діяльності, від інноваційних технологій до креативного самовираження. І якщо зібрати все найкраще і давно відоме в одному місці та організувати професійний колектив критично мислячих ідейників та ентузіастів, то стрибок еволюційного процесу відбудеться сам собою, що дасть змогу творити нову історію культури, мистецтва та технологічного розвитку в Україні та світовій індустрії.`,
 
-			`Початковий задум: Створення та реінжиніринг IT-сектора. Розробка комп'ютерних ігор, кіно, мультфільмів (на що вже є готові ідеї та сценарії для старту) + студія правильного перекладу та озвучки.
+			`Початковий задум: Створення та реінжиніринг IT-сектора. Розробка ігор, кіно, мультфільмів (на що вже є готові ідеї та сценарії для старту) + студія правильного перекладу та озвучки.
 			Додатково: автоматизація всіх застарілих процесів життєдіяльності і далі більше.`,
 		],
 
 		journalist: `Журналістика`,
 		journalistInfo: [
-			`Сучасний погляд нового дихання, різноманітні міркування, правда чистої води та брудний реалізм. Своєрідна подача інформації без цензури – пряма, саркастична, з характером стилю писемності повсякденної мови, чесністю і простотою в описі життя, з героями і антигероями.`,
+			`Сучасний погляд нового дихання, різноманітні міркування, правда чистої води та брудний реалізм. Своєрідна подача інформації без цензури – пряма, саркастична, з характером стилю писемності повсякденної мови, чесність і простота в описі життя, з героями і антигероями.`,
 
-			`Гонзо-журналістика, ведення сюжетних щоденників від першої особи чи групи лиць, включаючись у події, стаючи частиною історії. Непередбачуваний і експериментальний стиль. Пірнати в саме пекло ідіотизму проблеми, вивчаючи питання зсередини або створювати певні умови для його появи. Теми пов'язані з сучасною культурою та соціальними проблемами.`,
+			`Гонзо-журналістика, ведення сюжетних щоденників від першої особи чи групи лиць, включаючись у події, стаючи частиною історії, непередбачуваний і експериментальний стиль. Пірнати в саме пекло ідіотизму проблеми, вивчаючи питання зсередини або створювати певні умови для його появи. Теми пов'язані з сучасною культурою та соціальними проблемами.`,
 		],
 
 		excursusTitle: `Розробка: Minimal Viable Product`,
@@ -137,9 +140,9 @@ const textData = [
 
 			`Для України це буде перше місце подібного формату, де все націлене на розкриття творчого потенціалу особистості, свободи висловлювання та просування сучасного світогляду. Ну і звичайні розваги також.`,
 
-			`Цей додаток об'єднає найкращі можливості в зручному форматі – без зайвих та непотрібних функцій. Стильний мінімалістично-модерністський дизайн, футуристичний підхід з максимальним відгуком до споживача.`,
+			`Цей додаток об'єднає найкращі можливості в зручному форматі – без зайвих та непотрібних функцій. Стильний мінімалістично-модерністський дизайн і футуристичний підхід з максимальним відгуком до споживача.`,
 
-			'В процесі формування та правильним підходом до реалізації, це місце ідеально займатиме свою нішу виробництва всього вищепереліченого, стаючи провідною сферою виробництва і підкреслюючи прагнення популяризувати розвиток в країні.',
+			'В процесі формування та правильним підходом до реалізації, це місце ідеально займатиме свою нішу виробництва всього вищепереліченого і новоствореного, стаючи провідною сферою, голосом свідомості, підкреслюючи прагнення популяризувати розвиток в країні.',
 		],
 	},
 ];

@@ -10,34 +10,24 @@
 	position: relative;
 	padding-bottom: 30px;
 
-	@include laptop {
+	@media screen and (max-width: 1366px) {
 		padding-bottom: 20px;
 	}
 
 	@include tabletBig {
 		height: auto;
-		padding-bottom: 30px;
+		padding-bottom: 35px;
 	}
 
 	.base-title {
-		padding-bottom: 5px;
-	}
+		padding-bottom: 20px;
 
-	.base-desc {
-		margin-bottom: 45px;
-		font-family: $lg;
-
-		@include laptop {
-			margin-bottom: 25px;
+		@media screen and (max-width: 1366px) {
+			padding-bottom: 10px;
 		}
 
 		@include tabletBig {
-			margin-bottom: 40px;
-		}
-
-		@include mobile {
-			font-size: 14px;
-			margin-bottom: 40px;
+			padding-bottom: 37px;
 		}
 	}
 }
@@ -58,7 +48,7 @@
 	&__text {
 		max-width: 555px;
 
-		@include mobile {
+		@include tabletSmall {
 			max-width: 350px;
 		}
 	}
@@ -200,23 +190,22 @@
 	display: flex;
 	position: relative;
 	height: 100%;
-	max-height: calc(100% - 152px - 2rem);
+	max-height: calc(100% - 133px);
 	box-shadow: 0px 4px 18px rgba($color: $black, $alpha: 0.6);
 
 	@include laptop {
-		padding: 0 40px 45px;
-		max-height: calc(100% - 132px - 2rem);
+		padding: 0 45px 50px;
 	}
 
 	@media screen and (max-width: 1366px) {
-		max-height: calc(100% - 118px - 2rem);
+		max-height: calc(100% - 109px);
 	}
 
 	@include tabletBig {
 		flex-direction: column-reverse;
 		padding: 40px;
 		padding-bottom: 150px;
-		max-height: 100%;
+		max-height: unset;
 		max-width: 777px;
 		width: 100%;
 		margin: 0 auto;
@@ -245,7 +234,7 @@
 		height: auto;
 		width: 100%;
 		margin-right: 0;
-		padding-top: 35px;
+		padding-top: 30px;
 		flex-shrink: unset;
 		overflow: visible;
 	}
@@ -429,12 +418,16 @@
 	flex-direction: column;
 	align-items: center;
 
+	@media screen and (max-width: 1366px) {
+		margin-top: -50px;
+	}
+
 	@include tabletBig {
-		margin-top: -60px;
+		margin-top: -70px;
 	}
 
 	@include mobile {
-		margin-top: -33px;
+		margin-top: -45px;
 	}
 }
 
@@ -506,9 +499,10 @@
 }
 
 .slider-btn-js {
-	padding: 10px;
+	padding: 11px;
 	margin-top: -10px;
 	margin-right: -10px;
+
 	@include tabletBig {
 		margin: 0;
 		background: $black;

@@ -65,7 +65,6 @@ const IdeaGeneral = ({
 			</div>
 
 			<h1 className='base-title base-title--main'>{baseTitle}</h1>
-			<h2 className='base-desc'>{baseDesc}</h2>
 
 			<div className='idea-section'>
 				<Copyright />
