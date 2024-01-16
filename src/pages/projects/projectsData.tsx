@@ -15,10 +15,12 @@ import bgBentley from './images/bentley.jpg';
 import bgStartup from './images/startup-img.png';
 import bgGalleryImg from './images/gallery-img.png';
 
+import { pathToIdea } from '../../components/urlsData';
+
 const projectsData = [
 	{
 		img: `url(${bgStartup})`,
-		url: '/idea',
+		url: `/${pathToIdea}`,
 		urlCode: 'https://github.com/buhowski/react-typescript',
 		name: 'My Startup Offer',
 		desk: `Huge potential with endless possibilities. Staffed, Feature-rich Magazine.`,
