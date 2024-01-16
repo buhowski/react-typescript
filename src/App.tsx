@@ -2,6 +2,8 @@ import { useEffect } from 'react';
 import { useLocation, Route, Routes } from 'react-router-dom';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
+import { pathToIdea, pathToAbout, pathToProjects } from './components/urlsData';
+
 import './styles/App.scss';
 
 import Header from './components/header/Header';
@@ -16,15 +18,15 @@ const routesData = [
 		pageComponent: <Home />,
 	},
 	{
-		pathTo: 'about',
+		pathTo: pathToAbout,
 		pageComponent: <About />,
 	},
 	{
-		pathTo: 'projects',
+		pathTo: pathToProjects,
 		pageComponent: <Projects />,
 	},
 	{
-		pathTo: 'idea',
+		pathTo: pathToIdea,
 		pageComponent: <Idea />,
 	},
 ];

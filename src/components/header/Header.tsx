@@ -1,21 +1,23 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { pathToIdea, pathToAbout, pathToProjects } from '../urlsData';
+
 import { useTabletQuery, useMobMenuHeightQuery } from '../../hooks/useMediaQuery';
 import Socials from '../socials/Socials';
 import './Header.scss';
 
 const linksData = [
 	{
-		pageLink: 'idea',
+		pageLink: pathToIdea,
 		pageName: `Startup Offer`,
 		startupLink: true,
 	},
 	{
-		pageLink: 'about',
+		pageLink: pathToAbout,
 		pageName: 'About Me',
 	},
 	{
-		pageLink: 'projects',
+		pageLink: pathToProjects,
 		pageName: 'Projects',
 	},
 ];
