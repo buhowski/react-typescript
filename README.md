@@ -1,3 +1,5 @@
+## This project is looking for investment or any help with development and promotion. If you're interested in collaborating, feel free to contact me!
+
 # Pitch
 
 I have a great desire to create a social platform (mobile application and web service) for potential development in Ukraine with the ability to go global. It's a new space of endless possibilities, a fresh air of freedom, a multifunctional product for creating anything you want, from technological innovation to personal improvement, all the best of everything in one place!
@@ -14,7 +16,7 @@ Online cinema, video hosting and live streaming
 
 Imageboard and anonymous web forum
 
-in order to fill with content the section has its own field of activity: Journalism, world events coverage. Movies/Cartoons/Games Industry.
+- in order to fill with content the section has its own field of activity: Journalism, world events coverage. Movies/Cartoons/Games Industry.
 
 For the wow effect and presentation of the main entry page of the application serve bright and eye-catching posters of actual events. Will be created with original designs and changed depending on the current newsbreak, causing different emotions for public discussion.
 
