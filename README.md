@@ -9,10 +9,12 @@ Staffed, feature-rich magazine with the ability to create and promote any kind o
 ### Features and Capabilities:
 
 Modernized magazine redesign, social network, microblogging
-Online cinema, video hosting and live streaming 
+
+Online cinema, video hosting and live streaming
+
 Imageboard and anonymous web forum
 
-* – in order to fill with content the section has its own field of activity: Journalism, world events coverage. Movies/Cartoons/Games Industry.
+in order to fill with content the section has its own field of activity: Journalism, world events coverage. Movies/Cartoons/Games Industry.
 
 For the wow effect and presentation of the main entry page of the application serve bright and eye-catching posters of actual events. Will be created with original designs and changed depending on the current newsbreak, causing different emotions for public discussion.
 
