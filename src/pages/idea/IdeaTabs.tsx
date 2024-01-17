@@ -9,7 +9,6 @@ interface IdeaGeneralProps {
 	IdeaTabEn: JSX.Element;
 	IdeaTabUa: JSX.Element;
 	baseTitle: string;
-	baseDesc: string;
 	contactBtnTitle: string;
 }
 
@@ -18,7 +17,6 @@ const IdeaGeneral = ({
 	IdeaTabEn,
 	IdeaTabUa,
 	baseTitle,
-	baseDesc,
 }: IdeaGeneralProps) => {
 	const useTabletLarge = useTabletLargeQuery();
 	const [currentTab, setCurrentTab] = useState('');

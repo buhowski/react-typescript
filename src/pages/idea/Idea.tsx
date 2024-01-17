@@ -4,8 +4,7 @@ import textData from './textData';
 
 const Idea = () => {
 	const contactBtnTitle = 'Get In Touch';
-	const baseTitle = 'Presentation';
-	const baseDesc = 'An offer to invest in huge potential!';
+	const baseTitle = 'Startup Presentation';
 
 	const textItems = textData.map((data, i) => (
 		<div key={i}>
@@ -83,7 +82,6 @@ const Idea = () => {
 			IdeaTabEn={textItems[1]}
 			IdeaTabUa={textItems[2]}
 			baseTitle={baseTitle}
-			baseDesc={baseDesc}
 			contactBtnTitle={contactBtnTitle}
 		/>
 	);
