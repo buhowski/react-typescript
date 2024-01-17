@@ -286,8 +286,12 @@
 	&__btn {
 		background: $black;
 		color: $snow;
-		padding: 5px 25px;
+		padding: 4px 20px;
 		text-transform: uppercase;
+
+		@include mobile {
+			padding: 6px 25px;
+		}
 
 		&[data-active='true'] {
 			background: $blue-main;
