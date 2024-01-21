@@ -9,7 +9,7 @@ import './Header.scss';
 const linksData = [
 	{
 		pageLink: pathToIdea,
-		pageName: `Startup Offer`,
+		pageName: `Business Idea`,
 		startupLink: true,
 	},
 	{

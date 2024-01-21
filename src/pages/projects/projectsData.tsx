@@ -22,7 +22,7 @@ const projectsData = [
 		img: `url(${bgStartup})`,
 		url: `/${pathToIdea}`,
 		urlCode: 'https://github.com/buhowski/react-typescript',
-		name: 'My Startup Offer',
+		name: 'Business Proposal',
 		desk: `Huge potential with endless possibilities. Staffed, Feature-rich Magazine.`,
 		skills: ['Script', 'UI/UX', 'SCSS', 'TypeScrpt', 'React'],
 	},
