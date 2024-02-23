@@ -22,8 +22,7 @@ const textData = [
 		filmInfo: [
 			`В общем и целом моя перспектива сфокусирована на развитие масштаба и коллаборации разных сфер деятельности, от инновационных технологий до креативного самовыражения. И если собрать всё лучшее и давно известное в одном месте и создать профессиональный коллектив критически мыслящих идейников и энтузиастов, то скачок эволюционного процесса произойдет сам собой, что позволит творить новую историю культуры, искусства и технологического развития в Украине и мировой индустрии.`,
 
-			`Первоначальный замысел: Создание и реинжиниринг IT-сектора. Разработка игр, кино, мультфильмов (на что уже есть готовые идеи и сценарии для старта) + студия правильного перевода и озвучки.
-			Дополнительно: автоматизация всех устаревших процессов жизнедеятельности и далее больше.`,
+			`Создание и реинжиниринг IT-сектора. Разработка игр, кино, мультфильмов (на что уже есть готовые идеи и сценарии для старта), студия правильного перевода и озвучки и постепенная автоматизация всех устаревших процессов жизнедеятельности.`,
 		],
 
 		journalist: `Журналистика`,
@@ -32,9 +31,6 @@ const textData = [
 
 			`Гонзо-журналистика, ведение сюжетных дневников от первого лица или группы лиц, включаясь в события, становясь частью истории, непредсказуемый и экспериментальный стиль. Нырять в самое пекло идиотизма проблемы, изучая вопрос изнутри или создавать определенные условия для его появления. Темы связанные с современной культурой и социальными проблемами.`,
 		],
-
-		excursusTitle: `Разработка: Minimal Viable Product`,
-		excursusInfo: `Первоначальный запуск включает редизайн журнала с многофункциональной социальной сетью, рубрику “Журналистика” и укомплектованный Имиджборд с готовой информацией для различных ситуаций, а также идеями и продвижением остального, что способствует привлечению аудитории и последующему развитию.`,
 
 		whyTitle: `Why(?): Мотив`,
 		whyInfo: [
@@ -45,6 +41,26 @@ const textData = [
 			`Это приложение объединит лучшие возможности в удобном формате – без лишних и ненужных функций. Стильный минималистически-модернистский дизайн и футуристический подход с максимальной отзывчивостью к потребителю.`,
 
 			`В процессе формирования и правильным подходом к реализации, это место идеально займет свою нишу производства всего вышеперечисленного и новосозданного, становясь ведущей сферой, голосом разума, подчеркивая стремление популяризировать развитие в стране.`,
+		],
+
+		sumTitle: `Итого`,
+		sumInfo: [
+			`Я могу предложить свободное и независимое медиа с голосом сознательности, новизну идей и масштабное производство качества мирового масштаба как кино так и игровой индустрии, идею формирования сферы IT, которая работает на собственное производство.`,
+
+			`За стратегию взята концепция интерактивного журнала, как фундамента для дальнейшего развития, где фокус делается на производстве и освещении этих возможностей.`,
+
+			`Основная уникальность - это идеи которые стоят за этим и движущая сила, которая желает освободиться от ограничений и рамок в которые текущие соцсети или медиа мейкеры постепенно вводят пользователей.`,
+
+			`В конечном итоге превратить обычное медиа на сферу производства и на ресурс из которого можно получать это качество.`,
+
+			`Гибкость этой идеи позволяет интегрировать ее с любыми существующими проектами, поэтому я готов к сотрудничеству или любому обсуждению, ибо делать невозможное это главная цель. Есть виденье и теоретически оно работает.`,
+		],
+
+		simpleTitle: `Ну очень простыми словами`,
+		simpleInfo: [
+			`Я хочу и могу сделать качественное кино, игры, виртуальную реальность, стать голосом сознания, внедрить искусственный интеллект, робототехнику, изучение мозга человека и интеграцию его с компьютерными технологиями.`,
+
+			`Каждая компания делает себе сайт или визитку в интернете, я выбрал интерактивный журнал, который может взаимодействовать с людьми и по желанию его можно использовать, как социальную сеть и ресурс с донатной системой для создания собственного контента.`,
 		],
 	},
 
@@ -82,9 +98,6 @@ const textData = [
 			`Gonzo Journalism, making story diaries from the first person or group of people, immersing oneself in events, becoming part of the history, an unpredictable and experimental style. Diving into the depths of the absurdity of an issue, studying it from inside, or creating specific conditions for its appearance. Subjects dealing with contemporary culture and social issues.`,
 		],
 
-		excursusTitle: `Development: Minimal Viable Product`,
-		excursusInfo: `The initial launch includes a redesign of the magazine with a feature-rich social network inside, a Journalism section and a staffed Imageboard with ready-made information for a variety of situations, together with ideas and promotion of the rest, which helps to engage the audience and further development.`,
-
 		whyTitle: `Why(?): Motive`,
 		whyInfo: [
 			`All current social networks have turned or are turning into “bygone era TVs'', with censorship to the point of absurdity and a stream of endless advertising all around that clutters the content. That's why we need to revise the obvious and create a new open platform, a shift in direction and breath of fresh air.`,
@@ -94,6 +107,26 @@ const textData = [
 			`This application will combine the best features in a convenient format – without unnecessary functions and useless things. With a stylish modern minimalist design and futuristic offshoot with maximum responsiveness to the consumer.`,
 
 			`In the process of further formation and the right approach to implementation, this place will perfectly occupy its niche for the production of all above listed and newly invented, becoming a leading area, a voice of consciousness, highlighting the desire to popularize the development in the country.`,
+		],
+
+		sumTitle: `Итого`,
+		sumInfo: [
+			`I can offer a free and independent media with a voice of consciousness, novelty of ideas and large-scale production of world-class quality in the film and gaming industries, the idea of forming an IT sector that works for its own production.`,
+
+			`The strategy is based on the concept of an interactive magazine as a foundation for further development, focusing on production and highlighting these opportunities.`,
+
+			`The main uniqueness lies in the ideas behind it and the driving force that seeks to break free from the limitations and frames that current social networks or media makers gradually imposed on users.`,
+
+			`Ultimately, the goal is to transform ordinary media into a sphere of production and a resource from which this quality can be consumed.`,
+
+			`The flexibility of this idea allows its integration with any existing projects, so I am ready for collaboration or any discussion, as making the impossible is the main goal. There is a vision and theoretically it works.`,
+		],
+
+		simpleTitle: `In very simple terms`,
+		simpleInfo: [
+			`I want and can produce quality movies, games, virtual reality, become a voice of consciousness, implement artificial intelligence, robotics, study the human brain, and integrate it with computer technologies.`,
+
+			`Every company creates a website or a business card on the internet, I chose an interactive magazine instead, which can interact with people and, if desired, can be used as a social network and a resource with a donation system for creating their own content.`,
 		],
 	},
 
@@ -131,9 +164,6 @@ const textData = [
 			`Гонзо-журналістика, ведення сюжетних щоденників від першої особи чи групи лиць, включаючись у події, стаючи частиною історії, непередбачуваний і експериментальний стиль. Пірнати в саме пекло ідіотизму проблеми, вивчаючи питання зсередини або створювати певні умови для його появи. Теми пов'язані з сучасною культурою та соціальними проблемами.`,
 		],
 
-		excursusTitle: `Розробка: Minimal Viable Product`,
-		excursusInfo: `Початковий запуск включає редизайн журналу з багатофункціональною соціальною мережею, рубрику "Журналістика" та укомплектований Іміджборд з готовою інформацією для різних ситуацій, а також ідеями та просуванням решти, що сприятиме залученню аудиторії та подальшому розвитку.`,
-
 		whyTitle: `Why(?): Мотив`,
 		whyInfo: [
 			`Усі поточні соціальні мережі перетворилися чи перетворюються на “телевізори минувшої епохи”, де навколо суцільна цензура до абсурду і потік нескінченної реклами, що захаращує контент. Саме тому і потрібно переосмислення очевидного і створення нового вільного простору, зміна курсу на свіже повітря.`,
@@ -143,6 +173,26 @@ const textData = [
 			`Цей додаток об'єднає найкращі можливості в зручному форматі – без зайвих та непотрібних функцій. Стильний мінімалістично-модерністський дизайн і футуристичний підхід з максимальним відгуком до споживача.`,
 
 			'В процесі формування та правильним підходом до реалізації, це місце ідеально займатиме свою нішу виробництва всього вищепереліченого і новоствореного, стаючи провідною сферою, голосом свідомості, підкреслюючи прагнення популяризувати розвиток в країні.',
+		],
+
+		sumTitle: `Підсумок`,
+		sumInfo: [
+			`Я можу запропонувати вільне і незалежне медіа з голосом свідомості, новизну ідей і масштабне виробництво якості світового масштабу як кіно так і ігрової індустрії, ідею формування сфери IT, яка працює на власне виробництво.`,
+
+			`За стратегію взято концепцію інтерактивного журналу, як фундаменту для подальшого розвитку, де фокус робиться на виробництво і освітлення цих можливостей.`,
+
+			`Основна унікальність – це ідеї які стоять за цим і рушійна сила, яка прагне звільнитись від обмежень і рамок в які текучі соцмережі чи медіа мейкери поступово вводять користувачів.`,
+
+			`В кінцевому результаті перетворити звичайне медіа на сферу виробництва і на ресурс з якого можна споживати цю якість.`,
+
+			`Гнучкість цієї ідеї дозволяє інтегрувати її з будь якими існуючими проектами, тому я готовий до співпраці чи будь якого обговорення, бо робити неможливе це головна ціль. Є бачення і теоретично воно працює.`,
+		],
+
+		simpleTitle: `Ну дуже простими словами`,
+		simpleInfo: [
+			`Я хочу і можу зробити якісне кіно, ігри, віртуальну реальність, стати голосом свідомості, впровадити штучний інтелект, робототехніку, вивчення мозку людини і інтеграцію його з комп'ютерними технологіями.`,
+
+			`Кожна компанія робить собі сайт чи візитку в інтернеті, я вибрав інтерактивний журнал, який може взаємодіяти з людьми і за бажанням його можна використовувати, як соціальну мережу і ресурс з донатною системою для створення власного контенту.`,
 		],
 	},
 ];

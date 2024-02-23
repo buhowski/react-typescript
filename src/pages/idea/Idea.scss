@@ -20,36 +20,14 @@
 	}
 
 	.base-title {
-		padding-bottom: 20px;
+		padding-bottom: 40px;
 
 		@media screen and (max-width: 1366px) {
-			padding-bottom: 10px;
+			padding-bottom: 30px;
 		}
 
 		@include tabletBig {
-			padding-bottom: 37px;
-		}
-	}
-}
-
-.startup-highlight {
-	color: $starYellow;
-	text-align: center;
-	display: flex;
-	justify-content: center;
-	margin-bottom: -17px;
-	font-size: 14px;
-
-	@include tabletSmall {
-		margin-bottom: 0;
-		font-size: 12px;
-	}
-
-	&__text {
-		max-width: 555px;
-
-		@include tabletSmall {
-			max-width: 350px;
+			padding-bottom: 50px;
 		}
 	}
 }
@@ -450,7 +428,7 @@
 	}
 
 	@include tabletSmall {
-		height: 200px;
+		height: 220px;
 	}
 }
 

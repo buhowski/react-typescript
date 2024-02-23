@@ -42,6 +42,7 @@ const Idea = () => {
 				<h2 className='h2'>{data.conceptTitle}</h2>
 				<div className='idea-concept'>
 					<h3 className='h3'>{data.filmTitle}</h3>
+
 					{data.filmInfo.map((filmInfo, f) => (
 						<p key={f} className='idea-block__text'>
 							{filmInfo}
@@ -51,6 +52,7 @@ const Idea = () => {
 
 				<div className='idea-concept'>
 					<h3 className='h3'>{data.journalist}</h3>
+
 					{data.journalistInfo.map((journalist, j) => (
 						<p key={j} className='idea-block__text'>
 							{journalist}
@@ -60,16 +62,31 @@ const Idea = () => {
 			</div>
 
 			<div className='idea-block'>
-				<h2 className='h2'>{data.excursusTitle}</h2>
-				<p className='idea-block__text'>{data.excursusInfo}</p>
-			</div>
-
-			<div className='idea-block'>
 				<h2 className='h2'>{data.whyTitle}</h2>
 
 				{data.whyInfo.map((why, b) => (
 					<p key={b} className='idea-block__text'>
 						{why}
+					</p>
+				))}
+			</div>
+
+			<div className='idea-block'>
+				<h2 className='h2'>{data.sumTitle}</h2>
+
+				{data.sumInfo.map((sum, c) => (
+					<p key={c} className='idea-block__text'>
+						{sum}
+					</p>
+				))}
+			</div>
+
+			<div className='idea-block'>
+				<h2 className='h2'>{data.simpleTitle}</h2>
+
+				{data.simpleInfo.map((simple, c) => (
+					<p key={c} className='idea-block__text'>
+						{simple}
 					</p>
 				))}
 			</div>
