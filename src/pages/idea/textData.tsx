@@ -109,7 +109,7 @@ const textData = [
 			`In the process of further formation and the right approach to implementation, this place will perfectly occupy its niche for the production of all above listed and newly invented, becoming a leading area, a voice of consciousness, highlighting the desire to popularize the development in the country.`,
 		],
 
-		sumTitle: `Итого`,
+		sumTitle: `Summary`,
 		sumInfo: [
 			`I can offer a free and independent media with a voice of consciousness, novelty of ideas and large-scale production of world-class quality in the film and gaming industries, the idea of forming an IT sector that works on its own production.`,
 
