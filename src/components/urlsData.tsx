@@ -1,6 +1,6 @@
 export const urlTelegram = 'https://t.me/atsiomakh';
 
-export const urlLinkedIn = 'https://www.linkedin.com/in/buhowski';
+export const urlLinkedIn = 'https://www.linkedin.com/in/buhowski/';
 
 export const urlGitHub = 'https://github.com/buhowski';
 
