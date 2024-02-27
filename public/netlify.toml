@@ -1,3 +1,10 @@
+[[plugins]]
+  package = "netlify-plugin-rename-files"
+
+  [plugins.inputs]
+    match = "*.pdf"  # Match PDF files specifically
+    replacement = "$1.pdf"
+    
 [[redirects]]
   from = '/*'
   to = '/index.html'
