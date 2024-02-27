@@ -1,4 +1,4 @@
-## This project is looking for investment or any help with development and promotion. If you're interested in collaborating, feel free to contact me!
+# This project is looking for investment or any help with development and promotion. If you're interested in collaborating, feel free to contact me!
 
 # Pitch
 
@@ -34,10 +34,6 @@ A new narrative of modern breathing, different opinions, truth and dirty realism
 
 Gonzo Journalism, making story diaries from the first person or group of people, immersing oneself in events, becoming part of the history, an unpredictable and experimental style. Diving into the depths of the absurdity of an issue, studying it from inside, or creating specific conditions for its appearance. Subjects dealing with contemporary culture and social issues.
 
-# Development: Minimal Viable Product
-
-The initial launch includes a redesign of the magazine with a feature-rich social network inside, a Journalism section and a staffed Imageboard with ready-made information for a variety of situations, together with ideas and promotion of the rest, which helps to engage the audience and further development.
-
 # Why(?). Motive
 
 All current social networks have turned or are turning into “bygone era TVs'', with censorship to the point of absurdity and a stream of endless advertising all around that clutters the content. That's why we need to revise the obvious and create a new open platform, a shift in direction and breath of fresh air.
@@ -47,3 +43,21 @@ For Ukraine it will be the first of such a place format, where everything will b
 This application will combine the best features in a convenient format – without unnecessary functions and useless things. With a stylish modern minimalist design and futuristic offshoot with maximum responsiveness to the consumer.
 
 In the process of further formation and the right approach to implementation, this place will perfectly occupy its niche for the production of all above listed and newly invented, becoming a leading area, a voice of consciousness, highlighting the desire to popularize the development in the country.
+
+# Summary
+
+I can offer a free and independent media with a voice of consciousness, novelty of ideas and large-scale production of world-class quality in the film and gaming industries, the idea of forming an IT sector that works on its own production.
+
+The strategy is based on the concept of an interactive magazine as a foundation for further development, focusing on production and highlighting these opportunities.
+
+The main uniqueness lies in the ideas behind it and the driving force that seeks to break free from the limitations and frames that current social networks or media makers gradually imposed on users.
+
+Ultimately, the goal is to transform ordinary media into a sphere of production and a resource from which this quality can be consumed.
+
+The flexibility of this idea allows its integration with any existing projects, so I am ready for collaboration or any discussion, as making the impossible is the main goal. There is a vision and theoretically it works.
+
+# In very simple terms
+
+I want and can produce quality movies, games, virtual reality, become a voice of consciousness, implement artificial intelligence, robotics, study the human brain, and integrate it with computer technologies.
+
+Every company creates a website or a business card on the internet, I chose an interactive magazine instead, which can interact with people and, if desired, can be used as a social network and a resource with a donation system for creating their own content.
