@@ -2,7 +2,8 @@ const Copyright = () => {
 	return (
 		<div className='idea-copy'>
 			<p>
-				{new Date().getFullYear()} <span className='symbol'>&copy;</span> A. Tsiomakh
+				{new Date().getFullYear()} <span className='symbol'>&copy;</span> Alexander
+				Tsiomakh
 			</p>
 		</div>
 	);
