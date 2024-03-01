@@ -4,7 +4,7 @@ const textData = [
 		pitchTitle: `Pitch`,
 		pitchText: `У меня есть необъятное желание создать социальную платформу (мобильное приложение и веб-сервис) для развития потенциала в Украине с возможностью выхода на международный уровень. Это новое пространство бесконечных возможностей, свежий воздух свободы, многофункциональный продукт для создания чего угодно, от технологических инноваций до самовыражения личности, всё лучшее в одном месте, вещи, которые меняют жизнь к лучшему!`,
 
-		basic: `Основа: Приложение`,
+		basic: `Основа`,
 		appSample: `Укомплектованный, многофункциональный журнал с возможностью создания и продвижения любой деятельности с интегрированной поддержкой автора. Также место для просмотра всевозможной информации и развлечения. В основном сосредоточено под мобильное приложение с расширенным и доступным веб сайтом – это снаружи, а внутри – огромный потенциал желающий присоединиться к компаниям, что двигают прогресс.`,
 
 		possibilitiesTitle: `Особенности и возможности:`,
@@ -32,7 +32,7 @@ const textData = [
 			`Гонзо-журналистика, ведение сюжетных дневников от первого лица или группы лиц, включаясь в события, становясь частью истории, непредсказуемый и экспериментальный стиль. Нырять в самое пекло идиотизма проблемы, изучая вопрос изнутри или создавать определенные условия для его появления. Темы связанные с современной культурой и социальными проблемами.`,
 		],
 
-		whyTitle: `Why(?): Мотив`,
+		whyTitle: `Мотив`,
 		whyInfo: [
 			`Все текущие социальные сети превратились или превращаются в “телевизоры былой эпохи”, где вокруг сплошная цензура до абсурда и поток нескончаемой рекламы, который захламляет контент. Именно поэтому и нужен пересмотр очевидного и создание новой свободной площадки, смена курса на свежий воздух.`,
 
@@ -43,7 +43,7 @@ const textData = [
 			`В процессе формирования и правильным подходом к реализации, это место идеально займет свою нишу производства всего вышеперечисленного и новосозданного, становясь ведущей сферой, голосом разума, подчеркивая стремление популяризировать развитие в стране.`,
 		],
 
-		sumTitle: `Итого`,
+		sumTitle: `Сумарно`,
 		sumInfo: [
 			`Я могу предложить свободное и независимое медиа с голосом сознательности, новизну идей и масштабное производство качества кино и игровой индустрии мирового масштаба, идею формирования сферы IT, которая работает на собственное производство. `,
 
@@ -69,7 +69,7 @@ const textData = [
 		pitchTitle: `Pitch`,
 		pitchText: `I have a great desire to create a social platform (mobile application and web service) for potential development in Ukraine with the ability to go global. It's a new space of endless possibilities, a fresh air of freedom, a multifunctional product for creating anything you want, from technological innovation to personal improvement, all the best of everything in one place, things that make a difference!`,
 
-		basic: `Base: Application`,
+		basic: `Basis`,
 		appSample: `Staffed, feature-rich magazine with the ability to create and promote any kind of activity with integrated author support. Also a place for browsing all sorts of information and entertainment. Mostly focused under a mobile app with an extended and accessible web site – on the outside, and on the inside – a huge potential of wanting to join the companies that are moving progress.`,
 
 		possibilitiesTitle: `Features and Capabilities:`,
@@ -98,7 +98,7 @@ const textData = [
 			`Gonzo Journalism, making story diaries from the first person or group of people, immersing oneself in events, becoming part of the history, an unpredictable and experimental style. Diving into the depths of the absurdity of an issue, studying it from inside, or creating specific conditions for its appearance. Subjects dealing with contemporary culture and social issues.`,
 		],
 
-		whyTitle: `Why(?): Motive`,
+		whyTitle: `Motive`,
 		whyInfo: [
 			`All current social networks have turned or are turning into “bygone era TVs'', with censorship to the point of absurdity and a stream of endless advertising all around that clutters the content. That's why we need to revise the obvious and create a new open platform, a shift in direction and breath of fresh air.`,
 
@@ -135,7 +135,7 @@ const textData = [
 		pitchTitle: `Pitch`,
 		pitchText: `Маю неосяжне бажання створити соціальну платформу (мобільний додаток і веб-сервіс) для розвитку потенціалу в Україні з можливістю виходу на міжнародний рівень. Це новий простір нескінченних можливостей, свіже повітря свободи, багатофункціональний продукт для створення чого завгодно, від технологічних інновацій до самовираження особистості, все найкраще в одному місці, речі, які змінюють життя на краще!`,
 
-		basic: `Основа: Додаток`,
+		basic: `Основа`,
 		appSample: `Укомплектований, багатофункціональний журнал з можливістю створення та просування будь-якої діяльності з інтегрованою підтримкою автора. Також місце для перегляду різноманітної інформації та розваг. Здебільшого зосереджене під мобільний додаток із розширеним і доступним веб сайтом – це ззовні, а всередині – величезний потенціал охочий приєднатися до компаній, які сприяють прогресу.`,
 
 		possibilitiesTitle: `Особливості та можливості:`,
@@ -164,7 +164,7 @@ const textData = [
 			`Гонзо-журналістика, ведення сюжетних щоденників від першої особи чи групи лиць, включаючись у події, стаючи частиною історії, непередбачуваний і експериментальний стиль. Пірнати в саме пекло ідіотизму проблеми, вивчаючи питання зсередини або створювати певні умови для його появи. Теми пов'язані з сучасною культурою та соціальними проблемами.`,
 		],
 
-		whyTitle: `Why(?): Мотив`,
+		whyTitle: `Мотив`,
 		whyInfo: [
 			`Усі поточні соціальні мережі перетворилися чи перетворюються на “телевізори минувшої епохи”, де навколо суцільна цензура до абсурду і потік нескінченної реклами, що захаращує контент. Саме тому і потрібно переосмислення очевидного і створення нового вільного простору, зміна курсу на свіже повітря.`,
 
@@ -175,7 +175,7 @@ const textData = [
 			'В процесі формування та правильним підходом до реалізації, це місце ідеально займатиме свою нішу виробництва всього вищепереліченого і новоствореного, стаючи провідною сферою, голосом свідомості, підкреслюючи прагнення популяризувати розвиток в країні.',
 		],
 
-		sumTitle: `Підсумок`,
+		sumTitle: `Сумарно`,
 		sumInfo: [
 			`Я можу запропонувати вільне і незалежне медіа з голосом свідомості, новизну ідей і масштабне виробництво якості кіно та ігрової індустрії світового масштабу, ідею формування сфери IT, яка працює на власне виробництво.`,
 

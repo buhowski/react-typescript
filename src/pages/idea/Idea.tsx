@@ -14,6 +14,16 @@ const Idea = () => {
 			</div>
 
 			<div className='idea-block'>
+				<h2 className='h2'>{data.sumTitle}</h2>
+
+				{data.sumInfo.map((sum, c) => (
+					<p key={c} className='idea-block__text'>
+						{sum}
+					</p>
+				))}
+			</div>
+
+			<div className='idea-block'>
 				<h2 className='idea-block__title h2'>{data.basic}</h2>
 				<p className='idea-block__text'>{data.appSample}</p>
 				<h3 className='h3'>{data.possibilitiesTitle}</h3>
@@ -22,7 +32,8 @@ const Idea = () => {
 					{data.possibilitiesStar.slice(0, 2).map((item, a) => (
 						<li key={a} className='idea-block__stared'>
 							{item}
-							<span className='idea-block__star'> *</span>
+
+							{/* <span className='idea-block__star'> *</span> */}
 						</li>
 					))}
 
@@ -31,9 +42,9 @@ const Idea = () => {
 					))}
 				</ul>
 
-				<p className='idea-block__desc'>
+				{/* <p className='idea-block__desc'>
 					<span className='idea-block__star'>* </span> &ndash; {data.branchDesc}
-				</p>
+				</p> */}
 
 				<p className='idea-block__info'>{data.design}</p>
 			</div>
@@ -67,16 +78,6 @@ const Idea = () => {
 				{data.whyInfo.map((why, b) => (
 					<p key={b} className='idea-block__text'>
 						{why}
-					</p>
-				))}
-			</div>
-
-			<div className='idea-block'>
-				<h2 className='h2'>{data.sumTitle}</h2>
-
-				{data.sumInfo.map((sum, c) => (
-					<p key={c} className='idea-block__text'>
-						{sum}
 					</p>
 				))}
 			</div>
