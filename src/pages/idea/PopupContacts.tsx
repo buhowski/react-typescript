@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { urlTelegram, urlGmail, urlLinkedIn } from '../../components/urlsData';
+import { urlTelegram, urlEmail, urlLinkedIn } from '../../components/urlsData';
 
 const dataContacts = [
 	{
@@ -8,8 +8,8 @@ const dataContacts = [
 		linkTitle: 'Write To Me',
 	},
 	{
-		name: 'Gmail: ',
-		url: urlGmail,
+		name: 'Email: ',
+		url: urlEmail,
 		linkTitle: 'a.tsiomakh@gmail.com',
 	},
 	{
