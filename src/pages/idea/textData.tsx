@@ -61,7 +61,25 @@ const textData = [
 			`Я хочу и могу сделать качественное кино, игры, виртуальную реальность, стать голосом сознания, внедрить искусственный интеллект, робототехнику, изучение мозга человека и интеграцию его с компьютерными технологиями.`,
 
 			`Каждая компания делает себе сайт или визитку в интернете, я выбрал интерактивный журнал, который может взаимодействовать с людьми и по желанию его можно использовать, как социальную сеть и ресурс с донатной системой для создания собственного контента.`,
+
+			`Единственное что мне для этого нужно - это ресурс в виде людей, или стартового капитала, на построение фундамента.`,
 		],
+
+		strategyTitle: `Стратегия для фундамента:`,
+		strategyItems: [
+			`Команда и производство первоочередных продуктов индустрии.`,
+			`Собственный укомплектованный журнал с форумом, либо интеграция в существующую площадка для освещения деятельности и подходящий ресурс для распространения собственного контента.`,
+			`Рекламная кампания.`,
+		],
+
+		getTitle: `Что получаем:`,
+		getItems: [
+			`Статьи меняющие стратегию существования развития в Украине. Наглядный пример эволюции в чистом виде. Слова готовые привлечь внимание масштабных корпораций, освещение их слабых сторон и дальнейшее конкурирование.`,
+			`Освещение всех рабочих процессов и постепенное производство, оценивая потребности и первоочередные необходимости.`,
+			`И дальше только больше!`,
+		],
+
+		lastWords: `Для всех желающих скооперироваться, свяжитесь со мной!`,
 	},
 
 	// ENGLISH
@@ -87,8 +105,7 @@ const textData = [
 		filmInfo: [
 			`In general, my perspective is focused on the development of scale and collaboration of different spheres of activity, from innovative technologies to creative self-expression. And if we bring all the best and long-known things in one place and create a professional team of critical thinkers and enthusiasts, the jump in evolutionary process will happen all by itself, which will allow us to create a new history of culture, art and technological growth in Ukraine and world industry.`,
 
-			`Primary Plan: Creation and re-engineering of the IT sector. Games development, making movies, cartoons (for which there are ready made ideas and scripts to start) + studio of exact translation and voice acting. 
-			Additionally: automation of all obsolete life processes and much more.`,
+			`Creation and re-engineering of the IT sector. Computer games development, making movies, cartoons (for which there are ready made ideas and scripts to start), studio of exact translation and voice acting, and gradual automation of all obsolete life processes.`,
 		],
 
 		journalist: `Journalism`,
@@ -127,7 +144,25 @@ const textData = [
 			`I want and can produce quality movies, games, virtual reality, become a voice of consciousness, implement artificial intelligence, robotics, study the human brain, and integrate it with computer technologies.`,
 
 			`Every company creates a website or a business card on the internet, I chose an interactive magazine instead, which can interact with people and, if desired, can be used as a social network and a resource with a donation system for creating their own content.`,
+
+			`The only thing I need for this is resources in the form of people or starting capital to build the foundation.`,
 		],
+
+		strategyTitle: `Strategy for the foundation:`,
+		strategyItems: [
+			`Team and production of priority products of the industry.`,
+			`Our own well-equipped magazine with a forum, or integration into an existing platform for highlighting activities and a suitable resource for distributing our own content.`,
+			`Advertising campaign.`,
+		],
+
+		getTitle: `What we get:`,
+		getItems: [
+			`Articles changing the strategy of development in Ukraine. A vivid example of evolution in its pure form. Words ready to attract the attention of major corporations, highlighting their weaknesses and further competition.`,
+			`Lighting up all work processes and gradual production, assessing needs and priority requirements.`,
+			`And then only more!`,
+		],
+
+		lastWords: `For those who want to cooperate, please contact me!`,
 	},
 
 	// UKRAINE
@@ -153,8 +188,7 @@ const textData = [
 		filmInfo: [
 			`Загалом моя перспектива сфокусована на розвиток масштабу і колаборації різних сфер діяльності, від інноваційних технологій до креативного самовираження. І якщо зібрати все найкраще і давно відоме в одному місці та організувати професійний колектив критично мислячих ідейників та ентузіастів, то стрибок еволюційного процесу відбудеться сам собою, що дасть змогу творити нову історію культури, мистецтва та технологічного розвитку в Україні та світовій індустрії.`,
 
-			`Початковий задум: Створення та реінжиніринг IT-сектора. Розробка ігор, кіно, мультфільмів (на що вже є готові ідеї та сценарії для старту) + студія правильного перекладу та озвучки.
-			Додатково: автоматизація всіх застарілих процесів життєдіяльності і далі більше.`,
+			`Створення та реінжиніринг IT-сектора. Розробка ігор, кіно, мультфільмів (на що вже є готові ідеї та сценарії для старту), студія правильного перекладу та озвучки, та поступова автоматизація всіх застарілих процесів життєдіяльності.`,
 		],
 
 		journalist: `Журналістика`,
@@ -193,7 +227,25 @@ const textData = [
 			`Я хочу і можу зробити якісне кіно, ігри, віртуальну реальність, стати голосом свідомості, впровадити штучний інтелект, робототехніку, вивчення мозку людини та інтеграцію його з комп'ютерними технологіями.`,
 
 			`Кожна компанія робить собі сайт чи візитку в інтернеті, я вибрав інтерактивний журнал, який може взаємодіяти з людьми і за бажанням його можна використовувати, як соціальну мережу і ресурс з донатною системою для створення власного контенту.`,
+
+			`Єдине що мені для цього потрібно – це ресурс у вигляді людей, чи стартового капіталу, на побудову фундаменту.`,
 		],
+
+		strategyTitle: `Стратегія для фундаменту:`,
+		strategyItems: [
+			`Команда і виробництво першочергових продуктів індустрії.`,
+			`Власний укомплектований журнал з форумом, або інтеграція в існуючу площадка для освітлення діяльності і підходящий ресурс для розповсюдження власного контенту.`,
+			`Рекламна кампанія.`,
+		],
+
+		getTitle: `Що отримуємо:`,
+		getItems: [
+			`Статті міняючі стратегію існування розвитку в Україні. Наглядний приклад еволюції в чистому вигляді. Слова готові привернути увагу масштабних корпорацій, висвітлення їх слабких сторін та подальше конкурування. `,
+			`Освітлення всіх робочих процесів і поступове виробництво, оцінюючи потреби і першочергові необхідності.`,
+			`І далі тільки більше!`,
+		],
+
+		lastWords: `Для всіх бажаючих зкооперуватись, зв'яжіться зі мною!`,
 	},
 ];
 

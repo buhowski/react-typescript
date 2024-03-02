@@ -90,6 +90,24 @@ const Idea = () => {
 						{simple}
 					</p>
 				))}
+
+				<h3 className='h3'>{data.strategyTitle}</h3>
+
+				<ul>
+					{data.strategyItems.map((item, a) => (
+						<li key={a}>{item}</li>
+					))}
+				</ul>
+
+				<h3 className='h3'>{data.getTitle}</h3>
+
+				<ul>
+					{data.getItems.map((item, a) => (
+						<li key={a}>{item}</li>
+					))}
+				</ul>
+
+				<p className='last-words'>{data.lastWords}</p>
 			</div>
 		</div>
 	));

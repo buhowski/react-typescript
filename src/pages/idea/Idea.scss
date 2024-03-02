@@ -268,7 +268,7 @@
 		text-transform: uppercase;
 
 		@include mobile {
-			padding: 6px 25px;
+			padding: 4.5px 22px;
 		}
 
 		&[data-active='true'] {
@@ -392,6 +392,18 @@
 				color: $titlePink;
 			}
 		}
+	}
+}
+
+.last-words {
+	text-align: right;
+	font-style: italic;
+	margin-top: 30px;
+	margin-bottom: 10px;
+	font-size: 14px;
+
+	@include tabletBig {
+		margin-bottom: 0;
 	}
 }
 
