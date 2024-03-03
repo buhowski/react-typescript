@@ -14,7 +14,7 @@ const textData = [
 
 			`В конечном итоге превратить обычное медиа на сферу производства и на ресурс из которого можно получать это качество.`,
 
-			`Гибкость этой идеи позволяет интегрировать ее с любыми существующими проектами, поэтому я готов к сотрудничеству или любому обсуждению, ибо делать невозможное это главная цель. Есть виденье и теоретически оно работает.`,
+			`Гибкость этой идеи позволяет интегрировать ее в любые существующие проекты, как модификацию, отдельный проект или масштабирование компании. Поэтому я готов к сотрудничеству или любому обсуждению, ибо делать невозможное это главная цель. Есть виденье и теоретически оно работает.`,
 		],
 
 		basic: `Основа`,
@@ -94,7 +94,7 @@ const textData = [
 
 			`Ultimately, the goal is to transform ordinary media into a sphere of production and a resource from which this quality can be consumed.`,
 
-			`The flexibility of this idea allows its integration with any existing projects, so I am ready for collaboration or any discussion, as making the impossible is the main goal. There is a vision and theoretically it works.`,
+			`Flexibility of this idea allows for its integration into any existing projects, as a modification, a separate project or a company's scaling. So I am ready for collaboration or any discussion, because doing the impossible is the main goal. There is a vision and theoretically it works.`,
 		],
 
 		basic: `Basis`,
@@ -174,7 +174,7 @@ const textData = [
 
 			`В кінцевому результаті перетворити звичайне медіа на сферу виробництва і на ресурс з якого можна споживати цю якість.`,
 
-			`Гнучкість цієї ідеї дозволяє інтегрувати її з будь якими існуючими проектами, тому я готовий до співпраці чи будь якого обговорення, бо робити неможливе це головна ціль. Є бачення і теоретично воно працює.`,
+			`Гнучкість цієї ідеї дозволяє інтегрувати її у будь які існуючі проекти, як модифікацію, окремий проект чи масштабування компанії. Тому я готовий до співпраці чи будь якого обговорення, бо робити неможливе це головна ціль. Є бачення і теоретично воно працює.`,
 		],
 
 		basic: `Основа`,
