@@ -4,6 +4,19 @@ const textData = [
 		pitchTitle: `Pitch`,
 		pitchText: `У меня есть необъятное желание создать социальную платформу (мобильное приложение и веб-сервис) для развития потенциала в Украине с возможностью выхода на международный уровень. Это новое пространство бесконечных возможностей, свежий воздух свободы, многофункциональный продукт для создания чего угодно, от технологических инноваций до самовыражения личности, всё лучшее в одном месте, вещи, которые меняют жизнь к лучшему!`,
 
+		sumTitle: `Сумарно`,
+		sumInfo: [
+			`Я могу предложить свободное и независимое медиа с голосом сознательности, новизну идей и масштабное производство качества кино и игровой индустрии мирового масштаба, идею формирования сферы IT, которая работает на собственное производство. `,
+
+			`За стратегию взята концепция интерактивного журнала, как фундамента для дальнейшего развития, где фокус делается на производстве и освещении этих возможностей.`,
+
+			`Основная уникальность – это идеи которые стоят за этим и движущая сила, которая желает освободиться от ограничений и рамок в которые текущие соцсети или медиа мейкеры постепенно вводят пользователей.`,
+
+			`В конечном итоге превратить обычное медиа на сферу производства и на ресурс из которого можно получать это качество.`,
+
+			`Гибкость этой идеи позволяет интегрировать ее с любыми существующими проектами, поэтому я готов к сотрудничеству или любому обсуждению, ибо делать невозможное это главная цель. Есть виденье и теоретически оно работает.`,
+		],
+
 		basic: `Основа`,
 		appSample: `Укомплектованный, многофункциональный журнал с возможностью создания и продвижения любой деятельности с интегрированной поддержкой автора. Также место для просмотра всевозможной информации и развлечения. В основном сосредоточено под мобильное приложение с расширенным и доступным веб сайтом – это снаружи, а внутри – огромный потенциал желающий присоединиться к компаниям, что двигают прогресс.`,
 
@@ -43,37 +56,23 @@ const textData = [
 			`В процессе формирования и правильным подходом к реализации, это место идеально займет свою нишу производства всего вышеперечисленного и новосозданного, становясь ведущей сферой, голосом разума, подчеркивая стремление популяризировать развитие в стране.`,
 		],
 
-		sumTitle: `Сумарно`,
-		sumInfo: [
-			`Я могу предложить свободное и независимое медиа с голосом сознательности, новизну идей и масштабное производство качества кино и игровой индустрии мирового масштаба, идею формирования сферы IT, которая работает на собственное производство. `,
-
-			`За стратегию взята концепция интерактивного журнала, как фундамента для дальнейшего развития, где фокус делается на производстве и освещении этих возможностей.`,
-
-			`Основная уникальность – это идеи которые стоят за этим и движущая сила, которая желает освободиться от ограничений и рамок в которые текущие соцсети или медиа мейкеры постепенно вводят пользователей.`,
-
-			`В конечном итоге превратить обычное медиа на сферу производства и на ресурс из которого можно получать это качество.`,
-
-			`Гибкость этой идеи позволяет интегрировать ее с любыми существующими проектами, поэтому я готов к сотрудничеству или любому обсуждению, ибо делать невозможное это главная цель. Есть виденье и теоретически оно работает.`,
-		],
-
 		simpleTitle: `Ну очень простыми словами`,
 		simpleInfo: [
 			`Я хочу и могу сделать качественное кино, игры, виртуальную реальность, стать голосом сознания, внедрить искусственный интеллект, робототехнику, изучение мозга человека и интеграцию его с компьютерными технологиями.`,
 
 			`Каждая компания делает себе сайт или визитку в интернете, я выбрал интерактивный журнал, который может взаимодействовать с людьми и по желанию его можно использовать, как социальную сеть и ресурс с донатной системой для создания собственного контента.`,
-
-			`Единственное что мне для этого нужно - это ресурс в виде людей, или стартового капитала, на построение фундамента.`,
 		],
 
-		strategyTitle: `Стратегия для фундамента:`,
+		strategyTitle: `Этапы и необходимости для фундамента:`,
 		strategyItems: [
-			`Команда и производство первоочередных продуктов индустрии.`,
+			`Ресурсы для создания команда и производство первоочередных продуктов индустрии.`,
 			`Собственный укомплектованный журнал с форумом, либо интеграция в существующую площадка для освещения деятельности и подходящий ресурс для распространения собственного контента.`,
 			`Рекламная кампания.`,
 		],
 
 		getTitle: `Что получаем:`,
 		getItems: [
+			`Собственный журнал, как независимый аттракцион возможностей, где можно построить все.`,
 			`Статьи меняющие стратегию существования развития в Украине. Наглядный пример эволюции в чистом виде. Слова готовые привлечь внимание масштабных корпораций, освещение их слабых сторон и дальнейшее конкурирование.`,
 			`Освещение всех рабочих процессов и постепенное производство, оценивая потребности и первоочередные необходимости.`,
 			`И дальше только больше!`,
@@ -86,6 +85,19 @@ const textData = [
 	{
 		pitchTitle: `Pitch`,
 		pitchText: `I have a great desire to create a social platform (mobile application and web service) for potential development in Ukraine with the ability to go global. It's a new space of endless possibilities, a fresh air of freedom, a multifunctional product for creating anything you want, from technological innovation to personal improvement, all the best of everything in one place, things that make a difference!`,
+
+		sumTitle: `Summary`,
+		sumInfo: [
+			`I can offer a free and independent media with a voice of consciousness, novelty of ideas and large-scale production of world-class quality in the film and gaming industries, the idea of forming an IT sector that works on its own production.`,
+
+			`The strategy is based on the concept of an interactive magazine as a foundation for further development, focusing on production and highlighting these opportunities.`,
+
+			`The main uniqueness lies in the ideas behind it and the driving force that seeks to break free from the limitations and frames that current social networks or media makers gradually imposed on users.`,
+
+			`Ultimately, the goal is to transform ordinary media into a sphere of production and a resource from which this quality can be consumed.`,
+
+			`The flexibility of this idea allows its integration with any existing projects, so I am ready for collaboration or any discussion, as making the impossible is the main goal. There is a vision and theoretically it works.`,
+		],
 
 		basic: `Basis`,
 		appSample: `Staffed, feature-rich magazine with the ability to create and promote any kind of activity with integrated author support. Also a place for browsing all sorts of information and entertainment. Mostly focused under a mobile app with an extended and accessible web site – on the outside, and on the inside – a huge potential of wanting to join the companies that are moving progress.`,
@@ -126,37 +138,23 @@ const textData = [
 			`In the process of further formation and the right approach to implementation, this place will perfectly occupy its niche for the production of all above listed and newly invented, becoming a leading area, a voice of consciousness, highlighting the desire to popularize the development in the country.`,
 		],
 
-		sumTitle: `Summary`,
-		sumInfo: [
-			`I can offer a free and independent media with a voice of consciousness, novelty of ideas and large-scale production of world-class quality in the film and gaming industries, the idea of forming an IT sector that works on its own production.`,
-
-			`The strategy is based on the concept of an interactive magazine as a foundation for further development, focusing on production and highlighting these opportunities.`,
-
-			`The main uniqueness lies in the ideas behind it and the driving force that seeks to break free from the limitations and frames that current social networks or media makers gradually imposed on users.`,
-
-			`Ultimately, the goal is to transform ordinary media into a sphere of production and a resource from which this quality can be consumed.`,
-
-			`The flexibility of this idea allows its integration with any existing projects, so I am ready for collaboration or any discussion, as making the impossible is the main goal. There is a vision and theoretically it works.`,
-		],
-
 		simpleTitle: `In very simple terms`,
 		simpleInfo: [
 			`I want and can produce quality movies, games, virtual reality, become a voice of consciousness, implement artificial intelligence, robotics, study the human brain, and integrate it with computer technologies.`,
 
 			`Every company creates a website or a business card on the internet, I chose an interactive magazine instead, which can interact with people and, if desired, can be used as a social network and a resource with a donation system for creating their own content.`,
-
-			`The only thing I need for this is resources in the form of people or starting capital to build the foundation.`,
 		],
 
-		strategyTitle: `Strategy for the foundation:`,
+		strategyTitle: `Stages and needs for the foundation:`,
 		strategyItems: [
-			`Team and production of priority products of the industry.`,
+			`Resources to build a team and production of priority products of the industry.`,
 			`Our own well-equipped magazine with a forum, or integration into an existing platform for highlighting activities and a suitable resource for distributing our own content.`,
 			`Advertising campaign.`,
 		],
 
 		getTitle: `What we get:`,
 		getItems: [
+			`Own magazine as an independent attraction of opportunities where you can build everything.`,
 			`Articles changing the strategy of development in Ukraine. A vivid example of evolution in its pure form. Words ready to attract the attention of major corporations, highlighting their weaknesses and further competition.`,
 			`Lighting up all work processes and gradual production, assessing needs and priority requirements.`,
 			`And then only more!`,
@@ -170,6 +168,19 @@ const textData = [
 		pitchTitle: `Pitch`,
 		pitchText: `Маю неосяжне бажання створити соціальну платформу (мобільний додаток і веб-сервіс) для розвитку потенціалу в Україні з можливістю виходу на міжнародний рівень. Це новий простір нескінченних можливостей, свіже повітря свободи, багатофункціональний продукт для створення чого завгодно, від технологічних інновацій до самовираження особистості, все найкраще в одному місці, речі, які змінюють життя на краще!`,
 
+		sumTitle: `Сумарно`,
+		sumInfo: [
+			`Я можу запропонувати вільне і незалежне медіа з голосом свідомості, новизну ідей і масштабне виробництво якості кіно та ігрової індустрії світового масштабу, ідею формування сфери IT, яка працює на власне виробництво.`,
+
+			`За стратегію взято концепцію інтерактивного журналу, як фундаменту для подальшого розвитку, де фокус робиться на виробництві та освітленні цих можливостей.`,
+
+			`Основна унікальність – це ідеї які стоять за цим і рушійна сила, яка прагне звільнитись від обмежень і рамок в які текучі соцмережі чи медіа мейкери поступово вводять користувачів.`,
+
+			`В кінцевому результаті перетворити звичайне медіа на сферу виробництва і на ресурс з якого можна споживати цю якість.`,
+
+			`Гнучкість цієї ідеї дозволяє інтегрувати її з будь якими існуючими проектами, тому я готовий до співпраці чи будь якого обговорення, бо робити неможливе це головна ціль. Є бачення і теоретично воно працює.`,
+		],
+
 		basic: `Основа`,
 		appSample: `Укомплектований, багатофункціональний журнал з можливістю створення та просування будь-якої діяльності з інтегрованою підтримкою автора. Також місце для перегляду різноманітної інформації та розваг. Здебільшого зосереджене під мобільний додаток із розширеним і доступним веб сайтом – це ззовні, а всередині – величезний потенціал охочий приєднатися до компаній, які сприяють прогресу.`,
 
@@ -179,7 +190,6 @@ const textData = [
 			`Онлайн кінотеатр, відеохостинг та лайв стрімінг`,
 			`Іміджборд та анонімний веб-форум`,
 		],
-		branchDesc: `з метою наповнення контентом розділ має свою сферу діяльності: Журналістика, висвітлення світових подій. Ігри/Кіно/Мульт індустрія, etc.`,
 
 		design: `Для вау-ефекту і уявлення головної сторінки входу в додаток слугують яскраві та привертаючі увагу постери актуальних подій. Створюватимуться з оригінальним дизайном і змінюватимуться залежно від поточного інфоприводу, що викликатимуть різноманітні емоції для масового обговорення.`,
 
@@ -209,38 +219,24 @@ const textData = [
 			'В процесі формування та правильним підходом до реалізації, це місце ідеально займатиме свою нішу виробництва всього вищепереліченого і новоствореного, стаючи провідною сферою, голосом свідомості, підкреслюючи прагнення популяризувати розвиток в країні.',
 		],
 
-		sumTitle: `Сумарно`,
-		sumInfo: [
-			`Я можу запропонувати вільне і незалежне медіа з голосом свідомості, новизну ідей і масштабне виробництво якості кіно та ігрової індустрії світового масштабу, ідею формування сфери IT, яка працює на власне виробництво.`,
-
-			`За стратегію взято концепцію інтерактивного журналу, як фундаменту для подальшого розвитку, де фокус робиться на виробництві та освітленні цих можливостей.`,
-
-			`Основна унікальність – це ідеї які стоять за цим і рушійна сила, яка прагне звільнитись від обмежень і рамок в які текучі соцмережі чи медіа мейкери поступово вводять користувачів.`,
-
-			`В кінцевому результаті перетворити звичайне медіа на сферу виробництва і на ресурс з якого можна споживати цю якість.`,
-
-			`Гнучкість цієї ідеї дозволяє інтегрувати її з будь якими існуючими проектами, тому я готовий до співпраці чи будь якого обговорення, бо робити неможливе це головна ціль. Є бачення і теоретично воно працює.`,
-		],
-
 		simpleTitle: `Ну дуже простими словами`,
 		simpleInfo: [
 			`Я хочу і можу зробити якісне кіно, ігри, віртуальну реальність, стати голосом свідомості, впровадити штучний інтелект, робототехніку, вивчення мозку людини та інтеграцію його з комп'ютерними технологіями.`,
 
 			`Кожна компанія робить собі сайт чи візитку в інтернеті, я вибрав інтерактивний журнал, який може взаємодіяти з людьми і за бажанням його можна використовувати, як соціальну мережу і ресурс з донатною системою для створення власного контенту.`,
-
-			`Єдине що мені для цього потрібно – це ресурс у вигляді людей, чи стартового капіталу, на побудову фундаменту.`,
 		],
 
-		strategyTitle: `Стратегія для фундаменту:`,
+		strategyTitle: `Етапи та потреби для фундаменту:`,
 		strategyItems: [
-			`Команда і виробництво першочергових продуктів індустрії.`,
+			`Ресурси для створення команди і виробництво першочергових продуктів індустрії.`,
 			`Власний укомплектований журнал з форумом, або інтеграція в існуючу площадка для освітлення діяльності і підходящий ресурс для розповсюдження власного контенту.`,
 			`Рекламна кампанія.`,
 		],
 
 		getTitle: `Що отримуємо:`,
 		getItems: [
-			`Статті міняючі стратегію існування розвитку в Україні. Наглядний приклад еволюції в чистому вигляді. Слова готові привернути увагу масштабних корпорацій, висвітлення їх слабких сторін та подальше конкурування. `,
+			`Власний журнал, як незалежний атракціон можливостей, де можна побудувати все.`,
+			`Статті міняючі стратегію існування розвитку в Україні. Наглядний приклад еволюції в чистому вигляді. Слова готові привернути увагу масштабних корпорацій, висвітлення їх слабких сторін та подальше конкурування.`,
 			`Освітлення всіх робочих процесів і поступове виробництво, оцінюючи потреби і першочергові необхідності.`,
 			`І далі тільки більше!`,
 		],
