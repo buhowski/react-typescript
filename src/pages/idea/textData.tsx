@@ -2,7 +2,7 @@ const textData = [
 	// RUSIAN
 	{
 		pitchTitle: `Pitch`,
-		pitchText: `У меня есть необъятное желание создать социальную платформу (мобильное приложение и веб-сервис) для развития потенциала в Украине с возможностью выхода на международный уровень. Это новое пространство бесконечных возможностей, свежий воздух свободы, многофункциональный продукт для создания чего угодно, от технологических инноваций до самовыражения личности, всё лучшее в одном месте, вещи, которые меняют жизнь к лучшему!`,
+		pitchText: `У меня есть необъятное желание создать социальную платформу (мобильное приложение и веб-сервис) для развития потенциала в Украине с возможностью выхода на международный уровень. Это новое пространство бесконечных возможностей, свежий воздух свободы, многофункциональный продукт для создания чего угодно, от технологических инноваций до самовыражения личности, всё лучшее в одном месте, вещи, которые меняют жизнь к лучшему. Потому что не существует невозможного, только неправильный подход!`,
 
 		sumTitle: `Сумарно`,
 		sumInfo: [
@@ -20,11 +20,11 @@ const textData = [
 		basic: `Основа`,
 		appSample: `Укомплектованный, многофункциональный журнал с возможностью создания и продвижения любой деятельности с интегрированной поддержкой автора. Также место для просмотра всевозможной информации и развлечения. В основном сосредоточено под мобильное приложение с расширенным и доступным веб сайтом – это снаружи, а внутри – огромный потенциал желающий присоединиться к компаниям, что двигают прогресс.`,
 
-		possibilitiesTitle: `Особенности и возможности:`,
+		possibilitiesTitle: `Возможности:`,
 		possibilitiesStar: [
-			`Новый формат журнала, социальная сеть, микроблогинг`,
-			`Онлайн кинотеатр, видеохостинг и лайв стриминг`,
-			`Имиджборд и анонимный веб-форум`,
+			`Новый формат журнала, социальная сеть`,
+			`Онлайн кинотеатр, видеохостинг`,
+			`Имиджборд и анонимный форум`,
 		],
 		branchDesc: `с целью заполнения контентом раздел имеет свою сферу деятельности: Журналистика, освещение мировых событий. Игры/Кино/Мульт индустрия, etc.`,
 
@@ -49,23 +49,21 @@ const textData = [
 		whyInfo: [
 			`Все текущие социальные сети превратились или превращаются в “телевизоры былой эпохи”, где вокруг сплошная цензура до абсурда и поток нескончаемой рекламы, который захламляет контент. Именно поэтому и нужен пересмотр очевидного и создание новой свободной площадки, смена курса на свежий воздух.`,
 
-			`Для Украины это будет первое место подобного формата, где все будет нацелено на раскрытие творческого потенциала личности, свободы высказывания и продвижения современного мировоззрения. А также и привычные развлечения.`,
+			`Для Украины это будет первое место подобного формата, где все будет нацелено на раскрытие творческого потенциала личности, свободы высказывания и продвижения современного мировоззрения и развлечений.`,
 
-			`Это приложение объединит лучшие возможности в удобном формате – без лишних и ненужных функций. Стильный минималистически-модернистский дизайн и футуристический подход с максимальной отзывчивостью к потребителю.`,
-
-			`В процессе формирования и правильным подходом к реализации, это место идеально займет свою нишу производства всего вышеперечисленного и новосозданного, становясь ведущей сферой, голосом разума, подчеркивая стремление популяризировать развитие в стране.`,
+			`В процессе формирования и правильным подходом к реализации, это место идеально займет свою нишу производства всего вышеперечисленного и новосозданного, становясь ведущей сферой, подчеркивая стремление популяризировать развитие в стране.`,
 		],
 
 		simpleTitle: `Ну очень простыми словами`,
 		simpleInfo: [
-			`Я хочу и могу сделать качественное кино, игры, виртуальную реальность, стать голосом сознания, внедрить искусственный интеллект, робототехнику, изучение мозга человека и интеграцию его с компьютерными технологиями.`,
+			`Я хочу и могу сделать качественное кино, игры, виртуальную реальность, стать голосом сознания, внедрить искусственный интеллект, робототехнику, изучение мозга человека и интеграцию его с компьютерными технологиями. И чтобы все это построить - необходим прочный фундамент.`,
 
-			`Каждая компания делает себе сайт или визитку в интернете, я выбрал интерактивный журнал, который может взаимодействовать с людьми и по желанию его можно использовать, как социальную сеть и ресурс с донатной системой для создания собственного контента.`,
+			`Каждая компания делает себе сайт или визитку в интернете, я выбрал интерактивный журнал, который может взаимодействовать с людьми и превратиться в собственный уголок свободного интернета, а при желании его можно использовать, как социальную сеть и ресурс для создания собственного контента.`,
 		],
 
 		strategyTitle: `Этапы и необходимости для фундамента:`,
 		strategyItems: [
-			`Ресурсы для создания команда и производство первоочередных продуктов индустрии.`,
+			`Ресурсы для создания команды и производство первоочередных продуктов индустрии.`,
 			`Собственный укомплектованный журнал с форумом, либо интеграция в существующую площадка для освещения деятельности и подходящий ресурс для распространения собственного контента.`,
 			`Рекламная кампания.`,
 		],
@@ -73,7 +71,7 @@ const textData = [
 		getTitle: `Что получаем:`,
 		getItems: [
 			`Собственный журнал, как независимый аттракцион возможностей, где можно построить все.`,
-			`Статьи меняющие стратегию существования развития в Украине. Наглядный пример эволюции в чистом виде. Слова готовые привлечь внимание масштабных корпораций, освещение их слабых сторон и дальнейшее конкурирование.`,
+			`Статьи меняющие стратегию существования развития в Украине и за ее пределами. Наглядный пример эволюции в чистом виде. Слова готовые привлечь внимание масштабных корпораций, освещение их слабых сторон и дальнейшее конкурирование.`,
 			`Освещение всех рабочих процессов и постепенное производство, оценивая потребности и первоочередные необходимости.`,
 			`И дальше только больше!`,
 		],
@@ -84,7 +82,7 @@ const textData = [
 	// ENGLISH
 	{
 		pitchTitle: `Pitch`,
-		pitchText: `I have a great desire to create a social platform (mobile application and web service) for potential development in Ukraine with the ability to go global. It's a new space of endless possibilities, a fresh air of freedom, a multifunctional product for creating anything you want, from technological innovation to personal improvement, all the best of everything in one place, things that make a difference!`,
+		pitchText: `I have a great desire to create a social platform (mobile application and web service) for potential development in Ukraine with the ability to go global. It's a new space of endless possibilities, a fresh air of freedom, a multifunctional product for creating anything you want, from technological innovation to personal improvement, all the best of everything in one place, things that make a difference. Because there is no impossible, only an incorrect approach!`,
 
 		sumTitle: `Summary`,
 		sumInfo: [
@@ -102,11 +100,11 @@ const textData = [
 		basic: `Basis`,
 		appSample: `Staffed, feature-rich magazine with the ability to create and promote any kind of activity with integrated author support. Also a place for browsing all sorts of information and entertainment. Mostly focused under a mobile app with an extended and accessible web site – on the outside, and on the inside – a huge potential of wanting to join the companies that are moving progress.`,
 
-		possibilitiesTitle: `Features and Capabilities:`,
+		possibilitiesTitle: `Capabilities:`,
 		possibilitiesStar: [
-			`Modernized magazine redesign, social network, microblogging`,
-			`Online cinema, video hosting and live streaming`,
-			`Imageboard and anonymous web forum`,
+			`Modernized magazine, social network`,
+			`Online cinema, video hosting`,
+			`Imageboard and anonymous forum`,
 		],
 		branchDesc: `in order to fill with content the section has its own field of activity: Journalism, world events coverage. Movies/Cartoons/Games Industry, etc.`,
 
@@ -131,18 +129,16 @@ const textData = [
 		whyInfo: [
 			`All current social networks have turned or are turning into “bygone era TVs'', with censorship to the point of absurdity and a stream of endless advertising all around that clutters the content. That's why we need to revise the obvious and create a new open platform, a shift in direction and breath of fresh air.`,
 
-			`For Ukraine it will be the first of such a place format, where everything will be focused on unleashing the creative potential of personality, freedom of expression and promotion of a modern world view. And the usual entertainment as well.`,
+			`For Ukraine it will be the first of such a place format, where everything will be focused on unleashing the creative potential of personality, freedom of expression and promotion of a modern world view and entertainment.`,
 
-			`This application will combine the best features in a convenient format – without unnecessary functions and useless things. With a stylish modern minimalist design and futuristic offshoot with maximum responsiveness to the consumer.`,
-
-			`In the process of further formation and the right approach to implementation, this place will perfectly occupy its niche for the production of all above listed and newly invented, becoming a leading area, a voice of consciousness, highlighting the desire to popularize the development in the country.`,
+			`In the process of further formation and the right approach to implementation, this place will perfectly occupy its niche for the production of all above listed and newly invented, becoming a leading area, highlighting the desire to popularize the development in the country.`,
 		],
 
 		simpleTitle: `In very simple terms`,
 		simpleInfo: [
-			`I want and can produce quality movies, games, virtual reality, become a voice of consciousness, implement artificial intelligence, robotics, study the human brain, and integrate it with computer technologies.`,
+			`I want and can produce quality movies, games, virtual reality, become a voice of consciousness, implement artificial intelligence, robotics, study the human brain, and integrate it with computer technologies. And to build all this, we need a strong foundation.`,
 
-			`Every company creates a website or a business card on the internet, I chose an interactive magazine instead, which can interact with people and, if desired, can be used as a social network and a resource with a donation system for creating their own content.`,
+			`Every company creates a website or a business card on the internet, I chose an interactive magazine instead, which can interact with people and become its own corner of the free internet, and if desired, can be used as a social network and a resource for creating personal content.`,
 		],
 
 		strategyTitle: `Stages and needs for the foundation:`,
@@ -155,7 +151,7 @@ const textData = [
 		getTitle: `What we get:`,
 		getItems: [
 			`Own magazine as an independent attraction of opportunities where you can build everything.`,
-			`Articles changing the strategy of development in Ukraine. A vivid example of evolution in its pure form. Words ready to attract the attention of major corporations, highlighting their weaknesses and further competition.`,
+			`Articles changing the strategy of development in Ukraine and abroad. A vivid example of evolution in its pure form. Words ready to attract the attention of major corporations, highlighting their weaknesses and further competition.`,
 			`Lighting up all work processes and gradual production, assessing needs and priority requirements.`,
 			`And then only more!`,
 		],
@@ -166,7 +162,7 @@ const textData = [
 	// UKRAINE
 	{
 		pitchTitle: `Pitch`,
-		pitchText: `Маю неосяжне бажання створити соціальну платформу (мобільний додаток і веб-сервіс) для розвитку потенціалу в Україні з можливістю виходу на міжнародний рівень. Це новий простір нескінченних можливостей, свіже повітря свободи, багатофункціональний продукт для створення чого завгодно, від технологічних інновацій до самовираження особистості, все найкраще в одному місці, речі, які змінюють життя на краще!`,
+		pitchText: `Маю неосяжне бажання створити соціальну платформу (мобільний додаток і веб-сервіс) для розвитку потенціалу в Україні з можливістю виходу на міжнародний рівень. Це новий простір нескінченних можливостей, свіже повітря свободи, багатофункціональний продукт для створення чого завгодно, від технологічних інновацій до самовираження особистості, все найкраще в одному місці, речі, які змінюють життя на краще. Бо не існує неможливого, лише неправильний підхід!`,
 
 		sumTitle: `Сумарно`,
 		sumInfo: [
@@ -184,11 +180,11 @@ const textData = [
 		basic: `Основа`,
 		appSample: `Укомплектований, багатофункціональний журнал з можливістю створення та просування будь-якої діяльності з інтегрованою підтримкою автора. Також місце для перегляду різноманітної інформації та розваг. Здебільшого зосереджене під мобільний додаток із розширеним і доступним веб сайтом – це ззовні, а всередині – величезний потенціал охочий приєднатися до компаній, які сприяють прогресу.`,
 
-		possibilitiesTitle: `Особливості та можливості:`,
+		possibilitiesTitle: `Можливості:`,
 		possibilitiesStar: [
-			`Новий формат журналу, соціальна мережа, мікроблогінг`,
-			`Онлайн кінотеатр, відеохостинг та лайв стрімінг`,
-			`Іміджборд та анонімний веб-форум`,
+			`Новий формат журналу, соціальна мережа`,
+			`Онлайн кінотеатр, відеохостинг`,
+			`Іміджборд та анонімний форум`,
 		],
 
 		design: `Для вау-ефекту і уявлення головної сторінки входу в додаток слугують яскраві та привертаючі увагу постери актуальних подій. Створюватимуться з оригінальним дизайном і змінюватимуться залежно від поточного інфоприводу, що викликатимуть різноманітні емоції для масового обговорення.`,
@@ -212,18 +208,16 @@ const textData = [
 		whyInfo: [
 			`Усі поточні соціальні мережі перетворилися чи перетворюються на “телевізори минувшої епохи”, де навколо суцільна цензура до абсурду і потік нескінченної реклами, що захаращує контент. Саме тому і потрібно переосмислення очевидного і створення нового вільного простору, зміна курсу на свіже повітря.`,
 
-			`Для України це буде перше місце подібного формату, де все націлене на розкриття творчого потенціалу особистості, свободи висловлювання та просування сучасного світогляду. Ну і звичайні розваги також.`,
+			`Для України це буде перше місце подібного формату, де все націлене на розкриття творчого потенціалу особистості, свободи висловлювання та просування сучасного світогляду і розваг.`,
 
-			`Цей додаток об'єднає найкращі можливості в зручному форматі – без зайвих та непотрібних функцій. Стильний мінімалістично-модерністський дизайн і футуристичний підхід з максимальним відгуком до споживача.`,
-
-			'В процесі формування та правильним підходом до реалізації, це місце ідеально займатиме свою нішу виробництва всього вищепереліченого і новоствореного, стаючи провідною сферою, голосом свідомості, підкреслюючи прагнення популяризувати розвиток в країні.',
+			'В процесі формування та правильним підходом до реалізації, це місце ідеально займатиме свою нішу виробництва всього вищепереліченого і новоствореного, стаючи провідною сферою, підкреслюючи прагнення популяризувати розвиток в країні.',
 		],
 
 		simpleTitle: `Ну дуже простими словами`,
 		simpleInfo: [
-			`Я хочу і можу зробити якісне кіно, ігри, віртуальну реальність, стати голосом свідомості, впровадити штучний інтелект, робототехніку, вивчення мозку людини та інтеграцію його з комп'ютерними технологіями.`,
+			`Я хочу і можу зробити якісне кіно, ігри, віртуальну реальність, стати голосом свідомості, впровадити штучний інтелект, робототехніку, вивчення мозку людини та інтеграцію його з комп'ютерними технологіями. І щоб все це побудувати – необхідний міцний фундамент.`,
 
-			`Кожна компанія робить собі сайт чи візитку в інтернеті, я вибрав інтерактивний журнал, який може взаємодіяти з людьми і за бажанням його можна використовувати, як соціальну мережу і ресурс з донатною системою для створення власного контенту.`,
+			`Кожна компанія робить собі сайт чи візитку в інтернеті, я вибрав інтерактивний журнал, який може взаємодіяти з людьми і перетворитись на власний куточок вільного інтернету, а при бажанні його можна використовувати, як соціальну мережу та ресурс для створення власного контенту.`,
 		],
 
 		strategyTitle: `Етапи та потреби для фундаменту:`,
@@ -236,7 +230,7 @@ const textData = [
 		getTitle: `Що отримуємо:`,
 		getItems: [
 			`Власний журнал, як незалежний атракціон можливостей, де можна побудувати все.`,
-			`Статті міняючі стратегію існування розвитку в Україні. Наглядний приклад еволюції в чистому вигляді. Слова готові привернути увагу масштабних корпорацій, висвітлення їх слабких сторін та подальше конкурування.`,
+			`Статті міняючі стратегію існування розвитку в Україні та за її межами. Наглядний приклад еволюції в чистому вигляді. Слова готові привернути увагу масштабних корпорацій, висвітлення їх слабких сторін та подальше конкурування.`,
 			`Освітлення всіх робочих процесів і поступове виробництво, оцінюючи потреби і першочергові необхідності.`,
 			`І далі тільки більше!`,
 		],
