@@ -44,6 +44,45 @@
 		<meta name="robots" content="follow" />
 		<meta name="google" content="notranslate" />
 		<title>Alexander Tsiomakh</title>
+
+		<!-- JavaScript to dynamically set image based on current page URL -->
+		<script>
+			function addSocialMediaMetaTags(screenshotURL) {
+				if (!screenshotURL) {
+					return; // Exit early if no screenshot URL
+				}
+
+				const metaTags = [
+					{ name: 'twitter:image', content: screenshotURL },
+					{ name: 'og:image', content: screenshotURL },
+				];
+
+				metaTags.forEach(({ name, content }) => {
+					const metaTag = document.createElement('meta');
+					metaTag.name = name;
+					metaTag.content = content;
+					document.head.appendChild(metaTag);
+				});
+
+				console.log(screenshotURL);
+			}
+
+			const pageScreenshotMap = {
+				'https://buhowski.dev/': 'screenshot.jpg',
+				'https://buhowski.dev': 'screenshot.jpg',
+				'buhowski.dev': 'screenshot.jpg',
+				'buhowski.dev/': 'screenshot.jpg',
+				'https://buhowski.dev/startup': 'startup_screenshot.jpg',
+			};
+
+			// Get screenshot URL based on current page URL
+			const screenshotURL = pageScreenshotMap[window.location.href];
+
+			// Add meta tags if screenshot URL found
+			if (screenshotURL) {
+				addSocialMediaMetaTags(screenshotURL);
+			}
+		</script>
 	</head>
 	<body id="body">
 		<noscript>
