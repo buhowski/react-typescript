@@ -1,4 +1,6 @@
-# Startup Presentation - https://buhowski.dev/startup
+# Startup Presentation
+
+https://buhowski.dev/startup
 
 ## Project called: "How to turn an information media magazine into a company producing its own technologies"
 
