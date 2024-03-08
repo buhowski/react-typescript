@@ -6,109 +6,117 @@ const Idea = () => {
 	const contactBtnTitle = 'Get In Touch';
 	const baseTitle = 'Startup Presentation';
 
-	const textItems = textData.map((data, i) => (
-		<div key={i}>
+	const textItems = textData.map((data, index) => (
+		<div key={index}>
 			<div className='idea-block'>
-				<h2 className='idea-block__title h2'>{data.pitchTitle}</h2>
-				<p className='idea-block__text'>{data.pitchText}</p>
-			</div>
+				<h2 className='idea-block__title h2'>{data.missionTitle}</h2>
 
-			<div className='idea-block'>
-				<h2 className='h2'>{data.sumTitle}</h2>
-
-				{data.sumInfo.map((sum, c) => (
-					<p key={c} className='idea-block__text'>
-						{sum}
-					</p>
-				))}
-			</div>
-
-			<div className='idea-block'>
-				<h2 className='idea-block__title h2'>{data.basic}</h2>
-				<p className='idea-block__text'>{data.appSample}</p>
-				<h3 className='h3'>{data.possibilitiesTitle}</h3>
+				<p className='idea-block__text'>{data.missionText}</p>
 
 				<ul>
-					{data.possibilitiesStar.slice(0, 2).map((item, a) => (
-						<li key={a} className='idea-block__stared'>
-							{item}
+					{data.missionList.map((item, i) => (
+						<li key={i}>{item}</li>
+					))}
+				</ul>
 
-							{/* <span className='idea-block__star'> *</span> */}
+				<p className='idea-block__text'>{data.missionText2}</p>
+			</div>
+
+			<div className='idea-block'>
+				<h2 className='idea-block__title h2'>{data.descriptionTitle}</h2>
+
+				{data.descriptionText.map((item, i) => (
+					<p key={i} className='idea-block__text'>
+						{item}
+					</p>
+				))}
+
+				<h3 className='h3'>{data.descriptionFunctionsTitle}</h3>
+
+				<ul>
+					{data.descriptionFunctions.map((item, i) => (
+						<li key={i} className='idea-block'>
+							{item}
 						</li>
 					))}
+				</ul>
+			</div>
 
-					{data.possibilitiesStar.slice(2).map((item, a) => (
-						<li key={a}>{item}</li>
+			<div className='idea-block'>
+				<h2 className='idea-block__title h2'>{data.detailsTitle}</h2>
+
+				{data.detailsText.map((item, i) => (
+					<p key={i} className='idea-block__text'>
+						{item}
+					</p>
+				))}
+
+				<h3 className='h3'>{data.detailsPossibilitiesTitle}</h3>
+
+				<ul>
+					{data.detailsPossibilities.map((item, i) => (
+						<li key={i} className='idea-block'>
+							{item}
+						</li>
 					))}
 				</ul>
 
-				{/* <p className='idea-block__desc'>
-					<span className='idea-block__star'>* </span> &ndash; {data.branchDesc}
-				</p> */}
+				<h3 className='h3'>{data.detailsStagesTitle}</h3>
 
-				<p className='idea-block__info'>{data.design}</p>
+				<ul>
+					{data.detailsStages.map((item, i) => (
+						<li key={i} className='idea-block'>
+							{item}
+						</li>
+					))}
+				</ul>
+
+				<p className='idea-block__text'>{data.detailsText2}</p>
 			</div>
 
 			<div className='idea-block'>
-				<h2 className='h2'>{data.conceptTitle}</h2>
-				<div className='idea-concept'>
-					<h3 className='h3'>{data.filmTitle}</h3>
+				<h2 className='idea-block__title h2'>{data.summaryTitle}</h2>
 
-					{data.filmInfo.map((filmInfo, f) => (
-						<p key={f} className='idea-block__text'>
-							{filmInfo}
-						</p>
+				{data.summaryText.map((item, i) => (
+					<p key={i} className='idea-block__text'>
+						{item}
+					</p>
+				))}
+
+				<h3 className='h3'>{data.summarySimplifyTitle}</h3>
+
+				<ul>
+					{data.summarySimplify.map((item, i) => (
+						<li key={i} className='idea-block'>
+							{item}
+						</li>
 					))}
-				</div>
+				</ul>
 
-				<div className='idea-concept'>
-					<h3 className='h3'>{data.journalist}</h3>
+				<h3 className='h3'>{data.summaryTechTitle}</h3>
 
-					{data.journalistInfo.map((journalist, j) => (
-						<p key={j} className='idea-block__text'>
-							{journalist}
-						</p>
+				<ul>
+					{data.summaryTech.map((item, i) => (
+						<li key={i} className='idea-block'>
+							{item}
+						</li>
 					))}
-				</div>
-			</div>
+				</ul>
 
-			<div className='idea-block'>
-				<h2 className='h2'>{data.whyTitle}</h2>
+				<h3 className='h3'>{data.gonzoTitle}</h3>
 
-				{data.whyInfo.map((why, b) => (
-					<p key={b} className='idea-block__text'>
-						{why}
+				{data.gonzoText.map((item, i) => (
+					<p key={i} className='idea-block__text'>
+						{item}
 					</p>
 				))}
 			</div>
 
-			<div className='idea-block'>
-				<h2 className='h2'>{data.simpleTitle}</h2>
-
-				{data.simpleInfo.map((simple, c) => (
-					<p key={c} className='idea-block__text'>
-						{simple}
-					</p>
+			<p className='last-words'>
+				{data.lastWords.map((item, i) => (
+					<span key={i}>{item}</span>
 				))}
-
-				<h3 className='h3'>{data.strategyTitle}</h3>
-
-				<ul>
-					{data.strategyItems.map((item, a) => (
-						<li key={a}>{item}</li>
-					))}
-				</ul>
-
-				<h3 className='h3'>{data.getTitle}</h3>
-
-				<ul>
-					{data.getItems.map((item, a) => (
-						<li key={a}>{item}</li>
-					))}
-				</ul>
-
-				<p className='last-words'>{data.lastWords}</p>
-			</div>
+			</p>
 		</div>
 	));
 

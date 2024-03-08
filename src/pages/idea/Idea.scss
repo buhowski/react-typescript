@@ -20,11 +20,7 @@
 	}
 
 	.base-title {
-		padding-bottom: 40px;
-
-		@media screen and (max-width: 1366px) {
-			padding-bottom: 30px;
-		}
+		padding-bottom: 30px;
 
 		@include tabletBig {
 			padding-bottom: 50px;
@@ -168,7 +164,7 @@
 	display: flex;
 	position: relative;
 	height: 100%;
-	max-height: calc(100% - 133px);
+	max-height: calc(100% - 123px);
 	box-shadow: 0px 4px 18px rgba($color: $black, $alpha: 0.6);
 
 	@include laptop {
@@ -301,12 +297,14 @@
 		font-size: 21px;
 		line-height: normal;
 		font-family: $ui-medium;
+		font-weight: 600;
 		margin-bottom: 15px;
 	}
 
 	.h3 {
 		font-size: 18px;
 		font-family: $ui-medium;
+		font-weight: 600;
 		color: $titlePink;
 		margin: 15px 0 5px;
 	}
@@ -325,7 +323,7 @@
 	}
 
 	li {
-		margin-bottom: 5px;
+		margin-bottom: 10px;
 		position: relative;
 		display: flex;
 
@@ -336,13 +334,13 @@
 		&::before {
 			content: '';
 			display: inline-block;
-			min-width: 3px;
-			width: 3px;
-			height: 3px;
+			flex-shrink: 0;
+			width: 4px;
+			height: 4px;
 			border-radius: 50%;
 			background: $titlePink;
-			margin-right: 10px;
-			margin-top: 10px;
+			margin-right: 11px;
+			margin-top: 11px;
 		}
 
 		.idea-block__star {
@@ -401,6 +399,10 @@
 	margin-top: 45px;
 	margin-bottom: 10px;
 	font-size: 14px;
+
+	span {
+		display: block;
+	}
 
 	@include tabletBig {
 		margin-bottom: 0;

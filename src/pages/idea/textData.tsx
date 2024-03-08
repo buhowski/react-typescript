@@ -1,241 +1,344 @@
 const textData = [
-	// RUSIAN
+	// ############## RUSIAN ##############
 	{
-		pitchTitle: `Pitch`,
-		pitchText: `У меня есть необъятное желание создать корпорацию для развития потенциала в Украине с возможностью выхода на международный уровень. Идея начинается с обычного журнала в виде приложения и веб-сервиса, который эволюционирует и расширяется в новое пространство бесконечных возможностей, свежий воздух свободы, в многофункциональный продукт для создания чего угодно, от технологических инноваций до самовыражения личности, всё лучшее в одном месте, вещи, которые меняют жизнь к лучшему. Потому что не существует невозможного, только неправильный подход!`,
+		// Mission
+		missionTitle: `Цель`,
+		missionText: `Есть сценарий проекта: "как превратить информационный медиа-журнал в компанию производства собственных технологий". Поэтому ищу возможность интегрировать свои идеи или объединить людей, чтобы творить будущее в следующих сферах:`,
+		missionList: [
+			`независимое медиа нового поколения`,
 
-		sumTitle: `Сумарно`,
-		sumInfo: [
-			`Я могу предложить свободное и независимое медиа с голосом сознательности, новизну идей и масштабное производство качества кино и игровой индустрии мирового масштаба, идею формирования сферы IT, которая работает на собственное производство и путь, который направлен только в сторону развития. `,
+			`передовое кино и игровая индустрия`,
 
-			`За стратегию взята концепция интерактивного журнала, как фундамента для дальнейшего развития, где фокус делается на производстве и освещении этих возможностей, потому что правильный маркетинг залог успеха, а качественный продукт – подтверждение.`,
+			`в сочетании с виртуальной реальностью`,
 
-			`Основная уникальность – это идеи которые стоят за этим и движущая сила, которая желает освободиться от ограничений и рамок в которые текущие соцсети или медиа мейкеры постепенно вводят пользователей.`,
+			`сформировать IT сектор, который работает на собственное производство и охватывает: блокчейн, искусственный интеллект, нейротехнологии и робототехнику`,
+		],
+		missionText2: `Моя идея начинается с создания собственной территории свободного интернета. За стратегию взята концепция интерактивного журнала, позволяющего взаимодействовать с людьми. Рассматривается мобильное приложение и веб-платформа, как фундамент для дальнейшего развития, где фокус делается на производстве и подаче информации, ведь правильный маркетинг залог успеха, а качественный продукт – подтверждение.`,
 
-			`В конечном итоге превратить обычное медиа на сферу производства и на ресурс из которого можно получать это качество.`,
+		// Description
+		descriptionTitle: `Описание`,
+		descriptionText: [
+			`Делается многофункциональный формат журнала и социальной сети, как мобильное приложение и веб-платформа, который можно представить на примере флипборда и фейсбука. Концепция собственного журнала перспективна из-за возможности самостоятельно развиваться по собственному курсу и адаптироваться к новым потребностям и тенденциям.`,
 
-			`Гибкость этой идеи позволяет интегрировать ее в любые существующие проекты, как модификацию, отдельный проект или масштабирование компании. Поэтому я готов к сотрудничеству или любому обсуждению, ибо делать невозможное это главная цель. Есть виденье и теоретически оно работает.`,
+			`Формируется профессиональная команда, которая занимается ведением журнала, созданием контента, разработкой сценариев и производством кино и игровой индустрии, развивая платформу поэтапно.`,
+		],
+		descriptionFunctionsTitle: `Необходимые функции:`,
+		descriptionFunctions: [
+			`Журнал – для стратегических целей, чтобы занять место ведущего медиа в стране. Необходим для рекламы, саморекламы и агрессивного маркетинга и обычного дневника.`,
+
+			`Соцсеть – для объединения людей с похожим взглядом и вкусами.`,
+
+			`Система донатов – для привлечения инвестиций на развитие и монетизацию контента.`,
+
+			`Форум имиджборд – чтобы обмениваться опытом и для сохранения готовых решений на все случаи жизни.`,
+
+			`Платформа как ресурс – для распространения собственного производства кино, игровой индустрии и любых других видов деятельности.`,
 		],
 
-		basic: `Основа`,
-		appSample: `Укомплектованный, многофункциональный журнал с возможностью создания и продвижения любой деятельности с интегрированной поддержкой автора. Также место для просмотра всевозможной информации и развлечения. В основном сосредоточено под мобильное приложение с расширенным и доступным веб сайтом – это снаружи, а внутри – огромный потенциал желающий присоединиться к компаниям, что двигают прогресс.`,
+		// Details
+		detailsTitle: `Конкретика`,
+		detailsText: [
+			`Ведения журнала и шаги – этап стратегии – это мои отдельные проекты, которые я могу презентовать. Есть подготовленные тексты, специально подобранные, под отдельную целевую аудиторию. Поднимаются основные проблемы, предоставляются наглядные примеры решений, привлекается аудитории.`,
 
-		possibilitiesTitle: `Возможности:`,
-		possibilitiesStar: [
-			`Новый формат журнала, социальная сеть`,
-			`Онлайн кинотеатр, видеохостинг`,
-			`Имиджборд и анонимный форум`,
+			`Ключевые продукты индустрии – этап производства – это тоже мои отдельные проекты, которые я могу презентовать. В наличии есть сериал, мультсериал, компьютерная игра. Что, для начала, позволит популяризироваться для Украинской аудитории и впоследствии выйти на международный рынок с презентациями будущих проектов для мировых кинофестивалей и игровых выставок.`,
 		],
-		branchDesc: `с целью заполнения контентом раздел имеет свою сферу деятельности: Журналистика, освещение мировых событий. Игры/Кино/Мульт индустрия, etc.`,
+		detailsPossibilitiesTitle: `Что я могу предоставить:`,
+		detailsPossibilities: [
+			`Статьи, которые предлагают альтернативную стратегию развития в Украине и за ее пределами. Темы связанные с современной культурой и социальными проблемами и варианты их решений. Юмор и гонзо-журналистику. В результате – конкуренто способное медиа.`,
 
-		design: `Для вау-эффекта и представления главной страницы входа в приложение служат яркие и привлекающие внимание постеры актуальных событий. Будут создаваться с оригинальным дизайном и меняться в зависимости от текущего инфоповода, вызывающие различные эмоции для массового обсуждения.`,
+			`Пространство без цензуры, для объединения людей, которые хотят менять будущее в выбранных сферах и место, на которое отсутствует любое давление бюрократии, олигархов или государственных структур.`,
 
-		conceptTitle: `Сферы деятельности`,
-		filmTitle: `Креативное производство`,
-		filmInfo: [
-			`В общем и целом моя перспектива сфокусирована на развитие масштаба и коллаборации разных сфер деятельности, от инновационных технологий до креативного самовыражения. И если собрать всё лучшее и давно известное в одном месте и создать профессиональный коллектив критически мыслящих идейников и энтузиастов, то скачок эволюционного процесса произойдет сам собой, что позволит творить новую историю культуры, искусства и технологического развития в Украине и мировой индустрии.`,
+			`Маркетинговые подходы для массового распространения.`,
 
-			`Создание и реинжиниринг IT-сектора. Разработка игр, кино, мультфильмов (на что уже есть готовые идеи и сценарии для старта), студия правильного перевода и озвучки и постепенная автоматизация всех устаревших процессов жизнедеятельности.`,
-		],
+			`Делать кино, игры – для продажи и мировой популяризации культуры и искусства, и удовлетворения интересов потребителей.`,
 
-		journalist: `Журналистика`,
-		journalistInfo: [
-			`Новое повествование современного дыхания, различные мнения, правда и грязный реализм. Своеобразная подача информации без цензуры – прямая, саркастичная с характером стиля письменности повседневного языка, честность и простота в описании жизни, с героями и антигероями.`,
+			`Производство ключевых продуктов и ведение журнала должно подтвердить все заявленные слова в течение одного года (этап оценки возможностей).`,
 
-			`Гонзо-журналистика, ведение сюжетных дневников от первого лица или группы лиц, включаясь в события, становясь частью истории, непредсказуемый и экспериментальный стиль. Нырять в самое пекло идиотизма проблемы, изучая вопрос изнутри или создавать определенные условия для его появления. Темы связанные с современной культурой и социальными проблемами.`,
-		],
+			`Затем развитие производственного IT сектора и автоматизация, оценивая потребности и первоочередные необходимости. Все технологии можно будет интегрировать в данный журнал (причина необходимости собственного места).`,
 
-		whyTitle: `Мотив`,
-		whyInfo: [
-			`Все текущие социальные сети превратились или превращаются в “телевизоры былой эпохи”, где вокруг сплошная цензура до абсурда и поток нескончаемой рекламы, который захламляет контент. Именно поэтому и нужен пересмотр очевидного и создание новой свободной площадки, смена курса на свежий воздух.`,
-
-			`Для Украины это будет первое место подобного формата, где все будет нацелено на раскрытие творческого потенциала личности, свободы высказывания и продвижения современного мировоззрения и развлечений.`,
-
-			`В процессе формирования и правильным подходом к реализации, это место идеально займет свою нишу производства всего вышеперечисленного и новосозданного, становясь ведущей сферой, подчеркивая стремление популяризировать развитие в стране.`,
-		],
-
-		simpleTitle: `Ну очень простыми словами`,
-		simpleInfo: [
-			`Я хочу и могу сделать качественное кино, игры, виртуальную реальность, стать голосом сознания, внедрить искусственный интеллект, робототехнику, изучение мозга человека и интеграцию его с компьютерными технологиями. И чтобы все это построить – необходим прочный фундамент.`,
-
-			`Каждая компания делает себе сайт или визитку в интернете, я выбрал интерактивный журнал, который может взаимодействовать с людьми и превратиться в собственный уголок свободного интернета, а при желании его можно использовать, как социальную сеть и ресурс для создания собственного контента.`,
-		],
-
-		strategyTitle: `Этапы и необходимости для фундамента:`,
-		strategyItems: [
-			`Ресурсы для создания команды и производство первоочередных продуктов индустрии.`,
-			`Собственный укомплектованный журнал с форумом, либо интеграция в существующую площадку для освещения деятельности и подходящий ресурс для распространения собственного контента.`,
-			`Рекламная кампания.`,
-		],
-
-		getTitle: `Что получаем:`,
-		getItems: [
-			`Собственный журнал, как независимый аттракцион возможностей, где можно построить все.`,
-			`Статьи меняющие стратегию существования развития в Украине и за ее пределами. Наглядный пример эволюции в чистом виде. Слова готовые привлечь внимание масштабных корпораций, освещение их слабых сторон и дальнейшее конкурирование.`,
-			`Освещение всех рабочих процессов и постепенное производство, оценивая потребности и первоочередные необходимости.`,
 			`И дальше только больше!`,
 		],
+		detailsStagesTitle: `Этапы и потребности (MVP):`,
+		detailsStages: [
+			`Фундамент – стартовый капитал на создание команды и производство ключевых продуктов индустрии.`,
 
-		lastWords: `Для всех желающих скооперироваться, свяжитесь со мной!`,
+			`Стратегия развития – укомплектованный журнал с форумом или интеграция в существующую площадку.`,
+
+			`Запуск и оценка эффективности – доработка уязвимых сторон, маркетинговая стратегия и рекламная кампания.`,
+		],
+
+		detailsText2: `Гибкость моих идей позволяет интегрировать их в любые существующие проекты, как модификацию, отдельный проект или масштабирование компании. Поэтому если вы разделяете схожие интересы и открыты к сотрудничеству, то я готов к обсуждению. Есть виденье, и теоретически оно работает. Для практики – нужны ресурсы.`,
+
+		// Summarization
+		summaryTitle: `Суммируя`,
+		summaryText: [
+			`Это сложный, многофункциональный и многоэтапный проект, он бросает вызов, но он возможен! Поэтому для развития я выбрал именно журнал – это мощный инструмент массовой информации и влияния, а в Украине с адекватным масс медиа очевидные проблемы (отсутствует популярное и независимое, или популярное и качественное), поэтому занять эту нишу я не вижу препятствий.`,
+
+			`А в целом моя перспектива сфокусирована на развитие масштаба. Для создания отделенного от государства места со своей независимой экосистемой. С коллаборацией разных сфер деятельности, от инновационных технологий до креативного мышления. И если собрать все лучшее в одном месте, и организовать профессиональный коллектив критически мыслящих идейников и энтузиастов, то скачок эволюционного прогресса произойдет сам собой. Потому что не существует ничего невозможного, только неправильный подход!`,
+		],
+		summarySimplifyTitle: `На пальцах:`,
+		summarySimplify: [
+			`Журнал – лицо компании. Популярный журнал – голос большинства. Мега популярный журнал – диктует правила развития, а не подстраивается под запрет эволюционировать (есть стратегия).`,
+
+			`Производство крутого кино и игр – прибыль (есть сценарии).`,
+
+			`Прибыль вкладывать в свои IT технологии (блокчейн, AI, нейротехнологии и робототехнику) – еще больше прибыли (есть идеи).`,
+
+			`Победа!`,
+
+			`Риск: в критическом случае может получиться только популярный журнал с возможностью продавать рекламу, системой донатов для инвестиций и производством кино-игровой продукции для продажи другим компаниям. Фундамент сохраняется и развитие возможно даже в критических условиях.`,
+		],
+		summaryTechTitle: `По технологиям (интересует):`,
+		summaryTech: [
+			`Блокчейн – криптовалютные операции на платформе, безопасность.`,
+
+			`AI – персональный помощник в журнале (помогает в работе, обучению).`,
+
+			`Нейротехнологии – изучение мозга человека и интеграция его с компьютерными технологиями, виртуальная реальность.`,
+
+			`Робототехника – автоматизация сложных рабочих процессов, протезирование, собственные спутники.`,
+		],
+
+		// Gonzo
+		gonzoTitle: `Новая журналистика, как отдельный вид искусства`,
+		gonzoText: [
+			`Новое повествование современного дыхания, различные мнения, правда и грязный реализм. Своеобразная подача информации без цензуры – прямая, саркастичная с характером стиля письменности повседневного языка, честность и простота в описании жизни, с героями и антигероями.`,
+
+			`Гонзо-журналистика – ведение сюжетных дневников от первого лица или группы лиц, включаясь в события, становясь частью истории, непредсказуемый и экспериментальный стиль. Нырять в самое пекло идиотизма проблемы, изучая вопрос изнутри или создавать определенные условия для его появления. Темы связанные с современной культурой и социальными проблемами.`,
+		],
+
+		lastWords: [
+			`Для всех желающих скооперироваться, свяжитесь со мной.`,
+			`Спасибо за внимание.`,
+		],
 	},
 
-	// ENGLISH
+	// ############## ENGLISH ##############
 	{
-		pitchTitle: `Pitch`,
-		pitchText: `I have a great desire to create a corporation to develop the potential in Ukraine with the ability to go global. The idea starts with an ordinary magazine in the form of an app and web service, which evolves and expands into a new space of endless possibilities, a fresh air of freedom, into a multifunctional product for creating anything you want, from technological innovation to personal improvement, all the best of everything in one place, things that make a difference. Because there is no impossible, only an incorrect approach!`,
+		// Mission
+		missionTitle: `Mission`,
+		missionText: `I have a project script: "how to turn an information media magazine into a company producing its own technologies". Therefore, I am seeking the opportunity to integrate my idea or unite people to create the future in the following areas:`,
+		missionList: [
+			`independent media of the new generation`,
 
-		sumTitle: `Summary`,
-		sumInfo: [
-			`I can offer a free and independent media with a voice of consciousness, novelty of ideas and large-scale production of world-class quality in the film and gaming industries, the idea of forming an IT sector that works on its own production and the path that is directed only towards growth.`,
+			`leading movie and gaming industry`,
 
-			`The strategy is based on the concept of an interactive magazine as a foundation for further development, focusing on production and highlighting these opportunities, as the right marketing is the key to success and a quality product is a confirmation.`,
+			`combined with virtual reality`,
 
-			`The main uniqueness lies in the ideas behind it and the driving force that seeks to break free from the limitations and frames that current social networks or media makers gradually imposed on users.`,
+			`forming an IT sector that works on its own production and includes: blockchain, AI, neurotechnologies and robotics`,
+		],
+		missionText2: `My idea begins with creating my own territory of free internet. The strategy is based on the concept of an interactive magazine that allows you to interact with people. A mobile application and web platform are considered as a foundation for further development, where the focus is on production and information delivery because proper marketing ensures success, and a quality product is confirmation.`,
 
-			`Ultimately, the goal is to transform ordinary media into a sphere of production and a resource from which this quality can be consumed.`,
+		// Description
+		descriptionTitle: `Description`,
+		descriptionText: [
+			`A multifunctional magazine and social network format are being created as a mobile application and web platform, which can be imagined as a combination of flipboard and facebook. The concept of a personal magazine is perspective because of the ability to develop independently and adapt to new needs and trends.`,
 
-			`Flexibility of this idea allows for its integration into any existing projects, as a modification, a separate project or a company's scaling. So I am ready for collaboration or any discussion, because doing the impossible is the main goal. There is a vision and theoretically it works.`,
+			`A professional team is being formed to lead the magazine, create content, develop scenarios, and produce films and gaming industry, gradually developing the platform.`,
+		],
+		descriptionFunctionsTitle: `Required functions:`,
+		descriptionFunctions: [
+			`Magazine – for strategic purposes, to occupy the place of the leading media in the country. Necessary for advertising, self-promotion, aggressive marketing, and as a regular diary.`,
+
+			`Social network – to unite people with similar views and tastes.`,
+
+			`Donation system – to attract investments for development and content monetization.`,
+
+			`Imageboard forum – to exchange experiences and preserve ready-made solutions for all life cases.`,
+
+			`Platform as a resource – for distributing own production of films, gaming industry, and any other activities.`,
 		],
 
-		basic: `Basis`,
-		appSample: `Staffed, feature-rich magazine with the ability to create and promote any kind of activity with integrated author support. Also a place for browsing all sorts of information and entertainment. Mostly focused under a mobile app with an extended and accessible web site – on the outside, and on the inside – a huge potential of wanting to join the companies that are moving progress.`,
+		// Details
+		detailsTitle: `Details`,
+		detailsText: [
+			`Magazine management and steps – the strategy stage – are my separate projects that I can present. Prepared texts are selected specifically for a target audience. Key issues are raised, clear examples of solutions are provided, and the audience is engaged.`,
 
-		possibilitiesTitle: `Capabilities:`,
-		possibilitiesStar: [
-			`Modernized magazine, social network`,
-			`Online cinema, video hosting`,
-			`Imageboard and anonymous forum`,
+			`Key industry products – the production stage – are also my separate projects that I can present. I have a serial, an animated serial, and a computer game. Which, initially, will allow popularizing for the Ukrainian audience and later entering the international market with presentations of future projects for world film festivals and game expos.`,
 		],
-		branchDesc: `in order to fill with content the section has its own field of activity: Journalism, world events coverage. Movies/Cartoons/Games Industry, etc.`,
+		detailsPossibilitiesTitle: `What I can offer:`,
+		detailsPossibilities: [
+			`Articles offering an alternative development strategy in Ukraine and beyond. Topics related to modern culture and social issues and options for their solutions. Humor and gonzo journalism. As a result – competitive media.`,
 
-		design: `For the wow effect and presentation of the main entry page of the application serve bright and eye-catching posters of actual events. Will be created with original designs and changed depending on the current newsbreak, causing different emotions for public discussion.`,
+			`Uncensored space for uniting people who want to change the future in selected areas and a place free from any pressure of bureaucracy, oligarchs, or government structures.`,
 
-		conceptTitle: `Fields of Activity`,
-		filmTitle: `Creative Production`,
-		filmInfo: [
-			`In general, my perspective is focused on the development of scale and collaboration of different spheres of activity, from innovative technologies to creative self-expression. And if we bring all the best and long-known things in one place and create a professional team of critical thinkers and enthusiasts, the jump in evolutionary process will happen all by itself, which will allow us to create a new history of culture, art and technological growth in Ukraine and world industry.`,
+			`Marketing approaches for mass distribution.`,
 
-			`Creation and re-engineering of the IT sector. Computer games development, making movies, cartoons (for which there are ready made ideas and scripts to start), studio of exact translation and voice acting, and gradual automation of all obsolete life processes.`,
-		],
+			`Making films, games – for sales and global popularization of culture and art and meeting consumer needs.`,
 
-		journalist: `Journalism`,
-		journalistInfo: [
-			`A new narrative of modern breathing, different opinions, truth and dirty realism. A peculiar presentation of information without censorship – direct, sarcastic, with the character of everyday language writing style, honesty and simplicity in describing life, featuring both heroes and anti-heroes.`,
+			`Production of key products and magazine management should confirm all the stated words within one year (opportunity assessment stage).`,
 
-			`Gonzo Journalism, making story diaries from the first person or group of people, immersing oneself in events, becoming part of the history, an unpredictable and experimental style. Diving into the depths of the absurdity of an issue, studying it from inside, or creating specific conditions for its appearance. Subjects dealing with contemporary culture and social issues.`,
-		],
+			`Then the development of the production IT sector and automatization, assessing needs and priorities. All technologies can be integrated into this magazine (the reason for the need of its own place).`,
 
-		whyTitle: `Motive`,
-		whyInfo: [
-			`All current social networks have turned or are turning into “bygone era TVs'', with censorship to the point of absurdity and a stream of endless advertising all around that clutters the content. That's why we need to revise the obvious and create a new open platform, a shift in direction and breath of fresh air.`,
-
-			`For Ukraine it will be the first of such a place format, where everything will be focused on unleashing the creative potential of personality, freedom of expression and promotion of a modern world view and entertainment.`,
-
-			`In the process of further formation and the right approach to implementation, this place will perfectly occupy its niche for the production of all above listed and newly invented, becoming a leading area, highlighting the desire to popularize the development in the country.`,
-		],
-
-		simpleTitle: `In very simple terms`,
-		simpleInfo: [
-			`I want and can produce quality movies, games, virtual reality, become a voice of consciousness, implement artificial intelligence, robotics, study the human brain, and integrate it with computer technologies. And to build all this, we need a strong foundation.`,
-
-			`Every company creates a website or a business card on the internet, I chose an interactive magazine instead, which can interact with people and become its own corner of the free internet, and if desired, can be used as a social network and a resource for creating personal content.`,
-		],
-
-		strategyTitle: `Stages and needs for the foundation:`,
-		strategyItems: [
-			`Resources to build a team and production of priority products of the industry.`,
-			`Our own well-equipped magazine with a forum, or integration into an existing platform for highlighting activities and a suitable resource for distributing our own content.`,
-			`Advertising campaign.`,
-		],
-
-		getTitle: `What we get:`,
-		getItems: [
-			`Own magazine as an independent attraction of opportunities where you can build everything.`,
-			`Articles changing the strategy of development in Ukraine and abroad. A vivid example of evolution in its pure form. Words ready to attract the attention of major corporations, highlighting their weaknesses and further competition.`,
-			`Lighting up all work processes and gradual production, assessing needs and priority requirements.`,
 			`And then only more!`,
 		],
+		detailsStagesTitle: `Stages and needs (MVP):`,
+		detailsStages: [
+			`Foundation – initial capital for team formation and production of key industry products.`,
 
-		lastWords: `For those who want to cooperate, please contact me!`,
+			`Development strategy – a complete magazine with a forum or integration into an existing platform.`,
+
+			`Launch and evaluation of effectiveness – finalization of vulnerabilities, marketing strategy, and advertising campaign.`,
+		],
+
+		detailsText2: `The flexibility of my ideas allows integrating them into any existing projects as modification, separate projects, or company scaling. So, if you share similar interests and are open to cooperation, I am ready to discuss. There is a vision, and theoretically, it works. For practice, I need resources.`,
+
+		// Summarization
+		summaryTitle: `Summarizing`,
+		summaryText: [
+			`This is a complex, multifunctional, and multi-stage project, it is challenging, but it is possible! That's why I chose a magazine for development – it is a powerful tool of mass information and influence, and in Ukraine, with adequate mass media, there are obvious problems (there is no popular and independent, or popular and high-quality), so I see no obstacles to occupy this niche.`,
+
+			`Overall, my perspective is focused on the development of scale. To create a state-independent place with its independent ecosystem. With collaboration of various fields, from innovative technologies to creative minds. And if we gather all the best in one place and organize a professional team of critical thinkers and enthusiasts, evolutionary progress will happen naturally. Because nothing is impossible, only the wrong approach!`,
+		],
+		summarySimplifyTitle: `To put it simply:`,
+		summarySimplify: [
+			`Magazine – the face of the company. A popular magazine is the voice of the majority. A mega-popular magazine – dictates the rules of development, not being subject to the ban on evolution (there is a strategy).`,
+
+			`Production of cool movies and games – profit (there are scenarios).`,
+
+			`Investing profit in our IT technologies (blockchain, AI, neurotechnologies and robotics) – even more profit (there are ideas).`,
+
+			`Win!`,
+
+			`Risks: In a critical case, there could be only a popular magazine with the ability to sell advertisements, a donation system for investments, and the production of film and game products for sale to other companies. The foundation is preserved and development is possible even in critical conditions.`,
+		],
+		summaryTechTitle: `About technologies (interests):`,
+		summaryTech: [
+			`Blockchain – cryptocurrency operations on the platform, security.`,
+
+			`AI – personal assistant in a journal (help in work, study).`,
+
+			`Neurotechnology – study the human brain and integrate it with computer technologies, virtual reality.`,
+
+			`Robotics – automation of complex workflows, prosthetics, own satellites.`,
+		],
+
+		// Gonzo
+		gonzoTitle: `New journalism as a separate form of art`,
+		gonzoText: [
+			`A new narrative of modern breathing, different opinions, truth and dirty realism. A unique presentation of information without censorship – direct, sarcastic, with a character of everyday language writing style, honesty, and simplicity in describing life.`,
+
+			`Gonzo journalism – making story diaries from the first person or group of people, immersing oneself in events, becoming part of the history, an unpredictable and experimental style. Diving into the depths of the absurdity of an issue, studying it from inside, or creating specific conditions for its appearance. Subjects dealing with modern culture and social problems.`,
+		],
+
+		lastWords: [
+			`For anyone interested in cooperating, please contact me.`,
+			`Thank you for your attention.`,
+		],
 	},
 
-	// UKRAINE
+	// ############## UKRAINE ##############
 	{
-		pitchTitle: `Pitch`,
-		pitchText: `Маю неосяжне бажання створити корпорацію для розвитку потенціалу в Україні з можливістю виходу на міжнародний рівень. Ідея починається зі звичайного журналу у вигляді додатку і веб-сервісу, який еволюціонує і розширюється у новий простір нескінченних можливостей, свіже повітря свободи, у багатофункціональний продукт для створення чого завгодно, від технологічних інновацій до самовираження особистості, все найкраще в одному місці, речі, які змінюють життя на краще. Бо не існує неможливого, лише неправильний підхід!`,
+		// Mission
+		missionTitle: `Ціль`,
+		missionText: `Маю сценарій проекту: "як перетворити інформаційний медіа-журнал в компанію виробництва власних технологій". Тому шукаю можливість інтегрувати свої ідеї або об'єднати людей, щоб творити майбутнє у наступних сферах:`,
+		missionList: [
+			`незалежне медіа нового покоління`,
 
-		sumTitle: `Сумарно`,
-		sumInfo: [
-			`Я можу запропонувати вільне і незалежне медіа з голосом свідомості, новизну ідей і масштабне виробництво якості кіно та ігрової індустрії світового масштабу, ідею формування сфери IT, яка працює на власне виробництво та шлях, який направлений лише в сторону розвитку.`,
+			`провідне кіно та ігрова індустрія`,
 
-			`За стратегію взято концепцію інтерактивного журналу, як фундаменту для подальшого розвитку, де фокус робиться на виробництві та освітленні цих можливостей, бо правильний маркетинг запорука успіху, а якісний продукт – підтвердження.`,
+			`в поєднанні з віртуальною реальністю`,
 
-			`Основна унікальність – це ідеї які стоять за цим і рушійна сила, яка прагне звільнитись від обмежень і рамок в які текучі соцмережі чи медіа мейкери поступово вводять користувачів.`,
+			`сформувати IT сектор, який працює на власне виробництво і охоплює: блокчейн, штучний інтелект, нейротехнології та робототехніку`,
+		],
+		missionText2: `Моя ідея починається зі створення власної території вільного інтернету. За стратегію взято концепцію інтерактивного журналу, що дозволяє взаємодіяти з людьми. Розглядається мобільний додаток і веб-платформа, як фундамент для подальшого розвитку, де фокус робиться на виробництві та подачі інформації, бо правильний маркетинг запорука успіху, а якісний продукт – підтвердження.`,
 
-			`В кінцевому результаті перетворити звичайне медіа на сферу виробництва і на ресурс з якого можна споживати цю якість.`,
+		// Description
+		descriptionTitle: `Опис`,
+		descriptionText: [
+			`Робиться багатофункціональний формат журналу та соціальної мережі, як мобільний додаток і веб-платформа, який можна уявити на прикладі фліпборда та фейсбука. Концепція власного журналу перспективна через можливість самостійно розвиватись за власним курсом та адаптуватись до нових потреб і тенденцій.`,
 
-			`Гнучкість цієї ідеї дозволяє інтегрувати її у будь які існуючі проекти, як модифікацію, окремий проект чи масштабування компанії. Тому я готовий до співпраці чи будь якого обговорення, бо робити неможливе це головна ціль. Є бачення і теоретично воно працює.`,
+			`Формується професійна команда, яка займається веденням журналу, створенням контенту, розробкою сценаріїв і виробництвом кіно та ігрової індустрії, розвиваючи платформу поетапно.`,
+		],
+		descriptionFunctionsTitle: `Необхідні функції:`,
+		descriptionFunctions: [
+			`Журнал – для стратегічних цілей, щоб зайняти місце провідного медіа в країні. Необхідний для реклами, самореклами та агресивного маркетингу і звичайного щоденника.`,
+
+			`Соцмережа –  для об'єднання людей зі схожим баченням та смаками.`,
+
+			`Система донатів – для залучення інвестицій на розвиток і монетизацію контенту.`,
+
+			`Форум іміджборд – щоб обмінюватись досвідом та для збереження готових рішень на всі випадки життя.`,
+
+			`Платформа як ресурс – для розповсюдження власного виробництва кіно, ігрової індустрії та будь яких інших видів діяльності.`,
 		],
 
-		basic: `Основа`,
-		appSample: `Укомплектований, багатофункціональний журнал з можливістю створення та просування будь-якої діяльності з інтегрованою підтримкою автора. Також місце для перегляду різноманітної інформації та розваг. Здебільшого зосереджене під мобільний додаток із розширеним і доступним веб сайтом – це ззовні, а всередині – величезний потенціал охочий приєднатися до компаній, які сприяють прогресу.`,
+		// Details
+		detailsTitle: `Конкретика`,
+		detailsText: [
+			`Ведення журналу та кроки – етап стратегії – це мої окремі проекти, які я можу презентувати. Є підготовлені тексти, спеціально підібрані, під окрему цільову аудиторію. Піднімаються основні проблеми, надаються наглядні приклади рішень, залучається аудиторії.`,
 
-		possibilitiesTitle: `Можливості:`,
-		possibilitiesStar: [
-			`Новий формат журналу, соціальна мережа`,
-			`Онлайн кінотеатр, відеохостинг`,
-			`Іміджборд та анонімний форум`,
+			`Ключові продукти індустрії – етап виробництва – це теж мої окремі проекти, які я можу презентувати. В наявності є серіал, мультсеріал, комп'ютерна гра. Що, для початку, дозволить популяризуватися для Української аудиторії і згодом вийти на міжнародний ринок з презентаціями майбутніх проектів для світових кінофестивалів та ігрових виставок.`,
 		],
+		detailsPossibilitiesTitle: `Що я можу надати:`,
+		detailsPossibilities: [
+			`Статті, які пропонують альтернативну стратегію розвитку в Україні та за її межами. Теми пов'язані з сучасною культурою і соціальними проблемами та варіанти їх вирішень. Гумор і гонзо-журналістику. В результаті – конкурентно спроможне медіа.`,
 
-		design: `Для вау-ефекту і уявлення головної сторінки входу в додаток слугують яскраві та привертаючі увагу постери актуальних подій. Створюватимуться з оригінальним дизайном і змінюватимуться залежно від поточного інфоприводу, що викликатимуть різноманітні емоції для масового обговорення.`,
+			`Простір без цензури, для об'єднання людей, які хочуть міняти майбутнє у вибраних сферах і місце, на яке відсутній будь який тиск бюрократії, олігархів чи державних структур.`,
 
-		conceptTitle: `Сфери діяльності`,
-		filmTitle: `Креативне виробництво`,
-		filmInfo: [
-			`Загалом моя перспектива сфокусована на розвиток масштабу і колаборації різних сфер діяльності, від інноваційних технологій до креативного самовираження. І якщо зібрати все найкраще і давно відоме в одному місці та організувати професійний колектив критично мислячих ідейників та ентузіастів, то стрибок еволюційного процесу відбудеться сам собою, що дасть змогу творити нову історію культури, мистецтва та технологічного розвитку в Україні та світовій індустрії.`,
+			`Маркетингові підходи для масового розповсюдження.`,
 
-			`Створення та реінжиніринг IT-сектора. Розробка ігор, кіно, мультфільмів (на що вже є готові ідеї та сценарії для старту), студія правильного перекладу та озвучки, та поступова автоматизація всіх застарілих процесів життєдіяльності.`,
-		],
+			`Робити кіно, ігри – для продажі та світової популяризації культури і мистецтва, та задоволення потреб споживачів.`,
 
-		journalist: `Журналістика`,
-		journalistInfo: [
-			`Сучасний погляд нового дихання, різноманітні міркування, правда чистої води та брудний реалізм. Своєрідна подача інформації без цензури – пряма, саркастична, з характером стилю писемності повсякденної мови, чесність і простота в описі життя, з героями і антигероями.`,
+			`Виробництво ключових продуктів і ведення журналу має підтвердити всі заявлені слова протягом одного року (етап оцінки можливостей).`,
 
-			`Гонзо-журналістика, ведення сюжетних щоденників від першої особи чи групи лиць, включаючись у події, стаючи частиною історії, непередбачуваний і експериментальний стиль. Пірнати в саме пекло ідіотизму проблеми, вивчаючи питання зсередини або створювати певні умови для його появи. Теми пов'язані з сучасною культурою та соціальними проблемами.`,
-		],
+			`Потім розвиток виробничого IT сектора і автоматизація, оцінюючи потреби і першочергові необхідності. Всі технології можна буде інтегрувати у даний журнал (причина необхідності власного місця).`,
 
-		whyTitle: `Мотив`,
-		whyInfo: [
-			`Усі поточні соціальні мережі перетворилися чи перетворюються на “телевізори минувшої епохи”, де навколо суцільна цензура до абсурду і потік нескінченної реклами, що захаращує контент. Саме тому і потрібно переосмислення очевидного і створення нового вільного простору, зміна курсу на свіже повітря.`,
-
-			`Для України це буде перше місце подібного формату, де все націлене на розкриття творчого потенціалу особистості, свободи висловлювання та просування сучасного світогляду і розваг.`,
-
-			'В процесі формування та правильним підходом до реалізації, це місце ідеально займатиме свою нішу виробництва всього вищепереліченого і новоствореного, стаючи провідною сферою, підкреслюючи прагнення популяризувати розвиток в країні.',
-		],
-
-		simpleTitle: `Ну дуже простими словами`,
-		simpleInfo: [
-			`Я хочу і можу зробити якісне кіно, ігри, віртуальну реальність, стати голосом свідомості, впровадити штучний інтелект, робототехніку, вивчення мозку людини та інтеграцію його з комп'ютерними технологіями. І щоб все це побудувати – необхідний міцний фундамент.`,
-
-			`Кожна компанія робить собі сайт чи візитку в інтернеті, я вибрав інтерактивний журнал, який може взаємодіяти з людьми і перетворитись на власний куточок вільного інтернету, а при бажанні його можна використовувати, як соціальну мережу та ресурс для створення власного контенту.`,
-		],
-
-		strategyTitle: `Етапи та потреби для фундаменту:`,
-		strategyItems: [
-			`Ресурси для створення команди і виробництво першочергових продуктів індустрії.`,
-			`Власний укомплектований журнал з форумом, або інтеграція в існуючу площадку для освітлення діяльності і підходящий ресурс для розповсюдження власного контенту.`,
-			`Рекламна кампанія.`,
-		],
-
-		getTitle: `Що отримуємо:`,
-		getItems: [
-			`Власний журнал, як незалежний атракціон можливостей, де можна побудувати все.`,
-			`Статті міняючі стратегію існування розвитку в Україні та за її межами. Наглядний приклад еволюції в чистому вигляді. Слова готові привернути увагу масштабних корпорацій, висвітлення їх слабких сторін та подальше конкурування.`,
-			`Освітлення всіх робочих процесів і поступове виробництво, оцінюючи потреби і першочергові необхідності.`,
 			`І далі тільки більше!`,
 		],
+		detailsStagesTitle: `Етапи та потреби (MVP):`,
+		detailsStages: [
+			`Фундамент – стартовий капітал на створення команди і виробництво ключових продуктів індустрії.`,
 
-		lastWords: `Для всіх охочих скооперуватись, зв'яжіться зі мною!`,
+			`Стратегія розвитку – укомплектований журнал з форумом чи інтеграція в існуючу площадку.`,
+
+			`Запуск та оцінка ефективності – доопрацювання вразливих сторін, маркетингова стратегія і рекламна кампанія.`,
+		],
+
+		detailsText2: `Гнучкість моїх ідей дозволяє інтегрувати їх у будь-які існуючі проекти, як модифікацію, окремий проект чи масштабування компанії. Тому якщо ви розділяєте схожі інтереси і відкриті до співпраці, то я готовий до обговорення. Є бачення, і теоретично воно працює. Для практики – потрібні ресурси.`,
+
+		// Summarization
+		summaryTitle: `Узагальнюючи`,
+		summaryText: [
+			`Це складний, багатофункціональний та багатоетапний проект, він кидає виклик, але він можливий! Тому для розвитку я вибрав саме журнал – це потужний інструмент масової інформації та впливу, а в Україні з адекватним мас медіа очевидні проблеми (відсутнє популярне і незалежне, або популярне і якісне), тому зайняти цю нішу я не бачу перешкод.`,
+
+			`А в цілому моя перспектива сфокусована на розвиток масштабу. Для створення відокремленого від держави місця зі своєю незалежною екосистемою. З колаборацією різних сфер діяльності, від інноваційних технологій до креативного мислення. І якщо зібрати все найкраще в одному місці, та організувати професійний колектив критично мислячих ідейників та ентузіастів, то стрибок еволюційного прогресу відбудеться сам собою. Бо не існує нічого неможливого, лише неправильний підхід!`,
+		],
+		summarySimplifyTitle: `На пальцях:`,
+		summarySimplify: [
+			`Журнал – лице компанії. Популярний журнал – голос більшості. Мега популярний журнал – диктує правила розвитку, а не підстроюється під заборону еволюціонувати (є стратегія).`,
+
+			`Виробництво крутого кіно та ігор – прибуток (є сценарії).`,
+
+			`Прибуток вкладати в свої IT технології (блокчейн, AI, нейротехнології та робототехніку) – ще більший прибуток (є ідеї).`,
+
+			`Перемога!`,
+
+			`Ризики: в критичному випадку може получитись лише популярний журнал з можливістю продавати рекламу, системою донатів для інвестицій та виробництвом кіно-ігрової продукції для продажі іншим компаніям. Фундамент зберігається і розвиток можливий навіть в критичних умовах.`,
+		],
+		summaryTechTitle: `По технологіям (цікавить):`,
+		summaryTech: [
+			`Блокчейн – криптовалютні операції на платформі, безпека.`,
+
+			`AI – персональний помічник в журналі (допомога в роботі, навчанню).`,
+
+			`Нейротехнології – вивчення мозку людини та інтеграція його з комп'ютерними технологіями, віртуальна реальність.`,
+
+			`Робототехніка – автоматизація складних робочих процесів, протезування, власні супутники.`,
+		],
+
+		// Gonzo
+		gonzoTitle: `Нова журналістика, як окремий вид мистецтва`,
+		gonzoText: [
+			`Сучасний погляд нового дихання, різноманітні міркування, правда чистої води та брудний реалізм. Своєрідна подача інформації без цензури – пряма, саркастична, з характером стилю писемності повсякденної мови, чесність і простота в описі життя.`,
+
+			`Гонзо-журналістика – ведення сюжетних щоденників від першої особи чи групи лиць, включаючись у події, стаючи частиною історії, непередбачуваний і експериментальний стиль. Пірнати в саме пекло ідіотизму проблеми, вивчаючи питання зсередини, або створювати певні умови для його появи. Теми пов'язані з сучасною культурою та соціальними проблемами.`,
+		],
+
+		lastWords: [
+			`Для всіх бажаючих скооперуватись, зв'яжіться зі мною.`,
+			`Дякую за увагу.`,
+		],
 	},
 ];
 
