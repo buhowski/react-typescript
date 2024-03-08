@@ -1,3 +1,7 @@
+# Startup Presentation
+
+## project scenario: "how to turn an information media magazine into a company producing its own technologies"
+
 ## This project is looking for investment or any help with development and promotion. If you're interested in collaborating, feel free to contact me!
 
 # Mission
