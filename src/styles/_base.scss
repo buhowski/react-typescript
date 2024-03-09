@@ -123,17 +123,20 @@ img {
 	width: 100%;
 	height: 100%;
 }
+
 .page.slide-enter .header,
 .page.slide-enter .gallery-container button.nav-link,
 .page.slide-enter .about-item .ball {
 	z-index: 0;
 }
+
 .logo-link.active,
 .nav-link.active,
 .page.slide-exit .nav-link,
 .page.slide-exit .logo-link {
 	pointer-events: none;
 }
+
 .logo,
 .nav-item,
 .mobile-menu-btn,

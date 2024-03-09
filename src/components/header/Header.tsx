@@ -10,7 +10,6 @@ const linksData = [
 	{
 		pageLink: pathToIdea,
 		pageName: `Business Idea`,
-		startupLink: true,
 	},
 	{
 		pageLink: pathToAbout,
