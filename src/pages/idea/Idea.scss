@@ -528,6 +528,11 @@
 		-webkit-overflow-scrolling: touch;
 	}
 
+	.simplebar-content {
+		touch-action: none;
+		cursor: grab !important;
+	}
+
 	.simplebar-content-wrapper {
 		direction: inherit;
 		box-sizing: border-box !important;

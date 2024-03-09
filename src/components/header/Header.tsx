@@ -18,7 +18,7 @@ const linksData = [
 	},
 	{
 		pageLink: pathToProjects,
-		pageName: 'Projects',
+		pageName: 'Portfolio',
 	},
 ];
 const Header = () => {

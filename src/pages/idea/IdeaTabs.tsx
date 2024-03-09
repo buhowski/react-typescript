@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import SimpleBar from 'simplebar-react';
 import PopupContacts from './PopupContacts';
 import SliderContainer from './Slider';
@@ -14,6 +14,34 @@ interface IdeaGeneralProps {
 const IdeaGeneral = ({ IdeaTabRu, IdeaTabEn, IdeaTabUa }: IdeaGeneralProps) => {
 	const useTabletLarge = useTabletLargeQuery();
 	const [currentTab, setCurrentTab] = useState('');
+	const scrollableRef = useRef<HTMLDivElement>(null);
+
+	// Pointer scroll logic for drag SimpleBar content
+	const isDrag = useRef(false);
+	const startY = useRef(0);
+
+	const handleDragStart = (e: PointerEvent) => {
+		// Check for ref existence
+		if (!scrollableRef.current) return;
+		isDrag.current = true;
+
+		// Track starting Y position
+		startY.current = e.clientY;
+	};
+
+	const handleDragEnd = () => {
+		isDrag.current = false;
+	};
+
+	const handleDrag = (e: PointerEvent) => {
+		if (!isDrag.current || !scrollableRef.current) return;
+		const movementY = e.clientY - startY.current;
+
+		// Update scrollTop
+		scrollableRef.current.scrollTop -= movementY;
+		startY.current = e.clientY;
+	};
+
 	const tabs = [
 		{
 			id: '1',
@@ -45,7 +73,24 @@ const IdeaGeneral = ({ IdeaTabRu, IdeaTabEn, IdeaTabUa }: IdeaGeneralProps) => {
 		const currentIndex = localStorage.getItem('currentIndex');
 
 		setCurrentTab(currentIndex ? currentIndex : '1');
-	}, []);
+
+		// for mouse dragging scroll
+		const element = scrollableRef.current;
+
+		if (element) {
+			element.addEventListener('pointerdown', handleDragStart);
+			element.addEventListener('pointerup', handleDragEnd);
+			element.addEventListener('pointermove', handleDrag);
+		}
+
+		return () => {
+			if (element) {
+				element.removeEventListener('pointerdown', handleDragStart);
+				element.removeEventListener('pointerup', handleDragEnd);
+				element.removeEventListener('pointermove', handleDrag);
+			}
+		};
+	}, [scrollableRef]); // Track changes in scrollableRef
 
 	return (
 		<div className='wrapper wrapper--idea'>
@@ -81,7 +126,11 @@ const IdeaGeneral = ({ IdeaTabRu, IdeaTabEn, IdeaTabUa }: IdeaGeneralProps) => {
 							</div>
 						))
 					) : (
-						<SimpleBar style={{ height: '100%' }} autoHide={false}>
+						<SimpleBar
+							style={{ height: '100%' }}
+							autoHide={false}
+							scrollableNodeProps={{ ref: scrollableRef }}
+						>
 							{tabs.map((tab) => (
 								<div
 									key={tab.id}
