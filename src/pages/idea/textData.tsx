@@ -108,8 +108,8 @@ const textData = [
 		],
 
 		lastWords: [
-			`Для всех желающих скооперироваться, 
-			свяжитесь со мной! 
+			`Для всех желающих сотрудничать,
+			свяжитесь со мной!
 			Спасибо за внимание.`,
 		],
 	},
@@ -223,8 +223,8 @@ const textData = [
 		],
 
 		lastWords: [
-			`For anyone interested in cooperating, 
-			please contact me! 
+			`For everyone who wants to cooperate,
+			please contact me!
 			Thank you for your attention.`,
 		],
 	},
@@ -338,8 +338,8 @@ const textData = [
 		],
 
 		lastWords: [
-			`Для всіх бажаючих скооперуватись, 
-			зв'яжіться зі мною! 
+			`Для всіх бажаючих співпрацювати,
+			зв'яжіться зі мною!
 			Дякую за увагу.`,
 		],
 	},

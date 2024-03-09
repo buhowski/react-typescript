@@ -206,7 +206,7 @@
 	}
 
 	span {
-		font-size: 14px;
+		font-size: 15px;
 	}
 }
 
@@ -326,12 +326,12 @@
 	margin-top: 10px;
 	margin-bottom: 30px;
 
-	@include laptop {
-		font-size: 29px;
-	}
-
 	@include tabletBig {
 		margin-top: 20px;
+	}
+
+	@media screen and (max-width: 340px) {
+		letter-spacing: 7px;
 	}
 }
 
