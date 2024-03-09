@@ -1,30 +1,14 @@
 @import '../../styles/variables';
 @import '../../styles/animation';
 
-.h2 {
-	font-weight: 500;
-}
-
 .wrapper--idea {
-	height: calc(100% - 100px);
 	position: relative;
-	padding-bottom: 30px;
-
-	@media screen and (max-width: 1366px) {
-		padding-bottom: 20px;
-	}
+	padding-bottom: 25px;
+	height: calc(100% - 90px);
 
 	@include tabletBig {
 		height: auto;
-		padding-bottom: 35px;
-	}
-
-	.base-title {
-		padding-bottom: 30px;
-
-		@include tabletBig {
-			padding-bottom: 50px;
-		}
+		padding-bottom: 45px;
 	}
 }
 
@@ -68,8 +52,13 @@
 .idea-contacts {
 	position: relative;
 	display: inline-block;
-	margin-top: auto;
+	margin: auto auto 0;
 	width: max-content;
+
+	@include tabletBig {
+		margin-top: 30px;
+		z-index: 1;
+	}
 
 	&__list {
 		user-select: text;
@@ -112,8 +101,8 @@
 
 	&.show {
 		.idea-contacts__list {
-			// height: 101px;
 			visibility: visible;
+
 			&::after {
 				transform: translate(-50%, 0) scale(1, 1);
 			}
@@ -135,59 +124,41 @@
 .slider-with-btn {
 	display: flex;
 	width: 100%;
-	.idea-contacts {
-		display: none;
 
-		@include tabletBig {
-			position: absolute;
-			bottom: 75px;
-			left: 50%;
-			transform: translateX(-50%);
-			display: inline-block;
-		}
+	@include tabletBig {
+		margin-left: -40px;
+		width: calc(100% + 80px);
 	}
 
-	.slider-container {
-		.idea-contacts {
-			display: inline-block;
-			@include tabletBig {
-				display: none;
-			}
-		}
+	@include mobile {
+		margin-left: -15px;
+		width: calc(100% + 30px);
 	}
 }
 
 .idea-section {
 	background: $darker;
-	padding: 60px;
-	padding-top: 0;
+	padding: 0 40px 35px;
 	display: flex;
 	position: relative;
+	box-shadow: 0 0 20px rgba($color: $black, $alpha: 0.8);
 	height: 100%;
-	max-height: calc(100% - 123px);
-	box-shadow: 0px 4px 18px rgba($color: $black, $alpha: 0.6);
-
-	@include laptop {
-		padding: 0 45px 50px;
-	}
-
-	@media screen and (max-width: 1366px) {
-		max-height: calc(100% - 109px);
-	}
+	max-height: 100%;
 
 	@include tabletBig {
+		max-height: none;
+		height: auto;
 		flex-direction: column-reverse;
-		padding: 40px;
-		padding-bottom: 150px;
-		max-height: unset;
 		max-width: 777px;
 		width: 100%;
+		overflow: hidden;
 		margin: 0 auto;
+		padding-bottom: 45px;
 	}
 
 	@include mobile {
-		padding: 15px;
-		padding-bottom: 150px;
+		padding-left: 15px;
+		padding-right: 15px;
 	}
 }
 
@@ -195,41 +166,35 @@
 	height: 100%;
 	width: calc(50% + 2px);
 	margin-right: 40px;
+	padding-top: 40px;
 	flex-shrink: 0;
-	padding-top: 50px;
 	position: relative;
 	overflow: hidden;
-
-	@include laptop {
-		padding-top: 40px;
-	}
 
 	@include tabletBig {
 		height: auto;
 		width: 100%;
 		margin-right: 0;
-		padding-top: 30px;
 		flex-shrink: unset;
 		overflow: visible;
 	}
 }
 
+.copy-tablet {
+	text-align: center;
+}
+
 .idea-copy {
 	display: inline-block;
-	font-size: 10px;
+	font-size: 12px;
 	position: absolute;
-	bottom: 21px;
-	left: 50%;
-	transform: translateX(-50%);
-	display: flex;
-	justify-content: center;
-
-	@include laptop {
-		bottom: 12px;
-	}
+	top: 3px;
+	left: 0;
+	color: $textGrey;
 
 	@include tabletBig {
-		bottom: 21px;
+		position: static;
+		margin-top: 45px;
 	}
 
 	p {
@@ -241,7 +206,7 @@
 	}
 
 	span {
-		font-size: 13px;
+		font-size: 14px;
 	}
 }
 
@@ -250,21 +215,28 @@
 	top: 0;
 	right: 0;
 	font-size: 12px;
-	box-shadow: -5px 4px 15px rgba($color: $black, $alpha: 0.6);
+	box-shadow: -5px 5px 15px rgba($color: $black, $alpha: 0.6);
+	display: flex;
 
 	@include tabletBig {
-		top: 0;
+		right: 50%;
+		transform: translateX(50%);
 		box-shadow: 0 4px 15px rgba($color: $black, $alpha: 0.6);
 	}
 
+	@include mobile {
+		// width: 100%;
+	}
+
 	&__btn {
+		flex-shrink: 0;
 		background: $black;
 		color: $snow;
 		padding: 4px 20px;
 		text-transform: uppercase;
 
-		@include mobile {
-			padding: 4.5px 22px;
+		@include tabletBig {
+			padding: 5px 24px;
 		}
 
 		&[data-active='true'] {
@@ -286,7 +258,7 @@
 	font-size: 17px;
 	letter-spacing: 0.6px;
 	color: $textGrey;
-	margin-bottom: 25px;
+	margin-bottom: 35px;
 
 	&:last-child {
 		margin-bottom: 0;
@@ -294,11 +266,12 @@
 
 	.h2 {
 		color: $blue-main;
-		font-size: 21px;
+		font-size: 24px;
 		line-height: normal;
 		font-family: $ui-medium;
 		font-weight: 600;
 		margin-bottom: 15px;
+		letter-spacing: 2px;
 	}
 
 	.h3 {
@@ -306,11 +279,12 @@
 		font-family: $ui-medium;
 		font-weight: 600;
 		color: $titlePink;
-		margin: 15px 0 5px;
+		margin: 25px 0 10px;
+		letter-spacing: 1px;
 	}
 
 	&__text {
-		margin-bottom: 15px;
+		margin-bottom: 20px;
 		white-space: pre-line;
 
 		&:last-child {
@@ -319,7 +293,7 @@
 	}
 
 	ul {
-		margin-bottom: 15px;
+		margin-bottom: 20px;
 	}
 
 	li {
@@ -342,54 +316,23 @@
 			margin-right: 11px;
 			margin-top: 11px;
 		}
+	}
+}
 
-		.idea-block__star {
-			margin-left: 6px;
-		}
+.startup-title {
+	text-align: center;
+	font-size: 31px;
+	letter-spacing: 8px;
+	font-family: $lg-bold;
+	margin-top: 10px;
+	margin-bottom: 40px;
+
+	@include laptop {
+		font-size: 27px;
 	}
 
-	&__star {
-		color: $starYellow;
-		font-size: 16px;
-		line-height: 1;
-	}
-
-	&__desc {
-		font-size: 12px;
-		margin: 10px 0;
-	}
-
-	&--features {
-		p {
-			margin-bottom: 5px;
-		}
-
-		span {
-			color: $starYellow;
-			display: inline-block;
-			align-items: start;
-		}
-
-		li {
-			display: block;
-			&::before {
-				display: none;
-			}
-		}
-	}
-
-	&-colored {
-		color: $titlePink;
-	}
-
-	&__support {
-		a {
-			color: $blue-main;
-			transition: color 0.3s;
-			&:hover {
-				color: $titlePink;
-			}
-		}
+	@include tabletBig {
+		margin-top: 15px;
 	}
 }
 
@@ -397,8 +340,7 @@
 	text-align: right;
 	font-style: italic;
 	margin-top: 45px;
-	margin-bottom: 10px;
-	font-size: 14px;
+	font-size: 13px;
 
 	span {
 		display: block;
@@ -412,22 +354,13 @@
 // Slider default style
 .slider-container {
 	width: 100%;
-	position: relative;
-	margin-top: -70px;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-
-	@media screen and (max-width: 1366px) {
-		margin-top: -50px;
-	}
+	position: relative;
+	margin-top: 40px;
 
 	@include tabletBig {
-		margin-top: -70px;
-	}
-
-	@include mobile {
-		margin-top: -45px;
+		margin-top: 0;
 	}
 }
 
@@ -475,7 +408,7 @@
 }
 
 .slides-number {
-	font-size: 10px;
+	font-size: 12px;
 	position: absolute;
 	top: 12px;
 	right: 12px;
@@ -484,10 +417,9 @@
 }
 
 .slider-actions {
-	display: flex;
-	align-items: center;
+	position: relative;
+	text-align: right;
 	padding: 5px;
-	align-self: flex-end;
 	margin-top: 20px;
 
 	@include tabletBig {
@@ -504,6 +436,7 @@
 	margin-right: -10px;
 
 	@include tabletBig {
+		padding: 14px;
 		margin: 0;
 		background: $black;
 		border-radius: 50%;
@@ -519,8 +452,8 @@
 		opacity: 0.5;
 
 		@include tabletBig {
-			width: 5px;
-			height: 5px;
+			width: 9px;
+			height: 9px;
 			opacity: 1;
 		}
 	}
@@ -642,7 +575,7 @@
 
 	.simplebar-track.simplebar-vertical {
 		top: 0;
-		width: 3px;
+		width: 5px;
 		border-radius: 10px;
 		background: $darkest;
 	}

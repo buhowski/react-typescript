@@ -4,9 +4,9 @@
 	margin-bottom: -80px;
 	display: flex;
 	flex-direction: column;
-	height: calc(100% - 100px);
+	height: calc(100% - 90px);
 
-	@include mobile {
+	@include tablet {
 		height: calc(100% - 80px);
 		padding-bottom: 45px;
 	}

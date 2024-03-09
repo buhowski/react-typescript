@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import SimpleBar from 'simplebar-react';
-import Copyright from './Copyright';
+import PopupContacts from './PopupContacts';
 import SliderContainer from './Slider';
 import { useTabletLargeQuery } from '../../hooks/useMediaQuery';
 
@@ -8,16 +8,10 @@ interface IdeaGeneralProps {
 	IdeaTabRu: JSX.Element;
 	IdeaTabEn: JSX.Element;
 	IdeaTabUa: JSX.Element;
-	baseTitle: string;
 	contactBtnTitle: string;
 }
 
-const IdeaGeneral = ({
-	IdeaTabRu,
-	IdeaTabEn,
-	IdeaTabUa,
-	baseTitle,
-}: IdeaGeneralProps) => {
+const IdeaGeneral = ({ IdeaTabRu, IdeaTabEn, IdeaTabUa }: IdeaGeneralProps) => {
 	const useTabletLarge = useTabletLargeQuery();
 	const [currentTab, setCurrentTab] = useState('');
 	const tabs = [
@@ -55,17 +49,8 @@ const IdeaGeneral = ({
 
 	return (
 		<div className='wrapper wrapper--idea'>
-			{/* <div className='startup-highlight'>
-				<p className='startup-highlight__text'>
-					This project is looking for investment or any help with development and
-					promotion. If you're interested in collaborating, feel free to contact me!
-				</p>
-			</div> */}
-
-			<h1 className='base-title base-title--main'>{baseTitle}</h1>
-
 			<div className='idea-section'>
-				<Copyright />
+				{useTabletLarge && <PopupContacts />}
 
 				<div className='idea-info'>
 					<div className='idea-tabs'>

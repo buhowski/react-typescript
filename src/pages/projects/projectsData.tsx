@@ -29,7 +29,7 @@ const projectsData = [
 
 	{
 		img: `url(${bgGalleryImg})`,
-		url: 'https://sharp-ardinghelli-fe04fe.netlify.app/',
+		url: 'https://master--gentle-longma-c7daf2.netlify.app/',
 		urlCode: 'https://github.com/buhowski/infinite-image-gallery',
 		name: 'Image Gallery',
 		desk: 'Infinite Image Gallery with search, using Unsplash API',

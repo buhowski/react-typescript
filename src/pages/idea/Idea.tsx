@@ -1,13 +1,17 @@
 import './Idea.scss';
 import IdeaTabs from './IdeaTabs';
 import textData from './textData';
+import { useTabletLargeQuery } from '../../hooks/useMediaQuery';
+import Copyright from './Copyright';
 
 const Idea = () => {
+	const useTabletLarge = useTabletLargeQuery();
 	const contactBtnTitle = 'Get In Touch';
-	const baseTitle = 'Startup Presentation';
 
 	const textItems = textData.map((data, index) => (
 		<div key={index}>
+			<h1 className='startup-title'>Startup Presentation</h1>
+
 			<div className='idea-block'>
 				<h2 className='idea-block__title h2'>{data.missionTitle}</h2>
 
@@ -117,6 +121,11 @@ const Idea = () => {
 					<span key={i}>{item}</span>
 				))}
 			</p>
+			{useTabletLarge && (
+				<div className='copy-tablet'>
+					<Copyright />
+				</div>
+			)}
 		</div>
 	));
 
@@ -125,7 +134,6 @@ const Idea = () => {
 			IdeaTabRu={textItems[0]}
 			IdeaTabEn={textItems[1]}
 			IdeaTabUa={textItems[2]}
-			baseTitle={baseTitle}
 			contactBtnTitle={contactBtnTitle}
 		/>
 	);

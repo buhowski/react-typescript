@@ -24,24 +24,11 @@ const PopupContacts = () => {
 	const [height, setHeight] = useState('');
 
 	const toggleShowContacts = () => {
-		if (window.innerWidth > 1280) {
-			const el = document.querySelector(
-				'.slider-container .idea-contacts__list-items'
-			) as HTMLElement;
-			const elHeight = el ? el.offsetHeight : 0;
+		const el = document.querySelector('.idea-contacts__list-items') as HTMLElement;
+		const elHeight = el ? el.offsetHeight : 0;
 
-			setContacts('show');
-			setHeight(`${elHeight}px`);
-		} else {
-			const el = document.querySelector(
-				'.slider-container ~ .idea-contacts .idea-contacts__list-items'
-			) as HTMLElement;
-
-			const elHeight = el ? el.offsetHeight : 0;
-
-			setContacts('show');
-			setHeight(`${elHeight}px`);
-		}
+		setContacts('show');
+		setHeight(`${elHeight}px`);
 	};
 
 	const toggleShowContactsHide = () => {
