@@ -194,7 +194,7 @@
 
 	@include tabletBig {
 		position: static;
-		margin-top: 40px;
+		margin-top: 35px;
 	}
 
 	p {
@@ -340,7 +340,8 @@
 	text-align: right;
 	font-style: italic;
 	margin-top: 45px;
-	font-size: 13px;
+	font-size: 14px;
+	white-space: pre-line;
 
 	span {
 		display: block;

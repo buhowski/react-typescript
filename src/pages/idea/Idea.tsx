@@ -116,11 +116,8 @@ const Idea = () => {
 				))}
 			</div>
 
-			<p className='last-words'>
-				{data.lastWords.map((item, i) => (
-					<span key={i}>{item}</span>
-				))}
-			</p>
+			<p className='last-words'>{data.lastWords}</p>
+
 			{useTabletLarge && (
 				<div className='copy-tablet'>
 					<Copyright />
