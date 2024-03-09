@@ -265,10 +265,10 @@
 	}
 
 	.h2 {
-		color: $blue-main !important;
+		color: $blue-main;
 		font-size: 24px;
 		line-height: normal;
-		// font-family: $ui-medium;
+		font-family: $ui-medium;
 		font-weight: 600;
 		margin-bottom: 15px;
 		letter-spacing: 2px;
