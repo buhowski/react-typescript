@@ -56,7 +56,7 @@
 	width: max-content;
 
 	@include tabletBig {
-		margin-top: 30px;
+		margin-top: 25px;
 		z-index: 1;
 	}
 
@@ -75,7 +75,7 @@
 		height: 0;
 		overflow: hidden;
 		visibility: hidden;
-		transition: height 0.4s, visibility 0.4s;
+		transition: 0.4s;
 		width: max-content;
 
 		&-items {
@@ -194,7 +194,7 @@
 
 	@include tabletBig {
 		position: static;
-		margin-top: 45px;
+		margin-top: 40px;
 	}
 
 	p {
@@ -236,7 +236,7 @@
 		text-transform: uppercase;
 
 		@include tabletBig {
-			padding: 5px 24px;
+			padding: 6px 25px;
 		}
 
 		&[data-active='true'] {
@@ -328,11 +328,11 @@
 	margin-bottom: 40px;
 
 	@include laptop {
-		font-size: 27px;
+		font-size: 29px;
 	}
 
 	@include tabletBig {
-		margin-top: 15px;
+		margin-top: 20px;
 	}
 }
 
