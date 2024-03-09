@@ -1,12 +1,6 @@
 @import '../../styles/variables.scss';
 
 .contact-menu {
-	@include tablet {
-		margin-top: 55px;
-		justify-content: center;
-		padding: 0 4%;
-	}
-
 	a {
 		margin-right: 30px;
 		width: 50px;
