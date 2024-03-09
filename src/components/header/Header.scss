@@ -18,6 +18,21 @@
 			position: relative;
 			z-index: 100;
 		}
+
+		.nav-link {
+			font-size: 21px;
+			padding: 0.75rem 1.5rem;
+
+			&:after {
+				transform: scale(0);
+				height: 100%;
+				width: 100%;
+			}
+
+			&.active:after {
+				transform: scale(1);
+			}
+		}
 	}
 }
 
@@ -52,15 +67,6 @@
 	z-index: 1;
 	white-space: nowrap;
 
-	@include tablet {
-		font-size: 21px;
-		padding: 0.75rem 1.5rem;
-
-		&.active:after {
-			transform: scale(1);
-		}
-	}
-
 	&:after {
 		content: '';
 		position: absolute;
@@ -72,12 +78,6 @@
 		background-color: $blue-main;
 		z-index: -1;
 		transition: height 0.4s ease, transform 0.4s ease;
-
-		@include tablet {
-			transform: scale(0);
-			height: 100%;
-			width: 100%;
-		}
 	}
 
 	&.active,
