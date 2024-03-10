@@ -63,6 +63,10 @@
 	font-size: 20px !important;
 	line-height: 1;
 	color: #fff;
+
+	@media screen and (min-width: 2000px) {
+		font-size: calc(20px + 0.3vw) !important;
+	}
 }
 
 [class^='icon-']:before,

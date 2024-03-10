@@ -50,6 +50,11 @@
 		margin-bottom: 3rem;
 		font-family: $lg;
 		letter-spacing: 1.5px;
+		white-space: nowrap;
+
+		@media screen and (min-width: 2000px) {
+			font-size: calc(21px + 0.8vw);
+		}
 		@include tabletSmall {
 			margin-bottom: 35px;
 		}
@@ -73,7 +78,15 @@ canvas {
 		width: 60%;
 	}
 
-	@include heightTop {
+	@include heightTopMax {
+		width: 58%;
+	}
+
+	@include heightTopMid {
+		width: 55%;
+	}
+
+	@include heightTopMin {
 		width: 50%;
 	}
 

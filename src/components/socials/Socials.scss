@@ -12,6 +12,11 @@
 		flex-shrink: 0;
 		box-shadow: 0 0 11px rgba($color: $black, $alpha: 0.3);
 
+		@media screen and (min-width: 2000px) {
+			width: calc(50px + 1vw);
+			height: calc(50px + 1vw);
+		}
+
 		&:last-child {
 			margin-right: 0;
 		}
