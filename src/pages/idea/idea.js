@@ -3,8 +3,6 @@ import IdeaTabs from './IdeaTabs';
 import textData from './textData';
 
 const Idea = () => {
-	const contactBtnTitle = 'Get In Touch';
-
 	// Function to render a block of content with title, texts, and lists
 	const renderBlock = (
 		title: string,
@@ -61,7 +59,6 @@ const Idea = () => {
 			IdeaTabRu={renderedItems[0]}
 			IdeaTabEn={renderedItems[1]}
 			IdeaTabUa={renderedItems[2]}
-			contactBtnTitle={contactBtnTitle}
 		/>
 	);
 };

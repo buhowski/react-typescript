@@ -8,7 +8,6 @@ interface IdeaGeneralProps {
 	IdeaTabRu: JSX.Element;
 	IdeaTabEn: JSX.Element;
 	IdeaTabUa: JSX.Element;
-	contactBtnTitle: string;
 }
 
 const IdeaGeneral = ({ IdeaTabRu, IdeaTabEn, IdeaTabUa }: IdeaGeneralProps) => {
