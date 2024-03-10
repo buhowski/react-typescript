@@ -23,17 +23,16 @@ const projectsData = [
 		url: `/${pathToIdea}`,
 		urlCode: 'https://github.com/buhowski/react-typescript',
 		name: 'My Startup',
-		desk: `Project Scenario. Huge potential with endless possibilities. Staffed, Feature-rich Magazine.`,
+		desk: `Project Scenario: "how to turn an information media magazine into a company producing its own technologies". Staffed, Feature-rich Magazine.`,
 		skills: ['Script', 'UI/UX', 'SCSS', 'TypeScrpt', 'React'],
 	},
 
 	{
-		img: `url(${bgGalleryImg})`,
-		url: 'https://master--gentle-longma-c7daf2.netlify.app/',
-		urlCode: 'https://github.com/buhowski/infinite-image-gallery',
-		name: 'Image Gallery',
-		desk: 'Infinite Image Gallery with search, using Unsplash API',
-		skills: ['HTML', 'CSS', 'JavaScript', 'Fetch API'],
+		img: `url(${bgFaberBooks})`,
+		url: 'https://www.faber.co.uk/',
+		name: 'Faber',
+		desk: 'Faber is one of the world’s great independent publishing houses. Since we were founded in 1929, poetry has been at the heart of our publishing, with T. S. Eliot as our first Poetry Editor.',
+		skills: ['Twig', 'SCSS', 'JavaScript', 'GSAP'],
 	},
 
 	{
@@ -61,14 +60,6 @@ const projectsData = [
 	},
 
 	{
-		img: `url(${bgFaberBooks})`,
-		url: 'https://www.faber.co.uk/',
-		name: 'Faber',
-		desk: 'Faber is one of the world’s great independent publishing houses. Since we were founded in 1929, poetry has been at the heart of our publishing, with T. S. Eliot as our first Poetry Editor.',
-		skills: ['Twig', 'SCSS', 'JavaScript', 'GSAP'],
-	},
-
-	{
 		img: `url(${bgEnde})`,
 		url: 'https://www-somosende-com.vercel.app',
 		name: 'Somos ENDE',
@@ -83,6 +74,16 @@ const projectsData = [
 		desk: 'Williams Lester is an RIBA Chartered Architects Practice based in Ringwood, Hampshire and has grown over the last 30 years to become one of the most respected and successful architectural practices in the region. We provide a high quality professional service and have developed specialist expertise in residential development, conservation, retirement living and master-planning.	Handling all Front-End tasks',
 		skills: ['HTML', 'CSS', 'JavaScript'],
 	},
+
+	{
+		img: `url(${bgGalleryImg})`,
+		url: 'https://master--gentle-longma-c7daf2.netlify.app/',
+		urlCode: 'https://github.com/buhowski/infinite-image-gallery',
+		name: 'Image Gallery',
+		desk: 'Infinite Image Gallery with search, using Unsplash API',
+		skills: ['HTML', 'CSS', 'JavaScript', 'Fetch API'],
+	},
+
 	{
 		img: `url(${bgMeNotebooks})`,
 		url: 'https://modnotebooks-com.vercel.app',

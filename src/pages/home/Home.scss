@@ -46,7 +46,7 @@
 	}
 
 	.tag-color {
-		font-size: 21px;
+		font-size: 23px;
 		margin-bottom: 3rem;
 		font-family: $lg;
 		letter-spacing: 1.5px;
@@ -55,6 +55,7 @@
 		@media screen and (min-width: 2000px) {
 			font-size: calc(21px + 0.8vw);
 		}
+
 		@include tabletSmall {
 			margin-bottom: 35px;
 		}
@@ -79,15 +80,19 @@ canvas {
 	}
 
 	@include heightTopMax {
-		width: 58%;
+		width: 59%;
 	}
 
 	@include heightTopMid {
-		width: 55%;
+		width: 57%;
 	}
 
 	@include heightTopMin {
-		width: 50%;
+		width: 52%;
+	}
+
+	@include heightTopMinMax {
+		width: 48%;
 	}
 
 	@include tabletSmall {
