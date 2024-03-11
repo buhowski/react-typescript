@@ -6,8 +6,6 @@ https://buhowski.dev/startup
 
 ### This project is looking for investment or any help with development and promotion. If you're interested in collaborating, feel free to contact me! Or support my inner creator https://coindrop.to/buhowski
 
-W
-
 # Mission
 
 I am interested in developing the following areas:
