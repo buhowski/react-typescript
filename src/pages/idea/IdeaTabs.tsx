@@ -89,7 +89,7 @@ const IdeaGeneral = ({ IdeaTabRu, IdeaTabEn, IdeaTabUa }: IdeaGeneralProps) => {
 				element.removeEventListener('pointermove', handleDrag);
 			}
 		};
-	}, [scrollableRef]); // Track changes in scrollableRef
+	}, [scrollableRef]);
 
 	return (
 		<div className='wrapper wrapper--idea'>
