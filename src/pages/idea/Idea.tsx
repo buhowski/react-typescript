@@ -7,10 +7,12 @@ import { useTabletLargeQuery } from '../../hooks/useMediaQuery';
 const Idea = () => {
 	const useTabletLarge = useTabletLargeQuery();
 
+	// All Text data maping
 	const textItems = textData.map((structure, index) => (
 		<div key={index}>
 			<h1 className='startup-title'>Startup Presentation</h1>
 
+			{/* text Structure  */}
 			{structure.section.map((block, blockIndex) => (
 				<div key={blockIndex} className='idea-block'>
 					<h2 className={`idea-block__title h2 `}>{block.title}</h2>
@@ -61,8 +63,10 @@ const Idea = () => {
 				</div>
 			))}
 
+			{/* text words after / thanks text */}
 			<p className='last-words'>{structure.lastWords}</p>
 
+			{/* Mobile copyright goes here */}
 			{useTabletLarge && (
 				<div className='copy-tablet'>
 					<Copyright />

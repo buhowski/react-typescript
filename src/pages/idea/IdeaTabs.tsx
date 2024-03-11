@@ -13,34 +13,31 @@ interface IdeaGeneralProps {
 const IdeaGeneral = ({ IdeaTabRu, IdeaTabEn, IdeaTabUa }: IdeaGeneralProps) => {
 	const useTabletLarge = useTabletLargeQuery();
 	const [currentTab, setCurrentTab] = useState('');
+
+	// Click and drag to scroll vertically with mouse
 	const scrollableRef = useRef<HTMLDivElement>(null);
+	const [isDragging, setIsDragging] = useState(false);
+	const [startY, setStartY] = useState(0);
+	const [scrollTop, setScrollTop] = useState(0);
 
-	// Pointer scroll logic for drag SimpleBar content
-	const isDrag = useRef(false);
-	const startY = useRef(0);
-
-	const handleDragStart = (e: PointerEvent) => {
-		// Check for ref existence
-		if (!scrollableRef.current) return;
-		isDrag.current = true;
-
-		// Track starting Y position
-		startY.current = e.clientY;
+	const handleMouseDown = (event: React.MouseEvent<HTMLDivElement>) => {
+		setIsDragging(true);
+		setStartY(event.clientY);
+		setScrollTop(scrollableRef.current?.scrollTop || 0);
 	};
 
-	const handleDragEnd = () => {
-		isDrag.current = false;
+	const handleMouseUp = () => {
+		setIsDragging(false);
 	};
 
-	const handleDrag = (e: PointerEvent) => {
-		if (!isDrag.current || !scrollableRef.current) return;
-		const movementY = e.clientY - startY.current;
+	const handleMouseMove = (event: React.MouseEvent<HTMLDivElement>) => {
+		if (!isDragging) return;
 
-		// Update scrollTop
-		scrollableRef.current.scrollTop -= movementY;
-		startY.current = e.clientY;
+		const deltaY = event.clientY - startY;
+		scrollableRef.current!.scrollTop = scrollTop - deltaY;
 	};
 
+	// Tabs content
 	const tabs = [
 		{
 			id: '1',
@@ -72,28 +69,12 @@ const IdeaGeneral = ({ IdeaTabRu, IdeaTabEn, IdeaTabUa }: IdeaGeneralProps) => {
 		const currentIndex = localStorage.getItem('currentIndex');
 
 		setCurrentTab(currentIndex ? currentIndex : '1');
-
-		// for mouse dragging scroll
-		const element = scrollableRef.current;
-
-		if (element) {
-			element.addEventListener('pointerdown', handleDragStart);
-			element.addEventListener('pointerup', handleDragEnd);
-			element.addEventListener('pointermove', handleDrag);
-		}
-
-		return () => {
-			if (element) {
-				element.removeEventListener('pointerdown', handleDragStart);
-				element.removeEventListener('pointerup', handleDragEnd);
-				element.removeEventListener('pointermove', handleDrag);
-			}
-		};
-	}, [scrollableRef]);
+	}, []);
 
 	return (
 		<div className='wrapper wrapper--idea'>
 			<div className='idea-section'>
+				{/* Get in touch contacts */}
 				{useTabletLarge && <PopupContacts />}
 
 				<div className='idea-info'>
@@ -125,10 +106,14 @@ const IdeaGeneral = ({ IdeaTabRu, IdeaTabEn, IdeaTabUa }: IdeaGeneralProps) => {
 							</div>
 						))
 					) : (
+						// for desktop custom scrollbar
 						<SimpleBar
 							style={{ height: '100%' }}
 							autoHide={false}
 							scrollableNodeProps={{ ref: scrollableRef }}
+							onMouseDown={handleMouseDown}
+							onMouseUp={handleMouseUp}
+							onMouseMove={handleMouseMove}
 						>
 							{tabs.map((tab) => (
 								<div
@@ -144,6 +129,7 @@ const IdeaGeneral = ({ IdeaTabRu, IdeaTabEn, IdeaTabUa }: IdeaGeneralProps) => {
 					)}
 				</div>
 
+				{/* slider with images */}
 				<SliderContainer />
 			</div>
 		</div>
