@@ -5,7 +5,7 @@ const textData = [
 			// Mission
 			{
 				title: `Цель`,
-				text: `Интересует развитие следующих сфер:`,
+				text: `Ищу возможность интегрировать свои идеи или объединить людей, чтобы творить будущее вместе в выбранных сферах:`,
 				list: [
 					`независимое медиа нового поколения,`,
 
@@ -15,7 +15,7 @@ const textData = [
 
 					`IT сектор, который работает на собственное производство и охватывает: блокчейн, искусственный интеллект, нейротехнологии и робототехнику.`,
 				],
-				text2: `Ищу возможность интегрировать свои идеи или объединить людей, чтобы творить будущее вместе в выбранных сферах. Имею стратегии и сценарий проекта: "как создать информационный медиа-журнал и превратить его в компанию производства собственных технологий" и хочу все это реализовать.`,
+				text2: `Имею стратегии и сценарий проекта: "как создать информационный медиа-журнал и превратить его в компанию производства собственных технологий" и хочу все это реализовать.`,
 			},
 
 			// Description
@@ -127,7 +127,7 @@ const textData = [
 			// Mission
 			{
 				title: `Mission`,
-				text: `I am interested in developing the following areas:`,
+				text: `Looking for an opportunity to integrate my ideas or unite people to create the future together in selected areas:`,
 				list: [
 					`independent media of the new generation,`,
 
@@ -137,7 +137,7 @@ const textData = [
 
 					`IT sector that works on its own production and includes: blockchain, AI, neurotechnologies and robotics.`,
 				],
-				text2: `Looking for an opportunity to integrate my ideas or unite people to create the future together in selected areas. I have strategies and a project scenario: "how to create an information media magazine and transform it into a company producing its own technologies" and I want to achieve it.`,
+				text2: `I have strategies and a project scenario: "how to create an information media magazine and transform it into a company producing its own technologies" and I want to achieve it.`,
 			},
 
 			// Description
@@ -247,7 +247,7 @@ const textData = [
 			// Mission
 			{
 				title: `Ціль`,
-				text: `Цікавить розвиток наступних сфер:`,
+				text: `Шукаю можливість інтегрувати свої ідеї або об'єднати людей, щоб творити майбутнє разом в обраних сферах:`,
 				list: [
 					`незалежне медіа нового покоління,`,
 
@@ -257,7 +257,7 @@ const textData = [
 
 					`IT сектор, який працює на власне виробництво і охоплює: блокчейн, штучний інтелект, нейротехнології та робототехніку.`,
 				],
-				text2: `Шукаю можливість інтегрувати свої ідеї або об'єднати людей, щоб творити майбутнє разом у вибраних сферах. Маю стратегії та сценарій проекту: "як створити інформаційний медіа-журнал і перетворити його в компанію виробництва власних технологій" і хочу все це реалізувати.`,
+				text2: `Маю стратегії та сценарій проекту: "як створити інформаційний медіа-журнал і перетворити його в компанію виробництва власних технологій" і хочу все це реалізувати.`,
 			},
 
 			// Description
