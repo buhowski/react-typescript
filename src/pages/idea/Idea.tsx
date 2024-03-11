@@ -13,7 +13,7 @@ const Idea = () => {
 
 			{structure.section.map((block, blockIndex) => (
 				<div key={blockIndex} className='idea-block'>
-					<h2 className='idea-block__title h2'>{block.title}</h2>
+					<h2 className={`idea-block__title h2 `}>{block.title}</h2>
 
 					{block.text &&
 						(Array.isArray(block.text) ? (
