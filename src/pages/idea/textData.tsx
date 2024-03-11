@@ -5,7 +5,7 @@ const textData = [
 			// Mission
 			{
 				title: `Цель`,
-				text: `Ищу возможность интегрировать свои идеи или объединить людей, чтобы творить будущее вместе в выбранных сферах:`,
+				text: `Я разработал стратегии и сценарий проекта: "Как создать информационный медиа-журнал и превратить его в компанию производства собственных технологий" и ищу инвестиции для реализации, или возможность интегрировать свои идеи с вашей помощью и найти единомышленников и партнеров для сотрудничества, чтобы творить будущее вместе в выбранных сферах:`,
 				list: [
 					`независимое медиа нового поколения,`,
 
@@ -14,8 +14,9 @@ const textData = [
 					`виртуальная реальность,`,
 
 					`IT сектор, который работает на собственное производство и охватывает: блокчейн, искусственный интеллект, нейротехнологии и робототехнику.`,
+
+					'Гибкость проекта позволяет добавлять любые другие виды деятельности на ваше рассмотрение.',
 				],
-				text2: `Имею стратегии и сценарий проекта: "как создать информационный медиа-журнал и превратить его в компанию производства собственных технологий" и хочу все это реализовать.`,
 			},
 
 			// Description
@@ -24,7 +25,7 @@ const textData = [
 				text: [
 					`Моя идея начинается с создания собственной территории свободного интернета. Делается формат журнала и социальной сети, как мобильное приложение и веб-платформа, который можно представить на примерах флипборда и фейсбука. Концепция собственного журнала перспективна из-за возможности самостоятельно развиваться по собственному курсу и адаптироваться к новым потребностям и тенденциям в информационном поле.`,
 
-					`Фокус делается на подаче информации и производстве кино и игровой продукции. Ведь правильный маркетинг залог успеха, а качественный продукт – подтверждение. Для этого формируется профессиональная команда, которая занимается ведением журнала и созданием контента, развивая платформу поэтапно.`,
+					`Фокус делается на подаче информации и производстве кино и игровой продукции. Для этого формируется профессиональная команда, которая занимается ведением журнала и созданием контента, развивая платформу поэтапно. Ведь правильный маркетинг залог успеха, а качественный продукт – подтверждение.`,
 				],
 				subtitle: `Необходимые функции:`,
 				list: [
@@ -44,9 +45,9 @@ const textData = [
 			{
 				title: `Конкретика`,
 				text: [
-					`Ведения журнала и шаги – этап стратегии – это мои отдельные проекты, которые я могу презентовать. Разрабатывается контент специально под отдельную целевую аудиторию, поднимаются имеющиеся проблемы, предоставляются наглядные примеры решений, привлекается аудитории.`,
+					`Ведения журнала и шаги – этапы стратегии – это мои отдельные проекты, которые я могу презентовать. Разрабатывается контент специально под отдельную целевую аудиторию, поднимаются имеющиеся проблемы, предоставляются наглядные примеры решений, привлекается аудитории.`,
 
-					`Ключевые продукты индустрии – этап производства – это тоже мои отдельные проекты, которые я могу презентовать. В наличии есть сериал, мультсериал, компьютерная игра. Что, для начала, позволит популяризироваться для Украинской аудитории и впоследствии выйти на международный рынок с презентациями будущих проектов для мировых кинофестивалей и игровых выставок.`,
+					`Ключевые продукты индустрии – этапы производства – это тоже мои отдельные проекты, которые я могу презентовать. В наличии есть сериал, мультсериал, компьютерная игра. Что, для начала, позволит популяризироваться для Украинской аудитории и впоследствии выйти на международный рынок с презентациями будущих проектов для мировых кинофестивалей и игровых выставок.`,
 				],
 				subtitle: `Что я могу предоставить:`,
 				list: [
@@ -127,7 +128,7 @@ const textData = [
 			// Mission
 			{
 				title: `Mission`,
-				text: `Looking for an opportunity to integrate my ideas or unite people to create the future together in selected areas:`,
+				text: `I have developed the strategies and scenario for the project: "How to create an information media magazine and transform it into a company producing its own technologies" and I am looking for investments for its implementation, or the opportunity to integrate my ideas with your help and find like-minded people and partners for cooperation in order to create the future together in the selected areas:`,
 				list: [
 					`independent media of the new generation,`,
 
@@ -136,8 +137,9 @@ const textData = [
 					`virtual reality,`,
 
 					`IT sector that works on its own production and includes: blockchain, AI, neurotechnologies and robotics.`,
+
+					`The flexibility of the project allows you to add any other activities for your consideration.`,
 				],
-				text2: `I have strategies and a project scenario: "how to create an information media magazine and transform it into a company producing its own technologies" and I want to achieve it.`,
 			},
 
 			// Description
@@ -146,7 +148,7 @@ const textData = [
 				text: [
 					`My idea starts with creating its own territory of free internet. The format of the magazine and social network is being created, as a mobile application and web platform, which can be imagined on the examples of flipboard and facebook. The concept of owning a magazine is promising due to the ability to develop independently at its own course and adapt to new needs and trends in the information field.`,
 
-					`The focus is on information delivery and producing film and game products. Because proper marketing is the key to success, and a quality product is the confirmation. For this, a professional team is being formed to lead the magazine and create content, developing the platform in stages.`,
+					`The focus is on information delivery and producing film and game products. For this, a professional team is being formed to run the magazine and create content, developing the platform in stages. Because proper marketing is the key to success, and a quality product is the confirmation.`,
 				],
 				subtitle: `Required functions:`,
 				list: [
@@ -166,9 +168,9 @@ const textData = [
 			{
 				title: `Details`,
 				text: [
-					`Magazine management and steps – the strategy stage – are my separate projects that I can present. Content is being developed specifically for a separate target audience, existing problems are raised, clear examples of solutions are provided, and the audience is engaged.`,
+					`Magazine management and steps – the strategy stages – are my separate projects that I can present. Content is being developed specifically for a separate target audience, existing problems are raised, clear examples of solutions are provided, and the audience is engaged.`,
 
-					`Key industry products – the production stage – are also my separate projects that I can present. I have a TV show, an animated serial, and a video game. Which, initially, will allow popularizing for the Ukrainian audience and later entering the international market with presentations of future projects for world film festivals and game expos.`,
+					`Key industry products – the production stages – are also my separate projects that I can present. I have a TV show, an animated serial, and a video game. Which, initially, will allow popularizing for the Ukrainian audience and later entering the international market with presentations of future projects for world film festivals and game expos.`,
 				],
 				subtitle: `What I can offer:`,
 				list: [
@@ -247,7 +249,7 @@ const textData = [
 			// Mission
 			{
 				title: `Ціль`,
-				text: `Шукаю можливість інтегрувати свої ідеї або об'єднати людей, щоб творити майбутнє разом в обраних сферах:`,
+				text: `Я розробив стратегії та сценарій проекту: "Як створити інформаційний медіа-журнал і перетворити його в компанію виробництва власних технологій" і шукаю інвестиції для реалізації, або можливість інтегрувати свої ідеї з вашою допомогою та знайти однодумців і партнерів для співпраці, щоб творити майбутнє разом у вибраних сферах:`,
 				list: [
 					`незалежне медіа нового покоління,`,
 
@@ -256,8 +258,9 @@ const textData = [
 					`віртуальна реальність,`,
 
 					`IT сектор, який працює на власне виробництво і охоплює: блокчейн, штучний інтелект, нейротехнології та робототехніку.`,
+
+					`Гнучкість проекту дозволяє додавати будь які інші види діяльності на ваш розгляд.`,
 				],
-				text2: `Маю стратегії та сценарій проекту: "як створити інформаційний медіа-журнал і перетворити його в компанію виробництва власних технологій" і хочу все це реалізувати.`,
 			},
 
 			// Description
@@ -266,7 +269,7 @@ const textData = [
 				text: [
 					`Моя ідея починається зі створення власної території вільного інтернету. Робиться формат журналу та соціальної мережі, як мобільний додаток і веб-платформа, який можна уявити на прикладах фліпборда та фейсбука. Концепція власного журналу перспективна через можливість самостійно розвиватись за власним курсом та адаптуватись до нових потреб і тенденцій в інформаційному полі.`,
 
-					`Фокус робиться на подачі інформації та виробництві кіно та ігрової продукції. Бо правильний маркетинг запорука успіху, а якісний продукт – підтвердження. Для цього формується професійна команда, яка займається веденням журналу та створенням контенту, розвиваючи платформу поетапно.`,
+					`Фокус робиться на подачі інформації та виробництві кіно та ігрової продукції. Для цього формується професійна команда, яка займається веденням журналу та створенням контенту, розвиваючи платформу поетапно. Бо правильний маркетинг запорука успіху, а якісний продукт – підтвердження.`,
 				],
 				subtitle: `Необхідні функції:`,
 				list: [
@@ -286,9 +289,9 @@ const textData = [
 			{
 				title: `Конкретика`,
 				text: [
-					`Ведення журналу та кроки – етап стратегії – це мої окремі проекти, які я можу презентувати. Розробляється контент спеціально під окрему цільову аудиторію, піднімаються наявні проблеми, надаються наглядні приклади рішень, залучається аудиторія.`,
+					`Ведення журналу та кроки – етапи стратегії – це мої окремі проекти, які я можу презентувати. Розробляється контент спеціально під окрему цільову аудиторію, піднімаються наявні проблеми, надаються наглядні приклади рішень, залучається аудиторія.`,
 
-					`Ключові продукти індустрії – етап виробництва – це теж мої окремі проекти, які я можу презентувати. В наявності є серіал, мультсеріал, комп'ютерна гра. Що, для початку, дозволить популяризуватися для Української аудиторії і згодом вийти на міжнародний ринок з презентаціями майбутніх проектів для світових кінофестивалів та ігрових виставок.`,
+					`Ключові продукти індустрії – етапи виробництва – це теж мої окремі проекти, які я можу презентувати. В наявності є серіал, мультсеріал, комп'ютерна гра. Що, для початку, дозволить популяризуватися для Української аудиторії і згодом вийти на міжнародний ринок з презентаціями майбутніх проектів для світових кінофестивалів та ігрових виставок.`,
 				],
 				subtitle: `Що я можу надати:`,
 				list: [
