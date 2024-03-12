@@ -5,7 +5,7 @@ const textData = [
 			// Mission
 			{
 				title: `Цель`,
-				text: `Я разработал стратегии и сценарий проекта: "Как создать информационный медиа-журнал и превратить его в компанию производства собственных технологий в Украине" и ищу инвестиции для реализации, или возможность интегрировать свои идеи с вашей помощью и найти единомышленников и партнеров для сотрудничества, чтобы творить будущее вместе в выбранных сферах:`,
+				text: `Я разработал стратегии и сценарий проекта: "Как создать информационный медиа-журнал в Украине и превратить его в компанию производства собственных технологий" и ищу инвестиции для реализации, или возможность интегрировать свои идеи с вашей помощью и найти единомышленников и партнеров для сотрудничества, чтобы творить будущее вместе в выбранных сферах:`,
 				list: [
 					`независимое медиа нового поколения,`,
 
@@ -13,10 +13,9 @@ const textData = [
 
 					`виртуальная реальность,`,
 
-					`IT сектор, который работает на собственное производство и охватывает: блокчейн, искусственный интеллект, нейротехнологии и робототехнику.`,
-
-					'Гибкость проекта позволяет добавлять любые виды деятельности на ваше рассмотрение.',
+					`IT сектор, который охватывает: блокчейн, искусственный интеллект, нейротехнологии и робототехнику.`,
 				],
+				text2: `Гибкость проекта позволяет добавлять любые виды деятельности на ваше рассмотрение.`,
 			},
 
 			// Description
@@ -29,7 +28,7 @@ const textData = [
 				],
 				subtitle: `Необходимые функции:`,
 				list: [
-					`Журнал – для стратегических целей, чтобы занять место ведущего медиа в стране. Необходим для рекламы, саморекламы и агрессивного маркетинга и обычного дневника.`,
+					`Журнал – для стратегических целей, чтобы занять место ведущего медиа в стране. Необходим для рекламы, саморекламы и агрессивного маркетинга и видео дневника.`,
 
 					`Соцсеть – для объединения людей с похожим взглядом и вкусами.`,
 
@@ -83,8 +82,6 @@ const textData = [
 				title: `Суммируя`,
 				text: [
 					`Это сложный, многофункциональный и многоэтапный проект, он бросает вызов, но он возможен! Поэтому для развития я выбрал именно журнал – это мощный инструмент массовой информации и влияния, а в Украине с адекватным масс медиа очевидные проблемы (отсутствует популярное и независимое, или популярное и качественное, или близкое молодому поколению), поэтому занять эту нишу я не вижу препятствий.`,
-
-					`А в целом моя перспектива сфокусирована на развитие масштаба. Для создания отделенного от государства места со своей независимой экосистемой. С коллаборацией разных сфер деятельности, от инновационных технологий до креативного мышления. И если собрать все лучшее в одном месте, и организовать профессиональный коллектив критически мыслящих идейников и энтузиастов, то скачок эволюционного прогресса произойдет сам собой. Потому что не существует ничего невозможного, только неправильный подход!`,
 				],
 				subtitle: `На пальцах:`,
 				list: [
@@ -102,7 +99,7 @@ const textData = [
 				list2: [
 					`Блокчейн – криптовалютные операции на платформе, собственная криптовалюта, безопасность.`,
 
-					`AI – личный помощник в журнале (помогает в работе, учебе, развлечениях), без ограничений, которые блокируют качество, кастомизируется.`,
+					`AI – личный помощник в журнале (помогает в работе, учебе, развлечениях), без ограничений (которые блокируют качество), кастомизируется.`,
 
 					`Нейротехнологии – изучение мозга человека и интеграция его с компьютерными технологиями, виртуальная реальность.`,
 
@@ -114,6 +111,8 @@ const textData = [
 
 					`Гонзо-журналистика – ведение сюжетных дневников от первого лица или группы лиц, включаясь в события, становясь частью истории, непредсказуемый и экспериментальный стиль. Нырять в самое пекло проблемы, изучая вопрос изнутри или создавать определенные условия для его появления. Темы связанные с современной культурой и социальными проблемами.`,
 				],
+				subtitle4: `Заключение`,
+				text3: `В целом моя перспектива сфокусирована на развитие масштаба. Для создания отделенного от государства места со своей независимой экосистемой. С коллаборацией разных сфер деятельности, от инновационных технологий до креативного мышления. И если собрать все лучшее в одном месте, и организовать профессиональный коллектив критически мыслящих идейников и энтузиастов, то скачок эволюционного прогресса произойдет сам собой. Потому что не существует ничего невозможного, только неправильный подход!`,
 			},
 		],
 
@@ -129,7 +128,7 @@ const textData = [
 			// Mission
 			{
 				title: `Mission`,
-				text: `I've created strategies and project scenario: "How to create an information media magazine and transform it into a company producing its own technologies in Ukraine" and I am seeking investments for its implementation, or the opportunity to integrate my ideas with your help and find like-minded individuals and partners for cooperation to create the future together in selected fields:`,
+				text: `I've created strategies and project scenario: "How to create an information media magazine in Ukraine and transform it into a company producing its own technologies" and I am seeking investments for its implementation, or the opportunity to integrate my ideas with your help and find like-minded individuals and partners for cooperation to create the future together in selected fields:`,
 				list: [
 					`independent media of the new generation,`,
 
@@ -137,23 +136,22 @@ const textData = [
 
 					`virtual reality,`,
 
-					`IT sector, that works on its own production and includes: blockchain, AI, neurotechnologies and robotics.`,
-
-					`The project's flexibility allows you to add any type of activity for your consideration.`,
+					`IT sector, which includes: blockchain, AI, neurotechnology and robotics.`,
 				],
+				text2: `The project's flexibility allows you to add any type of activity for your consideration.`,
 			},
 
 			// Description
 			{
 				title: `Description`,
 				text: [
-					`My idea begins with creating a free internet territory of its own. It takes the format of a magazine and social network, as a mobile application and web platform, which can be exemplified with flipboard and facebook. The concept of its own magazine is promising because of the possibility to develop independently on its own course and adapt to new needs and trends in the information field.`,
+					`My idea begins with creating its own free internet territory. It takes the format of a magazine and social network, as a mobile application and web platform, which can be imagined on the examples of flipboard and facebook. The concept of its own magazine is promising because of the possibility to develop independently on its own course and adapt to new needs and trends in the information field.`,
 
 					`The focus is on information delivery and the production of cinema and gaming products. To achieve this, a professional team is formed to manage the magazine and create content, gradually developing the platform. Because proper marketing is the key to success, and a quality product is its confirmation.`,
 				],
 				subtitle: `Required functions:`,
 				list: [
-					`Magazine – for strategic purposes, to occupy the place of the leading media in the country. Necessary for advertising, self-promotion, aggressive marketing, and as a regular diary.`,
+					`Magazine – for strategic purposes, to occupy the place of the leading media in the country. Necessary for advertising, self-promotion, aggressive marketing, and video diary.`,
 
 					`Social network – to unite people with similar views and tastes.`,
 
@@ -198,24 +196,20 @@ const textData = [
 					`Launch and effectiveness evaluation – finalization of vulnerabilities, marketing strategy, and advertising campaign.`,
 				],
 
-				text2: `The flexibility of my ideas allows integrating them into any existing projects as modification, separate projects, or company scaling. So, if you share similar interests and are open to cooperation, I'm ready to discuss. There is a vision, and theoretically, it works. For practice, I need resources.`,
+				text2: `The flexibility of my ideas allows integrating them into any existing projects as modification, separate project, or company scaling. So, if you share similar interests and are open to cooperation, I'm ready to discuss. There is a vision, and theoretically, it works. For practice, I need resources.`,
 			},
 
 			// Summarization
 			{
 				title: `Summarizing`,
-				text: [
-					`This is a complex, multifunctional, and multi-stage project, it's challenging, but it is possible! That's why I chose a magazine for development – it is a powerful tool of mass information and influence, and in Ukraine, with adequate mass media, there are obvious problems (there is no popular and independent, or popular and quality, or something close to the young generation), so I see no obstacles to occupy this niche.`,
-
-					`Overall, my perspective is focused on the development of scale. To create a state-independent place with its independent ecosystem. With collaboration of various fields, from innovative technologies to creative minds. And if we gather all the best in one place and organize a professional team of critical thinkers and enthusiasts, evolutionary progress will happen naturally. Because nothing is impossible, only the wrong approach!`,
-				],
+				text: `This is a complex, multifunctional, and multi-stage project, it's challenging, but it is possible! That's why I chose a magazine for development – it is a powerful tool of mass information and influence, and in Ukraine, with adequate mass media, there are obvious problems (there is no popular and independent, or popular and quality, or something close to the young generation), so I see no obstacles to occupy this niche.`,
 				subtitle: `To put it simply:`,
 				list: [
 					`Magazine – the face of the company. A popular magazine – the voice of the majority. A mega-popular magazine – dictates the rules of development, rather than adapting to the ban on evolution (there is a strategy).`,
 
 					`Production of cool movies and games – profit (there are scenarios).`,
 
-					`Investing profit in our IT technologies (blockchain, AI, neurotechnologies and robotics) – even more profit (there are ideas).`,
+					`Investing profit in our IT technologies (blockchain, AI, neurotechnology and robotics) – even more profit (there are ideas).`,
 
 					`Win!`,
 
@@ -225,7 +219,7 @@ const textData = [
 				list2: [
 					`Blockchain – cryptocurrency operations on the platform, own cryptocurrency, security.`,
 
-					`AI – personal assistant in the magazine (helps in work, study, entertainment), without restrictions that block high-quality, customizable.`,
+					`AI – personal assistant in the magazine (helps in work, study, entertainment), without restrictions (that block high-quality), customizable.`,
 
 					`Neurotechnology – study the human brain and integrate it with computer technologies, virtual reality.`,
 
@@ -237,6 +231,8 @@ const textData = [
 
 					`Gonzo journalism – making story diaries from the first person or group of people, immersing oneself in events, becoming part of the history, an unpredictable and experimental style. Diving into the heart of the problem, studying it from inside, or creating specific conditions for its appearance. Subjects dealing with modern culture and social problems.`,
 				],
+				subtitle4: `Conclusion`,
+				text3: `Overall, my perspective is focused on the development of scale. To create a state-independent place with its independent ecosystem. With collaboration of various fields, from innovative technologies to creative minds. And if we gather all the best in one place and organize a professional team of critical thinkers and enthusiasts, evolutionary progress will happen naturally. Because nothing is impossible, only the wrong approach!`,
 			},
 		],
 
@@ -252,7 +248,7 @@ const textData = [
 			// Mission
 			{
 				title: `Ціль`,
-				text: `Я розробив стратегії та сценарій проекту: "Як створити інформаційний медіа-журнал і перетворити його в компанію виробництва власних технологій в Україні" і шукаю інвестиції для реалізації, або можливість інтегрувати свої ідеї з вашою допомогою та знайти однодумців і партнерів для співпраці, щоб творити майбутнє разом у вибраних сферах:`,
+				text: `Я розробив стратегії та сценарій проекту: "Як створити інформаційний медіа-журнал в Україні і перетворити його в компанію виробництва власних технологій" і шукаю інвестиції для реалізації, або можливість інтегрувати свої ідеї з вашою допомогою та знайти однодумців і партнерів для співпраці, щоб творити майбутнє разом у вибраних сферах:`,
 				list: [
 					`незалежне медіа нового покоління,`,
 
@@ -260,10 +256,9 @@ const textData = [
 
 					`віртуальна реальність,`,
 
-					`IT сектор, який працює на власне виробництво і охоплює: блокчейн, штучний інтелект, нейротехнології та робототехніку.`,
-
-					`Гнучкість проекту дозволяє додавати будь які види діяльності на ваш розгляд.`,
+					`IT сектор, який охоплює: блокчейн, штучний інтелект, нейротехнології та робототехніку.`,
 				],
+				text2: `Гнучкість проекту дозволяє додавати будь-які види діяльності на ваш розгляд.`,
 			},
 
 			// Description
@@ -276,7 +271,7 @@ const textData = [
 				],
 				subtitle: `Необхідні функції:`,
 				list: [
-					`Журнал – для стратегічних цілей, щоб зайняти місце провідного медіа в країні. Необхідний для реклами, самореклами та агресивного маркетингу і звичайного щоденника.`,
+					`Журнал – для стратегічних цілей, щоб зайняти місце провідного медіа в країні. Необхідний для реклами, самореклами та агресивного маркетингу і відео щоденника.`,
 
 					`Соцмережа –  для об'єднання людей зі схожим баченням та смаками.`,
 
@@ -327,11 +322,7 @@ const textData = [
 			// Summarization
 			{
 				title: `Узагальнюючи`,
-				text: [
-					`Це складний, багатофункціональний та багатоетапний проект, він кидає виклик, але він можливий! Тому для розвитку я вибрав саме журнал – це потужний інструмент масової інформації та впливу, а в Україні з адекватним мас медіа очевидні проблеми (відсутнє популярне і незалежне, або популярне і якісне, або близьке молодому поколінню), тому зайняти цю нішу я не бачу перешкод.`,
-
-					`А в цілому моя перспектива сфокусована на розвиток масштабу. Для створення відокремленого від держави місця зі своєю незалежною екосистемою. З колаборацією різних сфер діяльності, від інноваційних технологій до креативного мислення. І якщо зібрати все найкраще в одному місці, та організувати професійний колектив критично мислячих ідейників та ентузіастів, то стрибок еволюційного прогресу відбудеться сам собою. Бо не існує нічого неможливого, лише неправильний підхід!`,
-				],
+				text: `Це складний, багатофункціональний та багатоетапний проект, він кидає виклик, але він можливий! Тому для розвитку я вибрав саме журнал – це потужний інструмент масової інформації та впливу, а в Україні з адекватним мас медіа очевидні проблеми (відсутнє популярне і незалежне, або популярне і якісне, або близьке молодому поколінню), тому зайняти цю нішу я не бачу перешкод.`,
 				subtitle: `На пальцях:`,
 				list: [
 					`Журнал – лице компанії. Популярний журнал – голос більшості. Мега популярний журнал – диктує правила розвитку, а не підстроюється під заборону еволюціонувати (є стратегія).`,
@@ -348,7 +339,7 @@ const textData = [
 				list2: [
 					`Блокчейн – криптовалютні операції на платформі, власна криптовалюта, безпека.`,
 
-					`AI – особистий асистент у журналі (допомагає в роботі, навчанні, розвагах), без обмежень, які блокують якість, кастомізується.`,
+					`AI – особистий асистент у журналі (допомагає в роботі, навчанні, розвагах), без обмежень (які блокують якість), кастомізується.`,
 
 					`Нейротехнології – вивчення мозку людини та інтеграція його з комп'ютерними технологіями, віртуальна реальність.`,
 
@@ -360,6 +351,8 @@ const textData = [
 
 					`Гонзо-журналістика – ведення сюжетних щоденників від першої особи чи групи лиць, включаючись у події, стаючи частиною історії, непередбачуваний і експериментальний стиль. Пірнати в саме пекло проблеми, вивчаючи питання зсередини, або створювати певні умови для його появи. Теми пов'язані з сучасною культурою та соціальними проблемами.`,
 				],
+				subtitle4: `Висновок`,
+				text3: `В цілому моя перспектива сфокусована на розвиток масштабу. Для створення відокремленого від держави місця зі своєю незалежною екосистемою. З колаборацією різних сфер діяльності, від інноваційних технологій до креативного мислення. І якщо зібрати все найкраще в одному місці, та організувати професійний колектив критично мислячих ідейників та ентузіастів, то стрибок еволюційного прогресу відбудеться сам собою. Бо не існує нічого неможливого, лише неправильний підхід!`,
 			},
 		],
 
