@@ -23,6 +23,13 @@ a {
 	vertical-align: baseline;
 	text-decoration: none;
 }
+
+html {
+	-webkit-text-size-adjust: none;
+	-moz-text-size-adjust: none;
+	text-size-adjust: none;
+}
+
 * {
 	box-sizing: border-box;
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
