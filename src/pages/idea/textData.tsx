@@ -48,7 +48,7 @@ const textData = [
 
 					`Ключевые продукты индустрии – этапы производства – это тоже мои отдельные проекты, которые я могу презентовать. В наличии есть сериал, мультсериал, компьютерная игра. Что, для начала, позволит популяризироваться для Украинской аудитории и впоследствии выйти на международный рынок с презентациями будущих проектов для мировых кинофестивалей и игровых выставок.`,
 				],
-				subtitle: `Что я могу предоставить:`,
+				subtitle: `Что я могу дать:`,
 				list: [
 					`Статьи, которые предлагают альтернативную стратегию развития в Украине и за ее пределами. Темы связанные с современной культурой и социальными проблемами с вариантами их решений. Юмор и гонзо-журналистику. В результате – конкурентоспособное медиа.`,
 
@@ -128,7 +128,7 @@ const textData = [
 			// Mission
 			{
 				title: `Mission`,
-				text: `I've created strategies and project scenario: "How to create an information media magazine in Ukraine and transform it into a company producing its own technologies" and I am seeking investments for its implementation, or the opportunity to integrate my ideas with your help and find like-minded individuals and partners for cooperation to create the future together in selected fields:`,
+				text: `I've created strategies and project scenario: "How to create an information media magazine in Ukraine and transform it into a company producing its own technologies" and I am seeking investments for its implementation, or the opportunity to integrate my ideas with your help and find like-minded individuals and partners for cooperation to create the future together in selected areas:`,
 				list: [
 					`independent media of the new generation,`,
 
