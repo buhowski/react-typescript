@@ -23,7 +23,7 @@ interface ImageData {
 const dataImages: ImageData[] = imageFiles.map((file) => ({
 	imgSrc: require(`./images/${file}`),
 	imgAlt:
-		'Me Starter Pack, Startup, meme, revo, рево, popular meme, recomendation, news, breaknews, startaper, Front End, investment, invest, Startup offer, Staffed, feature-rich magazine, Elevator Pitch, venture, CV, Resume, private entrepreneur, Олександр Цьомах, Alexander Tsiomakh, Oleksandr Tsomakh, Александр, buhowski, Человек Мужик, свіже повітря свободи, Журналістика, Journalism, Гонзо, gonzo, хантер томпсон, буковски, паланик, палагнюк, Modernized magazine redesign, social network, microblogging, Online cinema, video hosting and live streaming, Imageboard and anonymous web forum, revo, рево, чиназес, чина, чіна, чіназес, Новый формат журнала, социальная сеть, микроблогинг, Онлайн кинотеатр, видеохостинг и лайв стриминг, Имиджборд и анонимный веб-форум, Новий формат журналу, соціальна мережа, мікроблогінг, Онлайн кінотеатр, відеохостинг та лайв стрімінг, Іміджборд та анонімний веб-форум, варіантоспроможний, амбасадор авантюр, пропаганда розвитку, безмежна самоіронія, bored to death, pop, kpop, ukraine, war, ukraine war, ukraine startups, winner, global, hardcore, magazine, ukraine news magazine, журнал, лучший журнал, AI, robotics, best pc games, china, usa, election',
+		'startup, startup presentation, elevator pitch, invest, ukraine, ukraine startup, it sector, investment, startaper, apply startup, magazine, venture, popular meme, recomendation, news, breaknews, private entrepreneur, buhowski, Журналістика, Journalism, Гонзо, gonzo, magazine redesign, new generation, Новый формат журнала, globalization, ukraine news magazine, лучший журнал, top AI, robotics, ****',
 }));
 
 const SliderContainer = () => {
