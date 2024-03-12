@@ -26,7 +26,7 @@ const About = () => {
 				<div className='img'>
 					<img
 						src={PhotoBg}
-						alt='Олександр Цьомах, buhowski, about, Starter Pack, Front End, Startup, CV, Resume, Человек Мужик'
+						alt='Олександр Цьомах, Alexander Tsiomakh, Oleksandr, Olexander, CV, Resume, portfolio, web design, web developer, Front End, frontend developer, Startup owner, buhowski, Человек Мужик'
 					/>
 				</div>
 

@@ -150,7 +150,7 @@ const DrawCanvas = () => {
 				<img
 					className='illustrationImage'
 					src={illustrationImage}
-					alt='Олександр Цьомах, buhowski, Front End, Startup, CV, Resume, Человек Мужик'
+					alt='Олександр Цьомах, Alexander Tsiomakh, Oleksandr, Olexander, CV, Resume, portfolio, web design, web developer, Front-End, Front End, frontend developer, Startup owner, buhowski, Человек Мужик'
 				/>
 			</div>
 		</div>
