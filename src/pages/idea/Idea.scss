@@ -266,6 +266,10 @@
 	color: $textGrey;
 	margin-bottom: 35px;
 
+	@include mobile {
+		font-size: 16px;
+	}
+
 	&:last-child {
 		margin-bottom: 0;
 	}
