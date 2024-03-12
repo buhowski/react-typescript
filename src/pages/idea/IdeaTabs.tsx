@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import SimpleBar from 'simplebar-react';
 import PopupContacts from './PopupContacts';
 import SliderContainer from './Slider';
@@ -13,29 +13,6 @@ interface IdeaGeneralProps {
 const IdeaGeneral = ({ IdeaTabRu, IdeaTabEn, IdeaTabUa }: IdeaGeneralProps) => {
 	const useTabletLarge = useTabletLargeQuery();
 	const [currentTab, setCurrentTab] = useState('');
-
-	// Click and drag to scroll vertically with mouse
-	const scrollableRef = useRef<HTMLDivElement>(null);
-	const [isDragging, setIsDragging] = useState(false);
-	const [startY, setStartY] = useState(0);
-	const [scrollTop, setScrollTop] = useState(0);
-
-	const handleMouseDown = (event: React.MouseEvent<HTMLDivElement>) => {
-		setIsDragging(true);
-		setStartY(event.clientY);
-		setScrollTop(scrollableRef.current?.scrollTop || 0);
-	};
-
-	const handleMouseUp = () => {
-		setIsDragging(false);
-	};
-
-	const handleMouseMove = (event: React.MouseEvent<HTMLDivElement>) => {
-		if (!isDragging) return;
-
-		const deltaY = event.clientY - startY;
-		scrollableRef.current!.scrollTop = scrollTop - deltaY;
-	};
 
 	// Tabs content
 	const tabs = [
@@ -56,13 +33,9 @@ const IdeaGeneral = ({ IdeaTabRu, IdeaTabEn, IdeaTabUa }: IdeaGeneralProps) => {
 		},
 	];
 
-	const handleTabClick = (e: React.MouseEvent<HTMLButtonElement>) => {
-		const target = e.currentTarget;
-		const tabId = target.getAttribute('data-tab-id');
-
-		setCurrentTab(tabId ?? '');
-
-		localStorage.setItem('currentIndex', String(tabId));
+	const handleTabClick = (tabId: string) => {
+		setCurrentTab(tabId);
+		localStorage.setItem('currentIndex', tabId);
 	};
 
 	useEffect(() => {
@@ -82,11 +55,9 @@ const IdeaGeneral = ({ IdeaTabRu, IdeaTabEn, IdeaTabUa }: IdeaGeneralProps) => {
 						{/* Here goes tab items*/}
 						{tabs.map((tab) => (
 							<button
-								className='idea-tabs__btn'
+								className={`idea-tabs__btn ${currentTab === tab.id && 'active'}`}
 								key={tab.id}
-								data-tab-id={tab.id}
-								data-active={currentTab === tab.id}
-								onClick={handleTabClick}
+								onClick={() => handleTabClick(tab.id)}
 							>
 								{tab.title}
 							</button>
@@ -99,30 +70,21 @@ const IdeaGeneral = ({ IdeaTabRu, IdeaTabEn, IdeaTabUa }: IdeaGeneralProps) => {
 							<div
 								key={tab.id}
 								data-tab-id={tab.id}
-								className='idea-content'
-								data-active={currentTab === tab.id}
+								className={`idea-content ${currentTab === tab.id ? 'active' : ''}`}
 							>
-								{currentTab === tab.id && tab.content}
+								{tab.content}
 							</div>
 						))
 					) : (
 						// for desktop custom scrollbar
-						<SimpleBar
-							style={{ height: '100%' }}
-							autoHide={false}
-							scrollableNodeProps={{ ref: scrollableRef }}
-							onMouseDown={handleMouseDown}
-							onMouseUp={handleMouseUp}
-							onMouseMove={handleMouseMove}
-						>
+						<SimpleBar style={{ height: '100%' }} autoHide={false}>
 							{tabs.map((tab) => (
 								<div
 									key={tab.id}
 									data-tab-id={tab.id}
-									className='idea-content'
-									data-active={currentTab === tab.id}
+									className={`idea-content ${currentTab === tab.id ? 'active' : ''}`}
 								>
-									{currentTab === tab.id && tab.content}
+									{tab.content}
 								</div>
 							))}
 						</SimpleBar>
