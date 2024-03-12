@@ -55,7 +55,7 @@ const IdeaGeneral = ({ IdeaTabRu, IdeaTabEn, IdeaTabUa }: IdeaGeneralProps) => {
 						{/* Here goes tab items*/}
 						{tabs.map((tab) => (
 							<button
-								className={`idea-tabs__btn ${currentTab === tab.id && 'active'}`}
+								className={`idea-tabs__btn ${currentTab === tab.id ? 'active' : ''}`}
 								key={tab.id}
 								onClick={() => handleTabClick(tab.id)}
 							>
@@ -67,24 +67,19 @@ const IdeaGeneral = ({ IdeaTabRu, IdeaTabEn, IdeaTabUa }: IdeaGeneralProps) => {
 					{/* Here goes tabs content */}
 					{useTabletLarge ? (
 						tabs.map((tab) => (
-							<div
-								key={tab.id}
-								data-tab-id={tab.id}
-								className={`idea-content ${currentTab === tab.id ? 'active' : ''}`}
-							>
-								{tab.content}
+							<div key={tab.id} className='idea-content'>
+								{currentTab === tab.id && tab.content}
 							</div>
 						))
 					) : (
 						// for desktop custom scrollbar
-						<SimpleBar style={{ height: '100%' }} autoHide={false}>
+						<SimpleBar
+							style={{ height: '100%', paddingRight: '35px' }}
+							autoHide={false}
+						>
 							{tabs.map((tab) => (
-								<div
-									key={tab.id}
-									data-tab-id={tab.id}
-									className={`idea-content ${currentTab === tab.id ? 'active' : ''}`}
-								>
-									{tab.content}
+								<div key={tab.id} className='idea-content'>
+									{currentTab === tab.id && tab.content}
 								</div>
 							))}
 						</SimpleBar>
