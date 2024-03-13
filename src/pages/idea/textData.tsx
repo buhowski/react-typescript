@@ -46,7 +46,7 @@ const textData = [
 				text: [
 					`Ведения журнала и шаги – этапы стратегии – это мои отдельные проекты, которые я могу презентовать. Разрабатывается контент специально под отдельную целевую аудиторию, поднимаются имеющиеся проблемы, предоставляются наглядные примеры решений, привлекается аудитории.`,
 
-					`Ключевые продукты индустрии – этапы производства – это тоже мои отдельные проекты, которые я могу презентовать. В наличии есть сериал, мультсериал, компьютерная игра. Что, для начала, позволит популяризироваться для Украинской аудитории и впоследствии выйти на международный рынок с презентациями будущих проектов для мировых кинофестивалей и игровых выставок.`,
+					`Ключевые продукты индустрии – этапы производства – это тоже мои отдельные сценарии проектов, которые я могу презентовать. В наличии есть сериал, мультсериал, компьютерная игра. Что, для начала, позволит популяризироваться для Украинской аудитории и впоследствии выйти на международный рынок с презентациями будущих проектов для мировых кинофестивалей и игровых выставок.`,
 				],
 				subtitle: `Что я могу дать:`,
 				list: [
@@ -169,7 +169,7 @@ const textData = [
 				text: [
 					`Magazine management and steps – the strategy stages – are my separate projects that I can present. Content is developed specifically for the individual target audience, existing problems are raised, clear examples of solutions are provided, and the audience is engaged.`,
 
-					`Key industry products – the production stages – are also my separate projects that I can present. There is a TV series, an animated series, and a video game. Which, initially, will allow popularizing for the Ukrainian audience and then enter the international market with presentations of future projects for global film festivals and game expos.`,
+					`Key industry products – the production stages – are also my separate projects scripts that I can present. There is a TV series, an animated series, and a video game. Which, initially, will allow popularizing for the Ukrainian audience and then enter the international market with presentations of future projects for global film festivals and game expos.`,
 				],
 				subtitle: `What I can offer:`,
 				list: [
@@ -289,7 +289,7 @@ const textData = [
 				text: [
 					`Ведення журналу та кроки – етапи стратегії – це мої окремі проекти, які я можу презентувати. Розробляється контент спеціально під окрему цільову аудиторію, піднімаються наявні проблеми, надаються наглядні приклади рішень, залучається аудиторія.`,
 
-					`Ключові продукти індустрії – етапи виробництва – це теж мої окремі проекти, які я можу презентувати. В наявності є серіал, мультсеріал, комп'ютерна гра. Що, для початку, дозволить популяризуватися для Української аудиторії і згодом вийти на міжнародний ринок з презентаціями майбутніх проектів для світових кінофестивалів та ігрових виставок.`,
+					`Ключові продукти індустрії – етапи виробництва – це теж мої окремі сценарії проектів, які я можу презентувати. В наявності є серіал, мультсеріал, комп'ютерна гра. Що, для початку, дозволить популяризуватися для Української аудиторії і згодом вийти на міжнародний ринок з презентаціями майбутніх проектів для світових кінофестивалів та ігрових виставок.`,
 				],
 				subtitle: `Що я можу надати:`,
 				list: [
