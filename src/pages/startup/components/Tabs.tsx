@@ -61,6 +61,16 @@ const Tabs = ({ TabRu, TabEn, TabUa }: IdeaGeneralProps) => {
 
 	return (
 		<div className='wrapper wrapper--idea'>
+			<div className='startup-pages'>
+				<div className='idea-tabs idea-tabs--urls'>
+					{startupURLs.map(({ pageLink, pageName }, i) => (
+						<NavLink to={pageLink} end className={`idea-tabs__btn`} key={i}>
+							{pageName}
+						</NavLink>
+					))}
+				</div>
+			</div>
+
 			<div className='idea-section'>
 				{/* Get in touch contacts */}
 				{useTabletLarge && <PopupContacts />}
@@ -103,14 +113,6 @@ const Tabs = ({ TabRu, TabEn, TabUa }: IdeaGeneralProps) => {
 
 				{/* slider with images */}
 				<Slider images={dataImages} />
-			</div>
-
-			<div className='idea-tabs idea-tabs--urls'>
-				{startupURLs.map(({ pageLink, pageName }, i) => (
-					<NavLink to={pageLink} end className={`idea-tabs__btn`} key={i}>
-						{pageName}
-					</NavLink>
-				))}
 			</div>
 		</div>
 	);

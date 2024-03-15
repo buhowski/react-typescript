@@ -3,7 +3,6 @@
 
 .wrapper--idea {
 	position: relative;
-	padding-top: 24px;
 	padding-bottom: 25px;
 	height: calc(100% - 90px);
 
@@ -150,7 +149,7 @@
 	position: relative;
 	box-shadow: 0 0 20px rgba($color: $black, $alpha: 0.8);
 	height: 100%;
-	max-height: 100%;
+	max-height: calc(100% - 24px);
 
 	@include tabletBig {
 		max-height: none;
@@ -213,26 +212,36 @@
 	}
 }
 
-.idea-tabs {
-	position: absolute;
-	top: 0;
+.startup-pages {
+	@include tabletBig {
+		text-align: center;
+	}
+}
 
+.idea-tabs {
 	font-size: 12px;
 	box-shadow: -5px 5px 15px rgba($color: $black, $alpha: 0.6);
-	display: flex;
+	display: inline-flex;
 
 	&--lang {
+		position: absolute;
+		top: 0;
 		right: 0;
-	}
 
-	@include tabletBig {
-		right: 50%;
-		transform: translateX(50%);
-		box-shadow: 0 4px 15px rgba($color: $black, $alpha: 0.6);
+		@include tabletBig {
+			right: 50%;
+			transform: translateX(50%);
+			box-shadow: 0 4px 15px rgba($color: $black, $alpha: 0.6);
+
+			.idea-tabs__btn {
+				padding: 6px 25px;
+			}
+		}
 	}
 
 	&--urls {
-		left: 40px;
+		@include tabletBig {
+		}
 
 		.idea-tabs__btn {
 			text-transform: none;
@@ -245,10 +254,6 @@
 		color: $snow;
 		padding: 4px 20px;
 		text-transform: uppercase;
-
-		@include tabletBig {
-			padding: 6px 25px;
-		}
 
 		&.active {
 			background: $blue-main;
@@ -432,12 +437,6 @@
 	color: $blue-main;
 	font-weight: bold;
 	margin: 0 5px;
-
-	@include tabletBig {
-		position: absolute;
-		top: 17px;
-		right: 15px;
-	}
 }
 
 .slider-actions {
@@ -448,21 +447,16 @@
 
 	@include tabletBig {
 		position: absolute;
-		left: 0;
-		top: 0;
-		margin: 0;
+		right: 0;
+		bottom: 0;
+		margin-top: 0;
+		background: $black;
+		border-radius: 20px;
 	}
 }
 
 .slider-btn-js {
 	padding: 10px;
-
-	@include tabletBig {
-		padding: 14px;
-		margin: 0;
-		background: $black;
-		border-radius: 50%;
-	}
 
 	&::before {
 		content: '';
@@ -495,10 +489,11 @@
 		margin-left: auto;
 
 		@include tabletBig {
-			margin-right: 10px;
 		}
+
 		&::before {
 			transform: rotate(-135deg);
+
 			@include tabletBig {
 				transform: rotate(-135deg) translate(-1px, 1px);
 			}
