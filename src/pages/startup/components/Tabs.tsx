@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
 import SimpleBar from 'simplebar-react';
 import PopupContacts from '../../../components/PopupContacts';
-import Slider from './StartupSliderData';
+import { dataImages } from './SliderStartupData';
+import Slider from '../../../components/Slider';
 import { useTabletLargeQuery } from '../../../hooks/useMediaQuery';
 import { NavLink } from 'react-router-dom';
 import { pathToStartup, pathToStartupFilms } from '../../../components/urlsData';
@@ -24,7 +25,7 @@ const Tabs = ({ TabRu, TabEn, TabUa }: IdeaGeneralProps) => {
 		},
 		{
 			pageLink: pathToStartupFilms,
-			pageName: `Film industry`,
+			pageName: `Film Products`,
 		},
 	];
 
@@ -101,7 +102,7 @@ const Tabs = ({ TabRu, TabEn, TabUa }: IdeaGeneralProps) => {
 				</div>
 
 				{/* slider with images */}
-				<Slider />
+				<Slider images={dataImages} />
 			</div>
 
 			<div className='idea-tabs idea-tabs--urls'>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Block } from './types';
+import { Block } from './textTypes';
 
 interface TextBlockProps {
 	block: Block;
@@ -8,7 +8,9 @@ interface TextBlockProps {
 const TextBlock: React.FC<TextBlockProps> = ({ block }) => {
 	return (
 		<div className='idea-block'>
-			{block.title && <h2 className={`idea-block__title h2 `}>{block.title}</h2>}
+			{block.titleBig && <h2 className={`idea-block__titleBig`}>{block.titleBig}</h2>}
+
+			{block.title && <h2 className={`idea-block__title`}>{block.title}</h2>}
 
 			{block.text &&
 				(Array.isArray(block.text) ? (
@@ -21,7 +23,7 @@ const TextBlock: React.FC<TextBlockProps> = ({ block }) => {
 					<p className='idea-block__text'>{block.text}</p>
 				))}
 
-			{block.subtitle && <h3 className='h3'>{block.subtitle}</h3>}
+			{block.subtitle && <h3 className='idea-block__subtitle'>{block.subtitle}</h3>}
 
 			{block.list && (
 				<ul>

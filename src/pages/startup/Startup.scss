@@ -187,22 +187,17 @@
 }
 
 .copy-tablet {
-	@include tabletBig {
-		text-align: center;
-	}
+	text-align: center;
 }
 
 .idea-copy {
 	display: inline-block;
 	font-size: 12px;
-	position: absolute;
-	top: 3px;
-	left: 0;
 	color: $textGrey;
 
 	@include tabletBig {
-		position: static;
 		margin-top: 35px;
+		margin-right: unset;
 	}
 
 	p {
@@ -277,7 +272,16 @@
 		margin-bottom: 0;
 	}
 
-	.h2 {
+	&__titleBig {
+		font-size: 31px;
+		text-align: center;
+		font-family: $ui-medium;
+		margin-bottom: 20px;
+		color: $snow;
+		letter-spacing: 2px;
+	}
+
+	&__title {
 		color: $blue-main;
 		font-size: 24px;
 		line-height: normal;
@@ -287,7 +291,7 @@
 		letter-spacing: 2px;
 	}
 
-	.h3 {
+	&__subtitle {
 		font-size: 18px;
 		font-family: $ui-medium;
 		font-weight: 600;
@@ -337,6 +341,7 @@
 	letter-spacing: 8px;
 	font-family: $lg-bold;
 	margin-bottom: 30px;
+	color: $snow;
 
 	@include tabletBig {
 		margin-top: 20px;
@@ -424,18 +429,22 @@
 
 .slides-number {
 	font-size: 12px;
-	position: absolute;
-	top: 17px;
-	right: 15px;
 	color: $blue-main;
 	font-weight: bold;
+	margin: 0 5px;
+
+	@include tabletBig {
+		position: absolute;
+		top: 17px;
+		right: 15px;
+	}
 }
 
 .slider-actions {
 	position: relative;
-	text-align: right;
-	padding: 5px;
-	margin-top: 20px;
+	display: flex;
+	align-items: center;
+	margin-top: 15px;
 
 	@include tabletBig {
 		position: absolute;
@@ -446,9 +455,7 @@
 }
 
 .slider-btn-js {
-	padding: 11px;
-	margin-top: -10px;
-	margin-right: -10px;
+	padding: 10px;
 
 	@include tabletBig {
 		padding: 14px;
@@ -464,17 +471,15 @@
 		height: 15px;
 		border: 2px solid $blue-main;
 		border-width: 2px 2px 0 0;
-		opacity: 0.5;
 
 		@include tabletBig {
 			width: 9px;
 			height: 9px;
-			opacity: 1;
 		}
 	}
 
 	&:hover::before {
-		opacity: 1;
+		border-color: $titlePink;
 	}
 
 	&-next {
@@ -487,7 +492,7 @@
 	}
 
 	&-prev {
-		margin-right: 20px;
+		margin-left: auto;
 
 		@include tabletBig {
 			margin-right: 10px;

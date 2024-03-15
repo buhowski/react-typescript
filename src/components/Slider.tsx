@@ -37,12 +37,6 @@ const Slider: React.FC<SliderProps> = ({ images }) => {
 					))}
 				</div>
 
-				<span className='slides-number'>
-					{`${activeIndex + 1 < 10 ? '0' : ''}${activeIndex + 1} / ${
-						images.length < 10 ? '0' : ''
-					}${images.length}`}
-				</span>
-
 				<div className='slider-actions'>
 					{!useTabletLarge && <Copyright />}
 
@@ -51,6 +45,12 @@ const Slider: React.FC<SliderProps> = ({ images }) => {
 						type='button'
 						onClick={clickPrev}
 					></button>
+
+					<span className='slides-number'>
+						{`${activeIndex + 1 < 10 ? '0' : ''}${activeIndex + 1} / ${
+							images.length < 10 ? '0' : ''
+						}${images.length}`}
+					</span>
 
 					<button
 						className='slider-btn-js slider-btn-js-next'

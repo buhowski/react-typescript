@@ -4,7 +4,7 @@ import Tabs from './components/Tabs';
 import Copyright from '../../components/Copyright';
 import { useTabletLargeQuery } from '../../hooks/useMediaQuery';
 import TextBlock from './components/TextBlock';
-import { Block } from './components/types';
+import { Block } from './components/textTypes';
 import LastWords from './components/LastWords';
 
 interface TextStructure {
@@ -23,7 +23,7 @@ const GeneralStructure: React.FC<PageProps> = ({ title, textData }) => {
 	const textItems = textData.map((structure: TextStructure, index) => (
 		<div key={index}>
 			{/* Use title prop */}
-			<h1 className='startup-title'>{title}</h1>
+			{title && <h1 className='startup-title'>{title}</h1>}
 
 			{/* Text Structure */}
 			{structure.section.map((block: Block, blockIndex) => (
