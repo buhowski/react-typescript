@@ -1,35 +1,49 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import SimpleBar from 'simplebar-react';
-import PopupContacts from './PopupContacts';
-import SliderContainer from './Slider';
-import { useTabletLargeQuery } from '../../hooks/useMediaQuery';
+import PopupContacts from '../../../components/PopupContacts';
+import Slider from './StartupSliderData';
+import { useTabletLargeQuery } from '../../../hooks/useMediaQuery';
+import { NavLink } from 'react-router-dom';
+import { pathToStartup, pathToStartupFilms } from '../../../components/urlsData';
 
 interface IdeaGeneralProps {
-	IdeaTabRu: JSX.Element;
-	IdeaTabEn: JSX.Element;
-	IdeaTabUa: JSX.Element;
+	TabRu: JSX.Element;
+	TabEn: JSX.Element;
+	TabUa: JSX.Element;
 }
 
-const IdeaGeneral = ({ IdeaTabRu, IdeaTabEn, IdeaTabUa }: IdeaGeneralProps) => {
+const Tabs = ({ TabRu, TabEn, TabUa }: IdeaGeneralProps) => {
 	const useTabletLarge = useTabletLargeQuery();
 	const [currentTab, setCurrentTab] = useState('');
+
+	// Idea URLs
+	const startupURLs = [
+		{
+			pageLink: pathToStartup,
+			pageName: `Startup`,
+		},
+		{
+			pageLink: pathToStartupFilms,
+			pageName: `Film industry`,
+		},
+	];
 
 	// Tabs content
 	const tabs = [
 		{
 			id: '1',
 			title: 'en',
-			content: IdeaTabEn,
+			content: TabEn,
 		},
 		{
 			id: '3',
 			title: 'ua',
-			content: IdeaTabUa,
+			content: TabUa,
 		},
 		{
 			id: '2',
 			title: 'ru',
-			content: IdeaTabRu,
+			content: TabRu,
 		},
 	];
 
@@ -51,7 +65,7 @@ const IdeaGeneral = ({ IdeaTabRu, IdeaTabEn, IdeaTabUa }: IdeaGeneralProps) => {
 				{useTabletLarge && <PopupContacts />}
 
 				<div className='idea-info'>
-					<div className='idea-tabs'>
+					<div className='idea-tabs idea-tabs--lang'>
 						{/* Here goes tab items*/}
 						{tabs.map((tab) => (
 							<button
@@ -87,10 +101,18 @@ const IdeaGeneral = ({ IdeaTabRu, IdeaTabEn, IdeaTabUa }: IdeaGeneralProps) => {
 				</div>
 
 				{/* slider with images */}
-				<SliderContainer />
+				<Slider />
+			</div>
+
+			<div className='idea-tabs idea-tabs--urls'>
+				{startupURLs.map(({ pageLink, pageName }, i) => (
+					<NavLink to={pageLink} end className={`idea-tabs__btn`} key={i}>
+						{pageName}
+					</NavLink>
+				))}
 			</div>
 		</div>
 	);
 };
 
-export default IdeaGeneral;
+export default Tabs;

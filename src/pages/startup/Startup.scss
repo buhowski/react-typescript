@@ -3,6 +3,7 @@
 
 .wrapper--idea {
 	position: relative;
+	padding-top: 24px;
 	padding-bottom: 25px;
 	height: calc(100% - 90px);
 
@@ -186,7 +187,9 @@
 }
 
 .copy-tablet {
-	text-align: center;
+	@include tabletBig {
+		text-align: center;
+	}
 }
 
 .idea-copy {
@@ -218,15 +221,27 @@
 .idea-tabs {
 	position: absolute;
 	top: 0;
-	right: 0;
+
 	font-size: 12px;
 	box-shadow: -5px 5px 15px rgba($color: $black, $alpha: 0.6);
 	display: flex;
+
+	&--lang {
+		right: 0;
+	}
 
 	@include tabletBig {
 		right: 50%;
 		transform: translateX(50%);
 		box-shadow: 0 4px 15px rgba($color: $black, $alpha: 0.6);
+	}
+
+	&--urls {
+		left: 40px;
+
+		.idea-tabs__btn {
+			text-transform: none;
+		}
 	}
 
 	&__btn {

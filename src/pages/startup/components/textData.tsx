@@ -1,4 +1,5 @@
-const textData = [
+// Texts for startup page / Main Startup Presentation
+export const startupTextData = [
 	// ############## RUSIAN ##############
 	{
 		section: [
@@ -363,4 +364,48 @@ const textData = [
 	},
 ];
 
-export default textData;
+// Film Industry Page text
+export const filmsTextData = [
+	// ############## RUSIAN ##############
+	{
+		section: [
+			// Mission
+			{
+				title: `рус`,
+			},
+		],
+
+		// Last words
+		lastWords: `Для всех желающих сотрудничать,
+		свяжитесь со мной!
+		Спасибо за внимание.`,
+	},
+
+	// ############## English ##############
+	{
+		section: [
+			{
+				title: `eng`,
+			},
+		],
+
+		// Last words
+		lastWords: `For everyone who wants to cooperate,
+			please contact me!
+			Thank you for your attention.`,
+	},
+
+	// ############## Ukraine ##############
+	{
+		section: [
+			{
+				title: `укр`,
+			},
+		],
+
+		// Last words
+		lastWords: `Для всех желающих сотрудничать,
+		свяжитесь со мной!
+		Спасибо за внимание.`,
+	},
+];

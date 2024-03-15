@@ -9,6 +9,7 @@ export const urlEmail = 'mailto:a.tsiomakh@gmail.com';
 export const urlCoindrop = 'https://coindrop.to/buhowski';
 
 // All Pages Path
-export const pathToIdea = 'startup';
-export const pathToAbout = 'about';
-export const pathToProjects = 'projects';
+export const pathToStartup = '/startup';
+export const pathToStartupFilms = '/films';
+export const pathToAbout = '/about';
+export const pathToProjects = '/projects';
