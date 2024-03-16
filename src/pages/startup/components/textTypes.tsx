@@ -1,5 +1,6 @@
 export interface Block {
 	titleBig?: string;
+	subtitleBig?: string;
 	title?: string;
 	text?: string | string[];
 	subtitle?: string;

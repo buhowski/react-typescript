@@ -9,6 +9,9 @@ const TextBlock: React.FC<TextBlockProps> = ({ block }) => {
 	return (
 		<div className='idea-block'>
 			{block.titleBig && <h2 className={`idea-block__titleBig`}>{block.titleBig}</h2>}
+			{block.subtitleBig && (
+				<h2 className={`idea-block__subtitleBig`}>{block.subtitleBig}</h2>
+			)}
 
 			{block.title && <h2 className={`idea-block__title`}>{block.title}</h2>}
 

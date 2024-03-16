@@ -1,21 +1,31 @@
 import { useState, useEffect } from 'react';
-import SimpleBar from 'simplebar-react';
-import PopupContacts from '../../../components/PopupContacts';
-import { dataImages } from './SliderStartupData';
-import Slider from '../../../components/Slider';
-import { useTabletLargeQuery } from '../../../hooks/useMediaQuery';
 import { NavLink } from 'react-router-dom';
+import PopupContacts from '../../../components/PopupContacts';
+import { useTabletLargeQuery } from '../../../hooks/useMediaQuery';
 import { pathToStartup, pathToStartupFilms } from '../../../components/urlsData';
+import { IdeaInfo } from './IdeaInfo';
 
 interface IdeaGeneralProps {
 	TabRu: JSX.Element;
 	TabEn: JSX.Element;
 	TabUa: JSX.Element;
+	Slider: JSX.Element;
 }
 
-const Tabs = ({ TabRu, TabEn, TabUa }: IdeaGeneralProps) => {
+const Tabs = ({ TabRu, TabEn, TabUa, Slider }: IdeaGeneralProps) => {
 	const useTabletLarge = useTabletLargeQuery();
-	const [currentTab, setCurrentTab] = useState('');
+	const [currentTab, setCurrentTab] = useState('1');
+
+	useEffect(() => {
+		const currentIndex = localStorage.getItem('currentIndex');
+
+		setCurrentTab(currentIndex ? currentIndex : '1');
+	}, []);
+
+	const handleTabClick = (tabId: string) => {
+		setCurrentTab(tabId);
+		localStorage.setItem('currentIndex', tabId);
+	};
 
 	// Idea URLs
 	const startupURLs = [
@@ -48,17 +58,6 @@ const Tabs = ({ TabRu, TabEn, TabUa }: IdeaGeneralProps) => {
 		},
 	];
 
-	const handleTabClick = (tabId: string) => {
-		setCurrentTab(tabId);
-		localStorage.setItem('currentIndex', tabId);
-	};
-
-	useEffect(() => {
-		const currentIndex = localStorage.getItem('currentIndex');
-
-		setCurrentTab(currentIndex ? currentIndex : '1');
-	}, []);
-
 	return (
 		<div className='wrapper wrapper--idea'>
 			<div className='startup-pages'>
@@ -75,44 +74,15 @@ const Tabs = ({ TabRu, TabEn, TabUa }: IdeaGeneralProps) => {
 				{/* Get in touch contacts */}
 				{useTabletLarge && <PopupContacts />}
 
-				<div className='idea-info'>
-					<div className='idea-tabs idea-tabs--lang'>
-						{/* Here goes tab items*/}
-						{tabs.map((tab) => (
-							<button
-								className={`idea-tabs__btn ${currentTab === tab.id ? 'active' : ''}`}
-								key={tab.id}
-								onClick={() => handleTabClick(tab.id)}
-							>
-								{tab.title}
-							</button>
-						))}
-					</div>
-
-					{/* Here goes tabs content */}
-					{useTabletLarge ? (
-						tabs.map((tab) => (
-							<div key={tab.id} className='idea-content'>
-								{currentTab === tab.id && tab.content}
-							</div>
-						))
-					) : (
-						// for desktop custom scrollbar
-						<SimpleBar
-							style={{ height: '100%', paddingRight: '35px' }}
-							autoHide={false}
-						>
-							{tabs.map((tab) => (
-								<div key={tab.id} className='idea-content'>
-									{currentTab === tab.id && tab.content}
-								</div>
-							))}
-						</SimpleBar>
-					)}
-				</div>
+				<IdeaInfo
+					tabs={tabs}
+					currentTab={currentTab}
+					handleTabClick={handleTabClick}
+					useTabletLarge={useTabletLarge}
+				/>
 
 				{/* slider with images */}
-				<Slider images={dataImages} />
+				{Slider}
 			</div>
 		</div>
 	);

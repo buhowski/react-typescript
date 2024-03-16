@@ -214,7 +214,7 @@
 
 .startup-pages {
 	@include tabletBig {
-		// text-align: center;
+		text-align: center;
 	}
 }
 
@@ -279,11 +279,15 @@
 
 	&__titleBig {
 		font-size: 31px;
-		text-align: center;
 		font-family: $ui-medium;
-		margin-bottom: 20px;
 		color: $snow;
 		letter-spacing: 2px;
+	}
+
+	&__subtitleBig {
+		font-style: italic;
+		margin-bottom: 25px;
+		font-size: 14px;
 	}
 
 	&__title {
@@ -384,6 +388,15 @@
 
 	@include tabletBig {
 		margin-top: 0;
+		align-items: center;
+		box-shadow: 0px 0px 10px rgba($color: $black, $alpha: 0.8);
+		overflow: hidden;
+		height: 300px;
+		background: $black;
+	}
+
+	@include tabletSmall {
+		height: 205px;
 	}
 }
 
@@ -395,14 +408,15 @@
 	position: relative;
 	overflow: hidden;
 	pointer-events: none;
-	box-shadow: 0px 0px 15px rgba($color: $black, $alpha: 0.8);
 
 	@include tabletBig {
-		height: 300px;
+		height: 100%;
+		width: calc(100% - 80px);
+		box-shadow: unset;
 	}
 
 	@include tabletSmall {
-		height: 205px;
+		width: calc(100% - 30px);
 	}
 }
 
@@ -437,6 +451,14 @@
 	color: $blue-main;
 	font-weight: bold;
 	margin: 0 5px;
+
+	@include tabletBig {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		margin-top: 10px;
+	}
 }
 
 .slider-actions {
@@ -446,17 +468,33 @@
 	margin-top: 15px;
 
 	@include tabletBig {
-		position: absolute;
-		right: 0;
-		bottom: 0;
+		position: static;
 		margin-top: 0;
-		background: $black;
-		border-radius: 20px;
+	}
+
+	&.disabled {
+		pointer-events: none;
+
+		.slider-btn-js,
+		.slides-number {
+			filter: grayscale(1);
+		}
 	}
 }
 
 .slider-btn-js {
 	padding: 10px;
+
+	@include tabletBig {
+		position: absolute;
+		top: 0;
+		height: 100%;
+		background-color: $black;
+	}
+
+	@include mobile {
+		padding: 4px;
+	}
 
 	&::before {
 		content: '';
@@ -466,7 +504,7 @@
 		border: 2px solid $blue-main;
 		border-width: 2px 2px 0 0;
 
-		@include tabletBig {
+		@include mobile {
 			width: 9px;
 			height: 9px;
 		}
@@ -477,6 +515,10 @@
 	}
 
 	&-next {
+		@include tabletBig {
+			right: 0;
+		}
+
 		&::before {
 			transform: rotate(45deg);
 			@include tabletBig {
@@ -489,6 +531,7 @@
 		margin-left: auto;
 
 		@include tabletBig {
+			left: 0;
 		}
 
 		&::before {

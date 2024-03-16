@@ -15,9 +15,10 @@ interface TextStructure {
 interface PageProps {
 	title: string;
 	textData: TextStructure[];
+	Slider: JSX.Element;
 }
 
-const GeneralStructure: React.FC<PageProps> = ({ title, textData }) => {
+const GeneralStructure: React.FC<PageProps> = ({ title, textData, Slider }) => {
 	const useTabletLarge = useTabletLargeQuery();
 
 	const textItems = textData.map((structure: TextStructure, index) => (
@@ -38,7 +39,14 @@ const GeneralStructure: React.FC<PageProps> = ({ title, textData }) => {
 		</div>
 	));
 
-	return <Tabs TabRu={textItems[0]} TabEn={textItems[1]} TabUa={textItems[2]} />;
+	return (
+		<Tabs
+			TabRu={textItems[0]}
+			TabEn={textItems[1]}
+			TabUa={textItems[2]}
+			Slider={Slider}
+		/>
+	);
 };
 
 export default GeneralStructure;

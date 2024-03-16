@@ -4,25 +4,25 @@ import PopupContacts from './PopupContacts';
 import { useTabletLargeQuery } from '../hooks/useMediaQuery';
 
 interface SliderProps {
-	images: { imgSrc: string; imgAlt: string }[];
+	dataSlider: { itemSrc: string; itemAlt: string; itemType: string }[];
 }
 
-const Slider: React.FC<SliderProps> = ({ images }) => {
+const Slider: React.FC<SliderProps> = ({ dataSlider }) => {
 	const useTabletLarge = useTabletLargeQuery();
 
 	const [activeIndex, setActiveIndex] = useState<number>(
-		Math.floor(Math.random() * images.length)
+		Math.floor(Math.random() * dataSlider.length)
 	);
 
 	const clickNext = () => {
 		setActiveIndex((prevIndex) =>
-			prevIndex === images.length - 1 ? 0 : prevIndex + 1
+			prevIndex === dataSlider.length - 1 ? 0 : prevIndex + 1
 		);
 	};
 
 	const clickPrev = () => {
 		setActiveIndex((prevIndex) =>
-			prevIndex === 0 ? images.length - 1 : prevIndex - 1
+			prevIndex === 0 ? dataSlider.length - 1 : prevIndex - 1
 		);
 	};
 
@@ -30,14 +30,21 @@ const Slider: React.FC<SliderProps> = ({ images }) => {
 		<div className='slider-with-btn'>
 			<div className='slider-container'>
 				<div className='idea-slider slider-js'>
-					{images.map(({ imgSrc, imgAlt }, i) => (
+					{dataSlider.map(({ itemSrc, itemAlt, itemType }, i) => (
 						<div className='slider-item-js' data-active={i === activeIndex} key={i}>
-							<img src={imgSrc} alt={imgAlt} />
+							{itemType === 'video' ? (
+								<video autoPlay loop muted>
+									<source src={itemSrc} type='video/mp4' />
+									Your browser does not support the video tag.
+								</video>
+							) : (
+								<img src={itemSrc} alt={itemAlt} />
+							)}
 						</div>
 					))}
 				</div>
 
-				<div className='slider-actions'>
+				<div className={`slider-actions ${dataSlider.length <= 1 ? 'disabled' : ''}`}>
 					{!useTabletLarge && <Copyright />}
 
 					<button
@@ -48,8 +55,8 @@ const Slider: React.FC<SliderProps> = ({ images }) => {
 
 					<span className='slides-number'>
 						{`${activeIndex + 1 < 10 ? '0' : ''}${activeIndex + 1} / ${
-							images.length < 10 ? '0' : ''
-						}${images.length}`}
+							dataSlider.length < 10 ? '0' : ''
+						}${dataSlider.length}`}
 					</span>
 
 					<button
