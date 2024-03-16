@@ -1,5 +1,6 @@
 import React from 'react';
 import { Block } from './textTypes';
+import { Text, Subtitle, Title, List, SubtitleBig } from './ParagraphItem';
 
 interface TextBlockProps {
 	block: Block;
@@ -8,81 +9,31 @@ interface TextBlockProps {
 const TextBlock: React.FC<TextBlockProps> = ({ block }) => {
 	return (
 		<div className='idea-block'>
-			{block.titleBig && <h2 className={`idea-block__titleBig`}>{block.titleBig}</h2>}
-
-			{block.subtitleBig && (
-				<div className='idea-types'>
-					{Array.isArray(block.subtitleBig) ? (
-						block.subtitleBig.map(({ key, value }, i) => (
-							<h4 className={`idea-block__subtitleBig`} key={i}>
-								<span>{key}</span>
-								{value}
-							</h4>
-						))
-					) : (
-						<h4 className={`idea-block__subtitleBig`}>{block.subtitleBig}</h4>
-					)}
-				</div>
+			{block.titleBig && (
+				<Title titleClassname='idea-block__titleBig' title={block.titleBig} />
 			)}
 
-			{block.title && <h2 className={`idea-block__title`}>{block.title}</h2>}
+			{block.subtitleBig && <SubtitleBig subtitleBig={block.subtitleBig} />}
 
-			{block.text &&
-				(Array.isArray(block.text) ? (
-					block.text.map((item, i) => (
-						<p key={i} className='idea-block__text'>
-							{item}
-						</p>
-					))
-				) : (
-					<p className='idea-block__text'>{block.text}</p>
-				))}
+			{block.title && <Title titleClassname='idea-block__title' title={block.title} />}
 
-			{block.subtitle && <h3 className='idea-block__subtitle'>{block.subtitle}</h3>}
+			{block.text && <Text text={block.text} />}
 
-			{block.list && (
-				<ul>
-					{block.list.map((item, i) => (
-						<li key={i}>{item}</li>
-					))}
-				</ul>
-			)}
+			{block.subtitle && <Subtitle subtitle={block.subtitle} />}
 
-			{block.subtitle2 && <h3 className='idea-block__subtitle'>{block.subtitle2}</h3>}
+			{block.list && <List items={block.list} />}
 
-			{block.list2 && (
-				<ul>
-					{block.list2.map((item, i) => (
-						<li key={i}>{item}</li>
-					))}
-				</ul>
-			)}
+			{block.subtitle2 && <Subtitle subtitle={block.subtitle2} />}
 
-			{block.subtitle3 && <h3 className='idea-block__subtitle'>{block.subtitle3}</h3>}
+			{block.list2 && <List items={block.list2} />}
 
-			{block.text2 &&
-				(Array.isArray(block.text2) ? (
-					block.text2.map((item, i) => (
-						<p key={i} className='idea-block__text'>
-							{item}
-						</p>
-					))
-				) : (
-					<p className='idea-block__text'>{block.text2}</p>
-				))}
+			{block.subtitle3 && <Subtitle subtitle={block.subtitle3} />}
 
-			{block.subtitle4 && <h3 className='idea-block__subtitle'>{block.subtitle4}</h3>}
+			{block.text2 && <Text text={block.text2} />}
 
-			{block.text3 &&
-				(Array.isArray(block.text3) ? (
-					block.text3.map((item, i) => (
-						<p key={i} className='idea-block__text'>
-							{item}
-						</p>
-					))
-				) : (
-					<p className='idea-block__text'>{block.text3}</p>
-				))}
+			{block.subtitle4 && <Subtitle subtitle={block.subtitle4} />}
+
+			{block.text3 && <Text text={block.text3} />}
 		</div>
 	);
 };

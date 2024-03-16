@@ -1,12 +1,11 @@
-// LastWords.tsx
 import React from 'react';
 
-interface Props {
+interface SubtitleProps {
 	subtitle: string;
 }
 
-const LastWords: React.FC<Props> = ({ subtitle }) => {
+const Subtitle: React.FC<SubtitleProps> = ({ subtitle }) => {
 	return <h3 className='idea-block__subtitle'>{subtitle}</h3>;
 };
 
-export default LastWords;
+export default Subtitle;

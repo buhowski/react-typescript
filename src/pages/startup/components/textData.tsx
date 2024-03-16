@@ -370,7 +370,7 @@ export const filmsTextData = [
 	{
 		section: [
 			{
-				titleBig: `information will be available soon`,
+				titleBig: `Only Ukrainian language is provided. Other information will be available soon.`,
 			},
 		],
 
@@ -384,7 +384,7 @@ export const filmsTextData = [
 	{
 		section: [
 			{
-				titleBig: `information will be available soon`,
+				titleBig: `Only Ukrainian language is provided. Other information will be available soon.`,
 			},
 		],
 
