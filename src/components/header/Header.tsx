@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { pathToIdea, pathToAbout, pathToProjects } from '../urlsData';
+import { pathToStartup, pathToAbout, pathToProjects } from '../urlsData';
 
 import { useTabletQuery, useMobMenuHeightQuery } from '../../hooks/useMediaQuery';
 import Socials from '../socials/Socials';
@@ -8,8 +8,8 @@ import './Header.scss';
 
 const linksData = [
 	{
-		pageLink: pathToIdea,
-		pageName: `Business Idea`,
+		pageLink: pathToStartup,
+		pageName: `Business Ideas`,
 	},
 	{
 		pageLink: pathToAbout,

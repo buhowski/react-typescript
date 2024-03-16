@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { urlTelegram, urlEmail, urlLinkedIn } from '../../components/urlsData';
+import { urlTelegram, urlEmail, urlLinkedIn } from './urlsData';
 
 const dataContacts = [
 	{
