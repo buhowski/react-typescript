@@ -76,3 +76,12 @@ export const List: React.FC<ListProps> = ({ items }) => {
 		</ul>
 	);
 };
+
+// Last Words element
+interface LastWordsProps {
+	lastWords: string;
+}
+
+export const LastWords: React.FC<LastWordsProps> = ({ lastWords }) => {
+	return <p className='last-words'>{lastWords}</p>;
+};

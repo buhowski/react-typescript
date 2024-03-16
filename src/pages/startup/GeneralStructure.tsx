@@ -5,7 +5,7 @@ import Copyright from '../../components/Copyright';
 import { useTabletLargeQuery } from '../../hooks/useMediaQuery';
 import TextBlock from './components/TextBlock';
 import { Block } from './components/textTypes';
-import LastWords from './components/LastWords';
+import { LastWords } from './components/StructureElements';
 
 interface TextStructure {
 	section: Block[];
