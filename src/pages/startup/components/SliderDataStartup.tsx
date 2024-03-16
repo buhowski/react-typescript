@@ -1,5 +1,4 @@
 const slideItem = [
-	'startup.jpg',
 	'brain.jpg',
 	'creatio.jpg',
 	'god.jpg',
