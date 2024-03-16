@@ -171,7 +171,7 @@
 	height: 100%;
 	width: calc(50% + 2px);
 	margin-right: 40px;
-	padding-top: 40px;
+	padding-top: 60px;
 	flex-shrink: 0;
 	position: relative;
 	overflow: hidden;
@@ -220,6 +220,7 @@
 	@include tabletBig {
 		max-width: 777px;
 		margin: 0 auto;
+		text-align: center;
 	}
 
 	@include mobile {
@@ -238,9 +239,8 @@
 .idea-tabs {
 	font-size: 12px;
 
-	display: inline-flex;
-
 	&--lang {
+		display: inline-flex;
 		position: absolute;
 		top: 0;
 		right: 0;
@@ -252,23 +252,35 @@
 			box-shadow: 0 5px 15px rgba($color: $black, $alpha: 0.6);
 
 			.idea-tabs__btn {
-				padding: 6px 25px;
+				padding-left: 25px;
+				padding-right: 25px;
 			}
 		}
 	}
 
 	&--urls {
+		white-space: nowrap;
+
 		.idea-tabs__btn {
 			text-transform: none;
 		}
 	}
 
 	&__btn {
-		flex-shrink: 0;
 		background: $black;
 		color: $snow;
 		padding: 4px 20px;
 		text-transform: uppercase;
+
+		&:hover {
+			font-weight: bold;
+			color: $blue-main;
+		}
+
+		@include tabletBig {
+			padding-top: 6px;
+			padding-bottom: 6px;
+		}
 
 		&.active {
 			background: $blue-main;
@@ -298,6 +310,10 @@
 		color: $snow;
 		letter-spacing: 2px;
 		font-weight: 600;
+
+		@include tabletBig {
+			font-size: 25px;
+		}
 	}
 
 	&__subtitleBig {
@@ -383,10 +399,6 @@
 	margin-bottom: 30px;
 	color: $snow;
 
-	@include tabletBig {
-		margin-top: 20px;
-	}
-
 	@media screen and (max-width: 340px) {
 		letter-spacing: 7px;
 	}
@@ -420,7 +432,6 @@
 	@include tabletBig {
 		margin-top: 0;
 		align-items: center;
-		// box-shadow: 0px 0px 10px rgba($color: $black, $alpha: 0.8);
 		overflow: hidden;
 		height: 300px;
 		background: $black;
@@ -446,8 +457,8 @@
 		box-shadow: unset;
 	}
 
-	@include tabletSmall {
-		width: calc(100% - 30px);
+	@include mobile {
+		width: calc(100% - 50px);
 	}
 }
 
@@ -524,7 +535,7 @@
 	}
 
 	@include mobile {
-		padding: 5px;
+		padding: 7px;
 	}
 
 	&::before {
@@ -536,8 +547,8 @@
 		border-width: 2px 2px 0 0;
 
 		@include mobile {
-			width: 9px;
-			height: 9px;
+			width: 10px;
+			height: 10px;
 		}
 	}
 
@@ -552,8 +563,9 @@
 
 		&::before {
 			transform: rotate(45deg);
+
 			@include tabletBig {
-				transform: rotate(45deg) translate(-1px, 1px);
+				transform: rotate(45deg) translate(-2px, 2px);
 			}
 		}
 	}
@@ -569,7 +581,7 @@
 			transform: rotate(-135deg);
 
 			@include tabletBig {
-				transform: rotate(-135deg) translate(-1px, 1px);
+				transform: rotate(-135deg) translate(-2px, 2px);
 			}
 		}
 	}

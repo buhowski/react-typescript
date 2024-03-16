@@ -7,6 +7,8 @@ import {
 	pathToStartupFilms,
 	pathToAbout,
 	pathToProjects,
+	pathToStartupGames,
+	pathToStartupArticles,
 } from './components/urlsData';
 
 import './styles/App.scss';
@@ -17,6 +19,8 @@ import About from './pages/about/About';
 import Projects from './pages/projects/Projects';
 import Startup from './pages/startup/Startup';
 import StartupFilms from './pages/startup/StartupFilms';
+import StartupGames from './pages/startup/StartupGames';
+import StartupArticles from './pages/startup/StartupArticles';
 
 const routesData = [
 	{
@@ -38,6 +42,14 @@ const routesData = [
 	{
 		pathTo: pathToStartupFilms,
 		pageComponent: <StartupFilms />,
+	},
+	{
+		pathTo: pathToStartupGames,
+		pageComponent: <StartupGames />,
+	},
+	{
+		pathTo: pathToStartupArticles,
+		pageComponent: <StartupArticles />,
 	},
 ];
 
