@@ -186,7 +186,11 @@
 }
 
 .copy-tablet {
-	text-align: center;
+	display: flex;
+
+	@include tabletBig {
+		justify-content: center;
+	}
 }
 
 .idea-copy {

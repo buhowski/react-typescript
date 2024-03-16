@@ -1,6 +1,6 @@
 import React from 'react';
 import { Block } from './textTypes';
-import { Text, Subtitle, Title, List, SubtitleBig } from './ParagraphItem';
+import { Text, Subtitle, Title, List, SubtitleBig } from './StructureElements';
 
 interface TextBlockProps {
 	block: Block;

@@ -10,10 +10,10 @@ export const SubtitleBig: React.FC<SubtitleBigProps> = ({ subtitleBig }) => {
 		<div className='idea-types'>
 			{Array.isArray(subtitleBig) ? (
 				subtitleBig.map(({ key, value }, i) => (
-					<h4 className='idea-block__subtitleBig' key={i}>
+					<h3 className='idea-block__subtitleBig' key={i}>
 						<span>{key}</span>
 						{value}
-					</h4>
+					</h3>
 				))
 			) : (
 				<h4 className='idea-block__subtitleBig'>{subtitleBig}</h4>

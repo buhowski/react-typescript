@@ -18,7 +18,7 @@ interface IdeaGeneralProps {
 
 const Tabs = ({ TabRu, TabEn, TabUa, Slider }: IdeaGeneralProps) => {
 	const useTabletLarge = useTabletLargeQuery();
-	const [currentTab, setCurrentTab] = useState('1');
+	const [currentTab, setCurrentTab] = useState('');
 
 	useEffect(() => {
 		const currentIndex = localStorage.getItem('currentIndex');
