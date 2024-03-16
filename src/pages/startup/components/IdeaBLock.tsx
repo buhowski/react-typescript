@@ -1,12 +1,12 @@
 import React from 'react';
-import { Block } from './textTypes';
-import { Text, Subtitle, Title, List, SubtitleBig } from './StructureElements';
+import { Block } from '../data/textTypes';
+import { Text, Subtitle, Title, List, SubtitleBig } from './IdeaElements';
 
 interface TextBlockProps {
 	block: Block;
 }
 
-const TextBlock: React.FC<TextBlockProps> = ({ block }) => {
+const IdeaBLock: React.FC<TextBlockProps> = ({ block }) => {
 	return (
 		<div className='idea-block'>
 			{block.titleBig && (
@@ -38,4 +38,4 @@ const TextBlock: React.FC<TextBlockProps> = ({ block }) => {
 	);
 };
 
-export default TextBlock;
+export default IdeaBLock;

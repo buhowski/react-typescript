@@ -13,15 +13,19 @@ import {
 
 import './styles/App.scss';
 
+// Pages
 import Header from './components/header/Header';
 import Home from './pages/home/Home';
 import About from './pages/about/About';
 import Projects from './pages/projects/Projects';
-import Startup from './pages/startup/Startup';
-import StartupFilms from './pages/startup/StartupFilms';
-import StartupGames from './pages/startup/StartupGames';
-import StartupArticles from './pages/startup/StartupArticles';
 
+// Startup Pages / Separate Projects
+import StartupMain from './pages/startup/subpages/StartupMain';
+import StartupFilms from './pages/startup/subpages/StartupFilms';
+import StartupGames from './pages/startup/subpages/StartupGames';
+import StartupArticles from './pages/startup/subpages/StartupArticles';
+
+// Routes and pages
 const routesData = [
 	{
 		pathTo: '',
@@ -37,7 +41,7 @@ const routesData = [
 	},
 	{
 		pathTo: pathToStartup,
-		pageComponent: <Startup />,
+		pageComponent: <StartupMain />,
 	},
 	{
 		pathTo: pathToStartupFilms,

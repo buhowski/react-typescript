@@ -1,16 +1,81 @@
-import Slider from '../../components/Slider';
-import { dataSlider } from './components/SliderDataStartup';
-import GeneralStructure from './GeneralStructure';
-import { startupTextData } from './components/textData';
+import { useState, useEffect } from 'react';
+import { NavLink } from 'react-router-dom';
+import './Startup.scss';
 
-const StartupFilms = () => {
+import PopupContacts from '../../components/PopupContacts';
+import { useTabletLargeQuery } from '../../hooks/useMediaQuery';
+import { startupURLs } from './data/startupURLs';
+import { IdeaInfo } from './components/IdeaInfo';
+
+interface IdeaGeneralProps {
+	TabRu: JSX.Element;
+	TabEn: JSX.Element;
+	TabUa: JSX.Element;
+	Slider: JSX.Element;
+}
+
+const Startup = ({ TabRu, TabEn, TabUa, Slider }: IdeaGeneralProps) => {
+	const useTabletLarge = useTabletLargeQuery();
+	const [currentTab, setCurrentTab] = useState('');
+
+	useEffect(() => {
+		const currentIndex = localStorage.getItem('currentIndex');
+
+		setCurrentTab(currentIndex ? currentIndex : '1');
+	}, []);
+
+	const handleTabClick = (tabId: string) => {
+		setCurrentTab(tabId);
+		localStorage.setItem('currentIndex', tabId);
+	};
+
+	// Tabs content
+	const tabs = [
+		{
+			id: '1',
+			title: 'en',
+			content: TabEn,
+		},
+		{
+			id: '3',
+			title: 'ua',
+			content: TabUa,
+		},
+		{
+			id: '2',
+			title: 'ru',
+			content: TabRu,
+		},
+	];
+
 	return (
-		<GeneralStructure
-			title='Startup Presentation'
-			textData={startupTextData}
-			Slider={<Slider dataSlider={dataSlider} />}
-		/>
+		<div className='wrapper wrapper--idea'>
+			<div className='startup-pages'>
+				<div className='idea-tabs idea-tabs--urls'>
+					{startupURLs.map(({ pageLink, pageName }, i) => (
+						<NavLink to={pageLink} end className={`idea-tabs__btn`} key={i}>
+							{pageName}
+						</NavLink>
+					))}
+				</div>
+			</div>
+
+			<div className='idea-section'>
+				{/* Get in touch contacts */}
+				{useTabletLarge && <PopupContacts />}
+
+				<IdeaInfo
+					tabs={tabs}
+					currentTab={currentTab}
+					handleTabClick={handleTabClick}
+					useTabletLarge={useTabletLarge}
+				/>
+
+				{/* slider with images */}
+				{Slider}
+			</div>
+		</div>
 	);
 };
 
-export default StartupFilms;
+export default Startup;

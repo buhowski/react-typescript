@@ -1,11 +1,10 @@
 import React from 'react';
-import './Startup.scss';
-import Tabs from './components/Tabs';
-import Copyright from '../../components/Copyright';
-import { useTabletLargeQuery } from '../../hooks/useMediaQuery';
-import TextBlock from './components/TextBlock';
-import { Block } from './components/textTypes';
-import { LastWords } from './components/StructureElements';
+import Startup from '../Startup';
+import Copyright from '../../../components/Copyright';
+import { useTabletLargeQuery } from '../../../hooks/useMediaQuery';
+import IdeaBLock from './IdeaBLock';
+import { Block } from '../data/textTypes';
+import { LastWords } from './IdeaElements';
 
 interface TextStructure {
 	section: Block[];
@@ -18,7 +17,7 @@ interface PageProps {
 	Slider: JSX.Element;
 }
 
-const GeneralStructure: React.FC<PageProps> = ({ title, textData, Slider }) => {
+const IdeaContent: React.FC<PageProps> = ({ title, textData, Slider }) => {
 	const useTabletLarge = useTabletLargeQuery();
 
 	const textItems = textData.map((structure: TextStructure, index) => (
@@ -28,7 +27,7 @@ const GeneralStructure: React.FC<PageProps> = ({ title, textData, Slider }) => {
 
 			{/* Text Structure */}
 			{structure.section.map((block: Block, blockIndex) => (
-				<TextBlock key={blockIndex} block={block} />
+				<IdeaBLock key={blockIndex} block={block} />
 			))}
 
 			{/* Text words after / thanks text */}
@@ -40,7 +39,7 @@ const GeneralStructure: React.FC<PageProps> = ({ title, textData, Slider }) => {
 	));
 
 	return (
-		<Tabs
+		<Startup
 			TabRu={textItems[0]}
 			TabEn={textItems[1]}
 			TabUa={textItems[2]}
@@ -49,4 +48,4 @@ const GeneralStructure: React.FC<PageProps> = ({ title, textData, Slider }) => {
 	);
 };
 
-export default GeneralStructure;
+export default IdeaContent;

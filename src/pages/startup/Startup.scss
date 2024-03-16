@@ -149,7 +149,7 @@
 	position: relative;
 	box-shadow: 0 0 20px rgba($color: $black, $alpha: 0.8);
 	height: 100%;
-	max-height: calc(100% - 24px);
+	max-height: calc(100% - 25px);
 
 	@include tabletBig {
 		max-height: none;
@@ -232,12 +232,14 @@
 			width: 100%;
 			overflow: auto;
 			padding: 0 15px;
+			scrollbar-width: thin;
+			scrollbar-color: $blue-main $darkest;
 		}
 	}
 }
 
 .idea-tabs {
-	font-size: 12px;
+	font-size: 13px;
 	display: flex;
 
 	&--lang {
@@ -286,6 +288,7 @@
 		color: $snow;
 		padding: 4px 20px;
 		text-transform: uppercase;
+		line-height: normal;
 
 		@include tabletBig {
 			padding-top: 6px;
@@ -446,6 +449,7 @@
 		overflow: hidden;
 		height: 300px;
 		background: $black;
+		box-shadow: 0 5px 15px rgba($color: $black, $alpha: 0.6);
 	}
 
 	@include tabletSmall {
@@ -469,7 +473,7 @@
 	}
 
 	@include mobile {
-		width: calc(100% - 50px);
+		width: calc(100% - 56px);
 	}
 }
 
@@ -510,7 +514,7 @@
 		top: 0;
 		left: 50%;
 		transform: translateX(-50%);
-		margin-top: 10px;
+		margin: 10px 0 0;
 	}
 }
 
@@ -543,10 +547,19 @@
 		top: 0;
 		height: 100%;
 		background-color: $black;
+
+		&::after {
+			content: '';
+			display: block;
+			width: 80px;
+			height: 100%;
+			position: absolute;
+			top: 0;
+		}
 	}
 
 	@include mobile {
-		padding: 7px;
+		padding: 8px;
 	}
 
 	&::before {
@@ -570,6 +583,10 @@
 	&-next {
 		@include tabletBig {
 			right: 0;
+
+			&::after {
+				right: 100%;
+			}
 		}
 
 		&::before {
@@ -586,6 +603,10 @@
 
 		@include tabletBig {
 			left: 0;
+
+			&::after {
+				left: 100%;
+			}
 		}
 
 		&::before {

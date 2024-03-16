@@ -1,34 +1,44 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 import { pathToStartup, pathToAbout, pathToProjects } from '../urlsData';
-
+import { startupURLs } from '../../pages/startup/data/startupURLs';
 import { useTabletQuery, useMobMenuHeightQuery } from '../../hooks/useMediaQuery';
 import Socials from '../socials/Socials';
+
 import './Header.scss';
 
-const linksData = [
-	{
-		pageLink: pathToStartup,
-		pageName: `Business Ideas`,
-	},
-	{
-		pageLink: pathToAbout,
-		pageName: 'About Me',
-	},
-	{
-		pageLink: pathToProjects,
-		pageName: 'Portfolio',
-	},
-];
 const Header = () => {
 	const tabletQuery = useTabletQuery();
 	const mobMenuHeightQuery = useMobMenuHeightQuery();
-
 	const [menuOpen, setMenuOpen] = React.useState(false);
-	const navLinkItems = linksData.map(({ pageLink, pageName }, i) => {
+
+	const { pathname } = useLocation();
+	const isActive = startupURLs.some((url) => url.pageLink === pathname);
+
+	const linksData = [
+		{
+			pageLink: pathToStartup,
+			pageName: `Business Ideas`,
+			activeClass: isActive ? 'active' : '',
+		},
+		{
+			pageLink: pathToAbout,
+			pageName: 'About Me',
+			activeClass: '',
+		},
+		{
+			pageLink: pathToProjects,
+			pageName: 'Portfolio',
+			activeClass: '',
+		},
+	];
+
+	console.log(linksData[0].activeClass);
+
+	const navLinkItems = linksData.map(({ pageLink, pageName, activeClass }, i) => {
 		return (
 			<li className='nav-item d-flex' key={i}>
-				<NavLink className={`a nav-link`} to={`${pageLink}`} end>
+				<NavLink className={`a nav-link ${activeClass}`} to={`${pageLink}`} end>
 					{pageName}
 				</NavLink>
 			</li>
