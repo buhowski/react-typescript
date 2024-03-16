@@ -5,7 +5,8 @@ import { useTabletLargeQuery } from '../../../hooks/useMediaQuery';
 import {
 	pathToStartup,
 	pathToStartupFilms,
-	// pathToStartupGames,
+	pathToStartupGames,
+	pathToStartupArticles,
 } from '../../../components/urlsData';
 import { IdeaInfo } from './IdeaInfo';
 
@@ -41,10 +42,14 @@ const Tabs = ({ TabRu, TabEn, TabUa, Slider }: IdeaGeneralProps) => {
 			pageLink: pathToStartupFilms,
 			pageName: `Films`,
 		},
-		// {
-		// 	pageLink: pathToStartupGames,
-		// 	pageName: `Games`,
-		// },
+		{
+			pageLink: pathToStartupGames,
+			pageName: `Games`,
+		},
+		{
+			pageLink: pathToStartupArticles,
+			pageName: `Articles`,
+		},
 	];
 
 	// Tabs content
