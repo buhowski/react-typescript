@@ -238,13 +238,19 @@
 
 .idea-tabs {
 	font-size: 12px;
+	display: flex;
 
 	&--lang {
-		display: inline-flex;
 		position: absolute;
 		top: 0;
 		right: 0;
 		box-shadow: -5px 5px 15px rgba($color: $black, $alpha: 0.6);
+
+		.idea-tabs__btn {
+			&:hover {
+				text-shadow: 0 0 0.65px $snow;
+			}
+		}
 
 		@include tabletBig {
 			right: 50%;
@@ -263,6 +269,15 @@
 
 		.idea-tabs__btn {
 			text-transform: none;
+
+			@include tabletBig {
+				flex-grow: 1;
+			}
+
+			&:hover {
+				text-shadow: 0 0 0.7px $blue-main, 0 0 0.7px $blue-main;
+				color: $blue-main;
+			}
 		}
 	}
 
@@ -272,11 +287,6 @@
 		padding: 4px 20px;
 		text-transform: uppercase;
 
-		&:hover {
-			font-weight: bold;
-			color: $blue-main;
-		}
-
 		@include tabletBig {
 			padding-top: 6px;
 			padding-bottom: 6px;
@@ -284,6 +294,7 @@
 
 		&.active {
 			background: $blue-main;
+			text-shadow: 0 0 0.65px $snow;
 			font-weight: bold;
 		}
 	}
