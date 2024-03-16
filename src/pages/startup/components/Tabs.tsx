@@ -2,7 +2,11 @@ import { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import PopupContacts from '../../../components/PopupContacts';
 import { useTabletLargeQuery } from '../../../hooks/useMediaQuery';
-import { pathToStartup, pathToStartupFilms } from '../../../components/urlsData';
+import {
+	pathToStartup,
+	pathToStartupFilms,
+	// pathToStartupGames,
+} from '../../../components/urlsData';
 import { IdeaInfo } from './IdeaInfo';
 
 interface IdeaGeneralProps {
@@ -35,8 +39,12 @@ const Tabs = ({ TabRu, TabEn, TabUa, Slider }: IdeaGeneralProps) => {
 		},
 		{
 			pageLink: pathToStartupFilms,
-			pageName: `Film Products`,
+			pageName: `Films`,
 		},
+		// {
+		// 	pageLink: pathToStartupGames,
+		// 	pageName: `Games`,
+		// },
 	];
 
 	// Tabs content

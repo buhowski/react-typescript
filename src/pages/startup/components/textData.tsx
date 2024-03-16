@@ -369,9 +369,8 @@ export const filmsTextData = [
 	// ############## rusian ##############
 	{
 		section: [
-			// Mission
 			{
-				title: `рус`,
+				titleBig: `information will be available soon`,
 			},
 		],
 
@@ -385,7 +384,7 @@ export const filmsTextData = [
 	{
 		section: [
 			{
-				title: `eng`,
+				titleBig: `information will be available soon`,
 			},
 		],
 
@@ -400,7 +399,10 @@ export const filmsTextData = [
 		section: [
 			{
 				titleBig: `Європейські Українці`,
-				subtitleBig: `Жанр: Комедія, Драма, Чорний гумор`,
+				subtitleBig: [
+					{ key: `Тип:`, value: `Серіал` },
+					{ key: `Жанр:`, value: `Комедія, Драма, Чорний гумор` },
+				],
 				title: `Опис`,
 				text: [
 					`Концепція серіалу – це веселий мікс, навіяний серіалами "В Філадельфії завжди сонячно" та "Брод Сіті".`,

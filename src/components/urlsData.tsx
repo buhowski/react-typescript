@@ -11,5 +11,6 @@ export const urlCoindrop = 'https://coindrop.to/buhowski';
 // All Pages Path
 export const pathToStartup = '/startup';
 export const pathToStartupFilms = '/films';
+export const pathToStartupGames = '/games';
 export const pathToAbout = '/about';
 export const pathToProjects = '/projects';

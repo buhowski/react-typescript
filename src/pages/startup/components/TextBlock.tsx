@@ -9,8 +9,20 @@ const TextBlock: React.FC<TextBlockProps> = ({ block }) => {
 	return (
 		<div className='idea-block'>
 			{block.titleBig && <h2 className={`idea-block__titleBig`}>{block.titleBig}</h2>}
+
 			{block.subtitleBig && (
-				<h2 className={`idea-block__subtitleBig`}>{block.subtitleBig}</h2>
+				<div className='idea-types'>
+					{Array.isArray(block.subtitleBig) ? (
+						block.subtitleBig.map(({ key, value }, i) => (
+							<h4 className={`idea-block__subtitleBig`} key={i}>
+								<span>{key}</span>
+								{value}
+							</h4>
+						))
+					) : (
+						<h4 className={`idea-block__subtitleBig`}>{block.subtitleBig}</h4>
+					)}
+				</div>
 			)}
 
 			{block.title && <h2 className={`idea-block__title`}>{block.title}</h2>}
@@ -36,7 +48,7 @@ const TextBlock: React.FC<TextBlockProps> = ({ block }) => {
 				</ul>
 			)}
 
-			{block.subtitle2 && <h3 className='h3'>{block.subtitle2}</h3>}
+			{block.subtitle2 && <h3 className='idea-block__subtitle'>{block.subtitle2}</h3>}
 
 			{block.list2 && (
 				<ul>
@@ -46,7 +58,7 @@ const TextBlock: React.FC<TextBlockProps> = ({ block }) => {
 				</ul>
 			)}
 
-			{block.subtitle3 && <h3 className='h3'>{block.subtitle3}</h3>}
+			{block.subtitle3 && <h3 className='idea-block__subtitle'>{block.subtitle3}</h3>}
 
 			{block.text2 &&
 				(Array.isArray(block.text2) ? (
@@ -59,7 +71,7 @@ const TextBlock: React.FC<TextBlockProps> = ({ block }) => {
 					<p className='idea-block__text'>{block.text2}</p>
 				))}
 
-			{block.subtitle4 && <h3 className='h3'>{block.subtitle4}</h3>}
+			{block.subtitle4 && <h3 className='idea-block__subtitle'>{block.subtitle4}</h3>}
 
 			{block.text3 &&
 				(Array.isArray(block.text3) ? (
