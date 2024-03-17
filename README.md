@@ -1,6 +1,6 @@
 # Startup Presentation
 
-https://buhowski.dev/startup
+[The Corp .!.](https://buhowski.dev/startup)
 
 ## "How to create an information media magazine and transform it into a company producing its own technologies"
 

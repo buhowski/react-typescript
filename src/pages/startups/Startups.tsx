@@ -6,7 +6,7 @@ import PopupContacts from '../../components/PopupContacts';
 import { useTabletLargeQuery } from '../../hooks/useMediaQuery';
 import { startupURLs } from './data/startupsURLs';
 import { IdeaInfo } from './components/IdeaInfo';
-
+// import useDocumentTitle from '../../hooks/useDocumentTitle';
 interface IdeaGeneralProps {
 	TabRu: JSX.Element;
 	TabEn: JSX.Element;
@@ -15,6 +15,7 @@ interface IdeaGeneralProps {
 }
 
 const Startup = ({ TabRu, TabEn, TabUa, Slider }: IdeaGeneralProps) => {
+	// useDocumentTitle({ defaultTitle: 'The Corp .!.' });
 	const useTabletLarge = useTabletLargeQuery();
 	const [currentTab, setCurrentTab] = useState('');
 
