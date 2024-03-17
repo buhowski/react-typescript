@@ -6,12 +6,13 @@ interface TitleProps {
 }
 
 // Custom hook for managing document title
-const useDocumentTitle = ({ defaultTitle }: TitleProps) => {
+const useDocumentTitle = ({ defaultTitle = 'Alexander Tsiomakh' }: TitleProps) => {
 	// Use state to manage the internal title
 	const [customTitle, setCustomTitle] = useState(defaultTitle);
 
 	useEffect(() => {
 		document.title = customTitle;
+		console.log(customTitle);
 	}, [customTitle]); // Update defaultTitle whenever customTitle changes
 
 	// Update internal title based on the prop (optional)
