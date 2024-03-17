@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
-import './Startup.scss';
+import './Startups.scss';
 
 import PopupContacts from '../../components/PopupContacts';
 import { useTabletLargeQuery } from '../../hooks/useMediaQuery';
-import { startupURLs } from './data/startupURLs';
+import { startupURLs } from './data/startupsURLs';
 import { IdeaInfo } from './components/IdeaInfo';
 
 interface IdeaGeneralProps {

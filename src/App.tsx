@@ -20,10 +20,10 @@ import About from './pages/about/About';
 import Projects from './pages/projects/Projects';
 
 // Startup Pages / Separate Projects
-import StartupMain from './pages/startup/subpages/StartupMain';
-import StartupFilms from './pages/startup/subpages/StartupFilms';
-import StartupGames from './pages/startup/subpages/StartupGames';
-import StartupArticles from './pages/startup/subpages/StartupArticles';
+import StartupMain from './pages/startups/StartupPresentation';
+import StartupFilms from './pages/startups/subpages/Films';
+import StartupGames from './pages/startups/subpages/Games';
+import StartupArticles from './pages/startups/subpages/Articles';
 
 // Routes and pages
 const routesData = [

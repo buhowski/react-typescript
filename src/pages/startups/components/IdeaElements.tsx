@@ -8,16 +8,12 @@ interface SubtitleBigProps {
 export const SubtitleBig: React.FC<SubtitleBigProps> = ({ subtitleBig }) => {
 	return (
 		<div className='idea-types'>
-			{Array.isArray(subtitleBig) ? (
-				subtitleBig.map(({ key, value }, i) => (
-					<h3 className='idea-block__subtitleBig' key={i}>
-						<span>{key}</span>
-						{value}
-					</h3>
-				))
-			) : (
-				<h4 className='idea-block__subtitleBig'>{subtitleBig}</h4>
-			)}
+			{subtitleBig.map(({ key, value }, i) => (
+				<h3 className='idea-block__subtitleBig' key={i}>
+					<span>{key}</span>
+					{value}
+				</h3>
+			))}
 		</div>
 	);
 };
@@ -47,19 +43,17 @@ interface TextProps {
 }
 
 export const Text: React.FC<TextProps> = ({ text }) => {
-	if (Array.isArray(text)) {
-		return (
-			<>
-				{text.map((item, i) => (
-					<p key={i} className='idea-block__text'>
-						{item}
-					</p>
-				))}
-			</>
-		);
-	} else {
-		return <p className='idea-block__text'>{text}</p>;
-	}
+	const renderedText = Array.isArray(text) ? text : [text];
+
+	return (
+		<>
+			{renderedText.map((item, i) => (
+				<p key={i} className='idea-block__text'>
+					{item}
+				</p>
+			))}
+		</>
+	);
 };
 
 // List ul in text structure

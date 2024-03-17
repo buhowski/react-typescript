@@ -1,5 +1,5 @@
 import React from 'react';
-import Startup from '../Startup';
+import Startup from '../Startups';
 import Copyright from '../../../components/Copyright';
 import { useTabletLargeQuery } from '../../../hooks/useMediaQuery';
 import IdeaBLock from './IdeaBLock';
