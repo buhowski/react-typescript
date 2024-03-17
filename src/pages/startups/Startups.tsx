@@ -6,7 +6,8 @@ import PopupContacts from '../../components/PopupContacts';
 import { useTabletLargeQuery } from '../../hooks/useMediaQuery';
 import { startupURLs } from './data/startupsURLs';
 import { IdeaInfo } from './components/IdeaInfo';
-
+// changing head tags
+// import { Helmet } from 'react-helmet';
 interface IdeaGeneralProps {
 	TabRu: JSX.Element;
 	TabEn: JSX.Element;
@@ -50,6 +51,11 @@ const Startup = ({ TabRu, TabEn, TabUa, Slider }: IdeaGeneralProps) => {
 
 	return (
 		<div className='wrapper wrapper--idea'>
+			{/* <Helmet>
+				<title>The Corp.!.</title>
+				<meta name='description' content='Staffed, Feature-rich Magazine' />
+			</Helmet> */}
+
 			<div className='startup-pages'>
 				<div className='idea-tabs idea-tabs--urls'>
 					{startupURLs.map(({ pageLink, pageName }, i) => (
