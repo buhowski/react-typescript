@@ -57,7 +57,7 @@ const PopupContacts = () => {
 				type='button'
 				className='a nav-link nav-link--underline'
 			>
-				Get In Touch
+				Contact Info
 			</button>
 		</div>
 	);
