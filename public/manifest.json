@@ -3,9 +3,14 @@
 	"name": "The Corp .!.",
 	"icons": [
 		{
-			"src": "favicon.ico",
+			"src": "fav.ico",
 			"sizes": "64x64 32x32 24x24 16x16",
 			"type": "image/x-icon"
+		},
+		{
+			"src": "logo.png",
+			"sizes": "128x128",
+			"type": "image/png"
 		},
 		{
 			"src": "logo.png",
@@ -13,7 +18,7 @@
 			"type": "image/png"
 		},
 		{
-			"src": "logo_maskable.png",
+			"src": "logoMaskable.png",
 			"sizes": "any",
 			"type": "image/png",
 			"purpose": "maskable"
