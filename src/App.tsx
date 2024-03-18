@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { useLocation, Route, Routes } from 'react-router-dom';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
-
+import { useTabletQuery } from './hooks/useMediaQuery';
 import {
 	pathToStartup,
 	pathToStartupFilms,
@@ -58,8 +58,9 @@ const routesData = [
 ];
 
 const App = () => {
+	const tabletQuery = useTabletQuery();
 	useEffect(() => {
-		if (window.innerWidth <= 1024) {
+		if (tabletQuery) {
 			let vh = window.innerHeight * 0.01;
 			document.documentElement.style.setProperty('--vh', `${vh}px`);
 
