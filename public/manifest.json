@@ -10,13 +10,18 @@
 		{
 			"src": "logo.png",
 			"sizes": "192x192",
-			"type": "image/png",
-			"purpose": "maskable"
+			"type": "image/png"
 		},
 		{
 			"src": "logo.png",
 			"sizes": "512x512",
 			"type": "image/png"
+		},
+		{
+			"src": "logo.png",
+			"type": "image/png",
+			"sizes": "150x150",
+			"purpose": "maskable"
 		},
 		{
 			"src": "logo.svg",
