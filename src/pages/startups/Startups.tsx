@@ -6,7 +6,7 @@ import PopupContacts from '../../components/PopupContacts';
 import { useTabletLargeQuery } from '../../hooks/useMediaQuery';
 import { startupURLs } from './data/startupsURLs';
 import { IdeaInfo } from './components/IdeaInfo';
-// import useDocumentTitle from '../../hooks/useDocumentTitle';
+// import AddToHomeScreenButton from '../../helpers/handleAddToHomeScreen';
 interface IdeaGeneralProps {
 	TabRu: JSX.Element;
 	TabEn: JSX.Element;
@@ -75,6 +75,10 @@ const Startup = ({ TabRu, TabEn, TabUa, Slider }: IdeaGeneralProps) => {
 				{/* slider with images */}
 				{Slider}
 			</div>
+
+			{/* <div className='addToHome'>
+				<AddToHomeScreenButton />
+			</div> */}
 		</div>
 	);
 };
