@@ -14,6 +14,16 @@ interface IdeaGeneralProps {
 	Slider: JSX.Element;
 }
 
+// Define the BeforeInstallPromptEvent type
+interface BeforeInstallPromptEvent extends Event {
+	readonly platforms: string[];
+	readonly userChoice: Promise<{
+		outcome: 'accepted' | 'dismissed';
+		platform: string;
+	}>;
+	prompt(): void;
+}
+
 const Startup = ({ TabRu, TabEn, TabUa, Slider }: IdeaGeneralProps) => {
 	// useDocumentTitle({ defaultTitle: 'The Corp .!.' });
 	const useTabletLarge = useTabletLargeQuery();
@@ -49,6 +59,43 @@ const Startup = ({ TabRu, TabEn, TabUa, Slider }: IdeaGeneralProps) => {
 		},
 	];
 
+	const [showPrompt, setShowPrompt] = useState(false);
+	const [deferredPrompt, setDeferredPrompt] = useState<BeforeInstallPromptEvent | null>(
+		null
+	);
+
+	useEffect(() => {
+		const handleBeforeInstallPrompt = (e: Event) => {
+			e.preventDefault();
+			setShowPrompt(true);
+			setDeferredPrompt(e as BeforeInstallPromptEvent);
+		};
+
+		window.addEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
+
+		return () => {
+			window.removeEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
+		};
+	}, []);
+
+	const handleAddToHomeScreen = () => {
+		if (showPrompt && deferredPrompt) {
+			deferredPrompt.prompt();
+
+			deferredPrompt.userChoice.then((choiceResult: any) => {
+				if (choiceResult.outcome === 'accepted') {
+					console.log('User accepted the install prompt');
+					// Provide feedback to the user about the successful installation
+				} else {
+					console.log('User dismissed the install prompt');
+					// Provide feedback to the user about the dismissed prompt
+				}
+			});
+
+			setShowPrompt(false);
+		}
+	};
+
 	return (
 		<div className='wrapper wrapper--idea'>
 			<div className='startup-pages'>
@@ -74,6 +121,12 @@ const Startup = ({ TabRu, TabEn, TabUa, Slider }: IdeaGeneralProps) => {
 
 				{/* slider with images */}
 				{Slider}
+			</div>
+
+			<div className=''>
+				<button className='fixed' onClick={handleAddToHomeScreen}>
+					Add to Home Screen
+				</button>
 			</div>
 		</div>
 	);
