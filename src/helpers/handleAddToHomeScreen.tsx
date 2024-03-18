@@ -49,11 +49,7 @@ const AddToHomeScreenButton: React.FC = () => {
 	};
 
 	return (
-		<button
-			className='add-to-home-screen-button'
-			onClick={handleAddToHomeScreen}
-			style={{ display: showPrompt ? 'block' : 'none' }}
-		>
+		<button className='add-to-home-screen-button' onClick={handleAddToHomeScreen}>
 			Add to Home Screen
 		</button>
 	);

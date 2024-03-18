@@ -12,12 +12,14 @@
 	}
 }
 
-.fixed {
-	background: #fff;
-	padding: 20px;
-	position: fixed;
-	right: 20px;
-	bottom: 20px;
+.addToHome {
+	button {
+		background: #fff;
+		padding: 20px;
+		position: fixed;
+		right: 20px;
+		bottom: 20px;
+	}
 }
 
 // underline link effect
