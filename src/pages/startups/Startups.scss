@@ -572,21 +572,20 @@
 		padding: 8px;
 	}
 
-	&::before {
-		content: '';
+	.chevron {
 		display: block;
-		width: 15px;
-		height: 15px;
+		width: 17px;
+		height: 17px;
 		border: 2px solid $blue-main;
 		border-width: 2px 2px 0 0;
 
 		@include mobile {
-			width: 10px;
-			height: 10px;
+			width: 13px;
+			height: 13px;
 		}
 	}
 
-	&:hover::before {
+	&:hover .chevron {
 		border-color: $titlePink;
 	}
 
@@ -599,7 +598,7 @@
 			}
 		}
 
-		&::before {
+		.chevron {
 			transform: rotate(45deg);
 
 			@include tabletBig {
@@ -619,7 +618,7 @@
 			}
 		}
 
-		&::before {
+		.chevron {
 			transform: rotate(-135deg);
 
 			@include tabletBig {

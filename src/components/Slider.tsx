@@ -50,8 +50,11 @@ const Slider: React.FC<SliderProps> = ({ dataSlider }) => {
 					<button
 						className='slider-btn-js slider-btn-js-prev'
 						type='button'
+						aria-label='Go to previous slide'
 						onClick={clickPrev}
-					></button>
+					>
+						<i className='chevron'></i>
+					</button>
 
 					<span className='slides-number'>
 						{`${activeIndex + 1 < 10 ? '0' : ''}${activeIndex + 1} / ${
@@ -62,8 +65,11 @@ const Slider: React.FC<SliderProps> = ({ dataSlider }) => {
 					<button
 						className='slider-btn-js slider-btn-js-next'
 						type='button'
+						aria-label='Go to next slide'
 						onClick={clickNext}
-					></button>
+					>
+						<i className='chevron'></i>
+					</button>
 				</div>
 
 				{!useTabletLarge && <PopupContacts />}
