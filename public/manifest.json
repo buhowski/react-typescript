@@ -18,12 +18,6 @@
 			"type": "image/png"
 		},
 		{
-			"src": "logo.png",
-			"type": "image/png",
-			"sizes": "150x150",
-			"purpose": "maskable"
-		},
-		{
 			"src": "logo.svg",
 			"sizes": "any",
 			"type": "image/svg+xml"
