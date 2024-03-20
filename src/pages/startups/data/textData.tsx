@@ -566,7 +566,7 @@ export const gamesTextData = [
 	{
 		section: [
 			{
-				titleBig: `Sich / Cossacks RPG`,
+				titleBig: `The Sich / Cossacks RPG`,
 				subtitleBig: [
 					{ key: `Genre:`, value: `Non-linear open-world action/RPG` },
 					{ key: `Setting:`, value: `Ukraine XVI – XVIIІ century, Zaporizhian Sich` },
@@ -673,7 +673,7 @@ export const gamesTextData = [
 export const articlesTextData = [
 	// ############## rusian ##############
 	{
-		section: [{ titleBig: `comming soon` }],
+		section: [{ titleBig: `comming soon. a slap in the face to stunted development` }],
 
 		// Last words
 		lastWords: `Для всех желающих сотрудничать,
@@ -683,7 +683,7 @@ export const articlesTextData = [
 
 	// ############## English ##############
 	{
-		section: [{ titleBig: `comming soon` }],
+		section: [{ titleBig: `comming soon. a slap in the face to stunted development` }],
 
 		// Last words
 		lastWords: `For everyone who wants to cooperate,
@@ -693,7 +693,7 @@ export const articlesTextData = [
 
 	// ############## Ukraine ##############
 	{
-		section: [{ titleBig: `comming soon` }],
+		section: [{ titleBig: `comming soon. a slap in the face to stunted development` }],
 
 		// Last words
 		lastWords: `Для всіх бажаючих співпрацювати,
