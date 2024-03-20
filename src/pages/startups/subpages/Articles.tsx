@@ -1,13 +1,13 @@
 import Slider from '../../../components/Slider';
 import { dataSlider } from '../data/SlidersData/SliderDataArticles';
 import IdeaContent from '../components/IdeaContent';
-import { gamesTextData } from '../data/textData';
+import { articlesTextData } from '../data/textData';
 
 const StartupArticles = () => {
 	return (
 		<IdeaContent
 			title='New Generation Media'
-			textData={gamesTextData}
+			textData={articlesTextData}
 			Slider={<Slider dataSlider={dataSlider} />}
 		/>
 	);
