@@ -329,11 +329,12 @@
 	}
 
 	&__titleBig {
-		font-size: 31px;
+		font-size: 27px;
 		font-family: $ui-medium;
 		color: $snow;
 		letter-spacing: 2px;
 		font-weight: 600;
+		text-align: right;
 
 		@include tabletBig {
 			font-size: 25px;
@@ -341,8 +342,6 @@
 	}
 
 	&__subtitleBig {
-		font-style: italic;
-		font-size: 15px;
 		margin-bottom: 5px;
 
 		&:last-child {
@@ -413,12 +412,15 @@
 .idea-types {
 	margin-bottom: 15px;
 	margin-top: 10px;
+	font-style: italic;
+	text-align: right;
+	font-size: 15px;
 }
 
 .startup-title {
 	text-align: center;
 	font-size: 31px;
-	letter-spacing: 8px;
+	letter-spacing: 5px;
 	font-family: $lg-bold;
 	margin-bottom: 30px;
 	color: $snow;
