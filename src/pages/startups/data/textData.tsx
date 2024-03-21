@@ -673,7 +673,11 @@ export const gamesTextData = [
 export const articlesTextData = [
 	// ############## rusian ##############
 	{
-		section: [{ titleBig: `comming soon. a slap in the face to stunted development` }],
+		section: [
+			{
+				titleBig: `coming soon. a slap in the face to stunted development, a dance of contradictions, a symphony of irony and truth with dirty realism...`,
+			},
+		],
 
 		// Last words
 		lastWords: `Для всех желающих сотрудничать,
@@ -683,7 +687,11 @@ export const articlesTextData = [
 
 	// ############## English ##############
 	{
-		section: [{ titleBig: `comming soon. a slap in the face to stunted development` }],
+		section: [
+			{
+				titleBig: `coming soon. a slap in the face to stunted development, a dance of contradictions, a symphony of irony and truth with dirty realism...`,
+			},
+		],
 
 		// Last words
 		lastWords: `For everyone who wants to cooperate,
@@ -693,7 +701,11 @@ export const articlesTextData = [
 
 	// ############## Ukraine ##############
 	{
-		section: [{ titleBig: `comming soon. a slap in the face to stunted development` }],
+		section: [
+			{
+				titleBig: `coming soon. a slap in the face to stunted development, a dance of contradictions, a symphony of irony and truth with dirty realism...`,
+			},
+		],
 
 		// Last words
 		lastWords: `Для всіх бажаючих співпрацювати,

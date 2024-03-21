@@ -284,6 +284,8 @@
 
 			@include tabletBig {
 				flex-grow: 1;
+				padding: 10px;
+				margin-top: 10px;
 			}
 
 			&:hover {
@@ -313,8 +315,24 @@
 	}
 }
 
+.startup-title {
+	text-align: center;
+	font-size: 31px;
+	letter-spacing: 5px;
+	font-family: $lg-bold;
+	margin-bottom: 40px;
+
+	.tag-color--left {
+		margin-left: -20px;
+	}
+
+	.tag-color--right {
+		margin-right: -36px;
+	}
+}
+
 .idea-block {
-	line-height: 1.4;
+	line-height: 1.5;
 	font-size: 17px;
 	letter-spacing: 0;
 	color: $textGrey;
@@ -329,9 +347,9 @@
 	}
 
 	&__titleBig {
-		font-size: 27px;
+		font-size: 24px;
 		font-family: $ui-medium;
-		color: $snow;
+		color: $starYellow;
 		letter-spacing: 2px;
 		font-weight: 600;
 		text-align: right;
@@ -418,19 +436,6 @@
 
 	@include mobile {
 		font-size: 14px;
-	}
-}
-
-.startup-title {
-	text-align: center;
-	font-size: 31px;
-	letter-spacing: 5px;
-	font-family: $lg-bold;
-	margin-bottom: 30px;
-	color: $snow;
-
-	@media screen and (max-width: 340px) {
-		letter-spacing: 7px;
 	}
 }
 
