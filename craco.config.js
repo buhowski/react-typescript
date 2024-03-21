@@ -11,6 +11,27 @@ module.exports = {
 				},
 			});
 
+			// webpackConfig.resolve.fallback = {
+			// 	http: false,
+			// 	http2: false,
+			// 	https: false,
+			// 	buffer: false,
+			// 	url: false,
+			// 	querystring: false,
+			// 	os: false,
+			// 	stream: false,
+			// 	path: false,
+			// 	util: false,
+			// 	crypto: false,
+			// 	zlib: false,
+			// 	process: false,
+			// 	assert: false,
+			// 	fs: false,
+			// 	child_process: false,
+			// 	net: false,
+			// 	tls: false,
+			// };
+
 			// Other CRA Webpack
 			return webpackConfig;
 		},

@@ -7,8 +7,6 @@ import { useTabletLargeQuery } from '../../hooks/useMediaQuery';
 import { startupURLs } from './data/startupsURLs';
 import { IdeaInfo } from './components/IdeaInfo';
 
-// import DocsPage from './DocsPage';
-
 interface IdeaGeneralProps {
 	TabRu: JSX.Element;
 	TabEn: JSX.Element;
@@ -53,8 +51,6 @@ const Startup = ({ TabRu, TabEn, TabUa, Slider }: IdeaGeneralProps) => {
 	return (
 		<div className='wrapper wrapper--idea'>
 			<div className='startup-pages'>
-				{/* <DocsPage /> */}
-
 				<div className='idea-tabs idea-tabs--urls'>
 					{startupURLs.map(({ pageLink, pageName }, i) => (
 						<NavLink to={pageLink} end className={`idea-tabs__btn`} key={i}>
