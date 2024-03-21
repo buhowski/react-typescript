@@ -80,7 +80,7 @@
 		background-size: cover;
 		background-position: 50% 0;
 		box-shadow: 10px 10px 10px rgba($color: $black, $alpha: 0.3);
-		animation: bgPosition 3s ease-in-out alternate infinite;
+		animation: bgPosition 5s ease-in-out alternate infinite;
 		animation-play-state: paused;
 		transform: translateY(0);
 		transition: 0.3s ease;

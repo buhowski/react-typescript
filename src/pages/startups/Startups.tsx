@@ -6,7 +6,9 @@ import PopupContacts from '../../components/PopupContacts';
 import { useTabletLargeQuery } from '../../hooks/useMediaQuery';
 import { startupURLs } from './data/startupsURLs';
 import { IdeaInfo } from './components/IdeaInfo';
-// import AddToHomeScreenButton from '../../helpers/handleAddToHomeScreen';
+
+// import DocsPage from './DocsPage';
+
 interface IdeaGeneralProps {
 	TabRu: JSX.Element;
 	TabEn: JSX.Element;
@@ -15,7 +17,6 @@ interface IdeaGeneralProps {
 }
 
 const Startup = ({ TabRu, TabEn, TabUa, Slider }: IdeaGeneralProps) => {
-	// useDocumentTitle({ defaultTitle: 'The Corp .!.' });
 	const useTabletLarge = useTabletLargeQuery();
 	const [currentTab, setCurrentTab] = useState('');
 
@@ -52,6 +53,8 @@ const Startup = ({ TabRu, TabEn, TabUa, Slider }: IdeaGeneralProps) => {
 	return (
 		<div className='wrapper wrapper--idea'>
 			<div className='startup-pages'>
+				{/* <DocsPage /> */}
+
 				<div className='idea-tabs idea-tabs--urls'>
 					{startupURLs.map(({ pageLink, pageName }, i) => (
 						<NavLink to={pageLink} end className={`idea-tabs__btn`} key={i}>
@@ -75,10 +78,6 @@ const Startup = ({ TabRu, TabEn, TabUa, Slider }: IdeaGeneralProps) => {
 				{/* slider with images */}
 				{Slider}
 			</div>
-
-			{/* <div className='addToHome'>
-				<AddToHomeScreenButton />
-			</div> */}
 		</div>
 	);
 };

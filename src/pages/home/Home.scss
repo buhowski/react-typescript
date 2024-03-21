@@ -32,8 +32,12 @@
 
 .name-container {
 	align-self: center;
-	margin-bottom: 80px;
+	margin-bottom: 125px;
 	width: 40%;
+
+	@include tabletBig {
+		margin-bottom: 80px;
+	}
 
 	@include tabletSmall {
 		width: 100%;
