@@ -18,7 +18,7 @@ const Header = () => {
 	const linksData = [
 		{
 			pageLink: pathToStartup,
-			pageName: `Startups`,
+			pageName: `My Startups`,
 			activeClass: isActive ? 'active' : '',
 		},
 		{

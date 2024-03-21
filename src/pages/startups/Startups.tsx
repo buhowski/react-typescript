@@ -62,7 +62,7 @@ const Startup = ({ TabRu, TabEn, TabUa, Slider }: IdeaGeneralProps) => {
 			</div>
 
 			<div className='idea-section'>
-				{/* Get in touch contacts */}
+				{/* contacts info */}
 				{useTabletLarge && <PopupContacts />}
 
 				<IdeaInfo
