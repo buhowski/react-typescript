@@ -3,6 +3,38 @@
 	isolation: isolate;
 }
 
+/* For browsers that support `` properties */
+@supports (-moz-appearance: none) {
+	.page-container {
+		scrollbar-color: $blue-main $darkest;
+		scrollbar-width: thin;
+	}
+}
+
+.page-container,
+.mobile-menu > div,
+.idea-tabs--urls {
+	&::-webkit-scrollbar {
+		width: 5px;
+		height: 5px;
+
+		@include tabletBig {
+			width: 2px;
+			height: 2px;
+		}
+	}
+
+	&::-webkit-scrollbar-track {
+		background: $darkest;
+		border-radius: 10px;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background: $blue-main;
+		border-radius: 10px;
+	}
+}
+
 body {
 	text-rendering: optimizeLegibility;
 	color: $snow;
@@ -20,24 +52,6 @@ body {
 		height: 100vh;
 		height: calc(var(--vh, 1vh) * 100);
 	}
-}
-
-::-webkit-scrollbar {
-	width: 4px;
-
-	@include tablet {
-		width: 1px;
-	}
-}
-
-::-webkit-scrollbar-track {
-	background: $darkest;
-	border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-	background: $blue-main;
-	border-radius: 10px;
 }
 
 .a {
@@ -69,12 +83,12 @@ svg {
 .page-container {
 	overflow-x: hidden;
 	overflow-y: auto;
+	scrollbar-gutter: stable;
 	height: 100%;
-	scrollbar-width: thin;
-	scrollbar-color: $blue-main $darkest;
 
 	.wrapper-container {
 		padding-bottom: 60px;
+
 		@include tabletSmall {
 			padding-bottom: 10px;
 		}
