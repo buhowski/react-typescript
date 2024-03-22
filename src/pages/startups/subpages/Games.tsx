@@ -1,4 +1,4 @@
-import Slider from '../../../components/Slider';
+import Slider from '../components/Slider';
 import { dataSlider } from '../data/SlidersData/SliderDataGames';
 import IdeaContent from '../components/IdeaContent';
 import { gamesTextData } from '../data/textData';

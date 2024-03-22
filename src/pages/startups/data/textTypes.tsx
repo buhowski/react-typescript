@@ -2,7 +2,7 @@ export interface Block {
 	titleBig?: string;
 	subtitleBig?: { key: string; value: string }[];
 	title?: string;
-	text?: string | string[];
+	text?: string | string[] | JSX.Element[];
 	subtitle?: string;
 	list?: string[];
 	subtitle2?: string;

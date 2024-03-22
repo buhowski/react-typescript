@@ -1,39 +1,67 @@
-import { useState } from 'react';
-import Copyright from './Copyright';
-import PopupContacts from './PopupContacts';
-import { useTabletLargeQuery } from '../hooks/useMediaQuery';
+import { useState, useRef } from 'react';
+import Copyright from '../../../components/Copyright';
+import PopupContacts from '../../../components/PopupContacts';
+import { useTabletLargeQuery } from '../../../hooks/useMediaQuery';
 
 interface SliderProps {
-	dataSlider: { itemSrc: string; itemAlt: string; itemType: string }[];
+	dataSlider: {
+		itemSrc?: string;
+		itemAlt?: string;
+		itemType?: string;
+		itemPoster?: string;
+	}[];
 }
 
 const Slider: React.FC<SliderProps> = ({ dataSlider }) => {
 	const useTabletLarge = useTabletLargeQuery();
 
+	const videoRefs = useRef<(HTMLVideoElement | null)[]>([]);
 	const [activeIndex, setActiveIndex] = useState<number>(
 		Math.floor(Math.random() * dataSlider.length)
 	);
+
+	const pauseVideos = () => {
+		videoRefs.current?.forEach((video) => {
+			if (video) {
+				video.pause();
+			}
+		});
+	};
 
 	const clickNext = () => {
 		setActiveIndex((prevIndex) =>
 			prevIndex === dataSlider.length - 1 ? 0 : prevIndex + 1
 		);
+
+		pauseVideos();
 	};
 
 	const clickPrev = () => {
 		setActiveIndex((prevIndex) =>
 			prevIndex === 0 ? dataSlider.length - 1 : prevIndex - 1
 		);
+
+		pauseVideos();
 	};
 
 	return (
 		<div className='slider-with-btn'>
 			<div className='slider-container'>
 				<div className='idea-slider slider-js'>
-					{dataSlider.map(({ itemSrc, itemAlt, itemType }, i) => (
+					{dataSlider.map(({ itemSrc, itemAlt, itemType, itemPoster }, i) => (
 						<div className='slider-item-js' data-active={i === activeIndex} key={i}>
 							{itemType === 'video' ? (
-								<video autoPlay loop muted>
+								<video
+									ref={(element) => (videoRefs.current[i] = element)}
+									width='100%'
+									height='100%'
+									src={itemSrc}
+									title={itemAlt}
+									controls
+									poster={itemPoster}
+									preload='none'
+								>
+									{/* Fallback content for browsers that don't support video */}
 									<source src={itemSrc} type='video/mp4' />
 									Your browser does not support the video tag.
 								</video>

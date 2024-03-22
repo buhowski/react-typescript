@@ -1,4 +1,4 @@
-import Slider from '../../../components/Slider';
+import Slider from '../components/Slider';
 import { dataSlider } from '../data/SlidersData/SliderDataFilms';
 import IdeaContent from '../components/IdeaContent';
 import { filmsTextData } from '../data/textData';

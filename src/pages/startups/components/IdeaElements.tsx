@@ -1,5 +1,26 @@
 import React from 'react';
 
+// TextLinkProps
+interface TextLinkProps {
+	href?: string;
+	text?: string;
+}
+
+export const TextLink: React.FC<TextLinkProps> = ({ href, text }) => {
+	return (
+		<>
+			<a
+				href={href}
+				target='_blank'
+				rel='noopener noreferrer'
+				title='IMDB Website / Review Product'
+			>
+				{text}
+			</a>
+		</>
+	);
+};
+
 // Paragraph in text data
 interface SubtitleBigProps {
 	subtitleBig: { key: string; value: string }[];
@@ -39,7 +60,7 @@ export const Subtitle: React.FC<SubtitleProps> = ({ subtitle }) => {
 
 // Paragraph in text data
 interface TextProps {
-	text: string | string[];
+	text: string | string[] | JSX.Element[];
 }
 
 export const Text: React.FC<TextProps> = ({ text }) => {

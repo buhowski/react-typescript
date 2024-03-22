@@ -411,6 +411,17 @@
 	&__text {
 		margin-bottom: 20px;
 
+		a {
+			display: inline;
+			color: $snow;
+			text-decoration: underline;
+			position: relative;
+
+			&:hover {
+				text-decoration: none;
+			}
+		}
+
 		&:last-child {
 			margin-bottom: 0;
 		}
@@ -501,7 +512,6 @@
 	transition: transform 0.4s ease-in;
 	position: relative;
 	overflow: hidden;
-	pointer-events: none;
 
 	@include tabletBig {
 		height: 100%;
@@ -524,8 +534,11 @@
 	left: 0;
 	font-size: 10px;
 	color: $textGrey;
+	z-index: -1;
+	transition: z-index 0.4s ease;
 
-	img {
+	img,
+	video {
 		object-fit: cover;
 		opacity: 0;
 		transform: scale(1.3);
@@ -533,7 +546,10 @@
 	}
 
 	&[data-active='true'] {
-		img {
+		z-index: 0;
+
+		img,
+		video {
 			transform: scale(1);
 			opacity: 1;
 		}
@@ -588,8 +604,8 @@
 		&::after {
 			content: '';
 			display: block;
-			width: 80px;
-			height: 100%;
+			width: 30px;
+			height: 65%;
 			position: absolute;
 			top: 0;
 		}
