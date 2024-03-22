@@ -703,7 +703,8 @@ export const articlesTextData = [
 	{
 		section: [
 			{
-				titleBig: `coming soon. a slap in the face to stunted development, a dance of contradictions, a symphony of irony and truth with dirty realism...`,
+				titleBig: `Jump above the head, scream of consciousness, a slap in the face to stunted development, a dance of contradictions, a symphony of irony, truth and dirty realism, walking in circles of hell, while drinking cool juice. Don't just stand there, jump in and JOINT!`,
+				title: `The crazy train is coming soon...`,
 			},
 		],
 
@@ -717,7 +718,8 @@ export const articlesTextData = [
 	{
 		section: [
 			{
-				titleBig: `coming soon. a slap in the face to stunted development, a dance of contradictions, a symphony of irony and truth with dirty realism...`,
+				titleBig: `Jump above the head, scream of consciousness, a slap in the face to stunted development, a dance of contradictions, a symphony of irony, truth and dirty realism, walking in circles of hell, while drinking cool juice. Don't just stand there, jump in and JOINT!`,
+				title: `The crazy train is coming soon...`,
 			},
 		],
 
@@ -731,7 +733,8 @@ export const articlesTextData = [
 	{
 		section: [
 			{
-				titleBig: `coming soon. a slap in the face to stunted development, a dance of contradictions, a symphony of irony and truth with dirty realism...`,
+				titleBig: `Jump above the head, scream of consciousness, a slap in the face to stunted development, a dance of contradictions, a symphony of irony, truth and dirty realism, walking in circles of hell, while drinking cool juice. Don't just stand there, jump in and JOINT!`,
+				title: `The crazy train is coming soon...`,
 			},
 		],
 

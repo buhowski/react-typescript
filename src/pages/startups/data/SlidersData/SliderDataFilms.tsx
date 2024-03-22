@@ -1,23 +1,10 @@
-// import img from '../../media/space.webp';
+import poster from '../../media/films/poster-1.jpg';
 
-const slideItems = [
+export const dataSlider = [
 	{
-		src: 'https://imdb-video.media-imdb.com/vi611693081/1434659607842-pgv4ql-1450731915340.mp4?Expires=1711208187&Signature=ZHD8YR45I-ojGsIiZtqDr18OBnWj9Vj9jH8j~gnXK8SzM2QJkIdBm1rFyrv0QNkZ1UofzvhXbeajkrlQzsY9tVFVMMTJZhkdachQMgwFWpiFmbAdZQjU7LoFMAavcBV-QRd-IN4JXnkgXh3iqJVH0-~gLtDX3clnujq8tjVKCgsZl842G4yfTH5dhvvY1F2EqfAvPO-R1SCoaG3EfEkgBpm7LyRQiGTS5E-HUNp37bCAE6HMH8qStBdhk66QnljP9vjJernJOYqsqtTekWDiO2-22FDryegZJjwEoaxod6F7xup7B7lqsULSSWIY~6KSK55uFfZdCBbsQ78hJLv61g__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA',
-		type: 'video',
-		poster: '',
-		alt: 'Films, film industry, ukraine film industry, українське кіно, серіали українською, фільми українською, фільми, український продакшн, індустрія кіно, український режисер, сценарист, продюсер',
-	},
-	{
-		src: 'img',
-		type: 'img',
-		poster: '',
-		alt: 'img',
+		itemPoster: poster,
+		itemSrc:
+			'https://imdb-video.media-imdb.com/vi4279606297/MV5BMTQ4Nzg0NjQ4NV5BMTFeQW1wNF5BbWU3MDgwMDk2MzY@.mp4?Expires=1711234849&Signature=s5p7D4FEJSI4GsRJKbESWRyWyiXx5dNGAmeT5xHlsYACIi0P8mxcF9JkZbwfH9B1BaE9tTT2HFy4MPrHRJExANlO4eTQr5-Ihom0D1ETyn9LZm4VaJUG80wYDYVL~DxEPncwVD06MtWhX0FwXGQbcUizOInp3gJ5-HeTuLXuDVoHfGLV77TnbS54O7tg3aJEG-LGrJx-99JjL~k2Z61rNmpcsLGR81y9MqHQkz1vB52IWYhaBcHwhVKEf5-rr6aVpDPaN0jdmv37zPr1SqeAuNvjRX6YOkP-wuxkm13OYlOsF6y6dZpsHf87AzBTaKErtdz5x-dPSDYah9D6~rtWPA__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA',
+		itemAlt: `"It's Always Sunny in Philadelphia" Example 1`,
 	},
 ];
-
-export const dataSlider = slideItems.map((item) => ({
-	itemSrc: item.src,
-	itemAlt: item.alt,
-	itemType: item.type,
-	itemPoster: item.poster,
-}));

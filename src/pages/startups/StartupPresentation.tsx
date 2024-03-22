@@ -6,7 +6,7 @@ import { startupTextData } from './data/textData';
 const StartupMain = () => {
 	return (
 		<IdeaContent
-			title='Startup Presentation'
+			title='Core Concept Presentation'
 			textData={startupTextData}
 			Slider={<Slider dataSlider={dataSlider} />}
 		/>

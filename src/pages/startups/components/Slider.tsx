@@ -3,13 +3,17 @@ import Copyright from '../../../components/Copyright';
 import PopupContacts from '../../../components/PopupContacts';
 import { useTabletLargeQuery } from '../../../hooks/useMediaQuery';
 
+// Play icon
+// import { playIcon } from '../media/svg/playIcon';
+
+interface SlideItem {
+	itemSrc?: string;
+	itemAlt?: string;
+	itemPoster?: string;
+}
+
 interface SliderProps {
-	dataSlider: {
-		itemSrc?: string;
-		itemAlt?: string;
-		itemType?: string;
-		itemPoster?: string;
-	}[];
+	dataSlider: SlideItem[];
 }
 
 const Slider: React.FC<SliderProps> = ({ dataSlider }) => {
@@ -19,6 +23,14 @@ const Slider: React.FC<SliderProps> = ({ dataSlider }) => {
 	const [activeIndex, setActiveIndex] = useState<number>(
 		Math.floor(Math.random() * dataSlider.length)
 	);
+
+	// FOR starting play video clicking on preview
+	// const [playState, setPlayState] = useState<string>('');
+
+	// const playVideos = () => {
+	// 	videoRefs.current?.forEach((video) => video?.play());
+	// 	setPlayState('disabled');
+	// };
 
 	const pauseVideos = () => {
 		videoRefs.current?.forEach((video) => video?.pause());
@@ -42,22 +54,34 @@ const Slider: React.FC<SliderProps> = ({ dataSlider }) => {
 		<div className='slider-with-btn'>
 			<div className='slider-container'>
 				<div className='idea-slider slider-js'>
-					{dataSlider.map(({ itemSrc, itemAlt, itemType, itemPoster }, i) => (
+					{dataSlider.map(({ itemSrc, itemAlt, itemPoster }, i) => (
 						<div className='slider-item-js' data-active={i === activeIndex} key={i}>
-							{itemType === 'video' ? (
-								<video
-									ref={(element) => (videoRefs.current[i] = element)}
-									width='100%'
-									height='100%'
-									src={itemSrc}
-									controls
-									poster={itemPoster}
-									preload='none'
-								>
-									{/* Fallback content for browsers that don't support video */}
-									<source src={itemSrc} type='video/mp4' />
-									Your browser does not support the video tag.
-								</video>
+							{itemPoster ? (
+								<>
+									<video
+										ref={(element) => (videoRefs.current[i] = element)}
+										width='100%'
+										height='100%'
+										src={itemSrc}
+										poster={itemPoster}
+										controls
+										// preload='none'
+									>
+										<source src={itemSrc} type='video/mp4' />
+										Your browser does not support the video tag.
+									</video>
+
+									{/* TODO: add preview to video */}
+									{/* <div className={`video-preview ${playState}`} onClick={playVideos}>
+										<img src={itemPoster} alt={itemAlt} />
+										<p className='video-preview__play'>
+											<span>
+												{playIcon}
+												{itemAlt}
+											</span>
+										</p>
+									</div> */}
+								</>
 							) : (
 								<img src={itemSrc} alt={itemAlt} />
 							)}

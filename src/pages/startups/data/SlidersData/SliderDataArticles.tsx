@@ -1,8 +1,10 @@
-const slideItem = ['balance.webp'];
+import writer from '../../media/writer.jpg';
 
-export const dataSlider = slideItem.map((file) => ({
-	itemSrc: require(`../../media/${file}`),
-	itemAlt:
-		'Films, film industry, ukraine film industry, українське кіно, серіали українською, фільми українською, фільми, український продакшн, індустрія кіно, український режисер, сценарист, продюсер',
-	itemType: 'image',
-}));
+const defaultAlt = `Magazine, articles, new generation media`;
+
+export const dataSlider = [
+	{
+		itemSrc: writer,
+		itemAlt: defaultAlt,
+	},
+];
