@@ -23,13 +23,7 @@ const IdeaContent: React.FC<PageProps> = ({ title, textData, Slider }) => {
 	const textItems = textData.map((structure: TextStructure, index) => (
 		<div key={index}>
 			{/* Use title prop */}
-			{title && (
-				<h1 className='startup-title'>
-					<span className='tag-color tag-color--left'>&lt;</span>
-					<span>{title}</span>
-					<span className='tag-color tag-color--right'>/&gt;</span>
-				</h1>
-			)}
+			{title && <h1 className='startup-title'>{title}</h1>}
 
 			{/* Text Structure */}
 			{structure.section.map((block: Block, blockIndex) => (

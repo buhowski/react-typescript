@@ -11,7 +11,7 @@ const slideItems = [
 		src: 'img',
 		type: 'img',
 		poster: '',
-		alt: 'Films, film industry, ukraine film industry, українське кіно, серіали українською, фільми українською, фільми, український продакшн, індустрія кіно, український режисер, сценарист, продюсер',
+		alt: 'img',
 	},
 ];
 

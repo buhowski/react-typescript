@@ -21,26 +21,20 @@ const Slider: React.FC<SliderProps> = ({ dataSlider }) => {
 	);
 
 	const pauseVideos = () => {
-		videoRefs.current?.forEach((video) => {
-			if (video) {
-				video.pause();
-			}
-		});
+		videoRefs.current?.forEach((video) => video?.pause());
 	};
 
-	const clickNext = () => {
+	const handleNext = () => {
 		setActiveIndex((prevIndex) =>
 			prevIndex === dataSlider.length - 1 ? 0 : prevIndex + 1
 		);
-
 		pauseVideos();
 	};
 
-	const clickPrev = () => {
+	const handlePrev = () => {
 		setActiveIndex((prevIndex) =>
 			prevIndex === 0 ? dataSlider.length - 1 : prevIndex - 1
 		);
-
 		pauseVideos();
 	};
 
@@ -56,7 +50,6 @@ const Slider: React.FC<SliderProps> = ({ dataSlider }) => {
 									width='100%'
 									height='100%'
 									src={itemSrc}
-									title={itemAlt}
 									controls
 									poster={itemPoster}
 									preload='none'
@@ -79,7 +72,7 @@ const Slider: React.FC<SliderProps> = ({ dataSlider }) => {
 						className='slider-btn-js slider-btn-js-prev'
 						type='button'
 						aria-label='Go to previous slide'
-						onClick={clickPrev}
+						onClick={handlePrev}
 					>
 						<i className='chevron'></i>
 					</button>
@@ -94,7 +87,7 @@ const Slider: React.FC<SliderProps> = ({ dataSlider }) => {
 						className='slider-btn-js slider-btn-js-next'
 						type='button'
 						aria-label='Go to next slide'
-						onClick={clickNext}
+						onClick={handleNext}
 					>
 						<i className='chevron'></i>
 					</button>
