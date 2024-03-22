@@ -11,27 +11,27 @@
 	}
 }
 
-/* Otherwise, use `::-webkit-scrollbar-*` pseudo-elements */
-@supports selector(::-webkit-scrollbar) {
-	.page-container,
-	.mobile-menu > div {
-		&::-webkit-scrollbar {
-			width: 5px;
+.page-container,
+.mobile-menu > div,
+.idea-tabs--urls {
+	&::-webkit-scrollbar {
+		width: 5px;
+		height: 5px;
 
-			@include tabletBig {
-				width: 2px;
-			}
+		@include tabletBig {
+			width: 2px;
+			height: 2px;
 		}
+	}
 
-		&::-webkit-scrollbar-track {
-			background: $darkest;
-			border-radius: 10px;
-		}
+	&::-webkit-scrollbar-track {
+		background: $darkest;
+		border-radius: 10px;
+	}
 
-		&::-webkit-scrollbar-thumb {
-			background: $blue-main;
-			border-radius: 10px;
-		}
+	&::-webkit-scrollbar-thumb {
+		background: $blue-main;
+		border-radius: 10px;
 	}
 }
 

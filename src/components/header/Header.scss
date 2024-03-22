@@ -17,6 +17,7 @@
 		.mobile-menu-btn {
 			position: relative;
 			z-index: 100;
+			flex-shrink: 0;
 		}
 
 		.nav-link {
