@@ -12,7 +12,7 @@ import bgEnde from './images/ende.jpg';
 import bgFaber from './images/faber.jpg';
 import bgFaberBooks from './images/faber-books.jpg';
 import bgBentley from './images/bentley.jpg';
-import bgStartup from './images/startup-img.png';
+import bgStartup from './images/startups-img.webp';
 import bgGalleryImg from './images/gallery-img.png';
 
 import { pathToStartup } from '../../components/urlsData';
@@ -23,8 +23,8 @@ const projectsData = [
 		url: `${pathToStartup}`,
 		urlCode: 'https://github.com/buhowski/react-typescript',
 		name: 'My Startups',
-		desk: `Project Scenario: "how to turn an information media magazine into a company producing its own technologies". Staffed, Feature-rich Magazine.`,
-		skills: ['Scenario', 'UI/UX', 'SCSS', 'TypeScrpt', 'React'],
+		desk: `Website Portfolio + Startup: "How to create an information media magazine and transform it into a company producing its own technologies".`,
+		skills: ['UI/UX', 'SCSS', 'TypeScrpt', 'React', 'Startups'],
 	},
 
 	{
@@ -32,7 +32,7 @@ const projectsData = [
 		url: 'https://www.faber.co.uk/',
 		name: 'Faber',
 		desk: 'Faber is one of the world’s great independent publishing houses. Since we were founded in 1929, poetry has been at the heart of our publishing, with T. S. Eliot as our first Poetry Editor.',
-		skills: ['Twig', 'SCSS', 'JavaScript', 'GSAP'],
+		skills: ['Twig', 'SCSS', 'JavaScript', 'GSAP', 'WordPress'],
 	},
 
 	{
@@ -40,7 +40,7 @@ const projectsData = [
 		url: 'https://www.bentley-skinner.co.uk/',
 		name: 'Bentley & Skinner',
 		desk: 'Jewellers by Royal appointment to Her Late Majesty The Queen and His Former Royal Highness The Prince of Wales, now His Majesty King Charles III, buy and sell the loveliest jewellery.',
-		skills: ['Twig', 'SCSS', 'JavaScript', 'GSAP'],
+		skills: ['Twig', 'SCSS', 'JavaScript', 'GSAP', 'WordPress'],
 	},
 
 	{
@@ -48,7 +48,7 @@ const projectsData = [
 		url: 'https://faberacademy.com/',
 		name: 'Faber Academy',
 		desk: `Since 1929, Faber has helped writers from around the world find their voice. At Faber Academy, we're proud to continue that tradition.`,
-		skills: ['Twig', 'SCSS', 'JS/ES6', 'GSAP', 'WP'],
+		skills: ['Twig', 'SCSS', 'JS/ES6', 'GSAP', 'WordPress'],
 	},
 
 	{
