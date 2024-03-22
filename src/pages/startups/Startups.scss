@@ -154,7 +154,7 @@
 
 .idea-section {
 	background: $darker;
-	padding: 0 40px 35px;
+	padding: 0 40px 30px;
 	display: flex;
 	position: relative;
 	box-shadow: 0 0 20px rgba($color: $black, $alpha: 0.8);
@@ -181,7 +181,7 @@
 	height: 100%;
 	width: calc(50% + 2px);
 	margin-right: 40px;
-	padding-top: 60px;
+	padding-top: 40px;
 	flex-shrink: 0;
 	position: relative;
 	overflow: hidden;
@@ -325,17 +325,27 @@
 
 .startup-title {
 	text-align: center;
-	font-size: 31px;
+	font-size: 32px;
 	letter-spacing: 5px;
 	font-family: $lg-bold;
 	margin-bottom: 45px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+
+	@include tabletBig {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	span {
+		@include tabletBig {
+			width: min-content;
+			display: block;
+		}
+	}
 
 	.tag-color {
-		width: 20px;
-		display: block;
+		font-size: 35px;
+		width: 40px;
 		white-space: nowrap;
 	}
 }
