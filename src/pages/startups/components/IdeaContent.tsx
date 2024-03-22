@@ -26,7 +26,7 @@ const IdeaContent: React.FC<PageProps> = ({ title, textData, Slider }) => {
 			{title && (
 				<h1 className='startup-title'>
 					<span className='tag-color tag-color--left'>&lt;</span>
-					{title}
+					<span>{title}</span>
 					<span className='tag-color tag-color--right'>/&gt;</span>
 				</h1>
 			)}
