@@ -17,34 +17,21 @@ interface SliderProps {
 
 const Slider: React.FC<SliderProps> = ({ dataSlider }) => {
 	const useTabletLarge = useTabletLargeQuery();
-	const videoRefs = useRef<(HTMLVideoElement | null)[]>([]);
+	const videoRefs = useRef<HTMLVideoElement[]>([]);
 	const [activeIndex, setActiveIndex] = useState<number>(
 		Math.floor(Math.random() * dataSlider.length)
 	);
+	const [playState, setPlayState] = useState(Array(dataSlider.length).fill(false));
 
-	// FOR starting play video clicking on preview
-	const [playState, setPlayState] = useState<boolean[]>(
-		Array(dataSlider.length).fill(false)
-	);
-
-	const playVideos = (index: number) => {
-		videoRefs.current?.forEach((video, i) => {
-			if (i === index) {
-				video?.play();
-
-				setPlayState((prevState) => {
-					const newState = [...prevState];
-
-					newState[index] = true;
-					return newState;
-				});
-			}
-		});
+	const playVideo = (index: number) => {
+		const video = videoRefs.current[index];
+		if (video) {
+			video.play();
+			setPlayState((prevState) => ({ ...prevState, [index]: true }));
+		}
 	};
 
-	const pauseVideos = () => {
-		videoRefs.current?.forEach((video) => video?.pause());
-	};
+	const pauseVideos = () => videoRefs.current?.forEach((video) => video.pause());
 
 	const handleNext = () => {
 		setActiveIndex((prevIndex) =>
@@ -64,12 +51,19 @@ const Slider: React.FC<SliderProps> = ({ dataSlider }) => {
 		<div className='slider-with-btn'>
 			<div className='slider-container'>
 				<div className='idea-slider slider-js'>
-					{dataSlider.map(({ itemSrc, itemAlt, itemPoster }, i) => (
-						<div className='slider-item-js' data-active={i === activeIndex} key={i}>
+					{dataSlider.map(({ itemSrc, itemAlt, itemPoster }, index) => (
+						<div
+							className='slider-item-js'
+							data-active={index === activeIndex}
+							key={index}
+						>
+							{/* VIdeo or Image slider item */}
 							{itemPoster ? (
 								<>
 									<video
-										ref={(element) => (videoRefs.current[i] = element)}
+										ref={(element) =>
+											(videoRefs.current[index] = element as HTMLVideoElement)
+										}
 										width='100%'
 										height='100%'
 										controls
@@ -82,8 +76,8 @@ const Slider: React.FC<SliderProps> = ({ dataSlider }) => {
 
 									{/* // Video poster preview */}
 									<div
-										className={`video-preview ${playState[i] ? 'disabled' : ''}`}
-										onClick={() => playVideos(i)}
+										className={`video-preview ${playState[index] ? 'disabled' : ''}`}
+										onClick={() => playVideo(index)}
 									>
 										<img src={itemPoster} alt={itemAlt} />
 										<p className='video-preview__title'>{itemAlt}</p>

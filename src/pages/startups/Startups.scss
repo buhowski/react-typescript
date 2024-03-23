@@ -515,7 +515,6 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	font-size: 10px;
 	color: $textGrey;
 	z-index: -1;
 	transition: z-index 0.4s ease;
@@ -554,7 +553,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background: $black;
+	background-color: $black;
 	cursor: pointer;
 	color: $snow;
 
@@ -563,7 +562,7 @@
 	}
 
 	&:hover {
-		color: $textGrey;
+		color: $blue-main;
 
 		.video-preview__title {
 			box-shadow: inset 0 -110px 100px rgba($color: $black, $alpha: 0.9);
@@ -571,7 +570,6 @@
 
 		svg {
 			transform: translate(-50%, -50%) scale(1.2);
-			fill: $starYellow;
 		}
 	}
 
@@ -585,6 +583,7 @@
 
 		@include tablet {
 			width: 80px;
+			height: 80px;
 		}
 	}
 
@@ -598,13 +597,16 @@
 		height: 100%;
 		padding: 25px;
 		box-shadow: inset 0 -100px 100px rgba($color: $black, $alpha: 0.8);
-		transition: 0.3s;
-		font-size: 16px;
+		transition: 0.2s;
 
 		@include tablet {
 			padding: 10px;
 			font-size: 14px;
 			box-shadow: inset 0 -65px 40px rgba($color: $black, $alpha: 0.8);
+		}
+
+		@include mobile {
+			font-size: 12px;
 		}
 	}
 }
@@ -672,8 +674,8 @@
 		display: block;
 		width: 17px;
 		height: 17px;
-		border: 2px solid $blue-main;
-		border-width: 2px 2px 0 0;
+		border: 3px solid $blue-main;
+		border-width: 3px 3px 0 0;
 
 		@include mobile {
 			width: 13px;
