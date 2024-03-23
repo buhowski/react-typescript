@@ -1,9 +1,9 @@
 import { useState, useRef } from 'react';
-import Copyright from '../../../components/Copyright';
-import PopupContacts from '../../../components/PopupContacts';
-import { useTabletLargeQuery } from '../../../hooks/useMediaQuery';
+import Copyright from './Copyright';
+import PopupContacts from './PopupContacts';
+import { useTabletLargeQuery } from '../hooks/useMediaQuery';
 
-import { playIcon } from '../media/svg/playIcon';
+import { playIcon } from '../pages/startups/media/svg/playIcon';
 
 interface SlideItem {
 	itemSrc?: string;
@@ -17,7 +17,6 @@ interface SliderProps {
 
 const Slider: React.FC<SliderProps> = ({ dataSlider }) => {
 	const useTabletLarge = useTabletLargeQuery();
-
 	const videoRefs = useRef<(HTMLVideoElement | null)[]>([]);
 	const [activeIndex, setActiveIndex] = useState<number>(
 		Math.floor(Math.random() * dataSlider.length)

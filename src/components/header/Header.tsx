@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import { pathToStartup, pathToAbout, pathToProjects } from '../urlsData';
-import { startupURLs } from '../../pages/startups/data/startupURLs';
+import { startupsNav } from '../../pages/startups/data/startupsNav';
 import { useTabletQuery, useMobMenuHeightQuery } from '../../hooks/useMediaQuery';
 import Socials from '../socials/Socials';
 
@@ -13,7 +13,7 @@ const Header = () => {
 	const [menuOpen, setMenuOpen] = React.useState(false);
 
 	const { pathname } = useLocation();
-	const isActive = startupURLs.some((url) => url.pageLink === pathname);
+	const isActive = startupsNav.some((url) => url.pageLink === pathname);
 
 	const linksData = [
 		{

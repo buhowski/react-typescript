@@ -1,5 +1,5 @@
-import Slider from './PageStructure/Slider';
-import IdeaContent from './PageStructure/IdeaContent';
+import Slider from '../../components/Slider';
+import IdeaContent from './PageStructure/PageStructure';
 import { dataSlider } from './data/articles/SliderData';
 import { articlesTextData } from './data/articles/textData';
 

@@ -6,7 +6,7 @@ import {
 } from '../../../components/urlsData';
 
 // Separate Projects presentation URLs
-export const startupURLs = [
+export const startupsNav = [
 	{
 		pageLink: pathToStartup,
 		pageName: `Startup`,
