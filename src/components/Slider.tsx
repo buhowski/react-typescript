@@ -9,6 +9,7 @@ interface SlideItem {
 	itemSrc?: string;
 	itemAlt?: string;
 	itemPoster?: string;
+	itemTitle?: string;
 }
 
 interface SliderProps {
@@ -51,7 +52,7 @@ const Slider: React.FC<SliderProps> = ({ dataSlider }) => {
 		<div className='slider-with-btn'>
 			<div className='slider-container'>
 				<div className='idea-slider slider-js'>
-					{dataSlider.map(({ itemSrc, itemAlt, itemPoster }, index) => (
+					{dataSlider.map(({ itemSrc, itemAlt, itemPoster, itemTitle }, index) => (
 						<div
 							className='slider-item-js'
 							data-active={index === activeIndex}
@@ -85,7 +86,7 @@ const Slider: React.FC<SliderProps> = ({ dataSlider }) => {
 									</div>
 								</>
 							) : (
-								<img src={itemSrc} alt={itemAlt} />
+								<img src={itemSrc} alt={itemAlt} title={itemTitle} />
 							)}
 						</div>
 					))}
