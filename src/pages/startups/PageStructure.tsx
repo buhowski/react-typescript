@@ -4,8 +4,8 @@ import './Startups.scss';
 
 import PopupContacts from '../../components/PopupContacts';
 import { useTabletLargeQuery } from '../../hooks/useMediaQuery';
-import { startupURLs } from './data/startupsURLs';
-import { IdeaInfo } from './components/IdeaInfo';
+import { startupURLs } from './data/startupURLs';
+import { IdeaInfo } from './PageStructure/IdeaInfo';
 
 interface IdeaGeneralProps {
 	TabRu: JSX.Element;
@@ -14,7 +14,7 @@ interface IdeaGeneralProps {
 	Slider: JSX.Element;
 }
 
-const Startup = ({ TabRu, TabEn, TabUa, Slider }: IdeaGeneralProps) => {
+const PageStructure = ({ TabRu, TabEn, TabUa, Slider }: IdeaGeneralProps) => {
 	const useTabletLarge = useTabletLargeQuery();
 	const [currentTab, setCurrentTab] = useState('');
 
@@ -78,4 +78,4 @@ const Startup = ({ TabRu, TabEn, TabUa, Slider }: IdeaGeneralProps) => {
 	);
 };
 
-export default Startup;
+export default PageStructure;

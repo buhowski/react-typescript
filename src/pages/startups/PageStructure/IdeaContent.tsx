@@ -1,5 +1,5 @@
 import React from 'react';
-import Startup from '../Startups';
+import PageStructure from '../PageStructure';
 import Copyright from '../../../components/Copyright';
 import { useTabletLargeQuery } from '../../../hooks/useMediaQuery';
 import IdeaBLock from './IdeaBLock';
@@ -39,7 +39,7 @@ const IdeaContent: React.FC<PageProps> = ({ title, textData, Slider }) => {
 	));
 
 	return (
-		<Startup
+		<PageStructure
 			TabRu={textItems[0]}
 			TabEn={textItems[1]}
 			TabUa={textItems[2]}

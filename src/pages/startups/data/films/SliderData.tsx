@@ -1,5 +1,4 @@
 import poster from '../../media/films/poster-1.jpg';
-import poster2 from '../../media/brain.jpg';
 
 export const dataSlider = [
 	{
