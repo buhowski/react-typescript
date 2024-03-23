@@ -3,8 +3,7 @@ import Copyright from '../../../components/Copyright';
 import PopupContacts from '../../../components/PopupContacts';
 import { useTabletLargeQuery } from '../../../hooks/useMediaQuery';
 
-// Play icon
-// import { playIcon } from '../media/svg/playIcon';
+import { playIcon } from '../media/svg/playIcon';
 
 interface SlideItem {
 	itemSrc?: string;
@@ -25,12 +24,24 @@ const Slider: React.FC<SliderProps> = ({ dataSlider }) => {
 	);
 
 	// FOR starting play video clicking on preview
-	// const [playState, setPlayState] = useState<string>('');
+	const [playState, setPlayState] = useState<boolean[]>(
+		Array(dataSlider.length).fill(false)
+	);
 
-	// const playVideos = () => {
-	// 	videoRefs.current?.forEach((video) => video?.play());
-	// 	setPlayState('disabled');
-	// };
+	const playVideos = (index: number) => {
+		videoRefs.current?.forEach((video, i) => {
+			if (i === index) {
+				video?.play();
+
+				setPlayState((prevState) => {
+					const newState = [...prevState];
+
+					newState[index] = true;
+					return newState;
+				});
+			}
+		});
+	};
 
 	const pauseVideos = () => {
 		videoRefs.current?.forEach((video) => video?.pause());
@@ -62,25 +73,23 @@ const Slider: React.FC<SliderProps> = ({ dataSlider }) => {
 										ref={(element) => (videoRefs.current[i] = element)}
 										width='100%'
 										height='100%'
-										src={itemSrc}
-										poster={itemPoster}
 										controls
-										// preload='none'
+										src={itemSrc}
+										preload='none'
 									>
 										<source src={itemSrc} type='video/mp4' />
 										Your browser does not support the video tag.
 									</video>
 
-									{/* TODO: add preview to video */}
-									{/* <div className={`video-preview ${playState}`} onClick={playVideos}>
+									{/* // Video poster preview */}
+									<div
+										className={`video-preview ${playState[i] ? 'disabled' : ''}`}
+										onClick={() => playVideos(i)}
+									>
 										<img src={itemPoster} alt={itemAlt} />
-										<p className='video-preview__play'>
-											<span>
-												{playIcon}
-												{itemAlt}
-											</span>
-										</p>
-									</div> */}
+										<p className='video-preview__title'>{itemAlt}</p>
+										{playIcon}
+									</div>
 								</>
 							) : (
 								<img src={itemSrc} alt={itemAlt} />

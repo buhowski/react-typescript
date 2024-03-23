@@ -1,13 +1,14 @@
 export const playIcon = (
 	<svg
-		xmlns='http://www.w3.org/2000/svg'
 		width='24'
 		height='24'
-		className='ipc-icon ipc-icon--play-circle-outline ipc-lockup-overlay__icon'
+		xmlns='http://www.w3.org/2000/svg'
+		className='ipc-icon ipc-icon--play-circle-outline-large-inline ipc-icon--inline ipc-lockup-overlay__icon ipc-lockup-overlay__icon--centered video-player__slate-play-icon'
 		viewBox='0 0 24 24'
 		fill='currentColor'
 		role='presentation'
 	>
-		<path d='M10.8 15.9l4.67-3.5c.27-.2.27-.6 0-.8L10.8 8.1a.5.5 0 0 0-.8.4v7c0 .41.47.65.8.4zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z'></path>
+		<path d='M10.803 15.932l4.688-3.513a.498.498 0 0 0 0-.803l-4.688-3.514a.502.502 0 0 0-.803.402v7.026c0 .412.472.653.803.402z'></path>
+		<path d='M12 24C5.373 24 0 18.627 0 12S5.373 0 12 0s12 5.373 12 12-5.373 12-12 12zm0-1c6.075 0 11-4.925 11-11S18.075 1 12 1 1 5.925 1 12s4.925 11 11 11z'></path>
 	</svg>
 );
