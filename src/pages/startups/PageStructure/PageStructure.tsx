@@ -66,8 +66,6 @@ const PageStructure: React.FC<PageProps> = ({ title, textData, Slider }) => {
 	const renderTextItems = () => {
 		return textData.map((structure: TextStructure, index) => (
 			<div key={index}>
-				{title && <h1 className='startup-title'>{title}</h1>}
-
 				{renderTextSection(structure)}
 
 				<LastWords lastWords={structure.lastWords} />
@@ -123,6 +121,8 @@ const PageStructure: React.FC<PageProps> = ({ title, textData, Slider }) => {
 				{useTabletLarge && <PopupContacts />}
 
 				<div className='idea-info'>
+					{title && <h1 className='startup-title'>{title}</h1>}
+
 					{/* language tabs */}
 					<div className='idea-tabs idea-tabs--lang'>
 						{/* Here goes tab items*/}
@@ -159,7 +159,7 @@ const PageStructure: React.FC<PageProps> = ({ title, textData, Slider }) => {
 					)}
 				</div>
 
-				{/* Slider */}
+				{/* Desktop Slider */}
 				{Slider}
 			</div>
 		</div>

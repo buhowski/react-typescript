@@ -173,6 +173,7 @@
 	height: 100%;
 	max-height: calc(100% - 30px);
 	border-radius: 0 10px 10px 10px;
+	overflow: hidden;
 
 	@include tabletBig {
 		border-radius: 20px;
@@ -260,7 +261,7 @@
 
 		@include tabletBig {
 			max-width: 777px;
-			margin: 25px auto 30px;
+			margin: 20px auto 35px;
 			text-align: center;
 			border-radius: 20px;
 			box-shadow: 0 2px 15px rgba($color: $black, $alpha: 0.8);
@@ -288,10 +289,11 @@
 		box-shadow: -3px 3px 15px rgba($color: $black, $alpha: 0.6);
 		border-bottom-left-radius: 10px;
 		border-bottom-right-radius: 10px;
+		overflow: hidden;
 
 		@include tabletBig {
 			max-width: 270px;
-			margin: 30px auto 25px;
+			margin: 0 auto 30px;
 			border-radius: 20px;
 			position: static;
 			box-shadow: 0 2px 15px rgba($color: $black, $alpha: 0.8);
@@ -331,6 +333,11 @@
 	letter-spacing: 5px;
 	font-family: $lg-bold;
 	margin-bottom: 45px;
+
+	@include tabletBig {
+		margin-bottom: 25px;
+		margin-top: 30px;
+	}
 
 	@include mobile {
 		font-size: 27px;

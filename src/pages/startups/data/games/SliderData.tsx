@@ -1,6 +1,13 @@
+// Video Posters
 import witcherPoster from '../../media/games/witcherPoster.webp';
-import cossacksPoster from '../../media/games/cossacksPoster.webp';
 import samuraiPoster from '../../media/games/samuraiPoster.webp';
+
+// Videos
+import ghostOfTsushimaTrailer from '../../media/games/videos/ghostOfTsushimaTrailer.webm';
+import witcherTrailer from '../../media/games/videos/witcherTrailer.webm';
+
+// Images
+import cossacksPoster from '../../media/games/cossacksPoster.webp';
 import cossackWarrior from '../../media/games/cossackWarrior.webp';
 import cossackDrummer from '../../media/games/cossackDrummer.webp';
 import cossacksEquipment from '../../media/games/cossacksEquipment.webp';
@@ -11,14 +18,12 @@ const defaultAlt = `Games, Gaming startups, top games, ukraine production game i
 export const dataSlider = [
 	{
 		itemPoster: witcherPoster,
-		itemSrc:
-			'https://cdn.cloudflare.steamstatic.com/steam/apps/256927226/movie_max_vp9.webm?t=1674829926',
+		itemSrc: witcherTrailer,
 		itemAlt: 'Sample 01. For Visual Imagenations. The Witcher 3: Wild Hunt Trailer.',
 	},
 	{
 		itemPoster: samuraiPoster,
-		itemSrc:
-			'https://cdn.cloudflare.steamstatic.com/steam/apps/257004078/movie_max_vp9.webm?t=1709740583',
+		itemSrc: ghostOfTsushimaTrailer,
 		itemAlt:
 			'Sample 02. For Visual Imagenations. Ghost of Tsushima Trailer (about samurai and Japanese history)',
 	},
