@@ -254,16 +254,13 @@
 		box-shadow: -5px 5px 15px rgba($color: $black, $alpha: 0.6);
 
 		@include tabletBig {
-			width: calc(100% + 80px);
-			margin-left: -40px;
+			margin-top: 30px;
 			margin-bottom: 45px;
+			border-radius: 20px;
+			overflow: hidden;
 			position: static;
+			font-size: 14px;
 			box-shadow: 0 5px 15px rgba($color: $black, $alpha: 0.6);
-		}
-
-		@include mobile {
-			width: calc(100% + 30px);
-			margin-left: -15px;
 		}
 
 		.idea-tabs__btn {
@@ -305,8 +302,8 @@
 
 		@include tabletBig {
 			flex-grow: 1;
-			padding-top: 6px;
-			padding-bottom: 6px;
+			padding-top: 10px;
+			padding-bottom: 10px;
 		}
 
 		&.active {
