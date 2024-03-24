@@ -1,5 +1,5 @@
 // Images
-import writer from '../../media/writer.jpg';
+import writer from '../../media/writer.webp';
 
 const defaultAlt = `Magazine, articles, new generation media`;
 
