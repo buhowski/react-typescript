@@ -1,9 +1,10 @@
 import witcherPoster from '../../media/games/witcherPoster.webp';
 import cossacksPoster from '../../media/games/cossacksPoster.webp';
 import samuraiPoster from '../../media/games/samuraiPoster.webp';
-import cossackWarrior from '../../media/games/cossackWarrior.jpg';
-import cossackDrummer from '../../media/games/cossackDrummer.png';
-import cossacksEquipment from '../../media/games/cossacksEquipment.jpg';
+import cossackWarrior from '../../media/games/cossackWarrior.webp';
+import cossackDrummer from '../../media/games/cossackDrummer.webp';
+import cossacksEquipment from '../../media/games/cossacksEquipment.webp';
+import combatHopak from '../../media/games/combatHopak.webp';
 
 const defaultAlt = `Games, Gaming startups, top games, ukraine production game industry, the witcher wild hunt, cossacs, козаки, запорозька січ, козаки рпг, the sich, gogol, микола гоголь, козацтво, ігрова індустрія україна, запорозьке військо, The Cossacks writing letter to Turkish Sultan Sketch, Reply of the Zaporozhian Cossacks`;
 
@@ -35,6 +36,11 @@ export const dataSlider = [
 		itemSrc: cossackDrummer,
 		itemAlt: defaultAlt,
 		itemTitle: `Cossacks Drummer. "When the battle started, he would start beating the kettledrums, and as long as they were heard, the battle was going well.`,
+	},
+	{
+		itemSrc: combatHopak,
+		itemAlt: defaultAlt,
+		itemTitle: `Cossacks Combat Hopak.`,
 	},
 	{
 		itemSrc: cossacksEquipment,
