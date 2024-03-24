@@ -14,9 +14,38 @@ export const filmsTextData = [
 				],
 				title: `Опис`,
 				text: [
-					`Концепція серіалу – це веселий мікс, навіяний серіалами "В Філадельфії завжди сонячно", "Брод Сіті" та фільмом “New Kids Turbo”. Хочу використати схожу манера подачі, темпераменти героїв і динамічний стиль комічних ситуацій. Головне – це відчуття справжності.`,
-
-					`Ідея серіалу використовує гумор та сатиру, щоб гостро, з іронією, та водночас проникливо відобразити недоліки та досягнення України на шляху до європейської інтеграції. Також будуть показані стереотипи та культурні особливості кожної європейської країни через призму української реальності. Перед глядачем відкривається реальність українського життя – від глибин сільської місцевості до пульсуючого серця столиці. Це серіал для людей, які не бояться сміятися над проблемами, але при цьому хочуть, щоб їхні голоси були почуті.`,
+					<>
+						Концепція серіалу – це веселий мікс, навіяний серіалами{' '}
+						<TextLink
+							href='https://www.imdb.com/title/tt0472954/'
+							text={`It's Always Sunny in Philadelphia`}
+						/>{' '}
+						(зразок відео 01 – 03),{' '}
+						<TextLink
+							href='https://www.imdb.com/title/tt2578560/'
+							text={`Broad City`}
+						/>{' '}
+						(зразок відео 04), та фільмом{' '}
+						<TextLink
+							href='https://www.imdb.com/title/tt1648112/'
+							text={`New Kids Turbo`}
+						/>{' '}
+						(зразок відео 05). Приклади відео в слайдері, для кращого уявлення. Хочу
+						використати схожу манера подачі, темпераменти героїв, динамічний стиль
+						комічних ситуацій і непередбачуваність подій. Головне – це відчуття
+						справжності, щоб головні герої відігравали самих себе, або близьке їм по
+						духу.
+					</>,
+					<>
+						Ідея серіалу використовує гумор та сатиру, щоб гостро, з іронією, та
+						водночас проникливо відобразити недоліки та досягнення України на шляху до
+						європейської інтеграції. Також будуть показані стереотипи та культурні
+						особливості кожної європейської країни через призму української реальності.
+						Перед глядачем відкривається реальність українського життя – від глибин
+						сільської місцевості до пульсуючого серця столиці. Це серіал для людей, які
+						не бояться сміятися над проблемами, але при цьому хочуть, щоб їхні голоси
+						були почуті.
+					</>,
 				],
 			},
 			{
@@ -34,6 +63,23 @@ export const filmsTextData = [
 				],
 			},
 			{
+				title: `Персонажі`,
+				text: `Віковий діапазон плюс-мінус 23 – 30 років. Не знайомі між собою люди стикаються при певних обставинах (обставини придумуються), і ситуація зводить їх до подальшої дружби, або необхідності пересікатись.`,
+				list: [
+					`Чоловічий персонаж. Полюбляє алкоголь, постійно носить з собою термокружку (або бокал чи кубок), попиваючи власно зроблені коктейлі. В цілому вміє тримати себе в руках і не втрачати контроль над ситуацією. Добрий, стильний, позитивний, письменнецький нрав, мастер цитат і дибільних тостів. Улюблений напій портвей.`,
+
+					`Чоловічий персонаж. Полубляє курити маріхуану, постійно крутить самокрутки, начитаний, підвішений язик, але часто тупить.`,
+
+					`Чоловічий персонаж. Намагається вести здоровий спосіб життя, без шкідливих звичок, але сам розуміє що не існує здорового способу життя – лише здоровий глузд. Полюбляє займатися спортом, нестереотипний, до всього ставиться з розумінням та не осуджує. Сильний характер і самоконтроль, симпатичний.`,
+
+					`Жіночий персонаж. Енергійна, оптимістично-емоційна, творчий характер, любить мистецтво. Має гострий язик і полюбляє чорний гумор, часто неумісно жартує.`,
+
+					`Жіночий персонаж. Спокійна, розважлива, з дипломатичним складом мислення, стратегиня. Вміє знаходити спільну мову з людьми, хоча в цілому їх ненавидить. Але цінує дружбу і завжди готова прийти на допомогу.`,
+
+					`Козирний персонаж (вік 45+ років). Хитрий, цинічний, з гострим розумом і саркастичним почуттям гумору. Має багатий життєвий досвід. Вміє знаходити вихід з будь-якої ситуації. Цінує свободу і незалежність. Вовк одинак, але якщо потрібно, то працює в команді.`,
+				],
+			},
+			{
 				title: `Висновок`,
 				text: [
 					`Я вірю, що з новим підходом до реалізації і більш професійним відношенням до передачі емоцій картиною – "Європейські Українці" стане успішним проектом і візитівкою на світовому телевізійному ринку, для подальших інвестицій на розвиток наступних ідей. Бо ідей безмежна кількість, і є з чим працювати, але потрібні ресурси.`,
@@ -48,7 +94,6 @@ export const filmsTextData = [
 		свяжитесь со мной!
 		Спасибо за внимание.`,
 	},
-
 	// ############## English ##############
 	{
 		section: [
@@ -61,9 +106,38 @@ export const filmsTextData = [
 				],
 				title: `Description`,
 				text: [
-					`The concept of the series is a hilarious mix inspired by the shows "It's Always Sunny in Philadelphia", "Broad City", and the movie "New Kids Turbo". I want to use a similar style of presentation, character temperaments, and a dynamic style of comedic situations. The main thing is the feeling of authenticity.`,
-
-					`The idea of the series uses humor and satire to sharply, ironically, and at the same time insightfully reflect the shortcomings and achievements of Ukraine on the path to European integration. It will also showcase stereotypes and cultural peculiarities of each European country through the prism of Ukrainian reality. The viewer will discover the reality of Ukrainian life – from the depths of the countryside to the pulsating heart of the capital. This is a series for people who are not afraid to laugh at problems, but at the same time want their voices to be heard.`,
+					<>
+						The concept of the series is a hilarious mix inspired by shows like{' '}
+						<TextLink
+							href='https://www.imdb.com/title/tt0472954/'
+							text={`It's Always Sunny in Philadelphia`}
+						/>{' '}
+						(video samples 01 – 03),{' '}
+						<TextLink
+							href='https://www.imdb.com/title/tt2578560/'
+							text={`Broad City`}
+						/>{' '}
+						(video sample 04), and the{' '}
+						<TextLink
+							href='https://www.imdb.com/title/tt1648112/'
+							text={`New Kids Turbo`}
+						/>{' '}
+						movie (video sample 05). Examples of videos are provided in the slider for
+						better understanding. I want to use a similar style of presentation,
+						character temperaments, dynamic style of comedic situations, and
+						unpredictability of events. The main focus is on authenticity, allowing the
+						main characters to play themselves or characters close to their spirits.
+					</>,
+					<>
+						The idea of the series uses humor and satire to sharply, ironically, and at
+						the same time insightfully reflect the shortcomings and achievements of
+						Ukraine on the path to European integration. It will also showcase
+						stereotypes and cultural peculiarities of each European country through the
+						prism of Ukrainian reality. The viewer will discover the reality of
+						Ukrainian life – from the depths of the countryside to the pulsating heart
+						of the capital. This is a series for people who are not afraid to laugh at
+						problems, but at the same time want their voices to be heard.
+					</>,
 				],
 			},
 			{
@@ -78,6 +152,23 @@ export const filmsTextData = [
 					`The goal is to show reality without censorship, with soulful, and sometimes black humor. It is important that the series is sincere.`,
 
 					`It should encourage people to reflect on the problems of Ukrainian society, highlighting painful topics through humor.`,
+				],
+			},
+			{
+				title: `Characters`,
+				text: `Age range approximately 23 – 30 years. Strangers encounter each other in certain circumstances (circumstances are devised), and this leads to further friendship or the necessity of crossing paths.`,
+				list: [
+					`Male character. Fond of alcohol, always carries a thermos (or a glass or a goblet) with self-made cocktails. In general, he knows how to control himself and not lose control of the situation. Kind, stylish, positive, with a writer's temperament, a master of quotes and silly toasts. Favorite drink: port wine.`,
+
+					`Male character. Fond of smoking marijuana, always rolls his own joints, well-read, well-hung tongue, but a bit scatterbrained.`,
+
+					`Male character. Tries to lead a healthy lifestyle without bad habits, but understands there's no healthy way of life – only common sense. Enjoys sports, non-stereotypical, treats everything with understanding and does not judge. Strong character and self-control, attractive.`,
+
+					`Female character. Energetic, optimistic-emotional, creative, loves art. Sharp-tongued and enjoys black humor, often jokes inappropriately.`,
+
+					`Female character. Calm, considerate, with a diplomatic mindset, a strategist. Knows how to find common ground with people, though she generally dislikes them. Values friendship and is always ready to help.`,
+
+					`Key character (age 45+). Cunning, cynical, with a sharp mind and sarcastic sense of humor. Has rich life experience. Knows how to find a way out of any situation. Values freedom and independence. A lone wolf, but works in a team when necessary.`,
 				],
 			},
 			{
@@ -112,20 +203,23 @@ export const filmsTextData = [
 						Концепція серіалу – це веселий мікс, навіяний серіалами{' '}
 						<TextLink
 							href='https://www.imdb.com/title/tt0472954/'
-							text={`"It's Always Sunny in Philadelphia"`}
-						/>
-						,{' '}
+							text={`It's Always Sunny in Philadelphia`}
+						/>{' '}
+						(зразок відео 01 – 03),{' '}
 						<TextLink
 							href='https://www.imdb.com/title/tt2578560/'
-							text={`"Broad City"`}
+							text={`Broad City`}
 						/>{' '}
-						та фільмом{' '}
+						(зразок відео 04), та фільмом{' '}
 						<TextLink
 							href='https://www.imdb.com/title/tt1648112/'
-							text={`"New Kids Turbo"`}
-						/>
-						. Хочу використати схожу манера подачі, темпераменти героїв і динамічний
-						стиль комічних ситуацій. Головне – це відчуття справжності.
+							text={`New Kids Turbo`}
+						/>{' '}
+						(зразок відео 05). Приклади відео в слайдері, для кращого уявлення. Хочу
+						використати схожу манера подачі, темпераменти героїв, динамічний стиль
+						комічних ситуацій і непередбачуваність подій. Головне – це відчуття
+						справжності, щоб головні герої відігравали самих себе, або близьке їм по
+						духу.
 					</>,
 					<>
 						Ідея серіалу використовує гумор та сатиру, щоб гостро, з іронією, та
@@ -151,6 +245,23 @@ export const filmsTextData = [
 					`Показати реальність без цензури, з душевним, а іноді й чорним гумором. Важливо, щоб серіал був щирим.`,
 
 					`Він має спонукати людей до роздумів над проблемами українського суспільства, освітлюючи болючі теми через гумор.`,
+				],
+			},
+			{
+				title: `Персонажі`,
+				text: `Віковий діапазон плюс-мінус 23 – 30 років. Не знайомі між собою люди стикаються при певних обставинах (обставини придумуються), і ситуація зводить їх до подальшої дружби, або необхідності пересікатись.`,
+				list: [
+					`Чоловічий персонаж. Полюбляє алкоголь, постійно носить з собою термокружку (або бокал чи кубок), попиваючи власно зроблені коктейлі. В цілому вміє тримати себе в руках і не втрачати контроль над ситуацією. Добрий, стильний, позитивний, письменнецький нрав, мастер цитат і дибільних тостів. Улюблений напій портвей.`,
+
+					`Чоловічий персонаж. Полубляє курити маріхуану, постійно крутить самокрутки, начитаний, підвішений язик, але часто тупить.`,
+
+					`Чоловічий персонаж. Намагається вести здоровий спосіб життя, без шкідливих звичок, але сам розуміє що не існує здорового способу життя – лише здоровий глузд. Полюбляє займатися спортом, нестереотипний, до всього ставиться з розумінням та не осуджує. Сильний характер і самоконтроль, симпатичний.`,
+
+					`Жіночий персонаж. Енергійна, оптимістично-емоційна, творчий характер, любить мистецтво. Має гострий язик і полюбляє чорний гумор, часто неумісно жартує.`,
+
+					`Жіночий персонаж. Спокійна, розважлива, з дипломатичним складом мислення, стратегиня. Вміє знаходити спільну мову з людьми, хоча в цілому їх ненавидить. Але цінує дружбу і завжди готова прийти на допомогу.`,
+
+					`Козирний персонаж (вік 45+ років). Хитрий, цинічний, з гострим розумом і саркастичним почуттям гумору. Має багатий життєвий досвід. Вміє знаходити вихід з будь-якої ситуації. Цінує свободу і незалежність. Вовк одинак, але якщо потрібно, то працює в команді.`,
 				],
 			},
 			{
