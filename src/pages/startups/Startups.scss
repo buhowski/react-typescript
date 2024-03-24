@@ -254,12 +254,11 @@
 		box-shadow: -5px 5px 15px rgba($color: $black, $alpha: 0.6);
 
 		@include tabletBig {
-			margin-top: 30px;
-			margin-bottom: 45px;
+			margin-top: 35px;
+			margin-bottom: 35px;
 			border-radius: 20px;
 			overflow: hidden;
 			position: static;
-			font-size: 14px;
 			box-shadow: 0 5px 15px rgba($color: $black, $alpha: 0.6);
 		}
 
@@ -302,8 +301,8 @@
 
 		@include tabletBig {
 			flex-grow: 1;
-			padding-top: 10px;
-			padding-bottom: 10px;
+			padding-top: 6px;
+			padding-bottom: 6px;
 		}
 
 		&.active {
