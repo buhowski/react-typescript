@@ -8,7 +8,7 @@ import {
 	pathToAbout,
 	pathToProjects,
 	pathToStartupGames,
-	pathToStartupArticles,
+	pathToStartupMVP,
 } from './components/urlsData';
 
 import './styles/App.scss';
@@ -23,7 +23,7 @@ import Projects from './pages/projects/Projects';
 import Startup from './pages/startups/Startup';
 import StartupFilms from './pages/startups/Films';
 import StartupGames from './pages/startups/Games';
-import StartupArticles from './pages/startups/Articles';
+import StartupMVP from './pages/startups/MVP';
 
 // Routes and pages
 const routesData = [
@@ -52,8 +52,8 @@ const routesData = [
 		pageComponent: <StartupGames />,
 	},
 	{
-		pathTo: pathToStartupArticles,
-		pageComponent: <StartupArticles />,
+		pathTo: pathToStartupMVP,
+		pageComponent: <StartupMVP />,
 	},
 ];
 

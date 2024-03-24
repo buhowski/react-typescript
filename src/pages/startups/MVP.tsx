@@ -1,9 +1,9 @@
 import Slider from '../../components/Slider';
 import IdeaContent from './PageStructure/PageStructure';
-import { dataSlider } from './data/articles/SliderData';
-import { articlesTextData } from './data/articles/textData';
+import { dataSlider } from './data/MVP/SliderData';
+import { articlesTextData } from './data/MVP/textData';
 
-const StartupArticles = () => {
+const StartupMVP = () => {
 	return (
 		<IdeaContent
 			title='New Generation Media'
@@ -13,4 +13,4 @@ const StartupArticles = () => {
 	);
 };
 
-export default StartupArticles;
+export default StartupMVP;

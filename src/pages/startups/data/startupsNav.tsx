@@ -2,7 +2,7 @@ import {
 	pathToStartup,
 	pathToStartupFilms,
 	pathToStartupGames,
-	pathToStartupArticles,
+	pathToStartupMVP,
 } from '../../../components/urlsData';
 
 // Separate Projects presentation URLs
@@ -20,7 +20,7 @@ export const startupsNav = [
 		pageName: `Games`,
 	},
 	{
-		pageLink: pathToStartupArticles,
-		pageName: `Articles`,
+		pageLink: pathToStartupMVP,
+		pageName: `MVP`,
 	},
 ];
