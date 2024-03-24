@@ -49,7 +49,7 @@ const Slider: React.FC<SliderProps> = ({ dataSlider }) => {
 	};
 
 	return (
-		<div className='slider-with-btn'>
+		<div className={`slider-with-btn ${dataSlider.length <= 1 ? 'disabled' : ''}`}>
 			<div className='slider-container'>
 				<div className='idea-slider slider-js'>
 					{dataSlider.map(({ itemSrc, itemAlt, itemPoster, itemTitle }, index) => (
@@ -92,7 +92,7 @@ const Slider: React.FC<SliderProps> = ({ dataSlider }) => {
 					))}
 				</div>
 
-				<div className={`slider-actions ${dataSlider.length <= 1 ? 'disabled' : ''}`}>
+				<div className={`slider-actions`}>
 					{!useTabletLarge && <Copyright />}
 
 					<button

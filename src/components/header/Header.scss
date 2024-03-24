@@ -4,6 +4,9 @@
 	position: relative;
 	z-index: 98;
 	height: 90px;
+	font-size: 21px;
+	letter-spacing: 4px;
+	font-family: $lg-bold;
 
 	@include tablet {
 		height: 80px;
@@ -21,7 +24,6 @@
 		}
 
 		.nav-link {
-			font-size: 21px;
 			padding: 0.75rem 1.5rem;
 
 			&:after {
@@ -38,9 +40,7 @@
 }
 
 .logo {
-	font-size: 21px;
-	letter-spacing: 3px;
-	font-family: $lg-bold;
+	font-size: 24px;
 
 	a {
 		padding-left: 0;
@@ -48,7 +48,7 @@
 }
 
 .nav-item {
-	margin-right: 4rem;
+	margin-right: 5rem;
 
 	@include tablet {
 		margin-right: 0;
@@ -63,10 +63,10 @@
 
 .nav-link {
 	position: relative;
-	font-family: $lg-bold;
-	letter-spacing: 4px;
 	z-index: 1;
 	white-space: nowrap;
+	letter-spacing: 4px;
+	font-family: $lg-bold;
 
 	&:after {
 		content: '';

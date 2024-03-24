@@ -110,14 +110,12 @@ const PageStructure: React.FC<PageProps> = ({ title, textData, Slider }) => {
 
 	return (
 		<div className='wrapper wrapper--idea'>
-			<div className='startup-pages'>
-				<div className='idea-tabs idea-tabs--urls'>
-					{startupsNav.map(({ pageLink, pageName }, i) => (
-						<NavLink to={pageLink} end className={`idea-tabs__btn`} key={i}>
-							{pageName}
-						</NavLink>
-					))}
-				</div>
+			<div className='idea-tabs idea-tabs--urls'>
+				{startupsNav.map(({ pageLink, pageName }, i) => (
+					<NavLink to={pageLink} end className={`idea-tabs__btn`} key={i}>
+						{pageName}
+					</NavLink>
+				))}
 			</div>
 
 			<div className='idea-section'>
