@@ -6,21 +6,24 @@ import broadCityPoster from '../../media/films/broadCityPoster.webp';
 import turboKidsPoster from '../../media/films/turboKidsPoster.webp';
 
 // Videos
-import teaserVideo from '../../media/films/videos/teaserVideo.webm';
-import teamVideo from '../../media/films/videos/teamVideo.webm';
+// import teaserVideo from '../../media/films/videos/teaserVideo.webm';
+// import teamVideo from '../../media/films/videos/teamVideo.webm';
 import screamVideo from '../../media/films/videos/screamVideo.webm';
 import broadCityTrailer from '../../media/films/videos/broadCityTrailer.webm';
 import newKidsTurboTrailer from '../../media/films/videos/newKidsTurboTrailer.webm';
 
+import test from '../../media/films/videos/test.mp4';
+import testv8 from '../../media/films/videos/testv8.webm';
+
 export const dataSlider = [
 	{
 		itemPoster: teaserPoster,
-		itemSrc: teaserVideo,
+		itemSrc: test,
 		itemAlt: `Sample 01. Teaser. "It's Always Sunny in Philadelphia".`,
 	},
 	{
 		itemPoster: classicSetupPoster,
-		itemSrc: teamVideo,
+		itemSrc: testv8,
 		itemAlt: `Sample 02. Looks, brains, wild card. Classic setup. "It's Always Sunny in Philadelphia".`,
 	},
 	{
