@@ -155,6 +155,7 @@
 
 		&__content {
 			height: 100%;
+			height: calc(var(--vh, 1vh) * 100);
 			overflow: auto;
 			padding-top: 25vh;
 			padding-bottom: 15px;
