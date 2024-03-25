@@ -72,7 +72,6 @@ const Slider: React.FC<SliderProps> = ({ dataSlider }) => {
 										preload='none'
 									>
 										<source src={itemSrc} type='video/mp4' />
-										{/* <source src={itemSrc} type='video/webm' /> */}
 										Your browser does not support the video tag.
 									</video>
 

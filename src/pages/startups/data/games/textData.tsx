@@ -10,7 +10,7 @@ export const gamesTextData = [
 				titleBig: [{ key: `Назва:`, value: `Січ / Козаки РПГ` }],
 				subtitleBig: [
 					{ key: `Платформа:`, value: `PC, PS5` },
-					{ key: `Жанр:`, value: `Нелінійна action/RPG з відкритим світом` },
+					{ key: `Жанр:`, value: `Action/RPG з відкритим світом` },
 					{
 						key: `Сеттінг:`,
 						value: `Україна XVI – XVIII століття, Запорозька Січ`,
@@ -31,8 +31,8 @@ export const gamesTextData = [
 						<TextLink
 							href='https://en.wikipedia.org/wiki/Nikolai_Gogol'
 							text={`Миколи Гоголя`}
-						/>{' '}
-						(
+						/>
+						, збірки та повісті:{' '}
 						<TextLink
 							href='https://en.wikipedia.org/wiki/Dead_Souls'
 							text={`Мертві душі`}
@@ -48,7 +48,7 @@ export const gamesTextData = [
 							href='https://en.wikipedia.org/wiki/Taras_Bulba'
 							text={`Тарас Бульба`}
 						/>
-						).
+						.
 					</>,
 
 					<>Запорозькі Козаки, Слов'янська міфологія, Українська демонологія.</>,
@@ -101,7 +101,7 @@ export const gamesTextData = [
 				titleBig: [{ key: `Name:`, value: `The Sich / Cossacks RPG` }],
 				subtitleBig: [
 					{ key: `Platform:`, value: `PC, PS5` },
-					{ key: `Genre:`, value: `Non-linear action/RPG with an open world` },
+					{ key: `Genre:`, value: `Action/RPG with an open world` },
 					{
 						key: `Setting:`,
 						value: `Ukraine, 16th – 18th centuries, Zaporozhian Sich`,
@@ -121,8 +121,8 @@ export const gamesTextData = [
 						<TextLink
 							href='https://en.wikipedia.org/wiki/Nikolai_Gogol'
 							text={`Nikolai Gogol`}
-						/>{' '}
-						(
+						/>
+						, collections and novels:{' '}
 						<TextLink
 							href='https://en.wikipedia.org/wiki/Dead_Souls'
 							text={`Dead Souls`}
@@ -139,7 +139,7 @@ export const gamesTextData = [
 							text={`Taras
 						Bulba`}
 						/>
-						).
+						.
 					</>,
 					<>Zaporozhian Cossacks, Slavic mythology, Ukrainian demonology.</>,
 				],
@@ -191,7 +191,7 @@ export const gamesTextData = [
 				titleBig: [{ key: `Назва:`, value: `Січ / Козаки РПГ` }],
 				subtitleBig: [
 					{ key: `Платформа:`, value: `PC, PS5` },
-					{ key: `Жанр:`, value: `Нелінійна action/RPG з відкритим світом` },
+					{ key: `Жанр:`, value: `Action/RPG з відкритим світом` },
 					{
 						key: `Сеттінг:`,
 						value: `Україна XVI – XVIII століття, Запорозька Січ`,
@@ -212,8 +212,8 @@ export const gamesTextData = [
 						<TextLink
 							href='https://en.wikipedia.org/wiki/Nikolai_Gogol'
 							text={`Миколи Гоголя`}
-						/>{' '}
-						(
+						/>
+						, збірки та повісті:{' '}
 						<TextLink
 							href='https://en.wikipedia.org/wiki/Dead_Souls'
 							text={`Мертві душі`}
@@ -229,7 +229,7 @@ export const gamesTextData = [
 							href='https://en.wikipedia.org/wiki/Taras_Bulba'
 							text={`Тарас Бульба`}
 						/>
-						).
+						.
 					</>,
 
 					<>Запорозькі Козаки, Слов'янська міфологія, Українська демонологія.</>,

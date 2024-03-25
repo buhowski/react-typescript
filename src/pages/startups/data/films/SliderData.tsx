@@ -6,24 +6,21 @@ import broadCityPoster from '../../media/films/broadCityPoster.webp';
 import turboKidsPoster from '../../media/films/turboKidsPoster.webp';
 
 // Videos
-// import teaserVideo from '../../media/films/videos/teaserVideo.webm';
-// import teamVideo from '../../media/films/videos/teamVideo.webm';
-import screamVideo from '../../media/films/videos/screamVideo.webm';
-import broadCityTrailer from '../../media/films/videos/broadCityTrailer.webm';
-import newKidsTurboTrailer from '../../media/films/videos/newKidsTurboTrailer.webm';
-
-import test from '../../media/films/videos/test.mp4';
-import testv8 from '../../media/films/videos/testv8.webm';
+import teaserVideo from '../../media/films/videos/teaserVideo.mp4';
+import teamVideo from '../../media/films/videos/teamVideo.mp4';
+import screamVideo from '../../media/films/videos/screamVideo.mp4';
+import broadCityTrailer from '../../media/films/videos/broadCityTrailer.mp4';
+import newKidsTurboTrailer from '../../media/films/videos/newKidsTurboTrailer.mp4';
 
 export const dataSlider = [
 	{
 		itemPoster: teaserPoster,
-		itemSrc: test,
+		itemSrc: teaserVideo,
 		itemAlt: `Sample 01. Teaser. "It's Always Sunny in Philadelphia".`,
 	},
 	{
 		itemPoster: classicSetupPoster,
-		itemSrc: testv8,
+		itemSrc: teamVideo,
 		itemAlt: `Sample 02. Looks, brains, wild card. Classic setup. "It's Always Sunny in Philadelphia".`,
 	},
 	{

@@ -364,23 +364,33 @@
 .block-headline {
 	text-align: right;
 
-	&__top {
-		letter-spacing: 2px;
+	span {
+		display: inline-block;
+		margin-right: 5px;
 		font-weight: bold;
 		font-family: $ui-medium;
 	}
 
-	span {
-		display: inline-block;
-		margin-right: 5px;
-		font-size: 14px;
+	&__top {
+		letter-spacing: 2px;
 		font-weight: bold;
 		font-family: $ui-medium;
+
+		span {
+			font-size: 12px;
+			margin-right: 8px;
+			vertical-align: top;
+		}
 	}
 
 	&__type {
 		color: $snow;
 		margin-bottom: -5px;
+		font-size: 18px;
+
+		span {
+			margin-top: -2px;
+		}
 	}
 
 	&__title {
@@ -446,10 +456,10 @@
 
 	a {
 		display: inline;
-		color: $snow;
+		position: relative;
 
 		span {
-			background-image: linear-gradient($snow, $snow);
+			background-image: linear-gradient(currentColor, currentColor);
 			background-size: 100% 1px;
 			background-repeat: no-repeat;
 			background-position: left bottom;
@@ -700,6 +710,7 @@
 		top: 0;
 		height: 100%;
 		background-color: $black;
+		overflow: hidden;
 
 		&::after {
 			content: '';
@@ -734,6 +745,7 @@
 
 	&-next {
 		@include tabletBig {
+			border-radius: 0 20px 20px 0;
 			box-shadow: -3px 0 15px rgba($color: $black, $alpha: 0.8);
 
 			right: 0;
@@ -756,6 +768,7 @@
 		margin-left: auto;
 
 		@include tabletBig {
+			border-radius: 20px 0 0 20px;
 			left: 0;
 			box-shadow: 3px 0 15px rgba($color: $black, $alpha: 0.8);
 
