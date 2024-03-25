@@ -1,22 +1,42 @@
 import React from 'react';
 
-// TextLinkProps
-interface TextLinkProps {
-	href?: string;
-	text?: string;
+// Subtitle h3 item
+interface TitleProps {
+	title: string | { key: string; value: string }[];
+	titleClassname?: string;
 }
 
-export const TextLink: React.FC<TextLinkProps> = ({ href, text }) => {
+export const Title: React.FC<TitleProps> = ({ title, titleClassname }) => {
+	if (typeof title === 'string') {
+		return <h2 className={`${titleClassname}`}>{title}</h2>;
+	} else {
+		return (
+			<>
+				{title.map(({ key, value }, i) => (
+					<h2 key={i} className={`${titleClassname}`}>
+						<span>{key}</span>
+						{value}
+					</h2>
+				))}
+			</>
+		);
+	}
+};
+
+// Paragraph in text data
+interface TitleTypeProps {
+	titleType: { key: string; value: string }[];
+}
+
+export const TitleType: React.FC<TitleTypeProps> = ({ titleType }) => {
 	return (
 		<>
-			<a
-				href={href}
-				target='_blank'
-				rel='noopener noreferrer'
-				title='IMDB Website / Review Product'
-			>
-				{text}
-			</a>
+			{titleType.map(({ key, value }, i) => (
+				<h3 className='block-headline__type' key={i}>
+					<span>{key}</span>
+					{value}
+				</h3>
+			))}
 		</>
 	);
 };
@@ -30,23 +50,32 @@ export const SubtitleBig: React.FC<SubtitleBigProps> = ({ subtitleBig }) => {
 	return (
 		<div className='idea-types'>
 			{subtitleBig.map(({ key, value }, i) => (
-				<h3 className='idea-block__subtitleBig' key={i}>
+				<h4 className='block-headline__subtitle' key={i}>
 					<span>{key}</span>
 					{value}
-				</h3>
+				</h4>
 			))}
 		</div>
 	);
 };
 
-// Subtitle h3 item
-interface TitleProps {
-	title: string;
-	titleClassname?: string;
+// TextLinkProps
+interface TextLinkProps {
+	href?: string;
+	text?: string;
 }
 
-export const Title: React.FC<TitleProps> = ({ title, titleClassname }) => {
-	return <h2 className={`${titleClassname}`}>{title}</h2>;
+export const TextLink: React.FC<TextLinkProps> = ({ href, text }) => {
+	return (
+		<>
+			<a href={href} target='_blank' rel='noopener noreferrer' title={href}>
+				<span>{text}</span>
+			</a>
+
+			{/* TODO: maybe make good preview for links */}
+			{/* <iframe src={href}></iframe> */}
+		</>
+	);
 };
 
 // Subtitle h3 item
@@ -79,14 +108,18 @@ export const Text: React.FC<TextProps> = ({ text }) => {
 
 // List ul in text structure
 interface ListProps {
-	items: string[];
+	items: string[] | JSX.Element[];
 }
 
 export const List: React.FC<ListProps> = ({ items }) => {
+	const renderedList = Array.isArray(items) ? items : [items];
+
 	return (
 		<ul>
-			{items.map((item, i) => (
-				<li key={i}>{item}</li>
+			{renderedList.map((item, i) => (
+				<li key={i}>
+					<p>{item}</p>
+				</li>
 			))}
 		</ul>
 	);

@@ -9,7 +9,15 @@ import PopupContacts from '../../../components/PopupContacts';
 import Copyright from '../../../components/Copyright';
 import { startupsNav } from '../data/startupsNav';
 import { Block } from '../data/textTypes';
-import { Text, Subtitle, Title, List, SubtitleBig, LastWords } from './IdeaElements';
+import {
+	Text,
+	Subtitle,
+	Title,
+	List,
+	SubtitleBig,
+	LastWords,
+	TitleType,
+} from './IdeaElements';
 
 // Define interfaces for better type safety
 interface TextStructure {
@@ -31,11 +39,17 @@ const PageStructure: React.FC<PageProps> = ({ title, textData, Slider }) => {
 	const renderTextSection = (structure: TextStructure) => {
 		return structure.section.map((block: Block, blockIndex) => (
 			<div className='idea-block' key={blockIndex}>
-				{block.titleBig && (
-					<Title titleClassname='idea-block__titleBig' title={block.titleBig} />
-				)}
+				<div className='block-headline'>
+					<div className='block-headline__top'>
+						{block.titleType && <TitleType titleType={block.titleType} />}
 
-				{block.subtitleBig && <SubtitleBig subtitleBig={block.subtitleBig} />}
+						{block.titleBig && (
+							<Title titleClassname='block-headline__title' title={block.titleBig} />
+						)}
+					</div>
+
+					{block.subtitleBig && <SubtitleBig subtitleBig={block.subtitleBig} />}
+				</div>
 
 				{block.title && (
 					<Title titleClassname='idea-block__title' title={block.title} />
@@ -121,8 +135,6 @@ const PageStructure: React.FC<PageProps> = ({ title, textData, Slider }) => {
 				{useTabletLarge && <PopupContacts />}
 
 				<div className='idea-info'>
-					{title && <h1 className='startup-title'>{title}</h1>}
-
 					{/* language tabs */}
 					<div className='idea-tabs idea-tabs--lang'>
 						{/* Here goes tab items*/}
@@ -150,8 +162,10 @@ const PageStructure: React.FC<PageProps> = ({ title, textData, Slider }) => {
 							style={{ height: '100%', paddingRight: '35px' }}
 							autoHide={false}
 						>
+							{title && <h1 className='startup-title'>{title}</h1>}
+
 							{tabs.map((tab) => (
-								<div key={tab.id} className='idea-content'>
+								<div key={tab.id} className='idea-content desktop-responsive'>
 									{currentTab === tab.id && tab.content}
 								</div>
 							))}
@@ -161,6 +175,8 @@ const PageStructure: React.FC<PageProps> = ({ title, textData, Slider }) => {
 
 				{/* Desktop Slider */}
 				{Slider}
+
+				{useTabletLarge && title && <h1 className='startup-title'>{title}</h1>}
 			</div>
 		</div>
 	);

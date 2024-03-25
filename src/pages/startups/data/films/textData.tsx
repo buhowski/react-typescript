@@ -6,9 +6,9 @@ export const filmsTextData = [
 	{
 		section: [
 			{
-				titleBig: `Європейські Українці`,
+				titleType: [{ key: `Тип:`, value: `Серіал` }],
+				titleBig: [{ key: `Назва:`, value: `Європейські Українці` }],
 				subtitleBig: [
-					{ key: `Тип:`, value: `Серіал` },
 					{ key: `Жанр:`, value: `Комедія, Драма, Чорний гумор` },
 					{ key: `Аудиторія:`, value: `Підлітки, Дорослі` },
 				],
@@ -31,10 +31,10 @@ export const filmsTextData = [
 							text={`New Kids Turbo`}
 						/>{' '}
 						(зразок відео 05). Приклади відео в слайдері, для кращого уявлення. Хочу
-						використати схожу манера подачі, темпераменти героїв, динамічний стиль
-						комічних ситуацій і непередбачуваність подій. Головне – це відчуття
-						справжності, щоб головні герої відігравали самих себе, або близьке їм по
-						духу.
+						використати це під Український лад, манеру подачі, темпераменти героїв,
+						динамічний стиль комічних ситуацій і непередбачуваність подій. Головне – це
+						відчуття справжності, щоб головні герої відігравали самих себе, або близьке
+						їм по духу.
 					</>,
 					<>
 						Ідея серіалу використовує гумор та сатиру, щоб гостро, з іронією, та
@@ -98,9 +98,9 @@ export const filmsTextData = [
 	{
 		section: [
 			{
-				titleBig: `European Ukrainians`,
+				titleType: [{ key: `Type:`, value: `Series` }],
+				titleBig: [{ key: `Name:`, value: `European Ukrainians` }],
 				subtitleBig: [
-					{ key: `Type:`, value: `Series` },
 					{ key: `Genre:`, value: `Comedy, Drama, Dark Humor` },
 					{ key: `Audience:`, value: `Teens, Adults` },
 				],
@@ -123,10 +123,11 @@ export const filmsTextData = [
 							text={`New Kids Turbo`}
 						/>{' '}
 						movie (video sample 05). Examples of videos are provided in the slider for
-						better understanding. I want to use a similar style of presentation,
-						character temperaments, dynamic style of comedic situations, and
-						unpredictability of events. The main focus is on authenticity, allowing the
-						main characters to play themselves or characters close to their spirits.
+						better understanding. I want to use it in a Ukrainian way, a close similar
+						style of presentation, character temperaments, dynamic style of comedic
+						situations, and unpredictability of events. The main focus is on
+						authenticity, allowing the main characters to play themselves or characters
+						close to their spirits.
 					</>,
 					<>
 						The idea of the series uses humor and satire to sharply, ironically, and at
@@ -191,9 +192,9 @@ export const filmsTextData = [
 	{
 		section: [
 			{
-				titleBig: `Європейські Українці`,
+				titleType: [{ key: `Тип:`, value: `Серіал` }],
+				titleBig: [{ key: `Назва:`, value: `Європейські Українці` }],
 				subtitleBig: [
-					{ key: `Тип:`, value: `Серіал` },
 					{ key: `Жанр:`, value: `Комедія, Драма, Чорний гумор` },
 					{ key: `Аудиторія:`, value: `Підлітки, Дорослі` },
 				],
@@ -216,10 +217,10 @@ export const filmsTextData = [
 							text={`New Kids Turbo`}
 						/>{' '}
 						(зразок відео 05). Приклади відео в слайдері, для кращого уявлення. Хочу
-						використати схожу манера подачі, темпераменти героїв, динамічний стиль
-						комічних ситуацій і непередбачуваність подій. Головне – це відчуття
-						справжності, щоб головні герої відігравали самих себе, або близьке їм по
-						духу.
+						використати це під Український лад, манеру подачі, темпераменти героїв,
+						динамічний стиль комічних ситуацій і непередбачуваність подій. Головне – це
+						відчуття справжності, щоб головні герої відігравали самих себе, або близьке
+						їм по духу.
 					</>,
 					<>
 						Ідея серіалу використовує гумор та сатиру, щоб гостро, з іронією, та

@@ -59,6 +59,7 @@ const routesData = [
 
 const App = () => {
 	const tabletQuery = useTabletQuery();
+
 	useEffect(() => {
 		if (tabletQuery) {
 			let vh = window.innerHeight * 0.01;

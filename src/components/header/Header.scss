@@ -153,18 +153,11 @@
 			z-index: 1;
 		}
 
-		> div {
-			width: 100%;
-			height: 100%;
-			overflow-x: hidden;
-			overflow-y: auto;
-			padding: 80px 0 120px;
-		}
-
 		&__content {
-			&--overflow {
-				height: 100%;
-			}
+			height: 100%;
+			overflow: auto;
+			padding-top: 25vh;
+			padding-bottom: 15px;
 		}
 
 		.nav-item,
@@ -174,7 +167,6 @@
 		}
 
 		.contact-menu {
-			margin-top: 55px;
 			justify-content: center;
 			padding: 0 4%;
 		}
