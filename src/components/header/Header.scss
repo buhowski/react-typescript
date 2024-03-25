@@ -48,7 +48,7 @@
 }
 
 .nav-item {
-	margin-right: 5rem;
+	margin-right: 6rem;
 
 	@include tablet {
 		margin-right: 0;
@@ -158,7 +158,7 @@
 			height: calc(var(--vh, 1vh) * 100);
 			overflow: auto;
 			padding-top: 25vh;
-			padding-bottom: 15px;
+			padding-bottom: 30px;
 		}
 
 		.nav-item,

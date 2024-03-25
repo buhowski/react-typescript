@@ -3,8 +3,8 @@ import witcherPoster from '../../media/games/witcherPoster.webp';
 import samuraiPoster from '../../media/games/samuraiPoster.webp';
 
 // Videos
-import ghostOfTsushimaTrailer from '../../media/games/videos/ghostOfTsushimaTrailer.webm';
-import witcherTrailer from '../../media/games/videos/witcherTrailer.webm';
+import ghostOfTsushimaTrailer from '../../media/games/videos/ghostOfTsushimaTrailer.mp4';
+import witcherTrailer from '../../media/games/videos/witcherTrailer.mp4';
 
 // Images
 import cossacksPoster from '../../media/games/cossacksPoster.webp';
@@ -32,31 +32,31 @@ export const dataSlider = [
 	{
 		itemSrc: cossacksPoster,
 		itemAlt: defaultAlt,
-		itemTitle: `Zaporozhian Cossacks writing letter. Where the Cossacks strongly refuse on demand to surrender without a fight and mock the Turkish sultan and his army.`,
+		itemTitle: `03. Zaporozhian Cossacks writing letter. Where the Cossacks strongly refuse on demand to surrender without a fight and mock the Turkish sultan and his army.`,
 	},
 	{
 		itemSrc: cossackWarrior,
 		itemAlt: defaultAlt,
-		itemTitle: `Cossacks Style. Warrior master.`,
+		itemTitle: `04. Cossacks Style. Warrior master.`,
 	},
 	{
 		itemSrc: combatHopak,
 		itemAlt: defaultAlt,
-		itemTitle: `Cossacks Combat Dance - Hopak.`,
+		itemTitle: `05. Cossacks Combat Dance - Hopak.`,
 	},
 	{
 		itemSrc: cossackCharakternyk,
 		itemAlt: defaultAlt,
-		itemTitle: `Cossack Characternyk (sorcerer) - was the name of a Cossack in the Zaporozhian Sich who was believed to have magical powers.`,
+		itemTitle: `06. Cossack Characternyk (sorcerer) - was the name of a Cossack in the Zaporozhian Sich who was believed to have magical powers.`,
 	},
 	{
 		itemSrc: cossackDrummer,
 		itemAlt: defaultAlt,
-		itemTitle: `Cossacks Drummer. When the battle started, he would start beating the kettledrums, and as long as they were heard, the battle was going well.`,
+		itemTitle: `07. Cossacks Drummer. When the battle started, he would start beating the kettledrums, and as long as they were heard, the battle was going well.`,
 	},
 	{
 		itemSrc: cossacksEquipment,
 		itemAlt: defaultAlt,
-		itemTitle: `Cossacks Equipment.`,
+		itemTitle: `08. Cossacks Equipment.`,
 	},
 ];

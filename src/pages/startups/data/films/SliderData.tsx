@@ -6,11 +6,11 @@ import broadCityPoster from '../../media/films/broadCityPoster.webp';
 import turboKidsPoster from '../../media/films/turboKidsPoster.webp';
 
 // Videos
-import teaserVideo from '../../media/films/videos/teaserVideo.webm';
-import teamVideo from '../../media/films/videos/teamVideo.webm';
-import screamVideo from '../../media/films/videos/screamVideo.webm';
-import broadCityTrailer from '../../media/films/videos/broadCityTrailer.webm';
-import newKidsTurboTrailer from '../../media/films/videos/newKidsTurboTrailer.webm';
+import teaserVideo from '../../media/films/videos/teaserVideo.mp4';
+import teamVideo from '../../media/films/videos/teamVideo.mp4';
+import screamVideo from '../../media/films/videos/screamVideo.mp4';
+import broadCityTrailer from '../../media/films/videos/broadCityTrailer.mp4';
+import newKidsTurboTrailer from '../../media/films/videos/newKidsTurboTrailer.mp4';
 
 export const dataSlider = [
 	{

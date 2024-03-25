@@ -15,27 +15,19 @@ export const filmsTextData = [
 				title: `Опис`,
 				text: [
 					<>
-						Концепція серіалу – це веселий мікс, навіяний серіалами{' '}
-						<TextLink
-							href='https://www.imdb.com/title/tt0472954/'
-							text={`It's Always Sunny in Philadelphia`}
-						/>{' '}
-						(зразок відео 01 – 03),{' '}
-						<TextLink
-							href='https://www.imdb.com/title/tt2578560/'
-							text={`Broad City`}
-						/>{' '}
-						(зразок відео 04), та фільмом{' '}
-						<TextLink
-							href='https://www.imdb.com/title/tt1648112/'
-							text={`New Kids Turbo`}
-						/>{' '}
-						(зразок відео 05). Приклади відео в слайдері, для кращого уявлення. Хочу
-						використати це під Український лад, манеру подачі, темпераменти героїв,
-						динамічний стиль комічних ситуацій і непередбачуваність подій. Головне – це
-						відчуття справжності, щоб головні герої відігравали самих себе, або близьке
-						їм по духу.
+						Концепція серіалу – це веселий мікс, навіяний серіалами "It's Always Sunny
+						in Philadelphia" (зразки 01 – 03 у слайдері, або{' '}
+						<TextLink href='https://www.imdb.com/title/tt0472954/' text={`IMDB`} />
+						), "Broad City" (зразок 04 у слайдері, або{' '}
+						<TextLink href='https://www.imdb.com/title/tt2578560/' text={`IMDB`} />
+						), та фільмом "New Kids Turbo" (зразок 05 у слайдері, або{' '}
+						<TextLink href='https://www.imdb.com/title/tt1648112/' text={`IMDB`} />
+						). Приклади відео, для кращого уявлення. Хочу використати це під Український
+						лад, манеру подачі, темпераменти героїв, динамічний стиль комічних ситуацій
+						і непередбачуваність подій. Головне – це відчуття справжності, щоб головні
+						герої відігравали самих себе, або близьке їм по духу.
 					</>,
+
 					<>
 						Ідея серіалу використовує гумор та сатиру, щоб гостро, з іронією, та
 						водночас проникливо відобразити недоліки та досягнення України на шляху до
@@ -107,28 +99,20 @@ export const filmsTextData = [
 				title: `Description`,
 				text: [
 					<>
-						The concept of the series is a hilarious mix inspired by shows like{' '}
-						<TextLink
-							href='https://www.imdb.com/title/tt0472954/'
-							text={`It's Always Sunny in Philadelphia`}
-						/>{' '}
-						(video samples 01 – 03),{' '}
-						<TextLink
-							href='https://www.imdb.com/title/tt2578560/'
-							text={`Broad City`}
-						/>{' '}
-						(video sample 04), and the{' '}
-						<TextLink
-							href='https://www.imdb.com/title/tt1648112/'
-							text={`New Kids Turbo`}
-						/>{' '}
-						movie (video sample 05). Examples of videos are provided in the slider for
-						better understanding. I want to use it in a Ukrainian way, a close similar
-						style of presentation, character temperaments, dynamic style of comedic
-						situations, and unpredictability of events. The main focus is on
-						authenticity, allowing the main characters to play themselves or characters
-						close to their spirits.
+						The concept of the series is a hilarious mix inspired by shows like "It's
+						Always Sunny in Philadelphia" (samples 01 – 03 in slider, or{' '}
+						<TextLink href='https://www.imdb.com/title/tt0472954/' text={`IMDB`} />
+						), "Broad City" (sample 04 in slider, or{' '}
+						<TextLink href='https://www.imdb.com/title/tt2578560/' text={`IMDB`} />
+						), and the "New Kids Turbo" movie (sample 05 in slider, or{' '}
+						<TextLink href='https://www.imdb.com/title/tt1648112/' text={`IMDB`} />
+						). Examples of videos are provided in the slider for better understanding. I
+						want to use it in a Ukrainian way, a close similar style of presentation,
+						character temperaments, dynamic style of comedic situations, and
+						unpredictability of events. The main focus is on authenticity, allowing the
+						main characters to play themselves or characters close to their spirits.
 					</>,
+
 					<>
 						The idea of the series uses humor and satire to sharply, ironically, and at
 						the same time insightfully reflect the shortcomings and achievements of
@@ -201,26 +185,17 @@ export const filmsTextData = [
 				title: `Опис`,
 				text: [
 					<>
-						Концепція серіалу – це веселий мікс, навіяний серіалами{' '}
-						<TextLink
-							href='https://www.imdb.com/title/tt0472954/'
-							text={`It's Always Sunny in Philadelphia`}
-						/>{' '}
-						(зразок відео 01 – 03),{' '}
-						<TextLink
-							href='https://www.imdb.com/title/tt2578560/'
-							text={`Broad City`}
-						/>{' '}
-						(зразок відео 04), та фільмом{' '}
-						<TextLink
-							href='https://www.imdb.com/title/tt1648112/'
-							text={`New Kids Turbo`}
-						/>{' '}
-						(зразок відео 05). Приклади відео в слайдері, для кращого уявлення. Хочу
-						використати це під Український лад, манеру подачі, темпераменти героїв,
-						динамічний стиль комічних ситуацій і непередбачуваність подій. Головне – це
-						відчуття справжності, щоб головні герої відігравали самих себе, або близьке
-						їм по духу.
+						Концепція серіалу – це веселий мікс, навіяний серіалами "It's Always Sunny
+						in Philadelphia" (зразки 01 – 03 у слайдері, або{' '}
+						<TextLink href='https://www.imdb.com/title/tt0472954/' text={`IMDB`} />
+						), "Broad City" (зразок 04 у слайдері, або{' '}
+						<TextLink href='https://www.imdb.com/title/tt2578560/' text={`IMDB`} />
+						), та фільмом "New Kids Turbo" (зразок 05 у слайдері, або{' '}
+						<TextLink href='https://www.imdb.com/title/tt1648112/' text={`IMDB`} />
+						). Приклади відео, для кращого уявлення. Хочу використати це під Український
+						лад, манеру подачі, темпераменти героїв, динамічний стиль комічних ситуацій
+						і непередбачуваність подій. Головне – це відчуття справжності, щоб головні
+						герої відігравали самих себе, або близьке їм по духу.
 					</>,
 					<>
 						Ідея серіалу використовує гумор та сатиру, щоб гостро, з іронією, та
