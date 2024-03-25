@@ -256,7 +256,7 @@
 	display: flex;
 	width: max-content;
 	overflow: hidden;
-	font-family: $LouisGeorgeCafBold;
+	font-family: $LouisGeorgeCaf;
 
 	@include tabletBig {
 		width: 100%;
@@ -279,14 +279,15 @@
 
 		.idea-tabs__btn {
 			text-transform: none;
-			padding: 7px 30px 5px;
+			padding: 7px 30px;
 			display: flex;
-			align-items: center;
+			align-items: flex-end;
 			justify-content: center;
+			font-size: 15px;
 
 			&.active {
-				font-size: 18px;
-				letter-spacing: 3px;
+				font-size: 17px;
+				letter-spacing: 1px;
 
 				@include mobile {
 					letter-spacing: 2px;
@@ -345,6 +346,7 @@
 		&.active {
 			background: $blue-main;
 			text-shadow: 0 0 0.7px $snow;
+			font-family: $LouisGeorgeCafBold;
 		}
 	}
 }
@@ -356,6 +358,7 @@
 	font-family: $Raleway;
 	font-weight: 500;
 	margin-bottom: 40px;
+	color: $starYellow;
 
 	@include tabletBig {
 		margin-bottom: 20px;
@@ -390,7 +393,8 @@
 		margin-bottom: 8px;
 		letter-spacing: 3px;
 		font-family: $Raleway;
-		font-weight: 500;
+		font-weight: 600;
+		text-align: center;
 
 		@include tabletBig {
 			font-size: 21px;

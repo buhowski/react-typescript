@@ -16,7 +16,7 @@ import {
 	List,
 	SubtitleBig,
 	LastWords,
-	TitleType,
+	// TitleType,
 } from './IdeaElements';
 
 // Define interfaces for better type safety
@@ -41,7 +41,7 @@ const PageStructure: React.FC<PageProps> = ({ title, textData, Slider }) => {
 			<div className='idea-block' key={blockIndex}>
 				<div className='block-headline'>
 					<div className='block-headline__top'>
-						{block.titleType && <TitleType titleType={block.titleType} />}
+						{/* {block.titleNumber && <TitleType titleType={block.titleNumber} />} */}
 
 						{block.titleBig && (
 							<Title titleClassname='block-headline__title' title={block.titleBig} />
