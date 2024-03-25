@@ -1,6 +1,12 @@
 @import '../../styles/variables';
 @import '../../styles/animation';
 
+.desktop-responsive {
+	@include tablet {
+		display: none;
+	}
+}
+
 .wrapper--idea {
 	position: relative;
 	padding-bottom: 30px;
@@ -25,6 +31,7 @@
 // underline link effect
 .nav-link--underline {
 	z-index: unset;
+	font-size: 18px;
 	&::after {
 		z-index: unset;
 	}
@@ -80,7 +87,6 @@
 		border-radius: 10px;
 		background-color: rgba($color: $black, $alpha: 0.9);
 		color: $textGrey;
-		font-size: 14px;
 		display: inline-block;
 		height: 0;
 		overflow: hidden;
@@ -89,16 +95,12 @@
 		width: max-content;
 		z-index: 1;
 
-		@include mobile {
-			font-size: 15px;
-		}
-
 		&-items {
 			padding: 20px 25px;
 		}
 
 		p {
-			margin-bottom: 12px;
+			margin-bottom: 15px;
 
 			&:last-child {
 				margin-bottom: 0;
@@ -150,6 +152,22 @@
 		margin-left: -15px;
 		width: calc(100% + 30px);
 	}
+
+	&.disabled {
+		.slider-js {
+			width: 100%;
+		}
+
+		.slider-btn-js,
+		.slides-number {
+			pointer-events: none;
+			filter: grayscale(1);
+
+			@include tabletBig {
+				opacity: 0;
+			}
+		}
+	}
 }
 
 .idea-section {
@@ -157,11 +175,14 @@
 	padding: 0 40px 30px;
 	display: flex;
 	position: relative;
-	box-shadow: 0 0 20px rgba($color: $black, $alpha: 0.8);
+	box-shadow: 0 -4px 20px rgba($color: $black, $alpha: 0.8);
 	height: 100%;
-	max-height: calc(100% - 29px);
+	max-height: calc(100% - 30px);
+	border-radius: 0 10px 10px 10px;
+	overflow: hidden;
 
 	@include tabletBig {
+		border-radius: 0 0 20px 20px;
 		max-height: none;
 		height: auto;
 		flex-direction: column-reverse;
@@ -206,7 +227,7 @@
 
 .idea-copy {
 	display: inline-block;
-	font-size: 12px;
+	font-size: 13px;
 	color: $textGrey;
 
 	@include tabletBig {
@@ -227,70 +248,38 @@
 	}
 }
 
-.startup-pages {
-	@include tabletBig {
-		max-width: 777px;
-		margin: 0 auto;
-		text-align: center;
-	}
-
-	@include mobile {
-		width: calc(100% + 30px);
-		margin-left: -15px;
-		overflow: hidden;
-
-		.idea-tabs--urls {
-			width: 100%;
-			overflow: auto;
-			padding: 0 15px;
-		}
-	}
-}
-
 .idea-tabs {
 	font-size: 13px;
 	display: flex;
+	width: max-content;
+	overflow: hidden;
 
-	&--lang {
-		position: absolute;
-		top: 0;
-		right: 0;
-		box-shadow: -5px 5px 15px rgba($color: $black, $alpha: 0.6);
-
-		@include tabletBig {
-			width: calc(100% + 80px);
-			margin-left: -40px;
-			margin-bottom: 45px;
-			position: static;
-			box-shadow: 0 5px 15px rgba($color: $black, $alpha: 0.6);
-		}
-
-		@include mobile {
-			width: calc(100% + 30px);
-			margin-left: -15px;
-		}
-
-		.idea-tabs__btn {
-			&:hover {
-				text-shadow: 0 0 0.7px $snow;
-			}
-		}
+	@include tabletBig {
+		width: 100%;
 	}
 
 	&--urls {
 		white-space: nowrap;
 		font-size: 14px;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+		box-shadow: 3px -3px 15px rgba($color: $black, $alpha: 0.6);
 
 		@include tabletBig {
-			margin-top: 20px;
+			max-width: 777px;
+			margin: 20px auto 0;
+			text-align: center;
+			border-top-left-radius: 20px;
+			border-top-right-radius: 20px;
+			box-shadow: 0 -2px 20px rgba($color: $black, $alpha: 0.8);
 		}
 
 		.idea-tabs__btn {
 			text-transform: none;
-			padding: 5px 25px;
+			padding: 6px 30px 5px;
 
 			@include tabletBig {
-				padding: 10px;
+				padding: 11px 10px 10px;
 			}
 
 			&:hover {
@@ -300,17 +289,41 @@
 		}
 	}
 
+	&--lang {
+		position: absolute;
+		top: 0;
+		right: 0;
+		box-shadow: -3px 3px 15px rgba($color: $black, $alpha: 0.6);
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+		overflow: hidden;
+
+		@include tabletBig {
+			max-width: 270px;
+			margin: 30px auto 25px;
+			border-radius: 20px;
+			position: static;
+			box-shadow: 0 2px 15px rgba($color: $black, $alpha: 0.8);
+		}
+
+		.idea-tabs__btn {
+			&:hover {
+				text-shadow: 0 0 0.7px $snow;
+			}
+		}
+	}
+
 	&__btn {
 		background: $black;
 		color: $snow;
-		padding: 4px 15px;
+		padding: 6px 18px;
 		text-transform: uppercase;
 		line-height: normal;
 
 		@include tabletBig {
 			flex-grow: 1;
-			padding-top: 6px;
-			padding-bottom: 6px;
+			padding-top: 7px;
+			padding-bottom: 7px;
 		}
 
 		&.active {
@@ -323,71 +336,81 @@
 
 .startup-title {
 	text-align: center;
-	font-size: 32px;
+	font-size: 31px;
 	letter-spacing: 5px;
 	font-family: $lg-bold;
-	margin-bottom: 45px;
+	margin-bottom: 40px;
 
 	@include tabletBig {
-		display: flex;
-		align-items: center;
-		justify-content: center;
+		margin-bottom: 20px;
+		margin-top: 30px;
+	}
+
+	@include mobile {
+		font-size: 27px;
+	}
+}
+
+.idea-types {
+	margin-bottom: 25px;
+	font-style: italic;
+	font-size: 14px;
+
+	@include mobile {
+		font-size: 12px;
+	}
+}
+
+.block-headline {
+	text-align: right;
+
+	&__top {
+		letter-spacing: 2px;
+		font-weight: bold;
+		font-family: $ui-medium;
 	}
 
 	span {
+		display: inline-block;
+		margin-right: 5px;
+		font-size: 14px;
+		font-weight: bold;
+		font-family: $ui-medium;
+	}
+
+	&__type {
+		color: $snow;
+		margin-bottom: -5px;
+	}
+
+	&__title {
+		font-size: 24px;
+		color: $starYellow;
+		margin-bottom: 8px;
+
 		@include tabletBig {
-			width: min-content;
-			display: block;
+			font-size: 21px;
 		}
 	}
 
-	.tag-color {
-		font-size: 35px;
-		width: 40px;
-		white-space: nowrap;
+	&__subtitle {
+		margin-bottom: 5px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
 	}
 }
 
 .idea-block {
 	line-height: 1.5;
 	font-size: 17px;
-	letter-spacing: 0;
+	letter-spacing: 0.5px;
 	color: $textGrey;
 	margin-bottom: 35px;
 
-	@include mobile {
-		font-size: 1rem;
-	}
-
 	&:last-child {
 		margin-bottom: 0;
-	}
-
-	&__titleBig {
-		font-size: 24px;
-		font-family: $ui-medium;
-		color: $starYellow;
-		letter-spacing: 2px;
-		font-weight: 600;
-		text-align: right;
-
-		@include tabletBig {
-			font-size: 24px;
-		}
-	}
-
-	&__subtitleBig {
-		margin-bottom: 5px;
-
-		&:last-child {
-			margin-bottom: 0;
-		}
-
-		span {
-			font-weight: 600;
-			display: inline-block;
-			margin-right: 5px;
-		}
 	}
 
 	&__title {
@@ -395,15 +418,20 @@
 		font-size: 24px;
 		line-height: normal;
 		font-family: $ui-medium;
-		font-weight: 600;
+		font-weight: bold;
 		margin-bottom: 15px;
 		letter-spacing: 2px;
+
+		@include tabletBig {
+			font-size: 21px;
+		}
 	}
 
 	&__subtitle {
-		font-size: 18px;
+		font-size: 17px;
 		font-family: $ui-medium;
 		color: $titlePink;
+		font-weight: bold;
 		margin: 25px 0 10px;
 		letter-spacing: 1px;
 	}
@@ -413,6 +441,24 @@
 
 		&:last-child {
 			margin-bottom: 0;
+		}
+	}
+
+	a {
+		display: inline;
+		color: $snow;
+
+		span {
+			background-image: linear-gradient(transparent calc(100% - 1px), $snow 1px);
+			background-size: 100%;
+			background-repeat: no-repeat;
+			transition: background-size 0.3s;
+		}
+
+		&:hover {
+			span {
+				background-size: 0;
+			}
 		}
 	}
 
@@ -440,18 +486,6 @@
 			margin-right: 11px;
 			margin-top: 11px;
 		}
-	}
-}
-
-.idea-types {
-	margin-bottom: 15px;
-	margin-top: 10px;
-	font-style: italic;
-	text-align: right;
-	font-size: 15px;
-
-	@include mobile {
-		font-size: 14px;
 	}
 }
 
@@ -484,13 +518,14 @@
 		margin-top: 0;
 		align-items: center;
 		overflow: hidden;
-		height: 300px;
-		background: $black;
-		box-shadow: 0 5px 15px rgba($color: $black, $alpha: 0.6);
+		height: 350px;
+		background-color: $black;
+		box-shadow: 0 2px 15px rgba($color: $black, $alpha: 0.8);
+		border-radius: 20px;
 	}
 
-	@include tabletSmall {
-		height: 205px;
+	@include mobile {
+		height: 210px;
 	}
 }
 
@@ -501,12 +536,15 @@
 	transition: transform 0.4s ease-in;
 	position: relative;
 	overflow: hidden;
-	pointer-events: none;
+	background-color: $black;
+	box-shadow: 0 0 20px rgba($color: $black, $alpha: 0.8);
+	border-radius: 10px;
 
 	@include tabletBig {
 		height: 100%;
 		width: calc(100% - 80px);
 		box-shadow: unset;
+		border-radius: 0;
 	}
 
 	@include mobile {
@@ -522,20 +560,100 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	font-size: 10px;
 	color: $textGrey;
+	z-index: -1;
+	transition: z-index 0.4s ease;
+	color: $snow;
 
-	img {
+	img,
+	video {
+		object-position: center;
 		object-fit: cover;
+		height: 100%;
 		opacity: 0;
+		visibility: hidden;
 		transform: scale(1.3);
-		transition: transform 0.4s ease-out, opacity 0.4s ease;
+		transition: transform 0.4s ease-out, opacity 0.4s ease, visibility 0.4s ease;
+	}
+
+	video {
+		cursor: pointer;
+		object-fit: contain;
 	}
 
 	&[data-active='true'] {
-		img {
+		z-index: 0;
+
+		img,
+		video {
 			transform: scale(1);
 			opacity: 1;
+			visibility: visible;
+		}
+	}
+}
+
+// Video poster preview
+.video-preview {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: $black;
+	cursor: pointer;
+
+	&.disabled {
+		display: none;
+	}
+
+	&:hover {
+		color: $blue-main;
+
+		.video-preview__title {
+			box-shadow: inset 0 -110px 100px rgba($color: $black, $alpha: 0.9);
+		}
+
+		svg {
+			transform: translate(-50%, -50%) scale(1.2);
+		}
+	}
+
+	svg {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%) scale(1);
+		width: 120px;
+		height: 120px;
+
+		@include tablet {
+			width: 60px;
+			height: 60px;
+		}
+	}
+
+	&__title {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		display: flex;
+		align-items: flex-end;
+		width: 100%;
+		height: 100%;
+		padding: 20px;
+		box-shadow: inset 0 -100px 100px rgba($color: $black, $alpha: 0.8);
+		transition: 0.2s;
+
+		@include tablet {
+			padding: 15px;
+			font-size: 14px;
+			box-shadow: inset 0 -90px 50px rgba($color: $black, $alpha: 0.8);
+		}
+
+		@include mobile {
+			font-size: 12px;
 		}
 	}
 }
@@ -548,10 +666,12 @@
 
 	@include tabletBig {
 		position: absolute;
-		top: 0;
-		left: 50%;
-		transform: translateX(-50%);
-		margin: 10px 0 0;
+		bottom: 2px;
+		right: 55px;
+	}
+
+	@include mobile {
+		right: 37px;
 	}
 }
 
@@ -564,15 +684,6 @@
 	@include tabletBig {
 		position: static;
 		margin-top: 0;
-	}
-
-	&.disabled {
-		pointer-events: none;
-
-		.slider-btn-js,
-		.slides-number {
-			filter: grayscale(1);
-		}
 	}
 }
 
@@ -588,8 +699,8 @@
 		&::after {
 			content: '';
 			display: block;
-			width: 80px;
-			height: 100%;
+			width: 30px;
+			height: 65%;
 			position: absolute;
 			top: 0;
 		}
@@ -603,8 +714,8 @@
 		display: block;
 		width: 17px;
 		height: 17px;
-		border: 2px solid $blue-main;
-		border-width: 2px 2px 0 0;
+		border: 3px solid $blue-main;
+		border-width: 3px 3px 0 0;
 
 		@include mobile {
 			width: 13px;

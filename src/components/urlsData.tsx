@@ -14,4 +14,4 @@ export const pathToProjects = '/projects';
 export const pathToStartup = '/startup';
 export const pathToStartupFilms = '/films';
 export const pathToStartupGames = '/games';
-export const pathToStartupArticles = '/articles';
+export const pathToStartupMVP = '/mvp';

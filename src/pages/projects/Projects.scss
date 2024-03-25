@@ -142,9 +142,11 @@
 	z-index: -3;
 	transform: translateY(calc(-100% - 10px)) translateZ(-10px);
 	transition: transform 0.3s ease 0.2s;
-	font-size: 12px;
 
-	@include mobile {
+	@include tabletBig {
+		padding-left: 12px;
+		padding-right: 12px;
+		font-size: 14px;
 		left: 15px;
 		width: calc(100% - 30px);
 	}
@@ -159,12 +161,12 @@
 
 	&-action {
 		display: flex;
-		align-items: center;
+		align-items: baseline;
 		margin-bottom: 5px;
 
 		.nav-link {
-			padding: 3px 7px 3px 9px;
-			margin-left: 35px;
+			padding: 4px 12px;
+			margin-left: 30px;
 		}
 	}
 
@@ -172,20 +174,23 @@
 		color: $blue-main;
 		text-transform: capitalize;
 		font-family: $lg-bold;
-		margin-top: 2px;
 		margin-right: auto;
 	}
 
 	&-items {
 		font-family: $lg;
-		font-size: 11px;
+		font-size: 14px;
+
+		@include tabletBig {
+			font-size: 12px;
+		}
 
 		span {
 			display: inline-block;
 			margin-right: 10px;
 			margin-top: 10px;
 			background-color: rgba($color: $black, $alpha: 0.6);
-			padding: 4px 10px 3px;
+			padding: 5px 10px 3px;
 		}
 	}
 }

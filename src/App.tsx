@@ -8,7 +8,7 @@ import {
 	pathToAbout,
 	pathToProjects,
 	pathToStartupGames,
-	pathToStartupArticles,
+	pathToStartupMVP,
 } from './components/urlsData';
 
 import './styles/App.scss';
@@ -20,10 +20,10 @@ import About from './pages/about/About';
 import Projects from './pages/projects/Projects';
 
 // Startup Pages / Separate Projects
-import StartupMain from './pages/startups/StartupPresentation';
-import StartupFilms from './pages/startups/subpages/Films';
-import StartupGames from './pages/startups/subpages/Games';
-import StartupArticles from './pages/startups/subpages/Articles';
+import Startup from './pages/startups/Startup';
+import StartupFilms from './pages/startups/Films';
+import StartupGames from './pages/startups/Games';
+import StartupMVP from './pages/startups/MVP';
 
 // Routes and pages
 const routesData = [
@@ -41,7 +41,7 @@ const routesData = [
 	},
 	{
 		pathTo: pathToStartup,
-		pageComponent: <StartupMain />,
+		pageComponent: <Startup />,
 	},
 	{
 		pathTo: pathToStartupFilms,
@@ -52,13 +52,14 @@ const routesData = [
 		pageComponent: <StartupGames />,
 	},
 	{
-		pathTo: pathToStartupArticles,
-		pageComponent: <StartupArticles />,
+		pathTo: pathToStartupMVP,
+		pageComponent: <StartupMVP />,
 	},
 ];
 
 const App = () => {
 	const tabletQuery = useTabletQuery();
+
 	useEffect(() => {
 		if (tabletQuery) {
 			let vh = window.innerHeight * 0.01;

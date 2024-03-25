@@ -1,19 +1,18 @@
 import React from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import { pathToStartup, pathToAbout, pathToProjects } from '../urlsData';
-import { startupURLs } from '../../pages/startups/data/startupsURLs';
-import { useTabletQuery, useMobMenuHeightQuery } from '../../hooks/useMediaQuery';
+import { startupsNav } from '../../pages/startups/data/startupsNav';
+import { useTabletQuery } from '../../hooks/useMediaQuery';
 import Socials from '../socials/Socials';
 
 import './Header.scss';
 
 const Header = () => {
 	const tabletQuery = useTabletQuery();
-	const mobMenuHeightQuery = useMobMenuHeightQuery();
 	const [menuOpen, setMenuOpen] = React.useState(false);
 
 	const { pathname } = useLocation();
-	const isActive = startupURLs.some((url) => url.pageLink === pathname);
+	const isActive = startupsNav.some((url) => url.pageLink === pathname);
 
 	const linksData = [
 		{
@@ -85,15 +84,9 @@ const Header = () => {
 						</div>
 
 						<nav className={`pos-abs mobile-menu${menuOpen ? ' open' : ''}`}>
-							<div className='d-flex-c-c'>
-								<div
-									className={`mobile-menu__content ${
-										mobMenuHeightQuery ? 'mobile-menu__content--overflow' : ''
-									}`}
-								>
-									<ul className='nav'>{navLinkItems}</ul>
-									<Socials />
-								</div>
+							<div className={`mobile-menu__content`}>
+								<ul className='nav'>{navLinkItems}</ul>
+								<Socials />
 							</div>
 						</nav>
 					</>
@@ -101,7 +94,7 @@ const Header = () => {
 					<div className='d-flex-c-b'>
 						<LogoNavLink />
 
-						<nav>
+						<nav className='desktop-responsive'>
 							<ul className='nav d-flex-c'>{navLinkItems}</ul>
 						</nav>
 					</div>
