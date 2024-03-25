@@ -449,15 +449,16 @@
 		color: $snow;
 
 		span {
-			background-image: linear-gradient(transparent calc(100% - 1px), $snow 1px);
-			background-size: 100%;
+			background-image: linear-gradient($snow, $snow);
+			background-size: 100% 1px;
 			background-repeat: no-repeat;
+			background-position: left bottom;
 			transition: background-size 0.3s;
 		}
 
 		&:hover {
 			span {
-				background-size: 0;
+				background-size: 0 1px;
 			}
 		}
 	}
