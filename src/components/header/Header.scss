@@ -6,7 +6,7 @@
 	height: 90px;
 	font-size: 18px;
 	letter-spacing: 4px;
-	font-family: $lg-bold;
+	font-family: $LouisGeorgeCafBold;
 
 	@include tablet {
 		height: 80px;
@@ -66,7 +66,7 @@
 	z-index: 1;
 	white-space: nowrap;
 	letter-spacing: 4px;
-	font-family: $lg-bold;
+	font-family: $LouisGeorgeCafBold;
 
 	&:after {
 		content: '';

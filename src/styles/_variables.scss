@@ -1,9 +1,11 @@
-$ui: 'Segoe UI', sans-serif;
-$ui-medium: 'Segoe UI Medium', sans-serif;
-$lg: 'Louis George Caf', sans-serif;
-$lg-bold: 'Louis George Caf Bold', sans-serif;
 $indie: 'Indie Flower', cursive;
 $cs: 'Coming Soon', cursive;
+
+// Refactored
+$LouisGeorgeCaf: 'Louis George Caf', sans-serif;
+$LouisGeorgeCafBold: 'Louis George Caf Bold', sans-serif;
+$Roboto: 'Roboto', sans-serif;
+$Raleway: 'Raleway', sans-serif;
 
 $black: #000000;
 $darken: #202020;
@@ -13,7 +15,7 @@ $darkest: #111111;
 $blue-main: #005cb3;
 $snow: #ffffff;
 $red: #af0303;
-$titlePink: #c99e9e;
+$titlePink: #fbb7a6;
 $textGrey: #bdbdbd;
 $starYellow: #d7ca82;
 

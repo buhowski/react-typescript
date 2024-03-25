@@ -6,7 +6,6 @@ export const filmsTextData = [
 	{
 		section: [
 			{
-				titleType: [{ key: `Тип:`, value: `Серіал` }],
 				titleBig: [{ key: `Назва:`, value: `Європейські Українці` }],
 				subtitleBig: [
 					{ key: `Жанр:`, value: `Комедія, Драма, Чорний гумор` },

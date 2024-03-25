@@ -7,7 +7,7 @@ import { filmsTextData } from './data/films/textData';
 const StartupFilms = () => {
 	return (
 		<IdeaContent
-			title='Startup Ideas'
+			title='Pitch 01. Європейські Українці'
 			textData={filmsTextData}
 			Slider={<Slider dataSlider={dataSlider} />}
 		/>
