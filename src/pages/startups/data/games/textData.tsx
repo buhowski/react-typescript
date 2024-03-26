@@ -29,24 +29,28 @@ export const gamesTextData = [
 					<>
 						Творчість{' '}
 						<TextLink
-							href='https://en.wikipedia.org/wiki/Nikolai_Gogol'
-							text={`Миколи Гоголя`}
+							linkHref='https://en.wikipedia.org/wiki/Nikolai_Gogol'
+							linkName={`Миколи Гоголя`}
 						/>
 						, збірки та повісті:{' '}
 						<TextLink
-							href='https://en.wikipedia.org/wiki/Dead_Souls'
-							text={`Мертві душі`}
+							linkHref='https://en.wikipedia.org/wiki/Dead_Souls'
+							linkName={`Мертві душі`}
 						/>
 						,{' '}
 						<TextLink
-							href='https://en.wikipedia.org/wiki/Evenings_on_a_Farm_Near_Dikanka'
-							text={`Вечори на хуторі біля Диканьки`}
+							linkHref='https://en.wikipedia.org/wiki/Evenings_on_a_Farm_Near_Dikanka'
+							linkName={`Вечори на хуторі біля Диканьки`}
 						/>
-						, <TextLink href='https://en.wikipedia.org/wiki/Viy_(story)' text={`Вій`} />
 						,{' '}
 						<TextLink
-							href='https://en.wikipedia.org/wiki/Taras_Bulba'
-							text={`Тарас Бульба`}
+							linkHref='https://en.wikipedia.org/wiki/Viy_(story)'
+							linkName={`Вій`}
+						/>
+						,{' '}
+						<TextLink
+							linkHref='https://en.wikipedia.org/wiki/Taras_Bulba'
+							linkName={`Тарас Бульба`}
 						/>
 						.
 					</>,
@@ -119,24 +123,28 @@ export const gamesTextData = [
 					<>
 						The works of{' '}
 						<TextLink
-							href='https://en.wikipedia.org/wiki/Nikolai_Gogol'
-							text={`Nikolai Gogol`}
+							linkHref='https://en.wikipedia.org/wiki/Nikolai_Gogol'
+							linkName={`Nikolai Gogol`}
 						/>
 						, collections and novels:{' '}
 						<TextLink
-							href='https://en.wikipedia.org/wiki/Dead_Souls'
-							text={`Dead Souls`}
+							linkHref='https://en.wikipedia.org/wiki/Dead_Souls'
+							linkName={`Dead Souls`}
 						/>
 						,{' '}
 						<TextLink
-							href='https://en.wikipedia.org/wiki/Evenings_on_a_Farm_Near_Dikanka'
-							text={`Evenings on a Farm Near Dikanka`}
+							linkHref='https://en.wikipedia.org/wiki/Evenings_on_a_Farm_Near_Dikanka'
+							linkName={`Evenings on a Farm Near Dikanka`}
 						/>
-						, <TextLink href='https://en.wikipedia.org/wiki/Viy_(story)' text={`Viy`} />
 						,{' '}
 						<TextLink
-							href='https://en.wikipedia.org/wiki/Taras_Bulba'
-							text={`Taras
+							linkHref='https://en.wikipedia.org/wiki/Viy_(story)'
+							linkName={`Viy`}
+						/>
+						,{' '}
+						<TextLink
+							linkHref='https://en.wikipedia.org/wiki/Taras_Bulba'
+							linkName={`Taras
 						Bulba`}
 						/>
 						.
@@ -210,24 +218,28 @@ export const gamesTextData = [
 					<>
 						Творчість{' '}
 						<TextLink
-							href='https://en.wikipedia.org/wiki/Nikolai_Gogol'
-							text={`Миколи Гоголя`}
+							linkHref='https://en.wikipedia.org/wiki/Nikolai_Gogol'
+							linkName={`Миколи Гоголя`}
 						/>
 						, збірки та повісті:{' '}
 						<TextLink
-							href='https://en.wikipedia.org/wiki/Dead_Souls'
-							text={`Мертві душі`}
+							linkHref='https://en.wikipedia.org/wiki/Dead_Souls'
+							linkName={`Мертві душі`}
 						/>
 						,{' '}
 						<TextLink
-							href='https://en.wikipedia.org/wiki/Evenings_on_a_Farm_Near_Dikanka'
-							text={`Вечори на хуторі біля Диканьки`}
+							linkHref='https://en.wikipedia.org/wiki/Evenings_on_a_Farm_Near_Dikanka'
+							linkName={`Вечори на хуторі біля Диканьки`}
 						/>
-						, <TextLink href='https://en.wikipedia.org/wiki/Viy_(story)' text={`Вій`} />
 						,{' '}
 						<TextLink
-							href='https://en.wikipedia.org/wiki/Taras_Bulba'
-							text={`Тарас Бульба`}
+							linkHref='https://en.wikipedia.org/wiki/Viy_(story)'
+							linkName={`Вій`}
+						/>
+						,{' '}
+						<TextLink
+							linkHref='https://en.wikipedia.org/wiki/Taras_Bulba'
+							linkName={`Тарас Бульба`}
 						/>
 						.
 					</>,

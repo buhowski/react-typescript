@@ -1,29 +1,41 @@
 import { TextLink } from '../../PageStructure/IdeaElements';
 
 // Film Industry Page text
+export const filmsHeadlineData = [];
+
 export const filmsTextData = [
 	// ############## rusian ##############
 	{
 		section: [
 			{
-				// pitchNumber: [`Pitch 01`, `Європейські Українці`],
-				// titleFormat: `Епізодичний серіал з загальною сюжетною лінією. Ідея розвитку багатосезонна, тривалість епізоду 30хв. Для стрімінгових платформ.`,
-
-				titleBig: ``,
-				subtitleBig: [
-					{ key: `Жанр:`, value: `Комедія, Драма, Чорний гумор` },
-					{ key: `Аудиторія:`, value: `Підлітки, Дорослі` },
+				// pitchNumber: `Pitch 01`,
+				pitchTitle: `Європейські Українці`,
+				pitchFormatTitle: `Формат:`,
+				pitchFormatText: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora nam sapiente debiti.`,
+				pitchInfo: [
+					{ key: `Жанр: `, value: `Комедія, Драма, Чорний гумор` },
+					{ key: `Аудиторія: `, value: `Підлітки, Дорослі` },
 				],
-				title: `Опис`,
+
+				title: `Огляд`,
 				text: [
 					<>
 						Концепція серіалу – це веселий мікс, навіяний серіалами "It's Always Sunny
 						in Philadelphia" (зразки 01 – 03 у слайдері, або{' '}
-						<TextLink href='https://www.imdb.com/title/tt0472954/' text={`IMDB`} />
+						<TextLink
+							linkHref='https://www.imdb.com/title/tt0472954/'
+							linkName={`IMDB`}
+						/>
 						), "Broad City" (зразок 04 у слайдері, або{' '}
-						<TextLink href='https://www.imdb.com/title/tt2578560/' text={`IMDB`} />
+						<TextLink
+							linkHref='https://www.imdb.com/title/tt2578560/'
+							linkName={`IMDB`}
+						/>
 						), та фільмом "New Kids Turbo" (зразок 05 у слайдері, або{' '}
-						<TextLink href='https://www.imdb.com/title/tt1648112/' text={`IMDB`} />
+						<TextLink
+							linkHref='https://www.imdb.com/title/tt1648112/'
+							linkName={`IMDB`}
+						/>
 						). Приклади відео, для кращого уявлення. Хочу використати це під Український
 						лад, манеру подачі, темпераменти героїв, динамічний стиль комічних ситуацій
 						і непередбачуваність подій. Головне – це відчуття справжності, щоб головні
@@ -103,11 +115,20 @@ export const filmsTextData = [
 					<>
 						The concept of the series is a hilarious mix inspired by shows like "It's
 						Always Sunny in Philadelphia" (samples 01 – 03 in slider, or{' '}
-						<TextLink href='https://www.imdb.com/title/tt0472954/' text={`IMDB`} />
+						<TextLink
+							linkHref='https://www.imdb.com/title/tt0472954/'
+							linkName={`IMDB`}
+						/>
 						), "Broad City" (sample 04 in slider, or{' '}
-						<TextLink href='https://www.imdb.com/title/tt2578560/' text={`IMDB`} />
+						<TextLink
+							linkHref='https://www.imdb.com/title/tt2578560/'
+							linkName={`IMDB`}
+						/>
 						), and the "New Kids Turbo" movie (sample 05 in slider, or{' '}
-						<TextLink href='https://www.imdb.com/title/tt1648112/' text={`IMDB`} />
+						<TextLink
+							linkHref='https://www.imdb.com/title/tt1648112/'
+							linkName={`IMDB`}
+						/>
 						). Examples of videos are provided in the slider for better understanding. I
 						want to use it in a Ukrainian way, a close similar style of presentation,
 						character temperaments, dynamic style of comedic situations, and
@@ -189,11 +210,20 @@ export const filmsTextData = [
 					<>
 						Концепція серіалу – це веселий мікс, навіяний серіалами "It's Always Sunny
 						in Philadelphia" (зразки 01 – 03 у слайдері, або{' '}
-						<TextLink href='https://www.imdb.com/title/tt0472954/' text={`IMDB`} />
+						<TextLink
+							linkHref='https://www.imdb.com/title/tt0472954/'
+							linkName={`IMDB`}
+						/>
 						), "Broad City" (зразок 04 у слайдері, або{' '}
-						<TextLink href='https://www.imdb.com/title/tt2578560/' text={`IMDB`} />
+						<TextLink
+							linkHref='https://www.imdb.com/title/tt2578560/'
+							linkName={`IMDB`}
+						/>
 						), та фільмом "New Kids Turbo" (зразок 05 у слайдері, або{' '}
-						<TextLink href='https://www.imdb.com/title/tt1648112/' text={`IMDB`} />
+						<TextLink
+							linkHref='https://www.imdb.com/title/tt1648112/'
+							linkName={`IMDB`}
+						/>
 						). Приклади відео, для кращого уявлення. Хочу використати це під Український
 						лад, манеру подачі, темпераменти героїв, динамічний стиль комічних ситуацій
 						і непередбачуваність подій. Головне – це відчуття справжності, щоб головні

@@ -1,57 +1,38 @@
 import React from 'react';
+import { Block } from '../data/textTypes';
 
-// Subtitle h3 item
-interface TitleProps {
-	title: string | { key: string; value: string }[];
+export const Headline: React.FC<Block> = ({ pitchNumber, pitchTitle }) => {
+	return (
+		<div className='headline h2'>
+			{/* <p className='headline__number'>{pitchNumber}</p> */}
+
+			<Title titleClassname='headline__title' title={pitchTitle} />
+		</div>
+	);
+};
+
+// Title item
+interface TitleProps extends Block {
 	titleClassname?: string;
 }
 
 export const Title: React.FC<TitleProps> = ({ title, titleClassname }) => {
-	if (typeof title === 'string') {
-		return <h2 className={`${titleClassname}`}>{title}</h2>;
-	} else {
-		return (
-			<>
-				{title.map(({ key, value }, i) => (
-					<h2 key={i} className={`${titleClassname}`}>
-						<span>{key}</span>
-						{value}
-					</h2>
-				))}
-			</>
-		);
-	}
+	return <h2 className={`${titleClassname} h2`}>{title}</h2>;
 };
 
-// Paragraph in text data
-interface TitleTypeProps {
-	titleType: { key: string; value: string }[];
-}
-
-export const TitleType: React.FC<TitleTypeProps> = ({ titleType }) => {
-	return (
-		<>
-			{titleType.map(({ key, value }, i) => (
-				<h3 className='block-headline__type' key={i}>
-					<span>{key}</span>
-					{value}
-				</h3>
-			))}
-		</>
-	);
+// Subtitle item
+export const Subtitle: React.FC<Block> = ({ subtitle }) => {
+	return <h3 className='idea-block__subtitle h2'>{subtitle}</h3>;
 };
 
-// Paragraph in text data
-interface SubtitleBigProps {
-	subtitleBig: { key: string; value: string }[];
-}
-
-export const SubtitleBig: React.FC<SubtitleBigProps> = ({ subtitleBig }) => {
+// Pitch information, genre / etc.
+export const PitchInfo: React.FC<Block> = ({ pitchInfo }) => {
 	return (
-		<div className='idea-types'>
-			{subtitleBig.map(({ key, value }, i) => (
-				<h4 className='block-headline__subtitle' key={i}>
+		<div className='headline-types'>
+			{pitchInfo?.map(({ key, value }, i) => (
+				<h4 className='headline-types__title' key={i}>
 					<span>{key}</span>
+
 					{value}
 				</h4>
 			))}
@@ -60,16 +41,11 @@ export const SubtitleBig: React.FC<SubtitleBigProps> = ({ subtitleBig }) => {
 };
 
 // TextLinkProps
-interface TextLinkProps {
-	href?: string;
-	text?: string;
-}
-
-export const TextLink: React.FC<TextLinkProps> = ({ href, text }) => {
+export const TextLink: React.FC<Block> = ({ linkHref, linkName }) => {
 	return (
 		<>
-			<a href={href} target='_blank' rel='noopener noreferrer' title={href}>
-				<span>{text}</span>
+			<a href={linkHref} target='_blank' rel='noopener noreferrer' title={linkHref}>
+				<span>{linkName}</span>
 			</a>
 
 			{/* TODO: maybe make good preview for links */}
@@ -78,21 +54,8 @@ export const TextLink: React.FC<TextLinkProps> = ({ href, text }) => {
 	);
 };
 
-// Subtitle h3 item
-interface SubtitleProps {
-	subtitle: string;
-}
-
-export const Subtitle: React.FC<SubtitleProps> = ({ subtitle }) => {
-	return <h3 className='idea-block__subtitle'>{subtitle}</h3>;
-};
-
 // Paragraph in text data
-interface TextProps {
-	text: string | string[] | JSX.Element[];
-}
-
-export const Text: React.FC<TextProps> = ({ text }) => {
+export const Text: React.FC<Block> = ({ text }) => {
 	const renderedText = Array.isArray(text) ? text : [text];
 
 	return (
@@ -107,12 +70,8 @@ export const Text: React.FC<TextProps> = ({ text }) => {
 };
 
 // List ul in text structure
-interface ListProps {
-	items: string[] | JSX.Element[];
-}
-
-export const List: React.FC<ListProps> = ({ items }) => {
-	const renderedList = Array.isArray(items) ? items : [items];
+export const List: React.FC<Block> = ({ listItems }) => {
+	const renderedList = Array.isArray(listItems) ? listItems : [listItems];
 
 	return (
 		<ul>
@@ -126,10 +85,6 @@ export const List: React.FC<ListProps> = ({ items }) => {
 };
 
 // Last Words element
-interface LastWordsProps {
-	lastWords: string;
-}
-
-export const LastWords: React.FC<LastWordsProps> = ({ lastWords }) => {
+export const LastWords: React.FC<Block> = ({ lastWords }) => {
 	return <p className='last-words'>{lastWords}</p>;
 };

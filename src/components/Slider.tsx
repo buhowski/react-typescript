@@ -109,7 +109,7 @@ const Slider: React.FC<SliderProps> = ({ dataSlider }) => {
 						<i className='chevron'></i>
 					</button>
 
-					<span className='slides-number'>
+					<span className='slides-number h2'>
 						{`${activeIndex + 1 < 10 ? '0' : ''}${activeIndex + 1} / ${
 							dataSlider.length < 10 ? '0' : ''
 						}${dataSlider.length}`}

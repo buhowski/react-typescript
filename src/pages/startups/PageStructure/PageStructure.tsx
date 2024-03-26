@@ -10,13 +10,13 @@ import Copyright from '../../../components/Copyright';
 import { startupsNav } from '../data/startupsNav';
 import { Block } from '../data/textTypes';
 import {
+	Headline,
+	Title,
+	PitchInfo,
 	Text,
 	Subtitle,
-	Title,
 	List,
-	SubtitleBig,
 	LastWords,
-	// TitleType,
 } from './IdeaElements';
 
 // Define interfaces for better type safety
@@ -29,62 +29,67 @@ interface PageProps {
 	title: string;
 	textData: TextStructure[];
 	Slider: JSX.Element;
+	pageClassName?: string;
 }
 
-const PageStructure: React.FC<PageProps> = ({ title, textData, Slider }) => {
+const PageStructure: React.FC<PageProps> = ({
+	title,
+	textData,
+	Slider,
+	pageClassName,
+}) => {
 	const useTabletLarge = useTabletLargeQuery();
 	const [currentTab, setCurrentTab] = useState<string>('');
-
-	// Function to render text section
-	const renderTextSection = (structure: TextStructure) => {
-		return structure.section.map((block: Block, blockIndex) => (
-			<div className='idea-block' key={blockIndex}>
-				<div className='block-headline'>
-					<div className='block-headline__top'>
-						{/* {block.titleNumber && <TitleType titleType={block.titleNumber} />} */}
-
-						{block.titleBig && (
-							<Title titleClassname='block-headline__title' title={block.titleBig} />
-						)}
-					</div>
-
-					{block.subtitleBig && <SubtitleBig subtitleBig={block.subtitleBig} />}
-				</div>
-
-				{block.title && (
-					<Title titleClassname='idea-block__title' title={block.title} />
-				)}
-
-				{block.text && <Text text={block.text} />}
-
-				{block.subtitle && <Subtitle subtitle={block.subtitle} />}
-
-				{block.list && <List items={block.list} />}
-
-				{block.subtitle2 && <Subtitle subtitle={block.subtitle2} />}
-
-				{block.list2 && <List items={block.list2} />}
-
-				{block.subtitle3 && <Subtitle subtitle={block.subtitle3} />}
-
-				{block.text2 && <Text text={block.text2} />}
-
-				{block.subtitle4 && <Subtitle subtitle={block.subtitle4} />}
-
-				{block.text3 && <Text text={block.text3} />}
-			</div>
-		));
-	};
 
 	// Render text items
 	const renderTextItems = () => {
 		return textData.map((structure: TextStructure, index) => (
-			<div key={index}>
-				{renderTextSection(structure)}
+			<div key={index} className='pitch-container'>
+				{/* Text Section */}
+				{structure.section.map((block: Block, blockIndex) => (
+					<div className='idea-block' key={blockIndex}>
+						{block.pitchTitle && (
+							<Headline pitchNumber={block.pitchNumber} pitchTitle={block.pitchTitle} />
+						)}
+
+						{block.pitchFormatTitle && <Subtitle subtitle={block.pitchFormatTitle} />}
+
+						{block.pitchFormatText && <Text text={block.pitchFormatText} />}
+
+						{block.pitchInfo && <PitchInfo pitchInfo={block.pitchInfo} />}
+
+						{useTabletLarge && blockIndex === 0 && Slider}
+
+						{block.title && (
+							<Title titleClassname='idea-block__title' title={block.title} />
+						)}
+
+						{block.text && <Text text={block.text} />}
+
+						{block.subtitle && <Subtitle subtitle={block.subtitle} />}
+
+						{block.list && <List listItems={block.list} />}
+
+						{block.subtitle2 && <Subtitle subtitle={block.subtitle2} />}
+
+						{block.list2 && <List listItems={block.list2} />}
+
+						{block.subtitle3 && <Subtitle subtitle={block.subtitle3} />}
+
+						{block.text2 && <Text text={block.text2} />}
+
+						{block.subtitle4 && <Subtitle subtitle={block.subtitle4} />}
+
+						{block.text3 && <Text text={block.text3} />}
+					</div>
+				))}
 
 				<LastWords lastWords={structure.lastWords} />
 
 				{useTabletLarge && <Copyright />}
+
+				{/* contacts info */}
+				<div className='copy-tablet'>{useTabletLarge && <PopupContacts />}</div>
 			</div>
 		));
 	};
@@ -121,7 +126,7 @@ const PageStructure: React.FC<PageProps> = ({ title, textData, Slider }) => {
 	}, []);
 
 	return (
-		<div className='wrapper wrapper--idea'>
+		<div className={`wrapper wrapper--idea ${pageClassName}`}>
 			<div className='idea-tabs idea-tabs--urls'>
 				{startupsNav.map(({ pageLink, pageName }, i) => (
 					<NavLink to={pageLink} end className={`idea-tabs__btn`} key={i}>
@@ -131,9 +136,6 @@ const PageStructure: React.FC<PageProps> = ({ title, textData, Slider }) => {
 			</div>
 
 			<div className='idea-section'>
-				{/* contacts info */}
-				{useTabletLarge && <PopupContacts />}
-
 				<div className='idea-info'>
 					{/* language tabs */}
 					<div className='idea-tabs idea-tabs--lang'>
@@ -151,18 +153,21 @@ const PageStructure: React.FC<PageProps> = ({ title, textData, Slider }) => {
 
 					{/* Tabs content */}
 					{useTabletLarge ? (
-						tabs.map((tab) => (
-							<div key={tab.id} className='idea-content'>
-								{currentTab === tab.id && tab.content}
-							</div>
-						))
+						<>
+							{title && <h1 className='startup-title h2'>{title}</h1>}
+							{tabs.map((tab) => (
+								<div key={tab.id} className='idea-content'>
+									{currentTab === tab.id && tab.content}
+								</div>
+							))}
+						</>
 					) : (
 						// For Desktop custom scrollbar
 						<SimpleBar
-							style={{ height: '100%', paddingRight: '35px' }}
+							style={{ height: '100%', paddingRight: '30px' }}
 							autoHide={false}
 						>
-							{title && <h1 className='startup-title'>{title}</h1>}
+							{title && <h1 className='startup-title h2'>{title}</h1>}
 
 							{tabs.map((tab) => (
 								<div key={tab.id} className='idea-content desktop-responsive'>
@@ -174,9 +179,9 @@ const PageStructure: React.FC<PageProps> = ({ title, textData, Slider }) => {
 				</div>
 
 				{/* Desktop Slider */}
-				{Slider}
+				<div className='desktop-slider'>{!useTabletLarge && Slider}</div>
 
-				{useTabletLarge && title && <h1 className='startup-title'>{title}</h1>}
+				{/* {useTabletLarge && title && <h1 className='startup-title h2'>{title}</h1>} */}
 			</div>
 		</div>
 	);

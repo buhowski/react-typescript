@@ -76,13 +76,14 @@
 	font-weight: 500;
 
 	@include tabletBig {
-		margin-top: 25px;
+		margin-top: 30px;
+		line-height: 1.3;
 	}
 
 	&__list {
 		user-select: text;
 		position: absolute;
-		bottom: 44px;
+		bottom: 47px;
 		left: 50%;
 		transform: translateX(-50%);
 		box-shadow: 0px 4px 10px rgba($color: $black, $alpha: 0.6);
@@ -148,6 +149,7 @@
 	@include tabletBig {
 		margin-left: -40px;
 		width: calc(100% + 80px);
+		margin-bottom: 25px;
 	}
 
 	@include mobile {
@@ -235,7 +237,7 @@
 
 	@include tabletBig {
 		font-size: 15px;
-		margin-top: 35px;
+		margin-top: 40px;
 		margin-right: unset;
 	}
 
@@ -270,10 +272,10 @@
 
 		@include tabletBig {
 			max-width: 777px;
-			margin: 20px auto 30px;
+			margin: 25px auto 30px;
 			text-align: center;
 			border-radius: 20px;
-			box-shadow: 0 0 20px rgba($color: $black, $alpha: 0.8);
+			box-shadow: 0 -2px 15px rgba($color: $black, $alpha: 0.8);
 		}
 
 		.idea-tabs__btn {
@@ -318,7 +320,7 @@
 
 		@include tabletBig {
 			max-width: 270px;
-			margin: 30px auto 25px;
+			margin: 25px auto 30px;
 			border-radius: 20px;
 			position: static;
 			box-shadow: 0 2px 15px rgba($color: $black, $alpha: 0.8);
@@ -356,55 +358,50 @@
 .startup-title {
 	text-align: center;
 	font-size: 29px;
-	letter-spacing: 3px;
-	font-family: $Raleway;
-	font-weight: 500;
-	margin-bottom: 40px;
+	margin-bottom: 30px;
 	color: $starYellow;
 
 	@include tabletBig {
-		margin-top: 25px;
-		margin-bottom: 20px;
+		margin-top: 30px;
+		margin-bottom: 0;
 	}
 }
 
-.idea-types {
-	margin-bottom: 25px;
+.startup-ideas {
+	.startup-title {
+		margin-bottom: 0;
+		// text-align: right;
+		// color: $textGrey;
+		// margin: 5px 0;
+		// font-weight: 600;
+		// font-size: 21px;
+
+		// @include tabletBig {
+		// 	text-align: center;
+		// }
+	}
+}
+
+.headline {
+	&__title {
+		font-size: 29px;
+		color: $starYellow;
+		text-align: center;
+	}
+}
+
+.headline-types {
+	margin-bottom: 30px;
 	font-style: italic;
 	font-size: 14px;
+	font-family: $Raleway;
 
-	@include mobile {
-		font-size: 12px;
-	}
-}
-
-.block-headline {
-	&__type {
-		color: $snow;
-		margin-bottom: -5px;
-		font-size: 18px;
+	&__title:not(:last-child) {
+		margin-bottom: 3px;
 	}
 
-	&__title {
-		font-size: 24px;
-		color: $starYellow;
-		margin-bottom: 8px;
-		letter-spacing: 3px;
-		font-family: $Raleway;
-		font-weight: 600;
-		text-align: center;
-
-		@include tabletBig {
-			font-size: 21px;
-		}
-	}
-
-	&__subtitle {
-		margin-bottom: 5px;
-
-		&:last-child {
-			margin-bottom: 0;
-		}
+	span {
+		font-weight: bold;
 	}
 }
 
@@ -428,11 +425,7 @@
 	&__title {
 		color: $blue-main;
 		font-size: 24px;
-		line-height: normal;
-		font-family: $Raleway;
-		font-weight: 600;
 		margin-bottom: 15px;
-		letter-spacing: 3px;
 
 		@include tabletBig {
 			font-size: 21px;
@@ -440,8 +433,6 @@
 	}
 
 	&__subtitle {
-		font-family: $Raleway;
-		font-weight: 500;
 		color: $titlePink;
 		margin: 25px 0 10px;
 		letter-spacing: 2px;
@@ -538,7 +529,7 @@
 	}
 
 	@include mobile {
-		height: 210px;
+		height: 200px;
 	}
 }
 
@@ -677,10 +668,9 @@
 
 .slides-number {
 	color: $blue-main;
-	font-family: $Raleway;
 	font-weight: 600;
 	margin: 0 5px;
-	min-width: 63px;
+	min-width: 80px;
 	text-align: center;
 
 	@include tabletBig {
@@ -692,7 +682,7 @@
 	}
 
 	@include mobile {
-		right: 37px;
+		right: 35px;
 	}
 }
 
@@ -884,5 +874,20 @@
 		width: 6px;
 		border-radius: 10px;
 		background: $darkest;
+	}
+}
+
+// TODO: preloads on mobile / removing useless
+.desktop-slider {
+	display: flex;
+	width: 100%;
+}
+
+@include tabletBig {
+	[data-simplebar],
+	.desktop-slider,
+	.slider-with-btn .copy-tablet,
+	.slider-with-btn .idea-contacts {
+		display: none;
 	}
 }
