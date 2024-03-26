@@ -285,15 +285,17 @@
 			font-size: 15px;
 
 			@include tabletBig {
-				padding: 10px 2px;
+				padding: 10px 2px 9px;
+				font-size: 14px;
 			}
 
 			&.active {
 				font-size: 17px;
 				letter-spacing: 1px;
 
-				@include mobile {
-					letter-spacing: 2px;
+				@include tabletBig {
+					letter-spacing: 1px;
+					font-size: 16px;
 				}
 			}
 
@@ -337,7 +339,7 @@
 		line-height: normal;
 
 		@include tabletBig {
-			width: 100%;
+			// width: 100%;
 			flex-grow: 1;
 			padding-top: 7px;
 			padding-bottom: 7px;
@@ -361,12 +363,8 @@
 	color: $starYellow;
 
 	@include tabletBig {
+		margin-top: 25px;
 		margin-bottom: 20px;
-		margin-top: 20px;
-	}
-
-	@include mobile {
-		font-size: 24px;
 	}
 }
 
