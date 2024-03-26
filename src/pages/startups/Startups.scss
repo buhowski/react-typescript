@@ -287,6 +287,7 @@
 			font-size: 15px;
 
 			@include tabletBig {
+				align-items: center;
 				padding: 10px 2px 9px;
 				font-size: 14px;
 			}
@@ -317,6 +318,7 @@
 		border-bottom-left-radius: 10px;
 		border-bottom-right-radius: 10px;
 		overflow: hidden;
+		font-family: $LouisGeorgeCafBold;
 
 		@include tabletBig {
 			max-width: 270px;
@@ -341,7 +343,7 @@
 		line-height: normal;
 
 		@include tabletBig {
-			// width: 100%;
+			width: 100%;
 			flex-grow: 1;
 			padding-top: 7px;
 			padding-bottom: 7px;
@@ -369,21 +371,26 @@
 
 .startup-ideas {
 	.startup-title {
+		font-family: $LouisGeorgeCafBold;
 		margin-bottom: 0;
-		// text-align: right;
-		// color: $textGrey;
-		// margin: 5px 0;
-		// font-weight: 600;
-		// font-size: 21px;
+		font-size: 16px;
+		text-align: right;
+		margin: 5px 0 10px;
+		// TODO: need color pitch number
+		color: $textGrey;
 
-		// @include tabletBig {
-		// 	text-align: center;
-		// }
+		@include tabletBig {
+			text-align: center;
+			margin-top: 35px;
+			font-size: 18px;
+		}
 	}
 }
 
 .headline {
 	&__title {
+		margin-top: -5px;
+		margin-bottom: 25px;
 		font-size: 29px;
 		color: $starYellow;
 		text-align: center;
@@ -391,7 +398,7 @@
 }
 
 .headline-types {
-	margin-bottom: 30px;
+	margin-bottom: 25px;
 	font-style: italic;
 	font-size: 14px;
 	font-family: $Raleway;
@@ -412,7 +419,7 @@
 .idea-block {
 	font-size: 18px;
 	color: $textGrey;
-	margin-bottom: 35px;
+	margin-bottom: 30px;
 
 	@include mobile {
 		font-size: 17px;
@@ -552,7 +559,7 @@
 	}
 
 	@include mobile {
-		width: calc(100% - 56px);
+		width: calc(100% - 60px);
 	}
 }
 
@@ -710,7 +717,7 @@
 		&::after {
 			content: '';
 			display: block;
-			width: 30px;
+			width: 20px;
 			height: 65%;
 			position: absolute;
 			top: 0;
@@ -729,8 +736,8 @@
 		border-width: 3px 3px 0 0;
 
 		@include mobile {
-			width: 13px;
-			height: 13px;
+			width: 16px;
+			height: 16px;
 		}
 	}
 
@@ -878,6 +885,13 @@
 }
 
 // TODO: preloads on mobile / removing useless
+
+.language-disable {
+	.idea-tabs__btn.ru {
+		display: none;
+	}
+}
+
 .desktop-slider {
 	display: flex;
 	width: 100%;

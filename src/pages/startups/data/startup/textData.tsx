@@ -3,6 +3,8 @@ export const startupTextData = [
 	// ############## RUSIAN ##############
 	{
 		section: [
+			// pitchTitle: `Live long, die fast...`,
+
 			// Mission
 			{
 				title: `Цель`,

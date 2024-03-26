@@ -22,5 +22,4 @@ export interface Block {
 	linkName?: string;
 
 	lastWords?: string;
-	sliderCheck?: boolean;
 }
