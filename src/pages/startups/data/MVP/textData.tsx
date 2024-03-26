@@ -4,8 +4,9 @@ export const articlesTextData = [
 	{
 		section: [
 			{
-				titleBig: `a slap in the face to stunted development, a dance of contradictions, a symphony of irony, truth and dirty realism...`,
-				title: `coming soon...`,
+				pitchTitle: `Live long, die fast...`,
+				title: `a slap in the face to stunted development, a dance of contradictions, a symphony of irony, truth and dirty realism`,
+				subtitle: `coming soon...`,
 			},
 		],
 
@@ -19,8 +20,9 @@ export const articlesTextData = [
 	{
 		section: [
 			{
-				titleBig: `a slap in the face to stunted development, a dance of contradictions, a symphony of irony, truth and dirty realism...`,
-				title: `coming soon...`,
+				pitchTitle: `Live long, die fast...`,
+				title: `a slap in the face to stunted development, a dance of contradictions, a symphony of irony, truth and dirty realism`,
+				subtitle: `coming soon...`,
 			},
 		],
 
@@ -34,8 +36,9 @@ export const articlesTextData = [
 	{
 		section: [
 			{
-				titleBig: `a slap in the face to stunted development, a dance of contradictions, a symphony of irony, truth and dirty realism...`,
-				title: `coming soon...`,
+				pitchTitle: `Live long, die fast...`,
+				title: `a slap in the face to stunted development, a dance of contradictions, a symphony of irony, truth and dirty realism`,
+				subtitle: `coming soon...`,
 			},
 		],
 

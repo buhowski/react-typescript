@@ -120,6 +120,7 @@
 }
 
 .project-name {
+	font-family: $Raleway;
 	font-size: 1.5rem;
 	line-height: 1.4;
 	letter-spacing: 3.2px;
@@ -173,12 +174,13 @@
 	&-title {
 		color: $blue-main;
 		text-transform: capitalize;
-		font-family: $lg-bold;
+		font-family: $LouisGeorgeCaf;
+
 		margin-right: auto;
 	}
 
 	&-items {
-		font-family: $lg;
+		font-family: $LouisGeorgeCaf;
 		font-size: 14px;
 
 		@include tabletBig {

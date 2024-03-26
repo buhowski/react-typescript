@@ -9,7 +9,7 @@
 
 .wrapper--idea {
 	position: relative;
-	padding-bottom: 30px;
+	padding-bottom: 35px;
 	height: calc(100% - 90px);
 
 	@include tabletBig {
@@ -72,15 +72,18 @@
 	display: inline-block;
 	margin: auto auto 0;
 	width: max-content;
+	font-family: $LouisGeorgeCaf;
+	font-weight: 500;
 
 	@include tabletBig {
-		margin-top: 25px;
+		margin-top: 30px;
+		line-height: 1.3;
 	}
 
 	&__list {
 		user-select: text;
 		position: absolute;
-		bottom: 44px;
+		bottom: 47px;
 		left: 50%;
 		transform: translateX(-50%);
 		box-shadow: 0px 4px 10px rgba($color: $black, $alpha: 0.6);
@@ -146,6 +149,7 @@
 	@include tabletBig {
 		margin-left: -40px;
 		width: calc(100% + 80px);
+		margin-bottom: 25px;
 	}
 
 	@include mobile {
@@ -172,17 +176,17 @@
 
 .idea-section {
 	background: $darker;
-	padding: 0 40px 30px;
+	padding: 0 40px 35px;
 	display: flex;
 	position: relative;
 	box-shadow: 0 -4px 20px rgba($color: $black, $alpha: 0.8);
 	height: 100%;
-	max-height: calc(100% - 30px);
+	max-height: calc(100% - 35px);
 	border-radius: 0 10px 10px 10px;
 	overflow: hidden;
 
 	@include tabletBig {
-		border-radius: 0 0 20px 20px;
+		border-radius: 20px;
 		max-height: none;
 		height: auto;
 		flex-direction: column-reverse;
@@ -227,11 +231,13 @@
 
 .idea-copy {
 	display: inline-block;
-	font-size: 13px;
+	font-size: 14px;
 	color: $textGrey;
+	font-family: $LouisGeorgeCafBold;
 
 	@include tabletBig {
-		margin-top: 35px;
+		font-size: 15px;
+		margin-top: 40px;
 		margin-right: unset;
 	}
 
@@ -249,10 +255,10 @@
 }
 
 .idea-tabs {
-	font-size: 13px;
 	display: flex;
 	width: max-content;
 	overflow: hidden;
+	font-family: $LouisGeorgeCaf;
 
 	@include tabletBig {
 		width: 100%;
@@ -260,26 +266,40 @@
 
 	&--urls {
 		white-space: nowrap;
-		font-size: 14px;
 		border-top-left-radius: 10px;
 		border-top-right-radius: 10px;
 		box-shadow: 3px -3px 15px rgba($color: $black, $alpha: 0.6);
 
 		@include tabletBig {
 			max-width: 777px;
-			margin: 20px auto 0;
+			margin: 25px auto 30px;
 			text-align: center;
-			border-top-left-radius: 20px;
-			border-top-right-radius: 20px;
-			box-shadow: 0 -2px 20px rgba($color: $black, $alpha: 0.8);
+			border-radius: 20px;
+			box-shadow: 0 -2px 15px rgba($color: $black, $alpha: 0.8);
 		}
 
 		.idea-tabs__btn {
 			text-transform: none;
-			padding: 6px 30px 5px;
+			padding: 7px 30px;
+			display: flex;
+			align-items: flex-end;
+			justify-content: center;
+			font-size: 15px;
 
 			@include tabletBig {
-				padding: 11px 10px 10px;
+				align-items: center;
+				padding: 10px 2px 9px;
+				font-size: 14px;
+			}
+
+			&.active {
+				font-size: 17px;
+				letter-spacing: 1px;
+
+				@include tabletBig {
+					letter-spacing: 1px;
+					font-size: 16px;
+				}
 			}
 
 			&:hover {
@@ -290,6 +310,7 @@
 	}
 
 	&--lang {
+		font-size: 13px;
 		position: absolute;
 		top: 0;
 		right: 0;
@@ -297,10 +318,11 @@
 		border-bottom-left-radius: 10px;
 		border-bottom-right-radius: 10px;
 		overflow: hidden;
+		font-family: $LouisGeorgeCafBold;
 
 		@include tabletBig {
 			max-width: 270px;
-			margin: 30px auto 25px;
+			margin: 25px auto 30px;
 			border-radius: 20px;
 			position: static;
 			box-shadow: 0 2px 15px rgba($color: $black, $alpha: 0.8);
@@ -321,6 +343,7 @@
 		line-height: normal;
 
 		@include tabletBig {
+			width: 100%;
 			flex-grow: 1;
 			padding-top: 7px;
 			padding-bottom: 7px;
@@ -329,95 +352,78 @@
 		&.active {
 			background: $blue-main;
 			text-shadow: 0 0 0.7px $snow;
-			font-weight: bold;
+			font-family: $LouisGeorgeCafBold;
 		}
 	}
 }
 
 .startup-title {
 	text-align: center;
-	font-size: 31px;
-	letter-spacing: 5px;
-	font-family: $lg-bold;
-	margin-bottom: 40px;
+	font-size: 29px;
+	margin-bottom: 30px;
+	color: $starYellow;
 
 	@include tabletBig {
-		margin-bottom: 20px;
 		margin-top: 30px;
-	}
-
-	@include mobile {
-		font-size: 27px;
+		margin-bottom: 0;
 	}
 }
 
-.idea-types {
+.startup-ideas {
+	.startup-title {
+		font-family: $LouisGeorgeCafBold;
+		margin-bottom: 0;
+		font-size: 16px;
+		text-align: right;
+		margin: 5px 0 10px;
+		// TODO: need color pitch number
+		color: $textGrey;
+
+		@include tabletBig {
+			text-align: center;
+			margin-top: 35px;
+			font-size: 18px;
+		}
+	}
+}
+
+.headline {
+	&__title {
+		margin-top: -5px;
+		margin-bottom: 25px;
+		font-size: 29px;
+		color: $starYellow;
+		text-align: center;
+	}
+}
+
+.headline-types {
 	margin-bottom: 25px;
 	font-style: italic;
 	font-size: 14px;
+	font-family: $Raleway;
 
-	@include mobile {
-		font-size: 12px;
+	&__title:not(:last-child) {
+		margin-bottom: 3px;
+	}
+
+	span {
+		font-weight: bold;
 	}
 }
 
-.block-headline {
-	text-align: right;
-
-	span {
-		display: inline-block;
-		margin-right: 5px;
-		font-weight: bold;
-		font-family: $ui-medium;
-	}
-
-	&__top {
-		letter-spacing: 2px;
-		font-weight: bold;
-		font-family: $ui-medium;
-
-		span {
-			font-size: 12px;
-			margin-right: 8px;
-			vertical-align: top;
-		}
-	}
-
-	&__type {
-		color: $snow;
-		margin-bottom: -5px;
-		font-size: 18px;
-
-		span {
-			margin-top: -2px;
-		}
-	}
-
-	&__title {
-		font-size: 24px;
-		color: $starYellow;
-		margin-bottom: 8px;
-
-		@include tabletBig {
-			font-size: 21px;
-		}
-	}
-
-	&__subtitle {
-		margin-bottom: 5px;
-
-		&:last-child {
-			margin-bottom: 0;
-		}
-	}
+.idea-content {
+	line-height: 1.5;
 }
 
 .idea-block {
-	line-height: 1.5;
-	font-size: 17px;
-	letter-spacing: 0.5px;
+	font-size: 18px;
 	color: $textGrey;
-	margin-bottom: 35px;
+	margin-bottom: 30px;
+
+	@include mobile {
+		font-size: 17px;
+	}
 
 	&:last-child {
 		margin-bottom: 0;
@@ -426,11 +432,7 @@
 	&__title {
 		color: $blue-main;
 		font-size: 24px;
-		line-height: normal;
-		font-family: $ui-medium;
-		font-weight: bold;
 		margin-bottom: 15px;
-		letter-spacing: 2px;
 
 		@include tabletBig {
 			font-size: 21px;
@@ -438,12 +440,9 @@
 	}
 
 	&__subtitle {
-		font-size: 17px;
-		font-family: $ui-medium;
 		color: $titlePink;
-		font-weight: bold;
 		margin: 25px 0 10px;
-		letter-spacing: 1px;
+		letter-spacing: 2px;
 	}
 
 	&__text {
@@ -501,12 +500,13 @@
 }
 
 .last-words {
-	line-height: normal;
 	text-align: right;
+	font-family: $Raleway;
 	font-style: italic;
 	margin-top: 45px;
-	font-size: 14px;
+	font-size: 15px;
 	white-space: pre-line;
+	line-height: normal;
 
 	span {
 		display: block;
@@ -536,7 +536,7 @@
 	}
 
 	@include mobile {
-		height: 210px;
+		height: 200px;
 	}
 }
 
@@ -559,7 +559,7 @@
 	}
 
 	@include mobile {
-		width: calc(100% - 56px);
+		width: calc(100% - 60px);
 	}
 }
 
@@ -674,19 +674,22 @@
 }
 
 .slides-number {
-	font-size: 12px;
 	color: $blue-main;
-	font-weight: bold;
+	font-weight: 600;
 	margin: 0 5px;
+	min-width: 80px;
+	text-align: center;
 
 	@include tabletBig {
+		font-size: 14px;
 		position: absolute;
 		bottom: 2px;
 		right: 55px;
+		min-width: unset;
 	}
 
 	@include mobile {
-		right: 37px;
+		right: 35px;
 	}
 }
 
@@ -710,12 +713,11 @@
 		top: 0;
 		height: 100%;
 		background-color: $black;
-		overflow: hidden;
 
 		&::after {
 			content: '';
 			display: block;
-			width: 30px;
+			width: 20px;
 			height: 65%;
 			position: absolute;
 			top: 0;
@@ -728,14 +730,14 @@
 
 	.chevron {
 		display: block;
-		width: 17px;
-		height: 17px;
+		width: 18px;
+		height: 18px;
 		border: 3px solid $blue-main;
 		border-width: 3px 3px 0 0;
 
 		@include mobile {
-			width: 13px;
-			height: 13px;
+			width: 16px;
+			height: 16px;
 		}
 	}
 
@@ -879,5 +881,27 @@
 		width: 6px;
 		border-radius: 10px;
 		background: $darkest;
+	}
+}
+
+// TODO: preloads on mobile / removing useless
+
+.language-disable {
+	.idea-tabs__btn.ru {
+		display: none;
+	}
+}
+
+.desktop-slider {
+	display: flex;
+	width: 100%;
+}
+
+@include tabletBig {
+	[data-simplebar],
+	.desktop-slider,
+	.slider-with-btn .copy-tablet,
+	.slider-with-btn .idea-contacts {
+		display: none;
 	}
 }
