@@ -18,13 +18,13 @@ export const gamesTextData = [
 			{
 				// pitchNumber: `Pitch 01`,
 				pitchTitle: `The Sich / Cossacks RPG`,
-				pitchFormatTitle: `Style / Setting:`,
-				pitchFormatText: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis voluptate tempore vel voluptatem eum quibusdam.`,
 				pitchInfo: [
+					{ key: `Type: `, value: `Sitcom for streaming platforms` },
 					{ key: `Genre: `, value: `Action/RPG` },
 					{ key: `Platforms: `, value: `PC, PS5` },
 				],
-
+			},
+			{
 				title: `Description`,
 				text: [
 					`The concept of my idea is to combine real historical events of the Ukrainian Cossacks with Slavic myths and mysticism from the literary works of Nikolai Gogol (ideas, themes, and atmosphere). To imagine my vision of the game's visuals, you need to take the Zaporozhian Cossacks (images 03 – 08) and combine them with the graphic style of videos 01 - 02, but with its own theme, textures, and innovations.`,
@@ -111,8 +111,6 @@ export const gamesTextData = [
 			{
 				// pitchNumber: `Pitch 01`,
 				pitchTitle: `Січ / Козаки РПГ`,
-				pitchFormatTitle: `Style / Setting:`,
-				pitchFormatText: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae praesentium corrupti quibusdam molestias enim!`,
 				pitchInfo: [
 					{ key: `Genre: `, value: `Action/RPG` },
 					{ key: `Platforms: `, value: `PC, PS5` },

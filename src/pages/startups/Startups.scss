@@ -14,7 +14,7 @@
 
 	@include tabletBig {
 		height: auto;
-		padding-bottom: 45px;
+		padding-bottom: 55px;
 	}
 }
 
@@ -150,6 +150,7 @@
 		margin-left: -40px;
 		width: calc(100% + 80px);
 		margin-bottom: 25px;
+		margin-top: 30px;
 	}
 
 	@include mobile {
@@ -179,7 +180,7 @@
 	padding: 0 40px 35px;
 	display: flex;
 	position: relative;
-	box-shadow: 0 -4px 20px rgba($color: $black, $alpha: 0.8);
+	box-shadow: 0 -4px 15px rgba($color: $black, $alpha: 0.8);
 	height: 100%;
 	max-height: calc(100% - 35px);
 	border-radius: 0 10px 10px 10px;
@@ -193,7 +194,7 @@
 		max-width: 777px;
 		width: 100%;
 		margin: 0 auto;
-		padding-bottom: 45px;
+		padding-bottom: 55px;
 	}
 
 	@include mobile {
@@ -275,7 +276,7 @@
 			margin: 25px auto 30px;
 			text-align: center;
 			border-radius: 20px;
-			box-shadow: 0 -2px 15px rgba($color: $black, $alpha: 0.8);
+			box-shadow: 0 0 10px rgba($color: $black, $alpha: 0.8);
 		}
 
 		.idea-tabs__btn {
@@ -325,7 +326,7 @@
 			margin: 25px auto 30px;
 			border-radius: 20px;
 			position: static;
-			box-shadow: 0 2px 15px rgba($color: $black, $alpha: 0.8);
+			box-shadow: 0 0 10px rgba($color: $black, $alpha: 0.8);
 		}
 
 		.idea-tabs__btn {
@@ -400,7 +401,7 @@
 .headline-types {
 	margin-bottom: 25px;
 	font-style: italic;
-	font-size: 14px;
+	font-size: 15px;
 	font-family: $Raleway;
 
 	&__title:not(:last-child) {
@@ -531,7 +532,7 @@
 		overflow: hidden;
 		height: 350px;
 		background-color: $black;
-		box-shadow: 0 2px 15px rgba($color: $black, $alpha: 0.8);
+		box-shadow: 0 0 10px rgba($color: $black, $alpha: 0.8);
 		border-radius: 20px;
 	}
 
@@ -548,7 +549,7 @@
 	position: relative;
 	overflow: hidden;
 	background-color: $black;
-	box-shadow: 0 0 20px rgba($color: $black, $alpha: 0.8);
+	box-shadow: 0 0 15px rgba($color: $black, $alpha: 0.8);
 	border-radius: 10px;
 
 	@include tabletBig {
@@ -748,7 +749,7 @@
 	&-next {
 		@include tabletBig {
 			border-radius: 0 20px 20px 0;
-			box-shadow: -3px 0 15px rgba($color: $black, $alpha: 0.8);
+			box-shadow: -4px -5px 10px rgba($color: $black, $alpha: 0.8);
 
 			right: 0;
 
@@ -772,7 +773,7 @@
 		@include tabletBig {
 			border-radius: 20px 0 0 20px;
 			left: 0;
-			box-shadow: 3px 0 15px rgba($color: $black, $alpha: 0.8);
+			box-shadow: 4px -5px 10px rgba($color: $black, $alpha: 0.8);
 
 			&::after {
 				left: 100%;

@@ -55,12 +55,12 @@ const PageStructure: React.FC<PageProps> = ({
 							<Headline pitchNumber={block.pitchNumber} pitchTitle={block.pitchTitle} />
 						)}
 
-						{block.pitchFormatTitle && <Subtitle subtitle={block.pitchFormatTitle} />}
-
-						{block.pitchFormatText && <Text text={block.pitchFormatText} />}
-
 						{block.pitchInfo && <PitchInfo pitchInfo={block.pitchInfo} />}
 
+						{block.loglineTitle && (
+							<Title titleClassname='idea-block__title' title={block.loglineTitle} />
+						)}
+						{block.loglineText && <Text text={block.loglineText} />}
 						{useTabletLarge && blockIndex === 0 && Slider}
 
 						{block.title && (
@@ -84,6 +84,25 @@ const PageStructure: React.FC<PageProps> = ({
 						{block.subtitle4 && <Subtitle subtitle={block.subtitle4} />}
 
 						{block.text3 && <Text text={block.text3} />}
+
+						{/* Films  */}
+						{block.character01Title && <Subtitle subtitle={block.character01Title} />}
+						{block.charackter01List && <List listItems={block.charackter01List} />}
+
+						{block.character02Title && <Subtitle subtitle={block.character02Title} />}
+						{block.charackter02List && <List listItems={block.charackter02List} />}
+
+						{block.character03Title && <Subtitle subtitle={block.character03Title} />}
+						{block.charackter03List && <List listItems={block.charackter03List} />}
+
+						{block.character04Title && <Subtitle subtitle={block.character04Title} />}
+						{block.charackter04List && <List listItems={block.charackter04List} />}
+
+						{block.character05Title && <Subtitle subtitle={block.character05Title} />}
+						{block.charackter05List && <List listItems={block.charackter05List} />}
+
+						{block.character06Title && <Subtitle subtitle={block.character06Title} />}
+						{block.charackter06List && <List listItems={block.charackter06List} />}
 					</div>
 				))}
 
@@ -95,55 +114,6 @@ const PageStructure: React.FC<PageProps> = ({
 				<div className='copy-tablet'>{useTabletLarge && <PopupContacts />}</div>
 			</div>
 		));
-		// return textData.map((structure: TextStructure, index) => (
-		// 	<div key={index} className='pitch-container'>
-		// 		{/* Text Section */}
-		// 		{structure.section.map((block: Block, blockIndex) => (
-		// 			<div className='idea-block' key={blockIndex}>
-		// 				{block.pitchTitle && (
-		// 					<Headline pitchNumber={block.pitchNumber} pitchTitle={block.pitchTitle} />
-		// 				)}
-
-		// 				{block.pitchFormatTitle && <Subtitle subtitle={block.pitchFormatTitle} />}
-
-		// 				{block.pitchFormatText && <Text text={block.pitchFormatText} />}
-
-		// 				{block.pitchInfo && <PitchInfo pitchInfo={block.pitchInfo} />}
-
-		// 				{useTabletLarge && blockIndex === 0 && Slider}
-
-		// 				{block.title && (
-		// 					<Title titleClassname='idea-block__title' title={block.title} />
-		// 				)}
-
-		// 				{block.text && <Text text={block.text} />}
-
-		// 				{block.subtitle && <Subtitle subtitle={block.subtitle} />}
-
-		// 				{block.list && <List listItems={block.list} />}
-
-		// 				{block.subtitle2 && <Subtitle subtitle={block.subtitle2} />}
-
-		// 				{block.list2 && <List listItems={block.list2} />}
-
-		// 				{block.subtitle3 && <Subtitle subtitle={block.subtitle3} />}
-
-		// 				{block.text2 && <Text text={block.text2} />}
-
-		// 				{block.subtitle4 && <Subtitle subtitle={block.subtitle4} />}
-
-		// 				{block.text3 && <Text text={block.text3} />}
-		// 			</div>
-		// 		))}
-
-		// 		<LastWords lastWords={structure.lastWords} />
-
-		// 		{useTabletLarge && <Copyright />}
-
-		// 		{/* contacts info */}
-		// 		<div className='copy-tablet'>{useTabletLarge && <PopupContacts />}</div>
-		// 	</div>
-		// ));
 	};
 
 	// Handle tab click using localStorage for persistence
