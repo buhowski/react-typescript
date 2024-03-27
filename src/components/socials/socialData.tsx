@@ -1,5 +1,5 @@
 import { urlGitHub, urlLinkedIn, urlTelegram } from '../urlsData';
-import urlCV from '../../assets/CV_Alexander_Tsiomakh_Frontend.pdf';
+import urlCV from '../../assets/CV_Alexander_Tsiomakh_FrontEnd.pdf';
 
 const socialData = [
 	{
