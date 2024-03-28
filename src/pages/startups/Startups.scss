@@ -625,7 +625,7 @@
 		color: $blue-main;
 
 		.video-preview__title {
-			box-shadow: inset 0 -140px 100px rgba($color: $black, $alpha: 0.9);
+			box-shadow: inset 0 -100px 100px rgba($color: $black, $alpha: 0.9);
 		}
 
 		img {
@@ -663,13 +663,13 @@
 		width: 100%;
 		height: 100%;
 		padding: 20px;
-		box-shadow: inset 0 -110px 80px rgba($color: $black, $alpha: 0.8);
+		box-shadow: inset 0 -200px 110px rgba($color: $black, $alpha: 0.8);
 		transition: 0.4s ease-out;
 
 		@include tablet {
 			padding: 15px;
 			font-size: 14px;
-			box-shadow: inset 0 -130px 60px rgba($color: $black, $alpha: 0.8);
+			box-shadow: inset 0 -130px 70px rgba($color: $black, $alpha: 0.8);
 		}
 
 		@include mobile {
