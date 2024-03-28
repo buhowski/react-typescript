@@ -85,7 +85,7 @@
 		bottom: 47px;
 		left: 50%;
 		transform: translateX(-50%);
-		box-shadow: 0px 4px 10px rgba($color: $black, $alpha: 0.6);
+		box-shadow: 0 0 6px rgba($color: $black, $alpha: 0.8);
 		border-radius: 10px;
 		background-color: rgba($color: $black, $alpha: 0.9);
 		color: $textGrey;
@@ -276,7 +276,7 @@
 			margin: 10px auto 25px;
 			text-align: center;
 			border-radius: 20px;
-			box-shadow: 0 0 10px rgba($color: $black, $alpha: 0.8);
+			box-shadow: 0 0 5px rgba($color: $black, $alpha: 0.8);
 		}
 
 		.idea-tabs__btn {
@@ -323,10 +323,10 @@
 
 		@include tabletBig {
 			max-width: 270px;
-			margin: 30px auto 35px;
+			margin: 25px auto 30px;
 			border-radius: 20px;
 			position: static;
-			box-shadow: 0 0 10px rgba($color: $black, $alpha: 0.8);
+			box-shadow: 0 0 5px rgba($color: $black, $alpha: 0.8);
 		}
 
 		.idea-tabs__btn {
@@ -533,7 +533,7 @@
 		overflow: hidden;
 		height: 350px;
 		background-color: $black;
-		box-shadow: 0 0 10px rgba($color: $black, $alpha: 0.8);
+		box-shadow: 0 0 5px rgba($color: $black, $alpha: 0.8);
 		border-radius: 20px;
 	}
 
