@@ -1,9 +1,22 @@
+import { TextLink } from '../../PageStructure/IdeaElements';
+import {
+	pathToStartupMVP,
+	pathToStartupFilms,
+	pathToStartupGames,
+} from '../../../../components/urlsData';
 // Texts for startup page / Main Startup Presentation
 export const startupTextData = [
 	// ############## RUSIAN ##############
 	{
 		section: [
-			// pitchTitle: `Live long, die fast...`,
+			{
+				loglineTitle: `Предисловие`,
+				loglineText: [
+					`У меня есть масштабное видение целой картины – создание огромной корпорации, которая стремится улучшить развитие сфер, которые в этом нуждаются. Пазлы этой картины – это мои разнообразные самостоятельные проекты, которые я хочу монетизировать и прибыль вкладывать в создание собственных технологий, открывая двери всем, кто стремится к аналогичному.`,
+
+					`Все презентации отдельных проектов будут доступны в навигации. А логика создания целостной картины доступна ниже.`,
+				],
+			},
 
 			// Mission
 			{
@@ -47,9 +60,22 @@ export const startupTextData = [
 			{
 				title: `Конкретика`,
 				text: [
-					`Ведения журнала и шаги – этапы стратегии – это мои отдельные проекты, которые я могу презентовать. Разрабатывается контент специально под отдельную целевую аудиторию, поднимаются имеющиеся проблемы, предоставляются наглядные примеры решений, привлекается аудитории.`,
-
-					`Ключевые продукты индустрии – этапы производства – это тоже мои отдельные сценарии проектов, которые я могу презентовать. В наличии есть сериал, мультсериал, компьютерная игра. Что, для начала, позволит популяризироваться для Украинской аудитории и впоследствии выйти на международный рынок с презентациями будущих проектов для мировых кинофестивалей и игровых выставок.`,
+					<>
+						Ведения журнала и шаги – этапы стратегии – это мои отдельные проекты, будут
+						появляться здесь: <TextLink linkHref={pathToStartupMVP} linkName={`MVP`} />.
+						Разрабатывается контент специально под отдельную целевую аудиторию,
+						поднимаются имеющиеся проблемы, предоставляются наглядные примеры решений,
+						привлекается аудитории.
+					</>,
+					<>
+						Ключевые продукты индустрии – этапы производства – это тоже мои отдельные
+						сценарии проектов, презентации здесь:{' '}
+						<TextLink linkHref={pathToStartupFilms} linkName={`Кино`} />,{' '}
+						<TextLink linkHref={pathToStartupGames} linkName={`Видеоигры`} />. Это, для
+						начала, позволит популяризироваться для Украинской аудитории и впоследствии
+						выйти на международный рынок с презентациями будущих проектов для мировых
+						кинофестивалей и игровых выставок.
+					</>,
 				],
 				subtitle: `Что я могу дать:`,
 				list: [
@@ -128,6 +154,15 @@ export const startupTextData = [
 	// ############## ENGLISH ##############
 	{
 		section: [
+			{
+				loglineTitle: `Preface`,
+				loglineText: [
+					`I have a large-scale vision of the whole picture – creating a large corporation that strives to improve the development of areas that need it. The puzzles of this picture are my various independent projects, which I want to monetize and invest profits into creating its own technologies, opening doors to all those who aspire to do the same.`,
+
+					`All presentations of individual projects will be available in the navigation. And the logic of creating a holistic picture is available below.`,
+				],
+			},
+
 			// Mission
 			{
 				title: `Mission`,
@@ -170,9 +205,23 @@ export const startupTextData = [
 			{
 				title: `Details`,
 				text: [
-					`Magazine management and steps – the strategy stages – are my separate projects that I can present. Content is developed specifically for the individual target audience, existing problems are raised, clear examples of solutions are provided, and the audience is engaged.`,
-
-					`Key industry products – the production stages – are also my separate projects scripts that I can present. There is a TV series, an animated series, and a video game. Which, initially, will allow popularizing for the Ukrainian audience and then enter the international market with presentations of future projects for global film festivals and game expos.`,
+					<>
+						Magazine management and steps – the strategy stages – are my separate
+						projects that will appear here:{' '}
+						<TextLink linkHref={pathToStartupMVP} linkName={`MVP`} />. Content is
+						developed specifically for the individual target audience, existing problems
+						are raised, clear examples of solutions are provided, and the audience is
+						engaged.
+					</>,
+					<>
+						Key industry products – the production stages – are also my separate
+						projects scripts, which are presented here:{' '}
+						<TextLink linkHref={pathToStartupFilms} linkName={`Films`} />,{' '}
+						<TextLink linkHref={pathToStartupGames} linkName={`Video Games`} />. This,
+						initially, will allow popularizing for the Ukrainian audience and then enter
+						the international market with presentations of future projects for global
+						film festivals and game expos.
+					</>,
 				],
 				subtitle: `What I can offer:`,
 				list: [
@@ -248,6 +297,15 @@ export const startupTextData = [
 	// ############## UKRAINE ##############
 	{
 		section: [
+			{
+				loglineTitle: `Передмова`,
+				loglineText: [
+					`Я маю масштабне бачення цілої картини – створення величезної корпорації, яка прагне поліпшити розвиток сфер, які цього потребують. Пазли цієї картини – це мої різноманітні самостійні проекти, які я хочу монетизувати і прибуток вкладати в створення власних технологій, відкриваючи двері усім, хто прагне аналогічного.`,
+
+					`Всі презентації окремих проектів будуть доступними в навігації. А логіка створення цілісної картини доступна нижче.`,
+				],
+			},
+
 			// Mission
 			{
 				title: `Ціль`,
@@ -290,9 +348,22 @@ export const startupTextData = [
 			{
 				title: `Конкретика`,
 				text: [
-					`Ведення журналу та кроки – етапи стратегії – це мої окремі проекти, які я можу презентувати. Розробляється контент спеціально під окрему цільову аудиторію, піднімаються наявні проблеми, надаються наглядні приклади рішень, залучається аудиторія.`,
-
-					`Ключові продукти індустрії – етапи виробництва – це теж мої окремі сценарії проектів, які я можу презентувати. В наявності є серіал, мультсеріал, комп'ютерна гра. Що, для початку, дозволить популяризуватися для Української аудиторії і згодом вийти на міжнародний ринок з презентаціями майбутніх проектів для світових кінофестивалів та ігрових виставок.`,
+					<>
+						Ведення журналу та кроки – етапи стратегії – це мої окремі проекти,
+						з'являтимуться тут:{' '}
+						<TextLink linkHref={pathToStartupMVP} linkName={`MVP`} />. Розробляється
+						контент спеціально під окрему цільову аудиторію, піднімаються наявні
+						проблеми, надаються наглядні приклади рішень, залучається аудиторія.
+					</>,
+					<>
+						Ключові продукти індустрії – етапи виробництва – це теж мої окремі сценарії
+						проектів, презентації тут:{' '}
+						<TextLink linkHref={pathToStartupFilms} linkName={`Кіно`} />,{' '}
+						<TextLink linkHref={pathToStartupGames} linkName={`Відеоігри`} />. Це, для
+						початку, дозволить популяризуватися для Української аудиторії і згодом вийти
+						на міжнародний ринок з презентаціями майбутніх проектів для світових
+						кінофестивалів та ігрових виставок.
+					</>,
 				],
 				subtitle: `Що я можу надати:`,
 				list: [

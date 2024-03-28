@@ -20,14 +20,13 @@ export const dataSlider = [
 	{
 		itemPoster: witcherPoster,
 		itemSrc: witcherTrailer,
-		itemAlt:
-			'Sample 01. The Witcher 3: Wild Hunt (is based on the book series of the same name by Polish writer). For Visual Imagenations.',
+		itemAlt: 'Sample 01. For Visual Imagenations. The Witcher 3: Wild Hunt.',
 	},
 	{
 		itemPoster: samuraiPoster,
 		itemSrc: ghostOfTsushimaTrailer,
 		itemAlt:
-			'Sample 02. Ghost of Tsushima (about the last samurai on the island of Tsushima during the first Mongol invasion of Japan in 1274). For Visual Imagenations.',
+			'Sample 02. For Visual Imagenations. Ghost of Tsushima (about the last samurai on the island of Tsushima during the first Mongol invasion of Japan).',
 	},
 	{
 		itemSrc: cossacksPoster,
@@ -42,7 +41,7 @@ export const dataSlider = [
 	{
 		itemSrc: combatHopak,
 		itemAlt: defaultAlt,
-		itemTitle: `05. Cossacks Combat Dance - Hopak.`,
+		itemTitle: `05. Cossacks Combat Dance - Hopak (almost).`,
 	},
 	{
 		itemSrc: cossackCharakternyk,

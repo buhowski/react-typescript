@@ -18,22 +18,41 @@ export const gamesTextData = [
 			{
 				// pitchNumber: `Pitch 01`,
 				pitchTitle: `The Sich / Cossacks RPG`,
-				pitchFormatTitle: `Style / Setting:`,
-				pitchFormatText: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis voluptate tempore vel voluptatem eum quibusdam.`,
 				pitchInfo: [
-					{ key: `Genre: `, value: `Action/RPG` },
-					{ key: `Platforms: `, value: `PC, PS5` },
+					{
+						key: `Format: `,
+						value: `An adventure role-playing video game with an open world and a third-person view, high detailed environment and characters`,
+					},
+					{ key: `Genre: `, value: `Action RPG, Stealth` },
+					{
+						key: `Setting: `,
+						value: `Ukraine of the 16th - 18th centuries, Zaporozhian Sich`,
+					},
+					{ key: `Platforms: `, value: `PC, PS5, Xbox` },
 				],
-
-				title: `Description`,
+				title: `Logline`,
+				text: `A mighty Zaporozhian Cossack with a tragic past and the unexplored potential of otherworldly powers  travels through cities, trying to unravel the mysteries of a fascinating mystical story and his own past, which intertwines real historical facts with mythology and demonology, dynamic comedy and drama.`,
+			},
+			{
+				title: `Overview`,
 				text: [
-					`The concept of my idea is to combine real historical events of the Ukrainian Cossacks with Slavic myths and mysticism from the literary works of Nikolai Gogol (ideas, themes, and atmosphere). To imagine my vision of the game's visuals, you need to take the Zaporozhian Cossacks (images 03 – 08) and combine them with the graphic style of videos 01 - 02, but with its own theme, textures, and innovations.`,
+					`The concept of my idea is to combine real historical events of the Ukrainian Cossacks with Slavic myths and mysticism from the literary works of Nikolai Gogol (ideas, themes, and atmosphere). To imagine my vision of the game's visuals, you need to take the Zaporozhian Cossacks (images 03-08) and combine them with the graphic style of videos 01-02, but with its own theme, textures, and innovations.`,
 
 					`The result will be a game that brings to life the history of the Ukrainian Cossacks and the Zaporozhian Sich. My goal is to popularize a new vision of that period and show the images of different Cossacks in a new style. Openly depicting the whole essence of that era – bloody battles, cruelty, betrayal, untold legends, and explicit scenes. It will also show the famous hopak dance, humor, and endless landscapes.`,
 				],
 				subtitle: `Inspiration:`,
 				list: [
-					<>Games The Witcher 3: Wild Hunt and Ghost of Tsushima.</>,
+					<>
+						<TextLink
+							linkHref='https://en.wikipedia.org/wiki/The_Witcher_(video_game_series)'
+							linkName={`The Witcher game series`}
+						/>{' '}
+						and{' '}
+						<TextLink
+							linkHref='https://en.wikipedia.org/wiki/Ghost_of_Tsushima'
+							linkName={`Ghost of Tsushima`}
+						/>
+					</>,
 					<>
 						The works of{' '}
 						<TextLink
@@ -110,24 +129,40 @@ export const gamesTextData = [
 		section: [
 			{
 				// pitchNumber: `Pitch 01`,
-				pitchTitle: `Січ / Козаки РПГ`,
-				pitchFormatTitle: `Style / Setting:`,
-				pitchFormatText: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae praesentium corrupti quibusdam molestias enim!`,
+				pitchTitle: `Січ / Козаки RPG`,
 				pitchInfo: [
-					{ key: `Genre: `, value: `Action/RPG` },
-					{ key: `Platforms: `, value: `PC, PS5` },
+					{
+						key: `Формат: `,
+						value: `Пригодницька рольова відеогра з відкритим світом і видом від третьої особи, високою деталізацією середовище та персонажів`,
+					},
+					{ key: `Жанр: `, value: `Action RPG, Стелс` },
+					{ key: `Сетінг: `, value: `Україна XVI – XVIII століття, Запорозька Січ` },
+					{ key: `Платформи: `, value: `PC, PS5, Xbox` },
 				],
-
-				title: `Опис`,
+				title: `Логлайн`,
+				text: `Могутній Запорозький Козак з трагічним минулим і нерозгаданим потенціалом потойбічних сил подорожує містами, намагаючись розкрити таємниці захоплюючої містичної історії та власного минулого, де переплетені реальні історичні факти, міфологія та демонологія, динамічна комедія та драма.`,
+			},
+			{
+				title: `Огляд`,
 				text: [
-					`Концепт моєї ідеї полягає в поєднанні реальних історичних подій Українського Козацтва зі Слов'янськими міфами та містикою літературної творчості Миколи Гоголя (ідеї, теми та атмосфера). Для того щоб уявити моє бачення картини гри, потрібно взяти Запорозьких Козаків (картинки 03 – 08) і поєднати у графічний супровід з відео 01 - 02, але з власною тематикою, текстурами і нововведеннями.`,
+					`Концепт моєї ідеї полягає в поєднанні реальних історичних подій Українського Козацтва зі Слов'янськими міфами та містикою літературної творчості Миколи Гоголя (ідеї, теми та атмосфера). Для того щоб уявити моє бачення картини гри, потрібно взяти Запорозьких Козаків (картинки 03-08) і поєднати у графічний супровід з відео 01- 02, але з власною тематикою, текстурами і нововведеннями.`,
 
 					`Получиться гра, яка оживляє історію Українських Козаків та Запорозької Січі. Маю на меті популяризацію нового бачення того періоду, та показати образи різних Козаків у новому стилі. Відверто зображуючи всю суть тієї епохи – криваві бої, жорстокість, зраду, нерозказані легенди та відверті сцени. Також показати славнозвісний бойовий танець гопак, гумор і безкраї краєвиди.`,
 				],
 				subtitle: `Натхнення:`,
 				list: [
-					<>Ігри The Witcher 3: Wild Hunt та Ghost of Tsushima.</>,
-
+					<>
+						Ігрова серія{' '}
+						<TextLink
+							linkHref='https://en.wikipedia.org/wiki/The_Witcher_(video_game_series)'
+							linkName={`The Witcher`}
+						/>{' '}
+						and{' '}
+						<TextLink
+							linkHref='https://en.wikipedia.org/wiki/Ghost_of_Tsushima'
+							linkName={`Ghost of Tsushima`}
+						/>
+					</>,
 					<>
 						Творчість{' '}
 						<TextLink

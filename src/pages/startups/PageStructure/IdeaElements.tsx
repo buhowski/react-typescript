@@ -42,10 +42,15 @@ export const PitchInfo: React.FC<Block> = ({ pitchInfo }) => {
 };
 
 // TextLinkProps
-export const TextLink: React.FC<Block> = ({ linkHref, linkName }) => {
+export const TextLink: React.FC<Block> = ({ linkHref, linkName, linkTarget }) => {
 	return (
 		<>
-			<a href={linkHref} target='_blank' rel='noopener noreferrer' title={linkHref}>
+			<a
+				href={linkHref}
+				target={linkTarget ? linkTarget : '_blank'}
+				rel='noopener noreferrer'
+				title={linkHref}
+			>
 				<span>{linkName}</span>
 			</a>
 
