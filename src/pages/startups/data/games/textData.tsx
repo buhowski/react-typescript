@@ -30,8 +30,8 @@ export const gamesTextData = [
 					},
 					{ key: `Platforms: `, value: `PC, PS5, Xbox` },
 				],
-				title: `Logline`,
-				text: `A mighty Zaporozhian Cossack with a tragic past and the unexplored potential of otherworldly powers  travels through cities, trying to unravel the mysteries of a fascinating mystical story and his own past, which intertwines real historical facts with mythology and demonology, dynamic comedy and drama.`,
+				loglineTitle: `Logline`,
+				loglineText: `A mighty Zaporozhian Cossack with a tragic past and the unexplored potential of otherworldly powers  travels through cities, trying to unravel the mysteries of a fascinating mystical story and his own past, which intertwines real historical facts with mythology and demonology, dynamic comedy and drama.`,
 			},
 			{
 				title: `Overview`,
@@ -139,9 +139,10 @@ export const gamesTextData = [
 					{ key: `Сетінг: `, value: `Україна XVI – XVIII століття, Запорозька Січ` },
 					{ key: `Платформи: `, value: `PC, PS5, Xbox` },
 				],
-				title: `Логлайн`,
-				text: `Могутній Запорозький Козак з трагічним минулим і нерозгаданим потенціалом потойбічних сил подорожує містами, намагаючись розкрити таємниці захоплюючої містичної історії та власного минулого, де переплетені реальні історичні факти, міфологія та демонологія, динамічна комедія та драма.`,
+				loglineTitle: `Логлайн`,
+				loglineText: `Могутній Запорозький Козак з трагічним минулим і нерозгаданим потенціалом потойбічних сил подорожує містами, намагаючись розкрити таємниці захоплюючої містичної історії та власного минулого, де переплетені реальні історичні факти, міфологія та демонологія, динамічна комедія та драма.`,
 			},
+
 			{
 				title: `Огляд`,
 				text: [

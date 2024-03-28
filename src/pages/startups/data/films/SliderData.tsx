@@ -18,7 +18,7 @@ export const dataSlider = [
 	{
 		itemPoster: teaserPoster,
 		itemSrc: teaserVideo,
-		itemAlt: `Sample 01. From "It's Always Sunny in Philadelphia".`,
+		itemAlt: `Sample 01. From "It's Always Sunny in Philadelphia" – promo.`,
 	},
 	{
 		itemPoster: classicSetupPoster,
@@ -33,12 +33,12 @@ export const dataSlider = [
 	{
 		itemPoster: broadCityPoster,
 		itemSrc: broadCityTrailer,
-		itemAlt: `Sample 04. From "Broad City" Trailer.`,
+		itemAlt: `Sample 04. From "Broad City" – promo.`,
 	},
 	{
 		itemPoster: turboKidsPoster,
 		itemSrc: newKidsTurboTrailer,
-		itemAlt: `Sample 05. From "New Kids Turbo".`,
+		itemAlt: `Sample 05. From "New Kids Turbo" – trailer.`,
 	},
 	{
 		itemPoster: fantasyPoster,
