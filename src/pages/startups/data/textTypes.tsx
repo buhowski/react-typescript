@@ -35,6 +35,7 @@ export interface Block {
 
 	linkHref?: string;
 	linkName?: string;
+	linkTarget?: string;
 
 	lastWords?: string;
 }

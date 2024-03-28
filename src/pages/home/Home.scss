@@ -36,7 +36,7 @@
 	width: 40%;
 
 	@include tabletBig {
-		margin-bottom: 80px;
+		margin-bottom: 55px;
 	}
 
 	@include tabletSmall {
@@ -113,7 +113,8 @@ canvas {
 		display: none;
 	}
 
-	canvas {
+	canvas,
+	.illustrationImage {
 		position: absolute;
 		top: 0;
 		left: 0;
