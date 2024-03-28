@@ -81,8 +81,8 @@ const Slider: React.FC<SliderProps> = ({ dataSlider }) => {
 										onClick={() => playVideo(index)}
 									>
 										<img src={itemPoster} alt={itemAlt} />
-										<p className='video-preview__title'>{itemAlt}</p>
 										{playIcon}
+										<p className='video-preview__title'>{itemAlt}</p>
 									</div>
 								</>
 							) : (

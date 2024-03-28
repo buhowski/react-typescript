@@ -22,8 +22,8 @@ export const filmsTextData = [
 				pitchInfo: [
 					{ key: `Format: `, value: `Sitcom for streaming platforms` },
 					{ key: `Genre: `, value: `Comedy, Drama, Dark Humor` },
-					{ key: `Duration: `, value: `20-40 minutes` },
-					{ key: `Audience: `, value: `Teenagers, Adults` },
+					{ key: `Duration: `, value: `20-40 minutes episode` },
+					{ key: `Audience: `, value: `Teens, Adults` },
 				],
 				loglineTitle: `Logline`,
 				loglineText: `A group of young people challenge the absurd realities of the system on their path to self-development. With self-irony and dark humor, they navigate the world around them to avoid going crazy. Thanks to their friendship and support, they try to find their place in society, constantly getting into comedic situations.`,

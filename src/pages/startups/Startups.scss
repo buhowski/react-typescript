@@ -14,7 +14,7 @@
 
 	@include tabletBig {
 		height: auto;
-		padding-bottom: 55px;
+		padding-bottom: 60px;
 	}
 }
 
@@ -194,7 +194,8 @@
 		max-width: 777px;
 		width: 100%;
 		margin: 0 auto;
-		padding-bottom: 55px;
+		padding-bottom: 60px;
+		box-shadow: 0 0 10px rgba($color: $black, $alpha: 0.8);
 	}
 
 	@include mobile {
@@ -273,7 +274,7 @@
 
 		@include tabletBig {
 			max-width: 777px;
-			margin: 25px auto 30px;
+			margin: 25px auto;
 			text-align: center;
 			border-radius: 20px;
 			box-shadow: 0 0 10px rgba($color: $black, $alpha: 0.8);
@@ -645,8 +646,8 @@
 		height: 120px;
 
 		@include tablet {
-			width: 60px;
-			height: 60px;
+			width: 90px;
+			height: 90px;
 		}
 	}
 
