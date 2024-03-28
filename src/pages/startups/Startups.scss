@@ -193,7 +193,7 @@
 		max-width: 777px;
 		width: 100%;
 		margin: 0 auto;
-		padding-bottom: 60px;
+		padding-bottom: 50px;
 		box-shadow: 0 0 10px rgba($color: $black, $alpha: 0.8);
 	}
 
@@ -323,7 +323,7 @@
 
 		@include tabletBig {
 			max-width: 270px;
-			margin: 25px auto 30px;
+			margin: 30px auto 35px;
 			border-radius: 20px;
 			position: static;
 			box-shadow: 0 0 10px rgba($color: $black, $alpha: 0.8);
@@ -383,7 +383,7 @@
 
 		@include tabletBig {
 			text-align: center;
-			margin-top: 35px;
+			margin-top: 40px;
 			font-size: 18px;
 		}
 	}
