@@ -506,9 +506,9 @@
 	font-family: $Raleway;
 	font-style: italic;
 	margin-top: 65px;
+	margin-bottom: 15px;
 	font-size: 15px;
 	white-space: pre-line;
-	line-height: normal;
 
 	@include tabletBig {
 		margin-bottom: 65px;
