@@ -294,6 +294,7 @@
 			&.active {
 				font-size: 17px;
 				letter-spacing: 1px;
+				font-family: $LouisGeorgeCafBold;
 
 				@include tabletBig {
 					letter-spacing: 1px;
@@ -329,8 +330,9 @@
 
 		.idea-tabs__btn {
 			@include tabletBig {
-				width: 80px;
+				width: 75px;
 			}
+
 			&:hover {
 				text-shadow: 0 0 0.7px $snow;
 			}
@@ -347,14 +349,13 @@
 		@include tabletBig {
 			width: 100%;
 			flex-grow: 1;
-			padding-top: 7px;
+			padding-top: 8px;
 			padding-bottom: 7px;
 		}
 
 		&.active {
 			background: $blue-main;
 			text-shadow: 0 0 0.7px $snow;
-			font-family: $LouisGeorgeCafBold;
 		}
 	}
 }
