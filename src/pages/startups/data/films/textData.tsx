@@ -20,7 +20,7 @@ export const filmsTextData = [
 				// pitchNumber: `Pitch 01`,
 				pitchTitle: `European Ukrainians`,
 				pitchInfo: [
-					{ key: `Format: `, value: `Sitcom for streaming platforms` },
+					{ key: `Format: `, value: `Sarcastic-ironic sitcom for streaming platforms` },
 					{ key: `Genre: `, value: `Comedy, Drama, Dark Humor` },
 					{ key: `Duration: `, value: `20-40 minutes episode` },
 					{ key: `Audience: `, value: `Teens, Adults` },
@@ -174,7 +174,10 @@ export const filmsTextData = [
 				// pitchNumber: `Pitch 01`,
 				pitchTitle: `Європейські Українці`,
 				pitchInfo: [
-					{ key: `Формат: `, value: `Ситком для стрімінгових платформ` },
+					{
+						key: `Формат: `,
+						value: `Саркастично-іронічний ситком для стрімінгових платформ`,
+					},
 					{ key: `Жанр: `, value: `Комедія, Драма, Чорний гумор` },
 					{ key: `Тривалість: `, value: `20-40 хвилин серія` },
 					{ key: `Аудиторія: `, value: `Підлітки, Дорослі` },
