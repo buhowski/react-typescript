@@ -320,14 +320,17 @@
 		font-family: $LouisGeorgeCafBold;
 
 		@include tabletBig {
-			max-width: 270px;
 			margin: 25px auto 30px;
+			width: max-content;
 			border-radius: 20px;
 			position: static;
 			box-shadow: 0 0 5px rgba($color: $black, $alpha: 0.8);
 		}
 
 		.idea-tabs__btn {
+			@include tabletBig {
+				width: 80px;
+			}
 			&:hover {
 				text-shadow: 0 0 0.7px $snow;
 			}
