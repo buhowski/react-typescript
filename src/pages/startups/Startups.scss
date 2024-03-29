@@ -31,16 +31,14 @@
 .nav-link--underline {
 	z-index: unset;
 	font-size: 18px;
-	&::after {
-		z-index: unset;
+	cursor: default;
+
+	@include mobile {
+		cursor: pointer;
 	}
 
-	&:hover {
-		cursor: default;
-
-		@include mobile {
-			cursor: pointer;
-		}
+	&::after {
+		z-index: unset;
 	}
 
 	&::before {

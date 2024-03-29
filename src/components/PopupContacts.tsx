@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { urlTelegram, urlEmail, urlLinkedIn } from './urlsData';
+import { useTabletLargeQuery } from '../hooks/useMediaQuery';
 
 const dataContacts = [
 	{
@@ -20,6 +21,7 @@ const dataContacts = [
 ];
 
 const PopupContacts = () => {
+	const useTabletLarge = useTabletLargeQuery();
 	const [contacts, setContacts] = useState('');
 	const [height, setHeight] = useState('');
 
@@ -53,7 +55,8 @@ const PopupContacts = () => {
 			</div>
 
 			<button
-				onMouseOver={toggleShowContacts}
+				onMouseEnter={!useTabletLarge ? toggleShowContacts : undefined}
+				onClick={toggleShowContacts}
 				type='button'
 				className='a nav-link nav-link--underline'
 			>
