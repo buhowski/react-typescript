@@ -26,7 +26,7 @@ const About = () => {
 				<div className='img'>
 					<img
 						src={PhotoBg}
-						alt='Олександр Цьомах, Alexander Tsiomakh, Oleksandr, Olexander, CV, Resume, portfolio, web design, web developer, Front End, frontend developer, Startup owner, buhowski, Человек Мужик'
+						alt='Alexander Tsiomakh (Олександр Цьомах, Oleksandr Tsiomakh, buhowski, Человек Мужик) - Frontend developer, Startups owner'
 					/>
 				</div>
 
@@ -50,7 +50,7 @@ const About = () => {
 									className='line-drawing-pic'
 									src={img}
 									alt={
-										'About, Цьомах Олександр, Starter Pack, Front End Development, Startup, buhowski, Человек Мужик'
+										'Alexander Tsiomakh (Олександр Цьомах, Oleksandr Tsiomakh, buhowski, Человек Мужик) - Frontend developer, Startups owner'
 									}
 								/>
 							</div>

@@ -3,7 +3,6 @@ export const playIcon = (
 		width='90'
 		height='90'
 		xmlns='http://www.w3.org/2000/svg'
-		className='ipc-icon ipc-icon--play-circle-outline-large-inline ipc-icon--inline ipc-lockup-overlay__icon ipc-lockup-overlay__icon--centered video-player__slate-play-icon'
 		viewBox='0 0 24 24'
 		fill='currentColor'
 		role='presentation'

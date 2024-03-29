@@ -1,36 +1,27 @@
 // todo Articles Page text tese
 export const textData = [
+	// english
 	{
 		pitch01: {
-			pitchTitle: `title`,
+			number: `number`,
+			title: `title`,
 
-			section: [
+			container: [
+				// block one
 				{
 					text: `text`,
 				},
-				{
-					text: `text`,
-				},
-			],
-
-			lastWords: `text`,
-		},
-
-		pitch02: {
-			pitchTitle: `title`,
-
-			section: [
-				{
-					text: `text`,
-				},
+				// block two and more
 				{
 					text: `text`,
 				},
 			],
-
-			lastWords: `text`,
 		},
+
+		lastWords: `text`,
 	},
+
+	//  ukraine
 ];
 
 // todo  translation:

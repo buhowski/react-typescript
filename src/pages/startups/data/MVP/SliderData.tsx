@@ -1,11 +1,9 @@
 // Images
 import writer from '../../media/writer.webp';
 
-const defaultAlt = `Magazine, articles, new generation media`;
-
 export const dataSlider = [
 	{
 		itemSrc: writer,
-		itemAlt: defaultAlt,
+		itemAlt: `Magazine showcasing articles on the future of journalism (new generation media), where new journalism is a separate form of art`,
 	},
 ];

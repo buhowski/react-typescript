@@ -87,7 +87,7 @@ const Slider: React.FC<SliderProps> = ({ dataSlider }) => {
 								</>
 							) : (
 								<>
-									<img src={itemSrc} alt={itemAlt} />
+									<img src={itemSrc} alt={itemTitle ? itemTitle : itemAlt} />
 
 									{/* Image description text */}
 									{itemTitle && <p className='video-preview__title'>{itemTitle}</p>}
