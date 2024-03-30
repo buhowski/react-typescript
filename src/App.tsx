@@ -1,5 +1,4 @@
-import { useState, useEffect } from 'react';
-import Preloader from './pages/Preloader';
+import { useEffect } from 'react';
 import { useLocation, Route, Routes } from 'react-router-dom';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import { useTabletQuery } from './hooks/useMediaQuery';
@@ -59,21 +58,8 @@ const routesData = [
 ];
 
 const App = () => {
-	const [isLoading, setIsLoading] = useState(true);
 	const tabletQuery = useTabletQuery();
 	const location = useLocation();
-
-	useEffect(() => {
-		const handleLoad = () => {
-			setIsLoading(false);
-		};
-
-		window.addEventListener('load', handleLoad);
-
-		return () => {
-			window.removeEventListener('load', handleLoad);
-		};
-	}, []);
 
 	useEffect(() => {
 		const handleResize = () => {
@@ -92,31 +78,22 @@ const App = () => {
 	}, [tabletQuery]);
 
 	return (
-		<>
-			{/* page preloader */}
-			{isLoading && <Preloader />}
-
-			<TransitionGroup>
-				<CSSTransition key={location.key} classNames='slide' timeout={1700}>
-					<div id='page' className='page'>
-						<div className='page-container'>
-							<Header />
-							<Routes location={location}>
-								{routesData.map(({ pathTo, pageComponent }, i) => {
-									return (
-										<Route
-											key={i + pathTo}
-											path={`/${pathTo}`}
-											element={pageComponent}
-										/>
-									);
-								})}
-							</Routes>
-						</div>
+		<TransitionGroup>
+			<CSSTransition key={location.key} classNames='slide' timeout={1700}>
+				<div id='page' className='page'>
+					<div className='page-container'>
+						<Header />
+						<Routes location={location}>
+							{routesData.map(({ pathTo, pageComponent }, i) => {
+								return (
+									<Route key={i + pathTo} path={`/${pathTo}`} element={pageComponent} />
+								);
+							})}
+						</Routes>
 					</div>
-				</CSSTransition>
-			</TransitionGroup>
-		</>
+				</div>
+			</CSSTransition>
+		</TransitionGroup>
 	);
 };
 
