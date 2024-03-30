@@ -1,4 +1,5 @@
-import { useEffect } from 'react';
+import { useState, useEffect } from 'react';
+import Preloader from './pages/Preloader';
 import { useLocation, Route, Routes } from 'react-router-dom';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import { useTabletQuery } from './hooks/useMediaQuery';
@@ -58,37 +59,64 @@ const routesData = [
 ];
 
 const App = () => {
+	const [isLoading, setIsLoading] = useState(true);
 	const tabletQuery = useTabletQuery();
-
-	useEffect(() => {
-		if (tabletQuery) {
-			let vh = window.innerHeight * 0.01;
-			document.documentElement.style.setProperty('--vh', `${vh}px`);
-
-			window.addEventListener('resize', () => {
-				let vh = window.innerHeight * 0.01;
-				document.documentElement.style.setProperty('--vh', `${vh}px`);
-			});
-		}
-	});
-
 	const location = useLocation();
 
+	useEffect(() => {
+		const handleLoad = () => {
+			setIsLoading(false);
+		};
+
+		window.addEventListener('load', handleLoad);
+
+		return () => {
+			window.removeEventListener('load', handleLoad);
+		};
+	}, []);
+
+	useEffect(() => {
+		const handleResize = () => {
+			const vh = window.innerHeight * 0.01;
+			document.documentElement.style.setProperty('--vh', `${vh}px`);
+		};
+
+		if (tabletQuery) {
+			handleResize();
+			window.addEventListener('resize', handleResize);
+
+			return () => {
+				window.removeEventListener('resize', handleResize);
+			};
+		}
+	}, [tabletQuery]);
+
 	return (
-		<TransitionGroup>
-			<CSSTransition key={location.key} classNames='slide' timeout={1700}>
-				<div id='page' className='page'>
-					<div className='page-container'>
-						<Header />
-						<Routes location={location}>
-							{routesData.map(({ pathTo, pageComponent }, i) => {
-								return <Route path={`/${pathTo}`} element={pageComponent} key={i} />;
-							})}
-						</Routes>
+		<>
+			{/* page preloader */}
+			{isLoading && <Preloader />}
+
+			<TransitionGroup>
+				<CSSTransition key={location.key} classNames='slide' timeout={1700}>
+					<div id='page' className='page'>
+						<div className='page-container'>
+							<Header />
+							<Routes location={location}>
+								{routesData.map(({ pathTo, pageComponent }, i) => {
+									return (
+										<Route
+											key={i + pathTo}
+											path={`/${pathTo}`}
+											element={pageComponent}
+										/>
+									);
+								})}
+							</Routes>
+						</div>
 					</div>
-				</div>
-			</CSSTransition>
-		</TransitionGroup>
+				</CSSTransition>
+			</TransitionGroup>
+		</>
 	);
 };
 
