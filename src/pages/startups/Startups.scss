@@ -371,6 +371,10 @@
 		margin-top: 40px;
 		margin-bottom: 0;
 	}
+
+	@include mobile {
+		font-size: 27px;
+	}
 }
 
 .startup-ideas {
