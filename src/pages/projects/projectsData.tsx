@@ -12,8 +12,8 @@ import bgEnde from './images/ende.jpg';
 import bgFaber from './images/faber.jpg';
 import bgFaberBooks from './images/faber-books.jpg';
 import bgBentley from './images/bentley.jpg';
-import bgStartup from './images/startups-img.webp';
 import bgGalleryImg from './images/gallery-img.png';
+import bgStartup from './images/startups-img.webp';
 
 import { pathToStartup } from '../../components/urlsData';
 

@@ -38,7 +38,7 @@
 		}
 
 		> .project__bg {
-			box-shadow: 10px 10px 10px rgba($color: $black, $alpha: 0.6);
+			box-shadow: 10px 10px 15px rgba($color: $black, $alpha: 0.8);
 			animation-play-state: running;
 			transform: translateY(-10px);
 		}
@@ -79,7 +79,7 @@
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: 50% 0;
-		box-shadow: 10px 10px 10px rgba($color: $black, $alpha: 0.3);
+		box-shadow: 0 0 15px rgba($color: $black, $alpha: 0.8);
 		animation: bgPosition 5s ease-in-out alternate infinite;
 		animation-play-state: paused;
 		transform: translateY(0);
