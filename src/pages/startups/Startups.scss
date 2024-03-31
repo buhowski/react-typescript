@@ -398,6 +398,10 @@
 		font-size: 29px;
 		color: $starYellow;
 		text-align: center;
+
+		@include mobile {
+			font-size: 27px;
+		}
 	}
 }
 
