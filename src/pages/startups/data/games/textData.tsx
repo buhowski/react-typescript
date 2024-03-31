@@ -1,4 +1,5 @@
 import { TextLink } from '../../PageStructure/IdeaElements';
+import { lastWordsRu, lastWordsEn, lastWordsUa } from '../lastWords';
 
 // Games Industry Page text
 export const gamesTextData = [
@@ -7,9 +8,7 @@ export const gamesTextData = [
 		section: [],
 
 		// Last words
-		lastWords: `Для всех желающих сотрудничать,
-		свяжитесь со мной!
-		Спасибо за внимание.`,
+		lastWords: lastWordsRu,
 	},
 
 	// ############## English ##############
@@ -119,9 +118,7 @@ export const gamesTextData = [
 		],
 
 		// Last words
-		lastWords: `For everyone who wants to cooperate,
-			please contact me!
-			Thank you for your attention.`,
+		lastWords: lastWordsEn,
 	},
 
 	// ############## Ukraine ##############
@@ -230,8 +227,6 @@ export const gamesTextData = [
 		],
 
 		// Last words
-		lastWords: `Для всіх бажаючих співпрацювати,
-		зв'яжіться зі мною!
-		Дякую за увагу.`,
+		lastWords: lastWordsUa,
 	},
 ];

@@ -1,4 +1,5 @@
 import { TextLink } from '../../PageStructure/IdeaElements';
+import { lastWordsRu, lastWordsEn, lastWordsUa } from '../lastWords';
 import {
 	pathToStartupMVP,
 	pathToStartupFilms,
@@ -61,15 +62,15 @@ export const startupTextData = [
 				title: `Конкретика`,
 				text: [
 					<>
-						Ведения журнала и шаги – этапы стратегии – это мои отдельные проекты, будут
-						появляться здесь: <TextLink linkHref={pathToStartupMVP} linkName={`MVP`} />.
-						Разрабатывается контент специально под отдельную целевую аудиторию,
-						поднимаются имеющиеся проблемы, предоставляются наглядные примеры решений,
-						привлекается аудитории.
+						Ведения журнала и шаги – этапы стратегии – мои отдельные проекты, примеры
+						будут появляться здесь:{' '}
+						<TextLink linkHref={pathToStartupMVP} linkName={`MVP`} />. Разрабатывается
+						контент специально под отдельную целевую аудиторию, поднимаются имеющиеся
+						проблемы, предоставляются наглядные примеры решений, привлекается аудитории.
 					</>,
 					<>
-						Ключевые продукты индустрии – этапы производства – это тоже мои отдельные
-						сценарии проектов, презентации здесь:{' '}
+						Ключевые продукты индустрии – этапы производства – мои отдельные сценарии,
+						презентации проектов здесь:{' '}
 						<TextLink linkHref={pathToStartupFilms} linkName={`Кино`} />,{' '}
 						<TextLink linkHref={pathToStartupGames} linkName={`Видеоигры`} />. Это, для
 						начала, позволит популяризироваться для Украинской аудитории и впоследствии
@@ -134,21 +135,16 @@ export const startupTextData = [
 
 					`Робототехника – автоматизация сложных рабочих процессов, протезирование, собственные спутники.`,
 				],
-				subtitle3: `Новая журналистика, как отдельный вид искусства`,
-				text2: [
-					`Новое повествование современного дыхания, различные мнения, правда и грязный реализм. Своеобразная подача информации без цензуры – прямая, саркастичная с характером стиля письменности повседневного языка, честность и простота в описании жизни.`,
+			},
 
-					`Гонзо-журналистика – ведение сюжетных дневников от первого лица или группы лиц, включаясь в события, становясь частью истории, непредсказуемый и экспериментальный стиль. Нырять в самое пекло проблемы, изучая вопрос изнутри или создавать определенные условия для его появления. Темы связанные с современной культурой и социальными проблемами.`,
-				],
-				subtitle4: `Заключение`,
-				text3: `В целом моя перспектива сфокусирована на развитие масштаба. Для создания отделенного от государства места со своей независимой экосистемой. С коллаборацией разных сфер деятельности, от инновационных технологий до креативного мышления. И если собрать все лучшее в одном месте, и организовать профессиональный коллектив критически мыслящих идейников и энтузиастов, то скачок эволюционного прогресса произойдет сам собой. Потому что не существует ничего невозможного, только неправильный подход!`,
+			{
+				title: `Заключение`,
+				text: `В целом моя перспектива сфокусирована на развитие масштаба. Для создания отделенного от государства места со своей независимой экосистемой. С коллаборацией разных сфер деятельности, от инновационных технологий до креативного мышления. И если собрать все лучшее в одном месте, и организовать профессиональный коллектив критически мыслящих идейников и энтузиастов, то скачок эволюционного прогресса произойдет сам собой. Потому что не существует ничего невозможного, только неправильный подход!`,
 			},
 		],
 
 		// Last words
-		lastWords: `Для всех желающих сотрудничать,
-			свяжитесь со мной!
-			Спасибо за внимание.`,
+		lastWords: lastWordsRu,
 	},
 
 	// ############## ENGLISH ##############
@@ -206,16 +202,16 @@ export const startupTextData = [
 				title: `Details`,
 				text: [
 					<>
-						Magazine management and steps – the strategy stages – are my separate
-						projects that will appear here:{' '}
+						Magazine management and steps – the strategy stages – my separate projects,
+						examples will appear here:{' '}
 						<TextLink linkHref={pathToStartupMVP} linkName={`MVP`} />. Content is
 						developed specifically for the individual target audience, existing problems
 						are raised, clear examples of solutions are provided, and the audience is
 						engaged.
 					</>,
 					<>
-						Key industry products – the production stages – are also my separate
-						projects scripts, which are presented here:{' '}
+						Key industry products – the production stages – my individual scripts,
+						project presentations are here:{' '}
 						<TextLink linkHref={pathToStartupFilms} linkName={`Films`} />,{' '}
 						<TextLink linkHref={pathToStartupGames} linkName={`Video Games`} />. This,
 						initially, will allow popularizing for the Ukrainian audience and then enter
@@ -277,21 +273,16 @@ export const startupTextData = [
 
 					`Robotics – automation of complex workflows, prosthetics, own satellites.`,
 				],
-				subtitle3: `New journalism as a separate form of art`,
-				text2: [
-					`A new narrative of modern breathing, different opinions, truth and dirty realism. A unique presentation of information without censorship – direct, sarcastic, with a character of everyday language writing style, honesty, and simplicity in describing life.`,
+			},
 
-					`Gonzo journalism – making story diaries from the first person or group of people, immersing oneself in events, becoming part of the history, an unpredictable and experimental style. Diving into the heart of the problem, studying it from inside, or creating specific conditions for its appearance. Subjects dealing with modern culture and social problems.`,
-				],
-				subtitle4: `Conclusion`,
-				text3: `Overall, my perspective is focused on the development of scale. To create a state-independent place with its independent ecosystem. With collaboration of various fields, from innovative technologies to creative minds. And if we gather all the best in one place and organize a professional team of critical thinkers and enthusiasts, evolutionary progress will happen naturally. Because nothing is impossible, only the wrong approach!`,
+			{
+				title: `Conclusion`,
+				text: `Overall, my perspective is focused on the development of scale. To create a state-independent place with its independent ecosystem. With collaboration of various fields, from innovative technologies to creative minds. And if we gather all the best in one place and organize a professional team of critical thinkers and enthusiasts, evolutionary progress will happen naturally. Because nothing is impossible, only the wrong approach!`,
 			},
 		],
 
 		// Last words
-		lastWords: `For everyone who wants to cooperate,
-			please contact me!
-			Thank you for your attention.`,
+		lastWords: lastWordsEn,
 	},
 
 	// ############## UKRAINE ##############
@@ -349,15 +340,15 @@ export const startupTextData = [
 				title: `Конкретика`,
 				text: [
 					<>
-						Ведення журналу та кроки – етапи стратегії – це мої окремі проекти,
+						Ведення журналу та кроки – етапи стратегії – мої окремі проекти, приклади
 						з'являтимуться тут:{' '}
 						<TextLink linkHref={pathToStartupMVP} linkName={`MVP`} />. Розробляється
 						контент спеціально під окрему цільову аудиторію, піднімаються наявні
 						проблеми, надаються наглядні приклади рішень, залучається аудиторія.
 					</>,
 					<>
-						Ключові продукти індустрії – етапи виробництва – це теж мої окремі сценарії
-						проектів, презентації тут:{' '}
+						Ключові продукти індустрії – етапи виробництва – мої окремі сценарії,
+						презентації проектів тут:{' '}
 						<TextLink linkHref={pathToStartupFilms} linkName={`Кіно`} />,{' '}
 						<TextLink linkHref={pathToStartupGames} linkName={`Відеоігри`} />. Це, для
 						початку, дозволить популяризуватися для Української аудиторії і згодом вийти
@@ -419,20 +410,15 @@ export const startupTextData = [
 
 					`Робототехніка – автоматизація складних робочих процесів, протезування, власні супутники.`,
 				],
-				subtitle3: `Нова журналістика, як окремий вид мистецтва`,
-				text2: [
-					`Сучасний погляд нового дихання, різноманітні міркування, правда чистої води та брудний реалізм. Своєрідна подача інформації без цензури – пряма, саркастична, з характером стилю писемності повсякденної мови, чесність і простота в описі життя.`,
+			},
 
-					`Гонзо-журналістика – ведення сюжетних щоденників від першої особи чи групи лиць, включаючись у події, стаючи частиною історії, непередбачуваний і експериментальний стиль. Пірнати в саме пекло проблеми, вивчаючи питання зсередини, або створювати певні умови для його появи. Теми пов'язані з сучасною культурою та соціальними проблемами.`,
-				],
-				subtitle4: `Висновок`,
-				text3: `В цілому моя перспектива сфокусована на розвиток масштабу. Для створення відокремленого від держави місця зі своєю незалежною екосистемою. З колаборацією різних сфер діяльності, від інноваційних технологій до креативного мислення. І якщо зібрати все найкраще в одному місці, та організувати професійний колектив критично мислячих ідейників та ентузіастів, то стрибок еволюційного прогресу відбудеться сам собою. Бо не існує нічого неможливого, лише неправильний підхід!`,
+			{
+				title: `Висновок`,
+				text: `В цілому моя перспектива сфокусована на розвиток масштабу. Для створення відокремленого від держави місця зі своєю незалежною екосистемою. З колаборацією різних сфер діяльності, від інноваційних технологій до креативного мислення. І якщо зібрати все найкраще в одному місці, та організувати професійний колектив критично мислячих ідейників та ентузіастів, то стрибок еволюційного прогресу відбудеться сам собою. Бо не існує нічого неможливого, лише неправильний підхід!`,
 			},
 		],
 
 		// last words
-		lastWords: `Для всіх бажаючих співпрацювати,
-			зв'яжіться зі мною!
-			Дякую за увагу.`,
+		lastWords: lastWordsUa,
 	},
 ];

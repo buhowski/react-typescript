@@ -1,4 +1,5 @@
 import { TextLink } from '../../PageStructure/IdeaElements';
+import { lastWordsEn, lastWordsUa, lastWordsRu } from '../lastWords';
 
 // Film Industry Page text
 export const filmsHeadlineData = [];
@@ -9,9 +10,7 @@ export const filmsTextData = [
 		section: [],
 
 		// Last words
-		lastWords: `Для всех желающих сотрудничать,
-		свяжитесь со мной!
-		Спасибо за внимание.`,
+		lastWords: lastWordsRu,
 	},
 	// ############## English ##############
 	{
@@ -162,9 +161,7 @@ export const filmsTextData = [
 		],
 
 		// Last words
-		lastWords: `For everyone who wants to cooperate,
-			please contact me!
-			Thank you for your attention.`,
+		lastWords: lastWordsEn,
 	},
 
 	// ############## Ukraine ##############
@@ -319,8 +316,6 @@ export const filmsTextData = [
 		],
 
 		// Last words
-		lastWords: `Для всіх бажаючих співпрацювати,
-		зв'яжіться зі мною!
-		Дякую за увагу.`,
+		lastWords: lastWordsUa,
 	},
 ];

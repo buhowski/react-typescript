@@ -12,10 +12,7 @@ export interface Block {
 	listItems?: string[] | JSX.Element[];
 	subtitle2?: string;
 	list2?: string[];
-	subtitle3?: string;
 	text2?: string | string[];
-	subtitle4?: string;
-	text3?: string | string[];
 
 	// films data
 	loglineTitle?: string;

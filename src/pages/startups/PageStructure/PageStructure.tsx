@@ -77,13 +77,7 @@ const PageStructure: React.FC<PageProps> = ({
 
 						{block.list2 && <List listItems={block.list2} />}
 
-						{block.subtitle3 && <Subtitle subtitle={block.subtitle3} />}
-
 						{block.text2 && <Text text={block.text2} />}
-
-						{block.subtitle4 && <Subtitle subtitle={block.subtitle4} />}
-
-						{block.text3 && <Text text={block.text3} />}
 
 						{/* Films  */}
 						{block.character01Title && <Subtitle subtitle={block.character01Title} />}
@@ -200,7 +194,7 @@ const PageStructure: React.FC<PageProps> = ({
 					) : (
 						// For Desktop custom scrollbar
 						<SimpleBar
-							style={{ height: '100%', paddingRight: '30px' }}
+							style={{ height: '100%', paddingRight: '40px' }}
 							autoHide={false}
 						>
 							{title && <h1 className='startup-title h2'>{title}</h1>}
