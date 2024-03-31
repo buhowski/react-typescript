@@ -148,7 +148,7 @@ const PageStructure: React.FC<PageProps> = ({
 		}
 
 		if (langDisable && currentTab === '3') {
-			handleTabClick('2');
+			handleTabClick('1');
 		}
 	}, [currentTab, langDisable]);
 
