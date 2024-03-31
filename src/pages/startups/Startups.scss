@@ -469,6 +469,12 @@
 			transition: background-size 0.3s;
 		}
 
+		@include tablet {
+			&:focus {
+				color: $snow;
+			}
+		}
+
 		&:hover {
 			span {
 				background-size: 0 1px;
