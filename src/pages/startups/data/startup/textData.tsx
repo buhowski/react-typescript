@@ -153,7 +153,7 @@ export const startupTextData = [
 			{
 				loglineTitle: `Preface`,
 				loglineText: [
-					`I have a large-scale vision of the whole picture – creating a large corporation that strives to improve the development of areas that need it. The puzzles of this picture are my various independent projects, which I want to monetize and invest profits into creating its own technologies, opening doors to all those who aspire to do the same.`,
+					`I have a huge vision of the whole picture – creating a large corporation that strives to improve the development of areas that need it. The puzzles of this picture are my various independent projects, which I want to monetize and invest profits into creating its own technologies, opening doors to all those who aspire to do the same.`,
 
 					`All presentations of individual projects will be available in the navigation. And the logic of creating a holistic picture is available below.`,
 				],
