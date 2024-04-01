@@ -2,34 +2,42 @@
 
 .contact-menu {
 	a {
-		margin-right: 30px;
-		width: 50px;
-		height: 50px;
+		margin-right: 35px;
+		width: 56px;
+		height: 56px;
 		padding: 0;
 		border-radius: 50%;
 		position: relative;
 		background: $darker;
 		flex-shrink: 0;
-		box-shadow: 0 0 11px rgba($color: $black, $alpha: 0.3);
+		box-shadow: 0 0 6px rgba($color: $darkest, $alpha: 1);
 
 		@media screen and (min-width: 2000px) {
 			width: calc(50px + 1vw);
 			height: calc(50px + 1vw);
 		}
 
+		@include mobile {
+			width: 55px;
+			height: 55px;
+			margin-right: 24px;
+		}
+
 		&:last-child {
 			margin-right: 0;
 		}
+	}
 
-		@include mobile {
-			margin-right: 25px;
+	&__icon {
+		width: 23px;
+
+		@media screen and (min-width: 2000px) {
+			width: calc(23px + 0.3vw);
 		}
 	}
 
 	svg {
 		fill: $snow;
-		display: block;
-		width: 20px;
 	}
 
 	.title {

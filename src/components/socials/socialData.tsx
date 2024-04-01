@@ -1,34 +1,36 @@
 import { urlGitHub, urlLinkedIn, urlTelegram } from '../urlsData';
 import urlCV from '../../assets/CV_Alexander_Tsiomakh_FrontEnd.pdf';
+import { GithubIcon, LinkedInIcon, TelegramIcon, CvIcon } from './svg/icons';
 
 const socialData = [
 	{
 		link: urlGitHub,
 		title: 'GitHub',
-		iconClass: 'icon-octopus',
+		icon: GithubIcon,
 	},
+
 	{
 		link: urlLinkedIn,
 		title: 'LinkedIn',
-		iconClass: 'icon-in',
+		icon: LinkedInIcon,
 	},
 
 	{
 		link: urlTelegram,
 		title: 'Telegram',
-		iconClass: 'icon-plane',
+		icon: TelegramIcon,
 	},
 
 	{
 		link: urlCV,
-		title: 'CV',
-		iconClass: 'icon-cv',
+		title: 'Resume',
+		icon: CvIcon,
 	},
 
 	// {
 	// 	link: urlCoindrop,
 	// 	title: 'Support My Inner Creator',
-	// 	iconClass: 'icon-donate',
+	// 	iconClass: DonateIcon,
 	// },
 ];
 

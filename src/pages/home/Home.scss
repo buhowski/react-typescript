@@ -36,7 +36,7 @@
 	width: 40%;
 
 	@include tabletBig {
-		margin-bottom: 55px;
+		margin-bottom: 40px;
 	}
 
 	@include tabletSmall {
@@ -46,7 +46,7 @@
 	}
 
 	.tag-color {
-		font-size: 23px;
+		font-size: 24px;
 		margin-bottom: 3rem;
 		font-family: $LouisGeorgeCaf;
 		letter-spacing: 1.5px;

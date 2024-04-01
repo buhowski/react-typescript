@@ -156,7 +156,8 @@
 		&__content {
 			height: 100%;
 			height: calc(var(--vh, 1vh) * 100);
-			overflow: auto;
+			overflow-x: hidden;
+			overflow-y: auto;
 			padding-top: 25vh;
 			padding-bottom: 30px;
 		}
@@ -169,7 +170,7 @@
 
 		.contact-menu {
 			justify-content: center;
-			padding: 0 4%;
+			padding: 10px;
 		}
 
 		&.open {

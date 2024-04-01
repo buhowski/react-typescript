@@ -1,11 +1,10 @@
 import socialData from './socialData';
 import './Socials.scss';
-import DonateSvg from './svg/Donate-svg';
 
 const Socials = () => {
 	return (
 		<div className='contact-menu d-flex-c'>
-			{socialData.map(({ link, title, iconClass }, index) => {
+			{socialData.map(({ link, title, icon }, index) => {
 				return (
 					<a
 						className='d-flex-c-c'
@@ -15,9 +14,7 @@ const Socials = () => {
 						rel='noopener noreferrer'
 					>
 						<span className='title'>{title}</span>
-						<span className={iconClass}>
-							{iconClass === 'icon-donate' && <DonateSvg />}
-						</span>
+						<span className='contact-menu__icon'>{icon}</span>
 					</a>
 				);
 			})}
