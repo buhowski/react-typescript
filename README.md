@@ -6,6 +6,12 @@
 
 ### This project is looking for investment or any help with development and promotion. If you're interested in collaborating, feel free to contact me! Or support my inner creator https://coindrop.to/buhowski
 
+# Preface
+
+I have a huge vision of the whole picture – creating a large corporation that strives to improve the development of areas that need it. The puzzles of this picture are my various independent projects, which I want to monetize and invest profits into creating its own technologies, opening doors to all those who aspire to do the same.
+
+All presentations of individual projects will be available in the navigation. And the logic of creating a holistic picture is available below.
+
 # Mission
 
 I've created strategies and project scenario: "How to create an information media magazine and transform it into a company producing its own technologies in Ukraine" and I am seeking investments for its implementation, or the opportunity to integrate my ideas with your help and find like-minded individuals and partners for cooperation to create the future together in selected fields:
