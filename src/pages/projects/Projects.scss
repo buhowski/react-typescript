@@ -9,10 +9,23 @@
 	position: relative;
 	z-index: 0;
 	width: calc(100% / 3 - 80px / 3);
-	height: 300px;
+	height: 350px;
 	flex-shrink: 0;
 	margin-right: 40px;
 	margin-bottom: 40px;
+
+	@include tablet {
+		width: calc(100% / 2 - 20px);
+
+		&:nth-child(2n) {
+			margin-right: 0;
+		}
+	}
+
+	@include tabletSmall {
+		width: 100%;
+		margin-right: 0;
+	}
 
 	&:nth-child(3n) {
 		margin-right: 0;
@@ -86,27 +99,12 @@
 		transition: 0.3s ease;
 		overflow: hidden;
 	}
-
-	@include tablet {
-		width: calc(100% / 2 - 20px);
-
-		&:nth-child(2n) {
-			margin-right: 0;
-		}
-	}
-
-	@include tabletSmall {
-		height: 280px;
-		width: 100%;
-		margin-right: 0;
-		margin-bottom: 25px;
-	}
 }
 
 .project-link {
 	width: 100%;
 	height: 100%;
-	background: linear-gradient(0deg, $darker 20%, transparent 80%);
+	background: linear-gradient(0deg, $darker 11%, transparent 95%);
 	background-size: 100% 800px;
 	background-position: 0 -330px;
 	transform: translateZ(1px);
@@ -148,15 +146,16 @@
 		padding-left: 12px;
 		padding-right: 12px;
 		font-size: 14px;
-		left: 15px;
-		width: calc(100% - 30px);
+		left: 5px;
+		width: calc(100% - 10px);
 	}
 
 	&-p {
 		display: -webkit-box;
 		-webkit-box-orient: vertical;
-		-webkit-line-clamp: 3;
+		-webkit-line-clamp: 5;
 		overflow: hidden;
+		font-size: 14px;
 		margin-bottom: 15px;
 	}
 
@@ -175,7 +174,6 @@
 		color: $blue-main;
 		text-transform: capitalize;
 		font-family: $LouisGeorgeCaf;
-
 		margin-right: auto;
 	}
 

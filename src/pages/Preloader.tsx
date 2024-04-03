@@ -6,7 +6,7 @@ const Preloader = () => {
 	useEffect(() => {
 		const timer = setTimeout(() => {
 			setLoading(false);
-		}, 800);
+		}, 777);
 
 		return () => clearTimeout(timer);
 	}, []);
