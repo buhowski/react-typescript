@@ -25,7 +25,6 @@ import StartupFilms from './pages/startups/Films';
 import StartupGames from './pages/startups/Games';
 import StartupMVP from './pages/startups/MVP';
 
-import Preloader from './pages/Preloader';
 // Routes and pages
 const routesData = [
 	{
@@ -79,30 +78,23 @@ const App = () => {
 	}, [tabletQuery]);
 
 	return (
-		<>
-			<Preloader />
+		<TransitionGroup>
+			<CSSTransition key={location.key} classNames='slide' timeout={1700}>
+				<div id='page' className='page'>
+					<div className='page-container'>
+						<Header />
 
-			<TransitionGroup>
-				<CSSTransition key={location.key} classNames='slide' timeout={1700}>
-					<div id='page' className='page'>
-						<div className='page-container'>
-							<Header />
-							<Routes location={location}>
-								{routesData.map(({ pathTo, pageComponent }, i) => {
-									return (
-										<Route
-											key={i + pathTo}
-											path={`/${pathTo}`}
-											element={pageComponent}
-										/>
-									);
-								})}
-							</Routes>
-						</div>
+						<Routes location={location}>
+							{routesData.map(({ pathTo, pageComponent }, i) => {
+								return (
+									<Route key={i + pathTo} path={`/${pathTo}`} element={pageComponent} />
+								);
+							})}
+						</Routes>
 					</div>
-				</CSSTransition>
-			</TransitionGroup>
-		</>
+				</div>
+			</CSSTransition>
+		</TransitionGroup>
 	);
 };
 

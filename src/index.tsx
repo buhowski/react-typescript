@@ -2,6 +2,8 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 import { BrowserRouter } from 'react-router-dom';
 
+import Preloader from './pages/Preloader';
+
 // import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 // import reportWebVitals from './reportWebVitals';
 
@@ -10,9 +12,15 @@ const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 root.render(
 	// TODO: learn tests
 	// <React.StrictMode>
-	<BrowserRouter>
-		<App />
-	</BrowserRouter>
+	<>
+		{/* Page Preloader */}
+		<Preloader />
+
+		{/* My Website */}
+		<BrowserRouter>
+			<App />
+		</BrowserRouter>
+	</>
 	// </React.StrictMode>
 );
 
