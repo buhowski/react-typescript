@@ -6,6 +6,32 @@
 @import '../styles/base';
 @import '../styles/animation';
 
+// The same time as for CSSTransition timeout={}
+$nextPageTime: 1.5s;
+
+@keyframes transitionReload {
+	0% {
+		width: 0;
+		height: 15px;
+		bottom: 0;
+	}
+	33% {
+		width: 100%;
+		height: 15px;
+		bottom: 0;
+	}
+	66% {
+		width: 100%;
+		height: 100%;
+		bottom: 0;
+	}
+	100% {
+		bottom: 100%;
+		width: 100%;
+		height: 0;
+	}
+}
+
 .page {
 	position: absolute;
 	width: 100%;
@@ -14,14 +40,9 @@
 	background: $darken;
 
 	@include tablet {
-		height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+		/* Fallback for browsers that do not support Custom Properties */
+		height: 100vh;
 		height: calc(var(--vh, 1vh) * 100);
-	}
-
-	&.slide-exit {
-		transform: translateY(-100%);
-		transition: 0.1s linear;
-		transition-delay: 1.056s;
 	}
 
 	&:after {
@@ -29,15 +50,22 @@
 		display: block;
 		background: $blue-main;
 		width: 0;
-		height: 12px;
+		height: 15px;
 		position: absolute;
 		bottom: 0;
 		left: 50%;
 		transform: translateX(-50%) translateZ(5px);
-		z-index: 100;
+		z-index: 1000;
+	}
+
+	&.slide-exit {
+		opacity: 0;
+		visibility: hidden;
+		transition-duration: 0s;
+		transition-delay: calc(66 * $nextPageTime / 100);
 	}
 
 	&.slide-enter:after {
-		animation: transitionReload 1.6s ease;
+		animation: transitionReload $nextPageTime ease;
 	}
 }
