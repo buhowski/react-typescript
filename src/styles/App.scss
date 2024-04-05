@@ -15,12 +15,12 @@ $nextPageTime: 1.5s;
 		height: 15px;
 		bottom: 0;
 	}
-	33% {
+	40% {
 		width: 100%;
 		height: 15px;
 		bottom: 0;
 	}
-	66% {
+	70% {
 		width: 100%;
 		height: 100%;
 		bottom: 0;
@@ -56,6 +56,9 @@ $nextPageTime: 1.5s;
 		left: 50%;
 		transform: translateX(-50%) translateZ(5px);
 		z-index: 1000;
+
+		// // # testing animation
+		// animation: transitionReload $nextPageTime cubic-bezier(0.7, 0.6, 0.2, 0.9) infinite;
 	}
 
 	&.slide-exit {
