@@ -6,8 +6,10 @@
 @import '../styles/base';
 @import '../styles/animation';
 
-// The same time as for CSSTransition timeout={}
-$nextPageTime: 1.5s;
+// same time as CSSTransition timeout={} in App.tsx
+$nextPageTime: 1s;
+// @keyframes transitionReload before last moment
+$nextPageMoment: 65;
 
 @keyframes transitionReload {
 	0% {
@@ -15,12 +17,12 @@ $nextPageTime: 1.5s;
 		height: 15px;
 		bottom: 0;
 	}
-	40% {
+	30% {
 		width: 100%;
 		height: 15px;
 		bottom: 0;
 	}
-	70% {
+	65% {
 		width: 100%;
 		height: 100%;
 		bottom: 0;
@@ -37,7 +39,7 @@ $nextPageTime: 1.5s;
 	width: 100%;
 	height: 100vh;
 	overflow: hidden;
-	background: $darken;
+	background-color: $darken;
 
 	@include tablet {
 		/* Fallback for browsers that do not support Custom Properties */
@@ -48,27 +50,24 @@ $nextPageTime: 1.5s;
 	&:after {
 		content: '';
 		display: block;
-		background: $blue-main;
+		background-color: $blue-main;
 		width: 0;
 		height: 15px;
+		transform: translateX(-50%);
 		position: absolute;
 		bottom: 0;
 		left: 50%;
-		transform: translateX(-50%) translateZ(5px);
 		z-index: 1000;
-
-		// // # testing animation
-		// animation: transitionReload $nextPageTime cubic-bezier(0.7, 0.6, 0.2, 0.9) infinite;
 	}
 
 	&.slide-exit {
 		opacity: 0;
 		visibility: hidden;
 		transition-duration: 0s;
-		transition-delay: calc(66 * $nextPageTime / 100);
+		transition-delay: calc($nextPageMoment * $nextPageTime / 100);
 	}
 
 	&.slide-enter:after {
-		animation: transitionReload $nextPageTime ease;
+		animation: transitionReload $nextPageTime cubic-bezier(0.3, 0.2, 0.4, 1);
 	}
 }
