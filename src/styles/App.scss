@@ -7,7 +7,7 @@
 @import '../styles/animation';
 
 // same time as CSSTransition timeout={} in App.tsx
-$nextPageTime: 1.5s;
+$nextPageTime: 1.3s;
 
 @keyframes transitionReload {
 	0% {
@@ -48,7 +48,7 @@ $nextPageTime: 1.5s;
 	&.slide-exit {
 		transform: translateY(-100%);
 		transition: 0s linear;
-		transition-delay: calc(65s * $nextPageTime / 100s);
+		transition-delay: calc(65 * $nextPageTime / 100);
 	}
 
 	&:after {
@@ -65,6 +65,6 @@ $nextPageTime: 1.5s;
 	}
 
 	&.slide-enter:after {
-		animation: transitionReload $nextPageTime cubic-bezier(0.3, 0.2, 0.4, 1);
+		animation: transitionReload $nextPageTime ease;
 	}
 }

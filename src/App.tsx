@@ -79,7 +79,7 @@ const App = () => {
 
 	return (
 		<TransitionGroup>
-			<CSSTransition key={location.key} classNames='slide' timeout={1500}>
+			<CSSTransition key={location.key} classNames='slide' timeout={1300}>
 				<div id='page' className='page'>
 					<div className='page-container'>
 						<Header />
