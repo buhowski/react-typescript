@@ -8,8 +8,6 @@
 
 // same time as CSSTransition timeout={} in App.tsx
 $nextPageTime: 1s;
-// @keyframes transitionReload before last moment
-$nextPageMoment: 65;
 
 @keyframes transitionReload {
 	0% {
@@ -39,12 +37,18 @@ $nextPageMoment: 65;
 	width: 100%;
 	height: 100vh;
 	overflow: hidden;
-	background-color: $darken;
+	background: $darken;
 
 	@include tablet {
 		/* Fallback for browsers that do not support Custom Properties */
 		height: 100vh;
 		height: calc(var(--vh, 1vh) * 100);
+	}
+
+	&.slide-exit {
+		transform: translateY(-100%);
+		transition: 0.1s linear;
+		transition-delay: calc(65s * $nextPageTime / 100s);
 	}
 
 	&:after {
@@ -53,18 +57,11 @@ $nextPageMoment: 65;
 		background-color: $blue-main;
 		width: 0;
 		height: 15px;
-		transform: translateX(-50%);
+		transform: translateX(-50%) translateZ(5px);
 		position: absolute;
 		bottom: 0;
 		left: 50%;
 		z-index: 1000;
-	}
-
-	&.slide-exit {
-		opacity: 0;
-		visibility: hidden;
-		transition-duration: 0s;
-		transition-delay: calc($nextPageMoment * $nextPageTime / 100);
 	}
 
 	&.slide-enter:after {
