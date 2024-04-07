@@ -32,8 +32,13 @@ export const filmsTextData = [
 				title: `Overview`,
 				text: [
 					<>
-						The concept of the series is a hilarious mix inspired by shows like "It's
-						Always Sunny in Philadelphia" (examples 01-03 in slider, or{' '}
+						The concept of the series is a hilarious mix inspired by shows like “Trailer
+						Park Boys” (
+						<TextLink
+							linkHref='https://www.imdb.com/title/tt0290988/'
+							linkName={`IMDB`}
+						/>
+						), "It's Always Sunny in Philadelphia" (examples 01-03 in slider, or{' '}
 						<TextLink
 							linkHref='https://www.imdb.com/title/tt0472954/'
 							linkName={`IMDB`}
@@ -187,8 +192,13 @@ export const filmsTextData = [
 				title: `Огляд`,
 				text: [
 					<>
-						Концепція серіалу – це веселий мікс, навіяний серіалами "It's Always Sunny
-						in Philadelphia" (приклади 01-03 у слайдері, або{' '}
+						Концепція серіалу – це веселий мікс, навіяний серіалами “Trailer Park Boys”
+						(
+						<TextLink
+							linkHref='https://www.imdb.com/title/tt0290988/'
+							linkName={`IMDB`}
+						/>
+						), "It's Always Sunny in Philadelphia" (приклади 01-03 у слайдері, або{' '}
 						<TextLink
 							linkHref='https://www.imdb.com/title/tt0472954/'
 							linkName={`IMDB`}
