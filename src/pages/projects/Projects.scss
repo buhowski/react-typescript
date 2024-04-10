@@ -58,7 +58,7 @@
 
 		.project-link {
 			background-size: 100% 500px;
-			background-position: 0 -20px;
+			background-position: 0 -50px;
 		}
 
 		.project-name span {
@@ -104,9 +104,9 @@
 .project-link {
 	width: 100%;
 	height: 100%;
-	background: linear-gradient(0deg, $darker 4%, transparent 100%);
+	background: linear-gradient(0deg, $darker 6%, transparent 100%);
 	background-size: 100% 800px;
-	background-position: 0 -330px;
+	background-position: 0 -300px;
 	transform: translateZ(1px);
 	transition: 0.3s ease;
 }
