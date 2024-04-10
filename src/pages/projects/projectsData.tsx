@@ -101,6 +101,15 @@ const projectsData = [
 	},
 
 	{
+		img: `url(${bgGalleryImg})`,
+		url: 'https://master--gentle-longma-c7daf2.netlify.app/',
+		urlCode: 'https://github.com/buhowski/infinite-image-gallery',
+		name: 'Image Gallery',
+		desk: 'Infinite Image Gallery with search, using Unsplash API',
+		skills: ['HTML', 'CSS', 'JavaScript', 'Fetch API'],
+	},
+
+	{
 		img: `url(${BgFoundation})`,
 		url: 'https://tse-foundation-org.vercel.app',
 		name: 'TSE Foundation',
@@ -122,15 +131,6 @@ const projectsData = [
 		name: 'Mensch',
 		desk: 'We are an agency, specialized in innovation, team performance, and venture acceleration. Handling all Front-End tasks',
 		skills: ['HTML', 'CSS', 'JavaScript', 'Form Submit'],
-	},
-
-	{
-		img: `url(${bgGalleryImg})`,
-		url: 'https://master--gentle-longma-c7daf2.netlify.app/',
-		urlCode: 'https://github.com/buhowski/infinite-image-gallery',
-		name: 'Image Gallery',
-		desk: 'Infinite Image Gallery with search, using Unsplash API',
-		skills: ['HTML', 'CSS', 'JavaScript', 'Fetch API'],
 	},
 
 	{
