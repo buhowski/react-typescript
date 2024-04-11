@@ -23,7 +23,7 @@ const projectsData = [
 		url: `${pathToStartup}`,
 		urlCode: 'https://github.com/buhowski/react-typescript',
 		name: 'Portfolio + Startups',
-		desk: `Project design and structure: Create React App, React Hooks and TypeScript. Page animation: React Transition and React Router. Styles and custom fonts: SCSS + font files. Custom scrollbar: React SimpleBar. For webpack config: CRACO. Testing: Jest. Deploy to Netlify via GitHub.`,
+		desk: `Project design and structure - Create React App, React Hooks and TypeScript. Page animation - React Transition and React Router. Styles and custom fonts - SCSS + font files. Custom scrollbar - React SimpleBar. For webpack config -CRACO. Testing: Jest. Deploy to Netlify via GitHub.`,
 		skills: ['UI/UX', 'SCSS', 'TypeScrpt', 'React', 'PWA', 'Startup'],
 	},
 
