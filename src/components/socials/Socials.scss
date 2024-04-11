@@ -3,8 +3,8 @@
 .contact-menu {
 	a {
 		margin-right: 35px;
-		width: 56px;
-		height: 56px;
+		width: 60px;
+		height: 60px;
 		padding: 0;
 		border-radius: 50%;
 		position: relative;
@@ -17,10 +17,8 @@
 			height: calc(50px + 1vw);
 		}
 
-		@include mobile {
-			width: 55px;
-			height: 55px;
-			margin-right: 24px;
+		@include mobileSmall {
+			margin-right: 22px;
 		}
 
 		&:last-child {
@@ -45,7 +43,7 @@
 		color: $blue-main;
 		backface-visibility: hidden;
 		position: absolute;
-		top: -25px;
+		top: -27px;
 		left: 50%;
 		transform: translateX(-35%) rotate(0deg);
 		letter-spacing: 3px;
@@ -53,6 +51,7 @@
 		transition: all 0.4s ease;
 		margin-left: 5%;
 		white-space: nowrap;
+		font-size: 18px;
 	}
 	a:hover > .title {
 		opacity: 1;

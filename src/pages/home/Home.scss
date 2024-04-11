@@ -35,7 +35,7 @@
 	margin-bottom: 125px;
 	width: 40%;
 
-	@include tabletBig {
+	@media screen and (max-width: 1366px) {
 		margin-bottom: 40px;
 	}
 
@@ -46,10 +46,10 @@
 	}
 
 	.tag-color {
-		font-size: 24px;
+		font-size: 25px;
 		margin-bottom: 3rem;
 		font-family: $LouisGeorgeCaf;
-		letter-spacing: 1.5px;
+		letter-spacing: 2px;
 		white-space: nowrap;
 
 		@media screen and (min-width: 2000px) {
