@@ -53,7 +53,7 @@
 		white-space: nowrap;
 
 		@media screen and (min-width: 2000px) {
-			font-size: calc(21px + 0.8vw);
+			font-size: calc(21px + 0.6vw);
 		}
 
 		@include tabletSmall {

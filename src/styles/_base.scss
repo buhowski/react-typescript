@@ -103,8 +103,11 @@ svg {
 	font-family: $LouisGeorgeCafBold;
 	line-height: normal;
 
+	@media screen and (min-width: 2000px) {
+		font-size: calc(24px + 2vw);
+	}
+
 	@include tabletSmall {
-		font-size: calc(24px + 2.5vw);
 		padding-top: 1rem;
 		letter-spacing: 6px;
 	}
