@@ -13,7 +13,7 @@ import bgFaber from './images/faber.jpg';
 import bgFaberBooks from './images/faber-books.jpg';
 import bgBentley from './images/bentley.jpg';
 import bgGalleryImg from './images/gallery-img.png';
-import bgStartup from './images/startups-img.webp';
+import bgStartup from './images/startups-img.jpg';
 
 import { pathToStartup } from '../../components/urlsData';
 
