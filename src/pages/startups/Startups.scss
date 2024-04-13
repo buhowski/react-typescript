@@ -33,7 +33,7 @@
 	font-size: 18px;
 	cursor: default;
 
-	@include mobile {
+	@include tabletBig {
 		cursor: pointer;
 	}
 
