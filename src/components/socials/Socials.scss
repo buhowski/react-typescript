@@ -17,6 +17,10 @@
 			height: calc(50px + 1vw);
 		}
 
+		@include tablet {
+			margin-right: 25px;
+		}
+
 		@include mobileSmall {
 			margin-right: 22px;
 		}

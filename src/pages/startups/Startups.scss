@@ -286,8 +286,7 @@
 			font-size: 15px;
 
 			@include tabletBig {
-				align-items: center;
-				padding: 10px 2px 9px;
+				padding: 8px 3px;
 				font-size: 14px;
 			}
 
@@ -350,7 +349,7 @@
 			width: 100%;
 			flex-grow: 1;
 			padding-top: 8px;
-			padding-bottom: 7px;
+			padding-bottom: 6px;
 		}
 
 		&.active {

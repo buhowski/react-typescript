@@ -20,6 +20,7 @@
 
 		@include tabletSmall {
 			margin-bottom: 30px;
+			font-size: 37px;
 		}
 
 		@include mobile {
@@ -49,7 +50,7 @@
 		font-size: 25px;
 		margin-bottom: 3rem;
 		font-family: $LouisGeorgeCaf;
-		letter-spacing: 2px;
+		letter-spacing: 3px;
 		white-space: nowrap;
 
 		@media screen and (min-width: 2000px) {
@@ -58,6 +59,7 @@
 
 		@include tabletSmall {
 			margin-bottom: 35px;
+			font-size: 23px;
 		}
 	}
 }
