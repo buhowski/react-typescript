@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { urlTelegram, urlEmail, urlLinkedIn } from './urlsData';
+import { urlTelegram, urlEmail, urlLinkedIn, urlInstagram } from './urlsData';
 import { useTabletLargeQuery } from '../hooks/useMediaQuery';
 
 const dataContacts = [
@@ -17,6 +17,11 @@ const dataContacts = [
 		name: 'LinkedIn: ',
 		url: urlLinkedIn,
 		linkTitle: 'Alexander Tsiomakh',
+	},
+	{
+		name: 'Instagram: ',
+		url: urlInstagram,
+		linkTitle: 'buhowski_',
 	},
 ];
 

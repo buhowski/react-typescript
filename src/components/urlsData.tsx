@@ -8,6 +8,8 @@ export const urlEmail = 'mailto:a.tsiomakh@gmail.com';
 
 export const urlCoindrop = 'https://coindrop.to/buhowski';
 
+export const urlInstagram = 'https://www.instagram.com/buhowski_';
+
 // All Pages Path
 export const pathToAbout = '/about';
 export const pathToProjects = '/projects';
