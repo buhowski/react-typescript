@@ -769,7 +769,7 @@
 	&-next {
 		@include tabletBig {
 			border-radius: 0 20px 20px 0;
-			box-shadow: -4px -5px 10px rgba($color: $black, $alpha: 0.8);
+			box-shadow: -2px -5px 10px rgba($color: $black, $alpha: 0.8);
 
 			right: 0;
 
@@ -793,7 +793,7 @@
 		@include tabletBig {
 			border-radius: 20px 0 0 20px;
 			left: 0;
-			box-shadow: 4px -5px 10px rgba($color: $black, $alpha: 0.8);
+			box-shadow: 2px -5px 10px rgba($color: $black, $alpha: 0.8);
 
 			&::after {
 				left: 100%;
