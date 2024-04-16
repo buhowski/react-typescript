@@ -11,13 +11,13 @@ $darken: #202020;
 $darker: #191919;
 $darkest: #111111;
 $black: #0f0d0d;
-// $colors: #9400ff #37ff8b;
+$colors: #9400ff #37ff8b;
 $blue-main: #005cb3;
 $snow: #ffffff;
 $red: #af0303;
 $titlePink: #fbb7a6;
 $textGrey: #bdbdbd;
-$starYellow: #d7ca82;
+$starYellow: #c3ae54;
 
 @mixin fullHD {
 	@media screen and (max-width: 2000px) {

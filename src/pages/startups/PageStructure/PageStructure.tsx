@@ -154,12 +154,14 @@ const PageStructure: React.FC<PageProps> = ({
 
 	return (
 		<div className={`wrapper wrapper--idea ${pageClassName} ${langDisable}`}>
-			<div className='idea-tabs idea-tabs--urls'>
-				{startupsNav.map(({ pageLink, pageName }, i) => (
-					<NavLink to={pageLink} end className={`idea-tabs__btn`} key={i}>
-						{pageName}
-					</NavLink>
-				))}
+			<div className='startup-action'>
+				<div className='idea-tabs idea-tabs--urls'>
+					{startupsNav.map(({ pageLink, pageName }, i) => (
+						<NavLink to={pageLink} end className={`idea-tabs__btn`} key={i}>
+							{pageName}
+						</NavLink>
+					))}
+				</div>
 			</div>
 
 			<div className='idea-section'>

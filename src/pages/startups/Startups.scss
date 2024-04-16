@@ -15,6 +15,12 @@
 	@include tabletBig {
 		height: auto;
 	}
+
+	@include mobile {
+		padding-right: 0;
+		padding-left: 0;
+		padding-bottom: 0;
+	}
 }
 
 .addToHome {
@@ -191,13 +197,14 @@
 		max-width: 777px;
 		width: 100%;
 		margin: 0 auto;
-		padding-bottom: 60px;
-		box-shadow: 0 0 10px rgba($color: $black, $alpha: 0.8);
+		padding-bottom: 70px;
+		box-shadow: 0 -2px 10px rgba($color: $black, $alpha: 0.8);
 	}
 
 	@include mobile {
 		padding-left: 15px;
 		padding-right: 15px;
+		border-radius: 0;
 	}
 }
 
@@ -252,6 +259,12 @@
 	}
 }
 
+.startup-action {
+	@include mobile {
+		padding: 0 10px;
+	}
+}
+
 .idea-tabs {
 	display: flex;
 	width: max-content;
@@ -271,15 +284,15 @@
 
 		@include tabletBig {
 			max-width: 777px;
-			margin: 10px auto 25px;
+			margin: 10px auto 30px;
 			text-align: center;
 			border-radius: 20px;
-			box-shadow: 0 0 5px rgba($color: $black, $alpha: 0.8);
+			box-shadow: 0 0 10px rgba($color: $black, $alpha: 0.8);
 		}
 
 		.idea-tabs__btn {
 			text-transform: none;
-			padding: 7px 30px;
+			padding: 7px 35px;
 			display: flex;
 			align-items: flex-end;
 			justify-content: center;
@@ -297,7 +310,7 @@
 				text-transform: uppercase;
 
 				@include tabletBig {
-					font-size: 15px;
+					font-size: 14px;
 				}
 			}
 
@@ -320,11 +333,11 @@
 		font-family: $LouisGeorgeCafBold;
 
 		@include tabletBig {
-			margin: 25px auto 30px;
+			margin: 35px auto;
 			width: max-content;
 			border-radius: 20px;
 			position: static;
-			box-shadow: 0 0 5px rgba($color: $black, $alpha: 0.8);
+			box-shadow: 0 0 10px rgba($color: $black, $alpha: 0.8);
 		}
 
 		.idea-tabs__btn {
@@ -348,8 +361,8 @@
 		@include tabletBig {
 			width: 100%;
 			flex-grow: 1;
-			padding-top: 8px;
-			padding-bottom: 6px;
+			padding-top: 9px;
+			padding-bottom: 7px;
 		}
 
 		&.active {
@@ -361,7 +374,7 @@
 
 .startup-title {
 	text-align: center;
-	font-size: 29px;
+	font-size: 31px;
 	margin-bottom: 30px;
 	margin-top: 15px;
 	color: $starYellow;
@@ -369,10 +382,6 @@
 	@include tabletBig {
 		margin-top: 40px;
 		margin-bottom: 0;
-	}
-
-	@include mobile {
-		font-size: 27px;
 	}
 }
 
@@ -396,15 +405,10 @@
 
 .headline {
 	&__title {
-		margin-top: -5px;
-		margin-bottom: 25px;
-		font-size: 29px;
+		margin-bottom: 30px;
+		font-size: 31px;
 		color: $starYellow;
 		text-align: center;
-
-		@include mobile {
-			font-size: 27px;
-		}
 	}
 }
 
