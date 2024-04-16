@@ -89,7 +89,7 @@
 		bottom: 47px;
 		left: 50%;
 		transform: translateX(-50%);
-		box-shadow: 0 0 6px rgba($color: $black, $alpha: 0.8);
+		box-shadow: 0 0 10px rgba($color: $black, $alpha: 0.8);
 		border-radius: 10px;
 		background-color: rgba($color: $black, $alpha: 0.9);
 		color: $textGrey;
@@ -197,7 +197,7 @@
 		max-width: 777px;
 		width: 100%;
 		margin: 0 auto;
-		padding-bottom: 70px;
+		padding-bottom: 75px;
 		box-shadow: 0 -2px 10px rgba($color: $black, $alpha: 0.8);
 	}
 
@@ -553,8 +553,8 @@
 		overflow: hidden;
 		height: 350px;
 		background-color: $black;
-		box-shadow: 0 0 5px rgba($color: $black, $alpha: 0.8);
-		border-radius: 20px;
+		box-shadow: 0 0 10px rgba($color: $black, $alpha: 0.8);
+		border-radius: 25px;
 	}
 
 	@include mobile {
@@ -772,7 +772,7 @@
 
 	&-next {
 		@include tabletBig {
-			border-radius: 0 20px 20px 0;
+			border-radius: 0 25px 25px 0;
 			box-shadow: -2px -5px 10px rgba($color: $black, $alpha: 0.8);
 
 			right: 0;
@@ -795,7 +795,7 @@
 		margin-left: auto;
 
 		@include tabletBig {
-			border-radius: 20px 0 0 20px;
+			border-radius: 25px 0 0 25px;
 			left: 0;
 			box-shadow: 2px -5px 10px rgba($color: $black, $alpha: 0.8);
 
