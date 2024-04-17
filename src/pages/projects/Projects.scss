@@ -9,7 +9,7 @@
 	position: relative;
 	z-index: 0;
 	width: calc(100% / 3 - 80px / 3);
-	height: 420px;
+	height: 450px;
 	flex-shrink: 0;
 	margin-right: 40px;
 	margin-bottom: 40px;
@@ -56,11 +56,6 @@
 			transform: translateY(-10px);
 		}
 
-		.project-link {
-			background-size: 100% 500px;
-			background-position: 0 -50px;
-		}
-
 		.project-name span {
 			animation: LowLine 0.4s infinite;
 		}
@@ -104,9 +99,8 @@
 .project-link {
 	width: 100%;
 	height: 100%;
-	background: linear-gradient(0deg, $darker 6%, transparent 100%);
-	background-size: 100% 800px;
-	background-position: 0 -300px;
+	background: linear-gradient(0deg, $darker, transparent);
+
 	transform: translateZ(1px);
 	transition: 0.3s ease;
 }
