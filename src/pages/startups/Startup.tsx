@@ -7,7 +7,7 @@ import { startupTextData } from './data/startup/textData';
 const Startup = () => {
 	return (
 		<PageStructure
-			title='Core Concept Presentation'
+			title='Presentation'
 			textData={startupTextData}
 			Slider={<Slider dataSlider={dataSlider} />}
 		/>
