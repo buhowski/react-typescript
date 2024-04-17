@@ -198,7 +198,7 @@
 		width: 100%;
 		margin: 0 auto;
 		padding-bottom: 75px;
-		box-shadow: 0 0 10px rgba($color: $black, $alpha: 0.8);
+		box-shadow: 0 0 10px rgba($color: $darkest, $alpha: 1);
 	}
 
 	@include mobile {
