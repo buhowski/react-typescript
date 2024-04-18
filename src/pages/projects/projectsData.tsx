@@ -31,11 +31,11 @@ const projectsData = [
 		img: `url(${bgFaber})`,
 		url: 'https://faberacademy.com/',
 		name: 'Faber Academy',
-		desk: `Responsive Web Design for WordPress. Faber has helped writers from around the world find their voice. At Faber Academy, we're proud to continue that tradition.`,
+		desk: `Cross-browser Responsive Web Design for WordPress. Developed from Scratch.`,
 		skills: [
 			'Twig',
 			'SCSS',
-			'JS/ES6',
+			'JavaScript',
 			'GSAP',
 			'Pixel Perfect',
 			'Admin Panel',
@@ -48,7 +48,7 @@ const projectsData = [
 		img: `url(${bgBentley})`,
 		url: 'https://www.bentley-skinner.co.uk/',
 		name: 'Bentley & Skinner',
-		desk: 'Responsive Web Design for WordPress. Jewellers by Royal appointment to Her Late Majesty The Queen and His Former Royal Highness The Prince of Wales, now His Majesty King Charles III, buy and sell the loveliest jewellery.',
+		desk: 'Cross-browser Responsive Web Design for WordPress. Developed from Scratch.',
 		skills: [
 			'Twig',
 			'SCSS',
@@ -64,7 +64,7 @@ const projectsData = [
 		img: `url(${bgFaberBooks})`,
 		url: 'https://www.faber.co.uk/',
 		name: 'Faber',
-		desk: 'Responsive Web Design for WordPress. Faber is one of the world’s great independent publishing houses. Since we were founded in 1929, poetry has been at the heart of our publishing, with T. S. Eliot as our first Poetry Editor.',
+		desk: 'Cross-browser Responsive Web Design for WordPress. Developed from Scratch.',
 		skills: [
 			'Twig',
 			'SCSS',
