@@ -380,7 +380,7 @@
 	color: $starYellow;
 
 	@include tabletBig {
-		margin-top: 40px;
+		margin-top: 35px;
 		margin-bottom: 0;
 	}
 }
@@ -397,7 +397,7 @@
 
 		@include tabletBig {
 			text-align: center;
-			margin-top: 40px;
+			margin-top: 35px;
 			font-size: 18px;
 		}
 	}
