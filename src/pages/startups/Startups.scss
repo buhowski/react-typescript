@@ -342,7 +342,7 @@
 
 		.idea-tabs__btn {
 			@include tabletBig {
-				width: 60px;
+				width: 58px;
 			}
 
 			&:hover {
@@ -361,8 +361,8 @@
 		@include tabletBig {
 			width: 100%;
 			flex-grow: 1;
-			padding-top: 9px;
-			padding-bottom: 7px;
+			padding-top: 8px;
+			padding-bottom: 6px;
 		}
 
 		&.active {
