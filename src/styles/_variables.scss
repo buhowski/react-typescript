@@ -19,20 +19,8 @@ $titlePink: #fbb7a6;
 $textGrey: #bdbdbd;
 $starYellow: #dfb842;
 
-@mixin fullHD {
-	@media screen and (max-width: 2000px) {
-		@content;
-	}
-}
-
 @mixin heightTopMax {
-	@media screen and (min-width: 769px) and (max-height: 896px) {
-		@content;
-	}
-}
-
-@mixin heightTopMid {
-	@media screen and (min-width: 769px) and (max-height: 855px) {
+	@media screen and (min-width: 769px) and (max-height: 860px) {
 		@content;
 	}
 }
@@ -44,7 +32,7 @@ $starYellow: #dfb842;
 }
 
 @mixin heightTopMinMax {
-	@media screen and (min-width: 769px) and (max-height: 745px) {
+	@media screen and (min-width: 769px) and (max-height: 766px) {
 		@content;
 	}
 }

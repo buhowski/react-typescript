@@ -76,9 +76,10 @@ canvas {
 	margin: 0 auto;
 	overflow: hidden;
 	align-self: flex-end;
+	width: 58%;
 
-	@include fullHD {
-		width: 57%;
+	@include heightTopMax {
+		width: 55%;
 	}
 
 	@include heightTopMin {
