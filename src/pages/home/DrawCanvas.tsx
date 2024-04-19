@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 
-import myImage from '../../assets/images/face.png';
-import illustrationImage from '../../assets/images/face-after.png';
+import myImage from '../../assets/images/photo.png';
+import illustrationImage from '../../assets/images/photo-drawing.png';
 
 interface Point {
 	time: number;
