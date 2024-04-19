@@ -38,13 +38,13 @@ $starYellow: #dfb842;
 }
 
 @mixin heightTopMin {
-	@media screen and (min-width: 769px) and (max-height: 790px) {
+	@media screen and (min-width: 769px) and (max-height: 808px) {
 		@content;
 	}
 }
 
 @mixin heightTopMinMax {
-	@media screen and (min-width: 769px) and (max-height: 730px) {
+	@media screen and (min-width: 769px) and (max-height: 745px) {
 		@content;
 	}
 }
