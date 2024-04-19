@@ -16,7 +16,7 @@
 	.base-title {
 		line-height: 1.6;
 		padding: 0;
-		margin-bottom: 3rem;
+		margin-bottom: 2rem;
 
 		@include tabletSmall {
 			margin-bottom: 30px;
@@ -78,14 +78,6 @@ canvas {
 	align-self: flex-end;
 
 	@include fullHD {
-		width: 60%;
-	}
-
-	@include heightTopMax {
-		width: 59%;
-	}
-
-	@include heightTopMid {
 		width: 57%;
 	}
 
