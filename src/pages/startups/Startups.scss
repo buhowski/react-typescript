@@ -526,8 +526,7 @@
 	font-style: italic;
 	margin-top: 65px;
 	font-size: 15px;
-	// white-space: pre-line;
-	padding-left: 20%;
+	white-space: pre-line;
 
 	@include tabletBig {
 		margin-bottom: 65px;
