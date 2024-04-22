@@ -13,19 +13,12 @@ const Preloader = () => {
 
 	return loading ? (
 		<div className='preloader'>
-			<div className='lds-spinner'>
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
+			<div className='preloader__spinner'>
+				{Array(12)
+					.fill(null)
+					.map((_, index) => (
+						<span className='preloader__spinner-span' key={index}></span>
+					))}
 			</div>
 		</div>
 	) : null;
