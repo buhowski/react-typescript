@@ -65,7 +65,7 @@ $starYellow: #dfb842;
 }
 
 @mixin mobileSmall {
-	@media screen and (max-width: 361px) {
+	@media screen and (max-width: 359px) {
 		@content;
 	}
 }

@@ -2,27 +2,26 @@
 
 .contact-menu {
 	a {
-		margin-right: 35px;
+		margin-right: 40px;
 		width: 60px;
 		height: 60px;
-		padding: 0;
 		border-radius: 50%;
 		position: relative;
-		background: $darker;
+		background-color: $darker;
 		flex-shrink: 0;
-		box-shadow: 0 0 6px rgba($color: $darkest, $alpha: 1);
+		box-shadow: 0 0 6px rgba($color: $darker, $alpha: 1);
 
 		@media screen and (min-width: 2000px) {
 			width: calc(50px + 1vw);
 			height: calc(50px + 1vw);
 		}
 
-		@include tablet {
-			margin-right: 25px;
+		@include tabletBig {
+			margin-right: 26px;
 		}
 
 		@include mobileSmall {
-			margin-right: 22px;
+			margin-right: 20px;
 		}
 
 		&:last-child {
@@ -47,15 +46,14 @@
 		color: $blue-main;
 		backface-visibility: hidden;
 		position: absolute;
-		top: -27px;
+		top: -30px;
 		left: 50%;
 		transform: translateX(-35%) rotate(0deg);
 		letter-spacing: 3px;
 		opacity: 0;
 		transition: all 0.4s ease;
-		margin-left: 5%;
 		white-space: nowrap;
-		font-size: 18px;
+		font-size: 21px;
 	}
 	a:hover > .title {
 		opacity: 1;

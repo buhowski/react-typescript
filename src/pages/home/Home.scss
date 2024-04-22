@@ -3,6 +3,7 @@
 .home-wrapper {
 	min-height: calc(100% - 90px);
 	height: auto;
+	display: flex;
 
 	@include tablet {
 		min-height: calc(100% - 80px);
@@ -11,23 +12,6 @@
 	@include tabletSmall {
 		flex-direction: column;
 		justify-content: space-between;
-	}
-
-	.base-title {
-		line-height: 1.6;
-		padding: 0;
-		margin-bottom: 2rem;
-
-		@include tabletSmall {
-			margin-bottom: 30px;
-			font-size: 37px;
-		}
-
-		@include mobile {
-			span {
-				display: block;
-			}
-		}
 	}
 }
 
@@ -40,26 +24,41 @@
 		margin-bottom: 80px;
 	}
 
+	@include tablet {
+		margin-bottom: 30px;
+	}
+
 	@include tabletSmall {
 		width: 100%;
 		margin-bottom: 0;
 		margin-top: 10px;
 	}
 
-	.tag-color {
-		font-size: 25px;
-		margin-bottom: 3rem;
-		font-family: $LouisGeorgeCaf;
-		letter-spacing: 3px;
-		white-space: nowrap;
-
-		@media screen and (min-width: 2000px) {
-			font-size: calc(21px + 0.6vw);
-		}
+	&__title {
+		font-size: clamp(52px, 5vw, 112px);
+		margin-bottom: min(5vh, 60px);
 
 		@include tabletSmall {
-			margin-bottom: 35px;
-			font-size: 22px;
+			font-size: 39px;
+			margin-bottom: 30px;
+		}
+
+		span {
+			display: block;
+		}
+	}
+
+	&__position {
+		font-size: clamp(23px, 1.7vw, 48px);
+		margin-bottom: min(6.6vh, 70px);
+		font-family: $LouisGeorgeCaf;
+		letter-spacing: 5px;
+		white-space: nowrap;
+		color: $blue-main;
+
+		@include tabletSmall {
+			margin-bottom: 37px;
+			letter-spacing: 4px;
 		}
 	}
 }
@@ -74,9 +73,8 @@ canvas {
 
 .photoContainer {
 	margin: 0 auto;
-	overflow: hidden;
 	align-self: flex-end;
-	width: 58%;
+	width: 59%;
 
 	@include heightTopMax {
 		width: 55%;
@@ -101,9 +99,10 @@ canvas {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: top;
-	max-height: 785px;
 	padding-bottom: 82.6%;
 	position: relative;
+	filter: drop-shadow(0 0 5px rgba($color: $black, $alpha: 0.8));
+	overflow: hidden;
 
 	.illustrationImage {
 		display: none;

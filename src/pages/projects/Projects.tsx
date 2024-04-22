@@ -3,8 +3,8 @@ import './Projects.scss';
 
 const Projects = () => {
 	return (
-		<div className='wrapper wrapper-container'>
-			<h1 className='base-title base-title--main'>Some Works</h1>
+		<div className='wrapper'>
+			<h1 className='base-title h1'>Some Works</h1>
 			<div className='projects-container'>
 				{projectsData.map(({ img, url, urlCode, name, desk, skills }, i) => {
 					return (

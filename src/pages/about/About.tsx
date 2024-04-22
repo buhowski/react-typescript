@@ -20,7 +20,7 @@ const About = () => {
 
 	return (
 		<div className='wrapper about-wrapper'>
-			<h1 className='base-title base-title--main'>Me Starter Pack</h1>
+			<h1 className='base-title h1'>Starter Pack</h1>
 
 			<div className='about-info'>
 				<div className='img'>

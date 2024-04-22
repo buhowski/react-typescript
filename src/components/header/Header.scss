@@ -48,12 +48,12 @@
 }
 
 .nav-item {
-	margin-right: 6rem;
+	margin-right: 130px;
 
 	@include tablet {
 		margin-right: 0;
 		justify-content: center;
-		margin-bottom: 30px;
+		margin-bottom: 35px;
 	}
 
 	&:last-of-type {

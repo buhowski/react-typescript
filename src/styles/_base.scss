@@ -86,48 +86,22 @@ svg {
 	overflow-y: auto;
 	scrollbar-gutter: stable;
 	height: 100%;
-
-	.wrapper-container {
-		padding-bottom: 60px;
-
-		@include tabletSmall {
-			padding-bottom: 10px;
-		}
-	}
-}
-
-.base-title {
-	font-size: calc(28px + 2.5vw);
-	letter-spacing: 10px;
-	padding: 2rem 0;
-	font-family: $LouisGeorgeCafBold;
-	line-height: normal;
-
-	@media screen and (min-width: 2000px) {
-		font-size: calc(24px + 2vw);
-	}
-
-	@include tabletSmall {
-		padding-top: 1rem;
-		letter-spacing: 8px;
-	}
-
-	&--main {
-		font-size: 48px;
-
-		@media screen and (max-width: 1366px) {
-			font-size: 37px;
-		}
-
-		@include mobile {
-			font-size: 33px;
-		}
-	}
 }
 
 .h1 {
+	letter-spacing: 10px;
 	font-family: $LouisGeorgeCafBold;
-	letter-spacing: 3px;
+}
+
+.base-title {
+	margin-top: 30px;
+	font-size: clamp(36px, 2.8vw, 70px);
+	white-space: nowrap;
+
+	@include mobile {
+		margin-top: 10px;
+		letter-spacing: 9px;
+	}
 }
 
 .h2 {
@@ -140,6 +114,7 @@ svg {
 .tag-color {
 	color: $blue-main;
 }
+
 .d-flex-c-b {
 	display: flex;
 	align-items: center;

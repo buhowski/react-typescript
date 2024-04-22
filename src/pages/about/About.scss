@@ -9,17 +9,9 @@
 	@include tablet {
 		height: calc(100% - 80px);
 		padding-bottom: 45px;
-	}
 
-	.base-title {
-		padding-bottom: 0;
-
-		@include tabletSmall {
-			margin-bottom: 2rem;
-		}
-
-		@include mobileSmall {
-			font-size: 27px;
+		.base-title {
+			margin-bottom: 30px;
 		}
 	}
 }
