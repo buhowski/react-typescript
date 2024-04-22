@@ -23,8 +23,9 @@ const About = () => {
 			<h1 className='base-title h1'>Starter Pack</h1>
 
 			<div className='about-info'>
-				<div className='img'>
+				<div className=''>
 					<img
+						className='about-info__img'
 						src={PhotoBg}
 						alt='Alexander Tsiomakh (Олександр Цьомах, Oleksandr Tsiomakh, buhowski, Человек Мужик) - Frontend developer, Startups owner'
 					/>
