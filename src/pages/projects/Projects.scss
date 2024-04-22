@@ -4,6 +4,10 @@
 	display: flex;
 	flex-wrap: wrap;
 	margin-top: 40px;
+
+	@include tablet {
+		margin-top: 20px;
+	}
 }
 
 .project {

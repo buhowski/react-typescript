@@ -380,7 +380,7 @@
 	color: $starYellow;
 
 	@include tabletBig {
-		margin-top: 35px;
+		margin-top: 30px;
 		margin-bottom: 0;
 	}
 }
@@ -391,13 +391,12 @@
 		margin-bottom: 0;
 		font-size: 16px;
 		text-align: right;
-		margin: 10px 0 15px;
+		margin-bottom: 15px;
 		// TODO: need color pitch number
 		color: $textGrey;
 
 		@include tabletBig {
 			text-align: center;
-			margin-top: 35px;
 			font-size: 18px;
 		}
 	}

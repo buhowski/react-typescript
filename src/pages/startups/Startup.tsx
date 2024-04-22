@@ -8,6 +8,8 @@ const Startup = () => {
 	return (
 		<PageStructure
 			title='Presentation'
+			pageClassName=''
+			langDisable=''
 			textData={startupTextData}
 			Slider={<Slider dataSlider={dataSlider} />}
 		/>

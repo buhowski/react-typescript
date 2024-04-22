@@ -94,8 +94,9 @@ svg {
 }
 
 .base-title {
-	margin-top: 30px;
+	font-size: 36px;
 	font-size: clamp(36px, 2.8vw, 70px);
+	margin-top: 30px;
 	white-space: nowrap;
 
 	@include mobile {
