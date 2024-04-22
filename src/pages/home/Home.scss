@@ -39,7 +39,7 @@
 		margin-bottom: min(5vh, 60px);
 
 		@include tabletSmall {
-			font-size: 39px;
+			font-size: 41px;
 			margin-bottom: 30px;
 		}
 
@@ -58,7 +58,7 @@
 
 		@include tabletSmall {
 			margin-bottom: 37px;
-			letter-spacing: 4px;
+			letter-spacing: 3px;
 		}
 	}
 }
