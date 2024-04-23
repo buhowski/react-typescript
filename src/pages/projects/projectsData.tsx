@@ -31,7 +31,7 @@ const projectsData = [
 		img: `url(${bgFaber})`,
 		url: 'https://faberacademy.com/',
 		name: 'Faber Academy',
-		desk: `Cross-browser Responsive Web Design for WordPress. Developed from Scratch.`,
+		desk: `Website Markup from Scratch. Cross-browser Responsive Web Design + Animations + Frontend for WordPress.`,
 		skills: [
 			'Twig',
 			'SCSS',
@@ -48,7 +48,7 @@ const projectsData = [
 		img: `url(${bgBentley})`,
 		url: 'https://www.bentley-skinner.co.uk/',
 		name: 'Bentley & Skinner',
-		desk: 'Cross-browser Responsive Web Design for WordPress. Developed from Scratch.',
+		desk: 'Website Markup from Scratch. Cross-browser Responsive Web Design + Animations + Frontend for WordPress.',
 		skills: [
 			'Twig',
 			'SCSS',
@@ -64,7 +64,7 @@ const projectsData = [
 		img: `url(${bgFaberBooks})`,
 		url: 'https://www.faber.co.uk/',
 		name: 'Faber',
-		desk: 'Cross-browser Responsive Web Design for WordPress. Developed from Scratch.',
+		desk: 'Website Markup from Scratch. Cross-browser Responsive Web Design + Animations + Frontend for WordPress.',
 		skills: [
 			'Twig',
 			'SCSS',
