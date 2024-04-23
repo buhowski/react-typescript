@@ -1,12 +1,6 @@
 @import '../../styles/variables';
 @import '../../styles/animation';
 
-.desktop-responsive {
-	@include tablet {
-		display: none;
-	}
-}
-
 .wrapper--idea {
 	position: relative;
 	padding-bottom: 30px;

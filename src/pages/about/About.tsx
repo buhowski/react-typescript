@@ -38,7 +38,7 @@ const About = () => {
 								id={classItem}
 								onMouseEnter={!useTablet ? addActiveClass : undefined}
 								onClick={addActiveClass}
-								className={`d-flex-c-c ball${active === classItem ? ' active' : ''}`}
+								className={`ball ${active === classItem ? ' active' : ''}`}
 							></div>
 
 							<div className='show'>

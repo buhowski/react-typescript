@@ -55,9 +55,8 @@ body {
 	}
 }
 
-.a {
+button {
 	color: $snow;
-	padding: 0.75rem 15px;
 }
 
 img,
@@ -120,23 +119,6 @@ svg {
 	color: $blue-main;
 }
 
-.d-flex-c-b {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-}
-.d-flex-c-c {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-.d-flex-c {
-	display: flex;
-	align-items: center;
-}
-.d-flex {
-	display: flex;
-}
 .pos-abs {
 	position: absolute;
 	top: 0;

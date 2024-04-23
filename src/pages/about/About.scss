@@ -64,11 +64,14 @@
 	}
 
 	.ball {
-		width: 33px;
-		height: 33px;
+		width: 35px;
+		height: 35px;
 		z-index: 5;
 		transition: all 0.1s;
 		border-radius: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 
 		&:after {
 			content: '';

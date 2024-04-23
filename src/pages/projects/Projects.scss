@@ -105,7 +105,6 @@
 	width: 100%;
 	height: 100%;
 	background: linear-gradient(0deg, $darker, transparent);
-
 	transform: translateZ(1px);
 	transition: 0.3s ease;
 }
@@ -113,17 +112,21 @@
 .project-container {
 	width: 100%;
 	height: 100%;
+	display: flex;
 	align-items: flex-end;
 }
 
 .project-name {
 	color: $starYellow;
 	font-family: $Raleway;
-	font-size: 1.5rem;
-	line-height: 1.4;
-	letter-spacing: 3.2px;
-	padding-bottom: 1.5rem;
-	padding-left: 1rem;
+	font-size: 24px;
+	letter-spacing: 3px;
+	padding-bottom: 20px;
+	padding-left: 30px;
+
+	@include mobile {
+		padding: 15px;
+	}
 
 	span {
 		opacity: 0;
@@ -132,7 +135,7 @@
 
 .project__skills {
 	position: absolute;
-	background-color: rgba($color: $darker, $alpha: 0.9);
+	background-color: rgba($color: $darker, $alpha: 0.96);
 	box-shadow: 0 5px 10px rgba($color: $darker, $alpha: 1);
 	top: 0;
 	left: 18px;
@@ -143,11 +146,10 @@
 	transition: transform 0.3s ease 0.2s;
 
 	@include tabletBig {
-		padding-left: 12px;
-		padding-right: 12px;
-		font-size: 14px;
-		left: 5px;
-		width: calc(100% - 10px);
+		padding-left: 10px;
+		padding-right: 10px;
+		left: 0;
+		width: 100%;
 	}
 
 	&-p {
@@ -155,28 +157,32 @@
 		-webkit-box-orient: vertical;
 		-webkit-line-clamp: 7;
 		overflow: hidden;
-		font-size: 14px;
-		margin-bottom: 15px;
+		margin-bottom: 20px;
 		color: $textGrey;
 	}
 
 	&-action {
 		display: flex;
-		align-items: baseline;
-		margin-bottom: 5px;
+		align-items: flex-end;
+		margin-bottom: 10px;
 		color: $snow;
 
 		.nav-link {
-			padding: 4px 12px;
+			padding-top: 5px;
+			padding-bottom: 5px;
+			padding-left: 17px;
+			padding-right: 12px;
 			margin-left: 30px;
 		}
 	}
 
 	&-title {
 		color: $blue-main;
-		text-transform: capitalize;
 		font-family: $LouisGeorgeCaf;
+		font-weight: 600;
+		letter-spacing: 3px;
 		margin-right: auto;
+		text-transform: uppercase;
 	}
 
 	&-items {

@@ -36,7 +36,7 @@
 
 	&__title {
 		font-size: 80px;
-		font-size: clamp(64px, 5vw, 112px);
+		font-size: clamp(64px, 5vw, 98px);
 		margin-bottom: min(5vh, 60px);
 
 		@include tabletSmall {
@@ -51,7 +51,7 @@
 
 	&__position {
 		font-size: 26px;
-		font-size: clamp(26px, 1.6vw, 48px);
+		font-size: clamp(26px, 1.6vw, 40px);
 		margin-bottom: min(6.6vh, 70px);
 		font-family: $LouisGeorgeCaf;
 		letter-spacing: 6px;

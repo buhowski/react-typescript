@@ -1,7 +1,12 @@
 @import '../../styles/variables.scss';
 
 .contact-menu {
-	a {
+	display: flex;
+
+	&__item {
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		margin-right: 40px;
 		width: 60px;
 		height: 60px;
@@ -30,6 +35,7 @@
 	}
 
 	&__icon {
+		display: block;
 		width: 24px;
 
 		@media screen and (min-width: 2000px) {

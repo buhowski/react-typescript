@@ -11,14 +11,14 @@ const Projects = () => {
 						<div className='project' key={i}>
 							<div className='project__before'></div>
 
-							<div className='project__bg d-flex-c' style={{ backgroundImage: img }}>
+							<div className='project__bg' style={{ backgroundImage: img }}>
 								<a
-									className='a project-link'
+									className='project-link'
 									href={url}
 									target='_blank'
 									rel='noopener noreferrer'
 								>
-									<div className='project-container d-flex'>
+									<div className='project-container'>
 										<div className='project-name'>
 											{name}
 											<span>_</span>

@@ -34,8 +34,8 @@ const Header = () => {
 
 	const navLinkItems = linksData.map(({ pageLink, pageName, activeClass }, i) => {
 		return (
-			<li className='nav-item d-flex' key={i}>
-				<NavLink className={`a nav-link ${activeClass}`} to={`${pageLink}`} end>
+			<li className='nav-item' key={i}>
+				<NavLink className={`nav-link ${activeClass}`} to={`${pageLink}`} end>
 					{pageName}
 				</NavLink>
 			</li>
@@ -44,8 +44,8 @@ const Header = () => {
 
 	const LogoNavLink = () => {
 		return (
-			<div className='logo d-flex'>
-				<NavLink className='a logo-link' to='/' end>
+			<div className='logo'>
+				<NavLink className='logo-link' to='/' end>
 					<span className='tag-color'>&lt;</span>
 					<span>Buhowski</span>
 					<span className='tag-color'>/&gt;</span>
@@ -55,7 +55,7 @@ const Header = () => {
 	};
 
 	return (
-		<header className={`header d-flex-c${menuOpen ? ' header-overflow' : ''}`}>
+		<header className={`header ${menuOpen ? ' header-overflow' : ''}`}>
 			<div className='wrapper'>
 				{tabletQuery ? (
 					<>
@@ -85,18 +85,16 @@ const Header = () => {
 
 						<nav className={`pos-abs mobile-menu${menuOpen ? ' open' : ''}`}>
 							<div className={`mobile-menu__content`}>
-								<ul className='nav'>{navLinkItems}</ul>
+								<ul className='mobile-nav'>{navLinkItems}</ul>
 								<Socials />
 							</div>
 						</nav>
 					</>
 				) : (
-					<div className='d-flex-c-b'>
+					<div className='header-nav header-nav--desktop'>
 						<LogoNavLink />
 
-						<nav className='desktop-responsive'>
-							<ul className='nav d-flex-c'>{navLinkItems}</ul>
-						</nav>
+						<ul className='header-nav__list'>{navLinkItems}</ul>
 					</div>
 				)}
 			</div>

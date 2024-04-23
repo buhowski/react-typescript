@@ -3,11 +3,11 @@ import './Socials.scss';
 
 const Socials = () => {
 	return (
-		<div className='contact-menu d-flex-c'>
+		<div className='contact-menu'>
 			{socialData.map(({ link, title, icon }, index) => {
 				return (
 					<a
-						className='d-flex-c-c'
+						className='contact-menu__item'
 						key={index}
 						href={link}
 						target='_blank'

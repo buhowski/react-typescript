@@ -63,7 +63,7 @@ const PopupContacts = () => {
 				onMouseEnter={!useTabletLarge ? toggleShowContacts : undefined}
 				onClick={toggleShowContacts}
 				type='button'
-				className='a nav-link nav-link--underline'
+				className='nav-link nav-link--underline'
 			>
 				Contact Info
 			</button>
