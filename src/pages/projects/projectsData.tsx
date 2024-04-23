@@ -22,7 +22,7 @@ const projectsData = [
 		img: `url(${bgStartup})`,
 		url: `${pathToStartup}`,
 		urlCode: 'https://github.com/buhowski/react-typescript',
-		name: 'My Portfolio +Startups',
+		name: 'My Portfolio + Startups',
 		desk: `Create React App, React Hooks, TypeScript, React Transition, React Router, SCSS + font files, React SimpleBar, CRACO, Jest. Netlify deploy`,
 		skills: ['UI/UX', 'SCSS', 'TypeScrpt', 'React', 'PWA', 'Startup'],
 	},
