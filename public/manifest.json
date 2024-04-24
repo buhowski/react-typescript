@@ -18,12 +18,6 @@
 			"type": "image/png"
 		},
 		{
-			"src": "logoMaskable.png",
-			"sizes": "any",
-			"type": "image/png",
-			"purpose": "maskable"
-		},
-		{
 			"src": "logo.png",
 			"sizes": "512x512",
 			"type": "image/png"
@@ -32,9 +26,15 @@
 			"src": "logo.svg",
 			"sizes": "1024x1024",
 			"type": "image/svg+xml"
+		},
+		{
+			"src": "logoMaskable.png",
+			"sizes": "any",
+			"type": "image/png",
+			"purpose": "maskable"
 		}
 	],
-	"start_url": "/startup",
+	"start_url": "/mvp",
 	"display_override": ["standalone"],
 	"display": "standalone",
 	"theme_color": "#202020",
