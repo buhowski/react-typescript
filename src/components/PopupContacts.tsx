@@ -21,7 +21,7 @@ const dataContacts = [
 	{
 		name: 'Instagram: ',
 		url: urlInstagram,
-		linkTitle: 'buhowski_',
+		linkTitle: 'buhowski',
 	},
 ];
 
