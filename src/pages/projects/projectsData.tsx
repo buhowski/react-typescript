@@ -13,7 +13,8 @@ import bgFaber from './images/faber.jpg';
 import bgFaberBooks from './images/faber-books.jpg';
 import bgBentley from './images/bentley.jpg';
 import bgGalleryImg from './images/gallery-img.png';
-import bgStartup from './images/startups-img.jpg';
+import bgStartup from './images/startup.webp';
+import nascentdesign from './images/nascentdesign.webp';
 
 import { pathToStartup } from '../../components/urlsData';
 
@@ -22,9 +23,33 @@ const projectsData = [
 		img: `url(${bgStartup})`,
 		url: `${pathToStartup}`,
 		urlCode: 'https://github.com/buhowski/react-typescript',
-		name: 'My Portfolio + Startups',
-		desk: `Create React App, React Hooks, TypeScript, React Transition, React Router, SCSS + font files, React SimpleBar, CRACO, Jest. Netlify deploy`,
-		skills: ['UI/UX', 'SCSS', 'TypeScrpt', 'React', 'PWA', 'Startup'],
+		name: 'Portfolio + My Startups',
+		desk: `Create React App, React Hooks, TypeScript, React Transition, React Router, SCSS + font files, React SimpleBar, CRACO, Jest. Netlify / Vercel deploy via GitHub. SEO + Progressive Web App. Achieved 100% of Web Performance Optimization.`,
+		skills: ['UI/UX', 'SCSS', 'TypeScrpt', 'React', 'PWA'],
+	},
+
+	{
+		img: `url(${nascentdesign})`,
+		url: `https://nascentdesign.com/`,
+		name: 'Nascent Design',
+		desk: `Pixel Perfect, Cross-browser, Responsive Web Design + Animations`,
+		skills: ['SCSS', 'JavaScript', 'GSAP', 'Pixel Perfect'],
+	},
+
+	{
+		img: `url(${bgBentley})`,
+		url: 'https://www.bentley-skinner.co.uk/',
+		name: 'Bentley & Skinner',
+		desk: 'Website Markup from Scratch. Cross-browser Responsive Web Design + Animations + Frontend for WordPress.',
+		skills: [
+			'Twig',
+			'SCSS',
+			'JavaScript',
+			'GSAP',
+			'Pixel Perfect',
+			'Admin Panel',
+			'WordPress',
+		],
 	},
 
 	{
@@ -41,22 +66,6 @@ const projectsData = [
 			'Admin Panel',
 			'WordPress',
 			'Google Maps API',
-		],
-	},
-
-	{
-		img: `url(${bgBentley})`,
-		url: 'https://www.bentley-skinner.co.uk/',
-		name: 'Bentley & Skinner',
-		desk: 'Website Markup from Scratch. Cross-browser Responsive Web Design + Animations + Frontend for WordPress.',
-		skills: [
-			'Twig',
-			'SCSS',
-			'JavaScript',
-			'GSAP',
-			'Pixel Perfect',
-			'Admin Panel',
-			'WordPress',
 		],
 	},
 

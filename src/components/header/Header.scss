@@ -50,7 +50,7 @@
 	}
 
 	&__list {
-		min-width: 60%;
+		min-width: 59%;
 		display: flex;
 		justify-content: space-between;
 		margin-left: auto;
@@ -64,7 +64,7 @@
 }
 
 .nav-item {
-	margin-right: 85px;
+	margin-right: 75px;
 
 	@include tablet {
 		text-align: center;
@@ -95,7 +95,7 @@
 		height: 2px;
 		background-color: $blue-main;
 		z-index: -1;
-		transition: height 0.4s ease, transform 0.4s ease;
+		transition: height 0.3s ease, transform 0.3s ease;
 	}
 
 	&.active,

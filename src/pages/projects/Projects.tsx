@@ -40,7 +40,7 @@ const Projects = () => {
 													rel='noopener noreferrer'
 													className='nav-link'
 												>
-													Live
+													Site
 												</a>
 											)}
 
