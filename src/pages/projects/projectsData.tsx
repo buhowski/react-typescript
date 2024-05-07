@@ -12,7 +12,7 @@ import bgEnde from './images/ende.jpg';
 import bgFaber from './images/faber.jpg';
 import bgFaberBooks from './images/faber-books.jpg';
 import bgBentley from './images/bentley.jpg';
-import bgGalleryImg from './images/gallery-img.png';
+import bgGalleryImg from './images/gallery-img.webp';
 import bgStartup from './images/startup.webp';
 import nascentdesign from './images/nascentdesign.webp';
 
