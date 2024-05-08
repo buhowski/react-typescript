@@ -1,4 +1,4 @@
-export const urlTelegram = 'https://t.me/olexandert';
+export const urlTelegram = 'https://t.me/OlexanderTsiomakh';
 
 export const urlLinkedIn = 'https://www.linkedin.com/in/olexander/';
 
