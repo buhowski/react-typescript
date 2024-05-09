@@ -54,14 +54,13 @@
 		font-size: clamp(26px, 1.6vw, 40px);
 		margin-bottom: min(6.6vh, 70px);
 		font-family: $LouisGeorgeCaf;
-		letter-spacing: 5px;
+		letter-spacing: 4px;
 		white-space: nowrap;
 		color: $blue-main;
 
 		@include tabletSmall {
 			font-size: 23px;
 			margin-bottom: 30px;
-			letter-spacing: 4px;
 		}
 	}
 }

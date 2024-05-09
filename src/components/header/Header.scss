@@ -50,7 +50,7 @@
 	}
 
 	&__list {
-		min-width: 59%;
+		min-width: 56%;
 		display: flex;
 		justify-content: space-between;
 		margin-left: auto;
@@ -64,7 +64,7 @@
 }
 
 .nav-item {
-	margin-right: 75px;
+	margin-right: 70px;
 
 	@include tablet {
 		text-align: center;
