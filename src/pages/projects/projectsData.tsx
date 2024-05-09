@@ -86,19 +86,19 @@ const projectsData = [
 	},
 
 	{
-		img: `url(${BgBottleService})`,
-		url: 'https://www-youngspirits-co-uk.vercel.app',
-		name: 'Young Spirits',
-		desk: 'The secret weapon of U.K. Small distillers & producers',
-		skills: ['HTML', 'CSS', 'JavaScript', 'Google Maps API', 'Apply Form'],
-	},
-
-	{
 		img: `url(${BgArchitect})`,
 		url: 'https://www-williamslester-com.vercel.app',
 		name: 'Architects',
 		desk: 'Williams Lester is an RIBA Chartered Architects Practice based in Ringwood, Hampshire and has grown over the last 30 years to become one of the most respected and successful architectural practices in the region. We provide a high quality professional service and have developed specialist expertise in residential development, conservation, retirement living and master-planning.	Handling all Front-End tasks',
 		skills: ['HTML', 'CSS', 'JavaScript', 'Barba.js', 'JS Animations'],
+	},
+
+	{
+		img: `url(${BgBottleService})`,
+		url: 'https://www-youngspirits-co-uk.vercel.app',
+		name: 'Young Spirits',
+		desk: 'The secret weapon of U.K. Small distillers & producers',
+		skills: ['HTML', 'CSS', 'JavaScript', 'Google Maps API', 'Apply Form'],
 	},
 
 	{
@@ -111,7 +111,7 @@ const projectsData = [
 
 	{
 		img: `url(${bgGalleryImg})`,
-		url: 'https://master--gentle-longma-c7daf2.netlify.app/',
+		url: 'https://gentle-longma-c7daf2.netlify.app/',
 		urlCode: 'https://github.com/buhowski/infinite-image-gallery',
 		name: 'Image Gallery',
 		desk: 'Infinite Image Gallery with search, using Unsplash API',
