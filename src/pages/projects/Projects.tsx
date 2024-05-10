@@ -18,12 +18,10 @@ const Projects = () => {
 									target='_blank'
 									rel='noopener noreferrer'
 								>
-									<div className='project-container'>
-										<div className='project-name'>
-											{name}
-											<span>_</span>
-										</div>
-									</div>
+									<p className='project-name'>
+										{name}
+										<span>_</span>
+									</p>
 								</a>
 
 								{skills || desk ? (

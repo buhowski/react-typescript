@@ -8,20 +8,23 @@ const dataContacts = [
 		url: urlTelegram,
 		linkTitle: 'Write To Me',
 	},
+
 	{
-		name: 'Email: ',
-		url: urlEmail,
-		linkTitle: 'a.tsiomakh@gmail.com',
+		name: 'Instagram: ',
+		url: urlInstagram,
+		linkTitle: 'buhowski',
 	},
+
 	{
 		name: 'LinkedIn: ',
 		url: urlLinkedIn,
 		linkTitle: 'Olexander Tsiomakh',
 	},
+
 	{
-		name: 'Instagram: ',
-		url: urlInstagram,
-		linkTitle: 'buhowski',
+		name: 'Email: ',
+		url: urlEmail,
+		linkTitle: 'a.tsiomakh@gmail.com',
 	},
 ];
 

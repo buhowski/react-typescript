@@ -14,17 +14,13 @@
 	position: relative;
 	z-index: 0;
 	width: calc(100% / 3 - 80px / 3);
-	height: 450px;
+	height: 490px;
 	flex-shrink: 0;
 	margin-right: 40px;
 	margin-bottom: 40px;
 
-	@include tablet {
+	@include tabletBig {
 		width: calc(100% / 2 - 20px);
-
-		&:nth-child(2n) {
-			margin-right: 0;
-		}
 	}
 
 	@include tabletSmall {
@@ -35,7 +31,7 @@
 	&:nth-child(3n) {
 		margin-right: 0;
 
-		@include tablet {
+		@include tabletBig {
 			margin-right: 40px;
 		}
 
@@ -44,14 +40,20 @@
 		}
 	}
 
+	&:nth-child(2n) {
+		@include tabletBig {
+			margin-right: 0;
+		}
+	}
+
 	&:hover {
 		> .project__before {
-			transform: translate(18px, 8px);
+			transform: translate(20px, 10px);
 			height: 100%;
 			width: 100%;
 
 			@include mobile {
-				transform: translate(15px, 5px);
+				transform: translate(0, 15px);
 			}
 		}
 
@@ -59,15 +61,30 @@
 			box-shadow: 10px 10px 10px rgba($color: $black, $alpha: 0.8);
 			animation-play-state: running;
 			transform: translateY(-10px);
+
+			&::before {
+				backdrop-filter: brightness(0.8);
+			}
+
+			@include mobile {
+				box-shadow: 0 10px 10px rgba($color: $black, $alpha: 0.8);
+			}
 		}
 
-		.project-name span {
-			animation: LowLine 0.4s infinite;
+		.project-name {
+			min-width: calc(100% - 40px);
+
+			@include mobile {
+				min-width: calc(100% - 20px);
+			}
+
+			span {
+				animation: LowLine 0.4s infinite;
+			}
 		}
 
 		.project__skills {
-			transform: translateY(0) translateZ(2px);
-			z-index: 3;
+			opacity: 1;
 		}
 	}
 
@@ -80,52 +97,68 @@
 		height: calc(100% - 5px);
 		background: $blue-main;
 		transition: 0.3s ease 0.2s;
+		border-radius: 20px;
 	}
 
 	&__bg {
 		position: relative;
 		z-index: 1;
 		height: 100%;
-		justify-content: flex-end;
-		flex-direction: column;
 		background-color: $darken;
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: 50% 0;
-		box-shadow: 0 0 10px rgba($color: $black, $alpha: 0.8);
+		box-shadow: 0 0 10px rgba($color: $black, $alpha: 1);
 		animation: bgPosition 5s ease-in-out alternate infinite;
 		animation-play-state: paused;
 		transform: translateY(0);
-		transition: 0.3s ease;
+		border-radius: 20px;
 		overflow: hidden;
+		transition: 0.3s ease;
+
+		&::before {
+			content: '';
+			display: block;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			backdrop-filter: brightness(0.6);
+			z-index: -1;
+			transition: 0.3s;
+		}
 	}
 }
 
 .project-link {
 	width: 100%;
 	height: 100%;
-	background: linear-gradient(0deg, $darker, transparent);
-	transform: translateZ(1px);
-	transition: 0.3s ease;
-}
-
-.project-container {
-	width: 100%;
-	height: 100%;
 	display: flex;
 	align-items: flex-end;
+	justify-content: center;
 }
 
 .project-name {
 	color: $starYellow;
 	font-family: $Raleway;
+	background-color: rgba($color: $black, $alpha: 0.6);
+	backdrop-filter: blur(20px);
+	box-shadow: 0 0 5px rgba($color: $black, $alpha: 1);
 	font-size: 24px;
 	letter-spacing: 3px;
-	padding-bottom: 20px;
-	padding-left: 30px;
+	padding: 10px 20px;
+	padding-right: 5px;
+	margin-bottom: 20px;
+	min-width: 10px;
+	text-align: center;
+	border-radius: 20px;
+	transition: 0.2s;
 
 	@include mobile {
-		padding: 15px;
+		margin-bottom: 10px;
+		padding: 10px 15px;
+		padding-right: 0;
 	}
 
 	span {
@@ -135,21 +168,22 @@
 
 .project__skills {
 	position: absolute;
-	background-color: rgba($color: $darker, $alpha: 0.96);
-	box-shadow: 0 5px 10px rgba($color: $darker, $alpha: 1);
-	top: -1px;
-	left: 18px;
-	width: calc(100% - 36px);
-	padding: 12px 15px;
-	z-index: -3;
-	transform: translateY(calc(-100% - 10px)) translateZ(-10px);
-	transition: transform 0.3s ease 0.2s;
+	background-color: rgba($color: $black, $alpha: 0.6);
+	backdrop-filter: blur(20px);
+	box-shadow: 0 0 5px rgba($color: $black, $alpha: 1);
+	border-radius: 20px;
+	top: 18px;
+	left: 20px;
+	width: calc(100% - 40px);
+	padding: 20px;
+	opacity: 0;
+	transition: opacity 0.2s;
 
-	@include tabletBig {
-		padding-left: 10px;
-		padding-right: 10px;
-		left: 0;
-		width: 100%;
+	@include mobile {
+		padding: 15px;
+		top: 10px;
+		left: 10px;
+		width: calc(100% - 20px);
 	}
 
 	&-p {
@@ -164,7 +198,7 @@
 	&-action {
 		display: flex;
 		align-items: flex-end;
-		margin-bottom: 10px;
+		margin-bottom: 15px;
 		color: $snow;
 
 		.nav-link {
@@ -199,10 +233,11 @@
 
 		span {
 			display: inline-block;
-			margin-right: 10px;
-			margin-top: 10px;
+			margin-right: 12px;
+			margin-top: 12px;
 			background-color: rgba($color: $black, $alpha: 0.6);
-			padding: 5px 10px 3px;
+			padding: 7px 15px 4px;
+			border-radius: 20px;
 		}
 	}
 }
