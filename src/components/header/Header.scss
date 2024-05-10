@@ -12,6 +12,7 @@
 
 	@include tablet {
 		height: 80px;
+		font-size: 21px;
 
 		.wrapper {
 			display: flex;
@@ -60,7 +61,7 @@
 .logo-link {
 	font-size: 23px;
 	padding: 12px 0;
-	letter-spacing: 6px;
+	letter-spacing: 5px;
 }
 
 .nav-item {
@@ -82,8 +83,8 @@
 	z-index: 1;
 	white-space: nowrap;
 	font-family: $LouisGeorgeCafBold;
-	padding: 12px 15px 12px 21px;
-	letter-spacing: 6px;
+	padding: 12px 15px 12px 20px;
+	letter-spacing: 5px;
 
 	&:after {
 		content: '';
