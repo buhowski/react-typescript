@@ -15,7 +15,7 @@ const DrawCanvas = () => {
 		const lineCanvas: HTMLCanvasElement | null = document.createElement('canvas');
 		const imageCanvasContext = imageCanvas?.getContext('2d');
 		const lineCanvasContext = lineCanvas?.getContext('2d');
-		const pointLifetime = 1300;
+		const pointLifetime = 1100;
 		let points: Point[] = [];
 
 		const image = document.querySelector('.illustrationImage') as HTMLImageElement;
@@ -65,6 +65,7 @@ const DrawCanvas = () => {
 		};
 
 		const tick = () => {
+			// Remove old points
 			points = points.filter((point) => {
 				const age = Date.now() - point.time;
 
@@ -77,10 +78,10 @@ const DrawCanvas = () => {
 		};
 
 		const drawLineCanvas = () => {
-			const minimumLineWidth = 90;
-			const maximumLineWidth = 90;
+			const minimumLineWidth = 100;
+			const maximumLineWidth = 100;
 			const lineWidthRange = maximumLineWidth - minimumLineWidth;
-			const maximumSpeed = 300;
+			const maximumSpeed = 200;
 
 			if (lineCanvasContext) {
 				lineCanvasContext.clearRect(0, 0, lineCanvas.width, lineCanvas.height);
@@ -90,12 +91,14 @@ const DrawCanvas = () => {
 					const point = points[i];
 					const previousPoint = points[i - 1];
 
+					// Change line width based on speed
 					const distance = getDistanceBetween(point, previousPoint);
 					const speed = Math.max(0, Math.min(maximumSpeed, distance));
 					const percentageLineWidth = (maximumSpeed - speed) / maximumSpeed;
 					lineCanvasContext.lineWidth =
 						minimumLineWidth + percentageLineWidth * lineWidthRange;
 
+					// Fade points as they age
 					const age = Date.now() - point.time;
 					const opacity = (pointLifetime - age) / pointLifetime;
 					lineCanvasContext.strokeStyle = `rgba(0, 0, 0, ${opacity}`;
@@ -121,6 +124,7 @@ const DrawCanvas = () => {
 					imageCanvas.height = drawCanvasElement.offsetHeight || 0;
 				}
 
+				// Emulate background-size: cover
 				let width = imageCanvas.width;
 				let height = (imageCanvas.width / image.naturalWidth) * image.naturalHeight;
 
