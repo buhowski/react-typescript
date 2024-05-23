@@ -3,19 +3,27 @@
 .projects-container {
 	margin-top: 40px;
 	margin-bottom: 90px;
+	-webkit-columns: 5;
+	-moz-columns: 5;
 	columns: 5;
 	column-gap: 40px;
 
 	@include tabletBig {
+		-webkit-columns: 3;
+		-moz-columns: 3;
 		columns: 3;
 	}
 
 	@include tablet {
+		-webkit-columns: 2;
+		-moz-columns: 2;
 		columns: 2;
 		margin-top: 25px;
 	}
 
 	@include mobile {
+		-webkit-columns: auto;
+		-moz-columns: auto;
 		columns: auto;
 	}
 }
@@ -28,6 +36,8 @@
 	transition: 0.3s;
 
 	&:hover {
+		z-index: 1;
+
 		> .project__before {
 			transform: translate(20px, 10px);
 			height: 100%;
@@ -60,7 +70,6 @@
 		position: absolute;
 		top: 0;
 		left: 0;
-		z-index: -1;
 		width: calc(100% - 5px);
 		height: calc(100% - 5px);
 		background: $blue-main;
