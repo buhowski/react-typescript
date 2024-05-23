@@ -75,20 +75,25 @@
 		background: $blue-main;
 		transition: 0.3s ease 0.2s;
 		border-radius: 20px;
+		z-index: 0;
 	}
 
 	&__bg {
+		position: relative;
 		background-color: $darken;
 		box-shadow: 0 0 10px rgba($color: $black, $alpha: 1);
 		transform: translateY(0);
 		border-radius: 20px;
 		transition: 0.3s ease;
+		z-index: 1;
 	}
 
 	&__img {
 		filter: brightness(0.6);
 		border-radius: 20px;
 		transition: 0.3s ease;
+		height: 100%;
+		object-fit: contain;
 	}
 }
 
