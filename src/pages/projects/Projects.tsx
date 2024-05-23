@@ -11,13 +11,15 @@ const Projects = () => {
 						<div className='project' key={i}>
 							<div className='project__before'></div>
 
-							<div className='project__bg' style={{ backgroundImage: img }}>
+							<div className='project__bg'>
 								<a
 									className='project-link'
 									href={url}
 									target='_blank'
 									rel='noopener noreferrer'
 								>
+									<img className='project__img' src={img} alt={desk} />
+
 									<p className='project-name'>
 										{name}
 										<span>_</span>

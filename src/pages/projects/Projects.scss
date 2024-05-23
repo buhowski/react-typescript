@@ -1,9 +1,9 @@
 @import '../../styles/variables.scss';
 
 .projects-container {
-	display: flex;
-	flex-wrap: wrap;
 	margin-top: 40px;
+	columns: 4;
+	column-gap: 40px;
 
 	@include tablet {
 		margin-top: 25px;
@@ -13,40 +13,12 @@
 .project {
 	position: relative;
 	z-index: 0;
-	width: calc(100% / 3 - 80px / 3);
-	height: 490px;
-	flex-shrink: 0;
-	margin-right: 40px;
 	margin-bottom: 40px;
-
-	@include tabletBig {
-		width: calc(100% / 2 - 20px);
-	}
-
-	@include tabletSmall {
-		width: 100%;
-		margin-right: 0;
-	}
-
-	&:nth-child(3n) {
-		margin-right: 0;
-
-		@include tabletBig {
-			margin-right: 40px;
-		}
-
-		@include tabletSmall {
-			margin-right: 0;
-		}
-	}
-
-	&:nth-child(2n) {
-		@include tabletBig {
-			margin-right: 0;
-		}
-	}
+	// height: 500px;
+	transition: 0.3s;
 
 	&:hover {
+		// height: 100%;
 		> .project__before {
 			transform: translate(20px, 10px);
 			height: 100%;
@@ -57,14 +29,12 @@
 			}
 		}
 
+		.project__img {
+			filter: brightness(0.8);
+		}
 		> .project__bg {
 			box-shadow: 10px 10px 10px rgba($color: $black, $alpha: 0.8);
-			animation-play-state: running;
 			transform: translateY(-10px);
-
-			&::before {
-				backdrop-filter: brightness(0.8);
-			}
 
 			@include mobile {
 				box-shadow: 0 10px 10px rgba($color: $black, $alpha: 0.8);
@@ -105,29 +75,16 @@
 		z-index: 1;
 		height: 100%;
 		background-color: $darken;
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-position: 50% 0;
-		box-shadow: 0 0 10px rgba($color: $black, $alpha: 1);
-		animation: bgPosition 5s ease-in-out alternate infinite;
-		animation-play-state: paused;
+		box-shadow: 0 0 15px rgba($color: $black, $alpha: 1);
 		transform: translateY(0);
 		border-radius: 20px;
 		overflow: hidden;
 		transition: 0.3s ease;
+	}
 
-		&::before {
-			content: '';
-			display: block;
-			width: 100%;
-			height: 100%;
-			position: absolute;
-			top: 0;
-			left: 0;
-			backdrop-filter: brightness(0.6);
-			z-index: -1;
-			transition: 0.3s;
-		}
+	&__img {
+		filter: brightness(0.5);
+		transition: 0.3s;
 	}
 }
 
@@ -140,6 +97,7 @@
 }
 
 .project-name {
+	position: absolute;
 	color: $starYellow;
 	font-family: $Raleway;
 	background-color: rgba($color: $black, $alpha: 0.6);
