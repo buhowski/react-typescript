@@ -9,12 +9,12 @@ import bgMensch from './images/mensch.jpg';
 import bgMeNotebooks from './images/notebooks.jpg';
 import bgPalms from './images/rooms.jpg';
 import bgEnde from './images/ende.jpg';
-import bgFaber from './images/faber.jpg';
-import bgFaberBooks from './images/faber-books.jpg';
+import bgFaberAcademy from './images/faber-academy.jpeg';
+import bgFaberBooks from './images/faber.jpg';
 import bgBentley from './images/bentley.jpg';
 import bgGalleryImg from './images/gallery-img.webp';
-import bgStartup from './images/startup.webp';
-import nascentdesign from './images/nascentdesign.webp';
+import bgStartup from './images/startup.jpg';
+import nascentdesign from './images/nascent.jpg';
 
 import { pathToStartup } from '../../components/urlsData';
 
@@ -29,60 +29,19 @@ const projectsData = [
 	},
 
 	{
-		img: bgFaber,
-		url: 'https://faberacademy.com/',
-		name: 'Faber Academy',
-		desk: `Website Markup from Scratch. Cross-browser Responsive Web Design + Animations + Frontend for WordPress.`,
-		skills: [
-			'Twig',
-			'SCSS',
-			'JavaScript',
-			'GSAP',
-			'Pixel Perfect',
-			'Admin Panel',
-			'WordPress',
-			'Google Maps API',
-		],
+		img: BgBottleService,
+		url: 'https://www-youngspirits-co-uk.vercel.app',
+		name: 'Young Spirits',
+		desk: 'The secret weapon of U.K. Small distillers & producers',
+		skills: ['HTML', 'CSS', 'JavaScript', 'Google Maps API', 'Apply Form'],
 	},
 
 	{
-		img: bgBentley,
-		url: 'https://www.bentley-skinner.co.uk/',
-		name: 'Bentley & Skinner',
-		desk: 'Website Markup from Scratch. Cross-browser Responsive Web Design + Animations + Frontend for WordPress.',
-		skills: [
-			'Twig',
-			'SCSS',
-			'JavaScript',
-			'GSAP',
-			'Pixel Perfect',
-			'Admin Panel',
-			'WordPress',
-		],
-	},
-
-	{
-		img: nascentdesign,
-		url: `https://nascentdesign.com/`,
-		name: 'Nascent Design',
-		desk: `Pixel Perfect, Cross-browser, Responsive Web Design + Animations`,
-		skills: ['SCSS', 'JavaScript', 'GSAP', 'Pixel Perfect'],
-	},
-
-	{
-		img: bgFaberBooks,
-		url: 'https://www.faber.co.uk/',
-		name: 'Faber',
-		desk: 'Website Markup from Scratch. Cross-browser Responsive Web Design + Animations + Frontend for WordPress.',
-		skills: [
-			'Twig',
-			'SCSS',
-			'JavaScript',
-			'GSAP',
-			'Pixel Perfect',
-			'Admin Panel',
-			'WordPress',
-		],
+		img: bgMensch,
+		url: 'https://mensch.vercel.app',
+		name: 'Mensch',
+		desk: 'We are an agency, specialized in innovation, team performance, and venture acceleration. Handling all Front-End tasks',
+		skills: ['HTML', 'CSS', 'JavaScript', 'Form Submit'],
 	},
 
 	{
@@ -94,19 +53,43 @@ const projectsData = [
 	},
 
 	{
-		img: BgBottleService,
-		url: 'https://www-youngspirits-co-uk.vercel.app',
-		name: 'Young Spirits',
-		desk: 'The secret weapon of U.K. Small distillers & producers',
-		skills: ['HTML', 'CSS', 'JavaScript', 'Google Maps API', 'Apply Form'],
+		img: nascentdesign,
+		url: `https://nascentdesign.com/`,
+		name: 'Nascent Design',
+		desk: `Pixel Perfect, Cross-browser, Responsive Web Design + Animations`,
+		skills: ['SCSS', 'JavaScript', 'GSAP', 'Pixel Perfect'],
 	},
 
 	{
-		img: BgNakashima,
-		url: 'https://nakashimawoodworkers.com/',
-		name: 'Nakashima Woodworkers',
-		desk: 'The Furniture Studio. Handling all Front-End tasks',
-		skills: ['HTML', 'CSS', 'JavaScript', 'Barba.js', 'JS Animations'],
+		img: BgSprey,
+		url: 'https://spraybox.vercel.app',
+		name: 'Spraybox Magazine',
+		desk: 'ARTWORKS, CONCEPTS, INTERIORS & BRAND DESIGN. Handling all Front-End tasks',
+		skills: ['HTML', 'CSS', 'JavaScript', 'JS Animations'],
+	},
+
+	{
+		img: bgFaberAcademy,
+		url: 'https://faberacademy.com/',
+		name: 'Faber Academy',
+		desk: `Website Markup from Scratch. Cross-browser Responsive Web Design + Animations + Frontend for WordPress.`,
+		skills: [
+			'SCSS',
+			'JavaScript',
+			'GSAP',
+			'Pixel Perfect',
+
+			'WordPress',
+			'Google Maps API',
+		],
+	},
+
+	{
+		img: bgFaberBooks,
+		url: 'https://www.faber.co.uk/',
+		name: 'Faber',
+		desk: 'Website Markup from Scratch. Cross-browser Responsive Web Design + Animations + Frontend for WordPress.',
+		skills: ['SCSS', 'JavaScript', 'GSAP', 'Pixel Perfect', 'WordPress'],
 	},
 
 	{
@@ -127,6 +110,14 @@ const projectsData = [
 	},
 
 	{
+		img: bgBentley,
+		url: 'https://www.bentley-skinner.co.uk/',
+		name: 'Bentley & Skinner',
+		desk: 'Website Markup from Scratch. Cross-browser Responsive Web Design + Animations + Frontend for WordPress.',
+		skills: ['SCSS', 'JavaScript', 'GSAP', 'Pixel Perfect', 'WordPress'],
+	},
+
+	{
 		img: bgPalms,
 		url: 'https://twobunchpalms-com.vercel.app',
 		name: 'Two Bunch Palms',
@@ -135,19 +126,11 @@ const projectsData = [
 	},
 
 	{
-		img: bgMensch,
-		url: 'https://mensch.vercel.app',
-		name: 'Mensch',
-		desk: 'We are an agency, specialized in innovation, team performance, and venture acceleration. Handling all Front-End tasks',
-		skills: ['HTML', 'CSS', 'JavaScript', 'Form Submit'],
-	},
-
-	{
-		img: BgSprey,
-		url: 'https://spraybox.vercel.app',
-		name: 'Spraybox Magazine',
-		desk: 'ARTWORKS, CONCEPTS, INTERIORS & BRAND DESIGN. Handling all Front-End tasks',
-		skills: ['HTML', 'CSS', 'JavaScript', 'JS Animations'],
+		img: BgNakashima,
+		url: 'https://nakashimawoodworkers.com/',
+		name: 'Nakashima Woodworkers',
+		desk: 'The Furniture Studio. Handling all Front-End tasks',
+		skills: ['HTML', 'CSS', 'JavaScript', 'Barba.js', 'JS Animations'],
 	},
 
 	{

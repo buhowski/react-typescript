@@ -2,11 +2,21 @@
 
 .projects-container {
 	margin-top: 40px;
-	columns: 4;
+	margin-bottom: 90px;
+	columns: 5;
 	column-gap: 40px;
 
+	@include tabletBig {
+		columns: 3;
+	}
+
 	@include tablet {
+		columns: 2;
 		margin-top: 25px;
+	}
+
+	@include mobile {
+		columns: auto;
 	}
 }
 
@@ -14,11 +24,10 @@
 	position: relative;
 	z-index: 0;
 	margin-bottom: 40px;
-	// height: 500px;
+	font-size: 12px;
 	transition: 0.3s;
 
 	&:hover {
-		// height: 100%;
 		> .project__before {
 			transform: translate(20px, 10px);
 			height: 100%;
@@ -32,6 +41,7 @@
 		.project__img {
 			filter: brightness(0.8);
 		}
+
 		> .project__bg {
 			box-shadow: 10px 10px 10px rgba($color: $black, $alpha: 0.8);
 			transform: translateY(-10px);
@@ -41,19 +51,7 @@
 			}
 		}
 
-		.project-name {
-			min-width: calc(100% - 40px);
-
-			@include mobile {
-				min-width: calc(100% - 20px);
-			}
-
-			span {
-				animation: LowLine 0.4s infinite;
-			}
-		}
-
-		.project__skills {
+		.project-description {
 			opacity: 1;
 		}
 	}
@@ -71,130 +69,95 @@
 	}
 
 	&__bg {
-		position: relative;
-		z-index: 1;
-		height: 100%;
 		background-color: $darken;
-		box-shadow: 0 0 15px rgba($color: $black, $alpha: 1);
+		box-shadow: 0 0 10px rgba($color: $black, $alpha: 1);
 		transform: translateY(0);
 		border-radius: 20px;
-		overflow: hidden;
 		transition: 0.3s ease;
 	}
 
 	&__img {
-		filter: brightness(0.5);
-		transition: 0.3s;
+		filter: brightness(0.6);
+		border-radius: 20px;
+		transition: 0.3s ease;
 	}
 }
 
 .project-link {
-	width: 100%;
-	height: 100%;
 	display: flex;
-	align-items: flex-end;
-	justify-content: center;
 }
 
 .project-name {
-	position: absolute;
 	color: $starYellow;
 	font-family: $Raleway;
-	background-color: rgba($color: $black, $alpha: 0.6);
-	backdrop-filter: blur(20px);
-	box-shadow: 0 0 5px rgba($color: $black, $alpha: 1);
-	font-size: 24px;
 	letter-spacing: 3px;
-	padding: 10px 20px;
-	padding-right: 5px;
 	margin-bottom: 20px;
-	min-width: 10px;
 	text-align: center;
-	border-radius: 20px;
-	transition: 0.2s;
-
-	@include mobile {
-		margin-bottom: 10px;
-		padding: 10px 15px;
-		padding-right: 0;
-	}
+	font-size: 14px;
 
 	span {
-		opacity: 0;
+		animation: LowLine 0.4s infinite;
 	}
 }
 
-.project__skills {
+.project-description {
 	position: absolute;
 	background-color: rgba($color: $black, $alpha: 0.6);
-	backdrop-filter: blur(20px);
-	box-shadow: 0 0 5px rgba($color: $black, $alpha: 1);
+	backdrop-filter: blur(16px);
+	box-shadow: 0 0 10px rgba($color: $black, $alpha: 1);
 	border-radius: 20px;
-	top: 18px;
-	left: 20px;
-	width: calc(100% - 40px);
-	padding: 20px;
+	top: 0;
+	left: 0;
+	width: calc(100% + 1px);
+	padding: 15px;
 	opacity: 0;
-	transition: opacity 0.2s;
+	transition: 0.3s ease;
 
-	@include mobile {
-		padding: 15px;
-		top: 10px;
-		left: 10px;
-		width: calc(100% - 20px);
-	}
-
-	&-p {
+	&__p {
 		display: -webkit-box;
 		-webkit-box-orient: vertical;
-		-webkit-line-clamp: 7;
+		-webkit-line-clamp: 10;
 		overflow: hidden;
-		margin-bottom: 20px;
+		margin-bottom: 18px;
 		color: $textGrey;
 	}
 
-	&-action {
+	&__action {
 		display: flex;
-		align-items: flex-end;
-		margin-bottom: 15px;
-		color: $snow;
+		margin-bottom: 26px;
+		font-size: 14px;
 
 		.nav-link {
 			padding-top: 5px;
 			padding-bottom: 5px;
-			padding-left: 15px;
-			padding-right: 10px;
-			margin-left: 30px;
+			padding-left: 11px;
+			padding-right: 6px;
 
-			@include tabletBig {
-				margin-left: 20px;
+			&:not(:last-child) {
+				margin-right: 30px;
 			}
 		}
 	}
 
-	&-title {
+	&__title {
 		color: $blue-main;
 		font-family: $LouisGeorgeCaf;
 		font-weight: 600;
 		letter-spacing: 3px;
+		font-size: 14px;
 		margin-right: auto;
 		text-transform: uppercase;
 	}
 
-	&-items {
+	&__items {
 		font-family: $LouisGeorgeCaf;
-		font-size: 14px;
-
-		@include tabletBig {
-			font-size: 12px;
-		}
 
 		span {
 			display: inline-block;
-			margin-right: 12px;
-			margin-top: 12px;
-			background-color: rgba($color: $black, $alpha: 0.6);
-			padding: 7px 15px 4px;
+			margin-right: 10px;
+			margin-top: 10px;
+			background-color: rgba($color: $black, $alpha: 1);
+			padding: 5px 10px 2px;
 			border-radius: 20px;
 		}
 	}

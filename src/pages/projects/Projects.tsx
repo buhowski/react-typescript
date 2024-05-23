@@ -19,20 +19,18 @@ const Projects = () => {
 									rel='noopener noreferrer'
 								>
 									<img className='project__img' src={img} alt={desk} />
-
-									<p className='project-name'>
-										{name}
-										<span>_</span>
-									</p>
 								</a>
 
 								{skills || desk ? (
-									<div className='project__skills'>
-										<p className='project__skills-p'>{desk}</p>
+									<div className='project-description'>
+										<p className='project-name'>
+											{name}
+											<span>_</span>
+										</p>
 
-										<div className='project__skills-action'>
-											{skills && <p className='project__skills-title'>Skills:</p>}
+										<p className='project-description__p'>{desk}</p>
 
+										<div className='project-description__action'>
 											{url && (
 												<a
 													href={url}
@@ -56,7 +54,9 @@ const Projects = () => {
 											)}
 										</div>
 
-										<div className='project__skills-items'>
+										{skills && <p className='project-description__title'>Skills:</p>}
+
+										<div className='project-description__items'>
 											{skills?.map((skill, i) => {
 												return <span key={i}>{skill}</span>;
 											})}
