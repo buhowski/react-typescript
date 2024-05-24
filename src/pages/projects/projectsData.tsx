@@ -1,26 +1,19 @@
 import BgNakashima from './images/nakashima-screen.jpg';
-import BgSprey from './images/spreybox.jpg';
-import BgFoundation from './images/tse-foundation.jpg';
 import BgArchitect from './images/architect.jpg';
 import BgBottleService from './images/bottle-service.jpg';
-import BgDrinkHaus from './images/drink-haus.jpg';
-import bgInfiniteFood from './images/infinite-food.jpg';
-import bgMensch from './images/mensch.jpg';
-import bgMeNotebooks from './images/notebooks.jpg';
 import bgPalms from './images/rooms.jpg';
 import bgEnde from './images/ende.jpg';
-import bgFaber from './images/faber.jpg';
-import bgFaberBooks from './images/faber-books.jpg';
+import bgFaberAcademy from './images/faber-academy.jpeg';
+import bgFaberBooks from './images/faber.jpg';
 import bgBentley from './images/bentley.jpg';
-import bgGalleryImg from './images/gallery-img.webp';
-import bgStartup from './images/startup.webp';
-import nascentdesign from './images/nascentdesign.webp';
+import bgStartup from './images/startup.jpg';
+import nascentdesign from './images/nascent.jpg';
 
 import { pathToStartup } from '../../components/urlsData';
 
 const projectsData = [
 	{
-		img: `url(${bgStartup})`,
+		img: bgStartup,
 		url: `${pathToStartup}`,
 		urlCode: 'https://github.com/buhowski/react-typescript',
 		name: 'Portfolio + My Startups',
@@ -29,72 +22,63 @@ const projectsData = [
 	},
 
 	{
-		img: `url(${nascentdesign})`,
+		img: nascentdesign,
 		url: `https://nascentdesign.com/`,
 		name: 'Nascent Design',
 		desk: `Pixel Perfect, Cross-browser, Responsive Web Design + Animations`,
-		skills: ['SCSS', 'JavaScript', 'GSAP', 'Pixel Perfect'],
+		skills: ['SCSS', 'JavaScript', 'GSAP', 'Next.js'],
 	},
 
 	{
-		img: `url(${bgBentley})`,
+		img: bgBentley,
 		url: 'https://www.bentley-skinner.co.uk/',
 		name: 'Bentley & Skinner',
-		desk: 'Website Markup from Scratch. Cross-browser Responsive Web Design + Animations + Frontend for WordPress.',
-		skills: [
-			'Twig',
-			'SCSS',
-			'JavaScript',
-			'GSAP',
-			'Pixel Perfect',
-			'Admin Panel',
-			'WordPress',
-		],
+		desk: 'Cross-browser, Responsive Web Design + Animations + Frontend for WordPress.',
+		skills: ['SCSS', 'JavaScript', 'GSAP', 'WordPress'],
 	},
 
 	{
-		img: `url(${bgFaber})`,
+		img: bgFaberAcademy,
 		url: 'https://faberacademy.com/',
 		name: 'Faber Academy',
-		desk: `Website Markup from Scratch. Cross-browser Responsive Web Design + Animations + Frontend for WordPress.`,
-		skills: [
-			'Twig',
-			'SCSS',
-			'JavaScript',
-			'GSAP',
-			'Pixel Perfect',
-			'Admin Panel',
-			'WordPress',
-			'Google Maps API',
-		],
+		desk: `Cross-browser, Responsive Web Design + Animations + Frontend for WordPress.`,
+		skills: ['SCSS', 'JavaScript', 'GSAP', 'Google Maps API'],
 	},
 
 	{
-		img: `url(${bgFaberBooks})`,
+		img: bgEnde,
+		url: 'https://www-somosende-com.vercel.app',
+		name: 'Somos ENDE',
+		desk: 'Content studio.  We make animations, videos and digital media consulting.',
+		skills: ['HTML', 'CSS', 'JavaScript', 'Animations'],
+	},
+
+	{
+		img: bgFaberBooks,
 		url: 'https://www.faber.co.uk/',
 		name: 'Faber',
-		desk: 'Website Markup from Scratch. Cross-browser Responsive Web Design + Animations + Frontend for WordPress.',
-		skills: [
-			'Twig',
-			'SCSS',
-			'JavaScript',
-			'GSAP',
-			'Pixel Perfect',
-			'Admin Panel',
-			'WordPress',
-		],
+		desk: 'Cross-browser, Responsive Web Design + Animations + Frontend for WordPress.',
+		skills: ['SCSS', 'JavaScript', 'GSAP', 'Pixel Perfect', 'WordPress'],
 	},
 
 	{
-		img: `url(${BgArchitect})`,
+		img: BgArchitect,
 		url: 'https://www-williamslester-com.vercel.app',
 		name: 'Architects',
-		desk: 'Williams Lester is an RIBA Chartered Architects Practice based in Ringwood, Hampshire and has grown over the last 30 years to become one of the most respected and successful architectural practices in the region. We provide a high quality professional service and have developed specialist expertise in residential development, conservation, retirement living and master-planning.	Handling all Front-End tasks',
+		desk: 'Architects Practice based in Ringwood, Hampshire and has grown over the last 30 years to become one of the most respected and successful architectural practices in the region.',
 		skills: ['HTML', 'CSS', 'JavaScript', 'Barba.js', 'JS Animations'],
 	},
 
 	{
-		img: `url(${BgBottleService})`,
+		img: BgNakashima,
+		url: 'https://nakashimawoodworkers.com/',
+		name: 'Nakashima Woodworkers',
+		desk: 'The Furniture Studio.',
+		skills: ['HTML', 'CSS', 'JavaScript', 'Barba.js', 'JS Animations'],
+	},
+
+	{
+		img: BgBottleService,
 		url: 'https://www-youngspirits-co-uk.vercel.app',
 		name: 'Young Spirits',
 		desk: 'The secret weapon of U.K. Small distillers & producers',
@@ -102,84 +86,11 @@ const projectsData = [
 	},
 
 	{
-		img: `url(${BgNakashima})`,
-		url: 'https://nakashimawoodworkers.com/',
-		name: 'Nakashima Woodworkers',
-		desk: 'The Furniture Studio. Handling all Front-End tasks',
-		skills: ['HTML', 'CSS', 'JavaScript', 'Barba.js', 'JS Animations'],
-	},
-
-	{
-		img: `url(${bgGalleryImg})`,
-		url: 'https://gentle-longma-c7daf2.netlify.app/',
-		urlCode: 'https://github.com/buhowski/infinite-image-gallery',
-		name: 'Image Gallery',
-		desk: 'Infinite Image Gallery with search, using Unsplash API',
-		skills: ['HTML', 'CSS', 'JavaScript', 'Fetch API'],
-	},
-
-	{
-		img: `url(${BgFoundation})`,
-		url: 'https://tse-foundation-org.vercel.app',
-		name: 'TSE Foundation',
-		desk: 'We help people to understand their unique place in the broader human narrative. Handling all Front-End tasks',
-		skills: ['HTML', 'CSS', 'JavaScript', 'Form', 'Barba.js', 'JS Animations'],
-	},
-
-	{
-		img: `url(${bgPalms})`,
+		img: bgPalms,
 		url: 'https://twobunchpalms-com.vercel.app',
 		name: 'Two Bunch Palms',
-		desk: 'Hot springs – sustainable hotel – desert hideaway. Handling all Front-End tasks',
-		skills: ['HTML', 'CSS', 'JavaScript', 'JS Animations'],
-	},
-
-	{
-		img: `url(${bgMensch})`,
-		url: 'https://mensch.vercel.app',
-		name: 'Mensch',
-		desk: 'We are an agency, specialized in innovation, team performance, and venture acceleration. Handling all Front-End tasks',
-		skills: ['HTML', 'CSS', 'JavaScript', 'Form Submit'],
-	},
-
-	{
-		img: `url(${BgSprey})`,
-		url: 'https://spraybox.vercel.app',
-		name: 'Spraybox Magazine',
-		desk: 'ARTWORKS, CONCEPTS, INTERIORS & BRAND DESIGN. Handling all Front-End tasks',
-		skills: ['HTML', 'CSS', 'JavaScript', 'JS Animations'],
-	},
-
-	{
-		img: `url(${bgMeNotebooks})`,
-		url: 'https://modnotebooks-com.vercel.app',
-		name: 'Mode Notebooks',
-		desk: 'A paper notebook that syncs to the cloud. Handling all Front-End tasks',
-		skills: ['HTML', 'CSS', 'JavaScript', 'Checkout'],
-	},
-
-	{
-		img: `url(${bgEnde})`,
-		url: 'https://www-somosende-com.vercel.app',
-		name: 'Somos ENDE',
-		desk: 'We are an audiovisual content studio.  We make animations, videos and digital media consulting. Handling all Front-End tasks',
-		skills: ['HTML', 'CSS', 'JavaScript'],
-	},
-
-	{
-		img: `url(${bgInfiniteFood})`,
-		url: 'https://infinityfoodsretail-coop.vercel.app',
-		name: 'Infinite Food',
-		desk: 'SHOP. Infinite Food. Handling all Front-End tasks',
-		skills: ['HTML', 'CSS', 'JavaScript'],
-	},
-
-	{
-		img: `url(${BgDrinkHaus})`,
-		url: 'https://drink.haus/',
-		name: 'Drink Haus',
-		desk: 'Haus is a beverage brand creating better products for the modern drinker, originally founded by Helena Price Hambrecht and Woody Hambrecht in 2019. The alcohol industry hasn’t changed in 100 years, so Haus is on a mission to redesign how it works — from the ingredients used, to the way the bottles are shipped directly to your doorstep.',
-		skills: ['HTML', 'CSS', 'JavaScript'],
+		desk: 'Hot springs – sustainable hotel – desert hideaway.',
+		skills: ['HTML', 'CSS', 'JavaScript', 'JS Animations', 'Flatpickr Calendar'],
 	},
 ];
 
