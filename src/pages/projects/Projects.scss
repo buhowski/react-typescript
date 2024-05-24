@@ -8,7 +8,7 @@
 .project {
 	display: flex;
 	position: relative;
-	font-size: 12px;
+	font-size: 13px;
 	border-radius: 20px;
 	transform: translateY(0);
 	transition: transform 0.3s ease;
@@ -44,21 +44,22 @@
 	}
 
 	&:hover {
+		z-index: 2;
 		transform: translateY(-20px);
 
 		&::before {
 			transform: translate(22px, 22px);
 
 			@include mobile {
-				transform: translate(0, 15px);
+				transform: translate(0, 22px);
 			}
 		}
 
 		.project-link {
-			box-shadow: 10px 10px 10px rgba($color: $black, $alpha: 0.6);
+			box-shadow: 10px 10px 10px rgba($color: $black, $alpha: 0.7);
 
 			@include mobile {
-				box-shadow: 0 10px 10px rgba($color: $black, $alpha: 0.6);
+				box-shadow: 0 10px 10px rgba($color: $black, $alpha: 0.7);
 			}
 
 			&__img {
@@ -75,7 +76,7 @@
 .project-description {
 	position: absolute;
 	background-color: rgba($color: $black, $alpha: 0.6);
-	backdrop-filter: blur(16px);
+	backdrop-filter: blur(20px);
 	box-shadow: 0 0 10px rgba($color: $black, $alpha: 1);
 	border-radius: 20px;
 	top: 0;
@@ -91,7 +92,7 @@
 		letter-spacing: 3px;
 		margin-bottom: 20px;
 		text-align: center;
-		font-size: 14px;
+		font-size: 15px;
 
 		span {
 			animation: LowLine 0.4s infinite;
@@ -99,17 +100,13 @@
 	}
 
 	&__text {
-		display: -webkit-box;
-		-webkit-box-orient: vertical;
-		-webkit-line-clamp: 10;
-		overflow: hidden;
-		margin-bottom: 18px;
+		margin-bottom: 20px;
 		color: $textGrey;
 	}
 
 	&__actions {
 		display: flex;
-		margin-bottom: 26px;
+		margin-bottom: 30px;
 		font-size: 14px;
 
 		.nav-link {
@@ -139,7 +136,7 @@
 
 		span {
 			display: inline-block;
-			margin-right: 10px;
+			margin-right: 6px;
 			margin-top: 10px;
 			background-color: rgba($color: $black, $alpha: 1);
 			padding: 5px 10px 2px;
