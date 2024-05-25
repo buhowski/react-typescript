@@ -10,7 +10,7 @@
 	position: relative;
 	font-size: 13px;
 	border-radius: 20px;
-	transform: translateY(0);
+	transform: translate(0, 0);
 	transition: transform 0.3s ease;
 
 	&::before {
@@ -46,7 +46,11 @@
 
 	&:hover {
 		z-index: 2;
-		transform: translateY(-20px);
+		transform: translate(-10px, -20px);
+
+		@include mobile {
+			transform: translate(0, -20px);
+		}
 
 		&::before {
 			transform: translate(22px, 22px);
@@ -64,7 +68,7 @@
 			}
 
 			&__img {
-				filter: brightness(0.9);
+				filter: brightness(1);
 			}
 		}
 
