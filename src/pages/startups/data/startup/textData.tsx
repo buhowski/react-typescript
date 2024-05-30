@@ -13,9 +13,9 @@ export const startupTextData = [
 			{
 				loglineTitle: `Предисловие`,
 				loglineText: [
-					`У меня есть масштабное видение целой картины – создание огромной корпорации, которая стремится улучшить развитие сфер, которые в этом нуждаются. Пазлы этой картины – это мои разнообразные самостоятельные проекты, которые я хочу монетизировать и прибыль вкладывать в создание собственных технологий, открывая двери всем, кто стремится к аналогичному.`,
+					`У меня есть масштабное видение всей картины – создание огромной корпорации, которая стремится улучшить развитие сфер, которые в этом нуждаются. Пазлы этой картины – это мои разнообразные самостоятельные проекты, которые я хочу монетизировать, а прибыль вкладывать в создание собственных технологий, открывая двери всем, кто стремится к аналогичному, или же ищу тех, кто поможет и откроет двери для моих идей, или объединиться для совместного мозгового штурма.`,
 
-					`Все презентации отдельных проектов будут доступны в навигации. А логика создания целостной картины доступна ниже.`,
+					`Все презентации отдельных проектов будут доступны в навигации, а логика создания целостной картины доступна ниже.`,
 				],
 			},
 
@@ -153,9 +153,9 @@ export const startupTextData = [
 			{
 				loglineTitle: `Preface`,
 				loglineText: [
-					`I have a huge vision of the whole picture – creating a large corporation that strives to improve the development of areas that need it. The puzzles of this picture are my various independent projects, which I want to monetize and invest profits into creating its own technologies, opening doors to all those who aspire to do the same.`,
+					`I have a huge vision of the entire picture – creating a large corporation that strives to improve the development of areas that need it. The pieces of this picture are my various independent projects, which I want to monetize and invest the profits into creating its own technologies, opening doors for everyone who seeks the same, or finding those who will help and open doors for my ideas, or to unite for joint brainstorming.`,
 
-					`All presentations of individual projects will be available in the navigation. And the logic of creating a holistic picture is available below.`,
+					`All presentations of individual projects will be available in the navigation, and the logic of creating a complete picture is available below.`,
 				],
 			},
 
@@ -291,9 +291,9 @@ export const startupTextData = [
 			{
 				loglineTitle: `Передмова`,
 				loglineText: [
-					`Я маю масштабне бачення цілої картини – створення величезної корпорації, яка прагне поліпшити розвиток сфер, які цього потребують. Пазли цієї картини – це мої різноманітні самостійні проекти, які я хочу монетизувати і прибуток вкладати в створення власних технологій, відкриваючи двері усім, хто прагне аналогічного.`,
+					`Я маю масштабне бачення цілої картини – створення величезної корпорації, яка прагне покращити розвиток сфер, які цього потребують. Пазли цієї картини – це мої різноманітні самостійні проекти, які я хочу монетизувати, а прибуток вкладати у створення власних технологій, відкриваючи двері всім, хто прагне аналогічного, або ж шукаю тих, хто допоможе і відкриє двері для моїх ідей, чи об’єднатися для спільного мозкового штурму.`,
 
-					`Всі презентації окремих проектів будуть доступними в навігації. А логіка створення цілісної картини доступна нижче.`,
+					`Всі презентації окремих проектів будуть доступними в навігації, а логіка створення цілісної картини доступна нижче.`,
 				],
 			},
 
