@@ -30,7 +30,6 @@
 	"scripts": {
 		"start": "craco start",
 		"build": "craco build",
-		"postbuild": "react-snap",
 		"test": "craco test",
 		"eject": "craco eject"
 	},
