@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+import { Helmet } from 'react-helmet-async';
+
+import { aboutMetaTags } from '../../config/metaTags';
 import dotsData from './aboutData';
 import PhotoBg from './images/body.png';
 import { useTabletQuery } from '../../hooks/useMediaQuery';
@@ -20,6 +23,23 @@ const About = () => {
 
 	return (
 		<div className='wrapper about-wrapper'>
+			<Helmet>
+				<title>{aboutMetaTags.title}</title>
+				<meta name='description' content={aboutMetaTags.description} />
+
+				{/* Open Graph Meta Tags */}
+				<meta property='og:url' content={aboutMetaTags.ogUrl} />
+				<meta property='og:title' content={aboutMetaTags.ogTitle} />
+				<meta property='og:description' content={aboutMetaTags.ogDescription} />
+				<meta property='og:image' content={aboutMetaTags.ogImage} />
+
+				{/* Twitter Meta Tags */}
+				<meta property='twitter:url' content={aboutMetaTags.ogUrl} />
+				<meta name='twitter:title' content={aboutMetaTags.ogTitle} />
+				<meta name='twitter:description' content={aboutMetaTags.ogDescription} />
+				<meta name='twitter:image' content={aboutMetaTags.ogImage} />
+			</Helmet>
+
 			<h1 className='base-title h1'>Starter Pack</h1>
 
 			<div className='about-info'>

@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import SimpleBar from 'simplebar-react';
 import { NavLink } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
+
+import { startupsMetaTags } from '../../../config/metaTags';
 import { useTabletLargeQuery } from '../../../hooks/useMediaQuery';
 
 import '../Startups.scss';
@@ -154,6 +157,23 @@ const PageStructure: React.FC<PageProps> = ({
 
 	return (
 		<div className={`wrapper wrapper--idea ${pageClassName} ${langDisable}`}>
+			<Helmet>
+				<title>{startupsMetaTags.title}</title>
+				<meta name='description' content={startupsMetaTags.description} />
+
+				{/* Open Graph Meta Tags */}
+				<meta property='og:url' content={startupsMetaTags.ogUrl} />
+				<meta property='og:title' content={startupsMetaTags.ogTitle} />
+				<meta property='og:description' content={startupsMetaTags.ogDescription} />
+				<meta property='og:image' content={startupsMetaTags.ogImage} />
+
+				{/* Twitter Meta Tags */}
+				<meta property='twitter:url' content={startupsMetaTags.ogUrl} />
+				<meta name='twitter:title' content={startupsMetaTags.ogTitle} />
+				<meta name='twitter:description' content={startupsMetaTags.ogDescription} />
+				<meta name='twitter:image' content={startupsMetaTags.ogImage} />
+			</Helmet>
+
 			<div className='startup-action'>
 				<div className='idea-tabs idea-tabs--urls'>
 					{startupsNav.map(({ pageLink, pageName }, i) => (
