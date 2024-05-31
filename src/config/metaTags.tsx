@@ -31,18 +31,18 @@ export const defaultMetaTags: MetaTags = {
 };
 
 export const startupsMetaTags: MetaTags = {
-	title: `Startups: Films | Games | New Generation Media | Technologies`,
+	title: `Startup: Films | Games | New Generation Media | Technologies`,
 	description: `How to create an information media magazine and transform it into a company producing its own technologies.`,
 
 	// Open Graph Meta Tags
 	ogUrl: `https://buhowski.dev/startup`,
-	ogTitle: `Startups: Films | Games | New Generation Media | Technologies`,
+	ogTitle: `Startup: Films | Games | New Generation Media | Technologies`,
 	ogDescription: `How to create an information media magazine and transform it into a company producing its own technologies.`,
 	ogImage: `https://buhowski.dev/preview_startups.jpg`,
 
 	// Twitter Meta Tags
 	twitterUrl: `https://buhowski.dev/startup`,
-	twitterTitle: `Startups: Films | Games | New Generation Media | Technologies`,
+	twitterTitle: `Startup: Films | Games | New Generation Media | Technologies`,
 	twitterDescription: `How to create an information media magazine and transform it into a company producing its own technologies.`,
 	twitterImage: `https://buhowski.dev/preview_startups.jpg`,
 };
