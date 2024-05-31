@@ -29,7 +29,7 @@
 	},
 	"scripts": {
 		"start": "craco start",
-		"build": "craco build",
+		"build": "craco build && react-snap",
 		"test": "craco test",
 		"eject": "craco eject"
 	},
@@ -51,6 +51,7 @@
 	},
 	"devDependencies": {
 		"@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-		"@craco/craco": "^7.1.0"
+		"@craco/craco": "^7.1.0",
+		"react-snap": "^1.23.0"
 	}
 }
