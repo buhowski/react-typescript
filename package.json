@@ -57,7 +57,13 @@
 	},
 	"reactSnap": {
 		"include": [
-			"/"
+			"/",
+			"/about/",
+			"/projects/",
+			"/startup/",
+			"/films/",
+			"/games/",
+			"/mvp/"
 		]
 	}
 }
