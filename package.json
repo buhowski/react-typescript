@@ -2,7 +2,7 @@
 	"name": "buhowski.inc",
 	"version": "4.2.0",
 	"engines": {
-		"node": ">=20.12.1"
+		"node": "=20.12.2"
 	},
 	"private": true,
 	"dependencies": {
@@ -29,7 +29,8 @@
 	},
 	"scripts": {
 		"start": "craco start",
-		"build": "craco build && react-snap",
+		"build": "craco build",
+		"postbuild": "react-snap",
 		"test": "craco test",
 		"eject": "craco eject"
 	},

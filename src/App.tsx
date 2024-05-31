@@ -87,9 +87,18 @@ const App = () => {
 					<Helmet>
 						<title>{defaultMetaTags.title}</title>
 						<meta name='description' content={defaultMetaTags.description} />
+
+						{/* Open Graph Meta Tags */}
+						<meta property='og:url' content={defaultMetaTags.ogUrl} />
 						<meta property='og:title' content={defaultMetaTags.ogTitle} />
 						<meta property='og:description' content={defaultMetaTags.ogDescription} />
 						<meta property='og:image' content={defaultMetaTags.ogImage} />
+
+						{/* Twitter Meta Tags */}
+						<meta property='twitter:url' content={defaultMetaTags.ogUrl} />
+						<meta name='twitter:title' content={defaultMetaTags.ogTitle} />
+						<meta name='twitter:description' content={defaultMetaTags.ogDescription} />
+						<meta name='twitter:image' content={defaultMetaTags.ogImage} />
 					</Helmet>
 
 					<div className='page-container'>

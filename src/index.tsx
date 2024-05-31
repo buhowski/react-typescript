@@ -12,9 +12,6 @@ const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 const helmetContext = {};
 
 root.render(
-	// TODO: learn tests
-	// <React.StrictMode>
-
 	<HelmetProvider context={helmetContext}>
 		{/* Page Preloader */}
 		<Preloader />
@@ -24,8 +21,6 @@ root.render(
 			<App />
 		</BrowserRouter>
 	</HelmetProvider>
-
-	// </React.StrictMode>
 );
 
 // If you want your app to work offline and load faster, you can change
