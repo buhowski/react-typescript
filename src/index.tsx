@@ -1,26 +1,30 @@
 import ReactDOM from 'react-dom/client';
-import App from './App';
+import { HelmetProvider } from 'react-helmet-async';
 import { BrowserRouter } from 'react-router-dom';
 
+import App from './App';
 import Preloader from './pages/Preloader';
 
 // import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 // import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
+const helmetContext = {};
 
 root.render(
 	// TODO: learn tests
 	// <React.StrictMode>
-	<>
+
+	<HelmetProvider context={helmetContext}>
 		{/* Page Preloader */}
 		<Preloader />
 
-		{/* My Website */}
+		{/* web application */}
 		<BrowserRouter>
 			<App />
 		</BrowserRouter>
-	</>
+	</HelmetProvider>
+
 	// </React.StrictMode>
 );
 

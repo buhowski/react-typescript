@@ -1,11 +1,22 @@
-import projectsData from './projectsData';
 import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry';
+import { Helmet } from 'react-helmet-async';
+
+import { portfolioMetaTags } from '../../config/metaTags';
+import projectsData from './projectsData';
 
 import './Projects.scss';
 
 const Projects = () => {
 	return (
 		<div className='wrapper'>
+			<Helmet>
+				<title>{portfolioMetaTags.title}</title>
+				<meta name='description' content={portfolioMetaTags.description} />
+				<meta property='og:title' content={portfolioMetaTags.ogTitle} />
+				<meta property='og:description' content={portfolioMetaTags.ogDescription} />
+				<meta property='og:image' content={portfolioMetaTags.ogImage} />
+			</Helmet>
+
 			<h1 className='base-title h1'>Some Works</h1>
 			<div className='projects-container'>
 				<ResponsiveMasonry
