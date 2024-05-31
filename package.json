@@ -1,5 +1,5 @@
 {
-	"name": "buhowski.inc",
+	"name": "buhowski.dev",
 	"version": "4.2.0",
 	"engines": {
 		"node": ">=20.12.1"
@@ -30,6 +30,7 @@
 	"scripts": {
 		"start": "craco start",
 		"build": "craco build",
+		"postbuild": "react-snap",
 		"test": "craco test",
 		"eject": "craco eject"
 	},
@@ -53,5 +54,15 @@
 		"@babel/plugin-proposal-private-property-in-object": "^7.21.11",
 		"@craco/craco": "^7.1.0",
 		"react-snap": "^1.23.0"
+	},
+	"reactSnap": {
+		"include": [
+			"/",
+			"/startup",
+			"/films",
+			"/games",
+			"/about",
+			"/portfolio"
+		]
 	}
 }
