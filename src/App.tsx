@@ -1,8 +1,8 @@
 import { useEffect } from 'react';
 import { useLocation, Route, Routes } from 'react-router-dom';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
-import { Helmet } from 'react-helmet-async';
 
+import PageHelmet from './config/PageHelmet';
 import { defaultMetaTags } from './config/metaTags';
 import { useTabletQuery } from './hooks/useMediaQuery';
 import {
@@ -84,22 +84,7 @@ const App = () => {
 		<TransitionGroup>
 			<CSSTransition key={location.key} classNames='slide' timeout={1300}>
 				<div id='page' className='page'>
-					<Helmet>
-						<title>{defaultMetaTags.title}</title>
-						<meta name='description' content={defaultMetaTags.description} />
-
-						{/* Open Graph Meta Tags */}
-						<meta property='og:url' content={defaultMetaTags.ogUrl} />
-						<meta property='og:title' content={defaultMetaTags.ogTitle} />
-						<meta property='og:description' content={defaultMetaTags.ogDescription} />
-						<meta property='og:image' content={defaultMetaTags.ogImage} />
-
-						{/* Twitter Meta Tags */}
-						<meta property='twitter:url' content={defaultMetaTags.ogUrl} />
-						<meta name='twitter:title' content={defaultMetaTags.ogTitle} />
-						<meta name='twitter:description' content={defaultMetaTags.ogDescription} />
-						<meta name='twitter:image' content={defaultMetaTags.ogImage} />
-					</Helmet>
+					<PageHelmet metaTags={defaultMetaTags} />
 
 					<div className='page-container'>
 						<Header />

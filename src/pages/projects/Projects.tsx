@@ -1,6 +1,6 @@
 import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry';
-import { Helmet } from 'react-helmet-async';
 
+import PageHelmet from '../../config/PageHelmet';
 import { portfolioMetaTags } from '../../config/metaTags';
 import projectsData from './projectsData';
 
@@ -9,22 +9,7 @@ import './Projects.scss';
 const Projects = () => {
 	return (
 		<div className='wrapper'>
-			<Helmet>
-				<title>{portfolioMetaTags.title}</title>
-				<meta name='description' content={portfolioMetaTags.description} />
-
-				{/* Open Graph Meta Tags */}
-				<meta property='og:url' content={portfolioMetaTags.ogUrl} />
-				<meta property='og:title' content={portfolioMetaTags.ogTitle} />
-				<meta property='og:description' content={portfolioMetaTags.ogDescription} />
-				<meta property='og:image' content={portfolioMetaTags.ogImage} />
-
-				{/* Twitter Meta Tags */}
-				<meta property='twitter:url' content={portfolioMetaTags.ogUrl} />
-				<meta name='twitter:title' content={portfolioMetaTags.ogTitle} />
-				<meta name='twitter:description' content={portfolioMetaTags.ogDescription} />
-				<meta name='twitter:image' content={portfolioMetaTags.ogImage} />
-			</Helmet>
+			<PageHelmet metaTags={portfolioMetaTags} />
 
 			<h1 className='base-title h1'>Some Works</h1>
 			<div className='projects-container'>
