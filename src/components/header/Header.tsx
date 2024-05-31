@@ -12,7 +12,11 @@ const Header = () => {
 	const [menuOpen, setMenuOpen] = React.useState(false);
 
 	const { pathname } = useLocation();
-	const isActive = startupsNav.some((url) => url.pageLink === pathname);
+
+	// Check if the current pathname matches the pageLink with or without the trailing slash
+	const isActive = startupsNav.some(
+		(url) => url.pageLink === pathname || `${url.pageLink}/` === pathname
+	);
 
 	const linksData = [
 		{
@@ -35,7 +39,7 @@ const Header = () => {
 	const navLinkItems = linksData.map(({ pageLink, pageName, activeClass }, i) => {
 		return (
 			<li className='nav-item' key={i}>
-				<NavLink className={`nav-link ${activeClass}`} to={`${pageLink}`} end>
+				<NavLink className={`nav-link ${activeClass}`} to={`${pageLink}`}>
 					{pageName}
 				</NavLink>
 			</li>
@@ -45,7 +49,7 @@ const Header = () => {
 	const LogoNavLink = () => {
 		return (
 			<div className='logo'>
-				<NavLink className='logo-link' to='/' end>
+				<NavLink className='logo-link' to='/'>
 					<span className='tag-color'>&lt;</span>
 					<span>Buhowski</span>
 					<span className='tag-color'>/&gt;</span>

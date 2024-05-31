@@ -3,17 +3,18 @@
   to = "/index.html"
   status = 200
 
-[[redirects]]
-  from = "/about"
-  to = "/about"
-  status = 200
+# TODO: how redirects works
+# [[redirects]]
+#   from = "/about"
+#   to = "/about"
+#   status = 200
 
-[[redirects]]
-  from = "/about/"
-  to = "/about"
-  status = 200
+# [[redirects]]
+#   from = "/about*"
+#   to = "/about"
+#   status = 200
 
-[[redirects]]
-  from = "/*"
-  to = "/404.html"
-  status = 404
+# [[redirects]]
+#   from = "/*"
+#   to = "/404.html"
+#   status = 404
