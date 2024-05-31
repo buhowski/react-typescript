@@ -3,10 +3,21 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>404 The Corp .!.</title>
+		<meta name="mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#202020" />
+		<meta name="msapplication-navbutton-color" content="#202020" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="#202020" />
+
+		<link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+		<link rel="icon" type="image/png" href="%PUBLIC_URL%/logo.png" />
+		<link rel="apple-touch-icon" href="%PUBLIC_URL%/logoMaskable.png" />
+
+		<link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+		<title>The Corp .!. | 404 | Not Found</title>
 	</head>
 	<body>
-		<div className="App-offline" style="text-align: center; width: 100%">
+		<div class="" style="text-align: center; width: 100%">
 			<header style="max-width: 512px; margin: auto; padding: 20px">
 				<img
 					src="logo.svg"
@@ -14,6 +25,8 @@
 					style="text-align: center; width: 100%; display: block"
 				/>
 				<p style="font-size: 42px; font-weight: bold">404</p>
+
+				<div id="root"></div>
 			</header>
 		</div>
 	</body>

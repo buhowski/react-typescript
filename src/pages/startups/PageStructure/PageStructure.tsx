@@ -177,7 +177,7 @@ const PageStructure: React.FC<PageProps> = ({
 			<div className='startup-action'>
 				<div className='idea-tabs idea-tabs--urls'>
 					{startupsNav.map(({ pageLink, pageName }, i) => (
-						<NavLink to={pageLink} end className={`idea-tabs__btn`} key={i}>
+						<NavLink to={pageLink} className={`idea-tabs__btn`} key={i}>
 							{pageName}
 						</NavLink>
 					))}

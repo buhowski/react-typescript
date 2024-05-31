@@ -12,9 +12,9 @@ export const urlInstagram =
 	'https://www.instagram.com/buhowski?igsh=MXU5bTlvZDRpa3Uzbw==';
 
 // All Pages Path
-export const pathToAbout = '/about';
-export const pathToProjects = '/projects';
 export const pathToStartup = '/startup';
 export const pathToStartupFilms = '/films';
 export const pathToStartupGames = '/games';
 export const pathToStartupMVP = '/mvp';
+export const pathToAbout = '/about';
+export const pathToProjects = '/projects';
