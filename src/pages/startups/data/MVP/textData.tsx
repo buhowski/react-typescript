@@ -9,7 +9,7 @@ export const articlesTextData = [
 				pitchInfo: [
 					{
 						key: `Status: `,
-						value: `Comming soon ...`,
+						value: `Coming soon ...`,
 					},
 				],
 			},
@@ -38,7 +38,7 @@ export const articlesTextData = [
 				pitchInfo: [
 					{
 						key: `Status: `,
-						value: `Comming soon ...`,
+						value: `Coming soon ...`,
 					},
 				],
 			},
@@ -67,7 +67,7 @@ export const articlesTextData = [
 				pitchInfo: [
 					{
 						key: `Status: `,
-						value: `Comming soon ...`,
+						value: `Coming soon ...`,
 					},
 				],
 			},
