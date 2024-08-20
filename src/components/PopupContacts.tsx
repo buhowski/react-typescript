@@ -23,8 +23,8 @@ const dataContacts = [
 
 	{
 		name: 'Email: ',
-		url: urlEmail,
-		linkTitle: 'a.tsiomakh@gmail.com',
+		url: `mailto:${urlEmail}`,
+		linkTitle: urlEmail,
 	},
 ];
 

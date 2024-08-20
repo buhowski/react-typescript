@@ -1,15 +1,14 @@
-export const urlTelegram = 'https://t.me/OlexanderTsiomakh';
+export const urlTelegram = 'https://t.me/olexander_tsiomakh';
 
-export const urlLinkedIn = 'https://www.linkedin.com/in/olexander/';
+export const urlLinkedIn = 'https://www.linkedin.com/in/olexander';
 
 export const urlGitHub = 'https://github.com/buhowski';
 
-export const urlEmail = 'mailto:a.tsiomakh@gmail.com';
+export const urlEmail = 'olexander.tsiomakh@gmail.com';
 
 export const urlCoindrop = 'https://coindrop.to/buhowski';
 
-export const urlInstagram =
-	'https://www.instagram.com/buhowski?igsh=MXU5bTlvZDRpa3Uzbw==';
+export const urlInstagram = 'https://www.instagram.com/buhowski';
 
 // All Pages Path
 export const pathToStartup = '/startup';
