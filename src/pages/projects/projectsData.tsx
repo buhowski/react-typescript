@@ -23,7 +23,7 @@ const projectsData = [
 
 	{
 		img: sendpotion,
-		url: `https://demo-test-sendpotion.netlify.app`,
+		url: `https://demo-showcase-sendpotion.netlify.app`,
 		name: 'Potion AI',
 		desk: `Responsive Web Design + Animations`,
 		skills: ['CSS', 'GSAP', 'JavaScript'],
