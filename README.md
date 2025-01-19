@@ -1,8 +1,8 @@
 # About
 
-## [.!. Startup: New Generation Media | Films | Games | Technologies](https://buhowski.dev/startup)
+### [.!. Startup: New Generation Media | Films | Games | Technologies](https://buhowski.dev/startup)
 
-## "How to create an information media magazine in Ukraine and transform it into a company producing its own technologies"
+### "How to create an information media magazine in Ukraine and transform it into a company producing its own technologies"
 
 # Preface
 
