@@ -1,6 +1,6 @@
 import { urlGitHub, urlLinkedIn, urlTelegram, urlInstagram } from '../urlsData';
 import { GithubIcon, LinkedInIcon, TelegramIcon, InstagramIcon } from './svg/icons';
-import urlCV from '../../assets/CV_Olexander_Tsiomakh_Frontend.pdf';
+// import urlCV from '../../assets/CV_Olexander_Tsiomakh_Frontend.pdf';
 
 const socialData = [
 	{
