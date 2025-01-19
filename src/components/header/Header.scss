@@ -107,7 +107,19 @@
 	}
 }
 
+.mobile-menu-btn,
+.mobile-menu,
+.wrapper > .logo {
+	display: none;
+}
+
 @include tablet {
+	.mobile-menu-btn,
+	.mobile-menu,
+	.wrapper > .logo {
+		display: block;
+	}
+
 	.mobile-menu-btn {
 		width: 40px;
 		height: 22px;
