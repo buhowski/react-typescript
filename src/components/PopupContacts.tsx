@@ -6,7 +6,7 @@ const dataContacts = [
 	{
 		name: 'Telegram: ',
 		url: urlTelegram,
-		linkTitle: 'Write To Me',
+		linkTitle: 'olexander_tsiomakh',
 	},
 
 	{

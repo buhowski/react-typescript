@@ -1,6 +1,6 @@
-import { urlGitHub, urlLinkedIn, urlTelegram } from '../urlsData';
+import { urlGitHub, urlLinkedIn, urlTelegram, urlInstagram } from '../urlsData';
+import { GithubIcon, LinkedInIcon, TelegramIcon, InstagramIcon } from './svg/icons';
 import urlCV from '../../assets/CV_Olexander_Tsiomakh_Frontend.pdf';
-import { GithubIcon, LinkedInIcon, TelegramIcon, CvIcon } from './svg/icons';
 
 const socialData = [
 	{
@@ -22,10 +22,16 @@ const socialData = [
 	},
 
 	{
-		link: urlCV,
-		title: 'Resume',
-		icon: CvIcon,
+		link: urlInstagram,
+		title: 'Instagram',
+		icon: InstagramIcon,
 	},
+
+	// {
+	// 	link: urlCV,
+	// 	title: 'Resume',
+	// 	icon: CvIcon,
+	// },
 
 	// {
 	// 	link: urlCoindrop,
