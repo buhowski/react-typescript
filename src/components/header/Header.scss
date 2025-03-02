@@ -51,7 +51,7 @@
 	}
 
 	&__list {
-		min-width: 55.6%;
+		min-width: 55%;
 		display: flex;
 		justify-content: space-between;
 		margin-left: auto;
@@ -61,7 +61,7 @@
 .logo-link {
 	font-size: 23px;
 	padding: 12px 0;
-	letter-spacing: 5px;
+	letter-spacing: 4px;
 }
 
 .nav-item {
@@ -84,7 +84,7 @@
 	white-space: nowrap;
 	font-family: $LouisGeorgeCafBold;
 	padding: 12px 14px 12px 19px;
-	letter-spacing: 5px;
+	letter-spacing: 4px;
 
 	&:after {
 		content: '';
