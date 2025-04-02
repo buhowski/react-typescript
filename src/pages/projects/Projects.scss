@@ -3,6 +3,11 @@
 .projects-container {
 	padding-top: 40px;
 	padding-bottom: 50px;
+
+	// .projects-container__masonry
+	&__masonry {
+		gap: 40px !important;
+	}
 }
 
 .project {
