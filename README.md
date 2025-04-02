@@ -1,4 +1,4 @@
-# About
+# About Startup
 
 ### [.!. Startup: New Generation Media | Films | Games | Technologies](https://buhowski.dev/startup)
 
