@@ -3,11 +3,14 @@
 
 .wrapper--idea {
 	position: relative;
-	padding-bottom: 30px;
-	height: calc(100% - 90px);
+	padding-bottom: 55px;
+	// height: calc(100% - 90px);
 
 	@include tabletBig {
-		height: auto;
+		padding-left: 0;
+		padding-right: 0;
+		padding-bottom: 40px;
+		// height: auto;
 	}
 
 	@include mobile {
@@ -67,7 +70,7 @@
 .idea-contacts {
 	position: relative;
 	display: inline-block;
-	margin: auto auto 0;
+	margin: min(8vh, 80px) auto 0;
 	width: max-content;
 	font-family: $LouisGeorgeCaf;
 	font-weight: 500;
@@ -174,14 +177,12 @@
 
 .idea-section {
 	background: $darker;
-	padding: 0 40px 35px;
+	padding: 50px 40px;
 	display: flex;
+	align-items: flex-start;
 	position: relative;
 	box-shadow: 0 0 10px rgba($color: $black, $alpha: 1);
-	height: 100%;
-	max-height: calc(100% - 35px);
-	border-radius: 0 10px 10px 10px;
-	overflow: hidden;
+	border-radius: 20px;
 
 	@include tabletBig {
 		border-radius: 20px;
@@ -191,33 +192,33 @@
 		max-width: 777px;
 		width: 100%;
 		margin: 0 auto;
-		padding-bottom: 75px;
+		padding-top: 0;
+		padding-bottom: 45px;
 		box-shadow: 0 0 6px rgba($color: $darkest, $alpha: 1);
 	}
 
 	@include mobile {
-		padding-left: 15px;
-		padding-right: 15px;
+		padding: 0 20px 60px;
 		border-radius: 0;
 	}
 }
 
 .idea-info {
 	height: 100%;
-	width: calc(50% + 2px);
-	margin-right: 40px;
-	padding-top: 40px;
-	flex-shrink: 0;
+	width: 50%;
 	position: relative;
 	overflow: hidden;
 
 	@include tabletBig {
-		padding-top: 0;
+		padding-top: 50px;
 		height: auto;
 		width: 100%;
-		margin-right: 0;
 		flex-shrink: unset;
 		overflow: visible;
+	}
+
+	@include mobile {
+		padding-top: 40px;
 	}
 }
 
@@ -254,8 +255,22 @@
 }
 
 .startup-action {
-	@include mobile {
-		padding: 0 10px;
+	position: sticky;
+	top: 0;
+	z-index: 10;
+	transition: 0.2s;
+
+	&.is-active {
+		padding: 0;
+
+		.idea-tabs--urls {
+			min-width: 100%;
+			border-radius: 0 0 20px 20px;
+
+			@include tabletBig {
+				border-radius: 0 0 10px 10px;
+			}
+		}
 	}
 }
 
@@ -271,30 +286,43 @@
 
 	&--urls {
 		white-space: nowrap;
-		border-top-left-radius: 10px;
-		border-top-right-radius: 10px;
+		border-radius: 20px;
 		box-shadow: 0 0 10px rgba($color: $black, $alpha: 1);
 		letter-spacing: 0;
+		margin: 45px auto 40px;
+		display: flex;
+		justify-content: center;
+		background-color: $black;
+		min-width: 320px;
+		transition: 0.2s;
 
 		@include tabletBig {
 			max-width: 777px;
-			margin: 10px auto 25px;
+			margin: 20px auto 30px;
 			text-align: center;
-			border-radius: 20px;
+			border-radius: 10px;
 			box-shadow: 0 0 6px rgba($color: $black, $alpha: 1);
+		}
+
+		@include mobile {
+			width: calc(100% - 20px);
 		}
 
 		.idea-tabs__btn {
 			text-transform: none;
-			padding: 7px 35px;
+			padding: 10px 40px;
 			display: flex;
 			align-items: flex-end;
 			justify-content: center;
-			font-size: 15px;
+			font-size: 16px;
 			letter-spacing: 1px;
 
 			@include tabletBig {
-				padding: 9px 3px 7px;
+				padding: 10px 3px 8px;
+				font-size: 15px;
+			}
+
+			@include mobile {
 				font-size: 14px;
 			}
 
@@ -315,32 +343,37 @@
 		}
 	}
 
+	// .idea-tabs--lang
 	&--lang {
 		font-size: 13px;
-		position: absolute;
-		top: 0;
-		right: 0;
 		box-shadow: 0 0 10px rgba($color: $black, $alpha: 1);
-		border-bottom-left-radius: 10px;
-		border-bottom-right-radius: 10px;
+		border-radius: 10px 0 0 10px;
 		overflow: hidden;
 		font-family: $LouisGeorgeCafBold;
+		position: absolute;
+		left: 0;
+		top: 0;
+		transform: translateX(-100%);
+		flex-direction: column;
 
 		@include tabletBig {
-			margin: 35px auto;
+			transform: none;
+			left: unset;
+			right: 0;
+			margin-bottom: 0;
 			width: max-content;
-			border-radius: 20px;
-			position: static;
+			margin-right: -40px;
 			box-shadow: 0 0 6px rgba($color: $black, $alpha: 1);
 		}
 
-		.idea-tabs__btn {
-			@include tabletBig {
-				width: 58px;
-			}
+		@include mobile {
+			margin-right: -15px;
+		}
 
-			&:hover {
-				text-shadow: 0 0 0.7px $snow;
+		.idea-tabs__btn {
+			&:not(.active):hover {
+				text-shadow: 0 0 0.7px $blue-main, 0 0 0.7px $blue-main;
+				color: $blue-main;
 			}
 		}
 	}
@@ -348,20 +381,20 @@
 	&__btn {
 		background: $black;
 		color: $snow;
-		padding: 6px 18px;
+		padding: 12px;
 		text-transform: uppercase;
 		line-height: normal;
 
 		@include tabletBig {
 			width: 100%;
 			flex-grow: 1;
-			padding-top: 8px;
-			padding-bottom: 6px;
+			padding: 13px 8px;
 		}
 
 		&.active {
 			background: $blue-main;
 			text-shadow: 0 0 0.7px $snow;
+			color: $snow;
 		}
 	}
 }
@@ -370,12 +403,11 @@
 	text-align: center;
 	font-size: 31px;
 	margin-bottom: 35px;
-	margin-top: 15px;
 	color: $starYellow;
 
 	@include tabletBig {
-		margin-top: 30px;
-		margin-bottom: 0;
+		margin-right: 30px;
+		margin-left: 30px;
 	}
 }
 
@@ -384,7 +416,7 @@
 		font-family: $LouisGeorgeCafBold;
 		margin-bottom: 0;
 		font-size: 16px;
-		text-align: right;
+		// text-align: right;
 		margin-bottom: 15px;
 		// TODO: need color pitch number
 		color: $textGrey;
@@ -402,6 +434,11 @@
 		font-size: 31px;
 		color: $starYellow;
 		text-align: center;
+
+		@include tabletBig {
+			margin-right: 30px;
+			margin-left: 30px;
+		}
 	}
 }
 
@@ -517,12 +554,12 @@
 	text-align: right;
 	font-family: $Raleway;
 	font-style: italic;
-	margin-top: 65px;
+	margin-top: 50px;
 	font-size: 15px;
 	white-space: pre-line;
 
 	@include tabletBig {
-		margin-bottom: 65px;
+		margin-bottom: 50px;
 		padding-right: 0;
 	}
 
@@ -537,10 +574,8 @@
 	display: flex;
 	flex-direction: column;
 	position: relative;
-	margin-top: 40px;
 
 	@include tabletBig {
-		margin-top: 0;
 		align-items: center;
 		overflow: hidden;
 		height: 350px;
@@ -557,13 +592,14 @@
 .slider-js {
 	width: 100%;
 	display: flex;
-	height: 400px;
+	height: 55vh;
+	max-height: 400px;
 	transition: transform 0.4s ease-in;
 	position: relative;
 	overflow: hidden;
 	background-color: $black;
 	box-shadow: 0 0 10px rgba($color: $black, $alpha: 1);
-	border-radius: 10px;
+	border-radius: 0 10px 10px 10px;
 
 	@include tabletBig {
 		height: 100%;
@@ -909,8 +945,21 @@
 	}
 }
 
-.desktop-slider {
+.lang-sidebar {
 	display: flex;
+	width: 50%;
+	position: sticky;
+	top: 80px;
+	margin-left: 85px;
+
+	@include tabletBig {
+		margin-left: 0;
+		width: 100%;
+		top: 60px;
+	}
+}
+
+.desktop-slider {
 	width: 100%;
 }
 
