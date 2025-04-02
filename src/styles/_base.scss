@@ -128,7 +128,12 @@ svg {
 }
 
 .page.slide-enter .header,
+.page.slide-enter .startup-action,
 .page.slide-enter .about-item .ball {
+	z-index: 0;
+}
+
+.page:first-of-type:has(+ .page) .startup-action {
 	z-index: 0;
 }
 

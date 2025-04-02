@@ -35,16 +35,12 @@ const Slider: React.FC<SliderProps> = ({ dataSlider }) => {
 	const pauseVideos = () => videoRefs.current?.forEach((video) => video.pause());
 
 	const handleNext = () => {
-		setActiveIndex((prevIndex) =>
-			prevIndex === dataSlider.length - 1 ? 0 : prevIndex + 1
-		);
+		setActiveIndex((prevIndex) => (prevIndex === dataSlider.length - 1 ? 0 : prevIndex + 1));
 		pauseVideos();
 	};
 
 	const handlePrev = () => {
-		setActiveIndex((prevIndex) =>
-			prevIndex === 0 ? dataSlider.length - 1 : prevIndex - 1
-		);
+		setActiveIndex((prevIndex) => (prevIndex === 0 ? dataSlider.length - 1 : prevIndex - 1));
 		pauseVideos();
 	};
 
@@ -53,18 +49,12 @@ const Slider: React.FC<SliderProps> = ({ dataSlider }) => {
 			<div className='slider-container'>
 				<div className='idea-slider slider-js'>
 					{dataSlider.map(({ itemSrc, itemAlt, itemPoster, itemTitle }, index) => (
-						<div
-							className='slider-item-js'
-							data-active={index === activeIndex}
-							key={index}
-						>
+						<div className='slider-item-js' data-active={index === activeIndex} key={index}>
 							{/* VIdeo or Image slider item */}
 							{itemPoster ? (
 								<>
 									<video
-										ref={(element) =>
-											(videoRefs.current[index] = element as HTMLVideoElement)
-										}
+										ref={(element) => (videoRefs.current[index] = element as HTMLVideoElement)}
 										width='100%'
 										height='100%'
 										controls

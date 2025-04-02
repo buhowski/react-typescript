@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import SimpleBar from 'simplebar-react';
 import { NavLink } from 'react-router-dom';
 
 import PageHelmet from '../../../config/PageHelmet';
@@ -12,15 +11,7 @@ import PopupContacts from '../../../components/PopupContacts';
 import Copyright from '../../../components/Copyright';
 import { startupsNav } from '../data/startupsNav';
 import { Block } from '../data/textTypes';
-import {
-	Headline,
-	Title,
-	PitchInfo,
-	Text,
-	Subtitle,
-	List,
-	LastWords,
-} from './IdeaElements';
+import { Headline, Title, PitchInfo, Text, Subtitle, List, LastWords } from './IdeaElements';
 
 interface TextStructure {
 	section: Block[];
@@ -46,6 +37,7 @@ const PageStructure: React.FC<PageProps> = ({
 }) => {
 	const useTabletLarge = useTabletLargeQuery();
 	const [currentTab, setCurrentTab] = useState<string>('');
+	const [isActive, setIsActive] = useState(false);
 
 	// Render text items
 	const renderTextItems = () => {
@@ -64,11 +56,10 @@ const PageStructure: React.FC<PageProps> = ({
 							<Title titleClassname='idea-block__title' title={block.loglineTitle} />
 						)}
 						{block.loglineText && <Text text={block.loglineText} />}
+
 						{useTabletLarge && blockIndex === 0 && Slider}
 
-						{block.title && (
-							<Title titleClassname='idea-block__title' title={block.title} />
-						)}
+						{block.title && <Title titleClassname='idea-block__title' title={block.title} />}
 
 						{block.text && <Text text={block.text} />}
 
@@ -155,11 +146,28 @@ const PageStructure: React.FC<PageProps> = ({
 		}
 	}, [currentTab, langDisable]);
 
+	useEffect(() => {
+		const pageContainer = document.querySelector('.page-container');
+		const startupAction = document.querySelector('.startup-action');
+
+		if (!pageContainer || !startupAction) return;
+
+		const handleScroll = () => {
+			const containerRect = pageContainer.getBoundingClientRect();
+			const elementRect = startupAction.getBoundingClientRect();
+
+			setIsActive(elementRect.top <= containerRect.top);
+		};
+
+		pageContainer.addEventListener('scroll', handleScroll);
+		return () => pageContainer.removeEventListener('scroll', handleScroll);
+	}, []);
+
 	return (
 		<div className={`wrapper wrapper--idea ${pageClassName} ${langDisable}`}>
 			<PageHelmet metaTags={startupsMetaTags} />
 
-			<div className='startup-action'>
+			<div className={`startup-action ${isActive ? 'is-active' : ''}`}>
 				<div className='idea-tabs idea-tabs--urls'>
 					{startupsNav.map(({ pageLink, pageName }, i) => (
 						<NavLink to={pageLink} className={`idea-tabs__btn`} key={i}>
@@ -171,16 +179,24 @@ const PageStructure: React.FC<PageProps> = ({
 
 			<div className='idea-section'>
 				<div className='idea-info'>
-					{useTabletLarge && title && <h1 className='startup-title h2'>{title}</h1>}
+					{/* Tabs content */}
+					{title && <h1 className='startup-title h2'>{title}</h1>}
 
+					{tabs.map((tab) => (
+						<div key={tab.id} className='idea-content'>
+							{currentTab === tab.id && tab.content}
+						</div>
+					))}
+				</div>
+
+				{/* Desktop Slider */}
+				<div className='lang-sidebar'>
 					{/* language tabs */}
 					<div className='idea-tabs idea-tabs--lang'>
 						{/* Here goes tab items*/}
 						{tabs.map((tab) => (
 							<button
-								className={`idea-tabs__btn ${tab.title} ${
-									currentTab === tab.id ? 'active' : ''
-								}`}
+								className={`idea-tabs__btn ${tab.title} ${currentTab === tab.id ? 'active' : ''}`}
 								key={tab.id}
 								onClick={() => handleTabClick(tab.id)}
 							>
@@ -189,34 +205,8 @@ const PageStructure: React.FC<PageProps> = ({
 						))}
 					</div>
 
-					{/* Tabs content */}
-					{useTabletLarge ? (
-						<>
-							{tabs.map((tab) => (
-								<div key={tab.id} className='idea-content'>
-									{currentTab === tab.id && tab.content}
-								</div>
-							))}
-						</>
-					) : (
-						// For Desktop custom scrollbar
-						<SimpleBar
-							style={{ height: '100%', paddingRight: '40px' }}
-							autoHide={false}
-						>
-							{title && <h1 className='startup-title h2'>{title}</h1>}
-
-							{tabs.map((tab) => (
-								<div key={tab.id} className='idea-content'>
-									{currentTab === tab.id && tab.content}
-								</div>
-							))}
-						</SimpleBar>
-					)}
+					<div className='desktop-slider'>{!useTabletLarge && Slider}</div>
 				</div>
-
-				{/* Desktop Slider */}
-				<div className='desktop-slider'>{!useTabletLarge && Slider}</div>
 			</div>
 		</div>
 	);
