@@ -1,6 +1,13 @@
 @import '../../styles/variables';
 @import '../../styles/animation';
 
+@mixin titleFont {
+	font-family: $Raleway;
+	font-weight: 500;
+	letter-spacing: 1.2px;
+	line-height: 1.3;
+}
+
 .wrapper--idea {
 	position: relative;
 	padding-bottom: 40px;
@@ -159,6 +166,7 @@
 
 		.slider-btn-js,
 		.slides-number {
+			opacity: 0.4;
 			pointer-events: none;
 			filter: grayscale(1);
 
@@ -394,8 +402,7 @@
 	margin-bottom: 40px;
 	letter-spacing: 1.4px;
 	color: $starYellow;
-	font-family: $Raleway;
-	font-weight: 500;
+	@include titleFont;
 
 	@include mobile {
 		margin-bottom: 30px;
@@ -428,9 +435,8 @@
 		font-size: 3.1rem;
 		color: $starYellow;
 		text-align: center;
-		font-weight: 500;
-		font-family: $Raleway;
 		letter-spacing: 1.4px;
+		@include titleFont;
 
 		@include mobile {
 			font-size: 2.5rem;
@@ -481,9 +487,7 @@
 		font-size: 2.5rem;
 		margin-bottom: 20px;
 		letter-spacing: 1.2px;
-		font-family: $Raleway;
-		font-weight: 500;
-		line-height: 1.3;
+		@include titleFont;
 
 		@include tabletBig {
 			font-size: 2.1rem;
@@ -737,11 +741,11 @@
 
 .slides-number {
 	color: $blue-main;
-	font-family: $Raleway;
-	font-weight: 600;
 	margin: 0 5px;
 	min-width: 80px;
 	text-align: center;
+	@include titleFont;
+	font-weight: 600;
 
 	@include tabletBig {
 		font-size: 14px;
