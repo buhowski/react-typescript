@@ -36,12 +36,31 @@ const App = () => {
 	const [isLoaded, setIsLoaded] = useState(false);
 
 	useEffect(() => {
+		// Check if all stylesheets are loaded
+		const checkStylesLoaded = () => {
+			try {
+				const stylesheets = Array.from(document.styleSheets);
+				const isFullyLoaded = stylesheets.every((sheet) => {
+					try {
+						return sheet.cssRules?.length || sheet.rules?.length;
+					} catch {
+						return false; // Avoid cross-origin errors
+					}
+				});
+				if (isFullyLoaded) setIsLoaded(true);
+			} catch {
+				setIsLoaded(true);
+			}
+		};
+
 		// Wait for all resources (including styles) to load
 		const handleLoad = () => setIsLoaded(true);
+
 		window.addEventListener('load', handleLoad);
+		checkStylesLoaded(); // Check immediately
 
 		// Fallback timeout
-		const timeout = setTimeout(() => setIsLoaded(true), 100);
+		const timeout = setTimeout(() => setIsLoaded(true), 500);
 
 		return () => {
 			window.removeEventListener('load', handleLoad);
@@ -68,7 +87,7 @@ const App = () => {
 	return (
 		<TransitionGroup>
 			<CSSTransition key={location.pathname} classNames='slide' timeout={1300}>
-				<div id='page' className='page'>
+				<div id='page' className={`page ${isLoaded ? 'loaded' : ''}`}>
 					<PageHelmet metaTags={defaultMetaTags} />
 					<div className='page-container'>
 						<Header />
