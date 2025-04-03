@@ -1,17 +1,5 @@
-import { useState, useEffect } from 'react';
-
 const Preloader = () => {
-	const [loading, setLoading] = useState(true);
-
-	useEffect(() => {
-		const timer = setTimeout(() => {
-			setLoading(false);
-		}, 800);
-
-		return () => clearTimeout(timer);
-	}, []);
-
-	return loading ? (
+	return (
 		<div className='preloader'>
 			<div className='preloader__spinner'>
 				{Array(12)
@@ -21,7 +9,7 @@ const Preloader = () => {
 					))}
 			</div>
 		</div>
-	) : null;
+	);
 };
 
 export default Preloader;
