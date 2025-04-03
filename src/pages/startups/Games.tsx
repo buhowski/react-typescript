@@ -9,7 +9,7 @@ const StartupGames = () => {
 		<IdeaContent
 			title='Pitch 01. Video Game'
 			pageClassName='startup-ideas'
-			langDisable='language-disable'
+			langDisable={['ru']}
 			textData={gamesTextData}
 			Slider={<Slider dataSlider={dataSlider} />}
 		/>

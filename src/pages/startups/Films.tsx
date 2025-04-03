@@ -9,7 +9,7 @@ const StartupFilms = () => {
 		<PageStructure
 			title='Pitch 01. TV Series'
 			pageClassName='startup-ideas'
-			langDisable='language-disable'
+			langDisable={['ru']}
 			textData={filmsTextData}
 			Slider={<Slider dataSlider={dataSlider} />}
 		/>
