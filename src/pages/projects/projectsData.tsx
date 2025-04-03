@@ -32,19 +32,19 @@ const projectsData = [
 	},
 
 	{
-		img: nascentdesign,
-		url: `https://nascentdesign.com`,
-		name: 'Nascent Design',
-		desk: `Date: 2021 | Cross-browser, Responsive Web Design + Animations`,
-		skills: ['SCSS', 'JavaScript', 'GSAP'],
-	},
-
-	{
 		img: hbv,
 		url: 'https://homesbyvictoria.co.uk/',
 		name: 'Homes By Victoria',
 		desk: 'Date: 2025 | Cross-browser, Responsive Web Design. Frontend + WordPress.',
 		skills: ['SCSS', 'JavaScript', 'PHP', 'WordPress'],
+	},
+
+	{
+		img: nascentdesign,
+		url: `https://nascentdesign.com`,
+		name: 'Nascent Design',
+		desk: `Date: 2021 | Cross-browser, Responsive Web Design + Animations`,
+		skills: ['SCSS', 'JavaScript', 'GSAP'],
 	},
 
 	{
@@ -88,19 +88,19 @@ const projectsData = [
 	// },
 
 	{
-		img: bgEnde,
-		url: 'https://www-somosende-com.vercel.app',
-		name: 'Somos ENDE',
-		desk: 'Date: 2019 | Content studio.  We make animations, videos and digital media consulting.',
-		skills: ['HTML', 'CSS', 'JavaScript', 'Animations'],
-	},
-
-	{
 		img: BgNakashima,
 		url: 'https://nakashimawoodworkers.com/',
 		name: 'Nakashima Woodworkers',
 		desk: 'Date: 2019 | The Furniture Studio.',
 		skills: ['HTML', 'CSS', 'JavaScript', 'Barba.js', 'JS Animations'],
+	},
+
+	{
+		img: bgEnde,
+		url: 'https://www-somosende-com.vercel.app',
+		name: 'Somos ENDE',
+		desk: 'Date: 2019 | Content studio.  We make animations, videos and digital media consulting.',
+		skills: ['HTML', 'CSS', 'JavaScript', 'Animations'],
 	},
 
 	// {
