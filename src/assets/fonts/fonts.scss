@@ -12,8 +12,7 @@
 // the right implementations for fonts
 @font-face {
 	font-family: 'Louis George Caf';
-	src: url('LouisGeorgeCafe.woff2') format('woff2'),
-		url('LouisGeorgeCafe.woff') format('woff');
+	src: url('LouisGeorgeCafe.woff2') format('woff2'), url('LouisGeorgeCafe.woff') format('woff');
 }
 
 @font-face {
@@ -25,8 +24,7 @@
 // Raleway fonts
 @font-face {
 	font-family: 'Raleway';
-	src: url('Raleway-Regular.woff2') format('woff2'),
-		url('Raleway-Regular.woff') format('woff');
+	src: url('Raleway-Regular.woff2') format('woff2'), url('Raleway-Regular.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 	font-display: swap;
@@ -34,8 +32,7 @@
 
 @font-face {
 	font-family: 'Raleway';
-	src: url('Raleway-Italic.woff2') format('woff2'),
-		url('Raleway-Italic.woff') format('woff');
+	src: url('Raleway-Italic.woff2') format('woff2'), url('Raleway-Italic.woff') format('woff');
 	font-weight: normal;
 	font-style: italic;
 	font-display: swap;
@@ -43,8 +40,7 @@
 
 @font-face {
 	font-family: 'Raleway';
-	src: url('Raleway-Medium.woff2') format('woff2'),
-		url('Raleway-Medium.woff') format('woff');
+	src: url('Raleway-Medium.woff2') format('woff2'), url('Raleway-Medium.woff') format('woff');
 	font-weight: 500;
 	font-style: normal;
 	font-display: swap;
@@ -61,8 +57,7 @@
 
 @font-face {
 	font-family: 'Raleway';
-	src: url('Raleway-SemiBold.woff2') format('woff2'),
-		url('Raleway-SemiBold.woff') format('woff');
+	src: url('Raleway-SemiBold.woff2') format('woff2'), url('Raleway-SemiBold.woff') format('woff');
 	font-weight: 600;
 	font-style: normal;
 	font-display: swap;
@@ -77,39 +72,74 @@
 	font-display: swap;
 }
 
-// Roboto fonts
 @font-face {
-	font-family: 'Roboto';
-	src: url('Roboto-Regular.woff2') format('woff2'),
-		url('Roboto-Regular.woff') format('woff');
-	font-weight: normal;
+	font-family: 'BlinkMacSystemFont';
+	src: url('BlinkMacSystemFont-Light.woff2') format('woff2'),
+		url('BlinkMacSystemFont-Light.woff') format('woff');
+	font-weight: 300;
 	font-style: normal;
 	font-display: swap;
 }
 
 @font-face {
-	font-family: 'Roboto';
-	src: url('Roboto-Italic.woff2') format('woff2'),
-		url('Roboto-Italic.woff') format('woff');
-	font-weight: normal;
+	font-family: 'BlinkMacSystemFont';
+	src: url('BlinkMacSystemFont-LightItalic.woff2') format('woff2'),
+		url('BlinkMacSystemFont-LightItalic.woff') format('woff');
+	font-weight: 300;
 	font-style: italic;
 	font-display: swap;
 }
 
 @font-face {
-	font-family: 'Roboto';
-	src: url('Roboto-Medium.woff2') format('woff2'),
-		url('Roboto-Medium.woff') format('woff');
+	font-family: 'BlinkMacSystemFont';
+	src: url('BlinkMacSystemFont-Regular.woff2') format('woff2'),
+		url('BlinkMacSystemFont-Regular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'BlinkMacSystemFont';
+	src: url('BlinkMacSystemFont-RegularItalic.woff2') format('woff2'),
+		url('BlinkMacSystemFont-RegularItalic.woff') format('woff');
+	font-weight: 400;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'BlinkMacSystemFont';
+	src: url('BlinkMacSystemFont-Medium.woff2') format('woff2'),
+		url('BlinkMacSystemFont-Medium.woff') format('woff');
 	font-weight: 500;
 	font-style: normal;
 	font-display: swap;
 }
 
 @font-face {
-	font-family: 'Roboto';
-	src: url('Roboto-MediumItalic.woff2') format('woff2'),
-		url('Roboto-MediumItalic.woff') format('woff');
+	font-family: 'BlinkMacSystemFont';
+	src: url('BlinkMacSystemFont-MediumItalic.woff2') format('woff2'),
+		url('BlinkMacSystemFont-MediumItalic.woff') format('woff');
 	font-weight: 500;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'BlinkMacSystemFont';
+	src: url('BlinkMacSystemFont-Bold.woff2') format('woff2'),
+		url('BlinkMacSystemFont-Bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'BlinkMacSystemFont';
+	src: url('BlinkMacSystemFont-BoldItalic.woff2') format('woff2'),
+		url('BlinkMacSystemFont-BoldItalic.woff') format('woff');
+	font-weight: bold;
 	font-style: italic;
 	font-display: swap;
 }

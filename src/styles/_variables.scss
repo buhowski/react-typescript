@@ -4,7 +4,7 @@ $cs: 'Coming Soon', cursive;
 // Refactored
 $LouisGeorgeCaf: 'Louis George Caf', sans-serif;
 $LouisGeorgeCafBold: 'Louis George Caf Bold', sans-serif;
-$Roboto: 'Roboto', sans-serif;
+$font-primary: 'BlinkMacSystemFont', 'Roboto', sans-serif;
 $Raleway: 'Raleway', sans-serif;
 
 $darken: #202020;
@@ -16,7 +16,7 @@ $blue-main: #005cb3;
 $snow: #ffffff;
 $red: #af0303;
 $titlePink: #fbb7a6;
-$textGrey: #ccc9c9;
+$textGrey: #d7d7d7;
 $starYellow: #dfb842;
 
 @mixin heightTopMax {
