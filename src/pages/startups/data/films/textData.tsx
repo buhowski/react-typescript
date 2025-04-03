@@ -80,7 +80,7 @@ export const filmsTextData = [
 			},
 
 			{
-				title: `Characters`,
+				title: `Characters for Example`,
 				text: `Age range 21-30 years. Strangers meet each other in certain circumstances. The situation leads them to further friendship.`,
 				character01Title: `Character 01. Male:`,
 				character01List: [
@@ -224,7 +224,7 @@ export const filmsTextData = [
 			},
 
 			{
-				title: `Персонажі`,
+				title: `Персонажі для прикладу`,
 				text: `Віковий діапазон 21-30 років. Незнайомці стикаються при певних обставинах. Ситуація зводить їх до подальшої дружби.`,
 
 				character01Title: `Персонаж 01. Чоловічий:`,
@@ -237,7 +237,7 @@ export const filmsTextData = [
 
 					`Мастер пацанських цитат і тупих тостів (сарказм і самоіронія).`,
 
-					`Улюблений напій портвей.`,
+					`Улюблений напій портвейн.`,
 				],
 
 				character02Title: `Персонаж 02. Чоловічий:`,

@@ -66,20 +66,15 @@ const PageStructure: React.FC<PageProps> = ({
 		const startupAction = document.querySelector('.startup-action');
 		if (!pageContainer || !startupAction) return;
 
-		let timeoutId: NodeJS.Timeout;
 		const handleScroll = () => {
-			clearTimeout(timeoutId);
-			timeoutId = setTimeout(() => {
-				setIsActive(
-					startupAction.getBoundingClientRect().top <= pageContainer.getBoundingClientRect().top
-				);
-			}, 100); // Throttle to 100ms
+			setIsActive(
+				startupAction.getBoundingClientRect().top <= pageContainer.getBoundingClientRect().top
+			);
 		};
 
 		pageContainer.addEventListener('scroll', handleScroll);
 		return () => {
 			pageContainer.removeEventListener('scroll', handleScroll);
-			clearTimeout(timeoutId);
 		};
 	}, []);
 
