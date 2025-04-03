@@ -1,6 +1,6 @@
 import BgNakashima from './images/nakashima-screen.jpg';
-import BgArchitect from './images/architect.jpg';
-import bgPalms from './images/rooms.jpg';
+// import BgArchitect from './images/architect.jpg';
+// import bgPalms from './images/rooms.jpg';
 import bgEnde from './images/ende.jpg';
 import bgFaberAcademy from './images/faber-academy.jpeg';
 import bgFaberBooks from './images/faber.jpg';
