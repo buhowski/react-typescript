@@ -164,9 +164,7 @@ const PageStructure: React.FC<PageProps> = ({
 	}, []);
 
 	return (
-		<div className={`wrapper wrapper--idea ${pageClassName} ${langDisable}`}>
-			<PageHelmet metaTags={startupsMetaTags} />
-
+		<>
 			<div className={`startup-action ${isActive ? 'is-active' : ''}`}>
 				<div className='idea-tabs idea-tabs--urls'>
 					{startupsNav.map(({ pageLink, pageName }, i) => (
@@ -177,38 +175,42 @@ const PageStructure: React.FC<PageProps> = ({
 				</div>
 			</div>
 
-			<div className='idea-section'>
-				<div className='idea-info'>
-					{/* Tabs content */}
-					{title && <h1 className='startup-title h2'>{title}</h1>}
+			<div className={`wrapper wrapper--idea ${pageClassName} ${langDisable}`}>
+				<PageHelmet metaTags={startupsMetaTags} />
 
-					{tabs.map((tab) => (
-						<div key={tab.id} className='idea-content'>
-							{currentTab === tab.id && tab.content}
-						</div>
-					))}
-				</div>
+				<div className='idea-section'>
+					<div className='idea-info'>
+						{/* Tabs content */}
+						{title && <h1 className='startup-title h2'>{title}</h1>}
 
-				{/* Desktop Slider */}
-				<div className='lang-sidebar'>
-					{/* language tabs */}
-					<div className='idea-tabs idea-tabs--lang'>
-						{/* Here goes tab items*/}
 						{tabs.map((tab) => (
-							<button
-								className={`idea-tabs__btn ${tab.title} ${currentTab === tab.id ? 'active' : ''}`}
-								key={tab.id}
-								onClick={() => handleTabClick(tab.id)}
-							>
-								{tab.title}
-							</button>
+							<div key={tab.id} className='idea-content'>
+								{currentTab === tab.id && tab.content}
+							</div>
 						))}
 					</div>
 
-					<div className='desktop-slider'>{!useTabletLarge && Slider}</div>
+					{/* Desktop Slider */}
+					<div className='lang-sidebar'>
+						{/* language tabs */}
+						<div className='idea-tabs idea-tabs--lang'>
+							{/* Here goes tab items*/}
+							{tabs.map((tab) => (
+								<button
+									className={`idea-tabs__btn ${tab.title} ${currentTab === tab.id ? 'active' : ''}`}
+									key={tab.id}
+									onClick={() => handleTabClick(tab.id)}
+								>
+									{tab.title}
+								</button>
+							))}
+						</div>
+
+						<div className='desktop-slider'>{!useTabletLarge && Slider}</div>
+					</div>
 				</div>
 			</div>
-		</div>
+		</>
 	);
 };
 
