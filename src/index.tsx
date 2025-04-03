@@ -1,34 +1,49 @@
 import ReactDOM from 'react-dom/client';
 import { HelmetProvider } from 'react-helmet-async';
 import { BrowserRouter } from 'react-router-dom';
-
+import { useState, useEffect } from 'react';
+import './styles/App.scss';
 import App from './App';
 import Preloader from './pages/Preloader';
 
-// import * as serviceWorkerRegistration from './serviceWorkerRegistration';
-// import reportWebVitals from './reportWebVitals';
+const rootElement = document.getElementById('root') as HTMLElement;
+const helmetContext: Record<string, any> = {};
 
-const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
-const helmetContext = {};
+const Root = () => {
+	const [isLoading, setIsLoading] = useState(true);
 
-root.render(
-	<HelmetProvider context={helmetContext}>
-		{/* Page Preloader */}
-		<Preloader />
+	useEffect(() => {
+		// Ensure rootElement was found before proceeding
+		if (!rootElement) {
+			console.error('Root element (#root) not found in the DOM.');
+			return;
+		}
 
-		{/* web application */}
-		<BrowserRouter>
-			<App />
-		</BrowserRouter>
-	</HelmetProvider>
-);
+		// Timer to ensure preloader shows for at least 800ms
+		const timer = setTimeout(() => {
+			setIsLoading(false);
+			// This makes the #root element visible via the CSS in index.html
+			rootElement.classList.add('is-ready');
+		}, 800);
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://cra.link/PWA
-// serviceWorkerRegistration.unregister();
+		// Cleanup function: runs if the Root component unmounts (unlikely but good practice)
+		return () => {
+			clearTimeout(timer);
+			rootElement.classList.remove('is-ready');
+		};
+	}, []);
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-// reportWebVitals();
+	return (
+		<>
+			{isLoading && <Preloader />}
+
+			<HelmetProvider context={helmetContext}>
+				<BrowserRouter>
+					<App />
+				</BrowserRouter>
+			</HelmetProvider>
+		</>
+	);
+};
+
+ReactDOM.createRoot(rootElement).render(<Root />);

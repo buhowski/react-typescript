@@ -1,5 +1,4 @@
-import './styles/App.scss';
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import { useLocation, Route, Routes } from 'react-router-dom';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import PageHelmet from './config/PageHelmet';
@@ -33,40 +32,6 @@ const routesData = [
 
 const App = () => {
 	const location = useLocation();
-	const [isLoaded, setIsLoaded] = useState(false);
-
-	useEffect(() => {
-		// Check if all stylesheets are loaded
-		const checkStylesLoaded = () => {
-			try {
-				const stylesheets = Array.from(document.styleSheets);
-				const isFullyLoaded = stylesheets.every((sheet) => {
-					try {
-						return sheet.cssRules?.length || sheet.rules?.length;
-					} catch {
-						return false; // Avoid cross-origin errors
-					}
-				});
-				if (isFullyLoaded) setIsLoaded(true);
-			} catch {
-				setIsLoaded(true);
-			}
-		};
-
-		// Wait for all resources (including styles) to load
-		const handleLoad = () => setIsLoaded(true);
-
-		window.addEventListener('load', handleLoad);
-		checkStylesLoaded(); // Check immediately
-
-		// Fallback timeout
-		const timeout = setTimeout(() => setIsLoaded(true), 500);
-
-		return () => {
-			window.removeEventListener('load', handleLoad);
-			clearTimeout(timeout);
-		};
-	}, []);
 
 	useEffect(() => {
 		const handleResize = () => {
@@ -80,14 +45,10 @@ const App = () => {
 		return () => window.removeEventListener('resize', handleResize);
 	}, []);
 
-	if (!isLoaded) {
-		return null; // Prevents rendering until styles are ready
-	}
-
 	return (
 		<TransitionGroup>
 			<CSSTransition key={location.pathname} classNames='slide' timeout={1300}>
-				<div id='page' className={`page ${isLoaded ? 'loaded' : ''}`}>
+				<div id='page' className='page'>
 					<PageHelmet metaTags={defaultMetaTags} />
 					<div className='page-container'>
 						<Header />
