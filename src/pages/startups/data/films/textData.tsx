@@ -32,48 +32,33 @@ export const filmsTextData = [
 				title: `Overview`,
 				text: [
 					<>
-						The concept of the series is a hilarious mix inspired by shows like “Trailer
-						Park Boys” (
-						<TextLink
-							linkHref='https://www.imdb.com/title/tt0290988/'
-							linkName={`IMDB`}
-						/>
+						The concept of the series is a hilarious mix inspired by shows like “Trailer Park Boys”
+						(
+						<TextLink linkHref='https://www.imdb.com/title/tt0290988/' linkName={`IMDB`} />
 						), "It's Always Sunny in Philadelphia" (examples 01-03 in slider, or{' '}
-						<TextLink
-							linkHref='https://www.imdb.com/title/tt0472954/'
-							linkName={`IMDB`}
-						/>
+						<TextLink linkHref='https://www.imdb.com/title/tt0472954/' linkName={`IMDB`} />
 						), "Broad City" (example 04 in slider, or{' '}
-						<TextLink
-							linkHref='https://www.imdb.com/title/tt2578560/'
-							linkName={`IMDB`}
-						/>
+						<TextLink linkHref='https://www.imdb.com/title/tt2578560/' linkName={`IMDB`} />
 						), and the "New Kids Turbo" movie (example 05 in slider, or{' '}
-						<TextLink
-							linkHref='https://www.imdb.com/title/tt1648112/'
-							linkName={`IMDB`}
-						/>
+						<TextLink linkHref='https://www.imdb.com/title/tt1648112/' linkName={`IMDB`} />
 						).
 					</>,
 					<>
-						The videos are provided for better understanding. I want to use it in a
-						Ukrainian way, a close similar style of presentation, character
-						temperaments, dynamic style of comedic situations, and unpredictability of
-						events. The main focus is on authenticity, allowing the main characters to
-						play themselves or characters close to their spirits.
+						The videos are provided for better understanding. I want to use it in a Ukrainian way, a
+						close similar style of presentation, character temperaments, dynamic style of comedic
+						situations, and unpredictability of events. The main focus is on authenticity, allowing
+						the main characters to play themselves or characters close to their spirits.
 					</>,
 					<>
-						The idea of the series uses humor and satire to sharply, ironically, and at
-						the same time insightfully reflect the shortcomings and achievements of
-						Ukraine on the path to European integration. It will also showcase
-						stereotypes and cultural peculiarities of each European country through the
-						prism of Ukrainian reality.
+						The idea of the series uses humor and satire to sharply, ironically, and at the same
+						time insightfully reflect the shortcomings and achievements of Ukraine on the path to
+						European integration. It will also showcase stereotypes and cultural peculiarities of
+						each European country through the prism of Ukrainian reality.
 					</>,
 					<>
-						The viewer will discover the reality of Ukrainian life – from the depths of
-						the countryside to the pulsating heart of the capital. This is a series for
-						people who are not afraid to laugh at problems, but at the same time want
-						their voices to be heard.
+						The viewer will discover the reality of Ukrainian life – from the depths of the
+						countryside to the pulsating heart of the capital. This is a series for people who are
+						not afraid to laugh at problems, but at the same time want their voices to be heard.
 					</>,
 				],
 				subtitle: `Plot`,
@@ -98,7 +83,7 @@ export const filmsTextData = [
 				title: `Characters`,
 				text: `Age range 21-30 years. Strangers meet each other in certain circumstances. The situation leads them to further friendship.`,
 				character01Title: `Character 01. Male:`,
-				charackter01List: [
+				character01List: [
 					`Fond of alcohol, always carries a thermos (or a glass or goblet) with self-made cocktails.`,
 
 					`Knows how to control himself and not lose control of the situation.`,
@@ -111,14 +96,14 @@ export const filmsTextData = [
 				],
 
 				character02Title: `Character 02. Male:`,
-				charackter02List: [
+				character02List: [
 					`Fond of smoking marijuana, well-read,  interested in science fiction and psychology.`,
 
 					`Often "spaces out" or loses touch with reality, vividly imagining the development of events (example 06 in slider).`,
 				],
 
 				character03Title: `Character 03. Male:`,
-				charackter03List: [
+				character03List: [
 					`Tries to lead a healthy lifestyle without bad habits, but understands that there is no healthy lifestyle – only common sense.`,
 
 					`Enjoys sports, non-stereotypical.`,
@@ -129,14 +114,14 @@ export const filmsTextData = [
 				],
 
 				character04Title: `Character 04. Female:`,
-				charackter04List: [
+				character04List: [
 					`Energetic, optimistic-emotional, creative personality, loves art.`,
 
 					`Has a sharp tongue and enjoys dark humor, often jokes inappropriately.`,
 				],
 
 				character05Title: `Character 05. Female:`,
-				charackter05List: [
+				character05List: [
 					`Calm, thoughtful, with a diplomatic mindset, strategist.`,
 
 					`Knows how to find common ground with people, although she hates them in general.`,
@@ -145,7 +130,7 @@ export const filmsTextData = [
 				],
 
 				character06Title: `Wildcard Character (age 50+):`,
-				charackter06List: [
+				character06List: [
 					`Cunning, cynical, with a sharp mind and sarcastic sense of humor, orator.`,
 
 					`Has rich life experience. `,
@@ -192,46 +177,32 @@ export const filmsTextData = [
 				title: `Огляд`,
 				text: [
 					<>
-						Концепція серіалу – це веселий мікс, навіяний серіалами “Trailer Park Boys”
-						(
-						<TextLink
-							linkHref='https://www.imdb.com/title/tt0290988/'
-							linkName={`IMDB`}
-						/>
+						Концепція серіалу – це веселий мікс, навіяний серіалами “Trailer Park Boys” (
+						<TextLink linkHref='https://www.imdb.com/title/tt0290988/' linkName={`IMDB`} />
 						), "It's Always Sunny in Philadelphia" (приклади 01-03 у слайдері, або{' '}
-						<TextLink
-							linkHref='https://www.imdb.com/title/tt0472954/'
-							linkName={`IMDB`}
-						/>
+						<TextLink linkHref='https://www.imdb.com/title/tt0472954/' linkName={`IMDB`} />
 						), "Broad City" (приклад 04 у слайдері, або{' '}
-						<TextLink
-							linkHref='https://www.imdb.com/title/tt2578560/'
-							linkName={`IMDB`}
-						/>
+						<TextLink linkHref='https://www.imdb.com/title/tt2578560/' linkName={`IMDB`} />
 						), та фільмом "New Kids Turbo" (приклад 05 у слайдері, або{' '}
-						<TextLink
-							linkHref='https://www.imdb.com/title/tt1648112/'
-							linkName={`IMDB`}
-						/>
+						<TextLink linkHref='https://www.imdb.com/title/tt1648112/' linkName={`IMDB`} />
 						).
 					</>,
 					<>
-						Відео надані для кращого уявлення. Хочу використати це під Український лад,
-						схожу манеру подачі, темпераменти героїв, динамічний стиль комічних ситуацій
-						і непередбачуваність подій. Головне – це відчуття справжності, щоб головні
-						герої відігравали самих себе, або близьке їм по духу.
+						Відео надані для кращого уявлення. Хочу використати це під Український лад, схожу манеру
+						подачі, темпераменти героїв, динамічний стиль комічних ситуацій і непередбачуваність
+						подій. Головне – це відчуття справжності, щоб головні герої відігравали самих себе, або
+						близьке їм по духу.
 					</>,
 					<>
-						Ідея серіалу використовує гумор та сатиру, щоб гостро, з іронією, та
-						водночас проникливо відобразити недоліки та досягнення України на шляху до
-						європейської інтеграції. Також будуть показані стереотипи та культурні
-						особливості кожної європейської країни через призму української реальності.
+						Ідея серіалу використовує гумор та сатиру, щоб гостро, з іронією, та водночас проникливо
+						відобразити недоліки та досягнення України на шляху до європейської інтеграції. Також
+						будуть показані стереотипи та культурні особливості кожної європейської країни через
+						призму української реальності.
 					</>,
 					<>
-						Перед глядачем відкривається реальність українського життя – від глибин
-						сільської місцевості до пульсуючого серця столиці. Це серіал для людей, які
-						не бояться сміятися над проблемами, але при цьому хочуть, щоб їхні голоси
-						були почуті.
+						Перед глядачем відкривається реальність українського життя – від глибин сільської
+						місцевості до пульсуючого серця столиці. Це серіал для людей, які не бояться сміятися
+						над проблемами, але при цьому хочуть, щоб їхні голоси були почуті.
 					</>,
 				],
 				subtitle: `Сюжет`,
@@ -257,7 +228,7 @@ export const filmsTextData = [
 				text: `Віковий діапазон 21-30 років. Незнайомці стикаються при певних обставинах. Ситуація зводить їх до подальшої дружби.`,
 
 				character01Title: `Персонаж 01. Чоловічий:`,
-				charackter01List: [
+				character01List: [
 					`Полюбляє алкоголь, постійно носить з собою термокружку (або бокал чи кубок), попиваючи власно зроблені коктейлі.`,
 
 					`В цілому вміє тримати себе в руках і не втрачати контроль над ситуацією.`,
@@ -270,14 +241,14 @@ export const filmsTextData = [
 				],
 
 				character02Title: `Персонаж 02. Чоловічий:`,
-				charackter02List: [
+				character02List: [
 					`Полюбляє курити маріхуану, начитаний, цікавить область наукової фантастики і психологія.`,
 
 					`Часто тупить чи вилітає з реальності, яскраво уявляючи  розвиток подій (приклад 06 у слайдері).`,
 				],
 
 				character03Title: `Персонаж 03. Чоловічий:`,
-				charackter03List: [
+				character03List: [
 					`Намагається вести здоровий спосіб життя, без шкідливих звичок, але сам розуміє що не існує здорового способу життя – лише здоровий глузд.`,
 
 					`Полюбляє займатися спортом, нестереотипний.`,
@@ -288,14 +259,14 @@ export const filmsTextData = [
 				],
 
 				character04Title: `Персонаж 04. Жіночий:`,
-				charackter04List: [
+				character04List: [
 					`Енергійна, оптимістично-емоційна, творчий характер, любить мистецтво.`,
 
 					`Має гострий язик і полюбляє чорний гумор, часто недоречно жартує.`,
 				],
 
 				character05Title: `Персонаж 05. Жіночий:`,
-				charackter05List: [
+				character05List: [
 					`Спокійна, розважлива, з дипломатичним складом мислення, стратегиня.`,
 
 					`Вміє знаходити спільну мову з людьми, хоча в цілому їх ненавидить.`,
@@ -304,7 +275,7 @@ export const filmsTextData = [
 				],
 
 				character06Title: `Козирний персонаж (вік 50+ років):`,
-				charackter06List: [
+				character06List: [
 					`Хитрий, цинічний, з гострим розумом і саркастичним почуттям гумору, оратор.`,
 
 					`Має багатий життєвий досвід.`,

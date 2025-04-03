@@ -18,17 +18,17 @@ export interface Block {
 	loglineTitle?: string;
 	loglineText?: string | string[] | JSX.Element[];
 	character01Title?: string;
-	charackter01List?: string[];
+	character01List?: string[];
 	character02Title?: string;
-	charackter02List?: string[];
+	character02List?: string[];
 	character03Title?: string;
-	charackter03List?: string[];
+	character03List?: string[];
 	character04Title?: string;
-	charackter04List?: string[];
+	character04List?: string[];
 	character05Title?: string;
-	charackter05List?: string[];
+	character05List?: string[];
 	character06Title?: string;
-	charackter06List?: string[];
+	character06List?: string[];
 
 	linkHref?: string;
 	linkName?: string;
