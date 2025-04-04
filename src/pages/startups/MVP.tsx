@@ -6,7 +6,6 @@ import { articlesTextData } from './data/MVP/textData';
 const StartupMVP = () => {
 	return (
 		<IdeaContent
-			title='New Generation Media'
 			pageClassName='startup-mvp'
 			langDisable=''
 			textData={articlesTextData}

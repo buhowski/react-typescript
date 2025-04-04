@@ -7,7 +7,6 @@ import { startupTextData } from './data/startup/textData';
 const Startup = () => {
 	return (
 		<PageStructure
-			title='Presentation'
 			pageClassName=''
 			langDisable=''
 			textData={startupTextData}

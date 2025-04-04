@@ -12,24 +12,18 @@ import { Headline, Title, PitchInfo, Text, Subtitle, List, LastWords } from './I
 
 interface TextStructure {
 	section: Block[];
-	lastWords: string;
+	pitchNumber?: string;
+	lastWords?: string;
 }
 
 interface PageProps {
-	title: string;
 	textData: Record<string, TextStructure[]> | TextStructure[];
 	Slider: JSX.Element;
 	pageClassName?: string;
 	langDisable?: string | string[];
 }
 
-const PageStructure: React.FC<PageProps> = ({
-	title,
-	textData,
-	Slider,
-	pageClassName,
-	langDisable,
-}) => {
+const PageStructure: React.FC<PageProps> = ({ textData, Slider, pageClassName, langDisable }) => {
 	const useTabletLarge = useTabletLargeQuery();
 	const [currentLang, setCurrentLang] = useState<'en' | 'ua' | 'ru'>('en');
 	const [isActive, setIsActive] = useState(false);
@@ -83,17 +77,20 @@ const PageStructure: React.FC<PageProps> = ({
 		(structures: TextStructure[]) =>
 			structures.map((structure, index) => (
 				<div key={index} className='pitch-container'>
+					{structure.pitchNumber && <h1 className='startup-title h2'>{structure.pitchNumber}</h1>}
+
 					{structure.section.map((block, blockIndex) => (
 						<div className='idea-block' key={blockIndex}>
-							{block.pitchTitle && (
-								<Headline pitchNumber={block.pitchNumber} pitchTitle={block.pitchTitle} />
-							)}
+							{block.pitchTitle && <Headline pitchTitle={block.pitchTitle} />}
+
 							{block.pitchInfo && <PitchInfo pitchInfo={block.pitchInfo} />}
 							{block.loglineTitle && (
 								<Title titleClassname='idea-block__title' title={block.loglineTitle} />
 							)}
 							{block.loglineText && <Text text={block.loglineText} />}
+
 							{useTabletLarge && blockIndex === 0 && Slider}
+
 							{block.title && <Title titleClassname='idea-block__title' title={block.title} />}
 							{block.text && <Text text={block.text} />}
 							{block.subtitle && <Subtitle subtitle={block.subtitle} />}
@@ -115,11 +112,15 @@ const PageStructure: React.FC<PageProps> = ({
 							{block.character06List && <List listItems={block.character06List} />}
 						</div>
 					))}
-					<LastWords lastWords={structure.lastWords} />
+
+					{structure.lastWords && <LastWords lastWords={structure.lastWords} />}
+
 					{useTabletLarge && <Copyright />}
+
 					<div className='copy-tablet'>{useTabletLarge && <PopupContacts />}</div>
 				</div>
 			)),
+
 		[useTabletLarge, Slider]
 	);
 
@@ -130,9 +131,14 @@ const PageStructure: React.FC<PageProps> = ({
 				? [
 						(textData.length > langOrder[currentLang] && textData[langOrder[currentLang]]) ||
 							(textData.length > 1 && textData[1]) ||
-							(textData.length > 0 && textData[0]) || { section: [], lastWords: '' },
+							(textData.length > 0 && textData[0]) || {
+								pitchNumber: '',
+								section: [],
+								lastWords: '',
+							},
 				  ]
-				: textData[currentLang] || textData['en'] || [{ section: [], lastWords: '' }],
+				: textData[currentLang] ||
+				  textData['en'] || [{ pitchNumber: '', section: [], lastWords: '' }],
 		[textData, currentLang, langOrder]
 	);
 
@@ -152,10 +158,7 @@ const PageStructure: React.FC<PageProps> = ({
 				<PageHelmet metaTags={startupsMetaTags} />
 
 				<div className='idea-section'>
-					<div className='idea-info'>
-						{title && <h1 className='startup-title h2'>{title}</h1>}
-						{renderTextItems(contentToRender)}
-					</div>
+					<div className='idea-info'>{renderTextItems(contentToRender)}</div>
 
 					<div className='lang-sidebar'>
 						<div className='idea-tabs idea-tabs--lang'>

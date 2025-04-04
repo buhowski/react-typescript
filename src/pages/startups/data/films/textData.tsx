@@ -3,10 +3,13 @@ import { lastWordsEn, lastWordsUa, lastWordsRu } from '../lastWords';
 
 // Film Industry Page text
 export const filmsHeadlineData = [];
+const pitch01 = 'Pitch 01. TV Series';
 
 export const filmsTextData = [
 	// ############## rusian ##############
 	{
+		pitchNumber: pitch01,
+
 		section: [],
 
 		// Last words
@@ -14,6 +17,8 @@ export const filmsTextData = [
 	},
 	// ############## English ##############
 	{
+		pitchNumber: pitch01,
+
 		section: [
 			{
 				// pitchNumber: `Pitch 01`,
@@ -156,6 +161,8 @@ export const filmsTextData = [
 
 	// ############## Ukraine ##############
 	{
+		pitchNumber: pitch01,
+
 		section: [
 			{
 				// pitchNumber: `Pitch 01`,

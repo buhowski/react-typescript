@@ -4,6 +4,8 @@ import { lastWordsEn, lastWordsUa, lastWordsRu } from '../lastWords';
 export const articlesTextData = [
 	// ############## rusian ##############
 	{
+		pitchNumber: `New Generation Media`,
+
 		section: [
 			{
 				pitchInfo: [
@@ -33,6 +35,8 @@ export const articlesTextData = [
 
 	// ############## English ##############
 	{
+		pitchNumber: `New Generation Media`,
+
 		section: [
 			{
 				pitchInfo: [
@@ -62,6 +66,8 @@ export const articlesTextData = [
 
 	// ############## Ukraine ##############
 	{
+		pitchNumber: `New Generation Media`,
+
 		section: [
 			{
 				pitchInfo: [

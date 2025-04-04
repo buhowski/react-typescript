@@ -1,12 +1,9 @@
 import React from 'react';
 import { Block } from '../data/textTypes';
 
-export const Headline: React.FC<Block> = ({ pitchNumber, pitchTitle }) => {
+export const Headline: React.FC<Block> = ({ pitchTitle }) => {
 	return (
 		<div className='headline h2'>
-			{/* TODO if more then one pitch */}
-			{/* <p className='headline__number'>{pitchNumber}</p> */}
-
 			<Title titleClassname='headline__title' title={pitchTitle} />
 		</div>
 	);

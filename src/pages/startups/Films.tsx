@@ -7,7 +7,6 @@ import { filmsTextData } from './data/films/textData';
 const StartupFilms = () => {
 	return (
 		<PageStructure
-			title='Pitch 01. TV Series'
 			pageClassName='startup-ideas'
 			langDisable={['ru']}
 			textData={filmsTextData}

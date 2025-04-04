@@ -1,10 +1,14 @@
 import { TextLink } from '../../PageStructure/IdeaElements';
 import { lastWordsRu, lastWordsEn, lastWordsUa } from '../lastWords';
 
+const pitch01 = 'Pitch 01. Video Game';
+
 // Games Industry Page text
 export const gamesTextData = [
 	// ############## rusian ##############
 	{
+		pitchNumber: pitch01,
+
 		section: [],
 
 		// Last words
@@ -13,9 +17,10 @@ export const gamesTextData = [
 
 	// ############## English ##############
 	{
+		pitchNumber: pitch01,
+
 		section: [
 			{
-				// pitchNumber: `Pitch 01`,
 				pitchTitle: `The Sich / Cossacks RPG`,
 				pitchInfo: [
 					{
@@ -59,21 +64,13 @@ export const gamesTextData = [
 							linkName={`Nikolai Gogol`}
 						/>
 						, collections and novels:{' '}
-						<TextLink
-							linkHref='https://en.wikipedia.org/wiki/Dead_Souls'
-							linkName={`Dead Souls`}
-						/>
+						<TextLink linkHref='https://en.wikipedia.org/wiki/Dead_Souls' linkName={`Dead Souls`} />
 						,{' '}
 						<TextLink
 							linkHref='https://en.wikipedia.org/wiki/Evenings_on_a_Farm_Near_Dikanka'
 							linkName={`Evenings on a Farm Near Dikanka`}
 						/>
-						,{' '}
-						<TextLink
-							linkHref='https://en.wikipedia.org/wiki/Viy_(story)'
-							linkName={`Viy`}
-						/>
-						,{' '}
+						, <TextLink linkHref='https://en.wikipedia.org/wiki/Viy_(story)' linkName={`Viy`} />,{' '}
 						<TextLink
 							linkHref='https://en.wikipedia.org/wiki/Taras_Bulba'
 							linkName={`Taras
@@ -123,6 +120,8 @@ export const gamesTextData = [
 
 	// ############## Ukraine ##############
 	{
+		pitchNumber: pitch01,
+
 		section: [
 			{
 				// pitchNumber: `Pitch 01`,
@@ -177,12 +176,7 @@ export const gamesTextData = [
 							linkHref='https://en.wikipedia.org/wiki/Evenings_on_a_Farm_Near_Dikanka'
 							linkName={`Вечори на хуторі біля Диканьки`}
 						/>
-						,{' '}
-						<TextLink
-							linkHref='https://en.wikipedia.org/wiki/Viy_(story)'
-							linkName={`Вій`}
-						/>
-						,{' '}
+						, <TextLink linkHref='https://en.wikipedia.org/wiki/Viy_(story)' linkName={`Вій`} />,{' '}
 						<TextLink
 							linkHref='https://en.wikipedia.org/wiki/Taras_Bulba'
 							linkName={`Тарас Бульба`}

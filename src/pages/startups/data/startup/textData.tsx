@@ -6,9 +6,14 @@ import {
 	pathToStartupGames,
 } from '../../../../components/urlsData';
 // Texts for startup page / Main Startup Presentation
+
+const mainTitle = 'Presentation';
+
 export const startupTextData = [
 	// ############## RUSIAN ##############
 	{
+		pitchNumber: mainTitle,
+
 		section: [
 			{
 				loglineTitle: `Предисловие`,
@@ -62,20 +67,18 @@ export const startupTextData = [
 				title: `Конкретика`,
 				text: [
 					<>
-						Ведения журнала и шаги – этапы стратегии – мои отдельные проекты, примеры
-						будут появляться здесь:{' '}
-						<TextLink linkHref={pathToStartupMVP} linkName={`MVP`} />. Разрабатывается
-						контент специально под отдельную целевую аудиторию, поднимаются имеющиеся
-						проблемы, предоставляются наглядные примеры решений, привлекается аудитории.
+						Ведения журнала и шаги – этапы стратегии – мои отдельные проекты, примеры будут
+						появляться здесь: <TextLink linkHref={pathToStartupMVP} linkName={`MVP`} />.
+						Разрабатывается контент специально под отдельную целевую аудиторию, поднимаются
+						имеющиеся проблемы, предоставляются наглядные примеры решений, привлекается аудитории.
 					</>,
 					<>
-						Ключевые продукты индустрии – этапы производства – мои отдельные сценарии,
-						презентации проектов здесь:{' '}
-						<TextLink linkHref={pathToStartupFilms} linkName={`Кино`} />,{' '}
-						<TextLink linkHref={pathToStartupGames} linkName={`Видеоигры`} />. Это, для
-						начала, позволит популяризироваться для Украинской аудитории и впоследствии
-						выйти на международный рынок с презентациями будущих проектов для мировых
-						кинофестивалей и игровых выставок.
+						Ключевые продукты индустрии – этапы производства – мои отдельные сценарии, презентации
+						проектов здесь: <TextLink linkHref={pathToStartupFilms} linkName={`Кино`} />,{' '}
+						<TextLink linkHref={pathToStartupGames} linkName={`Видеоигры`} />. Это, для начала,
+						позволит популяризироваться для Украинской аудитории и впоследствии выйти на
+						международный рынок с презентациями будущих проектов для мировых кинофестивалей и
+						игровых выставок.
 					</>,
 				],
 				subtitle: `Что я могу дать:`,
@@ -149,6 +152,8 @@ export const startupTextData = [
 
 	// ############## ENGLISH ##############
 	{
+		pitchNumber: mainTitle,
+
 		section: [
 			{
 				loglineTitle: `Preface`,
@@ -202,21 +207,17 @@ export const startupTextData = [
 				title: `Details`,
 				text: [
 					<>
-						Magazine management and steps – the strategy stages – my separate projects,
-						examples will appear here:{' '}
-						<TextLink linkHref={pathToStartupMVP} linkName={`MVP`} />. Content is
-						developed specifically for the individual target audience, existing problems
-						are raised, clear examples of solutions are provided, and the audience is
-						engaged.
+						Magazine management and steps – the strategy stages – my separate projects, examples
+						will appear here: <TextLink linkHref={pathToStartupMVP} linkName={`MVP`} />. Content is
+						developed specifically for the individual target audience, existing problems are raised,
+						clear examples of solutions are provided, and the audience is engaged.
 					</>,
 					<>
-						Key industry products – the production stages – my individual scripts,
-						project presentations are here:{' '}
-						<TextLink linkHref={pathToStartupFilms} linkName={`Films`} />,{' '}
-						<TextLink linkHref={pathToStartupGames} linkName={`Video Games`} />. This,
-						initially, will allow popularizing for the Ukrainian audience and then enter
-						the international market with presentations of future projects for global
-						film festivals and game expos.
+						Key industry products – the production stages – my individual scripts, project
+						presentations are here: <TextLink linkHref={pathToStartupFilms} linkName={`Films`} />,{' '}
+						<TextLink linkHref={pathToStartupGames} linkName={`Video Games`} />. This, initially,
+						will allow popularizing for the Ukrainian audience and then enter the international
+						market with presentations of future projects for global film festivals and game expos.
 					</>,
 				],
 				subtitle: `What I can offer:`,
@@ -287,6 +288,8 @@ export const startupTextData = [
 
 	// ############## UKRAINE ##############
 	{
+		pitchNumber: mainTitle,
+
 		section: [
 			{
 				loglineTitle: `Передмова`,
@@ -340,20 +343,17 @@ export const startupTextData = [
 				title: `Конкретика`,
 				text: [
 					<>
-						Ведення журналу та кроки – етапи стратегії – мої окремі проекти, приклади
-						з'являтимуться тут:{' '}
-						<TextLink linkHref={pathToStartupMVP} linkName={`MVP`} />. Розробляється
-						контент спеціально під окрему цільову аудиторію, піднімаються наявні
-						проблеми, надаються наглядні приклади рішень, залучається аудиторія.
+						Ведення журналу та кроки – етапи стратегії – мої окремі проекти, приклади з'являтимуться
+						тут: <TextLink linkHref={pathToStartupMVP} linkName={`MVP`} />. Розробляється контент
+						спеціально під окрему цільову аудиторію, піднімаються наявні проблеми, надаються
+						наглядні приклади рішень, залучається аудиторія.
 					</>,
 					<>
-						Ключові продукти індустрії – етапи виробництва – мої окремі сценарії,
-						презентації проектів тут:{' '}
-						<TextLink linkHref={pathToStartupFilms} linkName={`Кіно`} />,{' '}
-						<TextLink linkHref={pathToStartupGames} linkName={`Відеоігри`} />. Це, для
-						початку, дозволить популяризуватися для Української аудиторії і згодом вийти
-						на міжнародний ринок з презентаціями майбутніх проектів для світових
-						кінофестивалів та ігрових виставок.
+						Ключові продукти індустрії – етапи виробництва – мої окремі сценарії, презентації
+						проектів тут: <TextLink linkHref={pathToStartupFilms} linkName={`Кіно`} />,{' '}
+						<TextLink linkHref={pathToStartupGames} linkName={`Відеоігри`} />. Це, для початку,
+						дозволить популяризуватися для Української аудиторії і згодом вийти на міжнародний ринок
+						з презентаціями майбутніх проектів для світових кінофестивалів та ігрових виставок.
 					</>,
 				],
 				subtitle: `Що я можу надати:`,
