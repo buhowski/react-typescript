@@ -150,11 +150,13 @@ const PageStructure: React.FC<PageProps> = ({
 
 			<div className={`wrapper wrapper--idea ${pageClassName || ''}`}>
 				<PageHelmet metaTags={startupsMetaTags} />
+
 				<div className='idea-section'>
 					<div className='idea-info'>
 						{title && <h1 className='startup-title h2'>{title}</h1>}
 						{renderTextItems(contentToRender)}
 					</div>
+
 					<div className='lang-sidebar'>
 						<div className='idea-tabs idea-tabs--lang'>
 							{(['en', 'ua', 'ru'] as const).map((lang) => (
@@ -168,6 +170,7 @@ const PageStructure: React.FC<PageProps> = ({
 								</button>
 							))}
 						</div>
+
 						<div className='desktop-slider'>{!useTabletLarge && Slider}</div>
 					</div>
 				</div>

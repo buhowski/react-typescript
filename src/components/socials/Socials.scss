@@ -7,7 +7,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		margin-right: 40px;
+		margin-right: 35px;
 		width: 60px;
 		height: 60px;
 		border-radius: 50%;
@@ -22,7 +22,7 @@
 		}
 
 		@include tabletBig {
-			margin-right: 26px;
+			margin-right: 25px;
 		}
 
 		@include mobileSmall {

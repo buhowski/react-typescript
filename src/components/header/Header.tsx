@@ -4,6 +4,7 @@ import { pathToStartup, pathToAbout, pathToProjects } from '../urlsData';
 import { startupsNav } from '../../pages/startups/data/startupsNav';
 import { useTabletQuery } from '../../hooks/useMediaQuery';
 import Socials from '../socials/Socials';
+import socialData from '../socials/socialData';
 
 import './Header.scss';
 
@@ -90,7 +91,15 @@ const Header = () => {
 						<nav className={`pos-abs mobile-menu${menuOpen ? ' open' : ''}`}>
 							<div className={`mobile-menu__content`}>
 								<ul className='mobile-nav'>{navLinkItems}</ul>
-								<Socials />
+								<Socials
+									socialData={socialData}
+									items={[
+										{ id: 'github' },
+										{ id: 'linkedin' },
+										{ id: 'telegram' },
+										{ id: 'instagram' },
+									]}
+								/>
 							</div>
 						</nav>
 					</>

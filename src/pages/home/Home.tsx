@@ -1,5 +1,6 @@
-import Socials from '../../components/socials/Socials';
 import DrawCanvas from './DrawCanvas';
+import Socials from '../../components/socials/Socials';
+import socialData from '../../components/socials/socialData';
 
 import './Home.scss';
 
@@ -13,7 +14,10 @@ const Home = () => {
 
 				<h2 className='name-container__position'>Front-End Developer</h2>
 
-				<Socials />
+				<Socials
+					socialData={socialData}
+					items={[{ id: 'github' }, { id: 'linkedin' }, { id: 'telegram' }, { id: 'instagram' }]}
+				/>
 			</div>
 
 			<DrawCanvas />

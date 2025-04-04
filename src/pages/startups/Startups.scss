@@ -69,76 +69,16 @@
 }
 
 .idea-contacts {
-	position: relative;
 	display: inline-block;
 	margin: min(8vh, 80px) auto 0;
-	width: max-content;
-	font-family: $LouisGeorgeCaf;
-	font-weight: 500;
 
 	@include tabletBig {
-		margin-top: 35px;
-		line-height: 1.3;
+		margin-top: 40px;
 	}
 
-	&__list {
-		user-select: text;
-		position: absolute;
-		bottom: 47px;
-		left: 50%;
-		transform: translateX(-50%);
-		box-shadow: 0 0 10px rgba($color: $black, $alpha: 0.8);
-		border-radius: 10px;
-		background-color: rgba($color: $black, $alpha: 0.9);
-		color: $textGrey;
-		display: inline-block;
-		height: 0;
-		overflow: hidden;
-		visibility: hidden;
-		transition: 0.4s;
-		width: max-content;
-		z-index: 1;
-
-		&-items {
-			padding: 20px 25px;
-		}
-
-		p {
-			margin-bottom: 15px;
-
-			&:last-child {
-				margin-bottom: 0;
-			}
-		}
-
-		a {
-			color: $blue-main;
-			transition: color 0.3s;
-
-			&:hover {
-				color: $starYellow;
-			}
-		}
-	}
-
-	&.show {
-		.idea-contacts__list {
-			visibility: visible;
-
-			&::after {
-				transform: translate(-50%, 0) scale(1, 1);
-			}
-		}
-
-		.nav-link--underline {
-			&:after {
-				transform: scale(0, 1);
-				height: 2px;
-			}
-
-			&:before {
-				transform: scale(1, 1);
-			}
+	.contact-menu__item {
+		&:not(:last-child) {
+			margin-right: 20px;
 		}
 	}
 }
@@ -414,7 +354,7 @@
 		font-family: $LouisGeorgeCafBold;
 		margin-bottom: 0;
 		font-size: 1.6rem;
-		margin-bottom: 15px;
+		margin-bottom: 8px;
 		// TODO: need color pitch number
 		color: $textGrey;
 
@@ -467,10 +407,10 @@
 
 .idea-block {
 	font-size: 1.8rem;
-	line-height: 1.5;
+	line-height: 1.54;
 	color: $textGrey;
 	margin-bottom: 45px;
-	letter-spacing: 0.22px;
+	letter-spacing: 0.24px;
 
 	@include mobile {
 		font-size: 1.6rem;
@@ -537,7 +477,7 @@
 	}
 
 	li {
-		margin-bottom: 20px;
+		margin-bottom: 16px;
 		position: relative;
 		display: flex;
 

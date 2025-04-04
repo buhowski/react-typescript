@@ -32,9 +32,9 @@ const projectsData = [
 	},
 
 	{
-		img: hbv,
-		url: 'https://homesbyvictoria.co.uk/',
-		name: 'Homes By Victoria',
+		img: mb,
+		url: 'https://markbuchananproperty.co.uk/',
+		name: 'Mark Buchanan',
 		desk: 'Date: 2025 | Cross-browser, Responsive Web Design. Frontend + WordPress.',
 		skills: ['SCSS', 'JavaScript', 'PHP', 'WordPress'],
 	},
@@ -48,9 +48,9 @@ const projectsData = [
 	},
 
 	{
-		img: mb,
-		url: 'https://markbuchananproperty.co.uk/',
-		name: 'Mark Buchanan',
+		img: hbv,
+		url: 'https://homesbyvictoria.co.uk/',
+		name: 'Homes By Victoria',
 		desk: 'Date: 2024 | Cross-browser, Responsive Web Design. Frontend + WordPress.',
 		skills: ['SCSS', 'JavaScript', 'PHP', 'WordPress'],
 	},
