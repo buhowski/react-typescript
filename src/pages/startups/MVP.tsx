@@ -1,4 +1,3 @@
-import Slider from '../../components/Slider';
 import IdeaContent from './PageStructure/PageStructure';
 import { dataSlider } from './data/MVP/SliderData';
 import { articlesTextData } from './data/MVP/textData';
@@ -9,7 +8,7 @@ const StartupMVP = () => {
 			pageClassName='startup-mvp'
 			langDisable=''
 			textData={articlesTextData}
-			Slider={<Slider dataSlider={dataSlider} />}
+			sliderData={dataSlider}
 		/>
 	);
 };

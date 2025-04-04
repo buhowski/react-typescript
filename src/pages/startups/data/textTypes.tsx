@@ -5,18 +5,18 @@ export interface Block {
 
 	title?: string;
 	subtitle?: string;
+	subtitle2?: string;
 
 	text?: string | string[] | JSX.Element[];
+	text2?: string | string[];
 
 	list?: string[] | JSX.Element[];
 	listItems?: string[] | JSX.Element[];
-	subtitle2?: string;
 	list2?: string[];
-	text2?: string | string[];
 
-	// films data
 	loglineTitle?: string;
 	loglineText?: string | string[] | JSX.Element[];
+
 	character01Title?: string;
 	character01List?: string[];
 	character02Title?: string;

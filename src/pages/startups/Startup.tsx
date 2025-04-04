@@ -1,4 +1,3 @@
-import Slider from '../../components/Slider';
 import PageStructure from './PageStructure/PageStructure';
 
 import { dataSlider } from './data/startup/SliderData';
@@ -10,7 +9,7 @@ const Startup = () => {
 			pageClassName=''
 			langDisable=''
 			textData={startupTextData}
-			Slider={<Slider dataSlider={dataSlider} />}
+			sliderData={dataSlider}
 		/>
 	);
 };
