@@ -1,13 +1,16 @@
 import React from 'react';
 import { Block } from '../data/textTypes';
-import { Headline, Title, PitchInfo, Text, Subtitle, List, LastWords } from './IdeaElements';
+import { Title, PitchInfo, Text, ListTitle, List, LastWords } from './IdeaElements';
 
 interface PitchContainerProps {
 	structure: {
-		section: Block[];
 		pitchNumber?: string;
+		pitchTitle?: string;
+		pitchInfo?: { key: string; value: string }[];
+		textBlock: Block[];
 		lastWords?: string;
 	};
+
 	index: number;
 	useTabletLarge: boolean;
 	Slider?: JSX.Element;
@@ -25,38 +28,29 @@ const PitchContainer: React.FC<PitchContainerProps> = ({
 }) => {
 	return (
 		<div key={index} className='pitch-container'>
-			{structure.pitchNumber && <h1 className='startup-title h2'>{structure.pitchNumber}</h1>}
+			{structure.pitchNumber && <p className='pitch-number'>{structure.pitchNumber}</p>}
 
-			{structure.section.map((block, blockIndex) => (
+			{structure.pitchTitle && (
+				<Title titleClassname='headline__title' title={structure.pitchTitle} />
+			)}
+
+			{structure.pitchInfo && <PitchInfo pitchInfo={structure.pitchInfo} />}
+
+			{structure.textBlock.map((block, blockIndex) => (
 				<div className='idea-block' key={blockIndex}>
-					{block.pitchTitle && <Headline pitchTitle={block.pitchTitle} />}
-					{block.pitchInfo && <PitchInfo pitchInfo={block.pitchInfo} />}
-					{block.loglineTitle && (
-						<Title titleClassname='idea-block__title' title={block.loglineTitle} />
-					)}
-					{block.loglineText && <Text text={block.loglineText} />}
-
-					{useTabletLarge && index === 0 && Slider}
-
 					{block.title && <Title titleClassname='idea-block__title' title={block.title} />}
 					{block.text && <Text text={block.text} />}
-					{block.subtitle && <Subtitle subtitle={block.subtitle} />}
-					{block.list && <List listItems={block.list} />}
-					{block.subtitle2 && <Subtitle subtitle={block.subtitle2} />}
-					{block.list2 && <List listItems={block.list2} />}
-					{block.text2 && <Text text={block.text2} />}
-					{block.character01Title && <Subtitle subtitle={block.character01Title} />}
-					{block.character01List && <List listItems={block.character01List} />}
-					{block.character02Title && <Subtitle subtitle={block.character02Title} />}
-					{block.character02List && <List listItems={block.character02List} />}
-					{block.character03Title && <Subtitle subtitle={block.character03Title} />}
-					{block.character03List && <List listItems={block.character03List} />}
-					{block.character04Title && <Subtitle subtitle={block.character04Title} />}
-					{block.character04List && <List listItems={block.character04List} />}
-					{block.character05Title && <Subtitle subtitle={block.character05Title} />}
-					{block.character05List && <List listItems={block.character05List} />}
-					{block.character06Title && <Subtitle subtitle={block.character06Title} />}
-					{block.character06List && <List listItems={block.character06List} />}
+
+					{useTabletLarge && blockIndex === 0 && Slider}
+
+					{block.listBlock &&
+						block.listBlock.map((item, index) => (
+							<div className='idea-block__list' key={index}>
+								{item.title && <ListTitle title={item.title} />}
+
+								{item.text && <List listItems={item.text} />}
+							</div>
+						))}
 				</div>
 			))}
 

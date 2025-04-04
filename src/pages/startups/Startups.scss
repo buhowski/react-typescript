@@ -31,43 +31,6 @@
 	}
 }
 
-// underline link effect
-.nav-link--underline {
-	z-index: unset;
-	font-size: 1.8rem;
-	cursor: default;
-
-	@include tabletBig {
-		cursor: pointer;
-	}
-
-	&::after {
-		z-index: unset;
-	}
-
-	&::before {
-		content: '';
-		position: absolute;
-		left: 0;
-		top: 0;
-		width: 100%;
-		height: 2px;
-		background-color: $blue-main;
-		transition: transform 0.4s ease;
-		transform: scale(0, 1);
-		z-index: 2;
-	}
-
-	&:hover::after {
-		transform: scale(0, 1);
-		height: 2px;
-	}
-
-	&:hover::before {
-		transform: scale(1, 1);
-	}
-}
-
 .idea-contacts {
 	display: inline-block;
 	margin: min(8vh, 80px) auto 0;
@@ -90,8 +53,8 @@
 	@include tabletBig {
 		margin-left: -40px;
 		width: calc(100% + 80px);
-		margin-bottom: 25px;
-		margin-top: 30px;
+		margin-bottom: 35px;
+		margin-top: 35px;
 	}
 
 	@include mobile {
@@ -336,49 +299,15 @@
 	}
 }
 
-.startup-title {
-	text-align: center;
-	font-size: 3.1rem;
-	margin-bottom: 40px;
+.headline__title {
+	margin-bottom: 35px;
+	font-size: 3.2rem;
 	color: $starYellow;
+	text-align: center;
 	@include titleFont;
 
 	@include mobile {
-		margin-bottom: 30px;
 		font-size: 2.5rem;
-	}
-}
-
-.startup-ideas {
-	.startup-title {
-		font-family: $LouisGeorgeCafBold;
-		margin-bottom: 0;
-		font-size: 1.6rem;
-		margin-bottom: 8px;
-		// TODO: need color pitch number
-		color: $textGrey;
-
-		@include tabletBig {
-			text-align: center;
-		}
-
-		@include mobile {
-			font-size: 1.5rem;
-		}
-	}
-}
-
-.headline {
-	&__title {
-		margin-bottom: 35px;
-		font-size: 3.1rem;
-		color: $starYellow;
-		text-align: center;
-		@include titleFont;
-
-		@include mobile {
-			font-size: 2.5rem;
-		}
 	}
 }
 
@@ -387,6 +316,7 @@
 	font-size: 1.4rem;
 	font-weight: 300;
 	letter-spacing: 0.8px;
+	line-height: 1.5;
 
 	@include mobile {
 		font-size: 1.2rem;
@@ -401,20 +331,46 @@
 	}
 }
 
+.startup-title {
+	text-align: center;
+	font-size: 3.1rem;
+	margin-bottom: 40px;
+	color: $starYellow;
+	@include titleFont;
+
+	@include mobile {
+		margin-bottom: 30px;
+		font-size: 2.5rem;
+	}
+}
+
+.pitch-number {
+	font-family: $LouisGeorgeCafBold;
+	margin-bottom: 0;
+	font-size: 1.6rem;
+	margin-bottom: 8px;
+	color: $textGrey;
+	text-align: center;
+
+	@include mobile {
+		font-size: 1.5rem;
+	}
+}
+
 .idea-content {
 	line-height: 1.5;
 }
 
 .idea-block {
 	font-size: 1.8rem;
-	line-height: 1.54;
+	line-height: 1.55;
 	color: $textGrey;
-	margin-bottom: 45px;
-	letter-spacing: 0.24px;
+	margin-bottom: 40px;
+	letter-spacing: 0.25px;
 
 	@include mobile {
 		font-size: 1.6rem;
-		margin-bottom: 40px;
+		margin-bottom: 35px;
 	}
 
 	&:last-child {
@@ -433,14 +389,8 @@
 		}
 	}
 
-	&__subtitle {
-		color: $titlePink;
-		margin: 25px 0 15px;
-		letter-spacing: 1px;
-	}
-
 	&__text {
-		margin-bottom: 30px;
+		margin-bottom: 20px;
 
 		&:last-child {
 			margin-bottom: 0;
@@ -456,7 +406,7 @@
 			background-size: 100% 1px;
 			background-repeat: no-repeat;
 			background-position: left bottom;
-			transition: background-size 0.3s;
+			transition: background-size 0.2s ease-in-out;
 		}
 
 		@include tablet {
@@ -472,32 +422,42 @@
 		}
 	}
 
-	ul {
-		margin-bottom: 30px;
+	&__subtitle {
+		color: $titlePink;
+		margin-bottom: 20px;
+		letter-spacing: 1px;
 	}
 
-	li {
-		margin-bottom: 16px;
-		position: relative;
-		display: flex;
+	// .idea-block__list
+	&__list {
+		margin: 40px 0;
 
-		&:last-child {
-			margin-bottom: 0;
+		@include mobile {
+			margin: 30px 0;
 		}
 
-		&::before {
-			content: '';
-			display: inline-block;
-			flex-shrink: 0;
-			width: 4px;
-			height: 4px;
-			border-radius: 50%;
-			background: $titlePink;
-			margin-right: 15px;
-			margin-top: 13px;
+		li {
+			position: relative;
+			display: flex;
 
-			@include mobile {
-				margin-top: 11px;
+			+ li {
+				margin-top: 18px;
+			}
+
+			&::before {
+				content: '';
+				display: inline-block;
+				flex-shrink: 0;
+				width: 4px;
+				height: 4px;
+				border-radius: 50%;
+				background: $titlePink;
+				margin-right: 15px;
+				margin-top: 13px;
+
+				@include mobile {
+					margin-top: 11px;
+				}
 			}
 		}
 	}
@@ -509,6 +469,7 @@
 	margin-top: 40px;
 	font-size: 15px;
 	white-space: pre-line;
+	line-height: 1.6;
 
 	@include tabletBig {
 		margin-bottom: 40px;

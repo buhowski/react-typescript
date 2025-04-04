@@ -20,7 +20,7 @@ interface SlideItem {
 
 interface TextDataItem {
 	pitchNumber?: string;
-	section: Block[];
+	textBlock: Block[];
 	lastWords?: string;
 }
 

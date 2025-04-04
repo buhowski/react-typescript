@@ -1,11 +1,8 @@
-export const lastWordsEn = `For like-minded people and everyone 
-interested in collaboration -
+export const lastWordsEn = `For like-minded people and collaboration,
 please contact me!`;
 
-export const lastWordsUa = `Для однодумців та всіх бажаючих 
-співпрацювати - будь ласка,
-зв'яжіться зі мною!`;
+export const lastWordsUa = `Для однодумців та співпраці,
+будь ласка, зв'яжіться зі мною!`;
 
-export const lastWordsRu = `Для единомышленников и всех желающих 
-сотрудничать - пожалуйста, 
-свяжитесь со мной!`;
+export const lastWordsRu = `Для единомышленников и сотрудничества,
+пожалуйста, свяжитесь со мной!`;

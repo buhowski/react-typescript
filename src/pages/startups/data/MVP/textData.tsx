@@ -1,27 +1,28 @@
 import { lastWordsEn, lastWordsUa, lastWordsRu } from '../lastWords';
 
+const pitchTitle = `Another Dimension`;
 // Articles Page text
 export const articlesTextData = {
 	// ############## rusian ##############
 	ru: [
 		{
-			pitchNumber: `New Generation Media`,
-
-			section: [
+			pitchTitle: pitchTitle,
+			pitchInfo: [
 				{
-					pitchInfo: [
-						{
-							key: `Status: `,
-							value: `Coming soon ...`,
-						},
-					],
+					key: `Status: `,
+					value: `Coming soon ...`,
 				},
+			],
+
+			textBlock: [
+				{},
 				{
 					title: `Новая журналистика`,
 					text: [
 						`Современное повествование свежего дыхания, журналистика, как отдельный вид искусства, различные мнения, правда и грязный реализм. Своеобразная подача информации без цензуры – прямая, саркастичная с характером стиля письменности повседневного языка, честность и простота в описании жизни.`,
 					],
 				},
+
 				{
 					title: `Гонзо-журналистика`,
 					text: [
@@ -30,7 +31,6 @@ export const articlesTextData = {
 				},
 			],
 
-			// Last words
 			lastWords: lastWordsRu,
 		},
 	],
@@ -38,17 +38,16 @@ export const articlesTextData = {
 	// ############## English ##############
 	en: [
 		{
-			pitchNumber: `New Generation Media`,
-
-			section: [
+			pitchTitle: pitchTitle,
+			pitchInfo: [
 				{
-					pitchInfo: [
-						{
-							key: `Status: `,
-							value: `Coming soon ...`,
-						},
-					],
+					key: `Status: `,
+					value: `Coming soon ...`,
 				},
+			],
+
+			textBlock: [
+				{},
 				{
 					title: `New journalism`,
 					text: [
@@ -63,7 +62,6 @@ export const articlesTextData = {
 				},
 			],
 
-			// Last words
 			lastWords: lastWordsEn,
 		},
 	],
@@ -71,17 +69,16 @@ export const articlesTextData = {
 	// ############## Ukraine ##############
 	ua: [
 		{
-			pitchNumber: `New Generation Media`,
-
-			section: [
+			pitchTitle: pitchTitle,
+			pitchInfo: [
 				{
-					pitchInfo: [
-						{
-							key: `Status: `,
-							value: `Coming soon ...`,
-						},
-					],
+					key: `Status: `,
+					value: `Coming soon ...`,
 				},
+			],
+
+			textBlock: [
+				{},
 				{
 					title: `Нова журналістика`,
 					text: [
@@ -96,7 +93,6 @@ export const articlesTextData = {
 				},
 			],
 
-			// Last words
 			lastWords: lastWordsUa,
 		},
 	],

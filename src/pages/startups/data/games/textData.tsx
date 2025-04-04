@@ -10,9 +10,8 @@ export const gamesTextData = {
 		{
 			pitchNumber: pitch01,
 
-			section: [],
+			textBlock: [],
 
-			// Last words
 			lastWords: lastWordsRu,
 		},
 	],
@@ -20,24 +19,24 @@ export const gamesTextData = {
 	en: [
 		{
 			pitchNumber: pitch01,
-
-			section: [
+			pitchTitle: `The Sich / Cossacks RPG`,
+			pitchInfo: [
 				{
-					pitchTitle: `The Sich / Cossacks RPG`,
-					pitchInfo: [
-						{
-							key: `Format: `,
-							value: `An adventure role-playing video game with an open world and a third-person view, high detailed environment and characters`,
-						},
-						{ key: `Genre: `, value: `Action RPG, Stealth` },
-						{
-							key: `Setting: `,
-							value: `Ukraine of the 16th - 18th centuries, Zaporozhian Sich`,
-						},
-						{ key: `Platforms: `, value: `PC, PS5, Xbox` },
-					],
-					loglineTitle: `Logline`,
-					loglineText: `A mighty Zaporozhian Cossack with a tragic past and the unexplored potential of otherworldly powers  travels through cities, trying to unravel the secrets of a fascinating mystical story and his own past, which intertwines real historical facts with mythology and demonology, dynamic comedy and drama.`,
+					key: `Format: `,
+					value: `An adventure role-playing video game with an open world and a third-person view, high detailed environment and characters`,
+				},
+				{ key: `Genre: `, value: `Action RPG, Stealth` },
+				{
+					key: `Setting: `,
+					value: `Ukraine of the 16th - 18th centuries, Zaporozhian Sich`,
+				},
+				{ key: `Platforms: `, value: `PC, PS5, Xbox` },
+			],
+
+			textBlock: [
+				{
+					title: `Logline`,
+					text: `A mighty Zaporozhian Cossack with a tragic past and the unexplored potential of otherworldly powers  travels through cities, trying to unravel the secrets of a fascinating mystical story and his own past, which intertwines real historical facts with mythology and demonology, dynamic comedy and drama.`,
 				},
 				{
 					title: `Overview`,
@@ -46,65 +45,78 @@ export const gamesTextData = {
 
 						`The result will be a game that brings to life the history of the Ukrainian Cossacks and the Zaporozhian Sich. My goal is to popularize a new vision of that period and show the images of different Cossacks in a new style. Openly depicting the whole essence of that era – bloody battles, cruelty, betrayal, untold legends, and explicit scenes. It will also show the famous hopak dance, humor, and endless landscapes.`,
 					],
-					subtitle: `Inspiration:`,
-					list: [
-						<>
-							<TextLink
-								linkHref='https://en.wikipedia.org/wiki/The_Witcher_(video_game_series)'
-								linkName={`The Witcher game series`}
-							/>{' '}
-							and{' '}
-							<TextLink
-								linkHref='https://en.wikipedia.org/wiki/Ghost_of_Tsushima'
-								linkName={`Ghost of Tsushima`}
-							/>
-						</>,
-						<>
-							The works of{' '}
-							<TextLink
-								linkHref='https://en.wikipedia.org/wiki/Nikolai_Gogol'
-								linkName={`Nikolai Gogol`}
-							/>
-							, collections and novels:{' '}
-							<TextLink
-								linkHref='https://en.wikipedia.org/wiki/Dead_Souls'
-								linkName={`Dead Souls`}
-							/>
-							,{' '}
-							<TextLink
-								linkHref='https://en.wikipedia.org/wiki/Evenings_on_a_Farm_Near_Dikanka'
-								linkName={`Evenings on a Farm Near Dikanka`}
-							/>
-							, <TextLink linkHref='https://en.wikipedia.org/wiki/Viy_(story)' linkName={`Viy`} />,{' '}
-							<TextLink
-								linkHref='https://en.wikipedia.org/wiki/Taras_Bulba'
-								linkName={`Taras
-						Bulba`}
-							/>
-							.
-						</>,
-						<>Zaporozhian Cossacks, Slavic mythology, Ukrainian demonology.</>,
+					listBlock: [
+						{
+							title: `Inspiration:`,
+							text: [
+								<>
+									<TextLink
+										linkHref='https://en.wikipedia.org/wiki/The_Witcher_(video_game_series)'
+										linkName={`The Witcher game series`}
+									/>{' '}
+									and{' '}
+									<TextLink
+										linkHref='https://en.wikipedia.org/wiki/Ghost_of_Tsushima'
+										linkName={`Ghost of Tsushima`}
+									/>
+								</>,
+								<>
+									The works of{' '}
+									<TextLink
+										linkHref='https://en.wikipedia.org/wiki/Nikolai_Gogol'
+										linkName={`Nikolai Gogol`}
+									/>
+									, collections and novels:{' '}
+									<TextLink
+										linkHref='https://en.wikipedia.org/wiki/Dead_Souls'
+										linkName={`Dead Souls`}
+									/>
+									,{' '}
+									<TextLink
+										linkHref='https://en.wikipedia.org/wiki/Evenings_on_a_Farm_Near_Dikanka'
+										linkName={`Evenings on a Farm Near Dikanka`}
+									/>
+									,{' '}
+									<TextLink linkHref='https://en.wikipedia.org/wiki/Viy_(story)' linkName={`Viy`} />
+									,{' '}
+									<TextLink
+										linkHref='https://en.wikipedia.org/wiki/Taras_Bulba'
+										linkName={`Taras Bulba`}
+									/>
+									.
+								</>,
+								<>Zaporozhian Cossacks, Slavic mythology, Ukrainian demonology.</>,
+							],
+						},
 					],
 				},
 				{
-					title: `Features`,
-					subtitle: `Authentic depiction of Cossack culture and history:`,
-					list: [
-						`Real events and historical figures.`,
+					// title: `Features`,
 
-						`Cultural heritage, Ukrainian folklore, and Slavic mythology.`,
+					listBlock: [
+						{
+							title: `Authentic depiction of Cossack culture and history:`,
+							text: [
+								`Real events and historical figures.`,
 
-						`Secrets of Cossack life and their struggle for freedom.`,
+								`Cultural heritage, Ukrainian folklore, and Slavic mythology.`,
 
-						`Conveying a rich palette of human emotions, from triumph to tragedy.`,
-					],
-					subtitle2: `Open world environment:`,
-					list2: [
-						`Endless expanses of the Zaporozhian Sich and landscapes of Ukraine in the 16th – 18th centuries.`,
+								`Secrets of Cossack life and their struggle for freedom.`,
 
-						`Hidden settlements, majestic ruins, and other interesting locations.`,
+								`Conveying a rich palette of human emotions, from triumph to tragedy.`,
+							],
+						},
 
-						`Exciting quests that will take you on an unforgettable journey through Ukrainian labyrinths and reveal the secrets of history.`,
+						{
+							title: `Open world environment:`,
+							text: [
+								`Endless expanses of the Zaporozhian Sich and landscapes of Ukraine in the 16th – 18th centuries.`,
+
+								`Hidden settlements, majestic ruins, and other interesting locations.`,
+
+								`Exciting quests that will take you on an unforgettable journey through Ukrainian labyrinths and reveal the secrets of history.`,
+							],
+						},
 					],
 				},
 				{
@@ -119,7 +131,6 @@ export const gamesTextData = {
 				},
 			],
 
-			// Last words
 			lastWords: lastWordsEn,
 		},
 	],
@@ -128,22 +139,21 @@ export const gamesTextData = {
 	ua: [
 		{
 			pitchNumber: pitch01,
-
-			section: [
+			pitchTitle: `Січ / Козаки RPG`,
+			pitchInfo: [
 				{
-					// pitchNumber: `Pitch 01`,
-					pitchTitle: `Січ / Козаки RPG`,
-					pitchInfo: [
-						{
-							key: `Формат: `,
-							value: `Пригодницька рольова відеогра з відкритим світом і видом від третьої особи, високою деталізацією середовище та персонажів`,
-						},
-						{ key: `Жанр: `, value: `Action RPG, Стелс` },
-						{ key: `Сетінг: `, value: `Україна XVI – XVIII століття, Запорозька Січ` },
-						{ key: `Платформи: `, value: `PC, PS5, Xbox` },
-					],
-					loglineTitle: `Логлайн`,
-					loglineText: `Могутній Запорозький Козак з трагічним минулим і нерозгаданим потенціалом потойбічних сил подорожує містами, намагаючись розкрити таємниці захоплюючої містичної історії та власного минулого, де переплетені реальні історичні факти, міфологія та демонологія, динамічна комедія та драма.`,
+					key: `Формат: `,
+					value: `Пригодницька рольова відеогра з відкритим світом і видом від третьої особи, високою деталізацією середовище та персонажів`,
+				},
+				{ key: `Жанр: `, value: `Action RPG, Стелс` },
+				{ key: `Сетінг: `, value: `Україна XVI – XVIII століття, Запорозька Січ` },
+				{ key: `Платформи: `, value: `PC, PS5, Xbox` },
+			],
+
+			textBlock: [
+				{
+					title: `Логлайн`,
+					text: `Могутній Запорозький Козак з трагічним минулим і нерозгаданим потенціалом потойбічних сил подорожує містами, намагаючись розкрити таємниці захоплюючої містичної історії та власного минулого, де переплетені реальні історичні факти, міфологія та демонологія, динамічна комедія та драма.`,
 				},
 
 				{
@@ -153,70 +163,86 @@ export const gamesTextData = {
 
 						`Получиться гра, яка оживляє історію Українських Козаків та Запорозької Січі. Маю на меті популяризацію нового бачення того періоду, та показати образи різних Козаків у новому стилі. Відверто зображуючи всю суть тієї епохи – криваві бої, жорстокість, зраду, нерозказані легенди та відверті сцени. Також показати славнозвісний бойовий танець гопак, гумор і безкраї краєвиди.`,
 					],
-					subtitle: `Натхнення:`,
-					list: [
-						<>
-							Ігрова серія{' '}
-							<TextLink
-								linkHref='https://en.wikipedia.org/wiki/The_Witcher_(video_game_series)'
-								linkName={`The Witcher`}
-							/>{' '}
-							and{' '}
-							<TextLink
-								linkHref='https://en.wikipedia.org/wiki/Ghost_of_Tsushima'
-								linkName={`Ghost of Tsushima`}
-							/>
-						</>,
-						<>
-							Творчість{' '}
-							<TextLink
-								linkHref='https://en.wikipedia.org/wiki/Nikolai_Gogol'
-								linkName={`Миколи Гоголя`}
-							/>
-							, збірки та повісті:{' '}
-							<TextLink
-								linkHref='https://en.wikipedia.org/wiki/Dead_Souls'
-								linkName={`Мертві душі`}
-							/>
-							,{' '}
-							<TextLink
-								linkHref='https://en.wikipedia.org/wiki/Evenings_on_a_Farm_Near_Dikanka'
-								linkName={`Вечори на хуторі біля Диканьки`}
-							/>
-							, <TextLink linkHref='https://en.wikipedia.org/wiki/Viy_(story)' linkName={`Вій`} />,{' '}
-							<TextLink
-								linkHref='https://en.wikipedia.org/wiki/Taras_Bulba'
-								linkName={`Тарас Бульба`}
-							/>
-							.
-						</>,
 
-						<>Запорозькі Козаки, Слов'янська міфологія, Українська демонологія.</>,
+					listBlock: [
+						{
+							title: `Натхнення:`,
+							text: [
+								<>
+									Ігрова серія{' '}
+									<TextLink
+										linkHref='https://en.wikipedia.org/wiki/The_Witcher_(video_game_series)'
+										linkName={`The Witcher`}
+									/>{' '}
+									and{' '}
+									<TextLink
+										linkHref='https://en.wikipedia.org/wiki/Ghost_of_Tsushima'
+										linkName={`Ghost of Tsushima`}
+									/>
+								</>,
+								<>
+									Творчість{' '}
+									<TextLink
+										linkHref='https://en.wikipedia.org/wiki/Nikolai_Gogol'
+										linkName={`Миколи Гоголя`}
+									/>
+									, збірки та повісті:{' '}
+									<TextLink
+										linkHref='https://en.wikipedia.org/wiki/Dead_Souls'
+										linkName={`Мертві душі`}
+									/>
+									,{' '}
+									<TextLink
+										linkHref='https://en.wikipedia.org/wiki/Evenings_on_a_Farm_Near_Dikanka'
+										linkName={`Вечори на хуторі біля Диканьки`}
+									/>
+									,{' '}
+									<TextLink linkHref='https://en.wikipedia.org/wiki/Viy_(story)' linkName={`Вій`} />
+									,{' '}
+									<TextLink
+										linkHref='https://en.wikipedia.org/wiki/Taras_Bulba'
+										linkName={`Тарас Бульба`}
+									/>
+									.
+								</>,
+
+								<>Запорозькі Козаки, Слов'янська міфологія, Українська демонологія.</>,
+							],
+						},
 					],
 				},
 				{
-					title: `Особливості`,
-					subtitle: `Автентичне зображення козацької культури та історії:`,
-					list: [
-						`Реальні події та історичні особистості.`,
+					// title: `Особливості`,
 
-						`Культурну спадщину, Український фольклор та Слов’янську міфологію.`,
+					listBlock: [
+						{
+							title: `Автентичне зображення козацької культури та історії:`,
+							text: [
+								`Реальні події та історичні особистості.`,
 
-						`Таємниці козацького життя та їхню боротьбу за свободу.`,
+								`Культурну спадщину, Український фольклор та Слов’янську міфологію.`,
 
-						`Передати багату палітру людських емоцій, від тріумфу до трагедії.`,
-					],
-					subtitle2: `Середовище відкритого світу:`,
-					list2: [
-						`Безкраї простори Запорозької Січі та пейзажі Україна XVI – XVIII століття.`,
+								`Таємниці козацького життя та їхню боротьбу за свободу.`,
 
-						`Приховані поселення, величні руїни та інші цікаві місця.`,
+								`Передати багату палітру людських емоцій, від тріумфу до трагедії.`,
+							],
+						},
+						{
+							title: `Середовище відкритого світу:`,
+							text: [
+								`Безкраї простори Запорозької Січі та пейзажі Україна XVI – XVIII століття.`,
 
-						`Захоплюючі квести, які проведуть незабутню екскурсію Українськими лабіринтами і розкриють таємниці історії.`,
+								`Приховані поселення, величні руїни та інші цікаві місця.`,
+
+								`Захоплюючі квести, які проведуть незабутню екскурсію Українськими лабіринтами і розкриють таємниці історії.`,
+							],
+						},
 					],
 				},
+
 				{
 					title: `Висновок`,
+
 					text: [
 						`Поєднати реальні факти та події з містикою та гумором, залучити творчий колектив талановитих розробників і все це стане запорукою створення сильної ігрової серії нового покоління про козаків.`,
 
@@ -227,7 +253,6 @@ export const gamesTextData = {
 				},
 			],
 
-			// Last words
 			lastWords: lastWordsUa,
 		},
 	],

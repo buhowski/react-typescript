@@ -12,7 +12,7 @@ export const filmsTextData = {
 		{
 			pitchNumber: pitch01,
 
-			section: [],
+			textBlock: [],
 
 			// Last words
 			lastWords: lastWordsRu,
@@ -23,22 +23,24 @@ export const filmsTextData = {
 	en: [
 		{
 			pitchNumber: pitch01,
+			pitchTitle: `European Ukrainians`,
+			pitchInfo: [
+				{ key: `Format: `, value: `Sarcastic-ironic sitcom for streaming platforms` },
+				{ key: `Genre: `, value: `Comedy, Drama, Dark Humor` },
+				{ key: `Duration: `, value: `20-40 minutes episode` },
+				{ key: `Audience: `, value: `Teens, Adults` },
+			],
 
-			section: [
+			textBlock: [
 				{
-					pitchTitle: `European Ukrainians`,
-					pitchInfo: [
-						{ key: `Format: `, value: `Sarcastic-ironic sitcom for streaming platforms` },
-						{ key: `Genre: `, value: `Comedy, Drama, Dark Humor` },
-						{ key: `Duration: `, value: `20-40 minutes episode` },
-						{ key: `Audience: `, value: `Teens, Adults` },
-					],
-					loglineTitle: `Logline`,
-					loglineText: `A group of young people challenge the absurd realities of the system on their path to self-development. With self-irony and dark humor, they navigate the world around them to avoid going crazy. Thanks to their friendship and support, they try to find their place in society, constantly getting into comedic situations.`,
+					title: `Logline`,
+
+					text: `A group of young people challenge the absurd realities of the system on their path to self-development. With self-irony and dark humor, they navigate the world around them to avoid going crazy. Thanks to their friendship and support, they try to find their place in society, constantly getting into comedic situations.`,
 				},
 
 				{
 					title: `Overview`,
+
 					text: [
 						<>
 							The concept of the series is a hilarious mix inspired by shows like “Trailer Park
@@ -70,21 +72,27 @@ export const filmsTextData = {
 							not afraid to laugh at problems, but at the same time want their voices to be heard.
 						</>,
 					],
-					subtitle: `Plot`,
-					list: [
-						`Topical issues that are close to the young audience.`,
 
-						`The main characters are ordinary people of different generations who are constantly struggling with financial difficulties, but who are trying their best to find their way in the world of work and relationships.`,
+					listBlock: [
+						{
+							title: `Plot`,
 
-						`Each episode is a new adventure in the lives of the main characters, in which they face various problems and challenges of society, such as corruption, lack of culture, gender inequality, outdated views, violence, addiction, unemployment, and so on.`,
+							text: [
+								`Topical issues that are close to the young audience.`,
 
-						`The characters' egocentric, hysterical, and anxious views and judgments often lead them into trouble, creating a myriad of uncomfortable situations that usually only get worse before they get better.`,
+								`The main characters are ordinary people of different generations who are constantly struggling with financial difficulties, but who are trying their best to find their way in the world of work and relationships.`,
 
-						`The goal is to show reality without censorship, with soulful, and sometimes black humor.`,
+								`Each episode is a new adventure in the lives of the main characters, in which they face various problems and challenges of society, such as corruption, lack of culture, gender inequality, outdated views, violence, addiction, unemployment, and so on.`,
 
-						`Important for the series to be sincere.`,
+								`The characters' egocentric, hysterical, and anxious views and judgments often lead them into trouble, creating a myriad of uncomfortable situations that usually only get worse before they get better.`,
 
-						`It should encourage people to reflect on the problems of Ukrainian society, highlighting painful topics through humor.`,
+								`The goal is to show reality without censorship, with soulful, and sometimes black humor.`,
+
+								`Important for the series to be sincere.`,
+
+								`It should encourage people to reflect on the problems of Ukrainian society, highlighting painful topics through humor.`,
+							],
+						},
 					],
 				},
 
@@ -92,66 +100,83 @@ export const filmsTextData = {
 					title: `Characters for Example`,
 					text: `Age range 21-30 years. Strangers meet each other in certain circumstances. The situation leads them to further friendship.`,
 
-					character01Title: `Character 01. Male:`,
-					character01List: [
-						`Fond of alcohol, always carries a thermos (or a glass or goblet) with self-made cocktails.`,
+					listBlock: [
+						{
+							title: `Character 01. Male:`,
 
-						`Knows how to control himself and not lose control of the situation.`,
+							text: [
+								`Fond of alcohol, always carries a thermos (or a glass or goblet) with self-made cocktails.`,
 
-						`Kind, stylish, positive, with a writer's mindset and good use of swearing.`,
+								`Knows how to control himself and not lose control of the situation.`,
 
-						`Master of dude quotes and silly toasts (sarcasm and self-irony).`,
+								`Kind, stylish, positive, with a writer's mindset and good use of swearing.`,
 
-						`Favorite drink: port wine.`,
-					],
+								`Master of dude quotes and silly toasts (sarcasm and self-irony).`,
 
-					character02Title: `Character 02. Male:`,
-					character02List: [
-						`Fond of smoking marijuana, well-read,  interested in science fiction and psychology.`,
+								`Favorite drink: port wine.`,
+							],
+						},
+						{
+							title: `Character 02. Male:`,
 
-						`Often "spaces out" or loses touch with reality, vividly imagining the development of events (example 06 in slider).`,
-					],
+							text: [
+								`Fond of smoking marijuana, well-read,  interested in science fiction and psychology.`,
 
-					character03Title: `Character 03. Male:`,
-					character03List: [
-						`Tries to lead a healthy lifestyle without bad habits, but understands that there is no healthy lifestyle – only common sense.`,
+								`Often "spaces out" or loses touch with reality, vividly imagining the development of events (example 06 in slider).`,
+							],
+						},
+						{
+							title: `Character 03. Male:`,
 
-						`Enjoys sports, non-stereotypical.`,
+							text: [
+								`Tries to lead a healthy lifestyle without bad habits, but understands that there is no healthy lifestyle – only common sense.`,
 
-						`Treats everything with understanding and does not judge.`,
+								`Enjoys sports, non-stereotypical.`,
 
-						`Strong character and self-control.`,
-					],
+								`Treats everything with understanding and does not judge.`,
 
-					character04Title: `Character 04. Female:`,
-					character04List: [
-						`Energetic, optimistic-emotional, creative personality, loves art.`,
+								`Strong character and self-control.`,
+							],
+						},
+						{
+							title: `Character 04. Female:`,
 
-						`Has a sharp tongue and enjoys dark humor, often jokes inappropriately.`,
-					],
+							text: [
+								`Energetic, optimistic-emotional, creative personality, loves art.`,
 
-					character05Title: `Character 05. Female:`,
-					character05List: [
-						`Calm, thoughtful, with a diplomatic mindset, strategist.`,
+								`Has a sharp tongue and enjoys dark humor, often jokes inappropriately.`,
+							],
+						},
+						{
+							title: `Character 05. Female:`,
 
-						`Knows how to find common ground with people, although she hates them in general.`,
+							text: [
+								`Calm, thoughtful, with a diplomatic mindset, strategist.`,
 
-						`Values friendship and is always ready to help.`,
-					],
+								`Knows how to find common ground with people, although she hates them in general.`,
 
-					character06Title: `Wildcard Character (age 50+):`,
-					character06List: [
-						`Cunning, cynical, with a sharp mind and sarcastic sense of humor, orator.`,
+								`Values friendship and is always ready to help.`,
+							],
+						},
+						{
+							title: `Wildcard Character (age 50+):`,
 
-						`Has rich life experience. `,
+							text: [
+								`Cunning, cynical, with a sharp mind and sarcastic sense of humor, orator.`,
 
-						`Knows how to find a way out of any situation, but "too old for this shit".`,
+								`Has rich life experience. `,
 
-						`Values freedom and independence, a lone wolf, but works in a team when necessary.`,
+								`Knows how to find a way out of any situation, but "too old for this shit".`,
+
+								`Values freedom and independence, a lone wolf, but works in a team when necessary.`,
+							],
+						},
 					],
 				},
+
 				{
 					title: `Conclusion`,
+
 					text: [
 						`I believe that with a new approach to implementation and a more professional attitude to the emotional transmission of the picture, "European Ukrainians" will become a successful project and a calling card on the world television market, attracting investments for the development of future ideas. There are an endless number of ideas and a lot to work with, but resources are needed.`,
 
@@ -160,7 +185,6 @@ export const filmsTextData = {
 				},
 			],
 
-			// Last words
 			lastWords: lastWordsEn,
 		},
 	],
@@ -169,22 +193,21 @@ export const filmsTextData = {
 	ua: [
 		{
 			pitchNumber: pitch01,
-
-			section: [
+			pitchTitle: `Європейські Українці`,
+			pitchInfo: [
 				{
-					// pitchNumber: `Pitch 01`,
-					pitchTitle: `Європейські Українці`,
-					pitchInfo: [
-						{
-							key: `Формат: `,
-							value: `Саркастично-іронічний ситком для стрімінгових платформ`,
-						},
-						{ key: `Жанр: `, value: `Комедія, Драма, Чорний гумор` },
-						{ key: `Тривалість: `, value: `20-40 хвилин серія` },
-						{ key: `Аудиторія: `, value: `Підлітки, Дорослі` },
-					],
-					loglineTitle: `Логлайн`,
-					loglineText: `Група молодих людей кидає виклик абсурдним реаліям системи на шляху до саморозвитку. З самоіронією та чорним гумором вони сприймають навколишній світ, щоб не зійти з розуму. Завдяки дружбі і підтримці вони намагаються знайти своє місце в суспільстві, потрапляючи постійно в казусні ситуації.`,
+					key: `Формат: `,
+					value: `Саркастично-іронічний ситком для стрімінгових платформ`,
+				},
+				{ key: `Жанр: `, value: `Комедія, Драма, Чорний гумор` },
+				{ key: `Тривалість: `, value: `20-40 хвилин серія` },
+				{ key: `Аудиторія: `, value: `Підлітки, Дорослі` },
+			],
+
+			textBlock: [
+				{
+					title: `Логлайн`,
+					text: `Група молодих людей кидає виклик абсурдним реаліям системи на шляху до саморозвитку. З самоіронією та чорним гумором вони сприймають навколишній світ, щоб не зійти з розуму. Завдяки дружбі і підтримці вони намагаються знайти своє місце в суспільстві, потрапляючи постійно в казусні ситуації.`,
 				},
 
 				{
@@ -219,21 +242,26 @@ export const filmsTextData = {
 							над проблемами, але при цьому хочуть, щоб їхні голоси були почуті.
 						</>,
 					],
-					subtitle: `Сюжет`,
-					list: [
-						`Актуальні теми, які близькі молодій аудиторії.`,
 
-						`Головні герої – це звичайні люди різних поколінь, у яких грошовий дефіцит – їх постійний супутник, але які з усіх сил намагаються знайти свій шлях у світі роботи та стосунків.`,
+					listBlock: [
+						{
+							title: `Сюжет`,
+							text: [
+								`Актуальні теми, які близькі молодій аудиторії.`,
 
-						`Кожна серія – це нова пригода з життя головних героїв, в якій вони стикаються з різними проблемами та викликами суспільства, як корупція, безкультур'я, гендерна нерівність, застаріле бачення, насилля, залежності, безробіття, і далі в такому дусі.`,
+								`Головні герої – це звичайні люди різних поколінь, у яких грошовий дефіцит – їх постійний супутник, але які з усіх сил намагаються знайти свій шлях у світі роботи та стосунків.`,
 
-						`Егоцентричні, істеричні та тривожні погляди та судження часто призводять героїв до неприємностей, створюючи безліч незручних ситуацій, які зазвичай лише погіршуються, перш ніж стануть кращими.`,
+								`Кожна серія – це нова пригода з життя головних героїв, в якій вони стикаються з різними проблемами та викликами суспільства, як корупція, безкультур'я, гендерна нерівність, застаріле бачення, насилля, залежності, безробіття, і далі в такому дусі.`,
 
-						`Показати реальність без цензури, з душевним гумором.`,
+								`Егоцентричні, істеричні та тривожні погляди та судження часто призводять героїв до неприємностей, створюючи безліч незручних ситуацій, які зазвичай лише погіршуються, перш ніж стануть кращими.`,
 
-						`Важливо, щоб серіал був щирим.`,
+								`Показати реальність без цензури, з душевним гумором.`,
 
-						`Він має спонукати людей до роздумів над проблемами українського суспільства, освітлюючи болючі теми через гумор.`,
+								`Важливо, щоб серіал був щирим.`,
+
+								`Він має спонукати людей до роздумів над проблемами українського суспільства, освітлюючи болючі теми через гумор.`,
+							],
+						},
 					],
 				},
 
@@ -241,62 +269,71 @@ export const filmsTextData = {
 					title: `Персонажі для прикладу`,
 					text: `Віковий діапазон 21-30 років. Незнайомці стикаються при певних обставинах. Ситуація зводить їх до подальшої дружби.`,
 
-					character01Title: `Персонаж 01. Чоловічий:`,
-					character01List: [
-						`Полюбляє алкоголь, постійно носить з собою термокружку (або бокал чи кубок), попиваючи власно зроблені коктейлі.`,
+					listBlock: [
+						{
+							title: `Персонаж 01. Чоловічий:`,
+							text: [
+								`Полюбляє алкоголь, постійно носить з собою термокружку (або бокал чи кубок), попиваючи власно зроблені коктейлі.`,
 
-						`В цілому вміє тримати себе в руках і не втрачати контроль над ситуацією.`,
+								`В цілому вміє тримати себе в руках і не втрачати контроль над ситуацією.`,
 
-						`Добрий, стильний, позитивний, письменницький нрав з доречним використанням лайки.`,
+								`Добрий, стильний, позитивний, письменницький нрав з доречним використанням лайки.`,
 
-						`Мастер пацанських цитат і тупих тостів (сарказм і самоіронія).`,
+								`Мастер пацанських цитат і тупих тостів (сарказм і самоіронія).`,
 
-						`Улюблений напій портвейн.`,
-					],
+								`Улюблений напій портвейн.`,
+							],
+						},
+						{
+							title: `Персонаж 02. Чоловічий:`,
+							text: [
+								`Полюбляє курити маріхуану, начитаний, цікавить область наукової фантастики і психологія.`,
 
-					character02Title: `Персонаж 02. Чоловічий:`,
-					character02List: [
-						`Полюбляє курити маріхуану, начитаний, цікавить область наукової фантастики і психологія.`,
+								`Часто тупить чи вилітає з реальності, яскраво уявляючи  розвиток подій (приклад 06 у слайдері).`,
+							],
+						},
+						{
+							title: `Персонаж 03. Чоловічий:`,
+							text: [
+								`Намагається вести здоровий спосіб життя, без шкідливих звичок, але сам розуміє що не існує здорового способу життя – лише здоровий глузд.`,
 
-						`Часто тупить чи вилітає з реальності, яскраво уявляючи  розвиток подій (приклад 06 у слайдері).`,
-					],
+								`Полюбляє займатися спортом, нестереотипний.`,
 
-					character03Title: `Персонаж 03. Чоловічий:`,
-					character03List: [
-						`Намагається вести здоровий спосіб життя, без шкідливих звичок, але сам розуміє що не існує здорового способу життя – лише здоровий глузд.`,
+								`До всього ставиться з розумінням і без осуду.`,
 
-						`Полюбляє займатися спортом, нестереотипний.`,
+								`Сильний характер і самоконтроль.`,
+							],
+						},
+						{
+							title: `Персонаж 04. Жіночий:`,
+							text: [
+								`Енергійна, оптимістично-емоційна, творчий характер, любить мистецтво.`,
 
-						`До всього ставиться з розумінням і без осуду.`,
+								`Має гострий язик і полюбляє чорний гумор, часто недоречно жартує.`,
+							],
+						},
+						{
+							title: `Персонаж 05. Жіночий:`,
+							text: [
+								`Спокійна, розважлива, з дипломатичним складом мислення, стратегиня.`,
 
-						`Сильний характер і самоконтроль.`,
-					],
+								`Вміє знаходити спільну мову з людьми, хоча в цілому їх ненавидить.`,
 
-					character04Title: `Персонаж 04. Жіночий:`,
-					character04List: [
-						`Енергійна, оптимістично-емоційна, творчий характер, любить мистецтво.`,
+								`Цінує дружбу і завжди готова прийти на допомогу.`,
+							],
+						},
+						{
+							title: `Козирний персонаж (вік 50+ років):`,
+							text: [
+								`Хитрий, цинічний, з гострим розумом і саркастичним почуттям гумору, оратор.`,
 
-						`Має гострий язик і полюбляє чорний гумор, часто недоречно жартує.`,
-					],
+								`Має багатий життєвий досвід.`,
 
-					character05Title: `Персонаж 05. Жіночий:`,
-					character05List: [
-						`Спокійна, розважлива, з дипломатичним складом мислення, стратегиня.`,
+								`Вміє знаходити вихід з будь-якої ситуації, але "занадто старий для подібного лайна".`,
 
-						`Вміє знаходити спільну мову з людьми, хоча в цілому їх ненавидить.`,
-
-						`Цінує дружбу і завжди готова прийти на допомогу.`,
-					],
-
-					character06Title: `Козирний персонаж (вік 50+ років):`,
-					character06List: [
-						`Хитрий, цинічний, з гострим розумом і саркастичним почуттям гумору, оратор.`,
-
-						`Має багатий життєвий досвід.`,
-
-						`Вміє знаходити вихід з будь-якої ситуації, але "занадто старий для подібного лайна".`,
-
-						`Цінує свободу і незалежність, вовк одинак, але якщо потрібно, то працює в команді.`,
+								`Цінує свободу і незалежність, вовк одинак, але якщо потрібно, то працює в команді.`,
+							],
+						},
 					],
 				},
 				{
@@ -310,7 +347,6 @@ export const filmsTextData = {
 				},
 			],
 
-			// Last words
 			lastWords: lastWordsUa,
 		},
 	],

@@ -1,14 +1,6 @@
 import React from 'react';
 import { Block } from '../data/textTypes';
 
-export const Headline: React.FC<Block> = ({ pitchTitle }) => {
-	return (
-		<div className='headline h2'>
-			<Title titleClassname='headline__title' title={pitchTitle} />
-		</div>
-	);
-};
-
 // Title item
 interface TitleProps extends Block {
 	titleClassname?: string;
@@ -19,8 +11,8 @@ export const Title: React.FC<TitleProps> = ({ title, titleClassname }) => {
 };
 
 // Subtitle item
-export const Subtitle: React.FC<Block> = ({ subtitle }) => {
-	return <h3 className='idea-block__subtitle h2'>{subtitle}</h3>;
+export const ListTitle: React.FC<Block> = ({ title }) => {
+	return <h3 className='idea-block__subtitle h2'>{title}</h3>;
 };
 
 // Pitch information, genre / etc.
