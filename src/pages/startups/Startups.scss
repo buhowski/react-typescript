@@ -400,7 +400,6 @@
 	text-align: center;
 	font-size: 3.1rem;
 	margin-bottom: 40px;
-	letter-spacing: 1.4px;
 	color: $starYellow;
 	@include titleFont;
 
@@ -435,7 +434,6 @@
 		font-size: 3.1rem;
 		color: $starYellow;
 		text-align: center;
-		letter-spacing: 1.4px;
 		@include titleFont;
 
 		@include mobile {
@@ -469,7 +467,7 @@
 
 .idea-block {
 	font-size: 1.8rem;
-	line-height: 1.65;
+	line-height: 1.5;
 	color: $textGrey;
 	margin-bottom: 45px;
 
@@ -486,7 +484,7 @@
 		color: $blue-main;
 		font-size: 2.5rem;
 		margin-bottom: 20px;
-		letter-spacing: 1.2px;
+		letter-spacing: 1px;
 		@include titleFont;
 
 		@include tabletBig {
@@ -497,7 +495,7 @@
 	&__subtitle {
 		color: $titlePink;
 		margin: 25px 0 15px;
-		letter-spacing: 1.5px;
+		letter-spacing: 1px;
 	}
 
 	&__text {
