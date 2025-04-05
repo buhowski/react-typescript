@@ -12,6 +12,4 @@ export const dataSlider = {
 			],
 		},
 	],
-
-	ua: [],
 };
