@@ -11,13 +11,13 @@ export const defaultMetaTags = {
 };
 
 export const startupsMetaTags = {
-	title: `Startup: New Generation Media | Films | Games | Technologies`,
+	title: `Another Dimension: Media | Films | Games | Technologies`,
 	description: `How to create an information media magazine and transform it into a company producing its own technologies.`,
 	canonicalUrl: `https://buhowski.dev/startup`,
 
 	// Open Graph Meta Tags
 	ogUrl: `https://buhowski.dev/startup`,
-	ogTitle: `Startup: New Generation Media | Films | Games | Technologies`,
+	ogTitle: `Another Dimension: Media | Films | Games | Technologies`,
 	ogDescription: `How to create an information media magazine and transform it into a company producing its own technologies.`,
 	ogImage: `https://buhowski.dev/preview_startups.jpg`,
 };
