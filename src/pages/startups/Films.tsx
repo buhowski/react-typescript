@@ -9,7 +9,7 @@ const StartupFilms = () => {
 			pageClassName='startup-ideas'
 			langDisable={['ru']}
 			textData={filmsTextData}
-			toc={true}
+			// toc={true}
 			sliderData={dataSlider}
 		/>
 	);
