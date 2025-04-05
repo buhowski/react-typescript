@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo, useCallback } from 'react';
+import React, { useState, useEffect, useMemo, useCallback, useRef } from 'react';
 import PageHelmet from '../../../config/PageHelmet';
 import { startupsMetaTags } from '../../../config/metaTags';
 import { useTabletLargeQuery } from '../../../hooks/useMediaQuery';
@@ -53,11 +53,30 @@ const PageStructure: React.FC<PageProps> = ({
 	const [isActive, setIsActive] = useState(false);
 	const [activeTextIndex, setActiveTextIndex] = useState(0);
 	const [isTocOpen, setIsTocOpen] = useState(false);
+	const tocRef = useRef<HTMLDivElement>(null);
 
 	// Function to toggle the visibility of the table of contents
 	const toggleToc = () => {
 		setIsTocOpen(!isTocOpen);
 	};
+
+	useEffect(() => {
+		const handleClickOutside = (event: MouseEvent) => {
+			if (tocRef.current && !tocRef.current.contains(event.target as Node)) {
+				setIsTocOpen(false);
+			}
+		};
+
+		if (isTocOpen) {
+			document.addEventListener('mousedown', handleClickOutside);
+		} else {
+			document.removeEventListener('mousedown', handleClickOutside);
+		}
+
+		return () => {
+			document.removeEventListener('mousedown', handleClickOutside);
+		};
+	}, [isTocOpen]);
 
 	// Memoized list of disabled languages
 	const disabledLangs = useMemo(
@@ -145,7 +164,7 @@ const PageStructure: React.FC<PageProps> = ({
 						/>
 
 						{toc && contentToRender.length > 1 && (
-							<div className={`table-content ${isTocOpen ? 'is-open' : ''}`}>
+							<div className={`table-content ${isTocOpen ? 'is-open' : ''}`} ref={tocRef}>
 								<button className='table-content__btn' onClick={toggleToc}>
 									<mark>
 										<span></span>
@@ -155,12 +174,15 @@ const PageStructure: React.FC<PageProps> = ({
 										<span></span>
 										<span></span>
 									</mark>
-									Table Of Content
+
+									<span>Table Of Content</span>
 								</button>
 
 								<div className='table-content__list'>
 									<div className='table-content__inner'>
 										<div className='table-content__wrapper'>
+											<span>Table Of Content</span>
+
 											{contentToRender.map((item, index) => (
 												<button
 													key={index}
