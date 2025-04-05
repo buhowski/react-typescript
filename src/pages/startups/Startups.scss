@@ -61,23 +61,6 @@
 		margin-left: -15px;
 		width: calc(100% + 30px);
 	}
-
-	&.disabled {
-		.slider-js {
-			width: 100%;
-		}
-
-		.slider-btn-js,
-		.slides-number {
-			opacity: 0.4;
-			pointer-events: none;
-			filter: grayscale(1);
-
-			@include tabletBig {
-				opacity: 0;
-			}
-		}
-	}
 }
 
 .idea-section {
@@ -137,10 +120,6 @@
 	font-size: 1.4rem;
 	color: $textGrey;
 	font-family: $LouisGeorgeCafBold;
-
-	@include tabletBig {
-		margin-right: unset;
-	}
 
 	p {
 		overflow: hidden;
@@ -502,6 +481,39 @@
 	}
 }
 
+.slider-wrapper {
+	width: 100%;
+	height: 100%;
+
+	&.disabled {
+		.slider-js {
+			width: 100%;
+		}
+
+		.slider-actions {
+			margin-top: 25px;
+			justify-content: center;
+		}
+
+		.idea-copy p {
+			margin: auto;
+		}
+
+		.slider-btn-js,
+		.slides-number {
+			opacity: 0.4;
+			pointer-events: none;
+			filter: grayscale(1);
+
+			@include tabletBig {
+				opacity: 0;
+			}
+
+			display: none;
+		}
+	}
+}
+
 .slider-js {
 	width: 100%;
 	display: flex;
@@ -515,14 +527,15 @@
 	border-radius: 0 10px 10px 10px;
 
 	@include tabletBig {
-		height: 100%;
 		width: calc(100% - 80px);
+		height: 100%;
 		box-shadow: unset;
 		border-radius: 0;
+		margin: auto;
 	}
 
 	@include mobile {
-		width: calc(100% - 60px);
+		width: calc(100% - 30px);
 	}
 }
 

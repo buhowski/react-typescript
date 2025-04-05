@@ -30,7 +30,11 @@ interface PageProps {
 		en: TextDataItem[];
 		ua: TextDataItem[];
 	};
-	sliderData?: SlideItem[];
+	sliderData?: {
+		[key: string]: {
+			sliderContent: SlideItem[];
+		}[];
+	};
 	pageClassName?: string;
 	langDisable?: string | string[];
 }
@@ -88,6 +92,11 @@ const PageStructure: React.FC<PageProps> = ({
 		[textData, currentLang]
 	);
 
+	// Define the Slider component as a constant
+	const sliderComponent = sliderData ? (
+		<Slider dataSlider={sliderData} currentLanguage={currentLang} />
+	) : undefined;
+
 	return (
 		<>
 			<div className={`startup-action ${isActive ? 'is-active' : ''}`}>
@@ -105,7 +114,7 @@ const PageStructure: React.FC<PageProps> = ({
 								structure={structure}
 								index={index}
 								useTabletLarge={useTabletLarge}
-								Slider={index === 0 && sliderData ? <Slider dataSlider={sliderData} /> : undefined}
+								Slider={index === 0 ? sliderComponent : undefined}
 								CopyrightComponent={Copyright}
 								PopupContactsComponent={PopupContacts}
 							/>
@@ -119,9 +128,9 @@ const PageStructure: React.FC<PageProps> = ({
 							changeLanguage={changeLanguage}
 						/>
 
-						<div className='desktop-slider'>
-							{!useTabletLarge && sliderData && <Slider dataSlider={sliderData} />}
-						</div>
+						{/* <div className='table-content'>toc</div> */}
+
+						<div className='desktop-slider'>{!useTabletLarge && sliderComponent}</div>
 					</div>
 				</div>
 			</div>
