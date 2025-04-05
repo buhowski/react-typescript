@@ -127,6 +127,10 @@
 		white-space: nowrap;
 		width: 0;
 		animation: typing 2.5s steps(18, end) 2s forwards, blink-caret 1s step-end infinite;
+
+		@include tabletBig {
+			margin: auto;
+		}
 	}
 
 	span {
@@ -491,7 +495,7 @@
 		}
 
 		.slider-actions {
-			margin-top: 25px;
+			margin-top: 20px;
 			justify-content: center;
 		}
 
@@ -639,10 +643,10 @@
 		padding: 20px;
 		box-shadow: inset 0 -200px 110px rgba($color: $black, $alpha: 0.8);
 		transition: 0.4s ease-out;
+		font-size: 14px;
 
 		@include tablet {
 			padding: 15px;
-			font-size: 14px;
 			box-shadow: inset 0 -130px 70px rgba($color: $black, $alpha: 0.8);
 		}
 
