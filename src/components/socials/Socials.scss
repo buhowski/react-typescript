@@ -36,11 +36,7 @@
 
 	&__icon {
 		display: block;
-		width: 24px;
-
-		@media screen and (min-width: 2000px) {
-			width: calc(24px + 0.3vw);
-		}
+		width: 25px;
 	}
 
 	svg {

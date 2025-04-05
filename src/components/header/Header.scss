@@ -122,48 +122,7 @@
 	}
 
 	.mobile-menu-btn {
-		width: 40px;
-		height: 22px;
-		position: relative;
-		margin-left: auto;
-		transform: rotate(0deg);
-		transition: 0.5s ease-in-out;
-
-		span {
-			display: block;
-			position: absolute;
-			height: 2px;
-			width: 50%;
-			background: $blue-main;
-			opacity: 1;
-			transform: rotate(0deg);
-			transition: 0.25s ease-in-out;
-		}
-
-		span:nth-child(even) {
-			left: 50%;
-			border-radius: 0 10px 10px 0;
-		}
-
-		span:nth-child(odd) {
-			left: 0px;
-			border-radius: 10px 0 0 10px;
-		}
-
-		span:nth-child(1),
-		span:nth-child(2) {
-			top: 0px;
-		}
-
-		span:nth-child(3),
-		span:nth-child(4) {
-			top: 10px;
-		}
-
-		span:nth-child(5),
-		span:nth-child(6) {
-			bottom: 0;
-		}
+		@include burgerIcon;
 	}
 
 	.mobile-menu {
@@ -252,45 +211,7 @@
 
 	.header-overflow {
 		.mobile-menu-btn {
-			span:nth-child(1),
-			span:nth-child(6) {
-				transform: rotate(45deg);
-			}
-
-			span:nth-child(2),
-			span:nth-child(5) {
-				transform: rotate(-45deg);
-			}
-
-			span:nth-child(1) {
-				left: 3px;
-				top: 4px;
-			}
-
-			span:nth-child(2) {
-				left: calc(50% - 3px);
-				top: 4px;
-			}
-
-			span:nth-child(3) {
-				left: -50%;
-				opacity: 0;
-			}
-
-			span:nth-child(4) {
-				left: 100%;
-				opacity: 0;
-			}
-
-			span:nth-child(5) {
-				left: 3px;
-				bottom: 3px;
-			}
-
-			span:nth-child(6) {
-				left: calc(50% - 3px);
-				bottom: 3px;
-			}
+			@include burgerIconOpen;
 		}
 	}
 }

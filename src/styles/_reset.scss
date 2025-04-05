@@ -42,6 +42,13 @@ ul {
 	list-style: none;
 }
 
+mark {
+	background: none;
+	font: inherit;
+	color: inherit;
+	display: block;
+}
+
 iframe {
 	border: 0;
 }

@@ -3,20 +3,19 @@
 	isolation: isolate;
 }
 
-/* For browsers that support `` properties */
-@supports (-moz-appearance: none) {
-	.page-container {
-		scrollbar-color: $blue-main $darkest;
-		scrollbar-width: thin;
-	}
-}
-
 .page-container,
 .mobile-menu__content,
-.idea-tabs--urls {
+.idea-tabs--urls,
+.table-content__inner {
+	// /* For browsers that support `` properties */
+	@supports (-moz-appearance: none) {
+		scrollbar-width: thin;
+		scrollbar-color: $blue-main $darkest;
+	}
+
 	&::-webkit-scrollbar {
-		width: 5px;
-		height: 5px;
+		width: 4px;
+		height: 4px;
 
 		@include tabletBig {
 			width: 2px;

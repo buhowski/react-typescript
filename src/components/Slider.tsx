@@ -19,9 +19,10 @@ interface SliderProps {
 		}[];
 	};
 	currentLanguage: string;
+	isActive?: number;
 }
 
-const Slider: React.FC<SliderProps> = ({ dataSlider, currentLanguage }) => {
+const Slider: React.FC<SliderProps> = ({ dataSlider, currentLanguage, isActive }) => {
 	const useTabletLarge = useTabletLargeQuery();
 	const videoRefs = useRef<HTMLVideoElement[][]>([]);
 	const [activeIndices, setActiveIndices] = useState<number[]>([]);
@@ -111,7 +112,9 @@ const Slider: React.FC<SliderProps> = ({ dataSlider, currentLanguage }) => {
 			<div className='slider-container'>
 				{currentLanguageGroups.map((group, groupIndex) => (
 					<div
-						className={`slider-wrapper ${group.sliderContent.length > 1 ? '' : 'disabled'}`}
+						className={`slider-wrapper ${isActive === groupIndex ? 'is-active' : ''} ${
+							group.sliderContent.length > 1 ? '' : 'disabled'
+						}`}
 						key={`slider-${groupIndex}`}
 					>
 						<div className='idea-slider slider-js'>
@@ -140,7 +143,6 @@ const Slider: React.FC<SliderProps> = ({ dataSlider, currentLanguage }) => {
 												Your browser does not support the video tag.
 											</video>
 
-											{/* // Video poster preview */}
 											<div
 												className={`video-preview ${
 													playStates[groupIndex]?.[itemIndex] ? 'disabled' : ''
@@ -195,6 +197,7 @@ const Slider: React.FC<SliderProps> = ({ dataSlider, currentLanguage }) => {
 						)}
 					</div>
 				))}
+
 				{!useTabletLarge && <PopupContacts />}
 			</div>
 		</div>

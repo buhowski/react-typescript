@@ -16,6 +16,7 @@ interface PitchContainerProps {
 	Slider?: JSX.Element;
 	CopyrightComponent: React.FC;
 	PopupContactsComponent: React.FC;
+	isActive?: boolean;
 }
 
 const PitchContainer: React.FC<PitchContainerProps> = ({
@@ -25,9 +26,10 @@ const PitchContainer: React.FC<PitchContainerProps> = ({
 	Slider,
 	CopyrightComponent,
 	PopupContactsComponent,
+	isActive,
 }) => {
 	return (
-		<div key={index} className='pitch-container'>
+		<div key={index} className={`pitch-container ${isActive ? 'is-active' : ''}`}>
 			{structure.pitchNumber && <p className='pitch-number'>{structure.pitchNumber}</p>}
 
 			{structure.pitchTitle && (

@@ -70,8 +70,10 @@ const Header = () => {
 							className='mobile-menu-btn'
 							onClick={() => {
 								const pageContainer = document.querySelector('.page-container');
+
 								if (pageContainer) {
 									pageContainer.scrollTo({ top: 0, behavior: 'smooth' });
+
 									(pageContainer as HTMLElement).style.overflowY = `${
 										menuOpen ? 'auto' : 'hidden'
 									}`;
