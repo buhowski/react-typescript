@@ -19,7 +19,6 @@ import Startup from './pages/startups/Startup';
 import StartupFilms from './pages/startups/Films';
 import StartupGames from './pages/startups/Games';
 import StartupMVP from './pages/startups/MVP';
-import './styles/App.scss';
 
 const routesData = [
 	{ pathTo: '/', pageComponent: <Home /> },

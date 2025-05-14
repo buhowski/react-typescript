@@ -5,13 +5,12 @@ import { useTabletLargeQuery } from '../../../hooks/useMediaQuery';
 import '../Startups.scss';
 import PopupContacts from '../../../components/PopupContacts';
 import Copyright from '../../../components/Copyright';
-import Slider from '../../../components/Slider';
+import { Block } from '../data/textTypes';
 import PitchContainer from './PitchContainer';
 import LanguageSwitcher from './LanguageSwitcher';
 import StartupNavigation from './StartupNavigation';
-import { Block } from '../data/textTypes';
+import Slider from '../../../components/Slider';
 
-// Interfaces
 interface SlideItem {
 	itemSrc?: string;
 	itemAlt?: string;
@@ -42,13 +41,6 @@ interface PageProps {
 	toc?: boolean;
 }
 
-// Utils
-const getIndexFromHash = (hash: string): number | null => {
-	const match = hash.match(/^#pitch-container-(\d+)$/);
-	return match ? parseInt(match[1], 10) : null;
-};
-
-// Component
 const PageStructure: React.FC<PageProps> = ({
 	textData,
 	sliderData,
@@ -57,171 +49,157 @@ const PageStructure: React.FC<PageProps> = ({
 	toc,
 }) => {
 	const useTabletLarge = useTabletLargeQuery();
-
-	const [lang, setLang] = useState<'en' | 'ua' | 'ru'>('en');
-	const [activeIndex, setActiveIndex] = useState(0);
-	const [tocOpen, setTocOpen] = useState(false);
-	const [navSticky, setNavSticky] = useState(false);
-
+	const [currentLang, setCurrentLang] = useState<'en' | 'ua' | 'ru'>('en');
+	const [isActive, setIsActive] = useState(false);
+	const [activeTextIndex, setActiveTextIndex] = useState(0);
+	const [isTocOpen, setIsTocOpen] = useState(false);
 	const tocRef = useRef<HTMLDivElement>(null);
 
+	// Function to toggle the visibility of the table of contents
+	const toggleToc = () => {
+		setIsTocOpen(!isTocOpen);
+	};
+
+	useEffect(() => {
+		const handleClickOutside = (event: MouseEvent) => {
+			if (tocRef.current && !tocRef.current.contains(event.target as Node)) {
+				setIsTocOpen(false);
+			}
+		};
+
+		if (isTocOpen) {
+			document.addEventListener('mousedown', handleClickOutside);
+		} else {
+			document.removeEventListener('mousedown', handleClickOutside);
+		}
+
+		return () => {
+			document.removeEventListener('mousedown', handleClickOutside);
+		};
+	}, [isTocOpen]);
+
+	// Memoized list of disabled languages
 	const disabledLangs = useMemo(
 		() => (Array.isArray(langDisable) ? langDisable : langDisable ? [langDisable] : []),
 		[langDisable]
 	);
 
+	// useEffect to set the initial language from local storage or default
 	useEffect(() => {
 		const storedLang = localStorage.getItem('currentLang') as 'en' | 'ua' | 'ru' | null;
-		const initialLang = storedLang && !disabledLangs.includes(storedLang) ? storedLang : 'en';
-
-		setLang(initialLang);
-		localStorage.setItem('currentLang', initialLang);
+		const initialLang = storedLang || 'en';
+		setCurrentLang(disabledLangs.includes(initialLang) ? 'en' : initialLang);
 	}, [disabledLangs]);
 
+	// useCallback to handle language changes
 	const changeLanguage = useCallback(
-		(newLang: 'en' | 'ua' | 'ru') => {
-			if (!disabledLangs.includes(newLang)) {
-				setLang(newLang);
-				localStorage.setItem('currentLang', newLang);
+		(lang: 'en' | 'ua' | 'ru') => {
+			if (!disabledLangs.includes(lang)) {
+				setCurrentLang(lang);
+				localStorage.setItem('currentLang', lang);
 			}
 		},
 		[disabledLangs]
 	);
 
-	const handleTocClick = useCallback(
-		(index: number, event: React.MouseEvent<HTMLAnchorElement | HTMLDivElement>) => {
-			event.preventDefault();
+	// useEffect to handle scroll and set the isActive state
+	useEffect(() => {
+		const pageContainer = document.querySelector('.page-container');
+		const startupAction = document.querySelector('.startup-action');
+		if (!pageContainer || !startupAction) return;
 
-			const targetId = `pitch-container-${index}`;
-			const element = document.getElementById(targetId);
+		const handleScroll = () => {
+			setIsActive(
+				startupAction.getBoundingClientRect().top <= pageContainer.getBoundingClientRect().top
+			);
+		};
 
-			if (element) {
-				element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-			}
+		pageContainer.addEventListener('scroll', handleScroll);
+		return () => {
+			pageContainer.removeEventListener('scroll', handleScroll);
+		};
+	}, []);
 
-			setActiveIndex(index);
-			setTocOpen(false);
-		},
-		[]
+	// Memoized content to render based on the current language
+	const contentToRender = useMemo(
+		() => textData[currentLang] || textData['en'] || [],
+		[textData, currentLang]
 	);
 
-	useEffect(() => {
-		const updateFromHash = () => {
-			const index = getIndexFromHash(window.location.hash);
-
-			if (index !== null) {
-				const el = document.getElementById(`pitch-container-${index}`);
-				if (el) el.scrollIntoView({ behavior: 'smooth' });
-
-				setActiveIndex(index);
-			}
-		};
-
-		updateFromHash();
-		window.addEventListener('hashchange', updateFromHash);
-
-		return () => window.removeEventListener('hashchange', updateFromHash);
-	}, []);
-
-	useEffect(() => {
-		const closeToc = (e: MouseEvent) => {
-			if (tocRef.current && !tocRef.current.contains(e.target as Node)) {
-				setTocOpen(false);
-			}
-		};
-
-		if (tocOpen) {
-			document.addEventListener('mousedown', closeToc);
-		}
-
-		return () => document.removeEventListener('mousedown', closeToc);
-	}, [tocOpen]);
-
-	useEffect(() => {
-		const container = document.querySelector('.page-container');
-		const nav = document.querySelector('.startup-action');
-
-		if (!container || !nav) return;
-
-		const onScroll = () => {
-			setNavSticky(nav.getBoundingClientRect().top <= container.getBoundingClientRect().top);
-		};
-
-		container.addEventListener('scroll', onScroll);
-		onScroll();
-
-		return () => container.removeEventListener('scroll', onScroll);
-	}, []);
-
-	const content = textData[lang] || [];
-
-	const slider = sliderData ? (
-		<Slider dataSlider={sliderData} currentLanguage={lang} isActive={activeIndex} />
+	// Define the Slider component as a constant
+	const sliderComponent = sliderData ? (
+		<Slider dataSlider={sliderData} currentLanguage={currentLang} isActive={activeTextIndex} />
 	) : undefined;
 
 	return (
 		<>
-			<PageHelmet metaTags={startupsMetaTags} />
-
-			<div className={`startup-action ${navSticky ? 'is-active' : ''}`}>
+			<div className={`startup-action ${isActive ? 'is-active' : ''}`}>
 				<StartupNavigation />
 			</div>
 
 			<div className={`wrapper wrapper--idea ${pageClassName || ''}`}>
+				<PageHelmet metaTags={startupsMetaTags} />
+
 				<div className='idea-section'>
 					<div className='idea-info'>
-						{content.map((structure, index) => (
+						{contentToRender.map((structure, index) => (
 							<PitchContainer
 								key={index}
 								structure={structure}
 								index={index}
 								useTabletLarge={useTabletLarge}
-								Slider={index === 0 ? slider : undefined}
+								Slider={index === 0 ? sliderComponent : undefined}
 								CopyrightComponent={Copyright}
 								PopupContactsComponent={PopupContacts}
-								isActive={activeIndex === index}
-								onTabClick={handleTocClick}
+								isActive={activeTextIndex === index}
 							/>
 						))}
 					</div>
 
 					<div className='lang-sidebar'>
 						<LanguageSwitcher
-							currentLang={lang}
+							currentLang={currentLang}
 							disabledLangs={disabledLangs}
 							changeLanguage={changeLanguage}
 						/>
 
-						{toc && content.length > 1 && (
-							<div className={`table-content ${tocOpen ? 'is-open' : ''}`} ref={tocRef}>
-								<button className='table-content__btn' onClick={() => setTocOpen(!tocOpen)}>
+						{toc && contentToRender.length > 1 && (
+							<div className={`table-content ${isTocOpen ? 'is-open' : ''}`} ref={tocRef}>
+								<button className='table-content__btn' onClick={toggleToc}>
 									<mark>
-										{Array(6)
-											.fill(null)
-											.map((_, i) => (
-												<span key={i} />
-											))}
+										<span></span>
+										<span></span>
+										<span></span>
+										<span></span>
+										<span></span>
+										<span></span>
 									</mark>
+
 									<span>Table Of Content</span>
 								</button>
 
 								<div className='table-content__list'>
-									{content.map((item, i) => (
-										<a
-											href={`#pitch-container-${i}`}
-											key={i}
-											onClick={(e) => handleTocClick(i, e)}
-											className={activeIndex === i ? 'is-active' : ''}
-										>
-											<mark>{item.pitchNumber}</mark>
-											<mark>{item.pitchTitle}</mark>
-										</a>
-									))}
+									<div className='table-content__inner'>
+										<div className='table-content__wrapper'>
+											<span>Table Of Content</span>
+
+											{contentToRender.map((item, index) => (
+												<button
+													key={index}
+													onClick={() => setActiveTextIndex(index)}
+													className={`${activeTextIndex === index ? 'is-active' : ''}`}
+												>
+													<mark>{item?.pitchNumber}</mark>
+													<mark>{item?.pitchTitle}</mark>
+												</button>
+											))}
+										</div>
+									</div>
 								</div>
 							</div>
 						)}
 
-						<div className='desktop-slider'>{!useTabletLarge && slider}</div>
+						<div className='desktop-slider'>{!useTabletLarge && sliderComponent}</div>
 					</div>
 				</div>
 			</div>

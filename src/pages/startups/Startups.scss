@@ -1,6 +1,6 @@
 @import '../../styles/variables';
 @import '../../styles/animation';
-@import './toc.scss';
+// @import './toc.scss';
 
 @mixin titleFont {
 	font-family: $Raleway;
@@ -854,8 +854,7 @@
 		}
 	}
 
-	button,
-	a {
+	button {
 		&:hover {
 			color: $blue-main;
 		}
@@ -931,8 +930,7 @@
 			height: auto;
 		}
 
-		button,
-		a {
+		button {
 			display: block;
 			width: 100%;
 			text-align: right;

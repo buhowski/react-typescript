@@ -27,4 +27,12 @@
 .tab-content {
 	overflow: hidden;
 	transition: height 0.3s ease;
+
+	@include tabletBig {
+		padding: 0 40px;
+	}
+
+	@include mobile {
+		padding: 0 15px;
+	}
 }

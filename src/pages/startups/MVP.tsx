@@ -9,7 +9,7 @@ const StartupMVP = () => {
 			textData={articlesTextData}
 			sliderData={dataSlider}
 			langDisable=''
-			toc={true}
+			// toc={true}
 		/>
 	);
 };
