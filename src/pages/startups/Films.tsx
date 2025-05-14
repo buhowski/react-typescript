@@ -1,7 +1,7 @@
 import PageStructure from './PageStructure/PageStructure';
 
-import { dataSlider } from './data/films/SliderData';
-import { filmsTextData } from './data/films/textData';
+import { dataSlider } from './pages/films/dataSlider';
+import { filmsTextData } from './pages/films/dataFilmsPreview';
 
 const StartupFilms = () => {
 	return (
@@ -9,7 +9,6 @@ const StartupFilms = () => {
 			pageClassName='startup-ideas'
 			langDisable={['ru']}
 			textData={filmsTextData}
-			// toc={true}
 			sliderData={dataSlider}
 		/>
 	);

@@ -10,6 +10,7 @@ import {
 	pathToProjects,
 	pathToStartupGames,
 	pathToStartupMVP,
+	pathToEuropeanUkrainians,
 } from './components/urlsData';
 import Header from './components/header/Header';
 import Home from './pages/home/Home';
@@ -20,6 +21,9 @@ import StartupFilms from './pages/startups/Films';
 import StartupGames from './pages/startups/Games';
 import StartupMVP from './pages/startups/MVP';
 
+// Films Industry
+import EuropeanUkrainians from './pages/startups/pages/films/EuropeanUkrainians/EuropeanUkrainians';
+
 const routesData = [
 	{ pathTo: '/', pageComponent: <Home /> },
 	{ pathTo: pathToAbout, pageComponent: <About /> },
@@ -28,6 +32,9 @@ const routesData = [
 	{ pathTo: pathToStartupFilms, pageComponent: <StartupFilms /> },
 	{ pathTo: pathToStartupGames, pageComponent: <StartupGames /> },
 	{ pathTo: pathToStartupMVP, pageComponent: <StartupMVP /> },
+
+	// Films Pitch
+	{ pathTo: pathToEuropeanUkrainians, pageComponent: <EuropeanUkrainians /> },
 ];
 
 const App = () => {

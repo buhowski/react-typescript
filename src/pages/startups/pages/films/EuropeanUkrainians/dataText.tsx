@@ -1,5 +1,5 @@
-import { TextLink } from '../../PageStructure/IdeaElements';
-import { lastWordsEn, lastWordsUa, lastWordsRu } from '../lastWords';
+import { TextLink } from '../../../PageStructure/IdeaElements';
+// import { lastWordsEn, lastWordsUa, lastWordsRu } from '../lastWords';
 
 // Film Industry Page text
 export const filmsHeadlineData = [];
@@ -13,22 +13,20 @@ export const filmsTextData = {
 			pitchNumber: pitch01,
 
 			textBlock: [],
-
-			// Last words
-			lastWords: lastWordsRu,
 		},
 	],
 
 	// ############## English ##############
 	en: [
 		{
+			filmsPreviewUrl: ``,
 			pitchNumber: pitch01,
 			pitchTitle: `European Ukrainians`,
 			pitchInfo: [
 				{ key: `Format: `, value: `Sarcastic-ironic sitcom for streaming platforms` },
 				{ key: `Genre: `, value: `Comedy, Drama, Dark Humor` },
-				{ key: `Duration: `, value: `20-40 minutes episode` },
-				{ key: `Audience: `, value: `Teens, Adults` },
+				// { key: `Duration: `, value: `20-40 minutes episode` },
+				// { key: `Audience: `, value: `Teens, Adults` },
 			],
 
 			textBlock: [
@@ -184,8 +182,6 @@ export const filmsTextData = {
 					],
 				},
 			],
-
-			lastWords: lastWordsEn,
 		},
 	],
 
@@ -200,8 +196,8 @@ export const filmsTextData = {
 					value: `Саркастично-іронічний ситком для стрімінгових платформ`,
 				},
 				{ key: `Жанр: `, value: `Комедія, Драма, Чорний гумор` },
-				{ key: `Тривалість: `, value: `20-40 хвилин серія` },
-				{ key: `Аудиторія: `, value: `Підлітки, Дорослі` },
+				// { key: `Тривалість: `, value: `20-40 хвилин серія` },
+				// { key: `Аудиторія: `, value: `Підлітки, Дорослі` },
 			],
 
 			textBlock: [
@@ -346,8 +342,6 @@ export const filmsTextData = {
 					],
 				},
 			],
-
-			lastWords: lastWordsUa,
 		},
 	],
 };

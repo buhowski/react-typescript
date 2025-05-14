@@ -1,4 +1,4 @@
-import { lastWordsEn, lastWordsUa, lastWordsRu } from '../lastWords';
+// import { lastWordsEn, lastWordsUa, lastWordsRu } from '../lastWords';
 
 const pitchTitle = `Another Dimension`;
 // Articles Page text
@@ -30,8 +30,6 @@ export const articlesTextData = {
 					],
 				},
 			],
-
-			lastWords: lastWordsRu,
 		},
 	],
 
@@ -61,8 +59,6 @@ export const articlesTextData = {
 					],
 				},
 			],
-
-			lastWords: lastWordsEn,
 		},
 	],
 
@@ -92,8 +88,6 @@ export const articlesTextData = {
 					],
 				},
 			],
-
-			lastWords: lastWordsUa,
 		},
 	],
 };

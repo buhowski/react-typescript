@@ -1,18 +1,18 @@
 // Video Posters
-import classicSetupPoster from '../../media/films/classicSetupPoster.webp';
-import teaserPoster from '../../media/films/teaserPoster.webp';
-import screamPoster from '../../media/films/screamPoster.webp';
-import broadCityPoster from '../../media/films/broadCityPoster.webp';
-import turboKidsPoster from '../../media/films/turboKidsPoster.webp';
-import fantasyPoster from '../../media/films/fantasyPoster.webp';
+import classicSetupPoster from '../../assets/films/classicSetupPoster.webp';
+import teaserPoster from '../../assets/films/teaserPoster.webp';
+import screamPoster from '../../assets/films/screamPoster.webp';
+import broadCityPoster from '../../assets/films/broadCityPoster.webp';
+import turboKidsPoster from '../../assets/films/turboKidsPoster.webp';
+import fantasyPoster from '../../assets/films/fantasyPoster.webp';
 
 // Videos
-import teaserVideo from '../../media/films/videos/teaserVideo.mp4';
-import teamVideo from '../../media/films/videos/teamVideo.mp4';
-import screamVideo from '../../media/films/videos/screamVideo.mp4';
-import broadCityTrailer from '../../media/films/videos/broadCityTrailer.mp4';
-import newKidsTurboTrailer from '../../media/films/videos/newKidsTurboTrailer.mp4';
-import fantasy from '../../media/films/videos/fantasy.mp4';
+import teaserVideo from '../../assets/films/videos/teaserVideo.mp4';
+import teamVideo from '../../assets/films/videos/teamVideo.mp4';
+import screamVideo from '../../assets/films/videos/screamVideo.mp4';
+import broadCityTrailer from '../../assets/films/videos/broadCityTrailer.mp4';
+import newKidsTurboTrailer from '../../assets/films/videos/newKidsTurboTrailer.mp4';
+import fantasy from '../../assets/films/videos/fantasy.mp4';
 
 export const dataSlider = {
 	en: [
@@ -43,6 +43,16 @@ export const dataSlider = {
 					itemSrc: newKidsTurboTrailer,
 					itemAlt: `Sample 05. From "New Kids Turbo" – trailer.`,
 				},
+				{
+					itemPoster: fantasyPoster,
+					itemSrc: fantasy,
+					itemAlt: `Sample 06. From "The Secret Life of Walter Mitty".`,
+				},
+			],
+		},
+
+		{
+			sliderContent: [
 				{
 					itemPoster: fantasyPoster,
 					itemSrc: fantasy,

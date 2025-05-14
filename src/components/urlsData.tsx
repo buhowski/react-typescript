@@ -17,3 +17,6 @@ export const pathToStartupGames = '/games';
 export const pathToStartupMVP = '/mvp';
 export const pathToAbout = '/about';
 export const pathToProjects = '/projects';
+
+// Films Industry
+export const pathToEuropeanUkrainians = '/european-ukrainians';

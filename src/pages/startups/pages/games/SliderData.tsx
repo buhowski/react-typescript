@@ -1,18 +1,18 @@
 // Video Posters
-import witcherPoster from '../../media/games/witcherPoster.webp';
-import samuraiPoster from '../../media/games/samuraiPoster.webp';
+import witcherPoster from '../../assets/games/witcherPoster.webp';
+import samuraiPoster from '../../assets/games/samuraiPoster.webp';
 
 // Videos
-import ghostOfTsushimaTrailer from '../../media/games/videos/ghostOfTsushimaTrailer.mp4';
-import witcherTrailer from '../../media/games/videos/witcherTrailer.mp4';
+import ghostOfTsushimaTrailer from '../../assets/games/videos/ghostOfTsushimaTrailer.mp4';
+import witcherTrailer from '../../assets/games/videos/witcherTrailer.mp4';
 
 // Images
-import cossacksPoster from '../../media/games/cossacksPoster.webp';
-import cossackWarrior from '../../media/games/cossackWarrior.webp';
-import cossackDrummer from '../../media/games/cossackDrummer.webp';
-import cossacksEquipment from '../../media/games/cossacksEquipment.webp';
-import combatHopak from '../../media/games/combatHopak.webp';
-import cossackCharakternyk from '../../media/games/cossackCharakternyk.webp';
+import cossacksPoster from '../../assets/games/cossacksPoster.webp';
+import cossackWarrior from '../../assets/games/cossackWarrior.webp';
+import cossackDrummer from '../../assets/games/cossackDrummer.webp';
+import cossacksEquipment from '../../assets/games/cossacksEquipment.webp';
+import combatHopak from '../../assets/games/combatHopak.webp';
+import cossackCharakternyk from '../../assets/games/cossackCharakternyk.webp';
 
 export const dataSlider = {
 	en: [

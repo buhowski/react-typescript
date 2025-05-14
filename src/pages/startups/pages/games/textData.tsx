@@ -1,5 +1,5 @@
 import { TextLink } from '../../PageStructure/IdeaElements';
-import { lastWordsRu, lastWordsEn, lastWordsUa } from '../lastWords';
+// import { lastWordsRu, lastWordsEn, lastWordsUa } from '../lastWords';
 
 const pitch01 = 'Pitch 01. Video Game';
 
@@ -11,8 +11,6 @@ export const gamesTextData = {
 			pitchNumber: pitch01,
 
 			textBlock: [],
-
-			lastWords: lastWordsRu,
 		},
 	],
 	// ############## English ##############
@@ -130,8 +128,6 @@ export const gamesTextData = {
 					],
 				},
 			],
-
-			lastWords: lastWordsEn,
 		},
 	],
 
@@ -252,8 +248,6 @@ export const gamesTextData = {
 					],
 				},
 			],
-
-			lastWords: lastWordsUa,
 		},
 	],
 };

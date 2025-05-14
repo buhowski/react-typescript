@@ -1,5 +1,5 @@
 import { TextLink } from '../../PageStructure/IdeaElements';
-import { lastWordsRu, lastWordsEn, lastWordsUa } from '../lastWords';
+// import { lastWordsRu, lastWordsEn, lastWordsUa } from '../lastWords';
 import {
 	pathToStartupMVP,
 	pathToStartupFilms,
@@ -170,8 +170,6 @@ export const startupTextData = {
 					text: `В целом моя перспектива сфокусирована на развитие масштаба. Для создания отделенного от государства места со своей независимой экосистемой. С коллаборацией разных сфер деятельности, от инновационных технологий до креативного мышления. И если собрать все лучшее в одном месте, и организовать профессиональный коллектив критически мыслящих идейников и энтузиастов, то скачок эволюционного прогресса произойдет сам собой. Потому что не существует ничего невозможного, только неправильный подход!`,
 				},
 			],
-
-			lastWords: lastWordsRu,
 		},
 	],
 
@@ -332,8 +330,6 @@ export const startupTextData = {
 					text: `Overall, my perspective is focused on the development of scale. To create a state-independent place with its independent ecosystem. With collaboration of various fields, from innovative technologies to creative minds. And if we gather all the best in one place and organize a professional team of critical thinkers and enthusiasts, evolutionary progress will happen naturally. Because nothing is impossible, only the wrong approach!`,
 				},
 			],
-
-			lastWords: lastWordsEn,
 		},
 	],
 	// ############## UKRAINE ##############
@@ -493,8 +489,6 @@ export const startupTextData = {
 					text: `В цілому моя перспектива сфокусована на розвиток масштабу. Для створення відокремленого від держави місця зі своєю незалежною екосистемою. З колаборацією різних сфер діяльності, від інноваційних технологій до креативного мислення. І якщо зібрати все найкраще в одному місці, та організувати професійний колектив критично мислячих ідейників та ентузіастів, то стрибок еволюційного прогресу відбудеться сам собою. Бо не існує нічого неможливого, лише неправильний підхід!`,
 				},
 			],
-
-			lastWords: lastWordsUa,
 		},
 	],
 };

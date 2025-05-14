@@ -23,6 +23,7 @@ interface TextDataItem {
 	pitchTitle?: string;
 	textBlock: Block[];
 	lastWords?: string;
+	filmsPreviewUrl?: string;
 }
 
 interface PageProps {
@@ -38,7 +39,6 @@ interface PageProps {
 	};
 	pageClassName?: string;
 	langDisable?: string | string[];
-	toc?: boolean;
 }
 
 const PageStructure: React.FC<PageProps> = ({
@@ -46,37 +46,12 @@ const PageStructure: React.FC<PageProps> = ({
 	sliderData,
 	pageClassName,
 	langDisable,
-	toc,
 }) => {
 	const useTabletLarge = useTabletLargeQuery();
 	const [currentLang, setCurrentLang] = useState<'en' | 'ua' | 'ru'>('en');
 	const [isActive, setIsActive] = useState(false);
-	const [activeTextIndex, setActiveTextIndex] = useState(0);
-	const [isTocOpen, setIsTocOpen] = useState(false);
-	const tocRef = useRef<HTMLDivElement>(null);
-
-	// Function to toggle the visibility of the table of contents
-	const toggleToc = () => {
-		setIsTocOpen(!isTocOpen);
-	};
-
-	useEffect(() => {
-		const handleClickOutside = (event: MouseEvent) => {
-			if (tocRef.current && !tocRef.current.contains(event.target as Node)) {
-				setIsTocOpen(false);
-			}
-		};
-
-		if (isTocOpen) {
-			document.addEventListener('mousedown', handleClickOutside);
-		} else {
-			document.removeEventListener('mousedown', handleClickOutside);
-		}
-
-		return () => {
-			document.removeEventListener('mousedown', handleClickOutside);
-		};
-	}, [isTocOpen]);
+	const [activePitchIndex, setActivePitchIndex] = useState<number>(0);
+	const pitchRefs = useRef<(HTMLDivElement | null)[]>([]);
 
 	// Memoized list of disabled languages
 	const disabledLangs = useMemo(
@@ -114,22 +89,65 @@ const PageStructure: React.FC<PageProps> = ({
 			);
 		};
 
-		pageContainer.addEventListener('scroll', handleScroll);
+		pageContainer.addEventListener('scroll', handleScroll, { passive: true });
 		return () => {
 			pageContainer.removeEventListener('scroll', handleScroll);
 		};
 	}, []);
 
 	// Memoized content to render based on the current language
-	const contentToRender = useMemo(
+	const contentToRender: TextDataItem[] = useMemo(
 		() => textData[currentLang] || textData['en'] || [],
 		[textData, currentLang]
 	);
 
-	// Define the Slider component as a constant
-	const sliderComponent = sliderData ? (
-		<Slider dataSlider={sliderData} currentLanguage={currentLang} isActive={activeTextIndex} />
-	) : undefined;
+	useEffect(() => {
+		if (useTabletLarge || pitchRefs.current.length === 0) return;
+
+		const observer = new IntersectionObserver(
+			(entries) => {
+				entries.forEach((entry) => {
+					const index = pitchRefs.current.findIndex((ref) => ref === entry.target);
+					if (index === -1) return;
+
+					const rootBounds = entry.rootBounds;
+					const boundingClientRect = entry.boundingClientRect;
+
+					if (!rootBounds) return;
+
+					if (entry.isIntersecting) {
+						setActivePitchIndex(index);
+					} else {
+						if (boundingClientRect.bottom <= rootBounds.top + 150) {
+							if (index > 0) {
+								setActivePitchIndex(index - 1);
+							}
+						}
+					}
+				});
+			},
+			{
+				root: document.querySelector('.page-container'),
+				rootMargin: '-150px 0px -99999px 0px',
+				threshold: 0,
+			}
+		);
+
+		pitchRefs.current.forEach((ref) => {
+			if (ref) {
+				observer.observe(ref);
+			}
+		});
+
+		return () => {
+			observer.disconnect();
+		};
+	}, [useTabletLarge, contentToRender]);
+
+	useEffect(() => {
+		pitchRefs.current = [];
+		setActivePitchIndex(0);
+	}, [contentToRender]);
 
 	return (
 		<>
@@ -142,18 +160,29 @@ const PageStructure: React.FC<PageProps> = ({
 
 				<div className='idea-section'>
 					<div className='idea-info'>
-						{contentToRender.map((structure, index) => (
-							<PitchContainer
-								key={index}
-								structure={structure}
-								index={index}
-								useTabletLarge={useTabletLarge}
-								Slider={index === 0 ? sliderComponent : undefined}
-								CopyrightComponent={Copyright}
-								PopupContactsComponent={PopupContacts}
-								isActive={activeTextIndex === index}
-							/>
-						))}
+						{contentToRender.map((structure: TextDataItem, index: number) => {
+							const conditionalSlider =
+								structure.filmsPreviewUrl && useTabletLarge && sliderData ? (
+									<Slider dataSlider={sliderData} currentLanguage={currentLang} isActive={index} />
+								) : undefined;
+
+							return (
+								<PitchContainer
+									key={index}
+									structure={structure}
+									index={index}
+									useTabletLarge={useTabletLarge}
+									slider={conditionalSlider}
+									ref={(element: HTMLDivElement | null) => {
+										pitchRefs.current[index] = element;
+									}}
+								/>
+							);
+						})}
+
+						{useTabletLarge && <Copyright />}
+
+						<div className='copy-tablet'>{useTabletLarge && <PopupContacts />}</div>
 					</div>
 
 					<div className='lang-sidebar'>
@@ -163,7 +192,8 @@ const PageStructure: React.FC<PageProps> = ({
 							changeLanguage={changeLanguage}
 						/>
 
-						{toc && contentToRender.length > 1 && (
+						{/* Table Of Content */}
+						{/* {contentToRender.length > 1 && (
 							<div className={`table-content ${isTocOpen ? 'is-open' : ''}`} ref={tocRef}>
 								<button className='table-content__btn' onClick={toggleToc}>
 									<mark>
@@ -197,9 +227,17 @@ const PageStructure: React.FC<PageProps> = ({
 									</div>
 								</div>
 							</div>
-						)}
+						)} */}
 
-						<div className='desktop-slider'>{!useTabletLarge && sliderComponent}</div>
+						<div className='desktop-slider'>
+							{!useTabletLarge && sliderData && (
+								<Slider
+									dataSlider={sliderData}
+									currentLanguage={currentLang}
+									isActive={activePitchIndex}
+								/>
+							)}
+						</div>
 					</div>
 				</div>
 			</div>

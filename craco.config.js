@@ -16,7 +16,7 @@ module.exports = {
 				test: /\.(jpg|png|gif|webp|mp4)$/,
 				type: 'asset/resource',
 				generator: {
-					filename: 'static/media/[name][ext]',
+					filename: 'static/assets/[name][ext]',
 				},
 			});
 

@@ -1,5 +1,5 @@
 // Images
-import creatio from '../../media/creatio.jpg';
+import creatio from '../../assets/creatio.jpg';
 
 export const dataSlider = {
 	en: [

@@ -4,6 +4,8 @@ export interface ListProps {
 }
 
 export interface Block {
+	filmsPreviewUrl?: string;
+
 	// Pitch Text block
 	pitchNumber?: string;
 	pitchTitle?: string;

@@ -106,6 +106,38 @@ $starYellow: #dfb842;
 	}
 }
 
+// Nav Link
+@mixin navLink {
+	position: relative;
+	z-index: 1;
+	white-space: nowrap;
+	font-family: $LouisGeorgeCafBold;
+	padding: 12px 14px 12px 19px;
+	text-align: center;
+	letter-spacing: 4px;
+
+	&:after {
+		content: '';
+		position: absolute;
+		display: block;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		height: 2px;
+		background-color: $blue-main;
+		z-index: -1;
+		transition: height 0.3s ease, transform 0.3s ease;
+		box-shadow: inset 23px 23px 46px #004d96, inset -23px -23px 46px #006bd0;
+	}
+
+	&.active,
+	&:hover {
+		&:after {
+			height: 100%;
+		}
+	}
+}
+
 @mixin heightTopMax {
 	@media screen and (min-width: 769px) and (max-height: 860px) {
 		@content;

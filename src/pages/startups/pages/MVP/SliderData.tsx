@@ -1,5 +1,5 @@
 // Images
-import writer from '../../media/writer.webp';
+import writer from '../../assets/writer.webp';
 
 export const dataSlider = {
 	en: [
