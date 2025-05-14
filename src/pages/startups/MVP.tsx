@@ -6,9 +6,10 @@ const StartupMVP = () => {
 	return (
 		<IdeaContent
 			pageClassName='startup-mvp'
-			langDisable=''
 			textData={articlesTextData}
 			sliderData={dataSlider}
+			langDisable=''
+			toc={true}
 		/>
 	);
 };

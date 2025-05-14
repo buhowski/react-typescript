@@ -2,7 +2,7 @@ import ReactDOM from 'react-dom/client';
 import { HelmetProvider } from 'react-helmet-async';
 import { BrowserRouter } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import './styles/App.scss';
+
 import App from './App';
 import Preloader from './pages/Preloader';
 

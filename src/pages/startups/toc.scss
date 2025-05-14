@@ -1,0 +1,30 @@
+.slider-wrapper {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	opacity: 0;
+	visibility: hidden;
+	transition: 0.3s ease;
+
+	&.is-active {
+		position: static;
+		opacity: 1;
+		visibility: visible;
+	}
+}
+
+.pitch-container {
+	+ .pitch-container {
+		margin-top: 70px;
+	}
+}
+
+.tab-btn {
+	cursor: pointer;
+}
+
+.tab-content {
+	overflow: hidden;
+	transition: height 0.3s ease;
+}
