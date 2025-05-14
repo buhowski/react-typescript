@@ -832,7 +832,7 @@
 .idea-block__more {
 	@extend .idea-tabs__btn;
 	@include navLink;
-	// margin-top: 10px;
+	padding: 12px 30px 12px 36px;
 
 	@include tabletBig {
 		// margin-bottom: 50px;

@@ -136,7 +136,9 @@ const Slider: React.FC<SliderProps> = ({ dataSlider, currentLanguage, isActive }
 
 					return (
 						<div
-							className={`slider-wrapper ${groupData.sliderContent.length > 1 ? '' : 'disabled'}`}
+							className={`slider-wrapper ${groupData.sliderContent.length > 1 ? '' : 'disabled'} ${
+								isActive === indexInRenderedArray ? 'is-active' : ''
+							}`}
 							key={`slider-${actualGroupIndex}`}
 						>
 							<div className='idea-slider slider-js'>

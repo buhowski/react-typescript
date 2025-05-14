@@ -118,7 +118,7 @@ const PageStructure: React.FC<PageProps> = ({
 					if (entry.isIntersecting) {
 						setActivePitchIndex(index);
 					} else {
-						if (boundingClientRect.bottom <= rootBounds.top + 150) {
+						if (boundingClientRect.bottom <= rootBounds.top + 145) {
 							if (index > 0) {
 								setActivePitchIndex(index - 1);
 							}
@@ -128,7 +128,7 @@ const PageStructure: React.FC<PageProps> = ({
 			},
 			{
 				root: document.querySelector('.page-container'),
-				rootMargin: '-150px 0px -99999px 0px',
+				rootMargin: '-145px 0px -99999px 0px',
 				threshold: 0,
 			}
 		);
