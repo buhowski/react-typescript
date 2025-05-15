@@ -1,4 +1,4 @@
-import { TextLink } from '../../PageStructure/IdeaElements';
+import { TextLink } from '../../PageStructure/ElementsStructure';
 
 import {
 	pathToStartupMVP,

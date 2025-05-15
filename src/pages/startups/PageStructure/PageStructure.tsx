@@ -24,7 +24,6 @@ interface TextDataItem {
 	pitchTitle?: string;
 	pitchInfo?: { key: string; value: string }[];
 	textBlock?: Block[] | null;
-	lastWords?: string;
 	filmsPreviewUrl?: string | undefined;
 }
 

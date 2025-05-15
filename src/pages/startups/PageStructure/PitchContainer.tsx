@@ -1,6 +1,6 @@
 import { forwardRef } from 'react';
 import { Block } from '../data/textTypes';
-import { Title, PitchInfo, Text, ListTitle, List, LastWords } from './IdeaElements';
+import { Title, PitchInfo, Text, ListTitle, List } from './ElementsStructure';
 import { NavLink } from 'react-router-dom';
 
 interface PitchContainerProps {
@@ -9,7 +9,6 @@ interface PitchContainerProps {
 		pitchTitle?: string;
 		pitchInfo?: { key: string; value: string }[];
 		textBlock?: Block[] | null;
-		lastWords?: string;
 		filmsPreviewUrl?: string;
 	};
 
@@ -33,18 +32,14 @@ const PitchContainer = forwardRef<HTMLDivElement, PitchContainerProps>(
 
 				{structure.pitchInfo && <PitchInfo pitchInfo={structure.pitchInfo} />}
 
-				{/* Condition 1: Render slider if filmsPreviewUrl exists */}
 				{useTabletLarge && structure.filmsPreviewUrl && slider}
-
 				{useTabletLarge && !structure.filmsPreviewUrl && !hasTextBlockContent && slider}
 
-				{/* Map over textBlock only if it exists and is an array */}
 				{structure.textBlock?.map((block, blockIndex) => (
 					<div className='idea-block' key={blockIndex}>
 						{block.title && <Title titleClassname='idea-block__title' title={block.title} />}
 						{block.text && <Text text={block.text} />}
 
-						{/* Condition 2: Render slider if filmsPreviewUrl does NOT exist */}
 						{useTabletLarge && !structure.filmsPreviewUrl && blockIndex === 0 && slider}
 
 						{block.listBlock &&
@@ -65,8 +60,6 @@ const PitchContainer = forwardRef<HTMLDivElement, PitchContainerProps>(
 						</NavLink>
 					</div>
 				)}
-
-				{structure.lastWords && <LastWords lastWords={structure.lastWords} />}
 			</div>
 		);
 	}
