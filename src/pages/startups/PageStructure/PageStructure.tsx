@@ -102,48 +102,35 @@ const PageStructure: React.FC<PageProps> = ({ textData, sliderData }) => {
 		[textData, currentLang]
 	);
 
-	// Effect to set up the IntersectionObserver for pitch containers
 	useEffect(() => {
-		// Only set up the observer on desktop and if there are pitch containers
 		if (useTabletLarge || pitchRefs.current.length === 0) return;
 
-		const observer = new IntersectionObserver(
-			(entries) => {
-				entries.forEach((entry) => {
-					const index = pitchRefs.current.findIndex((ref) => ref === entry.target);
-					if (index === -1) return;
+		const container = document.querySelector('.page-container');
+		if (!container) return;
 
-					const rootBounds = entry.rootBounds;
-					const boundingClientRect = entry.boundingClientRect;
+		const triggerOffset = 140;
 
-					if (!rootBounds) return;
+		const handleScroll = () => {
+			const containerTop = container.getBoundingClientRect().top;
 
-					if (entry.isIntersecting) {
-						setActivePitchIndex(index);
-					} else {
-						if (boundingClientRect.bottom <= rootBounds.top + 150) {
-							if (index > 0) {
-								setActivePitchIndex(index - 1);
-							}
-						}
-					}
-				});
-			},
-			{
-				root: document.querySelector('.page-container'),
-				rootMargin: '-150px 0px -99999px 0px',
-				threshold: 0,
+			for (let i = 0; i < pitchRefs.current.length; i++) {
+				const ref = pitchRefs.current[i];
+				if (!ref) continue;
+
+				const rect = ref.getBoundingClientRect();
+				const topRelativeToContainer = rect.top - containerTop;
+
+				if (topRelativeToContainer <= triggerOffset) {
+					setActivePitchIndex(i);
+				}
 			}
-		);
+		};
 
-		pitchRefs.current.forEach((ref) => {
-			if (ref) {
-				observer.observe(ref);
-			}
-		});
+		container.addEventListener('scroll', handleScroll, { passive: true });
+		handleScroll(); // initial run
 
 		return () => {
-			observer.disconnect();
+			container.removeEventListener('scroll', handleScroll);
 		};
 	}, [useTabletLarge, contentToRender]);
 
@@ -164,10 +151,7 @@ const PageStructure: React.FC<PageProps> = ({ textData, sliderData }) => {
 				<div className='idea-section'>
 					<div className='idea-info'>
 						{contentToRender.map((structure: TextDataItem, index: number) => {
-							// Get the corresponding item from the English data as a fallback source for filmsPreviewUrl
 							const englishStructure = textData.en?.[index];
-
-							// Determine the filmsPreviewUrl: prioritize current language, fallback to English
 							const filmsPreviewUrl =
 								structure.filmsPreviewUrl || englishStructure?.filmsPreviewUrl;
 

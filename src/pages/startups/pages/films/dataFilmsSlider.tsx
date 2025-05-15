@@ -1,6 +1,6 @@
 import { dataSliderEU } from './EuropeanUkrainians/dataSliderEU';
 // import { dataSliderTheCorp } from './TheCorp/dataSliderTheCorp';
 
-export const dataSliderPreview = {
+export const dataFilmsSlider = {
 	en: [{ sliderContent: dataSliderEU }, { sliderContent: [] }],
 };

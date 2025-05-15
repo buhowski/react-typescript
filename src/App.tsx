@@ -12,11 +12,14 @@ import {
 	pathToStartupMVP,
 	pathToEuropeanUkrainians,
 	pathToTheCorp,
+	pathToCossacksRPG,
 } from './components/urlsData';
 import Header from './components/header/Header';
 import Home from './pages/home/Home';
 import About from './pages/about/About';
 import Projects from './pages/projects/Projects';
+
+// Startup Pages
 import Startup from './pages/startups/Startup';
 import StartupFilms from './pages/startups/Films';
 import StartupGames from './pages/startups/Games';
@@ -26,18 +29,26 @@ import StartupMVP from './pages/startups/MVP';
 import EuropeanUkrainians from './pages/startups/pages/films/EuropeanUkrainians/EuropeanUkrainians';
 import TheCorp from './pages/startups/pages/films/TheCorp/TheCorp';
 
+// Games Industry
+import CossacksRPG from './pages/startups/pages/games/CossacksRPG/CossacksRPG';
+
 const routesData = [
 	{ pathTo: '/', pageComponent: <Home /> },
 	{ pathTo: pathToAbout, pageComponent: <About /> },
 	{ pathTo: pathToProjects, pageComponent: <Projects /> },
+
+	// Startups
 	{ pathTo: pathToStartup, pageComponent: <Startup /> },
 	{ pathTo: pathToStartupFilms, pageComponent: <StartupFilms /> },
 	{ pathTo: pathToStartupGames, pageComponent: <StartupGames /> },
 	{ pathTo: pathToStartupMVP, pageComponent: <StartupMVP /> },
 
-	// Films Pitch
+	// Films Industry
 	{ pathTo: pathToEuropeanUkrainians, pageComponent: <EuropeanUkrainians /> },
 	{ pathTo: pathToTheCorp, pageComponent: <TheCorp /> },
+
+	// Games Industry
+	{ pathTo: pathToCossacksRPG, pageComponent: <CossacksRPG /> },
 ];
 
 const App = () => {

@@ -274,7 +274,7 @@
 		@include tabletBig {
 			width: 100%;
 			flex-grow: 1;
-			padding: 9px 20px;
+			padding: 7px 20px;
 		}
 
 		&.active {
@@ -843,7 +843,7 @@
 .idea-block__more {
 	@include navLink;
 	background-color: #000000;
-	background: linear-gradient(145deg, $black, $darker);
+	background: linear-gradient(160deg, $black, $darker);
 	text-transform: uppercase;
 	padding: 13px 38px 12px 42px;
 	border-radius: 10px;

@@ -19,9 +19,9 @@ import {
 	pitch02FormatEN,
 	pitch02LoglineTitleEN,
 	pitch02LoglineTextEN,
-} from './dataReusableText';
+} from './dataFilmsReuse';
 
-export const dataFilmsTextPreview = {
+export const dataFilmsText = {
 	// English
 	en: [
 		// ###### 01 - European Ukrainians ######

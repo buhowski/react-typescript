@@ -1,4 +1,4 @@
-export const comingSoon = 'Coming soon...';
+export const comingSoon = 'Coming soon ...';
 
 // ###### European Ukrainians ######
 // English

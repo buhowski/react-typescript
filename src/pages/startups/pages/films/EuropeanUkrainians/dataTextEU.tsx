@@ -12,7 +12,7 @@ import {
 	pitch01GenreUA,
 	pitch01LoglineTitleUA,
 	pitch01LoglineTextUA,
-} from '../dataReusableText';
+} from '../dataFilmsReuse';
 
 export const dataTextEU = {
 	// English

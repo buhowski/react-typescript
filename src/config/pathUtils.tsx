@@ -3,6 +3,8 @@ import {
 	pathToStartupGames,
 	pathToStartupMVP,
 	pathToEuropeanUkrainians,
+	pathToTheCorp,
+	pathToCossacksRPG,
 } from '../components/urlsData';
 
 import { startupsNav } from '../pages/startups/data/startupsNav';
@@ -14,7 +16,8 @@ export const isPathActive = (paths: string[], currentPath: string) =>
 export const startupPaths: string[] = [
 	...startupsNav.map(({ pageLink }) => pageLink),
 	pathToEuropeanUkrainians,
-	// add more if needed
+	pathToTheCorp,
+	pathToCossacksRPG,
 ];
 
 //  Used to mark tab as active inside the startup sub-navigation

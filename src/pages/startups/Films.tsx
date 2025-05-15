@@ -1,9 +1,9 @@
 import PageStructure from './PageStructure/PageStructure';
-import { dataSliderPreview } from './pages/films/dataSliderPreview';
-import { dataFilmsTextPreview } from './pages/films/dataFilmsTextPreview';
+import { dataFilmsSlider } from './pages/films/dataFilmsSlider';
+import { dataFilmsText } from './pages/films/dataFilmsText';
 
 const StartupFilms = () => {
-	return <PageStructure textData={dataFilmsTextPreview} sliderData={dataSliderPreview} />;
+	return <PageStructure textData={dataFilmsText} sliderData={dataFilmsSlider} />;
 };
 
 export default StartupFilms;
