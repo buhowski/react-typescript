@@ -2,13 +2,13 @@ import React from 'react';
 
 interface LanguageSwitcherProps {
 	currentLang: 'en' | 'ua' | 'ru';
-	disabledLangs: string[];
+	availableLangs: ('en' | 'ua' | 'ru')[];
 	changeLanguage: (lang: 'en' | 'ua' | 'ru') => void;
 }
 
 const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
 	currentLang,
-	disabledLangs,
+	availableLangs,
 	changeLanguage,
 }) => {
 	return (
@@ -18,7 +18,7 @@ const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
 					key={lang}
 					onClick={() => changeLanguage(lang)}
 					className={`idea-tabs__btn lang-btn ${currentLang === lang ? 'active' : ''}`}
-					disabled={disabledLangs.includes(lang)}
+					disabled={!availableLangs.includes(lang)}
 				>
 					{lang.toUpperCase()}
 				</button>

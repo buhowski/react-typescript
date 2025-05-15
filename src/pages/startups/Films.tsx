@@ -1,17 +1,9 @@
 import PageStructure from './PageStructure/PageStructure';
-
-import { dataSlider } from './pages/films/dataSlider';
-import { filmsTextData } from './pages/films/dataFilmsPreview';
+import { dataSliderPreview } from './pages/films/dataSliderPreview';
+import { dataFilmsTextPreview } from './pages/films/dataFilmsTextPreview';
 
 const StartupFilms = () => {
-	return (
-		<PageStructure
-			pageClassName='startup-ideas'
-			langDisable={['ru']}
-			textData={filmsTextData}
-			sliderData={dataSlider}
-		/>
-	);
+	return <PageStructure textData={dataFilmsTextPreview} sliderData={dataSliderPreview} />;
 };
 
 export default StartupFilms;

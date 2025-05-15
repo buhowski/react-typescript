@@ -81,12 +81,11 @@
 		max-width: 777px;
 		width: calc(100% - 80px);
 		margin: 0 auto;
-		padding-top: 0;
-		padding-bottom: 40px;
+		padding: 0 0 40px;
 	}
 
 	@include mobile {
-		padding: 0 15px 60px;
+		padding-bottom: 60px;
 		width: 100%;
 		border-radius: 0;
 		box-shadow: 0 -3px 15px rgba($color: $darkest, $alpha: 1);
@@ -523,6 +522,12 @@
 	}
 }
 
+.slider-wrapper__empty {
+	justify-content: center;
+	align-items: center;
+	text-transform: uppercase;
+}
+
 .slider-js {
 	width: 100%;
 	display: flex;
@@ -631,7 +636,7 @@
 		background-color: rgba($color: $black, $alpha: 0.7);
 		transition: 0.4s ease-out;
 
-		@include tablet {
+		@include tabletBig {
 			width: 90px;
 			height: 90px;
 		}
@@ -650,7 +655,7 @@
 		transition: 0.4s ease-out;
 		font-size: 14px;
 
-		@include tablet {
+		@include tabletBig {
 			padding: 15px;
 			box-shadow: inset 0 -130px 70px rgba($color: $black, $alpha: 0.8);
 		}
@@ -826,23 +831,37 @@
 }
 
 .idea-block__action {
-	text-align: right;
-}
-
-.idea-block__more {
-	@extend .idea-tabs__btn;
-	@include navLink;
-	padding: 12px 30px 12px 36px;
+	display: flex;
+	justify-content: flex-end;
 
 	@include tabletBig {
-		// margin-bottom: 50px;
+		justify-content: center;
+		margin-top: 40px;
 	}
 }
 
+.idea-block__more {
+	@include navLink;
+	background-color: #000000;
+	background: linear-gradient(145deg, $black, $darker);
+	text-transform: uppercase;
+	padding: 13px 38px 12px 42px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba($color: $black, $alpha: 0.4);
+}
+
 .pitch-container {
+	@include tabletBig {
+		padding: 0 40px;
+	}
+
+	@include mobile {
+		padding: 0 15px;
+	}
+
 	+ .pitch-container {
-		margin-top: 40px;
-		padding-top: 40px;
-		border-top: 1px solid rgba($titlePink, 0.2);
+		margin-top: 45px;
+		padding-top: 48px;
+		border-top: 1px solid rgba($titlePink, 0.16);
 	}
 }

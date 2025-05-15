@@ -66,6 +66,7 @@
 
 .nav-item {
 	margin-right: 70px;
+	display: flex;
 
 	@include tablet {
 		text-align: center;

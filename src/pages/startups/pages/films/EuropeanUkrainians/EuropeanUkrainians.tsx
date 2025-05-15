@@ -1,17 +1,9 @@
 import PageStructure from '../../../PageStructure/PageStructure';
-
-import { dataSlider } from '../dataSlider';
-import { filmsTextData } from './dataText';
+import { sliderEU } from './dataSliderEU';
+import { dataTextEU } from './dataTextEU';
 
 const EuropeanUkrainians = () => {
-	return (
-		<PageStructure
-			pageClassName='startup-ideas'
-			langDisable={['ru']}
-			textData={filmsTextData}
-			sliderData={dataSlider}
-		/>
-	);
+	return <PageStructure textData={dataTextEU} sliderData={sliderEU} />;
 };
 
 export default EuropeanUkrainians;

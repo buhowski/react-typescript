@@ -39,6 +39,7 @@ const Slider: React.FC<SliderProps> = ({ dataSlider, currentLanguage, isActive }
 		return dataSlider?.[displayedLanguage] || [];
 	}, [dataSlider, displayedLanguage]);
 
+	// Determines which groups are included in the render output.
 	const groupsToRender = useMemo(() => {
 		if (!currentLanguageGroups || currentLanguageGroups.length === 0) {
 			return [];
@@ -130,16 +131,24 @@ const Slider: React.FC<SliderProps> = ({ dataSlider, currentLanguage, isActive }
 				{groupsToRender.map((group, indexInRenderedArray) => {
 					const actualGroupIndex = typeof isActive === 'number' ? isActive : indexInRenderedArray;
 
-					if (!currentLanguageGroups[actualGroupIndex]) return null;
+					// Render the specific fallback structure if group data is missing or empty
+					if (
+						!currentLanguageGroups[actualGroupIndex] ||
+						currentLanguageGroups[actualGroupIndex].sliderContent.length === 0
+					)
+						return (
+							<div className='slider-wrapper disabled' key={`fallback-${actualGroupIndex}`}>
+								<div className='slider-wrapper__empty slider-js'>No Examples Yet</div>
+								<div className={`slider-actions `}>{!useTabletLarge && <Copyright />}</div>
+							</div>
+						);
 
 					const groupData = currentLanguageGroups[actualGroupIndex];
 
 					return (
 						<div
-							className={`slider-wrapper ${groupData.sliderContent.length > 1 ? '' : 'disabled'} ${
-								isActive === indexInRenderedArray ? 'is-active' : ''
-							}`}
-							key={`slider-${actualGroupIndex}`}
+							className={`slider-wrapper ${groupData.sliderContent.length > 1 ? '' : 'disabled'}`}
+							key={actualGroupIndex}
 						>
 							<div className='idea-slider slider-js'>
 								{groupData.sliderContent.map(

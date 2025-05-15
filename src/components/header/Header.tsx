@@ -1,10 +1,12 @@
 import React from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import { pathToStartup, pathToAbout, pathToProjects } from '../urlsData';
-import { startupsNav } from '../../pages/startups/data/startupsNav';
 import { useTabletQuery } from '../../hooks/useMediaQuery';
 import Socials from '../socials/Socials';
 import socialData from '../socials/socialData';
+
+// Reusable path matching function
+import { isPathActive, startupPaths } from '../../config/pathUtils';
 
 import './Header.scss';
 
@@ -13,11 +15,7 @@ const Header = () => {
 	const [menuOpen, setMenuOpen] = React.useState(false);
 
 	const { pathname } = useLocation();
-
-	// Check if the current pathname matches the pageLink with or without the trailing slash
-	const isActive = startupsNav.some(
-		(url) => url.pageLink === pathname || `${url.pageLink}/` === pathname
-	);
+	const isActive = isPathActive(startupPaths, pathname);
 
 	const linksData = [
 		{

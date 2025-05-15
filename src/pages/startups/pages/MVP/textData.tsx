@@ -1,7 +1,5 @@
-// import { lastWordsEn, lastWordsUa, lastWordsRu } from '../lastWords';
-
 const pitchTitle = `Another Dimension`;
-// Articles Page text
+
 export const articlesTextData = {
 	// ############## rusian ##############
 	ru: [

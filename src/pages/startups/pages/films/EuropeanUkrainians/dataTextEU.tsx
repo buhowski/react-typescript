@@ -1,39 +1,36 @@
 import { TextLink } from '../../../PageStructure/IdeaElements';
-// import { lastWordsEn, lastWordsUa, lastWordsRu } from '../lastWords';
 
-// Film Industry Page text
-export const filmsHeadlineData = [];
-const pitch01 = 'Pitch 01. TV Series';
-// const pitch02 = 'Pitch 02.';
+// Reusable Text Data
+import {
+	pitch01TitleEN,
+	pitch01FormatEN,
+	pitch01GenreEN,
+	pitch01LoglineTitleEN,
+	pitch01LoglineTextEN,
+	pitch01TitleUA,
+	pitch01FormatUA,
+	pitch01GenreUA,
+	pitch01LoglineTitleUA,
+	pitch01LoglineTextUA,
+} from '../dataReusableText';
 
-export const filmsTextData = {
-	// ############## rusian ##############
-	ru: [
-		{
-			pitchNumber: pitch01,
-
-			textBlock: [],
-		},
-	],
-
-	// ############## English ##############
+export const dataTextEU = {
+	// English
 	en: [
 		{
-			filmsPreviewUrl: ``,
-			pitchNumber: pitch01,
-			pitchTitle: `European Ukrainians`,
+			pitchTitle: pitch01TitleEN,
 			pitchInfo: [
-				{ key: `Format: `, value: `Sarcastic-ironic sitcom for streaming platforms` },
-				{ key: `Genre: `, value: `Comedy, Drama, Dark Humor` },
+				{ key: `Format: `, value: pitch01FormatEN },
+				{ key: `Genre: `, value: pitch01GenreEN },
 				// { key: `Duration: `, value: `20-40 minutes episode` },
 				// { key: `Audience: `, value: `Teens, Adults` },
 			],
 
 			textBlock: [
 				{
-					title: `Logline`,
+					title: pitch01LoglineTitleEN,
 
-					text: `A group of young people challenge the absurd realities of the system on their path to self-development. With self-irony and dark humor, they navigate the world around them to avoid going crazy. Thanks to their friendship and support, they try to find their place in society, constantly getting into comedic situations.`,
+					text: pitch01LoglineTextEN,
 				},
 
 				{
@@ -185,25 +182,24 @@ export const filmsTextData = {
 		},
 	],
 
-	// ############## Ukraine ##############
+	// Ukraine
 	ua: [
 		{
-			pitchNumber: pitch01,
-			pitchTitle: `Європейські Українці`,
+			pitchTitle: pitch01TitleUA,
 			pitchInfo: [
 				{
 					key: `Формат: `,
-					value: `Саркастично-іронічний ситком для стрімінгових платформ`,
+					value: pitch01FormatUA,
 				},
-				{ key: `Жанр: `, value: `Комедія, Драма, Чорний гумор` },
+				{ key: `Жанр: `, value: pitch01GenreUA },
 				// { key: `Тривалість: `, value: `20-40 хвилин серія` },
 				// { key: `Аудиторія: `, value: `Підлітки, Дорослі` },
 			],
 
 			textBlock: [
 				{
-					title: `Логлайн`,
-					text: `Група молодих людей кидає виклик абсурдним реаліям системи на шляху до саморозвитку. З самоіронією та чорним гумором вони сприймають навколишній світ, щоб не зійти з розуму. Завдяки дружбі і підтримці вони намагаються знайти своє місце в суспільстві, потрапляючи постійно в казусні ситуації.`,
+					title: pitch01LoglineTitleUA,
+					text: pitch01LoglineTextUA,
 				},
 
 				{
@@ -344,4 +340,7 @@ export const filmsTextData = {
 			],
 		},
 	],
+
+	// rusian
+	ru: [],
 };

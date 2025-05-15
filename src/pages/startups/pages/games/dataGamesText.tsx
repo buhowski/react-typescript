@@ -4,16 +4,8 @@ import { TextLink } from '../../PageStructure/IdeaElements';
 const pitch01 = 'Pitch 01. Video Game';
 
 // Games Industry Page text
-export const gamesTextData = {
-	// ############## rusian ##############
-	ru: [
-		{
-			pitchNumber: pitch01,
-
-			textBlock: [],
-		},
-	],
-	// ############## English ##############
+export const dataGamesText = {
+	// English
 	en: [
 		{
 			pitchNumber: pitch01,
@@ -131,7 +123,7 @@ export const gamesTextData = {
 		},
 	],
 
-	// ############## Ukraine ##############
+	// Ukraine
 	ua: [
 		{
 			pitchNumber: pitch01,
@@ -250,4 +242,7 @@ export const gamesTextData = {
 			],
 		},
 	],
+
+	// rusian
+	ru: [],
 };

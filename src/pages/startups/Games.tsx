@@ -1,17 +1,9 @@
 import IdeaContent from './PageStructure/PageStructure';
-
-import { dataSlider } from './pages/games/SliderData';
-import { gamesTextData } from './pages/games/textData';
+import { dataSlider } from './pages/games/dataSlider';
+import { dataGamesText } from './pages/games/dataGamesText';
 
 const StartupGames = () => {
-	return (
-		<IdeaContent
-			pageClassName='startup-ideas'
-			langDisable={['ru']}
-			textData={gamesTextData}
-			sliderData={dataSlider}
-		/>
-	);
+	return <IdeaContent textData={dataGamesText} sliderData={dataSlider} />;
 };
 
 export default StartupGames;

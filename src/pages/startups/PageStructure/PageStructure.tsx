@@ -2,7 +2,6 @@ import React, { useState, useEffect, useMemo, useCallback, useRef } from 'react'
 import PageHelmet from '../../../config/PageHelmet';
 import { startupsMetaTags } from '../../../config/metaTags';
 import { useTabletLargeQuery } from '../../../hooks/useMediaQuery';
-import '../Startups.scss';
 import PopupContacts from '../../../components/PopupContacts';
 import Copyright from '../../../components/Copyright';
 import { Block } from '../data/textTypes';
@@ -10,6 +9,8 @@ import PitchContainer from './PitchContainer';
 import LanguageSwitcher from './LanguageSwitcher';
 import StartupNavigation from './StartupNavigation';
 import Slider from '../../../components/Slider';
+
+import '../Startups.scss';
 
 interface SlideItem {
 	itemSrc?: string;
@@ -21,9 +22,10 @@ interface SlideItem {
 interface TextDataItem {
 	pitchNumber?: string;
 	pitchTitle?: string;
-	textBlock: Block[];
+	pitchInfo?: { key: string; value: string }[];
+	textBlock?: Block[] | null;
 	lastWords?: string;
-	filmsPreviewUrl?: string;
+	filmsPreviewUrl?: string | undefined;
 }
 
 interface PageProps {
@@ -37,44 +39,42 @@ interface PageProps {
 			sliderContent: SlideItem[];
 		}[];
 	};
-	pageClassName?: string;
-	langDisable?: string | string[];
 }
 
-const PageStructure: React.FC<PageProps> = ({
-	textData,
-	sliderData,
-	pageClassName,
-	langDisable,
-}) => {
+const PageStructure: React.FC<PageProps> = ({ textData, sliderData }) => {
 	const useTabletLarge = useTabletLargeQuery();
 	const [currentLang, setCurrentLang] = useState<'en' | 'ua' | 'ru'>('en');
 	const [isActive, setIsActive] = useState(false);
 	const [activePitchIndex, setActivePitchIndex] = useState<number>(0);
 	const pitchRefs = useRef<(HTMLDivElement | null)[]>([]);
 
-	// Memoized list of disabled languages
-	const disabledLangs = useMemo(
-		() => (Array.isArray(langDisable) ? langDisable : langDisable ? [langDisable] : []),
-		[langDisable]
-	);
+	// Determine available languages based on non-empty textData arrays
+	const availableLangs = useMemo(() => {
+		const langs: ('en' | 'ua' | 'ru')[] = [];
+		// Check for existence and non-empty array for each language
+		if (textData?.en && textData.en.length > 0) langs.push('en');
+		if (textData?.ua && textData.ua.length > 0) langs.push('ua');
+		if (textData?.ru && textData.ru.length > 0) langs.push('ru');
+		// You can add checks for other languages here if needed
+		return langs;
+	}, [textData]);
 
 	// useEffect to set the initial language from local storage or default
 	useEffect(() => {
 		const storedLang = localStorage.getItem('currentLang') as 'en' | 'ua' | 'ru' | null;
-		const initialLang = storedLang || 'en';
-		setCurrentLang(disabledLangs.includes(initialLang) ? 'en' : initialLang);
-	}, [disabledLangs]);
+		const initialLang = storedLang && textData?.[storedLang]?.length > 0 ? storedLang : 'en';
+		setCurrentLang(initialLang);
+	}, [textData]);
 
 	// useCallback to handle language changes
 	const changeLanguage = useCallback(
 		(lang: 'en' | 'ua' | 'ru') => {
-			if (!disabledLangs.includes(lang)) {
+			if (textData?.[lang]?.length > 0) {
 				setCurrentLang(lang);
 				localStorage.setItem('currentLang', lang);
 			}
 		},
-		[disabledLangs]
+		[textData]
 	);
 
 	// useEffect to handle scroll and set the isActive state
@@ -96,12 +96,15 @@ const PageStructure: React.FC<PageProps> = ({
 	}, []);
 
 	// Memoized content to render based on the current language
+	// Fallback to 'en' if currentLang data is missing or empty
 	const contentToRender: TextDataItem[] = useMemo(
 		() => textData[currentLang] || textData['en'] || [],
 		[textData, currentLang]
 	);
 
+	// Effect to set up the IntersectionObserver for pitch containers
 	useEffect(() => {
+		// Only set up the observer on desktop and if there are pitch containers
 		if (useTabletLarge || pitchRefs.current.length === 0) return;
 
 		const observer = new IntersectionObserver(
@@ -118,7 +121,7 @@ const PageStructure: React.FC<PageProps> = ({
 					if (entry.isIntersecting) {
 						setActivePitchIndex(index);
 					} else {
-						if (boundingClientRect.bottom <= rootBounds.top + 145) {
+						if (boundingClientRect.bottom <= rootBounds.top + 150) {
 							if (index > 0) {
 								setActivePitchIndex(index - 1);
 							}
@@ -128,7 +131,7 @@ const PageStructure: React.FC<PageProps> = ({
 			},
 			{
 				root: document.querySelector('.page-container'),
-				rootMargin: '-145px 0px -99999px 0px',
+				rootMargin: '-150px 0px -99999px 0px',
 				threshold: 0,
 			}
 		);
@@ -151,25 +154,34 @@ const PageStructure: React.FC<PageProps> = ({
 
 	return (
 		<>
+			<PageHelmet metaTags={startupsMetaTags} />
+
 			<div className={`startup-action ${isActive ? 'is-active' : ''}`}>
 				<StartupNavigation />
 			</div>
 
-			<div className={`wrapper wrapper--idea ${pageClassName || ''}`}>
-				<PageHelmet metaTags={startupsMetaTags} />
-
+			<div className={`wrapper wrapper--idea`}>
 				<div className='idea-section'>
 					<div className='idea-info'>
 						{contentToRender.map((structure: TextDataItem, index: number) => {
-							const conditionalSlider =
-								structure.filmsPreviewUrl && useTabletLarge && sliderData ? (
-									<Slider dataSlider={sliderData} currentLanguage={currentLang} isActive={index} />
-								) : undefined;
+							// Get the corresponding item from the English data as a fallback source for filmsPreviewUrl
+							const englishStructure = textData.en?.[index];
+
+							// Determine the filmsPreviewUrl: prioritize current language, fallback to English
+							const filmsPreviewUrl =
+								structure.filmsPreviewUrl || englishStructure?.filmsPreviewUrl;
+
+							const conditionalSlider = sliderData && (
+								<Slider dataSlider={sliderData} currentLanguage={currentLang} isActive={index} />
+							);
 
 							return (
 								<PitchContainer
 									key={index}
-									structure={structure}
+									structure={{
+										...structure, // Spread existing structure data
+										filmsPreviewUrl: filmsPreviewUrl, // Override filmsPreviewUrl with the determined value
+									}}
 									index={index}
 									useTabletLarge={useTabletLarge}
 									slider={conditionalSlider}
@@ -188,46 +200,46 @@ const PageStructure: React.FC<PageProps> = ({
 					<div className='lang-sidebar'>
 						<LanguageSwitcher
 							currentLang={currentLang}
-							disabledLangs={disabledLangs}
+							availableLangs={availableLangs}
 							changeLanguage={changeLanguage}
 						/>
 
 						{/* Table Of Content */}
 						{/* {contentToRender.length > 1 && (
-							<div className={`table-content ${isTocOpen ? 'is-open' : ''}`} ref={tocRef}>
-								<button className='table-content__btn' onClick={toggleToc}>
-									<mark>
-										<span></span>
-										<span></span>
-										<span></span>
-										<span></span>
-										<span></span>
-										<span></span>
-									</mark>
+              <div className={`table-content ${isTocOpen ? 'is-open' : ''}`} ref={tocRef}>
+                <button className='table-content__btn' onClick={toggleToc}>
+                  <mark>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </mark>
 
-									<span>Table Of Content</span>
-								</button>
+                  <span>Table Of Content</span>
+                </button>
 
-								<div className='table-content__list'>
-									<div className='table-content__inner'>
-										<div className='table-content__wrapper'>
-											<span>Table Of Content</span>
+                <div className='table-content__list'>
+                  <div className='table-content__inner'>
+                    <div className='table-content__wrapper'>
+                      <span>Table Of Content</span>
 
-											{contentToRender.map((item, index) => (
-												<button
-													key={index}
-													onClick={() => setActiveTextIndex(index)}
-													className={`${activeTextIndex === index ? 'is-active' : ''}`}
-												>
-													<mark>{item?.pitchNumber}</mark>
-													<mark>{item?.pitchTitle}</mark>
-												</button>
-											))}
-										</div>
-									</div>
-								</div>
-							</div>
-						)} */}
+                      {contentToRender.map((item, index) => (
+                        <button
+                          key={index}
+                          onClick={() => setActiveTextIndex(index)}
+                          className={`${activeTextIndex === index ? 'is-active' : ''}`}
+                        >
+                          <mark>{item?.pitchNumber}</mark>
+                          <mark>{item?.pitchTitle}</mark>
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            )} */}
 
 						<div className='desktop-slider'>
 							{!useTabletLarge && sliderData && (

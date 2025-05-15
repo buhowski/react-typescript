@@ -1,17 +1,9 @@
 import PageStructure from './PageStructure/PageStructure';
-
-import { dataSlider } from './pages/startup/SliderData';
-import { startupTextData } from './pages/startup/textData';
+import { dataSlider } from './pages/startup/dataSlider';
+import { dataStartupText } from './pages/startup/dataStartupText';
 
 const Startup = () => {
-	return (
-		<PageStructure
-			pageClassName=''
-			langDisable=''
-			textData={startupTextData}
-			sliderData={dataSlider}
-		/>
-	);
+	return <PageStructure textData={dataStartupText} sliderData={dataSlider} />;
 };
 
 export default Startup;

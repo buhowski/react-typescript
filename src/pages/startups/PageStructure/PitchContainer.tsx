@@ -8,7 +8,7 @@ interface PitchContainerProps {
 		pitchNumber?: string;
 		pitchTitle?: string;
 		pitchInfo?: { key: string; value: string }[];
-		textBlock: Block[];
+		textBlock?: Block[] | null;
 		lastWords?: string;
 		filmsPreviewUrl?: string;
 	};
@@ -20,6 +20,9 @@ interface PitchContainerProps {
 
 const PitchContainer = forwardRef<HTMLDivElement, PitchContainerProps>(
 	({ structure, index, useTabletLarge, slider }, ref) => {
+		// Check if textBlock exists and is an array before checking length
+		const hasTextBlockContent = Array.isArray(structure.textBlock) && structure.textBlock.length;
+
 		return (
 			<div key={index} ref={ref} className={`pitch-container`}>
 				{structure.pitchNumber && <p className='pitch-number'>{structure.pitchNumber}</p>}
@@ -30,15 +33,19 @@ const PitchContainer = forwardRef<HTMLDivElement, PitchContainerProps>(
 
 				{structure.pitchInfo && <PitchInfo pitchInfo={structure.pitchInfo} />}
 
-				{/* {structure.filmsPreviewUrl && useTabletLarge && Slider} */}
-				{structure.filmsPreviewUrl && slider && slider}
+				{/* Condition 1: Render slider if filmsPreviewUrl exists */}
+				{useTabletLarge && structure.filmsPreviewUrl && slider}
 
-				{structure.textBlock.map((block, blockIndex) => (
+				{useTabletLarge && !structure.filmsPreviewUrl && !hasTextBlockContent && slider}
+
+				{/* Map over textBlock only if it exists and is an array */}
+				{structure.textBlock?.map((block, blockIndex) => (
 					<div className='idea-block' key={blockIndex}>
 						{block.title && <Title titleClassname='idea-block__title' title={block.title} />}
 						{block.text && <Text text={block.text} />}
 
-						{!structure.filmsPreviewUrl && useTabletLarge && blockIndex === 0 && slider}
+						{/* Condition 2: Render slider if filmsPreviewUrl does NOT exist */}
+						{useTabletLarge && !structure.filmsPreviewUrl && blockIndex === 0 && slider}
 
 						{block.listBlock &&
 							block.listBlock.map((item, listIndex) => (
