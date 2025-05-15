@@ -68,7 +68,7 @@ const App = () => {
 
 	return (
 		<TransitionGroup>
-			<CSSTransition key={location.pathname} classNames='slide' timeout={1300}>
+			<CSSTransition key={location.pathname} classNames='slide' timeout={1100}>
 				<div id='page' className='page'>
 					<PageHelmet metaTags={defaultMetaTags} />
 					<div className='page-container'>

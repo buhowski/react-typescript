@@ -4,7 +4,7 @@ import { BrowserRouter } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import './styles/App.scss';
 import App from './App';
-import Preloader from './pages/Preloader';
+import Preloader from './components/Preloader';
 
 const rootElement = document.getElementById('root') as HTMLElement;
 const helmetContext: Record<string, any> = {};
@@ -24,7 +24,7 @@ const Root = () => {
 			setIsLoading(false);
 			// This makes the #root element visible via the CSS in index.html
 			rootElement.classList.add('is-ready');
-		}, 800);
+		}, 860);
 
 		// Cleanup function: runs if the Root component unmounts (unlikely but good practice)
 		return () => {

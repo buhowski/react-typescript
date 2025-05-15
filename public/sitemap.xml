@@ -1,19 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <url>
-        <loc>https://buhowski.dev</loc>
-    </url>
-
-    <url>
-        <loc>https://buhowski.dev/startup</loc>
-    </url>
-
-    <url>
-        <loc>https://buhowski.dev/about</loc>
-    </url>
-
-    <url>
-        <loc>https://buhowski.dev/projects</loc>
-    </url>
+  <url>
+    <loc>https://buhowski.dev/</loc>
+  </url>
+  <url>
+    <loc>https://buhowski.dev/startup</loc>
+  </url>
+  <url>
+    <loc>https://buhowski.dev/films</loc>
+  </url>
+  <url>
+    <loc>https://buhowski.dev/games</loc>
+  </url>
+  <url>
+    <loc>https://buhowski.dev/mvp</loc>
+  </url>
+  <url>
+    <loc>https://buhowski.dev/about</loc>
+  </url>
+  <url>
+    <loc>https://buhowski.dev/projects</loc>
+  </url>
+  <url>
+    <loc>https://buhowski.dev/european-ukrainians</loc>
+  </url>
+  <url>
+    <loc>https://buhowski.dev/the-corp</loc>
+  </url>
+  <url>
+    <loc>https://buhowski.dev/cossacks</loc>
+  </url>
 </urlset>

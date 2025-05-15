@@ -1,4 +1,4 @@
-import { comingSoon } from '../films/dataFilmsReuse';
+import { comingSoon } from '../films/dataReuseFilms';
 
 // ###### European Ukrainians ######
 // English

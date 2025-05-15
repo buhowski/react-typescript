@@ -7,7 +7,7 @@
 @import '../styles/animation';
 
 // same time as CSSTransition timeout={} in App.tsx
-$nextPageTime: 1.3s;
+$nextPageTime: 1.1s;
 
 @keyframes transitionReload {
 	0% {

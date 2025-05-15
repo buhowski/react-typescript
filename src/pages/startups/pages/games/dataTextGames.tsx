@@ -14,7 +14,7 @@ import {
 	pitch01GenreUA,
 	pitch01LoglineTitleUA,
 	pitch01LoglineTextUA,
-} from './dataGamesReuse';
+} from './dataReuseGames';
 
 export const dataGamesText = {
 	// English

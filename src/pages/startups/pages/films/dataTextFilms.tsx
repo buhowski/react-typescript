@@ -19,7 +19,7 @@ import {
 	pitch02FormatEN,
 	pitch02LoglineTitleEN,
 	pitch02LoglineTextEN,
-} from './dataFilmsReuse';
+} from './dataReuseFilms';
 
 export const dataFilmsText = {
 	// English

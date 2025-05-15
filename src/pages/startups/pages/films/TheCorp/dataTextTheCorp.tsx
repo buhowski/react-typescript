@@ -1,4 +1,4 @@
-import { pitch02TitleEN, pitch02FormatEN } from '../dataFilmsReuse';
+import { pitch02TitleEN, pitch02FormatEN } from '../dataReuseFilms';
 
 export const dataTextTheCorp = {
 	// English

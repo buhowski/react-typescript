@@ -12,7 +12,7 @@ import {
 	pitch01GenreUA,
 	pitch01LoglineTitleUA,
 	pitch01LoglineTextUA,
-} from '../dataGamesReuse';
+} from '../dataReuseGames';
 
 const pitch01 = 'Video Game';
 
