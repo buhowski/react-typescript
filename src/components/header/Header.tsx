@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import { pathToStartup, pathToAbout, pathToProjects } from '../urlsData';
-import { useTabletQuery } from '../../hooks/useMediaQuery';
+import { useTabletQuery } from '../../config/useMediaQuery';
 import Socials from '../socials/Socials';
 import socialData from '../socials/socialData';
 

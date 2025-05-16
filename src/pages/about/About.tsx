@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 
 import PageHelmet from '../../config/PageHelmet';
-import { aboutMetaTags } from '../../config/metaTags';
+import { aboutMetaTags } from '../../components/metaTags';
 import dotsData from './aboutData';
 import PhotoBg from './images/body.png';
-import { useTabletQuery } from '../../hooks/useMediaQuery';
+import { useTabletQuery } from '../../config/useMediaQuery';
 import './About.scss';
 
 const About = () => {
@@ -29,11 +29,7 @@ const About = () => {
 
 			<div className='about-info'>
 				<div className=''>
-					<img
-						className='about-info__img'
-						src={PhotoBg}
-						alt='I look forward to a better future'
-					/>
+					<img className='about-info__img' src={PhotoBg} alt='I look forward to a better future' />
 				</div>
 
 				{dotsData.map(({ classItem, title, titleSub, img }, i) => {

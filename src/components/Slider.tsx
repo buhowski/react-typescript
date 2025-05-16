@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect, useCallback, useMemo } from 'react';
 import Copyright from './Copyright';
 import PopupContacts from './PopupContacts';
-import { useTabletLargeQuery } from '../hooks/useMediaQuery';
+import { useTabletLargeQuery } from '../config/useMediaQuery';
 
 import { playIcon } from '../pages/startups/assets/svg/playIcon';
 

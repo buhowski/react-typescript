@@ -1,10 +1,9 @@
 import React, { useState, useEffect, useMemo, useCallback, useRef } from 'react';
 import PageHelmet from '../../../config/PageHelmet';
-import { startupsMetaTags } from '../../../config/metaTags';
-import { useTabletLargeQuery } from '../../../hooks/useMediaQuery';
+import { startupsMetaTags } from '../../../components/metaTags';
+import { useTabletLargeQuery } from '../../../config/useMediaQuery';
 import PopupContacts from '../../../components/PopupContacts';
 import Copyright from '../../../components/Copyright';
-import { Block } from '../data/textTypes';
 import PitchContainer from './PitchContainer';
 import LanguageSwitcher from './LanguageSwitcher';
 import StartupNavigation from './StartupNavigation';
@@ -21,10 +20,6 @@ interface SlideItem {
 
 interface TextDataItem {
 	markdownAPI?: string;
-	pitchNumber?: string;
-	pitchTitle?: string;
-	pitchInfo?: { key: string; value: string }[];
-	textBlock?: Block[] | null;
 	filmsPreviewUrl?: string | undefined;
 }
 
@@ -51,11 +46,9 @@ const PageStructure: React.FC<PageProps> = ({ textData, sliderData }) => {
 	// Determine available languages based on non-empty textData arrays
 	const availableLangs = useMemo(() => {
 		const langs: ('en' | 'ua' | 'ru')[] = [];
-		// Check for existence and non-empty array for each language
 		if (textData?.en && textData.en.length > 0) langs.push('en');
 		if (textData?.ua && textData.ua.length > 0) langs.push('ua');
 		if (textData?.ru && textData.ru.length > 0) langs.push('ru');
-		// You can add checks for other languages here if needed
 		return langs;
 	}, [textData]);
 

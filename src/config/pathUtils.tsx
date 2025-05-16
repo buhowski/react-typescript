@@ -5,9 +5,8 @@ import {
 	pathToEuropeanUkrainians,
 	pathToTheCorp,
 	pathToCossacksRPG,
+	startupsNav,
 } from '../components/urlsData';
-
-import { startupsNav } from '../pages/startups/data/startupsNav';
 
 export const isPathActive = (paths: string[], currentPath: string) =>
 	paths.some((path) => path === currentPath || `${path}/` === currentPath);

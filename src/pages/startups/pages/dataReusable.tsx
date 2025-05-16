@@ -1,3 +1,7 @@
+// DEFAULT EXPORTS
+export const comingSoon = 'Coming soon ...';
+
+// Last Words
 export const lastWordsEn = `For like-minded people and collaboration,
 please contact me!`;
 

@@ -24,3 +24,23 @@ export const pathToTheCorp = '/the-corp';
 
 // Games Industry
 export const pathToCossacksRPG = '/cossacks';
+
+// Separate Projects presentation URLs
+export const startupsNav = [
+	{
+		pageLink: pathToStartup,
+		pageName: `Startup`,
+	},
+	{
+		pageLink: pathToStartupFilms,
+		pageName: `Films`,
+	},
+	{
+		pageLink: pathToStartupGames,
+		pageName: `Games`,
+	},
+	{
+		pageLink: pathToStartupMVP,
+		pageName: `MVP`,
+	},
+];

@@ -1,7 +1,7 @@
 import Masonry from 'react-responsive-masonry';
 import { ResponsiveMasonry as ResponsiveMasonryBase } from 'react-responsive-masonry';
 import PageHelmet from '../../config/PageHelmet';
-import { portfolioMetaTags } from '../../config/metaTags';
+import { portfolioMetaTags } from '../../components/metaTags';
 import projectsData from './projectsData';
 
 import './Projects.scss';

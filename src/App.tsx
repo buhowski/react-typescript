@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { useLocation, Route, Routes } from 'react-router-dom';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import PageHelmet from './config/PageHelmet';
-import { defaultMetaTags } from './config/metaTags';
+import { defaultMetaTags } from './components/metaTags';
 import {
 	pathToStartup,
 	pathToStartupFilms,
