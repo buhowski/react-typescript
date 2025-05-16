@@ -1,3 +1,5 @@
+import './polyfills';
+
 import ReactDOM from 'react-dom/client';
 import { HelmetProvider } from 'react-helmet-async';
 import { BrowserRouter } from 'react-router-dom';
@@ -24,7 +26,7 @@ const Root = () => {
 			setIsLoading(false);
 			// This makes the #root element visible via the CSS in index.html
 			rootElement.classList.add('is-ready');
-		}, 860);
+		}, 820);
 
 		// Cleanup function: runs if the Root component unmounts (unlikely but good practice)
 		return () => {

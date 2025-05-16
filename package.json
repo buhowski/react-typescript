@@ -2,7 +2,7 @@
 	"name": "buhowski.dev",
 	"version": "4.2.0",
 	"engines": {
-		"node": ">=20.12.1"
+		"node": ">=20"
 	},
 	"private": true,
 	"dependencies": {
