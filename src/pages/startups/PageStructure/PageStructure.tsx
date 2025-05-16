@@ -20,6 +20,7 @@ interface SlideItem {
 }
 
 interface TextDataItem {
+	markdownAPI?: string;
 	pitchNumber?: string;
 	pitchTitle?: string;
 	pitchInfo?: { key: string; value: string }[];
@@ -83,12 +84,16 @@ const PageStructure: React.FC<PageProps> = ({ textData, sliderData }) => {
 		if (!pageContainer || !startupAction) return;
 
 		const handleScroll = () => {
-			setIsActive(
-				startupAction.getBoundingClientRect().top <= pageContainer.getBoundingClientRect().top
-			);
+			const newIsActive =
+				startupAction.getBoundingClientRect().top <= pageContainer.getBoundingClientRect().top;
+
+			setIsActive((prev) => {
+				if (prev === newIsActive) return prev; // no state update if same
+				return newIsActive;
+			});
 		};
 
-		pageContainer.addEventListener('scroll', handleScroll, { passive: true });
+		pageContainer.addEventListener('scroll', handleScroll);
 		return () => {
 			pageContainer.removeEventListener('scroll', handleScroll);
 		};
@@ -100,6 +105,14 @@ const PageStructure: React.FC<PageProps> = ({ textData, sliderData }) => {
 		() => textData[currentLang] || textData['en'] || [],
 		[textData, currentLang]
 	);
+
+	const memoizedSliders = useMemo(() => {
+		if (!sliderData) return null;
+
+		return contentToRender.map((_, index) => (
+			<Slider key={index} dataSlider={sliderData} currentLanguage={currentLang} isActive={index} />
+		));
+	}, [sliderData, currentLang, contentToRender]);
 
 	useEffect(() => {
 		if (useTabletLarge || pitchRefs.current.length === 0) return;
@@ -154,23 +167,17 @@ const PageStructure: React.FC<PageProps> = ({ textData, sliderData }) => {
 							const filmsPreviewUrl =
 								structure.filmsPreviewUrl || englishStructure?.filmsPreviewUrl;
 
-							const conditionalSlider = sliderData && (
-								<Slider dataSlider={sliderData} currentLanguage={currentLang} isActive={index} />
-							);
-
 							return (
 								<PitchContainer
 									key={index}
 									structure={{
-										...structure, // Spread existing structure data
-										filmsPreviewUrl: filmsPreviewUrl, // Override filmsPreviewUrl with the determined value
+										...structure,
+										filmsPreviewUrl: filmsPreviewUrl,
 									}}
 									index={index}
 									useTabletLarge={useTabletLarge}
-									slider={conditionalSlider}
-									ref={(element: HTMLDivElement | null) => {
-										pitchRefs.current[index] = element;
-									}}
+									slider={memoizedSliders ? memoizedSliders[index] : null}
+									ref={(el) => (pitchRefs.current[index] = el)}
 								/>
 							);
 						})}

@@ -1,9 +1,9 @@
 import PageStructure from './PageStructure/PageStructure';
-import { dataSlider } from './pages/MVP/SliderData';
-import { articlesTextData } from './pages/MVP/textData';
+import { sliderMVP } from './pages/MVP/dataSliderMVP';
+import { dataTextMVP } from './pages/MVP/dataTextMVP';
 
 const StartupMVP = () => {
-	return <PageStructure textData={articlesTextData} sliderData={dataSlider} />;
+	return <PageStructure textData={dataTextMVP} sliderData={sliderMVP} />;
 };
 
 export default StartupMVP;

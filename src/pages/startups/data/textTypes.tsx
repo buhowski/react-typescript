@@ -6,6 +6,8 @@ export interface ListProps {
 export interface Block {
 	filmsPreviewUrl?: string;
 
+	markdownAPI?: string;
+
 	// Pitch Text block
 	pitchNumber?: string;
 	pitchTitle?: string;

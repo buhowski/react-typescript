@@ -1,8 +1,9 @@
+// DEFAULT EXPORTS
 export const comingSoon = 'Coming soon ...';
 
 // ###### European Ukrainians ######
 // English
-export const pitch01 = '🌟 Pitch 01. Shows / Series';
+export const pitch01 = 'Pitch 01. Shows / Series';
 export const pitch01TitleEN = 'European Ukrainians';
 export const pitch01FormatEN = 'Sarcastic-ironic sitcom for streaming platforms';
 export const pitch01GenreEN = 'Comedy, Drama, Dark Humor';

@@ -1,9 +1,9 @@
 import PageStructure from './PageStructure/PageStructure';
-import { dataSlider } from './pages/startup/dataSlider';
-import { dataStartupText } from './pages/startup/dataStartupText';
+import { sliderStartup } from './pages/startup/dataSliderStartup';
+import { dataTextStartup } from './pages/startup/dataTextStartup';
 
 const Startup = () => {
-	return <PageStructure textData={dataStartupText} sliderData={dataSlider} />;
+	return <PageStructure textData={dataTextStartup} sliderData={sliderStartup} />;
 };
 
 export default Startup;

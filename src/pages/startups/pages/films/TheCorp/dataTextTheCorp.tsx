@@ -1,21 +1,9 @@
-import { pitch02TitleEN, pitch02FormatEN } from '../dataReuseFilms';
-
 export const dataTextTheCorp = {
 	// English
-	en: [
-		{
-			pitchTitle: pitch02TitleEN,
-			pitchInfo: [
-				{ key: `Format: `, value: pitch02FormatEN },
-				// { key: `Genre: `, value: pitch02GenreEN },
-				// { key: `Duration: `, value: `20-40 minutes episode` },
-				// { key: `Audience: `, value: `Teens, Adults` },
-			],
-		},
-	],
+	en: [{ markdownAPI: '/text-data/films/TheCorp/PreviewTheCorpUA.md' }],
 
 	// Ukraine
-	ua: [],
+	ua: [{ markdownAPI: '/text-data/films/TheCorp/PreviewTheCorpUA.md' }],
 
 	// rusian
 	ru: [],

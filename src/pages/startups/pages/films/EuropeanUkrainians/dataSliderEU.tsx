@@ -18,32 +18,32 @@ export const dataSliderEU = [
 	{
 		itemPoster: teaserPoster,
 		itemSrc: teaserVideo,
-		itemAlt: `Sample 01. From "It's Always Sunny in Philadelphia" – promo.`,
+		itemAlt: `Example 01. From "It's Always Sunny in Philadelphia" – promo.`,
 	},
 	{
 		itemPoster: classicSetupPoster,
 		itemSrc: teamVideo,
-		itemAlt: `Sample 02. Looks, brains, wild card. Classic setup. From "It's Always Sunny in Philadelphia".`,
+		itemAlt: `Example 02. Looks, brains, wild card. Classic setup. From "It's Always Sunny in Philadelphia".`,
 	},
 	{
 		itemPoster: screamPoster,
 		itemSrc: screamVideo,
-		itemAlt: `Sample 03. Bathroom Screams. From "It's Always Sunny in Philadelphia".`,
+		itemAlt: `Example 03. Bathroom Screams. From "It's Always Sunny in Philadelphia".`,
 	},
 	{
 		itemPoster: broadCityPoster,
 		itemSrc: broadCityTrailer,
-		itemAlt: `Sample 04. From "Broad City" – promo.`,
+		itemAlt: `Example 04. From "Broad City" – promo.`,
 	},
 	{
 		itemPoster: turboKidsPoster,
 		itemSrc: newKidsTurboTrailer,
-		itemAlt: `Sample 05. From "New Kids Turbo" – trailer.`,
+		itemAlt: `Example 05. From "New Kids Turbo" – trailer.`,
 	},
 	{
 		itemPoster: fantasyPoster,
 		itemSrc: fantasy,
-		itemAlt: `Sample 06. From "The Secret Life of Walter Mitty".`,
+		itemAlt: `Example 06. From "The Secret Life of Walter Mitty".`,
 	},
 ];
 
