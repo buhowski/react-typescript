@@ -307,7 +307,7 @@
 		color: #ffffff;
 
 		@include mobile {
-			font-size: 12px;
+			font-size: 13px;
 		}
 
 		&:not(:first-of-type) {
@@ -917,6 +917,6 @@
 	+ .pitch-container {
 		margin-top: 45px;
 		padding-top: 48px;
-		border-top: 1px solid rgba($titlePink, 0.16);
+		border-top: 1px solid rgba($titlePink, 0.2);
 	}
 }
