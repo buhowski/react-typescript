@@ -199,7 +199,7 @@
 
 		.idea-tabs__btn {
 			text-transform: none;
-			padding: 10px 40px;
+			padding: 11px 40px 10px;
 			display: flex;
 			align-items: flex-end;
 			justify-content: center;
@@ -208,7 +208,7 @@
 
 			@include tabletBig {
 				font-size: 14px;
-				padding: 11px 3px 9px;
+				padding: 12px 3px 9px;
 			}
 
 			&.active {
