@@ -127,7 +127,7 @@ $starYellow: #dfb842;
 		height: 2px;
 		background-color: $blue-main;
 		z-index: -1;
-		transition: height 0.3s ease, transform 0.3s ease;
+		transition: 0.25s ease;
 		box-shadow: inset 23px 23px 46px #004d96, inset -23px -23px 46px #006bd0;
 	}
 

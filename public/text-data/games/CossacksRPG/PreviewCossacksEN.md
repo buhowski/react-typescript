@@ -13,6 +13,6 @@
 
 [mobile-slider]
 
-## **Logline**
+## Logline
 
 A mighty Zaporozhian Cossack with a tragic past and the unexplored potential of otherworldly powers  travels through cities, trying to unravel the secrets of a fascinating mystical story and his own past, which intertwines real historical facts with mythology and demonology, dynamic comedy and drama.

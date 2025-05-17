@@ -16,7 +16,7 @@ A group of young people challenge the absurd realities of the system on their pa
 
 ## Overview
 
-The concept of the series is a hilarious mix inspired by shows like “Trailer Park Boys” ([**IMDB**](https://www.imdb.com/title/tt0290988/)), "It's Always Sunny in Philadelphia" (examples 01 – 03 in slider, or [**IMDB**](https://www.imdb.com/title/tt0472954/)), "Broad City" (example 04 in slider, or [**IMDB**](https://www.imdb.com/title/tt2578560/)), and the "New Kids Turbo" movie (example 05 in slider, or [**IMDB**](https://www.imdb.com/title/tt1648112/)). 
+The concept of the series is a hilarious mix inspired by shows like “Trailer Park Boys” ([IMDB](https://www.imdb.com/title/tt0290988/)), "It's Always Sunny in Philadelphia" (examples 01 – 03 in slider, or [IMDB](https://www.imdb.com/title/tt0472954/)), "Broad City" (example 04 in slider, or [IMDB](https://www.imdb.com/title/tt2578560/)), and the "New Kids Turbo" movie (example 05 in slider, or [IMDB](https://www.imdb.com/title/tt1648112/)). 
 
 The videos are provided for better understanding. I want to use it in a Ukrainian way, a close similar style of presentation, character temperaments, dynamic style of comedic situations, and unpredictability of events. The main focus is on authenticity, allowing the main characters to play themselves or characters close to their spirits.
 

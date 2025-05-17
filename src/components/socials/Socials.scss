@@ -55,6 +55,7 @@
 		transition: all 0.4s ease;
 		white-space: nowrap;
 		font-size: 21px;
+		will-change: opacity, transform;
 	}
 	a:hover > .title {
 		opacity: 1;
