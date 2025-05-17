@@ -11,7 +11,7 @@ Presentations of all projects are available in the navigation. Below is the logi
 
 ## Mission
 
-I've created strategies and project scenario: "How to create an information media magazine in Ukraine and transform it into a company producing its own technologies" and I am seeking investments for its implementation, or the opportunity to integrate my ideas with your help and find like-minded individuals and partners for cooperation to create the future together in selected areas:
+I've created strategies and project scenario: "How to create an information media magazine in Ukraine and transform it into a company producing its own technologies" and I am seeking investments for its implementation, or the opportunity to integrate my ideas with your help and find like-minded individuals and partners for cooperation to create the future in selected areas:
 
 - independent media of the new generation,
 - leading movie and gaming industry,
@@ -20,7 +20,7 @@ I've created strategies and project scenario: "How to create an information medi
 
 ## Description
 
-My idea begins with creating its own free internet territory. It takes the format of a magazine and social network, as a mobile application and web platform, which can be imagined on the examples of Flipboard, Facebook, Reddit. The concept of its own magazine is promising because of the possibility to develop independently on its own course and adapt to new needs and trends in the information field.
+My idea begins with creating its own free internet territory. It takes the format of a magazine and social network, as a mobile application and web platform, which can be imagined on the examples of Vogue, Flipboard, Facebook, Reddit. The concept of its own magazine is promising because of the possibility to develop independently on its own course and adapt to new needs and trends in the information field.
 
 The focus is on presenting information and producing individual projects. To achieve this, an initial team is being formed – responsible for running the journal and creating content, gradually developing the platform step by step.
 
@@ -28,13 +28,13 @@ The focus is on presenting information and producing individual projects. To ach
 
 - Journal / Magazine – for strategic purposes, to claim a leading media position in the country. Essential for advertising, self-promotion, aggressive marketing, and audience engagement.
 - Social network – to connect people with similar views and tastes.
-- Donation system – to attract investments for development and content monetization.
 - Imageboard forum – for sharing experience and preserving ready-made solutions for all situations.
+- Donation system – to attract investments for development and content monetization.
 - Platform as a resource – for distributing original projects.
 
 ## Details
 
-Running the journal and step-by-step implementation of the strategy are separate projects, with examples appearing here: [MVP.](https://buhowski.dev/mvp) Content is created with a specific target audience in mind, addressing current issues and offering clear solutions that help attract and retain the audience.
+Running the journal and step-by-step implementation of the strategy are separate projects, with examples appearing here: [MVP](https://buhowski.dev/mvp). Content is created with a specific target audience in mind, addressing current issues and offering clear solutions that help attract and retain the audience.
 
 Key industry products represent production stages, presented as separate scripts, with project presentations here: [Films](https://buhowski.dev/films), [Video Games](https://buhowski.dev/games). Initially, this will help gain popularity among the Ukrainian audience, and later – expand to the international level with presentations of future projects at global film festivals and gaming exhibitions.
 
