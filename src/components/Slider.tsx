@@ -137,7 +137,10 @@ const Slider: React.FC<SliderProps> = ({ dataSlider, currentLanguage, isActive }
 						currentLanguageGroups[actualGroupIndex].sliderContent.length === 0
 					)
 						return (
-							<div className='slider-wrapper disabled' key={`fallback-${actualGroupIndex}`}>
+							<div
+								className='slider-wrapper disabled'
+								key={`${actualGroupIndex}-${indexInRenderedArray}`}
+							>
 								<div className='slider-wrapper__empty slider-js'>No Examples Yet</div>
 								<div className={`slider-actions `}>{!useTabletLarge && <Copyright />}</div>
 							</div>
