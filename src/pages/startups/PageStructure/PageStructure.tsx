@@ -189,40 +189,39 @@ const PageStructure: React.FC<PageProps> = ({ textData, sliderData }) => {
 
 						{/* Table Of Content */}
 						{/* {contentToRender.length > 1 && (
-              <div className={`table-content ${isTocOpen ? 'is-open' : ''}`} ref={tocRef}>
-                <button className='table-content__btn' onClick={toggleToc}>
-                  <mark>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                  </mark>
+							<div className={`table-content ${isTocOpen ? 'is-open' : ''}`} ref={tocRef}>
+								<button className='table-content__btn' onClick={toggleToc}>
+									<mark>
+										<span></span>
+										<span></span>
+										<span></span>
+										<span></span>
+										<span></span>
+										<span></span>
+									</mark>
 
-                  <span>Table Of Content</span>
-                </button>
+									<span>Table Of Content</span>
+								</button>
 
-                <div className='table-content__list'>
-                  <div className='table-content__inner'>
-                    <div className='table-content__wrapper'>
-                      <span>Table Of Content</span>
+								<div className='table-content__list'>
+									<div className='table-content__inner'>
+										<div className='table-content__wrapper'>
+											<span>Table Of Content</span>
 
-                      {contentToRender.map((item, index) => (
-                        <button
-                          key={index}
-                          onClick={() => setActiveTextIndex(index)}
-                          className={`${activeTextIndex === index ? 'is-active' : ''}`}
-                        >
-                          <mark>{item?.pitchNumber}</mark>
-                          <mark>{item?.pitchTitle}</mark>
-                        </button>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-              </div>
-            )} */}
+											{contentToRender.map((item, index) => (
+												<button
+													key={index}
+													onClick={() => setActiveTextIndex(index)}
+													className={`${activeTextIndex === index ? 'is-active' : ''}`}
+												>
+													<mark>h2 or h3 text from </mark>
+												</button>
+											))}
+										</div>
+									</div>
+								</div>
+							</div>
+						)} */}
 
 						<div className='desktop-slider'>
 							{!useTabletLarge && sliderData && (

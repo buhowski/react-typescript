@@ -14,31 +14,29 @@ interface PitchContainerProps {
 }
 
 const PitchContainer = React.memo(
-	forwardRef<HTMLDivElement, PitchContainerProps>(
-		({ structure, index, useTabletLarge, slider }, ref) => {
-			return (
-				<div key={index} ref={ref} className={`pitch-container`}>
-					{/* Markdown Text Structure */}
-					{structure.markdownAPI && (
-						<div className='idea-block idea-block--markdown'>
-							<MarkdownBlock
-								src={structure.markdownAPI}
-								slider={slider}
-								useTabletLarge={useTabletLarge}
-							/>
-						</div>
-					)}
+	forwardRef<HTMLDivElement, PitchContainerProps>(({ structure, useTabletLarge, slider }, ref) => {
+		return (
+			<div ref={ref} className={`pitch-container`}>
+				{/* Markdown Text Structure */}
+				{structure.markdownAPI && (
+					<div className='idea-block idea-block--markdown'>
+						<MarkdownBlock
+							src={structure.markdownAPI}
+							slider={slider}
+							useTabletLarge={useTabletLarge}
+						/>
+					</div>
+				)}
 
-					{structure.filmsPreviewUrl && (
-						<div className='idea-block__action'>
-							<NavLink to={structure.filmsPreviewUrl} className='idea-block__more'>
-								<span>read more</span>
-							</NavLink>
-						</div>
-					)}
-				</div>
-			);
-		}
-	)
+				{structure.filmsPreviewUrl && (
+					<div className='idea-block__action'>
+						<NavLink to={structure.filmsPreviewUrl} className='idea-block__more'>
+							<span>read more</span>
+						</NavLink>
+					</div>
+				)}
+			</div>
+		);
+	})
 );
 export default PitchContainer;

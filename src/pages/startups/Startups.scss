@@ -369,6 +369,10 @@
 
 	h1 {
 		@extend .headline__title;
+
+		+ h2 {
+			margin-top: 0;
+		}
 	}
 
 	// .idea-block__title
@@ -378,13 +382,10 @@
 		font-size: 28px;
 		margin-bottom: 22px;
 		letter-spacing: 0.5px;
+		margin-top: 45px;
 
 		@include tabletBig {
 			font-size: 24px;
-		}
-
-		&:not(:first-of-type) {
-			margin-top: 45px;
 		}
 	}
 
@@ -867,7 +868,7 @@
 .idea-block__action {
 	display: flex;
 	justify-content: flex-end;
-	margin-top: 40px;
+	margin-top: 50px;
 
 	@include tabletBig {
 		justify-content: center;
