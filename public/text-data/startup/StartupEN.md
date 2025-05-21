@@ -1,7 +1,7 @@
 
 # Presentation
 
-## Foreword
+## Preface
 
 I've got a grand vision of the whole picture — building a corporation focused on developing areas aligned with my worldview, that inspire me and provide space for ideas, currently underdeveloped locally but with high profit potential.
 
