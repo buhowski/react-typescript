@@ -41,8 +41,8 @@ $nextPageTime: 1.1s;
 
 	@include tablet {
 		/* Fallback for browsers that do not support Custom Properties */
-		height: 100vh;
-		height: calc(var(--vh, 1vh) * 100);
+		height: 100dvh;
+		// height: calc(var(--vh, 1vh) * 100);
 	}
 
 	&.slide-exit {
