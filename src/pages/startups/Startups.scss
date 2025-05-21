@@ -286,13 +286,14 @@
 }
 
 .headline__title {
-	margin-bottom: 40px;
+	margin-bottom: 45px;
 	font-size: 33px;
 	color: $starYellow;
 	text-align: center;
 	@include titleFont;
 
 	@include mobile {
+		margin-bottom: 40px;
 		font-size: 28px;
 	}
 }
@@ -372,15 +373,18 @@
 
 	// .idea-block__title
 	h2 {
-		color: $blue-main;
-		font-size: 27px;
-		margin-bottom: 22px;
-		letter-spacing: 1px;
-		margin-top: 40px;
 		@include titleFont;
+		color: $blue-main;
+		font-size: 28px;
+		margin-bottom: 22px;
+		letter-spacing: 0.5px;
 
 		@include tabletBig {
-			font-size: 23px;
+			font-size: 24px;
+		}
+
+		&:not(:first-of-type) {
+			margin-top: 45px;
 		}
 	}
 
@@ -390,8 +394,10 @@
 		margin-bottom: 20px;
 		letter-spacing: 1px;
 		margin-top: 40px;
+		font-size: 21px;
 
 		@include mobile {
+			font-size: 20px;
 			margin-top: 35px;
 		}
 	}
@@ -406,7 +412,7 @@
 
 		li {
 			position: relative;
-			padding-left: 20px;
+			padding-left: 22px;
 
 			@include mobile {
 				padding-left: 16px;
@@ -446,9 +452,12 @@
 		@extend .headline-types__title;
 	}
 
-	p {
-		+ p {
-			margin-top: 22px;
+	h2,
+	h3 {
+		~ p {
+			+ p {
+				margin-top: 22px;
+			}
 		}
 	}
 
@@ -828,19 +837,11 @@
 	margin-left: 85px;
 	z-index: 5;
 
-	&:has(.table-content) {
-		margin-top: 35px;
-	}
-
 	@include tabletBig {
 		margin-left: 0;
 		width: 100%;
 		position: relative;
 		top: 0;
-
-		&:has(.table-content) {
-			margin-top: 0;
-		}
 	}
 }
 
