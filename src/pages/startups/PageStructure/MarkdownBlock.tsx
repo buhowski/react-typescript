@@ -30,12 +30,8 @@ const MarkdownBlock = React.memo(({ src, sliderContent, currentLanguage }: Markd
 				// use to render slider = [mobile-slider]
 				childArray[0].trim() === '[mobile-slider]'
 			) {
-				return useTabletLarge && sliderContent?.length ? (
-					<Slider
-						dataSlider={{ [currentLanguage]: [{ sliderContent: sliderContent }] }}
-						currentLanguage={currentLanguage}
-						isActive={0}
-					/>
+				return useTabletLarge ? (
+					<Slider slides={sliderContent || []} currentLanguage={currentLanguage} />
 				) : null;
 			}
 

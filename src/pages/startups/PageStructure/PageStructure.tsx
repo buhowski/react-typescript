@@ -86,12 +86,12 @@ const PageStructure: React.FC<PageProps> = ({ textData, tableOfContent = false }
 		const currentLangContent = textData[currentLang] || [];
 		const englishContent = textData.en || [];
 
-		// Map over the current language content (or its fallback)
 		return currentLangContent.map((item, index) => {
 			const englishItem = englishContent[index];
 
 			return {
 				...item,
+				// sliderContent fallback is important for MarkdownBlock (mobile)
 				sliderContent: item.sliderContent || englishItem?.sliderContent,
 				filmsPreviewUrl: item.filmsPreviewUrl || englishItem?.filmsPreviewUrl,
 			};
@@ -161,15 +161,9 @@ const PageStructure: React.FC<PageProps> = ({ textData, tableOfContent = false }
 	// 		],
 	// 	};
 	// }, [textData.en, activePitchIndex]);
-	const desktopSliderData = useMemo(() => {
-		return {
-			[currentLang]: [
-				{
-					sliderContent: contentToRender[activePitchIndex]?.sliderContent || [],
-				},
-			],
-		};
-	}, [contentToRender, currentLang, activePitchIndex]);
+	const desktopSliderContent = useMemo(() => {
+		return textData.en?.[activePitchIndex]?.sliderContent || [];
+	}, [textData.en, activePitchIndex]);
 
 	if (!contentToRender.length) return null;
 
@@ -226,7 +220,7 @@ const PageStructure: React.FC<PageProps> = ({ textData, tableOfContent = false }
 						<div className='desktop-slider'>
 							{/* Renders main Slider for desktop, showing only the active pitch's content */}
 							{!useTabletLarge && (
-								<Slider dataSlider={desktopSliderData} currentLanguage={currentLang} isActive={0} />
+								<Slider slides={desktopSliderContent} currentLanguage={currentLang} />
 							)}
 						</div>
 					</div>
