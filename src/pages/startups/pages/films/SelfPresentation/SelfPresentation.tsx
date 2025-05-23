@@ -1,9 +1,8 @@
 import PageStructure from '../../../PageStructure/PageStructure';
-import { sliderPodcastShow } from './PodcastShow/dataSliderPodcastShow';
 import { dataTextPodcastShow } from './PodcastShow/dataTextPodcastShow';
 
 const SelfPresentation = () => {
-	return <PageStructure textData={dataTextPodcastShow} sliderData={sliderPodcastShow} />;
+	return <PageStructure textData={dataTextPodcastShow} />;
 };
 
 export default SelfPresentation;

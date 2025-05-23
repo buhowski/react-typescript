@@ -1,23 +1,19 @@
-import { useState, useRef, useEffect, useCallback, useMemo } from 'react';
-import Copyright from '../Copyright';
-import PopupContacts from '../PopupContacts';
-import { useTabletLargeQuery } from '../../config/useMediaQuery';
-import { playIcon } from '../../pages/startups/assets/svg/playIcon';
-
-interface SlideItem {
-	itemSrc?: string;
-	itemAlt?: string;
-	itemPoster?: string;
-	itemTitle?: string;
-}
+import { useState, useEffect, useCallback, useMemo } from 'react';
+import Copyright from './Copyright';
+import PopupContacts from './PopupContacts';
+import { useTabletLargeQuery } from '../config/useMediaQuery';
+import { playIcon } from '../pages/startups/assets/svg/playIcon';
+import { LanguageCode, SlideItem } from '../types/common';
 
 interface SliderProps {
+	// Use the LanguageCode type for dataSlider keys
 	dataSlider: {
-		[key: string]: {
+		[key in LanguageCode]?: {
 			sliderContent: SlideItem[];
 		}[];
 	};
-	currentLanguage: string;
+	// Also make currentLanguage type-safe
+	currentLanguage: LanguageCode;
 	isActive?: number;
 }
 
@@ -45,9 +41,10 @@ const Slider: React.FC<SliderProps> = ({ dataSlider, currentLanguage, isActive }
 
 	// Decide which language to display, fallback to default or first key
 	const displayedLanguage = useMemo(() => {
+		// This logic still works perfectly fine with the more specific type
 		return dataSlider?.[currentLanguage]?.length
 			? currentLanguage
-			: Object.keys(dataSlider || {})[0] || 'en';
+			: (Object.keys(dataSlider || {})[0] as LanguageCode) || 'en'; // Assert type for Object.keys result
 	}, [dataSlider, currentLanguage]);
 
 	const languageGroups = useMemo(
@@ -69,18 +66,14 @@ const Slider: React.FC<SliderProps> = ({ dataSlider, currentLanguage, isActive }
 		setPlayStates((prev) => prev.map((group) => group.map(() => false)));
 	}, []);
 
-	// Reset states when language groups change or active slide changes (if needed)
+	// Consolidate state reset and video pausing logic
 	useEffect(() => {
 		const groupCount = languageGroups.length;
+		// Set initial active index to 0 for all groups
 		setActiveIndices(Array(groupCount).fill(0));
+		// Set all videos to not playing
 		setPlayStates(languageGroups.map((g) => Array(g.sliderContent.length).fill(false)));
-		pauseAllVideos();
-	}, [languageGroups, pauseAllVideos]);
-
-	// Pause videos when isActive changes (without resetting indices)
-	useEffect(() => {
-		pauseAllVideos();
-	}, [isActive, pauseAllVideos]);
+	}, [languageGroups]);
 
 	// Slide navigation handlers
 	const handleNext = useCallback(
@@ -109,6 +102,17 @@ const Slider: React.FC<SliderProps> = ({ dataSlider, currentLanguage, isActive }
 			pauseAllVideos();
 		},
 		[languageGroups, pauseAllVideos]
+	);
+
+	const handleVideoPreviewClick = useCallback(
+		(actualGroupIndex: number, itemIndex: number) => {
+			setPlayStates((prev) =>
+				prev.map((group, gi) =>
+					gi === actualGroupIndex ? group.map((_, ii) => ii === itemIndex) : group
+				)
+			);
+		},
+		[] // No dependencies needed as actualGroupIndex and itemIndex are passed as arguments
 	);
 
 	if (!groupsToRender.length) return null;
@@ -178,16 +182,7 @@ const Slider: React.FC<SliderProps> = ({ dataSlider, currentLanguage, isActive }
 															itemPoster={itemPoster}
 															itemAlt={itemAlt}
 															itemTitle={itemTitle}
-															onClick={() =>
-																setPlayStates((prev) =>
-																	prev.map((group, gi) =>
-																		gi === actualGroupIndex
-																			? // Set only the clicked item to true
-																			  group.map((_, ii) => ii === itemIndex)
-																			: group
-																	)
-																)
-															}
+															onClick={() => handleVideoPreviewClick(actualGroupIndex, itemIndex)}
 														/>
 													)
 												) : (

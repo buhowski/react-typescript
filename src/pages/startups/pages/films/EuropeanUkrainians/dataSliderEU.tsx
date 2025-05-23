@@ -16,20 +16,21 @@ import fantasy from '../../../assets/films/videos/fantasy.mp4';
 
 export const dataSliderEU = [
 	{
+		itemPoster: screamPoster,
+		itemSrc: screamVideo,
+		itemAlt: `Example 01. Bathroom Screams. From "It's Always Sunny in Philadelphia".`,
+	},
+	{
 		itemPoster: teaserPoster,
 		itemSrc: teaserVideo,
-		itemAlt: `Example 01. From "It's Always Sunny in Philadelphia" – promo.`,
+		itemAlt: `Example 02. From "It's Always Sunny in Philadelphia" – promo.`,
 	},
 	{
 		itemPoster: classicSetupPoster,
 		itemSrc: teamVideo,
-		itemAlt: `Example 02. Looks, brains, wild card. Classic setup. From "It's Always Sunny in Philadelphia".`,
+		itemAlt: `Example 03. Looks, brains, wild card. Classic setup. From "It's Always Sunny in Philadelphia".`,
 	},
-	{
-		itemPoster: screamPoster,
-		itemSrc: screamVideo,
-		itemAlt: `Example 03. Bathroom Screams. From "It's Always Sunny in Philadelphia".`,
-	},
+
 	{
 		itemPoster: broadCityPoster,
 		itemSrc: broadCityTrailer,

@@ -7,48 +7,44 @@ import Copyright from '../../../components/Copyright';
 import PitchContainer from './PitchContainer';
 import LanguageSwitcher from './LanguageSwitcher';
 import StartupNavigation from './StartupNavigation';
-import Slider from '../../../components/Slider/Slider';
+import Slider from '../../../components/Slider';
 import TableOfContent from './TableOfContent';
+import { LanguageCode, SlideItem } from '../../../types/common';
 
 import '../Startups.scss';
-
-interface SlideItem {
-	itemSrc?: string;
-	itemAlt?: string;
-	itemPoster?: string;
-	itemTitle?: string;
-}
 
 interface TextDataItem {
 	markdownAPI?: string;
 	filmsPreviewUrl?: string;
+	sliderContent?: SlideItem[];
 }
 
+// Props for the PageStructure component
 interface PageProps {
-	textData: Record<'ru' | 'en' | 'ua', TextDataItem[]>;
-	sliderData?: Record<string, { sliderContent: SlideItem[] }[]>;
+	textData: Record<LanguageCode, TextDataItem[]>;
 	tableOfContent?: boolean;
 }
 
-const LANGUAGES: ('en' | 'ua' | 'ru')[] = ['en', 'ua', 'ru'];
+const LANGUAGES: LanguageCode[] = ['en', 'ua', 'ru'];
 
-const PageStructure: React.FC<PageProps> = ({ textData, sliderData, tableOfContent = false }) => {
+// Main component for structuring startup pages
+const PageStructure: React.FC<PageProps> = ({ textData, tableOfContent = false }) => {
 	const useTabletLarge = useTabletLargeQuery();
-	const [currentLang, setCurrentLang] = useState<'en' | 'ua' | 'ru'>('en');
+	const [currentLang, setCurrentLang] = useState<LanguageCode>('en');
 	const [isActive, setIsActive] = useState(false);
 	const [activePitchIndex, setActivePitchIndex] = useState(0);
 	const [activeTextIndex, setActiveTextIndex] = useState(0);
 	const pitchRefs = useRef<(HTMLDivElement | null)[]>([]);
 
-	// Available languages based on non-empty textData arrays
+	// Filters for languages that have content available
 	const availableLangs = useMemo(
 		() => LANGUAGES.filter((lang) => textData?.[lang]?.length > 0),
 		[textData]
 	);
 
-	// Initialize language from localStorage or fallback to 'ua'
+	// Initializes current language from localStorage or falls back
 	useEffect(() => {
-		const storedLang = localStorage.getItem('currentLang') as 'en' | 'ua' | 'ru' | null;
+		const storedLang = localStorage.getItem('currentLang') as LanguageCode | null;
 		const initialLang =
 			storedLang && textData?.[storedLang]?.length
 				? storedLang
@@ -58,8 +54,9 @@ const PageStructure: React.FC<PageProps> = ({ textData, sliderData, tableOfConte
 		setCurrentLang(initialLang);
 	}, [textData, availableLangs]);
 
+	// Handles changing the active language
 	const changeLanguage = useCallback(
-		(lang: 'en' | 'ua' | 'ru') => {
+		(lang: LanguageCode) => {
 			if (textData?.[lang]?.length) {
 				setCurrentLang(lang);
 				localStorage.setItem('currentLang', lang);
@@ -68,7 +65,7 @@ const PageStructure: React.FC<PageProps> = ({ textData, sliderData, tableOfConte
 		[textData]
 	);
 
-	// Scroll listener to toggle isActive
+	// Manages 'isActive' state for the sticky header based on scroll position
 	useEffect(() => {
 		const pageContainer = document.querySelector('.page-container');
 		const startupAction = document.querySelector('.startup-action');
@@ -84,22 +81,24 @@ const PageStructure: React.FC<PageProps> = ({ textData, sliderData, tableOfConte
 		return () => pageContainer.removeEventListener('scroll', handleScroll);
 	}, []);
 
-	// Content fallback logic: currentLang → en → []
-	const contentToRender = useMemo(
-		() => textData[currentLang] || textData.en || [],
-		[textData, currentLang]
-	);
+	// Determines content to render based on current language, with English fallback
+	const contentToRender = useMemo(() => {
+		const currentLangContent = textData[currentLang] || [];
+		const englishContent = textData.en || [];
 
-	// Memoized sliders for mobile/tablet view
-	const memoizedSliders = useMemo(() => {
-		if (!sliderData) return null;
+		// Map over the current language content (or its fallback)
+		return currentLangContent.map((item, index) => {
+			const englishItem = englishContent[index];
 
-		return contentToRender.map((_, i) => (
-			<Slider key={i} dataSlider={sliderData} currentLanguage={currentLang} isActive={i} />
-		));
-	}, [sliderData, currentLang, contentToRender]);
+			return {
+				...item,
+				sliderContent: item.sliderContent || englishItem?.sliderContent,
+				filmsPreviewUrl: item.filmsPreviewUrl || englishItem?.filmsPreviewUrl,
+			};
+		});
+	}, [textData, currentLang]);
 
-	// Track active pitch index based on scroll, only on desktop
+	// Tracks the active pitch section based on scroll position (desktop only)
 	useEffect(() => {
 		if (useTabletLarge || pitchRefs.current.length === 0) return;
 
@@ -110,21 +109,69 @@ const PageStructure: React.FC<PageProps> = ({ textData, sliderData, tableOfConte
 
 		const handleScroll = () => {
 			const containerTop = container.getBoundingClientRect().top;
+			let newActiveIndex = 0;
 			for (let i = 0; i < pitchRefs.current.length; i++) {
 				const ref = pitchRefs.current[i];
 				if (!ref) continue;
 				const topRelativeToContainer = ref.getBoundingClientRect().top - containerTop;
 
 				if (topRelativeToContainer <= triggerOffset) {
-					setActivePitchIndex(i);
+					newActiveIndex = i;
 				}
 			}
+			setActivePitchIndex(newActiveIndex);
+			setActiveTextIndex(newActiveIndex);
 		};
 
 		container.addEventListener('scroll', handleScroll, { passive: true });
 		handleScroll();
 		return () => container.removeEventListener('scroll', handleScroll);
 	}, [useTabletLarge, contentToRender]);
+
+	// Handles click on Table of Content item, scrolls to corresponding pitch section
+	const handleTableOfContentSelect = useCallback((index: number) => {
+		const targetPitch = pitchRefs.current[index];
+
+		if (targetPitch) {
+			const pageContainer = document.querySelector('.page-container');
+
+			if (pageContainer) {
+				const containerTop = pageContainer.getBoundingClientRect().top;
+				const targetTop = targetPitch.getBoundingClientRect().top;
+				const currentScrollTop = pageContainer.scrollTop;
+				const scrollOffset = 80;
+				let scrollTo = targetTop - containerTop + currentScrollTop;
+				scrollTo -= scrollOffset;
+
+				pageContainer.scrollTo({
+					top: scrollTo,
+					behavior: 'smooth',
+				});
+			}
+		}
+	}, []);
+
+	// const desktopSliderData = useMemo(() => {
+	// 	return {
+	// 		en: [
+	// 			// Hardcoding to 'en' key for the desktop slider makes it stable.
+	// 			{
+	// 				sliderContent: textData.en?.[activePitchIndex]?.sliderContent || [],
+	// 			},
+	// 		],
+	// 	};
+	// }, [textData.en, activePitchIndex]);
+	const desktopSliderData = useMemo(() => {
+		return {
+			[currentLang]: [
+				{
+					sliderContent: contentToRender[activePitchIndex]?.sliderContent || [],
+				},
+			],
+		};
+	}, [contentToRender, currentLang, activePitchIndex]);
+
+	if (!contentToRender.length) return null;
 
 	return (
 		<>
@@ -139,6 +186,7 @@ const PageStructure: React.FC<PageProps> = ({ textData, sliderData, tableOfConte
 					<div className='idea-info'>
 						{contentToRender.map((structure, index) => {
 							const fallbackFilmsPreview = textData.en?.[index]?.filmsPreviewUrl;
+
 							return (
 								<PitchContainer
 									key={index}
@@ -147,15 +195,15 @@ const PageStructure: React.FC<PageProps> = ({ textData, sliderData, tableOfConte
 										filmsPreviewUrl: structure.filmsPreviewUrl || fallbackFilmsPreview,
 									}}
 									index={index}
-									useTabletLarge={useTabletLarge}
-									slider={memoizedSliders ? memoizedSliders[index] : null}
+									currentLanguage={currentLang}
+									sliderContent={structure.sliderContent}
 									ref={(el) => (pitchRefs.current[index] = el)}
 								/>
 							);
 						})}
 
+						{/* Renders copyright/contacts based on tablet/large screen query */}
 						{useTabletLarge && <Copyright />}
-
 						<div className='copy-tablet'>{useTabletLarge && <PopupContacts />}</div>
 					</div>
 
@@ -166,22 +214,19 @@ const PageStructure: React.FC<PageProps> = ({ textData, sliderData, tableOfConte
 							changeLanguage={changeLanguage}
 						/>
 
-						{/* Table of Content (pass tableOfContent={true} to page where need) */}
+						{/* Renders Table of Content if enabled and multiple sections exist */}
 						{tableOfContent && contentToRender.length > 1 && (
 							<TableOfContent
 								contentLength={contentToRender.length}
 								activeIndex={activeTextIndex}
-								onSelectIndex={setActiveTextIndex}
+								onSelectIndex={handleTableOfContentSelect}
 							/>
 						)}
 
 						<div className='desktop-slider'>
-							{!useTabletLarge && sliderData && (
-								<Slider
-									dataSlider={sliderData}
-									currentLanguage={currentLang}
-									isActive={activePitchIndex}
-								/>
+							{/* Renders main Slider for desktop, showing only the active pitch's content */}
+							{!useTabletLarge && (
+								<Slider dataSlider={desktopSliderData} currentLanguage={currentLang} isActive={0} />
 							)}
 						</div>
 					</div>

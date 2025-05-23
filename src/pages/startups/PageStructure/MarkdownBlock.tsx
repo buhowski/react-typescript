@@ -1,14 +1,18 @@
 import React from 'react';
 import ReactMarkdown, { Components } from 'react-markdown';
+import { useTabletLargeQuery } from '../../../config/useMediaQuery';
+import Slider from '../../../components/Slider';
+import { LanguageCode, SlideItem } from '../../../types/common';
 
 interface MarkdownBlockProps {
 	src: string;
-	slider?: JSX.Element | null;
-	useTabletLarge: boolean;
+	sliderContent?: SlideItem[];
+	currentLanguage: LanguageCode;
 }
 
-const MarkdownBlock = React.memo(({ src, slider, useTabletLarge }: MarkdownBlockProps) => {
+const MarkdownBlock = React.memo(({ src, sliderContent, currentLanguage }: MarkdownBlockProps) => {
 	const [text, setText] = React.useState('');
+	const useTabletLarge = useTabletLargeQuery();
 
 	React.useEffect(() => {
 		fetch(src)
@@ -23,9 +27,16 @@ const MarkdownBlock = React.memo(({ src, slider, useTabletLarge }: MarkdownBlock
 			if (
 				childArray.length === 1 &&
 				typeof childArray[0] === 'string' &&
-				childArray[0].trim() === '[mobile-slider]' // use to render slider = [mobile-slider]
+				// use to render slider = [mobile-slider]
+				childArray[0].trim() === '[mobile-slider]'
 			) {
-				return useTabletLarge ? <>{slider}</> : null;
+				return useTabletLarge && sliderContent?.length ? (
+					<Slider
+						dataSlider={{ [currentLanguage]: [{ sliderContent: sliderContent }] }}
+						currentLanguage={currentLanguage}
+						isActive={0}
+					/>
+				) : null;
 			}
 
 			return <p>{children}</p>;

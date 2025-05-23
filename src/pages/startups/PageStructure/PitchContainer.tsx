@@ -1,6 +1,7 @@
 import React, { forwardRef } from 'react';
 import { NavLink } from 'react-router-dom';
 import MarkdownBlock from './MarkdownBlock';
+import { LanguageCode, SlideItem } from '../../../types/common';
 
 interface PitchContainerProps {
 	structure: {
@@ -9,34 +10,36 @@ interface PitchContainerProps {
 	};
 
 	index: number;
-	useTabletLarge: boolean;
-	slider?: JSX.Element | null;
+	sliderContent?: SlideItem[];
+	currentLanguage: LanguageCode;
 }
 
 const PitchContainer = React.memo(
-	forwardRef<HTMLDivElement, PitchContainerProps>(({ structure, useTabletLarge, slider }, ref) => {
-		return (
-			<div ref={ref} className={`pitch-container`}>
-				{/* Markdown Text Structure */}
-				{structure.markdownAPI && (
-					<div className='idea-block idea-block--markdown'>
-						<MarkdownBlock
-							src={structure.markdownAPI}
-							slider={slider}
-							useTabletLarge={useTabletLarge}
-						/>
-					</div>
-				)}
+	forwardRef<HTMLDivElement, PitchContainerProps>(
+		({ structure, currentLanguage, sliderContent }, ref) => {
+			return (
+				<div ref={ref} className={`pitch-container`}>
+					{/* Markdown Text Structure */}
+					{structure.markdownAPI && (
+						<div className='idea-block'>
+							<MarkdownBlock
+								src={structure.markdownAPI}
+								sliderContent={sliderContent}
+								currentLanguage={currentLanguage}
+							/>
+						</div>
+					)}
 
-				{structure.filmsPreviewUrl && (
-					<div className='idea-block__action'>
-						<NavLink to={structure.filmsPreviewUrl} className='idea-block__more'>
-							<span>read more</span>
-						</NavLink>
-					</div>
-				)}
-			</div>
-		);
-	})
+					{structure.filmsPreviewUrl && (
+						<div className='idea-block__action'>
+							<NavLink to={structure.filmsPreviewUrl} className='idea-block__more'>
+								<span>read more</span>
+							</NavLink>
+						</div>
+					)}
+				</div>
+			);
+		}
+	)
 );
 export default PitchContainer;

@@ -6,6 +6,9 @@ const customFilmsAlts = [''];
 
 export const dataFilmsSlider = {
 	en: [
+		// ### Podcast Show ###
+		{ sliderContent: dataSliderTheCorp },
+
 		// ### European Ukrainians ###
 		{
 			sliderContent: dataSliderEU.map((item, index) => ({
@@ -13,9 +16,6 @@ export const dataFilmsSlider = {
 				itemAlt: customFilmsAlts[index] ? customFilmsAlts[index] : item.itemAlt,
 			})),
 		},
-
-		// ### Podcast Show ###
-		{ sliderContent: dataSliderTheCorp },
 
 		// ### The Corp .!. ###
 		{ sliderContent: [] },
