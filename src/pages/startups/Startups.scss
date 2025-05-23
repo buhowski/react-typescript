@@ -1,6 +1,6 @@
 @import '../../styles/variables';
 @import '../../styles/animation';
-// @import './Toc.scss';
+@import './TableOfContent.scss';
 
 @mixin titleFont {
 	font-family: $Raleway;
@@ -129,7 +129,7 @@
 		border-right: 1.5px solid $blue-main;
 		white-space: nowrap;
 		width: 0;
-		animation: typing 2.5s steps(18, end) 2s forwards, blink-caret 1s step-end infinite;
+		animation: typing 2s steps(18, end) 1s forwards, blink-caret 1s step-end infinite;
 
 		@include tabletBig {
 			margin: auto;
@@ -301,15 +301,10 @@
 .headline-types {
 	// .headline-types__title
 	&__title {
-		font-size: 14px;
+		font-size: 15px;
 		font-weight: 300;
-		letter-spacing: 0.8px;
 		line-height: 1.5;
 		color: #ffffff;
-
-		@include mobile {
-			font-size: 13px;
-		}
 
 		&:not(:first-of-type) {
 			margin-top: 10px;
@@ -401,6 +396,10 @@
 			font-size: 20px;
 			margin-top: 35px;
 		}
+
+		+ ul {
+			margin-top: 0;
+		}
 	}
 
 	h4 {
@@ -443,10 +442,6 @@
 				}
 			}
 		}
-	}
-
-	h3 + ul {
-		margin-top: 0;
 	}
 
 	p:has(em) {
@@ -610,6 +605,7 @@
 	color: $snow;
 
 	img,
+	iframe,
 	video {
 		object-position: center;
 		object-fit: cover;
@@ -617,9 +613,11 @@
 		opacity: 0;
 		visibility: hidden;
 		transform: scale(1.3);
+		border: none;
 		transition: transform 0.4s ease-out, opacity 0.4s ease, visibility 0.4s ease;
 	}
 
+	iframe,
 	video {
 		cursor: pointer;
 		object-fit: contain;
@@ -629,6 +627,7 @@
 		z-index: 0;
 
 		img,
+		iframe,
 		video {
 			transform: scale(1);
 			opacity: 1;

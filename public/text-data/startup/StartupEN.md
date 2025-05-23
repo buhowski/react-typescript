@@ -100,7 +100,7 @@ Initially, only partners will be able to publish in the magazine — to maintain
 - For the magazine: rapid audience growth, quality content, and a strong team of like-minded creators
 - For the audience: a new media space with freedom of expression and dynamic formats for interaction
 
-## For the Whole Picture
+## For the Full Picture
 
 ### Problems
 

@@ -21,6 +21,7 @@ export const pathToProjects = '/projects';
 // Films Industry
 export const pathToEuropeanUkrainians = '/european-ukrainians';
 export const pathToTheCorp = '/the-corp';
+export const pathToSelfPresentation = '/self-presentation';
 export const pathToPodcastShow = '/podcast-show';
 
 // Games Industry

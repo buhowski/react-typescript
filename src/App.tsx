@@ -14,6 +14,7 @@ import {
 	pathToTheCorp,
 	pathToCossacksRPG,
 	pathToPodcastShow,
+	pathToSelfPresentation,
 } from './components/urlsData';
 import Header from './components/header/Header';
 import Home from './pages/home/Home';
@@ -29,7 +30,8 @@ import StartupMVP from './pages/startups/MVP';
 // Films Industry
 import EuropeanUkrainians from './pages/startups/pages/films/EuropeanUkrainians/EuropeanUkrainians';
 import TheCorp from './pages/startups/pages/films/TheCorp/TheCorp';
-import PodcastShow from './pages/startups/pages/films/PodcastShow/PodcastShow';
+import SelfPresentation from './pages/startups/pages/films/SelfPresentation/SelfPresentation';
+import PodcastShow from './pages/startups/pages/films/SelfPresentation/PodcastShow/PodcastShow';
 
 // Games Industry
 import CossacksRPG from './pages/startups/pages/games/CossacksRPG/CossacksRPG';
@@ -48,6 +50,7 @@ const routesData = [
 	// Films Industry
 	{ pathTo: pathToEuropeanUkrainians, pageComponent: <EuropeanUkrainians /> },
 	{ pathTo: pathToTheCorp, pageComponent: <TheCorp /> },
+	{ pathTo: pathToSelfPresentation, pageComponent: <SelfPresentation /> },
 	{ pathTo: pathToPodcastShow, pageComponent: <PodcastShow /> },
 
 	// Games Industry
@@ -57,6 +60,7 @@ const routesData = [
 const App = () => {
 	const location = useLocation();
 
+	// Old Fix for full height of mobile browser without navbar
 	// useEffect(() => {
 	// 	const handleResize = () => {
 	// 		const vh = window.innerHeight * 0.01;
@@ -74,8 +78,10 @@ const App = () => {
 			<CSSTransition key={location.pathname} classNames='slide' timeout={1100}>
 				<div id='page' className='page'>
 					<PageHelmet metaTags={defaultMetaTags} />
+
 					<div className='page-container'>
 						<Header />
+
 						<Routes location={location}>
 							{routesData.map(({ pathTo, pageComponent }, i) => (
 								<Route

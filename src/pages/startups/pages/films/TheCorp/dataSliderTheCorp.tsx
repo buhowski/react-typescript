@@ -1,13 +1,18 @@
 // Video Posters
 import fantasyPoster from '../../../assets/films/fantasyPoster.webp';
 
-// Videos
-import fantasy from '../../../assets/films/videos/fantasy.mp4';
+const theOfficeIntro = 'https://www.youtube.com/embed/_Bi9SUW-4fg?si=0nXXKiW6-zodvefZ';
+const theOfficeIntro2 = 'https://www.youtube.com/embed/_Bi9SUW-4fg?si=0nXXKiW6-zodvefZ';
 
 export const dataSliderTheCorp = [
 	{
 		itemPoster: fantasyPoster,
-		itemSrc: fantasy,
+		itemSrc: theOfficeIntro,
+		itemAlt: `Sample 06. From "The Secret Life of Walter Mitty".`,
+	},
+	{
+		itemPoster: fantasyPoster,
+		itemSrc: theOfficeIntro2,
 		itemAlt: `Sample 06. From "The Secret Life of Walter Mitty".`,
 	},
 ];

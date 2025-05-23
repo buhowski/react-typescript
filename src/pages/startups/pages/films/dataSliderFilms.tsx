@@ -1,4 +1,5 @@
 import { dataSliderEU } from './EuropeanUkrainians/dataSliderEU';
+import { dataSliderTheCorp } from './TheCorp/dataSliderTheCorp';
 
 // Custom Previes if need
 const customFilmsAlts = [''];
@@ -14,7 +15,7 @@ export const dataFilmsSlider = {
 		},
 
 		// ### Podcast Show ###
-		{ sliderContent: [] },
+		{ sliderContent: dataSliderTheCorp },
 
 		// ### The Corp .!. ###
 		{ sliderContent: [] },
