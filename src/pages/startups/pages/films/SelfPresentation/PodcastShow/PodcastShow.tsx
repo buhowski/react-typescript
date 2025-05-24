@@ -1,8 +1,8 @@
 import PageStructure from '../../../../PageStructure/PageStructure';
-import { dataTextPodcastShow } from './dataTextPodcastShow';
+import { dataPodcastShow } from './dataPodcastShow';
 
 const PodcastShow = () => {
-	return <PageStructure textData={dataTextPodcastShow} />;
+	return <PageStructure textData={dataPodcastShow} />;
 };
 
 export default PodcastShow;

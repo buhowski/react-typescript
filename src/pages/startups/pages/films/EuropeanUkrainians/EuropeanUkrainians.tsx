@@ -1,8 +1,8 @@
 import PageStructure from '../../../PageStructure/PageStructure';
-import { dataTextEU } from './dataTextEU';
+import { dataEU } from './dataEU';
 
 const EuropeanUkrainians = () => {
-	return <PageStructure textData={dataTextEU} />;
+	return <PageStructure textData={dataEU} />;
 };
 
 export default EuropeanUkrainians;

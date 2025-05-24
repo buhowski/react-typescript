@@ -2,13 +2,7 @@ import React from 'react';
 import ReactMarkdown, { Components } from 'react-markdown';
 import { useTabletLargeQuery } from '../../../config/useMediaQuery';
 import Slider from '../../../components/Slider';
-import { LanguageCode, SlideItem } from '../../../types/common';
-
-interface MarkdownBlockProps {
-	src: string;
-	sliderContent?: SlideItem[];
-	currentLanguage: LanguageCode;
-}
+import { MarkdownBlockProps } from '../../../types/common';
 
 const MarkdownBlock = React.memo(({ src, sliderContent, currentLanguage }: MarkdownBlockProps) => {
 	const [text, setText] = React.useState('');

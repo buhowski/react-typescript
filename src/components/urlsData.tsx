@@ -18,13 +18,13 @@ export const pathToStartupMVP = '/mvp';
 export const pathToAbout = '/about';
 export const pathToProjects = '/projects';
 
-// Films Industry
+// Films
 export const pathToEuropeanUkrainians = '/european-ukrainians';
 export const pathToTheCorp = '/the-corp';
 export const pathToSelfPresentation = '/self-presentation';
 export const pathToPodcastShow = '/podcast-show';
 
-// Games Industry
+// Games
 export const pathToCossacksRPG = '/cossacks';
 
 // Separate Projects presentation URLs

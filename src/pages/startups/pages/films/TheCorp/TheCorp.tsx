@@ -1,8 +1,8 @@
 import PageStructure from '../../../PageStructure/PageStructure';
-import { dataTextTheCorp } from './dataTextTheCorp';
+import { dataTheCorp } from './dataTheCorp';
 
 const TheCorp = () => {
-	return <PageStructure textData={dataTextTheCorp} />;
+	return <PageStructure textData={dataTheCorp} />;
 };
 
 export default TheCorp;

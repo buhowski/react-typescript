@@ -1,18 +1,7 @@
 import React, { forwardRef } from 'react';
 import { NavLink } from 'react-router-dom';
 import MarkdownBlock from './MarkdownBlock';
-import { LanguageCode, SlideItem } from '../../../types/common';
-
-interface PitchContainerProps {
-	structure: {
-		markdownAPI?: string;
-		filmsPreviewUrl?: string;
-	};
-
-	index: number;
-	sliderContent?: SlideItem[];
-	currentLanguage: LanguageCode;
-}
+import { PitchContainerProps } from '../../../types/common';
 
 const PitchContainer = React.memo(
 	forwardRef<HTMLDivElement, PitchContainerProps>(

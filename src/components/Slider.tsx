@@ -3,9 +3,9 @@ import Copyright from './Copyright';
 import PopupContacts from './PopupContacts';
 import { useTabletLargeQuery } from '../config/useMediaQuery';
 import { playIcon } from '../pages/startups/assets/svg/playIcon';
-import { LanguageCode, SlideItem } from '../types/common';
+import { SliderProps } from '../types/common';
 
-// Helper functions (remain the same)
+// Helper functions
 const isYouTubeUrl = (url?: string) => url?.includes('youtube.com') || url?.includes('youtu.be');
 const isDirectVideoFile = (url?: string) => url?.match(/\.(mp4|webm|ogg)$/i);
 
@@ -22,11 +22,6 @@ const VideoPreview: React.FC<{
 		<p className='video-preview__title'>{itemAlt || itemTitle}</p>
 	</div>
 );
-
-interface SliderProps {
-	slides: SlideItem[];
-	currentLanguage: LanguageCode;
-}
 
 const Slider: React.FC<SliderProps> = ({ slides }) => {
 	const useTabletLarge = useTabletLargeQuery();

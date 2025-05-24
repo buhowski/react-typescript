@@ -1,58 +1,45 @@
-// Video Posters
-import classicSetupPoster from '../../../assets/films/classicSetupPoster.webp';
-import teaserPoster from '../../../assets/films/teaserPoster.webp';
-import screamPoster from '../../../assets/films/screamPoster.webp';
-import broadCityPoster from '../../../assets/films/broadCityPoster.webp';
-import turboKidsPoster from '../../../assets/films/turboKidsPoster.webp';
-import fantasyPoster from '../../../assets/films/fantasyPoster.webp';
+// Posters
+import classicSetupPoster from '../../../assets/films/EU/classicSetupPoster.webp';
+import promoPoster from '../../../assets/films/EU/promo.webp';
+import broadCityPoster from '../../../assets/films/EU/broadCityPoster.webp';
+import fantasyPoster from '../../../assets/films/EU/fantasyPoster.webp';
+import bestMomentsPoster from '../../../assets/films/EU/best-moments.webp';
 
 // Videos
-import teaserVideo from '../../../assets/films/videos/teaserVideo.mp4';
+import promoVideo from '../../../assets/films/videos/teaserVideo.mp4';
 import teamVideo from '../../../assets/films/videos/teamVideo.mp4';
-import screamVideo from '../../../assets/films/videos/screamVideo.mp4';
 import broadCityTrailer from '../../../assets/films/videos/broadCityTrailer.mp4';
-import newKidsTurboTrailer from '../../../assets/films/videos/newKidsTurboTrailer.mp4';
 import fantasy from '../../../assets/films/videos/fantasy.mp4';
+const bestMomentsVideo = 'https://www.youtube.com/embed/2gcEbzGbp38?si=dMoe9YbvhTGMlbjV';
 
 export const dataSliderEU = [
 	{
-		itemPoster: screamPoster,
-		itemSrc: screamVideo,
-		itemAlt: `Example 01. Bathroom Screams. From "It's Always Sunny in Philadelphia".`,
+		itemPoster: bestMomentsPoster,
+		itemSrc: bestMomentsVideo,
+		itemAlt: `The vibe I want to capture: moments example from "It's Always Sunny in Philadelphia"`,
 	},
+
 	{
-		itemPoster: teaserPoster,
-		itemSrc: teaserVideo,
-		itemAlt: `Example 02. From "It's Always Sunny in Philadelphia" – promo.`,
+		itemPoster: promoPoster,
+		itemSrc: promoVideo,
+		itemAlt: `The vibe I want to capture: promo from "It's Always Sunny in Philadelphia"`,
 	},
+
 	{
 		itemPoster: classicSetupPoster,
 		itemSrc: teamVideo,
-		itemAlt: `Example 03. Looks, brains, wild card. Classic setup. From "It's Always Sunny in Philadelphia".`,
+		itemAlt: `The team I want to capture: Looks, brains and wild card - Classic setup. From "It's Always Sunny in Philadelphia"`,
 	},
 
 	{
 		itemPoster: broadCityPoster,
 		itemSrc: broadCityTrailer,
-		itemAlt: `Example 04. From "Broad City" – promo.`,
+		itemAlt: `The vibe I want to capture: promo from "Broad City"`,
 	},
-	{
-		itemPoster: turboKidsPoster,
-		itemSrc: newKidsTurboTrailer,
-		itemAlt: `Example 05. From "New Kids Turbo" – trailer.`,
-	},
+
 	{
 		itemPoster: fantasyPoster,
 		itemSrc: fantasy,
-		itemAlt: `Example 06. From "The Secret Life of Walter Mitty".`,
+		itemAlt: `Imagination Example: from "The Secret Life of Walter Mitty"`,
 	},
 ];
-
-// Use To Import On Page
-export const sliderEU = {
-	en: [
-		{
-			sliderContent: dataSliderEU,
-		},
-	],
-};

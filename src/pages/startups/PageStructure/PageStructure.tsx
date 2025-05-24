@@ -9,21 +9,9 @@ import LanguageSwitcher from './LanguageSwitcher';
 import StartupNavigation from './StartupNavigation';
 import Slider from '../../../components/Slider';
 import TableOfContent from './TableOfContent';
-import { LanguageCode, SlideItem } from '../../../types/common';
+import { LanguageCode, PageProps } from '../../../types/common';
 
 import '../Startups.scss';
-
-interface TextDataItem {
-	markdownAPI?: string;
-	filmsPreviewUrl?: string;
-	sliderContent?: SlideItem[];
-}
-
-// Props for the PageStructure component
-interface PageProps {
-	textData: Record<LanguageCode, TextDataItem[]>;
-	tableOfContent?: boolean;
-}
 
 const LANGUAGES: LanguageCode[] = ['en', 'ua', 'ru'];
 
@@ -151,16 +139,6 @@ const PageStructure: React.FC<PageProps> = ({ textData, tableOfContent = false }
 		}
 	}, []);
 
-	// const desktopSliderData = useMemo(() => {
-	// 	return {
-	// 		en: [
-	// 			// Hardcoding to 'en' key for the desktop slider makes it stable.
-	// 			{
-	// 				sliderContent: textData.en?.[activePitchIndex]?.sliderContent || [],
-	// 			},
-	// 		],
-	// 	};
-	// }, [textData.en, activePitchIndex]);
 	const desktopSliderContent = useMemo(() => {
 		return textData.en?.[activePitchIndex]?.sliderContent || [];
 	}, [textData.en, activePitchIndex]);
@@ -198,6 +176,7 @@ const PageStructure: React.FC<PageProps> = ({ textData, tableOfContent = false }
 
 						{/* Renders copyright/contacts based on tablet/large screen query */}
 						{useTabletLarge && <Copyright />}
+
 						<div className='copy-tablet'>{useTabletLarge && <PopupContacts />}</div>
 					</div>
 

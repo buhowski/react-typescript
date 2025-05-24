@@ -1,8 +1,8 @@
 import PageStructure from './PageStructure/PageStructure';
-import { dataFilmsText } from './pages/films/dataTextFilms';
+import { dataFilms } from './pages/films/dataFilms';
 
 const StartupFilms = () => {
-	return <PageStructure textData={dataFilmsText} />;
+	return <PageStructure textData={dataFilms} />;
 };
 
 export default StartupFilms;

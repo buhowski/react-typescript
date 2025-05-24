@@ -1,10 +1,5 @@
 import React, { useState, useRef } from 'react';
-
-interface TocProps {
-	contentLength: number;
-	onSelectIndex: (index: number) => void;
-	activeIndex: number;
-}
+import { TocProps } from '../../../types/common';
 
 const TableOfContent: React.FC<TocProps> = ({ contentLength, onSelectIndex, activeIndex }) => {
 	const [isTocOpen, setIsTocOpen] = useState(false);
