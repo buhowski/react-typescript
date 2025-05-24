@@ -1,8 +1,8 @@
 import PageStructure from './PageStructure/PageStructure';
-import { dataGamesText } from './pages/games/dataTextGames';
+import { dataGames } from './pages/games/dataGames';
 
 const StartupGames = () => {
-	return <PageStructure textData={dataGamesText} />;
+	return <PageStructure textData={dataGames} />;
 };
 
 export default StartupGames;

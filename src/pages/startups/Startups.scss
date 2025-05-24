@@ -94,7 +94,7 @@
 
 .idea-info {
 	height: 100%;
-	width: 52%;
+	width: 56%;
 	position: relative;
 
 	@include tabletBig {
@@ -840,10 +840,10 @@
 
 .lang-sidebar {
 	display: flex;
-	width: 50%;
+	width: 48%;
 	position: sticky;
 	top: 80px;
-	margin-left: 90px;
+	margin-left: 100px;
 	z-index: 5;
 
 	@include tabletBig {

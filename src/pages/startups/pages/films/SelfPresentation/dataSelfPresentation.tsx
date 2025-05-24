@@ -8,9 +8,14 @@ import { dataSliderPodcastShow } from './PodcastShow/dataSliderPodcastShow';
 export const dataSelfPresentation = {
 	// English
 	en: [
+		// ### Self Presentation Projects ###
+		{
+			markdownAPI: '/text-data/films/SelfPresentation/PreviewSelfPresentationEN.md',
+		},
+
 		// ### Podcast Show  ###
 		{
-			markdownAPI: '/text-data/films/PodcastShow/PodcastShowEN.md',
+			markdownAPI: '/text-data/films/SelfPresentation/PodcastShow/PreviewPodcastShowEN.md',
 			sliderContent: dataSliderPodcastShow,
 			filmsPreviewUrl: pathToPodcastShow,
 		},
@@ -19,8 +24,20 @@ export const dataSelfPresentation = {
 	],
 
 	// Ukraine
-	ua: [],
+	ua: [
+		// ### Self Presentation Projects ###
+		{ markdownAPI: '/text-data/films/SelfPresentation/PreviewSelfPresentationUA.md' },
+
+		// ### Podcast Show  ###
+		{ markdownAPI: '/text-data/films/SelfPresentation/PodcastShow/PreviewPodcastShowUA.md' },
+	],
 
 	// rusian
-	ru: [],
+	ru: [
+		// ### Self Presentation Projects ###
+		{ markdownAPI: '/text-data/films/SelfPresentation/PreviewSelfPresentationRU.md' },
+
+		// ### Podcast Show  ###
+		{ markdownAPI: '/text-data/films/SelfPresentation/PodcastShow/PreviewPodcastShowUA.md' },
+	],
 };

@@ -7,11 +7,3 @@ export const dataSliderMVP = [
 		itemAlt: `Magazine showcasing articles on the future of journalism (new generation media), where new journalism is a separate form of art`,
 	},
 ];
-
-export const sliderMVP = {
-	en: [
-		{
-			sliderContent: dataSliderMVP,
-		},
-	],
-};

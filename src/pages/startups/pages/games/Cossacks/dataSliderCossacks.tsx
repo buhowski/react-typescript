@@ -14,7 +14,7 @@ import cossacksEquipment from '../../../assets/games/cossacksEquipment.webp';
 import combatHopak from '../../../assets/games/combatHopak.webp';
 import cossackCharakternyk from '../../../assets/games/cossackCharakternyk.webp';
 
-export const dataSliderCossacksRPG = [
+export const dataSliderCossacks = [
 	{
 		itemPoster: witcherPoster,
 		itemSrc: witcherTrailer,
@@ -51,12 +51,3 @@ export const dataSliderCossacksRPG = [
 		itemTitle: `08. Ref to Cossacks Equipment.`,
 	},
 ];
-
-// Use To Import On Page
-export const sliderCossacksRPG = {
-	en: [
-		{
-			sliderContent: dataSliderCossacksRPG,
-		},
-	],
-};

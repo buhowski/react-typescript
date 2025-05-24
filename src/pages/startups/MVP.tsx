@@ -1,8 +1,8 @@
 import PageStructure from './PageStructure/PageStructure';
-import { dataTextMVP } from './pages/MVP/dataTextMVP';
+import { dataMVP } from './pages/MVP/dataMVP';
 
 const StartupMVP = () => {
-	return <PageStructure textData={dataTextMVP} />;
+	return <PageStructure textData={dataMVP} />;
 };
 
 export default StartupMVP;

@@ -1,9 +1,10 @@
+# EN
 
 # Presentation
 
 ## Preface
 
-I've got a grand vision of the whole picture — building a corporation focused on developing areas aligned with my worldview, that inspire me and provide space for ideas, currently underdeveloped locally but with high profit potential.
+I've got a grand vision of the overall picture — creating a corporation to develop areas close to my worldview, which inspire me and provide space for ideas, are underdeveloped locally, but have high profit potential.
 
 The pieces of this picture are my individual projects, which I plan to monetize and reinvest the profits into developing my own technologies, creating opportunities for like-minded people.
 

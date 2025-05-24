@@ -1,8 +1,8 @@
 import PageStructure from './PageStructure/PageStructure';
-import { dataTextStartup } from './pages/startup/dataTextStartup';
+import { dataStartup } from './pages/startup/dataStartup';
 
 const Startup = () => {
-	return <PageStructure textData={dataTextStartup} />;
+	return <PageStructure textData={dataStartup} />;
 };
 
 export default Startup;

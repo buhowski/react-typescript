@@ -8,16 +8,22 @@ import {
 // Import the specific slider data
 import { dataSliderTheCorp } from './TheCorp/dataSliderTheCorp';
 import { dataSliderEuropeanUkrainians } from './EuropeanUkrainians/dataSliderEuropeanUkrainians';
-import { dataCustomSliderSelfPresentation } from './dataCustomSlider';
+import { dataSliderSelfPresentationCustom, dataSliderFilmsPreface } from './dataSliderFilmsCustom';
 
 // Several Projects Preview Page
 export const dataFilms = {
 	// English
 	en: [
+		// ### Main Preface  ###
+		{
+			markdownAPI: '/text-data/PreviewMainEN.md',
+			sliderContent: dataSliderFilmsPreface,
+		},
+
 		// ### Self Presentation Projects  ###
 		{
-			markdownAPI: '',
-			sliderContent: dataCustomSliderSelfPresentation,
+			markdownAPI: '/text-data/films/SelfPresentation/PreviewSelfPresentationEN.md',
+			sliderContent: dataSliderSelfPresentationCustom,
 			filmsPreviewUrl: pathToSelfPresentation,
 		},
 
@@ -38,8 +44,11 @@ export const dataFilms = {
 
 	// Ukraine
 	ua: [
+		// ### Main Preface  ###
+		{ markdownAPI: '/text-data/PreviewMainUA.md' },
+
 		// ### Self Presentation Projects ###
-		{ markdownAPI: '/text-data/films/PodcastShow/PodcastShowUA.md' },
+		{ markdownAPI: '/text-data/films/SelfPresentation/PreviewSelfPresentationUA.md' },
 
 		// ### European Ukrainians ###
 		{ markdownAPI: '/text-data/films/EuropeanUkrainians/PreviewEuropeanUkrainiansUA.md' },
@@ -50,13 +59,16 @@ export const dataFilms = {
 
 	// rusian
 	ru: [
+		// ### Main Preface  ###
+		{ markdownAPI: '/text-data/PreviewMainRU.md' },
+
 		// ### Self Presentation Projects ###
-		{ markdownAPI: '/text-data/films/PodcastShow/PodcastShowUA.md' },
+		{ markdownAPI: '/text-data/films/SelfPresentation/PreviewSelfPresentationRU.md' },
 
 		// ### European Ukrainians ###
-		{ markdownAPI: '/text-data/films/EuropeanUkrainians/PreviewEuropeanUkrainiansUA.md' },
+		{ markdownAPI: '/text-data/films/EuropeanUkrainians/PreviewEuropeanUkrainiansRU.md' },
 
 		// ### The Corp .!. ###
-		{ markdownAPI: '/text-data/films/TheCorp/PreviewTheCorpUA.md' },
+		{ markdownAPI: '/text-data/films/TheCorp/PreviewTheCorpRU.md' },
 	],
 };

@@ -93,7 +93,7 @@ const PageStructure: React.FC<PageProps> = ({ textData, tableOfContent = false }
 		const container = document.querySelector('.page-container');
 		if (!container) return;
 
-		const triggerOffset = 140;
+		const triggerOffset = 190;
 
 		const handleScroll = () => {
 			const containerTop = container.getBoundingClientRect().top;

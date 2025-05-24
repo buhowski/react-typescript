@@ -4,7 +4,7 @@ import {
 	pathToStartupMVP,
 	pathToEuropeanUkrainians,
 	pathToTheCorp,
-	pathToCossacksRPG,
+	pathToCossacks,
 	startupsNav,
 } from '../components/urlsData';
 
@@ -16,7 +16,7 @@ export const startupPaths: string[] = [
 	...startupsNav.map(({ pageLink }) => pageLink),
 	pathToEuropeanUkrainians,
 	pathToTheCorp,
-	pathToCossacksRPG,
+	pathToCossacks,
 ];
 
 //  Used to mark tab as active inside the startup sub-navigation
