@@ -30,10 +30,11 @@
 
 	@include tabletSmall {
 		width: 100%;
-		margin-bottom: 0;
-		margin-top: 10px;
+		margin-bottom: 5px;
+		margin-top: 30px;
 	}
 
+	// .name-container__title
 	&__title {
 		font-size: 80px;
 		font-size: clamp(64px, 5vw, 98px);
@@ -41,7 +42,7 @@
 
 		@include tabletSmall {
 			font-size: 44px;
-			margin-bottom: 25px;
+			margin-bottom: 30px;
 		}
 
 		span {
@@ -49,6 +50,7 @@
 		}
 	}
 
+	// ..name-container__position
 	&__position {
 		font-size: 26px;
 		font-size: clamp(26px, 1.6vw, 40px);
@@ -60,7 +62,7 @@
 
 		@include tabletSmall {
 			font-size: 23px;
-			margin-bottom: 30px;
+			margin-bottom: 35px;
 		}
 	}
 }

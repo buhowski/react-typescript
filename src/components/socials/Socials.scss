@@ -3,6 +3,7 @@
 .contact-menu {
 	display: flex;
 
+	// .contact-menu__item
 	&__item {
 		display: flex;
 		align-items: center;
@@ -14,7 +15,7 @@
 		position: relative;
 		background-color: $darker;
 		flex-shrink: 0;
-		box-shadow: 0 0 6px rgba($color: $darker, $alpha: 1);
+		box-shadow: 0 0 10px rgba($color: $darker, $alpha: 1);
 
 		@media screen and (min-width: 2000px) {
 			width: calc(50px + 1vw);

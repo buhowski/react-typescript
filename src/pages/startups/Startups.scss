@@ -41,6 +41,9 @@
 	}
 
 	.contact-menu__item {
+		background-color: #141414;
+		background: linear-gradient(145deg, #000000 58%, #002840 100%);
+
 		&:not(:last-child) {
 			margin-right: 20px;
 		}
