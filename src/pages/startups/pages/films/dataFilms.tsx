@@ -7,7 +7,7 @@ import {
 
 // Import the specific slider data
 import { dataSliderTheCorp } from './TheCorp/dataSliderTheCorp';
-import { dataSliderEU } from './EuropeanUkrainians/dataSliderEU';
+import { dataSliderEuropeanUkrainians } from './EuropeanUkrainians/dataSliderEuropeanUkrainians';
 import { dataCustomSliderSelfPresentation } from './dataCustomSlider';
 
 // Several Projects Preview Page
@@ -16,7 +16,7 @@ export const dataFilms = {
 	en: [
 		// ### Self Presentation Projects  ###
 		{
-			markdownAPI: '/text-data/films/PodcastShow/PodcastShowEN.md',
+			markdownAPI: '',
 			sliderContent: dataCustomSliderSelfPresentation,
 			filmsPreviewUrl: pathToSelfPresentation,
 		},
@@ -24,7 +24,7 @@ export const dataFilms = {
 		// ### European Ukrainians ###
 		{
 			markdownAPI: '/text-data/films/EuropeanUkrainians/PreviewEuropeanUkrainiansEN.md',
-			sliderContent: dataSliderEU,
+			sliderContent: dataSliderEuropeanUkrainians,
 			filmsPreviewUrl: pathToEuropeanUkrainians,
 		},
 
@@ -49,5 +49,14 @@ export const dataFilms = {
 	],
 
 	// rusian
-	ru: [],
+	ru: [
+		// ### Self Presentation Projects ###
+		{ markdownAPI: '/text-data/films/PodcastShow/PodcastShowUA.md' },
+
+		// ### European Ukrainians ###
+		{ markdownAPI: '/text-data/films/EuropeanUkrainians/PreviewEuropeanUkrainiansUA.md' },
+
+		// ### The Corp .!. ###
+		{ markdownAPI: '/text-data/films/TheCorp/PreviewTheCorpUA.md' },
+	],
 };

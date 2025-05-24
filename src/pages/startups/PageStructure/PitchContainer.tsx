@@ -6,16 +6,31 @@ import { PitchContainerProps } from '../../../types/common';
 const PitchContainer = React.memo(
 	forwardRef<HTMLDivElement, PitchContainerProps>(
 		({ structure, currentLanguage, sliderContent }, ref) => {
+			const [markdownLoadError, setMarkdownLoadError] = React.useState(false);
+
+			// Condition to determine if an error message should be displayed
+			const shouldShowErrorMessage =
+				!structure.markdownAPI || structure.markdownAPI.trim() === '' || markdownLoadError;
+
 			return (
 				<div ref={ref} className={`pitch-container`}>
-					{/* Markdown Text Structure */}
-					{structure.markdownAPI && (
+					{/* Render the markdown block container if a markdown API path is potentially provided */}
+					{structure.markdownAPI !== undefined && structure.markdownAPI !== null && (
 						<div className='idea-block'>
-							<MarkdownBlock
-								src={structure.markdownAPI}
-								sliderContent={sliderContent}
-								currentLanguage={currentLanguage}
-							/>
+							{shouldShowErrorMessage ? (
+								// If there's an error (empty path, or load error), show the message
+								<p style={{ textAlign: 'center', textTransform: 'uppercase' }}>
+									ERROR: Text not found
+								</p>
+							) : (
+								// Otherwise, render the MarkdownBlock
+								<MarkdownBlock
+									src={structure.markdownAPI}
+									sliderContent={sliderContent}
+									currentLanguage={currentLanguage}
+									onError={setMarkdownLoadError}
+								/>
+							)}
 						</div>
 					)}
 

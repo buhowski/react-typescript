@@ -1,9 +1,9 @@
 // Posters
-import classicSetupPoster from '../../../assets/films/EU/classicSetupPoster.webp';
-import promoPoster from '../../../assets/films/EU/promo.webp';
-import broadCityPoster from '../../../assets/films/EU/broadCityPoster.webp';
-import fantasyPoster from '../../../assets/films/EU/fantasyPoster.webp';
-import bestMomentsPoster from '../../../assets/films/EU/best-moments.webp';
+import classicSetupPoster from '../../../assets/films/EuropeanUkrainians/classicSetupPoster.webp';
+import promoPoster from '../../../assets/films/EuropeanUkrainians/promo.webp';
+import broadCityPoster from '../../../assets/films/EuropeanUkrainians/broadCityPoster.webp';
+import fantasyPoster from '../../../assets/films/EuropeanUkrainians/fantasyPoster.webp';
+import bestMomentsPoster from '../../../assets/films/EuropeanUkrainians/best-moments.webp';
 
 // Videos
 import promoVideo from '../../../assets/films/videos/teaserVideo.mp4';
@@ -12,7 +12,7 @@ import broadCityTrailer from '../../../assets/films/videos/broadCityTrailer.mp4'
 import fantasy from '../../../assets/films/videos/fantasy.mp4';
 const bestMomentsVideo = 'https://www.youtube.com/embed/2gcEbzGbp38?si=dMoe9YbvhTGMlbjV';
 
-export const dataSliderEU = [
+export const dataSliderEuropeanUkrainians = [
 	{
 		itemPoster: bestMomentsPoster,
 		itemSrc: bestMomentsVideo,

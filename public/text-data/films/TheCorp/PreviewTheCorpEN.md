@@ -1,11 +1,11 @@
-#### Pitch 02. Shows / Series
+
+#### Mockumentary Series
 
 # The Corp .!.
 
-***Status:** Coming Soon …*
-
 [mobile-slider]
 
-## Логлайн
+## Logline
 
-Coming Soon …
+A pseudo-documentary backstage series about building our own corporation. A lively, ironic nod to the American show ”The Office”, mixing real-life scenes with absurdity that disrupts the workflow.
+

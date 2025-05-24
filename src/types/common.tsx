@@ -54,6 +54,7 @@ export interface PitchContainerProps extends WithLanguage, WithOptionalSliderCon
 // MarkdownBlock component props
 export interface MarkdownBlockProps extends WithLanguage, WithOptionalSliderContent {
 	src: string;
+	onError?: (hasError: boolean) => void;
 }
 
 // Slider component props

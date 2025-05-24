@@ -1,12 +1,19 @@
 import { dataSliderPodcastShow } from './SelfPresentation/PodcastShow/dataSliderPodcastShow';
 
-// Custom Slider Data Previes
+// Custom ALT prefixes
+const ALT_PODCAST_SHOW = 'Showcase for Podcast Show: ';
 
-// ### Self Presentation Projects ###
-const customSliderSelfPresentationAlts = ['Showcase for Podcast SHow: '];
+// Combine slides with corresponding alt prefixes
+const rawCombinedSelfPresentationSlides = [
+	// All Array
+	...dataSliderPodcastShow.map((item) => ({ ...item, _prefix: ALT_PODCAST_SHOW })),
 
-// TODO: rewrite for several item slides can be added from different sliders
-export const dataCustomSliderSelfPresentation = dataSliderPodcastShow.map((item, index) => ({
+	// or simgle item
+	// { ...dataSliderPodcastShow[0], _prefix: ALT_PODCAST_SHOW },
+];
+
+// Final export with constructed itemAlt
+export const dataCustomSliderSelfPresentation = rawCombinedSelfPresentationSlides.map((item) => ({
 	...item,
-	itemAlt: (customSliderSelfPresentationAlts[index] || '') + item.itemAlt,
+	itemAlt: `${item._prefix || ''}${item.itemAlt ?? ''}`,
 }));
