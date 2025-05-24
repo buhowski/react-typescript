@@ -23,7 +23,7 @@ const VideoPreview: React.FC<{
 	</div>
 );
 
-const Slider: React.FC<SliderProps> = ({ slides }) => {
+const Slider: React.FC<SliderProps> = ({ slides, currentLanguage }) => {
 	const useTabletLarge = useTabletLargeQuery();
 	const [activeIndex, setActiveIndex] = useState(0);
 	const [isPlayingVideo, setIsPlayingVideo] = useState(false);
@@ -163,7 +163,7 @@ const Slider: React.FC<SliderProps> = ({ slides }) => {
 			<div className='slider-container'>
 				{sliderInnerContent}
 
-				{!useTabletLarge && <PopupContacts />}
+				{!useTabletLarge && <PopupContacts currentLanguage={currentLanguage} />}
 			</div>
 		</div>
 	);

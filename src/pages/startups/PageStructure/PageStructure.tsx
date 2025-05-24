@@ -177,7 +177,9 @@ const PageStructure: React.FC<PageProps> = ({ textData, tableOfContent = false }
 						{/* Renders copyright/contacts based on tablet/large screen query */}
 						{useTabletLarge && <Copyright />}
 
-						<div className='copy-tablet'>{useTabletLarge && <PopupContacts />}</div>
+						<div className='copy-tablet'>
+							{useTabletLarge && <PopupContacts currentLanguage={currentLang} />}
+						</div>
 					</div>
 
 					<div className='lang-sidebar'>

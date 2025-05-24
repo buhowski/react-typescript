@@ -35,17 +35,31 @@
 .idea-contacts {
 	display: inline-block;
 	margin: min(8vh, 80px) auto 0;
+	text-align: center;
 
 	@include tabletBig {
 		margin-top: 50px;
 	}
 
-	.contact-menu__item {
-		background-color: #141414;
-		background: linear-gradient(145deg, #000000 58%, #002840 100%);
+	h3 {
+		margin-bottom: 30px;
+		@include titleFont;
+		letter-spacing: 0;
+		font-size: 13px;
+		font-weight: bold;
+	}
 
-		&:not(:last-child) {
-			margin-right: 20px;
+	.contact-menu {
+		justify-content: center;
+
+		// .contact-menu__item
+		&__item {
+			background-color: #141414;
+			// background: linear-gradient(145deg, #000000 58%, #002840 100%);
+
+			&:not(:last-child) {
+				margin-right: 20px;
+			}
 		}
 	}
 }
