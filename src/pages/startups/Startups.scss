@@ -868,6 +868,12 @@
 		position: relative;
 		top: 0;
 	}
+
+	// .lang-sidebar--has-toc
+	&--has-toc {
+		top: 120px;
+		margin-top: 45px;
+	}
 }
 
 .desktop-slider {

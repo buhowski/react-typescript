@@ -21,30 +21,6 @@ const TableOfContent: React.FC<TocProps> = ({ onSelectIndex, activeHeadingId, he
 		}
 	}, [isTocOpen, headings]);
 
-	// Scroll to active item
-	useEffect(() => {
-		if (!isTocOpen || !listRef.current) return;
-
-		const listElement = listRef.current;
-		const activeButton = listElement.querySelector('button.is-active') as HTMLButtonElement | null;
-
-		if (activeButton) {
-			const listRect = listElement.getBoundingClientRect();
-			const buttonRect = activeButton.getBoundingClientRect();
-
-			if (buttonRect.top < listRect.top || buttonRect.bottom > listRect.bottom) {
-				listElement.scrollTo({
-					top:
-						activeButton.offsetTop -
-						listElement.offsetTop -
-						listRect.height / 2 +
-						buttonRect.height / 2,
-					behavior: 'smooth',
-				});
-			}
-		}
-	}, [activeHeadingId, isTocOpen, headings]);
-
 	// Close on outside click
 	useEffect(() => {
 		const handleClickOutside = (event: MouseEvent) => {

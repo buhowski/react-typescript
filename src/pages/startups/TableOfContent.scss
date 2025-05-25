@@ -32,15 +32,6 @@ $toc-top: 12px;
 				@include burgerIconOpen;
 			}
 		}
-
-		.table-content__list {
-			max-height: 70dvh;
-
-			@include tabletBig {
-				max-width: unset;
-				transform: translateX(0);
-			}
-		}
 	}
 
 	// .table-content__btn
@@ -88,6 +79,7 @@ $toc-top: 12px;
 		box-shadow: 0 0 10px rgba($color: $black, $alpha: 1);
 		width: 100%;
 		height: 0;
+		max-height: 72dvh;
 		position: absolute;
 		left: 0;
 		top: 100%;
@@ -128,6 +120,10 @@ $toc-top: 12px;
 			&.is-active {
 				&::before {
 					display: block;
+				}
+
+				mark {
+					color: red;
 				}
 			}
 
