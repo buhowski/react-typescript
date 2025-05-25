@@ -27,8 +27,7 @@
 		}
 
 		.table-content__list {
-			height: auto;
-			max-height: 68vh;
+			height: 55vh;
 
 			@include tabletBig {
 				max-width: unset;
@@ -95,7 +94,7 @@
 		top: 100%;
 		overflow: hidden;
 		width: 100%;
-		max-height: 0;
+		height: 0;
 		transition: 0.2s;
 		border-radius: 0 0 10px 10px;
 		box-shadow: 0 0 10px rgba($color: $black, $alpha: 1);

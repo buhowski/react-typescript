@@ -1,52 +1,92 @@
-import React from 'react';
+import React, { useState, useEffect, useRef, useCallback, memo, Children } from 'react';
 import ReactMarkdown, { Components } from 'react-markdown';
 
 import { useTabletLargeQuery } from '../../../config/useMediaQuery';
 import Slider from '../../../components/Slider';
+
 import { MarkdownBlockProps } from '../../../types/common';
 
-// Helper to check if string looks like an HTML document
+// Check if fetched content is HTML instead of Markdown
 const isHtmlDocument = (str: string) =>
 	str.trim().startsWith('<!DOCTYPE html>') ||
 	str.trim().startsWith('<html') ||
 	str.trim().includes('<body');
 
-const MarkdownBlock = React.memo(
-	({ src, sliderContent, currentLanguage, onError }: MarkdownBlockProps) => {
-		const [text, setText] = React.useState('');
-		const [hasError, setHasError] = React.useState(false);
+const MarkdownBlock = memo(
+	({
+		src,
+		sliderContent,
+		currentLanguage,
+		onError,
+		onHeadingsExtracted,
+		pitchIndex,
+	}: MarkdownBlockProps) => {
+		const [text, setText] = useState('');
+		const [hasError, setHasError] = useState(false);
 		const useTabletLarge = useTabletLargeQuery();
 
-		React.useEffect(() => {
+		const collectedHeadingsRef = useRef<{ text: string; level: number; id: string }[]>([]);
+		const slugCountersRef = useRef<{ [key: string]: number }>({});
+
+		// Generate unique slugs with local counter
+		const slugify = useCallback((text: string) => {
+			let baseSlug = text
+				.toLowerCase()
+				.replace(/[^\w\s-]/g, '')
+				.replace(/[\s_-]+/g, '-')
+				.replace(/^-+|-+$/g, '');
+
+			if (!baseSlug) baseSlug = 'section';
+
+			const count = slugCountersRef.current[baseSlug] ?? 0;
+			slugCountersRef.current[baseSlug] = count + 1;
+
+			return count > 0 ? `${baseSlug}-${count}` : baseSlug;
+		}, []);
+
+		// Fetch markdown content on src change
+		useEffect(() => {
 			setHasError(false);
-			// Notify parent about reset error state
 			onError?.(false);
+			collectedHeadingsRef.current = [];
+			slugCountersRef.current = {};
+
 			fetch(src)
 				.then((res) => {
-					if (!res.ok) throw new Error(`HTTP error: ${res.status} for ${src}`);
+					if (!res.ok) throw new Error(`HTTP ${res.status} for ${src}`);
 					return res.text();
 				})
 				.then((fetchedText) => {
 					if (isHtmlDocument(fetchedText)) {
-						throw new Error(`Content for ${src} is HTML, not Markdown.`);
+						throw new Error(`Content is HTML, not Markdown: ${src}`);
 					}
 					setText(fetchedText);
 				})
 				.catch((err) => {
-					console.error('Failed to load markdown:', err);
+					console.error('Markdown fetch error:', err);
 					setHasError(true);
-					// Notify parent about the error
 					onError?.(true);
 				});
-		}, [src, onError]); // Add onError to dependency array
+		}, [src, onError, pitchIndex]);
 
+		// Pass extracted headings to parent
+		useEffect(() => {
+			if (onHeadingsExtracted && collectedHeadingsRef.current.length > 0) {
+				onHeadingsExtracted(collectedHeadingsRef.current);
+			}
+		}, [text, onHeadingsExtracted]);
+
+		// Custom renderers for headings, links, and slider tag
 		const components: Components = {
-			p({ children }) {
-				const childArray = React.Children.toArray(children);
+			h1: ({ children }) => renderHeading(children, 1),
+			h2: ({ children }) => renderHeading(children, 2),
+			h3: ({ children }) => renderHeading(children, 3),
+			p: ({ children }) => {
+				const child = Children.toArray(children)[0];
 				if (
-					childArray.length === 1 &&
-					typeof childArray[0] === 'string' &&
-					childArray[0].trim() === '[mobile-slider]'
+					Children.count(children) === 1 &&
+					typeof child === 'string' &&
+					child.trim() === '[mobile-slider]'
 				) {
 					return useTabletLarge ? (
 						<Slider slides={sliderContent || []} currentLanguage={currentLanguage} />
@@ -54,20 +94,25 @@ const MarkdownBlock = React.memo(
 				}
 				return <p>{children}</p>;
 			},
-
-			a({ href, children }) {
-				return (
-					<a href={href} target='_blank' rel='noopener noreferrer'>
-						<span>{children}</span>
-					</a>
-				);
-			},
+			a: ({ href, children }) => (
+				<a href={href} target='_blank' rel='noopener noreferrer'>
+					<span>{children}</span>
+				</a>
+			),
 		};
 
-		// Render null if there's an error, letting the parent handle the error message
-		if (hasError) return null;
-		// If text is empty but no error, might be a valid empty markdown file, so also render null
-		if (!text.trim()) return null;
+		const renderHeading = (children: React.ReactNode, level: number) => {
+			const rawText = Children.toArray(children).join('');
+			const slug = slugify(rawText);
+			const id = `h${level}-${pitchIndex}-${slug}`;
+
+			collectedHeadingsRef.current.push({ text: rawText, level, id });
+
+			const Tag = `h${level}` as keyof JSX.IntrinsicElements;
+			return <Tag id={id}>{children}</Tag>;
+		};
+
+		if (hasError || !text.trim()) return null;
 
 		return <ReactMarkdown components={components}>{text}</ReactMarkdown>;
 	}

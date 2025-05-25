@@ -1,13 +1,36 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { TocProps } from '../../../types/common';
 
-const TableOfContent: React.FC<TocProps> = ({ contentLength, onSelectIndex, activeIndex }) => {
+const TableOfContent: React.FC<TocProps> = ({ onSelectIndex, activeHeadingId, headings }) => {
 	const [isTocOpen, setIsTocOpen] = useState(false);
 	const tocRef = useRef<HTMLDivElement>(null);
+	const listRef = useRef<HTMLDivElement>(null);
 
 	const toggleToc = () => setIsTocOpen((prev) => !prev);
 
-	if (contentLength <= 1) return null;
+	useEffect(() => {
+		if (!isTocOpen || !listRef.current) return;
+
+		const listElement = listRef.current;
+		const activeButton = listElement.querySelector('button.is-active') as HTMLButtonElement | null;
+
+		if (activeButton) {
+			const listRect = listElement.getBoundingClientRect();
+			const buttonRect = activeButton.getBoundingClientRect();
+
+			// Scroll if the active button is out of view
+			if (buttonRect.top < listRect.top || buttonRect.bottom > listRect.bottom) {
+				listElement.scrollTo({
+					top:
+						activeButton.offsetTop -
+						listElement.offsetTop -
+						listRect.height / 2 +
+						buttonRect.height / 2,
+					behavior: 'smooth',
+				});
+			}
+		}
+	}, [activeHeadingId, isTocOpen, headings]);
 
 	return (
 		<div className={`table-content ${isTocOpen ? 'is-open' : ''}`} ref={tocRef}>
@@ -23,18 +46,28 @@ const TableOfContent: React.FC<TocProps> = ({ contentLength, onSelectIndex, acti
 				<span>Table Of Content</span>
 			</button>
 
-			<div className='table-content__list'>
+			<div className='table-content__list' ref={listRef}>
 				<div className='table-content__inner'>
 					<div className='table-content__wrapper'>
 						<span>Table of Content</span>
 
-						{Array.from({ length: contentLength }).map((_, index) => (
+						{headings.map((heading) => (
 							<button
-								key={index}
-								onClick={() => onSelectIndex(index)}
-								className={activeIndex === index ? 'is-active' : ''}
+								key={heading.id}
+								onClick={() => onSelectIndex(heading.id)}
+								className={activeHeadingId === heading.id ? 'is-active' : ''}
 							>
-								<mark>Title</mark>
+								<mark
+									className={
+										heading.level === 1
+											? 'h1-toc-item'
+											: heading.level === 2
+											? 'h2-toc-item'
+											: 'h3-toc-item'
+									}
+								>
+									{heading.text}
+								</mark>
 							</button>
 						))}
 					</div>

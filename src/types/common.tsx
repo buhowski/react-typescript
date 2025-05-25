@@ -1,9 +1,10 @@
-// Define specific language codes (already perfect!)
+// types/common.ts
+// Define specific language codes
 export type LanguageCode = 'en' | 'ua' | 'ru';
 
 // --- Shared Data Interfaces ---
 
-// Re-use SlideItem (already perfect!)
+// Re-use SlideItem
 export interface SlideItem {
 	itemSrc?: string;
 	itemAlt?: string;
@@ -11,7 +12,7 @@ export interface SlideItem {
 	itemTitle?: string;
 }
 
-// Common properties for content related URLs (markdown, film previews)
+// Common properties for content related URLs
 export interface ContentUrls {
 	markdownAPI?: string;
 	filmsPreviewUrl?: string;
@@ -29,10 +30,22 @@ export interface WithLanguage {
 
 // --- Component Props and Data Structures ---
 
-// TextDataItem interface for PageStructure text data.
+// Interface for a heading collected *within* MarkdownBlock
+export interface CollectedHeading {
+	text: string;
+	level: number;
+	id: string;
+}
+
+// Interface for a full heading entry used in PageStructure and TableOfContent
+export interface HeadingInfo extends CollectedHeading {
+	pitchIndex: number;
+}
+
+// TextDataItem interface for PageStructure text data
 export interface TextDataItem extends ContentUrls, WithOptionalSliderContent {}
 
-// LanguageSwitcher component Props (already perfect and now uses LanguageCode)
+// LanguageSwitcher component Props
 export interface LanguageSwitcherProps {
 	currentLang: LanguageCode;
 	availableLangs: LanguageCode[];
@@ -49,12 +62,15 @@ export interface PageProps {
 export interface PitchContainerProps extends WithLanguage, WithOptionalSliderContent {
 	structure: ContentUrls;
 	index: number;
+	onHeadingsExtracted?: (index: number, headings: CollectedHeading[]) => void;
 }
 
 // MarkdownBlock component props
 export interface MarkdownBlockProps extends WithLanguage, WithOptionalSliderContent {
 	src: string;
+	pitchIndex: number;
 	onError?: (hasError: boolean) => void;
+	onHeadingsExtracted?: (headings: CollectedHeading[]) => void;
 }
 
 // Slider component props
@@ -62,9 +78,9 @@ export interface SliderProps extends WithLanguage {
 	slides: SlideItem[];
 }
 
-// Table of Content component props (already perfect!)
+// Table of Content component props
 export interface TocProps {
-	contentLength: number;
-	onSelectIndex: (index: number) => void;
-	activeIndex: number;
+	onSelectIndex: (id: string) => void;
+	activeHeadingId: string | null;
+	headings: HeadingInfo[];
 }
