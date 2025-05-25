@@ -165,8 +165,6 @@
 	transition: 0.2s;
 
 	&.is-active {
-		padding: 0;
-
 		.idea-tabs--urls {
 			min-width: 100%;
 			border-radius: 0;
@@ -189,6 +187,7 @@
 		width: 100%;
 	}
 
+	// .idea-tabs--urls
 	&--urls {
 		white-space: nowrap;
 		border-radius: 20px;

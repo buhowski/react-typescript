@@ -35,7 +35,8 @@ $starYellow: #dfb842;
 		background-color: $blue-main;
 		opacity: 1;
 		transform: rotate(0deg);
-		transition: 0.25s ease-in-out;
+		transition: 0.3s ease-in-out;
+		will-change: transform, left, top, bottom, opacity;
 	}
 
 	span:nth-child(even) {
@@ -129,6 +130,7 @@ $starYellow: #dfb842;
 		z-index: -1;
 		transition: 0.25s ease;
 		box-shadow: inset 23px 23px 46px #004d96, inset -23px -23px 46px #006bd0;
+		will-change: height;
 	}
 
 	&.active,

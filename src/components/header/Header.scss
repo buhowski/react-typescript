@@ -31,6 +31,7 @@
 				transform: scale(0);
 				height: 100%;
 				width: 100%;
+				will-change: transform;
 			}
 
 			&.active:after {
@@ -107,6 +108,7 @@
 		visibility: hidden;
 		overflow: hidden;
 		z-index: 99;
+		will-change: height, opacity, visibility;
 
 		&:after,
 		&:before {
@@ -117,6 +119,7 @@
 			top: 0;
 			left: 0;
 			z-index: 1;
+			will-change: height, transform, bottom;
 		}
 
 		&__content {
@@ -132,6 +135,7 @@
 		.contact-menu {
 			transform: scale(0);
 			transition: 0.2s;
+			will-change: transform;
 		}
 
 		.contact-menu {
@@ -152,19 +156,19 @@
 			}
 
 			.nav-item:first-child {
-				transition-delay: 0.2s;
+				transition-delay: 0.15s;
 			}
 
 			.nav-item:nth-child(2) {
-				transition-delay: 0.25s;
+				transition-delay: 0.2s;
 			}
 
 			.nav-item:last-child {
-				transition-delay: 0.3s;
+				transition-delay: 0.25s;
 			}
 
 			.contact-menu {
-				transition-delay: 0.35s;
+				transition-delay: 0.3s;
 			}
 
 			&:after,
@@ -175,12 +179,12 @@
 
 			&:before {
 				background-color: $blue-main;
-				animation: menuAnim 0.4s ease;
+				animation: menuAnim 0.3s ease;
 			}
 
 			&:after {
 				background-color: $darken;
-				animation: menuAnim 0.6s ease;
+				animation: menuAnim 0.5s ease;
 			}
 		}
 	}

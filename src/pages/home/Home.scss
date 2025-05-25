@@ -97,6 +97,10 @@ canvas {
 		margin-left: -10px;
 		margin-top: 30px;
 	}
+
+	canvas {
+		will-change: transform, opacity;
+	}
 }
 
 .drawCanvas {

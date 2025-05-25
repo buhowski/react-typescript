@@ -26,9 +26,9 @@ $nextPageTime: 1.1s;
 		bottom: 0;
 	}
 	100% {
-		bottom: 100%;
 		width: 100%;
 		height: 0;
+		bottom: 100%;
 	}
 }
 
@@ -54,17 +54,19 @@ $nextPageTime: 1.1s;
 	&:after {
 		content: '';
 		display: block;
-		// background-color: $blue-main;
 		width: 0;
-		height: 15px;
+		height: 20px;
 		transform: translateX(-50%);
 		position: absolute;
 		bottom: 0;
 		left: 50%;
 		z-index: 1000;
+		background-color: $blue-main;
 		background: linear-gradient(160deg, $blue-main, #0a6cce);
 		box-shadow: inset 70px 70px 120px #0054a2, inset -70px -70px 120px #0054a2;
+		will-change: width, height, bottom;
 
+		// Debug
 		// width: 100%;
 		// height: 90%;
 	}
