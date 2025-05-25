@@ -83,18 +83,14 @@ const useActiveHeadingTracking = (
 
 	// Tracks active heading on scroll
 	useEffect(() => {
-		if (
-			useTabletLarge ||
-			!document.querySelector('.page-container') ||
-			sortedHeadings.length === 0
-		) {
+		if (!document.querySelector('.page-container') || sortedHeadings.length === 0) {
 			return;
 		}
 
 		const container = document.querySelector('.page-container') as HTMLElement;
 		if (!container) return;
 
-		let triggerOffset = 190;
+		let triggerOffset = 150;
 
 		const handleScroll = () => {
 			const containerTop = container.getBoundingClientRect().top;
@@ -103,6 +99,7 @@ const useActiveHeadingTracking = (
 
 			sortedHeadings.forEach((heading) => {
 				const headingElement = document.getElementById(heading.id);
+
 				if (headingElement) {
 					const topRelativeToContainer = headingElement.getBoundingClientRect().top - containerTop;
 					const distance = topRelativeToContainer - triggerOffset;
@@ -130,7 +127,7 @@ const useActiveHeadingTracking = (
 			const containerTop = pageContainer.getBoundingClientRect().top;
 			const targetTop = targetElement.getBoundingClientRect().top;
 			const currentScrollTop = pageContainer.scrollTop;
-			let scrollOffset = 60;
+			let scrollOffset = 80;
 			const scrollTo = targetTop - containerTop + currentScrollTop - scrollOffset;
 
 			pageContainer.scrollTo({
@@ -184,6 +181,7 @@ const PageStructure: React.FC<PageProps> = ({ textData, tableOfContent = false }
 
 		return currentLangContent.map((item, index) => {
 			const englishItem = englishContent[index];
+
 			return {
 				...item,
 				sliderContent: item.sliderContent || englishItem?.sliderContent,
@@ -205,19 +203,22 @@ const PageStructure: React.FC<PageProps> = ({ textData, tableOfContent = false }
 	// Callback to update active PitchContainer's slider content on scroll
 	const handleScrollUpdateSlider = useCallback(() => {
 		const pageContainer = document.querySelector('.page-container');
+
 		if (!pageContainer || !initialLangReady || !contentToRender.length) {
 			return;
 		}
 
 		const containerTop = pageContainer.getBoundingClientRect().top;
-		const scrollOffset = 150; // Offset from top of container
+		let scrollOffset = 200; // Offset from top of container
 
 		let newActivePitchIndex: number = 0;
 
 		for (let i = pitchRefs.current.length - 1; i >= 0; i--) {
 			const pitchElement = pitchRefs.current[i];
+
 			if (pitchElement) {
 				const rect = pitchElement.getBoundingClientRect();
+
 				if (rect.top <= containerTop + scrollOffset && rect.bottom > containerTop) {
 					newActivePitchIndex = i;
 					break;

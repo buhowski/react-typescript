@@ -6,8 +6,6 @@ $toc-top: 12px;
 	top: $toc-top;
 	padding-bottom: $toc-top;
 	background-color: $black;
-	box-shadow: 0 0 10px black;
-	font-size: 15px;
 	border-radius: 10px 10px 0 0;
 	left: 0;
 	transform: translateY(-100%);
@@ -40,31 +38,44 @@ $toc-top: 12px;
 		display: flex;
 		align-items: center;
 		background-color: $black;
+		box-shadow: 0 2px 13px rgba($black, 1);
 		border-radius: 10px 10px 0 0;
 		font-family: $LouisGeorgeCafBold;
-		box-shadow: 0 0 10px rgba($color: $black, $alpha: 1);
-		gap: 14px;
+		font-size: 16px;
+		gap: 20px;
 		padding: 12px 20px;
 		transition: 0.2s;
 
+		&:hover {
+			color: $blue-main;
+		}
+
 		@include tabletBig {
-			border-radius: 5px;
-			width: auto;
+			border-radius: 6px;
+			width: fit-content;
 			position: fixed;
-			bottom: 20px;
-			right: 20px;
-			left: auto;
-			top: auto;
+			bottom: 30px;
+			right: 15px;
 			z-index: 100;
-			padding: 10px;
+			padding: 14px;
+			background: linear-gradient(134deg, #000000 30%, #002840 100%);
+			box-shadow: 0 0 8px rgba($black, 1);
+
+			> h3 {
+				display: none;
+			}
 		}
 
 		mark {
 			@include burgerIcon;
-			width: 18px;
+			width: 23px;
 			height: 14px;
 			margin-left: 0;
 			margin-bottom: 1px;
+
+			@include tabletBig {
+				margin-bottom: 0;
+			}
 
 			span {
 				background-color: #fff;
@@ -76,28 +87,25 @@ $toc-top: 12px;
 	&__list {
 		background-color: $black;
 		border-radius: 0 0 10px 10px;
-		box-shadow: 0 0 10px rgba($color: $black, $alpha: 1);
+		box-shadow: 0 2px 13px rgba($black, 1);
 		width: 100%;
+		max-height: 74dvh;
 		height: 0;
-		max-height: 72dvh;
 		position: absolute;
-		left: 0;
-		top: 100%;
+		right: 0;
+		top: calc(100% - 2px);
 		overflow: hidden;
 		transition: height 0.2s;
 		will-change: height;
+		background: linear-gradient(145deg, #000000 68%, #002840 100%);
 
 		@include tabletBig {
-			border-radius: 10px 0 0 10px;
-			position: fixed;
-			bottom: 70px;
-			right: 0;
-			left: auto;
-			top: auto;
-			width: max-content;
-			transform: translateX(110%);
-			max-width: 80vw;
-			height: 70dvh;
+			border-radius: 0 0 10px 10px;
+			top: 100%;
+			right: 50%;
+			width: fit-content;
+			transform: translateX(50%);
+			max-width: calc(100% - 105px);
 		}
 
 		button {
@@ -106,9 +114,48 @@ $toc-top: 12px;
 			padding: 2px 40px;
 			font-family: $Raleway;
 			text-align: left;
+			position: relative;
+			white-space: nowrap;
+
+			@include tabletBig {
+				padding: 2px 25px;
+			}
 
 			&:first-of-type {
 				padding: 10px;
+			}
+
+			&::before {
+				content: '➤';
+				font-size: 13px;
+				display: none;
+				align-items: center;
+				width: fit-content;
+				height: 100%;
+				position: absolute;
+				left: 15px;
+				color: #fff;
+				top: 0;
+
+				@include tabletBig {
+					left: 6px;
+					font-size: 9px;
+				}
+			}
+
+			mark {
+				text-overflow: ellipsis;
+				overflow: hidden;
+
+				&::after {
+					content: attr(data-text);
+					font-weight: bold;
+					visibility: hidden;
+					opacity: 0;
+					height: 0;
+					overflow: hidden;
+					display: block;
+				}
 			}
 
 			&:hover {
@@ -118,12 +165,13 @@ $toc-top: 12px;
 			}
 
 			&.is-active {
-				&::before {
-					display: block;
+				mark {
+					color: #fff;
+					font-weight: bold;
 				}
 
-				mark {
-					color: red;
+				&::before {
+					display: flex;
 				}
 			}
 
@@ -132,12 +180,20 @@ $toc-top: 12px;
 				color: $starYellow;
 				font-size: 16px;
 				text-align: center;
+
+				@include tabletBig {
+					font-size: 15px;
+				}
 			}
 
 			.h2-toc-item {
 				font-weight: 500;
 				font-size: 15px;
 				color: $blue-main;
+
+				@include tabletBig {
+					font-size: 14px;
+				}
 			}
 
 			.h3-toc-item {
@@ -145,6 +201,10 @@ $toc-top: 12px;
 				color: $titlePink;
 				margin-left: 20px;
 				font-weight: normal;
+
+				@include tabletBig {
+					font-size: 13px;
+				}
 			}
 		}
 	}
@@ -159,6 +219,10 @@ $toc-top: 12px;
 	// .table-content__wrapper
 	&__wrapper {
 		padding-bottom: 30px;
+
+		@include tabletBig {
+			padding-bottom: 20px;
+		}
 	}
 
 	// .table-content__title
@@ -166,7 +230,7 @@ $toc-top: 12px;
 		display: none;
 
 		@include tabletBig {
-			margin-top: 20px;
+			margin-top: 25px;
 			margin-bottom: 6px;
 			font-family: $LouisGeorgeCafBold;
 			text-align: center;

@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback, useRef } from 'react';
 import Copyright from './Copyright';
 import PopupContacts from './PopupContacts';
 import { useTabletLargeQuery } from '../config/useMediaQuery';
@@ -27,6 +27,22 @@ const Slider: React.FC<SliderProps> = ({ slides, currentLanguage }) => {
 	const useTabletLarge = useTabletLargeQuery();
 	const [activeIndex, setActiveIndex] = useState(0);
 	const [isPlayingVideo, setIsPlayingVideo] = useState(false);
+	const videoRef = useRef<HTMLVideoElement | null>(null);
+	const iframeRef = useRef<HTMLIFrameElement | null>(null);
+
+	// TODO: Stop all videos on mobile when playing another one
+	// const stopAllVideos = useCallback(() => {
+	// 	if (videoRef.current) {
+	// 		videoRef.current.pause();
+	// 		videoRef.current.currentTime = 0; // Resets video to the beginning
+	// 	}
+	// 	if (iframeRef.current) {
+	// 		iframeRef.current.src = ''; // Forces the iframe to stop and unload its content
+	// 	}
+	// 	setIsPlayingVideo(false);
+
+	// 	console.log(videoRef.current, iframeRef.current);
+	// }, []);
 
 	// Pause video whenever the set of slides changes or the active slide index changes.
 	useEffect(() => {
@@ -85,6 +101,7 @@ const Slider: React.FC<SliderProps> = ({ slides, currentLanguage }) => {
 								isPlayingVideo ? (
 									isYouTubeUrl(currentSlide.itemSrc) ? (
 										<iframe
+											ref={iframeRef}
 											width='100%'
 											height='100%'
 											src={`${currentSlide.itemSrc}${
@@ -96,7 +113,15 @@ const Slider: React.FC<SliderProps> = ({ slides, currentLanguage }) => {
 											style={{ border: 'none' }}
 										/>
 									) : (
-										<video width='100%' height='100%' controls autoPlay preload='none'>
+										<video
+											ref={videoRef}
+											width='100%'
+											height='100%'
+											controls
+											autoPlay
+											playsInline
+											preload='none'
+										>
 											<source src={currentSlide.itemSrc} type='video/mp4' />
 											Your browser does not support the video tag.
 										</video>

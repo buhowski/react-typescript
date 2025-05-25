@@ -43,6 +43,7 @@ const TableOfContent: React.FC<TocProps> = ({ onSelectIndex, activeHeadingId, he
 					<span></span>
 					<span></span>
 				</mark>
+
 				<h3>Table Of Content</h3>
 			</button>
 
@@ -65,6 +66,8 @@ const TableOfContent: React.FC<TocProps> = ({ onSelectIndex, activeHeadingId, he
 											? 'h2-toc-item'
 											: 'h3-toc-item'
 									}
+									// Fix Bold text
+									data-text={heading.text}
 								>
 									{heading.text}
 								</mark>
