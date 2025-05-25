@@ -96,7 +96,7 @@ const useActiveHeadingTracking = (
 		const container = document.querySelector('.page-container') as HTMLElement;
 		if (!container) return;
 
-		const triggerOffset = 190;
+		let triggerOffset = 190;
 
 		const handleScroll = () => {
 			const containerTop = container.getBoundingClientRect().top;
@@ -236,7 +236,7 @@ const PageStructure: React.FC<PageProps> = ({ textData, tableOfContent = false }
 
 								return (
 									<PitchContainer
-										key={index} // Removed dynamic key to prevent content jumps
+										key={index}
 										index={index}
 										ref={(el) => (pitchRefs.current[index] = el)}
 										structure={{

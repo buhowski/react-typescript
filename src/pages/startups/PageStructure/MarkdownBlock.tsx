@@ -58,7 +58,7 @@ const MarkdownBlock = memo(
 				})
 				.then((fetchedText) => {
 					if (isHtmlDocument(fetchedText)) {
-						throw new Error(`Content is HTML, not Markdown: ${src}`);
+						throw new Error(`Content is HTML, not Markdown. Path: ${src}`);
 					}
 					setText(fetchedText);
 				})

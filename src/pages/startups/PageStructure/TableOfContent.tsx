@@ -8,6 +8,7 @@ const TableOfContent: React.FC<TocProps> = ({ onSelectIndex, activeHeadingId, he
 
 	const toggleToc = () => setIsTocOpen((prev) => !prev);
 
+	// Scrolls the TOC list to make the active item visible
 	useEffect(() => {
 		if (!isTocOpen || !listRef.current) return;
 
@@ -31,6 +32,20 @@ const TableOfContent: React.FC<TocProps> = ({ onSelectIndex, activeHeadingId, he
 			}
 		}
 	}, [activeHeadingId, isTocOpen, headings]);
+
+	// Closes the Table of Content when a click occurs outside of it
+	useEffect(() => {
+		const handleClickOutside = (event: MouseEvent) => {
+			if (tocRef.current && !tocRef.current.contains(event.target as Node) && isTocOpen) {
+				setIsTocOpen(false);
+			}
+		};
+
+		document.addEventListener('mousedown', handleClickOutside);
+		return () => {
+			document.removeEventListener('mousedown', handleClickOutside);
+		};
+	}, [isTocOpen]);
 
 	return (
 		<div className={`table-content ${isTocOpen ? 'is-open' : ''}`} ref={tocRef}>

@@ -1,4 +1,4 @@
-import React, { forwardRef, useCallback } from 'react';
+import React, { forwardRef, useCallback, useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import MarkdownBlock from './MarkdownBlock';
 import { PitchContainerProps } from '../../../types/common';
@@ -6,39 +6,47 @@ import { PitchContainerProps } from '../../../types/common';
 const PitchContainer = React.memo(
 	forwardRef<HTMLDivElement, PitchContainerProps>(
 		({ structure, currentLanguage, sliderContent, index, onHeadingsExtracted }, ref) => {
-			const [markdownLoadError, setMarkdownLoadError] = React.useState(false);
-			// Callback to extract headings from MarkdownBlock
+			// State to track if there was an error loading the markdown content
+			const [markdownLoadError, setMarkdownLoadError] = useState(false);
+
+			// Reset markdownLoadError when the markdownAPI source changes
+			useEffect(() => {
+				setMarkdownLoadError(false); // Clear any previous error to allow a new load attempt
+			}, [structure.markdownAPI]); // Re-run effect whenever the markdown API path changes
+
+			// Callback to forward extracted headings to the parent component
 			const handleHeadings = useCallback(
 				(headings: { text: string; level: number; id: string }[]) => {
 					onHeadingsExtracted?.(index, headings);
 				},
 				[index, onHeadingsExtracted]
 			);
-			// Determine if an error message should be displayed
+
+			// Determine if an error message should be displayed for the markdown content
 			const shouldShowErrorMessage =
 				!structure.markdownAPI || structure.markdownAPI.trim() === '' || markdownLoadError;
 
 			return (
 				<div ref={ref} className={`pitch-container`}>
-					{structure.markdownAPI !== undefined && structure.markdownAPI !== null && (
-						<div className='idea-block'>
-							{shouldShowErrorMessage ? (
-								<p style={{ textAlign: 'center', textTransform: 'uppercase' }}>
-									ERROR: Text not found
-								</p>
-							) : (
-								<MarkdownBlock
-									src={structure.markdownAPI}
-									sliderContent={sliderContent}
-									currentLanguage={currentLanguage}
-									onError={setMarkdownLoadError}
-									onHeadingsExtracted={handleHeadings}
-									pitchIndex={index}
-								/>
-							)}
-						</div>
-					)}
+					{/* Render markdown content block or error message based on loading status */}
+					<div className='idea-block'>
+						{shouldShowErrorMessage ? (
+							<p style={{ textAlign: 'center', textTransform: 'uppercase' }}>
+								ERROR: Text not found
+							</p>
+						) : (
+							<MarkdownBlock
+								src={structure.markdownAPI!} // Guaranteed to be a non-empty string here
+								sliderContent={sliderContent}
+								currentLanguage={currentLanguage}
+								onError={setMarkdownLoadError}
+								onHeadingsExtracted={handleHeadings}
+								pitchIndex={index}
+							/>
+						)}
+					</div>
 
+					{/* Render "read more" link if a filmsPreviewUrl is provided */}
 					{structure.filmsPreviewUrl && (
 						<div className='idea-block__action'>
 							<NavLink to={structure.filmsPreviewUrl} className='idea-block__more'>
@@ -51,4 +59,5 @@ const PitchContainer = React.memo(
 		}
 	)
 );
+
 export default PitchContainer;
