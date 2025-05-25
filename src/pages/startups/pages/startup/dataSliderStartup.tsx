@@ -1,5 +1,6 @@
 // Images
-import creatio from '../../assets/creatio.jpg';
+// import creatio from '../../assets/creatio.jpg';
+import creatio from '../../assets/writer.webp';
 
 export const dataSliderStartup = [
 	{

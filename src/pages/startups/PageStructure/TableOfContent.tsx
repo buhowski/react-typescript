@@ -3,12 +3,25 @@ import { TocProps } from '../../../types/common';
 
 const TableOfContent: React.FC<TocProps> = ({ onSelectIndex, activeHeadingId, headings }) => {
 	const [isTocOpen, setIsTocOpen] = useState(false);
+	const [listHeight, setListHeight] = useState(0); // store dynamic height
+
 	const tocRef = useRef<HTMLDivElement>(null);
 	const listRef = useRef<HTMLDivElement>(null);
+	const innerRef = useRef<HTMLDivElement>(null); // content wrapper to measure
 
+	// Toggle TOC
 	const toggleToc = () => setIsTocOpen((prev) => !prev);
 
-	// Scrolls the TOC list to make the active item visible
+	// Update height on open/close
+	useEffect(() => {
+		if (isTocOpen && innerRef.current) {
+			setListHeight(innerRef.current.scrollHeight);
+		} else {
+			setListHeight(0);
+		}
+	}, [isTocOpen, headings]);
+
+	// Scroll to active item
 	useEffect(() => {
 		if (!isTocOpen || !listRef.current) return;
 
@@ -19,7 +32,6 @@ const TableOfContent: React.FC<TocProps> = ({ onSelectIndex, activeHeadingId, he
 			const listRect = listElement.getBoundingClientRect();
 			const buttonRect = activeButton.getBoundingClientRect();
 
-			// Scroll if the active button is out of view
 			if (buttonRect.top < listRect.top || buttonRect.bottom > listRect.bottom) {
 				listElement.scrollTo({
 					top:
@@ -33,18 +45,15 @@ const TableOfContent: React.FC<TocProps> = ({ onSelectIndex, activeHeadingId, he
 		}
 	}, [activeHeadingId, isTocOpen, headings]);
 
-	// Closes the Table of Content when a click occurs outside of it
+	// Close on outside click
 	useEffect(() => {
 		const handleClickOutside = (event: MouseEvent) => {
 			if (tocRef.current && !tocRef.current.contains(event.target as Node) && isTocOpen) {
 				setIsTocOpen(false);
 			}
 		};
-
 		document.addEventListener('mousedown', handleClickOutside);
-		return () => {
-			document.removeEventListener('mousedown', handleClickOutside);
-		};
+		return () => document.removeEventListener('mousedown', handleClickOutside);
 	}, [isTocOpen]);
 
 	return (
@@ -58,13 +67,13 @@ const TableOfContent: React.FC<TocProps> = ({ onSelectIndex, activeHeadingId, he
 					<span></span>
 					<span></span>
 				</mark>
-				<span>Table Of Content</span>
+				<h3>Table Of Content</h3>
 			</button>
 
-			<div className='table-content__list' ref={listRef}>
-				<div className='table-content__inner'>
+			<div className='table-content__list' ref={listRef} style={{ height: `${listHeight}px` }}>
+				<div className='table-content__inner' ref={innerRef}>
 					<div className='table-content__wrapper'>
-						<span>Table of Content</span>
+						<h3 className='table-content__title'>Table of Content</h3>
 
 						{headings.map((heading) => (
 							<button

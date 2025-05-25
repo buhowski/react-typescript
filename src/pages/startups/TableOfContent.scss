@@ -1,13 +1,19 @@
+$toc-top: 12px;
+
 .table-content {
 	width: 100%;
 	position: absolute;
-	top: 12px;
-	padding-bottom: 12px;
+	top: $toc-top;
+	padding-bottom: $toc-top;
+	background-color: $black;
+	box-shadow: 0 0 10px black;
+	font-size: 15px;
 	border-radius: 10px 10px 0 0;
 	left: 0;
 	transform: translateY(-100%);
-	background-color: $black;
-	font-size: 14px;
+	z-index: 0;
+	transition: z-index 0s 0.16s;
+	will-change: z-index;
 
 	@include tabletBig {
 		padding: 0;
@@ -18,6 +24,7 @@
 	}
 
 	&.is-open {
+		transition: z-index 0s;
 		z-index: 10;
 
 		.table-content__btn {
@@ -27,18 +34,12 @@
 		}
 
 		.table-content__list {
-			height: 55vh;
+			max-height: 70dvh;
 
 			@include tabletBig {
 				max-width: unset;
 				transform: translateX(0);
 			}
-		}
-	}
-
-	button {
-		&:hover {
-			color: $blue-main;
 		}
 	}
 
@@ -51,10 +52,8 @@
 		border-radius: 10px 10px 0 0;
 		font-family: $LouisGeorgeCafBold;
 		box-shadow: 0 0 10px rgba($color: $black, $alpha: 1);
-		transition: 0.2s;
-		gap: 12px;
-		padding: 12px 20px 11px;
-		line-height: 1;
+		gap: 14px;
+		padding: 12px 20px;
 		transition: 0.2s;
 
 		@include tabletBig {
@@ -67,18 +66,14 @@
 			top: auto;
 			z-index: 100;
 			padding: 10px;
-
-			span {
-				display: none;
-			}
 		}
 
 		mark {
 			@include burgerIcon;
-
+			width: 18px;
+			height: 14px;
 			margin-left: 0;
-			width: 16px;
-			height: 12px;
+			margin-bottom: 1px;
 
 			span {
 				background-color: #fff;
@@ -89,51 +84,71 @@
 	// .table-content__list
 	&__list {
 		background-color: $black;
+		border-radius: 0 0 10px 10px;
+		box-shadow: 0 0 10px rgba($color: $black, $alpha: 1);
+		width: 100%;
+		height: 0;
 		position: absolute;
 		left: 0;
 		top: 100%;
 		overflow: hidden;
-		width: 100%;
-		height: 0;
-		transition: 0.2s;
-		border-radius: 0 0 10px 10px;
-		box-shadow: 0 0 10px rgba($color: $black, $alpha: 1);
+		transition: height 0.2s;
+		will-change: height;
 
 		@include tabletBig {
 			border-radius: 10px 0 0 10px;
 			position: fixed;
-			bottom: 75px;
+			bottom: 70px;
 			right: 0;
 			left: auto;
 			top: auto;
 			width: max-content;
 			transform: translateX(110%);
-			max-height: unset;
-			height: auto;
+			max-width: 80vw;
+			height: 70dvh;
 		}
 
 		button {
 			display: block;
 			width: 100%;
-			text-align: right;
-			padding: 12px 10px;
-			font-family: $LouisGeorgeCafBold;
+			padding: 2px 40px;
+			font-family: $Raleway;
+			text-align: left;
 
-			mark {
-				+ mark {
-					margin-top: 3px;
-					font-family: $Raleway;
+			&:first-of-type {
+				padding: 10px;
+			}
+
+			&:hover {
+				mark {
+					color: #fff;
 				}
 			}
 
 			&.is-active {
-				color: $blue-main;
-
-				mark {
-					+ mark {
-						color: $starYellow;
-					}
+				&::before {
+					display: block;
 				}
+			}
+
+			.h1-toc-item {
+				font-weight: bold;
+				color: $starYellow;
+				font-size: 16px;
+				text-align: center;
+			}
+
+			.h2-toc-item {
+				font-weight: 500;
+				font-size: 15px;
+				color: $blue-main;
+			}
+
+			.h3-toc-item {
+				font-size: 14px;
+				color: $titlePink;
+				margin-left: 20px;
+				font-weight: normal;
 			}
 		}
 	}
@@ -142,22 +157,24 @@
 	&__inner {
 		height: 100%;
 		overflow: auto;
+		scrollbar-gutter: stable;
 	}
 
 	// .table-content__wrapper
 	&__wrapper {
-		padding: 0 10px 10px;
+		padding-bottom: 30px;
+	}
 
-		span {
-			display: none;
+	// .table-content__title
+	&__title {
+		display: none;
 
-			@include tabletBig {
-				margin-top: 20px;
-				margin-bottom: 6px;
-				display: block;
-				text-align: center;
-				font-weight: bold;
-			}
+		@include tabletBig {
+			margin-top: 20px;
+			margin-bottom: 6px;
+			font-family: $LouisGeorgeCafBold;
+			text-align: center;
+			display: block;
 		}
 	}
 }
