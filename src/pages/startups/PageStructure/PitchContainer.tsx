@@ -36,7 +36,7 @@ const PitchContainer = React.memo(
 							</p>
 						) : (
 							<MarkdownBlock
-								src={structure.markdownAPI!} // Guaranteed to be a non-empty string here
+								src={structure.markdownAPI!}
 								sliderContent={sliderContent}
 								currentLanguage={currentLanguage}
 								onError={setMarkdownLoadError}

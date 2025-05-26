@@ -1,12 +1,14 @@
-import { useState, useEffect, useCallback, useRef } from 'react';
+// src/components/Slider.tsx
+import { useState, useEffect, useCallback, useRef, useMemo } from 'react';
 import Copyright from './Copyright';
 import PopupContacts from './PopupContacts';
 import { useTabletLargeQuery } from '../config/useMediaQuery';
 import { playIcon } from '../pages/startups/assets/svg/playIcon';
 import { SliderProps } from '../types/common';
+import { useVideoPlayback } from '../pages/startups/helpers/VideoPlaybackContext'; // Import the new hook
 
 // Helper functions
-const isYouTubeUrl = (url?: string) => url?.includes('youtube.com') || url?.includes('youtu.be');
+const isYouTubeUrl = (url?: string) => url?.includes('youtube.com/') || url?.includes('youtu.be/');
 const isDirectVideoFile = (url?: string) => url?.match(/\.(mp4|webm|ogg)$/i);
 
 // VideoPreview component (remains the same)
@@ -30,24 +32,51 @@ const Slider: React.FC<SliderProps> = ({ slides, currentLanguage }) => {
 	const videoRef = useRef<HTMLVideoElement | null>(null);
 	const iframeRef = useRef<HTMLIFrameElement | null>(null);
 
-	// TODO: Stop all videos on mobile when playing another one
-	// const stopAllVideos = useCallback(() => {
-	// 	if (videoRef.current) {
-	// 		videoRef.current.pause();
-	// 		videoRef.current.currentTime = 0; // Resets video to the beginning
-	// 	}
-	// 	if (iframeRef.current) {
-	// 		iframeRef.current.src = ''; // Forces the iframe to stop and unload its content
-	// 	}
-	// 	setIsPlayingVideo(false);
+	const { registerPlayer, unregisterPlayer, stopAllOtherVideos } = useVideoPlayback();
 
-	// 	console.log(videoRef.current, iframeRef.current);
-	// }, []);
+	// Generate a unique ID for this slider instance
+	const instanceId = useMemo(() => `slider-${Math.random().toString(36).substr(2, 9)}`, []);
+
+	// Controls for this specific player
+	const playerControls = useMemo(
+		() => ({
+			pauseVideo: () => {
+				if (videoRef.current) videoRef.current.pause();
+				if (iframeRef.current)
+					iframeRef.current.contentWindow?.postMessage(
+						'{"event":"command","func":"pauseVideo","args":""}',
+						'*'
+					);
+			},
+			resetVideo: () => {
+				if (videoRef.current) videoRef.current.currentTime = 0;
+				if (iframeRef.current) iframeRef.current.src = ''; // Force unload YouTube iframe
+				setIsPlayingVideo(false);
+			},
+		}),
+		[]
+	);
+
+	// Register and unregister the player with the context
+	useEffect(() => {
+		registerPlayer(instanceId, playerControls);
+		return () => {
+			unregisterPlayer(instanceId);
+		};
+	}, [instanceId, registerPlayer, unregisterPlayer, playerControls]);
+
+	// Handle playing a video
+	const handlePlayVideo = useCallback(() => {
+		stopAllOtherVideos(instanceId);
+		setTimeout(() => {
+			setIsPlayingVideo(true);
+		}, 50);
+	}, [instanceId, stopAllOtherVideos]);
 
 	// Pause video whenever the set of slides changes or the active slide index changes.
 	useEffect(() => {
-		setIsPlayingVideo(false);
-	}, [slides, activeIndex]);
+		playerControls.resetVideo(); // Use the provided reset function
+	}, [slides, activeIndex, playerControls]);
 
 	const handleNext = useCallback(() => {
 		if (slides.length <= 1) return;
@@ -59,7 +88,7 @@ const Slider: React.FC<SliderProps> = ({ slides, currentLanguage }) => {
 		setActiveIndex((prev) => (prev - 1 + slides.length) % slides.length);
 	}, [slides.length]);
 
-	// --- Determine the content to render inside the common wrapper ---
+	// Determine the content to render inside the common wrapper
 	let sliderInnerContent: React.ReactNode;
 
 	if (!slides.length) {
@@ -82,7 +111,6 @@ const Slider: React.FC<SliderProps> = ({ slides, currentLanguage }) => {
 				' Slides:',
 				slides
 			);
-			// Use the same structure, just change the message
 			sliderInnerContent = (
 				<div className='slider-wrapper disabled'>
 					<div className='slider-wrapper__empty slider-js'>Error loading content</div>
@@ -106,7 +134,7 @@ const Slider: React.FC<SliderProps> = ({ slides, currentLanguage }) => {
 											height='100%'
 											src={`${currentSlide.itemSrc}${
 												currentSlide.itemSrc?.includes('?') ? '&' : '?'
-											}autoplay=1`}
+											}autoplay=1&enablejsapi=1`} // Add enablejsapi=1 for YouTube API control
 											title={currentSlide.itemTitle || currentSlide.itemAlt}
 											allow='autoplay; encrypted-media'
 											allowFullScreen
@@ -131,7 +159,7 @@ const Slider: React.FC<SliderProps> = ({ slides, currentLanguage }) => {
 										itemPoster={currentSlide.itemPoster}
 										itemAlt={currentSlide.itemAlt}
 										itemTitle={currentSlide.itemTitle}
-										onClick={() => setIsPlayingVideo(true)}
+										onClick={handlePlayVideo} // Use the new handler
 									/>
 								)
 							) : (

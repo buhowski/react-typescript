@@ -109,6 +109,7 @@ const MarkdownBlock = memo(
 			collectedHeadingsRef.current.push({ text: rawText, level, id });
 
 			const Tag = `h${level}` as keyof JSX.IntrinsicElements;
+
 			return <Tag id={id}>{children}</Tag>;
 		};
 

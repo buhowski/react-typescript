@@ -1,7 +1,12 @@
 import React, { useState, useEffect, useMemo, useCallback, useRef } from 'react';
-import PageHelmet from '../../../config/PageHelmet';
 import { startupsMetaTags } from '../../../components/metaTags';
 import { useTabletLargeQuery } from '../../../config/useMediaQuery';
+import { LANGUAGES, getInitialLanguage } from '../helpers/languageHelpers';
+import { useStickyHeader } from '../helpers/useStickyHeader';
+import { useActiveHeadingTracking } from '../helpers/useActiveHeadingTracking';
+import { PageProps, LanguageCode } from '../../../types/common';
+import { VideoPlaybackProvider } from '../helpers/VideoPlaybackContext';
+import PageHelmet from '../../../config/PageHelmet';
 import PopupContacts from '../../../components/PopupContacts';
 import Copyright from '../../../components/Copyright';
 import PitchContainer from './PitchContainer';
@@ -9,161 +14,17 @@ import LanguageSwitcher from './LanguageSwitcher';
 import StartupNavigation from './StartupNavigation';
 import Slider from '../../../components/Slider';
 import TableOfContent from './TableOfContent';
-import { LanguageCode, PageProps, HeadingInfo, CollectedHeading } from '../../../types/common';
 
 import '../Startups.scss';
 
-const LANGUAGES: LanguageCode[] = ['en', 'ua', 'ru'];
-
-// Helper to get initial language
-const getInitialLanguage = (textData: PageProps['textData'], availableLangs: LanguageCode[]) => {
-	const storedLang = localStorage.getItem('currentLang') as LanguageCode | null;
-	if (storedLang && textData?.[storedLang]?.length) {
-		return storedLang;
-	}
-	return availableLangs.includes('ua') ? 'ua' : availableLangs[0] || 'en';
-};
-
-// Custom hook for sticky header
-const useStickyHeader = () => {
-	const [isActive, setIsActive] = useState(false);
-
-	useEffect(() => {
-		const pageContainer = document.querySelector('.page-container');
-		const startupAction = document.querySelector('.startup-action');
-		if (!pageContainer || !startupAction) return;
-
-		const handleScroll = () => {
-			const newIsActive =
-				startupAction.getBoundingClientRect().top <= pageContainer.getBoundingClientRect().top;
-			setIsActive((prev) => (prev === newIsActive ? prev : newIsActive));
-		};
-
-		pageContainer.addEventListener('scroll', handleScroll);
-		return () => pageContainer.removeEventListener('scroll', handleScroll);
-	}, []);
-
-	return isActive;
-};
-
-// Custom hook for active heading and TOC
-const useActiveHeadingTracking = (
-	useTabletLarge: boolean,
-	allHeadingsMapRef: React.MutableRefObject<Map<number, HeadingInfo[]>>
-) => {
-	const [activeHeadingId, setActiveHeadingId] = useState<string | null>(null);
-	const [headingsVersion, setHeadingsVersion] = useState(0);
-
-	// Callback to collect headings
-	const handleHeadingsExtracted = useCallback(
-		(pitchIndex: number, headings: CollectedHeading[]) => {
-			allHeadingsMapRef.current.set(
-				pitchIndex,
-				headings.map((h) => ({ ...h, pitchIndex }))
-			);
-			setHeadingsVersion((prev) => prev + 1);
-		},
-		[allHeadingsMapRef]
-	);
-
-	// Derives sorted headings
-	const sortedHeadings = useMemo(() => {
-		const combinedHeadings: HeadingInfo[] = [];
-		Array.from(allHeadingsMapRef.current.keys())
-			.sort((a, b) => a - b)
-			.forEach((pitchIndex) => {
-				const headingsForPitch = allHeadingsMapRef.current.get(pitchIndex);
-				if (headingsForPitch) {
-					combinedHeadings.push(...headingsForPitch);
-				}
-			});
-		return combinedHeadings;
-		// eslint-disable-next-line react-hooks/exhaustive-deps
-	}, [headingsVersion, allHeadingsMapRef]);
-
-	// Tracks active heading on scroll
-	useEffect(() => {
-		if (!document.querySelector('.page-container') || sortedHeadings.length === 0) {
-			return;
-		}
-
-		const container = document.querySelector('.page-container') as HTMLElement;
-		if (!container) return;
-
-		const triggerOffset = useTabletLarge ? 120 : 150;
-
-		const handleScroll = () => {
-			const containerTop = container.getBoundingClientRect().top;
-			let newActiveHeadingId: string | null = null;
-			let minDistance = Infinity;
-
-			sortedHeadings.forEach((heading) => {
-				const headingElement = document.getElementById(heading.id);
-
-				if (headingElement) {
-					const topRelativeToContainer = headingElement.getBoundingClientRect().top - containerTop;
-					const distance = topRelativeToContainer - triggerOffset;
-
-					if (distance <= 0 && Math.abs(distance) < Math.abs(minDistance)) {
-						minDistance = distance;
-						newActiveHeadingId = heading.id;
-					}
-				}
-			});
-			setActiveHeadingId(newActiveHeadingId);
-		};
-
-		container.addEventListener('scroll', handleScroll, { passive: true });
-		handleScroll();
-		return () => container.removeEventListener('scroll', handleScroll);
-	}, [useTabletLarge, headingsVersion, sortedHeadings]);
-
-	// Scrolls to TOC title
-	const handleTableOfContentSelect = useCallback(
-		(headingId: string) => {
-			const targetElement = document.getElementById(headingId);
-			const pageContainer = document.querySelector('.page-container');
-
-			if (targetElement && pageContainer) {
-				const containerTop = pageContainer.getBoundingClientRect().top;
-				const targetTop = targetElement.getBoundingClientRect().top;
-				const currentScrollTop = pageContainer.scrollTop;
-
-				const scrollOffset = useTabletLarge ? 70 : 80;
-
-				const scrollTo = targetTop - containerTop + currentScrollTop - scrollOffset;
-
-				pageContainer.scrollTo({
-					top: scrollTo,
-					behavior: 'smooth',
-				});
-			} else {
-				console.warn(`Could not find element with ID: ${headingId}.`);
-			}
-		},
-		[useTabletLarge]
-	);
-
-	// Exposes setHeadingsVersion
-	return {
-		activeHeadingId,
-		handleHeadingsExtracted,
-		handleTableOfContentSelect,
-		sortedHeadings,
-		setHeadingsVersion,
-	};
-};
-
-const PageStructure: React.FC<PageProps> = ({ textData, tableOfContent = false }) => {
+const PageStructure: React.FC<PageProps> = ({ textData }) => {
 	const useTabletLarge = useTabletLargeQuery();
-	const [currentLang, setCurrentLang] = useState<LanguageCode>('en');
+	const [currentLang, setCurrentLang] = useState(LANGUAGES[0]); // Initialize with first language as default
 	const [initialLangReady, setInitialLangReady] = useState(false);
-	const allHeadingsMapRef = useRef<Map<number, HeadingInfo[]>>(new Map());
+	const allHeadingsMapRef = useRef(new Map());
 
 	const pitchRefs = useRef<(HTMLDivElement | null)[]>([]);
 	const [currentDesktopSliderContent, setCurrentDesktopSliderContent] = useState<any[]>([]);
-
-	// Tracks if desktop slider content is initialized
 	const isDesktopSliderContentInitialized = useRef(false);
 
 	const {
@@ -186,7 +47,6 @@ const PageStructure: React.FC<PageProps> = ({ textData, tableOfContent = false }
 
 		return currentLangContent.map((item, index) => {
 			const englishItem = englishContent[index];
-
 			return {
 				...item,
 				sliderContent: item.sliderContent || englishItem?.sliderContent,
@@ -195,7 +55,7 @@ const PageStructure: React.FC<PageProps> = ({ textData, tableOfContent = false }
 		});
 	}, [textData, currentLang]);
 
-	// Effect for initial language setup
+	// Initial language setup
 	useEffect(() => {
 		const initialLang = getInitialLanguage(textData, availableLangs);
 		setCurrentLang(initialLang);
@@ -205,7 +65,7 @@ const PageStructure: React.FC<PageProps> = ({ textData, tableOfContent = false }
 		isDesktopSliderContentInitialized.current = false;
 	}, [textData, availableLangs, allHeadingsMapRef, setHeadingsVersion]);
 
-	// Callback to update active PitchContainer's slider content on scroll
+	// Update active PitchContainer's slider content on scroll
 	const handleScrollUpdateSlider = useCallback(() => {
 		const pageContainer = document.querySelector('.page-container');
 
@@ -214,7 +74,7 @@ const PageStructure: React.FC<PageProps> = ({ textData, tableOfContent = false }
 		}
 
 		const containerTop = pageContainer.getBoundingClientRect().top;
-		let scrollOffset = 200; // Offset from top of container
+		let scrollOffset = 200;
 
 		let newActivePitchIndex: number = 0;
 
@@ -223,7 +83,6 @@ const PageStructure: React.FC<PageProps> = ({ textData, tableOfContent = false }
 
 			if (pitchElement) {
 				const rect = pitchElement.getBoundingClientRect();
-
 				if (rect.top <= containerTop + scrollOffset && rect.bottom > containerTop) {
 					newActivePitchIndex = i;
 					break;
@@ -232,8 +91,6 @@ const PageStructure: React.FC<PageProps> = ({ textData, tableOfContent = false }
 		}
 
 		const newSliderContent = contentToRender[newActivePitchIndex]?.sliderContent || [];
-
-		// Use functional update to avoid currentDesktopSliderContent in useCallback deps
 		setCurrentDesktopSliderContent((prevContent) => {
 			if (JSON.stringify(newSliderContent) !== JSON.stringify(prevContent)) {
 				return newSliderContent;
@@ -242,12 +99,11 @@ const PageStructure: React.FC<PageProps> = ({ textData, tableOfContent = false }
 		});
 	}, [initialLangReady, contentToRender]);
 
-	// Effect to attach scroll listener and handle initial slider content
+	// Attach scroll listener and handle initial slider content
 	useEffect(() => {
 		const pageContainer = document.querySelector('.page-container');
 		if (!pageContainer) return;
 
-		// Initialize slider content once
 		if (
 			!isDesktopSliderContentInitialized.current &&
 			initialLangReady &&
@@ -277,10 +133,8 @@ const PageStructure: React.FC<PageProps> = ({ textData, tableOfContent = false }
 		[textData, allHeadingsMapRef, setHeadingsVersion]
 	);
 
-	if (!contentToRender.length) return null;
-
 	return (
-		<>
+		<VideoPlaybackProvider>
 			<PageHelmet metaTags={startupsMetaTags} />
 
 			<div className={`startup-action ${isActive ? 'is-active' : ''}`}>
@@ -293,7 +147,6 @@ const PageStructure: React.FC<PageProps> = ({ textData, tableOfContent = false }
 						{initialLangReady &&
 							contentToRender.map((structure, index) => {
 								const fallbackFilmsPreview = textData.en?.[index]?.filmsPreviewUrl;
-
 								return (
 									<PitchContainer
 										key={index}
@@ -317,22 +170,18 @@ const PageStructure: React.FC<PageProps> = ({ textData, tableOfContent = false }
 						</div>
 					</div>
 
-					<div
-						className={`lang-sidebar ${sortedHeadings.length > 0 ? 'lang-sidebar--has-toc' : ''}`}
-					>
+					<div className={`lang-sidebar ${'lang-sidebar--has-toc'}`}>
 						<LanguageSwitcher
 							currentLang={currentLang}
 							availableLangs={availableLangs}
 							changeLanguage={changeLanguage}
 						/>
 
-						{sortedHeadings.length > 0 && (
-							<TableOfContent
-								activeHeadingId={activeHeadingId}
-								onSelectIndex={handleTableOfContentSelect}
-								headings={sortedHeadings}
-							/>
-						)}
+						<TableOfContent
+							activeHeadingId={activeHeadingId}
+							onSelectIndex={handleTableOfContentSelect}
+							headings={sortedHeadings}
+						/>
 
 						<div className='desktop-slider'>
 							{!useTabletLarge && (
@@ -342,7 +191,7 @@ const PageStructure: React.FC<PageProps> = ({ textData, tableOfContent = false }
 					</div>
 				</div>
 			</div>
-		</>
+		</VideoPlaybackProvider>
 	);
 };
 

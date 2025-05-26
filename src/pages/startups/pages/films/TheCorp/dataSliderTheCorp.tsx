@@ -2,7 +2,7 @@
 import officePoster from '../../../assets/films/TheCorp/the-office-preview.webp';
 
 // Videos
-const theOfficeIntro = 'https://www.youtube.com/embed/_Bi9SUW-4fg?si=0nXXKiW6-zodvefZ';
+const theOfficeIntro = 'https://www.youtube.com/embed/_Bi9SUW-4fg';
 
 export const dataSliderTheCorp = [
 	{

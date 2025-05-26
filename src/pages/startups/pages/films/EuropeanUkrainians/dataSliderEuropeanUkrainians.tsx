@@ -10,7 +10,7 @@ import promoVideo from '../../../assets/films/videos/teaserVideo.mp4';
 import teamVideo from '../../../assets/films/videos/teamVideo.mp4';
 import broadCityTrailer from '../../../assets/films/videos/broadCityTrailer.mp4';
 import fantasy from '../../../assets/films/videos/fantasy.mp4';
-const bestMomentsVideo = 'https://www.youtube.com/embed/2gcEbzGbp38?si=dMoe9YbvhTGMlbjV';
+const bestMomentsVideo = 'https://www.youtube.com/embed/2gcEbzGbp38';
 
 export const dataSliderEuropeanUkrainians = [
 	{

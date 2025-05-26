@@ -55,7 +55,6 @@ export interface LanguageSwitcherProps {
 // PageStructure component Props
 export interface PageProps {
 	textData: Record<LanguageCode, TextDataItem[]>;
-	tableOfContent?: boolean;
 }
 
 // PitchContainer component Props
