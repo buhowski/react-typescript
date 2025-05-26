@@ -34,7 +34,11 @@ const TableOfContent: React.FC<TocProps> = ({ onSelectIndex, activeHeadingId, he
 
 	return (
 		<div className={`table-content ${isTocOpen ? 'is-open' : ''}`} ref={tocRef}>
-			<button className='table-content__btn' onClick={toggleToc}>
+			<button
+				className='table-content__btn'
+				onClick={toggleToc}
+				aria-label='Toggle Table of Contents'
+			>
 				<mark>
 					<span></span>
 					<span></span>
@@ -44,7 +48,7 @@ const TableOfContent: React.FC<TocProps> = ({ onSelectIndex, activeHeadingId, he
 					<span></span>
 				</mark>
 
-				<h3>Table Of Content</h3>
+				<h3>Table of Content</h3>
 			</button>
 
 			<div className='table-content__list' ref={listRef} style={{ height: `${listHeight}px` }}>

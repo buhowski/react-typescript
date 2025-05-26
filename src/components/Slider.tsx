@@ -4,24 +4,30 @@ import Copyright from './Copyright';
 import PopupContacts from './PopupContacts';
 import { useTabletLargeQuery } from '../config/useMediaQuery';
 import { playIcon } from '../pages/startups/assets/svg/playIcon';
-import { SliderProps } from '../types/common';
+import { SliderProps, VideoPreviewProps } from '../types/common';
 import { useVideoPlayback } from '../pages/startups/helpers/VideoPlaybackContext'; // Import the new hook
 
-// Helper functions
+// YouTube embed URL with necessary parameters
+const buildYouTubeEmbedSrc = (url: string | undefined): string => {
+	if (!url) return '';
+	const separator = url.includes('?') ? '&' : '?';
+
+	// Always include autoplay and enablejsapi for programmatic control
+	return `${url}${separator}autoplay=1&enablejsapi=1`;
+};
+
+// Videos Helper functions
 const isYouTubeUrl = (url?: string) => url?.includes('youtube.com/') || url?.includes('youtu.be/');
 const isDirectVideoFile = (url?: string) => url?.match(/\.(mp4|webm|ogg)$/i);
 
 // VideoPreview component (remains the same)
-const VideoPreview: React.FC<{
-	itemPoster?: string;
-	itemAlt?: string;
-	itemTitle?: string;
-	onClick: () => void;
-}> = ({ itemPoster, itemAlt, itemTitle, onClick }) => (
+const VideoPreview: React.FC<VideoPreviewProps> = ({ itemPoster, itemAlt, onClick }) => (
 	<div className='video-preview' onClick={onClick}>
-		{itemPoster && <img src={itemPoster} alt={itemAlt || itemTitle} />}
+		{itemPoster && <img src={itemPoster} alt={itemAlt} />}
+
 		{playIcon}
-		<p className='video-preview__title'>{itemAlt || itemTitle}</p>
+
+		<p className='video-preview__title'>{itemAlt}</p>
 	</div>
 );
 
@@ -35,7 +41,7 @@ const Slider: React.FC<SliderProps> = ({ slides, currentLanguage }) => {
 	const { registerPlayer, unregisterPlayer, stopAllOtherVideos } = useVideoPlayback();
 
 	// Generate a unique ID for this slider instance
-	const instanceId = useMemo(() => `slider-${Math.random().toString(36).substr(2, 9)}`, []);
+	const instanceId = useMemo(() => `slider-${Math.random().toString(36).substring(2, 11)}`, []);
 
 	// Controls for this specific player
 	const playerControls = useMemo(
@@ -50,7 +56,7 @@ const Slider: React.FC<SliderProps> = ({ slides, currentLanguage }) => {
 			},
 			resetVideo: () => {
 				if (videoRef.current) videoRef.current.currentTime = 0;
-				if (iframeRef.current) iframeRef.current.src = ''; // Force unload YouTube iframe
+				if (iframeRef.current) iframeRef.current.src = '';
 				setIsPlayingVideo(false);
 			},
 		}),
@@ -75,7 +81,7 @@ const Slider: React.FC<SliderProps> = ({ slides, currentLanguage }) => {
 
 	// Pause video whenever the set of slides changes or the active slide index changes.
 	useEffect(() => {
-		playerControls.resetVideo(); // Use the provided reset function
+		playerControls.resetVideo();
 	}, [slides, activeIndex, playerControls]);
 
 	const handleNext = useCallback(() => {
@@ -132,10 +138,8 @@ const Slider: React.FC<SliderProps> = ({ slides, currentLanguage }) => {
 											ref={iframeRef}
 											width='100%'
 											height='100%'
-											src={`${currentSlide.itemSrc}${
-												currentSlide.itemSrc?.includes('?') ? '&' : '?'
-											}autoplay=1&enablejsapi=1`} // Add enablejsapi=1 for YouTube API control
-											title={currentSlide.itemTitle || currentSlide.itemAlt}
+											src={buildYouTubeEmbedSrc(currentSlide.itemSrc)}
+											title={currentSlide.itemAlt}
 											allow='autoplay; encrypted-media'
 											allowFullScreen
 											style={{ border: 'none' }}
@@ -149,6 +153,7 @@ const Slider: React.FC<SliderProps> = ({ slides, currentLanguage }) => {
 											autoPlay
 											playsInline
 											preload='none'
+											title={currentSlide.itemAlt}
 										>
 											<source src={currentSlide.itemSrc} type='video/mp4' />
 											Your browser does not support the video tag.
@@ -158,18 +163,15 @@ const Slider: React.FC<SliderProps> = ({ slides, currentLanguage }) => {
 									<VideoPreview
 										itemPoster={currentSlide.itemPoster}
 										itemAlt={currentSlide.itemAlt}
-										itemTitle={currentSlide.itemTitle}
-										onClick={handlePlayVideo} // Use the new handler
+										onClick={handlePlayVideo}
 									/>
 								)
 							) : (
 								<>
-									<img
-										src={currentSlide.itemSrc}
-										alt={currentSlide.itemTitle || currentSlide.itemAlt}
-									/>
-									{currentSlide.itemTitle && (
-										<p className='video-preview__title'>{currentSlide.itemTitle}</p>
+									<img src={currentSlide.itemSrc} alt={currentSlide.itemAlt} />
+
+									{currentSlide.putImgTitle && (
+										<p className='video-preview__title'>{currentSlide.itemAlt}</p>
 									)}
 								</>
 							)}

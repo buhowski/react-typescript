@@ -32,6 +32,10 @@ $toc-top: 12px;
 		}
 	}
 
+	h3 {
+		text-transform: uppercase;
+	}
+
 	// .table-content__btn
 	&__btn {
 		width: 100%;
@@ -115,7 +119,6 @@ $toc-top: 12px;
 		@include tabletBig {
 			padding: 25px 15px 12px;
 			font-family: $LouisGeorgeCafBold;
-			text-transform: uppercase;
 			text-align: center;
 			display: block;
 			position: absolute;

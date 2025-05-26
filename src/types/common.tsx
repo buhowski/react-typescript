@@ -6,10 +6,15 @@ export type LanguageCode = 'en' | 'ua' | 'ru';
 
 // Re-use SlideItem
 export interface SlideItem {
-	itemSrc?: string;
-	itemAlt?: string;
 	itemPoster?: string;
-	itemTitle?: string;
+	itemSrc?: string;
+	itemAlt: string;
+	putImgTitle?: boolean;
+}
+
+// VideoPreview component
+export interface VideoPreviewProps extends SlideItem {
+	onClick: () => void;
 }
 
 // Common properties for content related URLs
