@@ -8,15 +8,7 @@ export const dataSliderTheCorp = [
 	{
 		itemPoster: officePoster,
 		itemSrc: theOfficeIntro,
-		itemAlt: `The mood I want to capture and the filming style: from "The Office US"`,
+		itemAlt: `Poster for 'The Office United States', reflecting its unique mood and filming style.`,
+		itemCaption: `The mood I want to capture and the filming style: from "The Office US".`,
 	},
 ];
-
-// Use To Import On Page
-export const sliderTheCorp = {
-	en: [
-		{
-			sliderContent: [],
-		},
-	],
-};

@@ -6,6 +6,8 @@ import {
 	pathToTheCorp,
 	pathToCossacks,
 	startupsNav,
+	pathToSelfPresentation,
+	pathToPodcastShow,
 } from '../components/urlsData';
 
 export const isPathActive = (paths: string[], currentPath: string) =>
@@ -17,6 +19,8 @@ export const startupPaths: string[] = [
 	pathToEuropeanUkrainians,
 	pathToTheCorp,
 	pathToCossacks,
+	pathToSelfPresentation,
+	pathToPodcastShow,
 ];
 
 //  Used to mark tab as active inside the startup sub-navigation

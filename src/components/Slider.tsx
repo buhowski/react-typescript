@@ -7,27 +7,53 @@ import { playIcon } from '../pages/startups/assets/svg/playIcon';
 import { SliderProps, VideoPreviewProps } from '../types/common';
 import { useVideoPlayback } from '../pages/startups/helpers/VideoPlaybackContext'; // Import the new hook
 
+// Helper function to detect iOS mobile devices
+const isIOSMobile = (): boolean => {
+	if (typeof navigator === 'undefined') {
+		return false; // Not in a browser environment
+	}
+	const userAgent = navigator.userAgent;
+
+	return /iPad|iPhone|iPod/.test(userAgent);
+};
+
 // YouTube embed URL with necessary parameters
 const buildYouTubeEmbedSrc = (url: string | undefined): string => {
 	if (!url) return '';
 	const separator = url.includes('?') ? '&' : '?';
 
 	// Always include autoplay and enablejsapi for programmatic control
-	return `${url}${separator}autoplay=1&enablejsapi=1`;
+	let params = 'autoplay=1&enablejsapi=1';
+
+	// Conditionally add mute for iOS mobile devices - FIX playing video on iOS
+	if (isIOSMobile()) {
+		params += '&mute=1';
+	}
+
+	return `${url}${separator}${params}`;
 };
 
 // Videos Helper functions
-const isYouTubeUrl = (url?: string) => url?.includes('youtube.com/') || url?.includes('youtu.be/');
+const isYouTubeUrl = (url?: string) => {
+	if (!url) return false;
+	const youtubeRegex = /^(https?:\/\/)?(www\.youtube\.com\/embed\/|youtu\.be\/)[\w-]{11}(\?.*)?$/;
+	return youtubeRegex.test(url);
+};
 const isDirectVideoFile = (url?: string) => url?.match(/\.(mp4|webm|ogg)$/i);
 
 // VideoPreview component (remains the same)
-const VideoPreview: React.FC<VideoPreviewProps> = ({ itemPoster, itemAlt, onClick }) => (
+const VideoPreview: React.FC<VideoPreviewProps> = ({
+	itemPoster,
+	itemAlt,
+	itemCaption,
+	onClick,
+}) => (
 	<div className='video-preview' onClick={onClick}>
 		{itemPoster && <img src={itemPoster} alt={itemAlt} />}
 
 		{playIcon}
 
-		<p className='video-preview__title'>{itemAlt}</p>
+		<p className='video-preview__title'>{itemCaption}</p>
 	</div>
 );
 
@@ -74,10 +100,16 @@ const Slider: React.FC<SliderProps> = ({ slides, currentLanguage }) => {
 	// Handle playing a video
 	const handlePlayVideo = useCallback(() => {
 		stopAllOtherVideos(instanceId);
+		setIsPlayingVideo(true);
 		setTimeout(() => {
-			setIsPlayingVideo(true);
-		}, 50);
-	}, [instanceId, stopAllOtherVideos]);
+			if (iframeRef.current && isYouTubeUrl(slides[activeIndex]?.itemSrc)) {
+				iframeRef.current.contentWindow?.postMessage(
+					'{"event":"command","func":"playVideo","args":""}',
+					'*'
+				);
+			}
+		}, 100);
+	}, [instanceId, stopAllOtherVideos, slides, activeIndex]);
 
 	// Pause video whenever the set of slides changes or the active slide index changes.
 	useEffect(() => {
@@ -163,6 +195,7 @@ const Slider: React.FC<SliderProps> = ({ slides, currentLanguage }) => {
 									<VideoPreview
 										itemPoster={currentSlide.itemPoster}
 										itemAlt={currentSlide.itemAlt}
+										itemCaption={currentSlide.itemCaption}
 										onClick={handlePlayVideo}
 									/>
 								)
@@ -171,7 +204,7 @@ const Slider: React.FC<SliderProps> = ({ slides, currentLanguage }) => {
 									<img src={currentSlide.itemSrc} alt={currentSlide.itemAlt} />
 
 									{currentSlide.putImgTitle && (
-										<p className='video-preview__title'>{currentSlide.itemAlt}</p>
+										<p className='video-preview__title'>{currentSlide.itemCaption}</p>
 									)}
 								</>
 							)}

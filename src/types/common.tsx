@@ -1,4 +1,3 @@
-// types/common.ts
 // Define specific language codes
 export type LanguageCode = 'en' | 'ua' | 'ru';
 
@@ -9,6 +8,7 @@ export interface SlideItem {
 	itemPoster?: string;
 	itemSrc?: string;
 	itemAlt: string;
+	itemCaption?: string;
 	putImgTitle?: boolean;
 }
 

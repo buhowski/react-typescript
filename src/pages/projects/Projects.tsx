@@ -21,21 +21,21 @@ const Projects = () => {
 			<div className='projects-container'>
 				<ResponsiveMasonry columnsCountBreakPoints={{ 320: 1, 666: 2, 1024: 3, 1281: 5 }}>
 					<MasonryTyped itemStyle={{ gap: '40px' }} className='projects-container__masonry'>
-						{projectsData.map(({ img, url, urlCode, name, desk, skills }, i) => {
+						{projectsData.map(({ img, url, urlCode, name, description, skills, alt }, i) => {
 							return (
 								<div className='project' key={i}>
 									<a className='project-link' href={url} target='_blank' rel='noopener noreferrer'>
-										<img className='project-link__img' src={img} alt={desk} />
+										<img className='project-link__img' src={img} alt={alt} />
 									</a>
 
-									{skills || desk ? (
+									{skills || description ? (
 										<div className='project-description'>
 											<p className='project-description__name'>
 												{name}
 												<span>_</span>
 											</p>
 
-											<p className='project-description__text'>{desk}</p>
+											<p className='project-description__text'>{description}</p>
 
 											<div className='project-description__actions'>
 												{url && (

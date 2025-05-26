@@ -16,30 +16,35 @@ export const dataSliderEuropeanUkrainians = [
 	{
 		itemPoster: bestMomentsPoster,
 		itemSrc: bestMomentsVideo,
-		itemAlt: `The vibe I want to capture: moments example from "It's Always Sunny in Philadelphia"`,
+		itemAlt: `Poster from 'It's Always Sunny in Philadelphia' showcasing memorable moments.`,
+		itemCaption: `The vibe I want to capture: moments example from "It's Always Sunny in Philadelphia."`,
 	},
 
 	{
 		itemPoster: promoPoster,
 		itemSrc: promoVideo,
-		itemAlt: `The vibe I want to capture: promo from "It's Always Sunny in Philadelphia"`,
+		itemAlt: `Promotional poster for 'It's Always Sunny in Philadelphia'.`,
+		itemCaption: `The vibe I want to capture: promo from "It's Always Sunny in Philadelphia."`,
 	},
 
 	{
 		itemPoster: classicSetupPoster,
 		itemSrc: teamVideo,
-		itemAlt: `The team I want to capture: Looks, brains and wild card - Classic setup. From "It's Always Sunny in Philadelphia"`,
+		itemAlt: `Poster of the main cast of 'It's Always Sunny in Philadelphia' in a classic group pose.`,
+		itemCaption: `The team I want to capture: Looks, brains and wild card - Classic setup. From "It's Always Sunny in Philadelphia."`,
 	},
 
 	{
 		itemPoster: broadCityPoster,
 		itemSrc: broadCityTrailer,
-		itemAlt: `The vibe I want to capture: promo from "Broad City"`,
+		itemAlt: `Promotional poster for the TV series 'Broad City'.`,
+		itemCaption: `The vibe I want to capture: promo from "Broad City."`,
 	},
 
 	{
 		itemPoster: fantasyPoster,
 		itemSrc: fantasy,
-		itemAlt: `Imagination Example: from "The Secret Life of Walter Mitty"`,
+		itemAlt: `Movie poster for 'The Secret Life of Walter Mitty'.`,
+		itemCaption: `Imagination Example: from "The Secret Life of Walter Mitty."`,
 	},
 ];

@@ -46,13 +46,17 @@ $toc-top: 12px;
 		border-radius: 10px 10px 0 0;
 		font-family: $LouisGeorgeCaf;
 		letter-spacing: 1px;
-		font-size: 15px;
+		font-size: 14px;
 		gap: 20px;
 		padding: 12px 20px;
 		transition: 0.2s;
 
 		&:hover {
 			color: $blue-main;
+		}
+
+		> h3 {
+			margin-top: 2.5px;
 		}
 
 		@include tabletBig {

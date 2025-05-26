@@ -44,7 +44,7 @@ export const useActiveHeadingTracking = (
 		const container = document.querySelector('.page-container') as HTMLElement;
 		if (!container) return;
 
-		const triggerOffset = useTabletLarge ? 120 : 150;
+		const triggerOffset = useTabletLarge ? 80 : 150;
 
 		const handleScroll = () => {
 			const containerTop = container.getBoundingClientRect().top;
@@ -79,10 +79,10 @@ export const useActiveHeadingTracking = (
 			const pageContainer = document.querySelector('.page-container');
 
 			if (targetElement && pageContainer) {
+				const scrollOffset = useTabletLarge ? 75 : 80;
 				const containerTop = pageContainer.getBoundingClientRect().top;
 				const targetTop = targetElement.getBoundingClientRect().top;
 				const currentScrollTop = pageContainer.scrollTop;
-				const scrollOffset = useTabletLarge ? 70 : 80;
 				const scrollTo = targetTop - containerTop + currentScrollTop - scrollOffset;
 
 				pageContainer.scrollTo({

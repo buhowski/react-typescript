@@ -1,5 +1,4 @@
 import { useEffect } from 'react';
-
 import myImage from '../../assets/images/photo.png';
 import illustrationImage from '../../assets/images/photo-drawing.png';
 
@@ -95,8 +94,7 @@ const DrawCanvas = () => {
 					const distance = getDistanceBetween(point, previousPoint);
 					const speed = Math.max(0, Math.min(maximumSpeed, distance));
 					const percentageLineWidth = (maximumSpeed - speed) / maximumSpeed;
-					lineCanvasContext.lineWidth =
-						minimumLineWidth + percentageLineWidth * lineWidthRange;
+					lineCanvasContext.lineWidth = minimumLineWidth + percentageLineWidth * lineWidthRange;
 
 					// Fade points as they age
 					const age = Date.now() - point.time;
@@ -154,7 +152,7 @@ const DrawCanvas = () => {
 				<img
 					className='illustrationImage'
 					src={illustrationImage}
-					alt='Draw me completely'
+					alt='Hand-drawn digital portrait illustration of Tsiomakh Olexandr (Цьомах Олександр Віталійович), Frontend Developer, Writer, and Screenwriter'
 				/>
 			</div>
 		</div>

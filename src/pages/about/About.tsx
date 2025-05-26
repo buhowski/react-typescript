@@ -29,12 +29,16 @@ const About = () => {
 
 			<div className='about-info'>
 				<div className=''>
-					<img className='about-info__img' src={PhotoBg} alt='I look forward to a better future' />
+					<img
+						className='about-info__img'
+						src={PhotoBg}
+						alt='Portrait of Tsiomakh Olexandr (Цьомах Олександр Віталійович) standing and looking forward, symbolizing a better future'
+					/>
 				</div>
 
-				{dotsData.map(({ classItem, title, titleSub, img }, i) => {
+				{dotsData.map(({ classItem, title, titleSub, img, alt }, index) => {
 					return (
-						<div className={`pos-abs about-item ${classItem}`} key={i}>
+						<div className={`pos-abs about-item ${classItem}`} key={index}>
 							<div
 								id={classItem}
 								onMouseEnter={!useTablet ? addActiveClass : undefined}
@@ -48,7 +52,7 @@ const About = () => {
 									{title}
 								</p>
 
-								<img className='line-drawing-pic' src={img} alt={title} />
+								<img className='line-drawing-pic' src={img} alt={alt} />
 							</div>
 						</div>
 					);

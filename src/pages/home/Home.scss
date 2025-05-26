@@ -112,14 +112,14 @@ canvas {
 	filter: drop-shadow(0 0 5px rgba($color: $darkest, $alpha: 0.8));
 	overflow: hidden;
 
-	.illustrationImage {
-		display: none;
-	}
-
 	canvas,
 	.illustrationImage {
 		position: absolute;
 		top: 0;
 		left: 0;
+	}
+
+	.illustrationImage {
+		left: -130%;
 	}
 }
