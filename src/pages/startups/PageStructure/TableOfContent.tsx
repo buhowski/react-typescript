@@ -48,31 +48,33 @@ const TableOfContent: React.FC<TocProps> = ({ onSelectIndex, activeHeadingId, he
 			</button>
 
 			<div className='table-content__list' ref={listRef} style={{ height: `${listHeight}px` }}>
-				<div className='table-content__inner' ref={innerRef}>
-					<div className='table-content__wrapper'>
-						<h3 className='table-content__title'>Table of Content</h3>
+				<h3 className='table-content__title'>Table of Content</h3>
 
-						{headings.map((heading) => (
-							<button
-								key={heading.id}
-								onClick={() => onSelectIndex(heading.id)}
-								className={activeHeadingId === heading.id ? 'is-active' : ''}
-							>
-								<mark
-									className={
-										heading.level === 1
-											? 'h1-toc-item'
-											: heading.level === 2
-											? 'h2-toc-item'
-											: 'h3-toc-item'
-									}
-									// Fix Bold text
-									data-text={heading.text}
+				<div className='table-content__container'>
+					<div className='table-content__inner' ref={innerRef}>
+						<div className='table-content__wrapper'>
+							{headings.map((heading) => (
+								<button
+									key={heading.id}
+									onClick={() => onSelectIndex(heading.id)}
+									className={activeHeadingId === heading.id ? 'is-active' : ''}
 								>
-									{heading.text}
-								</mark>
-							</button>
-						))}
+									<mark
+										className={
+											heading.level === 1
+												? 'h1-toc-item'
+												: heading.level === 2
+												? 'h2-toc-item'
+												: 'h3-toc-item'
+										}
+										// Fix Bold text
+										data-text={heading.text}
+									>
+										{heading.text}
+									</mark>
+								</button>
+							))}
+						</div>
 					</div>
 				</div>
 			</div>

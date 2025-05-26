@@ -90,7 +90,7 @@ const useActiveHeadingTracking = (
 		const container = document.querySelector('.page-container') as HTMLElement;
 		if (!container) return;
 
-		let triggerOffset = 150;
+		const triggerOffset = useTabletLarge ? 120 : 150;
 
 		const handleScroll = () => {
 			const containerTop = container.getBoundingClientRect().top;
@@ -119,25 +119,30 @@ const useActiveHeadingTracking = (
 	}, [useTabletLarge, headingsVersion, sortedHeadings]);
 
 	// Scrolls to TOC title
-	const handleTableOfContentSelect = useCallback((headingId: string) => {
-		const targetElement = document.getElementById(headingId);
-		const pageContainer = document.querySelector('.page-container');
+	const handleTableOfContentSelect = useCallback(
+		(headingId: string) => {
+			const targetElement = document.getElementById(headingId);
+			const pageContainer = document.querySelector('.page-container');
 
-		if (targetElement && pageContainer) {
-			const containerTop = pageContainer.getBoundingClientRect().top;
-			const targetTop = targetElement.getBoundingClientRect().top;
-			const currentScrollTop = pageContainer.scrollTop;
-			let scrollOffset = 80;
-			const scrollTo = targetTop - containerTop + currentScrollTop - scrollOffset;
+			if (targetElement && pageContainer) {
+				const containerTop = pageContainer.getBoundingClientRect().top;
+				const targetTop = targetElement.getBoundingClientRect().top;
+				const currentScrollTop = pageContainer.scrollTop;
 
-			pageContainer.scrollTo({
-				top: scrollTo,
-				behavior: 'smooth',
-			});
-		} else {
-			console.warn(`Could not find element with ID: ${headingId}.`);
-		}
-	}, []);
+				const scrollOffset = useTabletLarge ? 70 : 80;
+
+				const scrollTo = targetTop - containerTop + currentScrollTop - scrollOffset;
+
+				pageContainer.scrollTo({
+					top: scrollTo,
+					behavior: 'smooth',
+				});
+			} else {
+				console.warn(`Could not find element with ID: ${headingId}.`);
+			}
+		},
+		[useTabletLarge]
+	);
 
 	// Exposes setHeadingsVersion
 	return {
@@ -312,14 +317,16 @@ const PageStructure: React.FC<PageProps> = ({ textData, tableOfContent = false }
 						</div>
 					</div>
 
-					<div className={`lang-sidebar ${tableOfContent ? 'lang-sidebar--has-toc' : ''}`}>
+					<div
+						className={`lang-sidebar ${sortedHeadings.length > 0 ? 'lang-sidebar--has-toc' : ''}`}
+					>
 						<LanguageSwitcher
 							currentLang={currentLang}
 							availableLangs={availableLangs}
 							changeLanguage={changeLanguage}
 						/>
 
-						{tableOfContent && (
+						{sortedHeadings.length > 0 && (
 							<TableOfContent
 								activeHeadingId={activeHeadingId}
 								onSelectIndex={handleTableOfContentSelect}

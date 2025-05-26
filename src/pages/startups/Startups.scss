@@ -177,8 +177,10 @@
 
 		~ .wrapper--idea {
 			.table-content__list {
-				position: fixed;
-				top: 37px;
+				@include tabletBig {
+					position: fixed;
+					top: 37px;
+				}
 			}
 		}
 	}
