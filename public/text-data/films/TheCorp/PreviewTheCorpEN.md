@@ -1,11 +1,7 @@
-
 #### Mockumentary Series
 
 # The Corp .!.
 
 [mobile-slider]
 
-## Logline
-
-A pseudo-documentary backstage series about building our own corporation. A lively, ironic nod to the American show ”The Office”, mixing real-life scenes with absurdity that disrupts the workflow.
-
+A pseudo-documentary backstage series about building one's own corporation. It's a lively, ironic nod to the American "The Office", featuring scenes in real spaces mixed with absurdity that hinders the work process.

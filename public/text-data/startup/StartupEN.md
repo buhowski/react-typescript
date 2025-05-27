@@ -1,4 +1,3 @@
-
 # Presentation
 
 ## Preface
@@ -55,13 +54,13 @@ The focus is on high-quality content that builds our image and attracts an audie
 
 ## Details
 
-Running the magazine and step-by-step strategy implementation are separate projects. Examples of ideas can be found here: [Another Dimension](https://buhowski.dev/mvp). 
+Running the magazine and step-by-step strategy implementation are separate projects. Examples of ideas can be found here: [Another Dimension](/mvp). 
 
-Key industry products are stages of production, presented as individual scenarios. The presentations are available here: [Films](https://buhowski.dev/films), [Video Games](https://buhowski.dev/games). 
+Key industry products are stages of production, presented as individual scenarios. The presentations are available here: [Films](/films), [Video Games](/games).
 
 At first, this will help gain popularity among the Ukrainian audience, and later — expand to the international level by presenting future projects on the global market.
 
-The [self-presentation projects](https://buhowski.dev/podcast-show) are pilot stages, possibly without initial funding, serving as the first phases of capability evaluation, which should confirm all declared intentions through feedback. They pave the way to launching key ideas and creating the magazine, and will also help attract new investments for at least the next five years.
+The [self-presentation projects](/self-presentation) are pilot stages, possibly without initial funding, serving as the first phases of capability evaluation, which should confirm all declared intentions through feedback. They pave the way to launching key ideas and creating the magazine, and will also help attract new investments for at least the next five years.
 
 ### Stages and Needs
 

@@ -4,14 +4,14 @@ export const dataTheCorp = {
 	// English
 	en: [
 		{
-			markdownAPI: '/text-data/films/TheCorp/PreviewTheCorpUA.md',
+			markdownAPI: '/text-data/films/TheCorp/TheCorpEN.md',
 			sliderContent: dataSliderTheCorp,
 		},
 	],
 
 	// Ukraine
-	ua: [{ markdownAPI: '/text-data/films/TheCorp/PreviewTheCorpUA.md' }],
+	ua: [{ markdownAPI: '/text-data/films/TheCorp/TheCorpUA.md' }],
 
 	// rusian
-	ru: [],
+	ru: [{ markdownAPI: '/text-data/films/TheCorp/TheCorpRU.md' }],
 };

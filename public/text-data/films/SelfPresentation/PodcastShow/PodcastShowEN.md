@@ -1,7 +1,6 @@
-
 # Podcast Show: Dimension Minus Zero One Hundred and Forty-eight
 
-***Format:** This is something like a mix between The Eric Andre Show and podcasts in the style of “let's pretend we know something and are fucking experts in these fields.”*
+***Format:** Something like a mix between The Eric Andre Show and podcasts in the style of “let's pretend we know something and are fucking experts in these fields.”*
 
 ## Script
 
@@ -9,7 +8,7 @@ A podcast with the vibe of The Eric Andre Show + Between Two Ferns — 5–10 mi
 
 It’s actually a disguised self-interview, self-dialogues, personal life stories, and more. Guests are just background — for broader reach and comedic setups.
 
-There are two hosts — Main and Sidekick + Background Character (maybe a few) + Guest.
+There are two hosts — Main and Sidekick (female + male) + Background Character (maybe a few) + Guest.
 
 The Main Host asks the main and any other questions (main ones are prepped in advance and needed to unpack key ideas).
 

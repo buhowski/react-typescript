@@ -1,25 +1,26 @@
-
 # Cossacks RPG
 
 ***Format:** An adventure role-playing video game with an open world and a third-person view, high detailed environment and characters*
 
 ***Setting:** Ukraine of the 16th — 18th centuries, Zaporozhian Sich*
 
-## Core Idea
+## **Main Idea**
 
-A mighty Zaporozhian Cossack with a tragic past and untapped supernatural potential travels through cities, trying to unravel the secrets of mystical history and his own past.
+A mighty Zaporozhian Cossack, with a tragic past and an unrevealed potential for otherworldly powers, travels through cities, trying to uncover the mystical secrets of history and his own destiny.
 
-Accidentally, he becomes entangled in dark conspiracies of the clergy and uncovers forbidden secrets that lead to the truth he has long sought — but now knows he cannot escape alive after what he has seen
+He accidentally gets entangled in dark church conspiracies and uncovers forbidden secrets that lead to the truth he's long sought — but now he knows he won't get out alive after what he's seen.
 
-This story weaves together real historical facts, mythology and demonology, dynamic comedy, and tragic drama.
+Real historical facts, mythology, and demonology intertwine here with dynamic comedy and tragic drama.
 
 [mobile-slider]
 
 ## Overview
 
-The concept of my idea is to combine real historical events of the Ukrainian Cossacks with Slavic myths and mysticism from the literary works of Nikolai Gogol (ideas, themes, and atmosphere). To imagine my vision of the game's visuals, you need to take the Zaporozhian Cossacks (images 03-08) and combine them with the graphic style of videos 01-02, but with its own themes and textures, combined with a melancholically dark atmosphere of a forgotten era, mysticism, and personal drama.
+The core concept of my idea lies in combining real historical events of the Ukrainian Cossacks with Slavic myths and the mysticism from Mykola Gogol's literary works.
 
-The result will be a game that brings to life the history of the Ukrainian Cossacks and the Zaporozhian Sich. My goal is to popularize a new vision of that period and show the images of different Cossacks in a new style. Openly depicting the whole essence of that era — bloody battles, cruelty, betrayal, untold legends, and explicit scenes. It will also show the famous hopak dance, humor, and endless landscapes.
+To visualize my vision for the game's depiction, imagine taking the Zaporozhian Cossacks and merging their graphic style with video examples from the slider, but with our own unique theme. All of this — combined with a melancholy dark atmosphere of a forgotten era, mysticism, and personal drama. The result will be a game that brings to life the history of the Ukrainian Cossacks and the Zaporozhian Sich.
+
+My goal is to popularize a new vision of that period and showcase various Cossack figures in a fresh style. This means frankly depicting the full essence of that era — bloody battles, cruelty, betrayal, untold legends, and explicit scenes. Also, to feature the renowned combat dance "hopak," humor, and boundless landscapes that haven't been explored in games yet.
 
 ### Inspiration
 

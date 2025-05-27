@@ -82,17 +82,26 @@ const MarkdownBlock = memo(
 			h2: ({ children }) => renderHeading(children, 2),
 			h3: ({ children }) => renderHeading(children, 3),
 			p: ({ children }) => {
-				const child = Children.toArray(children)[0];
+				const childArray = Children.toArray(children);
+
+				// mobile slider support
 				if (
-					Children.count(children) === 1 &&
-					typeof child === 'string' &&
-					child.trim() === '[mobile-slider]'
+					childArray.length === 1 &&
+					typeof childArray[0] === 'string' &&
+					childArray[0].trim() === '[mobile-slider]'
 				) {
 					return useTabletLarge ? (
 						<Slider slides={sliderContent || []} currentLanguage={currentLanguage} />
 					) : null;
 				}
-				return <p>{children}</p>;
+
+				// check if any child is <em>
+				const hasEm = childArray.some(
+					(child) =>
+						React.isValidElement(child) && typeof child.type === 'string' && child.type === 'em'
+				);
+
+				return <p className={hasEm ? 'description__has-em' : undefined}>{children}</p>;
 			},
 			a: ({ href, children }) => (
 				<a href={href} target='_blank' rel='noopener noreferrer'>

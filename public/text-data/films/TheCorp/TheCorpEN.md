@@ -1,15 +1,16 @@
-
 # The Corp .!.
 
 [mobile-slider]
 
-## Core Idea
+## Main Idea
 
-A pseudo-documentary backstage series about the real process of building a corporation from scratch — showing everything we face while creating this corporation. It’s raw reality mixed with absurdity that we add to the workflow to create a lively, ironic show.
+This is a pseudo-documentary backstage series that showcases the real process of building a corporation from scratch, enhanced with improvised performances.
 
-We openly show everything we do — it’s both self-promotion and a way to move forward. But this series is not about business or complicated processes — it’s about people surviving in an office where the main drama isn’t work, but everything happening instead of it.
+It's our satirical take on modern corporations: about "fascism in detail," "separate galleys and rowers," the so-called "family atmosphere," and the senseless waste of resources. In the series, we'll highlight what we believe work should truly be like, but with boundless self-irony.
 
-A very close analogy to the American “The Office,” but our version doesn’t copy the original — it creates scenes in a real work environment and adapts reality with absurdity, flexible humor, and unique characters.
+This is raw reality mixed with the absurdity we intentionally add to the workflow to create a lively and engaging series. We openly show everything we do — it's both self-promotion and a powerful driver for our development. However, "The Corp .!." isn't about business or complex processes. It's about people surviving in an office where the main drama isn't the work itself, but everything that's done instead of it.
+
+It's very similar to the American "The Office," but this project doesn't copy the original. We create scenes in a real workspace, adapting realities to flexible humor, absurdity, and specific characters.
 
 ## Details
 

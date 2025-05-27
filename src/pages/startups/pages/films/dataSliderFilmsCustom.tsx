@@ -3,7 +3,7 @@ import { dataSliderPodcastShow } from './SelfPresentation/PodcastShow/dataSlider
 // Images
 import writer from '../../assets/writer.webp';
 
-const ALT_PODCAST_SHOW = 'Podcast Show Showcase: ';
+const ALT_PODCAST_SHOW = 'Example for Podcast Show: ';
 
 const rawCombinedSelfPresentationSlides = [
 	...dataSliderPodcastShow.map((item) => ({ ...item, _prefix: ALT_PODCAST_SHOW })),
