@@ -11,8 +11,8 @@ const PitchContainer = React.memo(
 
 			// Reset markdownLoadError when the markdownAPI source changes
 			useEffect(() => {
-				setMarkdownLoadError(false); // Clear any previous error to allow a new load attempt
-			}, [structure.markdownAPI]); // Re-run effect whenever the markdown API path changes
+				setMarkdownLoadError(false);
+			}, [structure.markdownAPI]);
 
 			// Callback to forward extracted headings to the parent component
 			const handleHeadings = useCallback(

@@ -1,8 +1,5 @@
 import { dataSliderCossacks } from './Cossacks/dataSliderCossacks';
 
-// Images
-import writer from '../../assets/writer.webp';
-
 const ALT_PODCAST_SHOW = ' ';
 const rawCombinedSelfPresentationSlides = [
 	...dataSliderCossacks.map((item) => ({ ...item, _prefix: ALT_PODCAST_SHOW })),
@@ -15,10 +12,3 @@ export const dataSliderSelfPresentationCustom = rawCombinedSelfPresentationSlide
 	...item,
 	itemAlt: `${item._prefix || ''}${item.itemAlt ?? ''}`,
 }));
-
-export const dataSliderGamesPreface = [
-	{
-		itemSrc: writer,
-		itemAlt: ``,
-	},
-];

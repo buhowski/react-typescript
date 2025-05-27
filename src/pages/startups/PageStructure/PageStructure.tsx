@@ -19,7 +19,7 @@ import '../Startups.scss';
 
 const PageStructure: React.FC<PageProps> = ({ textData }) => {
 	const useTabletLarge = useTabletLargeQuery();
-	const [currentLang, setCurrentLang] = useState(LANGUAGES[0]); // Initialize with first language as default
+	const [currentLang, setCurrentLang] = useState(LANGUAGES[0]);
 	const [initialLangReady, setInitialLangReady] = useState(false);
 	const allHeadingsMapRef = useRef(new Map());
 

@@ -1,7 +1,7 @@
 import { dataSliderPodcastShow } from './SelfPresentation/PodcastShow/dataSliderPodcastShow';
 
 // Images
-import writer from '../../assets/writer.webp';
+// import writer from '../../assets/writer.webp';
 
 const ALT_PODCAST_SHOW = 'Example for Podcast Show: ';
 
@@ -18,8 +18,8 @@ export const dataSliderSelfPresentationCustom = rawCombinedSelfPresentationSlide
 }));
 
 export const dataSliderFilmsPreface = [
-	{
-		itemSrc: writer,
-		itemAlt: ``,
-	},
+	// {
+	// 	itemSrc: '',
+	// 	itemAlt: ``,
+	// },
 ];

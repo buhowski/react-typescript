@@ -8,13 +8,13 @@ import { SliderProps, VideoPreviewProps } from '../types/common';
 import { useVideoPlayback } from '../pages/startups/helpers/VideoPlaybackContext'; // Import the new hook
 
 // Helper function to detect iOS mobile devices
-const isIOSMobile = (): boolean => {
+const isMobileDevice = (): boolean => {
 	if (typeof navigator === 'undefined') {
 		return false; // Not in a browser environment
 	}
 	const userAgent = navigator.userAgent;
-
-	return /iPad|iPhone|iPod/.test(userAgent);
+	// Common mobile user agent patterns
+	return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(userAgent);
 };
 
 // YouTube embed URL with necessary parameters
@@ -26,7 +26,7 @@ const buildYouTubeEmbedSrc = (url: string | undefined): string => {
 	let params = 'autoplay=1&enablejsapi=1';
 
 	// Conditionally add mute for iOS mobile devices - FIX playing video on iOS
-	if (isIOSMobile()) {
+	if (isMobileDevice()) {
 		params += '&mute=1';
 	}
 
@@ -36,7 +36,8 @@ const buildYouTubeEmbedSrc = (url: string | undefined): string => {
 // Videos Helper functions
 const isYouTubeUrl = (url?: string) => {
 	if (!url) return false;
-	const youtubeRegex = /^(https?:\/\/)?(www\.youtube\.com\/embed\/|youtu\.be\/)[\w-]{11}(\?.*)?$/;
+	const youtubeRegex =
+		/^(https?:\/\/)?(www\.youtube\.com\/embed\/|youtu\.be\/|www\.youtube-nocookie\.com\/embed\/)[\w-]{11}(\?.*)?$/;
 	return youtubeRegex.test(url);
 };
 const isDirectVideoFile = (url?: string) => url?.match(/\.(mp4|webm|ogg)$/i);
@@ -110,6 +111,11 @@ const Slider: React.FC<SliderProps> = ({ slides, currentLanguage }) => {
 			}
 		}, 100);
 	}, [instanceId, stopAllOtherVideos, slides, activeIndex]);
+
+	// each PitchContainer's slider starts from the first item.
+	useEffect(() => {
+		setActiveIndex(0);
+	}, [slides]);
 
 	// Pause video whenever the set of slides changes or the active slide index changes.
 	useEffect(() => {

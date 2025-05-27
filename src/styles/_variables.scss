@@ -30,9 +30,9 @@ $starYellow: #dfb842;
 	span {
 		display: block;
 		position: absolute;
-		width: 50%;
-		height: 2px;
-		background-color: $blue-main;
+		width: calc(50% + 1px);
+		height: 0;
+		border-bottom: 2px solid $blue-main;
 		opacity: 1;
 		transform: rotate(0deg);
 		transition: 0.3s ease-in-out;

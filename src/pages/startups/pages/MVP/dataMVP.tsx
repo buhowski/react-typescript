@@ -1,4 +1,5 @@
-import { dataSliderAnotherDimension, dataSliderProjectJournalism } from './dataSliderMVP';
+import { dataSliderProjectJournalism } from './dataSliderMVP';
+import { dataSliderProjectsDev } from '../dataReusable';
 
 export const dataMVP = {
 	// English
@@ -6,7 +7,7 @@ export const dataMVP = {
 		// ### Another Dimension ###
 		{
 			markdownAPI: '/text-data/mvp/AnotherDimension/AnotherDimensionEN.md',
-			sliderContent: dataSliderAnotherDimension,
+			sliderContent: dataSliderProjectsDev,
 		},
 
 		// ### Project Journalism ###

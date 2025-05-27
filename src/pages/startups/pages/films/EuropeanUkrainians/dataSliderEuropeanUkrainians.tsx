@@ -1,23 +1,21 @@
 // Posters
-import classicSetupPoster from '../../../assets/films/EuropeanUkrainians/classicSetupPoster.webp';
 import promoPoster from '../../../assets/films/EuropeanUkrainians/promo.webp';
 import broadCityPoster from '../../../assets/films/EuropeanUkrainians/broadCityPoster.webp';
 import fantasyPoster from '../../../assets/films/EuropeanUkrainians/fantasyPoster.webp';
-import bestMomentsPoster from '../../../assets/films/EuropeanUkrainians/best-moments.webp';
+import bestMomentsPoster from '../../../assets/films/EuropeanUkrainians/always-sunny-the-gang.webp';
 
 // Videos
 import promoVideo from '../../../assets/films/videos/teaserVideo.mp4';
-import teamVideo from '../../../assets/films/videos/teamVideo.mp4';
 import broadCityTrailer from '../../../assets/films/videos/broadCityTrailer.mp4';
 import fantasy from '../../../assets/films/videos/fantasy.mp4';
-const bestMomentsVideo = 'https://www.youtube.com/embed/2gcEbzGbp38';
+const bestMomentsVideo = 'https://www.youtube.com/embed/cbSEr1oJ8mw';
 
 export const dataSliderEuropeanUkrainians = [
 	{
 		itemPoster: bestMomentsPoster,
 		itemSrc: bestMomentsVideo,
-		itemAlt: `Poster from 'It's Always Sunny in Philadelphia' showcasing memorable moments.`,
-		itemCaption: `The vibe I want to capture: moments example from "It's Always Sunny in Philadelphia."`,
+		itemAlt: `Poster from 'It's Always Sunny in Philadelphia', capturing The Gang's disastrous attempts at normal social interaction.`,
+		itemCaption: `The vibe I want to capture: The Gang Interacts with Normal People.`,
 	},
 
 	{
@@ -25,13 +23,6 @@ export const dataSliderEuropeanUkrainians = [
 		itemSrc: promoVideo,
 		itemAlt: `Promotional poster for 'It's Always Sunny in Philadelphia'.`,
 		itemCaption: `The vibe I want to capture: promo from "It's Always Sunny in Philadelphia."`,
-	},
-
-	{
-		itemPoster: classicSetupPoster,
-		itemSrc: teamVideo,
-		itemAlt: `Poster of the main cast of 'It's Always Sunny in Philadelphia' in a classic group pose.`,
-		itemCaption: `The team I want to capture: Looks, brains and wild card - Classic setup. From "It's Always Sunny in Philadelphia."`,
 	},
 
 	{

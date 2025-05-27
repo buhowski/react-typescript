@@ -21,12 +21,22 @@
   <url>
     <loc>https://buhowski.dev/projects</loc>
   </url>
+
+  <!-- Films -->
+  <url>
+    <loc>https://buhowski.dev/self-presentation</loc>
+  </url>
+  <url>
+    <loc>https://buhowski.dev/podcast-show</loc>
+  </url>
   <url>
     <loc>https://buhowski.dev/european-ukrainians</loc>
   </url>
   <url>
     <loc>https://buhowski.dev/the-corp</loc>
   </url>
+
+  <!-- Games -->
   <url>
     <loc>https://buhowski.dev/cossacks</loc>
   </url>

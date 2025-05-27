@@ -27,7 +27,7 @@ const Root = () => {
 			setIsLoading(false);
 			// This makes the #root element visible via the CSS in index.html
 			rootElement.classList.add('is-ready');
-		}, 800);
+		}, 950);
 
 		// Cleanup function: runs if the Root component unmounts (unlikely but good practice)
 		return () => {

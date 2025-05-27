@@ -11,6 +11,7 @@ export const dataSelfPresentation = {
 		// ### Self Presentation Projects ###
 		{
 			markdownAPI: '/text-data/films/SelfPresentation/PreviewSelfPresentationEN.md',
+			sliderContent: dataSliderPodcastShow,
 		},
 
 		// ### Podcast Show  ###
@@ -38,6 +39,6 @@ export const dataSelfPresentation = {
 		{ markdownAPI: '/text-data/films/SelfPresentation/PreviewSelfPresentationRU.md' },
 
 		// ### Podcast Show  ###
-		{ markdownAPI: '/text-data/films/SelfPresentation/PodcastShow/PreviewPodcastShowUA.md' },
+		{ markdownAPI: '/text-data/films/SelfPresentation/PodcastShow/PreviewPodcastShowRU.md' },
 	],
 };

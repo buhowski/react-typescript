@@ -63,10 +63,10 @@ $toc-top: 12px;
 			border-radius: 6px;
 			width: fit-content;
 			position: fixed;
-			bottom: 30px;
-			right: 15px;
+			bottom: 45px;
+			right: 20px;
 			z-index: 100;
-			padding: 16px 15px;
+			padding: 14px;
 			background: linear-gradient(134deg, #000000 30%, #002840 100%);
 			box-shadow: 0 0 8px rgba($black, 1);
 
@@ -84,10 +84,14 @@ $toc-top: 12px;
 
 			@include tabletBig {
 				margin-bottom: 0;
+
+				span {
+					border-color: #fff;
+				}
 			}
 
 			span {
-				background-color: #fff;
+				border-color: #fff;
 			}
 		}
 	}
@@ -121,7 +125,8 @@ $toc-top: 12px;
 		display: none;
 
 		@include tabletBig {
-			padding: 25px 15px 12px;
+			padding: 23px 15px 12px;
+			font-size: 17px;
 			font-family: $LouisGeorgeCafBold;
 			text-align: center;
 			display: block;
@@ -155,7 +160,7 @@ $toc-top: 12px;
 			border-radius: 0 0 10px 10px;
 			top: 100%;
 			right: 50%;
-			min-width: 220px;
+			min-width: 260px;
 			width: max-content;
 			transform: translateX(50%);
 			max-width: calc(100% - 85px);
@@ -170,17 +175,17 @@ $toc-top: 12px;
 
 			mark {
 				text-overflow: ellipsis;
-				// white-space: nowrap;
 				overflow: hidden;
 				position: relative;
 				padding: 3px 42px;
+				padding-right: 25px;
 				letter-spacing: 0.4px;
 				font-weight: 500;
-				line-height: 1.08;
+				line-height: 1;
 
 				@include tabletBig {
 					padding: 3.5px 25px;
-					padding-right: 15px;
+					padding-right: 20px;
 				}
 
 				&::before {
@@ -237,14 +242,14 @@ $toc-top: 12px;
 			}
 
 			.h1-toc-item {
-				font-weight: bold;
+				// font-weight: bold;
 				color: $starYellow;
 				font-size: 15px;
-				margin-top: 25px;
+				margin-top: 15px;
 				margin-bottom: 2px;
 
 				@include tabletBig {
-					margin-top: 20px;
+					font-size: 14px;
 				}
 			}
 

@@ -1,12 +1,9 @@
-// DEFAULT EXPORTS
-export const comingSoon = 'Coming soon ...';
+// Images
+import posterProjectsDev from '../assets/brain.jpg';
 
-// Last Words
-export const lastWordsEn = `For like-minded people and collaboration,
-please contact me!`;
-
-export const lastWordsUa = `Для однодумців та співпраці,
-будь ласка, зв'яжіться зі мною!`;
-
-export const lastWordsRu = `Для единомышленников и сотрудничества,
-пожалуйста, свяжитесь со мной!`;
+export const dataSliderProjectsDev = [
+	{
+		itemSrc: posterProjectsDev,
+		itemAlt: `Collection of impactful projects with strong foundations, seeking collaborative development.`,
+	},
+];

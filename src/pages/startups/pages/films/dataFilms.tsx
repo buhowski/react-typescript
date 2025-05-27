@@ -8,7 +8,8 @@ import {
 // Import the specific slider data
 import { dataSliderTheCorp } from './TheCorp/dataSliderTheCorp';
 import { dataSliderEuropeanUkrainians } from './EuropeanUkrainians/dataSliderEuropeanUkrainians';
-import { dataSliderSelfPresentationCustom, dataSliderFilmsPreface } from './dataSliderFilmsCustom';
+import { dataSliderSelfPresentationCustom } from './dataSliderFilmsCustom';
+import { dataSliderProjectsDev } from '../dataReusable';
 
 // Several Projects Preview Page
 export const dataFilms = {
@@ -17,7 +18,7 @@ export const dataFilms = {
 		// ### Main Preface  ###
 		{
 			markdownAPI: '/text-data/PreviewMainEN.md',
-			sliderContent: dataSliderFilmsPreface,
+			sliderContent: dataSliderProjectsDev,
 		},
 
 		// ### Self Presentation Projects  ###
