@@ -4,7 +4,7 @@
 
 ***Setting:** Ukraine of the 16th — 18th centuries, Zaporozhian Sich*
 
-## **Main Idea**
+## Main Idea
 
 A mighty Zaporozhian Cossack, with a tragic past and an unrevealed potential for otherworldly powers, travels through cities, trying to uncover the mystical secrets of history and his own destiny.
 
@@ -28,14 +28,14 @@ My goal is to popularize a new vision of that period and showcase various Cossac
 - The works of [Nikolai Gogol](https://en.wikipedia.org/wiki/Nikolai_Gogol), collections and novels: [Viy](https://en.wikipedia.org/wiki/Viy_(story)), [Taras Bulba](https://en.wikipedia.org/wiki/Taras_Bulba), [Dead Souls](https://en.wikipedia.org/wiki/Dead_Souls), [Evenings on a Farm Near Dikanka](https://en.wikipedia.org/wiki/Evenings_on_a_Farm_Near_Dikanka)
 - Zaporozhian Cossacks, Slavic mythology, Ukrainian demonology
 
-### Authentic depiction of Cossack culture and history
+### Authentic Cossack Culture & History
 
 - Real events and historical figures
 - Cultural heritage, Ukrainian folklore, and Slavic mythology
 - Secrets of Cossack life and their struggle for freedom
 - Conveying a rich palette of human emotions, from triumph to tragedy
 
-### Open world environment
+### Open World Environment
 
 - Endless expanses of the Zaporozhian Sich and landscapes of Ukraine in the 16th — 18th centuries
 - Hidden settlements, majestic ruins, and other interesting locations

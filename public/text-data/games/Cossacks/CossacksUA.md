@@ -28,7 +28,7 @@
 - Творчість [Миколи Гоголя](https://en.wikipedia.org/wiki/Nikolai_Gogol), збірки та повісті: [Вій](https://en.wikipedia.org/wiki/Viy_(story)), [Тарас Бульба](https://en.wikipedia.org/wiki/Taras_Bulba), [Мертві душі](https://en.wikipedia.org/wiki/Dead_Souls), [Вечори на хуторі біля Диканьки](https://en.wikipedia.org/wiki/Evenings_on_a_Farm_Near_Dikanka)
 - Запорозькі Козаки, Слов'янська міфологія, Українська демонологія
 
-### Автентичне зображення козацької культури та історії
+### Автентична козацька культура та історія
 
 - Реальні події та історичні особистості
 - Культурну спадщину, Український фольклор та Слов’янську міфологію
