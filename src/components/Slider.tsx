@@ -14,7 +14,8 @@ const isMobileDevice = (): boolean => {
 	}
 	const userAgent = navigator.userAgent;
 	// Common mobile user agent patterns
-	return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(userAgent);
+	// return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(userAgent);
+	return /iPad|iPhone|iPod/.test(userAgent);
 };
 
 // YouTube embed URL with necessary parameters
