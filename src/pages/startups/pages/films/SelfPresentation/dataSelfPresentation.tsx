@@ -3,6 +3,7 @@ import { pathToPodcastShow } from '../../../../../components/urlsData';
 
 // Import the specific slider data
 import { dataSliderPodcastShow } from './PodcastShow/dataSliderPodcastShow';
+import { dataSliderProjectsDev } from '../../dataReusable';
 
 // Several Projects Preview Page
 export const dataSelfPresentation = {
@@ -11,7 +12,7 @@ export const dataSelfPresentation = {
 		// ### Self Presentation Projects ###
 		{
 			markdownAPI: '/text-data/films/SelfPresentation/PreviewSelfPresentationEN.md',
-			sliderContent: dataSliderPodcastShow,
+			sliderContent: dataSliderProjectsDev,
 		},
 
 		// ### Podcast Show  ###

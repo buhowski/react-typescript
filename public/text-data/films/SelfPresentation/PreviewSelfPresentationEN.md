@@ -2,8 +2,6 @@
 
 # Self-presentation Projects
 
-[mobile-slider]
-
 Here are ideas that are possible without any funding, but impossible without initiative-driven people potentially willing to get involved.
 
 This is the basis for a kick-off — need those who want to dive into the unknown of the final result, but for the experience and for something akin to ”messing around for fun.”

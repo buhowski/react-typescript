@@ -14,8 +14,6 @@ This is how the characters perceive the surrounding world to keep from losing th
 
 These strangers meet under certain circumstances. The situation leads them to a lasting friendship — through pain, screaming, and a faint smell of booze, because that's the only way "true love" is born.
 
-[mobile-slider]
-
 ## Overview
 
 The series concept is a fun mix, inspired by projects like [Trailer Park Boys](https://www.imdb.com/title/tt0290988/), [It's Always Sunny in Philadelphia](https://www.imdb.com/title/tt0472954/), [Broad City](https://www.imdb.com/title/tt2578560/), and [New Kids Turbo](https://www.imdb.com/title/tt1648112/).
@@ -29,6 +27,8 @@ The series concept uses humor and satire to sharply, ironically, and yet insight
 It will also showcase the stereotypes and cultural specifics of each European country through the prism of Ukrainian reality.
 
 The reality of Ukrainian life unfolds before the viewer — from the depths of the countryside to the pulsating heart of the capital. This is a series for people who aren't afraid to laugh at problems, but also want their voices to be heard.
+
+[mobile-slider]
 
 ### Script
 

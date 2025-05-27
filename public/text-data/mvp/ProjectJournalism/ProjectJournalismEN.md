@@ -1,10 +1,11 @@
 # Project “Journalism”
 
-[mobile-slider]
 
 ## Content Philosophy
 
 Our approach to media creation is rooted in principles that depart from traditional journalism, diving into the depths of authenticity and uncompromising truth.
+
+[mobile-slider]
 
 ### New Journalism
 
