@@ -156,10 +156,10 @@
 		}
 
 		&.is-visible {
-			animation: typing 1.8s steps(18, end) 1s forwards, blink-caret 1s step-end infinite;
+			animation: typing 1.9s steps(18, end) 1s forwards, blink-caret 1s step-end infinite;
 
 			@include tabletBig {
-				animation: typing 1.8s steps(18, end) forwards, blink-caret 1s step-end infinite;
+				animation: typing 1.9s steps(18, end) forwards, blink-caret 1s step-end infinite;
 			}
 		}
 	}
@@ -213,7 +213,7 @@
 		border-radius: 20px;
 		box-shadow: 0 1px 10px rgba($color: $black, $alpha: 1);
 		letter-spacing: 0;
-		margin: 45px auto 40px;
+		margin: 50px auto;
 		display: flex;
 		justify-content: center;
 		background-color: $black;
@@ -222,7 +222,7 @@
 
 		@include tabletBig {
 			max-width: 777px;
-			margin: 25px auto 40px;
+			margin: 30px auto 50px;
 			text-align: center;
 			border-radius: 10px;
 			box-shadow: 0 0 6px rgba($color: $black, $alpha: 1);

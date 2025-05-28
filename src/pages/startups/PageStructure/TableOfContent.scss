@@ -184,7 +184,7 @@ $toc-top: 12px;
 				line-height: 1;
 
 				@include tabletBig {
-					padding: 3.5px 25px;
+					padding: 5px 25px;
 					padding-right: 20px;
 				}
 
@@ -237,15 +237,14 @@ $toc-top: 12px;
 
 			&:first-of-type {
 				.h1-toc-item {
-					margin-top: 10px;
+					margin-top: 12px;
 				}
 			}
 
 			.h1-toc-item {
-				// font-weight: bold;
 				color: $starYellow;
 				font-size: 15px;
-				margin-top: 15px;
+				margin-top: 17px;
 				margin-bottom: 2px;
 
 				@include tabletBig {
