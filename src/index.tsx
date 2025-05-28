@@ -1,10 +1,10 @@
-// TODO: Polyfill fixes yarn build using old "react-snap": "^1.23.0" with  "react-markdown": "^10.1.0",
 import './polyfills';
 
 import ReactDOM from 'react-dom/client';
 import { HelmetProvider } from 'react-helmet-async';
 import { BrowserRouter } from 'react-router-dom';
 import { useState, useEffect } from 'react';
+
 import './styles/App.scss';
 import App from './App';
 import Preloader from './components/Preloader';
@@ -13,32 +13,32 @@ const rootElement = document.getElementById('root') as HTMLElement;
 const helmetContext: Record<string, any> = {};
 
 const Root = () => {
-	const [isLoading, setIsLoading] = useState(true);
+	// Preloader visibility state
+	const [showPreloader, setShowPreloader] = useState(true);
 
 	useEffect(() => {
-		// Ensure rootElement was found before proceeding
-		if (!rootElement) {
-			console.error('Root element (#root) not found in the DOM.');
-			return;
-		}
+		// Wait for fonts and window load, then hide preloader
+		const handlePageReady = async () => {
+			await document.fonts.ready;
 
-		// Timer to ensure preloader shows for at least 800ms
-		const timer = setTimeout(() => {
-			setIsLoading(false);
-			// This makes the #root element visible via the CSS in index.html
 			rootElement.classList.add('is-ready');
-		}, 980);
 
-		// Cleanup function: runs if the Root component unmounts (unlikely but good practice)
-		return () => {
-			clearTimeout(timer);
-			rootElement.classList.remove('is-ready');
+			setTimeout(() => {
+				setShowPreloader(false);
+			}, 200); // time to remove preloader
 		};
+
+		if (document.readyState === 'complete') {
+			handlePageReady();
+		} else {
+			window.addEventListener('load', handlePageReady);
+			return () => window.removeEventListener('load', handlePageReady);
+		}
 	}, []);
 
 	return (
 		<>
-			{isLoading && <Preloader />}
+			{showPreloader && <Preloader />}
 
 			<HelmetProvider context={helmetContext}>
 				<BrowserRouter>

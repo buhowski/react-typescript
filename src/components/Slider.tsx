@@ -184,11 +184,11 @@ const Slider: React.FC<SliderProps> = ({ slides, currentLanguage }) => {
 											ref={iframeRef}
 											width='100%'
 											height='100%'
+											style={{ border: 'none' }}
 											src={buildYouTubeEmbedSrc(currentSlide.itemSrc)}
 											title={currentSlide.itemAlt}
 											allow='autoplay; encrypted-media'
 											allowFullScreen
-											style={{ border: 'none' }}
 										/>
 									) : (
 										<video
