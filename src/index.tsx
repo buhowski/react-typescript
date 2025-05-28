@@ -17,67 +17,47 @@ const Root = () => {
 	// Preloader visibility state
 	const [showPreloader, setShowPreloader] = useState(true);
 
-	useEffect(() => {
-		// Ensure rootElement was found before proceeding
-
-		// Timer to ensure preloader shows for at least 800ms
-		const timer = setTimeout(() => {
-			setShowPreloader(false);
-			// This makes the #root element visible via the CSS in index.html
-			rootElement.classList.add('is-ready');
-		}, 950);
-
-		// Cleanup function: runs if the Root component unmounts (unlikely but good practice)
-		return () => {
-			clearTimeout(timer);
-			rootElement.classList.remove('is-ready');
-		};
-	}, []);
-
 	// useEffect(() => {
-	// if (!rootElement) {
-	// 	console.error('Root element (#root) not found in the DOM.');
-	// 	return;
-	// }
-	// 	let isReady = false;
+	// 	// Ensure rootElement was found before proceeding
+	// if (!rootElement) return;
 
-	// 	// fallback if fonts hang
-	// 	const fallback = setTimeout(() => {
-	// 		if (!isReady) {
-	// 			setShowPreloader(false);
-	// 			rootElement.classList.add('is-ready');
-	// 		}
-	// 	}, 900);
+	// 	// Timer to ensure preloader shows for at least 800ms
+	// 	const timer = setTimeout(() => {
+	// 		setShowPreloader(false);
+	// 		// This makes the #root element visible via the CSS in index.html
+	// 		rootElement.classList.add('is-ready');
+	// 	}, 950);
 
-	// 	// try wait for fonts
-	// 	document.fonts.ready.then(() => {
-	// 		isReady = true;
-	// 		clearTimeout(fallback);
-	// 		setTimeout(() => {
-	// 			setShowPreloader(false);
-	// 			rootElement.classList.add('is-ready');
-	// 		}, 200);
-	// 	});
-
-	// 	// cleanup
+	// 	// Cleanup function: runs if the Root component unmounts (unlikely but good practice)
 	// 	return () => {
-	// 		clearTimeout(fallback);
+	// 		clearTimeout(timer);
 	// 		rootElement.classList.remove('is-ready');
 	// 	};
 	// }, []);
 
-	// handle Firefox bfcache restore
-	// useEffect(() => {
-	// 	const onPageShow = (e: PageTransitionEvent) => {
-	// 		if (e.persisted) {
-	// 			rootElement.classList.remove('is-ready');
-	// 			setShowPreloader(true);
-	// 		}
-	// 	};
+	useEffect(() => {
+		if (!rootElement) return;
 
-	// 	window.addEventListener('pageshow', onPageShow);
-	// 	return () => window.removeEventListener('pageshow', onPageShow);
-	// }, []);
+		let done = false;
+
+		const finish = () => {
+			if (done) return;
+			done = true;
+			setShowPreloader(false);
+			rootElement.classList.add('is-ready');
+		};
+
+		const fallback = setTimeout(finish, 900);
+
+		document.fonts.ready.then(() => {
+			setTimeout(finish, 200); // додаткова пауза після шрифтів
+		});
+
+		return () => {
+			clearTimeout(fallback);
+			rootElement.classList.remove('is-ready');
+		};
+	}, []);
 
 	return (
 		<>
