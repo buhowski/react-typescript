@@ -17,43 +17,20 @@ const Root = () => {
 	// Preloader visibility state
 	const [showPreloader, setShowPreloader] = useState(true);
 
-	// useEffect(() => {
-	// 	// Ensure rootElement was found before proceeding
-
-	// 	// Timer to ensure preloader shows for at least 800ms
-	// 	const timer = setTimeout(() => {
-	// 		setShowPreloader(false);
-	// 		// This makes the #root element visible via the CSS in index.html
-	// 		rootElement.classList.add('is-ready');
-	// 	}, 950);
-
-	// 	// Cleanup function: runs if the Root component unmounts (unlikely but good practice)
-	// 	return () => {
-	// 		clearTimeout(timer);
-	// 		rootElement.classList.remove('is-ready');
-	// 	};
-	// }, []);
-
 	useEffect(() => {
+		// Ensure rootElement was found before proceeding
 		if (!rootElement) return;
 
-		let done = false;
-
-		const finish = () => {
-			if (done) return;
-			done = true;
+		// Timer to ensure preloader shows for at least 800ms
+		const timer = setTimeout(() => {
 			setShowPreloader(false);
+			// This makes the #root element visible via the CSS in index.html
 			rootElement.classList.add('is-ready');
-		};
+		}, 800);
 
-		const fallback = setTimeout(finish, 800);
-
-		document.fonts.ready.then(() => {
-			setTimeout(finish, 200);
-		});
-
+		// Cleanup function: runs if the Root component unmounts (unlikely but good practice)
 		return () => {
-			clearTimeout(fallback);
+			clearTimeout(timer);
 			rootElement.classList.remove('is-ready');
 		};
 	}, []);
