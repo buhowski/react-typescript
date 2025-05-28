@@ -39,7 +39,7 @@
 	text-align: center;
 
 	@include tabletBig {
-		margin-top: 50px;
+		margin-top: 30px;
 	}
 
 	h3 {
@@ -125,10 +125,13 @@
 }
 
 .copy-tablet {
-	display: flex;
+	display: none;
 
 	@include tabletBig {
+		display: flex;
+		flex-direction: column;
 		justify-content: center;
+		align-items: center;
 	}
 }
 
@@ -139,18 +142,25 @@
 	font-family: $LouisGeorgeCafBold;
 
 	@include tabletBig {
-		margin-top: 60px;
+		margin-top: 90px;
 	}
 
-	p {
+	.copyright-text {
 		overflow: hidden;
 		border-right: 1.5px solid $blue-main;
 		white-space: nowrap;
 		width: 0;
-		animation: typing 2s steps(18, end) 1s forwards, blink-caret 1s step-end infinite;
 
 		@include tabletBig {
 			margin: auto;
+		}
+
+		&.is-visible {
+			animation: typing 1.8s steps(18, end) 1s forwards, blink-caret 1s step-end infinite;
+
+			@include tabletBig {
+				animation: typing 1.8s steps(18, end) forwards, blink-caret 1s step-end infinite;
+			}
 		}
 	}
 
@@ -180,7 +190,7 @@
 			.table-content__list {
 				@include tabletBig {
 					position: fixed;
-					top: 37px;
+					top: 30px;
 				}
 			}
 		}
@@ -328,7 +338,8 @@
 .headline-types {
 	// .headline-types__title
 	&__title {
-		font-size: 15px;
+		font-size: 14px;
+		letter-spacing: 0.3px;
 		font-weight: 300;
 		line-height: 1.5;
 		color: #ffffff;
@@ -363,12 +374,12 @@
 
 .idea-block {
 	font-size: 18px;
-	line-height: 1.55;
+	line-height: 1.56;
 	color: $textGrey;
-	letter-spacing: 0.25px;
+	// letter-spacing: 0.4px;
 
 	@include mobile {
-		font-size: 16px;
+		font-size: 17px;
 	}
 
 	.slider-with-btn {
@@ -381,7 +392,7 @@
 
 	strong,
 	b {
-		font-weight: bold;
+		font-weight: 600;
 	}
 
 	h1,

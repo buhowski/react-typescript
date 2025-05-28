@@ -22,10 +22,10 @@ const PageStructure: React.FC<PageProps> = ({ textData }) => {
 	const [currentLang, setCurrentLang] = useState(LANGUAGES[0]);
 	const [initialLangReady, setInitialLangReady] = useState(false);
 	const allHeadingsMapRef = useRef(new Map());
-
 	const pitchRefs = useRef<(HTMLDivElement | null)[]>([]);
 	const [currentDesktopSliderContent, setCurrentDesktopSliderContent] = useState<any[]>([]);
 	const isDesktopSliderContentInitialized = useRef(false);
+	const [canRenderFooter, setCanRenderFooter] = useState(false);
 
 	const {
 		activeHeadingId,
@@ -133,6 +133,15 @@ const PageStructure: React.FC<PageProps> = ({ textData }) => {
 		[textData, allHeadingsMapRef, setHeadingsVersion]
 	);
 
+	// Delayed footer render after content and language are ready
+	useEffect(() => {
+		if (useTabletLarge && initialLangReady && contentToRender.length > 0) {
+			const timer = setTimeout(() => setCanRenderFooter(true), 1000);
+
+			return () => clearTimeout(timer);
+		}
+	}, [initialLangReady, contentToRender, useTabletLarge]);
+
 	return (
 		<VideoPlaybackProvider>
 			<PageHelmet metaTags={startupsMetaTags} />
@@ -163,11 +172,13 @@ const PageStructure: React.FC<PageProps> = ({ textData }) => {
 								);
 							})}
 
-						{useTabletLarge && <Copyright />}
+						{useTabletLarge && (
+							<div className='copy-tablet'>
+								{canRenderFooter && <Copyright />}
 
-						<div className='copy-tablet'>
-							{useTabletLarge && <PopupContacts currentLanguage={currentLang} />}
-						</div>
+								<PopupContacts currentLanguage={currentLang} />
+							</div>
+						)}
 					</div>
 
 					<div className={`lang-sidebar ${'lang-sidebar--has-toc'}`}>

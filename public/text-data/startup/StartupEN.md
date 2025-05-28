@@ -2,7 +2,7 @@
 
 ## Preface
 
-I've got a grand vision of the overall picture — creating a corporation to develop areas close to my worldview, which inspire me and provide space for ideas, are underdeveloped locally, but have high profit potential.
+I've got a grand vision of the overall picture — creating a corporation to develop areas close to my worldview, which inspire me and provide space for ideas, are locally underdeveloped, but possess high-profit potential.
 
 The pieces of this picture are my individual projects, which I plan to monetize and reinvest the profits into developing my own technologies, creating opportunities for like-minded people.
 
@@ -14,9 +14,9 @@ Project presentations are available in the navigation. Below is the logic behind
 
 ## Mission
 
-I've developed the strategy and script for a project: "How to Create an Information and Entertainment Media Magazine and Transform It into a Company Producing Its Own Technologies.”
+I've developed a strategy and project scenario: "How to create an information and entertainment media journal and transform it into a company that produces its own technologies.”
 
-To bring it to life, I'm seeking investments, or an opportunity to integrate these ideas into existing projects. My goal is to find a team and partners to shape the future in the following areas:
+For this realization, I'm seeking investments or the opportunity to integrate these ideas into existing projects. My goal is to find a team and partners to shape the future in the following areas:
 
 - Next-generation independent media
 - Leading Film and Gaming Industry
@@ -25,7 +25,7 @@ To bring it to life, I'm seeking investments, or an opportunity to integrate the
 
 ## Description
 
-My idea starts with creating a unique space on the internet. It's about a new format of combining a magazine and a social network, in the form of a mobile app and web version. Think of it as something between Vogue, Flipboard, Facebook, Reddit.
+My idea starts with creating a unique space on the internet. It's about a new format of combining a magazine and a social network, in the form of a mobile app and web version. Think of it as something between Vogue, Flipboard, Facebook/Instagram, Reddit.
 
 The concept of owning a magazine is promising because it allows us to set our own direction and quickly adapt to changes and trends in the information field.
 
@@ -37,7 +37,7 @@ The focus is on high-quality content that builds our image and attracts an audie
 
 - Journal / Magazine — for strategic purposes, to claim a leading media position in the country. Essential for advertising, self-promotion, aggressive marketing, and audience engagement
 - Social network — to connect people with similar views and interests
-- Imageboard forum — for sharing experience and preserving ready-made solutions for all situations
+- Imageboard forum — for sharing experience and preserving ready-made solutions for all occasions
 - Donation system — to attract investments for development and content monetization
 - Platform as a resource — for distributing original projects
 
@@ -51,24 +51,6 @@ The focus is on high-quality content that builds our image and attracts an audie
 - Films and games production — as tools for global dissemination of culture and art, satisfying the interests of both creators and the audience
 - The next step — IT and automation with technology integration directly into the journal (the reason for the need of our own place for experiments and development)
 - And only more to come!
-
-## Details
-
-Running the magazine and step-by-step strategy implementation are separate projects. Examples of ideas can be found here: [Another Dimension](/mvp). 
-
-Key industry products are stages of production, presented as individual scenarios. The presentations are available here: [Films](/films), [Video Games](/games).
-
-At first, this will help gain popularity among the Ukrainian audience, and later — expand to the international level by presenting future projects on the global market.
-
-The [self-presentation projects](/self-presentation) are pilot stages, possibly without initial funding, serving as the first phases of capability evaluation, which should confirm all declared intentions through feedback. They pave the way to launching key ideas and creating the magazine, and will also help attract new investments for at least the next five years.
-
-### Stages and Needs
-
-- Foundation — forming a team, launching the self-presentation projects, preliminary evaluation, and initial funding for key projects
-- MVP Development — creating a minimum viable magazine with starter content and functionality
-- Launch and Scaling — analyzing results, improvement, promoting, and attracting larger investments
-
-The flexibility of my ideas makes them easy to integrate into existing projects — as a modification, a separate project, or a way to scale a company. If you share similar interests and are open to collaboration — I’m ready to discuss. The vision exists, and theoretically, it works. Resources are needed for implementation.
 
 ## Audience Engagement Mechanism
 
@@ -84,7 +66,7 @@ This modular approach allows for combining various formats, ensuring deep engage
 
 To build a solid foundation, it’s key to team up with leading influencers and content creators — those with a strong presence in their field and an active audience.
 
-### Core Principles of Collaboration
+### Principles of Collaboration
 
 - Open interaction, synergy, and respect for personal freedom — no hierarchies or useless fluff, with a shared sense of humor and a rock’n’roll drive
 - Equal partnership and co-ownership, where each participant receives a stake in the corporation and takes part in the platform’s strategic development
@@ -99,7 +81,34 @@ Initially, only partners will be able to publish in the magazine — to maintain
 - For the magazine: rapid audience growth, quality content, and a strong team of like-minded creators
 - For the audience: a new media space with freedom of expression and dynamic formats for interaction
 
-## For the Full Picture
+## Business Model
+
+- Subscriptions: Always Free / Premium Special — free access for everyone, with extended features for premium users, including early access to premieres and original film projects
+- Creator monetization — built-in tools for earning: custom subscriptions, donations, direct content sales, and other support models
+- Sale of original projects and exclusive content: games, videos, books, art objects, and more
+- Donations and voluntary support — users support the project however they want or commission custom content, helping develop new formats
+- Ads and partner programs tailored to the audience — respectful, non-intrusive ads with sponsors and brands that share the platform’s values
+- Monetization of new technologies — through VR, AR, and interactive AI content for entertainment, work, and education
+
+## Details
+
+Running the magazine and step-by-step strategy implementation are separate projects. Examples of ideas can be found here: [Another Dimension](/mvp).
+
+Key industry products are stages of production, presented as individual scenarios. The presentations are available here: [Films](/films), [Video Games](/games).
+
+At first, this will help gain popularity among the Ukrainian audience, and later — expand to the international level by presenting future projects on the global market.
+
+The [self-presentation projects](/self-presentation) are pilot stages, possibly without initial funding, serving as the first phases of capability evaluation, which should confirm all declared intentions through feedback. They pave the way to launching key ideas and creating the magazine, and will also help attract new investments for at least the next five years.
+
+### Stages and Needs
+
+- Foundation — forming a team, launching the self-presentation projects, preliminary evaluation, and initial funding for key projects
+- MVP Development — creating a minimum viable magazine with starter content and functionality
+- Launch and Scaling — analyzing results, improvement, promoting, and attracting larger investments
+
+The flexibility of my ideas makes them easy to integrate into existing projects — as a modification, a separate project, or a way to scale a company. If you share similar interests and are open to collaboration — I’m ready to discuss. The vision exists, and theoretically, it works. Resources are needed for implementation.
+
+## For a Fuller Picture
 
 ### Problems
 
@@ -116,15 +125,6 @@ My idea is just to highlight what, in my view, is outside the competence of main
 It’s about breaking away from all the possible “sticks in the spokes.” About having the freedom to speak without fear of being banned. About being able to explore, create cool ideas, experiment with new technologies, and most importantly, not forget to have fun.
 
 And to make all of that happen on your own terms — this corporation is meant to be exactly that kind of space.
-
-### Business Model
-
-- Subscriptions: Always Free / Premium Special — free access for everyone, with extended features for premium users, including early access to premieres and original film projects
-- Creator monetization — built-in tools for earning: custom subscriptions, donations, direct content sales, and other support models
-- Sale of original projects and exclusive content: games, videos, books, art objects, and more
-- Donations and voluntary support — users support the project however they want or commission custom content, helping develop new formats
-- Ads and partner programs tailored to the audience — respectful, non-intrusive ads with sponsors and brands that share the platform’s values
-- Monetization of new technologies — through VR, AR, and interactive AI content for entertainment, work, and education
 
 ## Summarizing
 

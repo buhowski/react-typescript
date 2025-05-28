@@ -12,6 +12,8 @@ He accidentally gets entangled in dark church conspiracies and uncovers forbidde
 
 Real historical facts, mythology, and demonology intertwine here with dynamic comedy and tragic drama.
 
+[mobile-slider]
+
 ## Overview
 
 The core concept of my idea lies in combining real historical events of the Ukrainian Cossacks with Slavic myths and the mysticism from Mykola Gogol's literary works.
@@ -19,8 +21,6 @@ The core concept of my idea lies in combining real historical events of the Ukra
 To visualize my vision for the game's depiction, imagine taking the Zaporozhian Cossacks and merging their graphic style with video examples from the slider, but with our own unique theme. All of this — combined with a melancholy dark atmosphere of a forgotten era, mysticism, and personal drama. The result will be a game that brings to life the history of the Ukrainian Cossacks and the Zaporozhian Sich.
 
 My goal is to popularize a new vision of that period and showcase various Cossack figures in a fresh style. This means frankly depicting the full essence of that era — bloody battles, cruelty, betrayal, untold legends, and explicit scenes. Also, to feature the renowned combat dance "hopak," humor, and boundless landscapes that haven't been explored in games yet.
-
-[mobile-slider]
 
 ### Inspiration
 

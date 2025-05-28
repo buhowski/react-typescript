@@ -63,10 +63,10 @@ $toc-top: 12px;
 			border-radius: 6px;
 			width: fit-content;
 			position: fixed;
-			bottom: 45px;
+			bottom: 30px;
 			right: 20px;
 			z-index: 100;
-			padding: 14px 15px;
+			padding: 14px 16px;
 			background: linear-gradient(134deg, #000000 30%, #002840 100%);
 			box-shadow: 0 0 8px rgba($black, 1);
 
@@ -115,7 +115,7 @@ $toc-top: 12px;
 		padding-top: 0;
 
 		@include tabletBig {
-			padding-top: 55px;
+			padding-top: 60px;
 			padding-bottom: 25px;
 		}
 	}
@@ -125,7 +125,7 @@ $toc-top: 12px;
 		display: none;
 
 		@include tabletBig {
-			padding: 23px 15px 12px;
+			padding: 30px 15px 12px;
 			font-size: 17px;
 			font-family: $LouisGeorgeCafBold;
 			text-align: center;
@@ -160,10 +160,10 @@ $toc-top: 12px;
 			border-radius: 0 0 10px 10px;
 			top: 100%;
 			right: 50%;
-			min-width: 260px;
+			min-width: 290px;
+			max-width: calc(100% - 85px);
 			width: max-content;
 			transform: translateX(50%);
-			max-width: calc(100% - 85px);
 		}
 
 		button {

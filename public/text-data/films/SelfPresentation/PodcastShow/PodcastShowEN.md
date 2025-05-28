@@ -20,15 +20,15 @@ The Background Character is always present, doing their own thing, but steps in 
 
 If a puppet is used as the guest, the Background Character plays the “inner thoughts” of that “celebrity” or argues about anything, joking that we’re so unpopular we couldn’t even book a hobo. (The Background Character’s actions must be fully improvised and unknown to the hosts).
 
-## The Wildcard Card — Background Character
+[mobile-slider]
+
+## Background Character — Wildcard
 
 Moves chaotically, changes costumes, dances, cooks, watches memes, laughs, stirs up chaos.
 
 My vision of this character is shown in the slider videos (music, style, dancing).
 
 Brings in short bursts of chaos between questions, destroying all textures in the background.
-
-[mobile-slider]
 
 ## Textures — Metaphor
 

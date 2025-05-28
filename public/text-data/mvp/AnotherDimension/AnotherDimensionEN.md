@@ -18,7 +18,7 @@ Three (the more, the better) relatively popular content creators are brought on 
 
 ### Investment and "The Corp" Phase
 
-As soon as sufficient investments are secured, the journal's development begins, along with "[The Corp .!.](/the-corp)" series phase. This becomes a powerful stage of self-promotion and a demonstration of the future content's quality, expanding the audience and attracting new investments. The series will be filmed from the beginning until the project has run its course.
+As soon as sufficient investments are secured, the journal's development begins, along with "[The Corp .!.](/the-corp)” series phase. This becomes a powerful stage of self-promotion and a demonstration of the future content's quality, expanding the audience and attracting new investments. The series will be filmed from the beginning until the project has run its course.
 
 ### Scaling
 
