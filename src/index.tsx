@@ -17,39 +17,54 @@ const Root = () => {
 	// Preloader visibility state
 	const [showPreloader, setShowPreloader] = useState(true);
 
+	useEffect(() => {
+		// Timer to ensure preloader shows for at least 800ms
+		const timer = setTimeout(() => {
+			setShowPreloader(false);
+			// This makes the #root element visible via the CSS in index.html
+			rootElement.classList.add('is-ready');
+		}, 950);
+
+		// Cleanup function: runs if the Root component unmounts (unlikely but good practice)
+		return () => {
+			clearTimeout(timer);
+			rootElement.classList.remove('is-ready');
+		};
+	}, []);
+
 	// Handle page load and fonts ready
-	useEffect(() => {
-		const handlePageReady = async () => {
-			await document.fonts.ready;
+	// useEffect(() => {
+	// 	const handlePageReady = async () => {
+	// 		await document.fonts.ready;
 
-			setTimeout(() => {
-				setShowPreloader(false);
+	// 		setTimeout(() => {
+	// 			setShowPreloader(false);
 
-				rootElement.classList.add('is-ready');
-			}, 300);
-		};
+	// 			rootElement.classList.add('is-ready');
+	// 		}, 300);
+	// 	};
 
-		if (document.readyState === 'complete') {
-			handlePageReady();
-		} else {
-			window.addEventListener('load', handlePageReady);
-			return () => window.removeEventListener('load', handlePageReady);
-		}
-	}, []);
+	// 	if (document.readyState === 'complete') {
+	// 		handlePageReady();
+	// 	} else {
+	// 		window.addEventListener('load', handlePageReady);
+	// 		return () => window.removeEventListener('load', handlePageReady);
+	// 	}
+	// }, []);
 
-	// Remove 'is-ready' class and show preloader on Firefox bfcache restore
-	useEffect(() => {
-		const onPageShow = (event: PageTransitionEvent) => {
-			if (event.persisted) {
-				rootElement.classList.remove('is-ready');
+	// // Remove 'is-ready' class and show preloader on Firefox bfcache restore
+	// useEffect(() => {
+	// 	const onPageShow = (event: PageTransitionEvent) => {
+	// 		if (event.persisted) {
+	// 			rootElement.classList.remove('is-ready');
 
-				setShowPreloader(true);
-			}
-		};
+	// 			setShowPreloader(true);
+	// 		}
+	// 	};
 
-		window.addEventListener('pageshow', onPageShow);
-		return () => window.removeEventListener('pageshow', onPageShow);
-	}, []);
+	// 	window.addEventListener('pageshow', onPageShow);
+	// 	return () => window.removeEventListener('pageshow', onPageShow);
+	// }, []);
 
 	return (
 		<>
