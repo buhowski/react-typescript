@@ -46,17 +46,17 @@ const Root = () => {
 	}, []);
 
 	// handle Firefox bfcache restore
-	useEffect(() => {
-		const onPageShow = (e: PageTransitionEvent) => {
-			if (e.persisted) {
-				rootElement.classList.remove('is-ready');
-				setShowPreloader(true);
-			}
-		};
+	// useEffect(() => {
+	// 	const onPageShow = (e: PageTransitionEvent) => {
+	// 		if (e.persisted) {
+	// 			rootElement.classList.remove('is-ready');
+	// 			setShowPreloader(true);
+	// 		}
+	// 	};
 
-		window.addEventListener('pageshow', onPageShow);
-		return () => window.removeEventListener('pageshow', onPageShow);
-	}, []);
+	// 	window.addEventListener('pageshow', onPageShow);
+	// 	return () => window.removeEventListener('pageshow', onPageShow);
+	// }, []);
 
 	return (
 		<>
