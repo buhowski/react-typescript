@@ -19,10 +19,6 @@ const Root = () => {
 
 	useEffect(() => {
 		// Ensure rootElement was found before proceeding
-		if (!rootElement) {
-			console.error('Root element (#root) not found in the DOM.');
-			return;
-		}
 
 		// Timer to ensure preloader shows for at least 800ms
 		const timer = setTimeout(() => {
@@ -39,6 +35,10 @@ const Root = () => {
 	}, []);
 
 	// useEffect(() => {
+	// if (!rootElement) {
+	// 	console.error('Root element (#root) not found in the DOM.');
+	// 	return;
+	// }
 	// 	let isReady = false;
 
 	// 	// fallback if fonts hang
