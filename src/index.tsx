@@ -18,32 +18,53 @@ const Root = () => {
 	const [showPreloader, setShowPreloader] = useState(true);
 
 	useEffect(() => {
-		let isReady = false;
+		// Ensure rootElement was found before proceeding
+		if (!rootElement) {
+			console.error('Root element (#root) not found in the DOM.');
+			return;
+		}
 
-		// fallback if fonts hang
-		const fallback = setTimeout(() => {
-			if (!isReady) {
-				setShowPreloader(false);
-				rootElement.classList.add('is-ready');
-			}
-		}, 900);
+		// Timer to ensure preloader shows for at least 800ms
+		const timer = setTimeout(() => {
+			setShowPreloader(false);
+			// This makes the #root element visible via the CSS in index.html
+			rootElement.classList.add('is-ready');
+		}, 950);
 
-		// try wait for fonts
-		document.fonts.ready.then(() => {
-			isReady = true;
-			clearTimeout(fallback);
-			setTimeout(() => {
-				setShowPreloader(false);
-				rootElement.classList.add('is-ready');
-			}, 200);
-		});
-
-		// cleanup
+		// Cleanup function: runs if the Root component unmounts (unlikely but good practice)
 		return () => {
-			clearTimeout(fallback);
+			clearTimeout(timer);
 			rootElement.classList.remove('is-ready');
 		};
 	}, []);
+
+	// useEffect(() => {
+	// 	let isReady = false;
+
+	// 	// fallback if fonts hang
+	// 	const fallback = setTimeout(() => {
+	// 		if (!isReady) {
+	// 			setShowPreloader(false);
+	// 			rootElement.classList.add('is-ready');
+	// 		}
+	// 	}, 900);
+
+	// 	// try wait for fonts
+	// 	document.fonts.ready.then(() => {
+	// 		isReady = true;
+	// 		clearTimeout(fallback);
+	// 		setTimeout(() => {
+	// 			setShowPreloader(false);
+	// 			rootElement.classList.add('is-ready');
+	// 		}, 200);
+	// 	});
+
+	// 	// cleanup
+	// 	return () => {
+	// 		clearTimeout(fallback);
+	// 		rootElement.classList.remove('is-ready');
+	// 	};
+	// }, []);
 
 	// handle Firefox bfcache restore
 	// useEffect(() => {
