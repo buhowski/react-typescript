@@ -21,10 +21,9 @@ const Root = () => {
 		const handlePageReady = async () => {
 			await document.fonts.ready;
 
-			rootElement.classList.add('is-ready');
-
 			setTimeout(() => {
 				setShowPreloader(false);
+				rootElement.classList.add('is-ready');
 			}, 200); // time to remove preloader
 		};
 
