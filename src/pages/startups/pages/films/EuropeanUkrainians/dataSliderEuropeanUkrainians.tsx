@@ -8,7 +8,7 @@ import bestMomentsPoster from '../../../assets/films/EuropeanUkrainians/always-s
 import promoVideo from '../../../assets/films/videos/teaserVideo.mp4';
 import broadCityTrailer from '../../../assets/films/videos/broadCityTrailer.mp4';
 import fantasy from '../../../assets/films/videos/fantasy.mp4';
-const bestMomentsVideo = 'https://www.youtube.com/embed/cbSEr1oJ8mw';
+const bestMomentsVideo = 'https://www.youtube-nocookie.com/embed/cbSEr1oJ8mw';
 
 export const dataSliderEuropeanUkrainians = [
 	{

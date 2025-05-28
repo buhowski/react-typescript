@@ -4,9 +4,9 @@ import officePoster2 from '../../../assets/films/TheCorp/poster-fire-drill-the-o
 import officePoster3 from '../../../assets/films/TheCorp/poster-parkour-the-office-us.webp';
 
 // Videos
-const theOffice1 = 'https://www.youtube.com/embed/Vmb1tqYqyII';
-const theOffice2 = 'https://www.youtube.com/embed/gO8N3L_aERg';
-const theOffice3 = 'https://www.youtube.com/embed/0Kvw2BPKjz0';
+const theOffice1 = 'https://www.youtube-nocookie.com/embed/Vmb1tqYqyII';
+const theOffice2 = 'https://www.youtube-nocookie.com/embed/gO8N3L_aERg';
+const theOffice3 = 'https://www.youtube-nocookie.com/embed/0Kvw2BPKjz0';
 
 export const dataSliderTheCorp = [
 	{

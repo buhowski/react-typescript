@@ -103,14 +103,21 @@ const Slider: React.FC<SliderProps> = ({ slides, currentLanguage }) => {
 	const handlePlayVideo = useCallback(() => {
 		stopAllOtherVideos(instanceId);
 		setIsPlayingVideo(true);
-		setTimeout(() => {
-			if (iframeRef.current && isYouTubeUrl(slides[activeIndex]?.itemSrc)) {
-				iframeRef.current.contentWindow?.postMessage(
-					'{"event":"command","func":"playVideo","args":""}',
-					'*'
-				);
-			}
-		}, 100);
+		// setTimeout(() => {
+		// 	if (iframeRef.current && isYouTubeUrl(slides[activeIndex]?.itemSrc)) {
+		// 		iframeRef.current.contentWindow?.postMessage(
+		// 			'{"event":"command","func":"playVideo","args":""}',
+		// 			'*'
+		// 		);
+		// 	}
+		// }, 100);
+
+		if (iframeRef.current && isYouTubeUrl(slides[activeIndex]?.itemSrc)) {
+			iframeRef.current.contentWindow?.postMessage(
+				'{"event":"command","func":"playVideo","args":""}',
+				'*'
+			);
+		}
 	}, [instanceId, stopAllOtherVideos, slides, activeIndex]);
 
 	// each PitchContainer's slider starts from the first item.

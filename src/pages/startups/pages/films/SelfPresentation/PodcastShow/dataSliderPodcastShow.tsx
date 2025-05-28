@@ -3,8 +3,8 @@ import characterPoster from '../../../../assets/films/SelfPresentation/patiboy2.
 import characterPoster2 from '../../../../assets/films/SelfPresentation/patiboy.webp';
 
 // Videos
-const characterExample = 'https://www.youtube.com/embed/23-k5Mfx570?si=vRJaCKxFx4X5B1Zs';
-const characterExample2 = 'https://www.youtube.com/embed/bth5mj9Ia1o';
+const characterExample = 'https://www.youtube-nocookie.com/embed/23-k5Mfx570';
+const characterExample2 = 'https://www.youtube-nocookie.com/embed/bth5mj9Ia1o';
 
 export const dataSliderPodcastShow = [
 	{
