@@ -19,7 +19,7 @@ const Root = () => {
 
 	// useEffect(() => {
 	// 	// Ensure rootElement was found before proceeding
-	// if (!rootElement) return;
+	// 	if (!rootElement) return;
 
 	// 	// Timer to ensure preloader shows for at least 800ms
 	// 	const timer = setTimeout(() => {
@@ -38,23 +38,20 @@ const Root = () => {
 	useEffect(() => {
 		if (!rootElement) return;
 
-		let done = false;
-
-		const finish = () => {
-			if (done) return;
-			done = true;
+		const handleLoad = () => {
 			setShowPreloader(false);
 			rootElement.classList.add('is-ready');
 		};
 
-		const fallback = setTimeout(finish, 900);
-
-		document.fonts.ready.then(() => {
-			setTimeout(finish, 200); // додаткова пауза після шрифтів
-		});
+		// Якщо сторінка вже завантажена (може бути при переходах)
+		if (document.readyState === 'complete') {
+			handleLoad();
+		} else {
+			window.addEventListener('load', handleLoad);
+		}
 
 		return () => {
-			clearTimeout(fallback);
+			window.removeEventListener('load', handleLoad);
 			rootElement.classList.remove('is-ready');
 		};
 	}, []);
