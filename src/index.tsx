@@ -17,41 +17,20 @@ const Root = () => {
 	// Preloader visibility state
 	const [showPreloader, setShowPreloader] = useState(true);
 
-	// useEffect(() => {
-	// 	// Ensure rootElement was found before proceeding
-	// 	if (!rootElement) return;
-
-	// 	// Timer to ensure preloader shows for at least 800ms
-	// 	const timer = setTimeout(() => {
-	// 		setShowPreloader(false);
-	// 		// This makes the #root element visible via the CSS in index.html
-	// 		rootElement.classList.add('is-ready');
-	// 	}, 950);
-
-	// 	// Cleanup function: runs if the Root component unmounts (unlikely but good practice)
-	// 	return () => {
-	// 		clearTimeout(timer);
-	// 		rootElement.classList.remove('is-ready');
-	// 	};
-	// }, []);
-
 	useEffect(() => {
+		// Ensure rootElement was found before proceeding
 		if (!rootElement) return;
 
-		const handleLoad = () => {
+		// Timer to ensure preloader shows for at least 800ms
+		const timer = setTimeout(() => {
 			setShowPreloader(false);
+			// This makes the #root element visible via the CSS in index.html
 			rootElement.classList.add('is-ready');
-		};
+		}, 800);
 
-		// Якщо сторінка вже завантажена (може бути при переходах)
-		if (document.readyState === 'complete') {
-			handleLoad();
-		} else {
-			window.addEventListener('load', handleLoad);
-		}
-
+		// Cleanup function: runs if the Root component unmounts (unlikely but good practice)
 		return () => {
-			window.removeEventListener('load', handleLoad);
+			clearTimeout(timer);
 			rootElement.classList.remove('is-ready');
 		};
 	}, []);
