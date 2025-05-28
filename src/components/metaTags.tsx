@@ -1,47 +1,60 @@
+// Main Website Meta Tags
+const website = 'https://buhowski.dev/';
+
+const startupTitle = `Another Dimension: Media | Films | Games | Technologies`;
+
+const defaultDescription = `Building awesome digital products and contributing useful solutions to the world. Based on Planet Earth, Solar System.`;
+
+const startupDescription = `A pioneering venture transforming independent media into a powerful corporation shaping advanced technologies, films, and games for a new era of freedom and innovation.`;
+
+const aboutDescription = `Discover unique blend of visionary thinking and practical execution. A developer and creator at the forefront of innovation, shaping impactful solutions.`;
+
+const portfolioDescription = `Explore diverse portfolio, showcasing impactful projects developed for companies and innovative personal ventures.`;
+
 export const defaultMetaTags = {
-	title: `Olexander Tsiomakh: Developer | Idea Thinker | Creator`,
-	description: `Want to build awesome things and contribute something useful to the world. Based on Planet Earth, Solar System.`,
-	canonicalUrl: `https://buhowski.dev/`,
+	title: `Olexander Tsiomakh: Developer | Explorer | Creator`,
+	description: defaultDescription,
+	canonicalUrl: website,
 
 	// Open Graph Meta Tags
-	ogUrl: `https://buhowski.dev/`,
-	ogTitle: `Developer | Idea Thinker | Creator`,
-	ogDescription: `Want to build awesome things and contribute something useful to the world. Based on Planet Earth, Solar System.`,
-	ogImage: `https://buhowski.dev/screenshot.png`,
+	ogUrl: `${website}`,
+	ogTitle: `Developer | Explorer | Creator`,
+	ogDescription: defaultDescription,
+	ogImage: `${website}screenshot.png`,
 };
 
 export const startupsMetaTags = {
-	title: `Another Dimension: Media | Films | Games | Technologies`,
-	description: `How to create an information media magazine and transform it into a company producing its own technologies.`,
-	canonicalUrl: `https://buhowski.dev/startup`,
+	title: startupTitle,
+	description: startupDescription,
+	canonicalUrl: `${website}startup`,
 
 	// Open Graph Meta Tags
-	ogUrl: `https://buhowski.dev/startup`,
-	ogTitle: `Another Dimension: Media | Films | Games | Technologies`,
-	ogDescription: `How to create an information media magazine and transform it into a company producing its own technologies.`,
-	ogImage: `https://buhowski.dev/preview_startups.jpg`,
+	ogUrl: `${website}startup`,
+	ogTitle: startupTitle,
+	ogDescription: startupDescription,
+	ogImage: `${website}preview_startups.jpg`,
 };
 
 export const aboutMetaTags = {
-	title: `Olexander Tsiomakh: Idea Thinker | Developer | Creator`,
-	description: `Inventing Solutions, scenario creator, enthusiast, versatility, adventurist ambassador, development advocacy, boundless self-irony, self-Development and growth...`,
-	canonicalUrl: `https://buhowski.dev/about`,
+	title: `Olexander Tsiomakh: Explorer | Developer | Creator`,
+	description: aboutDescription,
+	canonicalUrl: `${website}about`,
 
 	// Open Graph Meta Tags
-	ogUrl: `https://buhowski.dev/about`,
-	ogTitle: `Idea Thinker | Developer | Creator`,
-	ogDescription: `Inventing Solutions, scenario creator, enthusiast, versatility, adventurist ambassador, development advocacy, boundless self-irony, self-Development and growth...`,
-	ogImage: `https://buhowski.dev/preview_about.jpg`,
+	ogUrl: `${website}about`,
+	ogTitle: `Explorer | Developer | Creator`,
+	ogDescription: aboutDescription,
+	ogImage: `${website}preview_about.jpg`,
 };
 
 export const portfolioMetaTags = {
 	title: `Olexander Tsiomakh: Portfolio | Projects Overview`,
-	description: `Portfolio showcasing what I've done for other companies or my own projects.`,
-	canonicalUrl: `https://buhowski.dev/projects`,
+	description: portfolioDescription,
+	canonicalUrl: `${website}projects`,
 
 	// Open Graph Meta Tags
-	ogUrl: `https://buhowski.dev/projects`,
+	ogUrl: `${website}projects`,
 	ogTitle: `Portfolio | Projects Overview`,
-	ogDescription: `Portfolio showcasing what I've done for other companies or my own projects.`,
-	ogImage: `https://buhowski.dev/preview_portfolio.jpg`,
+	ogDescription: portfolioDescription,
+	ogImage: `${website}preview_portfolio.jpg`,
 };

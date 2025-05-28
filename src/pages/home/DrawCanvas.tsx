@@ -14,7 +14,7 @@ const DrawCanvas = () => {
 		const lineCanvas: HTMLCanvasElement | null = document.createElement('canvas');
 		const imageCanvasContext = imageCanvas?.getContext('2d');
 		const lineCanvasContext = lineCanvas?.getContext('2d');
-		const pointLifetime = 1100;
+		const pointLifetime = 1000;
 		let points: Point[] = [];
 
 		const image = document.querySelector('.illustrationImage') as HTMLImageElement;
@@ -77,8 +77,8 @@ const DrawCanvas = () => {
 		};
 
 		const drawLineCanvas = () => {
-			const minimumLineWidth = 100;
-			const maximumLineWidth = 100;
+			const minimumLineWidth = 90;
+			const maximumLineWidth = 90;
 			const lineWidthRange = maximumLineWidth - minimumLineWidth;
 			const maximumSpeed = 200;
 
