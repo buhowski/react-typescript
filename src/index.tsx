@@ -4,7 +4,7 @@ import './polyfills';
 import ReactDOM from 'react-dom/client';
 import { HelmetProvider } from 'react-helmet-async';
 import { BrowserRouter } from 'react-router-dom';
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect } from 'react';
 
 import './styles/App.scss';
 import App from './App';
@@ -17,28 +17,32 @@ const Root = () => {
 	// Preloader visibility state
 	const [showPreloader, setShowPreloader] = useState(true);
 
-	// useCallback to memoize the handler, though not strictly necessary here
-	const handlePageReady = useCallback(async () => {
-		await document.fonts.ready;
-		setTimeout(() => {
-			setShowPreloader(false);
-			rootElement.classList.add('is-ready');
-		}, 300);
-	}, []);
-
+	// Handle page load and fonts ready
 	useEffect(() => {
+		const handlePageReady = async () => {
+			await document.fonts.ready;
+
+			setTimeout(() => {
+				setShowPreloader(false);
+
+				rootElement.classList.add('is-ready');
+			}, 300);
+		};
+
 		if (document.readyState === 'complete') {
 			handlePageReady();
 		} else {
 			window.addEventListener('load', handlePageReady);
 			return () => window.removeEventListener('load', handlePageReady);
 		}
-	}, [handlePageReady]);
+	}, []);
 
+	// Remove 'is-ready' class and show preloader on Firefox bfcache restore
 	useEffect(() => {
 		const onPageShow = (event: PageTransitionEvent) => {
 			if (event.persisted) {
 				rootElement.classList.remove('is-ready');
+
 				setShowPreloader(true);
 			}
 		};
