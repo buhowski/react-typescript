@@ -19,14 +19,13 @@ const Root = () => {
 
 	// useEffect(() => {
 	// 	// Ensure rootElement was found before proceeding
-	// 	if (!rootElement) return;
 
 	// 	// Timer to ensure preloader shows for at least 800ms
 	// 	const timer = setTimeout(() => {
 	// 		setShowPreloader(false);
 	// 		// This makes the #root element visible via the CSS in index.html
 	// 		rootElement.classList.add('is-ready');
-	// 	}, 800);
+	// 	}, 950);
 
 	// 	// Cleanup function: runs if the Root component unmounts (unlikely but good practice)
 	// 	return () => {
@@ -38,20 +37,23 @@ const Root = () => {
 	useEffect(() => {
 		if (!rootElement) return;
 
-		const handleLoad = () => {
+		let done = false;
+
+		const finish = () => {
+			if (done) return;
+			done = true;
 			setShowPreloader(false);
 			rootElement.classList.add('is-ready');
 		};
 
-		// Якщо сторінка вже завантажена (може бути при переходах)
-		if (document.readyState === 'complete') {
-			handleLoad();
-		} else {
-			window.addEventListener('load', handleLoad);
-		}
+		const fallback = setTimeout(finish, 800);
+
+		document.fonts.ready.then(() => {
+			setTimeout(finish, 200);
+		});
 
 		return () => {
-			window.removeEventListener('load', handleLoad);
+			clearTimeout(fallback);
 			rootElement.classList.remove('is-ready');
 		};
 	}, []);
