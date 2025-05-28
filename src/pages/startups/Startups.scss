@@ -12,10 +12,10 @@
 
 .wrapper--idea {
 	position: relative;
-	padding-bottom: 180px;
+	padding-bottom: 200px;
 
 	@include tabletBig {
-		padding: 0 0 40px;
+		padding: 0 0 90px;
 	}
 
 	@include mobile {
@@ -112,7 +112,7 @@
 
 .idea-info {
 	height: 100%;
-	width: 56%;
+	width: 51%;
 	position: relative;
 
 	@include tabletBig {
@@ -373,14 +373,10 @@
 }
 
 .idea-block {
-	font-size: 18px;
+	font-size: 17px;
 	line-height: 1.56;
 	color: $textGrey;
 	// letter-spacing: 0.4px;
-
-	@include mobile {
-		font-size: 17px;
-	}
 
 	.slider-with-btn {
 		display: none;
@@ -875,7 +871,7 @@
 
 .lang-sidebar {
 	display: flex;
-	width: 48%;
+	width: 49%;
 	position: sticky;
 	top: 80px;
 	margin-left: 100px;
@@ -971,8 +967,8 @@
 	}
 
 	+ .pitch-container {
-		margin-top: 70px;
-		padding-top: 70px;
+		margin-top: 80px;
+		padding-top: 80px;
 		border-top: 1px solid rgba($titlePink, 0.2);
 	}
 }
