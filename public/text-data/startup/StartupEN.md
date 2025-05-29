@@ -12,6 +12,24 @@ Project presentations are available in the navigation. Below is the logic behind
 
 [mobile-slider]
 
+## For a Fuller Picture
+
+### Problems
+
+We see a world where the system is built to constantly generate problems — because it simply can’t exist without them. Bureaucracy interferes with every part of our lives because that’s its direct purpose. Politics has legalized mass murder, and some states still haven’t grasped what Orwell was really trying to say.
+
+The truth is, most people on this planet live below an average standard. And this structure of the world — this way of living — doesn’t work for everyone. Especially not for those who consciously want a family but are surrounded by an unpredictably hostile environment. There are also those who were born “by default,” whose desires and goals clash with their opportunities and the basic rules they’re given. And that’s where things start to get interesting…
+
+### The Solution
+
+The system works the way it needs to — that’s why it functions. It’s not my job to change or improve it.
+
+My idea is just to highlight what, in my view, is outside the competence of mainstream information sources; what remains unsaid; what’s taboo; or what might actually help someone.
+
+It’s about breaking away from all the possible “sticks in the spokes.” About having the freedom to speak without fear of being banned. About being able to explore, create cool ideas, experiment with new technologies, and most importantly, not forget to have fun.
+
+And to make all of that happen on your own terms — this corporation is meant to be exactly that kind of space.
+
 ## Mission
 
 I've developed a strategy and project scenario: "How to create an information and entertainment media journal and transform it into a company that produces its own technologies.”
@@ -107,24 +125,6 @@ The [self-presentation projects](/self-presentation) are pilot stages, possibly 
 - Launch and Scaling — analyzing results, improvement, promoting, and attracting larger investments
 
 The flexibility of my ideas makes them easy to integrate into existing projects — as a modification, a separate project, or a way to scale a company. If you share similar interests and are open to collaboration — I’m ready to discuss. The vision exists, and theoretically, it works. Resources are needed for implementation.
-
-## For a Fuller Picture
-
-### Problems
-
-We see a world where the system is built to constantly generate problems — because it simply can’t exist without them. Bureaucracy interferes with every part of our lives because that’s its direct purpose. Politics has legalized mass murder, and some states still haven’t grasped what Orwell was really trying to say.
-
-The truth is, most people on this planet live below an average standard. And this structure of the world — this way of living — doesn’t work for everyone. Especially not for those who consciously want a family but are surrounded by an unpredictably hostile environment. There are also those who were born “by default,” whose desires and goals clash with their opportunities and the basic rules they’re given. And that’s where things start to get interesting…
-
-### The Solution
-
-The system works the way it needs to — that’s why it functions. It’s not my job to change or improve it.
-
-My idea is just to highlight what, in my view, is outside the competence of mainstream information sources; what remains unsaid; what’s taboo; or what might actually help someone.
-
-It’s about breaking away from all the possible “sticks in the spokes.” About having the freedom to speak without fear of being banned. About being able to explore, create cool ideas, experiment with new technologies, and most importantly, not forget to have fun.
-
-And to make all of that happen on your own terms — this corporation is meant to be exactly that kind of space.
 
 ## Summarizing
 

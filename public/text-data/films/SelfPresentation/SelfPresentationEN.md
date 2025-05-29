@@ -10,6 +10,6 @@ If you're just planning to get into content creation, or are already there but l
 
 There's no advertising here — the shows are presented purely in an entertainment format, superficially touching upon large key ideas.
 
-## **List**
+## List
 
 - [Podcast Show: Dimension Minus Zero One Hundred and Forty-eight](/podcast-show)
