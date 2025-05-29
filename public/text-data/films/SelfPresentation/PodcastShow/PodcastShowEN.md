@@ -1,12 +1,12 @@
 # Podcast Show: Dimension Minus Zero One Hundred and Forty-eight
 
-***Format:** Something like a mix between The Eric Andre Show and podcasts in the style of “let's pretend we know something and are fucking experts in these fields.”*
+***Format:** A mix between The Eric Andre Show and podcasts in the style of “let's pretend we know something and are fucking experts in these fields.”*
 
 ## Script
 
-A podcast with the vibe of The Eric Andre Show + Between Two Ferns — 5–10 minute chats with several media (or whoever we can find) personalities.
+An improv-style show with pre-planned segments — quick chats with media personalities (or whoever we find).
 
-It’s actually a disguised self-interview, self-dialogues, personal life stories, and more. Guests are just background — for broader reach and comedic setups.
+The show features disguised self-interviews by the hosts, monologues, personal life stories, and other content. Guests are primarily needed for background, broader audience reach, and comedic situations.
 
 There are two hosts — Main and Sidekick (female + male) + Background Character (maybe a few) + Guest.
 
@@ -36,7 +36,7 @@ Set design idea — abandoned building/factory styled like a post-Soviet apartme
 
 As the show progresses, the outdated gets destroyed and replaced.
 
-The Background Character gradually dismantles the “Soviet” elements and brings in new ones — as a metaphor for breaking post-Soviet dependency, medieval thinking, and building a free world.
+The Background Character gradually dismantles the “Soviet” elements and brings in new ones — as a metaphor for breaking post-Soviet dependency, medieval thinking, fucking medievalism, and building a free world.
 
 Another read: the Character is the past — a ghost of old Christmas — slowly becoming self-aware and wanting to evolve. He is our inner scream.
 
@@ -66,7 +66,7 @@ Texture ideas as metaphors tied to each theme. The Character “solves” the is
 
 ## Script Ideas / Jokes
 
-Dangerous — unpredictably dirty humor.
+Danger Zone — unpredictably horrible humor.
 
 - Intro: “This is the pilot epi... The pilot of a Broiler-747 passenger jet, currently going down for... (looks at watch that’s not there) ...539 seconds (the length of the show)...” then laughing — first at the host, then into one camera, then another
 - “Podcast-show-Field-of-Miracles”, guest sector on the wheel! Reveal the guest! We open an ironic portrait on a stand and wheel it in
