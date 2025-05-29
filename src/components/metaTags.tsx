@@ -5,7 +5,7 @@ const startupTitle = `Another Dimension: Media | Films | Games | Technologies`;
 
 const defaultDescription = `Building awesome digital products and contributing useful solutions to the world. Based on Planet Earth, Solar System.`;
 
-const startupDescription = `A pioneering venture transforming independent media into a powerful corporation shaping advanced technologies, films, and games for a new era of freedom and innovation.`;
+const startupDescription = `How to create an information and entertainment media journal and transform it into a company that produces its own technologies.`;
 
 const aboutDescription = `Discover unique blend of visionary thinking and practical execution. A developer and creator at the forefront of innovation, shaping impactful solutions.`;
 
