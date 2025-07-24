@@ -436,7 +436,7 @@
 		margin-top: 40px;
 		font-size: 23px;
 
-		@include mobile {
+		@include tabletBig {
 			font-size: 21px;
 			margin-top: 35px;
 		}
