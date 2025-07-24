@@ -70,16 +70,6 @@ The focus is on high-quality content that builds our image and attracts an audie
 - The next step — IT and automation with technology integration directly into the journal (the reason for the need of our own place for experiments and development)
 - And only more to come!
 
-## Audience Engagement Mechanism
-
-At the core is a psychographic approach that divides the audience into several typical segments. The focus is on key groups:
-
-- Core content — original, created for personal satisfaction, with a focus on common sense and nonconformity. Targeted at creative thinkers, tech enthusiasts, and fans of post-irony and eclectic humor
-- Additional formats — stylistic and format variations tailored to the interests of other segments, such as TikTok and meme culture
-- Audience expansion — launching new key formats to reach additional groups, such as education-focused and business analytics content
-
-This modular approach allows for combining various formats, ensuring deep engagement and maximum retention of the intended audience.
-
 ## Partnership Model
 
 To build a solid foundation, it’s key to team up with leading influencers and content creators — those with a strong presence in their field and an active audience.
@@ -98,6 +88,16 @@ Initially, only partners will be able to publish in the magazine — to maintain
 - For partners: nothing to lose — only new opportunities, income growth, a stake in the corporation, and the freedom to launch their own departments without the limits typical of other platforms
 - For the magazine: rapid audience growth, quality content, and a strong team of like-minded creators
 - For the audience: a new media space with freedom of expression and dynamic formats for interaction
+
+## Audience Engagement Mechanism
+
+At the core is a psychographic approach that divides the audience into several typical segments. The focus is on key groups:
+
+- Core content — original, created for personal satisfaction, with a focus on common sense and nonconformity. Targeted at creative thinkers, tech enthusiasts, and fans of post-irony and eclectic humor
+- Additional formats — stylistic and format variations tailored to the interests of other segments, such as TikTok and meme culture
+- Audience expansion — launching new key formats to reach additional groups, such as education-focused and business analytics content
+
+This modular approach allows for combining various formats, ensuring deep engagement and maximum retention of the intended audience.
 
 ## Business Model
 
