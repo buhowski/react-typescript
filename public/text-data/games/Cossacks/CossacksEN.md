@@ -6,7 +6,7 @@
 
 ## Main Idea
 
-A mighty Zaporozhian Cossack, with a tragic past and an unrevealed potential for otherworldly powers, travels through cities, trying to uncover the mystical secrets of history and his own destiny.
+A mysterious figure with a tragic past and an unrevealed potential for otherworldly powers, travels through cities, trying to uncover the mystical secrets of history and his own destiny.
 
 He accidentally gets entangled in dark church conspiracies and uncovers forbidden secrets that lead to the truth he's long sought — but now he knows he won't get out alive after what he's seen.
 
