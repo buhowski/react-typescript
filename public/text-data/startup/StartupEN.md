@@ -2,7 +2,7 @@
 
 ## Preface
 
-I've got a grand vision of the overall picture — creating a corporation to develop areas close to my worldview, which inspire me and provide space for ideas, are locally underdeveloped, but possess high-profit potential.
+I've got a grand vision of the overall picture — creating a corporation to develop areas close to my worldview, which inspire me and provide space for ideas, are locally underdeveloped, but possess high-profit potential (magazine, media, film and gaming industry, IT sector).
 
 The pieces of this picture are my individual projects, which I plan to monetize and reinvest the profits into developing my own technologies, creating opportunities for like-minded people.
 
@@ -36,10 +36,11 @@ I've developed a strategy and project scenario: "How to create an information an
 
 For this realization, I'm seeking investments or the opportunity to integrate these ideas into existing projects. My goal is to find a team and partners to shape the future in the following areas:
 
+- Informational-entertainment magazine
 - Next-generation independent media
 - Leading Film and Gaming Industry
 - Virtual Reality
-- IT sector, which includes: blockchain, AI, neurotechnologies, and robotics
+- IT sector: blockchain, artificial intelligence, neurotechnology, robotics
 
 ## Description
 
