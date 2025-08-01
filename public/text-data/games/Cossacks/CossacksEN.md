@@ -1,4 +1,4 @@
-# Cossacks RPG
+# Shadows of the Zaporozhian Sich
 
 ***Format:** An adventure role-playing video game with an open world and a third-person view, high detailed environment and characters*
 
