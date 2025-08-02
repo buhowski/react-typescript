@@ -972,5 +972,10 @@
 		margin-top: 80px;
 		padding-top: 80px;
 		border-top: 1px solid rgba($titlePink, 0.2);
+
+		@include tabletBig {
+			margin-top: 60px;
+			padding-top: 60px;
+		}
 	}
 }
