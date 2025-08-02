@@ -14,7 +14,7 @@ I envision the following structure:
 
 ### Start
 
-Three (the more, the better) relatively popular content creators are brought on as partners. [Presentation Projects](/self-presentation) are filmed, feedback is analyzed — and this process continues until a path opens for the necessary investments to develop an MVP Journal.
+Three (the more, the better) relatively popular content creators are brought on as partners. [Presentation projects](/self-presentation) are filmed, feedback is analyzed — and this process continues until a path opens for the necessary investments to develop an MVP Journal.
 
 ### Investment and "The Corp" Phase
 
