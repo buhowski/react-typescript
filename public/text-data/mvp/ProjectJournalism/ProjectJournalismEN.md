@@ -1,4 +1,4 @@
-# Project “Journalism”
+# Project "Journalism"
 
 ***Status:**  Under construction …*
 
