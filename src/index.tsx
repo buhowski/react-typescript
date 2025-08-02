@@ -1,5 +1,5 @@
 // TODO: Polyfill fixes yarn build using old "react-snap": "^1.23.0" with  "react-markdown": "^10.1.0",
-import './polyfills';
+// import './polyfills';
 
 import ReactDOM from 'react-dom/client';
 import { HelmetProvider } from 'react-helmet-async';

@@ -12,13 +12,13 @@ module.exports = {
 			});
 
 			// Remove [contenthash] after file names
-			webpackConfig.module.rules.push({
-				test: /\.(jpg|png|gif|webp|mp4)$/,
-				type: 'asset/resource',
-				generator: {
-					filename: 'static/assets/[name][ext]',
-				},
-			});
+			// webpackConfig.module.rules.push({
+			// 	test: /\.(jpg|png|gif|webp|mp4)$/,
+			// 	type: 'asset/resource',
+			// 	generator: {
+			// 		filename: 'static/assets/[name][ext]',
+			// 	},
+			// });
 
 			// Other CRA Webpack
 			return webpackConfig;

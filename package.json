@@ -31,7 +31,6 @@
 	"scripts": {
 		"start": "craco start",
 		"build": "craco build",
-		"postbuild": "react-snap",
 		"test": "craco test",
 		"eject": "craco eject"
 	},
@@ -43,7 +42,9 @@
 	},
 	"browserslist": {
 		"production": [
-			"since 2010"
+			">0.2%",
+			"not dead",
+			"not op_mini all"
 		],
 		"development": [
 			"last 1 chrome version",
@@ -53,18 +54,6 @@
 	},
 	"devDependencies": {
 		"@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-		"@craco/craco": "^7.1.0",
-		"react-snap": "^1.23.0"
-	},
-	"reactSnap": {
-		"include": [
-			"/",
-			"/startup",
-			"/films",
-			"/games",
-			"/mvp",
-			"/about",
-			"/projects"
-		]
+		"@craco/craco": "^7.1.0"
 	}
 }
