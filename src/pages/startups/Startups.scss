@@ -458,7 +458,6 @@
 		li {
 			position: relative;
 			padding-left: 25px;
-			
 
 			@include mobile {
 				padding-left: 20px;
@@ -490,7 +489,7 @@
 
 	p {
 		word-spacing: 1.2px;
-		
+
 		+ p {
 			margin-top: 25px;
 		}
@@ -934,8 +933,8 @@
 	text-transform: uppercase;
 	padding: 16px 52px 14px 56px;
 	border-radius: 10px;
-	box-shadow: 0 0 10px rgba($color: $black, $alpha: 0.6);
-	background: linear-gradient(170deg, #000000 56%, #002840 100%);
+	box-shadow: 0 0 4px rgba($color: $black, $alpha: 0.8);
+	background: linear-gradient(165deg, #000000 32%, #002840 100%);
 	background-size: 220% 102%;
 	background-position: 90% 0;
 	transition: box-shadow 0.25s ease;
@@ -951,7 +950,7 @@
 	}
 
 	&:hover {
-		box-shadow: 0 0 16px rgba($color: $black, $alpha: 0.8);
+		box-shadow: 0 0 10px rgba($color: $black, $alpha: 1);
 
 		&::after {
 			opacity: 1;
