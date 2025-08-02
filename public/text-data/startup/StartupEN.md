@@ -117,7 +117,7 @@ Key industry products are presented as individual scenarios. Presentations here:
 
 Initially, this will help gain traction with a Ukrainian audience, and later — enter the global market with project presentations.
 
-The [self-presentation projects](/self-presentation) are pilot stages, possibly without funding, serving as the first phases of capability evaluation, which should confirm all declared intentions through feedback. They pave the way to launching key ideas and creating the magazine, and will also help attract new investments for at least the next five years.
+The [Self-presentation Projects](/self-presentation) are pilot stages, possibly without funding, serving as the first phases of capability evaluation, which should confirm all declared intentions through feedback. They pave the way to launching key ideas and creating the magazine, and will also help attract new investments for at least the next five years.
 
 ### Stages and Needs
 
