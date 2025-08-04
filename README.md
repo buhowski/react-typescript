@@ -1,5 +1,15 @@
-## Another Dimension
+# Website Content
 
-### I want to Create an Information and Entertainment Media Magazine and Transform It into a Company Producing Its Own Technologies
+## Another Dimension Startup
 
-### [Media | Films | Games | Technologies](https://buhowski.dev/startup)
+### [ Magazine | Media | Films | Games | Technologies ](https://buhowski.dev/startup)
+
+#### I want to Create an Information and Entertainment Media Magazine and Transform It into a Company Producing Its Own Technologies
+
+## Projects Development
+
+### [ Films ](https://buhowski.dev/films)
+
+### [ Games ](https://buhowski.dev/games)
+
+### [ Magazine | Strategy ](https://buhowski.dev/mvp)
