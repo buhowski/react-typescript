@@ -4,9 +4,9 @@
 
 ### [ Magazine | Media | Films | Games | Technologies ](https://buhowski.dev/startup)
 
-#### I want to Create an Information and Entertainment Media Magazine and Transform It into a Company Producing Its Own Technologies
+I want to Create an Information and Entertainment Media Magazine and Transform It into a Company Producing Its Own Technologies
 
-## Startup Projects Development
+## Startup Projects
 
 ### [ Films ](https://buhowski.dev/films)
 
