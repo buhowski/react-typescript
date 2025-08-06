@@ -1,5 +1,4 @@
-// import { useEffect } from 'react';
-import { useLocation, Route, Routes } from 'react-router-dom';
+import { useLocation, Routes, Route } from 'react-router-dom';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import PageHelmet from './config/PageHelmet';
 import { defaultMetaTags } from './components/metaTags';
@@ -59,19 +58,6 @@ const routesData = [
 
 const App = () => {
 	const location = useLocation();
-
-	// Old Fix for full height of mobile browser without navbar
-	// useEffect(() => {
-	// 	const handleResize = () => {
-	// 		const vh = window.innerHeight * 0.01;
-	// 		document.documentElement.style.setProperty('--vh', `${vh}px`);
-	// 	};
-
-	// 	handleResize();
-	// 	window.addEventListener('resize', handleResize);
-
-	// 	return () => window.removeEventListener('resize', handleResize);
-	// }, []);
 
 	return (
 		<TransitionGroup>

@@ -1,6 +1,3 @@
-// TODO: Polyfill fixes yarn build using old "react-snap": "^1.23.0" with  "react-markdown": "^10.1.0",
-// import './polyfills';
-
 import ReactDOM from 'react-dom/client';
 import { HelmetProvider } from 'react-helmet-async';
 import { BrowserRouter } from 'react-router-dom';
@@ -18,17 +15,13 @@ const Root = () => {
 	const [showPreloader, setShowPreloader] = useState(true);
 
 	useEffect(() => {
-		// Ensure rootElement was found before proceeding
 		if (!rootElement) return;
 
-		// Timer to ensure preloader shows for at least 800ms
 		const timer = setTimeout(() => {
 			setShowPreloader(false);
-			// This makes the #root element visible via the CSS in index.html
 			rootElement.classList.add('is-ready');
 		}, 800);
 
-		// Cleanup function: runs if the Root component unmounts (unlikely but good practice)
 		return () => {
 			clearTimeout(timer);
 			rootElement.classList.remove('is-ready');
