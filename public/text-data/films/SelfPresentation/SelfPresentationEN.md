@@ -2,13 +2,11 @@
 
 # Self-presentation Projects
 
-Here are ideas that are possible without any funding, but impossible without initiative-driven people potentially willing to get involved.
+Here are ideas that are possible without funding but are impossible without proactive people ready to get involved.
 
-This is the basis for a kick-off — need those who want to dive into the unknown of the final result, but for the experience and for something akin to ”messing around for fun.”
+The foundation for starting is people willing to dive into the unknown of the final result, but for the experience and the desire to have fun.
 
-If you're just planning to get into content creation, or are already there but lack ideas, or simply want to try something new — all these projects, if we make them, you can use solely on your own channels.
-
-There's no advertising here — the shows are presented purely in an entertainment format, superficially touching upon large key ideas.
+If you are just planning to get into content creation or are already involved but lack ideas or want to try something new — all these projects, if we implement them, can be used exclusively on your own channels.
 
 ## List
 
