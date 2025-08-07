@@ -45,8 +45,9 @@ $toc-top: 12px;
 		box-shadow: 0 2px 13px rgba($black, 1);
 		border-radius: 10px 10px 0 0;
 		font-family: $LouisGeorgeCaf;
-		letter-spacing: 1px;
-		font-size: 14px;
+		letter-spacing: 1.2px;
+		font-size: 15px;
+		font-weight: 600;
 		gap: 20px;
 		padding: 12px 20px;
 		transition: 0.2s;
@@ -63,12 +64,12 @@ $toc-top: 12px;
 			border-radius: 6px;
 			width: fit-content;
 			position: fixed;
-			bottom: 30px;
+			bottom: 35px;
 			right: 20px;
 			z-index: 100;
-			padding: 14px 16px;
-			background: linear-gradient(134deg, #000000 30%, #002840 100%);
-			box-shadow: 0 0 8px rgba($black, 1);
+			padding: 15px 16px;
+			background: linear-gradient(120deg, #000000 0, #002840 80%);
+			box-shadow: 0 0 5px rgba($black, 1);
 
 			> h3 {
 				display: none;
