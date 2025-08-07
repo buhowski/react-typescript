@@ -1,9 +1,6 @@
 {
 	"name": "buhowski.dev",
-	"version": "4.2.0",
-	"engines": {
-		"node": ">=20"
-	},
+	"version": "420",
 	"private": true,
 	"dependencies": {
 		"@testing-library/jest-dom": "^5.14.1",
