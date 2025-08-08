@@ -1,18 +1,16 @@
 # European Ukrainians
 
-***Format:** Sitcom with elements of dark humor for streaming platforms*
+## Logline
 
-***Duration:** 20-40 minutes episode*
-
-***Audience:** Teens, Adults*
+A dark-humored sitcom about a group of young “idiots” who, facing the absurdity of the Ukrainian “Europe” environment, challenge life’s realities on the path of self-development, maintaining a delicate balance between optimism, a fuck-it attitude, and uncontrollably fatal hysteria in the unfolding events.
 
 ## Main Idea
 
-This is a story about a group of young idiots who challenge the absurd realities of life on their path to self-development. The narrative unfolds through sarcastic-satirical and self-deprecating mockery, directed both at the system and the people within it.
+The narrative unfolds through a prism of sarcastic-satirical and self-ironic mockery aimed both at the system and the people within it.
 
-This is how the characters perceive the surrounding world to keep from losing their minds. Thanks to their friendship (which is actually egoistic and immoral) and support (where they betray and ditch each other), they still stick together and try to find their place in society, constantly stumbling into awkward situations.
+This is how the characters perceive the world around them to keep from losing their minds. Thanks to friendship — which is actually selfish and immoral — and support — where they betray and let each other down — they still stick together and try to find their place in society, constantly getting into awkward situations.
 
-These strangers meet under certain circumstances. The situation leads them to a lasting friendship — through pain, screaming, and a faint smell of booze, because that's the only way "true love" is born.
+Strangers meet under certain circumstances. The situation forces them to get closer — through pain, shouting, and a faint smell of booze, because that’s how “true love” is born.
 
 [mobile-slider]
 

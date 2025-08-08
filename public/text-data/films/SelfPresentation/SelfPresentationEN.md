@@ -1,12 +1,10 @@
 #### Creative Experiments / Shows
 
-# Self-presentation Projects
+# Self-Presentation Projects
 
-Here are ideas that are possible without funding but are impossible without proactive people ready to get involved.
+This block contains ideas that are possible without funding but impossible without proactive people willing to dive into the unknown results — for the sake of experience and fun.
 
-The foundation for starting is people willing to dive into the unknown of the final result, but for the experience and the desire to have fun.
-
-If you are just planning to get into content creation or are already involved but lack ideas or want to try something new — all these projects, if we implement them, can be used exclusively on your own channels.
+If you are just planning to get into content creation or already involved but lack ideas or want to try something new — all these projects, if we implement them, can be used on your own channels.
 
 ## List
 

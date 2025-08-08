@@ -20,13 +20,6 @@ export const dataFilms = {
 			sliderContent: dataSliderProjectsDev,
 		},
 
-		// ### Self Presentation Projects  ###
-		{
-			markdownAPI: '/text-data/films/SelfPresentation/SelfPresentationEN.md',
-			sliderContent: dataSliderProjectsDev,
-			filmsPreviewUrl: pathToSelfPresentation,
-		},
-
 		// ### European Ukrainians ###
 		{
 			markdownAPI: '/text-data/films/EuropeanUkrainians/PreviewEuropeanUkrainiansEN.md',
@@ -40,6 +33,13 @@ export const dataFilms = {
 			sliderContent: dataSliderTheCorp,
 			filmsPreviewUrl: pathToTheCorp,
 		},
+
+		// ### Self Presentation Projects  ###
+		{
+			markdownAPI: '/text-data/films/SelfPresentation/SelfPresentationEN.md',
+			sliderContent: dataSliderProjectsDev,
+			filmsPreviewUrl: pathToSelfPresentation,
+		},
 	],
 
 	// Ukraine
@@ -47,14 +47,14 @@ export const dataFilms = {
 		// ### Main Preface  ###
 		{ markdownAPI: '/text-data/PreviewMainUA.md' },
 
-		// ### Self Presentation Projects ###
-		{ markdownAPI: '/text-data/films/SelfPresentation/SelfPresentationUA.md' },
-
 		// ### European Ukrainians ###
 		{ markdownAPI: '/text-data/films/EuropeanUkrainians/PreviewEuropeanUkrainiansUA.md' },
 
 		// ### The Corp .!. ###
 		{ markdownAPI: '/text-data/films/TheCorp/PreviewTheCorpUA.md' },
+
+		// ### Self Presentation Projects ###
+		{ markdownAPI: '/text-data/films/SelfPresentation/SelfPresentationUA.md' },
 	],
 
 	// rusian
@@ -62,13 +62,13 @@ export const dataFilms = {
 		// ### Main Preface  ###
 		{ markdownAPI: '/text-data/PreviewMainRU.md' },
 
-		// ### Self Presentation Projects ###
-		{ markdownAPI: '/text-data/films/SelfPresentation/SelfPresentationRU.md' },
-
 		// ### European Ukrainians ###
 		{ markdownAPI: '/text-data/films/EuropeanUkrainians/PreviewEuropeanUkrainiansRU.md' },
 
 		// ### The Corp .!. ###
 		{ markdownAPI: '/text-data/films/TheCorp/PreviewTheCorpRU.md' },
+
+		// ### Self Presentation Projects ###
+		{ markdownAPI: '/text-data/films/SelfPresentation/SelfPresentationRU.md' },
 	],
 };

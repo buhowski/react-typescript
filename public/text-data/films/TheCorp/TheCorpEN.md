@@ -1,14 +1,20 @@
 # The Corp .!.
 
+## Logline
+
+A mockumentary-style behind-the-scenes series about building your own corporation. A lively, ironic nod to the American "The Office", blending real workspace scenes with absurdity and scripted moments that deliberately disrupt the workflow.
+
 ## Main Idea
 
-This is a pseudo-documentary backstage series that showcases the real process of building a corporation from scratch, enhanced with improvised performances.
+This format shows the real process of starting a corporation from scratch, mixed with improvised setups.
 
-It's our satirical take on modern corporations: about "fascism in the details," "individual galleys and rowers", "talent meat grinder", about the so-called "family atmosphere" and the senseless waste of resources. In the series, we'll highlight what we believe work should truly be like, but with boundless self-irony.
+It’s our satirical take on modern corporate culture: the "fascism in the details", the "galleys and rowers", the "talent grinder", the fake "family atmosphere", and the senseless waste of resources. We highlight what work shouldn’t be — with boundless self-irony.
 
-This is raw reality mixed with the absurdity we intentionally add to the workflow to create a lively and engaging series. We openly show everything we do — it's both self-promotion and a powerful driver for our development. However, the story isn't about business or complex processes. It's about people surviving in an office where the main drama isn't the work itself, but everything that's done instead of it.
+It’s raw reality mixed with absurdity that we intentionally insert into the work process to create a vibrant, absurd, and engaging series. We openly show everything we do — it’s both self-promotion and a driving force for our growth.
 
-It's very similar to the American "The Office," but this project doesn't copy the original. We create scenes in a real workspace, adapting realities to flexible humor, absurdity, and specific characters.
+But the story isn’t about business or processes. It’s about people trying to survive in an office where the main drama isn’t the job itself, but everything that happens instead of it.
+
+Like "The Office", we film in a real workspace — but we don’t copy the original. We create our own scenes, shaped by flexible humor, absurdity, and distinctive characters.
 
 [mobile-slider]
 

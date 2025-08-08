@@ -1,6 +1,8 @@
 # Podcast Show: Dimension Minus Zero One Hundred and Forty-eight
 
-***Format:** A mix between The Eric Andre Show and podcasts in the style of “let's pretend we know something and are fucking experts in these fields.”*
+## Logline
+
+An improvised mix of "The Eric Andre Show," "Between Two Ferns," and podcasts in the style of "Let's pretend we know something and we're fucking experts in everything" — with references, metaphorical subtext, unpredictable absurdity, and unapologetically dark, bad humor (nope).
 
 ## Script
 
@@ -18,7 +20,7 @@ Both hosts must reveal the core idea in a bold, engaging way, not allowing the g
 
 The Background Character is always present, doing their own thing, but steps in once a key question is covered — or just barges in randomly and interrupts everyone.
 
-If a puppet is used as the guest, the Background Character plays the “inner thoughts” of that “celebrity” or argues about anything, joking that we’re so unpopular we couldn’t even book a hobo. (The Background Character’s actions must be fully improvised and unknown to the hosts).
+If a puppet is used as the guest, the Background Character plays the "inner thoughts" of that "celebrity" or argues about anything, joking that we’re so unpopular we couldn’t even book a hobo. (The Background Character’s actions must be fully improvised and unknown to the hosts).
 
 [mobile-slider]
 
@@ -36,7 +38,7 @@ Set design idea — abandoned building/factory styled like a post-Soviet apartme
 
 As the show progresses, the outdated gets destroyed and replaced.
 
-The Background Character gradually dismantles the “Soviet” elements and brings in new ones — as a metaphor for breaking post-Soviet dependency, medieval thinking, fucking medievalism, and building a free world.
+The Background Character gradually dismantles the "Soviet" elements and brings in new ones — as a metaphor for breaking post-Soviet dependency, medieval thinking, fucking medievalism, and building a free world.
 
 Another read: the Character is the past — a ghost of old Christmas — slowly becoming self-aware and wanting to evolve. He is our inner scream.
 
@@ -52,7 +54,7 @@ It’s a literal evolution.
 
 Three serious contemporary questions per episode — social, human, global. All seasoned with chaotic humor so we don’t go insane.
 
-Texture ideas as metaphors tied to each theme. The Character “solves” the issue by destroying the old and inserting a new, healthier perspective.
+Texture ideas as metaphors tied to each theme. The Character "solves" the issue by destroying the old and inserting a new, healthier perspective.
 
 ## Consider Adding
 
@@ -60,22 +62,22 @@ Texture ideas as metaphors tied to each theme. The Character “solves” the is
 - Off-screen voice giving their two cents — like a live audience
 - Hosts at an old table covered in newspaper: faceted glasses, vodka bottle, tea set, cookies, sandwiches — homestyle, like a "New Year table from the good old days"
 - Baby lullaby and a toy child crying from time to time — we ignore it
-- Come up with ”Easter eggs”
+- Come up with "Easter eggs"
 - If there’s no guest — make one up: Revo, port wine, a vibrator from a famous toxic personality, or a clone made from pigeon-delivered DNA
-- Nearby: a sheet of plywood you can punch through screaming “KIYAAA,” or something similar. Acts as anti-stress like a gong / cue for next scene
+- Nearby: a sheet of plywood you can punch through screaming "KIYAAA," or something similar. Acts as anti-stress like a gong / cue for next scene
 
 ## Script Ideas / Jokes
 
 Danger Zone — unpredictably horrible humor.
 
-- Intro: “This is the pilot epi... The pilot of a Broiler-747 passenger jet, currently going down for... (looks at watch that’s not there) ...539 seconds (the length of the show)...” then laughing — first at the host, then into one camera, then another
-- “Podcast-show-Field-of-Miracles”, guest sector on the wheel! Reveal the guest! We open an ironic portrait on a stand and wheel it in
-- Joke about banning stuff: “What is this — Nazi Germany?”
+- Intro: "This is the pilot epi... The pilot of a Broiler-747 passenger jet, currently going down for... (looks at watch that’s not there) ...539 seconds (the length of the show)..." then laughing — first at the host, then into one camera, then another
+- "Podcast-show-Field-of-Miracles", guest sector on the wheel! Reveal the guest! We open an ironic portrait on a stand and wheel it in
+- Joke about banning stuff: "What is this — Nazi Germany?"
 - Worst case — we just fuck around. Best case — two people will watch it
-- Give me five years and Apple will personally call me asking: “Give us a ten,” and I’ll say: “Granny’s deaf, was it nine or ten?” … And give ‘em ten years in jail!
-- If someone’s a nobody — label them absurdly: “Expert in sticks and shit,” “some guy from the hill,” “a fictional real person,” “beachside bum”
-- Argument closer: “A guy from the hill — cause it sees the world better”
-- “So you’re in IT?” — “Nah, IT people are like gods, I’m more of a high-functioning organism”
+- Give me five years and Apple will personally call me asking: "Give us a ten," and I’ll say: "Granny’s deaf, was it nine or ten?" … And give ‘em ten years in jail!
+- If someone’s a nobody — label them absurdly: "Expert in sticks and shit," "some guy from the hill," "a fictional real person," "beachside bum"
+- Argument closer: "A guy from the hill — cause it sees the world better"
+- "So you’re in IT?" — "Nah, IT people are like gods, I’m more of a high-functioning organism"
 
 ### Intro (or rework it for the ending):
 

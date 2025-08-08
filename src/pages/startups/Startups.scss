@@ -106,7 +106,7 @@
 		// padding-bottom: 60px;
 		width: 100%;
 		border-radius: 0;
-		box-shadow: 0 -3px 15px rgba($color: $darkest, $alpha: 1);
+		box-shadow: none;
 	}
 }
 
@@ -116,7 +116,7 @@
 	position: relative;
 
 	@include tabletBig {
-		padding-top: 75px;
+		padding-top: 80px;
 		height: auto;
 		width: 100%;
 		flex-shrink: unset;
@@ -222,10 +222,10 @@
 
 		@include tabletBig {
 			max-width: 777px;
-			margin: 30px auto 50px;
+			margin: 30px auto 55px;
 			text-align: center;
 			border-radius: 10px;
-			box-shadow: 0 0 6px rgba($color: $black, $alpha: 1);
+			box-shadow: 0 0 5px rgba($color: $black, $alpha: 1);
 			width: calc(100% - 80px);
 		}
 
@@ -288,7 +288,9 @@
 		}
 
 		@include mobile {
+			box-shadow: 0 0 5px rgba($color: $black, $alpha: 1);
 			margin-right: -15px;
+			border-radius: 10px;
 		}
 
 		.idea-tabs__btn {

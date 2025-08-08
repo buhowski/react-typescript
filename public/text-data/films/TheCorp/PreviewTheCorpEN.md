@@ -1,5 +1,5 @@
-#### Mockumentary Series
+#### Reality-Based Mockumentary Series
 
 # The Corp .!.
 
-A pseudo-documentary backstage series about building one's own corporation. It's a lively, ironic nod to the American "The Office", featuring scenes in real spaces mixed with absurdity that hinders the work process.
+A mockumentary-style behind-the-scenes series about building your own corporation. A lively, ironic nod to the American "The Office", blending real workspace scenes with absurdity and scripted moments that deliberately disrupt the workflow.
