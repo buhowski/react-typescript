@@ -51,6 +51,7 @@ $toc-top: 12px;
 		gap: 20px;
 		padding: 12px 20px;
 		transition: 0.2s;
+		// color: $starYellow;
 
 		&:hover {
 			color: $blue-main;
@@ -83,16 +84,12 @@ $toc-top: 12px;
 			margin-left: 0;
 			margin-bottom: 1px;
 
-			@include tabletBig {
-				margin-bottom: 0;
-
-				span {
-					border-color: #fff;
-				}
+			span {
+				border-color: $starYellow;
 			}
 
-			span {
-				border-color: #fff;
+			@include tabletBig {
+				margin-bottom: 0;
 			}
 		}
 	}
