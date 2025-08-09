@@ -1,6 +1,5 @@
 @import '../../styles/variables';
 @import '../../styles/animation';
-@import './PageStructure/Breadcrumbs.scss';
 @import './PageStructure/TableOfContent.scss';
 
 @mixin titleFont {
@@ -513,12 +512,12 @@
 
 		@include tablet {
 			&:focus {
-				color: $blue-main;
+				color: $h1-title-color;
 			}
 		}
 
 		&:hover {
-			color: $blue-main;
+			color: $h1-title-color;
 
 			> * {
 				background-size: 0 1px;
