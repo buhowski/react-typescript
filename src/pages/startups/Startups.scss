@@ -41,14 +41,6 @@
 		margin-top: 45px;
 	}
 
-	h3 {
-		margin-bottom: 30px;
-		@include titleFont;
-		letter-spacing: 0;
-		font-size: 13px;
-		font-weight: bold;
-	}
-
 	.contact-menu {
 		justify-content: center;
 
@@ -221,7 +213,7 @@
 
 		@include tabletBig {
 			max-width: 777px;
-			margin: 30px auto 55px;
+			margin: 25px auto 55px;
 			text-align: center;
 			border-radius: 10px;
 			box-shadow: 0 0 5px rgba($color: $black, $alpha: 1);
@@ -389,7 +381,7 @@
 
 		@include mobile {
 			margin-bottom: 40px;
-			font-size: 28px;
+			font-size: 26px;
 		}
 
 		+ h2 {
@@ -414,6 +406,7 @@
 	// .idea-block__subtitle
 	h3 {
 		color: $h3-title-color;
+		font-weight: 500;
 		margin-bottom: 20px;
 		letter-spacing: 1px;
 		margin-top: 40px;
@@ -497,14 +490,14 @@
 		position: relative;
 		transition: color 0.2s ease-in-out;
 		color: #ffffff;
-		font-weight: bold;
+		font-weight: 600;
 
 		> * {
 			background-image: linear-gradient(currentColor, currentColor);
 			background-size: 100% 1px;
 			background-repeat: no-repeat;
 			background-position: left bottom;
-			transition: background-size 0.4s ease-in-out;
+			transition: background-size 0.4s ease-out;
 			font-weight: inherit;
 			font-style: inherit;
 			padding: 2px 0;
@@ -512,12 +505,12 @@
 
 		@include tablet {
 			&:focus {
-				color: $h1-title-color;
+				color: $starYellow;
 			}
 		}
 
 		&:hover {
-			color: $h1-title-color;
+			color: $starYellow;
 
 			> * {
 				background-size: 0 1px;
@@ -933,12 +926,12 @@
 	background: linear-gradient(165deg, #000000 45%, #002840 100%);
 	background-size: 220% 102%;
 	background-position: 90% 0;
-	transition: box-shadow 0.25s ease;
+	transition: box-shadow 0.25s ease, color 0.25s ease;
 	will-change: box-shadow;
 
 	&::after {
 		height: 100%;
-		background: radial-gradient(circle, #002840 16%, #000000 100%);
+		background: radial-gradient(circle, #002840 10%, #000000 100%);
 		box-shadow: none;
 		background-size: 280% 250%;
 		opacity: 0;
@@ -947,6 +940,7 @@
 
 	&:hover {
 		box-shadow: 0 0 10px rgba($color: $black, $alpha: 1);
+		color: $starYellow;
 
 		&::after {
 			opacity: 1;

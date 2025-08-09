@@ -265,7 +265,7 @@ const Slider: React.FC<SliderProps> = ({ slides, currentLanguage }) => {
 			<div className='slider-container'>
 				{sliderInnerContent}
 
-				{!useTabletLarge && <PopupContacts currentLanguage={currentLanguage} />}
+				{!useTabletLarge && <PopupContacts />}
 			</div>
 		</div>
 	);

@@ -176,7 +176,7 @@ const PageStructure: React.FC<PageProps> = ({ textData }) => {
 							<div className='copy-tablet'>
 								{canRenderFooter && <Copyright />}
 
-								<PopupContacts currentLanguage={currentLang} />
+								<PopupContacts />
 							</div>
 						)}
 					</div>
