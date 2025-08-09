@@ -19,6 +19,12 @@ $titlePink: #fbb7a6;
 $textGrey: #dfdfdf;
 $starYellow: #dfb842;
 
+$h1-title-color: #e7c14d;
+$subtitle-color: #b9b2a7;
+$h2-title-color: #2489e9;
+$h3-title-color: $titlePink;
+$toc-title-color: $starYellow;
+
 @mixin burgerIcon {
 	width: 40px;
 	height: 22px;
