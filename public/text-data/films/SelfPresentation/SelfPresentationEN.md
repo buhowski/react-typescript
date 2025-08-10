@@ -6,6 +6,6 @@ This block contains ideas that are possible without funding but impossible witho
 
 If you are just planning to get into content creation or already involved but lack ideas or want to try something new — all these projects, if we implement them, can be used on your own channels.
 
-## List
+### List
 
 - [Podcast Show: Dimension Minus Zero One Hundred and Forty-eight](/podcast-show)

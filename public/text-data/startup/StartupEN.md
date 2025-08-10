@@ -119,13 +119,13 @@ The [Self-Presentation Projects](/self-presentation) are pilot stages, possibly 
 
 Initially, this will help gain traction with a Ukrainian audience, and later — enter the global market with project presentations.
 
+The flexibility of my ideas makes them easy to integrate into existing projects — as a modification, a separate project, or a way to scale a company. If you share similar interests and are open to collaboration — I’m ready to discuss. The vision exists, and theoretically, it works. Resources are needed for implementation.
+
 ### Stages and Needs
 
 - Foundation — forming a team, launching the self-presentation projects, preliminary evaluation, and initial funding for key projects
 - MVP Development — creating a minimum viable magazine with starter content and functionality
 - Launch and Scaling — analyzing results, improvement, promoting, and attracting larger investments
-
-The flexibility of my ideas makes them easy to integrate into existing projects — as a modification, a separate project, or a way to scale a company. If you share similar interests and are open to collaboration — I’m ready to discuss. The vision exists, and theoretically, it works. Resources are needed for implementation.
 
 ## Summarizing
 
