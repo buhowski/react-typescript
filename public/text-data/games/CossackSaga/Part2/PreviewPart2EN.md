@@ -1,3 +1,3 @@
 # Part II: Ashes of the Beloved
 
-Rescued from the clutches of death, our heroine possesses only a fragment of her beloved's soul. Driven by an unbreakable spirit and a thirst for revenge, she embarks on a bloody journey to destroy the church hierarchy that condemned her to torment and suffering. On her path to reuniting with her beloved, she's willing to pay any price, for death is merely a new beginning. If this is true, she will take as much evil with her as she can to destroy it forever.
+Saved from inevitable death, the heroine possesses only a fragment of her beloved's soul. Driven by an unbreakable spirit and a thirst for revenge, she embarks on a bloody journey to destroy the supremacy of the church, which condemned her to torment and suffering.
