@@ -14,7 +14,7 @@ import cossacksEquipment from '../../../assets/games/cossacksEquipment.webp';
 import combatHopak from '../../../assets/games/combatHopak.webp';
 import cossackCharakternyk from '../../../assets/games/cossackCharakternyk.webp';
 
-export const dataSliderCossacks = [
+export const dataSliderCossackSaga = [
 	{
 		itemPoster: witcherPoster,
 		itemSrc: witcherTrailer,

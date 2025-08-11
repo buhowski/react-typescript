@@ -1,6 +1,6 @@
 // URL To Single Page / Read More button
-import { pathToCossacks } from '../../../../components/urlsData';
-import { dataSliderCossacks } from './Cossacks/dataSliderCossacks';
+import { pathToCossackSaga } from '../../../../components/urlsData';
+import { dataSliderCossackSaga } from './CossackSaga/dataSliderCossackSaga';
 import { dataSliderProjectsDev } from '../dataReusable';
 
 export const dataGames = {
@@ -12,11 +12,11 @@ export const dataGames = {
 			sliderContent: dataSliderProjectsDev,
 		},
 
-		// ### Cossacks RPG ###
+		// ### Cossacks Saga ###
 		{
-			markdownAPI: '/text-data/games/Cossacks/PreviewCossacksEN.md',
-			sliderContent: dataSliderCossacks,
-			filmsPreviewUrl: pathToCossacks,
+			markdownAPI: '/text-data/games/CossackSaga/CossackSagaEN.md',
+			sliderContent: dataSliderCossackSaga,
+			filmsPreviewUrl: pathToCossackSaga,
 		},
 	],
 
@@ -26,7 +26,7 @@ export const dataGames = {
 		{ markdownAPI: '/text-data/PreviewMainUA.md' },
 
 		// ### Cossacks RPG ###
-		{ markdownAPI: '/text-data/games/Cossacks/PreviewCossacksUA.md' },
+		{ markdownAPI: '/text-data/games/CossackSaga/CossackSagaUA.md' },
 	],
 
 	// rusian
@@ -34,7 +34,7 @@ export const dataGames = {
 		// ### Main Preface  ###
 		{ markdownAPI: '/text-data/PreviewMainRU.md' },
 
-		// ### Cossacks RPG ###
-		{ markdownAPI: '/text-data/games/Cossacks/PreviewCossacksRU.md' },
+		// ### Cossacks Saga ###
+		{ markdownAPI: '/text-data/games/CossackSaga/CossackSagaRU.md' },
 	],
 };

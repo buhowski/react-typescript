@@ -11,7 +11,7 @@ import {
 	pathToStartupMVP,
 	pathToEuropeanUkrainians,
 	pathToTheCorp,
-	pathToCossacks,
+	pathToCossackSaga,
 	pathToPodcastShow,
 	pathToSelfPresentation,
 } from './components/urlsData';
@@ -33,7 +33,7 @@ import SelfPresentation from './pages/startups/pages/films/SelfPresentation/Self
 import PodcastShow from './pages/startups/pages/films/SelfPresentation/PodcastShow/PodcastShow';
 
 // Games Industry
-import Cossacks from './pages/startups/pages/games/Cossacks/Cossacks';
+import CossackSaga from './pages/startups/pages/games/CossackSaga/CossackSaga';
 
 const routesData = [
 	{ pathTo: '/', pageComponent: <Home /> },
@@ -53,7 +53,7 @@ const routesData = [
 	{ pathTo: pathToPodcastShow, pageComponent: <PodcastShow /> },
 
 	// Games Industry
-	{ pathTo: pathToCossacks, pageComponent: <Cossacks /> },
+	{ pathTo: pathToCossackSaga, pageComponent: <CossackSaga /> },
 ];
 
 const App = () => {

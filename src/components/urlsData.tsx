@@ -25,7 +25,7 @@ export const pathToSelfPresentation = '/self-presentation';
 export const pathToPodcastShow = '/podcast-show';
 
 // Games
-export const pathToCossacks = '/cossacks';
+export const pathToCossackSaga = '/cossack-saga';
 
 // Separate Projects presentation URLs
 export const startupsNav = [

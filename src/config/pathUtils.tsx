@@ -4,7 +4,7 @@ import {
 	pathToStartupMVP,
 	pathToEuropeanUkrainians,
 	pathToTheCorp,
-	pathToCossacks,
+	pathToCossackSaga,
 	startupsNav,
 	pathToSelfPresentation,
 	pathToPodcastShow,
@@ -18,7 +18,7 @@ export const startupPaths: string[] = [
 	...startupsNav.map(({ pageLink }) => pageLink),
 	pathToEuropeanUkrainians,
 	pathToTheCorp,
-	pathToCossacks,
+	pathToCossackSaga,
 	pathToSelfPresentation,
 	pathToPodcastShow,
 ];

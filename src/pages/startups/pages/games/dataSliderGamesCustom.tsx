@@ -1,8 +1,8 @@
-import { dataSliderCossacks } from './Cossacks/dataSliderCossacks';
+import { dataSliderCossackSaga } from './CossackSaga/dataSliderCossackSaga';
 
 const ALT_PODCAST_SHOW = ' ';
 const rawCombinedSelfPresentationSlides = [
-	...dataSliderCossacks.map((item) => ({ ...item, _prefix: ALT_PODCAST_SHOW })),
+	...dataSliderCossackSaga.map((item) => ({ ...item, _prefix: ALT_PODCAST_SHOW })),
 
 	// or simgle item
 	// { ...dataSliderCossacks[0], _prefix: ALT_PODCAST_SHOW },
