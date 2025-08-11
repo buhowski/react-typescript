@@ -336,7 +336,7 @@
 }
 
 .idea-block {
-	font-size: 18px;
+	font-size: 17px;
 	line-height: 1.6;
 	color: $textGrey;
 	letter-spacing: 0.6px;
@@ -373,7 +373,7 @@
 
 	h1 {
 		@include titleFont;
-		font-size: 33px;
+		font-size: 31px;
 		color: $h1-title-color;
 		text-align: center;
 		max-width: 510px;
@@ -393,7 +393,7 @@
 	h2 {
 		@include titleFont;
 		color: $h2-title-color;
-		font-size: 28px;
+		font-size: 27px;
 		margin-bottom: 22px;
 		letter-spacing: 0.5px;
 		margin-top: 45px;
@@ -410,7 +410,7 @@
 		margin-bottom: 20px;
 		letter-spacing: 1px;
 		margin-top: 40px;
-		font-size: 23px;
+		font-size: 22px;
 
 		@include tabletBig {
 			font-size: 21px;
@@ -940,7 +940,7 @@
 
 	&:hover {
 		box-shadow: 0 0 10px rgba($color: $black, $alpha: 1);
-		color: $starYellow;
+		color: $h1-title-color;
 
 		&::after {
 			opacity: 1;

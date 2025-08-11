@@ -1,10 +1,10 @@
 import {
-	pathToStartupFilms,
-	pathToStartupGames,
-	pathToStartupMVP,
 	pathToEuropeanUkrainians,
 	pathToTheCorp,
 	pathToCossackSaga,
+	pathToCossackSagaPart1,
+	pathToCossackSagaPart2,
+	pathToCossackSagaPart3,
 	startupsNav,
 	pathToSelfPresentation,
 	pathToPodcastShow,
@@ -21,11 +21,7 @@ export const startupPaths: string[] = [
 	pathToCossackSaga,
 	pathToSelfPresentation,
 	pathToPodcastShow,
+	pathToCossackSagaPart1,
+	pathToCossackSagaPart2,
+	pathToCossackSagaPart3,
 ];
-
-//  Used to mark tab as active inside the startup sub-navigation
-export const startupSubPaths: Record<string, string[]> = {
-	[pathToStartupFilms]: [pathToEuropeanUkrainians],
-	[pathToStartupGames]: [],
-	[pathToStartupMVP]: [],
-};

@@ -1,24 +1,66 @@
 import { dataSliderCossackSaga } from './dataSliderCossackSaga';
-import { pathToCossackSaga } from '../../../../../components/urlsData';
+import {
+	pathToCossackSagaPart1,
+	pathToCossackSagaPart2,
+	pathToCossackSagaPart3,
+} from '../../../../../components/urlsData';
 export const dataCossackSaga = {
 	// English
 	en: [
 		// ### Cossacks Saga Preface  ###
 		{
-			markdownAPI: '/text-data/games/Cossacks/CossacksEN.md',
+			markdownAPI: '/text-data/games/CossackSaga/PreviewCossackSagaEN.md',
 			sliderContent: dataSliderCossackSaga,
 		},
 
 		// Part I: Whispers of the Forgotten
 		{
-			markdownAPI: '/text-data/games/Cossacks/CossacksEN.md',
-			filmsPreviewUrl: pathToCossackSaga,
+			markdownAPI: '/text-data/games/CossackSaga/Part1/PreviewPart1EN.md',
+			sliderContent: dataSliderCossackSaga,
+			filmsPreviewUrl: pathToCossackSagaPart1,
+		},
+
+		// Part II: Ashes of the Beloved
+		{
+			markdownAPI: '/text-data/games/CossackSaga/Part2/PreviewPart2EN.md',
+			sliderContent: dataSliderCossackSaga,
+			filmsPreviewUrl: pathToCossackSagaPart2,
+		},
+
+		// Part III: Quantum Leap
+		{
+			markdownAPI: '/text-data/games/CossackSaga/Part3/PreviewPart3EN.md',
+			sliderContent: dataSliderCossackSaga,
+			filmsPreviewUrl: pathToCossackSagaPart3,
 		},
 	],
 
 	// Ukraine
-	ua: [{ markdownAPI: '/text-data/games/Cossacks/CossacksUA.md' }],
+	ua: [
+		// ### Cossacks Saga Preface  ###
+		{ markdownAPI: '/text-data/games/CossackSaga/PreviewCossackSagaUA.md' },
+
+		// Part I: Whispers of the Forgotten
+		{ markdownAPI: '/text-data/games/CossackSaga/Part1/PreviewPart1UA.md' },
+
+		// Part II: Ashes of the Beloved
+		{ markdownAPI: '/text-data/games/CossackSaga/Part2/PreviewPart2UA.md' },
+
+		// Part III: Quantum Leap
+		{ markdownAPI: '/text-data/games/CossackSaga/Part3/PreviewPart3UA.md' },
+	],
 
 	// rusian
-	ru: [{ markdownAPI: '/text-data/games/Cossacks/CossacksRU.md' }],
+	ru: [
+		{ markdownAPI: '/text-data/games/CossackSaga/PreviewCossackSagaRU.md' },
+
+		// Part I: Whispers of the Forgotten
+		{ markdownAPI: '/text-data/games/CossackSaga/Part1/PreviewPart1RU.md' },
+
+		// Part II: Ashes of the Beloved
+		{ markdownAPI: '/text-data/games/CossackSaga/Part2/PreviewPart2RU.md' },
+
+		// Part III: Quantum Leap
+		{ markdownAPI: '/text-data/games/CossackSaga/Part3/PreviewPart3RU.md' },
+	],
 };

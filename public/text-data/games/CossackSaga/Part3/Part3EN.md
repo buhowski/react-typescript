@@ -1,50 +1,39 @@
-# Shadows of the Zaporozhian Sich
+# Shadows of the Zaporozhian Sich: Quantum Leap
 
-***Format:** An adventure role-playing video game with an open world and a third-person view, high detailed environment and characters*
+***Saga:** Part III*
 
-***Setting:** Ukraine of the 16th — 18th centuries, Zaporozhian Sich*
+## Logline
+
+Centuries after the world rejected religion and transformed magic into technology, new alliances led by the Cossack Legion must unite to face an unprecedented totalitarian enemy. Wielding weapons capable of destroying continents, this foe reminds everyone that even in the most advanced future, war never ends, for a shard of evil has found its bearer.
 
 ## Main Idea
 
-A mysterious figure with a tragic past and an unrevealed potential for otherworldly powers, travels through cities, trying to uncover the mystical secrets of history and his own destiny.
+The introduction to the third part begins with a series of dynamic cinematic cutscenes that briefly recap the key moments of the previous parts and the finale of Part II, which fundamentally changed the world. This sequence smoothly transitions into a montage that showcases the "Quantum Leap" — the rise of new civilizations born from the ruins of the old world.
 
-He accidentally gets entangled in dark church conspiracies and uncovers forbidden secrets that lead to the truth he's long sought — but now he knows he won't get out alive after what he's seen.
+Centuries after demonic forces were defeated and the world rejected religion, humanity, having gained new knowledge and begun to believe only in itself, directed the remnants of magical energy toward technological development. This led to an extraordinary evolutionary leap that completely changed all known history, creating a world where technology and ancient cultures intertwine.
 
-Here, we intertwine real historical facts, mythology and demonology, dynamic comedy — all combined with a melancholically dark atmosphere of a forgotten era, mysticism, and personal drama.
+In this new world, Cossacks, Vikings, and Native Americans were not destroyed. On the contrary, they began to unite, sharing their secrets and histories with one another. The eradication of the main evil led to the collapse of all religious manifestations worldwide, putting an end to wars over gods and paganism. The new society's foundation became shared self-improvement and mutual aid.
 
-[mobile-slider]
+However, this peace proved to be an illusion. A part of the evil found refuge in Asia, where its leader acquired extraordinary powers. Using lost knowledge from the otherworld, he infused it into technology, creating neuro-engineering for mind control and nanotechnological weapons capable of pinpoint destruction of entire territories.
 
-## Overview
+Now this unprecedented totalitarian enemy seeks to conquer the world, enslaving or destroying all who do not conform to his racial views. This conflict proves that the greatest evil is not demons, but the human lust for power, which always lurks and seeks opportunities to manifest again.
 
-The core concept of my idea lies in combining real historical events of the Ukrainian Cossacks with Slavic myths and the mysticism from Mykola Gogol's literary works.
+## Description
 
-To understand my vision for the game world, you need to take Cossacks and combine their visual style with the video examples in the slider, but with our own theme. The result will be a game that will bring to life the history of Ukrainian Cossacks and the Zaporozhian Sich.
+The game world exists on the cusp of several eras, a mix of tribal futurism and the mythological heritage of various peoples (Slavic, Scandinavian, Native American, Asian, and African).
 
-My goal is to popularize a new vision of that period and showcase various Cossack figures in a fresh style. This means frankly depicting the full essence of that era — bloody battles, cruelty, betrayal, untold legends, and explicit scenes. Also, to feature the renowned combat dance "hopak," humor, and boundless landscapes that haven't been explored in games yet.
+### Main Factions
 
-### Inspiration
+- Cossack Legion and the Vikings of a New Era: On the Eurocontinent, these peoples unite, combining their martial heritage and diplomacy with advanced technologies. They are a mighty alliance standing in defense of freedom.
+- Maya-Fusion: Native Americans have revived the grandeur of their temples. Their technology is a harmony of nature and machines.
+- Asian Totalitarianism: This is the main enemy that emerged after its leader found a shard of ancient evil. The regime has eradicated all who stood in its path to absolute power and seeks to subjugate the world using nanoweaponry.
+- The Fate of Africa: Africa was destroyed by the first test of Asian nanoweaponry. Some African tribes managed to escape to Europe, where the Cossack Legion gladly accepted them into its ranks.
 
-- [The Witcher game series](https://en.wikipedia.org/wiki/The_Witcher_(video_game_series)) and [Ghost of Tsushima](https://en.wikipedia.org/wiki/Ghost_of_Tsushima)
-- The works of [Nikolai Gogol](https://en.wikipedia.org/wiki/Nikolai_Gogol), collections and novels: [Viy](https://en.wikipedia.org/wiki/Viy_(story)), [Taras Bulba](https://en.wikipedia.org/wiki/Taras_Bulba), [Dead Souls](https://en.wikipedia.org/wiki/Dead_Souls), [Evenings on a Farm Near Dikanka](https://en.wikipedia.org/wiki/Evenings_on_a_Farm_Near_Dikanka)
-- Zaporozhian Cossacks, Slavic mythology, Ukrainian demonology
+### Path Selection Concept
 
-### Authentic Cossack Culture & History
+At the start of the game, you create your hero and choose one of four factions, which shapes a unique prologue and gameplay experience:
 
-- Real events and historical figures
-- Cultural heritage, Ukrainian folklore, and Slavic mythology
-- Secrets of Cossack life and their struggle for freedom
-- Conveying a rich palette of human emotions, from triumph to tragedy
-
-### Open World Environment
-
-- Endless expanses of the Zaporozhian Sich and landscapes of Ukraine in the 16th — 18th centuries
-- Hidden settlements, majestic ruins, and other interesting locations
-- Exciting quests that will take you on an unforgettable journey through Ukrainian labyrinths and reveal the secrets of history
-
-## Conclusion
-
-Combining real facts and events with mysticism and humor, and involving a creative team of talented developers will all be the key to creating a strong new generation of Cossacks game series.
-
-My vision allows me to create beauty from untold stories. New ideas that can be turned into world-class masterpieces.
-
-That’s why I’m seeking support and help to bring this project to life, which will help to reveal the Cossacks from a new perspective and give a big impetus to similar projects of untouched history that strives to be released, as well as my desire and vision of the whole picture. All we need is a close-knit team and resources for implementation. And then words will turn into reality!
+- Cossack Legion — A martial brotherhood with nanotechnological weapons and diplomatic ties.
+- Vikings of a New Era — Warrior clans who have combined runic knowledge with cybernetic technologies.
+- Maya-Fusion — Tribes living in harmony with nature, using biotechnologies and solar energy.
+- African Tribes — Refugees who have preserved their unique mythology and culture while integrating into new alliances.

@@ -1,13 +1,8 @@
 export const urlTelegram = 'https://t.me/olexander_tsiomakh';
-
 export const urlLinkedIn = 'https://www.linkedin.com/in/olexander';
-
 export const urlGitHub = 'https://github.com/buhowski';
-
 export const urlEmail = 'olexander.tsiomakh@gmail.com';
-
 export const urlCoindrop = 'https://coindrop.to/buhowski';
-
 export const urlInstagram = 'https://www.instagram.com/buhowski';
 
 // All Pages Path
@@ -26,6 +21,9 @@ export const pathToPodcastShow = '/podcast-show';
 
 // Games
 export const pathToCossackSaga = '/cossack-saga';
+export const pathToCossackSagaPart1 = '/whispers-of-the-forgotten';
+export const pathToCossackSagaPart2 = '/ashes-of-the-beloved';
+export const pathToCossackSagaPart3 = '/quantum-leap';
 
 // Separate Projects presentation URLs
 export const startupsNav = [
