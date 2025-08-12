@@ -4,13 +4,15 @@
 
 ## Logline
 
-A traveler with no memory stumbles upon a conspiracy of the priesthood and learns that dark forces are battling inside him due to an incomplete demonic baptism. At the same time, the clergymen, who are themselves under demonic control, seek to seize the entire world.
+A traveler with no memory stumbles upon a clerical conspiracy and learns that dark forces are battling inside him due to an incomplete demonic baptism. At the same time, the clergymen, who are themselves under demonic control, seek to seize the entire world.
 
 ## Main Idea
 
 The main protagonist, a mysterious figure with a tragic past, travels from town to town, trying to unravel the mystical secrets of his own destiny. He has no recollection of the events from 20 years ago that led to his current state, but he accidentally finds himself at the center of a dark clerical conspiracy and uncovers the truth of his origin, forbidden secrets, and who is truly behind it all. After what he sees, he realizes there's no way out alive.
 
-Gradually, through a series of flashbacks from his childhood, the hero uncovers the essence of the religious demonism that hides behind church authority. His memories take him back to horrific events — murders, violence, the loss of a loved one — that are key to understanding his inner struggle. His otherworldly powers are a consequence of a partial demonic baptism that was interrupted in his childhood, granting him unique abilities but not fully possessing him.
+Gradually, through a series of playable flashbacks from his childhood, the hero uncovers the essence of the religious demonism that hides behind church authority. His memories take him back to horrific events—murders, violence, the loss of a loved one—that are the key to understanding his inner struggle. His otherworldly powers are a consequence of a partial demonic baptism that was interrupted in his childhood, granting him unique abilities but not fully possessing him.
+
+The hero's goal is to find help to unravel the mysteries of the rituals and to confront the internal struggle between good and evil. He must learn to control his powers, regain his lost memories, which will be the key to the entire story, and find a way to resist the dark invaders.
 
 The plot intertwines real historical events, mythology, demonology, and dynamic comedy. This is all presented in a melancholic, dark atmosphere of a forgotten era, filled with mysticism and personal drama. The game also touches upon alternative historical timelines, questioning established narratives, particularly the true motives behind the Baptism of Kyivan Rus' and religion itself.
 
@@ -54,3 +56,7 @@ To popularize a new, deeper vision of this period through diverse Cossack charac
 This is a desire to combine real historical facts with mysticism and humor to create a powerful new-generation game series about the Cossacks. My vision makes it possible to bring untold stories to life and create new ideas that can become worldwide masterpieces.
 
 I am looking for support and a team to realize this project, which will reveal the Cossacks from a new perspective, inspire the exploration of untouched history, and enable the creation of boundless alternative worlds. All that's needed is a united team and resources — and words will become reality.
+
+## More Details
+
+*Under Constructions…*
