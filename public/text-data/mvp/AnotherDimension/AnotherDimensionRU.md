@@ -1,3 +1,5 @@
+#### Magazine / Strategy
+
 # Another Dimension
 
 ***Status:** В поисках безумных гениев*

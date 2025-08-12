@@ -280,6 +280,26 @@
 				padding: 11px 3px 9px;
 			}
 
+			&.sub-active {
+				position: relative;
+
+				&::before {
+					content: '';
+					display: block;
+					position: absolute;
+					bottom: 0;
+					left: 50%;
+					transform: translateX(-50%);
+					width: 18%;
+					height: 3px;
+					background-color: rgba($color: $blue-main, $alpha: 0.8);
+					border-radius: 10px;
+					// border-left: 7px solid transparent;
+					// border-right: 7px solid transparent;
+					// border-top: 8px solid rgba($blue-main, 0.9);
+				}
+			}
+
 			&.active {
 				font-size: 17px;
 				font-family: $LouisGeorgeCafBold;
@@ -725,18 +745,17 @@
 	}
 
 	&:hover {
-		color: $blue-main;
-
 		.video-preview__title {
-			box-shadow: inset 0 -60px 100px rgba($color: $black, $alpha: 1);
+			box-shadow: inset 0 -90px 90px rgba($color: $black, $alpha: 1);
 		}
 
 		img {
-			transform: scale(1.2);
+			transform: scale(1.1);
 		}
 
 		svg {
-			transform: translate(-50%, -50%) scale(1.3);
+			color: $blue-main;
+			transform: translate(-50%, -50%) scale(1.2);
 		}
 	}
 
@@ -745,8 +764,8 @@
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%) scale(1);
-		width: 90px;
-		height: 90px;
+		width: 80px;
+		height: 80px;
 		border-radius: 50%;
 		background-color: rgba($color: $black, $alpha: 0.7);
 		transition: 0.3s ease-out;
@@ -767,7 +786,7 @@
 		width: 100%;
 		height: 100%;
 		padding: 20px;
-		box-shadow: inset 0 -150px 110px rgba($color: $black, $alpha: 0.8);
+		box-shadow: inset 0 -140px 120px rgba($color: $black, $alpha: 0.8);
 		transition: 0.3s ease-out;
 		font-size: 14px;
 

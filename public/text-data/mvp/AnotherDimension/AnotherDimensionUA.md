@@ -1,3 +1,5 @@
+#### Magazine / Strategy
+
 # Another Dimension
 
 ***Status:** У пошуках божевільних геніїв*

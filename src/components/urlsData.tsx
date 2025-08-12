@@ -29,7 +29,7 @@ export const pathToCossackSagaPart3 = '/quantum-leap';
 export const startupsNav = [
 	{
 		pageLink: pathToStartup,
-		pageName: `Startup`,
+		pageName: `Vision`,
 	},
 	{
 		pageLink: pathToStartupFilms,

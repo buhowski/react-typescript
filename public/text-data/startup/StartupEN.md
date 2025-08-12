@@ -1,3 +1,5 @@
+#### Business Plan
+
 # Presentation
 
 ## Preface
@@ -111,7 +113,7 @@ This modular approach allows for combining various formats, ensuring deep engage
 
 ## Details
 
-Strategy implementation is divided into separate projects. Details here: [Another Dimension](/mvp).
+Strategy implementation is divided into separate projects. Details here: [MVP: Another Dimension](/mvp).
 
 Key industry products are presented as individual scenarios. Presentations here: [Films](/films), [Video Games](/games).
 
