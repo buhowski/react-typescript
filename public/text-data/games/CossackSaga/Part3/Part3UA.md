@@ -1,3 +1,5 @@
+#### Video Game
+
 # Тіні Запорозької Січі: Квантовий Стрибок
 
 ***Сага:** Частина ІII*
@@ -37,4 +39,4 @@
 
 ## More Details
 
-*Under Constructions…*
+*Under Construction ...*

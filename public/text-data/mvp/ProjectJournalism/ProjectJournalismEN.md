@@ -1,6 +1,6 @@
 # Project "Journalism"
 
-***Status:**  Under construction …*
+***Status:**  Under Construction ...*
 
 ## Content Philosophy
 

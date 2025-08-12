@@ -1,3 +1,5 @@
+#### Video Game
+
 # Shadows of the Zaporozhian Sich: Whispers of the Forgotten
 
 ***A Saga:** Part I*
@@ -59,4 +61,4 @@ I am looking for support and a team to realize this project, which will reveal t
 
 ## More Details
 
-*Under Constructions…*
+*Under Construction ...*

@@ -18,7 +18,7 @@ Project presentations are available in the navigation. Below is the logic behind
 
 We see a world where the system is built to constantly generate problems — because it simply can’t exist without them. Bureaucracy interferes with every part of our lives because that’s its direct purpose. Politics has legalized mass murder, and some states still haven’t grasped what Orwell was really trying to say.
 
-The truth is, most people on this planet live below an average standard. And this structure of the world — this way of living — doesn’t work for everyone. Especially not for those who consciously want a family but are surrounded by an unpredictably hostile environment. There are also those who were born "by default", whose desires and goals clash with their opportunities and the basic rules they’re given. And that’s where things start to get interesting…
+The truth is, most people on this planet live below an average standard. And this structure of the world — this way of living — doesn’t work for everyone. Especially not for those who consciously want a family but are surrounded by an unpredictably hostile environment. There are also those who were born "by default", whose desires and goals clash with their opportunities and the basic rules they’re given. And that’s where things start to get interesting...
 
 ### The Solution
 

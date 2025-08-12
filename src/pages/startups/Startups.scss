@@ -95,8 +95,8 @@
 	font-family: $LouisGeorgeCafBold;
 	font-size: 15px;
 	letter-spacing: 1.2px;
-	color: #95a9a7;
-	padding: 10px 10px 10px 0;
+	color: #a195a9;
+	padding: 0 10px 10px 0;
 	margin-bottom: 15px;
 	transition: 0.25s;
 	display: inline-flex;
@@ -107,7 +107,7 @@
 		color: $starYellow;
 
 		mark {
-			transform: translateX(-6px);
+			transform: translateX(-8px);
 		}
 	}
 
@@ -124,9 +124,10 @@
 	}
 
 	@include mobile {
-		top: -1px;
+		top: -2.5px;
 		padding-left: 15px;
 		padding-right: 16px;
+		padding-top: 8px;
 		border-radius: 0 10px 10px 0;
 
 		span {

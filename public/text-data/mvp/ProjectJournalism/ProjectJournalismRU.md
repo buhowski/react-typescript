@@ -1,6 +1,6 @@
 # Проект "Журналистика"
 
-***Status:**  Under construction …*
+***Status:**  Under Construction ...*
 
 ## Философия контента
 

@@ -76,7 +76,7 @@ Danger Zone — unpredictably horrible humor.
 - "Podcast-show-Field-of-Miracles", guest sector on the wheel! Reveal the guest! We open an ironic portrait on a stand and wheel it in
 - Joke about banning stuff: "What is this — Nazi Germany?"
 - Worst case — we just fuck around. Best case — two people will watch it
-- Give me five years and Apple will personally call me asking: "Give us a ten," and I’ll say: "Granny’s deaf, was it nine or ten?" … And give ‘em ten years in jail!
+- Give me five years and Apple will personally call me asking: "Give us a ten," and I’ll say: "Granny’s deaf, was it nine or ten?" ... And give ‘em ten years in jail!
 - If someone’s a nobody — label them absurdly: "Expert in sticks and shit," "some guy from the hill," "a fictional real person," "beachside bum"
 - Argument closer: "A guy from the hill — cause it sees the world better"
 - "So you’re in IT?" — "Nah, IT people are like gods, I’m more of a high-functioning organism"
@@ -87,7 +87,7 @@ Right before the greeting, we begin immediately with:
 
 (calm, detached voice):
 
-— Freakshow... fuck-ups... evolutionary leftovers... cracks on the nutsack of the collective unconscious... crusty textbook whores stuck in 2007…
+— Freakshow... fuck-ups... evolutionary leftovers... cracks on the nutsack of the collective unconscious... crusty textbook whores stuck in 2007...
 
 (interrupts second host, same tone):
 

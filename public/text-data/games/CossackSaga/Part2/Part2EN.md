@@ -1,3 +1,5 @@
+#### Video Game
+
 # Shadows of the Zaporozhian Sich: Ashes of the Beloved
 
 ***A Saga:** Part II*
@@ -20,4 +22,4 @@ Or chaos will take over the world, and the demons will be proven right that a wo
 
 ## More Details
 
-*Under Constructions…*
+*Under Construction ...*

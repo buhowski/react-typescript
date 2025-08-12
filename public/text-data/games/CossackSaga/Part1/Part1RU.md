@@ -1,3 +1,5 @@
+#### Video Game
+
 # Тени Запорожской Сечи: Шепот Забытых
 
 ***Сага:** Часть I*
@@ -59,4 +61,4 @@
 
 ## More Details
 
-*Under Constructions…*
+*Under Construction ...*

@@ -1,3 +1,5 @@
+#### Video Game
+
 # **Shadows of the Zaporozhian Sich: Quantum Leap**
 
 ***A Saga:** Part III*
@@ -37,4 +39,4 @@ At the beginning of the game, you create your hero and choose a faction, which s
 
 ## More Details
 
-*Under Constructions…*
+*Under Construction ...*

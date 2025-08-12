@@ -1,3 +1,5 @@
+#### Video Game
+
 # Тени Запорожской Сечи: Квантовый Скачок
 
 ***Сага:** Часть III*
@@ -37,4 +39,4 @@
 
 ## More Details
 
-*Under Constructions…*
+*Under Construction ...*
