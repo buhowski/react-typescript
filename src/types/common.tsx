@@ -60,6 +60,7 @@ export interface LanguageSwitcherProps {
 // PageStructure component Props
 export interface PageProps {
 	textData: Record<LanguageCode, TextDataItem[]>;
+	backButton?: string;
 }
 
 // PitchContainer component Props

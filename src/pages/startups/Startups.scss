@@ -22,16 +22,6 @@
 	}
 }
 
-.addToHome {
-	button {
-		background: #fff;
-		padding: 20px;
-		position: fixed;
-		right: 20px;
-		bottom: 20px;
-	}
-}
-
 .idea-contacts {
 	display: inline-block;
 	margin: min(8vh, 80px) auto 0;
@@ -98,6 +88,57 @@
 		width: 100%;
 		border-radius: 0;
 		box-shadow: none;
+	}
+}
+
+.idea-back {
+	font-family: $LouisGeorgeCafBold;
+	font-size: 15px;
+	letter-spacing: 1.2px;
+	color: #95a9a7;
+	padding: 10px 10px 10px 0;
+	margin-bottom: 15px;
+	transition: 0.25s;
+	display: inline-flex;
+	align-items: center;
+	gap: 5px;
+
+	&:hover {
+		color: $starYellow;
+
+		mark {
+			transform: translateX(-6px);
+		}
+	}
+
+	@include tabletBig {
+		position: absolute;
+		left: 0;
+		top: 0;
+		padding: 7px 20px 7px 40px;
+		font-size: 13px;
+		line-height: 1.2;
+		background-color: #000;
+		border-radius: 20px 0 10px 0;
+		box-shadow: 0 0 5px #000;
+	}
+
+	@include mobile {
+		top: -1px;
+		padding-left: 15px;
+		padding-right: 16px;
+		border-radius: 0 10px 10px 0;
+
+		span {
+			display: none;
+		}
+	}
+
+	mark {
+		transition: 0.25s;
+		font-size: 18px;
+		line-height: 1;
+		display: inline-block;
 	}
 }
 

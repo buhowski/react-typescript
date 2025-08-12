@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useMemo, useCallback, useRef } from 'react';
+import { NavLink } from 'react-router-dom';
 import { startupsMetaTags } from '../../../components/metaTags';
 import { useTabletLargeQuery } from '../../../config/useMediaQuery';
 import { LANGUAGES, getInitialLanguage } from '../helpers/languageHelpers';
@@ -17,7 +18,7 @@ import TableOfContent from './TableOfContent';
 
 import '../Startups.scss';
 
-const PageStructure: React.FC<PageProps> = ({ textData }) => {
+const PageStructure: React.FC<PageProps> = ({ textData, backButton }) => {
 	const useTabletLarge = useTabletLargeQuery();
 	const [currentLang, setCurrentLang] = useState(LANGUAGES[0]);
 	const [initialLangReady, setInitialLangReady] = useState(false);
@@ -153,6 +154,13 @@ const PageStructure: React.FC<PageProps> = ({ textData }) => {
 			<div className='wrapper wrapper--idea'>
 				<div className='idea-section'>
 					<div className='idea-info'>
+						{/* TODO: smth better like breadcrumbs / back navigation */}
+						{backButton && (
+							<NavLink to={backButton} className='idea-back'>
+								<mark>←</mark> <span>Back</span>
+							</NavLink>
+						)}
+
 						{initialLangReady &&
 							contentToRender.map((structure, index) => {
 								const fallbackFilmsPreview = textData.en?.[index]?.filmsPreviewUrl;
