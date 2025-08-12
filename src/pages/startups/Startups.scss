@@ -124,8 +124,8 @@
 	}
 
 	@include mobile {
-		top: -6.5px;
-		padding: 8px 16px 7px 15px;
+		top: -6px;
+		padding: 8px 17px 7px 15px;
 		border-radius: 0 10px 10px 0;
 
 		span {
@@ -140,7 +140,7 @@
 		display: inline-block;
 
 		@include mobile {
-			font-size: 26px;
+			font-size: 25px;
 		}
 	}
 }
@@ -257,7 +257,7 @@
 
 		@include tabletBig {
 			max-width: 777px;
-			margin: 30px auto 70px;
+			margin: 25px auto 70px;
 			text-align: center;
 			border-radius: 10px;
 			box-shadow: 0 0 5px rgba($color: $black, $alpha: 1);
