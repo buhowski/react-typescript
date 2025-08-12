@@ -115,19 +115,17 @@
 		position: absolute;
 		left: 0;
 		top: 0;
-		padding: 7px 20px 7px 40px;
+		padding: 10px 25px 10px 40px;
 		font-size: 13px;
 		line-height: 1.2;
 		background-color: #000;
 		border-radius: 20px 0 10px 0;
-		box-shadow: 0 0 5px #000;
+		box-shadow: 0 0 4px #000;
 	}
 
 	@include mobile {
-		top: -2.5px;
-		padding-left: 15px;
-		padding-right: 16px;
-		padding-top: 8px;
+		top: -6px;
+		padding: 8px 18px 7px 15px;
 		border-radius: 0 10px 10px 0;
 
 		span {
@@ -140,6 +138,10 @@
 		font-size: 18px;
 		line-height: 1;
 		display: inline-block;
+
+		@include mobile {
+			font-size: 25px;
+		}
 	}
 }
 
@@ -149,7 +151,7 @@
 	position: relative;
 
 	@include tabletBig {
-		padding-top: 80px;
+		padding-top: 90px;
 		height: auto;
 		width: 100%;
 		flex-shrink: unset;
@@ -212,7 +214,7 @@
 		.idea-tabs--urls {
 			min-width: 100%;
 			border-radius: 0;
-			box-shadow: 0 3px 10px rgba($color: $black, $alpha: 1);
+			box-shadow: 0 4px 12px rgba($color: $black, $alpha: 1);
 
 			@include tabletBig {
 				border-radius: 0;
@@ -255,7 +257,7 @@
 
 		@include tabletBig {
 			max-width: 777px;
-			margin: 25px auto 55px;
+			margin: 25px auto 60px;
 			text-align: center;
 			border-radius: 10px;
 			box-shadow: 0 0 5px rgba($color: $black, $alpha: 1);
@@ -290,9 +292,9 @@
 					bottom: 0;
 					left: 50%;
 					transform: translateX(-50%);
-					width: 18%;
+					width: 25%;
 					height: 3px;
-					background-color: rgba($color: $blue-main, $alpha: 0.8);
+					background-color: rgba($color: $blue-main, $alpha: 0.9);
 					border-radius: 10px;
 					// border-left: 7px solid transparent;
 					// border-right: 7px solid transparent;
@@ -354,6 +356,7 @@
 		}
 	}
 
+	// .idea-tabs__btn
 	&__btn {
 		background: $black;
 		color: $snow;
@@ -364,7 +367,7 @@
 		@include tabletBig {
 			width: 100%;
 			flex-grow: 1;
-			padding: 7px 20px;
+			padding: 8px 18px;
 		}
 
 		&.active {
