@@ -98,15 +98,15 @@
 	color: #a195a9;
 	padding: 0 10px 10px 0;
 	margin-bottom: 15px;
-	transition: 0.25s;
 	display: inline-flex;
 	align-items: center;
-	gap: 5px;
+	line-height: 1.2;
+	gap: 7px;
 
 	&:hover {
 		color: $starYellow;
 
-		mark {
+		svg {
 			transform: translateX(-8px);
 		}
 	}
@@ -117,30 +117,36 @@
 		top: 0;
 		padding: 10px 25px 10px 40px;
 		font-size: 13px;
-		line-height: 1.2;
 		background-color: #000;
 		border-radius: 20px 0 10px 0;
 		box-shadow: 0 0 4px #000;
 	}
 
 	@include mobile {
-		top: -6px;
-		padding: 8px 16px 7px 15px;
+		top: -5.5px;
+		padding: 9px 17px 9px 15px;
 		border-radius: 0 10px 10px 0;
+		line-height: 1;
 
 		span {
 			display: none;
 		}
 	}
 
-	mark {
+	span,
+	svg {
 		transition: 0.25s;
-		font-size: 18px;
-		line-height: 1;
-		display: inline-block;
+	}
 
+	svg {
+		width: 18px;
+		fill: currentColor;
+
+		@include tabletBig {
+			width: 16px;
+		}
 		@include mobile {
-			font-size: 25px;
+			width: 22px;
 		}
 	}
 }
