@@ -10,7 +10,7 @@ A century after the world abandoned religion and transformed magic into technolo
 
 ## Main Idea
 
-The introduction to Part III begins with a series of dynamic cinematics that briefly recap the key moments of previous parts and the finale of Part II, which fundamentally changed the world. This segment smoothly transitions into a montage showcasing the "Quantum Leap"—the evolution of new civilizations born on the ruins of the old world.
+The introduction to Part III begins with a series of dynamic cinematics that briefly recap the key moments of previous parts and the finale of Part II, which fundamentally changed the world. This segment smoothly transitions into a montage showcasing the "Quantum Leap" — the evolution of new civilizations born on the ruins of the old world.
 
 A century after the demonic evil was destroyed and humanity rejected religion, it directed the remnants of magical energy toward the development of technology. This led to an extraordinary evolutionary leap that completely changed our known history, creating a world where technology and ancient cultures intertwined. The foundation of the new society became self-belief, family development, collective effort, and mutual assistance.
 

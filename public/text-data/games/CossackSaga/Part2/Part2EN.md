@@ -18,7 +18,7 @@ This realization compels her to embark on a bloody journey. She is ready to pay 
 
 At the end of this journey, a final battle awaits us, and her ultimate goal is not only the resurrection and destruction of the chief demon but also to put an end to the false religion from which it all began, instilling new knowledge into a world that will allow it to develop freely without obsession, idolatry, or control.
 
-Or chaos will take over the world, and the demons will be proven right that a world more comfortable with being a herd is incorrigible. In such a case, the choice could lead to total defeat and release all the evil from the otherworld. Now, the line between good and evil becomes blurred—only the consequences of our actions remain. The decisions are in our hands, and are good and evil just synonyms?
+Or chaos will take over the world, and the demons will be proven right that a world more comfortable with being a herd is incorrigible. In such a case, the choice could lead to total defeat and release all the evil from the otherworld. Now, the line between good and evil becomes blurred — only the consequences of our actions remain. The decisions are in our hands, and are good and evil just synonyms?
 
 ## More Details
 
