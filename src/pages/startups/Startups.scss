@@ -96,7 +96,7 @@
 	position: relative;
 
 	@include tabletBig {
-		padding-top: 60px;
+		padding-top: 66px;
 		height: auto;
 		width: 100%;
 		flex-shrink: unset;
@@ -388,7 +388,7 @@ $bg-active-lang: #4f4564;
 	}
 
 	@include mobile {
-		margin: 44px auto 40px;
+		margin: 26px auto 46px;
 	}
 
 	&__btn {
