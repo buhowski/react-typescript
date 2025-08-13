@@ -153,13 +153,13 @@
 .idea-back {
 	font-family: $LouisGeorgeCafBold;
 	font-size: 15px;
-	letter-spacing: 1.2px;
+	letter-spacing: 1.4px;
 	color: $toc-title-color;
 	padding: 10px 10px 10px 0;
 	display: inline-flex;
 	align-items: center;
 	line-height: 1.2;
-	gap: 7px;
+	gap: 10px;
 	position: absolute;
 	top: -10px;
 	z-index: 100;
@@ -187,7 +187,8 @@
 		top: auto;
 		bottom: 15px;
 		left: 0;
-		padding: 9px 30px 9px 26px;
+		padding: 13px 15px;
+		padding-right: 16px;
 		border-radius: 0 10px 10px 0;
 		margin: 0;
 		background-color: #000;
@@ -196,11 +197,6 @@
 		span {
 			display: none;
 		}
-	}
-
-	@include mobile {
-		padding-left: 15px;
-		padding-right: 19px;
 	}
 
 	+ * {
@@ -213,11 +209,11 @@
 	}
 
 	svg {
-		width: 18px;
+		width: 16px;
 		fill: currentColor;
 
 		@include tabletBig {
-			width: 26px;
+			width: 24px;
 		}
 	}
 }
@@ -376,9 +372,15 @@
 		}
 
 		.idea-tabs__btn {
+			color: $subtitle-color;
+
 			&:not(.active):hover {
 				text-shadow: 0 0 0.7px $blue-main, 0 0 0.7px $blue-main;
 				color: $blue-main;
+			}
+
+			&.active {
+				text-shadow: none;
 			}
 		}
 	}
@@ -399,7 +401,7 @@
 
 		&.active {
 			background: $blue-main;
-			text-shadow: 0 0 0.7px $snow;
+			text-shadow: 0 0 0.6px $snow;
 			color: $snow;
 			box-shadow: inset 23px 23px 46px #004d96, inset -23px -23px 46px #006bd0;
 		}
@@ -769,6 +771,7 @@
 	justify-content: center;
 	background-color: $black;
 	cursor: pointer;
+	color: rgba($textGrey, 0.8);
 
 	&.disabled {
 		display: none;
@@ -815,7 +818,7 @@
 		width: 100%;
 		height: 100%;
 		padding: 20px;
-		box-shadow: inset 0 -140px 120px rgba($color: $black, $alpha: 0.8);
+		box-shadow: inset 0 -120px 120px rgba($color: $black, $alpha: 0.8);
 		transition: 0.3s ease-out;
 		font-size: 14px;
 

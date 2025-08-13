@@ -53,9 +53,9 @@ const VideoPreview: React.FC<VideoPreviewProps> = ({
 	<div className='video-preview' onClick={onClick}>
 		{itemPoster && <img src={itemPoster} alt={itemAlt} />}
 
-		{playIcon}
-
 		<p className='video-preview__title'>{itemCaption}</p>
+
+		{playIcon}
 	</div>
 );
 
