@@ -85,6 +85,9 @@ const App = () => {
 									element={pageComponent}
 								/>
 							))}
+
+							{/* catch-all 404 route and redirect here */}
+							<Route path='*' element={<Startup />} />
 						</Routes>
 					</div>
 				</div>

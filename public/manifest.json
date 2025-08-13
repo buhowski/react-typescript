@@ -1,6 +1,6 @@
 {
-	"short_name": "The Corp .!.",
-	"name": "The Corp .!.",
+	"short_name": "Another Dimension",
+	"name": "Another Dimension",
 	"icons": [
 		{
 			"src": "fav.ico",
@@ -23,18 +23,13 @@
 			"type": "image/png"
 		},
 		{
-			"src": "logo.svg",
-			"sizes": "1024x1024",
-			"type": "image/svg+xml"
-		},
-		{
 			"src": "logoMaskable.png",
 			"sizes": "any",
 			"type": "image/png",
 			"purpose": "maskable"
 		}
 	],
-	"start_url": "/mvp",
+	"start_url": "/startup",
 	"display_override": ["standalone"],
 	"display": "standalone",
 	"theme_color": "#202020",
