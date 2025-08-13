@@ -1,28 +1,37 @@
-import React from 'react';
+import React, { useLayoutEffect, useRef } from 'react';
 import { LanguageSwitcherProps } from '../../../types/common';
 
-// Wrap the component with React.memo
-const LanguageSwitcher: React.FC<LanguageSwitcherProps> = React.memo(
-	({ currentLang, availableLangs, changeLanguage }) => {
-		// Define the fixed list of all languages once within the component's scope
-		// or even outside if it's truly static and not dependent on props.
-		const allLanguages = ['en', 'ua', 'ru'] as const;
+const LANGS = ['en', 'ua', 'ru'] as const;
 
-		return (
-			<div className='idea-tabs idea-tabs--lang'>
-				{allLanguages.map((lang) => (
-					<button
-						key={lang}
-						onClick={() => changeLanguage(lang)}
-						className={`idea-tabs__btn lang-btn ${currentLang === lang ? 'active' : ''}`}
-						disabled={!availableLangs.includes(lang)}
-					>
-						{lang.toUpperCase()}
-					</button>
-				))}
-			</div>
-		);
-	}
-);
+const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
+	currentLang,
+	availableLangs,
+	changeLanguage,
+}) => {
+	const containerRef = useRef<HTMLDivElement>(null);
+
+	useLayoutEffect(() => {
+		const activeBtn = containerRef.current?.querySelector<HTMLElement>('.idea-lang__btn.active');
+
+		if (activeBtn && containerRef.current) {
+			containerRef.current.style.setProperty('--indicator-left', `${activeBtn.offsetLeft}px`);
+			containerRef.current.style.setProperty('--indicator-width', `${activeBtn.offsetWidth}px`);
+		}
+	}, [currentLang]);
+
+	return (
+		<div className='idea-lang' ref={containerRef}>
+			{LANGS.filter((lang) => availableLangs.includes(lang)).map((lang) => (
+				<button
+					key={lang}
+					onClick={() => changeLanguage(lang)}
+					className={`idea-lang__btn ${currentLang === lang ? 'active' : ''}`}
+				>
+					{lang.toUpperCase()}
+				</button>
+			))}
+		</div>
+	);
+};
 
 export default LanguageSwitcher;

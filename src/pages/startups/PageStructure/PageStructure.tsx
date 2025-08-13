@@ -147,6 +147,12 @@ const PageStructure: React.FC<PageProps> = ({ textData, backButton }) => {
 		<VideoPlaybackProvider>
 			<PageHelmet metaTags={startupsMetaTags} />
 
+			<LanguageSwitcher
+				currentLang={currentLang}
+				availableLangs={availableLangs}
+				changeLanguage={changeLanguage}
+			/>
+
 			<div className={`startup-action ${isActive ? 'is-active' : ''}`}>
 				<StartupNavigation />
 			</div>
@@ -201,12 +207,6 @@ const PageStructure: React.FC<PageProps> = ({ textData, backButton }) => {
 					</div>
 
 					<div className={`lang-sidebar ${'lang-sidebar--has-toc'}`}>
-						<LanguageSwitcher
-							currentLang={currentLang}
-							availableLangs={availableLangs}
-							changeLanguage={changeLanguage}
-						/>
-
 						<TableOfContent
 							activeHeadingId={activeHeadingId}
 							onSelectIndex={handleTableOfContentSelect}

@@ -80,11 +80,10 @@
 		max-width: 777px;
 		width: calc(100% - 80px);
 		margin: 0 auto;
-		padding: 0 0 110px;
+		padding: 0 0 90px;
 	}
 
 	@include mobile {
-		// padding-bottom: 60px;
 		width: 100%;
 		border-radius: 0;
 		box-shadow: none;
@@ -97,7 +96,7 @@
 	position: relative;
 
 	@include tabletBig {
-		padding-top: 100px;
+		padding-top: 60px;
 		height: auto;
 		width: 100%;
 		flex-shrink: unset;
@@ -271,7 +270,7 @@
 		border-radius: 20px;
 		box-shadow: 0 1px 10px rgba($color: $black, $alpha: 1);
 		letter-spacing: 0;
-		margin: 50px auto;
+		margin: 0 auto 50px;
 		display: flex;
 		justify-content: center;
 		background-color: $black;
@@ -280,15 +279,15 @@
 
 		@include tabletBig {
 			max-width: 777px;
-			margin: 25px auto 70px;
+			margin-bottom: 45px;
 			text-align: center;
-			border-radius: 10px;
 			box-shadow: 0 0 5px rgba($color: $black, $alpha: 1);
 			width: calc(100% - 80px);
 		}
 
 		@include mobile {
 			width: calc(100% - 30px);
+			margin-bottom: 0;
 		}
 
 		.idea-tabs__btn {
@@ -302,7 +301,7 @@
 
 			@include tabletBig {
 				font-size: 14px;
-				padding: 11px 3px 9px;
+				padding: 12px 3px 10px;
 			}
 
 			&.sub-active {
@@ -342,53 +341,11 @@
 		}
 	}
 
-	// .idea-tabs--lang
-	&--lang {
-		font-size: 13px;
-		box-shadow: 0 0 10px rgba($color: $black, $alpha: 1);
-		border-radius: 10px 0 0 10px;
-		overflow: hidden;
-		font-family: $LouisGeorgeCafBold;
-		position: absolute;
-		left: 0;
-		top: 0;
-		transform: translateX(-100%);
-		flex-direction: column;
-
-		@include tabletBig {
-			transform: translateX(-50%);
-			left: 50%;
-			border-radius: 0 0 10px 10px;
-			margin-bottom: 0;
-			width: max-content;
-			box-shadow: 0 1px 8px rgba($color: $black, $alpha: 1);
-			flex-direction: row;
-		}
-
-		@include mobile {
-			box-shadow: 0 0 5px rgba($color: $black, $alpha: 1);
-			margin-right: -15px;
-			border-radius: 10px;
-		}
-
-		.idea-tabs__btn {
-			color: $subtitle-color;
-
-			&:not(.active):hover {
-				color: #ffffff;
-			}
-
-			&.active {
-				text-shadow: none;
-			}
-		}
-	}
-
 	// .idea-tabs__btn
 	&__btn {
 		background: $black;
 		color: $snow;
-		padding: 14px 9px;
+		padding: 10px 15px;
 		text-transform: uppercase;
 		line-height: normal;
 
@@ -407,24 +364,71 @@
 	}
 }
 
-.headline-types {
-	// .headline-types__title
-	&__title {
-		font-size: 14px;
-		font-weight: 300;
-		color: #ffffff;
+$radius-lang: 100px;
+$bg-color-lang: #9d9999;
+$bg-active-lang: #4f4564;
 
-		&:not(:first-of-type) {
-			margin-top: 10px;
+.idea-lang {
+	width: max-content;
+	display: flex;
+	font-family: $font-primary;
+	background-color: $bg-color-lang;
+	margin: 60px auto 40px;
+	font-size: 13px;
+	border-radius: $radius-lang;
+	position: relative;
+	z-index: 5;
+	overflow: hidden;
+	border: 2px solid $bg-color-lang;
+	gap: 2px;
+	box-shadow: 0 0 10px #000;
+
+	@include tabletBig {
+		margin-top: 25px;
+	}
+
+	@include mobile {
+		margin: 44px auto 40px;
+	}
+
+	&__btn {
+		border: none;
+		background: none;
+		width: 42px;
+		padding: 12px;
+		line-height: 1;
+		color: #000;
+		font-weight: bold;
+		transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+		border-radius: $radius-lang;
+
+		@media (hover: hover) and (pointer: fine) {
+			&:not(.active):hover {
+				background-color: rgba($bg-active-lang, 0.4);
+			}
 		}
 
-		// * {
-		// 	font-style: normal;
-		// }
-
-		span {
-			font-weight: bold;
+		&:active {
+			background-color: rgba($bg-active-lang, 0.4);
 		}
+
+		&.active {
+			color: #fff;
+			pointer-events: none;
+		}
+	}
+
+	&::before {
+		content: '';
+		position: absolute;
+		z-index: -1;
+		left: 0;
+		height: 100%;
+		background-color: $bg-active-lang;
+		border-radius: $radius-lang;
+		width: var(--indicator-width, 0);
+		transform: translateX(var(--indicator-left, 0));
+		transition: transform 0.3s ease-out, width 0.4s ease-out;
 	}
 }
 
@@ -575,7 +579,17 @@
 	}
 
 	p.description__has-em {
-		@extend .headline-types__title;
+		font-size: 14px;
+		font-weight: 300;
+		color: #ffffff;
+
+		&:not(:first-of-type) {
+			margin-top: 10px;
+		}
+
+		span {
+			font-weight: bold;
+		}
 	}
 
 	a {
@@ -943,12 +957,6 @@
 				transform: rotate(-135deg) translate(-2px, 2px);
 			}
 		}
-	}
-}
-
-.lang-btn {
-	&:disabled {
-		display: none;
 	}
 }
 
