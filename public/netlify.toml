@@ -1,9 +1,9 @@
 [[redirects]]
   from = "/*"
-  to = "/index.html"
-  status = 200
+  to = "/startup"
+  status = 404
 
 [[redirects]]
   from = "/*"
-  to = "/startup"
-  status = 404
+  to = "/index.html"
+  status = 200
