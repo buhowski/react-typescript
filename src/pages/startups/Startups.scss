@@ -91,66 +91,6 @@
 	}
 }
 
-.idea-back {
-	font-family: $LouisGeorgeCafBold;
-	font-size: 15px;
-	letter-spacing: 1.2px;
-	color: #a195a9;
-	padding: 0 10px 10px 0;
-	margin-bottom: 15px;
-	display: inline-flex;
-	align-items: center;
-	line-height: 1.2;
-	gap: 7px;
-
-	&:hover {
-		color: $starYellow;
-
-		svg {
-			transform: translateX(-8px);
-		}
-	}
-
-	@include tabletBig {
-		position: absolute;
-		left: 0;
-		top: 0;
-		padding: 10px 25px 10px 40px;
-		font-size: 13px;
-		background-color: #000;
-		border-radius: 20px 0 10px 0;
-		box-shadow: 0 0 4px #000;
-	}
-
-	@include mobile {
-		top: -5.5px;
-		padding: 9px 17px 9px 15px;
-		border-radius: 0 10px 10px 0;
-		line-height: 1;
-
-		span {
-			display: none;
-		}
-	}
-
-	span,
-	svg {
-		transition: 0.25s;
-	}
-
-	svg {
-		width: 18px;
-		fill: currentColor;
-
-		@include tabletBig {
-			width: 16px;
-		}
-		@include mobile {
-			width: 22px;
-		}
-	}
-}
-
 .idea-info {
 	height: 100%;
 	width: 51%;
@@ -210,6 +150,78 @@
 	}
 }
 
+.idea-back {
+	font-family: $LouisGeorgeCafBold;
+	font-size: 15px;
+	letter-spacing: 1.2px;
+	color: $toc-title-color;
+	padding: 10px 10px 10px 0;
+	display: inline-flex;
+	align-items: center;
+	line-height: 1.2;
+	gap: 7px;
+	position: absolute;
+	top: -10px;
+	z-index: 100;
+
+	@media (hover: hover) and (pointer: fine) {
+		&:hover {
+			color: white;
+
+			svg {
+				transform: translateX(-10px);
+			}
+		}
+	}
+
+	&:active {
+		color: white;
+
+		svg {
+			transform: translateX(-10px);
+		}
+	}
+
+	@include tabletBig {
+		position: fixed;
+		top: auto;
+		bottom: 15px;
+		left: 0;
+		padding: 9px 30px 9px 26px;
+		border-radius: 0 10px 10px 0;
+		margin: 0;
+		background-color: #000;
+		box-shadow: 0 0 4px #000;
+
+		span {
+			display: none;
+		}
+	}
+
+	@include mobile {
+		padding-left: 15px;
+		padding-right: 19px;
+	}
+
+	+ * {
+		padding-top: 48px;
+	}
+
+	span,
+	svg {
+		transition: 0.2s;
+	}
+
+	svg {
+		width: 18px;
+		fill: currentColor;
+
+		@include tabletBig {
+			width: 26px;
+		}
+	}
+}
+
 .startup-action {
 	position: sticky;
 	top: 0;
@@ -232,6 +244,15 @@
 				@include tabletBig {
 					position: fixed;
 					top: 30px;
+				}
+			}
+
+			.idea-back {
+				position: fixed;
+				top: 2px;
+
+				@include tabletBig {
+					top: auto;
 				}
 			}
 		}
@@ -763,8 +784,7 @@
 		}
 
 		svg {
-			color: $blue-main;
-			transform: translate(-50%, -50%) scale(1.2);
+			transform: translate(-50%, -50%) scale(1.5);
 		}
 	}
 
@@ -773,15 +793,15 @@
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%) scale(1);
-		width: 80px;
-		height: 80px;
+		width: 60px;
+		height: 60px;
 		border-radius: 50%;
 		background-color: rgba($color: $black, $alpha: 0.7);
 		transition: 0.3s ease-out;
 
 		@include tabletBig {
-			width: 60px;
-			height: 60px;
+			width: 50px;
+			height: 50px;
 		}
 	}
 
@@ -1010,7 +1030,7 @@
 
 	&:hover {
 		box-shadow: 0 0 10px rgba($color: $black, $alpha: 1);
-		color: $h1-title-color;
+		// color: $h1-title-color;
 
 		&::after {
 			opacity: 1;

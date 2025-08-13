@@ -54,15 +54,27 @@ $toc-hover-color: #fff;
 		border-radius: 10px 10px 0 0;
 		font-family: $LouisGeorgeCaf;
 		letter-spacing: 1.2px;
-		font-size: 15px;
+		font-size: 16px;
 		font-weight: 600;
-		gap: 20px;
+		gap: 22px;
 		padding: 12px 20px;
-		transition: 0.2s;
+		transition: 0.25s;
 		color: $toc-title-color;
 
-		&:hover {
-			color: $toc-hover-color;
+		@media (hover: hover) and (pointer: fine) {
+			&:hover {
+				color: $toc-hover-color;
+
+				mark span {
+					border-color: $toc-hover-color;
+				}
+			}
+		}
+
+		&:active {
+			mark span {
+				border-color: $toc-hover-color;
+			}
 		}
 
 		> h3 {
@@ -73,12 +85,13 @@ $toc-hover-color: #fff;
 			border-radius: 6px;
 			width: fit-content;
 			position: fixed;
-			bottom: 35px;
-			right: 20px;
+			bottom: 15px;
+			right: 15px;
 			z-index: 100;
 			padding: 15px 16px;
-			background: linear-gradient(130deg, #000000 0, #002840 84%);
-			box-shadow: 0 0 5px rgba(#000000, 1);
+			box-shadow: 0 0 4px #000000;
+			background-color: #000000;
+			// background: linear-gradient(130deg, #000000 0, #002840 95%);
 
 			> h3 {
 				display: none;
@@ -93,6 +106,7 @@ $toc-hover-color: #fff;
 			margin-bottom: 1px;
 
 			span {
+				transition: 0.25s;
 				border-color: $toc-title-color;
 			}
 
@@ -224,7 +238,15 @@ $toc-hover-color: #fff;
 				}
 			}
 
-			&:hover {
+			@media (hover: hover) and (pointer: fine) {
+				&:hover {
+					mark {
+						color: #fff;
+					}
+				}
+			}
+
+			&:active {
 				mark {
 					color: #fff;
 				}

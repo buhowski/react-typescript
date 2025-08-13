@@ -7,19 +7,19 @@ export const urlInstagram = 'https://www.instagram.com/buhowski';
 
 // All Pages Path
 export const pathToStartup = '/startup';
-export const pathToStartupFilms = '/films';
-export const pathToStartupGames = '/games';
 export const pathToStartupMVP = '/mvp';
 export const pathToAbout = '/about';
 export const pathToProjects = '/projects';
 
 // Films
+export const pathToStartupFilms = '/films';
 export const pathToEuropeanUkrainians = '/european-ukrainians';
 export const pathToTheCorp = '/the-corp';
 export const pathToSelfPresentation = '/self-presentation';
 export const pathToPodcastShow = '/podcast-show';
 
 // Games
+export const pathToStartupGames = '/games';
 export const pathToCossackSaga = '/cossack-saga';
 export const pathToCossackSagaPart1 = '/whispers-of-the-forgotten';
 export const pathToCossackSagaPart2 = '/ashes-of-the-beloved';
