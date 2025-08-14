@@ -240,7 +240,7 @@
 			.table-content__list {
 				@include tabletBig {
 					position: fixed;
-					top: 30px;
+					top: 37px;
 				}
 			}
 
@@ -458,7 +458,6 @@ $bg-active-lang: #4f4564;
 		}
 	}
 
-	// .idea-block__title
 	h2 {
 		@include titleFont;
 		color: $h2-title-color;
@@ -472,7 +471,6 @@ $bg-active-lang: #4f4564;
 		}
 	}
 
-	// .idea-block__subtitle
 	h3 {
 		color: $h3-title-color;
 		font-weight: 500;
@@ -524,7 +522,7 @@ $bg-active-lang: #4f4564;
 			padding-left: 26px;
 
 			@include mobile {
-				padding-left: 22px;
+				padding-left: 20px;
 			}
 
 			&::before {
@@ -816,11 +814,11 @@ $bg-active-lang: #4f4564;
 }
 
 .slides-number {
+	@include titleFont;
 	color: $blue-main;
 	margin: 0 5px;
 	min-width: 80px;
 	text-align: center;
-	@include titleFont;
 
 	@include tabletBig {
 		font-size: 14px;

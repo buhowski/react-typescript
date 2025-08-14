@@ -38,11 +38,11 @@ I've developed a strategy and project scenario: "How to create an informational 
 
 For this realization, I'm seeking investments or the opportunity to integrate these ideas into existing projects. My goal is to find a team and partners to shape the future in the following areas:
 
-- Informational-entertainment magazine
-- Next-generation independent media
+- Informational-Entertainment Magazine
+- Next-Generation Independent Media
 - Leading Film and Gaming Industry
 - Virtual Reality
-- IT sector: blockchain, artificial intelligence, neurotechnology, robotics
+- IT sector: Blockchain, Artificial Intelligence, Neurotechnology, Robotics
 
 ## Description
 
