@@ -102,6 +102,10 @@
 		flex-shrink: unset;
 		overflow: visible;
 	}
+
+	@include mobile {
+		padding-top: 50px;
+	}
 }
 
 .copy-tablet {
@@ -270,7 +274,7 @@
 		border-radius: 20px;
 		box-shadow: 0 1px 10px rgba($color: $black, $alpha: 1);
 		letter-spacing: 0;
-		margin: 0 auto 50px;
+		margin: 60px auto;
 		display: flex;
 		justify-content: center;
 		background-color: $black;
@@ -279,7 +283,7 @@
 
 		@include tabletBig {
 			max-width: 777px;
-			margin-bottom: 45px;
+			margin: 50px auto;
 			text-align: center;
 			box-shadow: 0 0 5px rgba($color: $black, $alpha: 1);
 			width: calc(100% - 80px);
@@ -287,7 +291,7 @@
 
 		@include mobile {
 			width: calc(100% - 30px);
-			margin-bottom: 0;
+			margin: 55px auto 20px;
 		}
 
 		.idea-tabs__btn {
@@ -373,7 +377,7 @@ $bg-active-lang: #4f4564;
 	display: flex;
 	font-family: $font-primary;
 	background-color: $bg-color-lang;
-	margin: 60px auto 40px;
+	margin: 60px auto 0;
 	font-size: 13px;
 	border-radius: $radius-lang;
 	position: relative;
@@ -384,18 +388,19 @@ $bg-active-lang: #4f4564;
 	box-shadow: 0 0 10px #000;
 
 	@include tabletBig {
-		margin-top: 25px;
+		margin-top: 30px;
 	}
 
 	@include mobile {
-		margin: 26px auto 46px;
+		margin: 45px auto 0;
 	}
 
+	// .idea-lang__btn
 	&__btn {
 		border: none;
 		background: none;
 		width: 42px;
-		padding: 12px;
+		padding: 13px 10px 12px;
 		line-height: 1;
 		color: #000;
 		font-weight: bold;
@@ -965,7 +970,7 @@ $bg-active-lang: #4f4564;
 	width: 49%;
 	position: sticky;
 	top: 80px;
-	margin-left: 100px;
+	margin-left: 80px;
 	z-index: 5;
 
 	@include tabletBig {
