@@ -291,7 +291,7 @@
 
 		@include mobile {
 			width: calc(100% - 30px);
-			margin: 55px auto 20px;
+			margin: 45px auto 20px;
 		}
 
 		.idea-tabs__btn {
@@ -392,7 +392,7 @@ $bg-active-lang: #4f4564;
 	}
 
 	@include mobile {
-		margin: 45px auto 0;
+		margin: 55px auto 0;
 	}
 
 	// .idea-lang__btn
