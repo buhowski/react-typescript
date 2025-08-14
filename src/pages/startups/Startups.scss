@@ -279,7 +279,7 @@
 	@include mobile {
 		width: calc(100% - 30px);
 		margin-top: 50px;
-		margin-bottom: 10px;
+		margin-bottom: 15px;
 	}
 
 	// .idea-tabs__btn
@@ -354,7 +354,7 @@ $bg-active-lang: #4f4564;
 	box-shadow: 0 0 10px #000;
 
 	@include mobile {
-		margin: 40px auto 0;
+		margin: 30px auto 0;
 	}
 
 	// .idea-lang__btn
@@ -624,7 +624,7 @@ $bg-active-lang: #4f4564;
 		overflow: hidden;
 		height: 320px;
 		background-color: $black;
-		box-shadow: 0 0 6px #000000;
+		box-shadow: 0 0 5px #000000;
 	}
 
 	@include mobile {
