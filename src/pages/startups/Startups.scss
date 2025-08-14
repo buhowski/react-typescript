@@ -273,13 +273,14 @@
 	@include tabletBig {
 		width: calc(100% - 80px);
 		max-width: 777px;
+		margin-top: 45px;
+		margin-bottom: 50px;
 		box-shadow: 0 0 5px #000000;
 	}
 
 	@include mobile {
 		width: calc(100% - 30px);
-		margin-top: 50px;
-		margin-bottom: 15px;
+		margin-bottom: 10px;
 	}
 
 	// .idea-tabs__btn
@@ -353,8 +354,12 @@ $bg-active-lang: #4f4564;
 	gap: 2px;
 	box-shadow: 0 0 10px #000;
 
+	@include tabletBig {
+		margin-top: 45px;
+	}
+
 	@include mobile {
-		margin: 30px auto 0;
+		margin: 25px auto 0;
 	}
 
 	// .idea-lang__btn
