@@ -278,7 +278,8 @@
 
 	@include mobile {
 		width: calc(100% - 30px);
-		margin-bottom: 20px;
+		margin-top: 50px;
+		margin-bottom: 10px;
 	}
 
 	// .idea-tabs__btn
@@ -294,7 +295,7 @@
 			flex-grow: 1;
 			padding: 12px 4px 10.5px;
 			font-size: 15px;
-			letter-spacing: 0.8px;
+			letter-spacing: 0.6px;
 		}
 
 		&.sub-active {
