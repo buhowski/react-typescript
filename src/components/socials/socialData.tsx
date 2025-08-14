@@ -1,6 +1,11 @@
 import { urlGitHub, urlLinkedIn, urlTelegram, urlInstagram, urlEmail } from '../urlsData';
-import { GithubIcon, LinkedInIcon, TelegramIcon, InstagramIcon, MailIcon } from './svg/icons';
-// import urlCV from '../../assets/CV_Olexander_Tsiomakh_Frontend.pdf';
+import {
+	GithubIcon,
+	LinkedInIcon,
+	TelegramIcon,
+	InstagramIcon,
+	MailIcon,
+} from '../../assets/svg/icons';
 
 interface SocialItem {
 	link: string;

@@ -15,6 +15,7 @@ import LanguageSwitcher from './LanguageSwitcher';
 import StartupNavigation from './StartupNavigation';
 import Slider from '../../../components/Slider';
 import TableOfContent from './TableOfContent';
+import { ArrowLeftIcon } from '../../../assets/svg/icons';
 
 import '../Startups.scss';
 
@@ -163,16 +164,7 @@ const PageStructure: React.FC<PageProps> = ({ textData, backButton }) => {
 						{/* TODO: smth better like breadcrumbs / back navigation */}
 						{backButton && (
 							<NavLink to={backButton} className='idea-back'>
-								<svg
-									version='1.0'
-									xmlns='http://www.w3.org/2000/svg'
-									preserveAspectRatio='xMidYMid meet'
-									viewBox='0.58 0.25 598.8 448.27'
-								>
-									<g transform='translate(0.000000,449.000000) scale(0.100000,-0.100000)'>
-										<path d='M2140 4474 c-39 -14 -188 -159 -1063 -1033 -756 -754 -1025 -1029 -1045 -1066 -23 -43 -27 -62 -26 -130 1 -52 7 -94 18 -120 13 -29 294 -316 1034 -1057 1129 -1130 1053 -1063 1192 -1062 85 1 128 16 185 65 55 49 85 119 85 200 0 133 48 77 -796 920 -420 420 -764 767 -764 771 0 4 1090 9 2423 10 l2422 3 40 22 c203 109 197 391 -10 501 l-50 27 -2415 3 -2415 2 767 768 c854 856 804 797 796 934 -6 110 -51 183 -142 230 -54 28 -173 34 -236 12z'></path>
-									</g>
-								</svg>
+								{ArrowLeftIcon}
 
 								<span>Back</span>
 							</NavLink>
