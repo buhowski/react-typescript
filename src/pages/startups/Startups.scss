@@ -283,7 +283,6 @@
 
 		@include tabletBig {
 			max-width: 777px;
-			margin: 50px auto;
 			text-align: center;
 			box-shadow: 0 0 5px rgba($color: $black, $alpha: 1);
 			width: calc(100% - 80px);
@@ -291,7 +290,7 @@
 
 		@include mobile {
 			width: calc(100% - 30px);
-			margin: 45px auto 20px;
+			margin: 55px auto 16px;
 		}
 
 		.idea-tabs__btn {
@@ -387,12 +386,8 @@ $bg-active-lang: #4f4564;
 	gap: 2px;
 	box-shadow: 0 0 10px #000;
 
-	@include tabletBig {
-		margin-top: 30px;
-	}
-
 	@include mobile {
-		margin: 55px auto 0;
+		margin: 45px auto 0;
 	}
 
 	// .idea-lang__btn
