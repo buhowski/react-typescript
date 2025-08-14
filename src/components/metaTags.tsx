@@ -1,24 +1,26 @@
 // Main Website Meta Tags
 const website = 'https://buhowski.dev/';
 
+const shortAbout = 'Explorer | Developer | Creator';
+
 const startupTitle = `Another Dimension: Magazine | Media | Films | Games | Technologies`;
 
 const defaultDescription = `Building awesome products and contributing useful solutions to the world. Based on Planet Earth, Solar System.`;
 
 const startupDescription = `Creating an informational and entertaining magazine and transforming it into a company that produces its own technologies.`;
 
-const aboutDescription = `Developer and creator crafting innovative, high-impact solutions at the intersection of technology and design.`;
+const aboutDescription = `A developer and creator who builds innovative solutions at the intersection of tech and design.`;
 
-const portfolioDescription = `Explore diverse portfolio, showcasing impactful projects developed for companies and innovative personal ventures.`;
+const portfolioDescription = `Explore portfolio, showcasing impactful projects developed for companies and innovative personal ventures.`;
 
 export const defaultMetaTags = {
-	title: `Olexander Tsiomakh: Developer | Explorer | Creator`,
+	title: `Olexander Tsiomakh: ${shortAbout}`,
 	description: defaultDescription,
 	canonicalUrl: website,
 
 	// Open Graph Meta Tags
-	ogUrl: `${website}`,
-	ogTitle: `Developer | Explorer | Creator`,
+	ogUrl: website,
+	ogTitle: shortAbout,
 	ogDescription: defaultDescription,
 	ogImage: `${website}screenshot.png`,
 };
@@ -36,13 +38,13 @@ export const startupsMetaTags = {
 };
 
 export const aboutMetaTags = {
-	title: `Olexander Tsiomakh: Explorer | Developer | Creator`,
+	title: `Olexander Tsiomakh: ${shortAbout}`,
 	description: aboutDescription,
 	canonicalUrl: `${website}about`,
 
 	// Open Graph Meta Tags
 	ogUrl: `${website}about`,
-	ogTitle: `Explorer | Developer | Creator`,
+	ogTitle: shortAbout,
 	ogDescription: aboutDescription,
 	ogImage: `${website}preview_about.jpg`,
 };

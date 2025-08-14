@@ -290,7 +290,7 @@
 
 		@include mobile {
 			width: calc(100% - 30px);
-			margin: 58px auto 16px;
+			margin: 65px auto 15px;
 		}
 
 		.idea-tabs__btn {
@@ -387,7 +387,7 @@ $bg-active-lang: #4f4564;
 	box-shadow: 0 0 10px #000;
 
 	@include mobile {
-		margin: 43px auto 0;
+		margin: 40px auto 0;
 	}
 
 	// .idea-lang__btn
@@ -399,7 +399,7 @@ $bg-active-lang: #4f4564;
 		line-height: 1;
 		color: #000;
 		font-weight: bold;
-		transition: color 0.3s, background-color 0.3s;
+		transition: color 0.26s, background-color 0.26s;
 
 		@media (hover: hover) and (pointer: fine) {
 			&:not(.active):hover {
@@ -408,7 +408,7 @@ $bg-active-lang: #4f4564;
 		}
 
 		&:active {
-			background-color: rgba($bg-active-lang, 0.4);
+			background-color: rgba($bg-active-lang, 0.45);
 		}
 
 		&.active {
@@ -427,7 +427,7 @@ $bg-active-lang: #4f4564;
 		border-radius: $radius-lang;
 		width: var(--indicator-width, 0);
 		transform: translateX(var(--indicator-left, 0));
-		transition: transform 0.3s, width 0.3s;
+		transition: transform 0.26s, width 0.26s;
 	}
 }
 
@@ -1066,5 +1066,25 @@ $bg-active-lang: #4f4564;
 			margin-top: 60px;
 			padding-top: 60px;
 		}
+	}
+}
+
+.text-loading {
+	height: 60vh;
+	padding-top: 10px;
+
+	.preloader {
+		position: static;
+		align-items: flex-start;
+	}
+
+	.preloader__spinner {
+		width: 48px;
+		height: 48px;
+	}
+
+	.preloader__spinner-span:before {
+		background-color: $toc-title-color;
+		height: 13px;
 	}
 }
