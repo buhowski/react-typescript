@@ -161,7 +161,7 @@ const PageStructure: React.FC<PageProps> = ({ textData, backButton }) => {
 			<div className='wrapper wrapper--idea'>
 				<div className='idea-section'>
 					<div className='idea-info'>
-						{/* TODO: smth better like breadcrumbs / back navigation */}
+						{/* back navigation */}
 						{backButton && (
 							<NavLink to={backButton} className='idea-back'>
 								{ArrowLeftIcon}

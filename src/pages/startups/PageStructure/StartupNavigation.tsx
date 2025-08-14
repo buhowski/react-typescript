@@ -7,7 +7,7 @@ const StartupNavigation: React.FC = () => {
 	const { pathname } = useLocation();
 
 	return (
-		<div className='idea-tabs idea-tabs--urls'>
+		<div className='idea-tabs'>
 			{startupsNav.map(({ pageLink, pageName }, index) => {
 				const isSubActive = isPathSubActive(pageLink, pathname);
 

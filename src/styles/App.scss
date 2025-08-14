@@ -40,9 +40,7 @@ $nextPageTime: 1.1s;
 	background-color: $darken;
 
 	@include tablet {
-		/* Fallback for browsers that do not support Custom Properties */
 		height: 100dvh;
-		// height: calc(var(--vh, 1vh) * 100);
 	}
 
 	&.slide-exit {

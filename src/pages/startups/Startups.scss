@@ -69,7 +69,7 @@
 	display: flex;
 	align-items: flex-start;
 	position: relative;
-	box-shadow: 0 0 15px rgba($color: $black, $alpha: 1);
+	box-shadow: 0 0 15px #000000;
 	border-radius: 20px;
 
 	@include tabletBig {
@@ -156,9 +156,10 @@
 .idea-back {
 	font-family: $LouisGeorgeCafBold;
 	font-size: 15px;
-	letter-spacing: 1.4px;
+	letter-spacing: 1.6px;
 	color: $toc-title-color;
-	padding: 10px 10px 10px 0;
+	padding: 10px;
+	padding-left: 0;
 	display: inline-flex;
 	align-items: center;
 	line-height: 1.2;
@@ -221,6 +222,7 @@
 	}
 }
 
+// StartupNavigation
 .startup-action {
 	position: sticky;
 	top: 0;
@@ -228,14 +230,10 @@
 	transition: 0.2s;
 
 	&.is-active {
-		.idea-tabs--urls {
+		.idea-tabs {
 			min-width: 100%;
 			border-radius: 0;
-			box-shadow: 0 4px 12px rgba($color: $black, $alpha: 1);
-
-			@include tabletBig {
-				border-radius: 0;
-			}
+			box-shadow: 0 3px 15px #000000;
 		}
 
 		~ .wrapper--idea {
@@ -248,7 +246,7 @@
 
 			.idea-back {
 				position: fixed;
-				top: 2px;
+				top: 4px;
 
 				@include tabletBig {
 					top: auto;
@@ -260,109 +258,77 @@
 
 .idea-tabs {
 	display: flex;
+	justify-content: center;
+	text-align: center;
+	background-color: $black;
 	width: max-content;
+	min-width: 320px;
+	white-space: nowrap;
+	margin: 60px auto;
+	border-radius: 100px;
+	box-shadow: 0 0 10px #000000;
 	overflow: hidden;
-	font-family: $LouisGeorgeCaf;
+	transition: 0.25s;
 
 	@include tabletBig {
-		width: 100%;
+		width: calc(100% - 80px);
+		max-width: 777px;
+		box-shadow: 0 0 5px #000000;
 	}
 
-	// .idea-tabs--urls
-	&--urls {
-		white-space: nowrap;
-		border-radius: 20px;
-		box-shadow: 0 1px 10px rgba($color: $black, $alpha: 1);
-		letter-spacing: 0;
-		margin: 60px auto;
-		display: flex;
-		justify-content: center;
-		background-color: $black;
-		min-width: 320px;
-		transition: 0.2s;
-
-		@include tabletBig {
-			max-width: 777px;
-			text-align: center;
-			box-shadow: 0 0 5px rgba($color: $black, $alpha: 1);
-			width: calc(100% - 80px);
-		}
-
-		@include mobile {
-			width: calc(100% - 30px);
-			margin: 65px auto 15px;
-		}
-
-		.idea-tabs__btn {
-			text-transform: none;
-			padding: 11px 40px 10px;
-			display: flex;
-			align-items: flex-end;
-			justify-content: center;
-			font-size: 16px;
-			letter-spacing: 1px;
-
-			@include tabletBig {
-				font-size: 14px;
-				padding: 12px 3px 10px;
-			}
-
-			&.sub-active {
-				position: relative;
-
-				&::before {
-					content: '';
-					display: block;
-					position: absolute;
-					bottom: 0;
-					left: 50%;
-					transform: translateX(-50%);
-					width: 25%;
-					height: 3px;
-					background-color: rgba($color: $blue-main, $alpha: 0.9);
-					border-radius: 10px;
-					// border-left: 7px solid transparent;
-					// border-right: 7px solid transparent;
-					// border-top: 8px solid rgba($blue-main, 0.9);
-				}
-			}
-
-			&.active {
-				font-size: 17px;
-				font-family: $LouisGeorgeCafBold;
-				text-transform: uppercase;
-
-				@include tabletBig {
-					font-size: 14px;
-				}
-			}
-
-			&:hover {
-				text-shadow: 0 0 0.7px $blue-main, 0 0 0.7px $blue-main;
-				color: $blue-main;
-			}
-		}
+	@include mobile {
+		width: calc(100% - 30px);
+		margin: 65px auto 15px;
 	}
 
 	// .idea-tabs__btn
 	&__btn {
-		background: $black;
-		color: $snow;
-		padding: 10px 15px;
-		text-transform: uppercase;
-		line-height: normal;
+		padding: 11px 50px 9.61px;
+		font-family: $LouisGeorgeCafBold;
+		font-size: 18px;
+		letter-spacing: 2px;
+		transition: color 0.25s;
 
 		@include tabletBig {
 			width: 100%;
 			flex-grow: 1;
-			padding: 8px 18px;
+			padding: 12px 3px 10.5px;
+			letter-spacing: 0.8px;
+			font-size: 15px;
+		}
+
+		&.sub-active {
+			position: relative;
+
+			&::before {
+				content: '';
+				display: block;
+				position: absolute;
+				bottom: 0;
+				left: 50%;
+				transform: translateX(-50%);
+				width: 26%;
+				height: 3px;
+				background-color: rgba($color: $blue-main, $alpha: 0.9);
+				border-radius: 10px;
+			}
 		}
 
 		&.active {
-			background: $blue-main;
-			text-shadow: 0 0 0.6px $snow;
-			color: $snow;
-			box-shadow: inset 23px 23px 46px #004d96, inset -23px -23px 46px #006bd0;
+			background-color: $blue-main;
+			text-shadow: 0 0 0.7px $snow;
+			box-shadow: inset 20px 20px 40px #004a8f, inset -20px -20px 35px #066ac7;
+			text-transform: uppercase;
+		}
+
+		@media (hover: hover) and (pointer: fine) {
+			&:hover {
+				color: $blue-main;
+			}
+		}
+
+		&:active {
+			color: $blue-main;
 		}
 	}
 }
@@ -400,6 +366,7 @@ $bg-active-lang: #4f4564;
 		color: #000;
 		font-weight: bold;
 		transition: color 0.26s, background-color 0.26s;
+		border-radius: $radius-lang;
 
 		@media (hover: hover) and (pointer: fine) {
 			&:not(.active):hover {
@@ -656,7 +623,7 @@ $bg-active-lang: #4f4564;
 		overflow: hidden;
 		height: 320px;
 		background-color: $black;
-		box-shadow: 0 0 6px rgba($color: $black, $alpha: 1);
+		box-shadow: 0 0 6px #000000;
 	}
 
 	@include mobile {
@@ -712,7 +679,7 @@ $bg-active-lang: #4f4564;
 	position: relative;
 	overflow: hidden;
 	background-color: $black;
-	box-shadow: 0 0 10px rgba($color: $black, $alpha: 1);
+	box-shadow: 0 0 10px #000000;
 	border-radius: 0 10px 10px 10px;
 
 	@include tabletBig {
@@ -791,7 +758,7 @@ $bg-active-lang: #4f4564;
 
 	&:hover {
 		.video-preview__title {
-			box-shadow: inset 0 -90px 90px rgba($color: $black, $alpha: 1);
+			box-shadow: inset 0 -90px 90px #000000;
 		}
 
 		img {
@@ -919,7 +886,7 @@ $bg-active-lang: #4f4564;
 
 	&-next {
 		@include tabletBig {
-			box-shadow: 0 -5px 6px rgba($color: $black, $alpha: 1);
+			box-shadow: 0 -5px 6px #000000;
 
 			right: 0;
 
@@ -942,7 +909,7 @@ $bg-active-lang: #4f4564;
 
 		@include tabletBig {
 			left: 0;
-			box-shadow: 0 -5px 6px rgba($color: $black, $alpha: 1);
+			box-shadow: 0 -5px 6px #000000;
 
 			&::after {
 				left: 100%;
@@ -961,7 +928,7 @@ $bg-active-lang: #4f4564;
 
 .lang-sidebar {
 	display: flex;
-	width: 49%;
+	width: 50%;
 	position: sticky;
 	top: 80px;
 	margin-left: 80px;
@@ -976,7 +943,7 @@ $bg-active-lang: #4f4564;
 
 	// .lang-sidebar--has-toc
 	&--has-toc {
-		top: 120px;
+		top: 140px;
 		margin-top: 45px;
 
 		@include tabletBig {
@@ -1038,7 +1005,7 @@ $bg-active-lang: #4f4564;
 	}
 
 	&:hover {
-		box-shadow: 0 0 10px rgba($color: $black, $alpha: 1);
+		box-shadow: 0 0 10px #000000;
 		// color: $h1-title-color;
 
 		&::after {

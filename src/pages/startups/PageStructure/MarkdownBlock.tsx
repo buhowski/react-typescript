@@ -52,7 +52,7 @@ const MarkdownBlock = memo(
 				if (!isCanceled) {
 					setText('');
 				}
-			}, 250); // Text Loader Delay
+			}, 222); // Text Loader Delay
 
 			setHasError(false);
 			onError?.(false);

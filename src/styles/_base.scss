@@ -5,7 +5,7 @@
 
 .page-container,
 .mobile-menu__content,
-.idea-tabs--urls,
+.idea-tabs,
 .table-content__inner {
 	// /* For browsers that support `` properties */
 	@supports (-moz-appearance: none) {
@@ -35,7 +35,6 @@
 }
 
 html {
-	font-size: 10px;
 	color-scheme: dark;
 }
 
@@ -54,7 +53,6 @@ body {
 
 	@include tablet {
 		height: 100dvh;
-		// height: calc(var(--vh, 1vh) * 100);
 	}
 }
 
