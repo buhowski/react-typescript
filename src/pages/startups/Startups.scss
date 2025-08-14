@@ -246,7 +246,7 @@
 
 			.idea-back {
 				position: fixed;
-				top: 4px;
+				top: 5px;
 
 				@include tabletBig {
 					top: auto;
@@ -264,7 +264,7 @@
 	width: max-content;
 	min-width: 320px;
 	white-space: nowrap;
-	margin: 60px auto;
+	margin: 65px auto;
 	border-radius: 100px;
 	box-shadow: 0 0 10px #000000;
 	overflow: hidden;
@@ -278,12 +278,12 @@
 
 	@include mobile {
 		width: calc(100% - 30px);
-		margin: 65px auto 15px;
+		margin-bottom: 20px;
 	}
 
 	// .idea-tabs__btn
 	&__btn {
-		padding: 11px 50px 9.61px;
+		padding: 12px 50px 10.6px;
 		font-family: $LouisGeorgeCafBold;
 		font-size: 18px;
 		letter-spacing: 2px;
@@ -292,9 +292,9 @@
 		@include tabletBig {
 			width: 100%;
 			flex-grow: 1;
-			padding: 12px 3px 10.5px;
+			padding: 12px 4px 11px;
 			letter-spacing: 0.8px;
-			font-size: 15px;
+			font-size: 16px;
 		}
 
 		&.sub-active {
@@ -310,14 +310,14 @@
 				width: 26%;
 				height: 3px;
 				background-color: rgba($color: $blue-main, $alpha: 0.9);
-				border-radius: 10px;
+				border-radius: 20px;
 			}
 		}
 
 		&.active {
 			background-color: $blue-main;
-			text-shadow: 0 0 0.7px $snow;
-			box-shadow: inset 20px 20px 40px #004a8f, inset -20px -20px 35px #066ac7;
+			text-shadow: 0 0 0.6px $snow;
+			box-shadow: inset 30px 20px 40px #004a8f, inset -30px -20px 40px #066ac7;
 			text-transform: uppercase;
 		}
 
@@ -444,7 +444,7 @@ $bg-active-lang: #4f4564;
 
 		@include mobile {
 			margin-bottom: 40px;
-			font-size: 26px;
+			font-size: 27px;
 		}
 
 		+ h2 {
