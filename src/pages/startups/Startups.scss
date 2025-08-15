@@ -277,8 +277,7 @@
 	@include tabletBig {
 		width: calc(100% - 80px);
 		max-width: 777px;
-		margin-top: 48px;
-		margin-bottom: 50px;
+		margin: 50px auto;
 		box-shadow: 0 0 5px #000000;
 	}
 
@@ -372,7 +371,7 @@ $bg-active-lang: #544671;
 	}
 
 	@include mobile {
-		margin: 27px auto 0;
+		margin: 30px auto 0;
 	}
 
 	// .idea-lang__btn
@@ -506,7 +505,7 @@ $bg-active-lang: #544671;
 		font-family: $LouisGeorgeCafBold;
 		margin-bottom: 0;
 		font-size: 16px;
-		line-height: 1.2;
+		line-height: 1.3;
 		margin-bottom: 10px;
 		color: $subtitle-color;
 		text-align: center;
