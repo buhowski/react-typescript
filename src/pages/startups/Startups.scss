@@ -14,7 +14,7 @@
 	padding-bottom: 200px;
 
 	@include tabletBig {
-		padding: 0 0 90px;
+		padding: 0 0 50px;
 	}
 
 	@include mobile {
@@ -153,6 +153,14 @@
 	}
 }
 
+@mixin idea-back_hover {
+	color: white;
+
+	svg {
+		transform: translateX(-10px);
+	}
+}
+
 .idea-back {
 	font-family: $LouisGeorgeCafBold;
 	font-size: 15px;
@@ -170,20 +178,12 @@
 
 	@media (hover: hover) and (pointer: fine) {
 		&:hover {
-			color: white;
-
-			svg {
-				transform: translateX(-10px);
-			}
+			@include idea-back_hover;
 		}
 	}
 
 	&:active {
-		color: white;
-
-		svg {
-			transform: translateX(-10px);
-		}
+		@include idea-back_hover;
 	}
 
 	@include tabletBig {
@@ -256,6 +256,10 @@
 	}
 }
 
+@mixin idea-tabs__btn_hover {
+	color: $blue-main;
+}
+
 .idea-tabs {
 	display: flex;
 	justify-content: center;
@@ -325,19 +329,23 @@
 
 		@media (hover: hover) and (pointer: fine) {
 			&:hover {
-				color: $blue-main;
+				@include idea-tabs__btn_hover;
 			}
 		}
 
 		&:active {
-			color: $blue-main;
+			@include idea-tabs__btn_hover;
 		}
 	}
 }
 
 $radius-lang: 100px;
-$bg-color-lang: #9d9999;
-$bg-active-lang: #4f4564;
+$bg-color-lang: #a69d9d;
+$bg-active-lang: #544671;
+
+@mixin idea-lang__btn_hover {
+	background-color: rgba($bg-active-lang, 0.45);
+}
 
 .idea-lang {
 	width: max-content;
@@ -364,7 +372,7 @@ $bg-active-lang: #4f4564;
 	}
 
 	@include mobile {
-		margin: 26px auto 0;
+		margin: 27px auto 0;
 	}
 
 	// .idea-lang__btn
@@ -381,12 +389,12 @@ $bg-active-lang: #4f4564;
 
 		@media (hover: hover) and (pointer: fine) {
 			&:not(.active):hover {
-				background-color: rgba($bg-active-lang, 0.45);
+				@include idea-lang__btn_hover;
 			}
 		}
 
 		&:active {
-			background-color: rgba($bg-active-lang, 0.45);
+			@include idea-lang__btn_hover;
 		}
 
 		&.active {
@@ -988,6 +996,16 @@ $bg-active-lang: #4f4564;
 	}
 }
 
+@mixin idea-block__more_hover {
+	box-shadow: 0 0 10px #000000;
+	// color: $h1-title-color;
+
+	&::after {
+		opacity: 1;
+		background-size: 100% 100%;
+	}
+}
+
 .idea-block__more {
 	@include navLink;
 	background-color: #000000;
@@ -1003,21 +1021,21 @@ $bg-active-lang: #4f4564;
 
 	&::after {
 		height: 100%;
-		background: radial-gradient(circle, #002840 10%, #000000 100%);
+		background: radial-gradient(circle, #013553 10%, #000000 100%);
 		box-shadow: none;
 		background-size: 280% 250%;
 		opacity: 0;
 		will-change: opacity, background-size;
 	}
 
-	&:hover {
-		box-shadow: 0 0 10px #000000;
-		// color: $h1-title-color;
-
-		&::after {
-			opacity: 1;
-			background-size: 102% 102%;
+	@media (hover: hover) and (pointer: fine) {
+		&:hover {
+			@include idea-block__more_hover;
 		}
+	}
+
+	&:active {
+		@include idea-block__more_hover;
 	}
 }
 
