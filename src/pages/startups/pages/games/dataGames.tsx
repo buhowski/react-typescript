@@ -8,7 +8,7 @@ export const dataGames = {
 	en: [
 		// ### Main Preface  ###
 		{
-			markdownAPI: '/text-data/PreviewMainEN.md',
+			markdownAPI: '/text-data/games/PreviewGamesEN.md',
 			sliderContent: dataSliderProjectsDev,
 		},
 
@@ -23,7 +23,7 @@ export const dataGames = {
 	// Ukraine
 	ua: [
 		// ### Main Preface  ###
-		{ markdownAPI: '/text-data/PreviewMainUA.md' },
+		{ markdownAPI: '/text-data/games/PreviewGamesUA.md' },
 
 		// ### Cossacks RPG ###
 		{ markdownAPI: '/text-data/games/CossackSaga/CossackSagaUA.md' },
@@ -32,7 +32,7 @@ export const dataGames = {
 	// rusian
 	ru: [
 		// ### Main Preface  ###
-		{ markdownAPI: '/text-data/PreviewMainRU.md' },
+		{ markdownAPI: '/text-data/games/PreviewGamesRU.md' },
 
 		// ### Cossacks Saga ###
 		{ markdownAPI: '/text-data/games/CossackSaga/CossackSagaRU.md' },

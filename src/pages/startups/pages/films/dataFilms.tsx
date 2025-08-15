@@ -16,7 +16,7 @@ export const dataFilms = {
 	en: [
 		// ### Main Preface  ###
 		{
-			markdownAPI: '/text-data/PreviewMainEN.md',
+			markdownAPI: '/text-data/films/PreviewFilmsEN.md',
 			sliderContent: dataSliderProjectsDev,
 		},
 
@@ -45,7 +45,7 @@ export const dataFilms = {
 	// Ukraine
 	ua: [
 		// ### Main Preface  ###
-		{ markdownAPI: '/text-data/PreviewMainUA.md' },
+		{ markdownAPI: '/text-data/films/PreviewFilmsUA.md' },
 
 		// ### European Ukrainians ###
 		{ markdownAPI: '/text-data/films/EuropeanUkrainians/PreviewEuropeanUkrainiansUA.md' },
@@ -60,7 +60,7 @@ export const dataFilms = {
 	// rusian
 	ru: [
 		// ### Main Preface  ###
-		{ markdownAPI: '/text-data/PreviewMainRU.md' },
+		{ markdownAPI: '/text-data/films/PreviewFilmsRU.md' },
 
 		// ### European Ukrainians ###
 		{ markdownAPI: '/text-data/films/EuropeanUkrainians/PreviewEuropeanUkrainiansRU.md' },

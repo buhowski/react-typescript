@@ -27,7 +27,7 @@ const PitchContainer = React.memo(
 				!structure.markdownAPI || structure.markdownAPI.trim() === '' || markdownLoadError;
 
 			return (
-				<div ref={ref} className={`pitch-container`}>
+				<section ref={ref} className={`pitch-container`}>
 					{/* Render markdown content block or error message based on loading status */}
 					<div className='idea-block'>
 						{shouldShowErrorMessage ? (
@@ -54,7 +54,7 @@ const PitchContainer = React.memo(
 							</NavLink>
 						</div>
 					)}
-				</div>
+				</section>
 			);
 		}
 	)
