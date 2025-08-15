@@ -152,7 +152,7 @@ const MarkdownBlock = memo(
 
 		if (!text && !hasError) {
 			return (
-				<div className='text-loading'>
+				<div className='markdown-loading'>
 					<Preloader />
 				</div>
 			);

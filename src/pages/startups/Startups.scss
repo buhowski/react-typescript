@@ -535,7 +535,8 @@ $bg-active-lang: #544671;
 			padding-left: 26px;
 
 			@include mobile {
-				padding-left: 20px;
+				padding-left: 21px;
+				margin-left: 1px;
 			}
 
 			&::before {
@@ -1060,8 +1061,8 @@ $bg-active-lang: #544671;
 	}
 }
 
-.text-loading {
-	height: 60vh;
+.markdown-loading {
+	height: 66vh;
 	padding-top: 10px;
 
 	.preloader {
@@ -1070,12 +1071,12 @@ $bg-active-lang: #544671;
 	}
 
 	.preloader__spinner {
-		width: 48px;
-		height: 48px;
+		width: 50px;
+		height: 50px;
 	}
 
 	.preloader__spinner-span:before {
 		background-color: $toc-title-color;
-		height: 13px;
+		height: 14px;
 	}
 }
