@@ -2,11 +2,11 @@
 
 # Shadows of the Zaporozhian Sich: Saga
 
-My masterful saga is a sprawling game series, an epic journey through centuries, beginning in 9th-century Ukraine and leading to an alternative cyber-future. This is a story where the destruction of religion becomes the catalyst for extraordinary technological advancement.
+An epic video game series and a journey through time that begins in the 9th-century Kyivan Rus' and leads to an alternate cyber-future. This is a story where the destruction of religion becomes the impetus for an unprecedented technological leap.
 
-Through the fates of mysterious heroes, we explore the depths of history, religious conspiracies, demonic rituals of the church, mysticism, and the otherworldly forces that shaped the world. This is a fight for freedom and love, a discovery of forbidden secrets, and a choice that will change the future of all humanity.
+Through the destinies of mysterious heroes, we uncover religious conspiracies, demonic cults, and otherworldly forces that have shaped the world. This is a fight for freedom and love, the discovery of forbidden truths, and a choice that will change humanity's future.
 
-The world evolves from an authentic medieval period with elements of fantasy, magic, and demons into a tribal sci-fi futurism, where the magic of the past has been transformed into the technologies of the future. In different temporal realities, an undestroyed cultural heritage fights against an eternal evil that always finds its host, proving that war never ends.
+The world evolves from an authentic Middle Ages with magic and mythological creatures — to a tribal scientific futurism, where the magic of the past has been transformed into the technology of the future. In each era, an indestructible cultural heritage clashes with an eternal evil that always finds a new host, proving that the war never ends.
 
 ### List
 
