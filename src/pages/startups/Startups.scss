@@ -475,24 +475,22 @@ $bg-active-lang: #544671;
 		color: $h2-title-color;
 		font-size: 27px;
 		margin-bottom: 32px;
-		letter-spacing: 0.8px;
 		margin-top: 46px;
 
 		@include tabletBig {
-			font-size: 24px;
+			font-size: 25px;
 		}
 	}
 
 	h3 {
 		color: $h3-title-color;
-		font-weight: 500;
+		@include titleFont;
 		margin-bottom: 26px;
-		letter-spacing: 1px;
 		margin-top: 42px;
 		font-size: 22px;
 
 		@include tabletBig {
-			font-size: 21px;
+			font-size: 20px;
 			margin-top: 36px;
 		}
 
@@ -887,6 +885,7 @@ $bg-active-lang: #544671;
 		height: 18px;
 		border: 3px solid $blue-main;
 		border-width: 3px 3px 0 0;
+		transition: 0.25s;
 
 		@include mobile {
 			width: 16px;
@@ -895,7 +894,7 @@ $bg-active-lang: #544671;
 	}
 
 	&:hover .chevron {
-		border-color: $titlePink;
+		border-color: #fff;
 	}
 
 	&-next {
@@ -938,6 +937,11 @@ $bg-active-lang: #544671;
 			}
 		}
 	}
+}
+
+.slider-btn-js,
+.slides-number {
+	opacity: 0.7;
 }
 
 .lang-sidebar {
@@ -997,35 +1001,38 @@ $bg-active-lang: #544671;
 }
 
 @mixin idea-block__more_hover {
-	box-shadow: 0 0 10px #000000;
-	// color: $h1-title-color;
+	text-shadow: 0 0 0.8px $blue-main;
+	color: $blue-main;
+	// box-shadow: 0 0 10px #000000;
 
-	&::after {
-		opacity: 1;
-		background-size: 100% 100%;
-	}
+	// &::after {
+	// 	opacity: 1;
+	// 	background-size: 100% 100%;
+	// }
 }
 
 .idea-block__more {
 	@include navLink;
-	background-color: #000000;
 	text-transform: uppercase;
-	padding: 16px 52px 14px 56px;
-	border-radius: 10px;
-	box-shadow: 0 0 5px rgba($color: $black, $alpha: 0.8);
-	background: linear-gradient(165deg, #000000 45%, #002840 100%);
-	background-size: 220% 102%;
-	background-position: 90% 0;
-	transition: box-shadow 0.25s ease, color 0.25s ease;
+	padding: 16px 56px 14.5px 59px;
+	border-radius: 8px;
+	transition: box-shadow 0.25s, text-shadow 0.25s, color 0.25s;
 	will-change: box-shadow;
+	box-shadow: 0 0 5px rgba($color: $black, $alpha: 0.8);
+	background-color: #000000;
+	// background: linear-gradient(165deg, #000000 45%, #002840 100%);
+	// background-size: 220% 102%;
+	// background-position: 90% 0;
 
 	&::after {
-		height: 100%;
-		background: radial-gradient(circle, #013553 10%, #000000 100%);
-		box-shadow: none;
-		background-size: 280% 250%;
-		opacity: 0;
-		will-change: opacity, background-size;
+		// height: 100%;
+		// background: radial-gradient(circle, #002840 0%, #000000 100%);
+		// box-shadow: none;
+		// background-size: 280% 200%;
+		// opacity: 0;
+		// will-change: opacity, background-size;
+
+		display: none;
 	}
 
 	@media (hover: hover) and (pointer: fine) {

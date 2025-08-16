@@ -50,7 +50,7 @@ const PitchContainer = React.memo(
 					{structure.filmsPreviewUrl && (
 						<div className='idea-block__action'>
 							<NavLink to={structure.filmsPreviewUrl} className='idea-block__more'>
-								<span>read more</span>
+								read more
 							</NavLink>
 						</div>
 					)}
