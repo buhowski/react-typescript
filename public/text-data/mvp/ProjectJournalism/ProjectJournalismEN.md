@@ -1,6 +1,10 @@
 # Project "Journalism"
 
-*Under Construction ...*
+## More Details
+
+***Under Construction …***
+
+The author is seeking resources and time to bring these masterful ideas to life. If you know how or where to get support, please write to me!
 
 ## Content Philosophy
 

@@ -6,37 +6,39 @@
 
 ## Logline
 
-A century after the world abandoned religion and transformed magic into technology, new alliances led by the Cossack Legion must unite to confront a totalitarian enemy creating a weapon capable of destroying entire continents.
+Centuries after the world abandoned religion and transformed magic into technology, new alliances led by the Cossack Legion must unite to face a totalitarian enemy forging a weapon capable of erasing entire continents from the map.
 
-## Main Idea
+## Core Idea
 
-The introduction to Part III begins with a series of dynamic cinematics that briefly recap the key moments of previous parts and the finale of Part II, which fundamentally changed the world. This segment smoothly transitions into a montage showcasing the "Quantum Leap" — the evolution of new civilizations born on the ruins of the old world.
+The introduction to the third chapter begins with a series of dynamic cinematic cutscenes recreating the events of the previous parts [Part I: Whispers of the Forgotten](/whispers-of-the-forgotten), [Part II: Ashes of the Beloved](/ashes-of-the-beloved) — the moment that forever reshaped the world. Then the pace accelerates: ruins of the ancient world morph into futuristic cities, tribes evolve into new civilizations, and time, compressed into a single flow, unveils an untold history.
 
-A century after the demonic evil was destroyed and humanity rejected religion, it directed the remnants of magical energy toward the development of technology. This led to an extraordinary evolutionary leap that completely changed our known history, creating a world where technology and ancient cultures intertwined. The foundation of the new society became self-belief, family development, collective effort, and mutual assistance.
+Centuries after the eradication of the church’s demonic influence and humanity’s rejection of religion, the remnants of magic were redirected toward technological development. This sparked a rapid evolutionary leap that completely changed the course of history, giving rise to a world where futurism intertwines with the legacy of ancient cultures. The new society is built on self-belief, family strength, collective work, and mutual support.
 
-In this new world, Cossacks, Vikings, and Native Americans were not eradicated but created their own advanced technological colonies that cooperated with each other or maintained neutrality.
+In this new world, Cossacks, Vikings, and Native Americans were not wiped out but instead founded advanced technological colonies that either cooperated with one another or remained neutral.
 
-However, such a world was not acceptable to everyone. A fragment of evil that could not be destroyed found refuge, where its owner gained extraordinary powers. Using lost knowledge from the otherworld, he imbued it into technology, creating neuro-engineering for mind control and an army of robotic people. This unprecedented totalitarian enemy seeks to conquer the world, enslaving or destroying all who do not conform to his vision of a new-generation race.
+Yet this world was not acceptable to everyone. A fragment of surviving evil found refuge in a new host — a man who gained extraordinary powers. Using forgotten knowledge of the afterlife, he integrated it into technology, creating neuroengineering of mind control and an army of robotic humans. This previously unknown totalitarian enemy seeks to conquer the world, subjugating or annihilating all who do not fit his vision of a perfect race of a new generation.
 
-This conflict proves that the greatest evil is not demons but humanity's lust for power, which always lies in wait, seeking an opportunity to re-emerge. It reminds everyone that even in the most progressive future, the war never ends.
+This conflict proves that the greatest evil is not demons but humanity’s lust for power, forever lurking, waiting to surface. It reminds us that even in the most progressive future, war never ends.
 
-Our mission is to unite with all possible factions to counter complete annihilation. We must delve into the ancient knowledge and memories of the primordial evil, assemble a team of the best, and embark on a journey to prevent the creation of the most dangerous weapon and resist the attacks of the robotic people. We also await an unexpected greeting from the Middle Ages, which is our last hope against such a powerful evil, for after all, it is not only evil that lives forever!
+Our mission is to unite with every possible faction to resist total annihilation. We must delve into ancient knowledge and the memories of primordial evil, assemble the finest team, embark on a perilous journey, prevent the creation of the world’s most dangerous weapon, and withstand assaults by robotic humans. An unexpected echo from the Middle Ages also awaits us — an heir to the fragments of an ancient love, for not only evil lives forever!
 
 ## Description
 
-The game world is a mix of tribal futurism and the mythological heritage of various peoples: Slavic, Scandinavian, Native American, Asian, and African.
+The game world is a fusion of tribal futurism and the mythological heritage of different peoples: Slavic, Scandinavian, Native American, Asian, and African.
 
-### Path and Faction Choice
+### Choice of Path and Faction
 
-At the beginning of the game, you create your hero and choose a faction, which shapes a unique prologue and gameplay experience.
+At the start of the game, you create your hero and choose a faction, which determines a unique prologue and playstyle.
 
-- Cossack Legion: A combat brotherhood specializing in diplomacy and advanced nano-weapons. Together with the Vikings, they formed a powerful alliance that defends the Euro-continent.
-- New Era Vikings: Warrior clans that combined ancient runic knowledge with cybernetic technology and robotics. They are the second part of the powerful alliance that stands for freedom.
-- Maya-Fusion: Native Americans who have revived the grandeur of their temples. These are tribes that live in harmony with nature, using biotechnologies and solar energy for protection.
-- Star Sky Nomads: Tribes of North America that have preserved their unique culture by combining a nomadic lifestyle with advanced astronomy and space technologies. They wander the vast expanses, relying on the power of cosmic bodies and the first prototypes of flying machines.
-- African Tribes: Africa became the first continent where the enemies tested their nano-weapons. These refugees have preserved their unique mythology and culture, integrating into new alliances under the protection of the Cossack Legion.
-- Asian Totalitarianism: The main enemy that emerged after its leader found a fragment of ancient evil. The regime mercilessly destroyed everything that stood in its way to absolute power and seeks to enslave the world with nano-weapons.
+- Cossack Legion: a warrior brotherhood combining diplomacy and advanced nano-weapons. Together with the Vikings, they form a mighty alliance protecting the Euro-Continent.
+- Vikings of the New Era: militant clans who merged ancient runic knowledge with cybernetic technology and robotics. This part of the alliance stands for freedom and independence.
+- Maya-Fusion: Native Americans revived the grandeur of their temples and tribes, living in harmony with nature and using biotechnology and solar energy to protect their lands.
+- Nomads of the Starry Sky: North American tribes preserved their unique culture, blending a nomadic way of life with astronomy and space technology. They roam vast territories, drawing strength from celestial bodies and prototypes of flying machines.
+- African Tribes: a continent where the enemy first tested his nano-weapons. Refugees preserved their mythology and culture, integrating into new alliances under the protection of the Cossack Legion.
+- Asian Totalitarianism: the main enemy, emerging after its leader seized a fragment of ancient evil. The regime mercilessly destroyed everything standing in the way of absolute power and now seeks to subjugate the world with nano-weapons.
 
 ## More Details
 
-*Under Construction ...*
+***Under Construction …***
+
+The author is seeking resources and time to bring these masterful ideas to life. If you know how or where to get support, please write to me.

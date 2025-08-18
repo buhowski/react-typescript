@@ -88,3 +88,9 @@ Here are some quick conceptual outlines. In my vision, characters should be skil
 I believe that with a new approach to implementation and a more professional attitude to the emotional transmission of the picture, "European Ukrainians" will become a successful project and a calling card on the world television market, attracting investments for the development of future ideas. There’s an endless stream of ideas and plenty to work with — but resources are essential.
 
 So I’m asking for your support to help bring this unique project to life. It will shift your perspective on modern Ukrainian life and prove just how much potential is hidden behind the barriers of the system.
+
+## More Details
+
+***Under Construction …***
+
+The author is seeking resources and time to bring these masterful ideas to life. If you know how or where to get support, please write to me!

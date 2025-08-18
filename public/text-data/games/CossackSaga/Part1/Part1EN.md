@@ -6,59 +6,76 @@
 
 ## Logline
 
-A traveler with no memory stumbles upon a clerical conspiracy and learns that dark forces are battling inside him due to an incomplete demonic baptism. At the same time, the clergymen, who are themselves under demonic control, seek to seize the entire world.
+A traveler without memory accidentally witnesses a mysterious ritual performed by clerics and realizes that dark forces are fighting within him due to an unfinished demonic baptism. Meanwhile, the servants of the dark path plan to conquer the world — and only the hero can uncover their secrets.
 
 ## Main Idea
 
-The main protagonist, a mysterious figure with a tragic past, travels from town to town, trying to unravel the mystical secrets of his own destiny. He has no recollection of the events from 20 years ago that led to his current state, but he accidentally finds himself at the center of a dark clerical conspiracy and uncovers the truth of his origin, forbidden secrets, and who is truly behind it all. After what he sees, he realizes there's no way out alive.
+This is an adventure Action/RPG with an open world. The core concept revolves around exploring a mysterious world where real history, Slavic mythology, and demonology are woven into a single game lore.
 
-Gradually, through a series of playable flashbacks from his childhood, the hero uncovers the essence of the religious demonism that hides behind church authority. His memories take him back to horrific events — murders, violence, the loss of a loved one — that are the key to understanding his inner struggle. His otherworldly powers are a consequence of a partial demonic baptism that was interrupted in his childhood, granting him unique abilities but not fully possessing him.
+The game focuses on unraveling the secrets of mystical rituals, internal struggles, and self-discovery, with the main character — a mysterious figure with a tragic past — seeking allies to uncover a grand conspiracy that threatens the world.
 
-The hero's goal is to find help to unravel the mysteries of the rituals and to confront the internal struggle between good and evil. He must learn to control his powers, regain his lost memories, which will be the key to the entire story, and find a way to resist the dark invaders.
+### Plot
 
-The plot intertwines real historical events, mythology, demonology, and dynamic comedy. This is all presented in a melancholic, dark atmosphere of a forgotten era, filled with mysticism and personal drama. The game also touches upon alternative historical timelines, questioning established narratives, particularly the true motives behind the Baptism of Kyivan Rus' and religion itself.
+The hero is 25–30 years old and remembers nothing except fragments of his childhood up to the age of six. While searching for the truth, he accidentally stumbles upon a mysterious ritual. A sense of deja vu pierces his mind, unlocking his first true memory:
+
+- He had once undergone a demonic baptism that was interrupted. His body became a battleground for dark forces, but evil did not fully possess him, leaving traces in the form of unique abilities that he has yet to control.
+
+From that moment, his life changes forever. Church officials recognize him, and from then on, every step becomes a fight for his survival.
+
+He finds salvation among the hermit Cossacks, who possess ancient knowledge. They guide him deep into his memory, where the hero uncovers a new recollection:
+
+- The church stole his past, shattering his consciousness into fragments.
+
+To restore the broken story of his life, the hero sets out on a journey. Along the way, he encounters various adventurers who become his allies.
+
+Each new memory fragment (an interactive flashback) initially seems chaotic and out of context, but gradually, through logical connections and intrigue, they form a complete and detailed picture, revealing betrayals, losses, friendship, love, secrets of the afterlife, and a power he gradually learns to master.
+
+The climax occurs when the hero discovers that the final fragment is a living person whom the Supreme Lord plans to burn at the stake as a witch.
+
+As he infiltrates the ritual site, he sees her — his lost heroine. The memory strikes him like a blow:
+
+- They once lived together in the wilderness, trying to hide from the world. Love flourished, they dreamed and made plans. But the church found their settlement and burned everything to the ground. His beloved was killed before his eyes, and the hero’s consciousness was shattered into fragments.
+
+Everyone assumed he was dead, but a protective mechanism of otherworldly forces preserved his life. Awakening amid the ruins, he finds himself in a whirlwind of confusion due to complete memory loss and chaotic inner struggle.
+
+Now, with the truth revealed, he must make a choice that will determine their shared fate.
 
 [mobile-slider]
 
 ## Description
 
-Core Concept: A combination of Ukrainian history from the 10th-18th centuries with alternative timelines that directly depend on the player's choices. This all takes place against a backdrop of Slavic myths, the mysticism of Gogol, and the author's unique vision of the world.
+Imagine gameplay that combines the world-building depth of The Witcher 3, the parkour dynamism of Assassin’s Creed, and the cinematic combat direction of NieR: RepliCant/Automata — all seamlessly integrated into our unique historical-mystical world. Yet these are only reference points — the game offers its own unique design vision.
 
-To get an approximate idea of the game's world, take the style of the Zaporozhian Cossacks and the unique theme of hermit-Cossacks. Combine this with the mechanics of The Witcher 3, Ghost of Tsushima, parkour elements from Assassin's Creed, as well as the unsurpassed boss fight direction inspired by Nier: Automata, which makes them spectacular and unpredictable. All these examples serve only as a reference, as this game has an absolutely unique design vision.
+### Setting & Atmosphere
 
-Hermit-Cossacks are unique "gypsy punks": tribal recluses, sorcerers, and soothsayers living in nomadic camps. They combine magic, fearlessness, and freedom, acting as mercenaries, advisors, or choosing their own path. Ultimately, this is a game that will breathe life into the history of Ukrainian Cossackdom, offer an alternative vision, and add a new magical and cultural dimension.
+The narrative weaves together real events from the territories of modern Ukraine between the 10th and 18th centuries, Slavic mythology, demonology, and dynamic comedy. A melancholic and somber atmosphere of a forgotten age intertwines with mysticism and personal drama.
 
-### Goal
+The game questions established historical narratives, particularly the motives behind the Baptism of Kievan Rus and the role of religion. Betrayals, brutal battles, forgotten legends, and sharp dramatic moments immerse the player in the depth of the era, making it both vivid and perilous. Varied characters, along with magical and cultural elements, create a singular, living atmosphere for the world.
 
-To popularize a new, deeper vision of this period through diverse Cossack characters. We will candidly portray the essence of the era — bloody battles, brutality, betrayal, forgotten legends, and dramatic scenes. At the same time, we will recreate a unique atmosphere: the combat dance Hopak, folk traditions, humor, and the endless Ukrainian landscapes that have so far been overlooked by the gaming industry.
+### Hermit Cossacks
+
+Unique "gypsy punks" — nomadic tribal recluses who embody warriors, sorcerers, seers, and shamans. They live by their own laws: friendly, fearless, and free, blending magic with martial skills. They often act as advisors, mercenaries, or choose to follow their own path.
+
+### Game World
+
+- Locations and Environment: The core regions of the game include the Zaporizhian Sich, the Carpathians, Volhynia, Kyivan Rus, Crimea, and more. Each region features its most captivating locations — camps, ruins, caves, temples, and fortresses — condensed into an interactive map that preserves the atmosphere of history and mysticism.
+- Mythology and Magic: Ancient Slavic legends intertwine with history, shaping a unique mystical lore. Demonology and magic are integral to the life of nomadic Cossacks, and their legends influence the fates of heroes and reveal hidden truths.
+- Interactivity: Quests and NPCs allow players to reshape the story, affect characters’ destinies, and uncover hidden layers of mythology, immersing them in the atmosphere of a magical and historical world.
 
 ### Inspiration
 
-- Game Series: [The Witcher game series](https://en.wikipedia.org/wiki/The_Witcher_(video_game_series)), [Ghost of Tsushima](https://en.wikipedia.org/wiki/Ghost_of_Tsushima), [Final Fantasy](https://en.wikipedia.org/wiki/Final_Fantasy) [VII](https://en.wikipedia.org/wiki/Final_Fantasy_VII_Remake) / [XV](https://en.wikipedia.org/wiki/Final_Fantasy_XV)
-- Direction: [NieR: Automata](https://en.wikipedia.org/wiki/Nier:_Automata) — for boss fight choreography and a dark atmosphere
-- Literature:  [Nikolai Gogol](https://en.wikipedia.org/wiki/Nikolai_Gogol) (collections and novels: [Viy](https://en.wikipedia.org/wiki/Viy_(story)), [Taras Bulba](https://en.wikipedia.org/wiki/Taras_Bulba), [Dead Souls](https://en.wikipedia.org/wiki/Dead_Souls), [Evenings on a Farm Near Dikanka](https://en.wikipedia.org/wiki/Evenings_on_a_Farm_Near_Dikanka))
-- History and Mythology: Zaporozhian Cossacks, Slavic mythology, Ukrainian demonology, authentic culture and history, real historical events and figures, deep cultural heritage and folklore
+- Games: [The Witcher Series](https://www.thewitcher.com/ua/en/), [Ghost of Tsushima](https://store.steampowered.com/app/2215430/Ghost_of_Tsushima_DIRECTORS_CUT/), [Clair Obscur: Expedition 33](https://www.expedition33.com/), [Final Fantasy VII](https://store.steampowered.com/app/1462040/FINAL_FANTASY_VII_REMAKE_INTERGRADE/) / [XV](https://store.steampowered.com/app/637650/FINAL_FANTASY_XV_WINDOWS_EDITION/)
+- Direction and Expression: [NieR: RepliCant](https://store.steampowered.com/app/1113560/NieR_Replicant_ver122474487139/) / [Automata](https://store.steampowered.com/app/524220/NieRAutomata/) — for their masterful fusion of cinematic combat, emotional intensity, and uniquely atmospheric world design.
+- Culture and Mythology: The Zaporizhian Cossacks, Slavic mythology, and demonology — for authenticity, magic, and folkloric lore.
 - Drama and Emotions: The full palette of human emotions — from triumphs to tragedies
-- Plot: Alternative development paths that challenge established historical narratives
-
-### Open World Environment
-
-- Locations: The boundless plains of the Zaporizhian Sich, the Carpathians, the Dnipro River, and other historical locations of Ukraine from the 10th-18th centuries
-- Points of Interest: Nomadic camps of the tribal hermit-Cossacks, mysterious temples, ruins, and hidden settlements and dungeons
-- Interaction: Engaging quests and storylines that lead through historical labyrinths and uncover the forgotten secrets of the past. Dynamic interaction with NPCs where the player's choices affect the plot
-
-### Legends, Myths, and Magic
-
-- Mythology: Deep Slavic legends that intertwine with history to form a unique mystical world lore
-- Characters: Mysterious stories of spirits, seers, sorcerers, and Cossack shamans who live on the border of worlds
-- Magic: Demonology as an integral part of the nomadic Cossacks' lives. Their legends, passed down through generations, influence the heroes' destinies and reveal hidden truths
+- Storytelling and Alternate History: Multiple narrative paths that challenge established historical narratives and create a dramatic, original storyline.
 
 ## Conclusion
 
-This is a desire to combine real historical facts with mysticism and humor to create a powerful new-generation game series about the Cossacks. My vision makes it possible to bring untold stories to life and create new ideas that can become worldwide masterpieces.
-
-I am looking for support and a team to realize this project, which will reveal the Cossacks from a new perspective, inspire the exploration of untouched history, and enable the creation of boundless alternative worlds. All that's needed is a united team and resources — and words will become reality.
+I am looking support and a team to bring this unique world to life. This is an opportunity to merge real historical events with mysticism and craft a powerful next-generation game series about the Cossacks. My vision brings forgotten stories to life and shapes alternate worlds capable of becoming true global masterpieces.
 
 ## More Details
 
-*Under Construction ...*
+***Under Construction …***
+
+The author is seeking resources and time to bring these masterful ideas to life. If you know how or where to get support, please write to me.
