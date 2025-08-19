@@ -58,8 +58,9 @@ Unique "gypsy punks" — nomadic tribal recluses who embody warriors, sorcerers,
 
 ### Antagonist Clan
 
-- Supreme Leader — "Pops' Throne", the heart of the conspiracy. His goal is to subjugate the world to his orders, using demonic pacts to control all religions and politics.
-- Local Factions — subordinates with their own leaders, assistants, and servants. Created for every faith across the world, they infiltrate regions, seize local churches and religious institutions, using rituals and demonic interventions, gradually bringing people to the dark side.
+Supreme Leader — "Pops' Throne", the heart of the conspiracy. His goal is to subjugate the world to his orders, using demonic pacts to control all religions and politics.
+
+Local Factions — subordinates with their own leaders, assistants, and servants. Created for every faith across the world, they infiltrate regions, seize local churches and religious institutions, using rituals and demonic interventions, gradually bringing people to the dark side.
 
 ### Game World
 

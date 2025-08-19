@@ -279,7 +279,7 @@ $toc-hover-color: #fff;
 			}
 
 			.h1-toc-item {
-				color: $starYellow;
+				color: lighten($starYellow, 3%);
 				font-size: 15px;
 				margin-top: 17px;
 				margin-bottom: 2px;
@@ -291,7 +291,7 @@ $toc-hover-color: #fff;
 
 			.h2-toc-item {
 				font-size: 14px;
-				color: $blue-main;
+				color: lighten($blue-main, 15%);
 				padding-left: 57px;
 
 				@include tabletBig {
@@ -302,7 +302,8 @@ $toc-hover-color: #fff;
 
 			.h3-toc-item {
 				font-size: 13px;
-				color: $h3-title-color;
+				color: darken($h3-title-color, 6%);
+
 				padding-left: 72px;
 
 				@include tabletBig {

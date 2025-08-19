@@ -288,7 +288,7 @@
 
 	// .idea-tabs__btn
 	&__btn {
-		padding: 12px 50px 10.6px;
+		padding: 13px 50px 10.6px;
 		font-family: $LouisGeorgeCafBold;
 		font-size: 18px;
 		letter-spacing: 2px;
@@ -297,7 +297,7 @@
 		@include tabletBig {
 			width: 100%;
 			flex-grow: 1;
-			padding: 12px 4px 10.5px;
+			padding: 13px 4px 10.5px;
 			font-size: 15px;
 			letter-spacing: 0.8px;
 		}
@@ -417,13 +417,13 @@ $bg-active-lang: #544671;
 }
 
 .idea-block {
-	font-size: 17px;
-	line-height: 1.6;
+	font-size: 18px;
+	line-height: 1.55;
 	color: $textGrey;
 	letter-spacing: 0.6px;
 
 	@include mobile {
-		font-size: 16px;
+		font-size: 17px;
 	}
 
 	.slider-with-btn {
@@ -458,10 +458,10 @@ $bg-active-lang: #544671;
 		color: $h1-title-color;
 		text-align: center;
 		max-width: 510px;
-		margin: 0 auto 45px;
+		margin: 0 auto 50px;
 
 		@include mobile {
-			margin-bottom: 40px;
+			margin-bottom: 45px;
 			font-size: 26px;
 		}
 
@@ -475,10 +475,10 @@ $bg-active-lang: #544671;
 		color: $h2-title-color;
 		font-size: 27px;
 		margin-bottom: 32px;
-		margin-top: 46px;
+		margin-top: 50px;
 
 		@include tabletBig {
-			font-size: 25px;
+			font-size: 24px;
 		}
 	}
 
@@ -486,8 +486,8 @@ $bg-active-lang: #544671;
 		color: $h3-title-color;
 		@include titleFont;
 		margin-bottom: 26px;
-		margin-top: 42px;
-		font-size: 22px;
+		margin-top: 45px;
+		font-size: 21px;
 
 		@include tabletBig {
 			font-size: 20px;
@@ -529,11 +529,11 @@ $bg-active-lang: #544671;
 
 		li {
 			position: relative;
-			padding-left: 26px;
+			padding-left: 27px;
 
 			@include mobile {
-				padding-left: 21px;
-				margin-left: 1px;
+				padding-left: 22px;
+				margin-left: 2px;
 			}
 
 			&::before {
@@ -557,7 +557,7 @@ $bg-active-lang: #544671;
 	}
 
 	p.description__has-em {
-		font-size: 14px;
+		font-size: 15px;
 		font-weight: 300;
 		color: #ffffff;
 
