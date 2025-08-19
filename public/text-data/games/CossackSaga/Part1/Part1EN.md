@@ -40,11 +40,11 @@ Everyone assumed he was dead, but a protective mechanism of otherworldly forces 
 
 Now, with the truth revealed, he must make a choice that will determine their shared fate.
 
-[mobile-slider]
-
 ## Description
 
 Imagine gameplay that combines the world-building depth of The Witcher 3, the parkour dynamism of Assassin’s Creed, and the cinematic combat direction of NieR: RepliCant/Automata — all seamlessly integrated into our unique historical-mystical world. Yet these are only reference points — the game offers its own unique design vision.
+
+[mobile-slider]
 
 ### Setting & Atmosphere
 
@@ -70,7 +70,7 @@ Local Factions — subordinates with their own leaders, assistants, and servants
 
 ### Inspiration
 
-- Games: [The Witcher Series](https://www.thewitcher.com/ua/en/), [Ghost of Tsushima](https://store.steampowered.com/app/2215430/Ghost_of_Tsushima_DIRECTORS_CUT/), [Clair Obscur: Expedition 33](https://www.expedition33.com/), [Final Fantasy VII](https://store.steampowered.com/app/1462040/FINAL_FANTASY_VII_REMAKE_INTERGRADE/) / [XV](https://store.steampowered.com/app/637650/FINAL_FANTASY_XV_WINDOWS_EDITION/)
+- Games: [The Witcher Series](https://www.thewitcher.com/ua/en/), [Ghost of Tsushima](https://store.steampowered.com/app/2215430/Ghost_of_Tsushima_DIRECTORS_CUT/), [Clair Obscur: Expedition 33](https://www.expedition33.com/), [Final Fantasy VII](https://store.steampowered.com/app/1462040/FINAL_FANTASY_VII_REMAKE_INTERGRADE/) / [XV](https://store.steampowered.com/app/637650/FINAL_FANTASY_XV_WINDOWS_EDITION/) — for deep worlds, epic quests, and strong storytelling.
 - Direction and Expression: [NieR: RepliCant](https://store.steampowered.com/app/1113560/NieR_Replicant_ver122474487139/) / [Automata](https://store.steampowered.com/app/524220/NieRAutomata/) — for their masterful fusion of cinematic combat, emotional intensity, and uniquely atmospheric world design.
 - Culture and Mythology: The Zaporizhian Cossacks, Slavic mythology, and demonology — for authenticity, magic, and folkloric lore.
 - Drama and Emotions: The full palette of human emotions — from triumphs to tragedies

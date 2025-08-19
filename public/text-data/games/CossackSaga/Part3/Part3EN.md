@@ -37,8 +37,10 @@ At the start of the game, you create your hero and choose a faction, which deter
 - African Tribes: a continent where the enemy first tested his nano-weapons. Refugees preserved their mythology and culture, integrating into new alliances under the protection of the Cossack Legion.
 - Asian Totalitarianism: the main enemy, emerging after its leader seized a fragment of ancient evil. The regime mercilessly destroyed everything standing in the way of absolute power and now seeks to subjugate the world with nano-weapons.
 
+[mobile-slider]
+
 ## More Details
 
 ***Under Construction …***
 
-The author is seeking resources and time to bring these masterful ideas to life. If you know how or where to get support, please write to me.
+The author is seeking resources and time to bring these masterful ideas to life. If you know how or where to get support, please write to me!

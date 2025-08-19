@@ -40,11 +40,11 @@
 
 Теперь, когда правда открыта, ему предстоит сделать выбор, от которого зависит их общая судьба.
 
-[mobile-slider]
-
 ## Описание
 
 Представьте геймплей, сочетающий глубину мира The Witcher 3, динамику паркура Assassin's Creed и кинематографичную постановку боёв NieR: RepliCant/Automata, встроенные в наш уникальный историко-мистический мир. Но это лишь ориентиры — игра предлагает собственное, уникальное дизайнерское видение.
+
+[mobile-slider]
 
 ### Сеттинг и Атмосфера
 
@@ -70,7 +70,7 @@
 
 ### Вдохновение
 
-- Игры: [The Witcher Series](https://www.thewitcher.com/ua/en/), [Ghost of Tsushima](https://store.steampowered.com/app/2215430/Ghost_of_Tsushima_DIRECTORS_CUT/), [Clair Obscur: Expedition 33](https://www.expedition33.com/), [Final Fantasy VII](https://store.steampowered.com/app/1462040/FINAL_FANTASY_VII_REMAKE_INTERGRADE/) / [XV](https://store.steampowered.com/app/637650/FINAL_FANTASY_XV_WINDOWS_EDITION/) — за глубокий мир, эпические квесты и сильный сценарий.
+- Игры: [The Witcher Series](https://www.thewitcher.com/ua/en/), [Ghost of Tsushima](https://store.steampowered.com/app/2215430/Ghost_of_Tsushima_DIRECTORS_CUT/), [Clair Obscur: Expedition 33](https://www.expedition33.com/), [Final Fantasy VII](https://store.steampowered.com/app/1462040/FINAL_FANTASY_VII_REMAKE_INTERGRADE/) / [XV](https://store.steampowered.com/app/637650/FINAL_FANTASY_XV_WINDOWS_EDITION/) — за глубокий мир, эпические квесты и сильный сюжет.
 - Режиссура и экспрессия: [NieR: RepliCant](https://store.steampowered.com/app/1113560/NieR_Replicant_ver122474487139/) / [Automata](https://store.steampowered.com/app/524220/NieRAutomata/) — шедевральное сочетание кинематографичной постановки боёв, эмоционального напряжения и уникальной атмосферы игрового мира.
 - Культура и мифология: Запорожские Казаки, славянская мифология и демонология — за аутентичность, магию и фольклорный лор.
 - Сюжет и альтернативная история: Множественные пути, которые бросают вызов устоявшимся историческим нарративам и формируют собственное драматическое повествование.

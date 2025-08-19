@@ -5,7 +5,7 @@
 @mixin titleFont {
 	font-family: $Raleway;
 	font-weight: 600;
-	letter-spacing: 1.3px;
+	letter-spacing: 1.5px;
 	line-height: 1.3;
 }
 
@@ -751,7 +751,7 @@ $bg-active-lang: #544671;
 
 	&:hover {
 		.video-preview__title {
-			box-shadow: inset 0 -90px 90px #000000;
+			box-shadow: inset 0 -95px 95px #000000;
 		}
 
 		img {
@@ -790,9 +790,10 @@ $bg-active-lang: #544671;
 		width: 100%;
 		height: 100%;
 		padding: 20px;
-		box-shadow: inset 0 -120px 120px rgba($color: $black, $alpha: 0.8);
+		box-shadow: inset 0 -90px 180px rgba($color: $black, $alpha: 0.9);
 		transition: 0.3s ease-out;
 		font-size: 14px;
+		color: rgba($textGrey, 0.8);
 
 		@include tabletBig {
 			padding: 15px;

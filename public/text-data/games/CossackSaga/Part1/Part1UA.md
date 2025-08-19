@@ -40,11 +40,11 @@
 
 Тепер, коли правда відкрита, йому належить зробити вибір, від якого залежатиме їхня спільна доля.
 
-[mobile-slider]
-
 ## Опис
 
 Уявіть геймплей, який поєднує глибину світу The Witcher 3, динаміку паркуру Assassin's Creed і кінематографічну постановку боїв NieR: RepliCant/Automata, інтегровані у наш унікальний історично-містичний світ. Але це лише орієнтири — гра пропонує власне, унікальне дизайнерське бачення.
+
+[mobile-slider]
 
 ### Сеттінг та Атмосфера
 
@@ -70,7 +70,7 @@
 
 ### Натхнення
 
-- Ігри: [The Witcher Series](https://www.thewitcher.com/ua/en/), [Ghost of Tsushima](https://store.steampowered.com/app/2215430/Ghost_of_Tsushima_DIRECTORS_CUT/), [Clair Obscur: Expedition 33](https://www.expedition33.com/), [Final Fantasy VII](https://store.steampowered.com/app/1462040/FINAL_FANTASY_VII_REMAKE_INTERGRADE/) / [XV](https://store.steampowered.com/app/637650/FINAL_FANTASY_XV_WINDOWS_EDITION/) — за глибокий світ, епічні квести та сильний сценарій.
+- Ігри: [The Witcher Series](https://www.thewitcher.com/ua/en/), [Ghost of Tsushima](https://store.steampowered.com/app/2215430/Ghost_of_Tsushima_DIRECTORS_CUT/), [Clair Obscur: Expedition 33](https://www.expedition33.com/), [Final Fantasy VII](https://store.steampowered.com/app/1462040/FINAL_FANTASY_VII_REMAKE_INTERGRADE/) / [XV](https://store.steampowered.com/app/637650/FINAL_FANTASY_XV_WINDOWS_EDITION/) — за глибокий світ, епічні квести та сильний сюжет.
 - Режисура та експресія: [NieR: RepliCant](https://store.steampowered.com/app/1113560/NieR_Replicant_ver122474487139/) / [Automata](https://store.steampowered.com/app/524220/NieRAutomata/) — шедевральне поєднання кінематографічної постановки боїв, емоційного напруження та унікальної ігрової атмосфери світу.
 - Культура та міфологія: Запорозькі Козаки, слов’янська міфологія та демонологія — за автентичність, магію та фольклорний лор.
 - Сюжет та альтернативна історія: Множинні шляхи, які кидають виклик усталеним історичним наративам і формують власну драматичну оповідь.

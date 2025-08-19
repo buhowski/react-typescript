@@ -32,8 +32,10 @@ By closing all passages to the beyond and destroying those responsible for the c
 
 Along with the fragments of magical energy, a fragment of the supreme demon bursts into the world. It fell somewhere unknown, hidden in the darkness. Only time will tell when this ancient evil will find its new master.
 
+[mobile-slider]
+
 ## More Details
 
 ***Under Construction …***
 
-The author is seeking resources and time to bring these masterful ideas to life. If you know how or where to get support, please write to me.
+The author is seeking resources and time to bring these masterful ideas to life. If you know how or where to get support, please write to me!
