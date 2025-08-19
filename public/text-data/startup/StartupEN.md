@@ -4,7 +4,7 @@
 
 ## Preface
 
-I want to create a corporation to develop areas close to my worldview: magazines, media, film, the video game industry, and the IT sector. These fields inspire, provide space for ideas, are underdeveloped locally, but have high profit potential.
+I want to create a corporation to develop areas close to my worldview: magazine, media, film, the video game industry, and the IT sector. These fields inspire, provide space for ideas, are underdeveloped locally, but have high profit potential.
 
 My individual projects are steps toward this goal. I plan to monetize them and reinvest the profits into my own technologies, opening opportunities for like-minded people.
 
