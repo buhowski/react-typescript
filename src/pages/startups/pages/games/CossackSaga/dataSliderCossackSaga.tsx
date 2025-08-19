@@ -21,7 +21,7 @@ export const dataSliderCossackSaga = [
 		itemSrc: cossackDrummer,
 		itemAlt:
 			'Illustration of a Ukrainian Cossack drummer with Cossack Drum of War — tribal battle band, inspired by Mad Max.',
-		itemCaption: `Reference to Cossack Drum of War — tribal battle band, inspired by Mad Max.`,
+		itemCaption: `AI Reference: Cossack Battle Drummer. Drums of War — tribal battle band.`,
 		putImgTitle: true,
 	},
 
@@ -29,7 +29,7 @@ export const dataSliderCossackSaga = [
 		itemPoster: automataPoster,
 		itemSrc: automataTrailer,
 		itemAlt: 'Poster for NieR Automata Official Boss Battle Gameplay Trailer.',
-		itemCaption: 'Reference for Direction: Cinematic boss combat — NieR Automata.',
+		itemCaption: 'Reference to The Directing Style: Cinematic boss combat — NieR Automata.',
 	},
 
 	{
@@ -43,7 +43,7 @@ export const dataSliderCossackSaga = [
 		itemSrc: ghostOfTsushimaTrailer,
 		itemAlt:
 			'Poster for Ghost of Tsushima game, featuring a samurai during the Mongol invasion of Japan.',
-		itemCaption: 'Visual Reference:  Setting / Historical Japanese atmosphere — Ghost of Tsushima.',
+		itemCaption: 'Visual Reference: Setting / Historical Japanese atmosphere — Ghost of Tsushima.',
 	},
 	{
 		itemPoster: replicantPoster,
@@ -67,8 +67,9 @@ export const dataSliderCossackSaga = [
 	},
 	{
 		itemSrc: cossackCharakternyk,
-		itemAlt: 'Illustration of a Ukrainian Cossack Characternyk, a sorcerer.',
-		itemCaption: `Reference to Cossack Sorcerer.`,
+		itemAlt:
+			'Illustration of a Ukrainian Cossack Charakternyk, Unique "gypsy punks" — nomadic tribal recluses who embody warriors, sorcerers, seers, and shamans',
+		itemCaption: `Reference to Cossack sorcerers, seers, and shamans.`,
 		putImgTitle: true,
 	},
 ];

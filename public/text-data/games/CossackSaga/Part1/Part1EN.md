@@ -64,7 +64,7 @@ Local Factions — subordinates with their own leaders, assistants, and servants
 
 ### Game World
 
-- Locations and Environment: The core regions of the game include the Zaporizhian Sich, the Carpathians, Volhynia, Kyivan Rus, Crimea, and more. Each region features its most captivating locations — camps, ruins, caves, temples, and fortresses — condensed into an interactive map that preserves the atmosphere of history and mysticism.
+- Locations and Environment: The core regions of the game include the Zaporizhian Sich, the Carpathians, Kyivan Rus, Crimea, and more. Each region features its most captivating locations — camps, ruins, caves, temples, and fortresses — condensed into an interactive map that preserves the atmosphere of history and mysticism.
 - Mythology and Magic: Ancient Slavic legends intertwine with history, shaping a unique mystical lore. Demonology and magic are integral to the life of nomadic Cossacks, and their legends influence the fates of heroes and reveal hidden truths.
 - Interactivity: Quests and NPCs allow players to reshape the story, affect characters’ destinies, and uncover hidden layers of mythology, immersing them in the atmosphere of a magical and historical world.
 

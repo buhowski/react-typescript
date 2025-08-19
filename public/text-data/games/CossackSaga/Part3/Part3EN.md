@@ -10,7 +10,7 @@ Centuries after the world abandoned religion and transformed magic into technolo
 
 ## Core Idea
 
-The introduction to the third chapter begins with a series of dynamic cinematic cutscenes recreating the events of the previous parts [Part I: Whispers of the Forgotten](/whispers-of-the-forgotten), [Part II: Ashes of the Beloved](/ashes-of-the-beloved) — the moment that forever reshaped the world. Then the pace accelerates: ruins of the ancient world morph into futuristic cities, tribes evolve into new civilizations, and time, compressed into a single flow, unveils an untold history.
+The introduction to the third chapter begins with a series of dynamic cinematic cutscenes recreating the events of the previous parts [Part I](/whispers-of-the-forgotten), [Part II](/ashes-of-the-beloved) — the moment that forever reshaped the world. Then the pace accelerates: ruins of the ancient world morph into futuristic cities, tribes evolve into new civilizations, and time, compressed into a single flow, unveils an untold history.
 
 Centuries after the eradication of the church’s demonic influence and humanity’s rejection of religion, the remnants of magic were redirected toward technological development. This sparked a rapid evolutionary leap that completely changed the course of history, giving rise to a world where futurism intertwines with the legacy of ancient cultures. The new society is built on self-belief, family strength, collective work, and mutual support.
 
