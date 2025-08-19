@@ -5,7 +5,7 @@
 @mixin titleFont {
 	font-family: $Raleway;
 	font-weight: 600;
-	letter-spacing: 1px;
+	letter-spacing: 1.3px;
 	line-height: 1.3;
 }
 
@@ -80,7 +80,7 @@
 		max-width: 777px;
 		width: calc(100% - 80px);
 		margin: 0 auto;
-		padding: 0 0 90px;
+		padding: 0 0 96px;
 	}
 
 	@include mobile {
@@ -288,7 +288,7 @@
 
 	// .idea-tabs__btn
 	&__btn {
-		padding: 13px 50px 10.6px;
+		padding: 13px 50px 11px;
 		font-family: $LouisGeorgeCafBold;
 		font-size: 18px;
 		letter-spacing: 2px;
@@ -297,7 +297,7 @@
 		@include tabletBig {
 			width: 100%;
 			flex-grow: 1;
-			padding: 13px 4px 10.5px;
+			padding: 13px 4px 11px;
 			font-size: 15px;
 			letter-spacing: 0.8px;
 		}
@@ -418,12 +418,12 @@ $bg-active-lang: #544671;
 
 .idea-block {
 	font-size: 18px;
-	line-height: 1.55;
+	line-height: 1.5;
 	color: $textGrey;
-	letter-spacing: 0.6px;
+	letter-spacing: 0.5px;
 
 	@include mobile {
-		font-size: 17px;
+		font-size: 16px;
 	}
 
 	.slider-with-btn {
@@ -460,9 +460,9 @@ $bg-active-lang: #544671;
 		max-width: 510px;
 		margin: 0 auto 50px;
 
-		@include mobile {
-			margin-bottom: 45px;
-			font-size: 26px;
+		@include tabletBig {
+			margin-bottom: 40px;
+			font-size: 24px;
 		}
 
 		+ h2 {
@@ -473,25 +473,25 @@ $bg-active-lang: #544671;
 	h2 {
 		@include titleFont;
 		color: $h2-title-color;
-		font-size: 27px;
-		margin-bottom: 32px;
+		font-size: 25px;
+		margin-bottom: 30px;
 		margin-top: 50px;
 
 		@include tabletBig {
-			font-size: 24px;
+			font-size: 21px;
 		}
 	}
 
 	h3 {
-		color: $h3-title-color;
 		@include titleFont;
-		margin-bottom: 26px;
+		color: $h3-title-color;
+		margin-bottom: 25px;
 		margin-top: 45px;
 		font-size: 21px;
 
 		@include tabletBig {
-			font-size: 20px;
-			margin-top: 36px;
+			font-size: 19px;
+			margin-top: 38px;
 		}
 
 		+ ul {
@@ -520,12 +520,12 @@ $bg-active-lang: #544671;
 
 	p + p,
 	li + li {
-		margin-top: 28px;
+		margin-top: 25px;
 	}
 
 	// .idea-block__list
 	ul {
-		margin: 32px 0;
+		margin: 36px 0;
 
 		li {
 			position: relative;
@@ -573,7 +573,7 @@ $bg-active-lang: #544671;
 	a {
 		display: inline;
 		position: relative;
-		transition: color 0.2s ease-in-out;
+		transition: color 0.25s;
 		color: #ffffff;
 		font-weight: 500;
 
@@ -582,7 +582,7 @@ $bg-active-lang: #544671;
 			background-size: 100% 1px;
 			background-repeat: no-repeat;
 			background-position: left bottom;
-			transition: background-size 0.4s ease-out;
+			transition: background-size 0.35s;
 			font-weight: inherit;
 			font-style: inherit;
 			padding: 2px 0;
@@ -601,25 +601,6 @@ $bg-active-lang: #544671;
 				background-size: 0 1px;
 			}
 		}
-	}
-}
-
-.last-words {
-	text-align: right;
-	font-style: italic;
-	margin-top: 40px;
-	font-size: 15px;
-	white-space: pre-line;
-	line-height: 1.6;
-
-	@include tabletBig {
-		margin-bottom: 40px;
-		padding-right: 0;
-		font-size: 14px;
-	}
-
-	span {
-		display: block;
 	}
 }
 
@@ -996,6 +977,7 @@ $bg-active-lang: #544671;
 	margin-top: 55px;
 
 	@include tabletBig {
+		margin-top: 50px;
 		justify-content: center;
 	}
 }
