@@ -113,32 +113,39 @@ const Slider: React.FC<SliderProps> = ({ slides }) => {
 
 	useEffect(() => {
 		playerControls.resetVideo();
-		const hasImage =
-			currentSlide?.itemPoster ||
-			(!isYouTubeUrl(currentSlide?.itemSrc) &&
-				!isDirectVideoFile(currentSlide?.itemSrc) &&
-				currentSlide?.itemSrc);
-
-		if (hasImage) {
-			setIsContentLoading(true);
-		} else {
-			setIsContentLoading(false);
-		}
+		// This effect now only resets the video on slide change,
+		// and doesn't trigger the preloader for cached images.
 	}, [currentSlide, playerControls]);
 
 	useEffect(() => {
 		setActiveIndex(0);
 	}, [slides]);
 
-	const handleNext = useCallback(() => {
+	const handleNextWithLoader = useCallback(() => {
 		if (slides.length <= 1) return;
+		const hasImage =
+			currentSlide?.itemPoster ||
+			(!isYouTubeUrl(currentSlide?.itemSrc) &&
+				!isDirectVideoFile(currentSlide?.itemSrc) &&
+				currentSlide?.itemSrc);
+		if (hasImage) {
+			setIsContentLoading(true);
+		}
 		setActiveIndex((prev) => (prev + 1) % slides.length);
-	}, [slides.length]);
+	}, [slides.length, currentSlide]);
 
-	const handlePrev = useCallback(() => {
+	const handlePrevWithLoader = useCallback(() => {
 		if (slides.length <= 1) return;
+		const hasImage =
+			currentSlide?.itemPoster ||
+			(!isYouTubeUrl(currentSlide?.itemSrc) &&
+				!isDirectVideoFile(currentSlide?.itemSrc) &&
+				currentSlide?.itemSrc);
+		if (hasImage) {
+			setIsContentLoading(true);
+		}
 		setActiveIndex((prev) => (prev - 1 + slides.length) % slides.length);
-	}, [slides.length]);
+	}, [slides.length, currentSlide]);
 
 	let sliderInnerContent: React.ReactNode;
 
@@ -236,7 +243,7 @@ const Slider: React.FC<SliderProps> = ({ slides }) => {
 							className='slider-btn-js slider-btn-js-prev'
 							type='button'
 							aria-label='Go to previous slide'
-							onClick={handlePrev}
+							onClick={handlePrevWithLoader}
 							disabled={slides.length <= 1}
 						>
 							<i className='chevron' />
@@ -250,7 +257,7 @@ const Slider: React.FC<SliderProps> = ({ slides }) => {
 							className='slider-btn-js slider-btn-js-next'
 							type='button'
 							aria-label='Go to next slide'
-							onClick={handleNext}
+							onClick={handleNextWithLoader}
 							disabled={slides.length <= 1}
 						>
 							<i className='chevron' />
