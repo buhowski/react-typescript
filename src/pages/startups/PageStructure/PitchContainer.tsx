@@ -24,7 +24,11 @@ const PitchContainer = React.memo(
 
 			// Determine if an error message should be displayed for the markdown content
 			const shouldShowErrorMessage =
-				!structure.markdownAPI || structure.markdownAPI.trim() === '' || markdownLoadError;
+				!structure.markdownAPI ||
+				(typeof structure.markdownAPI === 'string'
+					? structure.markdownAPI.trim() === ''
+					: structure.markdownAPI.every((s) => !s || s.trim() === '')) ||
+				markdownLoadError;
 
 			return (
 				<section ref={ref} className={`pitch-container`}>
@@ -35,14 +39,23 @@ const PitchContainer = React.memo(
 								ERROR: Text not found
 							</p>
 						) : (
-							<MarkdownBlock
-								src={structure.markdownAPI!}
-								sliderContent={sliderContent}
-								currentLanguage={currentLanguage}
-								onError={setMarkdownLoadError}
-								onHeadingsExtracted={handleHeadings}
-								pitchIndex={index}
-							/>
+							// Handle both string and array of strings
+							(Array.isArray(structure.markdownAPI)
+								? structure.markdownAPI
+								: [structure.markdownAPI]
+							)
+								.filter((src): src is string => !!src)
+								.map((src, idx) => (
+									<MarkdownBlock
+										key={idx}
+										src={src}
+										sliderContent={sliderContent}
+										currentLanguage={currentLanguage}
+										onError={setMarkdownLoadError}
+										onHeadingsExtracted={handleHeadings}
+										pitchIndex={index}
+									/>
+								))
 						)}
 					</div>
 

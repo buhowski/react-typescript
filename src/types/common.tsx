@@ -15,11 +15,12 @@ export interface SlideItem {
 // VideoPreview component
 export interface VideoPreviewProps extends SlideItem {
 	onClick: () => void;
+	onLoad?: () => void;
 }
 
 // Common properties for content related URLs
 export interface ContentUrls {
-	markdownAPI?: string;
+	markdownAPI?: string | string[];
 	filmsPreviewUrl?: string;
 }
 

@@ -14,7 +14,10 @@ export const dataGames = {
 
 		// ### Cossacks Saga ###
 		{
-			markdownAPI: '/text-data/games/CossackSaga/CossackSagaEN.md',
+			markdownAPI: [
+				'/text-data/games/CossackSaga/PreviewCossackSagaEN.md',
+				'/text-data/games/CossackSaga/CossackSagaEN.md',
+			],
 			sliderContent: dataSliderCossackSaga,
 			filmsPreviewUrl: pathToCossackSaga,
 		},
@@ -26,7 +29,12 @@ export const dataGames = {
 		{ markdownAPI: '/text-data/games/PreviewGamesUA.md' },
 
 		// ### Cossacks RPG ###
-		{ markdownAPI: '/text-data/games/CossackSaga/CossackSagaUA.md' },
+		{
+			markdownAPI: [
+				'/text-data/games/CossackSaga/PreviewCossackSagaUA.md',
+				'/text-data/games/CossackSaga/CossackSagaUA.md',
+			],
+		},
 	],
 
 	// rusian
@@ -35,6 +43,11 @@ export const dataGames = {
 		{ markdownAPI: '/text-data/games/PreviewGamesRU.md' },
 
 		// ### Cossacks Saga ###
-		{ markdownAPI: '/text-data/games/CossackSaga/CossackSagaRU.md' },
+		{
+			markdownAPI: [
+				'/text-data/games/CossackSaga/PreviewCossackSagaRU.md',
+				'/text-data/games/CossackSaga/CossackSagaRU.md',
+			],
+		},
 	],
 };

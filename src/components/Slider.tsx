@@ -1,20 +1,18 @@
-// src/components/Slider.tsx
 import { useState, useEffect, useCallback, useRef, useMemo } from 'react';
 import Copyright from './Copyright';
 import PopupContacts from './PopupContacts';
 import { useTabletLargeQuery } from '../config/useMediaQuery';
 import { playIcon } from '../pages/startups/assets/svg/playIcon';
 import { SliderProps, VideoPreviewProps } from '../types/common';
-import { useVideoPlayback } from '../pages/startups/helpers/VideoPlaybackContext'; // Import the new hook
+import { useVideoPlayback } from '../pages/startups/helpers/VideoPlaybackContext';
+import Preloader from './Preloader';
 
 // Helper function to detect iOS mobile devices
 const isMobileDevice = (): boolean => {
 	if (typeof navigator === 'undefined') {
-		return false; // Not in a browser environment
+		return false;
 	}
 	const userAgent = navigator.userAgent;
-	// Common mobile user agent patterns
-	// return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(userAgent);
 	return /iPad|iPhone|iPod/.test(userAgent);
 };
 
@@ -23,10 +21,8 @@ const buildYouTubeEmbedSrc = (url: string | undefined): string => {
 	if (!url) return '';
 	const separator = url.includes('?') ? '&' : '?';
 
-	// Always include autoplay and enablejsapi for programmatic control
 	let params = 'autoplay=1&enablejsapi=1';
 
-	// Conditionally add mute for iOS mobile devices - FIX playing video on iOS
 	if (isMobileDevice()) {
 		params += '&mute=1';
 	}
@@ -43,35 +39,33 @@ const isYouTubeUrl = (url?: string) => {
 };
 const isDirectVideoFile = (url?: string) => url?.match(/\.(mp4|webm|ogg)$/i);
 
-// VideoPreview component (remains the same)
+// VideoPreview component
 const VideoPreview: React.FC<VideoPreviewProps> = ({
 	itemPoster,
 	itemAlt,
 	itemCaption,
 	onClick,
+	onLoad,
 }) => (
 	<div className='video-preview' onClick={onClick}>
-		{itemPoster && <img src={itemPoster} alt={itemAlt} />}
-
+		{itemPoster && <img src={itemPoster} alt={itemAlt} onLoad={onLoad} />}
 		<p className='video-preview__title'>{itemCaption}</p>
-
 		{playIcon}
 	</div>
 );
 
-const Slider: React.FC<SliderProps> = ({ slides, currentLanguage }) => {
+const Slider: React.FC<SliderProps> = ({ slides }) => {
 	const useTabletLarge = useTabletLargeQuery();
 	const [activeIndex, setActiveIndex] = useState(0);
 	const [isPlayingVideo, setIsPlayingVideo] = useState(false);
+	const [isContentLoading, setIsContentLoading] = useState(false);
 	const videoRef = useRef<HTMLVideoElement | null>(null);
 	const iframeRef = useRef<HTMLIFrameElement | null>(null);
 
 	const { registerPlayer, unregisterPlayer, stopAllOtherVideos } = useVideoPlayback();
 
-	// Generate a unique ID for this slider instance
 	const instanceId = useMemo(() => `slider-${Math.random().toString(36).substring(2, 11)}`, []);
 
-	// Controls for this specific player
 	const playerControls = useMemo(
 		() => ({
 			pauseVideo: () => {
@@ -83,15 +77,24 @@ const Slider: React.FC<SliderProps> = ({ slides, currentLanguage }) => {
 					);
 			},
 			resetVideo: () => {
-				if (videoRef.current) videoRef.current.currentTime = 0;
-				if (iframeRef.current) iframeRef.current.src = '';
+				if (videoRef.current) {
+					videoRef.current.src = '';
+					videoRef.current.load();
+				}
+				if (iframeRef.current) {
+					iframeRef.current.src = '';
+				}
 				setIsPlayingVideo(false);
 			},
 		}),
 		[]
 	);
 
-	// Register and unregister the player with the context
+	const currentSlide = useMemo(() => {
+		const validatedActiveIndex = activeIndex >= slides.length ? 0 : activeIndex;
+		return slides[validatedActiveIndex];
+	}, [slides, activeIndex]);
+
 	useEffect(() => {
 		registerPlayer(instanceId, playerControls);
 		return () => {
@@ -99,36 +102,32 @@ const Slider: React.FC<SliderProps> = ({ slides, currentLanguage }) => {
 		};
 	}, [instanceId, registerPlayer, unregisterPlayer, playerControls]);
 
-	// Handle playing a video
 	const handlePlayVideo = useCallback(() => {
 		stopAllOtherVideos(instanceId);
 		setIsPlayingVideo(true);
-		// setTimeout(() => {
-		// 	if (iframeRef.current && isYouTubeUrl(slides[activeIndex]?.itemSrc)) {
-		// 		iframeRef.current.contentWindow?.postMessage(
-		// 			'{"event":"command","func":"playVideo","args":""}',
-		// 			'*'
-		// 		);
-		// 	}
-		// }, 100);
+	}, [instanceId, stopAllOtherVideos]);
 
-		if (iframeRef.current && isYouTubeUrl(slides[activeIndex]?.itemSrc)) {
-			iframeRef.current.contentWindow?.postMessage(
-				'{"event":"command","func":"playVideo","args":""}',
-				'*'
-			);
+	const handleContentLoad = useCallback(() => {
+		setIsContentLoading(false);
+	}, []);
+
+	useEffect(() => {
+		playerControls.resetVideo();
+		const hasImage =
+			currentSlide?.itemPoster ||
+			(!isYouTubeUrl(currentSlide?.itemSrc) &&
+				!isDirectVideoFile(currentSlide?.itemSrc) &&
+				currentSlide?.itemSrc);
+		if (hasImage) {
+			setIsContentLoading(true);
+		} else {
+			setIsContentLoading(false);
 		}
-	}, [instanceId, stopAllOtherVideos, slides, activeIndex]);
+	}, [currentSlide, playerControls]);
 
-	// each PitchContainer's slider starts from the first item.
 	useEffect(() => {
 		setActiveIndex(0);
 	}, [slides]);
-
-	// Pause video whenever the set of slides changes or the active slide index changes.
-	useEffect(() => {
-		playerControls.resetVideo();
-	}, [slides, activeIndex, playerControls]);
 
 	const handleNext = useCallback(() => {
 		if (slides.length <= 1) return;
@@ -140,11 +139,9 @@ const Slider: React.FC<SliderProps> = ({ slides, currentLanguage }) => {
 		setActiveIndex((prev) => (prev - 1 + slides.length) % slides.length);
 	}, [slides.length]);
 
-	// Determine the content to render inside the common wrapper
 	let sliderInnerContent: React.ReactNode;
 
 	if (!slides.length) {
-		// Case 1: No slides available
 		sliderInnerContent = (
 			<div className='slider-wrapper disabled'>
 				<div className='slider-wrapper__empty slider-js'>No Examples Yet</div>
@@ -152,14 +149,10 @@ const Slider: React.FC<SliderProps> = ({ slides, currentLanguage }) => {
 			</div>
 		);
 	} else {
-		const validatedActiveIndex = activeIndex >= slides.length ? 0 : activeIndex;
-		const currentSlide = slides[validatedActiveIndex];
-
 		if (!currentSlide) {
-			// Case 2a: Current slide is unexpectedly undefined (error fallback)
 			console.error(
 				'Slider: currentSlide is unexpectedly undefined after validation. Index:',
-				validatedActiveIndex,
+				activeIndex,
 				' Slides:',
 				slides
 			);
@@ -170,13 +163,21 @@ const Slider: React.FC<SliderProps> = ({ slides, currentLanguage }) => {
 				</div>
 			);
 		} else {
-			// Case 2b: Valid slide content to render
 			const isVideo = isYouTubeUrl(currentSlide.itemSrc) || isDirectVideoFile(currentSlide.itemSrc);
 
 			sliderInnerContent = (
 				<div className={`slider-wrapper ${slides.length > 1 ? '' : 'disabled'}`}>
 					<div className='idea-slider slider-js'>
-						<div className='slider-item-js' data-active={true}>
+						{isContentLoading && !isPlayingVideo && (
+							<div className='slider-loader'>
+								<Preloader />
+							</div>
+						)}
+						<div
+							className='slider-item-js'
+							data-active={true}
+							style={{ opacity: isContentLoading && !isPlayingVideo ? 0 : 1 }}
+						>
 							{isVideo ? (
 								isPlayingVideo ? (
 									isYouTubeUrl(currentSlide.itemSrc) ? (
@@ -200,8 +201,8 @@ const Slider: React.FC<SliderProps> = ({ slides, currentLanguage }) => {
 											playsInline
 											preload='none'
 											title={currentSlide.itemAlt}
+											src={currentSlide.itemSrc}
 										>
-											<source src={currentSlide.itemSrc} type='video/mp4' />
 											Your browser does not support the video tag.
 										</video>
 									)
@@ -211,12 +212,16 @@ const Slider: React.FC<SliderProps> = ({ slides, currentLanguage }) => {
 										itemAlt={currentSlide.itemAlt}
 										itemCaption={currentSlide.itemCaption}
 										onClick={handlePlayVideo}
+										onLoad={handleContentLoad}
 									/>
 								)
 							) : (
 								<>
-									<img src={currentSlide.itemSrc} alt={currentSlide.itemAlt} />
-
+									<img
+										src={currentSlide.itemSrc}
+										alt={currentSlide.itemAlt}
+										onLoad={handleContentLoad}
+									/>
 									{currentSlide.putImgTitle && (
 										<p className='video-preview__title'>{currentSlide.itemCaption}</p>
 									)}
@@ -224,10 +229,8 @@ const Slider: React.FC<SliderProps> = ({ slides, currentLanguage }) => {
 							)}
 						</div>
 					</div>
-
 					<div className='slider-actions'>
 						{!useTabletLarge && <Copyright />}
-
 						<button
 							className='slider-btn-js slider-btn-js-prev'
 							type='button'
@@ -237,13 +240,11 @@ const Slider: React.FC<SliderProps> = ({ slides, currentLanguage }) => {
 						>
 							<i className='chevron' />
 						</button>
-
 						<span className='slides-number h2'>
-							{`${validatedActiveIndex + 1 < 10 ? '0' : ''}${validatedActiveIndex + 1} / ${
+							{`${activeIndex + 1 < 10 ? '0' : ''}${activeIndex + 1} / ${
 								slides.length < 10 ? '0' : ''
 							}${slides.length}`}
 						</span>
-
 						<button
 							className='slider-btn-js slider-btn-js-next'
 							type='button'
@@ -259,12 +260,10 @@ const Slider: React.FC<SliderProps> = ({ slides, currentLanguage }) => {
 		}
 	}
 
-	// Render the common outer structure and the determined inner content
 	return (
 		<div className='slider-with-btn'>
 			<div className='slider-container'>
 				{sliderInnerContent}
-
 				{!useTabletLarge && <PopupContacts />}
 			</div>
 		</div>

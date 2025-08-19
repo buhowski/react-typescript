@@ -16,3 +16,11 @@ declare module '*.webm' {
 	const content: string;
 	export default content;
 }
+
+// Global declaration for the YouTube IFrame API
+declare global {
+	interface Window {
+		YT: any;
+		onYouTubeIframeAPIReady: () => void;
+	}
+}
