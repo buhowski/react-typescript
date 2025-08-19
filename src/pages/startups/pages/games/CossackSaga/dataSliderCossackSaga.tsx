@@ -18,6 +18,21 @@ const automataTrailer = 'https://www.youtube-nocookie.com/embed/4bx02CEISLI';
 
 export const dataSliderCossackSaga = [
 	{
+		itemSrc: cossackDrummer,
+		itemAlt:
+			'Illustration of a Ukrainian Cossack drummer with Cossack Drum of War — tribal battle band, inspired by Mad Max.',
+		itemCaption: `Reference to Cossack Drum of War — tribal battle band, inspired by Mad Max.`,
+		putImgTitle: true,
+	},
+
+	{
+		itemPoster: automataPoster,
+		itemSrc: automataTrailer,
+		itemAlt: 'Poster for NieR Automata Official Boss Battle Gameplay Trailer.',
+		itemCaption: 'Reference for Direction: Cinematic boss combat — NieR Automata.',
+	},
+
+	{
 		itemPoster: witcherPoster,
 		itemSrc: witcherTrailer,
 		itemAlt: 'Poster for The Witcher 3: Wild Hunt game.',
@@ -37,19 +52,7 @@ export const dataSliderCossackSaga = [
 		itemCaption:
 			'Atmosphere Reference: Cinematic combat, emotional intensity, and unique world vibe — NieR Replicant.',
 	},
-	{
-		itemPoster: automataPoster,
-		itemSrc: automataTrailer,
-		itemAlt: 'Poster for NieR Automata Official Boss Battle Gameplay Trailer.',
-		itemCaption: 'Reference for Direction: Cinematic boss combat — NieR Automata.',
-	},
-	{
-		itemSrc: cossackDrummer,
-		itemAlt:
-			'Illustration of a Ukrainian Cossack drummer with Cossack Drum of War — tribal battle band, inspired by Mad Max.',
-		itemCaption: `Reference to Cossack Drum of War — tribal battle band, inspired by Mad Max.`,
-		putImgTitle: true,
-	},
+
 	{
 		itemSrc: cossacksPoster,
 		itemAlt: 'Painting depicting Ukrainian Cossacks writing a letter to the Turkish sultan.',
@@ -62,7 +65,6 @@ export const dataSliderCossackSaga = [
 		itemCaption: `Reference to Cossacks Warrior Style.`,
 		putImgTitle: true,
 	},
-
 	{
 		itemSrc: cossackCharakternyk,
 		itemAlt: 'Illustration of a Ukrainian Cossack Characternyk, a sorcerer.',
