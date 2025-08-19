@@ -4,13 +4,13 @@
 
 ## Preface
 
-I've got a grand vision of the overall picture — creating a corporation to develop areas close to my worldview, which inspire me and provide space for ideas, are locally underdeveloped, but possess high-profit potential (magazine, media, film and gaming industry, IT sector).
+I want to create a corporation to develop areas close to my worldview: magazines, media, film, the video game industry, and the IT sector. These fields inspire, provide space for ideas, are underdeveloped locally, but have high profit potential.
 
-The pieces of this picture are my individual projects, which I plan to monetize and reinvest the profits into developing my own technologies, creating opportunities for like-minded people.
+My individual projects are steps toward this goal. I plan to monetize them and reinvest the profits into my own technologies, opening opportunities for like-minded people.
 
-I'm also looking for those who will help bring my ideas to life and team up, combining efforts and shared interests for a partnership.
+I am also looking for those who can help bring these ideas to life and with whom I can combine efforts and shared interests for partnership.
 
-Project presentations are available in the navigation. Below is the logic behind building this corporation.
+Project presentations are available in the navigation, and below is the corporation plan.
 
 [mobile-slider]
 

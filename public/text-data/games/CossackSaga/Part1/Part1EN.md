@@ -56,6 +56,11 @@ The game questions established historical narratives, particularly the motives b
 
 Unique "gypsy punks" — nomadic tribal recluses who embody warriors, sorcerers, seers, and shamans. They live by their own laws: friendly, fearless, and free, blending magic with martial skills. They often act as advisors, mercenaries, or choose to follow their own path.
 
+### Antagonist Clan
+
+- Supreme Leader — "Pops' Throne", the heart of the conspiracy. His goal is to subjugate the world to his orders, using demonic pacts to control all religions and politics.
+- Local Factions — subordinates with their own leaders, assistants, and servants. Created for every faith across the world, they infiltrate regions, seize local churches and religious institutions, using rituals and demonic interventions, gradually bringing people to the dark side.
+
 ### Game World
 
 - Locations and Environment: The core regions of the game include the Zaporizhian Sich, the Carpathians, Volhynia, Kyivan Rus, Crimea, and more. Each region features its most captivating locations — camps, ruins, caves, temples, and fortresses — condensed into an interactive map that preserves the atmosphere of history and mysticism.
@@ -78,4 +83,4 @@ I am looking support and a team to bring this unique world to life. This is an o
 
 ***Under Construction …***
 
-The author is seeking resources and time to bring these masterful ideas to life. If you know how or where to get support, please write to me.
+The author is seeking resources and time to bring these masterful ideas to life. If you know how or where to get support, please write to me!
