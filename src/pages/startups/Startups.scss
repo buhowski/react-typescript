@@ -735,6 +735,7 @@ $bg-active-lang: #544671;
 	.preloader {
 		position: static;
 		align-items: flex-start;
+		z-index: 5;
 
 		// .preloader__spinner
 		&__spinner {

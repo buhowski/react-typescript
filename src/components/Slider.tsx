@@ -118,6 +118,7 @@ const Slider: React.FC<SliderProps> = ({ slides }) => {
 			(!isYouTubeUrl(currentSlide?.itemSrc) &&
 				!isDirectVideoFile(currentSlide?.itemSrc) &&
 				currentSlide?.itemSrc);
+
 		if (hasImage) {
 			setIsContentLoading(true);
 		} else {
