@@ -145,9 +145,9 @@ const PageStructure: React.FC<PageProps> = ({ textData, backButton }) => {
 	}, [initialLangReady, contentToRender, useTabletLarge]);
 
 	// Set document language based on current language
-	// useEffect(() => {
-	// 	document.documentElement.lang = currentLang;
-	// }, [currentLang]);
+	useEffect(() => {
+		document.documentElement.lang = currentLang;
+	}, [currentLang]);
 
 	return (
 		<VideoPlaybackProvider>

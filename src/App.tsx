@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { useLocation, Routes, Route } from 'react-router-dom';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import PageHelmet from './config/PageHelmet';
@@ -65,8 +66,34 @@ const routesData = [
 	{ pathTo: pathToCossackSagaPart3, pageComponent: <CossackSagaPart3 /> },
 ];
 
+const langSwitchPaths = [
+	pathToStartup,
+	pathToStartupFilms,
+	pathToStartupGames,
+	pathToStartupMVP,
+	pathToEuropeanUkrainians,
+	pathToTheCorp,
+	pathToSelfPresentation,
+	pathToPodcastShow,
+	pathToCossackSaga,
+	pathToCossackSagaPart1,
+	pathToCossackSagaPart2,
+	pathToCossackSagaPart3,
+];
+
 const App = () => {
 	const location = useLocation();
+
+	useEffect(() => {
+		const isOnLangPage = langSwitchPaths.includes(location.pathname);
+
+		if (isOnLangPage) {
+			const storedLang = localStorage.getItem('currentLang');
+			document.documentElement.lang = storedLang || 'en';
+		} else {
+			document.documentElement.lang = 'en';
+		}
+	}, [location.pathname]);
 
 	return (
 		<TransitionGroup>
