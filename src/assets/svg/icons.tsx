@@ -95,6 +95,7 @@ export const DonateIcon = (
 
 export const ArrowLeftIcon = (
 	<svg
+		width='25'
 		version='1.0'
 		xmlns='http://www.w3.org/2000/svg'
 		preserveAspectRatio='xMidYMid meet'
