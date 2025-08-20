@@ -8,6 +8,15 @@ export const useActiveHeadingTracking = (
 	const [activeHeadingId, setActiveHeadingId] = useState<string | null>(null);
 	const [headingsVersion, setHeadingsVersion] = useState(0);
 
+	// Custom Alert Component
+	const showReloadAlert = (headingId: string) => {
+		// const headingElement = document.getElementById(headingId);
+		// const headingTitle = headingElement ? headingElement.innerText : headingId;
+		const alertMessage = `Need reload page to fix changed resolution issue.`;
+		alert(alertMessage);
+		window.location.reload();
+	};
+
 	// handleHeadingsExtracted
 	const handleHeadingsExtracted = useCallback(
 		(pitchIndex: number, headings: CollectedHeading[]) => {
@@ -91,6 +100,7 @@ export const useActiveHeadingTracking = (
 				});
 			} else {
 				console.warn(`Could not find element with ID: ${headingId}.`);
+				showReloadAlert(headingId);
 			}
 		},
 		[useTabletLarge]
