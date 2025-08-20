@@ -4,15 +4,6 @@
     <loc>https://buhowski.dev/</loc>
   </url>
   <url>
-    <loc>https://buhowski.dev/startup</loc>
-  </url>
-  <url>
-    <loc>https://buhowski.dev/films</loc>
-  </url>
-  <url>
-    <loc>https://buhowski.dev/games</loc>
-  </url>
-  <url>
     <loc>https://buhowski.dev/mvp</loc>
   </url>
   <url>
@@ -22,7 +13,15 @@
     <loc>https://buhowski.dev/projects</loc>
   </url>
 
+  <!-- Startups -->
+  <url>
+    <loc>https://buhowski.dev/startup</loc>
+  </url>
+
   <!-- Films -->
+  <url>
+    <loc>https://buhowski.dev/films</loc>
+  </url>
   <url>
     <loc>https://buhowski.dev/self-presentation</loc>
   </url>
@@ -38,6 +37,18 @@
 
   <!-- Games -->
   <url>
-    <loc>https://buhowski.dev/cossacks</loc>
+    <loc>https://buhowski.dev/games</loc>
+  </url>
+  <url>
+    <loc>https://buhowski.dev/cossack-saga</loc>
+  </url>
+  <url>
+    <loc>https://buhowski.dev/whispers-of-the-forgotten</loc>
+  </url>
+  <url>
+    <loc>https://buhowski.dev/ashes-of-the-beloved</loc>
+  </url>
+  <url>
+    <loc>https://buhowski.dev/quantum-leap</loc>
   </url>
 </urlset>
