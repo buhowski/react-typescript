@@ -1,4 +1,3 @@
-// Refactored MarkdownBlock - Final version with new logic
 import React, { useState, useEffect, useRef, memo, Children } from 'react';
 import ReactMarkdown, { Components } from 'react-markdown';
 import { useTabletLargeQuery } from '../../../config/useMediaQuery';

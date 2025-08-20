@@ -20,7 +20,7 @@ export interface VideoPreviewProps extends SlideItem {
 
 // Common properties for content related URLs
 export interface ContentUrls {
-	markdownAPI?: string | string[];
+	markdownAPI?: string;
 	filmsPreviewUrl?: string;
 }
 
