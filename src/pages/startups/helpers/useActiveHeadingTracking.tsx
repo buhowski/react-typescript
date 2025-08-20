@@ -1,21 +1,18 @@
 import React, { useState, useEffect, useMemo, useCallback } from 'react';
 import { HeadingInfo, CollectedHeading } from '../../../types/common';
 
+// Custom Alert Component
+const showReloadAlert = (): void => {
+	alert('Page reloads to fix clicks after resolution change.');
+	window.location.reload();
+};
+
 export const useActiveHeadingTracking = (
 	useTabletLarge: boolean,
 	allHeadingsMapRef: React.MutableRefObject<Map<number, HeadingInfo[]>>
 ) => {
 	const [activeHeadingId, setActiveHeadingId] = useState<string | null>(null);
 	const [headingsVersion, setHeadingsVersion] = useState(0);
-
-	// Custom Alert Component
-	const showReloadAlert = (headingId: string) => {
-		// const headingElement = document.getElementById(headingId);
-		// const headingTitle = headingElement ? headingElement.innerText : headingId;
-		const alertMessage = `Need reload page to fix changed resolution issue.`;
-		alert(alertMessage);
-		window.location.reload();
-	};
 
 	// handleHeadingsExtracted
 	const handleHeadingsExtracted = useCallback(
@@ -100,7 +97,7 @@ export const useActiveHeadingTracking = (
 				});
 			} else {
 				console.warn(`Could not find element with ID: ${headingId}.`);
-				showReloadAlert(headingId);
+				showReloadAlert();
 			}
 		},
 		[useTabletLarge]
