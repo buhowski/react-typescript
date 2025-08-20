@@ -8,12 +8,12 @@ I want to Create an Information and Entertainment Media Magazine and Transform I
 
 ## Startup Projects
 
-### [ Films ](https://buhowski.dev/films)
+### [ Cinematic Concepts ](https://buhowski.dev/films)
 
-### [ Games ](https://buhowski.dev/games)
+### [ Gaming Ideas ](https://buhowski.dev/games)
 
 ### [ Magazine | Strategy ](https://buhowski.dev/mvp)
 
-## Front-End Development Portfolio
+## Front-End Development Portfolio / CV
 
 ### [ Projects ](https://buhowski.dev/projects)

@@ -4,21 +4,18 @@
     <loc>https://buhowski.dev/</loc>
   </url>
   <url>
-    <loc>https://buhowski.dev/mvp</loc>
-  </url>
-  <url>
     <loc>https://buhowski.dev/about</loc>
   </url>
   <url>
     <loc>https://buhowski.dev/projects</loc>
   </url>
 
-  <!-- Startups -->
+  <!-- STARTUPS -->
   <url>
     <loc>https://buhowski.dev/startup</loc>
   </url>
 
-  <!-- Films -->
+  <!-- FILMS -->
   <url>
     <loc>https://buhowski.dev/films</loc>
   </url>
@@ -35,7 +32,7 @@
     <loc>https://buhowski.dev/the-corp</loc>
   </url>
 
-  <!-- Games -->
+  <!-- GAMES -->
   <url>
     <loc>https://buhowski.dev/games</loc>
   </url>
@@ -50,5 +47,10 @@
   </url>
   <url>
     <loc>https://buhowski.dev/quantum-leap</loc>
+  </url>
+
+  <!-- MVP -->
+  <url>
+    <loc>https://buhowski.dev/mvp</loc>
   </url>
 </urlset>
