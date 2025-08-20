@@ -4,7 +4,7 @@
 
 ## Logline
 
-A dark-humored sitcom about a group of young “idiots” who, facing the absurdity of the Ukrainian “Europe” environment, challenge life’s realities on the path of self-development, maintaining a delicate balance between optimism, a fuck-it attitude, and uncontrollably fatal hysteria in the unfolding events.
+A dark-humored sitcom about a group of young "idiots" who, facing the absurdity of the Ukrainian "Europe" environment, challenge life’s realities on the path of self-development, maintaining a delicate balance between optimism, a fuck-it attitude, and uncontrollably fatal hysteria in the unfolding events.
 
 ## Main Idea
 
@@ -12,7 +12,7 @@ The narrative unfolds through a prism of sarcastic-satirical and self-ironic moc
 
 This is how the characters perceive the world around them to keep from losing their minds. Thanks to friendship — which is actually selfish and immoral — and support — where they betray and let each other down — they still stick together and try to find their place in society, constantly getting into awkward situations.
 
-Strangers meet under certain circumstances. The situation forces them to get closer — through pain, shouting, and a faint smell of booze, because that’s how “true love” is born.
+Strangers meet under certain circumstances. The situation forces them to get closer — through pain, shouting, and a faint smell of booze, because that’s how "true love" is born.
 
 [mobile-slider]
 

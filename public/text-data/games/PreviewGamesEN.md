@@ -1,6 +1,6 @@
 #### Project Development
 
-# Game Dimensions
+# Gaming Ideas
 
 Below are ideas for video games, indie projects, and any other interactive entertainment. All of them have a well-formed concept, a strong foundation, and potential for large-scale development.
 

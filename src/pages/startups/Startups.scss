@@ -174,7 +174,7 @@
 	gap: 10px;
 	position: absolute;
 	top: -10px;
-	z-index: 100;
+	z-index: 12;
 
 	@media (hover: hover) and (pointer: fine) {
 		&:hover {
@@ -197,6 +197,7 @@
 		margin: 0;
 		background-color: #000;
 		box-shadow: 0 0 4px #000;
+		z-index: 10;
 
 		span {
 			display: none;
@@ -222,15 +223,18 @@
 	}
 }
 
+$nav-top: 5px;
+
 // StartupNavigation
 .startup-action {
 	position: sticky;
-	top: 0;
-	z-index: 10;
-	transition: 0.2s;
+	top: -$nav-top;
+	z-index: 11;
+	transition: 0.25s;
 
 	&.is-active {
 		.idea-tabs {
+			padding-top: $nav-top;
 			min-width: 100%;
 			border-radius: 0;
 			box-shadow: 0 3px 15px #000000;
@@ -272,12 +276,13 @@
 	border-radius: 100px;
 	box-shadow: 0 0 10px #000000;
 	overflow: hidden;
+	padding-top: 0;
 	transition: 0.25s;
 
 	@include tabletBig {
 		width: calc(100% - 80px);
 		max-width: 777px;
-		margin: 50px auto;
+		margin: 52px auto;
 		box-shadow: 0 0 5px #000000;
 	}
 
@@ -371,7 +376,7 @@ $bg-active-lang: #544671;
 	}
 
 	@include mobile {
-		margin: 30px auto 0;
+		margin: 32px auto 0;
 	}
 
 	// .idea-lang__btn
@@ -502,14 +507,15 @@ $bg-active-lang: #544671;
 	h4 {
 		font-family: $LouisGeorgeCafBold;
 		margin-bottom: 0;
-		font-size: 16px;
+		font-size: 15px;
 		line-height: 1.3;
-		margin-bottom: 10px;
+		margin-bottom: 11px;
 		color: $subtitle-color;
 		text-align: center;
+		letter-spacing: 0.8px;
 
 		@include mobile {
-			font-size: 15px;
+			font-size: 14px;
 		}
 	}
 
@@ -610,7 +616,7 @@ $bg-active-lang: #544671;
 	position: sticky;
 	top: 80px;
 	margin-left: 80px;
-	z-index: 5;
+	z-index: 10;
 
 	@include tabletBig {
 		margin-left: 0;
@@ -717,13 +723,13 @@ $bg-active-lang: #544671;
 	}
 
 	+ .pitch-container {
-		margin-top: 70px;
-		padding-top: 70px;
-		border-top: 1px solid rgba($titlePink, 0.2);
+		margin-top: 60px;
+		padding-top: 60px;
+		border-top: 1px solid rgba($subtitle-color, 0.25);
 
 		@include tabletBig {
-			margin-top: 60px;
-			padding-top: 60px;
+			margin-top: 50px;
+			padding-top: 50px;
 		}
 	}
 }

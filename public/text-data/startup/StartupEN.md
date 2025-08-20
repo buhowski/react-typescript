@@ -115,7 +115,7 @@ This modular approach allows for combining various formats, ensuring deep engage
 
 Strategy implementation is divided into separate projects. Details here: [MVP: Another Dimension](/mvp).
 
-Key industry products are presented as individual scenarios. Presentations here: [Films](/films), [Video Games](/games).
+Key industry products are presented as individual scenarios. Presentations here: [Cinematic Concepts](/films), [Gaming Ideas](/games).
 
 The [Self-Presentation Projects](/self-presentation) are pilot stages, possibly without funding, serving as the first phases of capability evaluation, which should confirm all declared intentions through feedback. They pave the way to launching key ideas and creating the magazine, and will also help attract new investments for at least the next five years.
 

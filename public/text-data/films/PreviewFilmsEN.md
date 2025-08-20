@@ -1,6 +1,6 @@
 #### Project Development
 
-# Dimension of Cinema
+# Cinematic Concepts
 
 Below are ideas for films, series, animation, and any other concepts related to filmmaking. All of them have a well-formed concept, a strong foundation, and potential for large-scale development.
 
