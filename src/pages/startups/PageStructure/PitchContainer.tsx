@@ -31,7 +31,7 @@ const PitchContainer = React.memo(
 				markdownLoadError;
 
 			return (
-				<section ref={ref} className={`pitch-container`}>
+				<section ref={ref} className='pitch-container' lang={currentLanguage}>
 					{/* Render markdown content block or error message based on loading status */}
 					<div className='idea-block'>
 						{shouldShowErrorMessage ? (

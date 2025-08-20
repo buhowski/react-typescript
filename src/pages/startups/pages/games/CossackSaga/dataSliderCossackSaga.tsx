@@ -5,7 +5,7 @@ import samuraiPoster from '../../../assets/games/samuraiPoster.webp';
 // Images
 import cossacksPoster from '../../../assets/games/cossacksPoster.webp';
 import cossackWarrior from '../../../assets/games/cossackWarrior.webp';
-import cossackDrummer from '../../../assets/games/drummer.webp';
+import cossackDrummer from '../../../assets/games/saga-poster.webp';
 import replicantPoster from '../../../assets/games/replicant.webp';
 import automataPoster from '../../../assets/games/automata.webp';
 import cossackCharakternyk from '../../../assets/games/cossackCharakternyk.webp';
@@ -20,8 +20,8 @@ export const dataSliderCossackSaga = [
 	{
 		itemSrc: cossackDrummer,
 		itemAlt:
-			'Illustration of a Ukrainian Cossack drummer with Cossack Drum of War — tribal battle band, inspired by Mad Max.',
-		itemCaption: `AI Reference: Cossack Battle Drummer. Drums of War — tribal battle band.`,
+			'Illustration of a Ukrainian Hermit Cossacks, Sorcerers, drummers with Cossack Drum of War — tribal battle band, inspired by Mad Max.',
+		itemCaption: `AI Reference: Hermit Cossacks / Sorcerers / Drums of War — tribal battle band.`,
 		putImgTitle: true,
 	},
 
