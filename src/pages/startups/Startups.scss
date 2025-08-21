@@ -11,7 +11,7 @@
 
 .wrapper--idea {
 	position: relative;
-	padding-bottom: 200px;
+	padding-bottom: 150px;
 
 	@include tabletBig {
 		padding: 0 0 50px;
@@ -23,24 +23,30 @@
 }
 
 .idea-contacts {
-	display: inline-block;
-	margin: min(8vh, 80px) auto 0;
-	text-align: center;
+	margin: 40px auto 0;
 
 	@include tabletBig {
-		margin-top: 45px;
+		margin-top: 35px;
 	}
 
 	.contact-menu {
-		justify-content: center;
-
 		// .contact-menu__item
 		&__item {
 			background-color: #141414;
-			// background: linear-gradient(145deg, #000000 58%, #002840 100%);
+			transition: 0.4s;
+
+			@media (hover: hover) and (pointer: fine) {
+				&:hover {
+					background-color: #000;
+				}
+			}
+
+			&:active {
+				background-color: #000;
+			}
 
 			&:not(:last-child) {
-				margin-right: 20px;
+				margin-right: 15px;
 			}
 		}
 	}
@@ -53,8 +59,8 @@
 	@include tabletBig {
 		margin-left: -40px;
 		width: calc(100% + 80px);
-		margin-bottom: 40px;
-		margin-top: 40px;
+		margin-bottom: 45px;
+		margin-top: 45px;
 	}
 
 	@include mobile {
@@ -65,7 +71,7 @@
 
 .idea-section {
 	background-color: $darken;
-	padding: 70px 40px 150px;
+	padding: 70px 40px 110px;
 	display: flex;
 	align-items: flex-start;
 	position: relative;
@@ -126,7 +132,7 @@
 	font-family: $LouisGeorgeCafBold;
 
 	@include tabletBig {
-		margin-top: 90px;
+		margin-top: 80px;
 	}
 
 	.copyright-text {
@@ -368,7 +374,7 @@ $nav-top: 5px;
 	}
 
 	@include mobile {
-		margin: 30px auto 0;
+		margin: 32px auto 0;
 	}
 
 	// .idea-lang__btn
@@ -629,7 +635,7 @@ $nav-top: 5px;
 
 	// .lang-sidebar--has-toc
 	&--has-toc {
-		top: 140px;
+		top: 130px;
 		margin-top: 45px;
 
 		@include tabletBig {
@@ -767,45 +773,40 @@ $nav-top: 5px;
 	position: relative;
 
 	@include tabletBig {
-		align-items: center;
-		overflow: hidden;
-		height: 100%;
-		max-height: 360px;
-		aspect-ratio: 16 / 9;
-		background-color: $black;
-		box-shadow: 0 0 5px #000000;
+		display: block;
 	}
 }
 
 .slider-wrapper {
-	width: 100%;
-	height: 100%;
+	@include tabletBig {
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: center;
+	}
 
 	&.disabled {
-		.slider-js {
-			width: 100%;
+		display: block;
+
+		.slider-btn-js,
+		.slides-number {
+			display: none;
 		}
 
-		.slider-actions {
-			margin-top: 20px;
-			justify-content: center;
+		.slider-js {
+			width: 100%;
 		}
 
 		.idea-copy p {
 			margin: auto;
 		}
 
-		.slider-btn-js,
-		.slides-number {
-			opacity: 0.4;
-			pointer-events: none;
-			filter: grayscale(1);
+		.slider-actions {
+			margin-top: 25px;
+			justify-content: center;
 
 			@include tabletBig {
-				opacity: 0;
+				display: none;
 			}
-
-			display: none;
 		}
 	}
 }
@@ -817,28 +818,24 @@ $nav-top: 5px;
 }
 
 .slider-js {
-	width: 100%;
 	display: flex;
+	width: 100%;
 	height: 48vh;
 	max-height: 330px;
+	background-color: #000000;
+	box-shadow: 0 0 10px #000000;
+	border-radius: 0 0 10px 10px;
 	transition: transform 0.3s ease-in;
 	position: relative;
 	overflow: hidden;
-	background-color: $black;
-	box-shadow: 0 0 10px #000000;
-	border-radius: 0 10px 10px 10px;
 
 	@include tabletBig {
-		width: calc(100% - 80px);
+		flex-shrink: 0;
+		aspect-ratio: 16 / 9;
 		height: 100%;
-		max-height: 100%;
-		box-shadow: unset;
+		min-height: 230px;
+		max-height: 390px;
 		border-radius: 0;
-		margin: auto;
-	}
-
-	@include mobile {
-		width: calc(100% - 60px);
 	}
 }
 
@@ -897,23 +894,26 @@ $nav-top: 5px;
 	justify-content: center;
 	background-color: $black;
 	cursor: pointer;
-	color: rgba($textGrey, 0.8);
 
 	&.disabled {
 		display: none;
 	}
 
-	&:hover {
-		.video-preview__title {
-			box-shadow: inset 0 -95px 95px #000000;
-		}
+	@media (hover: hover) and (pointer: fine) {
+		&:hover {
+			.video-preview__title {
+				box-shadow: inset 10px 10px 80px #000000;
+			}
 
+			img {
+				transform: scale(1.2);
+			}
+		}
+	}
+
+	&:active {
 		img {
-			transform: scale(1.1);
-		}
-
-		svg {
-			transform: translate(-50%, -50%) scale(1.5);
+			transform: scale(1.2);
 		}
 	}
 
@@ -921,17 +921,13 @@ $nav-top: 5px;
 		position: absolute;
 		top: 50%;
 		left: 50%;
-		transform: translate(-50%, -50%) scale(1);
+		transform: translate(-50%, -50%);
 		width: 60px;
 		height: 60px;
 		border-radius: 50%;
 		background-color: rgba($color: $black, $alpha: 0.7);
+		overflow: hidden;
 		transition: 0.3s ease-out;
-
-		@include tabletBig {
-			width: 50px;
-			height: 50px;
-		}
 	}
 
 	// .video-preview__title
@@ -944,141 +940,87 @@ $nav-top: 5px;
 		width: 100%;
 		height: 100%;
 		padding: 15px 20px;
-		box-shadow: inset 0 -80px 90px rgba($color: $black, $alpha: 0.8);
-		transition: 0.3s ease-out;
 		font-size: 14px;
-		color: rgba(#fff, 1);
-		text-shadow: 2px 2px 2px #000;
+		color: rgba($textGrey, 0.8);
+		box-shadow: inset 0 -100px 75px rgba($color: $black, $alpha: 0.88);
+		text-shadow: 2px 1px 4px #000000;
+		transition: 0.3s ease-out;
 
 		@include tabletBig {
-			padding: 10px;
-			box-shadow: inset 0 -80px 65px rgba($color: $black, $alpha: 0.8);
+			padding: 15px 40px;
 		}
 
 		@include mobile {
-			font-size: 12px;
+			font-size: 13px;
+			padding: 5px 15px;
 		}
+	}
+}
+
+.slider-actions {
+	display: flex;
+	align-items: center;
+	margin-top: 15px;
+
+	@include tabletBig {
+		margin-top: 0;
+		margin-bottom: 16px;
 	}
 }
 
 .slides-number {
 	@include titleFont;
-	color: $blue-main;
-	margin: 0 5px;
+	font-weight: 500;
+	color: rgba($textGrey, 0.6);
+	margin: 0 10px;
 	min-width: 80px;
 	text-align: center;
+	font-size: 14px;
 
 	@include tabletBig {
-		font-size: 14px;
-		position: absolute;
-		bottom: 2px;
-		right: 55px;
-		min-width: unset;
-	}
-
-	@include mobile {
-		right: 35px;
-	}
-}
-
-.slider-actions {
-	position: relative;
-	display: flex;
-	align-items: center;
-	margin-top: 10px;
-
-	@include tabletBig {
-		position: static;
-		margin-top: 0;
+		margin: 0 6px;
 	}
 }
 
 .slider-btn-js {
-	padding: 12px;
-
-	@include tabletBig {
-		position: absolute;
-		top: 0;
-		height: 100%;
-		background-color: $black;
-
-		&::after {
-			content: '';
-			display: block;
-			width: 20px;
-			height: 65%;
-			position: absolute;
-			top: 0;
-		}
-	}
-
-	@include mobile {
-		padding: 8px;
-	}
+	padding: 13px;
+	border-radius: 10px;
+	background-color: rgba($textGrey, 0.4);
+	box-shadow: 0 0 10px #000000;
+	transition: 0.25s;
 
 	.chevron {
 		display: block;
-		width: 18px;
-		height: 18px;
-		border: 3px solid $blue-main;
+		width: 12px;
+		height: 12px;
+		border: 3px solid rgba($textGrey, 0.9);
 		border-width: 3px 3px 0 0;
 		transition: 0.25s;
+	}
 
-		@include mobile {
-			width: 16px;
-			height: 16px;
+	@media (hover: hover) and (pointer: fine) {
+		&:hover {
+			@include slider-arrows-hover;
 		}
 	}
 
-	&:hover .chevron {
-		border-color: #fff;
+	&:active {
+		@include slider-arrows-hover;
 	}
 
 	&-next {
-		@include tabletBig {
-			box-shadow: 0 -5px 6px #000000;
-
-			right: 0;
-
-			&::after {
-				right: 100%;
-			}
-		}
-
 		.chevron {
-			transform: rotate(45deg);
-
-			@include tabletBig {
-				transform: rotate(45deg) translate(-2px, 2px);
-			}
+			transform: rotate(45deg) translate(-2px, 2px);
 		}
 	}
 
 	&-prev {
 		margin-left: auto;
 
-		@include tabletBig {
-			left: 0;
-			box-shadow: 0 -5px 6px #000000;
-
-			&::after {
-				left: 100%;
-			}
-		}
-
 		.chevron {
-			transform: rotate(-135deg);
-
-			@include tabletBig {
-				transform: rotate(-135deg) translate(-2px, 2px);
-			}
+			transform: rotate(-135deg) translate(-2px, 2px);
 		}
 	}
-}
-
-.slider-btn-js,
-.slides-number {
-	opacity: 0.7;
 }
 
 .slider-loader {

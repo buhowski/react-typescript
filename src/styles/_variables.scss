@@ -27,6 +27,17 @@ $toc-title-color: #b991e3;
 
 $header-ltr-spc: 3px;
 
+// Slider
+$slider-actions-color: #745a81;
+
+@mixin slider-arrows-hover {
+	background-color: rgba($textGrey, 0.2);
+
+	.chevron {
+		border-color: $toc-title-color;
+	}
+}
+
 // Lang bar
 $radius-lang: 100px;
 $bg-color-lang: #a69d9d;
