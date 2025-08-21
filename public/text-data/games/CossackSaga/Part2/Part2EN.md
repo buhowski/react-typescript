@@ -36,6 +36,6 @@ Along with the fragments of magical energy, a fragment of the supreme demon burs
 
 ## More Details
 
-***Under Construction …***
+*Under Construction ...*
 
 The author is seeking resources and time to bring these masterful ideas to life. If you know how or where to get support, please write to me!

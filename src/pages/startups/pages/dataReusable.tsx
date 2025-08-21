@@ -4,6 +4,6 @@ import posterProjectsDev from '../assets/brain.jpg';
 export const dataSliderProjectsDev = [
 	{
 		itemSrc: posterProjectsDev,
-		itemAlt: `Collection of impactful projects with strong foundations, seeking collaborative development.`,
+		itemAlt: `Illustration representing collaborative project development, seeking talented team members, creative partners, and skilled contributors for video games, films, animation, indie projects, interactive entertainment, next-generation media platforms, digital innovation, startup ventures, and multimedia storytelling, emphasizing teamwork, creative freedom, counterculture, gonzo journalism, and large-scale content development potential.`,
 	},
 ];

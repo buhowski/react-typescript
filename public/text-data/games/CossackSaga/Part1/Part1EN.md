@@ -82,6 +82,6 @@ I am looking support and a team to bring this unique world to life. This is an o
 
 ## More Details
 
-***Under Construction …***
+*Under Construction ...*
 
 The author is seeking resources and time to bring these masterful ideas to life. If you know how or where to get support, please write to me!

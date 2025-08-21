@@ -103,13 +103,22 @@ const MarkdownBlock = memo(
 			}
 		}, [text, onHeadingsExtracted]);
 
+		// Helper to extract plain text from nested children
+		const extractText = (node: React.ReactNode): string => {
+			if (typeof node === 'string') return node;
+			if (Array.isArray(node)) return node.map(extractText).join('');
+			if (React.isValidElement(node)) return extractText(node.props.children);
+			return '';
+		};
+
 		// Custom heading renderer
 		const renderHeading = (children: React.ReactNode, level: number) => {
-			const rawText = Children.toArray(children).join('');
+			const rawText = extractText(children);
 			const slug = slugifyRef.current(rawText);
 			const id = `h${level}-${pitchIndex}-${slug}`;
 
 			collectedHeadingsRef.current.push({ text: rawText, level, id });
+
 			const Tag = `h${level}` as keyof JSX.IntrinsicElements;
 			return <Tag id={id}>{children}</Tag>;
 		};

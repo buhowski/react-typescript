@@ -67,7 +67,7 @@ $toc-hover-color: #fff;
 		border-radius: 10px 10px 0 0;
 		font-family: $LouisGeorgeCaf;
 		letter-spacing: 1.2px;
-		font-size: 16px;
+		font-size: 17px;
 		font-weight: 600;
 		gap: 22px;
 		padding: 12px 20px;
@@ -95,7 +95,7 @@ $toc-hover-color: #fff;
 			bottom: 15px;
 			right: 15px;
 			z-index: 100;
-			padding: 15px 16px;
+			padding: 14px 16px;
 			box-shadow: 0 0 4px #000000;
 			background-color: #000000;
 			// background: linear-gradient(130deg, #000000 0, #002840 95%);
@@ -106,15 +106,13 @@ $toc-hover-color: #fff;
 		}
 
 		mark {
-			@include burgerIcon;
-			width: 23px;
-			height: 14px;
+			@include burgerIcon(24px, 16px, 2px);
 			margin-left: 0;
-			margin-bottom: 1px;
+			margin-bottom: 2px;
 
 			span {
-				transition: 0.25s;
 				border-color: $toc-title-color;
+				transition: 0.25s;
 			}
 
 			@include tabletBig {

@@ -31,7 +31,7 @@
 	@include tabletSmall {
 		width: 100%;
 		margin-bottom: 5px;
-		margin-top: 30px;
+		margin-top: 35px;
 	}
 
 	// .name-container__title
@@ -56,11 +56,12 @@
 		font-size: clamp(26px, 1.6vw, 40px);
 		margin-bottom: min(6.6vh, 70px);
 		font-family: $LouisGeorgeCaf;
-		letter-spacing: 3px;
+		letter-spacing: 2px;
 		white-space: nowrap;
 		color: $blue-main;
 
 		@include tabletSmall {
+			letter-spacing: 1px;
 			font-size: 23px;
 			margin-bottom: 35px;
 		}
@@ -95,7 +96,7 @@ canvas {
 	@include tabletSmall {
 		width: calc(100% + 20px);
 		margin-left: -10px;
-		margin-top: 30px;
+		margin-top: 35px;
 	}
 
 	canvas {

@@ -91,6 +91,6 @@ So I’m asking for your support to help bring this unique project to life. It w
 
 ## More Details
 
-***Under Construction …***
+*Under Construction ...*
 
 The author is seeking resources and time to bring these masterful ideas to life. If you know how or where to get support, please write to me!

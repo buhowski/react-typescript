@@ -8,16 +8,17 @@
 
 // same time as CSSTransition timeout={} in App.tsx
 $nextPageTime: 1.1s;
+$start-height: 20px;
 
 @keyframes transitionReload {
 	0% {
 		width: 0;
-		height: 15px;
+		height: $start-height;
 		bottom: 0;
 	}
 	30% {
 		width: 100%;
-		height: 15px;
+		height: $start-height;
 		bottom: 0;
 	}
 	65% {
@@ -53,7 +54,7 @@ $nextPageTime: 1.1s;
 		content: '';
 		display: block;
 		width: 0;
-		height: 20px;
+		height: $start-height;
 		transform: translateX(-50%);
 		position: absolute;
 		bottom: 0;
@@ -61,7 +62,7 @@ $nextPageTime: 1.1s;
 		z-index: 1000;
 		background-color: $blue-main;
 		background: linear-gradient(160deg, $blue-main, #0a6cce);
-		box-shadow: inset 70px 70px 120px #0054a2, inset -70px -70px 120px #0054a2;
+		box-shadow: inset 70px 70px 120px #034f95, inset -70px -70px 120px #0758a4;
 		will-change: width, height, bottom;
 
 		// Debugging styles

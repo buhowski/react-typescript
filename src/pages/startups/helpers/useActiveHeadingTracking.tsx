@@ -3,7 +3,7 @@ import { HeadingInfo, CollectedHeading } from '../../../types/common';
 
 // Custom Alert Component
 const showReloadAlert = (): void => {
-	alert('Page reloads to fix clicks after resolution change.');
+	alert('Page will reload due to resolution change. Stay Cool 😎 [Rock ’n’ Roll]');
 	window.location.reload();
 };
 

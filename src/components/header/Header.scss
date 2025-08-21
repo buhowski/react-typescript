@@ -3,16 +3,16 @@
 .header {
 	position: relative;
 	z-index: 98;
-	height: 90px;
-	font-size: 18px;
+	font-size: 21px;
 	letter-spacing: 4px;
 	font-family: $LouisGeorgeCafBold;
 	display: flex;
 	align-items: center;
+	padding: 20px 0 12px;
 
 	@include tablet {
-		height: 80px;
-		font-size: 21px;
+		font-size: 23px;
+		padding: 12px 0;
 
 		.wrapper {
 			display: flex;
@@ -51,8 +51,9 @@
 		}
 	}
 
+	// .header-nav__list
 	&__list {
-		min-width: 55%;
+		min-width: 50%;
 		display: flex;
 		justify-content: space-between;
 		margin-left: auto;
@@ -60,13 +61,17 @@
 }
 
 .logo-link {
-	font-size: 23px;
-	padding: 12px 0;
-	letter-spacing: 4px;
+	font-size: 27px;
+	padding: 11px 0;
+	letter-spacing: $header-ltr-spc;
+
+	@include tablet {
+		font-size: 26px;
+	}
 }
 
 .nav-item {
-	margin-right: 70px;
+	margin-right: 80px;
 	display: flex;
 	justify-content: center;
 
