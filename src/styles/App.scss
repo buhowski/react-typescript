@@ -39,6 +39,7 @@ $start-height: 20px;
 	height: 100vh;
 	overflow: hidden;
 	background-color: $darken;
+	cursor: default;
 
 	@include tablet {
 		height: 100dvh;

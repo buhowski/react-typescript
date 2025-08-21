@@ -544,8 +544,12 @@ $bg-active-lang: #4f406e;
 
 		li {
 			position: relative;
-			padding-left: 25px;
-			margin-left: 5px;
+			padding-left: 26px;
+			margin-left: 2px;
+
+			@include tabletBig {
+				padding-left: 22px;
+			}
 
 			&::before {
 				content: '';
@@ -587,6 +591,7 @@ $bg-active-lang: #4f406e;
 		transition: color 0.25s;
 		color: #ffffff;
 		font-weight: 500;
+		padding-bottom: 4px;
 
 		> * {
 			background-image: linear-gradient(currentColor, currentColor);
@@ -772,13 +777,11 @@ $bg-active-lang: #4f406e;
 	@include tabletBig {
 		align-items: center;
 		overflow: hidden;
-		height: 320px;
+		height: 100%;
+		max-height: 360px;
+		aspect-ratio: 16 / 9;
 		background-color: $black;
 		box-shadow: 0 0 5px #000000;
-	}
-
-	@include mobile {
-		height: 220px;
 	}
 }
 
@@ -836,6 +839,7 @@ $bg-active-lang: #4f406e;
 	@include tabletBig {
 		width: calc(100% - 80px);
 		height: 100%;
+		max-height: 100%;
 		box-shadow: unset;
 		border-radius: 0;
 		margin: auto;
@@ -951,11 +955,12 @@ $bg-active-lang: #4f406e;
 		box-shadow: inset 0 -80px 90px rgba($color: $black, $alpha: 0.8);
 		transition: 0.3s ease-out;
 		font-size: 14px;
-		color: rgba($textGrey, 0.9);
+		color: rgba(#fff, 1);
+		text-shadow: 2px 2px 2px #000;
 
 		@include tabletBig {
 			padding: 10px;
-			box-shadow: inset 0 -80px 40px rgba($color: $black, $alpha: 0.5);
+			box-shadow: inset 0 -80px 65px rgba($color: $black, $alpha: 0.8);
 		}
 
 		@include mobile {

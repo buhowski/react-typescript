@@ -10,13 +10,13 @@ export const dataSliderPodcastShow = [
 	{
 		itemPoster: characterPoster,
 		itemSrc: characterExample,
-		itemAlt: `Poster for a podcast show, featuring a character from 'Partiboi69 — Feed Me Data' video.`,
-		itemCaption: `Background character — look and feel I want to achieve: from "Partiboi69 — Feed Me Data."`,
+		itemAlt: `Background character from Partiboi69's "Feed Me Data" official video, showcasing unique fashion, electronic music culture, club aesthetics, urban energy, cinematic lighting, and avant-garde visual style.`,
+		itemCaption: `Background character — vibe I want to use: Partiboi69 — Feed Me Data (Official Video).`,
 	},
 	{
 		itemPoster: characterPoster2,
 		itemSrc: characterExample2,
-		itemAlt: `Poster for a podcast show, featuring a character from 'Partiboi69 — 624's (Official Video)' video.`,
-		itemCaption: `Background character — vibe and style I want to show: from "Partiboi69 — 624's (Official Video)."`,
+		itemAlt: `Background character from Partiboi69's "624's" official video, capturing edgy street style, underground music vibe, dynamic choreography, creative video production, bold color palette, and expressive visual storytelling.`,
+		itemCaption: `Background character — style and mood I want to show: Partiboi69 — 624's (Official Video).`,
 	},
 ];

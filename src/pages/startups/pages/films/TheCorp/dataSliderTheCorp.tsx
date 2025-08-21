@@ -12,19 +12,19 @@ export const dataSliderTheCorp = [
 	{
 		itemPoster: officePoster1,
 		itemSrc: theOffice1,
-		itemAlt: `Poster of Dwight Schrute's unsettling first aid training in The Office.`,
-		itemCaption: `The humor I aim to capture: First aid fails, human skin suits, and a truly unforgettable first aid session.`,
+		itemAlt: `Screenshot of a live-action scene from The Office, capturing humorous first aid fails, absurd human skin suits, and unforgettable comedic antics, illustrating the show's signature awkward workplace humor and satire.`,
+		itemCaption: `Live Action Scene vibe I want to use: The Office — first aid fails, human skin suits, and unforgettable antics.`,
 	},
 	{
 		itemPoster: officePoster3,
 		itemSrc: theOffice3,
-		itemAlt: `Poster capturing Jim, Dwight, and Michael's hilariously clumsy parkour attempts.`,
-		itemCaption: `The atmosphere I aim to create: Parkour! Office athleticism at its most chaotic and cringe-worthy.`,
+		itemAlt: `Screenshot from The Office depicting chaotic office parkour, extreme physical antics, and cringe-worthy comedy moments..`,
+		itemCaption: `Scene vibe I aim to create: The Office — Chaotic office parkour, showcasing extreme athleticism and cringe-worthy moments.`,
 	},
 	{
 		itemPoster: officePoster2,
 		itemSrc: theOffice2,
-		itemAlt: `Poster of Michael Scott's infamous fire drill chaos in The Office.`,
-		itemCaption: `I aim to portray real emotions amidst absurd circumstances: Fire! Mayhem, panic, and a very intense fire drill.`,
+		itemAlt: `Screenshot from The Office showing Michael Scott's legendary fire drill, capturing panic, chaos, and absurd office humor..`,
+		itemCaption: `I aim to use real emotions in absurd situations: panic, chaos, and over-the-top office humor during a fire drill.`,
 	},
 ];

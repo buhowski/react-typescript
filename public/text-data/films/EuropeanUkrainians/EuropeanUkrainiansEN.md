@@ -36,7 +36,7 @@ The reality of Ukrainian life unfolds before the viewer — from the depths of t
 - The main characters are ordinary people from different generations, constantly accompanied by a money deficit, but who are desperately trying to find their way in the world of work and relationships
 - Each episode is a new adventure from the main characters' lives, where they face various societal problems and challenges like corruption, lack of culture, gender inequality, outdated views, violence, addictions, unemployment, and so on
 - Egocentric, hysterical, and anxious views and judgments often lead the characters into trouble, creating a multitude of awkward situations that usually only get worse before they get better
-- To show reality without censorship, with heartfelt humor.
+- To show reality without censorship, with heartfelt humor
 - It's important for the series to be genuine
 - It should encourage people to reflect on the problems of Ukrainian society, shedding light on painful topics through humor
 

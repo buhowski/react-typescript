@@ -20,7 +20,7 @@ export const dataSliderCossackSaga = [
 	{
 		itemSrc: cossackDrummer,
 		itemAlt:
-			'Illustration of a Ukrainian Hermit Cossacks, Sorcerers, drummers with Cossack Drum of War — tribal battle band, inspired by Mad Max.',
+			'Illustration of Ukrainian Hermit Cossacks, sorcerers, and drummers forming a nomadic tribal battle band inspired by Mad Max, featuring fantasy, historical, and cinematic elements.',
 		itemCaption: `AI Reference: Hermit Cossacks / Sorcerers / Drums of War — tribal battle band.`,
 		putImgTitle: true,
 	},
@@ -28,47 +28,56 @@ export const dataSliderCossackSaga = [
 	{
 		itemPoster: automataPoster,
 		itemSrc: automataTrailer,
-		itemAlt: 'Poster for NieR Automata Official Boss Battle Gameplay Trailer.',
+		itemAlt:
+			'NieR Automata boss battle poster, showcasing sci-fi combat, android warriors, cinematic action, and video game storytelling.',
 		itemCaption: 'Reference to The Directing Style: Cinematic boss combat — NieR Automata.',
 	},
 
 	{
 		itemPoster: witcherPoster,
 		itemSrc: witcherTrailer,
-		itemAlt: 'Poster for The Witcher 3: Wild Hunt game.',
+		itemAlt:
+			'The Witcher 3 poster, featuring Geralt of Rivia in a dark fantasy world, epic quests, magical monsters, immersive RPG gameplay, and medieval environments.',
 		itemCaption: 'Visual Reference: Design / Immersive world — The Witcher 3: Wild Hunt.',
 	},
+
 	{
 		itemPoster: samuraiPoster,
 		itemSrc: ghostOfTsushimaTrailer,
 		itemAlt:
-			'Poster for Ghost of Tsushima game, featuring a samurai during the Mongol invasion of Japan.',
+			'Ghost of Tsushima poster, depicting a samurai during the Mongol invasion, with cinematic landscapes, stealth action, epic battles, and Japanese culture.',
 		itemCaption: 'Visual Reference: Setting / Historical Japanese atmosphere — Ghost of Tsushima.',
 	},
+
 	{
 		itemPoster: replicantPoster,
 		itemSrc: replicantTrailer,
-		itemAlt: 'Poster for NieR Replicant ver.1.22474487139... Official Trailer.',
+		itemAlt:
+			'NieR Replicant trailer poster, highlighting anime-style characters, intense combat, immersive fantasy world, and dramatic narrative.',
 		itemCaption:
 			'Atmosphere Reference: Cinematic combat, emotional intensity, and unique world vibe — NieR Replicant.',
 	},
 
 	{
 		itemSrc: cossacksPoster,
-		itemAlt: 'Painting depicting Ukrainian Cossacks writing a letter to the Turkish sultan.',
+		itemAlt:
+			'Painting of Ukrainian Cossacks writing a letter to the Turkish sultan, showing historical accuracy, traditional costumes, 17th-century military life, and cultural heritage.',
 		itemCaption: `Reference to Ukrainian Cossacks.`,
 		putImgTitle: true,
 	},
+
 	{
 		itemSrc: cossackWarrior,
-		itemAlt: 'Illustration of a Ukrainian Cossack warrior.',
+		itemAlt:
+			'Illustration of a Ukrainian Cossack warrior, depicting traditional armor, sabre, mustache, heroic stance, and Slavic cultural heritage.',
 		itemCaption: `Reference to Cossacks Warrior Style.`,
 		putImgTitle: true,
 	},
+
 	{
 		itemSrc: cossackCharakternyk,
 		itemAlt:
-			'Illustration of a Ukrainian Cossack Charakternyk, Unique "gypsy punks" — nomadic tribal recluses who embody warriors, sorcerers, seers, and shamans',
+			'Illustration of a Ukrainian Cossack Charakternyk, combining warrior, shaman, and seer traits, mystical elements, folklore-inspired design, and dynamic Eastern European storytelling.',
 		itemCaption: `Reference to Cossack sorcerers, seers, and shamans.`,
 		putImgTitle: true,
 	},

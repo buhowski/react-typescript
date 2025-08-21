@@ -14,28 +14,28 @@ export const dataSliderEuropeanUkrainians = [
 	{
 		itemPoster: bestMomentsPoster,
 		itemSrc: bestMomentsVideo,
-		itemAlt: `Poster from 'It's Always Sunny in Philadelphia', capturing The Gang's disastrous attempts at normal social interaction.`,
-		itemCaption: `The vibe I want to capture: The Gang Interacts with Normal People.`,
+		itemAlt: `Promotional poster from "It's Always Sunny in Philadelphia" TV series, capturing The Gang's chaotic interactions with normal people, comedic disasters, dark humor, satirical social commentary, eccentric characters, ensemble cast, pop culture reference, situational comedy, adult humor, irreverent storytelling, and TV entertainment dynamics.`,
+		itemCaption: `Live Action Scene Vibe I want to use: It's Always Sunny in Philadelphia.`,
 	},
 
 	{
 		itemPoster: promoPoster,
 		itemSrc: promoVideo,
-		itemAlt: `Promotional poster for 'It's Always Sunny in Philadelphia'.`,
-		itemCaption: `The vibe I want to capture: promo from "It's Always Sunny in Philadelphia."`,
+		itemAlt: `Screenshot from 'It's Always Sunny in Philadelphia' promo, showing chaotic humor, absurd social interactions, and the iconic antics of The Gang, capturing the dark comedy and countercultural vibe of the series.`,
+		itemCaption: `Promo Scene Vibe I want to use: It's Always Sunny in Philadelphia.`,
 	},
 
 	{
 		itemPoster: broadCityPoster,
 		itemSrc: broadCityTrailer,
-		itemAlt: `Promotional poster for the TV series 'Broad City'.`,
-		itemCaption: `The vibe I want to capture: promo from "Broad City."`,
+		itemAlt: `Promo screenshot from Broad City, capturing Ilana and Abbi's comedic adventures, friendship dynamics, urban life humor, and irreverent, chaotic city experiences.`,
+		itemCaption: `Promo Scene Vibe I want to use: Broad City.`,
 	},
 
 	{
 		itemPoster: fantasyPoster,
 		itemSrc: fantasy,
-		itemAlt: `Movie poster for 'The Secret Life of Walter Mitty'.`,
-		itemCaption: `Imagination Example: from "The Secret Life of Walter Mitty."`,
+		itemAlt: `Screenshot from "The Secret Life of Walter Mitty" illustrating a fantasy sequence where the protagonist imagines grand adventures, escaping reality, showcasing cinematic imagination, visual storytelling, and creative narrative techniques.`,
+		itemCaption: `Fantasy Sequence Example I want to use: The Secret Life of Walter Mitty.`,
 	},
 ];
