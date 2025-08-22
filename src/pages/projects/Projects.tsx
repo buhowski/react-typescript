@@ -45,7 +45,7 @@ const Projects = () => {
 														rel='noopener noreferrer'
 														className='nav-link'
 													>
-														Site
+														Demo
 													</a>
 												)}
 

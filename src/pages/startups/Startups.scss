@@ -26,7 +26,7 @@
 	margin: 40px auto 0;
 
 	@include tabletBig {
-		margin-top: 35px;
+		// margin-top: 35px;
 	}
 
 	.contact-menu {
@@ -86,7 +86,7 @@
 		max-width: 777px;
 		width: calc(100% - 80px);
 		margin: 0 auto;
-		padding: 0 0 96px;
+		padding: 0 0 100px;
 	}
 
 	@include mobile {
@@ -132,7 +132,7 @@
 	font-family: $LouisGeorgeCafBold;
 
 	@include tabletBig {
-		margin-top: 80px;
+		margin-top: 90px;
 	}
 
 	.copyright-text {
@@ -146,10 +146,10 @@
 		}
 
 		&.is-visible {
-			animation: typing 1.9s steps(18, end) 1s forwards, blink-caret 1s step-end infinite;
+			animation: typing 1.6s steps(18, end) 1s forwards, blink-caret 1s step-end infinite;
 
 			@include tabletBig {
-				animation: typing 1.9s steps(18, end) forwards, blink-caret 1s step-end infinite;
+				animation: typing 1.6s steps(18, end) forwards, blink-caret 1s step-end infinite;
 			}
 		}
 	}
@@ -288,8 +288,8 @@ $nav-top: 5px;
 	@include tabletBig {
 		width: calc(100% - 80px);
 		max-width: 777px;
-		margin: 54px auto;
-		box-shadow: 0 0 5px #000000;
+		margin: 53px auto;
+		box-shadow: 0 0 4px #000000;
 	}
 
 	@include mobile {
@@ -374,7 +374,7 @@ $nav-top: 5px;
 	}
 
 	@include mobile {
-		margin: 32px auto 0;
+		margin: 33px auto 0;
 	}
 
 	// .idea-lang__btn
@@ -780,7 +780,7 @@ $nav-top: 5px;
 .slider-wrapper {
 	@include tabletBig {
 		display: flex;
-		flex-direction: column-reverse;
+		flex-direction: column;
 		align-items: center;
 	}
 
@@ -963,8 +963,7 @@ $nav-top: 5px;
 	margin-top: 15px;
 
 	@include tabletBig {
-		margin-top: 0;
-		margin-bottom: 16px;
+		margin-top: 20px;
 	}
 }
 

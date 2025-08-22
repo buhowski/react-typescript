@@ -1,8 +1,8 @@
 @import '../../styles/variables.scss';
 
 .projects-container {
-	padding-top: 45px;
-	padding-bottom: 50px;
+	padding-top: 50px;
+	padding-bottom: 100px;
 
 	// .projects-container__masonry
 	&__masonry {
@@ -13,7 +13,6 @@
 .project {
 	display: flex;
 	position: relative;
-	font-size: 13px;
 	border-radius: 20px;
 	transform: translate(0, 0);
 	transition: transform 0.3s ease;
@@ -92,67 +91,69 @@
 	top: 0;
 	left: 0;
 	width: 100%;
-	padding: 15px;
+	padding: 20px 15px;
 	opacity: 0;
 	transition: opacity 0.3s ease;
 	overflow: hidden;
 
+	// .project-description__name
 	&__name {
 		color: $starYellow;
 		font-family: $Raleway;
-		letter-spacing: 3px;
-		margin-bottom: 20px;
+		letter-spacing: 2px;
+		margin-bottom: 25px;
 		text-align: center;
-		font-size: 15px;
+		font-size: 18px;
 
 		span {
 			animation: LowLine 0.4s infinite;
 		}
 	}
 
+	// .project-description__text
 	&__text {
-		margin-bottom: 20px;
+		margin-bottom: 35px;
 		color: $textGrey;
+		font-size: 15px;
+		line-height: 1.5;
 	}
 
+	// .project-description__actions
 	&__actions {
 		display: flex;
-		margin-bottom: 30px;
-		font-size: 14px;
+		margin-bottom: 40px;
 		justify-content: center;
+		gap: 35px;
 
 		.nav-link {
-			padding-top: 5px;
-			padding-bottom: 5px;
-			padding-left: 11px;
-			padding-right: 6px;
-
-			&:not(:last-child) {
-				margin-right: 30px;
-			}
+			padding: 7px 6px 7px 10px;
+			flex-grow: 1;
+			max-width: 50%;
 		}
 	}
 
 	&__title {
-		color: $blue-main;
+		color: $titlePink;
 		font-family: $LouisGeorgeCaf;
 		font-weight: 600;
-		letter-spacing: 3px;
-		font-size: 14px;
-		margin-right: auto;
-		text-transform: uppercase;
+		letter-spacing: 2px;
+		font-size: 15px;
 	}
 
+	// .project-description__items
 	&__items {
 		font-family: $LouisGeorgeCaf;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 6px;
+		margin-top: 10px;
 
 		span {
 			display: inline-block;
-			margin-right: 6px;
-			margin-top: 10px;
-			background-color: #000000;
-			padding: 5px 10px 2px;
-			border-radius: 20px;
+			background-color: rgba(#ffffff, 0.2);
+			padding: 5px 10px 4px;
+			border-radius: 5px;
+			font-size: 12px;
 		}
 	}
 }

@@ -3,55 +3,54 @@
 	isolation: isolate;
 }
 
+// Scrollbar styles
+$scrollbar-bg: transparent;
+$scrollbar-thumb: rgba(#fff, 0.2);
+$scrollbar-thumb-hover: rgba(#1779bb, 0.4);
+$scrollbar-radius: 10px;
+$scrollbar-width: 4px;
+$scrollbar-mob-width: 1px;
+
 .page-container,
 .mobile-menu__content,
 .idea-tabs,
 .table-content__inner {
-	// /* For browsers that support `` properties */
+	// Firefox (and some other Gecko-based browsers)
 	@supports (-moz-appearance: none) {
 		scrollbar-width: thin;
-		// scrollbar-color: rgba($bg-active-lang, 0.5) #1a1a1a;
-		scrollbar-color: rgba(#002840, 0.6) #161616;
+		scrollbar-color: $scrollbar-thumb $scrollbar-bg;
 	}
 
+	// WebKit (Chrome, Safari, Edge, iOS)
 	&::-webkit-scrollbar {
-		width: 4px;
-		height: 4px;
+		width: $scrollbar-width;
+		height: $scrollbar-width;
 
 		@include tabletBig {
-			width: 2px;
-			height: 2px;
+			width: $scrollbar-mob-width;
+			height: $scrollbar-mob-width;
 		}
 	}
 
 	&::-webkit-scrollbar-track {
-		background: #161616 !important;
-		border-radius: 20px;
+		border-radius: $scrollbar-radius;
+		background: $scrollbar-bg;
 	}
 
 	&::-webkit-scrollbar-thumb {
-		// background: rgba($bg-active-lang, 0.5) !important;
-		background: rgba(#002840, 0.6) !important;
-		border-radius: 20px;
+		background: $scrollbar-thumb;
+		border-radius: $scrollbar-radius;
+
+		&:hover {
+			background-color: $scrollbar-thumb-hover;
+		}
 	}
 }
 
-html {
-	color-scheme: dark;
-}
-
 body {
-	text-rendering: optimizeLegibility;
 	color: $snow;
 	background-color: $darken;
-	width: 100%;
-	font-size: 16px;
-	line-height: 1.3;
 	font-family: $font-primary;
-	font-weight: normal;
-	user-select: none;
-	overflow: hidden;
-	-webkit-font-smoothing: antialiased;
 
 	@include tablet {
 		height: 100dvh;
