@@ -4,7 +4,7 @@
 
 ## Logline
 
-A dark-humored sitcom about a group of young "idiots" who, facing the absurdity of the Ukrainian "Europe" environment, challenge life’s realities on the path of self-development, maintaining a delicate balance between optimism, a fuck-it attitude, and uncontrollably fatal hysteria in the unfolding events.
+A dark-humored sitcom about a group of young “idiots” who, facing the absurdity of the Ukrainian “Europe” environment, challenge life’s realities on the path of self-development, maintaining a delicate balance between optimism, a fuck-it attitude, and uncontrollably fatal hysteria in the unfolding events.
 
 ## Main Idea
 
@@ -12,11 +12,20 @@ The narrative unfolds through a prism of sarcastic-satirical and self-ironic moc
 
 This is how the characters perceive the world around them to keep from losing their minds. Thanks to friendship — which is actually selfish and immoral — and support — where they betray and let each other down — they still stick together and try to find their place in society, constantly getting into awkward situations.
 
-Strangers meet under certain circumstances. The situation forces them to get closer — through pain, shouting, and a faint smell of booze, because that’s how "true love" is born.
+Strangers meet under certain circumstances. The situation forces them to get closer — through pain, shouting, and a faint smell of booze, because that’s how “true love” is born.
+
+### Themes
+
+- Everyday problems familiar to everyone: money, work, relationships, self-discovery
+- Heroes of different generations, each with their own style and way of surviving in the chaos of society
+- In each episode — a new adventure that drives the characters into a dead end: from corruption and gender inequality to addictions and absurd displays of lack of culture
+- The heroes' egocentrism and anxiety create comic situations that usually only get worse before turning into a resolution
+- Without censorship, with irony and warm dark humor, the series reflects reality as it is
+- The show's task is not only to entertain but also to provoke reflection on the problems of Ukrainian society
 
 [mobile-slider]
 
-## Overview
+## Description
 
 The series concept is a fun mix, inspired by projects like [Trailer Park Boys](https://www.imdb.com/title/tt0290988/), [It's Always Sunny in Philadelphia](https://www.imdb.com/title/tt0472954/), [Broad City](https://www.imdb.com/title/tt2578560/), and [New Kids Turbo](https://www.imdb.com/title/tt1648112/).
 
@@ -29,16 +38,6 @@ The series concept uses humor and satire to sharply, ironically, and yet insight
 It will also showcase the stereotypes and cultural specifics of each European country through the prism of Ukrainian reality.
 
 The reality of Ukrainian life unfolds before the viewer — from the depths of the countryside to the pulsating heart of the capital. This is a series for people who aren't afraid to laugh at problems, but also want their voices to be heard.
-
-### Script
-
-- Topical issues relevant to everyone
-- The main characters are ordinary people from different generations, constantly accompanied by a money deficit, but who are desperately trying to find their way in the world of work and relationships
-- Each episode is a new adventure from the main characters' lives, where they face various societal problems and challenges like corruption, lack of culture, gender inequality, outdated views, violence, addictions, unemployment, and so on
-- Egocentric, hysterical, and anxious views and judgments often lead the characters into trouble, creating a multitude of awkward situations that usually only get worse before they get better
-- To show reality without censorship, with heartfelt humor
-- It's important for the series to be genuine
-- It should encourage people to reflect on the problems of Ukrainian society, shedding light on painful topics through humor
 
 ## Character examples
 
@@ -91,6 +90,6 @@ So I’m asking for your support to help bring this unique project to life. It w
 
 ## More Details
 
-*Under Construction ...*
+*Under Construction …*
 
 The author is seeking resources and time to bring these masterful ideas to life. If you know how or where to get support, please write to me!

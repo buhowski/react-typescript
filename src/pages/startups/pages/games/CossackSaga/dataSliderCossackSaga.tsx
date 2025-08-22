@@ -1,8 +1,8 @@
 // Images
 import cossacksReplyLetter from '../../../assets/games/cossacks-reply.webp';
-import cossackWarrior from '../../../assets/games/cossackWarrior.webp';
+import cossackWarrior from '../../../assets/games/hermit-warrior.webp';
 import cossackDrummer from '../../../assets/games/saga-poster.webp';
-import cossackCharakternyk from '../../../assets/games/cossackCharakternyk.webp';
+import cossackSorcerers from '../../../assets/games/sorcerers.webp';
 
 // Posters
 import witcherPoster from '../../../assets/games/witcher-poster.webp';
@@ -30,7 +30,7 @@ export const dataSliderCossackSaga = [
 		itemSrc: automataTrailer,
 		itemAlt:
 			'NieR Automata boss battle poster, showcasing sci-fi combat, android warriors, cinematic action, and video game storytelling.',
-		itemCaption: 'Reference to The Directing Style: Cinematic boss combat — NieR Automata.',
+		itemCaption: 'Video Refs: The Directing Style / Cinematic Boss Combat — NieR Automata.',
 	},
 
 	{
@@ -38,7 +38,7 @@ export const dataSliderCossackSaga = [
 		itemSrc: witcherTrailer,
 		itemAlt:
 			'The Witcher 3 poster, featuring Geralt of Rivia in a dark fantasy world, epic quests, magical monsters, immersive RPG gameplay, and medieval environments.',
-		itemCaption: 'Visual Reference: Design / Immersive world — The Witcher 3: Wild Hunt.',
+		itemCaption: 'Video Refs: Design / Immersive World — The Witcher 3 Wild Hunt.',
 	},
 
 	{
@@ -46,7 +46,7 @@ export const dataSliderCossackSaga = [
 		itemSrc: ghostOfTsushimaTrailer,
 		itemAlt:
 			'Ghost of Tsushima poster, depicting a samurai during the Mongol invasion, with cinematic landscapes, stealth action, epic battles, and Japanese culture.',
-		itemCaption: 'Visual Reference: Setting / Historical Japanese atmosphere — Ghost of Tsushima.',
+		itemCaption: 'Video Refs: Setting / Historical Japanese Atmosphere — Ghost of Tsushima.',
 	},
 
 	{
@@ -55,14 +55,14 @@ export const dataSliderCossackSaga = [
 		itemAlt:
 			'NieR Replicant trailer poster, highlighting anime-style characters, intense combat, immersive fantasy world, and dramatic narrative.',
 		itemCaption:
-			'Atmosphere Reference: Cinematic combat, emotional intensity, and unique world vibe — NieR Replicant.',
+			'Video Refs: Unique World Atmosphere, Cinematic Combat, Emotional Intensity — NieR Replicant.',
 	},
 
 	{
 		itemSrc: cossacksReplyLetter,
 		itemAlt:
 			'Painting of Ukrainian Cossacks writing a letter to the Turkish sultan, showing historical accuracy, traditional costumes, 17th-century military life, and cultural heritage.',
-		itemCaption: `AI Gen: Ukrainian Hermit Cossacks / Artistic Parody / Historical Reference.`,
+		itemCaption: `AI: Ukrainian Hermit Cossacks / Artistic Refs to Historical Events.`,
 		putImgTitle: true,
 	},
 
@@ -70,15 +70,15 @@ export const dataSliderCossackSaga = [
 		itemSrc: cossackWarrior,
 		itemAlt:
 			'Illustration of a Ukrainian Cossack warrior, depicting traditional armor, sabre, mustache, heroic stance, and Slavic cultural heritage.',
-		itemCaption: `Reference to Cossacks Warrior Style.`,
+		itemCaption: `AI: Hermit Cossacks Warrior Style.`,
 		putImgTitle: true,
 	},
 
 	{
-		itemSrc: cossackCharakternyk,
+		itemSrc: cossackSorcerers,
 		itemAlt:
 			'Illustration of a Ukrainian Cossack Charakternyk, combining warrior, shaman, and seer traits, mystical elements, folklore-inspired design, and dynamic Eastern European storytelling.',
-		itemCaption: `Reference to Cossack sorcerers, seers, and shamans.`,
+		itemCaption: `AI Cossacks: Sorcerers, Seers, and Shamans.`,
 		putImgTitle: true,
 	},
 ];
