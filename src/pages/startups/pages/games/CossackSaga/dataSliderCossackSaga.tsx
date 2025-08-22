@@ -21,7 +21,7 @@ export const dataSliderCossackSaga = [
 		itemSrc: cossackDrummer,
 		itemAlt:
 			'AI-generated poster for “Shadows of Zaporizhian Sich” Saga Part I–II featuring hero undergoing demonic baptism and Part II heroine bound to his soul, embarking on a bloody path of revenge; epic historical-mystical adventure game concept.',
-		itemCaption: `AI Gen: Poster for "Shadows of Zaporizhian Sich - Saga Part I–II" — Hero in Church’s Demonic Baptism / Heroine Bound to His Soul, Embarking on a Bloody Path of Revenge.`,
+		itemCaption: `Shadows of The Sich AI Poster. Parts I-II: Hero in Church’s Demonic Baptism / Heroine Bound to His Soul, Embarking on a Bloody Path of Revenge.`,
 		putImgTitle: true,
 	},
 
