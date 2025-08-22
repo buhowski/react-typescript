@@ -1,5 +1,5 @@
 // Images
-import cossacksReplyLetter from '../../../assets/games/cossacks-reply.webp';
+import cossacksReplyLetter from '../../../assets/games/cossacks-refs.webp';
 import cossackWarrior from '../../../assets/games/hermit-warrior.webp';
 import cossackDrummer from '../../../assets/games/saga-poster.webp';
 import cossackSorcerers from '../../../assets/games/sorcerers.webp';
@@ -21,7 +21,7 @@ export const dataSliderCossackSaga = [
 		itemSrc: cossackDrummer,
 		itemAlt:
 			'AI-generated poster for “Shadows of Zaporizhian Sich” Saga Part I–II featuring hero undergoing demonic baptism and Part II heroine bound to his soul, embarking on a bloody path of revenge; epic historical-mystical adventure game concept.',
-		itemCaption: `Shadows of The Sich AI Poster. Parts I-II: Hero in Church’s Demonic Baptism / Heroine Bound to His Soul, Embarking on a Bloody Path of Revenge.`,
+		itemCaption: `AI Poster Shadows of The Sich Parts I-II: Hero in Church’s Demonic Baptism / Heroine Bound to Hero's Soul, Embarking on a Bloody Path of Revenge.`,
 		putImgTitle: true,
 	},
 
@@ -78,7 +78,7 @@ export const dataSliderCossackSaga = [
 		itemSrc: cossackSorcerers,
 		itemAlt:
 			'Illustration of a Ukrainian Cossack Charakternyk, combining warrior, shaman, and seer traits, mystical elements, folklore-inspired design, and dynamic Eastern European storytelling.',
-		itemCaption: `AI Cossacks: Sorcerers, Seers, and Shamans.`,
+		itemCaption: `AI: Cossacks — Sorcerers, Seers, and Shamans.`,
 		putImgTitle: true,
 	},
 ];
