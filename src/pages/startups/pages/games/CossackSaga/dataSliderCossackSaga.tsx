@@ -1,14 +1,14 @@
-// Posters
-import witcherPoster from '../../../assets/games/witcherPoster.webp';
-import samuraiPoster from '../../../assets/games/samuraiPoster.webp';
-
 // Images
-import cossacksPoster from '../../../assets/games/cossacksPoster.webp';
+import cossacksReplyLetter from '../../../assets/games/cossacks-reply.webp';
 import cossackWarrior from '../../../assets/games/cossackWarrior.webp';
 import cossackDrummer from '../../../assets/games/saga-poster.webp';
+import cossackCharakternyk from '../../../assets/games/cossackCharakternyk.webp';
+
+// Posters
+import witcherPoster from '../../../assets/games/witcher-poster.webp';
+import ghostPoster from '../../../assets/games/ghost-poster.webp';
 import replicantPoster from '../../../assets/games/replicant.webp';
 import automataPoster from '../../../assets/games/automata.webp';
-import cossackCharakternyk from '../../../assets/games/cossackCharakternyk.webp';
 
 // Videos
 import ghostOfTsushimaTrailer from '../../../assets/games/videos/ghostOfTsushimaTrailer.mp4';
@@ -20,8 +20,8 @@ export const dataSliderCossackSaga = [
 	{
 		itemSrc: cossackDrummer,
 		itemAlt:
-			'Illustration of Ukrainian Hermit Cossacks, sorcerers, and drummers forming a nomadic tribal battle band inspired by Mad Max, featuring fantasy, historical, and cinematic elements.',
-		itemCaption: `AI Reference: Hermit Cossacks / Sorcerers / Drums of War — tribal battle band.`,
+			'AI-generated poster for “Shadows of Zaporizhian Sich” Saga Part I–II featuring hero undergoing demonic baptism and Part II heroine bound to his soul, embarking on a bloody path of revenge; epic historical-mystical adventure game concept.',
+		itemCaption: `AI Gen: Poster for "Shadows of Zaporizhian Sich - Saga Part I–II" — Hero in Church’s Demonic Baptism / Heroine Bound to His Soul, Embarking on a Bloody Path of Revenge.`,
 		putImgTitle: true,
 	},
 
@@ -42,7 +42,7 @@ export const dataSliderCossackSaga = [
 	},
 
 	{
-		itemPoster: samuraiPoster,
+		itemPoster: ghostPoster,
 		itemSrc: ghostOfTsushimaTrailer,
 		itemAlt:
 			'Ghost of Tsushima poster, depicting a samurai during the Mongol invasion, with cinematic landscapes, stealth action, epic battles, and Japanese culture.',
@@ -59,10 +59,10 @@ export const dataSliderCossackSaga = [
 	},
 
 	{
-		itemSrc: cossacksPoster,
+		itemSrc: cossacksReplyLetter,
 		itemAlt:
 			'Painting of Ukrainian Cossacks writing a letter to the Turkish sultan, showing historical accuracy, traditional costumes, 17th-century military life, and cultural heritage.',
-		itemCaption: `Reference to Ukrainian Cossacks.`,
+		itemCaption: `AI Gen: Ukrainian Hermit Cossacks / Artistic Parody / Historical Reference.`,
 		putImgTitle: true,
 	},
 
