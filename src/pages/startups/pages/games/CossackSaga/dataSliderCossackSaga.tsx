@@ -8,7 +8,7 @@ import cossackSorcerers from '../../../../../assets/startup/games/sorcerers.webp
 import witcherPoster from '../../../../../assets/startup/games/witcher-poster.webp';
 import tsushimaPoster from '../../../../../assets/startup/games/tsushima.webp';
 import replicantPoster from '../../../../../assets/startup/games/replicant.webp';
-import automataPoster from '../../../../../assets/startup/games/automata.webp';
+import automataPoster from '../../../../../assets/startup/games/automata-poster.webp';
 
 // Videos
 import ghostOfTsushimaTrailer from '../../../../../assets/startup/games/videos/ghostOfTsushimaTrailer.mp4';
@@ -21,7 +21,7 @@ export const dataSliderCossackSaga = [
 		itemSrc: cossackDrummer,
 		itemAlt:
 			'AI-generated poster for “Shadows of Zaporizhian Sich” Saga Part I–II featuring hero undergoing demonic baptism and Part II heroine bound to his soul, embarking on a bloody path of revenge; epic historical-mystical adventure game concept.',
-		itemCaption: `AI Poster Shadows of Sich Parts I-II: Hero in Church’s Demonic Baptism / Heroine Bound to Hero's Soul, Embarking on a Bloody Path of Revenge.`,
+		itemCaption: `AI: Shadows of Sich I-II Poster: Hero in Church’s Demonic Baptism / Heroine Bound to Hero's Soul, Embarking on a Bloody Path of Revenge.`,
 		putImgTitle: true,
 	},
 
@@ -78,7 +78,7 @@ export const dataSliderCossackSaga = [
 		itemSrc: cossackSorcerers,
 		itemAlt:
 			'Illustration of a Ukrainian Cossack Charakternyk, combining warrior, shaman, and seer traits, mystical elements, folklore-inspired design, and dynamic Eastern European storytelling.',
-		itemCaption: `AI: Hermit Cossacks Sorcerers / Seers / Shamans.`,
+		itemCaption: `AI: Hermit Cossack Sorcerer.`,
 		putImgTitle: true,
 	},
 ];

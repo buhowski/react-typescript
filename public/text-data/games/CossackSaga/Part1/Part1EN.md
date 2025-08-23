@@ -42,9 +42,7 @@ Now, with the truth revealed, he must make a choice that will determine their sh
 
 ## Description
 
-Imagine gameplay that combines the world-building depth of The Witcher 3, the parkour dynamism of Assassin’s Creed, and the cinematic combat direction of NieR: RepliCant/Automata — all seamlessly integrated into our unique historical-mystical world. Yet these are only reference points — the game offers its own unique design vision.
-
-[mobile-slider]
+Imagine gameplay that combines the world-building depth of The Witcher 3, the parkour dynamism of Assassin’s Creed, and the cinematic combat direction of NieR: RepliCant/Automata — all seamlessly integrated into our unique historical-mystical world. These are only reference points — the game offers a unique design vision.
 
 ### Setting & Atmosphere
 
@@ -67,6 +65,8 @@ Local Factions — subordinates with their own leaders, assistants, and servants
 - Locations and Environment: The core regions of the game include the Zaporizhian Sich, the Carpathians, Kyivan Rus, Crimea, and more. Each region features its most captivating locations — camps, ruins, caves, temples, and fortresses — condensed into an interactive map that preserves the atmosphere of history and mysticism.
 - Mythology and Magic: Ancient Slavic legends intertwine with history, shaping a unique mystical lore. Demonology and magic are integral to the life of nomadic Cossacks, and their legends influence the fates of heroes and reveal hidden truths.
 - Interactivity: Quests and NPCs allow players to reshape the story, affect characters’ destinies, and uncover hidden layers of mythology, immersing them in the atmosphere of a magical and historical world.
+
+[mobile-slider]
 
 ### Inspiration
 
