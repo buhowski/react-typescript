@@ -1,9 +1,9 @@
 // Images
-import creation from '../../assets/creation.jpg';
+import planPoster from '../../assets/vision.jpg';
 
 export const dataSliderStartup = [
 	{
-		itemSrc: creation,
+		itemSrc: planPoster,
 		itemAlt: `Illustration representing a next-generation media magazine and entertainment platform, highlighting film and video game production, IT and web technologies, digital media innovation, startup projects, counterculture and gonzo journalism, creative freedom, multimedia storytelling, interactive content, and modern UX/UI design.`,
 	},
 ];
