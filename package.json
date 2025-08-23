@@ -1,6 +1,6 @@
 {
 	"name": "buhowski.dev",
-	"version": "420",
+	"version": "4.20",
 	"private": true,
 	"dependencies": {
 		"@testing-library/jest-dom": "^5.14.1",

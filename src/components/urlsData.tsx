@@ -6,10 +6,10 @@ export const urlCoindrop = 'https://coindrop.to/buhowski';
 export const urlInstagram = 'https://www.instagram.com/buhowski';
 
 // All Pages Path
-export const pathToStartup = '/startup';
-export const pathToStartupMVP = '/mvp';
 export const pathToAbout = '/about';
 export const pathToProjects = '/projects';
+export const pathToStartup = '/startup';
+export const pathToStartupMVP = '/mvp';
 
 // Films
 export const pathToStartupFilms = '/films';
