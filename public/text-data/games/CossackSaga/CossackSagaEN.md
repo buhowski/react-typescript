@@ -1,6 +1,6 @@
 #### Video Game Series
 
-# Shadows of the Zaporozhian Sich: Saga
+# Shadows of Sich: Saga
 
 An epic video game series and a journey through time that begins in the 9th-century Kyivan Rus' and leads to an alternate cyber-future. This is a story where the destruction of religion becomes the impetus for an unprecedented technological leap.
 

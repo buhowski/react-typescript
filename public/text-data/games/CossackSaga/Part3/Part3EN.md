@@ -1,6 +1,6 @@
 #### Video Game
 
-# Shadows of the Zaporozhian Sich: Quantum Leap
+# Shadows of Sich: Quantum Leap
 
 ***A Saga:** Part III*
 

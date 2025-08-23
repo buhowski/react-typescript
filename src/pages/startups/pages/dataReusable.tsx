@@ -1,5 +1,5 @@
 // Images
-import posterProjectsDev from '../assets/brain.jpg';
+import posterProjectsDev from '../../../assets/startup/brain.jpg';
 
 export const dataSliderProjectsDev = [
 	{

@@ -1,6 +1,6 @@
 #### Video Game
 
-# Shadows of the Zaporozhian Sich: Ashes of the Beloved
+# Shadows of Sich: Ashes of the Beloved
 
 ***A Saga:** Part II*
 

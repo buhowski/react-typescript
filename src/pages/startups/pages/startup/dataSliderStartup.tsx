@@ -1,5 +1,5 @@
 // Images
-import planPoster from '../../assets/vision.jpg';
+import planPoster from '../../../../assets/startup/vision.jpg';
 
 export const dataSliderStartup = [
 	{

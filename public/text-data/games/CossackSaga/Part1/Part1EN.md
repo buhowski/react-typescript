@@ -1,6 +1,6 @@
 #### Video Game
 
-# Shadows of the Zaporozhian Sich: Whispers of the Forgotten
+# Shadows of Sich: Whispers of the Forgotten
 
 ***A Saga:** Part I*
 

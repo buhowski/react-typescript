@@ -1,5 +1,5 @@
 // Images
-import writer from '../../assets/writer.webp';
+import writer from '../../../../assets/startup/writer.webp';
 
 // ### Project Journalism ###
 export const dataSliderProjectJournalism = [

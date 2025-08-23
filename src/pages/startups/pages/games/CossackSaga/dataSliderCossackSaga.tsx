@@ -1,18 +1,18 @@
 // Images
-import cossacksReplyLetter from '../../../assets/games/cossacks-refs.webp';
-import cossackWarrior from '../../../assets/games/hermit-warrior.webp';
-import cossackDrummer from '../../../assets/games/saga-poster.webp';
-import cossackSorcerers from '../../../assets/games/sorcerers.webp';
+import cossacksReplyLetter from '../../../../../assets/startup/games/cossacks-refs.webp';
+import cossackWarrior from '../../../../../assets/startup/games/warrior-refs.webp';
+import cossackDrummer from '../../../../../assets/startup/games/saga-poster.webp';
+import cossackSorcerers from '../../../../../assets/startup/games/sorcerers.webp';
 
 // Posters
-import witcherPoster from '../../../assets/games/witcher-poster.webp';
-import ghostPoster from '../../../assets/games/ghost-poster.webp';
-import replicantPoster from '../../../assets/games/replicant.webp';
-import automataPoster from '../../../assets/games/automata.webp';
+import witcherPoster from '../../../../../assets/startup/games/witcher-poster.webp';
+import tsushimaPoster from '../../../../../assets/startup/games/tsushima.webp';
+import replicantPoster from '../../../../../assets/startup/games/replicant.webp';
+import automataPoster from '../../../../../assets/startup/games/automata.webp';
 
 // Videos
-import ghostOfTsushimaTrailer from '../../../assets/games/videos/ghostOfTsushimaTrailer.mp4';
-import witcherTrailer from '../../../assets/games/videos/witcherTrailer.mp4';
+import ghostOfTsushimaTrailer from '../../../../../assets/startup/games/videos/ghostOfTsushimaTrailer.mp4';
+import witcherTrailer from '../../../../../assets/startup/games/videos/witcherTrailer.mp4';
 const replicantTrailer = 'https://www.youtube-nocookie.com/embed/sPcf4pfTqfY';
 const automataTrailer = 'https://www.youtube-nocookie.com/embed/4bx02CEISLI';
 
@@ -21,7 +21,7 @@ export const dataSliderCossackSaga = [
 		itemSrc: cossackDrummer,
 		itemAlt:
 			'AI-generated poster for “Shadows of Zaporizhian Sich” Saga Part I–II featuring hero undergoing demonic baptism and Part II heroine bound to his soul, embarking on a bloody path of revenge; epic historical-mystical adventure game concept.',
-		itemCaption: `AI Poster Shadows of The Sich Parts I-II: Hero in Church’s Demonic Baptism / Heroine Bound to Hero's Soul, Embarking on a Bloody Path of Revenge.`,
+		itemCaption: `AI Poster Shadows of Sich Parts I-II: Hero in Church’s Demonic Baptism / Heroine Bound to Hero's Soul, Embarking on a Bloody Path of Revenge.`,
 		putImgTitle: true,
 	},
 
@@ -42,7 +42,7 @@ export const dataSliderCossackSaga = [
 	},
 
 	{
-		itemPoster: ghostPoster,
+		itemPoster: tsushimaPoster,
 		itemSrc: ghostOfTsushimaTrailer,
 		itemAlt:
 			'Ghost of Tsushima poster, depicting a samurai during the Mongol invasion, with cinematic landscapes, stealth action, epic battles, and Japanese culture.',
@@ -62,7 +62,7 @@ export const dataSliderCossackSaga = [
 		itemSrc: cossacksReplyLetter,
 		itemAlt:
 			'Painting of Ukrainian Cossacks writing a letter to the Turkish sultan, showing historical accuracy, traditional costumes, 17th-century military life, and cultural heritage.',
-		itemCaption: `AI: Ukrainian Hermit Cossacks / Artistic Refs to Historical Events.`,
+		itemCaption: `AI: Ukrainian Hermit Cossacks / Artistic Refs to History.`,
 		putImgTitle: true,
 	},
 
@@ -70,7 +70,7 @@ export const dataSliderCossackSaga = [
 		itemSrc: cossackWarrior,
 		itemAlt:
 			'Illustration of a Ukrainian Cossack warrior, depicting traditional armor, sabre, mustache, heroic stance, and Slavic cultural heritage.',
-		itemCaption: `AI: Hermit Cossacks Warrior Style.`,
+		itemCaption: `AI: Hermit Cossack Warrior vs Demonic Monk.`,
 		putImgTitle: true,
 	},
 
@@ -78,7 +78,7 @@ export const dataSliderCossackSaga = [
 		itemSrc: cossackSorcerers,
 		itemAlt:
 			'Illustration of a Ukrainian Cossack Charakternyk, combining warrior, shaman, and seer traits, mystical elements, folklore-inspired design, and dynamic Eastern European storytelling.',
-		itemCaption: `AI: Cossacks — Sorcerers, Seers, and Shamans.`,
+		itemCaption: `AI: Hermit Cossacks Sorcerers / Seers / Shamans.`,
 		putImgTitle: true,
 	},
 ];

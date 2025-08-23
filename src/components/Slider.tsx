@@ -2,7 +2,7 @@ import { useState, useEffect, useCallback, useRef, useMemo } from 'react';
 import Copyright from './Copyright';
 import PopupContacts from './PopupContacts';
 import { useTabletLargeQuery } from '../config/useMediaQuery';
-import { playIcon } from '../pages/startups/assets/svg/playIcon';
+import { playIcon } from '../assets/svg/playIcon';
 import { SliderProps, VideoPreviewProps } from '../types/common';
 import { useVideoPlayback } from '../pages/startups/helpers/VideoPlaybackContext';
 import Preloader from './Preloader';

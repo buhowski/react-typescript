@@ -91,11 +91,11 @@
 
 .project-description {
 	position: sticky;
-	top: 40px;
+	top: 13%;
 	left: 0;
 	width: 100%;
-	background-color: rgba($color: $black, $alpha: 0.7);
-	backdrop-filter: blur(12px);
+	background-color: rgba($color: $black, $alpha: 0.8);
+	backdrop-filter: blur(5px);
 	box-shadow: 0 0 10px #000000;
 	border-radius: 20px;
 	overflow: hidden;
