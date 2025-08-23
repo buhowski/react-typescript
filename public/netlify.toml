@@ -1,12 +1,5 @@
 [[redirects]]
   from = "/*"
-  to = "https://service.prerender.io/https://buhowski.dev/:splat"
-  status = 200
-  force = true
-  query = {user-agent = "(googlebot|bingbot|yandex|baiduspider|facebookexternalhit|twitterbot|slackbot|discordbot|telegrambot|linkedinbot)"}
-
-[[redirects]]
-  from = "/*"
   to = "/index.html"
   status = 200
   force = false
