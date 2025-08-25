@@ -46,7 +46,7 @@ Imagine gameplay that combines the world-building depth of The Witcher 3, the pa
 
 ### Setting & Atmosphere
 
-The narrative weaves together real events from the territories of modern Ukraine between the 10th and 18th centuries, Slavic mythology, demonology, and dynamic comedy. A melancholic and somber atmosphere of a forgotten age intertwines with mysticism and personal drama.
+The narrative combines real events from the territories of modern Ukraine of the 10th–18th centuries, Slavic mythology, demonology, a melancholically dark atmosphere, personal drama, and light humor that blends harmoniously and does not break the mystical mood.
 
 The game questions established historical narratives, particularly the motives behind the Baptism of Kievan Rus and the role of religion. Betrayals, brutal battles, forgotten legends, and sharp dramatic moments immerse the player in the depth of the era, making it both vivid and perilous. Varied characters, along with magical and cultural elements, create a singular, living atmosphere for the world.
 
