@@ -3,104 +3,28 @@ import { useLocation, Routes, Route } from 'react-router-dom';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import PageHelmet from './config/PageHelmet';
 import { defaultMetaTags } from './components/metaTags';
-import {
-	pathToStartup,
-	pathToStartupFilms,
-	pathToAbout,
-	pathToProjects,
-	pathToStartupGames,
-	pathToStartupMVP,
-	pathToEuropeanUkrainians,
-	pathToTheCorp,
-	pathToPodcastShow,
-	pathToSelfPresentation,
-	pathToCossackSaga,
-	pathToCossackSagaPart1,
-	pathToCossackSagaPart2,
-	pathToCossackSagaPart3,
-} from './components/urlsData';
 import Header from './components/header/Header';
-import Home from './pages/home/Home';
-import About from './pages/about/About';
-import Projects from './pages/projects/Projects';
-
-// Startup Pages
 import Startup from './pages/startups/Startup';
-import StartupFilms from './pages/startups/Films';
-import StartupGames from './pages/startups/Games';
-import StartupMVP from './pages/startups/MVP';
+import StartupWrapper from './pages/startups/StartupWrapper';
 
-// Films Industry
-import EuropeanUkrainians from './pages/startups/pages/films/EuropeanUkrainians/EuropeanUkrainians';
-import TheCorp from './pages/startups/pages/films/TheCorp/TheCorp';
-import SelfPresentation from './pages/startups/pages/films/SelfPresentation/SelfPresentation';
-import PodcastShow from './pages/startups/pages/films/SelfPresentation/PodcastShow/PodcastShow';
-
-// Games Industry
-import CossackSaga from './pages/startups/pages/games/CossackSaga/CossackSaga';
-import CossackSagaPart1 from './pages/startups/pages/games/CossackSaga/Part1/CossackSagaPart1';
-import CossackSagaPart2 from './pages/startups/pages/games/CossackSaga/Part2/CossackSagaPart2';
-import CossackSagaPart3 from './pages/startups/pages/games/CossackSaga/Part3/CossackSagaPart3';
-
-const routesData = [
-	{ pathTo: '/', pageComponent: <Home /> },
-	{ pathTo: pathToAbout, pageComponent: <About /> },
-	{ pathTo: pathToProjects, pageComponent: <Projects /> },
-
-	// Startups
-	{ pathTo: pathToStartup, pageComponent: <Startup /> },
-	{ pathTo: pathToStartupFilms, pageComponent: <StartupFilms /> },
-	{ pathTo: pathToStartupGames, pageComponent: <StartupGames /> },
-	{ pathTo: pathToStartupMVP, pageComponent: <StartupMVP /> },
-
-	// Films Industry
-	{ pathTo: pathToEuropeanUkrainians, pageComponent: <EuropeanUkrainians /> },
-	{ pathTo: pathToTheCorp, pageComponent: <TheCorp /> },
-	{ pathTo: pathToSelfPresentation, pageComponent: <SelfPresentation /> },
-	{ pathTo: pathToPodcastShow, pageComponent: <PodcastShow /> },
-
-	// Games Industry
-	{ pathTo: pathToCossackSaga, pageComponent: <CossackSaga /> },
-	{ pathTo: pathToCossackSagaPart1, pageComponent: <CossackSagaPart1 /> },
-	{ pathTo: pathToCossackSagaPart2, pageComponent: <CossackSagaPart2 /> },
-	{ pathTo: pathToCossackSagaPart3, pageComponent: <CossackSagaPart3 /> },
-];
-
-const langSwitchPaths = [
-	pathToStartup,
-	pathToStartupFilms,
-	pathToStartupGames,
-	pathToStartupMVP,
-	pathToEuropeanUkrainians,
-	pathToTheCorp,
-	pathToSelfPresentation,
-	pathToPodcastShow,
-	pathToCossackSaga,
-	pathToCossackSagaPart1,
-	pathToCossackSagaPart2,
-	pathToCossackSagaPart3,
-];
+import { startupPaths, routesData } from './pagesMap';
 
 const App = () => {
 	const location = useLocation();
 
+	// Reset language on non-startup pages
 	useEffect(() => {
-		const isOnLangPage = langSwitchPaths.includes(location.pathname);
-
-		if (isOnLangPage) {
-			const storedLang = localStorage.getItem('currentLang');
-			document.documentElement.lang = storedLang || 'en';
-		} else {
-			document.documentElement.lang = 'en';
-		}
+		const path = location.pathname.replace(/^\/(en|ua|ru)/, '');
+		document.documentElement.lang = startupPaths.includes(path)
+			? localStorage.getItem('currentLang') || 'en'
+			: 'en';
 	}, [location.pathname]);
 
 	// Redirect Component
 	const RedirectToFile: React.FC<{ url: string }> = ({ url }) => {
 		useEffect(() => {
-			window.location.href = url; // or window.location.assign(url)
+			window.location.href = url;
 		}, [url]);
-
 		return null;
 	};
 
@@ -124,6 +48,9 @@ const App = () => {
 
 							{/* CV Redirect */}
 							<Route path='/cv' element={<RedirectToFile url='/cv.pdf' />} />
+
+							{/* SEO static startup pages */}
+							<Route path='/:lang/*' element={<StartupWrapper />} />
 
 							{/* catch-all 404 */}
 							<Route path='*' element={<Startup />} />
