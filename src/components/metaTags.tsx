@@ -11,23 +11,23 @@ const ogImageAbout = `${website}/screenshot_about.jpg`;
 const ogImagePortfolio = `${website}/screenshot_portfolio.jpg`;
 
 // Main Website Meta Tags
-const author = 'Olexander Tsiomakh';
-const shortTitleAbout = 'Explorer | Developer | Creator';
-const shortTitlePortfolio = 'Portfolio | Projects Overview';
-const startupTitle = 'Another Dimension: Magazine | Media | Films | Games | Technologies';
+const author = 'Olexander Tsiomakh — ';
+const shortTitleAbout = 'Explorer ⋅ Developer ⋅ Creator';
+const shortTitlePortfolio = 'Portfolio ⋅ Projects Overview';
+const startupTitle = 'Another Dimension — Magazine ⋅ Media ⋅ Cinema ⋅ Games ⋅ Tech';
 
 const defaultDescription =
-	'Building awesome products and contributing useful solutions to the world. Based on Planet Earth, Solar System.';
+	'Crafting projects and ideas, building worlds, and sharing creations. From Planet Earth, Solar System.';
 const startupDescription =
-	'Creating an informational and entertaining magazine and transforming it into a company that produces its own technologies.';
+	'Turning stories, tech, and imagination into a playground of innovation and creativity.';
 const aboutDescription =
-	'A developer and creator who builds innovative solutions at the intersection of tech and design.';
+	'A creator at the crossroads of code, design, and vision—shaping experiences that resonate.';
 const portfolioDescription =
-	'Explore portfolio, showcasing impactful projects developed for companies and innovative personal ventures.';
+	'Dive into a collection of projects that blend creativity, impact, and a hint of audacity.';
 
 // ### Default Meta Tags / Home Page
 export const defaultMetaTags = {
-	title: `${author}: ${shortTitleAbout}`,
+	title: `${author}${shortTitleAbout}`,
 	description: defaultDescription,
 	canonicalUrl: website,
 
@@ -53,7 +53,7 @@ export const startupsMetaTags = {
 
 // ### About Page
 export const aboutMetaTags = {
-	title: `${author}: ${shortTitleAbout}`,
+	title: `${author}${shortTitleAbout}`,
 	description: aboutDescription,
 	canonicalUrl: buildUrl(pathToAbout),
 
@@ -66,7 +66,7 @@ export const aboutMetaTags = {
 
 // ### Portfolio Page
 export const portfolioMetaTags = {
-	title: `${author}: ${shortTitlePortfolio}`,
+	title: `${author}${shortTitlePortfolio}`,
 	description: portfolioDescription,
 	canonicalUrl: buildUrl(pathToProjects),
 

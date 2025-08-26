@@ -4,20 +4,28 @@
     <loc>https://buhowski.dev/</loc>
   </url>
   <url>
-    <loc>https://buhowski.dev/about</loc>
+    <loc>https://buhowski.dev/me</loc>
   </url>
   <url>
-    <loc>https://buhowski.dev/projects</loc>
+    <loc>https://buhowski.dev/portfolio</loc>
+  </url>
+
+  <!-- CV / RESUME -->
+  <url>
+    <loc>https://buhowski.dev/cv</loc>
   </url>
 
   <!-- STARTUPS -->
   <url>
-    <loc>https://buhowski.dev/startup</loc>
+    <loc>https://buhowski.dev/vision</loc>
+  </url>
+  <url>
+    <loc>https://buhowski.dev/mvp</loc>
   </url>
 
   <!-- FILMS -->
   <url>
-    <loc>https://buhowski.dev/films</loc>
+    <loc>https://buhowski.dev/cinema</loc>
   </url>
   <url>
     <loc>https://buhowski.dev/self-presentation</loc>
@@ -37,7 +45,7 @@
     <loc>https://buhowski.dev/games</loc>
   </url>
   <url>
-    <loc>https://buhowski.dev/cossack-saga</loc>
+    <loc>https://buhowski.dev/shadows-of-sich-saga</loc>
   </url>
   <url>
     <loc>https://buhowski.dev/whispers-of-the-forgotten</loc>
@@ -47,10 +55,5 @@
   </url>
   <url>
     <loc>https://buhowski.dev/quantum-leap</loc>
-  </url>
-
-  <!-- MVP -->
-  <url>
-    <loc>https://buhowski.dev/mvp</loc>
   </url>
 </urlset>

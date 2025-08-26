@@ -6,13 +6,14 @@ export const urlCoindrop = 'https://coindrop.to/buhowski';
 export const urlInstagram = 'https://www.instagram.com/buhowski';
 
 // All Pages Path
-export const pathToAbout = '/about';
-export const pathToProjects = '/projects';
-export const pathToStartup = '/startup';
+export const pathToAbout = '/me';
+export const pathToProjects = '/portfolio';
+
+export const pathToStartup = '/vision';
 export const pathToStartupMVP = '/mvp';
 
 // Films
-export const pathToStartupFilms = '/films';
+export const pathToStartupFilms = '/cinema';
 export const pathToEuropeanUkrainians = '/european-ukrainians';
 export const pathToTheCorp = '/the-corp';
 export const pathToSelfPresentation = '/self-presentation';
@@ -20,7 +21,7 @@ export const pathToPodcastShow = '/podcast-show';
 
 // Games
 export const pathToStartupGames = '/games';
-export const pathToCossackSaga = '/cossack-saga';
+export const pathToCossackSaga = '/shadows-of-sich-saga';
 export const pathToCossackSagaPart1 = '/whispers-of-the-forgotten';
 export const pathToCossackSagaPart2 = '/ashes-of-the-beloved';
 export const pathToCossackSagaPart3 = '/quantum-leap';
@@ -33,7 +34,7 @@ export const startupsNav = [
 	},
 	{
 		pageLink: pathToStartupFilms,
-		pageName: `Films`,
+		pageName: `Cinema`,
 	},
 	{
 		pageLink: pathToStartupGames,

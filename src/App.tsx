@@ -95,6 +95,15 @@ const App = () => {
 		}
 	}, [location.pathname]);
 
+	// Redirect Component
+	const RedirectToFile: React.FC<{ url: string }> = ({ url }) => {
+		useEffect(() => {
+			window.location.href = url; // or window.location.assign(url)
+		}, [url]);
+
+		return null;
+	};
+
 	return (
 		<TransitionGroup>
 			<CSSTransition key={location.pathname} classNames='slide' timeout={1100}>
@@ -113,7 +122,10 @@ const App = () => {
 								/>
 							))}
 
-							{/* catch-all 404 route and redirect here */}
+							{/* CV Redirect */}
+							<Route path='/cv' element={<RedirectToFile url='/cv.pdf' />} />
+
+							{/* catch-all 404 */}
 							<Route path='*' element={<Startup />} />
 						</Routes>
 					</div>
