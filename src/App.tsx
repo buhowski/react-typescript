@@ -2,11 +2,11 @@ import { useEffect } from 'react';
 import { useLocation, Routes, Route } from 'react-router-dom';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import PageHelmet from './config/PageHelmet';
-import { defaultMetaTags } from './components/metaTags';
 import Header from './components/header/Header';
 import Startup from './pages/startups/Startup';
 import StartupWrapper from './pages/startups/StartupWrapper';
 
+import { defaultMetaTags } from './components/metaTags';
 import { startupPaths, routesData } from './pagesMap';
 
 const App = () => {

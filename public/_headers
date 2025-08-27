@@ -1,5 +1,6 @@
 /*
   Cache-Control: public, max-age=0, must-revalidate
+  X-Prerender-Token: B436aUkv1ZaJKkd7114Q
 
 /static/*
   Cache-Control: public, max-age=31536000, immutable
