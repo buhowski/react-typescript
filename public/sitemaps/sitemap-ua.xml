@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- STARTUPS -->
   <url>
     <loc>https://buhowski.dev/ua/vision</loc>
   </url>
   <url>
     <loc>https://buhowski.dev/ua/mvp</loc>
   </url>
+
+  <!-- CINEMA -->
   <url>
     <loc>https://buhowski.dev/ua/cinema</loc>
   </url>
@@ -21,6 +24,8 @@
   <url>
     <loc>https://buhowski.dev/ua/the-corp</loc>
   </url>
+
+  <!-- GAMES -->
   <url>
     <loc>https://buhowski.dev/ua/games</loc>
   </url>

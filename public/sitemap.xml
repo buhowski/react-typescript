@@ -4,12 +4,12 @@
     <loc>https://buhowski.dev/sitemaps/sitemap-public.xml</loc>
   </sitemap>
   <sitemap>
-    <loc>https://buhowski.dev/sitemaps/sitemap-ua.xml</loc>
-  </sitemap>
-  <sitemap>
     <loc>https://buhowski.dev/sitemaps/sitemap-en.xml</loc>
   </sitemap>
   <sitemap>
     <loc>https://buhowski.dev/sitemaps/sitemap-ru.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://buhowski.dev/sitemaps/sitemap-ua.xml</loc>
   </sitemap>
 </sitemapindex>

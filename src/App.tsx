@@ -38,12 +38,15 @@ const App = () => {
 							))}
 
 							{/* CV Redirect */}
-							<Route path='/cv' element={<RedirectToFile url='/cv.pdf' />} />
+							<Route
+								path='/cv'
+								element={<RedirectToFile url='/CV_Olexander_Tsiomakh_Frontend.pdf' />}
+							/>
 
 							{/* SEO static startup pages */}
 							<Route path='/:lang/*' element={<StartupWrapper />} />
 
-							{/* catch-all 404 → use main Startup page */}
+							{/* catch-all 404 → Startup page */}
 							<Route path='*' element={<NotFoundRedirectToStartup />} />
 						</Routes>
 					</div>
