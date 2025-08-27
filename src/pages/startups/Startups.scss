@@ -35,16 +35,6 @@
 			background-color: #141414;
 			transition: 0.4s;
 
-			@media (hover: hover) and (pointer: fine) {
-				&:hover {
-					background-color: #000;
-				}
-			}
-
-			&:active {
-				background-color: #000;
-			}
-
 			&:not(:last-child) {
 				margin-right: 15px;
 			}
@@ -1006,12 +996,12 @@ $nav-top: 5px;
 
 	@media (hover: hover) and (pointer: fine) {
 		&:hover {
-			@include slider-arrows-hover;
+			@include slider-arrows_hover;
 		}
 	}
 
 	&:active {
-		@include slider-arrows-hover;
+		@include slider-arrows_hover;
 	}
 
 	&-next {

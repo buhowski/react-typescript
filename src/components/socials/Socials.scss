@@ -33,6 +33,16 @@
 		&:last-child {
 			margin-right: 0;
 		}
+
+		@media (hover: hover) and (pointer: fine) {
+			&:hover {
+				@include social_hover;
+			}
+		}
+
+		&:active {
+			@include social_hover;
+		}
 	}
 
 	&__icon {
@@ -41,25 +51,24 @@
 	}
 
 	svg {
-		fill: $snow;
+		fill: #ffffff;
+		transition: fill 0.25s;
+		will-change: fill;
 	}
 
 	.title {
 		font-family: $indie;
 		color: $blue-main;
+		color: $toc-title-color;
 		backface-visibility: hidden;
 		position: absolute;
 		top: -30px;
 		left: 50%;
 		transform: translateX(-35%) rotate(0deg);
 		opacity: 0;
-		transition: all 0.4s ease;
+		transition: opacity 0.25s, transform 0.25s;
 		white-space: nowrap;
 		font-size: 21px;
 		will-change: opacity, transform;
-	}
-	a:hover > .title {
-		opacity: 1;
-		transform: translateX(-55%) rotate(-5deg);
 	}
 }

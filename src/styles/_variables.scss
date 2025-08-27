@@ -27,10 +27,21 @@ $toc-title-color: #b991e3;
 
 $header-ltr-spc: 3px;
 
+@mixin social_hover {
+	> .title {
+		opacity: 1;
+		transform: translateX(-55%) rotate(-5deg);
+	}
+
+	svg {
+		fill: $toc-title-color;
+	}
+}
+
 // Slider
 $slider-actions-color: #745a81;
 
-@mixin slider-arrows-hover {
+@mixin slider-arrows_hover {
 	background-color: rgba($textGrey, 0.2);
 
 	.chevron {

@@ -77,8 +77,8 @@ const DrawCanvas = () => {
 		};
 
 		const drawLineCanvas = () => {
-			const minimumLineWidth = 90;
-			const maximumLineWidth = 90;
+			const minimumLineWidth = 80;
+			const maximumLineWidth = 80;
 			const lineWidthRange = maximumLineWidth - minimumLineWidth;
 			const maximumSpeed = 200;
 

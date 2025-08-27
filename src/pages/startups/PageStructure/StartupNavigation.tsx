@@ -9,13 +9,16 @@ const StartupNavigation: React.FC = () => {
 	return (
 		<div className='idea-tabs'>
 			{startupsNav.map(({ pageLink, pageName }, index) => {
+				const isMainActive = pathname.replace(/^\/(en|ua|ru)/, '') === pageLink;
 				const isSubActive = isPathSubActive(pageLink, pathname);
 
 				return (
 					<NavLink
 						to={pageLink}
 						key={index}
-						className={`idea-tabs__btn ${isSubActive ? 'sub-active' : ''}`}
+						className={`idea-tabs__btn ${isMainActive ? 'active' : ''} ${
+							isSubActive ? 'sub-active' : ''
+						}`}
 					>
 						{pageName}
 					</NavLink>
