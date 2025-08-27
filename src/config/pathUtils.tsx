@@ -12,8 +12,10 @@ import {
 	pathToStartupFilms,
 } from '../components/urlsData';
 
-export const isPathActive = (paths: string[], currentPath: string) =>
-	paths.some((path) => path === currentPath || `${path}/` === currentPath);
+export const isPathActive = (paths: string[], currentPath: string) => {
+	const pathWithoutLang = currentPath.replace(/^\/(en|ua|ru)/, '') || '/';
+	return paths.some((path) => path === pathWithoutLang || `${path}/` === pathWithoutLang);
+};
 
 // Activate "My Startups" nav item in the main header
 export const startupPaths: string[] = [
