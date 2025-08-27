@@ -19,15 +19,28 @@ import { ArrowLeftIcon } from '../../../assets/svg/icons';
 
 import '../Startups.scss';
 
-const PageStructure: React.FC<PageProps> = ({ textData, backButton }) => {
+interface PageStructureProps extends PageProps {
+	initialLang?: LanguageCode;
+}
+
+const PageStructure: React.FC<PageStructureProps> = ({ textData, backButton, initialLang }) => {
 	const useTabletLarge = useTabletLargeQuery();
-	const [currentLang, setCurrentLang] = useState(LANGUAGES[0]);
+
+	// Group state variables and refs for better readability.
+	const [currentLang, setCurrentLang] = useState<LanguageCode>(
+		(initialLang as LanguageCode) ||
+			getInitialLanguage(
+				textData,
+				LANGUAGES.filter((lang) => textData?.[lang]?.length > 0)
+			)
+	);
 	const [initialLangReady, setInitialLangReady] = useState(false);
+	const [currentDesktopSliderContent, setCurrentDesktopSliderContent] = useState<any[]>([]);
+	const [canRenderFooter, setCanRenderFooter] = useState(false);
+
 	const allHeadingsMapRef = useRef(new Map());
 	const pitchRefs = useRef<(HTMLDivElement | null)[]>([]);
-	const [currentDesktopSliderContent, setCurrentDesktopSliderContent] = useState<any[]>([]);
 	const isDesktopSliderContentInitialized = useRef(false);
-	const [canRenderFooter, setCanRenderFooter] = useState(false);
 
 	const {
 		activeHeadingId,
@@ -43,6 +56,24 @@ const PageStructure: React.FC<PageProps> = ({ textData, backButton }) => {
 		[textData]
 	);
 
+	// Unified language initialization and update logic.
+	useEffect(() => {
+		const storedLang = localStorage.getItem('currentLang') || null;
+		const newLang =
+			initialLang || storedLang || getInitialLanguage(textData, availableLangs) || 'en';
+
+		if (newLang !== currentLang) {
+			setCurrentLang(newLang as LanguageCode);
+			localStorage.setItem('currentLang', newLang);
+		}
+
+		allHeadingsMapRef.current.clear();
+		setHeadingsVersion((prev) => prev + 1);
+		setInitialLangReady(true);
+		isDesktopSliderContentInitialized.current = false;
+		// eslint-disable-next-line react-hooks/exhaustive-deps
+	}, [initialLang, textData, availableLangs, setHeadingsVersion]);
+
 	const contentToRender = useMemo(() => {
 		const currentLangContent = textData[currentLang] || [];
 		const englishContent = textData.en || [];
@@ -57,16 +88,6 @@ const PageStructure: React.FC<PageProps> = ({ textData, backButton }) => {
 		});
 	}, [textData, currentLang]);
 
-	// Initial language setup
-	useEffect(() => {
-		const initialLang = getInitialLanguage(textData, availableLangs);
-		setCurrentLang(initialLang);
-		allHeadingsMapRef.current.clear();
-		setHeadingsVersion((prev) => prev + 1);
-		setInitialLangReady(true);
-		isDesktopSliderContentInitialized.current = false;
-	}, [textData, availableLangs, allHeadingsMapRef, setHeadingsVersion]);
-
 	// Update active PitchContainer's slider content on scroll
 	const handleScrollUpdateSlider = useCallback(() => {
 		const pageContainer = document.querySelector('.page-container');
@@ -78,11 +99,10 @@ const PageStructure: React.FC<PageProps> = ({ textData, backButton }) => {
 		const containerTop = pageContainer.getBoundingClientRect().top;
 		let scrollOffset = 200;
 
-		let newActivePitchIndex: number = 0;
+		let newActivePitchIndex = 0;
 
 		for (let i = pitchRefs.current.length - 1; i >= 0; i--) {
 			const pitchElement = pitchRefs.current[i];
-
 			if (pitchElement) {
 				const rect = pitchElement.getBoundingClientRect();
 				if (rect.top <= containerTop + scrollOffset && rect.bottom > containerTop) {
@@ -139,7 +159,6 @@ const PageStructure: React.FC<PageProps> = ({ textData, backButton }) => {
 	useEffect(() => {
 		if (useTabletLarge && initialLangReady && contentToRender.length > 0) {
 			const timer = setTimeout(() => setCanRenderFooter(true), 1000);
-
 			return () => clearTimeout(timer);
 		}
 	}, [initialLangReady, contentToRender, useTabletLarge]);
@@ -170,11 +189,9 @@ const PageStructure: React.FC<PageProps> = ({ textData, backButton }) => {
 						{backButton && (
 							<NavLink to={backButton} className='idea-back'>
 								{ArrowLeftIcon}
-
 								<span>Back</span>
 							</NavLink>
 						)}
-
 						{initialLangReady &&
 							contentToRender.map((structure, index) => {
 								const fallbackFilmsPreview = textData.en?.[index]?.filmsPreviewUrl;
@@ -193,23 +210,19 @@ const PageStructure: React.FC<PageProps> = ({ textData, backButton }) => {
 									/>
 								);
 							})}
-
 						{useTabletLarge && (
 							<div className='copy-tablet'>
 								{canRenderFooter && <Copyright />}
-
 								<PopupContacts />
 							</div>
 						)}
 					</div>
-
 					<div className={`lang-sidebar ${'lang-sidebar--has-toc'}`}>
 						<TableOfContent
 							activeHeadingId={activeHeadingId}
 							onSelectIndex={handleTableOfContentSelect}
 							headings={sortedHeadings}
 						/>
-
 						<div className='desktop-slider'>
 							{!useTabletLarge && (
 								<Slider slides={currentDesktopSliderContent} currentLanguage={currentLang} />

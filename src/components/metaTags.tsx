@@ -21,7 +21,7 @@ const defaultDescription =
 const startupDescription =
 	'Turning stories, tech, and imagination into a playground of innovation and creativity.';
 const aboutDescription =
-	'A creator at the crossroads of code, design, and vision—shaping experiences that resonate.';
+	'A creator at the crossroads of code, design, and vision-shaping experiences.';
 const portfolioDescription =
 	'Dive into a collection of projects that blend creativity, impact, and a hint of audacity.';
 

@@ -1,59 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://buhowski.dev/</loc>
-  </url>
-  <url>
-    <loc>https://buhowski.dev/me</loc>
-  </url>
-  <url>
-    <loc>https://buhowski.dev/portfolio</loc>
-  </url>
-
-  <!-- CV / RESUME -->
-  <url>
-    <loc>https://buhowski.dev/cv</loc>
-  </url>
-
-  <!-- STARTUPS -->
-  <url>
-    <loc>https://buhowski.dev/vision</loc>
-  </url>
-  <url>
-    <loc>https://buhowski.dev/mvp</loc>
-  </url>
-
-  <!-- FILMS -->
-  <url>
-    <loc>https://buhowski.dev/cinema</loc>
-  </url>
-  <url>
-    <loc>https://buhowski.dev/self-presentation</loc>
-  </url>
-  <url>
-    <loc>https://buhowski.dev/podcast-show</loc>
-  </url>
-  <url>
-    <loc>https://buhowski.dev/european-ukrainians</loc>
-  </url>
-  <url>
-    <loc>https://buhowski.dev/the-corp</loc>
-  </url>
-
-  <!-- GAMES -->
-  <url>
-    <loc>https://buhowski.dev/games</loc>
-  </url>
-  <url>
-    <loc>https://buhowski.dev/shadows-of-sich-saga</loc>
-  </url>
-  <url>
-    <loc>https://buhowski.dev/whispers-of-the-forgotten</loc>
-  </url>
-  <url>
-    <loc>https://buhowski.dev/ashes-of-the-beloved</loc>
-  </url>
-  <url>
-    <loc>https://buhowski.dev/quantum-leap</loc>
-  </url>
-</urlset>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <sitemap>
+    <loc>https://buhowski.dev/sitemaps/sitemap-public.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://buhowski.dev/sitemaps/sitemap-ua.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://buhowski.dev/sitemaps/sitemap-en.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://buhowski.dev/sitemaps/sitemap-ru.xml</loc>
+  </sitemap>
+</sitemapindex>

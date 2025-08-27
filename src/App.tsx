@@ -3,22 +3,13 @@ import { useLocation, Routes, Route } from 'react-router-dom';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import PageHelmet from './config/PageHelmet';
 import Header from './components/header/Header';
-import Startup from './pages/startups/Startup';
 import StartupWrapper from './pages/startups/StartupWrapper';
 
 import { defaultMetaTags } from './components/metaTags';
-import { startupPaths, routesData } from './pagesMap';
+import { routesData, NotFoundRedirectToStartup } from './routesMap';
 
 const App = () => {
 	const location = useLocation();
-
-	// Reset language on non-startup pages
-	useEffect(() => {
-		const path = location.pathname.replace(/^\/(en|ua|ru)/, '');
-		document.documentElement.lang = startupPaths.includes(path)
-			? localStorage.getItem('currentLang') || 'en'
-			: 'en';
-	}, [location.pathname]);
 
 	// Redirect Component
 	const RedirectToFile: React.FC<{ url: string }> = ({ url }) => {
@@ -38,11 +29,11 @@ const App = () => {
 						<Header />
 
 						<Routes location={location}>
-							{routesData.map(({ pathTo, pageComponent }, i) => (
+							{routesData.map(({ pathTo, pageComponent: PageComponent }, i) => (
 								<Route
 									key={i + pathTo}
 									path={pathTo.startsWith('/') ? pathTo : `/${pathTo}`}
-									element={pageComponent}
+									element={<PageComponent />}
 								/>
 							))}
 
@@ -52,8 +43,8 @@ const App = () => {
 							{/* SEO static startup pages */}
 							<Route path='/:lang/*' element={<StartupWrapper />} />
 
-							{/* catch-all 404 */}
-							<Route path='*' element={<Startup />} />
+							{/* catch-all 404 → use main Startup page */}
+							<Route path='*' element={<NotFoundRedirectToStartup />} />
 						</Routes>
 					</div>
 				</div>

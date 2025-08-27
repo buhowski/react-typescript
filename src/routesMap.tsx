@@ -1,20 +1,4 @@
 import React from 'react';
-import {
-	pathToStartup,
-	pathToStartupFilms,
-	pathToAbout,
-	pathToProjects,
-	pathToStartupGames,
-	pathToStartupMVP,
-	pathToEuropeanUkrainians,
-	pathToTheCorp,
-	pathToPodcastShow,
-	pathToSelfPresentation,
-	pathToCossackSaga,
-	pathToCossackSagaPart1,
-	pathToCossackSagaPart2,
-	pathToCossackSagaPart3,
-} from './components/urlsData';
 
 import Home from './pages/home/Home';
 import About from './pages/about/About';
@@ -37,6 +21,23 @@ import CossackSaga from './pages/startups/pages/games/CossackSaga/CossackSaga';
 import CossackSagaPart1 from './pages/startups/pages/games/CossackSaga/Part1/CossackSagaPart1';
 import CossackSagaPart2 from './pages/startups/pages/games/CossackSaga/Part2/CossackSagaPart2';
 import CossackSagaPart3 from './pages/startups/pages/games/CossackSaga/Part3/CossackSagaPart3';
+
+import {
+	pathToStartup,
+	pathToStartupFilms,
+	pathToAbout,
+	pathToProjects,
+	pathToStartupGames,
+	pathToStartupMVP,
+	pathToEuropeanUkrainians,
+	pathToTheCorp,
+	pathToPodcastShow,
+	pathToSelfPresentation,
+	pathToCossackSaga,
+	pathToCossackSagaPart1,
+	pathToCossackSagaPart2,
+	pathToCossackSagaPart3,
+} from './components/urlsData';
 
 // Map for SEO/Startup routing
 export const startupsMap: Record<string, React.ComponentType<any>> = {
@@ -62,16 +63,16 @@ export const startupsMap: Record<string, React.ComponentType<any>> = {
 // All Routes for App.tsx
 export const routesData = [
 	// Public Pages
-	{ pathTo: '/', pageComponent: <Home /> },
-	{ pathTo: pathToAbout, pageComponent: <About /> },
-	{ pathTo: pathToProjects, pageComponent: <Projects /> },
+	{ pathTo: '/', pageComponent: Home },
+	{ pathTo: pathToAbout, pageComponent: About },
+	{ pathTo: pathToProjects, pageComponent: Projects },
 
 	// Startup Pages
 	...Object.entries(startupsMap).map(([path, Component]) => ({
 		pathTo: path,
-		pageComponent: <Component />,
+		pageComponent: Component,
 	})),
 ];
 
-// Array of all startup paths
-export const startupPaths: string[] = Object.keys(startupsMap);
+// redirect 404 to Startup Component
+export const NotFoundRedirectToStartup = () => <Startup />;

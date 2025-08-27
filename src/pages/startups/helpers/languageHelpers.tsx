@@ -1,4 +1,3 @@
-// languageHelpers.ts
 import { LanguageCode, PageProps } from '../../../types/common';
 
 // Define your desired default language here
