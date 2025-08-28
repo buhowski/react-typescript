@@ -429,7 +429,8 @@ $nav-top: 5px;
 
 	strong,
 	b {
-		font-weight: 600;
+		font-weight: bold;
+		color: #e6e6e6;
 	}
 
 	h1,
@@ -562,14 +563,9 @@ $nav-top: 5px;
 	p.description__has-em {
 		font-size: 15px;
 		font-weight: 300;
-		color: #ffffff;
 
 		&:not(:first-of-type) {
 			margin-top: 10px;
-		}
-
-		span {
-			font-weight: bold;
 		}
 	}
 

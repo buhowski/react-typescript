@@ -3,7 +3,7 @@ import { useLocation, Routes, Route } from 'react-router-dom';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import PageHelmet from './config/PageHelmet';
 import Header from './components/header/Header';
-import StartupWrapper from './pages/startups/StartupWrapper';
+import StartupsWrapper from './pages/startups/StartupsWrapper';
 
 import { defaultMetaTags } from './components/metaTags';
 import { routesData, NotFoundRedirectToStartup } from './routesMap';
@@ -44,7 +44,7 @@ const App = () => {
 							/>
 
 							{/* SEO static startup pages */}
-							<Route path='/:lang/*' element={<StartupWrapper />} />
+							<Route path='/:lang/*' element={<StartupsWrapper />} />
 
 							{/* catch-all 404 → Startup page */}
 							<Route path='*' element={<NotFoundRedirectToStartup />} />

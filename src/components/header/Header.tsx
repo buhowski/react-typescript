@@ -6,7 +6,8 @@ import Socials from '../socials/Socials';
 import socialData from '../socials/socialData';
 
 // Reusable path matching function
-import { isPathActive, startupPaths } from '../../config/pathUtils';
+import { isPathActive } from '../../config/pathUtils';
+import { startupPaths } from '../../pages/startups/startupsRoutes';
 
 import './Header.scss';
 

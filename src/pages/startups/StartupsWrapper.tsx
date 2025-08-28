@@ -1,8 +1,8 @@
 import React, { useLayoutEffect } from 'react';
 import { useParams, useLocation } from 'react-router-dom';
-import { startupsMap } from '../../routesMap';
+import { startupsMap } from '../startups/startupsRoutes';
 
-const StartupWrapper: React.FC = () => {
+const StartupsWrapper: React.FC = () => {
 	const { lang } = useParams<{ lang?: string }>();
 	const location = useLocation();
 
@@ -23,4 +23,4 @@ const StartupWrapper: React.FC = () => {
 	return <PageComponent initialLang={currentLang} />;
 };
 
-export default StartupWrapper;
+export default StartupsWrapper;

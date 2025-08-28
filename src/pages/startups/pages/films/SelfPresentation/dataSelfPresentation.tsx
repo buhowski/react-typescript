@@ -1,5 +1,5 @@
 // URL To Single Page / Read More button
-import { pathToPodcastShow } from '../../../../../components/urlsData';
+import { pathToPodcastShow, pathToGodEvening } from '../../../../../components/urlsData';
 
 // Import the specific slider data
 import { dataSliderPodcastShow } from './PodcastShow/dataSliderPodcastShow';
@@ -22,7 +22,12 @@ export const dataSelfPresentation = {
 			filmsPreviewUrl: pathToPodcastShow,
 		},
 
-		// ### Other  ###
+		// ### God Evening  ###
+		{
+			markdownAPI: '/text-data/films/SelfPresentation/GodEvening/PreviewGodEveningEN.md',
+			// sliderContent: dataSliderPodcastShow,
+			filmsPreviewUrl: pathToGodEvening,
+		},
 	],
 
 	// Ukraine
@@ -32,6 +37,9 @@ export const dataSelfPresentation = {
 
 		// ### Podcast Show  ###
 		{ markdownAPI: '/text-data/films/SelfPresentation/PodcastShow/PreviewPodcastShowUA.md' },
+
+		// ### God Evening  ###
+		{ markdownAPI: '/text-data/films/SelfPresentation/GodEvening/PreviewGodEveningUA.md' },
 	],
 
 	// rusian
@@ -41,5 +49,8 @@ export const dataSelfPresentation = {
 
 		// ### Podcast Show  ###
 		{ markdownAPI: '/text-data/films/SelfPresentation/PodcastShow/PreviewPodcastShowRU.md' },
+
+		// ### God Evening  ###
+		{ markdownAPI: '/text-data/films/SelfPresentation/GodEvening/PreviewGodEveningRU.md' },
 	],
 };

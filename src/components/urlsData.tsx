@@ -18,6 +18,7 @@ export const pathToEuropeanUkrainians = '/european-ukrainians';
 export const pathToTheCorp = '/the-corp';
 export const pathToSelfPresentation = '/self-presentation';
 export const pathToPodcastShow = '/podcast-show';
+export const pathToGodEvening = '/god-evening';
 
 // Games
 export const pathToStartupGames = '/games';
