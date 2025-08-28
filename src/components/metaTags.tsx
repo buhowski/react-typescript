@@ -19,11 +19,11 @@ const startupTitle = 'Another Dimension — Magazine ⋅ Media ⋅ Cinema ⋅ Ga
 const defaultDescription =
 	'Crafting projects and ideas, building worlds, and sharing creations. From Planet Earth, Solar System.';
 const startupDescription =
-	'Turning stories, tech, and imagination into a playground of innovation and creativity. From Planet Earth, Solar System.';
+	'Turning stories, tech, and imagination into a playground of innovation and creativity.';
 const aboutDescription =
-	'A creator at the crossroads of code, storytelling, design, and vision-shaping experiences. From Planet Earth, Solar System.';
+	'A creator at the crossroads of code, storytelling, design, and vision-shaping experiences.';
 const portfolioDescription =
-	'Dive into a collection of projects that combine creativity, functionality, and quality web design. From Planet Earth, Solar System.';
+	'Dive into a collection of projects that combine creativity, functionality, and quality web design.';
 
 // ### Default Meta Tags / Home Page
 export const defaultMetaTags = {

@@ -78,10 +78,12 @@ Local Factions — subordinates with their own leaders, assistants, and servants
 
 ## Conclusion
 
+None of the known religions or historical figures participated in the creation of this conspiracy. Any resemblance to actual events is an artistic and psychological interpretation of society under certain conditions. If any organization recognizes itself in the text — my congratulations. Offense is merely a matter of perception: no one can truly be offended, one can only take offense.
+
 I am looking support and a team to bring this unique world to life. This is an opportunity to merge real historical events with mysticism and craft a powerful next-generation game series about the Cossacks. My vision brings forgotten stories to life and shapes alternate worlds capable of becoming true global masterpieces.
 
 ## More Details
 
-*Under Construction ...*
+*Under Construction …*
 
 The author is seeking resources and time to bring these masterful ideas to life. If you know how or where to get support, please write to me!
