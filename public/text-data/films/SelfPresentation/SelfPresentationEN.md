@@ -8,5 +8,5 @@ If you are just planning to get into content creation or already involved but la
 
 ### List
 
-- [Podcast Show: Dimension Minus Zero One Hundred and Forty-eight](/podcast-show)
+- [Dimension Minus Zero One Hundred and Forty-eight](/podcast-show)
 - [An Evening at GOD's](/god-evening)
