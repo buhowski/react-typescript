@@ -4,13 +4,19 @@
 
 ## Logline
 
-A satirical-theatrical play-show where God, drinking beer between a TV and a papier-mâché globe, lampoons the absurdity of the world through humor, irony, and dramatic imagery, creating an evening that is both entertaining and thought-provoking.
+A satirical-theatrical play-show where God, drinking beer between a TV and a papier-mâché globe, ridicules the absurdity of the world through humor, irony, and dramatic imagery, creating an evening that is both entertaining and thought-provoking.
 
 ## Main Idea
 
-To adapt an early and little-known short play by Stephen King for modern times, raising sharp questions about order and chaos, while adding original conceptual inserts, fresh humor, and metaphors to highlight the paradoxes of the world and the cyclical nature of contemporary existence.
+To adapt an early and little-known mini-play by Stephen King for modern times, raising sharp questions about order and chaos by adding original conceptual inserts, fresh humor, and metaphors to highlight the paradoxes of the world and the cyclical nature of contemporary existence.
 
-The show revolves around God: he sits, drinks beer, talks to the TV, and vents his frustration on the globe. Apostles come to see him, discuss business, and distract him from his favorite recorded comedy shows.
+### Concept
+
+The show consists of short scenes: God, who is sitting, drinking beer, and talking to the TV, is approached by his colleagues, apostles, or other heavenly subordinates with documents, clarifications, or requests, distracting him from his favorite comedy shows. Each dialogue is quick and witty, ending with a signature or a resolved request.
+
+The finale is always the same: annoyed by human triviality, God vents his frustration on the globe. This triggers micro-scenes of catastrophes — from comical to tragic: tsunamis, earthquakes, riots, wars. Video inserts emphasize the grotesqueness of the divine comedy.
+
+The structure is cyclical: new visitors, new requests, but the conclusion remains unchanged — God is tired of Earth, and it is better to return to watching entertaining content. This creates the effect of an endless loop.
 
 ## Original Play
 
