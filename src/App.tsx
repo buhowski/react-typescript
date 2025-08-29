@@ -37,12 +37,6 @@ const App = () => {
 								/>
 							))}
 
-							{/* CV Redirect */}
-							<Route
-								path='/cv'
-								element={<RedirectToFile url='/CV_Olexander_Tsiomakh_Frontend.pdf' />}
-							/>
-
 							{/* SEO static startup pages */}
 							<Route path='/:lang/*' element={<StartupsWrapper />} />
 

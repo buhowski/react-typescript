@@ -1,3 +1,23 @@
+# Redirects /from /to (permanent)
+[[redirects]]
+  from = "/startup"
+  to = "/vision"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/films"
+  to = "/cinema"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/cv"
+  to = "/CV_Olexander_Tsiomakh_Frontend.pdf"
+  status = 301
+  force = true
+
+# Catch-all for SPA: all other paths serve index.html
 [[redirects]]
   from = "/*"
   to = "/index.html"
