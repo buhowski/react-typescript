@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import { useLocation, Routes, Route } from 'react-router-dom';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import PageHelmet from './config/PageHelmet';
@@ -10,14 +9,6 @@ import { routesData, NotFoundRedirectToStartup } from './routesMap';
 
 const App = () => {
 	const location = useLocation();
-
-	// Redirect Component
-	const RedirectToFile: React.FC<{ url: string }> = ({ url }) => {
-		useEffect(() => {
-			window.location.href = url;
-		}, [url]);
-		return null;
-	};
 
 	return (
 		<TransitionGroup>
@@ -40,7 +31,7 @@ const App = () => {
 							{/* SEO static startup pages */}
 							<Route path='/:lang/*' element={<StartupsWrapper />} />
 
-							{/* catch-all 404 → Startup page */}
+							{/* catch-all 404 to Startup page */}
 							<Route path='*' element={<NotFoundRedirectToStartup />} />
 						</Routes>
 					</div>
