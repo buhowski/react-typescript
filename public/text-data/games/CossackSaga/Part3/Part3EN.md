@@ -43,4 +43,4 @@ At the start of the game, you create your hero and choose a faction, which deter
 
 *Under Construction ...*
 
-The author is seeking resources and time to bring these masterful ideas to life. If you know how or where to get support, please write to me!
+The author is seeking resources and time to bring these masterful ideas to life. If you know how or where to get support, please contact me!

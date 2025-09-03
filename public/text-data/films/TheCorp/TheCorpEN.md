@@ -24,4 +24,4 @@ Like "The Office", we film in a real workspace — but we don’t copy the origi
 
 *Under Construction ...*
 
-The author is seeking resources and time to bring these masterful ideas to life. If you know how or where to get support, please write to me!
+The author is seeking resources and time to bring these masterful ideas to life. If you know how or where to get support, please contact me!
