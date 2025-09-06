@@ -39,7 +39,7 @@ At the start of the game, you create your hero and choose a faction, which deter
 
 [mobile-slider]
 
-## More Details
+## Details
 
 *Under Construction ...*
 

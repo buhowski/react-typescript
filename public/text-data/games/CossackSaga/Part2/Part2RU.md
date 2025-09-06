@@ -34,7 +34,7 @@
 
 [mobile-slider]
 
-## More Details
+## Детали
 
 *Under Construction …*
 

@@ -1,8 +1,8 @@
 import PageStructure from './PageStructure/PageStructure';
-import { dataStartup } from './pages/startup/dataStartup';
+import { dataText } from './pages/vision/dataText';
 
-const Startup = () => {
-	return <PageStructure textData={dataStartup} />;
+const Vision = () => {
+	return <PageStructure textData={dataText} />;
 };
 
-export default Startup;
+export default Vision;

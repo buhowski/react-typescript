@@ -70,7 +70,7 @@ Local Factions — subordinates with their own leaders, assistants, and servants
 
 ### Inspiration
 
-- Games: [The Witcher Series](https://www.thewitcher.com/ua/en/), [Ghost of Tsushima](https://store.steampowered.com/app/2215430/Ghost_of_Tsushima_DIRECTORS_CUT/), [Clair Obscur: Expedition 33](https://www.expedition33.com/), [Final Fantasy VII](https://store.steampowered.com/app/1462040/FINAL_FANTASY_VII_REMAKE_INTERGRADE/) / [XV](https://store.steampowered.com/app/637650/FINAL_FANTASY_XV_WINDOWS_EDITION/) — for deep worlds, epic quests, and strong storytelling.
+- Games: [The Witcher Series](https://www.thewitcher.com/ua/en/), [Ghost of Tsushima](https://store.steampowered.com/app/2215430/Ghost_of_Tsushima_DIRECTORS_CUT/), [Clair Obscur: Expedition 33](https://store.steampowered.com/app/1903340/Clair_Obscur_Expedition_33/), [Final Fantasy VII](https://store.steampowered.com/app/1462040/FINAL_FANTASY_VII_REMAKE_INTERGRADE/) / [XV](https://store.steampowered.com/app/637650/FINAL_FANTASY_XV_WINDOWS_EDITION/) — for deep worlds, epic quests, and strong storytelling.
 - Direction and Expression: [NieR: RepliCant](https://store.steampowered.com/app/1113560/NieR_Replicant_ver122474487139/) / [Automata](https://store.steampowered.com/app/524220/NieRAutomata/) — for their masterful fusion of cinematic combat, emotional intensity, and uniquely atmospheric world design.
 - Culture and Mythology: The Zaporizhian Cossacks, Slavic mythology, and demonology — for authenticity, magic, and folkloric lore.
 - Drama and Emotions: The full palette of human emotions — from triumphs to tragedies
@@ -82,7 +82,7 @@ None of the known religions or historical figures participated in the creation o
 
 I am looking support and a team to bring this unique world to life. This is an opportunity to merge real historical events with mysticism and craft a powerful next-generation game series about the Cossacks. My vision brings forgotten stories to life and shapes alternate worlds capable of becoming true global masterpieces.
 
-## More Details
+## Details
 
 *Under Construction …*
 

@@ -1,6 +1,6 @@
 # Project "Journalism"
 
-## More Details
+## Details
 
 *Under Construction ...*
 

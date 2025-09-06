@@ -2,12 +2,19 @@ import Startup from './Startup';
 import StartupMVP from './MVP';
 
 // Films Industry
-import StartupFilms from './Films';
-import EuropeanUkrainians from './pages/films/EuropeanUkrainians/EuropeanUkrainians';
-import TheCorp from './pages/films/TheCorp/TheCorp';
-import SelfPresentation from './pages/films/SelfPresentation/SelfPresentation';
-import PodcastShow from './pages/films/SelfPresentation/PodcastShow/PodcastShow';
-import GodEvening from './pages/films/SelfPresentation/GodEvening/GodEvening';
+import Cinema from './Cinema';
+import EuropeanUkrainians from './pages/cinema/EuropeanUkrainians/EuropeanUkrainians';
+import TheCorp from './pages/cinema/TheCorp/TheCorp';
+
+import HeShe from './pages/cinema/HeShe/HeShe';
+import LilithsAdventure from './pages/cinema/LilithsAdventure/LilithsAdventure';
+import OnceInUkraine from './pages/cinema/OnceInUkraine/OnceInUkraine';
+import VolynWedding from './pages/cinema/VolynWedding/VolynWedding';
+import WoodenFiction from './pages/cinema/WoodenFiction/WoodenFiction';
+
+import SelfPresentation from './pages/cinema/SelfPresentation/SelfPresentation';
+import PodcastShow from './pages/cinema/SelfPresentation/PodcastShow/PodcastShow';
+import GodEvening from './pages/cinema/SelfPresentation/GodEvening/GodEvening';
 
 // Games Industry
 import StartupGames from './Games';
@@ -30,6 +37,11 @@ import {
 	pathToCossackSagaPart1,
 	pathToCossackSagaPart2,
 	pathToCossackSagaPart3,
+	pathToHeShe,
+	pathToLilithsAdventure,
+	pathToOnceInUkraine,
+	pathToVolynWedding,
+	pathToWoodenFiction,
 } from '../../components/urlsData';
 
 // Map of startup pages
@@ -38,10 +50,18 @@ export const startupsMap: Record<string, React.ComponentType<any>> = {
 	[pathToStartup]: Startup,
 	[pathToStartupMVP]: StartupMVP,
 
-	// Films
-	[pathToStartupFilms]: StartupFilms,
+	// CINEMA
+	[pathToStartupFilms]: Cinema,
 	[pathToEuropeanUkrainians]: EuropeanUkrainians,
 	[pathToTheCorp]: TheCorp,
+
+	[pathToHeShe]: HeShe,
+	[pathToLilithsAdventure]: LilithsAdventure,
+	[pathToOnceInUkraine]: OnceInUkraine,
+	[pathToVolynWedding]: VolynWedding,
+	[pathToWoodenFiction]: WoodenFiction,
+
+	// Self Presentation
 	[pathToSelfPresentation]: SelfPresentation,
 	[pathToPodcastShow]: PodcastShow,
 	[pathToGodEvening]: GodEvening,
@@ -71,6 +91,14 @@ export const startupSubPaths: Record<string, string[]> = {
 	[pathToStartupFilms]: [
 		pathToEuropeanUkrainians,
 		pathToTheCorp,
+
+		pathToHeShe,
+		pathToLilithsAdventure,
+		pathToOnceInUkraine,
+		pathToVolynWedding,
+		pathToWoodenFiction,
+
+		// Self Presentation
 		pathToSelfPresentation,
 		pathToPodcastShow,
 		pathToGodEvening,

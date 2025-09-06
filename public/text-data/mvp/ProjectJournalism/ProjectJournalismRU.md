@@ -1,6 +1,6 @@
 # Проект "Журналистика"
 
-## More Details
+## Детали
 
 *Under Construction ...*
 

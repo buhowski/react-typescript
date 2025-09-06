@@ -12,10 +12,17 @@ export const pathToProjects = '/portfolio';
 export const pathToStartup = '/vision';
 export const pathToStartupMVP = '/mvp';
 
-// Films
+// CINEMA
 export const pathToStartupFilms = '/cinema';
 export const pathToEuropeanUkrainians = '/european-ukrainians';
 export const pathToTheCorp = '/the-corp';
+
+export const pathToHeShe = '/he-she';
+export const pathToLilithsAdventure = '/liliths-adventure';
+export const pathToOnceInUkraine = '/once-in-ukraine';
+export const pathToVolynWedding = '/volyn-wedding';
+export const pathToWoodenFiction = '/wooden-fiction';
+
 export const pathToSelfPresentation = '/self-presentation';
 export const pathToPodcastShow = '/podcast-show';
 export const pathToGodEvening = '/god-evening';

@@ -4,91 +4,82 @@
 
 ## Logline
 
-A dark-humored sitcom about a group of young “idiots” who, facing the absurdity of the Ukrainian “Europe” environment, challenge life’s realities on the path of self-development, maintaining a delicate balance between optimism, a fuck-it attitude, and uncontrollably fatal hysteria in the unfolding events.
+A dark humor sitcom about a group of young idiots who, through the absurdity of Ukrainian Europe, challenge life's realities on the path to self-development. They balance between optimism, carelessness, and uncontrollable hysterics, which leads to fatal consequences.
 
 ## Main Idea
 
-The narrative unfolds through a prism of sarcastic-satirical and self-ironic mockery aimed both at the system and the people within it.
+The narrative unfolds through the prism of satire and self-ironic mockery of both the system and the people within it. This is the only way the characters perceive the surrounding world, in order not to go crazy.
 
-This is how the characters perceive the world around them to keep from losing their minds. Thanks to friendship — which is actually selfish and immoral — and support — where they betray and let each other down — they still stick together and try to find their place in society, constantly getting into awkward situations.
+Thanks to a friendship that is in fact selfish and immoral, and support where they set each other up and abandon each other, the characters still stick together, trying to find their place in society and constantly getting into awkward situations.
 
-Strangers meet under certain circumstances. The situation forces them to get closer — through pain, shouting, and a faint smell of booze, because that’s how “true love” is born.
+Completely different strangers meet under circumstances that bring them closer — through pain, screaming, and the faint smell of booze, because that's the only way true love is born.
 
-### Themes
-
-- Everyday problems familiar to everyone: money, work, relationships, self-discovery
-- Heroes of different generations, each with their own style and way of surviving in the chaos of society
-- In each episode — a new adventure that drives the characters into a dead end: from corruption and gender inequality to addictions and absurd displays of lack of culture
-- The heroes' egocentrism and anxiety create comic situations that usually only get worse before turning into a resolution
-- Without censorship, with irony and warm dark humor, the series reflects reality as it is
-- The show's task is not only to entertain but also to provoke reflection on the problems of Ukrainian society
+This is a series that uses humor and satire to sharply and ironically reflect Ukraine's shortcomings and achievements on its path to European integration (although this integration brings nothing but idiocy), as well as to show the stereotypes and cultural features of European countries.
 
 [mobile-slider]
 
-## Description
+### Description
 
-The series concept is a fun mix, inspired by projects like [Trailer Park Boys](https://www.imdb.com/title/tt0290988/), [It's Always Sunny in Philadelphia](https://www.imdb.com/title/tt0472954/), [Broad City](https://www.imdb.com/title/tt2578560/), and [New Kids Turbo](https://www.imdb.com/title/tt1648112/).
+The concept of the series is a fun mix, inspired by projects such as [Trailer Park Boys](https://www.imdb.com/title/tt0290988/), [It's Always Sunny in Philadelphia](https://www.imdb.com/title/tt0472954/), [Broad City](https://www.imdb.com/title/tt2578560/), and [New Kids Turbo](https://www.imdb.com/title/tt1648112/).
 
-The videos in the slider demonstrate typical scenes where characters find themselves in awkward, comical, or absurd situations, often leading to shouting, panic, or a complete breakdown of the situation.
+Videos in the slider demonstrate typical scenes where the characters find themselves in an awkward, comical, or absurd position, which often leads to screaming, panic, or a complete collapse of the situation.
 
-It's precisely these elements — a similar style of presentation, the temperaments of the characters, a dynamic style of comical situations, and unpredictability of events — that I aim to adapt to Ukrainian realities and the context of the "Euro-Soviet" era. Most importantly, it's about the feeling of authenticity, so that the characters portray themselves or someone deeply akin to them.
+It is precisely these elements — a similar manner of delivery, the temperaments of the characters, the dynamic style of comical situations, and the unpredictability of events — that I strive to adapt to Ukrainian realities and the context of Euro-Soviet. The most important thing is the feeling of authenticity, so that the characters play themselves or those close to them in spirit.
 
-The series concept uses humor and satire to sharply, ironically, and yet insightfully reflect the shortcomings and achievements of Ukraine on its path to European integration.
+### Themes
 
-It will also showcase the stereotypes and cultural specifics of each European country through the prism of Ukrainian reality.
+- Everyday problems familiar to everyone: money, work, relationships, finding oneself
+- Characters of different generations, each with their own style of survival in the chaos of society
+- In each episode, there is a new adventure that drives the characters into a dead end: from corruption and gender inequality to dependencies and absurd manifestations of a lack of culture
+- The egocentrism and anxiety of the characters create comical situations that usually only get more complicated before a resolution is found
+- Without censorship, with irony and warm black humor, the series reflects reality as it is
+- The show's task is not only to entertain but also to prompt reflection on the problems of Ukrainian society
+- The reality of Ukrainian life unfolds before the viewer — from the depths of the countryside to the pulsating heart of the capital. This is a series for people who are not afraid to laugh at problems, but at the same time want their voices to be heard
 
-The reality of Ukrainian life unfolds before the viewer — from the depths of the countryside to the pulsating heart of the capital. This is a series for people who aren't afraid to laugh at problems, but also want their voices to be heard.
+## Character Examples
 
-## Character examples
-
-Here are some quick conceptual outlines. In my vision, characters should be skilled at improvisation and capable of engaging in "Tarantino-style" dialogues, filled with unpredictable absurdity and unexpected plot twists.
+Here are quick conceptual sketches. In my vision, the characters should possess a mastery of improvisation and conduct Tarantino-esque dialogues, full of unpredictable absurdity and unexpected twists.
 
 ### Male Character 01
 
-- Fond of alcohol, always carries a thermos (or a glass or goblet) with self-made cocktails
-- Knows how to control himself and not lose control of the situation
-- Kind, stylish, positive, with a writer's mindset and good use of swearing
-- Master of dude quotes and silly toasts (sarcasm and self-irony)
-- Favorite drink: port wine
+- Loves alcohol, constantly carries a thermos mug (or a glass or a goblet), sipping on self-made cocktails
+- Generally knows how to keep himself in check and not lose control of the situation
+- Kind, stylish, positive, and with appropriate use of swearing
+- A master of bro-quotes and stupid toasts (sarcasm and self-irony)
+- Favorite drink — port wine
 
 ### Male Character 02
 
-- Fond of smoking marijuana, well-read, interested in science fiction and psychology
-- Often "spaces out" or loses touch with reality, vividly imagining the development of events (example: the last video in the slider)
+- Loves smoking marijuana, well-read, interested in science fiction and psychology
+- Often messes up or flies out of reality, vividly imagining the course of events (example: the last video in the slider)
 
 ### Male Character 03
 
-- Tries to lead a healthy lifestyle without bad habits, but understands that there is no healthy lifestyle — only common sense
-- Enjoys sports, non-stereotypical
-- Treats everything with understanding and does not judge
+- Tries to lead a healthy lifestyle without bad habits, but understands that a healthy lifestyle doesn't exist — only common sense
+- Loves playing sports, not stereotypical
+- Treats everything with understanding and without judgment
 - Strong character and self-control
 
 ### Female Character 01
 
-- Energetic, optimistic-emotional, creative personality, loves art
-- Has a sharp tongue and enjoys dark humor, often jokes inappropriately
-- Just one step from marginality to aestheticism
+- Energetic, optimistically emotional, creative in character, loves art
+- Has a sharp tongue and loves black humor, often jokes inappropriately
+- From marginality to an aesthete — one step
 
 ### Female Character 02
 
-- Calm, thoughtful, with a diplomatic mindset, strategist
-- Knows how to find common ground with people, although she hates them in general
-- Pulls off skating around in a business suit and heels like it's nothing
+- Calm, reasonable, with a diplomatic mindset, a strategist
+- Knows how to find common ground with people, although she generally hates them
+- Can afford to ride a skateboard in a business suit and heels
 
 ### Wildcard Character (age 55+)
 
-- Cunning, cynical, with a sharp mind and sarcastic sense of humor, orator
+- Cunning, cynical, with a sharp mind and a sarcastic sense of humor, an orator
 - Has rich life experience
-- Knows how to find a way out of any situation, but "too old for this shit"
-- Values freedom and independence, a lone wolf, but works in a team when necessary
+- Knows how to find a way out of any situation, but is too old for this kind of shit
+- Values freedom and independence, a lone wolf, but if necessary, works in a team
 
-## Conclusion
-
-I believe that with a new approach to implementation and a more professional attitude to the emotional transmission of the picture, "European Ukrainians" will become a successful project and a calling card on the world television market, attracting investments for the development of future ideas. There’s an endless stream of ideas and plenty to work with — but resources are essential.
-
-So I’m asking for your support to help bring this unique project to life. It will shift your perspective on modern Ukrainian life and prove just how much potential is hidden behind the barriers of the system.
-
-## More Details
+## Details
 
 *Under Construction …*
 

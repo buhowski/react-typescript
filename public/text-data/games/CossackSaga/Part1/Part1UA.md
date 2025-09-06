@@ -70,7 +70,7 @@
 
 ### Натхнення
 
-- Ігри: [The Witcher Series](https://www.thewitcher.com/ua/en/), [Ghost of Tsushima](https://store.steampowered.com/app/2215430/Ghost_of_Tsushima_DIRECTORS_CUT/), [Clair Obscur: Expedition 33](https://www.expedition33.com/), [Final Fantasy VII](https://store.steampowered.com/app/1462040/FINAL_FANTASY_VII_REMAKE_INTERGRADE/) / [XV](https://store.steampowered.com/app/637650/FINAL_FANTASY_XV_WINDOWS_EDITION/) — за глибокий світ, епічні квести та сильний сюжет.
+- Ігри: [The Witcher Series](https://www.thewitcher.com/ua/en/), [Ghost of Tsushima](https://store.steampowered.com/app/2215430/Ghost_of_Tsushima_DIRECTORS_CUT/), [Clair Obscur: Expedition 33](https://store.steampowered.com/app/1903340/Clair_Obscur_Expedition_33/), [Final Fantasy VII](https://store.steampowered.com/app/1462040/FINAL_FANTASY_VII_REMAKE_INTERGRADE/) / [XV](https://store.steampowered.com/app/637650/FINAL_FANTASY_XV_WINDOWS_EDITION/) — за глибокий світ, епічні квести та сильний сюжет.
 - Режисура та експресія: [NieR: RepliCant](https://store.steampowered.com/app/1113560/NieR_Replicant_ver122474487139/) / [Automata](https://store.steampowered.com/app/524220/NieRAutomata/) — шедевральне поєднання кінематографічної постановки боїв, емоційного напруження та унікальної ігрової атмосфери світу.
 - Культура та міфологія: Запорозькі Козаки, слов’янська міфологія та демонологія — за автентичність, магію та фольклорний лор.
 - Сюжет та альтернативна історія: Множинні шляхи, які кидають виклик усталеним історичним наративам і формують власну драматичну оповідь.
@@ -81,7 +81,7 @@
 
 Я шукаю підтримки та команду, щоб втілити цей унікальний світ у життя. Це можливість поєднати реальні події з містикою та створити потужну ігрову серію нового покоління про козаків. Моє бачення оживляє невідомі історії й формує альтернативні світи, здатні стати справжніми світовими шедеврами.
 
-## More Details
+## Деталі
 
 *Under Construction …*
 

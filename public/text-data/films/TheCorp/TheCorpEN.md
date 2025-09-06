@@ -20,7 +20,7 @@ Like "The Office", we film in a real workspace — but we don’t copy the origi
 
 [mobile-slider]
 
-## More Details
+## Details
 
 *Under Construction ...*
 
