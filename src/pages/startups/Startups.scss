@@ -224,14 +224,6 @@ $nav-top: 5px;
 	z-index: 11;
 	transition: 0.25s;
 
-	> .wrapper {
-		position: relative;
-
-		@include tabletBig {
-			padding: 0;
-		}
-	}
-
 	&.is-active {
 		.idea-tabs {
 			padding-top: $nav-top;
@@ -242,10 +234,6 @@ $nav-top: 5px;
 
 		.idea-back {
 			position: fixed;
-
-			@include tabletBig {
-				top: auto;
-			}
 		}
 
 		~ .wrapper--idea {
