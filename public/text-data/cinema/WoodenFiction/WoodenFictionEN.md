@@ -19,7 +19,7 @@ Behind the chaotic plot and black humor lies a harsh satire. The animated film r
 ## Inspiration
 
 - [Pulp Fiction, 1994](https://www.imdb.com/title/tt0110912/) — non-linear narrative, stylish dialogues, and black humor.
-- [Mikhail Elizarov]([https://neolurk.org/wiki/Михаил_Елизаров](https://neolurk.org/wiki/%D0%9C%D0%B8%D1%85%D0%B0%D0%B8%D0%BB_%D0%95%D0%BB%D0%B8%D0%B7%D0%B0%D1%80%D0%BE%D0%B2)): Burattini. Fascism Passed — a harsh, absurd satire on the Soviet legacy.
+- [Mikhail Elizarov:](https://neolurk.org/wiki/%D0%9C%D0%B8%D1%85%D0%B0%D0%B8%D0%BB_%D0%95%D0%BB%D0%B8%D0%B7%D0%B0%D1%80%D0%BE%D0%B2) Burattini. Fascism Passed — a harsh, absurd satire on the Soviet legacy.
 
 ## Details
 

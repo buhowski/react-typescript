@@ -5,6 +5,11 @@ import {
 	pathToTheCorp,
 	pathToPodcastShow,
 	pathToGodEvening,
+	pathToHeShe,
+	pathToOnceInUkraine,
+	pathToVolynWedding,
+	pathToLilithsAdventure,
+	pathToWoodenFiction,
 } from '../../../../components/urlsData';
 
 // specific slider data
@@ -36,6 +41,36 @@ export const structureCinema = {
 			pagePreviewUrl: pathToTheCorp,
 		},
 
+		// Once Upon a Time... in Ukraine
+		{
+			markdownAPI: '/text-data/cinema/OnceInUkraine/PreviewOnceInUkraine.md',
+			pagePreviewUrl: pathToOnceInUkraine,
+		},
+
+		// Volyn Wedding: The Groom's Room
+		{
+			markdownAPI: '/text-data/cinema/VolynWedding/PreviewVolynWedding.md',
+			pagePreviewUrl: pathToVolynWedding,
+		},
+
+		// He + She
+		{
+			markdownAPI: '/text-data/cinema/HeShe/PreviewHeShe.md',
+			pagePreviewUrl: pathToHeShe,
+		},
+
+		// Wooden Fiction
+		{
+			markdownAPI: '/text-data/cinema/WoodenFiction/PreviewWoodenFiction.md',
+			pagePreviewUrl: pathToWoodenFiction,
+		},
+
+		// Lilith's Adventure
+		{
+			markdownAPI: '/text-data/cinema/LilithsAdventure/PreviewLilithsAdventure.md',
+			pagePreviewUrl: pathToLilithsAdventure,
+		},
+
 		// Self Presentation Projects
 		{
 			markdownAPI: '/text-data/cinema/SelfPresentation/SelfPresentation.md',
@@ -60,15 +95,35 @@ export const structureCinema = {
 		},
 	],
 
-	heShePage: [],
+	heShePage: [
+		{
+			markdownAPI: '/text-data/cinema/HeShe/HeShe.md',
+		},
+	],
 
-	onceInUkrainePage: [],
+	onceInUkrainePage: [
+		{
+			markdownAPI: '/text-data/cinema/OnceInUkraine/OnceInUkraine.md',
+		},
+	],
 
-	volynWeddingPage: [],
+	volynWeddingPage: [
+		{
+			markdownAPI: '/text-data/cinema/VolynWedding/VolynWedding.md',
+		},
+	],
 
-	woodenFictionPage: [],
+	woodenFictionPage: [
+		{
+			markdownAPI: '/text-data/cinema/WoodenFiction/WoodenFiction.md',
+		},
+	],
 
-	lilithsAdventurePage: [],
+	lilithsAdventurePage: [
+		{
+			markdownAPI: '/text-data/cinema/LilithsAdventure/LilithsAdventure.md',
+		},
+	],
 
 	// Self Presentation Projects
 	selfPresentationPage: [

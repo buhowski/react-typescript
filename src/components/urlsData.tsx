@@ -18,12 +18,12 @@ export const pathToCinema = '/cinema';
 export const pathToEuropeanUkrainians = '/european-ukrainians';
 export const pathToTheCorp = '/the-corp';
 
-export const pathToHeShe = '/he-she';
 export const pathToOnceInUkraine = '/once-in-ukraine';
 export const pathToVolynWedding = '/volyn-wedding';
+export const pathToHeShe = '/he-she';
 
-export const pathToLilithsAdventure = '/liliths-adventure';
 export const pathToWoodenFiction = '/wooden-fiction';
+export const pathToLilithsAdventure = '/liliths-adventure';
 
 export const pathToSelfPresentation = '/self-presentation';
 export const pathToPodcastShow = '/podcast-show';

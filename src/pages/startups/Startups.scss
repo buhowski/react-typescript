@@ -416,7 +416,7 @@ $nav-top: 5px;
 	font-size: 18px;
 	line-height: 1.5;
 	color: $textGrey;
-	letter-spacing: 0.5px;
+	letter-spacing: 0.3px;
 
 	@include mobile {
 		font-size: 16px;
@@ -804,6 +804,11 @@ $nav-top: 5px;
 	justify-content: center;
 	align-items: center;
 	text-transform: uppercase;
+	padding-bottom: 25px;
+
+	@include tabletBig {
+		padding-bottom: 0;
+	}
 }
 
 .slider-js {
