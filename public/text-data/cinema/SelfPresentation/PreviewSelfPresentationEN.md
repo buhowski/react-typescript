@@ -1,5 +1,3 @@
-#### Creative Experiments / Shows
-
 # Self-Presentation Projects
 
 Below are collected ideas that are possible without funding but impossible without proactive people willing to dive into the unknown results — for the sake of experience and fun.

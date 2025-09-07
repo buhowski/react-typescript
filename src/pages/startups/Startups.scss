@@ -159,7 +159,7 @@
 
 .idea-back {
 	font-family: $LouisGeorgeCafBold;
-	font-size: 15px;
+	font-size: 18px;
 	letter-spacing: 1.6px;
 	color: $toc-title-color;
 	padding: 10px;
@@ -169,7 +169,7 @@
 	line-height: 1.2;
 	gap: 10px;
 	position: absolute;
-	top: -10px;
+	top: 4px;
 	z-index: 12;
 
 	@media (hover: hover) and (pointer: fine) {
@@ -200,10 +200,6 @@
 		}
 	}
 
-	+ * {
-		padding-top: 48px;
-	}
-
 	span,
 	svg {
 		transition: 0.2s;
@@ -228,6 +224,14 @@ $nav-top: 5px;
 	z-index: 11;
 	transition: 0.25s;
 
+	> .wrapper {
+		position: relative;
+
+		@include tabletBig {
+			padding: 0;
+		}
+	}
+
 	&.is-active {
 		.idea-tabs {
 			padding-top: $nav-top;
@@ -236,20 +240,19 @@ $nav-top: 5px;
 			box-shadow: 0 3px 15px #000000;
 		}
 
+		.idea-back {
+			position: fixed;
+
+			@include tabletBig {
+				top: auto;
+			}
+		}
+
 		~ .wrapper--idea {
 			.table-content__list {
 				@include tabletBig {
 					position: fixed;
 					top: 37px;
-				}
-			}
-
-			.idea-back {
-				position: fixed;
-				top: 5px;
-
-				@include tabletBig {
-					top: auto;
 				}
 			}
 		}
@@ -354,7 +357,7 @@ $nav-top: 5px;
 	gap: 2px;
 	box-shadow: 0 0 10px #000;
 
-	// // Debugging styles
+	// Debugging styles
 	// position: sticky;
 	// top: 50px;
 	// z-index: 1000;

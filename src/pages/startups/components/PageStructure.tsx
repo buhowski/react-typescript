@@ -179,19 +179,22 @@ const PageStructure: React.FC<PageStructureProps> = ({ pageData, backButton, ini
 			/>
 
 			<div className={`startup-action ${isActive ? 'is-active' : ''}`}>
+				<div className='wrapper'>
+					{/* back navigation */}
+					{backButton && (
+						<NavLink to={backButton} className='idea-back'>
+							{ArrowLeftIcon}
+							<span>Back</span>
+						</NavLink>
+					)}
+				</div>
+
 				<StartupNavigation />
 			</div>
 
 			<div className='wrapper wrapper--idea'>
 				<div className='idea-section'>
 					<div className='idea-info'>
-						{/* back navigation */}
-						{backButton && (
-							<NavLink to={backButton} className='idea-back'>
-								{ArrowLeftIcon}
-								<span>Back</span>
-							</NavLink>
-						)}
 						{initialLangReady &&
 							contentToRender.map((structure, index) => {
 								const fallbackFilmsPreview = pageData.en?.[index]?.pagePreviewUrl;

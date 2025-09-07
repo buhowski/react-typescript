@@ -10,7 +10,7 @@ Rescued from imminent death, the heroine carries within her only a fragment of h
 
 ## Main Idea
 
-The second part continues the tragic story that began in [Part I](/whispers-of-the-forgotten). The heroine finds refuge with the friends of her fallen lover, where she gathers her strength. It is here that she uncovers the true nature of the church’s demonic rituals and realizes that a part of her beloved’s soul remains within her.
+The second part continues the tragic story that began in [Part I](/sich-saga-1). The heroine finds refuge with the friends of her fallen lover, where she gathers her strength. It is here that she uncovers the true nature of the church’s demonic rituals and realizes that a part of her beloved’s soul remains within her.
 
 This occurred at the moment of his self-sacrifice: the hero’s soul, seeking to reunite with her, triggered a magical surge. Her love responded to this desperate impulse, accepting his presence. Thus begins her path toward saving him.
 

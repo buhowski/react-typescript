@@ -10,7 +10,7 @@ A mockumentary-style behind-the-scenes series about building your own corporatio
 
 This format shows the real process of starting a corporation from scratch, mixed with improvised setups.
 
-It’s our satirical take on modern corporate culture: the "fascism in the details", the "galleys and rowers", the "talent grinder", the fake "family atmosphere", and the senseless waste of resources. We highlight what work shouldn’t be — with boundless self-irony.
+It’s our satirical take on modern corporate culture: the fascism in the details, the galleys and rowers, the talent grinder, the fake family atmosphere, and the senseless waste of resources. We highlight what work shouldn’t be — with boundless self-irony.
 
 It’s raw reality mixed with absurdity that we intentionally insert into the work process to create a vibrant, absurd, and engaging series. We openly show everything we do — it’s both self-promotion and a driving force for our growth.
 
@@ -22,6 +22,6 @@ Like "The Office", we film in a real workspace — but we don’t copy the origi
 
 ## Details
 
-*Under Construction ...*
+*Under Construction …*
 
 The author is seeking resources and time to bring these masterful ideas to life. If you know how or where to get support, please contact me!

@@ -10,6 +10,6 @@ The world evolves from an authentic Middle Ages with magic and mythological crea
 
 ### List
 
-- [Part I: Whispers of the Forgotten](/whispers-of-the-forgotten)
-- [Part II: Ashes of the Beloved](/ashes-of-the-beloved)
-- [Part III: Quantum Leap](/quantum-leap)
+- [Part I: Whispers of the Forgotten](/sich-saga-1)
+- [Part II: Ashes of the Beloved](/sich-saga-2)
+- [Part III: Quantum Leap](/sich-saga-3)

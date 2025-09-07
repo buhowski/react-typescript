@@ -1,5 +1,3 @@
-#### Presentation
-
 # Business Plan
 
 ## Передмова

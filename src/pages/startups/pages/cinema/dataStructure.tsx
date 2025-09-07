@@ -18,7 +18,7 @@ export const structureCinema = {
 	cinemaPage: [
 		// Preface
 		{
-			markdownAPI: '/text-data/cinema/PreviewFilms.md',
+			markdownAPI: '/text-data/cinema/PreviewCinema.md',
 			sliderContent: dataSliderProjectDev,
 		},
 

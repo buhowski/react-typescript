@@ -1,6 +1,6 @@
 #### Comedy Podcast Show
 
-# Dimension Minus Zero One Hundred and Forty-eight
+# Dimension Minus Zero
 
 ## Logline
 

@@ -10,6 +10,6 @@
 
 ### Список
 
-- [Часть I: Шепот Забытых](/whispers-of-the-forgotten)
-- [Часть II: Пепел Любви](/ashes-of-the-beloved)
-- [Часть III: Квантовый Скачок](/quantum-leap)
+- [Часть I: Шепот Забытых](/sich-saga-1)
+- [Часть II: Пепел Любви](/sich-saga-2)
+- [Часть III: Квантовый Скачок](/sich-saga-3)

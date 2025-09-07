@@ -5,7 +5,7 @@ export const structureVision = {
 	// Business Plan Page
 	visionPage: [
 		{
-			markdownAPI: '/text-data/startup/Startup.md',
+			markdownAPI: '/text-data/vision/Vision.md',
 			sliderContent: dataSliderVision,
 		},
 	],
