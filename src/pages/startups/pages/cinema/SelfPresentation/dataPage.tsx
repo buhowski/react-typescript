@@ -2,11 +2,11 @@
 import { pathToPodcastShow, pathToGodEvening } from '../../../../../components/urlsData';
 
 // Import the specific slider data
-import { dataSliderPodcastShow } from './PodcastShow/dataSliderPodcastShow';
+import { dataSliderPodcastShow } from './PodcastShow/dataSlider';
 import { dataSliderProjectsDev } from '../../dataReusable';
 
 // Several Projects Preview Page
-export const dataSelfPresentation = {
+export const dataPageSelfPresentation = {
 	// English
 	en: [
 		// ### Self Presentation Projects ###

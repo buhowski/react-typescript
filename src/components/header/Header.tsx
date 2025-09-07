@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
-import { pathToStartup, pathToAbout, pathToProjects } from '../urlsData';
+import { pathToVision, pathToAbout, pathToProjects } from '../urlsData';
 import { useTabletQuery } from '../../config/useMediaQuery';
 import Socials from '../socials/Socials';
 import socialData from '../socials/socialData';
@@ -20,7 +20,7 @@ const Header = () => {
 
 	const linksData = [
 		{
-			pageLink: pathToStartup,
+			pageLink: pathToVision,
 			pageName: `My Startups`,
 			activeClass: isActive ? 'active' : '',
 		},

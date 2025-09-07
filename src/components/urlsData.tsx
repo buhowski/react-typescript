@@ -9,8 +9,8 @@ export const urlInstagram = 'https://www.instagram.com/buhowski';
 export const pathToAbout = '/me';
 export const pathToProjects = '/portfolio';
 
-export const pathToStartup = '/vision';
-export const pathToStartupMVP = '/mvp';
+export const pathToVision = '/vision';
+export const pathToMVP = '/mvp';
 
 // CINEMA
 export const pathToCinema = '/cinema';
@@ -37,7 +37,7 @@ export const pathToCossackSagaPart3 = '/quantum-leap';
 // Separate Projects presentation URLs
 export const startupsNav = [
 	{
-		pageLink: pathToStartup,
+		pageLink: pathToVision,
 		pageName: `Vision`,
 	},
 	{
@@ -49,7 +49,7 @@ export const startupsNav = [
 		pageName: `Games`,
 	},
 	{
-		pageLink: pathToStartupMVP,
+		pageLink: pathToMVP,
 		pageName: `MVP`,
 	},
 ];

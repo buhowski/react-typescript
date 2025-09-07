@@ -1,10 +1,10 @@
-import { dataSliderCossackSaga } from './dataSliderCossackSaga';
+import { dataSliderCossackSaga } from './dataSlider';
 import {
 	pathToCossackSagaPart1,
 	pathToCossackSagaPart2,
 	pathToCossackSagaPart3,
 } from '../../../../../components/urlsData';
-export const dataCossackSaga = {
+export const dataPageCossackSaga = {
 	// English
 	en: [
 		// ### Cossacks Saga Preface  ###

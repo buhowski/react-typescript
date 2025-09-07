@@ -1,6 +1,6 @@
-import { dataSliderGodEvening } from './dataSliderGodEvening';
+import { dataSliderGodEvening } from './dataSlider';
 
-export const dataGodEvening = {
+export const dataPageGodEvening = {
 	// English
 	en: [
 		{

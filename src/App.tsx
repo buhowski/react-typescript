@@ -2,10 +2,11 @@ import { useLocation, Routes, Route } from 'react-router-dom';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import PageHelmet from './config/PageHelmet';
 import Header from './components/header/Header';
-import StartupsWrapper from './pages/startups/StartupsWrapper';
+import StartupsSeoWrapper from './pages/startups/StartupsSeoWrapper';
 
 import { defaultMetaTags } from './components/metaTags';
-import { routesData, NotFoundRedirectToStartup } from './routesMap';
+import { routesData } from './routesMap';
+import { NotFoundToStartupPage } from './pages/startups/startupsRoutes';
 
 const App = () => {
 	const location = useLocation();
@@ -29,10 +30,10 @@ const App = () => {
 							))}
 
 							{/* SEO static startup pages */}
-							<Route path='/:lang/*' element={<StartupsWrapper />} />
+							<Route path='/:lang/*' element={<StartupsSeoWrapper />} />
 
 							{/* catch-all 404 to Startup page */}
-							<Route path='*' element={<NotFoundRedirectToStartup />} />
+							<Route path='*' element={<NotFoundToStartupPage />} />
 						</Routes>
 					</div>
 				</div>

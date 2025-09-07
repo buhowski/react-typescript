@@ -23,15 +23,15 @@ interface PageStructureProps extends PageProps {
 	initialLang?: LanguageCode;
 }
 
-const PageStructure: React.FC<PageStructureProps> = ({ textData, backButton, initialLang }) => {
+const PageStructure: React.FC<PageStructureProps> = ({ pageData, backButton, initialLang }) => {
 	const useTabletLarge = useTabletLargeQuery();
 
 	// Group state variables and refs for better readability.
 	const [currentLang, setCurrentLang] = useState<LanguageCode>(
 		(initialLang as LanguageCode) ||
 			getInitialLanguage(
-				textData,
-				LANGUAGES.filter((lang) => textData?.[lang]?.length > 0)
+				pageData,
+				LANGUAGES.filter((lang) => pageData?.[lang]?.length > 0)
 			)
 	);
 	const [initialLangReady, setInitialLangReady] = useState(false);
@@ -52,15 +52,15 @@ const PageStructure: React.FC<PageStructureProps> = ({ textData, backButton, ini
 	const isActive = useStickyHeader();
 
 	const availableLangs = useMemo(
-		() => LANGUAGES.filter((lang) => textData?.[lang]?.length > 0),
-		[textData]
+		() => LANGUAGES.filter((lang) => pageData?.[lang]?.length > 0),
+		[pageData]
 	);
 
 	// Unified language initialization and update logic.
 	useEffect(() => {
 		const storedLang = localStorage.getItem('currentLang') || null;
 		const newLang =
-			initialLang || storedLang || getInitialLanguage(textData, availableLangs) || 'en';
+			initialLang || storedLang || getInitialLanguage(pageData, availableLangs) || 'en';
 
 		if (newLang !== currentLang) {
 			setCurrentLang(newLang as LanguageCode);
@@ -72,11 +72,11 @@ const PageStructure: React.FC<PageStructureProps> = ({ textData, backButton, ini
 		setInitialLangReady(true);
 		isDesktopSliderContentInitialized.current = false;
 		// eslint-disable-next-line react-hooks/exhaustive-deps
-	}, [initialLang, textData, availableLangs, setHeadingsVersion]);
+	}, [initialLang, pageData, availableLangs, setHeadingsVersion]);
 
 	const contentToRender = useMemo(() => {
-		const currentLangContent = textData[currentLang] || [];
-		const englishContent = textData.en || [];
+		const currentLangContent = pageData[currentLang] || [];
+		const englishContent = pageData.en || [];
 
 		return currentLangContent.map((item, index) => {
 			const englishItem = englishContent[index];
@@ -86,7 +86,7 @@ const PageStructure: React.FC<PageStructureProps> = ({ textData, backButton, ini
 				pagePreviewUrl: item.pagePreviewUrl || englishItem?.pagePreviewUrl,
 			};
 		});
-	}, [textData, currentLang]);
+	}, [pageData, currentLang]);
 
 	// Update active PitchContainer's slider content on scroll
 	const handleScrollUpdateSlider = useCallback(() => {
@@ -145,14 +145,14 @@ const PageStructure: React.FC<PageStructureProps> = ({ textData, backButton, ini
 
 	const changeLanguage = useCallback(
 		(lang: LanguageCode) => {
-			if (textData?.[lang]?.length) {
+			if (pageData?.[lang]?.length) {
 				setCurrentLang(lang);
 				localStorage.setItem('currentLang', lang);
 				allHeadingsMapRef.current.clear();
 				setHeadingsVersion((prev) => prev + 1);
 			}
 		},
-		[textData, allHeadingsMapRef, setHeadingsVersion]
+		[pageData, allHeadingsMapRef, setHeadingsVersion]
 	);
 
 	// Delayed footer render after content and language are ready
@@ -194,7 +194,7 @@ const PageStructure: React.FC<PageStructureProps> = ({ textData, backButton, ini
 						)}
 						{initialLangReady &&
 							contentToRender.map((structure, index) => {
-								const fallbackFilmsPreview = textData.en?.[index]?.pagePreviewUrl;
+								const fallbackFilmsPreview = pageData.en?.[index]?.pagePreviewUrl;
 								return (
 									<PitchContainer
 										key={index}

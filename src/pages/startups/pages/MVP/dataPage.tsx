@@ -1,7 +1,7 @@
-import { dataSliderProjectJournalism } from './dataSliderMVP';
+import { dataSliderProjectJournalism } from './dataSlider';
 import { dataSliderProjectsDev } from '../dataReusable';
 
-export const dataMVP = {
+export const dataPageMVP = {
 	// English
 	en: [
 		// ### Another Dimension ###

@@ -1,6 +1,6 @@
 import { dataSliderTheCorp } from './dataSlider';
 
-export const dataText = {
+export const dataPageTheCorp = {
 	// English
 	en: [
 		{

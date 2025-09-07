@@ -11,7 +11,7 @@ import { dataSliderEuropeanUkrainians } from './EuropeanUkrainians/dataSlider';
 import { dataSliderProjectsDev } from '../dataReusable';
 
 // Several Projects Preview Page
-export const dataCinema = {
+export const dataPageCinema = {
 	// English
 	en: [
 		// ### Main Preface  ###

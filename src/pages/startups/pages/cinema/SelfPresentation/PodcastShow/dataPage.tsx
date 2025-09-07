@@ -1,6 +1,6 @@
-import { dataSliderPodcastShow } from './dataSliderPodcastShow';
+import { dataSliderPodcastShow } from './dataSlider';
 
-export const dataPodcastShow = {
+export const dataPagePodcastShow = {
 	// English
 	en: [
 		{

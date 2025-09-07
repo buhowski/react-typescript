@@ -1,6 +1,6 @@
-import { dataSliderCossackSaga } from '../dataSliderCossackSaga';
+import { dataSliderCossackSaga } from '../dataSlider';
 
-export const dataCossackSagaPart3 = {
+export const dataPageCossackSagaPart3 = {
 	// English
 	en: [
 		{

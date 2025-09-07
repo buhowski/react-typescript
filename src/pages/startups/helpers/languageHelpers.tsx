@@ -5,12 +5,12 @@ const PRIMARY_FALLBACK_LANG: LanguageCode = 'ua';
 export const LANGUAGES: LanguageCode[] = ['ua', 'en', 'ru'];
 
 export const getInitialLanguage = (
-	textData: PageProps['textData'],
+	pageData: PageProps['pageData'],
 	availableLangs: LanguageCode[]
 ) => {
 	const storedLang = localStorage.getItem('currentLang') as LanguageCode | null;
 
-	if (storedLang && textData?.[storedLang]?.length) {
+	if (storedLang && pageData?.[storedLang]?.length) {
 		return storedLang;
 	}
 

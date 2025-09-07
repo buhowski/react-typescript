@@ -1,1 +1,1 @@
-export const dataSlider = [];
+export const dataSliderVolynWedding = [];

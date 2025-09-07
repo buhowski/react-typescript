@@ -1,11 +1,11 @@
-import { dataSlider } from './dataSlider';
+import { dataSliderHeShe } from './dataSlider';
 
-export const dataText = {
+export const dataPageHeShe = {
 	// English
 	en: [
 		{
 			markdownAPI: '/text-data/films/EuropeanUkrainians/EuropeanUkrainiansEN.md',
-			sliderContent: dataSlider,
+			sliderContent: dataSliderHeShe,
 		},
 	],
 

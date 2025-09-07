@@ -1,11 +1,11 @@
-import { dataSlider } from './dataSlider';
+import { dataSliderVision } from './dataSlider';
 
-export const dataText = {
+export const dataPageVision = {
 	// ENGLISH
 	en: [
 		{
 			markdownAPI: '/text-data/startup/StartupEN.md',
-			sliderContent: dataSlider,
+			sliderContent: dataSliderVision,
 		},
 	],
 

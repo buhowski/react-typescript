@@ -1,26 +1,10 @@
-import React, { useLayoutEffect } from 'react';
-import { useParams, useLocation } from 'react-router-dom';
-import { startupsMap } from '../startups/startupsRoutes';
+import React from 'react';
+import PageStructure from './components/PageStructure';
+import { SinglePageProps } from '../../types/common';
 
-const StartupsWrapper: React.FC = () => {
-	const { lang } = useParams<{ lang?: string }>();
-	const location = useLocation();
-
-	const allowedLangs = ['en', 'ua', 'ru'];
-	const urlLang = lang && allowedLangs.includes(lang) ? lang : null;
-	const storedLang = localStorage.getItem('currentLang') || 'en';
-	const currentLang = urlLang || storedLang;
-
-	// Use useLayoutEffect to ensure DOM update happens before paint
-	useLayoutEffect(() => {
-		document.documentElement.lang = currentLang;
-		localStorage.setItem('currentLang', currentLang);
-	}, [currentLang]);
-
-	const path = location.pathname.replace(/^\/(en|ua|ru)/, '').replace(/\/$/, '') || '/';
-	const PageComponent = startupsMap[path] || Object.values(startupsMap)[0];
-
-	return <PageComponent initialLang={currentLang} />;
+// Wrapper component for any single startup page
+const StartupsWrapper: React.FC<SinglePageProps> = ({ pageData, backButton, initialLang }) => {
+	return <PageStructure pageData={pageData} backButton={backButton} initialLang={initialLang} />;
 };
 
 export default StartupsWrapper;

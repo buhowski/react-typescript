@@ -1,9 +1,9 @@
 // URL To Single Page / Read More button
 import { pathToCossackSaga } from '../../../../components/urlsData';
-import { dataSliderCossackSaga } from './CossackSaga/dataSliderCossackSaga';
+import { dataSliderCossackSaga } from './CossackSaga/dataSlider';
 import { dataSliderProjectsDev } from '../dataReusable';
 
-export const dataGames = {
+export const dataPageGames = {
 	// English
 	en: [
 		// ### Games Preface ###

@@ -9,12 +9,12 @@ import sendpotion from './images/sendpotion.jpg';
 import hbv from './images/hbv.jpg';
 import mb from './images/mb.jpg';
 
-import { pathToStartup } from '../../components/urlsData';
+import { pathToVision } from '../../components/urlsData';
 
 const projectsData = [
 	{
 		img: bgStartup,
-		url: `${pathToStartup}`,
+		url: `${pathToVision}`,
 		urlCode: 'https://github.com/buhowski/react-typescript',
 		name: 'Business Plan',
 		description: `My Startups: Developing all tasks across the full development cycle`,

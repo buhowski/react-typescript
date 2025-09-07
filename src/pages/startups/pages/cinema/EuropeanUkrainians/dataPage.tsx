@@ -1,11 +1,11 @@
-import { dataSlider } from './dataSlider';
+import { dataSliderEuropeanUkrainians } from './dataSlider';
 
-export const dataText = {
+export const dataPageEuropeanUkrainians = {
 	// English
 	en: [
 		{
 			markdownAPI: '/text-data/films/EuropeanUkrainians/EuropeanUkrainiansEN.md',
-			sliderContent: dataSlider,
+			sliderContent: dataSliderEuropeanUkrainians,
 		},
 	],
 

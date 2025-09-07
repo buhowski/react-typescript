@@ -1,4 +1,4 @@
-import { pathToStartup, pathToAbout, pathToProjects } from './urlsData';
+import { pathToVision, pathToAbout, pathToProjects } from './urlsData';
 
 // Base Website URL
 const website = 'https://buhowski.dev';
@@ -42,10 +42,10 @@ export const defaultMetaTags = {
 export const startupsMetaTags = {
 	title: startupTitle,
 	description: startupDescription,
-	canonicalUrl: buildUrl(pathToStartup),
+	canonicalUrl: buildUrl(pathToVision),
 
 	// Open Graph Meta Tags
-	ogUrl: buildUrl(pathToStartup),
+	ogUrl: buildUrl(pathToVision),
 	ogTitle: startupTitle,
 	ogDescription: startupDescription,
 	ogImage: ogImageStartup,

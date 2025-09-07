@@ -1,11 +1,11 @@
-import { dataSlider } from './dataSlider';
+import { dataSliderLilithsAdventure } from './dataSlider';
 
-export const dataText = {
+export const dataPageLilithsAdventure = {
 	// English
 	en: [
 		{
 			markdownAPI: '/text-data/films/EuropeanUkrainians/EuropeanUkrainiansEN.md',
-			sliderContent: dataSlider,
+			sliderContent: dataSliderLilithsAdventure,
 		},
 	],
 
