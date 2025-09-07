@@ -1,6 +1,6 @@
 // Posters
-import characterPoster from '../../../../../../assets/startup/films/SelfPresentation/patiboy2.webp';
-import characterPoster2 from '../../../../../../assets/startup/films/SelfPresentation/patiboy.webp';
+import characterPoster from '../../../../../../assets/startup/cinema/SelfPresentation/patiboy2.webp';
+import characterPoster2 from '../../../../../../assets/startup/cinema/SelfPresentation/patiboy.webp';
 
 // Videos
 const characterExample = 'https://www.youtube-nocookie.com/embed/23-k5Mfx570';

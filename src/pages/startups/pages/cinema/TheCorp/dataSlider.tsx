@@ -1,7 +1,7 @@
 // Posters
-import officePoster1 from '../../../../../assets/startup/films/TheCorp/poster-first-aid-fail-the-office-us.webp';
-import officePoster2 from '../../../../../assets/startup/films/TheCorp/poster-fire-drill-the-office-us.webp';
-import officePoster3 from '../../../../../assets/startup/films/TheCorp/poster-parkour-the-office-us.webp';
+import officePoster1 from '../../../../../assets/startup/cinema/TheCorp/poster-first-aid-fail-the-office-us.webp';
+import officePoster2 from '../../../../../assets/startup/cinema/TheCorp/poster-fire-drill-the-office-us.webp';
+import officePoster3 from '../../../../../assets/startup/cinema/TheCorp/poster-parkour-the-office-us.webp';
 
 // Videos
 const theOffice1 = 'https://www.youtube-nocookie.com/embed/Vmb1tqYqyII';

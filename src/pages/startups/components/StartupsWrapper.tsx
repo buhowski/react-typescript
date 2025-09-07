@@ -1,6 +1,6 @@
 import React from 'react';
-import PageStructure from './components/PageStructure';
-import { SinglePageProps } from '../../types/common';
+import PageStructure from '../components/PageStructure';
+import { SinglePageProps } from '../../../types/common';
 
 // Wrapper component for any single startup page
 const StartupsWrapper: React.FC<SinglePageProps> = ({ pageData, backButton, initialLang }) => {

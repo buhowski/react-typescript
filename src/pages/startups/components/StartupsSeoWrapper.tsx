@@ -1,7 +1,8 @@
 import React, { useLayoutEffect } from 'react';
 import { useParams, useLocation } from 'react-router-dom';
-import { startupsMap, startupPaths } from './startupsRoutes';
-import { LanguageCode } from '../../types/common';
+import { startupsMap } from '../startupsRoutes';
+import { pathToVision } from '../../../components/urlsData';
+import { LanguageCode } from '../../../types/common';
 
 // Wrapper for all startup pages with SEO & language handling
 const StartupsSeoWrapper: React.FC = () => {
@@ -23,7 +24,7 @@ const StartupsSeoWrapper: React.FC = () => {
 	const path = location.pathname.replace(/^\/(en|ua|ru)/, '').replace(/\/$/, '') || '/';
 
 	// Get page component from map, fallback to first page
-	const PageComponent = startupsMap[path] || startupsMap[startupPaths[0]];
+	const PageComponent = startupsMap[path] || startupsMap[pathToVision];
 
 	return <PageComponent initialLang={currentLang} />;
 };

@@ -1,5 +1,11 @@
 # Redirects /from /to (permanent)
 [[redirects]]
+  from = "/startups"
+  to = "/vision"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/startup"
   to = "/vision"
   status = 301

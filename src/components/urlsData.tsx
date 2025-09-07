@@ -9,6 +9,7 @@ export const urlInstagram = 'https://www.instagram.com/buhowski';
 export const pathToAbout = '/me';
 export const pathToProjects = '/portfolio';
 
+// STARTUPS
 export const pathToVision = '/vision';
 export const pathToMVP = '/mvp';
 
@@ -18,9 +19,10 @@ export const pathToEuropeanUkrainians = '/european-ukrainians';
 export const pathToTheCorp = '/the-corp';
 
 export const pathToHeShe = '/he-she';
-export const pathToLilithsAdventure = '/liliths-adventure';
 export const pathToOnceInUkraine = '/once-in-ukraine';
 export const pathToVolynWedding = '/volyn-wedding';
+
+export const pathToLilithsAdventure = '/liliths-adventure';
 export const pathToWoodenFiction = '/wooden-fiction';
 
 export const pathToSelfPresentation = '/self-presentation';
@@ -29,10 +31,10 @@ export const pathToGodEvening = '/god-evening';
 
 // Games
 export const pathToGames = '/games';
-export const pathToCossackSaga = '/shadows-of-sich-saga';
-export const pathToCossackSagaPart1 = '/whispers-of-the-forgotten';
-export const pathToCossackSagaPart2 = '/ashes-of-the-beloved';
-export const pathToCossackSagaPart3 = '/quantum-leap';
+export const pathToSichSaga = '/sich-saga';
+export const pathToSichSagaPart1 = '/sich-saga-1';
+export const pathToSichSagaPart2 = '/sich-saga-2';
+export const pathToSichSagaPart3 = '/sich-saga-3';
 
 // Separate Projects presentation URLs
 export const startupsNav = [

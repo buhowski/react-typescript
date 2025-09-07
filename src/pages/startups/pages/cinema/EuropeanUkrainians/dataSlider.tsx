@@ -1,13 +1,13 @@
 // Posters
-import promoPoster from '../../../../../assets/startup/films/EuropeanUkrainians/promo.webp';
-import broadCityPoster from '../../../../../assets/startup/films/EuropeanUkrainians/broadCityPoster.webp';
-import fantasyPoster from '../../../../../assets/startup/films/EuropeanUkrainians/fantasyPoster.webp';
-import bestMomentsPoster from '../../../../../assets/startup/films/EuropeanUkrainians/always-sunny-the-gang.webp';
+import promoPoster from '../../../../../assets/startup/cinema/EuropeanUkrainians/promo.webp';
+import broadCityPoster from '../../../../../assets/startup/cinema/EuropeanUkrainians/broadCityPoster.webp';
+import fantasyPoster from '../../../../../assets/startup/cinema/EuropeanUkrainians/fantasyPoster.webp';
+import bestMomentsPoster from '../../../../../assets/startup/cinema/EuropeanUkrainians/always-sunny-the-gang.webp';
 
 // Videos
-import promoVideo from '../../../../../assets/startup/films/videos/teaserVideo.mp4';
-import broadCityTrailer from '../../../../../assets/startup/films/videos/broadCityTrailer.mp4';
-import fantasy from '../../../../../assets/startup/films/videos/fantasy.mp4';
+import promoVideo from '../../../../../assets/startup/cinema/videos/teaserVideo.mp4';
+import broadCityTrailer from '../../../../../assets/startup/cinema/videos/broadCityTrailer.mp4';
+import fantasy from '../../../../../assets/startup/cinema/videos/fantasy.mp4';
 const bestMomentsVideo = 'https://www.youtube-nocookie.com/embed/cbSEr1oJ8mw';
 
 export const dataSliderEuropeanUkrainians = [

@@ -16,7 +16,7 @@ import witcherTrailer from '../../../../../assets/startup/games/videos/witcherTr
 const replicantTrailer = 'https://www.youtube-nocookie.com/embed/sPcf4pfTqfY';
 const automataTrailer = 'https://www.youtube-nocookie.com/embed/4bx02CEISLI';
 
-export const dataSliderCossackSaga = [
+export const dataSliderSichSaga = [
 	{
 		itemSrc: cossackDrummer,
 		itemAlt:
