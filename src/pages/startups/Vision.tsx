@@ -1,4 +1,4 @@
-import PageStructure from './PageStructure/PageStructure';
+import PageStructure from './components/PageStructure';
 import { dataText } from './pages/vision/dataText';
 
 const Vision = () => {

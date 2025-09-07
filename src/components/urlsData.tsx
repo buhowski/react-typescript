@@ -13,7 +13,7 @@ export const pathToStartup = '/vision';
 export const pathToStartupMVP = '/mvp';
 
 // CINEMA
-export const pathToStartupFilms = '/cinema';
+export const pathToCinema = '/cinema';
 export const pathToEuropeanUkrainians = '/european-ukrainians';
 export const pathToTheCorp = '/the-corp';
 
@@ -28,7 +28,7 @@ export const pathToPodcastShow = '/podcast-show';
 export const pathToGodEvening = '/god-evening';
 
 // Games
-export const pathToStartupGames = '/games';
+export const pathToGames = '/games';
 export const pathToCossackSaga = '/shadows-of-sich-saga';
 export const pathToCossackSagaPart1 = '/whispers-of-the-forgotten';
 export const pathToCossackSagaPart2 = '/ashes-of-the-beloved';
@@ -41,11 +41,11 @@ export const startupsNav = [
 		pageName: `Vision`,
 	},
 	{
-		pageLink: pathToStartupFilms,
+		pageLink: pathToCinema,
 		pageName: `Cinema`,
 	},
 	{
-		pageLink: pathToStartupGames,
+		pageLink: pathToGames,
 		pageName: `Games`,
 	},
 	{

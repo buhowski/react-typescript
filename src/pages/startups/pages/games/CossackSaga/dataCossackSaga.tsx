@@ -17,21 +17,21 @@ export const dataCossackSaga = {
 		{
 			markdownAPI: '/text-data/games/CossackSaga/Part1/PreviewPart1EN.md',
 			sliderContent: dataSliderCossackSaga,
-			filmsPreviewUrl: pathToCossackSagaPart1,
+			pagePreviewUrl: pathToCossackSagaPart1,
 		},
 
 		// Part II: Ashes of the Beloved
 		{
 			markdownAPI: '/text-data/games/CossackSaga/Part2/PreviewPart2EN.md',
 			sliderContent: dataSliderCossackSaga,
-			filmsPreviewUrl: pathToCossackSagaPart2,
+			pagePreviewUrl: pathToCossackSagaPart2,
 		},
 
 		// Part III: Quantum Leap
 		{
 			markdownAPI: '/text-data/games/CossackSaga/Part3/PreviewPart3EN.md',
 			sliderContent: dataSliderCossackSaga,
-			filmsPreviewUrl: pathToCossackSagaPart3,
+			pagePreviewUrl: pathToCossackSagaPart3,
 		},
 	],
 

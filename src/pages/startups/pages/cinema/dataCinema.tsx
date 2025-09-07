@@ -24,21 +24,21 @@ export const dataCinema = {
 		{
 			markdownAPI: '/text-data/films/EuropeanUkrainians/PreviewEuropeanUkrainiansEN.md',
 			sliderContent: dataSliderEuropeanUkrainians,
-			filmsPreviewUrl: pathToEuropeanUkrainians,
+			pagePreviewUrl: pathToEuropeanUkrainians,
 		},
 
 		// ### The Corp .!. ###
 		{
 			markdownAPI: '/text-data/films/TheCorp/PreviewTheCorpEN.md',
 			sliderContent: dataSliderTheCorp,
-			filmsPreviewUrl: pathToTheCorp,
+			pagePreviewUrl: pathToTheCorp,
 		},
 
 		// ### Self Presentation Projects  ###
 		{
 			markdownAPI: '/text-data/films/SelfPresentation/SelfPresentationEN.md',
 			sliderContent: dataSliderProjectsDev,
-			filmsPreviewUrl: pathToSelfPresentation,
+			pagePreviewUrl: pathToSelfPresentation,
 		},
 	],
 

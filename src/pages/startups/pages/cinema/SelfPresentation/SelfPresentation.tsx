@@ -1,9 +1,9 @@
-import PageStructure from '../../../PageStructure/PageStructure';
+import PageStructure from '../../../components/PageStructure';
 import { dataSelfPresentation } from './dataSelfPresentation';
-import { pathToStartupFilms } from '../../../../../components/urlsData';
+import { pathToCinema } from '../../../../../components/urlsData';
 
 const SelfPresentation = () => {
-	return <PageStructure textData={dataSelfPresentation} backButton={pathToStartupFilms} />;
+	return <PageStructure textData={dataSelfPresentation} backButton={pathToCinema} />;
 };
 
 export default SelfPresentation;

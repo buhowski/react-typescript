@@ -21,7 +21,7 @@ export interface VideoPreviewProps extends SlideItem {
 // Common properties for content related URLs
 export interface ContentUrls {
 	markdownAPI?: string;
-	filmsPreviewUrl?: string;
+	pagePreviewUrl?: string;
 }
 
 // Common property for components that might have optional slider content

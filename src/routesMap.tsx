@@ -1,7 +1,7 @@
 import Home from './pages/home/Home';
 import About from './pages/about/About';
 import Projects from './pages/projects/Projects';
-import Startup from './pages/startups/Startup';
+import Startup from './pages/startups/Vision';
 
 // Startup Pages
 import { startupsMap } from './pages/startups/startupsRoutes';

@@ -1,4 +1,4 @@
-import PageStructure from '../../../../PageStructure/PageStructure';
+import PageStructure from '../../../../components/PageStructure';
 import { dataCossackSagaPart1 } from './dataCossackSagaPart1';
 import { pathToCossackSaga } from '../../../../../../components/urlsData';
 

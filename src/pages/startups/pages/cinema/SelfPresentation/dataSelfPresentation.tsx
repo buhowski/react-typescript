@@ -19,14 +19,14 @@ export const dataSelfPresentation = {
 		{
 			markdownAPI: '/text-data/films/SelfPresentation/PodcastShow/PreviewPodcastShowEN.md',
 			sliderContent: dataSliderPodcastShow,
-			filmsPreviewUrl: pathToPodcastShow,
+			pagePreviewUrl: pathToPodcastShow,
 		},
 
 		// ### God Evening  ###
 		{
 			markdownAPI: '/text-data/films/SelfPresentation/GodEvening/PreviewGodEveningEN.md',
 			// sliderContent: dataSliderPodcastShow,
-			filmsPreviewUrl: pathToGodEvening,
+			pagePreviewUrl: pathToGodEvening,
 		},
 	],
 

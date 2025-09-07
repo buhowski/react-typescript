@@ -1,4 +1,4 @@
-import PageStructure from './PageStructure/PageStructure';
+import PageStructure from './components/PageStructure';
 import { dataMVP } from './pages/MVP/dataMVP';
 
 const StartupMVP = () => {

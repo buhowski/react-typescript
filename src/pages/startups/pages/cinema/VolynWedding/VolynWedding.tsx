@@ -1,9 +1,9 @@
-import PageStructure from '../../../PageStructure/PageStructure';
+import PageStructure from '../../../components/PageStructure';
 import { dataText } from './dataText';
-import { pathToStartupFilms } from '../../../../../components/urlsData';
+import { pathToCinema } from '../../../../../components/urlsData';
 
 const HeShe = () => {
-	return <PageStructure textData={dataText} backButton={pathToStartupFilms} />;
+	return <PageStructure textData={dataText} backButton={pathToCinema} />;
 };
 
 export default HeShe;

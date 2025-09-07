@@ -16,7 +16,7 @@ export const dataGames = {
 		{
 			markdownAPI: '/text-data/games/CossackSaga/CossackSagaEN.md',
 			sliderContent: dataSliderCossackSaga,
-			filmsPreviewUrl: pathToCossackSaga,
+			pagePreviewUrl: pathToCossackSaga,
 		},
 	],
 

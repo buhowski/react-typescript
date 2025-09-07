@@ -1,4 +1,4 @@
-import Startup from './Startup';
+import Startup from './Vision';
 import StartupMVP from './MVP';
 
 // Films Industry
@@ -17,7 +17,7 @@ import PodcastShow from './pages/cinema/SelfPresentation/PodcastShow/PodcastShow
 import GodEvening from './pages/cinema/SelfPresentation/GodEvening/GodEvening';
 
 // Games Industry
-import StartupGames from './Games';
+import Games from './Games';
 import CossackSaga from './pages/games/CossackSaga/CossackSaga';
 import CossackSagaPart1 from './pages/games/CossackSaga/Part1/CossackSagaPart1';
 import CossackSagaPart2 from './pages/games/CossackSaga/Part2/CossackSagaPart2';
@@ -26,13 +26,13 @@ import CossackSagaPart3 from './pages/games/CossackSaga/Part3/CossackSagaPart3';
 import {
 	pathToStartup,
 	pathToStartupMVP,
-	pathToStartupFilms,
+	pathToCinema,
 	pathToEuropeanUkrainians,
 	pathToTheCorp,
 	pathToSelfPresentation,
 	pathToPodcastShow,
 	pathToGodEvening,
-	pathToStartupGames,
+	pathToGames,
 	pathToCossackSaga,
 	pathToCossackSagaPart1,
 	pathToCossackSagaPart2,
@@ -51,7 +51,7 @@ export const startupsMap: Record<string, React.ComponentType<any>> = {
 	[pathToStartupMVP]: StartupMVP,
 
 	// CINEMA
-	[pathToStartupFilms]: Cinema,
+	[pathToCinema]: Cinema,
 	[pathToEuropeanUkrainians]: EuropeanUkrainians,
 	[pathToTheCorp]: TheCorp,
 
@@ -67,7 +67,7 @@ export const startupsMap: Record<string, React.ComponentType<any>> = {
 	[pathToGodEvening]: GodEvening,
 
 	// Games
-	[pathToStartupGames]: StartupGames,
+	[pathToGames]: Games,
 	[pathToCossackSaga]: CossackSaga,
 	[pathToCossackSagaPart1]: CossackSagaPart1,
 	[pathToCossackSagaPart2]: CossackSagaPart2,
@@ -80,7 +80,7 @@ export const startupPaths = Object.keys(startupsMap);
 // Subpath grouping
 export const startupSubPaths: Record<string, string[]> = {
 	// Sub Games
-	[pathToStartupGames]: [
+	[pathToGames]: [
 		pathToCossackSaga,
 		pathToCossackSagaPart1,
 		pathToCossackSagaPart2,
@@ -88,7 +88,7 @@ export const startupSubPaths: Record<string, string[]> = {
 	],
 
 	// Sub Films
-	[pathToStartupFilms]: [
+	[pathToCinema]: [
 		pathToEuropeanUkrainians,
 		pathToTheCorp,
 

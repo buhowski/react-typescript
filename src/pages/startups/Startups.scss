@@ -1,6 +1,6 @@
 @import '../../styles/variables';
 @import '../../styles/animation';
-@import './PageStructure/TableOfContent.scss';
+@import './components/TableOfContent.scss';
 
 @mixin titleFont {
 	font-family: $Raleway;

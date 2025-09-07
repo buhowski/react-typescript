@@ -1,4 +1,4 @@
-import PageStructure from '../../../../PageStructure/PageStructure';
+import PageStructure from '../../../../components/PageStructure';
 import { pathToSelfPresentation } from '../../../../../../components/urlsData';
 import { dataGodEvening } from './dataGodEvening';
 

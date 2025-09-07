@@ -46,10 +46,10 @@ const PitchContainer = React.memo(
 						)}
 					</div>
 
-					{/* Render "read more" link if a filmsPreviewUrl is provided */}
-					{structure.filmsPreviewUrl && (
+					{/* Render "read more" link if a pagePreviewUrl is provided */}
+					{structure.pagePreviewUrl && (
 						<div className='idea-block__action'>
-							<NavLink to={structure.filmsPreviewUrl} className='idea-block__more'>
+							<NavLink to={structure.pagePreviewUrl} className='idea-block__more'>
 								read more
 							</NavLink>
 						</div>

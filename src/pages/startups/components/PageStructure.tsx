@@ -83,7 +83,7 @@ const PageStructure: React.FC<PageStructureProps> = ({ textData, backButton, ini
 			return {
 				...item,
 				sliderContent: item.sliderContent || englishItem?.sliderContent,
-				filmsPreviewUrl: item.filmsPreviewUrl || englishItem?.filmsPreviewUrl,
+				pagePreviewUrl: item.pagePreviewUrl || englishItem?.pagePreviewUrl,
 			};
 		});
 	}, [textData, currentLang]);
@@ -194,7 +194,7 @@ const PageStructure: React.FC<PageStructureProps> = ({ textData, backButton, ini
 						)}
 						{initialLangReady &&
 							contentToRender.map((structure, index) => {
-								const fallbackFilmsPreview = textData.en?.[index]?.filmsPreviewUrl;
+								const fallbackFilmsPreview = textData.en?.[index]?.pagePreviewUrl;
 								return (
 									<PitchContainer
 										key={index}
@@ -202,7 +202,7 @@ const PageStructure: React.FC<PageStructureProps> = ({ textData, backButton, ini
 										ref={(el) => (pitchRefs.current[index] = el)}
 										structure={{
 											...structure,
-											filmsPreviewUrl: structure.filmsPreviewUrl || fallbackFilmsPreview,
+											pagePreviewUrl: structure.pagePreviewUrl || fallbackFilmsPreview,
 										}}
 										currentLanguage={currentLang}
 										sliderContent={structure.sliderContent}

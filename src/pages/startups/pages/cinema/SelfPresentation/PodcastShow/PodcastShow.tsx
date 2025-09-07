@@ -1,4 +1,4 @@
-import PageStructure from '../../../../PageStructure/PageStructure';
+import PageStructure from '../../../../components/PageStructure';
 import { dataPodcastShow } from './dataPodcastShow';
 import { pathToSelfPresentation } from '../../../../../../components/urlsData';
 

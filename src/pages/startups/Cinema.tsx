@@ -1,4 +1,4 @@
-import PageStructure from './PageStructure/PageStructure';
+import PageStructure from './components/PageStructure';
 import { dataCinema } from './pages/cinema/dataCinema';
 
 const Cinema = () => {
