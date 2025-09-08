@@ -1,7 +1,7 @@
 // specific slider data
 import { dataSliderVision, dataSliderProjectDev, dataSliderJournalism } from './dataSlider';
 
-export const structureVision = {
+export const startupsStructure = {
 	// Business Plan Page
 	visionPage: [
 		{
