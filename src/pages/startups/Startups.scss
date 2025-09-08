@@ -170,17 +170,7 @@
 	gap: 10px;
 	position: absolute;
 	top: 4px;
-	z-index: 12;
-
-	@media (hover: hover) and (pointer: fine) {
-		&:hover {
-			@include idea-back_hover;
-		}
-	}
-
-	&:active {
-		@include idea-back_hover;
-	}
+	z-index: 1;
 
 	@include tabletBig {
 		position: fixed;
@@ -198,6 +188,16 @@
 		span {
 			display: none;
 		}
+	}
+
+	@media (hover: hover) and (pointer: fine) {
+		&:hover {
+			@include idea-back_hover;
+		}
+	}
+
+	&:active {
+		@include idea-back_hover;
 	}
 
 	span,

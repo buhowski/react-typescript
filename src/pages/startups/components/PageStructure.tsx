@@ -179,15 +179,15 @@ const PageStructure: React.FC<PageStructureProps> = ({ pageData, backButton, ini
 			/>
 
 			<div className={`startup-action ${isActive ? 'is-active' : ''}`}>
-				<div className='wrapper'>
-					{/* back navigation */}
-					{backButton && (
+				{/* back navigation DESKTOP */}
+				{!useTabletLarge && backButton && (
+					<div className='wrapper'>
 						<NavLink to={backButton} className='idea-back'>
 							{ArrowLeftIcon}
 							<span>Back</span>
 						</NavLink>
-					)}
-				</div>
+					</div>
+				)}
 
 				<StartupNavigation />
 			</div>
@@ -220,6 +220,7 @@ const PageStructure: React.FC<PageStructureProps> = ({ pageData, backButton, ini
 							</div>
 						)}
 					</div>
+
 					<div className={`lang-sidebar ${'lang-sidebar--has-toc'}`}>
 						<TableOfContent
 							activeHeadingId={activeHeadingId}
@@ -232,6 +233,14 @@ const PageStructure: React.FC<PageStructureProps> = ({ pageData, backButton, ini
 							)}
 						</div>
 					</div>
+
+					{/* back navigation MOBILE */}
+					{useTabletLarge && backButton && (
+						<NavLink to={backButton} className='idea-back'>
+							{ArrowLeftIcon}
+							<span>Back</span>
+						</NavLink>
+					)}
 				</div>
 			</div>
 		</VideoPlaybackProvider>
