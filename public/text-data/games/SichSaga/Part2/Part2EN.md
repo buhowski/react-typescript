@@ -1,4 +1,4 @@
-#### Video Game
+#### Dark Fantasy Adventure / Video Game
 
 # Shadows of Sich: Ashes of the Beloved
 
@@ -38,4 +38,4 @@ Along with the fragments of magical energy, a fragment of the supreme demon burs
 
 *Under Construction ...*
 
-The author is seeking resources and time to bring these masterful ideas to life. If you know how or where to get support, please contact me!
+The author is looking for resources and time to bring these ideas to life. If you know where or how to get support — let me know!

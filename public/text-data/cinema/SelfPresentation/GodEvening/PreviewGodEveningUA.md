@@ -1,4 +1,4 @@
-####  Satirical-Theatrical Play-Show
+#### Satirical Comedy / Theatrical Show
 
 # Вечір у БОГА
 

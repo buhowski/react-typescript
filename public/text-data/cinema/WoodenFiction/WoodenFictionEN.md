@@ -1,4 +1,4 @@
-#### Animated Dark Crime Comedy
+#### Dark Crime Comedy / Animated Movie
 
 # Wooden Fiction
 
@@ -25,4 +25,4 @@ Behind the chaotic plot and black humor lies a harsh satire. The animated film r
 
 *Under Construction …*
 
-The author is seeking resources and time to bring these masterful ideas to life. If you know how or where to get support, please contact me!
+The author is looking for resources and time to bring these ideas to life. If you know where or how to get support — let me know!

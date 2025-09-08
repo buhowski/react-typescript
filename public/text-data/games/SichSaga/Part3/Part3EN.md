@@ -1,4 +1,4 @@
-#### Video Game
+#### Dark Fantasy Adventure / Video Game
 
 # Shadows of Sich: Quantum Leap
 
@@ -43,4 +43,4 @@ At the start of the game, you create your hero and choose a faction, which deter
 
 *Under Construction ...*
 
-The author is seeking resources and time to bring these masterful ideas to life. If you know how or where to get support, please contact me!
+The author is looking for resources and time to bring these ideas to life. If you know where or how to get support — let me know!

@@ -1,4 +1,4 @@
-#### Reality-Based Mockumentary Series
+#### Reality-Based Mockumentary / Series
 
 # The Corp .!.
 
@@ -24,4 +24,4 @@ Like "The Office", we film in a real workspace — but we don’t copy the origi
 
 *Under Construction …*
 
-The author is seeking resources and time to bring these masterful ideas to life. If you know how or where to get support, please contact me!
+The author is looking for resources and time to bring these ideas to life. If you know where or how to get support — let me know!

@@ -1,4 +1,4 @@
-#### Animated Adventure Comedy Series
+#### Adventure Comedy / Animated Series
 
 # Приключения Лилит
 

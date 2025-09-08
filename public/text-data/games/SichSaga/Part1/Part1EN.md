@@ -1,4 +1,4 @@
-#### Video Game
+#### Dark Fantasy Adventure / Video Game
 
 # Shadows of Sich: Whispers of the Forgotten
 
@@ -86,4 +86,4 @@ I am looking support and a team to bring this unique world to life. This is an o
 
 *Under Construction …*
 
-The author is seeking resources and time to bring these masterful ideas to life. If you know how or where to get support, please contact me!
+The author is looking for resources and time to bring these ideas to life. If you know where or how to get support — let me know!

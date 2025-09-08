@@ -1,4 +1,4 @@
-#### Video Game Series
+#### Dark Fantasy Odyssey / Interactive Series
 
 # Тени Запорожской Сечи: Сага
 
