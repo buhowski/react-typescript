@@ -10,6 +10,8 @@
 
 When the lonely heirs of rival business empires fall in love at first sight, their forbidden passion threatens to ignite a new war that will destroy a fragile truce and plunge the world into chaos.
 
+[mobile-slider]
+
 ## Main Idea
 
 This is an epic blend of a rap-rock opera and Shakespearean poetry. Similar to how the film [Romeo + Juliet](https://www.imdb.com/title/tt0117509/) updated a classic tragedy, this project transplants biblical figures into a modern, urban world with original twists. God is a lonely young girl, and the Devil is a charismatic guy who hides a deep, spiritual loneliness.

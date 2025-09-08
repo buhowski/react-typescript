@@ -10,7 +10,14 @@ import {
 } from '../../../components/urlsData';
 
 // specific slider data
-import { dataSliderProjectDev, dataSliderOnceInUkraine } from './dataSlider';
+import {
+	dataSliderProjectDev,
+	dataSliderOnceInUkraine,
+	dataSliderVolynWedding,
+	dataSliderHeShe,
+	dataSliderWoodenFiction,
+	dataSliderLilithsAdventure,
+} from './dataSlider';
 import { dataSliderTheCorp } from './cinema/TheCorp/dataSlider';
 import { dataSliderEuropeanUkrainians } from './cinema/EuropeanUkrainians/dataSlider';
 
@@ -47,24 +54,28 @@ export const cinemaStructure = {
 		// Volyn Wedding
 		{
 			markdownAPI: '/text-data/cinema/VolynWedding/PreviewVolynWedding.md',
+			sliderContent: dataSliderVolynWedding,
 			pagePreviewUrl: pathToVolynWedding,
 		},
 
 		// He + She
 		{
 			markdownAPI: '/text-data/cinema/HeShe/PreviewHeShe.md',
+			sliderContent: dataSliderHeShe,
 			pagePreviewUrl: pathToHeShe,
 		},
 
 		// Wooden Fiction
 		{
 			markdownAPI: '/text-data/cinema/WoodenFiction/PreviewWoodenFiction.md',
+			sliderContent: dataSliderWoodenFiction,
 			pagePreviewUrl: pathToWoodenFiction,
 		},
 
 		// Lilith's Adventure
 		{
 			markdownAPI: '/text-data/cinema/LilithsAdventure/PreviewLilithsAdventure.md',
+			sliderContent: dataSliderLilithsAdventure,
 			pagePreviewUrl: pathToLilithsAdventure,
 		},
 

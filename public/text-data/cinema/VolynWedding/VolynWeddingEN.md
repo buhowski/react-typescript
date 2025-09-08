@@ -6,6 +6,8 @@
 
 The story of a wedding everyone wanted except for the couple themselves, and the night before the ceremony that turns into a surreal quest involving a kidnapping, corrupt border guards, and a Roma-Polish-Belarusian drug cartel.
 
+[mobile-slider]
+
 ## Main Idea
 
 This is a feature-length comedy-drama with elements of black satire and absurdity, set in modern-day Volyn. The story follows two semi-successful natives of the Ukrainian provinces who return home to celebrate their wedding according to classic traditions. Although the couple has long moved past these archaic customs, they still agree to the wedding for the sake of their families, because sometimes old traditions are stronger than common sense.

@@ -6,6 +6,8 @@
 
 A mosaic drama about the residents of a city block: their small joys, monotonous routines, and eternal hopes for a better life, as well as the dependencies and vices hidden behind every window. Today begins their last dawn. But will they live to see the sunset?
 
+[mobile-slider]
+
 ## Main Idea
 
 This is a feature-length social drama with a mix of black satire and tragic irony. The action takes place in a typical Soviet-style Ukrainian neighborhood, with its monotonous five-story buildings and high-rises, faceless courtyards, shabby entrances, the rumble of minibuses, the clamor of the market, and the cold of the supermarket. The time is the present, living in the shadow of war.

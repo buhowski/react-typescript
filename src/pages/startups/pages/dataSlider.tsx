@@ -3,6 +3,10 @@ import planPoster from '../../../assets/startup/vision.jpg';
 import posterProjectsDev from '../../../assets/startup/brain.jpg';
 import writer from '../../../assets/startup/writer.webp';
 import posterOnceInUkraine from '../../../assets/startup/cinema/once-in-ukraine-poster.webp';
+import posterVolynWedding from '../../../assets/startup/cinema/volyn-wedding-poster.webp';
+import posterHeShe from '../../../assets/startup/cinema/he-she-poster.webp';
+import posterWoodenFiction from '../../../assets/startup/cinema/wooden-fiction-poster.webp';
+import posterLilithsAdventure from '../../../assets/startup/cinema/liliths-adventure-poster.webp';
 
 export const dataSliderProjectDev = [
 	{
@@ -30,6 +34,34 @@ export const dataSliderJournalism = [
 export const dataSliderOnceInUkraine = [
 	{
 		itemSrc: posterOnceInUkraine,
-		itemAlt: `Magazine cover showcasing insights on next-gen media, innovative journalism, creative storytelling, editorial experiments, cultural commentary, independent publishing, and the evolution of news as an artistic and expressive medium.`,
+		itemAlt: `Poster of tragic social drama 'Once Upon a Time… in Ukraine' – young couple at window, Ukrainian city block, sunrise, melancholy and cinematic realism.`,
+	},
+];
+
+export const dataSliderVolynWedding = [
+	{
+		itemSrc: posterVolynWedding,
+		itemAlt: `Poster of action dark comedy 'Volyn Wedding: Groom’s Room' – six young adults, three men and three women, messy and battered, standing on a broken Soviet Zaporizhzhia car, surreal comedic adventure, realistic cinematic style, Ukrainian countryside at sunrise.`,
+	},
+];
+
+export const dataSliderHeShe = [
+	{
+		itemSrc: posterHeShe,
+		itemAlt: `Poster of poetic tragic romance 'He + She' – young man in devil armor and young woman as goddess at masquerade ball, intense gaze, urban mystical setting, cinematic realism, stormy poetic atmosphere.`,
+	},
+];
+
+export const dataSliderWoodenFiction = [
+	{
+		itemSrc: posterWoodenFiction,
+		itemAlt: `Animated dark crime comedy poster 'Wooden Fiction' – twisted fairytale characters in criminal chaos, satirical and grotesque style, nonlinear storytelling, post-Soviet aesthetic, dark humor.`,
+	},
+];
+
+export const dataSliderLilithsAdventure = [
+	{
+		itemSrc: posterLilithsAdventure,
+		itemAlt: `Animated adventure comedy poster 'Lilith's Adventure' – charismatic adventurer girl exploring parallel worlds, magical artifact diary, surreal and humorous multiverse, dynamic animation style.`,
 	},
 ];

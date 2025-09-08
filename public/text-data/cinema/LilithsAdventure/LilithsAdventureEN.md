@@ -6,6 +6,8 @@
 
 Lost in parallel dimensions, a charismatic adventurer seeks her way home. Her journey leads her to a psychopathic creator whose dangerous game with an artifact is both the key to her world and a threat to all of reality.
 
+[mobile-slider]
+
 ## Main Idea
 
 This animated comedy series follows a sarcastic adventurer with a sharp wit. Her travels through endless worlds were made possible by a unique artifact: a traveler’s diary.

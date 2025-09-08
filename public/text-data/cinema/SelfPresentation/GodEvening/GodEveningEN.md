@@ -6,6 +6,8 @@
 
 A satirical-theatrical play-show where God, drinking beer between a TV and a papier-mâché globe, ridicules the absurdity of the world through humor, irony, and dramatic imagery, creating an evening that is both entertaining and thought-provoking.
 
+[mobile-slider]
+
 ## Main Idea
 
 To adapt an early and little-known mini-play by Stephen King for modern times, raising sharp questions about order and chaos by adding original conceptual inserts, fresh humor, and metaphors to highlight the paradoxes of the world and the cyclical nature of contemporary existence.

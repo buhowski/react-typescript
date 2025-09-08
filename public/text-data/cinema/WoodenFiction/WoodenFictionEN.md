@@ -6,6 +6,8 @@
 
 A dark comedy where beloved fairy tale characters get caught up in criminal showdowns, and their brutal, absurd adventures are woven into a single, non-linear narrative full of unexpected twists and black humor.
 
+[mobile-slider]
+
 ## Main Idea
 
 A satirical crime anthology that blends a non-linear narrative and iconic dialogues in the style of Tarantino with harsh humor and the grotesque aesthetic of post-Soviet reality. This is a project where absurdity becomes the norm.

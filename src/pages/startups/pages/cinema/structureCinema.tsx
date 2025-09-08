@@ -1,5 +1,11 @@
 // specific slider data
-import { dataSliderOnceInUkraine } from '../dataSlider';
+import {
+	dataSliderOnceInUkraine,
+	dataSliderVolynWedding,
+	dataSliderHeShe,
+	dataSliderWoodenFiction,
+	dataSliderLilithsAdventure,
+} from '../dataSlider';
 import { dataSliderTheCorp } from './TheCorp/dataSlider';
 import { dataSliderEuropeanUkrainians } from './EuropeanUkrainians/dataSlider';
 
@@ -24,6 +30,7 @@ export const structureCinema = {
 	heShePage: [
 		{
 			markdownAPI: '/text-data/cinema/HeShe/HeShe.md',
+			sliderContent: dataSliderHeShe,
 		},
 	],
 
@@ -39,6 +46,7 @@ export const structureCinema = {
 	volynWeddingPage: [
 		{
 			markdownAPI: '/text-data/cinema/VolynWedding/VolynWedding.md',
+			sliderContent: dataSliderVolynWedding,
 		},
 	],
 
@@ -46,6 +54,7 @@ export const structureCinema = {
 	woodenFictionPage: [
 		{
 			markdownAPI: '/text-data/cinema/WoodenFiction/WoodenFiction.md',
+			sliderContent: dataSliderWoodenFiction,
 		},
 	],
 
@@ -53,6 +62,7 @@ export const structureCinema = {
 	lilithsAdventurePage: [
 		{
 			markdownAPI: '/text-data/cinema/LilithsAdventure/LilithsAdventure.md',
+			sliderContent: dataSliderLilithsAdventure,
 		},
 	],
 };
