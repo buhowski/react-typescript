@@ -100,7 +100,7 @@
 	}
 
 	@include mobile {
-		padding-top: 50px;
+		padding-top: 40px;
 	}
 }
 
@@ -269,7 +269,7 @@ $nav-top: 5px;
 	@include tabletBig {
 		width: calc(100% - 80px);
 		max-width: 777px;
-		margin: 53px auto;
+		margin: 40px auto;
 		box-shadow: 0 0 4px #000000;
 	}
 
@@ -291,7 +291,7 @@ $nav-top: 5px;
 			flex-grow: 1;
 			padding: 13px 4px 11px;
 			font-size: 15px;
-			letter-spacing: 0.8px;
+			letter-spacing: 0.5px;
 		}
 
 		&.sub-active {
@@ -304,7 +304,7 @@ $nav-top: 5px;
 				bottom: 0;
 				left: 50%;
 				transform: translateX(-50%);
-				width: 26%;
+				width: 33%;
 				height: 3px;
 				background-color: rgba($color: $blue-main, $alpha: 0.9);
 				border-radius: 20px;
@@ -351,11 +351,11 @@ $nav-top: 5px;
 	// z-index: 1000;
 
 	@include tabletBig {
-		margin-top: 45px;
+		margin-top: 50px;
 	}
 
 	@include mobile {
-		margin: 35px auto 0;
+		margin-top: 30px;
 	}
 
 	// .idea-lang__btn
