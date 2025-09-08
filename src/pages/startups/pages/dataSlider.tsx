@@ -2,6 +2,7 @@
 import planPoster from '../../../assets/startup/vision.jpg';
 import posterProjectsDev from '../../../assets/startup/brain.jpg';
 import writer from '../../../assets/startup/writer.webp';
+import posterOnceInUkraine from '../../../assets/startup/cinema/once-in-ukraine-poster.webp';
 
 export const dataSliderProjectDev = [
 	{
@@ -17,10 +18,18 @@ export const dataSliderVision = [
 	},
 ];
 
-// ### Journalism ###
+// Journalism
 export const dataSliderJournalism = [
 	{
 		itemSrc: writer,
+		itemAlt: `Magazine cover showcasing insights on next-gen media, innovative journalism, creative storytelling, editorial experiments, cultural commentary, independent publishing, and the evolution of news as an artistic and expressive medium.`,
+	},
+];
+
+//
+export const dataSliderOnceInUkraine = [
+	{
+		itemSrc: posterOnceInUkraine,
 		itemAlt: `Magazine cover showcasing insights on next-gen media, innovative journalism, creative storytelling, editorial experiments, cultural commentary, independent publishing, and the evolution of news as an artistic and expressive medium.`,
 	},
 ];

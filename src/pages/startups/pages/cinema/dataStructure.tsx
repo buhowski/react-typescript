@@ -1,3 +1,5 @@
+// import { buildEntry } from '../../helpers/buildEntry';
+
 // URL To Single Page / Read More button
 import {
 	pathToEuropeanUkrainians,
@@ -13,10 +15,10 @@ import {
 } from '../../../../components/urlsData';
 
 // specific slider data
-import { dataSliderProjectDev } from '../dataSlider';
+import { dataSliderProjectDev, dataSliderOnceInUkraine } from '../dataSlider';
 import { dataSliderTheCorp } from './TheCorp/dataSlider';
 import { dataSliderEuropeanUkrainians } from './EuropeanUkrainians/dataSlider';
-import { dataSliderPodcastShow } from './SelfPresentation/PodcastShow/dataSlider';
+import { dataSliderPodcastShow, dataSliderGodEvening } from './SelfPresentation/dataSlider';
 
 export const structureCinema = {
 	// Cinema Page
@@ -44,6 +46,7 @@ export const structureCinema = {
 		// Once Upon a Time... in Ukraine
 		{
 			markdownAPI: '/text-data/cinema/OnceInUkraine/PreviewOnceInUkraine.md',
+			sliderContent: dataSliderOnceInUkraine,
 			pagePreviewUrl: pathToOnceInUkraine,
 		},
 
@@ -104,6 +107,7 @@ export const structureCinema = {
 	onceInUkrainePage: [
 		{
 			markdownAPI: '/text-data/cinema/OnceInUkraine/OnceInUkraine.md',
+			sliderContent: dataSliderOnceInUkraine,
 		},
 	],
 
@@ -143,7 +147,7 @@ export const structureCinema = {
 		// God Evening
 		{
 			markdownAPI: '/text-data/cinema/SelfPresentation/GodEvening/PreviewGodEvening.md',
-			// sliderContent: dataSliderPodcastShow,
+			sliderContent: dataSliderGodEvening,
 			pagePreviewUrl: pathToGodEvening,
 		},
 	],
@@ -158,7 +162,7 @@ export const structureCinema = {
 	godEveningPage: [
 		{
 			markdownAPI: '/text-data/cinema/SelfPresentation/GodEvening/GodEvening.md',
-			// sliderContent: dataSliderPodcastShow,
+			sliderContent: dataSliderGodEvening,
 		},
 	],
 };
