@@ -269,7 +269,7 @@ $nav-top: 5px;
 	@include tabletBig {
 		width: calc(100% - 80px);
 		max-width: 777px;
-		margin: 40px auto;
+		margin: 45px auto;
 		box-shadow: 0 0 4px #000000;
 	}
 
@@ -355,7 +355,7 @@ $nav-top: 5px;
 	}
 
 	@include mobile {
-		margin-top: 30px;
+		margin-top: 25px;
 	}
 
 	// .idea-lang__btn
