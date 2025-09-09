@@ -12,6 +12,12 @@
   force = true
 
 [[redirects]]
+  from = "/projects"
+  to = "/portfolio"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/cv"
   to = "/CV_Olexander_Tsiomakh_Frontend.pdf"
   status = 301
