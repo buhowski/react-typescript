@@ -60,12 +60,11 @@
 }
 
 .idea-section {
-	background-color: $darken;
 	padding: 70px 40px 110px;
 	display: flex;
 	align-items: flex-start;
 	position: relative;
-	box-shadow: 0 0 15px #000000;
+	box-shadow: 0 0 10px #000000;
 	border-radius: 20px;
 
 	@include tabletBig {
@@ -92,7 +91,7 @@
 	position: relative;
 
 	@include tabletBig {
-		padding-top: 66px;
+		padding-top: 105px;
 		height: auto;
 		width: 100%;
 		flex-shrink: unset;
@@ -215,7 +214,7 @@
 	}
 }
 
-$nav-top: 5px;
+$nav-top: 2px;
 
 // StartupNavigation
 .startup-action {
@@ -229,7 +228,7 @@ $nav-top: 5px;
 			padding-top: $nav-top;
 			min-width: 100%;
 			border-radius: 0;
-			box-shadow: 0 3px 15px #000000;
+			box-shadow: 0 3px 10px #000000;
 		}
 
 		.idea-back {
@@ -261,20 +260,23 @@ $nav-top: 5px;
 	white-space: nowrap;
 	margin: 65px auto;
 	border-radius: 100px;
-	box-shadow: 0 0 10px #000000;
+	box-shadow: 0 0 6px #000000;
 	overflow: hidden;
 	padding-top: 0;
 	transition: 0.25s;
 
 	@include tabletBig {
+		border-radius: 20px 20px 0 0;
 		width: calc(100% - 80px);
 		max-width: 777px;
-		margin: 45px auto;
+		margin: 60px auto -43px;
 		box-shadow: 0 0 4px #000000;
 	}
 
 	@include mobile {
+		border-radius: 100px;
 		width: calc(100% - 30px);
+		margin-top: 35px;
 		margin-bottom: 10px;
 	}
 
@@ -287,9 +289,8 @@ $nav-top: 5px;
 		transition: color 0.25s;
 
 		@include tabletBig {
-			width: 100%;
 			flex-grow: 1;
-			padding: 13px 4px 11px;
+			padding: 13px 10px 11px;
 			font-size: 15px;
 			letter-spacing: 0.5px;
 		}
@@ -343,7 +344,7 @@ $nav-top: 5px;
 	overflow: hidden;
 	border: 2px solid $bg-color-lang;
 	gap: 2px;
-	box-shadow: 0 0 10px #000;
+	box-shadow: 0 0 6px #000;
 
 	// Debugging styles
 	// position: sticky;
@@ -354,8 +355,8 @@ $nav-top: 5px;
 		margin-top: 50px;
 	}
 
-	@include mobile {
-		margin-top: 25px;
+	@include tablet {
+		margin-top: 10px;
 	}
 
 	// .idea-lang__btn
@@ -446,7 +447,7 @@ $nav-top: 5px;
 
 		@include tabletBig {
 			margin-bottom: 40px;
-			font-size: 24px;
+			font-size: 28px;
 		}
 
 		+ h2 {
@@ -552,11 +553,14 @@ $nav-top: 5px;
 	}
 
 	p.description__has-em {
-		font-size: 15px;
 		font-weight: 300;
 
 		&:not(:first-of-type) {
 			margin-top: 10px;
+		}
+
+		+ h2 {
+			margin-top: 40px;
 		}
 	}
 
@@ -666,24 +670,14 @@ $nav-top: 5px;
 .idea-block__more {
 	@include navLink;
 	text-transform: uppercase;
-	padding: 16px 56px 14.5px 59px;
-	border-radius: 8px;
+	padding: 16px 60px 14.5px 63px;
+	border-radius: 10px;
 	transition: box-shadow 0.25s, text-shadow 0.25s, color 0.25s;
 	will-change: box-shadow;
-	box-shadow: 0 0 5px rgba($color: $black, $alpha: 0.8);
+	box-shadow: 0 0 4px rgba($black, 1);
 	background-color: #000000;
-	// background: linear-gradient(165deg, #000000 45%, #002840 100%);
-	// background-size: 220% 102%;
-	// background-position: 90% 0;
 
 	&::after {
-		// height: 100%;
-		// background: radial-gradient(circle, #002840 0%, #000000 100%);
-		// box-shadow: none;
-		// background-size: 280% 200%;
-		// opacity: 0;
-		// will-change: opacity, background-size;
-
 		display: none;
 	}
 
@@ -808,7 +802,7 @@ $nav-top: 5px;
 	position: relative;
 	overflow: hidden;
 	background-color: #000000;
-	box-shadow: 0 0 10px #000000;
+	box-shadow: 0 0 6px #000000;
 	border-radius: 0 0 10px 10px;
 	transition: transform 0.3s ease-in;
 
@@ -970,7 +964,7 @@ $nav-top: 5px;
 	padding: 13px;
 	border-radius: 10px;
 	background-color: rgba($textGrey, 0.4);
-	box-shadow: 0 0 10px #000000;
+	box-shadow: 0 0 6px #000000;
 	transition: 0.25s;
 
 	.chevron {
