@@ -4,7 +4,9 @@
 
 — I talked to God today, and She said She was ashamed.
 
-— And I talked to the Devil, and he swears he’s innocent. And I realized we’re on the wrong side of heaven.
+— And I talked to the Devil, and he swears he’s innocent. 
+
+And I realized we’re on the wrong side of heaven.
 
 ## Logline
 
