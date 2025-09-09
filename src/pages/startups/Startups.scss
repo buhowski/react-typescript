@@ -276,7 +276,7 @@ $nav-top: 2px;
 	@include mobile {
 		border-radius: 100px;
 		width: calc(100% - 30px);
-		margin-top: 35px;
+		margin-top: 40px;
 		margin-bottom: 10px;
 	}
 
@@ -356,7 +356,7 @@ $nav-top: 2px;
 	}
 
 	@include tablet {
-		margin-top: 10px;
+		margin-top: 12px;
 	}
 
 	// .idea-lang__btn
