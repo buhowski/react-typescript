@@ -449,7 +449,7 @@ $nav-top: 2px;
 
 		@include tablet {
 			margin-bottom: 40px;
-			font-size: 36px;
+			font-size: 37px;
 		}
 
 		+ h2 {
@@ -460,12 +460,12 @@ $nav-top: 2px;
 	h2 {
 		@include titleFont;
 		color: $h2-title-color;
-		font-size: 26px;
+		font-size: 32px;
 		margin-bottom: 25px;
 		margin-top: 50px;
 
 		@include tablet {
-			font-size: 24px;
+			font-size: 26px;
 			margin-bottom: 20px;
 		}
 	}
@@ -475,10 +475,10 @@ $nav-top: 2px;
 		color: $h3-title-color;
 		margin-bottom: 25px;
 		margin-top: 45px;
-		font-size: 22px;
+		font-size: 24px;
 
 		@include tablet {
-			font-size: 20px;
+			font-size: 21px;
 			margin-bottom: 20px;
 			margin-top: 35px;
 		}
