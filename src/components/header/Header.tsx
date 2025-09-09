@@ -4,7 +4,7 @@ import { pathToVision, pathToAbout, pathToProjects } from '../urlsData';
 import { useTabletQuery } from '../../config/useMediaQuery';
 import Socials from '../socials/Socials';
 import socialData from '../socials/socialData';
-
+import { headerLogo } from '../../assets/svg/icons';
 // Reusable path matching function
 import { isPathActive } from '../../config/pathUtils';
 import { startupPaths } from '../../pages/startups/startupsRoutes';
@@ -48,13 +48,9 @@ const Header = () => {
 
 	const LogoNavLink = () => {
 		return (
-			<div className='logo'>
-				<NavLink className='logo-link' to='/'>
-					<span className='tag-color'>&lt;</span>
-					<span>Buhowski</span>
-					<span className='tag-color'>/&gt;</span>
-				</NavLink>
-			</div>
+			<NavLink className='logo-link' to='/'>
+				{headerLogo}
+			</NavLink>
 		);
 	};
 

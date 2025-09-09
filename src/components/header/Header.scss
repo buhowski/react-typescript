@@ -8,18 +8,18 @@
 	font-family: $LouisGeorgeCafBold;
 	display: flex;
 	align-items: center;
-	padding: 20px 0 12px;
+	padding: 20px 0 17px;
 
 	@include tablet {
 		font-size: 23px;
-		padding: 12px 0;
+		padding: 15px 0;
 
 		.wrapper {
 			display: flex;
 			align-items: center;
 		}
 
-		.logo,
+		.logo-link,
 		.mobile-menu-btn {
 			position: relative;
 			z-index: 100;
@@ -41,6 +41,21 @@
 	}
 }
 
+.logo-link {
+	color: #fff;
+	padding: 14px 0;
+	width: 185px;
+
+	svg {
+		width: 100%;
+		height: auto;
+	}
+
+	&__tag {
+		color: $blue-main;
+	}
+}
+
 .header-nav {
 	display: flex;
 	align-items: center;
@@ -57,16 +72,6 @@
 		display: flex;
 		justify-content: space-between;
 		margin-left: auto;
-	}
-}
-
-.logo-link {
-	font-size: 27px;
-	padding: 11px 0;
-	letter-spacing: $header-ltr-spc;
-
-	@include tablet {
-		font-size: 26px;
 	}
 }
 
