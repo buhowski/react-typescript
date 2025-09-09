@@ -1,4 +1,4 @@
-#### Dark Fantasy Odyssey / Interactive Series
+#### Dark Fantasy Odyssey / Action RPG Series
 
 # Тіні Запорозької Січі: Сага
 

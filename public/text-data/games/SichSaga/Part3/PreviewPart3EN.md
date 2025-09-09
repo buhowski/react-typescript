@@ -1,4 +1,4 @@
-#### Dark Fantasy Adventure / Video Game
+#### Dark Fantasy Adventure / Action RPG
 
 # Part III: Quantum Leap
 

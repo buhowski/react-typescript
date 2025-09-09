@@ -1,4 +1,4 @@
-#### Dark Fantasy Adventure / Video Game
+#### Dark Fantasy Adventure / Action RPG
 
 # Тени Запорожской Сечи: Пепел Любви
 
