@@ -278,7 +278,7 @@ $nav-top: 2px;
 	@include mobile {
 		border-radius: 100px;
 		width: calc(100% - 30px);
-		margin-top: 44px;
+		margin-top: 45px;
 		margin-bottom: 10px;
 	}
 
@@ -358,7 +358,7 @@ $nav-top: 2px;
 	}
 
 	@include tablet {
-		margin-top: 15px;
+		margin-top: 20px;
 	}
 
 	// .idea-lang__btn
@@ -449,7 +449,7 @@ $nav-top: 2px;
 
 		@include tablet {
 			margin-bottom: 40px;
-			font-size: 37px;
+			font-size: 36px;
 		}
 
 		+ h2 {
