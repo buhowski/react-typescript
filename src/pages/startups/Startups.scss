@@ -452,7 +452,7 @@ $nav-top: 2px;
 
 		@include tablet {
 			margin-bottom: 40px;
-			font-size: 36px;
+			font-size: 34px;
 		}
 
 		+ h2 {
@@ -468,7 +468,7 @@ $nav-top: 2px;
 		margin-top: 50px;
 
 		@include tablet {
-			font-size: 26px;
+			font-size: 25px;
 			margin-bottom: 20px;
 		}
 	}
@@ -495,8 +495,8 @@ $nav-top: 2px;
 		font-family: $LouisGeorgeCafBold;
 		margin-bottom: 0;
 		font-size: 16px;
-		line-height: 1.1;
-		margin-bottom: 10px;
+		line-height: 1.2;
+		margin-bottom: 8px;
 		color: $subtitle-color;
 		text-align: center;
 		letter-spacing: 0.8px;
