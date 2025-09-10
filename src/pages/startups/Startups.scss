@@ -53,7 +53,7 @@
 		margin-top: 45px;
 	}
 
-	@include tabletSmall {
+	@include mobile {
 		margin-left: -15px;
 		width: calc(100% + 30px);
 	}
@@ -241,7 +241,7 @@ $nav-top: 2px;
 			.table-content__list {
 				@include tabletBig {
 					position: fixed;
-					top: 37px;
+					top: 40px;
 				}
 			}
 		}
@@ -271,15 +271,18 @@ $nav-top: 2px;
 		border-radius: 20px 20px 0 0;
 		width: calc(100% - 80px);
 		max-width: $section-width;
-		margin: 60px auto -43px;
+		margin: 60px auto -46px;
 		box-shadow: 0 0 4px #000000;
 	}
 
 	@include tabletSmall {
 		border-radius: 100px;
-		width: calc(100% - 30px);
 		margin-top: 50px;
 		margin-bottom: 16px;
+	}
+
+	@include mobile {
+		width: calc(100% - 30px);
 	}
 
 	// .idea-tabs__btn
@@ -699,7 +702,7 @@ $nav-top: 2px;
 		padding: 0 40px;
 	}
 
-	@include tabletSmall {
+	@include mobile {
 		padding: 0 15px;
 	}
 
@@ -798,8 +801,8 @@ $nav-top: 2px;
 .slider-js {
 	display: flex;
 	width: 100%;
-	min-height: 220px;
-	max-height: min(390px, 50vh);
+	min-height: 222px;
+	max-height: min(420px, 50vh);
 	aspect-ratio: 16 / 9;
 	position: relative;
 	overflow: hidden;

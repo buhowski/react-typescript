@@ -77,7 +77,7 @@ svg {
 	width: 100%;
 	padding: 0 40px;
 
-	@include tabletSmall {
+	@include mobile {
 		padding: 0 15px;
 	}
 }
