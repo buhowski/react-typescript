@@ -193,7 +193,7 @@ $toc-hover-color: #fff;
 			transform: translateX(50%);
 		}
 
-		@include mobile {
+		@include tabletSmall {
 			top: -15px;
 		}
 
