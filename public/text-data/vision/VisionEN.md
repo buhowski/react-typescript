@@ -2,13 +2,13 @@
 
 ## Preface
 
-I want to create a corporation to develop areas close to my worldview: magazine, media, film, the video game industry, and the IT sector. These fields inspire, provide space for ideas, are underdeveloped locally, but have high profit potential.
+I want to create a corporation to develop areas close to my worldview: a magazine, media, film, the gaming industry, and the IT sector. These are areas that inspire me, offer space for new ideas, are underdeveloped locally, yet have significant profit potential.
 
-My individual projects are steps toward this goal. I plan to monetize them and reinvest the profits into my own technologies, opening opportunities for like-minded people.
+My separate projects are steps toward this goal. I plan to monetize them and reinvest the profits into my own technologies, creating opportunities for like-minded people.
 
-I am also looking for those who can help bring these ideas to life and with whom I can combine efforts and shared interests for partnership.
+I am also looking for those who can help implement these ideas and with whom I can unite efforts and interests for a partnership.
 
-Project presentations are available in the navigation, and below is the corporation plan.
+Project presentations are available in the navigation, and below is the corporation's plan.
 
 [mobile-slider]
 
@@ -16,135 +16,135 @@ Project presentations are available in the navigation, and below is the corporat
 
 ### Problems
 
-We see a world where the system is built to constantly generate problems — because it simply can’t exist without them. Bureaucracy interferes with every part of our lives because that’s its direct purpose. Politics has legalized mass murder, and some states still haven’t grasped what Orwell was really trying to say.
+We see a world where the system is created to constantly generate problems — because without them, it simply cannot exist. Bureaucracy intervenes in every part of our lives because it is its direct task. Politics has legalized mass murder, and some states have never understood the core message Orwell wanted to convey.
 
-The truth is, most people on this planet live below an average standard. And this structure of the world — this way of living — doesn’t work for everyone. Especially not for those who consciously want a family but are surrounded by an unpredictably hostile environment. There are also those who were born "by default", whose desires and goals clash with their opportunities and the basic rules they’re given. And that’s where things start to get interesting...
+The truth is that the majority of the world's population lives with a below-average income. Such a world structure and living conditions are far from suitable for everyone — especially for those who consciously seek a family, but are surrounded by an unpredictable and hostile environment. There are also those born "by default," whose desires and goals contradict their capabilities and basic instructions. And that's where things get interesting…
 
 ### The Solution
 
-The system works the way it needs to — that’s why it functions. It’s not my job to change or improve it.
+The system is built exactly as it needs to be, which is why it works. And changing or improving it is not my task.
 
-My idea is just to highlight what, in my view, is outside the competence of mainstream information sources; what remains unsaid; what’s taboo; or what might actually help someone.
+My idea is to highlight what, in my opinion, is outside the purview of surrounding information sources; what has been left unsaid; what is taboo; or what can truly help someone.
 
-It’s about breaking away from all the possible "sticks in the spokes". About having the freedom to speak without fear of being banned. About being able to explore, create cool ideas, experiment with new technologies, and most importantly, not forget to have fun.
+This is about separating from all possible "sticks in the wheels." About the freedom to express oneself without fear of being banned. About the opportunity to research, create cool ideas, experiment with new technologies, and, most importantly, not forget to have fun.
 
-And to make all of that happen on your own terms — this corporation is meant to be exactly that kind of space.
+And to implement all of this according to my own scenarios, the concept of this corporation is exactly the place for that.
 
 ## Mission
 
-I've developed a strategy and project scenario: "How to create an informational and entertaining magazine and transform it into a company that produces its own technologies".
+I have developed a strategy and a project scenario: "How to create an infotainment magazine and turn it into a company that produces its own technologies."
 
-For this realization, I'm seeking investments or the opportunity to integrate these ideas into existing projects. My goal is to find a team and partners to shape the future in the following areas:
+For this implementation, I am seeking investment or the opportunity to integrate these ideas into existing projects. My goal is to find a team and partners to create the future in the following areas:
 
-- Informational-Entertainment Magazine
-- Next-Generation Independent Media
+- Infotainment Magazine
+- Independent New-Generation Media
 - Leading Film and Gaming Industry
 - Virtual Reality
-- IT sector: Blockchain, Artificial Intelligence, Neurotechnology, Robotics
+- IT Sector: Blockchain, Artificial Intelligence, Neurotechnology, Robotics
 
 ## Description
 
-My idea starts with creating a unique space on the internet. It's about a new format of combining a magazine and a social network, in the form of a mobile app and web version. Think of it as something between Vogue, Flipboard, Facebook/Instagram, Reddit.
+My idea begins with creating my own space on the internet. This is a new format for a magazine and a social network, in the form of a mobile app and a web version. It's something at the intersection of Vogue, Flipboard, Facebook/Instagram, and Reddit.
 
-The concept of owning a magazine is promising because it allows us to set our own direction and quickly adapt to changes and trends in the information field.
+The concept of having our own magazine is promising due to the ability to independently shape the direction of development and quickly adapt to changes and trends in the information field.
 
-In my opinion, I have enough knowledge, understanding, and practical experience to consider the needs of different audiences and, from a psychological perspective, find effective solutions for adapting content and strategy.
+In my opinion, I have enough knowledge, understanding, and practical experience to consider the needs of different audiences and, from a psychological standpoint, find effective solutions for adapting content and strategy.
 
-The focus is on high-quality content that builds our image and attracts an audience, along with developing our own products that generate revenue. To achieve this, an initial team is being formed to run the magazine and gradually develop the platform.
+The focus is on providing high-quality information that shapes our image and attracts the audience, as well as creating our own products that generate profit. For this purpose, an initial team will be formed to manage the magazine and the phased development of the platform.
 
 ### Required Functions
 
-- Journal / Magazine — for strategic purposes, to claim a leading media position in the country. Essential for advertising, self-promotion, aggressive marketing, and audience engagement
-- Social network — to connect people with similar views and interests
-- Imageboard forum — for sharing experience and preserving ready-made solutions for all occasions
-- Donation system — to attract investments for development and content monetization
-- Platform as a resource — for distributing original projects
+- The Magazine — for strategic goals, to position ourselves as the leading media in the country. Necessary for advertising, self-promotion, aggressive marketing, and audience engagement
+- Social Network — for connecting people with similar visions and interests
+- Forum-Imageboard — for sharing experiences and preserving ready-made solutions for all occasions
+- Donation System — for attracting investment for development and content monetization
+- The Platform as a Resource — for distributing our own projects
 
 ### What I Can Offer
 
-- Provocative articles that challenge the usual order of things — offering alternative strategies for the development of Ukraine and the world. Topics related to contemporary culture and social issues, with solutions proposed
-- Counterculture, humor, and gonzo journalism. A media product unafraid to be different — one that shapes events rather than just reporting on them
-- A free space without censorship or suffocating control (with explanations of why certain things hinder development)
-- A place of permissiveness with a smart approach and a forward-thinking strategy that respects personal boundaries — for those who reject the bureaucratic system and strive to change the future. Free from oligarchic or governmental pressure
-- Aggressive marketing strategies for large-scale audience coverage
-- Films and games production — as tools for global dissemination of culture and art, satisfying the interests of both creators and the audience
-- The next step — IT and automation with technology integration directly into the journal (the reason for the need of our own place for experiments and development)
-- And only more to come!
+- Provocative articles that challenge the usual order of things — with alternative strategies for the development of Ukraine and the world. Topics related to modern culture and social problems, with potential solutions
+- Counterculture, humor, and gonzo journalism. A media product that is not afraid to be different — one that influences events, not just reports on them
+- A free space without censorship or stuffiness (with explanations as to why certain things hinder development)
+- A place of permissiveness with a reasonable approach and a strategy of playing ahead of the curve, that respects personal boundaries — for those who disagree with the bureaucratic system and strive to change the future. Without pressure from oligarchs or state structures
+- Aggressive marketing strategies for massive audience reach
+- Production of films and games — as a tool for the global dissemination of culture and art, which satisfies the interests of both creators and the audience
+- The next step is IT and automation with the integration of technologies directly into the magazine (the reason for the need for our own place for experiments and developments)
+- And from there, only more!
 
 ## Partnership Model
 
-To build a solid foundation, it’s key to team up with leading influencers and content creators — those with a strong presence in their field and an active audience.
+To create a strong foundation, it is worth uniting with key influencers and content creators — those who have a strong presence in their field and an active audience.
 
 ### Principles of Collaboration
 
-- Open interaction, synergy, and respect for personal freedom — no hierarchies or useless fluff, with a shared sense of humor and a rock’n’roll drive
-- Equal partnership and co-ownership, where each participant receives a stake in the corporation and takes part in the platform’s strategic development
-- Each partner will have their own channel with full functionality for creating content: posts, photos, videos, reels, and more
-- The creator’s main content gradually moves to the magazine, while external social networks remain secondary — used freely for outreach and audience redirection (with no usage restrictions)
+- Open interaction, synergy, and respect for each other's freedom — without hierarchies or unnecessary fuss, with a similar sense of humor and rock 'n' roll drive
+- Equal partnership and co-ownership, where each participant receives a share in the corporation and takes part in the strategic development of the platform
+- Each partner will have their own channel with full functionality for content creation: publications, photos, videos, reels, etc.
+- The author's primary content will gradually transition to the magazine, while external social networks will remain as supporting tools — for communication and audience redirection (with no restrictions on their use)
 
-Initially, only partners will be able to publish in the magazine — to maintain quality and shape the core audience. Later, anyone will be able to create a page, publish in a convenient format, and access monetization options.
+Initially, publications in the magazine will be available only to partners — to maintain quality and form the core target audience. Eventually, anyone will be able to create a page, publish in a convenient format, and get the opportunity for monetization.
 
 ### Mutual Benefit
 
-- For partners: nothing to lose — only new opportunities, income growth, a stake in the corporation, and the freedom to launch their own departments without the limits typical of other platforms
-- For the magazine: rapid audience growth, quality content, and a strong team of like-minded creators
-- For the audience: a new media space with freedom of expression and dynamic formats for interaction
+- For partners: no losses — only new opportunities, income growth, a share in the corporation, and the prospect of opening their own departments without the limitations typical of other platforms
+- For the magazine: rapid audience growth, high-quality content, and a strong team of like-minded people
+- For the audience: a new media space with freedom of expression and dynamic formats of interaction
 
 ## Audience Engagement Mechanism
 
-At the core is a psychographic approach that divides the audience into several typical segments. The focus is on key groups:
+At its core is a psychographic approach, by which the audience can be divided into several typical segments. We focus on key groups:
 
-- Core content — original, created for personal satisfaction, with a focus on common sense and nonconformity. Targeted at creative thinkers, tech enthusiasts, and fans of post-irony and eclectic humor
-- Additional formats — stylistic and format variations tailored to the interests of other segments, such as TikTok and meme culture
-- Audience expansion — launching new key formats to reach additional groups, such as education-focused and business analytics content
+- Primary content — original, created for personal satisfaction, with a focus on common sense and dissent
+- Additional formats — stylistic and format variations adapted to the interests of other segments, such as TikTok and meme culture
+- Audience expansion — launching new key formats to cover additional groups, such as education-oriented content and business analytics
 
-This modular approach allows for combining various formats, ensuring deep engagement and maximum retention of the intended audience.
+This modular approach allows for combining different formats, ensuring deep engagement and maximum retention of the necessary audience.
 
 ## Business Model
 
-- Subscriptions: Always Free / Premium Special — free access for everyone, with extended features for premium users, including early access to premieres and original film projects
-- Creator monetization — built-in tools for earning: custom subscriptions, donations, direct content sales, and other support models
-- Sale of original projects and exclusive content: games, videos, books, art objects, and more
-- Donations and voluntary support — users support the project however they want or commission custom content, helping develop new formats
-- Ads and partner programs tailored to the audience — respectful, non-intrusive ads with sponsors and brands that share the platform’s values
-- Monetization of new technologies — through VR, AR, and interactive AI content for entertainment, work, and education
+- Subscriptions: Always Free / Premium Special — free access for everyone and expanded features for premium users with exclusive access to premieres and original film projects
+- Creator Monetization — open functionality for earning: personal subscriptions, donations, direct content sales, and other support models
+- Sale of original projects and exclusive content: games, videos, books, art objects, etc.
+- Donations and Support — users support the project at their own discretion or order individual content, helping to develop new formats
+- Advertising and Partner Programs, adapted to the audience — honest, unobtrusive advertising with sponsors and brands that align with the platform's values
+- Monetization of new technologies — through VR, AR, and interactive content with artificial intelligence for entertainment, work, and education
 
 ## Details
 
-Strategy implementation is divided into separate projects. Details here: [MVP: Another Dimension](/mvp).
+The magazine's implementation and strategy are treated as separate projects. For more details, see: [MVP: Another Dimension](/mvp).
 
-Key industry products are presented as individual scenarios. Presentations here: [Cinematic Concepts](/cinema), [Gaming Ideas](/games).
+The industry's key products are presented in separate scenarios. You can view the presentations here: [Cinematic Concepts](/cinema), [Gaming Ideas](/games).
 
-The [Self-Presentation Projects](/self-presentation) are pilot stages, possibly without funding, serving as the first phases of capability evaluation, which should confirm all declared intentions through feedback. They pave the way to launching key ideas and creating the magazine, and will also help attract new investments for at least the next five years.
+The [Self-Presentation Projects](/self-presentation) are pilot initiatives that can be implemented without funding. These are the initial stages of a feasibility assessment, which through feedback should validate all stated intentions. They pave the way for launching key ideas and creating the magazine, and will also help attract new investments for at least the next five years.
 
-Initially, this will help gain traction with a Ukrainian audience, and later — enter the global market with project presentations.
+Initially, this will help gain popularity among the Ukrainian audience, and later — to enter the international level by presenting the projects on the global market.
 
-The flexibility of my ideas makes them easy to integrate into existing projects — as a modification, a separate project, or a way to scale a company. If you share similar interests and are open to collaboration — I’m ready to discuss. The vision exists, and theoretically, it works. Resources are needed for implementation.
+Thanks to their flexibility, my ideas can be easily integrated into any existing projects: as a modification, a separate project, or for company scaling. If you share similar interests and are open to collaboration, I am ready to discuss it. I have a clear vision, and it works in theory. To implement it in practice, people and resources are needed.
 
 ### Stages and Needs
 
-- Foundation — forming a team, launching the self-presentation projects, preliminary evaluation, and initial funding for key projects
-- MVP Development — creating a minimum viable magazine with starter content and functionality
-- Launch and Scaling — analyzing results, improvement, promoting, and attracting larger investments
+- Foundation — forming a team, launching self-presentation projects, an approximate assessment, and initial financing for key projects
+- MVP Development — creating a minimally viable magazine with initial content and functionality
+- Launch and Scaling — analysis of results, improvement, promotion, and attracting larger investments
 
 ## Summarizing
 
-This is a complex, multifunctional, and multi-stage project that’s challenging — but entirely achievable! I’ve chosen a magazine as the core of development — a powerful tool for mass communication and influence.
+This is a complex, multifunctional, and multi-stage project that is challenging but entirely realistic. I chose the magazine as the foundation for development — a powerful tool for mass communication and influence.
 
-In Ukraine (and beyond), there are evident problems with mass media and magazines: there’s a lack of popular and independent, or popular and high-quality, or appealing to the younger generation. That’s why I’m confident — occupying the niche of leading next-generation media is not a problem.
+In the Ukrainian (and not only) media market, there are clear gaps: a lack of publications that are simultaneously popular, independent, high-quality, or close to the younger generation. Therefore, I am confident: occupying a niche as a leading new-generation media (at least an entertainment magazine) is not a problem.
 
 ### To Put it Simply
 
-- Magazine — the face of the company. A popular magazine — the voice of the majority. A mega-popular magazine — sets the direction of development rather than adapting to bans or restrictions (there is a strategy)
-- Producing quality films and games — a source of profit (there are scripts)
-- The profit is reinvested into own IT technologies — even more profit (there are ideas)
-- Win!
-- Risks: in the worst case, we end up with just a popular magazine that earns through ads, with a donation system for investments and film/game production for sale to other companies. At the same time, the foundation remains solid, and growth is possible even under critical conditions
+- The Magazine — the company's face. A popular magazine — the voice of the majority. A mega-popular magazine — sets the direction of development, rather than adjusting to prohibitions or restrictions (a strategy exists)
+- Production of high-quality films and games — a source of profit (scenarios exist)
+- Profits are reinvested into our own IT technologies — even greater profit (ideas exist)
+- Victory!
+- Risks: In the worst-case scenario, the result will only be a popular magazine with the ability to earn from advertising, a donation system for investment, and the production of film and gaming content for sale to other companies. At the same time, the foundation is preserved, and development is possible even under critical conditions
 
 ## Conclusion
 
-Overall, my perspective is focused on large-scale development — creating a place separated from the state with its own independent ecosystem that combines various fields of activity: from innovative technologies to creative thinking. 
+Overall, my vision is focused on large-scale development — creating a place separate from the state with its own independent ecosystem, which unites different areas of activity: from innovative technologies to creative thinking.
 
-And if we gather the best in one place and organize a professional team of critical thinkers and enthusiasts, an evolutionary leap will happen naturally. 
+And if we gather all the best in one place and organize a professional team of critically-thinking idealists and enthusiasts, an evolutionary leap will happen by itself.
 
-Only minimal investments is needed to launch a mechanism that will eventually build a financially autonomous system with strong profit potential. Because nothing is impossible — only the wrong approach!
+Only minimal investments are needed to launch the mechanism that will, over time, build a financially autonomous system with powerful profit potential. Because nothing is impossible — only the wrong approach!
