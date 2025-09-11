@@ -5,8 +5,12 @@
 @mixin titleFont {
 	font-family: $Raleway;
 	font-weight: 600;
-	letter-spacing: 1px;
+	letter-spacing: 0.4px;
 	line-height: 1.32;
+
+	@include tablet {
+		letter-spacing: 1px;
+	}
 }
 
 .wrapper--idea {
@@ -447,7 +451,7 @@ $nav-top: 2px;
 	h1 {
 		@include titleFont;
 		color: $h1-title-color;
-		font-size: 48px;
+		font-size: 47px;
 		text-align: center;
 		margin: 0 auto 45px;
 
@@ -464,7 +468,7 @@ $nav-top: 2px;
 	h2 {
 		@include titleFont;
 		color: $h2-title-color;
-		font-size: 32px;
+		font-size: 31px;
 		margin-bottom: 25px;
 		margin-top: 50px;
 
