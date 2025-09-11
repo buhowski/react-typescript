@@ -9,7 +9,7 @@ import {
 import { dataSliderSichSaga } from '../SichSaga/dataSlider';
 
 export const structureSichSaga = {
-	// Shadows of Sich: Saga
+	// Shadows of the Zaporozhian Sich: Saga
 	sichSagaPage: [
 		// Saga Preface
 		{

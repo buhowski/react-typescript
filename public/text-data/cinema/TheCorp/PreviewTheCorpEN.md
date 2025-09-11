@@ -2,4 +2,4 @@
 
 # The Corp .!.
 
-A mockumentary-style behind-the-scenes series about building your own corporation. A lively, ironic nod to the American "The Office", blending real workspace scenes with absurdity and moments that deliberately disrupt the workflow.
+This is a mockumentary backstage series about creating [own corporation](/vision) from scratch. It’s an ironic reinterpretation of ["The Office"](https://www.imdb.com/title/tt0386676/) ideas, where a real work process is mixed with deliberate absurdity.

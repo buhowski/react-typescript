@@ -1,6 +1,6 @@
 #### Dark Fantasy Adventure / Action RPG
 
-# Shadows of Sich: Quantum Leap
+# Shadows of the Zaporozhian Sich: Quantum Leap
 
 ***A Saga:** Part III*
 

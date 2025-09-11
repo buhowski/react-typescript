@@ -2,4 +2,4 @@
 
 # Volyn Wedding: The Groom's Room
 
-The story of a wedding everyone wanted except for the couple themselves, and the night before the ceremony that turns into a surreal quest involving a kidnapping, corrupt border guards, and a Roma-Polish-Belarusian drug cartel.
+A wedding story that everyone wanted except the couple themselves, and the night before the ceremony, which turned into a surreal quest involving kidnapping, corrupt border guards, and Gypsy-Polish-Belarusian drug dealers.

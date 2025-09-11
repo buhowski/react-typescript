@@ -429,10 +429,12 @@ $nav-top: 2px;
 		}
 	}
 
-	strong,
-	b {
+	li strong,
+	li b,
+	p strong,
+	p b {
 		font-weight: bold;
-		color: #e6e6e6;
+		color: #eaeaea;
 	}
 
 	h1,
@@ -451,7 +453,7 @@ $nav-top: 2px;
 	h1 {
 		@include titleFont;
 		color: $h1-title-color;
-		font-size: 47px;
+		font-size: 44px;
 		text-align: center;
 		margin: 0 auto 45px;
 
@@ -468,12 +470,12 @@ $nav-top: 2px;
 	h2 {
 		@include titleFont;
 		color: $h2-title-color;
-		font-size: 31px;
+		font-size: 30px;
 		margin-bottom: 25px;
 		margin-top: 50px;
 
 		@include tablet {
-			font-size: 25px;
+			font-size: 26px;
 			margin-bottom: 20px;
 		}
 	}
@@ -486,7 +488,7 @@ $nav-top: 2px;
 		font-size: 24px;
 
 		@include tablet {
-			font-size: 21px;
+			font-size: 20px;
 			margin-bottom: 20px;
 			margin-top: 35px;
 		}
@@ -812,7 +814,7 @@ $nav-top: 2px;
 	display: flex;
 	width: 100%;
 	min-height: 222px;
-	max-height: min(420px, 50vh);
+	max-height: min(420px, 52vh);
 	aspect-ratio: 16 / 9;
 	position: relative;
 	overflow: hidden;

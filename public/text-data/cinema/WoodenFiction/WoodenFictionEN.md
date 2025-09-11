@@ -4,24 +4,24 @@
 
 ## Logline
 
-A dark comedy where beloved fairy tale characters get caught up in criminal showdowns, and their brutal, absurd adventures are woven into a single, non-linear narrative full of unexpected twists and black humor.
+A dark comedy where familiar characters from children's fairy tales become participants in criminal showdowns. Their brutal and absurd adventures are woven into a non-linear narrative, full of unexpected twists and black humor.
 
 [mobile-slider]
 
 ## Main Idea
 
-A satirical crime anthology that blends a non-linear narrative and iconic dialogues in the style of Tarantino with harsh humor and the grotesque aesthetic of post-Soviet reality. This is a project where absurdity becomes the norm.
+This is a satirical crime anthology that combines a non-linear narrative and sharp dialogue in the style of Tarantino with harsh humor and the grotesque aesthetic of post-Soviet reality, where absurdity becomes the norm.
 
-The plot unfolds in a grim yet recognizable world, inhabited by re-imagined characters from Ukrainian and Soviet children’s fairy tales. Familiar heroes transform into tangled, morally ambiguous figures involved in criminal schemes and dirty dealings.
+The plot unfolds in a grim yet recognizable world, inhabited by reinterpreted characters from Ukrainian and Soviet fairy tales. Familiar heroes are transformed into confused, morally ambiguous characters involved in criminal schemes.
 
-The story is comprised of several intertwined narratives, each developing separately but ultimately converging into a single plot that pieces all the puzzles together. The viewer travels between timelines, watching how the characters' random events and decisions impact each other's destinies.
+The narrative consists of several intertwined stories, each developing separately but eventually converging into a single plot. The viewer travels between timelines, observing how random events and the characters' decisions affect each other's destinies.
 
-Behind the chaotic plot and black humor lies a harsh satire. The animated film ridicules ideals and narratives that have become distorted over time and exposes the corruption of naive archetypes. It is a story where a fairy tale becomes a reflection of brutal reality.
+Behind the chaotic plot and black humor hides a harsh satire. The film ridicules ideals and narratives that have become distorted over time and shows how corruption destroys even the purest images. It's a story where a fairy tale becomes a reflection of a brutal reality.
 
 ## Inspiration
 
-- [Pulp Fiction, 1994](https://www.imdb.com/title/tt0110912/) — non-linear narrative, stylish dialogues, and black humor.
-- [Mikhail Elizarov:](https://neolurk.org/wiki/%D0%9C%D0%B8%D1%85%D0%B0%D0%B8%D0%BB_%D0%95%D0%BB%D0%B8%D0%B7%D0%B0%D1%80%D0%BE%D0%B2) Burattini. Fascism Passed — a harsh, absurd satire on the Soviet legacy.
+- [Pulp Fiction, 1994](https://www.imdb.com/title/tt0110912/) — non-linear narrative, stylish dialogues, and black humor
+- [Mikhail Elizarov:](https://neolurk.org/wiki/%D0%9C%D0%B8%D1%85%D0%B0%D0%B8%D0%BB_%D0%95%D0%BB%D0%B8%D0%B7%D0%B0%D1%80%D0%BE%D0%B2) Burattini. Fascism Passed — a harsh, absurd satire on the Soviet legacy
 
 ## Details
 

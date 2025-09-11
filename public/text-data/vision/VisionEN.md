@@ -111,9 +111,18 @@ This modular approach allows for combining different formats, ensuring deep enga
 
 ## Details
 
-The magazine's implementation and strategy are treated as separate projects. For more details, see: [MVP: Another Dimension](/mvp).
+The project’s implementation and its strategy are considered separate projects.
 
-The industry's key products are presented in separate scenarios. You can view the presentations here: [Cinematic Concepts](/cinema), [Gaming Ideas](/games).
+### Magazine & Strategy
+
+- [MVP: Another Dimension](/mvp)
+
+### Key Industry Products
+
+Presented as individual scenarios. You can view the presentations here:
+
+- [Cinematic Concepts](/cinema)
+- [Gaming Ideas](/games)
 
 The [Self-Presentation Projects](/self-presentation) are pilot initiatives that can be implemented without funding. These are the initial stages of a feasibility assessment, which through feedback should validate all stated intentions. They pave the way for launching key ideas and creating the magazine, and will also help attract new investments for at least the next five years.
 
@@ -127,13 +136,13 @@ Thanks to their flexibility, my ideas can be easily integrated into any existing
 - MVP Development — creating a minimally viable magazine with initial content and functionality
 - Launch and Scaling — analysis of results, improvement, promotion, and attracting larger investments
 
-## Summarizing
+## Summary
 
 This is a complex, multifunctional, and multi-stage project that is challenging but entirely realistic. I chose the magazine as the foundation for development — a powerful tool for mass communication and influence.
 
 In the Ukrainian (and not only) media market, there are clear gaps: a lack of publications that are simultaneously popular, independent, high-quality, or close to the younger generation. Therefore, I am confident: occupying a niche as a leading new-generation media (at least an entertainment magazine) is not a problem.
 
-### To Put it Simply
+### In a Nutshell
 
 - The Magazine — the company's face. A popular magazine — the voice of the majority. A mega-popular magazine — sets the direction of development, rather than adjusting to prohibitions or restrictions (a strategy exists)
 - Production of high-quality films and games — a source of profit (scenarios exist)

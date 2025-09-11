@@ -7,6 +7,10 @@ import posterVolynWedding from '../../../assets/startup/cinema/volyn-wedding-pos
 import posterHeShe from '../../../assets/startup/cinema/he-she-poster.webp';
 import posterWoodenFiction from '../../../assets/startup/cinema/wooden-fiction-poster.webp';
 import posterLilithsAdventure from '../../../assets/startup/cinema/liliths-adventure-poster.webp';
+import LilithVideoExamplePoster from '../../../assets/startup/cinema/post-credit-poster.webp';
+
+// Videos
+import LilithVideoExample from '../../../assets/startup/cinema/videos/rick-and-morty_S7E5_Post-credits.mp4';
 
 export const dataSliderProjectDev = [
 	{
@@ -63,5 +67,12 @@ export const dataSliderLilithsAdventure = [
 	{
 		itemSrc: posterLilithsAdventure,
 		itemAlt: `Animated adventure comedy poster 'Lilith's Adventure' – charismatic adventurer girl exploring parallel worlds, magical artifact diary, surreal and humorous multiverse, dynamic animation style.`,
+	},
+
+	{
+		itemPoster: LilithVideoExamplePoster,
+		itemSrc: LilithVideoExample,
+		itemAlt: `Adventures of Lilith animated series — charismatic traveler lost in parallel dimensions, searching for home; inspired by Rick and Morty S7E5 drama of the eternal wanderer, surreal multiverse comedy adventure.`,
+		itemCaption: `The wanderer’s endless search across dimensions (Post-credit scene — Rick & Morty S7E5 ref)`,
 	},
 ];

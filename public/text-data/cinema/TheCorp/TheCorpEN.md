@@ -4,19 +4,19 @@
 
 ## Logline
 
-A mockumentary-style behind-the-scenes series about building your own corporation. A lively, ironic nod to the American "The Office", blending real workspace scenes with absurdity and moments that deliberately disrupt the workflow.
+This is a mockumentary backstage series about creating [own corporation](/vision) from scratch. It’s an ironic reinterpretation of ["The Office"](https://www.imdb.com/title/tt0386676/) ideas, where a real work process is mixed with deliberate absurdity.
 
 ## Main Idea
 
-This format shows the real process of starting a corporation from scratch, mixed with improvised setups.
+This project immerses the viewer into the inner workings of a company being built from the ground up. The series offers a satirical look at the modern corporate world: fascism in the details, galleys and rowers, a talent meat grinder, the illusion of a family atmosphere, and the senseless waste of resources.
 
-It’s our satirical take on modern corporate culture: the fascism in the details, the galleys and rowers, the talent grinder, the fake family atmosphere, and the senseless waste of resources. We highlight what work shouldn’t be — with boundless self-irony.
+The story focuses not on business processes, but on the people who survive in offices where the main drama isn't the work itself, but everything that's done instead of it.
 
-It’s raw reality mixed with absurdity that we intentionally insert into the work process to create a vibrant, absurd, and engaging series. We openly show everything we do — it’s both self-promotion and a driving force for our growth.
+The goal of the series is to show, with boundless self-irony, what work should not be like. Documentary reality here is intertwined with intentionally integrated absurdity, which makes the project lively and captivating.
 
-But the story isn’t about business or processes. It’s about people trying to survive in an office where the main drama isn’t the job itself, but everything that happens instead of it.
+The open coverage of all stages of the corporation's creation will become not only the driving force behind the project's development but also its self-promotion.
 
-Like "The Office", we film in a real workspace — but we don’t copy the original. We create our own scenes, shaped by flexible humor, absurdity, and distinctive characters.
+Filming takes place in a real space. The series does not copy the original "The Office", but rather adapts its concept to create a unique story based on flexible humor, absurdity, and vivid characters.
 
 [mobile-slider]
 

@@ -1,46 +1,48 @@
 #### Poetic Tragic Romance / Movie
 
-# Він + Вона
+# He + She
 
-*— Я говорила з Богом сьогодні, і Вона сказала, що їй соромно.*
+*— I spoke to God today, and She said She was ashamed.*
 
-*— А я говорив з Дияволом, і він присягається, що невинен.* 
+*— And I spoke to the Devil, and He swears He's not to blame.*
 
-*І я зрозумів, що ми на неправильному боці раю.*
+*And I realized we’re on the Wrong Side of Heaven.*
 
-## Логлайн
+## Logline
 
-Коли самотні спадкоємці ворожих бізнес-імперій закохуються з першого погляду, їхня заборонена пристрасть загрожує розв'язати нову війну, що знищить крихке перемир'я і занурить світ у хаос.
+When the lonely heirs of rival business empires fall in love at first sight, their forbidden passion threatens to unleash a new war that will shatter a fragile truce and plunge the world into chaos.
 
 [mobile-slider]
 
-## Основна Ідея
+## Main Idea
 
-Це епічна суміш реп-рок-опери та шекспірівської поезії. Подібно до того, як фільм [Romeo + Juliet](https://www.imdb.com/title/tt0117509/) оновив класичну трагедію, цей проєкт переносить біблійні образи в сучасний урбаністичний світ з авторськими змінами. Бог — самотня юна дівчина, а Диявол — харизматичний хлопець, що ховає глибоку душевну самотність.
+This is an epic mix of rap-rock opera and [Shakespearean poetry](https://en.wikipedia.org/wiki/William_Shakespeare). Just as the film [Romeo + Juliet](https://www.imdb.com/title/tt0117509/) updated the classic tragedy, this project transports biblical images into a modern urban world with the author's own twists. God is a lonely young girl, and the Devil is a charismatic guy who hides a deep spiritual loneliness.
 
-Вони ще не знають про існування одне одного, але випадок зведе їхні шляхи на сімейному бал-маскараді, влаштованому на честь дня народження юної Богині. Друзі Диявола проникнуть туди без запрошення, і їхня перша зустріч відбудеться біля ліфту, що одразу стане коханням з першого погляду.
+They are not yet aware of each other's existence, but a twist of fate brings them together at a family masquerade ball, hosted for the young Goddess's birthday. The Devil's friends will sneak in without an invitation, and their first meeting will take place by the elevator, immediately sparking love at first sight.
 
-На вечірці герої роблять безліч спроб перетнутися і познайомитися, але щоразу їх щось або хтось відволікає. Їхньою єдиною розмовою стає безмовний діалог невідворотніх поглядів. Коли їм нарешті вдається сховатися від усіх, перший поцілунок перериває жорстока реальність: непроханих гостей викрили, і їм потрібно негайно тікати.
+At the party, the characters make countless attempts to cross paths and get to know each other, but each time something or someone distracts them. Their only conversation becomes a silent dialogue of inescapable gazes.
 
-У хаосі втечі він дізнається правду: дівчина, в яку він закохався, належить до сім'ї, що є вічним ворогом його родини. У той самий момент дівчина розуміє, що юнак — ворог номер один для її роду. Обличчя обох, що ще секунду тому сяяли від щастя, спотворюються від болю і трагічного розчарування. У цей момент кохання стає прокляттям.
+When they finally manage to hide from everyone, the first kiss is interrupted by a cruel reality: the uninvited guests have been exposed, and they need to flee immediately.
 
-Героям з самого початку не судилося бути разом. Це кохання заборонене за усіма законами світу. Їхня пристрасть загрожує розірвати крихке перемир'я між сімейними бізнес-імперіями і розв'язати нову війну, що відкриє давній конфлікт і занурить навколишній світ у вир непередбачуваних подій.
+In the chaos of the escape, he learns the truth: the girl he fell in love with belongs to a family that is his eternal enemy. At that very moment, the girl realizes that the young man is the number one enemy of her clan. The faces of both, which a second ago shone with happiness, become distorted by pain and tragic disappointment. At this moment, love becomes a curse.
 
-### Ідея Сцен
+From the very beginning, the characters were not meant to be together. This love is forbidden by all the laws of the world. Their passion threatens to tear apart the fragile truce between the family business empires and unleash a new war that will reopen an ancient conflict and plunge the surrounding world into a whirlpool of unpredictable events.
 
-- Діалоги та сцени римовані, поетичні, у стилі Шекспіра
-- Емоції героїв передаються через містичний фон: зміна погоди, несподівані грози, зливи та інші стихійні лиха віддзеркалюють їхній внутрішній стан
-- Конфлікти — це поетична суміш середньовічних дуелей із сучасною зброєю
+### Scene Ideas
 
-## Натхнення
+- Dialogues and scenes are rhymed, poetic, in the style of Shakespeare
+- The characters' emotions are conveyed through a mystical background: changing weather, sudden thunderstorms, downpours, and other natural disasters reflect their inner state.
+- Conflicts are a poetic mix of medieval duels with modern weapons.
+
+## Inspiration
 
 - [Romeo + Juliet, 1996](https://www.imdb.com/title/tt0117509/)
-- [Хіп-Хопера: Орфей & Еврідіка — Noize MC](https://www.youtube.com/watch?v=TbMYvqA8Tj4)
-- Переплетення класичних образів і тем, як у фільмі [The League of Extraordinary Gentlemen](https://www.imdb.com/title/tt0311429/): Джекіл і Гайд, Портрет Доріана Грея та інші
-- Пісні: [Five Finger Death Punch — Wrong Side of Heaven](https://open.spotify.com/track/11Ojp7JniVvwd0gmgvyKkd?si=_gtX3nIgTeOAt1k6oQf8Jg), [Black Sabbath — Planet Caravan](https://open.spotify.com/track/4VAAXfLf8YPiO1LzyYnMKb?si=H0yObqdcSwCUoofQdVV40g), [City Morgue — Screaming at the Rain](https://open.spotify.com/track/6dIMYXE0iAoXfjQGU1aFdy?si=rYTE-KXxTc2y6L4JSgZ-qw), [Ozzy Osbourne — Mr. Crowley](https://open.spotify.com/track/2ov8L95QD25TLpZAZPYWXL?si=FYXiBytqTp6G4HuEqX9B6A), [Black Sabbath — N.I.B.](https://open.spotify.com/track/3XclwoQxz4p6Dl7VUf90KW?si=6FHvsCUZREOZ4LxJcTXKfA)
+- [A Hip-Hopera: Orpheus & Eurydice — Noize MC](https://www.youtube.com/watch?v=TbMYvqA8Tj4)
+- Interweaving of classic images and themes, like in the film [The League of Extraordinary Gentlemen](https://www.imdb.com/title/tt0311429/): Jekyll and Hyde, The Picture of Dorian Gray, and others
+- Songs: [Five Finger Death Punch — Wrong Side of Heaven](https://open.spotify.com/track/11Ojp7JniVvwd0gmgvyKkd?si=_gtX3nIgTeOAt1k6oQf8Jg), [Black Sabbath — Planet Caravan](https://open.spotify.com/track/4VAAXfLf8YPiO1LzyYnMKb?si=H0yObqdcSwCUoofQdVV40g), [City Morgue — Screaming at the Rain](https://open.spotify.com/track/6dIMYXE0iAoXfjQGU1aFdy?si=rYTE-KXxTc2y6L4JSgZ-qw), [Ozzy Osbourne — Mr. Crowley](https://open.spotify.com/track/2ov8L95QD25TLpZAZPYWXL?si=FYXiBytqTp6G4HuEqX9B6A), [Black Sabbath — N.I.B.](https://open.spotify.com/track/3XclwoQxz4p6Dl7VUf90KW?si=6FHvsCUZREOZ4LxJcTXKfA)
 
-## Деталі
+## Details
 
 *Under Construction …*
 
-Автор шукає ресурси та час, щоб втілити ці ідеї в життя. Якщо ви знаєте, де або як можна отримати підтримку — напишіть мені!
+The author is looking for resources and time to bring these ideas to life. If you know where or how to get support — let me know!

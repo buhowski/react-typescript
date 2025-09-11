@@ -2,30 +2,30 @@
 
 # Another Dimension
 
-***Status:** Seeking Mad Geniuses*
+***Status:** In search of mad geniuses*
 
 [mobile-slider]
 
 ## Current Position
 
-I'm currently looking for team partners — in my opinion, this is the most challenging phase. The entire idea will be easily realized if I can find the right people and place them in the right positions. Then, a perpetual motion machine will start running.
+I am currently at the stage of finding partners for the team — in my opinion, this is the most difficult phase. The entire idea will be easily implemented if we manage to find the right people and place them in the right positions. Then the perpetual motion machine will start to work.
 
 ## Quick Action Plan
 
-I envision the following structure:
+I see the following structure:
 
 ### Start
 
-Three (the more, the better) relatively popular content creators are brought on as partners. [Presentation projects](/self-presentation) are filmed, feedback is analyzed — and this process continues until a path opens for the necessary investments to develop an MVP Journal.
+Three (the more, the better) relatively popular content creators are brought on as partners. [Presentation projects](/self-presentation) are filmed and feedback is analyzed — and this process continues until a path to the necessary investment for the magazine's MVP development is opened.
 
-### Investment and "The Corp" Phase
+### **Investment & "The Corp" Phase**
 
-As soon as sufficient investments are secured, the journal's development begins, along with "[The Corp .!.](/the-corp)" series phase. This becomes a powerful stage of self-promotion and a demonstration of the future content's quality, expanding the audience and attracting new investments. The series will be filmed from the beginning until the project has run its course.
+Once sufficient investment is secured, the development of the magazine and the ["The Corp .!.”](/the-corp) series phase begins. This becomes a powerful stage of self-promotion and a demonstration of the quality of future content, expanding the audience and attracting new investments.
 
 ### Scaling
 
-Concurrently, scaling efforts will be underway. The next phase involves working with a core audience, who will be given the choice of which project to pursue next. This encourages audience initiative, further expanding reach and bringing in new investments.
+Scaling happens in parallel with this. The next phase involves working with the core audience, who are given a choice of which project to do next. This encourages initiative from viewers, expanding the audience even more and bringing in new investments.
 
-## Outlook
+## Prospects
 
-I imagine that within one year, it will be possible to capture the attention of absolutely everyone with this kind of motivational environment. Essentially, we'll be doing the same things we'd do separately, but united in one place, which can build a new empire. And I'm confident that we'll at least break even on the infinite development of such a future.
+I imagine that within one year it is possible to attract the attention of absolutely everyone to this kind of motivational environment. In essence, we will be doing the same thing as we would separately, but by uniting in one place, we can build a new empire. And here I am confident that we will pay for ourselves for at least the infinite development of such a future.

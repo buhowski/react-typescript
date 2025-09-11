@@ -2,4 +2,4 @@
 
 # He + She
 
-When the lonely heirs of rival business empires fall in love at first sight, their forbidden passion threatens to ignite a new war that will destroy a fragile truce and plunge the world into chaos.
+When the lonely heirs of rival business empires fall in love at first sight, their forbidden passion threatens to unleash a new war that will shatter a fragile truce and plunge the world into chaos.

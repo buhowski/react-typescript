@@ -1,6 +1,6 @@
 #### Dark Fantasy Adventure / Action RPG
 
-# Shadows of Sich: Whispers of the Forgotten
+# Shadows of the Zaporozhian Sich: Whispers of the Forgotten
 
 ***A Saga:** Part I*
 
