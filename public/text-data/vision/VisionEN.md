@@ -111,15 +111,11 @@ This modular approach allows for combining different formats, ensuring deep enga
 
 ## Details
 
-The project’s implementation and its strategy are considered separate projects.
-
-### Magazine & Strategy
+The implementation of the magazine and its strategy are considered separate projects. More details can be found here:
 
 - [MVP: Another Dimension](/mvp)
 
-### Key Industry Products
-
-Presented as individual scenarios. You can view the presentations here:
+The industry's key products are presented as individual scenarios. The presentations can be viewed here:
 
 - [Cinematic Concepts](/cinema)
 - [Gaming Ideas](/games)
