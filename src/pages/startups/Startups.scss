@@ -520,20 +520,12 @@ $nav-top: 2px;
 
 	p + p,
 	li + li {
-		margin-top: 25px;
-
-		@include tablet {
-			margin-top: 20px;
-		}
+		margin-top: $p-margin;
 	}
 
 	// .idea-block__list
 	ul {
-		margin: 25px 0;
-
-		@include tablet {
-			margin: 20px 0;
-		}
+		margin: $p-margin 0;
 
 		li {
 			position: relative;
