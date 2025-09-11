@@ -5,7 +5,7 @@
 @mixin titleFont {
 	font-family: $Raleway;
 	font-weight: 600;
-	letter-spacing: 1.2px;
+	letter-spacing: 1px;
 	line-height: 1.32;
 }
 
@@ -295,7 +295,7 @@ $nav-top: 2px;
 
 		@include tabletBig {
 			flex-grow: 1;
-			padding: 14px 10px 12px;
+			padding: 14.5px 10px 12px;
 			font-size: 16px;
 			letter-spacing: 0;
 		}
@@ -410,10 +410,11 @@ $nav-top: 2px;
 	font-size: 18px;
 	line-height: 1.5;
 	color: $textGrey;
-	letter-spacing: 0.3px;
+	letter-spacing: 0.26px;
 
-	@include tabletSmall {
-		font-size: 16px;
+	@include tablet {
+		font-size: 17px;
+		letter-spacing: 0.3px;
 	}
 
 	.slider-with-btn {
@@ -550,7 +551,7 @@ $nav-top: 2px;
 				top: 0;
 				left: 0;
 
-				@include tabletSmall {
+				@include tablet {
 					margin-top: 10px;
 				}
 			}
@@ -559,6 +560,11 @@ $nav-top: 2px;
 
 	p.description__has-em {
 		font-weight: 300;
+		font-size: 17px;
+
+		@include tablet {
+			font-size: 16px;
+		}
 
 		&:not(:first-of-type) {
 			margin-top: 10px;

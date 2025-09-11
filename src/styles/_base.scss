@@ -52,7 +52,7 @@ body {
 	background-color: $darken;
 	font-family: $font-primary;
 
-	@include tablet {
+	@include tabletBig {
 		height: 100dvh;
 	}
 }
