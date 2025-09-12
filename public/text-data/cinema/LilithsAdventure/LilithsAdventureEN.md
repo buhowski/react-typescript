@@ -30,7 +30,7 @@ The Supreme Architect is an artist and a creative soul, a master of manipulation
 
 His artifact is the key to multiversal synchronicity, allowing him to influence reality everywhere and simultaneously. To him, worlds are like vast canvases where he paints, alters, or erases whatever displeases him. His colossal ego and penchant for eccentric antics threaten to break reality. He signs his creations: "Even gods get bored sometimes”.
 
-His image combines the aesthetics of the Artist from the game [Clair Obscur: Expedition 33](https://store.steampowered.com/app/1903340/Clair_Obscur_Expedition_33/), whose paintings transform into traps and labyrinths of worlds, and the concept of the architect-narrator from the animated series [Rick and Morty — Never Ricking Morty, S4E6](https://www.imdb.com/title/tt10655686/), who constructs the plots of the universe.
+His image combines the aesthetics of the Artist from the game [Clair Obscur: Expedition 33](https://store.steampowered.com/app/1903340/Clair_Obscur_Expedition_33/), whose paintings transform into traps and labyrinths of worlds, and the concept of the architect-narrator from the animated series [Rick and Morty, S4E6](https://www.imdb.com/title/tt10655686/), who constructs the plots of the universe.
 
 However, the most dangerous threat comes from the mysterious Collector, who seeks to gather all the artifacts into one. Those who dare to resist, or simply become an interesting exhibit for his collection, are turned into a terrifying display of living toys, imprisoned within the transparent walls of a giant Terrarium of Worlds.
 

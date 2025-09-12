@@ -531,8 +531,6 @@ $nav-top: 2px;
 			position: relative;
 			padding-left: 26px;
 			margin-left: 2px;
-			// display: flex;
-			// align-items: baseline;
 
 			@include tablet {
 				padding-left: 22px;
@@ -557,10 +555,10 @@ $nav-top: 2px;
 
 			&:has(a) {
 				&::before {
-					top: 13.5px;
+					top: 12px;
 
 					@include tablet {
-						top: 12.5px;
+						top: 11.5px;
 					}
 				}
 			}
@@ -589,12 +587,16 @@ $nav-top: 2px;
 		white-space: nowrap;
 		font-weight: 500;
 		border-radius: 4px;
-		line-height: 1.7;
+		line-height: 1.8;
 		padding: 3px 7px;
 		color: $link-color;
 		background-color: $link-bg-color;
 		box-shadow: $link-shadow;
 		transition: 0.2s;
+
+		@include tablet {
+			padding: 2px 6px;
+		}
 
 		&:active {
 			@include hover-text-link;

@@ -37,9 +37,9 @@ From the very beginning, the characters were not meant to be together. This love
 ## Inspiration
 
 - [Romeo + Juliet, 1996](https://www.imdb.com/title/tt0117509/)
-- [A Hip-Hopera: Orpheus & Eurydice — Noize MC](https://www.youtube.com/watch?v=TbMYvqA8Tj4)
+- A Hip-Hopera: [Orpheus & Eurydice — Noize MC](https://www.youtube.com/watch?v=TbMYvqA8Tj4)
 - Interweaving of classic images and themes, like in the film [The League of Extraordinary Gentlemen](https://www.imdb.com/title/tt0311429/): Jekyll and Hyde, The Picture of Dorian Gray, and others
-- Songs: [Five Finger Death Punch — Wrong Side of Heaven](https://open.spotify.com/track/11Ojp7JniVvwd0gmgvyKkd?si=_gtX3nIgTeOAt1k6oQf8Jg), [Black Sabbath — Planet Caravan](https://open.spotify.com/track/4VAAXfLf8YPiO1LzyYnMKb?si=H0yObqdcSwCUoofQdVV40g), [City Morgue — Screaming at the Rain](https://open.spotify.com/track/6dIMYXE0iAoXfjQGU1aFdy?si=rYTE-KXxTc2y6L4JSgZ-qw), [Ozzy Osbourne — Mr. Crowley](https://open.spotify.com/track/2ov8L95QD25TLpZAZPYWXL?si=FYXiBytqTp6G4HuEqX9B6A), [Black Sabbath — N.I.B.](https://open.spotify.com/track/3XclwoQxz4p6Dl7VUf90KW?si=6FHvsCUZREOZ4LxJcTXKfA)
+- Songs: [FFDP — Wrong Side of Heaven](https://open.spotify.com/track/11Ojp7JniVvwd0gmgvyKkd?si=_gtX3nIgTeOAt1k6oQf8Jg), [Black Sabbath — Planet Caravan](https://open.spotify.com/track/4VAAXfLf8YPiO1LzyYnMKb?si=H0yObqdcSwCUoofQdVV40g), [City Morgue — Screaming at the Rain](https://open.spotify.com/track/6dIMYXE0iAoXfjQGU1aFdy?si=rYTE-KXxTc2y6L4JSgZ-qw), [Ozzy Osbourne — Mr. Crowley](https://open.spotify.com/track/2ov8L95QD25TLpZAZPYWXL?si=FYXiBytqTp6G4HuEqX9B6A), [Black Sabbath — N.I.B.](https://open.spotify.com/track/3XclwoQxz4p6Dl7VUf90KW?si=6FHvsCUZREOZ4LxJcTXKfA)
 
 ## Details
 
