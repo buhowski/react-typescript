@@ -11,5 +11,5 @@ The world evolves from a mystical Middle Ages with magic and mythological creatu
 ### List
 
 - [Part I: Whispers of the Forgotten](/cossacks-saga-1)
-- [Part II: Ashes of the Beloved](/cossacks-saga-2)
+- [Part II: Ashes of the Beloveds](/cossacks-saga-2)
 - [Part III: Quantum Leap](/cossacks-saga-3)

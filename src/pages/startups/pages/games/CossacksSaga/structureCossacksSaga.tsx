@@ -24,7 +24,7 @@ export const structureCossacksSaga = {
 			pagePreviewUrl: pathToCossacksSagaPart1,
 		},
 
-		// Part II: Ashes of the Beloved
+		// Part II: Ashes of the Beloveds
 		{
 			markdownAPI: '/text-data/games/CossacksSaga/Part2/PreviewPart2.md',
 			sliderContent: dataSliderCossacksSaga,
