@@ -31,8 +31,10 @@ $p-margin: 22px;
 
 $link-color: #000000;
 $link-bg-color: #ffe066;
-$link-shadow: inset 5px 5px 12px #8c6f1f, inset -10px -6px 16px #85650d;
-$hover-link-shadow: inset 5px 5px 12px #084f80, inset -10px -6px 16px #084f80;
+$lnk-shd-px: inset 2px 2px 10px;
+$lnk-shd2-px: inset -2px -2px 10px;
+$link-shadow: $lnk-shd-px #8c6f1f, $lnk-shd2-px #85650d;
+$hover-link-shadow: $lnk-shd-px #084f80, $lnk-shd2-px #084f80;
 
 @mixin hover-text-link {
 	box-shadow: $hover-link-shadow;

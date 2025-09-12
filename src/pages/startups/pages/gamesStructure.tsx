@@ -1,8 +1,8 @@
 // URL To Single Page / Read More button
-import { pathToSichSaga } from '../../../components/urlsData';
+import { pathToCossacksSaga } from '../../../components/urlsData';
 
 // specific slider data
-import { dataSliderSichSaga } from './games/SichSaga/dataSlider';
+import { dataSliderCossacksSaga } from './games/CossacksSaga/dataSlider';
 import { dataSliderProjectDev } from './dataSlider';
 
 export const gamesStructure = {
@@ -16,9 +16,9 @@ export const gamesStructure = {
 
 		// Cossacks Saga
 		{
-			markdownAPI: '/text-data/games/SichSaga/SichSaga.md',
-			sliderContent: dataSliderSichSaga,
-			pagePreviewUrl: pathToSichSaga,
+			markdownAPI: '/text-data/games/CossacksSaga/CossacksSaga.md',
+			sliderContent: dataSliderCossacksSaga,
+			pagePreviewUrl: pathToCossacksSaga,
 		},
 	],
 };

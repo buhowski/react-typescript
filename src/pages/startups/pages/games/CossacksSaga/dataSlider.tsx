@@ -16,12 +16,12 @@ import witcherTrailer from '../../../../../assets/startup/games/videos/witcherTr
 const replicantTrailer = 'https://www.youtube-nocookie.com/embed/sPcf4pfTqfY';
 const automataTrailer = 'https://www.youtube-nocookie.com/embed/4bx02CEISLI';
 
-export const dataSliderSichSaga = [
+export const dataSliderCossacksSaga = [
 	{
 		itemSrc: cossackDrummer,
 		itemAlt:
-			'AI-generated poster for “Shadows of Zaporizhian Sich” Saga Part I–II featuring hero undergoing demonic baptism and Part II heroine bound to his soul, embarking on a bloody path of revenge; epic historical-mystical adventure game concept.',
-		itemCaption: `AI: Shadows of the Zaporozhian Sich I-II Poster — Hero in Church’s Demonic Baptism / Heroine Bound to Hero's Soul, Embarking on a Bloody Path of Revenge.`,
+			'AI-generated poster for Shadows of the Cossacks: Saga Part I–II featuring hero undergoing demonic baptism and Part II heroine bound to his soul, embarking on a bloody path of revenge; epic historical-mystical adventure game concept.',
+		itemCaption: `Saga I–II Parts Poster: Hero in Church’s Demonic Baptism / Heroine Bound to Hero's Soul, Embarking on a Bloody Path of Revenge.`,
 		putImgTitle: true,
 	},
 
@@ -62,7 +62,7 @@ export const dataSliderSichSaga = [
 		itemSrc: cossacksReplyLetter,
 		itemAlt:
 			'Painting of Ukrainian Cossacks writing a letter to the Turkish sultan, showing historical accuracy, traditional costumes, 17th-century military life, and cultural heritage.',
-		itemCaption: `AI: Ukrainian Hermit Cossacks / Artistic Refs to History.`,
+		itemCaption: `Ukrainian Hermit Cossacks / Artistic Refs to History.`,
 		putImgTitle: true,
 	},
 
@@ -70,7 +70,7 @@ export const dataSliderSichSaga = [
 		itemSrc: cossackWarrior,
 		itemAlt:
 			'Illustration of a Ukrainian Cossack warrior, depicting traditional armor, sabre, mustache, heroic stance, and Slavic cultural heritage.',
-		itemCaption: `AI: Hermit Cossack Warrior vs Demonic Monk.`,
+		itemCaption: `Hermit Cossack Warrior vs Demonic Monk.`,
 		putImgTitle: true,
 	},
 
@@ -78,7 +78,7 @@ export const dataSliderSichSaga = [
 		itemSrc: cossackSorcerers,
 		itemAlt:
 			'Illustration of a Ukrainian Cossack Charakternyk, combining warrior, shaman, and seer traits, mystical elements, folklore-inspired design, and dynamic Eastern European storytelling.',
-		itemCaption: `AI: Hermit Cossack Sorcerer.`,
+		itemCaption: `Hermit Cossack Sorcerer.`,
 		putImgTitle: true,
 	},
 ];

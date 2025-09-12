@@ -31,10 +31,10 @@ export const pathToGodEvening = '/god-evening';
 
 // Games
 export const pathToGames = '/games';
-export const pathToSichSaga = '/sich-saga';
-export const pathToSichSagaPart1 = '/sich-saga-1';
-export const pathToSichSagaPart2 = '/sich-saga-2';
-export const pathToSichSagaPart3 = '/sich-saga-3';
+export const pathToCossacksSaga = '/cossacks-saga';
+export const pathToCossacksSagaPart1 = '/cossacks-saga-1';
+export const pathToCossacksSagaPart2 = '/cossacks-saga-2';
+export const pathToCossacksSagaPart3 = '/cossacks-saga-3';
 
 // Separate Projects presentation URLs
 export const startupsNav = [

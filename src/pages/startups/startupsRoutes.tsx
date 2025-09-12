@@ -1,5 +1,6 @@
 import StartupsWrapper from './components/StartupsWrapper';
 import { PageProps, LanguageCode } from '../../types/common';
+import { findParentPath } from './helpers/backButtonPathHelper';
 
 import {
 	dataPageVision,
@@ -16,10 +17,10 @@ import {
 	dataPagePodcastShow,
 	dataPageGodEvening,
 	dataPageGames,
-	dataPageSichSaga,
-	dataPageSichSagaPart1,
-	dataPageSichSagaPart2,
-	dataPageSichSagaPart3,
+	dataPageCossacksSaga,
+	dataPageCossacksSagaPart1,
+	dataPageCossacksSagaPart2,
+	dataPageCossacksSagaPart3,
 } from './startupsPages';
 
 import {
@@ -32,38 +33,16 @@ import {
 	pathToPodcastShow,
 	pathToGodEvening,
 	pathToGames,
-	pathToSichSaga,
-	pathToSichSagaPart1,
-	pathToSichSagaPart2,
-	pathToSichSagaPart3,
+	pathToCossacksSaga,
+	pathToCossacksSagaPart1,
+	pathToCossacksSagaPart2,
+	pathToCossacksSagaPart3,
 	pathToHeShe,
 	pathToLilithsAdventure,
 	pathToOnceInUkraine,
 	pathToVolynWedding,
 	pathToWoodenFiction,
 } from '../../components/urlsData';
-
-// Get parent path in tree
-const findParentPath = (
-	tree: Record<string, any>,
-	target: string,
-	parent: string | null = null
-): string | null => {
-	for (const key in tree) {
-		if (key === target) return parent;
-		const child = tree[key];
-
-		if (Array.isArray(child)) {
-			if (child.includes(target)) return key;
-		}
-
-		if (child && typeof child === 'object') {
-			const res = findParentPath(child, target, key);
-			if (res) return res;
-		}
-	}
-	return null;
-};
 
 // Startup pages map
 export const startupDataMap: Record<string, PageProps> = {
@@ -88,16 +67,20 @@ export const startupDataMap: Record<string, PageProps> = {
 
 	// GAMING INDUSTRY
 	[pathToGames]: { pageData: dataPageGames },
-	[pathToSichSaga]: { pageData: dataPageSichSaga },
-	[pathToSichSagaPart1]: { pageData: dataPageSichSagaPart1 },
-	[pathToSichSagaPart2]: { pageData: dataPageSichSagaPart2 },
-	[pathToSichSagaPart3]: { pageData: dataPageSichSagaPart3 },
+	[pathToCossacksSaga]: { pageData: dataPageCossacksSaga },
+	[pathToCossacksSagaPart1]: { pageData: dataPageCossacksSagaPart1 },
+	[pathToCossacksSagaPart2]: { pageData: dataPageCossacksSagaPart2 },
+	[pathToCossacksSagaPart3]: { pageData: dataPageCossacksSagaPart3 },
 };
 
 // Subpath for nested pages
 export const startupSubPaths: Record<string, string[] | Record<string, any> | null> = {
 	[pathToGames]: {
-		[pathToSichSaga]: [pathToSichSagaPart1, pathToSichSagaPart2, pathToSichSagaPart3],
+		[pathToCossacksSaga]: [
+			pathToCossacksSagaPart1,
+			pathToCossacksSagaPart2,
+			pathToCossacksSagaPart3,
+		],
 	},
 	[pathToCinema]: {
 		[pathToEuropeanUkrainians]: null,

@@ -180,7 +180,7 @@ $section-width: 920px;
 	@include tabletBig {
 		position: fixed;
 		top: auto;
-		bottom: 15px;
+		bottom: 10px;
 		left: 0;
 		padding: 13px 15px;
 		padding-right: 17px;
@@ -589,7 +589,7 @@ $nav-top: 2px;
 		white-space: nowrap;
 		font-weight: 500;
 		border-radius: 4px;
-		line-height: 1.8;
+		line-height: 1.7;
 		padding: 3px 7px;
 		color: $link-color;
 		background-color: $link-bg-color;
