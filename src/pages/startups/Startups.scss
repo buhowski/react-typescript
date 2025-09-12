@@ -540,25 +540,25 @@ $nav-top: 2px;
 				content: '';
 				display: block;
 				flex-shrink: 0;
-				width: 6px;
-				height: 6px;
+				width: 5px;
+				height: 5px;
 				border-radius: 50%;
 				background: $titlePink;
 				position: absolute;
-				top: 10.5px;
+				top: 11px;
 				left: 0;
 
 				@include tablet {
-					top: 9.5px;
+					top: 10px;
 				}
 			}
 
 			&:has(a) {
 				&::before {
-					top: 12px;
+					top: 13px;
 
 					@include tablet {
-						top: 11.5px;
+						top: 12.5px;
 					}
 				}
 			}
