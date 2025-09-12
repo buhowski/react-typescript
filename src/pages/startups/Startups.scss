@@ -531,6 +531,8 @@ $nav-top: 2px;
 			position: relative;
 			padding-left: 26px;
 			margin-left: 2px;
+			// display: flex;
+			// align-items: baseline;
 
 			@include tablet {
 				padding-left: 22px;
@@ -540,17 +542,26 @@ $nav-top: 2px;
 				content: '';
 				display: block;
 				flex-shrink: 0;
-				width: 5px;
-				height: 5px;
+				width: 6px;
+				height: 6px;
 				border-radius: 50%;
 				background: $titlePink;
-				margin-top: 11.5px;
 				position: absolute;
-				top: 0;
+				top: 10.5px;
 				left: 0;
 
 				@include tablet {
-					margin-top: 10px;
+					top: 9.5px;
+				}
+			}
+
+			&:has(a) {
+				&::before {
+					top: 13.5px;
+
+					@include tablet {
+						top: 12.5px;
+					}
 				}
 			}
 		}
@@ -575,35 +586,22 @@ $nav-top: 2px;
 
 	a {
 		display: inline;
-		position: relative;
-		transition: color 0.25s;
-		color: #ffffff;
+		white-space: nowrap;
 		font-weight: 500;
-		padding-bottom: 4px;
+		border-radius: 4px;
+		line-height: 1.8;
+		padding: 3px 7px;
+		color: $link-color;
+		background-color: $link-bg-color;
+		box-shadow: $link-shadow;
+		transition: 0.2s;
 
-		> * {
-			background-image: linear-gradient(currentColor, currentColor);
-			background-size: 100% 1px;
-			background-repeat: no-repeat;
-			background-position: left bottom;
-			transition: background-size 0.35s;
-			font-weight: inherit;
-			font-style: inherit;
-			padding: 1px 0;
-		}
-
-		@include tablet {
-			&:focus {
-				color: $starYellow;
-			}
+		&:active {
+			@include hover-text-link;
 		}
 
 		&:hover {
-			color: $starYellow;
-
-			> * {
-				background-size: 0 1px;
-			}
+			@include hover-text-link;
 		}
 	}
 }

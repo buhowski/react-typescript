@@ -29,6 +29,17 @@ $header-ltr-spc: 3px;
 
 $p-margin: 22px;
 
+$link-color: #000000;
+$link-bg-color: #ffe066;
+$link-shadow: inset 5px 5px 12px #8c6f1f, inset -10px -6px 16px #85650d;
+$hover-link-shadow: inset 5px 5px 12px #084f80, inset -10px -6px 16px #084f80;
+
+@mixin hover-text-link {
+	box-shadow: $hover-link-shadow;
+	background-color: #0d99ff;
+	color: #ffffff;
+}
+
 @mixin social_hover {
 	> .title {
 		opacity: 1;
