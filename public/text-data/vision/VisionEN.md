@@ -2,13 +2,13 @@
 
 ## Preface
 
-I want to create a corporation to develop areas close to my worldview: a magazine, media, film, the gaming industry, and the IT sector. These are areas that inspire me, offer space for new ideas, are underdeveloped locally, yet have significant profit potential.
+I aspire to build a corporation dedicated to developing key sectors that align with my vision: publishing, media, film, the gaming industry, and the IT sector. These are fields that inspire me, provide space for ideas, and, despite being underdeveloped in the local market, have high profit potential.
 
-My separate projects are steps toward this goal. I plan to monetize them and reinvest the profits into my own technologies, creating opportunities for like-minded people.
+My individual projects are stepping stones toward this goal. I plan to monetize them and reinvest the profits into our own technologies, creating opportunities for like-minded individuals.
 
-I am also looking for those who can help implement these ideas and with whom I can unite efforts and interests for a partnership.
+I invite people who are ready to join forces for creative partnerships and collective implementation.
 
-Project presentations are available in the navigation, and below is the corporation's plan.
+Project presentations are available in the navigation, and the corporation's plan is outlined below.
 
 [mobile-slider]
 
