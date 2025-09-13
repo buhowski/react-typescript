@@ -10,19 +10,19 @@ import { dataSliderTheCorp } from './TheCorp/dataSlider';
 import { dataSliderEuropeanUkrainians } from './EuropeanUkrainians/dataSlider';
 
 export const structureCinema = {
-	// European Ukrainians
-	europeanUkrainiansPage: [
-		{
-			markdownAPI: '/text-data/cinema/EuropeanUkrainians/EuropeanUkrainians.md',
-			sliderContent: dataSliderEuropeanUkrainians,
-		},
-	],
-
 	// The Corp
 	theCorpPage: [
 		{
 			markdownAPI: '/text-data/cinema/TheCorp/TheCorp.md',
 			sliderContent: dataSliderTheCorp,
+		},
+	],
+
+	// European Ukrainians
+	europeanUkrainiansPage: [
+		{
+			markdownAPI: '/text-data/cinema/EuropeanUkrainians/EuropeanUkrainians.md',
+			sliderContent: dataSliderEuropeanUkrainians,
 		},
 	],
 

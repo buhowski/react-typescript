@@ -67,7 +67,7 @@
 
 [mobile-slider]
 
-### Натхнення
+## Натхнення
 
 - **Ігри:** [The Witcher Series](https://www.thewitcher.com/ua/en/), [Ghost of Tsushima](https://store.steampowered.com/app/2215430/Ghost_of_Tsushima_DIRECTORS_CUT/), [Clair Obscur: Expedition 33](https://store.steampowered.com/app/1903340/Clair_Obscur_Expedition_33/), [Final Fantasy VII](https://store.steampowered.com/app/1462040/FINAL_FANTASY_VII_REMAKE_INTERGRADE/) / [XV](https://store.steampowered.com/app/637650/FINAL_FANTASY_XV_WINDOWS_EDITION/) — за глибокий світ, епічні квести та сильний сюжет
 - **Режисура та експресія:** [NieR: RepliCant](https://store.steampowered.com/app/1113560/NieR_Replicant_ver122474487139/) / [Automata](https://store.steampowered.com/app/524220/NieRAutomata/) — за шедевральне поєднання кінематографічної постановки боїв, емоційного напруження та унікальної ігрової атмосфери

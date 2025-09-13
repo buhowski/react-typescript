@@ -30,18 +30,18 @@ export const cinemaStructure = {
 			sliderContent: dataSliderProjectDev,
 		},
 
-		// European Ukrainians
-		{
-			markdownAPI: '/text-data/cinema/EuropeanUkrainians/PreviewEuropeanUkrainians.md',
-			sliderContent: dataSliderEuropeanUkrainians,
-			pagePreviewUrl: pathToEuropeanUkrainians,
-		},
-
 		// The Corp
 		{
 			markdownAPI: '/text-data/cinema/TheCorp/PreviewTheCorp.md',
 			sliderContent: dataSliderTheCorp,
 			pagePreviewUrl: pathToTheCorp,
+		},
+
+		// European Ukrainians
+		{
+			markdownAPI: '/text-data/cinema/EuropeanUkrainians/PreviewEuropeanUkrainians.md',
+			sliderContent: dataSliderEuropeanUkrainians,
+			pagePreviewUrl: pathToEuropeanUkrainians,
 		},
 
 		// Once In Ukraine

@@ -67,7 +67,7 @@ Local Groups — subordinates with their own leaders, assistants, and servants. 
 
 [mobile-slider]
 
-### Inspiration
+## Inspiration
 
 - **Games:** [The Witcher Series](https://www.thewitcher.com/ua/en/), [Ghost of Tsushima](https://store.steampowered.com/app/2215430/Ghost_of_Tsushima_DIRECTORS_CUT/), [Clair Obscur: Expedition 33](https://store.steampowered.com/app/1903340/Clair_Obscur_Expedition_33/), [Final Fantasy VII](https://store.steampowered.com/app/1462040/FINAL_FANTASY_VII_REMAKE_INTERGRADE/) / [XV](https://store.steampowered.com/app/637650/FINAL_FANTASY_XV_WINDOWS_EDITION/) — for deep world-building, epic quests, and a strong plot
 - **Direction and Expression:** [NieR: RepliCant](https://store.steampowered.com/app/1113560/NieR_Replicant_ver122474487139/) / [Automata](https://store.steampowered.com/app/524220/NieRAutomata/) — for the masterful combination of cinematic combat staging, emotional tension, and a unique game atmosphere
