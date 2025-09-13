@@ -10,7 +10,7 @@ Upon receiving a fragment of her beloved's soul, the heroine embarks on a bloody
 
 ## Main Idea
 
-The second part continues the tragic story that began in the [First Chapter](/cossacks-saga-1). The heroine finds refuge with her deceased lover's friends, where she regains her strength. It is here that she uncovers the true nature of the church's demonic rituals.
+The second part continues the tragic story that began in the [First Chapter](/cossack-saga-1). The heroine finds refuge with her deceased lover's friends, where she regains her strength. It is here that she uncovers the true nature of the church's demonic rituals.
 
 She realizes that at the moment of self-sacrifice, their mutual love created an unprecedented synergy. In response to her reciprocal willingness to sacrifice herself, her lover's soul responded, and in the epicenter of a magical surge, a fragment of his essence plunged into her heart. Thus, hope for salvation is born, and her journey begins.
 

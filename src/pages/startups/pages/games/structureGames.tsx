@@ -1,25 +1,25 @@
 // specific slider data
-import { dataSliderCossacksSaga } from './CossacksSaga/dataSlider';
+import { dataSliderCossackSaga } from './CossackSaga/dataSlider';
 
 export const structureGames = {
-	cossacksSaga1Page: [
+	cossackSaga1Page: [
 		{
-			markdownAPI: '/text-data/games/CossacksSaga/Part1/Part1.md',
-			sliderContent: dataSliderCossacksSaga,
+			markdownAPI: '/text-data/games/CossackSaga/Part1/Part1.md',
+			sliderContent: dataSliderCossackSaga,
 		},
 	],
 
-	cossacksSaga2Page: [
+	cossackSaga2Page: [
 		{
-			markdownAPI: '/text-data/games/CossacksSaga/Part2/Part2.md',
-			sliderContent: dataSliderCossacksSaga,
+			markdownAPI: '/text-data/games/CossackSaga/Part2/Part2.md',
+			sliderContent: dataSliderCossackSaga,
 		},
 	],
 
-	cossacksSaga3Page: [
+	cossackSaga3Page: [
 		{
-			markdownAPI: '/text-data/games/CossacksSaga/Part3/Part3.md',
-			sliderContent: dataSliderCossacksSaga,
+			markdownAPI: '/text-data/games/CossackSaga/Part3/Part3.md',
+			sliderContent: dataSliderCossackSaga,
 		},
 	],
 };

@@ -8,7 +8,7 @@ import { structureSelfPresentation } from './pages/cinema/SelfPresentation/struc
 
 import { gamesStructure } from './pages/gamesStructure';
 import { structureGames } from './pages/games/structureGames';
-import { structureCossacksSaga } from './pages/games/CossacksSaga/structureCossacksSaga';
+import { structureCossackSaga } from './pages/games/CossackSaga/structureCossackSaga';
 
 // GENERATE ALL STARTUP PAGES
 export const dataPageVision = createData(startupsStructure.visionPage);
@@ -35,7 +35,7 @@ export const dataPageGodEvening = createData(structureSelfPresentation.godEvenin
 
 // GAMES INDUSTRY
 export const dataPageGames = createData(gamesStructure.gamesPage);
-export const dataPageCossacksSaga = createData(structureCossacksSaga.cossacksSagaPage);
-export const dataPageCossacksSagaPart1 = createData(structureGames.cossacksSaga1Page);
-export const dataPageCossacksSagaPart2 = createData(structureGames.cossacksSaga2Page);
-export const dataPageCossacksSagaPart3 = createData(structureGames.cossacksSaga3Page);
+export const dataPageCossackSaga = createData(structureCossackSaga.cossackSagaPage);
+export const dataPageCossackSagaPart1 = createData(structureGames.cossackSaga1Page);
+export const dataPageCossackSagaPart2 = createData(structureGames.cossackSaga2Page);
+export const dataPageCossackSagaPart3 = createData(structureGames.cossackSaga3Page);

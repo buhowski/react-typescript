@@ -17,10 +17,10 @@ import {
 	dataPagePodcastShow,
 	dataPageGodEvening,
 	dataPageGames,
-	dataPageCossacksSaga,
-	dataPageCossacksSagaPart1,
-	dataPageCossacksSagaPart2,
-	dataPageCossacksSagaPart3,
+	dataPageCossackSaga,
+	dataPageCossackSagaPart1,
+	dataPageCossackSagaPart2,
+	dataPageCossackSagaPart3,
 } from './startupsPages';
 
 import {
@@ -33,10 +33,10 @@ import {
 	pathToPodcastShow,
 	pathToGodEvening,
 	pathToGames,
-	pathToCossacksSaga,
-	pathToCossacksSagaPart1,
-	pathToCossacksSagaPart2,
-	pathToCossacksSagaPart3,
+	pathToCossackSaga,
+	pathToCossackSagaPart1,
+	pathToCossackSagaPart2,
+	pathToCossackSagaPart3,
 	pathToHeShe,
 	pathToLilithsAdventure,
 	pathToOnceInUkraine,
@@ -67,20 +67,16 @@ export const startupDataMap: Record<string, PageProps> = {
 
 	// GAMING INDUSTRY
 	[pathToGames]: { pageData: dataPageGames },
-	[pathToCossacksSaga]: { pageData: dataPageCossacksSaga },
-	[pathToCossacksSagaPart1]: { pageData: dataPageCossacksSagaPart1 },
-	[pathToCossacksSagaPart2]: { pageData: dataPageCossacksSagaPart2 },
-	[pathToCossacksSagaPart3]: { pageData: dataPageCossacksSagaPart3 },
+	[pathToCossackSaga]: { pageData: dataPageCossackSaga },
+	[pathToCossackSagaPart1]: { pageData: dataPageCossackSagaPart1 },
+	[pathToCossackSagaPart2]: { pageData: dataPageCossackSagaPart2 },
+	[pathToCossackSagaPart3]: { pageData: dataPageCossackSagaPart3 },
 };
 
 // Subpath for nested pages
 export const startupSubPaths: Record<string, string[] | Record<string, any> | null> = {
 	[pathToGames]: {
-		[pathToCossacksSaga]: [
-			pathToCossacksSagaPart1,
-			pathToCossacksSagaPart2,
-			pathToCossacksSagaPart3,
-		],
+		[pathToCossackSaga]: [pathToCossackSagaPart1, pathToCossackSagaPart2, pathToCossackSagaPart3],
 	},
 	[pathToCinema]: {
 		[pathToEuropeanUkrainians]: null,
