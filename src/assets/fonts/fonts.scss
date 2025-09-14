@@ -2,23 +2,27 @@
 	font-family: 'Coming Soon';
 	src: url('ComingSoon-Regular.woff2') format('woff2'),
 		url('ComingSoon-Regular.woff') format('woff');
+	font-display: swap;
 }
 
 @font-face {
 	font-family: 'Indie Flower';
 	src: url('IndieFlower.woff2') format('woff2'), url('IndieFlower.woff') format('woff');
+	font-display: swap;
 }
 
 // the right implementations for fonts
 @font-face {
 	font-family: 'Louis George Caf';
 	src: url('LouisGeorgeCafe.woff2') format('woff2'), url('LouisGeorgeCafe.woff') format('woff');
+	font-display: swap;
 }
 
 @font-face {
 	font-family: 'Louis George Caf Bold';
 	src: url('LouisGeorgeCafe-Bold.woff2') format('woff2'),
 		url('LouisGeorgeCafe-Bold.woff') format('woff');
+	font-display: swap;
 }
 
 // Raleway fonts

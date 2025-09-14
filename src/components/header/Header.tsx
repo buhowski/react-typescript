@@ -48,7 +48,7 @@ const Header = () => {
 
 	const LogoNavLink = () => {
 		return (
-			<NavLink className='logo-link' to='/'>
+			<NavLink className='logo-link' to='/' aria-label='Home'>
 				{headerLogo}
 			</NavLink>
 		);
@@ -86,7 +86,7 @@ const Header = () => {
 						</div>
 
 						<nav className={`pos-abs mobile-menu${menuOpen ? ' open' : ''}`}>
-							<div className={`mobile-menu__content`}>
+							<nav className={`mobile-menu__content`}>
 								<ul className='mobile-nav'>{navLinkItems}</ul>
 								<Socials
 									socialData={socialData}
@@ -97,15 +97,15 @@ const Header = () => {
 										{ id: 'instagram' },
 									]}
 								/>
-							</div>
+							</nav>
 						</nav>
 					</>
 				) : (
-					<div className='header-nav header-nav--desktop'>
+					<nav className='header-nav header-nav--desktop'>
 						<LogoNavLink />
 
 						<ul className='header-nav__list'>{navLinkItems}</ul>
-					</div>
+					</nav>
 				)}
 			</div>
 		</header>

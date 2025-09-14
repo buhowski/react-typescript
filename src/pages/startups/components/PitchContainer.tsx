@@ -1,7 +1,9 @@
-import React, { forwardRef, useCallback, useState, useEffect } from 'react';
+import React, { forwardRef, useCallback, useState, useEffect, lazy, Suspense } from 'react';
 import { NavLink } from 'react-router-dom';
-import MarkdownBlock from './MarkdownBlock';
 import { PitchContainerProps } from '../../../types/common';
+import Preloader from '../../../components/Preloader';
+
+const LazyMarkdownBlock = lazy(() => import('./MarkdownBlock'));
 
 const PitchContainer = React.memo(
 	forwardRef<HTMLDivElement, PitchContainerProps>(
@@ -35,14 +37,22 @@ const PitchContainer = React.memo(
 								ERROR: Text not found
 							</p>
 						) : (
-							<MarkdownBlock
-								src={structure.markdownAPI!}
-								sliderContent={sliderContent}
-								currentLanguage={currentLanguage}
-								onError={setMarkdownLoadError}
-								onHeadingsExtracted={handleHeadings}
-								pitchIndex={index}
-							/>
+							<Suspense
+								fallback={
+									<div className='markdown-loading'>
+										<Preloader />
+									</div>
+								}
+							>
+								<LazyMarkdownBlock
+									src={structure.markdownAPI!}
+									sliderContent={sliderContent}
+									currentLanguage={currentLanguage}
+									onError={setMarkdownLoadError}
+									onHeadingsExtracted={handleHeadings}
+									pitchIndex={index}
+								/>
+							</Suspense>
 						)}
 					</div>
 
