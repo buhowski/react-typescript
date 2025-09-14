@@ -43,6 +43,12 @@ export const startupsMetaTags = {
 	title: startupTitle,
 	description: startupDescription,
 	canonicalUrl: buildUrl(pathToVision),
+	// TODO: Alternate URLs for languages / Need if have All Separate pages
+	alternates: [
+		{ hreflang: 'en', href: buildUrl(`/en${pathToVision}`) },
+		{ hreflang: 'uk', href: buildUrl(`/ua${pathToVision}`) },
+		{ hreflang: 'ru', href: buildUrl(`/ru${pathToVision}`) },
+	],
 
 	// Open Graph Meta Tags
 	ogUrl: buildUrl(pathToVision),

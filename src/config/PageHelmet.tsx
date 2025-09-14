@@ -1,9 +1,15 @@
 import { Helmet } from 'react-helmet-async';
 
+interface Alternate {
+	hreflang: string;
+	href: string;
+}
+
 interface MetaTags {
 	title?: string;
 	description?: string;
 	canonicalUrl?: string;
+	alternates?: Alternate[];
 
 	// Open Graph Meta Tags
 	ogUrl?: string;
@@ -33,6 +39,9 @@ const PageHelmet: React.FC<PageHelmetProps> = ({ metaTags }) => {
 			{metaTags.title && <title>{metaTags.title}</title>}
 			{metaTags.description && <meta name='description' content={metaTags.description} />}
 			{metaTags.canonicalUrl && <link rel='canonical' href={metaTags.canonicalUrl} />}
+			{metaTags.alternates?.map((a) => (
+				<link key={a.hreflang} rel='alternate' hrefLang={a.hreflang} href={a.href} />
+			))}
 
 			{/* Open Graph Meta Tags */}
 			{metaTags.ogUrl && <meta property='og:url' content={metaTags.ogUrl} />}
