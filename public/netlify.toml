@@ -1,4 +1,4 @@
-# Redirects /from /to (permanent)
+# Permanent redirects
 [[redirects]]
   from = "/startup"
   to = "/vision"
@@ -23,7 +23,23 @@
   status = 301
   force = true
 
-# Catch-all for SPA: all other paths serve index.html
+# Explicit SPA rules for language-prefixed URLs
+[[redirects]]
+  from = "/ua/*"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/en/*"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/ru/*"
+  to = "/index.html"
+  status = 200
+
+# Catch-all for everything else
 [[redirects]]
   from = "/*"
   to = "/index.html"
