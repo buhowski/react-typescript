@@ -1,4 +1,4 @@
-#### Tragic Social Drama / Movie
+#### Social Drama / Movie
 
 # Once Upon a Time... in Ukraine
 

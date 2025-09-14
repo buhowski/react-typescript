@@ -1,4 +1,4 @@
-#### Tragic Social Drama / Movie
+#### Social Drama / Movie
 
 # Одного разу... в Україні
 

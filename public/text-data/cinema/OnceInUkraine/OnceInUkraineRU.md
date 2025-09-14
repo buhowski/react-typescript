@@ -1,4 +1,4 @@
-#### Tragic Social Drama / Movie
+#### Social Drama / Movie
 
 # Однажды... в Украине
 
