@@ -7,7 +7,7 @@ import socialData from '../socials/socialData';
 import { headerLogo } from '../../assets/svg/icons';
 // Reusable path matching function
 import { isPathActive } from '../../config/pathUtils';
-import { startupPaths } from '../../pages/startups/startupsRoutes';
+import { startupsMap } from '../../pages/startups/startupsRoutes';
 
 import './Header.scss';
 
@@ -16,7 +16,7 @@ const Header = () => {
 	const [menuOpen, setMenuOpen] = React.useState(false);
 
 	const { pathname } = useLocation();
-	const isActive = isPathActive(startupPaths, pathname);
+	const isActive = isPathActive(Object.keys(startupsMap), pathname);
 
 	const linksData = [
 		{

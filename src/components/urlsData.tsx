@@ -28,6 +28,7 @@ export const pathToLilithsAdventure = '/liliths-adventure';
 export const pathToSelfPresentation = '/self-presentation';
 export const pathToPodcastShow = '/podcast-show';
 export const pathToGodEvening = '/god-evening';
+export const pathToCryClub = '/cry-club';
 
 // Games
 export const pathToGames = '/games';

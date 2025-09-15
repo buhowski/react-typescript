@@ -2,75 +2,93 @@ import StartupsWrapper from './components/StartupsWrapper';
 import { PageProps, LanguageCode } from '../../types/common';
 import { findParentPath } from './helpers/backButtonPathHelper';
 
-import {
-	dataPageVision,
-	dataPageMVP,
-	dataPageCinema,
-	dataPageEuropeanUkrainians,
-	dataPageTheCorp,
-	dataPageHeShe,
-	dataPageOnceInUkraine,
-	dataPageVolynWedding,
-	dataPageWoodenFiction,
-	dataPageLilithsAdventure,
-	dataPageSelfPresentation,
-	dataPagePodcastShow,
-	dataPageGodEvening,
-	dataPageGames,
-	dataPageCossackSaga,
-	dataPageCossackSagaPart1,
-	dataPageCossackSagaPart2,
-	dataPageCossackSagaPart3,
-} from './startupsPages';
+import { visionPage, MVPPage } from './pages/startupsStructure';
 
+// CINEMA INDUSTRY
+import { cinemaPage } from './pages/cinemaStructure';
+import {
+	theCorpPage,
+	europeanUkrainiansPage,
+	heShePage,
+	onceInUkrainePage,
+	volynWeddingPage,
+	woodenFictionPage,
+	lilithsAdventurePage,
+} from './pages/cinema/structureCinema';
+
+// Self Presentations
+import {
+	selfPresentationPage,
+	podcastShowPage,
+	godEveningPage,
+	cryClubPage,
+} from './pages/cinema/SelfPresentation/structureSelfPresentation';
+
+// GAMING INDUSTRY
+import { gamesPage } from './pages/gamesStructure';
+import {
+	cossackSagaPage,
+	cossackSaga1Page,
+	cossackSaga2Page,
+	cossackSaga3Page,
+} from './pages/games/CossackSaga/structureCossackSaga';
+
+// URLs
 import {
 	pathToVision,
 	pathToMVP,
+
+	// CINEMA INDUSTRY
 	pathToCinema,
 	pathToEuropeanUkrainians,
 	pathToTheCorp,
-	pathToSelfPresentation,
-	pathToPodcastShow,
-	pathToGodEvening,
-	pathToGames,
-	pathToCossackSaga,
-	pathToCossackSagaPart1,
-	pathToCossackSagaPart2,
-	pathToCossackSagaPart3,
 	pathToHeShe,
 	pathToLilithsAdventure,
 	pathToOnceInUkraine,
 	pathToVolynWedding,
 	pathToWoodenFiction,
+
+	// Self Presentations
+	pathToSelfPresentation,
+	pathToPodcastShow,
+	pathToGodEvening,
+	pathToCryClub,
+
+	// GAMING INDUSTRY
+	pathToGames,
+	pathToCossackSaga,
+	pathToCossackSagaPart1,
+	pathToCossackSagaPart2,
+	pathToCossackSagaPart3,
 } from '../../components/urlsData';
 
 // Startup pages map
 export const startupDataMap: Record<string, PageProps> = {
-	[pathToVision]: { pageData: dataPageVision },
-	[pathToMVP]: { pageData: dataPageMVP },
+	[pathToVision]: { pageData: visionPage },
+	[pathToMVP]: { pageData: MVPPage },
 
 	// CINEMA INDUSTRY
-	[pathToCinema]: { pageData: dataPageCinema },
-	[pathToEuropeanUkrainians]: { pageData: dataPageEuropeanUkrainians },
-	[pathToTheCorp]: { pageData: dataPageTheCorp },
-
-	[pathToHeShe]: { pageData: dataPageHeShe },
-	[pathToLilithsAdventure]: { pageData: dataPageLilithsAdventure },
-	[pathToOnceInUkraine]: { pageData: dataPageOnceInUkraine },
-	[pathToVolynWedding]: { pageData: dataPageVolynWedding },
-	[pathToWoodenFiction]: { pageData: dataPageWoodenFiction },
+	[pathToCinema]: { pageData: cinemaPage },
+	[pathToTheCorp]: { pageData: theCorpPage },
+	[pathToEuropeanUkrainians]: { pageData: europeanUkrainiansPage },
+	[pathToHeShe]: { pageData: heShePage },
+	[pathToOnceInUkraine]: { pageData: onceInUkrainePage },
+	[pathToVolynWedding]: { pageData: volynWeddingPage },
+	[pathToWoodenFiction]: { pageData: woodenFictionPage },
+	[pathToLilithsAdventure]: { pageData: lilithsAdventurePage },
 
 	// Self Presentations
-	[pathToSelfPresentation]: { pageData: dataPageSelfPresentation },
-	[pathToPodcastShow]: { pageData: dataPagePodcastShow },
-	[pathToGodEvening]: { pageData: dataPageGodEvening },
+	[pathToSelfPresentation]: { pageData: selfPresentationPage },
+	[pathToPodcastShow]: { pageData: podcastShowPage },
+	[pathToGodEvening]: { pageData: godEveningPage },
+	[pathToCryClub]: { pageData: cryClubPage },
 
 	// GAMING INDUSTRY
-	[pathToGames]: { pageData: dataPageGames },
-	[pathToCossackSaga]: { pageData: dataPageCossackSaga },
-	[pathToCossackSagaPart1]: { pageData: dataPageCossackSagaPart1 },
-	[pathToCossackSagaPart2]: { pageData: dataPageCossackSagaPart2 },
-	[pathToCossackSagaPart3]: { pageData: dataPageCossackSagaPart3 },
+	[pathToGames]: { pageData: gamesPage },
+	[pathToCossackSaga]: { pageData: cossackSagaPage },
+	[pathToCossackSagaPart1]: { pageData: cossackSaga1Page },
+	[pathToCossackSagaPart2]: { pageData: cossackSaga2Page },
+	[pathToCossackSagaPart3]: { pageData: cossackSaga3Page },
 };
 
 // Subpath for nested pages
@@ -86,7 +104,7 @@ export const startupSubPaths: Record<string, string[] | Record<string, any> | nu
 		[pathToOnceInUkraine]: null,
 		[pathToVolynWedding]: null,
 		[pathToWoodenFiction]: null,
-		[pathToSelfPresentation]: [pathToPodcastShow, pathToGodEvening],
+		[pathToSelfPresentation]: [pathToPodcastShow, pathToGodEvening, pathToCryClub],
 	},
 };
 
@@ -106,6 +124,3 @@ export const startupsMap: Record<
 		];
 	})
 );
-
-// Root startup paths
-export const startupPaths = Object.keys(startupsMap);

@@ -1,24 +1,25 @@
-// URL To Single Page / Read More button
+// Data Text Language Helper
+import { createData } from '../helpers/pageDataFactory';
+
+// URLs / Read More button
 import { pathToCossackSaga } from '../../../components/urlsData';
 
 // specific slider data
 import { dataSliderCossackSaga } from './games/CossackSaga/dataSlider';
 import { dataSliderProjectDev } from './dataSlider';
 
-export const gamesStructure = {
-	// Games Page
-	gamesPage: [
-		// Preface
-		{
-			markdownAPI: '/text-data/games/PreviewGames.md',
-			sliderContent: dataSliderProjectDev,
-		},
+// Games Page
+export const gamesPage = createData([
+	// Preface
+	{
+		markdownAPI: '/text-data/games/PreviewGames.md',
+		sliderContent: dataSliderProjectDev,
+	},
 
-		// Cossacks Saga
-		{
-			markdownAPI: '/text-data/games/CossackSaga/CossackSaga.md',
-			sliderContent: dataSliderCossackSaga,
-			pagePreviewUrl: pathToCossackSaga,
-		},
-	],
-};
+	// Cossacks Saga
+	{
+		markdownAPI: '/text-data/games/CossackSaga/CossackSaga.md',
+		sliderContent: dataSliderCossackSaga,
+		pagePreviewUrl: pathToCossackSaga,
+	},
+]);

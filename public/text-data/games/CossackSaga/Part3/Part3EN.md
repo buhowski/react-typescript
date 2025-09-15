@@ -8,7 +8,7 @@
 
 Centuries after the world abandoned religion, new alliances led by the Cossack Legion must unite to stop a totalitarian enemy that seeks to wipe continents he deems repulsive from the face of the Earth.
 
-## Core Idea
+## Main Idea
 
 The third part begins with a series of dynamic cinematic sequences that recap the events of the previous parts: [Part I](/cossack-saga-1), [Part II](/cossack-saga-2).
 
