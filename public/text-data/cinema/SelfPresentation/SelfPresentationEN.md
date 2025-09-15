@@ -10,4 +10,4 @@ If you're just starting out in content creation or are already there but lack id
 
 - [Dimension Minus Zero](/podcast-show)
 - [An Evening at GOD's](/god-evening)
-- [Crying Fighters Club](/cry-club)
+- [Santa Barbara Fight Club](/cry-club)

@@ -35,7 +35,7 @@ export const dataSliderCryClub = [
 	{
 		itemPoster: cryClubPoster,
 		itemSrc: cryClubVideoExample,
-		itemAlt: `Crying Fighters Club — dark comedy reality show in Santa Barbara fighting club. Emotional chaos replaces physical fights, with shocking family revelations and absurd drama. Inspired by South Park S13E10.`,
+		itemAlt: `Santa Barbara Fight Club — dark comedy reality show in Santa Barbara fighting club. Emotional chaos replaces physical fights, with shocking family revelations and absurd drama. Inspired by South Park S13E10.`,
 		itemCaption: `Refs: Wrestling Drama Example from South Park S13E10.`,
 	},
 ];

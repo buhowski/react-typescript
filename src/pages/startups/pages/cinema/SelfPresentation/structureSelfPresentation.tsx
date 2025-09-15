@@ -33,7 +33,7 @@ export const selfPresentationPage = createData([
 		pagePreviewUrl: pathToGodEvening,
 	},
 
-	// Crying Fighters Club
+	// Santa Barbara Fight Club
 	{
 		markdownAPI: '/text-data/cinema/SelfPresentation/CryClub/PreviewCryClub.md',
 		sliderContent: dataSliderCryClub,
@@ -57,7 +57,7 @@ export const godEveningPage = createData([
 	},
 ]);
 
-// Crying Fighters Club
+// Santa Barbara Fight Club
 export const cryClubPage = createData([
 	{
 		markdownAPI: '/text-data/cinema/SelfPresentation/CryClub/CryClub.md',
