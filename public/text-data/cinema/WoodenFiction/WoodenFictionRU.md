@@ -1,6 +1,6 @@
 #### Dark Crime Comedy / Animated Movie
 
-# Деревянное чтиво
+# Деревянное Чтиво
 
 ## Логлайн
 

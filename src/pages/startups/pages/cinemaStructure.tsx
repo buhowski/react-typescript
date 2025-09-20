@@ -47,6 +47,13 @@ export const cinemaPage = createData([
 		pagePreviewUrl: pathToEuropeanUkrainians,
 	},
 
+	// Volyn Wedding
+	{
+		markdownAPI: '/text-data/cinema/VolynWedding/PreviewVolynWedding.md',
+		sliderContent: dataSliderVolynWedding,
+		pagePreviewUrl: pathToVolynWedding,
+	},
+
 	// Once In Ukraine
 	{
 		markdownAPI: '/text-data/cinema/OnceInUkraine/PreviewOnceInUkraine.md',
@@ -59,13 +66,6 @@ export const cinemaPage = createData([
 		markdownAPI: '/text-data/cinema/HeShe/PreviewHeShe.md',
 		sliderContent: dataSliderHeShe,
 		pagePreviewUrl: pathToHeShe,
-	},
-
-	// Volyn Wedding
-	{
-		markdownAPI: '/text-data/cinema/VolynWedding/PreviewVolynWedding.md',
-		sliderContent: dataSliderVolynWedding,
-		pagePreviewUrl: pathToVolynWedding,
 	},
 
 	// Wooden Fiction

@@ -1,4 +1,4 @@
-#### Adventure Comedy / Animated Series
+#### Adventure Comedy / Adult Animated Series
 
 # Lilith's Adventure
 
