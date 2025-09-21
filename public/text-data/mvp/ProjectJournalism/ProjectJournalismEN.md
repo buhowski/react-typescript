@@ -12,7 +12,7 @@ The author is looking for resources and time to bring these ideas to life. If yo
 
 ### New Journalism
 
-This project has absolutely nothing to do with "journalism" — it is a modern work of art. The author is an artist and an anarcho-ironist: some paint with shit, I paint with the letters of Chaos Theory.
+This project has absolutely nothing to do with "journalism" — it is a modern work of art. The author is an artist and an anarcho-ironist: some paint with shit, I paint with the letters of chaos theory.
 
 This is about a modern narrative with a fresh breath, diverse ideas, the truth of dirty water, and grimy realism. It's a peculiar, uncensored delivery of information: direct, sarcastic, using everyday language, honest, and simple in its description of life.
 
