@@ -27,16 +27,10 @@ const PageStructure: React.FC<PageStructureProps> = ({ pageData, backButton, ini
 	const useTabletLarge = useTabletLargeQuery();
 
 	// Group state variables and refs for better readability.
-	const [currentLang, setCurrentLang] = useState<LanguageCode>(
-		(initialLang as LanguageCode) ||
-			getInitialLanguage(
-				pageData,
-				LANGUAGES.filter((lang) => pageData?.[lang]?.length > 0)
-			)
-	);
+	const [currentLang, setCurrentLang] = useState<LanguageCode>('en');
 	const [initialLangReady, setInitialLangReady] = useState(false);
 	const [currentDesktopSliderContent, setCurrentDesktopSliderContent] = useState<any[]>([]);
-	const [canRenderFooter, setCanRenderFooter] = useState(false);
+	const [canRenderCopyright, setCanRenderCopyright] = useState(false);
 
 	const allHeadingsMapRef = useRef(new Map());
 	const pitchRefs = useRef<(HTMLDivElement | null)[]>([]);
@@ -56,23 +50,20 @@ const PageStructure: React.FC<PageStructureProps> = ({ pageData, backButton, ini
 		[pageData]
 	);
 
-	// Unified language initialization and update logic.
+	// Language init
 	useEffect(() => {
-		const storedLang = localStorage.getItem('currentLang') || null;
-		const newLang =
-			initialLang || storedLang || getInitialLanguage(pageData, availableLangs) || 'en';
-
-		if (newLang !== currentLang) {
-			setCurrentLang(newLang as LanguageCode);
+		const setLanguage = async () => {
+			const newLang = await getInitialLanguage(pageData, availableLangs);
+			setCurrentLang(newLang);
 			localStorage.setItem('currentLang', newLang);
-		}
-
-		allHeadingsMapRef.current.clear();
-		setHeadingsVersion((prev) => prev + 1);
-		setInitialLangReady(true);
-		isDesktopSliderContentInitialized.current = false;
+			allHeadingsMapRef.current.clear();
+			setHeadingsVersion((prev) => prev + 1);
+			setInitialLangReady(true);
+			isDesktopSliderContentInitialized.current = false;
+		};
+		setLanguage();
 		// eslint-disable-next-line react-hooks/exhaustive-deps
-	}, [initialLang, pageData, availableLangs, setHeadingsVersion]);
+	}, [initialLang, pageData, setHeadingsVersion]);
 
 	const contentToRender = useMemo(() => {
 		const currentLangContent = pageData[currentLang] || [];
@@ -158,7 +149,7 @@ const PageStructure: React.FC<PageStructureProps> = ({ pageData, backButton, ini
 	// Delayed footer render after content and language are ready
 	useEffect(() => {
 		if (useTabletLarge && initialLangReady && contentToRender.length > 0) {
-			const timer = setTimeout(() => setCanRenderFooter(true), 1000);
+			const timer = setTimeout(() => setCanRenderCopyright(true), 1000);
 			return () => clearTimeout(timer);
 		}
 	}, [initialLangReady, contentToRender, useTabletLarge]);
@@ -213,9 +204,10 @@ const PageStructure: React.FC<PageStructureProps> = ({ pageData, backButton, ini
 									/>
 								);
 							})}
+
 						{useTabletLarge && (
 							<div className='copy-tablet'>
-								{canRenderFooter && <Copyright />}
+								{canRenderCopyright && <Copyright />}
 								<PopupContacts />
 							</div>
 						)}
