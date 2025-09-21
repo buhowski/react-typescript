@@ -13,8 +13,8 @@ const ogImagePortfolio = `${website}/screenshot_portfolio.jpg`;
 // Main Website Meta Tags
 const author = 'Olexander Tsiomakh — ';
 const shortTitleAbout = 'Explorer ⋅ Developer ⋅ Creator';
-const shortTitlePortfolio = 'Portfolio ⋅ Projects Overview';
-const startupTitle = 'Another Dimension — Magazine ⋅ Media ⋅ Cinema ⋅ Games ⋅ Tech';
+const shortTitlePortfolio = 'Creative Portfolio ⋅ Dev & Design';
+const startupTitle = 'Another Dimension — Digital Magazine & Entertainment Startups';
 
 const defaultDescription =
 	'Crafting projects and ideas, building worlds, and sharing creations. From Planet Earth, Solar System.';

@@ -17,8 +17,8 @@ const projectsData = [
 		url: `${pathToVision}`,
 		urlCode: 'https://github.com/buhowski/react-typescript',
 		name: 'Business Plan',
-		description: `My Startups: Developing all tasks across the full development cycle`,
-		skills: ['Genius', 'Brain', 'Scripts', 'Design', 'SCSS', 'TypeScript', 'React', 'SEO', 'PWA'],
+		description: `Startups include: Magazine ⋅ Media ⋅ Cinema ⋅ Games ⋅ Tech`,
+		skills: ['Scenario', 'Design', 'SCSS', 'TypeScript', 'React', 'SEO', 'PWA'],
 		alt: 'Screenshot of My Startups project homepage showcasing startup business plans, full development cycle execution, React and TypeScript programming, UI/UX design, creative scripting, genius-level problem solving, strategic brainstorming, innovative design systems, SCSS styling, SEO optimization, Progressive Web App functionality, media innovation, tech entrepreneurship, interactive digital solutions, inventive coding, forward-thinking creative projects',
 	},
 
