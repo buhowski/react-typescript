@@ -20,7 +20,7 @@ const Root = () => {
 		const timer = setTimeout(() => {
 			setShowPreloader(false);
 			rootElement.classList.add('is-ready');
-		}, 800);
+		}, 900);
 
 		return () => {
 			clearTimeout(timer);

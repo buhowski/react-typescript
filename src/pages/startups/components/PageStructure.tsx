@@ -26,8 +26,16 @@ interface PageStructureProps extends PageProps {
 const PageStructure: React.FC<PageStructureProps> = ({ pageData, backButton, initialLang }) => {
 	const useTabletLarge = useTabletLargeQuery();
 
+	// Languages available for the current page
+	const availableLangs = useMemo(
+		() => LANGUAGES.filter((lang) => pageData?.[lang]?.length > 0),
+		[pageData]
+	);
+
 	// Group state variables and refs for better readability.
-	const [currentLang, setCurrentLang] = useState<LanguageCode>('en');
+	const [currentLang, setCurrentLang] = useState<LanguageCode>(
+		() => initialLang || getInitialLanguage(pageData, availableLangs)
+	);
 	const [initialLangReady, setInitialLangReady] = useState(false);
 	const [currentDesktopSliderContent, setCurrentDesktopSliderContent] = useState<any[]>([]);
 	const [canRenderCopyright, setCanRenderCopyright] = useState(false);
@@ -45,25 +53,21 @@ const PageStructure: React.FC<PageStructureProps> = ({ pageData, backButton, ini
 	} = useActiveHeadingTracking(useTabletLarge, allHeadingsMapRef);
 	const isActive = useStickyHeader();
 
-	const availableLangs = useMemo(
-		() => LANGUAGES.filter((lang) => pageData?.[lang]?.length > 0),
-		[pageData]
-	);
-
-	// Language init
+	// Unified language initialization
 	useEffect(() => {
-		const setLanguage = async () => {
-			const newLang = await getInitialLanguage(pageData, availableLangs);
-			setCurrentLang(newLang);
-			localStorage.setItem('currentLang', newLang);
-			allHeadingsMapRef.current.clear();
-			setHeadingsVersion((prev) => prev + 1);
-			setInitialLangReady(true);
-			isDesktopSliderContentInitialized.current = false;
-		};
-		setLanguage();
+		const langToSet = initialLang || getInitialLanguage(pageData, availableLangs);
+
+		if (langToSet !== currentLang) {
+			setCurrentLang(langToSet);
+			localStorage.setItem('currentLang', langToSet);
+		}
+
+		allHeadingsMapRef.current.clear();
+		setHeadingsVersion((prev) => prev + 1);
+		setInitialLangReady(true);
+		isDesktopSliderContentInitialized.current = false;
 		// eslint-disable-next-line react-hooks/exhaustive-deps
-	}, [initialLang, pageData, setHeadingsVersion]);
+	}, [initialLang, pageData, availableLangs, setHeadingsVersion]);
 
 	const contentToRender = useMemo(() => {
 		const currentLangContent = pageData[currentLang] || [];
@@ -204,10 +208,10 @@ const PageStructure: React.FC<PageStructureProps> = ({ pageData, backButton, ini
 									/>
 								);
 							})}
-
 						{useTabletLarge && (
 							<div className='copy-tablet'>
 								{canRenderCopyright && <Copyright />}
+
 								<PopupContacts />
 							</div>
 						)}
@@ -230,6 +234,7 @@ const PageStructure: React.FC<PageStructureProps> = ({ pageData, backButton, ini
 					{useTabletLarge && backButton && (
 						<NavLink to={backButton} className='idea-back'>
 							{ArrowLeftIcon}
+
 							<span>Back</span>
 						</NavLink>
 					)}
