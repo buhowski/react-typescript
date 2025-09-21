@@ -82,8 +82,16 @@
   </style>
 
   <!-- Content Security Policy -->
-  <meta http-equiv="Content-Security-Policy"
-    content="default-src 'self'; script-src 'self' https://www.youtube.com https://s.ytimg.com https://i.ytimg.com 'unsafe-inline'; frame-src https://www.youtube.com https://www.youtube-nocookie.com; connect-src 'self' https://www.youtube.com https://www.youtube-nocookie.com data:; media-src 'self' https://www.youtube.com https://www.youtube-nocookie.com blob:; img-src 'self' data: https:; style-src 'self' 'unsafe-inline' https:; font-src 'self' https: data:;">
+  <meta http-equiv="Content-Security-Policy" content="
+  default-src 'self' https://ipapi.co;
+  script-src 'self' https://www.youtube.com https://s.ytimg.com https://i.ytimg.com https://www.googletagmanager.com https://www.google-analytics.com 'unsafe-inline';
+  frame-src https://www.youtube.com https://www.youtube-nocookie.com;
+  connect-src 'self' https://www.youtube.com https://www.youtube-nocookie.com https://ipapi.co https://www.google-analytics.com;
+  media-src 'self' https://www.youtube.com https://www.youtube-nocookie.com blob:;
+  img-src 'self' data: https:;
+  style-src 'self' https://fonts.googleapis.com 'unsafe-inline';
+  font-src 'self' https://fonts.gstatic.com;
+  ">
 </head>
 
 <body id="body">
