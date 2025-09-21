@@ -9,8 +9,11 @@ const getBrowserLanguage = (): LanguageCode => {
 
 	// Return 'ua' for Ukrainian
 	if (browserLang === 'uk' || browserLang === 'ua') return 'ua';
-	// Return 'ru' for Russian
-	if (browserLang === 'ru') return 'ru';
+
+	// Return 'ru' for Russian-speaking regions
+	const russianSpeakingCountries = ['ru', 'by', 'kz', 'kg', 'tj'];
+	if (russianSpeakingCountries.includes(browserLang)) return 'ru';
+
 	// Default to English
 	return 'en';
 };

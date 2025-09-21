@@ -1,4 +1,8 @@
-# Permanent redirects
+# ======================
+# Netlify Configuration
+# ======================
+
+# Permanent Redirects (301)
 [[redirects]]
   from = "/startup"
   to = "/vision"
@@ -23,7 +27,7 @@
   status = 301
   force = true
 
-# Explicit SPA rules for language-prefixed URLs
+# Single Page Application (SPA) Routing (200)
 [[redirects]]
   from = "/ua/*"
   to = "/index.html"
@@ -39,8 +43,13 @@
   to = "/index.html"
   status = 200
 
-# Catch-all for everything else
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
+
+# Security Headers
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Content-Security-Policy = "default-src 'self'; script-src 'self' https://www.youtube.com https://s.ytimg.com https://i.ytimg.com https://www.googletagmanager.com https://www.google-analytics.com 'unsafe-inline' 'unsafe-eval'; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com; img-src 'self' https: data:; media-src 'self' https: blob:; connect-src 'self' https://ipapi.co https://www.google-analytics.com; frame-src https://www.youtube.com https://www.youtube-nocookie.com; object-src 'none'; base-uri 'self'; form-action 'self';"
