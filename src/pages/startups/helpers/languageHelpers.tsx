@@ -11,7 +11,7 @@ const getBrowserLanguage = (): LanguageCode => {
 	if (browserLang === 'uk' || browserLang === 'ua') return 'ua';
 
 	// Return 'ru' for Russian-speaking regions
-	const russianSpeakingCountries = ['ru', 'by', 'kz', 'kg', 'tj'];
+	const russianSpeakingCountries = ['ru', 'by', 'be', 'kz', 'kg', 'tj'];
 	if (russianSpeakingCountries.includes(browserLang)) return 'ru';
 
 	// Default to English
