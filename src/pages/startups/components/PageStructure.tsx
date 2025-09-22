@@ -2,10 +2,9 @@ import React, { useState, useEffect, useMemo, useCallback, useRef } from 'react'
 import { NavLink } from 'react-router-dom';
 import { startupsMetaTags } from '../../../components/metaTags';
 import { useTabletLargeQuery } from '../../../config/useMediaQuery';
-import { LANGUAGES, getInitialLanguage } from '../helpers/languageHelpers';
+import { getInitialLanguage } from '../helpers/languageHelpers';
 import { useStickyHeader } from '../helpers/useStickyHeader';
 import { useActiveHeadingTracking } from '../helpers/useActiveHeadingTracking';
-import { PageProps, LanguageCode } from '../../../types/common';
 import { VideoPlaybackProvider } from '../helpers/VideoPlaybackContext';
 import PageHelmet from '../../../config/PageHelmet';
 import PopupContacts from '../../../components/PopupContacts';
@@ -16,6 +15,7 @@ import StartupNavigation from './StartupNavigation';
 import Slider from '../../../components/Slider';
 import TableOfContent from './TableOfContent';
 import { ArrowLeftIcon } from '../../../assets/svg/icons';
+import { PageProps, LANGUAGES, LanguageCode } from '../../../types/common';
 
 import '../Startups.scss';
 
@@ -43,7 +43,7 @@ const PageStructure: React.FC<PageStructureProps> = ({ pageData, backButton, ini
 	// language initialization (synchronous)
 	const [currentLang, setCurrentLang] = useState<LanguageCode>('ua');
 	const availableLangs = useMemo(
-		() => LANGUAGES.filter((lang) => pageData?.[lang]?.length > 0),
+		() => [...LANGUAGES].filter((lang) => pageData?.[lang]?.length > 0),
 		[pageData]
 	);
 

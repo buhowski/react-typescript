@@ -3,7 +3,6 @@ import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import PageHelmet from './config/PageHelmet';
 import Header from './components/header/Header';
 import StartupsSeoWrapper from './pages/startups/components/StartupsSeoWrapper';
-
 import { defaultMetaTags } from './components/metaTags';
 import { routesData } from './routesMap';
 

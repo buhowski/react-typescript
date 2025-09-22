@@ -1,7 +1,8 @@
 import React, { useLayoutEffect, useRef } from 'react';
-import { LanguageSwitcherProps } from '../../../types/common';
+import { LanguageSwitcherProps, LanguageCode } from '../../../types/common';
 
-const LANGS = ['en', 'ua', 'ru'] as const;
+// Order of languages to display
+const LANGUAGE_ORDER: LanguageCode[] = ['en', 'ua', 'ru'];
 
 const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
 	currentLang,
@@ -12,16 +13,17 @@ const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
 
 	useLayoutEffect(() => {
 		const activeBtn = containerRef.current?.querySelector<HTMLElement>('.idea-lang__btn.active');
-
 		if (activeBtn && containerRef.current) {
 			containerRef.current.style.setProperty('--indicator-left', `${activeBtn.offsetLeft}px`);
 			containerRef.current.style.setProperty('--indicator-width', `${activeBtn.offsetWidth}px`);
 		}
 	}, [currentLang]);
 
+	const langsToShow = LANGUAGE_ORDER.filter((lang) => availableLangs.includes(lang));
+
 	return (
 		<div className='idea-lang' ref={containerRef}>
-			{LANGS.filter((lang) => availableLangs.includes(lang)).map((lang) => (
+			{langsToShow.map((lang) => (
 				<button
 					key={lang}
 					onClick={() => changeLanguage(lang)}

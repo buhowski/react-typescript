@@ -1,7 +1,3 @@
-# ======================
-# Netlify Configuration
-# ======================
-
 # Permanent Redirects (301)
 [[redirects]]
   from = "/startup"

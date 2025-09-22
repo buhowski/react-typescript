@@ -1,12 +1,13 @@
 import { LanguageCode, PageProps } from '../../../types/common';
 
-export const LANGUAGES: LanguageCode[] = ['ua', 'en', 'ru'];
 // Detect browser language
-const getBrowserLanguage = (): LanguageCode => {
-	const userLang = navigator.languages?.[0] || navigator.language || 'en';
+const detectBrowserLanguage = (): LanguageCode => {
+	const langs = navigator.languages ?? [navigator.language ?? 'ua'];
+	const hasLang = (prefix: string) => langs.some((l) => l.toLowerCase().startsWith(prefix));
+	console.log(langs);
 
-	if (userLang.startsWith('uk')) return 'ua';
-	if (userLang.startsWith('ru')) return 'ru';
+	if (hasLang('uk')) return 'ua';
+	if (hasLang('ru')) return 'ru';
 
 	return 'en';
 };
@@ -17,7 +18,7 @@ export const getInitialLanguage = (
 	availableLangs: LanguageCode[]
 ): LanguageCode => {
 	const storedLang = localStorage.getItem('currentLang') as LanguageCode | null;
-	const browserLang = getBrowserLanguage();
+	const browserLang = detectBrowserLanguage();
 
 	if (storedLang && availableLangs.includes(storedLang) && pageData?.[storedLang]?.length) {
 		return storedLang;
