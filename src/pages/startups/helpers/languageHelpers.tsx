@@ -9,8 +9,8 @@ const getLanguageByCountry = async (): Promise<LanguageCode | null> => {
 		const res = await fetch('/.netlify/functions/set-lang');
 		if (!res.ok) return null;
 
-		const data = await res.text();
-		return data as LanguageCode;
+		const data = await res.json();
+		return data.lang as LanguageCode;
 	} catch {
 		return null;
 	}
@@ -32,20 +32,25 @@ export const getInitialLanguage = async (
 	pageData: PageProps['pageData'],
 	availableLangs: LanguageCode[]
 ): Promise<LanguageCode> => {
-	// Get from Local Storage first
 	const storedLang = localStorage.getItem('currentLang') as LanguageCode | null;
+	const countryLang = await getLanguageByCountry();
+	const browserLang = getBrowserLanguage();
+
+	console.log('Country:', countryLang);
+	console.log('Storage:', storedLang);
+	console.log('Browser:', browserLang);
+
+	// Get from Local Storage first
 	if (storedLang && availableLangs.includes(storedLang) && pageData?.[storedLang]?.length) {
 		return storedLang;
 	}
 
 	// Then check country IP
-	const countryLang = await getLanguageByCountry();
 	if (countryLang && availableLangs.includes(countryLang)) {
 		return countryLang;
 	}
 
 	// Then check browser language
-	const browserLang = getBrowserLanguage();
 	if (availableLangs.includes(browserLang)) {
 		return browserLang;
 	}
