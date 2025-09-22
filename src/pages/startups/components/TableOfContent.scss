@@ -127,7 +127,7 @@ $toc-hover-color: #fff;
 		height: 100%;
 
 		@include tabletBig {
-			padding-top: 57px;
+			padding-top: 60px;
 		}
 	}
 
@@ -152,7 +152,7 @@ $toc-hover-color: #fff;
 		display: none;
 
 		@include tabletBig {
-			padding: 28px 15px 12px;
+			padding: 30px 15px 10px;
 			font-size: 18px;
 			letter-spacing: 0.8px;
 			font-family: $LouisGeorgeCafBold;
@@ -163,7 +163,6 @@ $toc-hover-color: #fff;
 			left: 0;
 			width: 100%;
 			z-index: 1;
-			background-color: #000000;
 		}
 	}
 
@@ -188,9 +187,9 @@ $toc-hover-color: #fff;
 			border-radius: 0 0 10px 10px;
 			top: 37px;
 			right: 50%;
-			max-height: 80dvh;
+			max-height: 84dvh;
 			min-width: 290px;
-			max-width: calc(100% - 85px);
+			max-width: calc(100% - 50px);
 			width: max-content;
 			transform: translateX(50%);
 		}
@@ -222,13 +221,12 @@ $toc-hover-color: #fff;
 				position: relative;
 				padding: 4px 42px;
 				padding-right: 25px;
-				letter-spacing: 0.6px;
 				font-weight: bold;
 				line-height: 1;
 
 				@include tabletBig {
-					padding: 5px 26px;
-					padding-right: 20px;
+					padding: 3px 26px 4px;
+					padding-right: 15px;
 				}
 
 				&::before {
@@ -246,7 +244,7 @@ $toc-hover-color: #fff;
 
 					@include tabletBig {
 						left: 9px;
-						font-size: 11px;
+						font-size: 10px;
 					}
 				}
 
