@@ -6,8 +6,9 @@ export const LANGUAGES: LanguageCode[] = ['ua', 'en', 'ru'];
 // Detect language by country IP using Netlify Function
 const getLanguageByCountry = async (): Promise<LanguageCode | null> => {
 	try {
-		const res = await fetch('/.netlify/functions/set-lang');
-		// console.log(res);
+		// const res = await fetch('/.netlify/functions/set-lang');
+		const res = await fetch('/.netlify/edge-functions/set-lang');
+		console.log(res);
 
 		if (!res.ok) return null;
 		const data = await res.json();
@@ -37,9 +38,9 @@ export const getInitialLanguage = async (
 	const countryLang = await getLanguageByCountry();
 	const browserLang = getBrowserLanguage();
 
-	// console.log('Country:', countryLang);
-	// console.log('Storage:', storedLang);
-	// console.log('Browser:', browserLang);
+	console.log('Country:', countryLang);
+	console.log('Storage:', storedLang);
+	console.log('Browser:', browserLang);
 
 	// Get from Local Storage first
 	if (storedLang && availableLangs.includes(storedLang) && pageData?.[storedLang]?.length) {
