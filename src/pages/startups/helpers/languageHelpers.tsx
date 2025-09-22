@@ -7,8 +7,9 @@ export const LANGUAGES: LanguageCode[] = ['ua', 'en', 'ru'];
 const getLanguageByCountry = async (): Promise<LanguageCode | null> => {
 	try {
 		const res = await fetch('/.netlify/functions/set-lang');
-		if (!res.ok) return null;
+		console.log(res);
 
+		if (!res.ok) return null;
 		const data = await res.json();
 		return data.lang as LanguageCode;
 	} catch {
