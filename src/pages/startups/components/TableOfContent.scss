@@ -125,6 +125,10 @@ $toc-hover-color: #fff;
 	&__container {
 		overflow: hidden;
 		height: 100%;
+
+		@include tabletBig {
+			padding-top: 57px;
+		}
 	}
 
 	// .table-content__inner
@@ -137,10 +141,8 @@ $toc-hover-color: #fff;
 	// .table-content__wrapper
 	&__wrapper {
 		padding-bottom: 30px;
-		padding-top: 0;
 
 		@include tabletBig {
-			padding-top: 57px;
 			padding-bottom: 25px;
 		}
 	}
@@ -180,7 +182,7 @@ $toc-hover-color: #fff;
 		overflow: hidden;
 		transition: height 0.2s;
 		will-change: height;
-		background: linear-gradient(145deg, #000000 68%, #002840 100%);
+		background: linear-gradient(150deg, #000000 40%, #002840 100%);
 
 		@include tabletBig {
 			border-radius: 0 0 10px 10px;

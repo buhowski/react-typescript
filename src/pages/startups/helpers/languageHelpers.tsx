@@ -4,49 +4,33 @@ import { LanguageCode, PageProps } from '../../../types/common';
 export const LANGUAGES: LanguageCode[] = ['ua', 'en', 'ru'];
 
 // Get language from browser
-const getBrowserLanguage = (): LanguageCode => {
-	const browserLang = navigator.language.slice(0, 2).toLowerCase();
+export const getBrowserLanguage = (): LanguageCode => {
+	if (typeof window === 'undefined') return 'ua';
 
-	// Return 'ua' for Ukrainian
-	if (browserLang === 'uk' || browserLang === 'ua') return 'ua';
+	const userLang = navigator.language.toLowerCase();
+	const map: Record<string, LanguageCode> = {
+		uk: 'ua',
+		ru: 'ru',
+		be: 'ru',
+	};
+	const prefix = userLang.slice(0, 2) as keyof typeof map;
 
-	// Return 'ru' for Russian-speaking regions
-	const russianSpeakingCountries = ['ru', 'by', 'be', 'kz', 'kg', 'tj'];
-	if (russianSpeakingCountries.includes(browserLang)) return 'ru';
-
-	// Default to English
-	return 'en';
+	return map[prefix] ?? 'en';
 };
-
-// Get language by user location
-// const getLanguageByLocation = async (): Promise<LanguageCode | null> => {
-//  try {
-//    const res = await fetch('https://ipapi.co/json/');
-//    const data = await res.json();
-//    const countryCode = data?.country_code;
-
-//    // Set 'ua' if country is Ukraine
-//    if (countryCode === 'UA') return 'ua';
-
-//    return null;
-//  } catch (error) {
-//    console.error('Error fetching location:', error);
-//    return null;
-//  }
-// };
 
 export const getInitialLanguage = (
 	pageData: PageProps['pageData'],
 	availableLangs: LanguageCode[]
 ) => {
-	// Get from Local Storage
 	const storedLang = localStorage.getItem('currentLang') as LanguageCode | null;
+	const browserLang = getBrowserLanguage();
+
+	// Get from Local Storage
 	if (storedLang && availableLangs.includes(storedLang) && pageData?.[storedLang]?.length) {
 		return storedLang;
 	}
 
 	// Check browser language
-	const browserLang = getBrowserLanguage();
 	if (availableLangs.includes(browserLang)) {
 		return browserLang;
 	}

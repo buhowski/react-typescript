@@ -25,6 +25,20 @@ interface PageStructureProps extends PageProps {
 
 const PageStructure: React.FC<PageStructureProps> = ({ pageData, backButton, initialLang }) => {
 	const useTabletLarge = useTabletLargeQuery();
+	const isActive = useStickyHeader();
+	const [initialLangReady, setInitialLangReady] = useState(false);
+	const [currentDesktopSliderContent, setCurrentDesktopSliderContent] = useState<any[]>([]);
+	const [canRenderCopyright, setCanRenderCopyright] = useState(false);
+	const allHeadingsMapRef = useRef(new Map());
+	const pitchRefs = useRef<(HTMLDivElement | null)[]>([]);
+	const isDesktopSliderContentInitialized = useRef(false);
+	const {
+		activeHeadingId,
+		handleHeadingsExtracted,
+		handleTableOfContentSelect,
+		sortedHeadings,
+		setHeadingsVersion,
+	} = useActiveHeadingTracking(useTabletLarge, allHeadingsMapRef);
 
 	// Languages available for the current page
 	const availableLangs = useMemo(
@@ -36,30 +50,16 @@ const PageStructure: React.FC<PageStructureProps> = ({ pageData, backButton, ini
 	const [currentLang, setCurrentLang] = useState<LanguageCode>(
 		() => initialLang || getInitialLanguage(pageData, availableLangs)
 	);
-	const [initialLangReady, setInitialLangReady] = useState(false);
-	const [currentDesktopSliderContent, setCurrentDesktopSliderContent] = useState<any[]>([]);
-	const [canRenderCopyright, setCanRenderCopyright] = useState(false);
-
-	const allHeadingsMapRef = useRef(new Map());
-	const pitchRefs = useRef<(HTMLDivElement | null)[]>([]);
-	const isDesktopSliderContentInitialized = useRef(false);
-
-	const {
-		activeHeadingId,
-		handleHeadingsExtracted,
-		handleTableOfContentSelect,
-		sortedHeadings,
-		setHeadingsVersion,
-	} = useActiveHeadingTracking(useTabletLarge, allHeadingsMapRef);
-	const isActive = useStickyHeader();
 
 	// Unified language initialization
 	useEffect(() => {
 		const langToSet = initialLang || getInitialLanguage(pageData, availableLangs);
 
+		// Always set the language in localStorage to keep it in sync.
+		localStorage.setItem('currentLang', langToSet);
+
 		if (langToSet !== currentLang) {
 			setCurrentLang(langToSet);
-			localStorage.setItem('currentLang', langToSet);
 		}
 
 		allHeadingsMapRef.current.clear();
