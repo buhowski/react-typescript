@@ -2,6 +2,12 @@
 # Netlify Configuration
 # ======================
 
+[build]
+  edge_functions = "netlify/edge-functions"
+
+[dev]
+  edge_functions = "netlify/edge-functions"
+
 # Permanent Redirects (301)
 [[redirects]]
   from = "/startup"
