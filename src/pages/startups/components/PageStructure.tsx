@@ -40,32 +40,29 @@ const PageStructure: React.FC<PageStructureProps> = ({ pageData, backButton, ini
 		setHeadingsVersion,
 	} = useActiveHeadingTracking(useTabletLarge, allHeadingsMapRef);
 
-	// Languages available for the current page
+	// language initialization
+	const [currentLang, setCurrentLang] = useState<LanguageCode>('ua');
 	const availableLangs = useMemo(
 		() => LANGUAGES.filter((lang) => pageData?.[lang]?.length > 0),
 		[pageData]
 	);
 
-	// Group state variables and refs for better readability.
-	const [currentLang, setCurrentLang] = useState<LanguageCode>(
-		() => initialLang || getInitialLanguage(pageData, availableLangs)
-	);
-
-	// Unified language initialization
 	useEffect(() => {
-		const langToSet = initialLang || getInitialLanguage(pageData, availableLangs);
+		const loadLanguage = async () => {
+			const langToSet = initialLang || (await getInitialLanguage(pageData, availableLangs));
+			localStorage.setItem('currentLang', langToSet);
 
-		// Always set the language in localStorage to keep it in sync.
-		localStorage.setItem('currentLang', langToSet);
+			if (langToSet !== currentLang) {
+				setCurrentLang(langToSet);
+			}
 
-		if (langToSet !== currentLang) {
-			setCurrentLang(langToSet);
-		}
+			allHeadingsMapRef.current.clear();
+			setHeadingsVersion((prev) => prev + 1);
+			setInitialLangReady(true);
+			isDesktopSliderContentInitialized.current = false;
+		};
 
-		allHeadingsMapRef.current.clear();
-		setHeadingsVersion((prev) => prev + 1);
-		setInitialLangReady(true);
-		isDesktopSliderContentInitialized.current = false;
+		loadLanguage();
 		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [initialLang, pageData, availableLangs, setHeadingsVersion]);
 
@@ -150,7 +147,7 @@ const PageStructure: React.FC<PageStructureProps> = ({ pageData, backButton, ini
 		[pageData, allHeadingsMapRef, setHeadingsVersion]
 	);
 
-	// Delayed footer render after content and language are ready
+	// Delayed Copyright Animation after content ready
 	useEffect(() => {
 		if (useTabletLarge && initialLangReady && contentToRender.length > 0) {
 			const timer = setTimeout(() => setCanRenderCopyright(true), 1000);
