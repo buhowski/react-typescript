@@ -17,6 +17,17 @@ declare module '*.webm' {
 	export default content;
 }
 
+declare module 'netlify:edge' {
+	export interface Context {
+		geo?: {
+			country?: {
+				code?: string;
+			};
+			timezone?: string;
+		};
+	}
+}
+
 // Global declaration for the YouTube IFrame API
 declare global {
 	interface Window {

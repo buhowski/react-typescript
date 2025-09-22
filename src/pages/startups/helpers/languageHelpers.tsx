@@ -6,12 +6,12 @@ export const LANGUAGES: LanguageCode[] = ['ua', 'en', 'ru'];
 // Detect language by country IP using Netlify Function
 const getLanguageByCountry = async (): Promise<LanguageCode | null> => {
 	try {
-		// const res = await fetch('/.netlify/functions/set-lang');
 		const res = await fetch('/.netlify/edge-functions/set-lang');
-		console.log(res);
-
 		if (!res.ok) return null;
 		const data = await res.json();
+
+		console.log(data);
+
 		return data.lang as LanguageCode;
 	} catch {
 		return null;

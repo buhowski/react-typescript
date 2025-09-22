@@ -1,15 +1,15 @@
-import { Context } from '@netlify/edge-functions';
-import { LanguageCode } from '../../src/types/common';
+import type { Context } from 'netlify:edge';
+import type { LanguageCode } from '../../src/types/common';
 
-// Assign function to a variable first
-const setLang = async (request: Request, context: Context) => {
+const setLang = async (_req: Request, context: Context) => {
 	let lang: LanguageCode = 'en';
-	const countryCode = context.geo?.country?.code?.toLowerCase();
+	const country = context.geo?.country?.code?.toLowerCase();
+	const timezone = context.geo?.timezone;
 
-	if (countryCode === 'ua') lang = 'ua';
-	if (countryCode === 'ru') lang = 'ru';
+	if (country === 'ua') lang = 'ua';
+	if (country === 'ru') lang = 'ru';
 
-	return new Response(JSON.stringify({ lang }), {
+	return new Response(JSON.stringify({ lang, country, timezone }), {
 		status: 200,
 		headers: { 'Content-Type': 'application/json' },
 	});
