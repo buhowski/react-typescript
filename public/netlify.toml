@@ -2,16 +2,6 @@
 # Netlify Configuration
 # ======================
 
-[build]
-  edge_functions = "netlify/edge-functions"
-
-[dev]
-  edge_functions = "netlify/edge-functions"
-
-[[edge_functions]]
-  path = "/set-lang"
-  function = "setLang"
-
 # Permanent Redirects (301)
 [[redirects]]
   from = "/startup"

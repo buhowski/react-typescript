@@ -40,7 +40,7 @@ const PageStructure: React.FC<PageStructureProps> = ({ pageData, backButton, ini
 		setHeadingsVersion,
 	} = useActiveHeadingTracking(useTabletLarge, allHeadingsMapRef);
 
-	// language initialization
+	// language initialization (synchronous)
 	const [currentLang, setCurrentLang] = useState<LanguageCode>('ua');
 	const availableLangs = useMemo(
 		() => LANGUAGES.filter((lang) => pageData?.[lang]?.length > 0),
@@ -48,21 +48,18 @@ const PageStructure: React.FC<PageStructureProps> = ({ pageData, backButton, ini
 	);
 
 	useEffect(() => {
-		const loadLanguage = async () => {
-			const langToSet = initialLang || (await getInitialLanguage(pageData, availableLangs));
-			localStorage.setItem('currentLang', langToSet);
+		const langToSet = initialLang || getInitialLanguage(pageData, availableLangs);
 
-			if (langToSet !== currentLang) {
-				setCurrentLang(langToSet);
-			}
+		localStorage.setItem('currentLang', langToSet);
 
-			allHeadingsMapRef.current.clear();
-			setHeadingsVersion((prev) => prev + 1);
-			setInitialLangReady(true);
-			isDesktopSliderContentInitialized.current = false;
-		};
+		if (langToSet !== currentLang) {
+			setCurrentLang(langToSet);
+		}
 
-		loadLanguage();
+		allHeadingsMapRef.current.clear();
+		setHeadingsVersion((prev) => prev + 1);
+		setInitialLangReady(true);
+		isDesktopSliderContentInitialized.current = false;
 		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [initialLang, pageData, availableLangs, setHeadingsVersion]);
 
