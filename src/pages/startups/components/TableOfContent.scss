@@ -192,6 +192,7 @@ $toc-hover-color: #fff;
 			max-width: calc(100% - 50px);
 			width: max-content;
 			transform: translateX(50%);
+			background: linear-gradient(120deg, #000000 35%, #002840 100%);
 		}
 
 		@include tabletSmall {
@@ -223,10 +224,11 @@ $toc-hover-color: #fff;
 				padding-right: 25px;
 				font-weight: bold;
 				line-height: 1;
+				text-shadow: 0 0 3px #000000;
 
 				@include tabletBig {
-					padding: 3px 26px 4px;
-					padding-right: 15px;
+					padding: 4px 24px;
+					padding-right: 18px;
 				}
 
 				&::before {
@@ -277,7 +279,7 @@ $toc-hover-color: #fff;
 			}
 
 			.h1-toc-item {
-				color: darken($h1-title-color, 5%);
+				color: darken($h1-title-color, 8%);
 				font-size: 15px;
 				margin-top: 10px;
 
@@ -288,22 +290,22 @@ $toc-hover-color: #fff;
 
 			.h2-toc-item {
 				font-size: 14px;
-				color: darken($h2-title-color, 15%);
+				color: darken($h2-title-color, 16%);
 				padding-left: 57px;
 
 				@include tabletBig {
 					font-size: 13px;
-					padding-left: 38px;
+					padding-left: 35px;
 				}
 			}
 
 			.h3-toc-item {
 				font-size: 13px;
-				color: darken($h3-title-color, 8%);
+				color: darken($h3-title-color, 10%);
 				padding-left: 72px;
 
 				@include tabletBig {
-					padding-left: 53px;
+					padding-left: 48px;
 					font-size: 12px;
 				}
 			}
