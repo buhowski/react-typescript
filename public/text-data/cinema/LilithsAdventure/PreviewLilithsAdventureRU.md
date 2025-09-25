@@ -1,4 +1,4 @@
-#### Adventure Comedy / Adult Animated Series
+#### Adventure Dark Comedy / Animated Series
 
 # Приключения Лилит
 

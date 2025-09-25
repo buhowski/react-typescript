@@ -1,4 +1,4 @@
-#### Dark Crime Comedy / Animated Movie
+#### Animated Dark Crime Comedy
 
 # Деревянное Чтиво
 
