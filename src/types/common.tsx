@@ -1,5 +1,5 @@
 // Define specific language codes
-export const LANGUAGES = ['ua', 'en', 'ru'] as const;
+export const LANGUAGES = ['en', 'ua', 'ru'] as const;
 export type LanguageCode = (typeof LANGUAGES)[number];
 
 // --- Shared Data Interfaces ---

@@ -4,7 +4,8 @@ import { LanguageCode, PageProps } from '../../../types/common';
 const detectBrowserLanguage = (): LanguageCode => {
 	const langs = navigator.languages ?? [navigator.language ?? 'ua'];
 	const hasLang = (prefix: string) => langs.some((l) => l.toLowerCase().startsWith(prefix));
-	console.log(langs);
+
+	// console.log(navigator.languages, navigator.language);
 
 	if (hasLang('uk')) return 'ua';
 	if (hasLang('ru')) return 'ru';
