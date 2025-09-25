@@ -817,6 +817,7 @@ $nav-top: 2px;
 
 	@include tabletBig {
 		border-radius: 0;
+		max-height: 420px;
 	}
 }
 
