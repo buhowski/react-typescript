@@ -1,17 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  <!-- STARTUPS -->
+  <!-- STARTUP -->
   <url>
     <loc>https://buhowski.dev/vision</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://buhowski.dev/en/vision" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://buhowski.dev/ru/vision" />
     <xhtml:link rel="alternate" hreflang="uk" href="https://buhowski.dev/ua/vision" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://buhowski.dev/vision" />
   </url>
+  <url>
+    <loc>https://buhowski.dev/en/vision</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://buhowski.dev/en/vision" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://buhowski.dev/ru/vision" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://buhowski.dev/ua/vision" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://buhowski.dev/vision" />
+  </url>
+  <url>
+    <loc>https://buhowski.dev/ru/vision</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://buhowski.dev/ru/vision" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://buhowski.dev/en/vision" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://buhowski.dev/ua/vision" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://buhowski.dev/vision" />
+  </url>
+  <url>
+    <loc>https://buhowski.dev/ua/vision</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://buhowski.dev/ua/vision" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://buhowski.dev/en/vision" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://buhowski.dev/ru/vision" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://buhowski.dev/vision" />
+  </url>
+
   <url>
     <loc>https://buhowski.dev/mvp</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://buhowski.dev/en/mvp" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://buhowski.dev/ru/mvp" />
     <xhtml:link rel="alternate" hreflang="uk" href="https://buhowski.dev/ua/mvp" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://buhowski.dev/mvp" />
+  </url>
+  <url>
+    <loc>https://buhowski.dev/en/mvp</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://buhowski.dev/en/mvp" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://buhowski.dev/ru/mvp" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://buhowski.dev/ua/mvp" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://buhowski.dev/mvp" />
+  </url>
+  <url>
+    <loc>https://buhowski.dev/ru/mvp</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://buhowski.dev/ru/mvp" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://buhowski.dev/en/mvp" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://buhowski.dev/ua/mvp" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://buhowski.dev/mvp" />
+  </url>
+  <url>
+    <loc>https://buhowski.dev/ua/mvp</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://buhowski.dev/ua/mvp" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://buhowski.dev/en/mvp" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://buhowski.dev/ru/mvp" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://buhowski.dev/mvp" />
   </url>
 
   <!-- CINEMA -->
@@ -20,18 +65,86 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://buhowski.dev/en/cinema" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://buhowski.dev/ru/cinema" />
     <xhtml:link rel="alternate" hreflang="uk" href="https://buhowski.dev/ua/cinema" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://buhowski.dev/cinema" />
   </url>
+  <url>
+    <loc>https://buhowski.dev/en/cinema</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://buhowski.dev/en/cinema" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://buhowski.dev/ru/cinema" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://buhowski.dev/ua/cinema" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://buhowski.dev/cinema" />
+  </url>
+  <url>
+    <loc>https://buhowski.dev/ru/cinema</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://buhowski.dev/ru/cinema" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://buhowski.dev/en/cinema" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://buhowski.dev/ua/cinema" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://buhowski.dev/cinema" />
+  </url>
+  <url>
+    <loc>https://buhowski.dev/ua/cinema</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://buhowski.dev/ua/cinema" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://buhowski.dev/en/cinema" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://buhowski.dev/ru/cinema" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://buhowski.dev/cinema" />
+  </url>
+
   <url>
     <loc>https://buhowski.dev/european-ukrainians</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://buhowski.dev/en/european-ukrainians" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://buhowski.dev/ru/european-ukrainians" />
     <xhtml:link rel="alternate" hreflang="uk" href="https://buhowski.dev/ua/european-ukrainians" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://buhowski.dev/european-ukrainians" />
   </url>
+  <url>
+    <loc>https://buhowski.dev/en/european-ukrainians</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://buhowski.dev/en/european-ukrainians" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://buhowski.dev/ru/european-ukrainians" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://buhowski.dev/ua/european-ukrainians" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://buhowski.dev/european-ukrainians" />
+  </url>
+  <url>
+    <loc>https://buhowski.dev/ru/european-ukrainians</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://buhowski.dev/ru/european-ukrainians" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://buhowski.dev/en/european-ukrainians" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://buhowski.dev/ua/european-ukrainians" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://buhowski.dev/european-ukrainians" />
+  </url>
+  <url>
+    <loc>https://buhowski.dev/ua/european-ukrainians</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://buhowski.dev/ua/european-ukrainians" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://buhowski.dev/en/european-ukrainians" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://buhowski.dev/ru/european-ukrainians" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://buhowski.dev/european-ukrainians" />
+  </url>
+
   <url>
     <loc>https://buhowski.dev/the-corp</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://buhowski.dev/en/the-corp" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://buhowski.dev/ru/the-corp" />
     <xhtml:link rel="alternate" hreflang="uk" href="https://buhowski.dev/ua/the-corp" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://buhowski.dev/the-corp" />
+  </url>
+  <url>
+    <loc>https://buhowski.dev/en/the-corp</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://buhowski.dev/en/the-corp" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://buhowski.dev/ru/the-corp" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://buhowski.dev/ua/the-corp" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://buhowski.dev/the-corp" />
+  </url>
+  <url>
+    <loc>https://buhowski.dev/ru/the-corp</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://buhowski.dev/ru/the-corp" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://buhowski.dev/en/the-corp" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://buhowski.dev/ua/the-corp" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://buhowski.dev/the-corp" />
+  </url>
+  <url>
+    <loc>https://buhowski.dev/ua/the-corp</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://buhowski.dev/ua/the-corp" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://buhowski.dev/en/the-corp" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://buhowski.dev/ru/the-corp" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://buhowski.dev/the-corp" />
   </url>
 
   <url>
@@ -39,18 +152,86 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://buhowski.dev/en/once-in-ukraine" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://buhowski.dev/ru/once-in-ukraine" />
     <xhtml:link rel="alternate" hreflang="uk" href="https://buhowski.dev/ua/once-in-ukraine" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://buhowski.dev/once-in-ukraine" />
   </url>
+  <url>
+    <loc>https://buhowski.dev/en/once-in-ukraine</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://buhowski.dev/en/once-in-ukraine" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://buhowski.dev/ru/once-in-ukraine" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://buhowski.dev/ua/once-in-ukraine" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://buhowski.dev/once-in-ukraine" />
+  </url>
+  <url>
+    <loc>https://buhowski.dev/ru/once-in-ukraine</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://buhowski.dev/ru/once-in-ukraine" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://buhowski.dev/en/once-in-ukraine" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://buhowski.dev/ua/once-in-ukraine" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://buhowski.dev/once-in-ukraine" />
+  </url>
+  <url>
+    <loc>https://buhowski.dev/ua/once-in-ukraine</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://buhowski.dev/ua/once-in-ukraine" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://buhowski.dev/en/once-in-ukraine" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://buhowski.dev/ru/once-in-ukraine" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://buhowski.dev/once-in-ukraine" />
+  </url>
+
   <url>
     <loc>https://buhowski.dev/volyn-wedding</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://buhowski.dev/en/volyn-wedding" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://buhowski.dev/ru/volyn-wedding" />
     <xhtml:link rel="alternate" hreflang="uk" href="https://buhowski.dev/ua/volyn-wedding" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://buhowski.dev/volyn-wedding" />
   </url>
+  <url>
+    <loc>https://buhowski.dev/en/volyn-wedding</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://buhowski.dev/en/volyn-wedding" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://buhowski.dev/ru/volyn-wedding" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://buhowski.dev/ua/volyn-wedding" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://buhowski.dev/volyn-wedding" />
+  </url>
+  <url>
+    <loc>https://buhowski.dev/ru/volyn-wedding</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://buhowski.dev/ru/volyn-wedding" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://buhowski.dev/en/volyn-wedding" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://buhowski.dev/ua/volyn-wedding" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://buhowski.dev/volyn-wedding" />
+  </url>
+  <url>
+    <loc>https://buhowski.dev/ua/volyn-wedding</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://buhowski.dev/ua/volyn-wedding" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://buhowski.dev/en/volyn-wedding" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://buhowski.dev/ru/volyn-wedding" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://buhowski.dev/volyn-wedding" />
+  </url>
+
   <url>
     <loc>https://buhowski.dev/he-she</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://buhowski.dev/en/he-she" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://buhowski.dev/ru/he-she" />
     <xhtml:link rel="alternate" hreflang="uk" href="https://buhowski.dev/ua/he-she" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://buhowski.dev/he-she" />
+  </url>
+  <url>
+    <loc>https://buhowski.dev/en/he-she</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://buhowski.dev/en/he-she" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://buhowski.dev/ru/he-she" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://buhowski.dev/ua/he-she" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://buhowski.dev/he-she" />
+  </url>
+  <url>
+    <loc>https://buhowski.dev/ru/he-she</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://buhowski.dev/ru/he-she" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://buhowski.dev/en/he-she" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://buhowski.dev/ua/he-she" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://buhowski.dev/he-she" />
+  </url>
+  <url>
+    <loc>https://buhowski.dev/ua/he-she</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://buhowski.dev/ua/he-she" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://buhowski.dev/en/he-she" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://buhowski.dev/ru/he-she" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://buhowski.dev/he-she" />
   </url>
 
   <url>
@@ -58,38 +239,174 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://buhowski.dev/en/wooden-fiction" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://buhowski.dev/ru/wooden-fiction" />
     <xhtml:link rel="alternate" hreflang="uk" href="https://buhowski.dev/ua/wooden-fiction" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://buhowski.dev/wooden-fiction" />
   </url>
+  <url>
+    <loc>https://buhowski.dev/en/wooden-fiction</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://buhowski.dev/en/wooden-fiction" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://buhowski.dev/ru/wooden-fiction" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://buhowski.dev/ua/wooden-fiction" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://buhowski.dev/wooden-fiction" />
+  </url>
+  <url>
+    <loc>https://buhowski.dev/ru/wooden-fiction</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://buhowski.dev/ru/wooden-fiction" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://buhowski.dev/en/wooden-fiction" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://buhowski.dev/ua/wooden-fiction" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://buhowski.dev/wooden-fiction" />
+  </url>
+  <url>
+    <loc>https://buhowski.dev/ua/wooden-fiction</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://buhowski.dev/ua/wooden-fiction" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://buhowski.dev/en/wooden-fiction" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://buhowski.dev/ru/wooden-fiction" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://buhowski.dev/wooden-fiction" />
+  </url>
+
   <url>
     <loc>https://buhowski.dev/liliths-adventure</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://buhowski.dev/en/liliths-adventure" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://buhowski.dev/ru/liliths-adventure" />
     <xhtml:link rel="alternate" hreflang="uk" href="https://buhowski.dev/ua/liliths-adventure" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://buhowski.dev/liliths-adventure" />
+  </url>
+  <url>
+    <loc>https://buhowski.dev/en/liliths-adventure</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://buhowski.dev/en/liliths-adventure" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://buhowski.dev/ru/liliths-adventure" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://buhowski.dev/ua/liliths-adventure" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://buhowski.dev/liliths-adventure" />
+  </url>
+  <url>
+    <loc>https://buhowski.dev/ru/liliths-adventure</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://buhowski.dev/ru/liliths-adventure" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://buhowski.dev/en/liliths-adventure" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://buhowski.dev/ua/liliths-adventure" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://buhowski.dev/liliths-adventure" />
+  </url>
+  <url>
+    <loc>https://buhowski.dev/ua/liliths-adventure</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://buhowski.dev/ua/liliths-adventure" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://buhowski.dev/en/liliths-adventure" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://buhowski.dev/ru/liliths-adventure" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://buhowski.dev/liliths-adventure" />
   </url>
 
-  <!-- Self Presentation -->
+  <!-- SELF PRESENTATION -->
   <url>
     <loc>https://buhowski.dev/self-presentation</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://buhowski.dev/en/self-presentation" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://buhowski.dev/ru/self-presentation" />
     <xhtml:link rel="alternate" hreflang="uk" href="https://buhowski.dev/ua/self-presentation" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://buhowski.dev/self-presentation" />
   </url>
+  <url>
+    <loc>https://buhowski.dev/en/self-presentation</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://buhowski.dev/en/self-presentation" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://buhowski.dev/ru/self-presentation" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://buhowski.dev/ua/self-presentation" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://buhowski.dev/self-presentation" />
+  </url>
+  <url>
+    <loc>https://buhowski.dev/ru/self-presentation</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://buhowski.dev/ru/self-presentation" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://buhowski.dev/en/self-presentation" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://buhowski.dev/ua/self-presentation" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://buhowski.dev/self-presentation" />
+  </url>
+  <url>
+    <loc>https://buhowski.dev/ua/self-presentation</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://buhowski.dev/ua/self-presentation" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://buhowski.dev/en/self-presentation" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://buhowski.dev/ru/self-presentation" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://buhowski.dev/self-presentation" />
+  </url>
+
   <url>
     <loc>https://buhowski.dev/podcast-show</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://buhowski.dev/en/podcast-show" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://buhowski.dev/ru/podcast-show" />
     <xhtml:link rel="alternate" hreflang="uk" href="https://buhowski.dev/ua/podcast-show" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://buhowski.dev/podcast-show" />
   </url>
+  <url>
+    <loc>https://buhowski.dev/en/podcast-show</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://buhowski.dev/en/podcast-show" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://buhowski.dev/ru/podcast-show" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://buhowski.dev/ua/podcast-show" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://buhowski.dev/podcast-show" />
+  </url>
+  <url>
+    <loc>https://buhowski.dev/ru/podcast-show</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://buhowski.dev/ru/podcast-show" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://buhowski.dev/en/podcast-show" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://buhowski.dev/ua/podcast-show" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://buhowski.dev/podcast-show" />
+  </url>
+  <url>
+    <loc>https://buhowski.dev/ua/podcast-show</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://buhowski.dev/ua/podcast-show" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://buhowski.dev/en/podcast-show" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://buhowski.dev/ru/podcast-show" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://buhowski.dev/podcast-show" />
+  </url>
+
   <url>
     <loc>https://buhowski.dev/god-evening</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://buhowski.dev/en/god-evening" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://buhowski.dev/ru/god-evening" />
     <xhtml:link rel="alternate" hreflang="uk" href="https://buhowski.dev/ua/god-evening" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://buhowski.dev/god-evening" />
   </url>
+  <url>
+    <loc>https://buhowski.dev/en/god-evening</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://buhowski.dev/en/god-evening" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://buhowski.dev/ru/god-evening" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://buhowski.dev/ua/god-evening" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://buhowski.dev/god-evening" />
+  </url>
+  <url>
+    <loc>https://buhowski.dev/ru/god-evening</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://buhowski.dev/ru/god-evening" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://buhowski.dev/en/god-evening" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://buhowski.dev/ua/god-evening" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://buhowski.dev/god-evening" />
+  </url>
+  <url>
+    <loc>https://buhowski.dev/ua/god-evening</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://buhowski.dev/ua/god-evening" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://buhowski.dev/en/god-evening" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://buhowski.dev/ru/god-evening" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://buhowski.dev/god-evening" />
+  </url>
+
   <url>
     <loc>https://buhowski.dev/cry-club</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://buhowski.dev/en/cry-club" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://buhowski.dev/ru/cry-club" />
     <xhtml:link rel="alternate" hreflang="uk" href="https://buhowski.dev/ua/cry-club" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://buhowski.dev/cry-club" />
+  </url>
+  <url>
+    <loc>https://buhowski.dev/en/cry-club</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://buhowski.dev/en/cry-club" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://buhowski.dev/ru/cry-club" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://buhowski.dev/ua/cry-club" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://buhowski.dev/cry-club" />
+  </url>
+  <url>
+    <loc>https://buhowski.dev/ru/cry-club</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://buhowski.dev/ru/cry-club" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://buhowski.dev/en/cry-club" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://buhowski.dev/ua/cry-club" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://buhowski.dev/cry-club" />
+  </url>
+  <url>
+    <loc>https://buhowski.dev/ua/cry-club</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://buhowski.dev/ua/cry-club" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://buhowski.dev/en/cry-club" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://buhowski.dev/ru/cry-club" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://buhowski.dev/cry-club" />
   </url>
 
   <!-- GAMES -->
@@ -98,29 +415,143 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://buhowski.dev/en/games" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://buhowski.dev/ru/games" />
     <xhtml:link rel="alternate" hreflang="uk" href="https://buhowski.dev/ua/games" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://buhowski.dev/games" />
   </url>
+  <url>
+    <loc>https://buhowski.dev/en/games</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://buhowski.dev/en/games" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://buhowski.dev/ru/games" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://buhowski.dev/ua/games" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://buhowski.dev/games" />
+  </url>
+  <url>
+    <loc>https://buhowski.dev/ru/games</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://buhowski.dev/ru/games" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://buhowski.dev/en/games" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://buhowski.dev/ua/games" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://buhowski.dev/games" />
+  </url>
+  <url>
+    <loc>https://buhowski.dev/ua/games</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://buhowski.dev/ua/games" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://buhowski.dev/en/games" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://buhowski.dev/ru/games" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://buhowski.dev/games" />
+  </url>
+
   <url>
     <loc>https://buhowski.dev/cossack-saga</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://buhowski.dev/en/cossack-saga" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://buhowski.dev/ru/cossack-saga" />
     <xhtml:link rel="alternate" hreflang="uk" href="https://buhowski.dev/ua/cossack-saga" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://buhowski.dev/cossack-saga" />
   </url>
+  <url>
+    <loc>https://buhowski.dev/en/cossack-saga</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://buhowski.dev/en/cossack-saga" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://buhowski.dev/ru/cossack-saga" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://buhowski.dev/ua/cossack-saga" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://buhowski.dev/cossack-saga" />
+  </url>
+  <url>
+    <loc>https://buhowski.dev/ru/cossack-saga</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://buhowski.dev/ru/cossack-saga" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://buhowski.dev/en/cossack-saga" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://buhowski.dev/ua/cossack-saga" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://buhowski.dev/cossack-saga" />
+  </url>
+  <url>
+    <loc>https://buhowski.dev/ua/cossack-saga</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://buhowski.dev/ua/cossack-saga" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://buhowski.dev/en/cossack-saga" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://buhowski.dev/ru/cossack-saga" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://buhowski.dev/cossack-saga" />
+  </url>
+
   <url>
     <loc>https://buhowski.dev/cossack-saga-1</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://buhowski.dev/en/cossack-saga-1" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://buhowski.dev/ru/cossack-saga-1" />
     <xhtml:link rel="alternate" hreflang="uk" href="https://buhowski.dev/ua/cossack-saga-1" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://buhowski.dev/cossack-saga-1" />
   </url>
+  <url>
+    <loc>https://buhowski.dev/en/cossack-saga-1</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://buhowski.dev/en/cossack-saga-1" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://buhowski.dev/ru/cossack-saga-1" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://buhowski.dev/ua/cossack-saga-1" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://buhowski.dev/cossack-saga-1" />
+  </url>
+  <url>
+    <loc>https://buhowski.dev/ru/cossack-saga-1</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://buhowski.dev/ru/cossack-saga-1" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://buhowski.dev/en/cossack-saga-1" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://buhowski.dev/ua/cossack-saga-1" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://buhowski.dev/cossack-saga-1" />
+  </url>
+  <url>
+    <loc>https://buhowski.dev/ua/cossack-saga-1</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://buhowski.dev/ua/cossack-saga-1" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://buhowski.dev/en/cossack-saga-1" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://buhowski.dev/ru/cossack-saga-1" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://buhowski.dev/cossack-saga-1" />
+  </url>
+
   <url>
     <loc>https://buhowski.dev/cossack-saga-2</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://buhowski.dev/en/cossack-saga-2" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://buhowski.dev/ru/cossack-saga-2" />
     <xhtml:link rel="alternate" hreflang="uk" href="https://buhowski.dev/ua/cossack-saga-2" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://buhowski.dev/cossack-saga-2" />
   </url>
+  <url>
+    <loc>https://buhowski.dev/en/cossack-saga-2</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://buhowski.dev/en/cossack-saga-2" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://buhowski.dev/ru/cossack-saga-2" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://buhowski.dev/ua/cossack-saga-2" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://buhowski.dev/cossack-saga-2" />
+  </url>
+  <url>
+    <loc>https://buhowski.dev/ru/cossack-saga-2</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://buhowski.dev/ru/cossack-saga-2" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://buhowski.dev/en/cossack-saga-2" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://buhowski.dev/ua/cossack-saga-2" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://buhowski.dev/cossack-saga-2" />
+  </url>
+  <url>
+    <loc>https://buhowski.dev/ua/cossack-saga-2</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://buhowski.dev/ua/cossack-saga-2" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://buhowski.dev/en/cossack-saga-2" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://buhowski.dev/ru/cossack-saga-2" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://buhowski.dev/cossack-saga-2" />
+  </url>
+
   <url>
     <loc>https://buhowski.dev/cossack-saga-3</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://buhowski.dev/en/cossack-saga-3" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://buhowski.dev/ru/cossack-saga-3" />
     <xhtml:link rel="alternate" hreflang="uk" href="https://buhowski.dev/ua/cossack-saga-3" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://buhowski.dev/cossack-saga-3" />
+  </url>
+  <url>
+    <loc>https://buhowski.dev/en/cossack-saga-3</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://buhowski.dev/en/cossack-saga-3" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://buhowski.dev/ru/cossack-saga-3" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://buhowski.dev/ua/cossack-saga-3" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://buhowski.dev/cossack-saga-3" />
+  </url>
+  <url>
+    <loc>https://buhowski.dev/ru/cossack-saga-3</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://buhowski.dev/ru/cossack-saga-3" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://buhowski.dev/en/cossack-saga-3" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://buhowski.dev/ua/cossack-saga-3" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://buhowski.dev/cossack-saga-3" />
+  </url>
+  <url>
+    <loc>https://buhowski.dev/ua/cossack-saga-3</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://buhowski.dev/ua/cossack-saga-3" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://buhowski.dev/en/cossack-saga-3" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://buhowski.dev/ru/cossack-saga-3" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://buhowski.dev/cossack-saga-3" />
   </url>
 </urlset>
