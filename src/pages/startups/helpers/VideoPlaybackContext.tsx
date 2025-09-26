@@ -22,7 +22,7 @@ export const VideoPlaybackProvider: React.FC<React.PropsWithChildren<{}>> = ({ c
 		players.current.set(id, controls);
 	}, []);
 
-	// Unregisters a video player
+	// Unregister a video player
 	const unregisterPlayer = useCallback((id: string) => {
 		players.current.delete(id);
 	}, []);

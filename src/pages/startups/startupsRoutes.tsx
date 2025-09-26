@@ -1,7 +1,8 @@
 import StartupsWrapper from './components/StartupsWrapper';
 import { PageProps, LanguageCode } from '../../types/common';
-import { findParentPath } from './helpers/backButtonPathHelper';
+import { visionMetaTags, mvpMetaTags } from './components/startupsMetaTags';
 
+import { findParentPath } from './helpers/backButtonPathHelper';
 import { visionPage, MVPPage } from './pages/startupsStructure';
 
 // CINEMA INDUSTRY
@@ -64,8 +65,8 @@ import {
 
 // Startup pages map
 export const startupDataMap: Record<string, PageProps> = {
-	[pathToVision]: { pageData: visionPage },
-	[pathToMVP]: { pageData: MVPPage },
+	[pathToVision]: { pageData: visionPage, metaTags: visionMetaTags },
+	[pathToMVP]: { pageData: MVPPage, metaTags: mvpMetaTags },
 
 	// CINEMA INDUSTRY
 	[pathToCinema]: { pageData: cinemaPage },
@@ -109,16 +110,15 @@ export const startupSubPaths: Record<string, string[] | Record<string, any> | nu
 };
 
 // Map of startup components with optional initial language
-export const startupsMap: Record<
-	string,
-	React.FC<{ initialLang?: LanguageCode }>
-> = Object.fromEntries(
+type InitialLangProp = { initialLang?: LanguageCode };
+
+export const startupsMap: Record<string, React.FC<InitialLangProp>> = Object.fromEntries(
 	Object.entries(startupDataMap).map(([path, data]) => {
 		const parent = findParentPath(startupSubPaths, path);
 
 		return [
 			path,
-			(props: { initialLang?: LanguageCode }) => (
+			(props: InitialLangProp) => (
 				<StartupsWrapper {...data} backButton={parent} initialLang={props.initialLang} />
 			),
 		];

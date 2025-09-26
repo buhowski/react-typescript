@@ -1,32 +1,5 @@
 import { Helmet } from 'react-helmet-async';
-
-interface Alternate {
-	hreflang: string;
-	href: string;
-}
-
-interface MetaTags {
-	title?: string;
-	description?: string;
-	canonicalUrl?: string;
-	alternates?: Alternate[];
-
-	// Open Graph Meta Tags
-	ogUrl?: string;
-	ogTitle?: string;
-	ogDescription?: string;
-	ogImage?: string;
-
-	// Twitter Meta Tags
-	twitterUrl?: string;
-	twitterTitle?: string;
-	twitterDescription?: string;
-	twitterImage?: string;
-}
-
-interface PageHelmetProps {
-	metaTags: MetaTags;
-}
+import { PageHelmetProps } from '../types/common';
 
 const PageHelmet: React.FC<PageHelmetProps> = ({ metaTags }) => {
 	const finalTwitterUrl = metaTags.twitterUrl || metaTags.ogUrl;
@@ -39,7 +12,7 @@ const PageHelmet: React.FC<PageHelmetProps> = ({ metaTags }) => {
 			{metaTags.title && <title>{metaTags.title}</title>}
 			{metaTags.description && <meta name='description' content={metaTags.description} />}
 			{metaTags.canonicalUrl && <link rel='canonical' href={metaTags.canonicalUrl} />}
-			{metaTags.alternates?.map((a) => (
+			{metaTags.langAlternates?.map((a) => (
 				<link key={a.hreflang} rel='alternate' hrefLang={a.hreflang} href={a.href} />
 			))}
 
@@ -52,7 +25,7 @@ const PageHelmet: React.FC<PageHelmetProps> = ({ metaTags }) => {
 			{metaTags.ogImage && <meta property='og:image' content={metaTags.ogImage} />}
 
 			{/* Twitter Meta Tags */}
-			{finalTwitterUrl && <meta property='twitter:url' content={finalTwitterUrl} />}
+			{finalTwitterUrl && <meta name='twitter:url' content={finalTwitterUrl} />}
 			{finalTwitterTitle && <meta name='twitter:title' content={finalTwitterTitle} />}
 			{finalTwitterDescription && (
 				<meta name='twitter:description' content={finalTwitterDescription} />

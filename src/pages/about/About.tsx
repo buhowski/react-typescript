@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import PageHelmet from '../../config/PageHelmet';
+import PageHelmet from '../../components/PageHelmet';
 import { aboutMetaTags } from '../../components/metaTags';
 import dotsData from './aboutData';
 import PhotoBg from './images/body.png';

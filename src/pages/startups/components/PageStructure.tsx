@@ -1,12 +1,10 @@
 import React, { useState, useEffect, useMemo, useCallback, useRef } from 'react';
 import { NavLink } from 'react-router-dom';
-import { startupsMetaTags } from '../../../components/metaTags';
 import { useTabletLargeQuery } from '../../../config/useMediaQuery';
 import { getInitialLanguage } from '../helpers/languageHelpers';
 import { useStickyHeader } from '../helpers/useStickyHeader';
 import { useActiveHeadingTracking } from '../helpers/useActiveHeadingTracking';
 import { VideoPlaybackProvider } from '../helpers/VideoPlaybackContext';
-import PageHelmet from '../../../config/PageHelmet';
 import PopupContacts from '../../../components/PopupContacts';
 import Copyright from '../../../components/Copyright';
 import PitchContainer from './PitchContainer';
@@ -15,15 +13,11 @@ import StartupNavigation from './StartupNavigation';
 import Slider from '../../../components/Slider';
 import TableOfContent from './TableOfContent';
 import { ArrowLeftIcon } from '../../../assets/svg/icons';
-import { PageProps, LANGUAGES, LanguageCode } from '../../../types/common';
+import { SinglePageProps, LANGUAGES, LanguageCode } from '../../../types/common';
 
 import '../Startups.scss';
 
-interface PageStructureProps extends PageProps {
-	initialLang?: LanguageCode;
-}
-
-const PageStructure: React.FC<PageStructureProps> = ({ pageData, backButton, initialLang }) => {
+const PageStructure: React.FC<SinglePageProps> = ({ pageData, backButton, initialLang }) => {
 	const useTabletLarge = useTabletLargeQuery();
 	const isActive = useStickyHeader();
 	const [initialLangReady, setInitialLangReady] = useState(false);
@@ -159,8 +153,6 @@ const PageStructure: React.FC<PageStructureProps> = ({ pageData, backButton, ini
 
 	return (
 		<VideoPlaybackProvider>
-			<PageHelmet metaTags={startupsMetaTags} />
-
 			<LanguageSwitcher
 				currentLang={currentLang}
 				availableLangs={availableLangs}

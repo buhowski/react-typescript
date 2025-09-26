@@ -4,6 +4,35 @@ export type LanguageCode = (typeof LANGUAGES)[number];
 
 // --- Shared Data Interfaces ---
 
+// Meta tags structure for SEO
+export interface Alternate {
+	hreflang: string;
+	href: string;
+}
+
+export interface MetaTags {
+	title?: string;
+	description?: string;
+	canonicalUrl?: string;
+	langAlternates?: Alternate[];
+
+	// Open Graph Meta Tags
+	ogUrl?: string;
+	ogTitle?: string;
+	ogDescription?: string;
+	ogImage?: string;
+
+	// Twitter Meta Tags
+	twitterUrl?: string;
+	twitterTitle?: string;
+	twitterDescription?: string;
+	twitterImage?: string;
+}
+
+export interface PageHelmetProps {
+	metaTags: MetaTags;
+}
+
 // Re-use SlideItem
 export interface SlideItem {
 	itemPoster?: string;
@@ -63,6 +92,7 @@ export interface LanguageSwitcherProps {
 export interface PageProps {
 	pageData: Record<LanguageCode, TextDataItem[]>;
 	backButton?: string | null;
+	metaTags?: MetaTags;
 }
 
 export interface SinglePageProps extends PageProps {

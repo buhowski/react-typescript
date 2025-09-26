@@ -1,59 +1,40 @@
-import { pathToVision, pathToAbout, pathToProjects } from './urlsData';
+import { pathToAbout, pathToProjects } from './urlsData';
 
 // Base Website URL
-const website = 'https://buhowski.dev';
-const buildUrl = (path: string) => `${website}${path}`;
+export const website = 'https://buhowski.dev';
+export const buildUrl = (path: string) => `${website}${path}`;
 
 // Open Graph Images
 // const ogImageHome = `${website}/screenshot_home.jpg`;
-const ogImageStartup = `${website}/screenshot_plan.jpg`;
-const ogImageAbout = `${website}/screenshot_about.jpg`;
-const ogImagePortfolio = `${website}/screenshot_portfolio.jpg`;
+export const ogImageStartup = `${website}/screenshot_plan.jpg`;
+export const ogImageAbout = `${website}/screenshot_about.jpg`;
+export const ogImagePortfolio = `${website}/screenshot_portfolio.jpg`;
 
 // Main Website Meta Tags
-const author = 'Olexander Tsiomakh — ';
-const shortTitleAbout = 'Explorer ⋅ Developer ⋅ Creator';
-const shortTitlePortfolio = 'Creative Portfolio ⋅ Dev & Design';
-const startupTitle = 'Another Dimension — Digital Magazine & Entertainment Startups';
+export const author = 'Olexander Tsiomakh — ';
+export const shortTitleAbout = 'Explorer ⋅ Developer ⋅ Creator';
+export const shortTitlePortfolio = 'Creative Portfolio ⋅ Dev & Design';
+export const visionTitle = 'Another Dimension — Digital Magazine & Entertainment Startups';
 
-const defaultDescription =
+export const defaultDescription =
 	'Crafting projects and ideas, building worlds, and sharing creations. From Planet Earth, Solar System.';
-const startupDescription =
+export const visionDescription =
 	'Turning stories, tech, and imagination into a playground of innovation and creativity.';
-const aboutDescription =
+export const aboutDescription =
 	'A creator at the crossroads of code, storytelling, design, and vision-shaping experiences.';
-const portfolioDescription =
+export const portfolioDescription =
 	'Dive into a collection of projects that combine creativity, functionality, and quality web design.';
 
 // ### Default Meta Tags / Home Page
 export const defaultMetaTags = {
 	title: `${author}${shortTitleAbout}`,
 	description: defaultDescription,
-	canonicalUrl: website,
+	canonicalUrl: `${website}/`,
 
 	// Open Graph Meta Tags
-	ogUrl: website,
+	ogUrl: `${website}/`,
 	ogTitle: shortTitleAbout,
 	ogDescription: defaultDescription,
-	ogImage: ogImageStartup,
-};
-
-// ### Business Plan Page
-export const startupsMetaTags = {
-	title: startupTitle,
-	description: startupDescription,
-	canonicalUrl: buildUrl(pathToVision),
-	// TODO: Alternate URLs for languages / Need if have All Separate pages
-	alternates: [
-		{ hreflang: 'en', href: buildUrl(`/en${pathToVision}`) },
-		{ hreflang: 'uk', href: buildUrl(`/ua${pathToVision}`) },
-		{ hreflang: 'ru', href: buildUrl(`/ru${pathToVision}`) },
-	],
-
-	// Open Graph Meta Tags
-	ogUrl: buildUrl(pathToVision),
-	ogTitle: startupTitle,
-	ogDescription: startupDescription,
 	ogImage: ogImageStartup,
 };
 
