@@ -1,4 +1,4 @@
-import { startupSubPaths } from '../pages/startups/startupsRoutes';
+import { startupSubPaths } from '../routesData';
 
 const collectChildren = (tree: Record<string, any>, parent: string): string[] => {
 	const node = tree[parent];

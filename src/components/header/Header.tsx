@@ -7,7 +7,7 @@ import socialData from '../socials/socialData';
 import { headerLogo } from '../../assets/svg/icons';
 // Reusable path matching function
 import { isPathActive } from '../../config/pathUtils';
-import { startupsMap } from '../../pages/startups/startupsRoutes';
+import { startupsMap } from '../../routesData';
 
 import './Header.scss';
 

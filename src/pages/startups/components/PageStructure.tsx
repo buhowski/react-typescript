@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useMemo, useCallback, useRef } from 'react';
 import { NavLink } from 'react-router-dom';
 import { useTabletLargeQuery } from '../../../config/useMediaQuery';
-import { getInitialLanguage } from '../helpers/languageHelpers';
+import { getInitialLanguage } from '../helpers/languageHelper';
 import { useStickyHeader } from '../helpers/useStickyHeader';
 import { useActiveHeadingTracking } from '../helpers/useActiveHeadingTracking';
 import { VideoPlaybackProvider } from '../helpers/VideoPlaybackContext';
@@ -34,14 +34,16 @@ const PageStructure: React.FC<SinglePageProps> = ({ pageData, backButton, initia
 		setHeadingsVersion,
 	} = useActiveHeadingTracking(useTabletLarge, allHeadingsMapRef);
 
-	// language initialization (synchronous)
-	const [currentLang, setCurrentLang] = useState<LanguageCode>('ua');
+	// Initial language:
+	const [currentLang, setCurrentLang] = useState<LanguageCode>(initialLang || 'ua');
 	const availableLangs = useMemo(
 		() => [...LANGUAGES].filter((lang) => pageData?.[lang]?.length > 0),
 		[pageData]
 	);
 
+	// Language setup
 	useEffect(() => {
+		// getInitialLanguage is the ultimate fallback (Browser/Default).
 		const langToSet = initialLang || getInitialLanguage(pageData, availableLangs);
 
 		localStorage.setItem('currentLang', langToSet);
@@ -57,6 +59,7 @@ const PageStructure: React.FC<SinglePageProps> = ({ pageData, backButton, initia
 		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [initialLang, pageData, availableLangs, setHeadingsVersion]);
 
+	// Content
 	const contentToRender = useMemo(() => {
 		const currentLangContent = pageData[currentLang] || [];
 		const englishContent = pageData.en || [];

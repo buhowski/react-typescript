@@ -1,12 +1,16 @@
-import StartupsWrapper from './components/StartupsWrapper';
-import { PageProps, LanguageCode } from '../../types/common';
-import { visionMetaTags } from './components/startupsMetaTags';
+import Home from './pages/home/Home';
+import About from './pages/about/About';
+import Projects from './pages/projects/Projects';
 
-import { findParentPath } from './helpers/backButtonPathHelper';
-import { visionPage, MVPPage } from './pages/startupsStructure';
+import StartupsWrapper from './pages/startups/components/StartupsWrapper';
+import { visionMetaTags } from './pages/startups/components/startupsMetaTags';
+import { findParentPath } from './pages/startups/helpers/backButtonPathHelper';
+
+// STARTUP PAGES
+import { visionPage, MVPPage } from './pages/startups/pages/startupsStructure';
 
 // CINEMA INDUSTRY
-import { cinemaPage } from './pages/cinemaStructure';
+import { cinemaPage } from './pages/startups/pages/cinemaStructure';
 import {
 	theCorpPage,
 	europeanUkrainiansPage,
@@ -15,7 +19,7 @@ import {
 	volynWeddingPage,
 	woodenFictionPage,
 	lilithsAdventurePage,
-} from './pages/cinema/structureCinema';
+} from './pages/startups/pages/cinema/structureCinema';
 
 // Self Presentations
 import {
@@ -23,19 +27,21 @@ import {
 	podcastShowPage,
 	godEveningPage,
 	cryClubPage,
-} from './pages/cinema/SelfPresentation/structureSelfPresentation';
+} from './pages/startups/pages/cinema/SelfPresentation/structureSelfPresentation';
 
 // GAMING INDUSTRY
-import { gamesPage } from './pages/gamesStructure';
+import { gamesPage } from './pages/startups/pages/gamesStructure';
 import {
 	cossackSagaPage,
 	cossackSaga1Page,
 	cossackSaga2Page,
 	cossackSaga3Page,
-} from './pages/games/CossackSaga/structureCossackSaga';
+} from './pages/startups/pages/games/CossackSaga/structureCossackSaga';
 
 // URLs
 import {
+	pathToAbout,
+	pathToProjects,
 	pathToVision,
 	pathToMVP,
 
@@ -61,7 +67,9 @@ import {
 	pathToCossackSagaPart1,
 	pathToCossackSagaPart2,
 	pathToCossackSagaPart3,
-} from '../../components/urlsData';
+} from './components/urlsData';
+
+import { PageProps, LanguageCode } from './types/common';
 
 // Startup pages map
 export const startupDataMap: Record<string, PageProps> = {
@@ -133,3 +141,10 @@ export const startupsMap: Record<string, React.FC<InitialLangProp>> = Object.fro
 		];
 	})
 );
+
+// Collect all routes
+export const mainRoutes = [
+	{ pathTo: '/', pageComponent: Home },
+	{ pathTo: pathToAbout, pageComponent: About },
+	{ pathTo: pathToProjects, pageComponent: Projects },
+];

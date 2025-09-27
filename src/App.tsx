@@ -1,11 +1,12 @@
 import { useLocation, Routes, Route } from 'react-router-dom';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import Header from './components/header/Header';
-import StartupsSeoWrapper from './pages/startups/components/StartupsSeoWrapper';
-import { routesData } from './routesMap';
+import StartupWrapperSeo from './pages/startups/components/StartupWrapperSeo';
+import { mainRoutes, startupDataMap } from './routesData';
 
 const App = () => {
 	const location = useLocation();
+	const startupRouts = Object.keys(startupDataMap);
 
 	return (
 		<TransitionGroup>
@@ -15,7 +16,7 @@ const App = () => {
 						<Header />
 
 						<Routes location={location}>
-							{routesData.map(({ pathTo, pageComponent: PageComponent }, i) => (
+							{mainRoutes.map(({ pathTo, pageComponent: PageComponent }, i) => (
 								<Route
 									key={i + pathTo}
 									path={pathTo.startsWith('/') ? pathTo : `/${pathTo}`}
@@ -23,8 +24,16 @@ const App = () => {
 								/>
 							))}
 
+							{startupRouts.map((path) => (
+								<Route
+									key={path}
+									path={path.startsWith('/') ? path : `/${path}`}
+									element={<StartupWrapperSeo path={path} />}
+								/>
+							))}
+
 							{/* SEO static startup pages */}
-							<Route path='/:lang/*' element={<StartupsSeoWrapper />} />
+							<Route path='/:lang/*' element={<StartupWrapperSeo />} />
 						</Routes>
 					</div>
 				</div>
