@@ -1,6 +1,6 @@
 import { website } from '../../../components/metaCoreUrls';
 import { generateHreflangUrls } from '../helpers/seoHelper';
-import { pathToVision, pathToMVP } from '../../../components/urlsData';
+import { pathToVision } from '../../../components/urlsData';
 
 // Screenshots
 const ogImageStartup = `${website}/screenshot_plan.jpg`;
@@ -10,20 +10,20 @@ const visionTitle = 'Another Dimension — Digital Magazine & Entertainment Star
 const visionDescription =
 	'Turning stories, tech, and imagination into a playground of innovation and creativity.';
 
-// ### Business Plan Page
-export const visionMetaTags = {
+// Base static meta tags template
+const baseMetaTags = {
 	title: visionTitle,
 	description: visionDescription,
-	...generateHreflangUrls(pathToVision),
-
 	// Open Graph Meta Tags
 	ogTitle: visionTitle,
 	ogDescription: visionDescription,
 	ogImage: ogImageStartup,
+
+	...generateHreflangUrls(pathToVision),
 };
 
-// MVP Page
-export const mvpMetaTags = {
-	...visionMetaTags,
-	...generateHreflangUrls(pathToMVP),
+// Startups
+export const visionMetaTags = {
+	...baseMetaTags,
+	...generateHreflangUrls(pathToVision),
 };
