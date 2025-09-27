@@ -1,12 +1,9 @@
+// Main Pages
 import Home from './pages/home/Home';
 import About from './pages/about/About';
 import Projects from './pages/projects/Projects';
 
-import StartupsWrapper from './pages/startups/components/StartupsWrapper';
-import { visionMetaTags } from './pages/startups/components/startupsMetaTags';
-import { findParentPath } from './pages/startups/helpers/backButtonPathHelper';
-
-// STARTUP PAGES
+// STARTUPS PAGES
 import { visionPage, MVPPage } from './pages/startups/pages/startupsStructure';
 
 // CINEMA INDUSTRY
@@ -69,10 +66,19 @@ import {
 	pathToCossackSagaPart3,
 } from './components/urlsData';
 
-import { PageProps, LanguageCode } from './types/common';
+import { visionMetaTags } from './pages/startups/components/startupsMetaTags';
+import { PageProps } from './types/common';
 
-// Startup pages map
+// Main Routes
+export const mainRoutes = [
+	{ pathTo: '/', pageComponent: Home },
+	{ pathTo: pathToAbout, pageComponent: About },
+	{ pathTo: pathToProjects, pageComponent: Projects },
+];
+
+// Startups Routes
 export const startupDataMap: Record<string, PageProps> = {
+	// STARTUPS PAGES
 	[pathToVision]: { pageData: visionPage, metaTags: visionMetaTags },
 	[pathToMVP]: { pageData: MVPPage },
 
@@ -105,6 +111,7 @@ export const startupSubPaths: Record<string, string[] | Record<string, any> | nu
 	[pathToGames]: {
 		[pathToCossackSaga]: [pathToCossackSagaPart1, pathToCossackSagaPart2, pathToCossackSagaPart3],
 	},
+
 	[pathToCinema]: {
 		[pathToEuropeanUkrainians]: null,
 		[pathToTheCorp]: null,
@@ -116,35 +123,3 @@ export const startupSubPaths: Record<string, string[] | Record<string, any> | nu
 		[pathToSelfPresentation]: [pathToPodcastShow, pathToGodEvening, pathToCryClub],
 	},
 };
-
-// Map of startup components with optional initial language
-type InitialLangProp = {
-	initialLang?: LanguageCode;
-	metaTags?: Partial<PageProps['metaTags']>;
-};
-
-export const startupsMap: Record<string, React.FC<InitialLangProp>> = Object.fromEntries(
-	Object.entries(startupDataMap).map(([path, pageData]) => {
-		const parent = findParentPath(startupSubPaths, path);
-		const defaultMeta = pageData.metaTags || visionMetaTags;
-
-		return [
-			path,
-			(props: InitialLangProp) => (
-				<StartupsWrapper
-					{...pageData}
-					backButton={parent}
-					initialLang={props.initialLang}
-					metaTags={{ ...defaultMeta, ...props.metaTags }}
-				/>
-			),
-		];
-	})
-);
-
-// Collect all routes
-export const mainRoutes = [
-	{ pathTo: '/', pageComponent: Home },
-	{ pathTo: pathToAbout, pageComponent: About },
-	{ pathTo: pathToProjects, pageComponent: Projects },
-];

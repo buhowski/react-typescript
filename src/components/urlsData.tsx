@@ -2,8 +2,8 @@ export const urlTelegram = 'https://t.me/olexander_tsiomakh';
 export const urlLinkedIn = 'https://www.linkedin.com/in/olexander';
 export const urlGitHub = 'https://github.com/buhowski';
 export const urlEmail = 'olexander.tsiomakh@gmail.com';
-export const urlCoindrop = 'https://coindrop.to/buhowski';
 export const urlInstagram = 'https://www.instagram.com/buhowski';
+// export const urlCoindrop = 'https://coindrop.to/buhowski';
 
 // All Pages Path
 export const pathToAbout = '/me';
@@ -25,6 +25,7 @@ export const pathToHeShe = '/he-she';
 export const pathToWoodenFiction = '/wooden-fiction';
 export const pathToLilithsAdventure = '/liliths-adventure';
 
+// Self Presentation
 export const pathToSelfPresentation = '/self-presentation';
 export const pathToPodcastShow = '/podcast-show';
 export const pathToGodEvening = '/god-evening';

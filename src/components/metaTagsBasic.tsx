@@ -1,17 +1,13 @@
-import { website } from './metaCoreUrls';
 import { pathToAbout, pathToProjects } from './urlsData';
-import { generateBaseUrls } from '../pages/startups/helpers/seoHelper';
+import { website, generatePageMeta } from '../pages/startups/helpers/metaHelper';
 
-// Screenshots
-const ogImageHome = `${website}/screenshot_plan.jpg`;
-const ogImageAbout = `${website}/screenshot_about.jpg`;
-const ogImagePortfolio = `${website}/screenshot_portfolio.jpg`;
-
-// Main Website Meta Tags
+// Author and page titles
 const author = 'Olexander Tsiomakh — ';
 const shortTitleAbout = 'Explorer ⋅ Developer ⋅ Creator';
 const shortTitlePortfolio = 'Creative Portfolio ⋅ Dev & Design';
+const baseShorTitle = `${author}${shortTitleAbout}`;
 
+// Page descriptions
 const defaultDescription =
 	'Crafting projects and ideas, building worlds, and sharing creations. From Planet Earth, Solar System.';
 const aboutDescription =
@@ -19,39 +15,31 @@ const aboutDescription =
 const portfolioDescription =
 	'Dive into a collection of projects that combine creativity, functionality, and quality web design.';
 
-// Default Meta Tags / Home Page
-export const defaultMetaTags = {
-	title: `${author}${shortTitleAbout}`,
+// Open Graph images
+const ogImages = {
+	home: `${website}/screenshot_plan.jpg`,
+	about: `${website}/screenshot_about.jpg`,
+	portfolio: `${website}/screenshot_portfolio.jpg`,
+};
+
+// Meta tags exports
+export const defaultMetaTags = generatePageMeta({
+	title: baseShorTitle,
 	description: defaultDescription,
-	canonicalUrl: `${website}/`,
+	path: '/',
+	ogImage: ogImages.home,
+});
 
-	// Open Graph Meta Tags
-	ogUrl: `${website}/`,
-	ogTitle: shortTitleAbout,
-	ogDescription: defaultDescription,
-	ogImage: ogImageHome,
-};
-
-// About Page
-export const aboutMetaTags = {
-	title: `${author}${shortTitleAbout}`,
+export const aboutMetaTags = generatePageMeta({
+	title: baseShorTitle,
 	description: aboutDescription,
-	...generateBaseUrls(pathToAbout),
+	path: pathToAbout,
+	ogImage: ogImages.about,
+});
 
-	// Open Graph Meta Tags
-	ogTitle: shortTitleAbout,
-	ogDescription: aboutDescription,
-	ogImage: ogImageAbout,
-};
-
-// Portfolio Page
-export const portfolioMetaTags = {
+export const portfolioMetaTags = generatePageMeta({
 	title: `${author}${shortTitlePortfolio}`,
 	description: portfolioDescription,
-	...generateBaseUrls(pathToProjects),
-
-	// Open Graph Meta Tags
-	ogTitle: shortTitlePortfolio,
-	ogDescription: portfolioDescription,
-	ogImage: ogImagePortfolio,
-};
+	path: pathToProjects,
+	ogImage: ogImages.portfolio,
+});

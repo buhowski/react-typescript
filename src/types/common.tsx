@@ -29,6 +29,11 @@ export interface MetaTags {
 	twitterImage?: string;
 }
 
+// Reusable type for generating page meta
+export type PageMetaParams = Pick<MetaTags, 'title' | 'description' | 'ogImage'> & {
+	path: string;
+};
+
 export interface PageHelmetProps {
 	metaTags: MetaTags;
 }

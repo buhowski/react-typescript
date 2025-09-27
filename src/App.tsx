@@ -6,7 +6,7 @@ import { mainRoutes, startupDataMap } from './routesData';
 
 const App = () => {
 	const location = useLocation();
-	const startupRouts = Object.keys(startupDataMap);
+	const startupRoutes = Object.keys(startupDataMap);
 
 	return (
 		<TransitionGroup>
@@ -16,6 +16,7 @@ const App = () => {
 						<Header />
 
 						<Routes location={location}>
+							{/* Main Pages */}
 							{mainRoutes.map(({ pathTo, pageComponent: PageComponent }, i) => (
 								<Route
 									key={i + pathTo}
@@ -24,7 +25,8 @@ const App = () => {
 								/>
 							))}
 
-							{startupRouts.map((path) => (
+							{/* Startup Pages */}
+							{startupRoutes.map((path) => (
 								<Route
 									key={path}
 									path={path.startsWith('/') ? path : `/${path}`}
