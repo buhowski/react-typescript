@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import Masonry from 'react-responsive-masonry';
 import { ResponsiveMasonry as ResponsiveMasonryBase } from 'react-responsive-masonry';
 import PageHelmet from '../../components/PageHelmet';
-import { portfolioMetaTags } from '../../components/metaTags';
+import { portfolioMetaTags } from '../../components/metaTagsBasic';
 import projectsData from './projectsData';
 import './Projects.scss';
 

@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-
 import PageHelmet from '../../components/PageHelmet';
-import { aboutMetaTags } from '../../components/metaTags';
+import { aboutMetaTags } from '../../components/metaTagsBasic';
 import dotsData from './aboutData';
 import PhotoBg from './images/body.png';
 import { useTabletQuery } from '../../config/useMediaQuery';

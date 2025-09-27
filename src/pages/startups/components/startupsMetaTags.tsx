@@ -1,22 +1,22 @@
-import { generateMetaAlternates } from '../helpers/seoHelper';
-import {
-	buildUrl,
-	ogImageStartup,
-	visionTitle,
-	visionDescription,
-} from '../../../components/metaTags';
-
+import { website } from '../../../components/metaCoreUrls';
+import { generateHreflangUrls } from '../helpers/seoHelper';
 import { pathToVision, pathToMVP } from '../../../components/urlsData';
+
+// Screenshots
+const ogImageStartup = `${website}/screenshot_plan.jpg`;
+
+// Main Website Meta Tags
+const visionTitle = 'Another Dimension — Digital Magazine & Entertainment Startups';
+const visionDescription =
+	'Turning stories, tech, and imagination into a playground of innovation and creativity.';
 
 // ### Business Plan Page
 export const visionMetaTags = {
 	title: visionTitle,
 	description: visionDescription,
-	canonicalUrl: buildUrl(pathToVision),
-	langAlternates: generateMetaAlternates(pathToVision),
+	...generateHreflangUrls(pathToVision),
 
 	// Open Graph Meta Tags
-	ogUrl: buildUrl(pathToVision),
 	ogTitle: visionTitle,
 	ogDescription: visionDescription,
 	ogImage: ogImageStartup,
@@ -25,7 +25,5 @@ export const visionMetaTags = {
 // MVP Page
 export const mvpMetaTags = {
 	...visionMetaTags,
-	canonicalUrl: buildUrl(pathToMVP),
-	langAlternates: generateMetaAlternates(pathToMVP),
-	ogUrl: buildUrl(pathToMVP),
+	...generateHreflangUrls(pathToMVP),
 };

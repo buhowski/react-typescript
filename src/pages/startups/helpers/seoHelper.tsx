@@ -1,22 +1,41 @@
-import { buildUrl } from '../../../components/metaTags';
-import { Alternate } from '../../../types/common';
+import { buildUrl } from '../../../components/metaCoreUrls';
+import { Alternate, LanguageCode, MetaTags } from '../../../types/common';
 
-const LANGUAGES_MAP = {
+const LANGUAGES_MAP: Record<LanguageCode, string> = {
 	en: '/en',
 	ru: '/ru',
 	ua: '/ua',
 };
 
-export const generateMetaAlternates = (path: string): Alternate[] => {
-	const langAlternates = Object.entries(LANGUAGES_MAP).map(([langCode, prefix]) => ({
-		hreflang: langCode,
-		href: buildUrl(`${prefix}${path}`),
-	}));
+// Required types for SEO URL helpers
+export type SeoLangsUrls = Required<Pick<MetaTags, 'canonicalUrl' | 'ogUrl' | 'langAlternates'>>;
+export type BaseUrls = Required<Pick<MetaTags, 'canonicalUrl' | 'ogUrl'>>;
+
+// Generate base canonical and ogUrl
+export const generateBaseUrls = (path: string): BaseUrls => ({
+	canonicalUrl: buildUrl(path),
+	ogUrl: buildUrl(path),
+});
+
+// Generate all required SEO URLs
+export const generateHreflangUrls = (path: string): SeoLangsUrls => {
+	const baseUrls = generateBaseUrls(path);
+	const canonicalUrl = baseUrls.canonicalUrl;
+
+	const langAlternates: Alternate[] = (Object.keys(LANGUAGES_MAP) as LanguageCode[]).map(
+		(langCode) => ({
+			hreflang: langCode,
+			href: buildUrl(`${LANGUAGES_MAP[langCode]}${path}`),
+		})
+	);
 
 	langAlternates.push({
 		hreflang: 'x-default',
-		href: buildUrl(path),
+		href: canonicalUrl,
 	});
 
-	return langAlternates as Alternate[];
+	return {
+		...baseUrls,
+		langAlternates: langAlternates,
+	};
 };
