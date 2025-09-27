@@ -8,8 +8,8 @@ const LANGUAGES_MAP: Record<LanguageCode, string> = {
 };
 
 // Required types for SEO URL helpers
-export type SeoLangsUrls = Required<Pick<MetaTags, 'canonicalUrl' | 'ogUrl' | 'langAlternates'>>;
 export type BaseUrls = Required<Pick<MetaTags, 'canonicalUrl' | 'ogUrl'>>;
+export type SeoLangsUrls = Required<Pick<MetaTags, 'canonicalUrl' | 'ogUrl' | 'langAlternates'>>;
 
 // Generate base canonical and ogUrl
 export const generateBaseUrls = (path: string): BaseUrls => ({

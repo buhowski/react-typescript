@@ -3,6 +3,7 @@ import { useParams, useLocation } from 'react-router-dom';
 import { startupsMap } from '../startupsRoutes';
 import { pathToVision } from '../../../components/urlsData';
 import { LANGUAGES, LanguageCode } from '../../../types/common';
+// import { website, buildUrl } from '../../../components/metaCoreUrls';
 
 // Wrapper for all startup pages with SEO & language handling
 const StartupsSeoWrapper: React.FC = () => {

@@ -113,13 +113,13 @@ export const startupSubPaths: Record<string, string[] | Record<string, any> | nu
 type InitialLangProp = { initialLang?: LanguageCode };
 
 export const startupsMap: Record<string, React.FC<InitialLangProp>> = Object.fromEntries(
-	Object.entries(startupDataMap).map(([path, data]) => {
+	Object.entries(startupDataMap).map(([path, pageData]) => {
 		const parent = findParentPath(startupSubPaths, path);
 
 		return [
 			path,
 			(props: InitialLangProp) => (
-				<StartupsWrapper {...data} backButton={parent} initialLang={props.initialLang} />
+				<StartupsWrapper {...pageData} backButton={parent} initialLang={props.initialLang} />
 			),
 		];
 	})
