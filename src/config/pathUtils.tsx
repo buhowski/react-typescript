@@ -1,4 +1,5 @@
 import { startupSubPaths } from '../routesData';
+import { normalizePath } from '../pages/startups/helpers/metaHelper';
 
 const collectChildren = (tree: Record<string, any>, parent: string): string[] => {
 	const node = tree[parent];
@@ -19,7 +20,7 @@ const collectChildren = (tree: Record<string, any>, parent: string): string[] =>
 
 // Check if current path is active
 export const isPathActive = (paths: string[], currentPath: string) => {
-	const pathWithoutLang = currentPath.replace(/^\/(en|ua|ru)/, '') || '/';
+	const pathWithoutLang = normalizePath(currentPath);
 	return paths.some((path) => path === pathWithoutLang || `${path}/` === pathWithoutLang);
 };
 

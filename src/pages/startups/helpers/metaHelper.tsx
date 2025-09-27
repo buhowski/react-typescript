@@ -20,6 +20,9 @@ export const buildUrl = (path: string) =>
 // regex LANGUAGES
 export const langPrefixRegex = new RegExp(`^/(${LANGUAGES.join('|')})(?=/|$)`);
 
+export const normalizePath = (rawPath: string): string =>
+	rawPath.replace(langPrefixRegex, '').replace(/\/+$/, '') || '/';
+
 // Required types for SEO URL helpers
 export type BaseUrls = Required<Pick<MetaTags, 'canonicalUrl' | 'ogUrl'>>;
 export type SeoLangsUrls = Required<Pick<MetaTags, 'canonicalUrl' | 'ogUrl' | 'langAlternates'>>;

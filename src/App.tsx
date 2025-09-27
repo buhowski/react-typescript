@@ -34,7 +34,7 @@ const App = () => {
 								/>
 							))}
 
-							{/* SEO static startup pages */}
+							{/* SEO catch-all for language-specific startup pages */}
 							<Route path='/:lang/*' element={<StartupWrapperSeo />} />
 						</Routes>
 					</div>

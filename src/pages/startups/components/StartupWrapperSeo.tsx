@@ -1,6 +1,11 @@
 import React, { useLayoutEffect } from 'react';
 import { useLocation, useParams } from 'react-router-dom';
-import { buildUrl, langPrefixRegex, generateHreflangUrls } from '../helpers/metaHelper';
+import {
+	buildUrl,
+	generateHreflangUrls,
+	langPrefixRegex,
+	normalizePath,
+} from '../helpers/metaHelper';
 import { startupsMap } from '../startupsMap';
 import { pathToVision } from '../../../components/urlsData';
 import { LANGUAGES, LanguageCode } from '../../../types/common';
@@ -20,9 +25,9 @@ const StartupWrapperSeo: React.FC<StartupWrapperSeoProps> = ({ path: fixedPath, 
 	const currentLang: LanguageCode =
 		urlLang || (localStorage.getItem('currentLang') as LanguageCode) || initialLang;
 
-	// Clean base path (without lang prefix)
+	// Normalize path
 	const rawPath = fixedPath ?? location.pathname;
-	const basePath = rawPath.replace(langPrefixRegex, '').replace(/\/+$/, '') || '/';
+	const basePath = normalizePath(rawPath);
 	const hasLangPrefix = langPrefixRegex.test(rawPath);
 
 	// SEO URLs
