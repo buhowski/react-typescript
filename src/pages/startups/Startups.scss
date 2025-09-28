@@ -367,13 +367,13 @@ $nav-top: 2px;
 		margin-top: 25px;
 	}
 
+	$lang-btn-width: 42px;
+
 	// .idea-lang__btn
 	&__btn {
-		$width-bg: 42px;
-
 		border: none;
 		background: none;
-		width: 42px;
+		width: $lang-btn-width;
 		padding: 14px 10px 13px;
 		line-height: 1;
 		color: #000;
@@ -402,13 +402,19 @@ $nav-top: 2px;
 		position: absolute;
 		z-index: -1;
 		left: 0;
-		width: 42px;
 		height: 100%;
 		background-color: $bg-active-lang;
 		border-radius: $radius-lang;
-		width: var(--indicator-width, 0);
+
+		/* Fallbacks */
+		width: $lang-btn-width;
+		transform: translateX(0);
+
+		/* Dynamic with JS */
+		width: var(--indicator-width, $lang-btn-width);
 		transform: translateX(var(--indicator-left, 0));
 		transition: transform 0.26s, width 0.26s;
+		will-change: transform, width;
 	}
 }
 

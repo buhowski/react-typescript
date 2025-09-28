@@ -9,12 +9,32 @@ const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
 	const containerRef = useRef<HTMLDivElement>(null);
 
 	useLayoutEffect(() => {
-		const activeBtn = containerRef.current?.querySelector<HTMLElement>('.idea-lang__btn.active');
+		if (!containerRef.current) return;
 
-		if (activeBtn && containerRef.current) {
-			containerRef.current.style.setProperty('--indicator-left', `${activeBtn.offsetLeft}px`);
-			containerRef.current.style.setProperty('--indicator-width', `${activeBtn.offsetWidth}px`);
-		}
+		// Update indicator position and width
+		const updateIndicator = () => {
+			const activeBtn = containerRef.current?.querySelector<HTMLElement>('.idea-lang__btn.active');
+
+			if (activeBtn && containerRef.current) {
+				containerRef.current.style.setProperty('--indicator-left', `${activeBtn.offsetLeft}px`);
+				containerRef.current.style.setProperty('--indicator-width', `${activeBtn.offsetWidth}px`);
+			}
+		};
+
+		// Initial update
+		requestAnimationFrame(updateIndicator);
+
+		// Observe container changes
+		const resizeObserver = new ResizeObserver(updateIndicator);
+		resizeObserver.observe(containerRef.current);
+
+		// Fallback: update on window resize
+		window.addEventListener('resize', updateIndicator);
+
+		return () => {
+			resizeObserver.disconnect();
+			window.removeEventListener('resize', updateIndicator);
+		};
 	}, [currentLang]);
 
 	return (
@@ -31,4 +51,5 @@ const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
 		</div>
 	);
 };
+
 export default LanguageSwitcher;
