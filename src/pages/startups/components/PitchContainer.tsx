@@ -29,7 +29,7 @@ const PitchContainer = React.memo(
 			return (
 				<section ref={ref} className='pitch-container'>
 					{/* Render markdown content block or error message based on loading status */}
-					<div className='idea-block' lang={currentLanguage}>
+					<div className='idea-block'>
 						{shouldShowErrorMessage ? (
 							<p style={{ textAlign: 'center', textTransform: 'uppercase' }}>
 								ERROR: Text not found

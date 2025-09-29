@@ -8,7 +8,7 @@ import {
 } from '../helpers/metaHelper';
 import { startupsMap } from '../startupsMap';
 import { pathToVision } from '../../../components/urlsData';
-import { LANGUAGES, LanguageCode } from '../../../types/common';
+import { LANGUAGES, LanguageCode, htmlLangMap } from '../../../types/common';
 
 type StartupWrapperSeoProps = {
 	path?: string;
@@ -40,7 +40,7 @@ const StartupWrapperSeo: React.FC<StartupWrapperSeoProps> = ({ path: fixedPath, 
 	const PageComponent = startupsMap[basePath] || startupsMap[pathToVision];
 
 	useLayoutEffect(() => {
-		document.documentElement.lang = currentLang;
+		document.documentElement.lang = htmlLangMap[currentLang];
 		localStorage.setItem('currentLang', currentLang);
 	}, [currentLang]);
 

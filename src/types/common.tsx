@@ -2,6 +2,13 @@
 export const LANGUAGES = ['en', 'ua', 'ru'] as const;
 export type LanguageCode = (typeof LANGUAGES)[number];
 
+// Map frontend codes to correct HTML lang
+export const htmlLangMap: Record<LanguageCode, string> = {
+	en: 'en',
+	ru: 'ru',
+	ua: 'uk',
+};
+
 // --- Shared Data Interfaces ---
 
 // Meta tags structure for SEO

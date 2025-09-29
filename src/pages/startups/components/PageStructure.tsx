@@ -13,7 +13,7 @@ import StartupNavigation from './StartupNavigation';
 import Slider from '../../../components/Slider';
 import TableOfContent from './TableOfContent';
 import { ArrowLeftIcon } from '../../../assets/svg/icons';
-import { SinglePageProps, LANGUAGES, LanguageCode } from '../../../types/common';
+import { SinglePageProps, LANGUAGES, LanguageCode, htmlLangMap } from '../../../types/common';
 
 import '../Startups.scss';
 
@@ -58,6 +58,11 @@ const PageStructure: React.FC<SinglePageProps> = ({ pageData, backButton, initia
 		isDesktopSliderContentInitialized.current = false;
 		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [initialLang, pageData, availableLangs, setHeadingsVersion]);
+
+	// Set document language based on current language
+	useEffect(() => {
+		document.documentElement.lang = htmlLangMap[currentLang];
+	}, [currentLang]);
 
 	// Content
 	const contentToRender = useMemo(() => {
@@ -149,11 +154,6 @@ const PageStructure: React.FC<SinglePageProps> = ({ pageData, backButton, initia
 		}
 	}, [initialLangReady, contentToRender, useTabletLarge]);
 
-	// Set document language based on current language
-	useEffect(() => {
-		document.documentElement.lang = currentLang;
-	}, [currentLang]);
-
 	return (
 		<VideoPlaybackProvider>
 			<LanguageSwitcher
@@ -178,7 +178,7 @@ const PageStructure: React.FC<SinglePageProps> = ({ pageData, backButton, initia
 
 			<div className='wrapper wrapper--idea'>
 				<div className='idea-section'>
-					<div className='idea-info'>
+					<div className='idea-info' lang={htmlLangMap[currentLang]}>
 						{initialLangReady &&
 							contentToRender.map((structure, index) => {
 								const fallbackFilmsPreview = pageData.en?.[index]?.pagePreviewUrl;
