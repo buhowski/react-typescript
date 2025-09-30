@@ -1,11 +1,6 @@
 import React, { useLayoutEffect } from 'react';
 import { useLocation, useParams } from 'react-router-dom';
-import {
-	buildUrl,
-	generateHreflangUrls,
-	langPrefixRegex,
-	normalizePath,
-} from '../helpers/metaHelper';
+import { buildUrl, generateHreflangUrls, normalizePath } from '../helpers/metaHelper';
 import { startupsMap } from '../startupsMap';
 import { pathToVision } from '../../../components/urlsData';
 import { LANGUAGES, LanguageCode, htmlLangMap } from '../../../types/common';
@@ -28,13 +23,16 @@ const StartupWrapperSeo: React.FC<StartupWrapperSeoProps> = ({ path: fixedPath, 
 	// Normalize path
 	const rawPath = fixedPath ?? location.pathname;
 	const basePath = normalizePath(rawPath);
-	const hasLangPrefix = langPrefixRegex.test(rawPath);
 
 	// SEO URLs
 	const metaURL = generateHreflangUrls(basePath);
-	const canonicalWithLangOrClean = hasLangPrefix
-		? buildUrl(`/${currentLang}${basePath}`)
-		: metaURL.canonicalUrl;
+	const resolvedCanonicalUrl = buildUrl(`/${currentLang}${basePath}`);
+
+	// for canonical without lang URLs
+	// const hasLangPrefix = langPrefixRegex.test(rawPath);
+	// const canonicalWithLangOrClean = hasLangPrefix
+	// 	? buildUrl(`/${currentLang}${basePath}`)
+	// 	: metaURL.canonicalUrl;
 
 	// Page Component
 	const PageComponent = startupsMap[basePath] || startupsMap[pathToVision];
@@ -48,9 +46,9 @@ const StartupWrapperSeo: React.FC<StartupWrapperSeoProps> = ({ path: fixedPath, 
 		<PageComponent
 			initialLang={currentLang}
 			metaTags={{
-				canonicalUrl: canonicalWithLangOrClean,
-				ogUrl: canonicalWithLangOrClean,
-				twitterUrl: canonicalWithLangOrClean,
+				canonicalUrl: resolvedCanonicalUrl,
+				ogUrl: resolvedCanonicalUrl,
+				twitterUrl: resolvedCanonicalUrl,
 				langAlternates: metaURL.langAlternates,
 			}}
 		/>

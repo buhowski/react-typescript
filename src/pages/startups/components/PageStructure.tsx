@@ -64,6 +64,18 @@ const PageStructure: React.FC<SinglePageProps> = ({ pageData, backButton, initia
 		document.documentElement.lang = htmlLangMap[currentLang];
 	}, [currentLang]);
 
+	const changeLanguage = useCallback(
+		(lang: LanguageCode) => {
+			if (pageData?.[lang]?.length) {
+				setCurrentLang(lang);
+				localStorage.setItem('currentLang', lang);
+				allHeadingsMapRef.current.clear();
+				setHeadingsVersion((prev) => prev + 1);
+			}
+		},
+		[pageData, allHeadingsMapRef, setHeadingsVersion]
+	);
+
 	// Content
 	const contentToRender = useMemo(() => {
 		const currentLangContent = pageData[currentLang] || [];
@@ -104,6 +116,7 @@ const PageStructure: React.FC<SinglePageProps> = ({ pageData, backButton, initia
 		}
 
 		const newSliderContent = contentToRender[newActivePitchIndex]?.sliderContent || [];
+
 		setCurrentDesktopSliderContent((prevContent) => {
 			if (JSON.stringify(newSliderContent) !== JSON.stringify(prevContent)) {
 				return newSliderContent;
@@ -115,6 +128,7 @@ const PageStructure: React.FC<SinglePageProps> = ({ pageData, backButton, initia
 	// Attach scroll listener and handle initial slider content
 	useEffect(() => {
 		const pageContainer = document.querySelector('.page-container');
+
 		if (!pageContainer) return;
 
 		if (
@@ -134,22 +148,11 @@ const PageStructure: React.FC<SinglePageProps> = ({ pageData, backButton, initia
 		};
 	}, [handleScrollUpdateSlider, initialLangReady, contentToRender]);
 
-	const changeLanguage = useCallback(
-		(lang: LanguageCode) => {
-			if (pageData?.[lang]?.length) {
-				setCurrentLang(lang);
-				localStorage.setItem('currentLang', lang);
-				allHeadingsMapRef.current.clear();
-				setHeadingsVersion((prev) => prev + 1);
-			}
-		},
-		[pageData, allHeadingsMapRef, setHeadingsVersion]
-	);
-
 	// Delayed Copyright Animation after content ready
 	useEffect(() => {
 		if (useTabletLarge && initialLangReady && contentToRender.length > 0) {
 			const timer = setTimeout(() => setCanRenderCopyright(true), 1000);
+
 			return () => clearTimeout(timer);
 		}
 	}, [initialLangReady, contentToRender, useTabletLarge]);
@@ -168,6 +171,7 @@ const PageStructure: React.FC<SinglePageProps> = ({ pageData, backButton, initia
 					<div className='wrapper'>
 						<NavLink to={backButton} className='idea-back'>
 							{ArrowLeftIcon}
+
 							<span>Back</span>
 						</NavLink>
 					</div>
@@ -182,6 +186,7 @@ const PageStructure: React.FC<SinglePageProps> = ({ pageData, backButton, initia
 						{initialLangReady &&
 							contentToRender.map((structure, index) => {
 								const fallbackFilmsPreview = pageData.en?.[index]?.pagePreviewUrl;
+
 								return (
 									<PitchContainer
 										key={index}
@@ -212,6 +217,7 @@ const PageStructure: React.FC<SinglePageProps> = ({ pageData, backButton, initia
 							onSelectIndex={handleTableOfContentSelect}
 							headings={sortedHeadings}
 						/>
+
 						<div className='desktop-slider'>
 							{!useTabletLarge && (
 								<Slider slides={currentDesktopSliderContent} currentLanguage={currentLang} />
