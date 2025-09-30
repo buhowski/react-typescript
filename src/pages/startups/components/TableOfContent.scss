@@ -312,3 +312,34 @@ $toc-hover-color: #fff;
 		}
 	}
 }
+
+.toc-message {
+	text-align: center;
+	padding: 30px 15px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: bold;
+	color: #ff3a3a;
+}
+
+.toc-loading {
+	padding: 30px 15px;
+
+	.preloader {
+		background-color: transparent;
+		position: static;
+		z-index: 10;
+
+		// .preloader__spinner
+		&__spinner {
+			width: 35px;
+			height: 35px;
+
+			// .preloader__spinner-span:before
+			&-span:before {
+				height: 10px;
+				background-color: $toc-title-color;
+			}
+		}
+	}
+}

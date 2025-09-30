@@ -136,4 +136,5 @@ export interface TocProps {
 	onSelectIndex: (id: string) => void;
 	activeHeadingId: string | null;
 	headings: HeadingInfo[];
+	isLoadingContent: boolean;
 }

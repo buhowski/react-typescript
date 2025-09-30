@@ -1,5 +1,5 @@
+// PageStructure.tsx
 import React, { useState, useEffect, useMemo, useCallback, useRef } from 'react';
-import { NavLink } from 'react-router-dom';
 import { useTabletLargeQuery } from '../../../config/useMediaQuery';
 import { getInitialLanguage } from '../helpers/languageHelper';
 import { useStickyHeader } from '../helpers/useStickyHeader';
@@ -12,20 +12,23 @@ import LanguageSwitcher from './LanguageSwitcher';
 import StartupNavigation from './StartupNavigation';
 import Slider from '../../../components/Slider';
 import TableOfContent from './TableOfContent';
-import { ArrowLeftIcon } from '../../../assets/svg/icons';
 import { SinglePageProps, LANGUAGES, LanguageCode, htmlLangMap } from '../../../types/common';
-
+import BackButton from './BackButton';
 import '../Startups.scss';
 
 const PageStructure: React.FC<SinglePageProps> = ({ pageData, backButton, initialLang }) => {
 	const useTabletLarge = useTabletLargeQuery();
 	const isActive = useStickyHeader();
+
 	const [initialLangReady, setInitialLangReady] = useState(false);
 	const [currentDesktopSliderContent, setCurrentDesktopSliderContent] = useState<any[]>([]);
 	const [canRenderCopyright, setCanRenderCopyright] = useState(false);
+	const [pitchContainersLoading, setPitchContainersLoading] = useState<Record<number, boolean>>({});
+
 	const allHeadingsMapRef = useRef(new Map());
 	const pitchRefs = useRef<(HTMLDivElement | null)[]>([]);
 	const isDesktopSliderContentInitialized = useRef(false);
+
 	const {
 		activeHeadingId,
 		handleHeadingsExtracted,
@@ -34,24 +37,17 @@ const PageStructure: React.FC<SinglePageProps> = ({ pageData, backButton, initia
 		setHeadingsVersion,
 	} = useActiveHeadingTracking(useTabletLarge, allHeadingsMapRef);
 
-	// Initial language:
+	// Language setup
 	const [currentLang, setCurrentLang] = useState<LanguageCode>(initialLang || 'ua');
 	const availableLangs = useMemo(
 		() => [...LANGUAGES].filter((lang) => pageData?.[lang]?.length),
 		[pageData]
 	);
 
-	// Language setup
 	useEffect(() => {
-		// getInitialLanguage is the ultimate fallback (Browser/Default).
 		const langToSet = initialLang || getInitialLanguage(pageData, availableLangs);
-
 		localStorage.setItem('currentLang', langToSet);
-
-		if (langToSet !== currentLang) {
-			setCurrentLang(langToSet);
-		}
-
+		if (langToSet !== currentLang) setCurrentLang(langToSet);
 		allHeadingsMapRef.current.clear();
 		setHeadingsVersion((prev) => prev + 1);
 		setInitialLangReady(true);
@@ -59,12 +55,10 @@ const PageStructure: React.FC<SinglePageProps> = ({ pageData, backButton, initia
 		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [initialLang, pageData, availableLangs, setHeadingsVersion]);
 
-	// Set document language based on current language
 	useEffect(() => {
 		document.documentElement.lang = htmlLangMap[currentLang];
 	}, [currentLang]);
 
-	// notify language change
 	const dispatchLanguageChange = (lang: LanguageCode) => {
 		window.dispatchEvent(new CustomEvent('languageChange', { detail: { lang } }));
 	};
@@ -82,13 +76,13 @@ const PageStructure: React.FC<SinglePageProps> = ({ pageData, backButton, initia
 		[pageData, allHeadingsMapRef, setHeadingsVersion]
 	);
 
-	// Content
 	const contentToRender = useMemo(() => {
 		const currentLangContent = pageData[currentLang] || [];
 		const englishContent = pageData.en || [];
 
 		return currentLangContent.map((item, index) => {
 			const englishItem = englishContent[index];
+
 			return {
 				...item,
 				sliderContent: item.sliderContent || englishItem?.sliderContent,
@@ -97,23 +91,41 @@ const PageStructure: React.FC<SinglePageProps> = ({ pageData, backButton, initia
 		});
 	}, [pageData, currentLang]);
 
-	// Update active PitchContainer's slider content on scroll
+	useEffect(() => {
+		const initialLoadingState: Record<number, boolean> = {};
+		contentToRender.forEach((_, index) => (initialLoadingState[index] = true));
+		setPitchContainersLoading(initialLoadingState);
+
+		if (contentToRender.length === 0) setPitchContainersLoading({});
+	}, [contentToRender]);
+
+	const handleHeadingsExtractedWithLoading = useCallback(
+		(index: number, headings: any[]) => {
+			handleHeadingsExtracted(index, headings);
+			setPitchContainersLoading((prev) => ({ ...prev, [index]: false }));
+		},
+		[handleHeadingsExtracted]
+	);
+
+	const isContentLoading = useMemo(
+		() => Object.values(pitchContainersLoading).some((isLoading) => isLoading === true),
+		[pitchContainersLoading]
+	);
+
 	const handleScrollUpdateSlider = useCallback(() => {
 		const pageContainer = document.querySelector('.page-container');
 
-		if (!pageContainer || !initialLangReady || !contentToRender.length) {
-			return;
-		}
+		if (!pageContainer || !initialLangReady || !contentToRender.length) return;
 
 		const containerTop = pageContainer.getBoundingClientRect().top;
 		let scrollOffset = 200;
-
 		let newActivePitchIndex = 0;
 
 		for (let i = pitchRefs.current.length - 1; i >= 0; i--) {
 			const pitchElement = pitchRefs.current[i];
 			if (pitchElement) {
 				const rect = pitchElement.getBoundingClientRect();
+
 				if (rect.top <= containerTop + scrollOffset && rect.bottom > containerTop) {
 					newActivePitchIndex = i;
 					break;
@@ -122,19 +134,15 @@ const PageStructure: React.FC<SinglePageProps> = ({ pageData, backButton, initia
 		}
 
 		const newSliderContent = contentToRender[newActivePitchIndex]?.sliderContent || [];
-
-		setCurrentDesktopSliderContent((prevContent) => {
-			if (JSON.stringify(newSliderContent) !== JSON.stringify(prevContent)) {
-				return newSliderContent;
-			}
-			return prevContent;
-		});
+		setCurrentDesktopSliderContent((prevContent) =>
+			JSON.stringify(newSliderContent) !== JSON.stringify(prevContent)
+				? newSliderContent
+				: prevContent
+		);
 	}, [initialLangReady, contentToRender]);
 
-	// Attach scroll listener and handle initial slider content
 	useEffect(() => {
 		const pageContainer = document.querySelector('.page-container');
-
 		if (!pageContainer) return;
 
 		if (!isDesktopSliderContentInitialized.current && initialLangReady && contentToRender.length) {
@@ -145,12 +153,9 @@ const PageStructure: React.FC<SinglePageProps> = ({ pageData, backButton, initia
 		pageContainer.addEventListener('scroll', handleScrollUpdateSlider, { passive: true });
 		handleScrollUpdateSlider();
 
-		return () => {
-			pageContainer.removeEventListener('scroll', handleScrollUpdateSlider);
-		};
+		return () => pageContainer.removeEventListener('scroll', handleScrollUpdateSlider);
 	}, [handleScrollUpdateSlider, initialLangReady, contentToRender]);
 
-	// Delayed Copyright Animation after content ready
 	useEffect(() => {
 		if (useTabletLarge && initialLangReady && contentToRender.length) {
 			const timer = setTimeout(() => setCanRenderCopyright(true), 1000);
@@ -168,14 +173,9 @@ const PageStructure: React.FC<SinglePageProps> = ({ pageData, backButton, initia
 			/>
 
 			<div className={`startup-action ${isActive ? 'is-active' : ''}`}>
-				{/* back navigation DESKTOP */}
 				{!useTabletLarge && backButton && (
 					<div className='wrapper'>
-						<NavLink to={backButton} className='idea-back'>
-							{ArrowLeftIcon}
-
-							<span>Back</span>
-						</NavLink>
+						<BackButton to={backButton} />
 					</div>
 				)}
 
@@ -200,10 +200,11 @@ const PageStructure: React.FC<SinglePageProps> = ({ pageData, backButton, initia
 										}}
 										currentLanguage={currentLang}
 										sliderContent={structure.sliderContent}
-										onHeadingsExtracted={handleHeadingsExtracted}
+										onHeadingsExtracted={handleHeadingsExtractedWithLoading}
 									/>
 								);
 							})}
+
 						{useTabletLarge && (
 							<div className='copy-tablet'>
 								{canRenderCopyright && <Copyright />}
@@ -218,6 +219,7 @@ const PageStructure: React.FC<SinglePageProps> = ({ pageData, backButton, initia
 							activeHeadingId={activeHeadingId}
 							onSelectIndex={handleTableOfContentSelect}
 							headings={sortedHeadings}
+							isLoadingContent={isContentLoading}
 						/>
 
 						<div className='desktop-slider'>
@@ -227,14 +229,7 @@ const PageStructure: React.FC<SinglePageProps> = ({ pageData, backButton, initia
 						</div>
 					</div>
 
-					{/* back navigation MOBILE */}
-					{useTabletLarge && backButton && (
-						<NavLink to={backButton} className='idea-back'>
-							{ArrowLeftIcon}
-
-							<span>Back</span>
-						</NavLink>
-					)}
+					{useTabletLarge && backButton && <BackButton to={backButton} />}
 				</div>
 			</div>
 		</VideoPlaybackProvider>
