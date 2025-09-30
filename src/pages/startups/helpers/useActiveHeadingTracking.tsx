@@ -21,22 +21,27 @@ export const useActiveHeadingTracking = (
 				pitchIndex,
 				headings.map((h) => ({ ...h, pitchIndex }))
 			);
+
 			setHeadingsVersion((prev) => prev + 1);
 		},
+
 		[allHeadingsMapRef]
 	);
 
 	// sortedHeadings
 	const sortedHeadings = useMemo(() => {
 		const combinedHeadings: HeadingInfo[] = [];
+
 		Array.from(allHeadingsMapRef.current.keys())
 			.sort((a, b) => a - b)
 			.forEach((pitchIndex) => {
 				const headingsForPitch = allHeadingsMapRef.current.get(pitchIndex);
+
 				if (headingsForPitch) {
 					combinedHeadings.push(...headingsForPitch);
 				}
 			});
+
 		return combinedHeadings;
 		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [headingsVersion, allHeadingsMapRef]);

@@ -1,4 +1,4 @@
-import React, { useLayoutEffect } from 'react';
+import React, { useLayoutEffect, useState } from 'react';
 import { useLocation, useParams } from 'react-router-dom';
 import { buildUrl, generateHreflangUrls, normalizePath } from '../helpers/metaHelper';
 import { startupsMap } from '../startupsMap';
@@ -12,6 +12,7 @@ type StartupWrapperSeoProps = {
 
 const StartupWrapperSeo: React.FC<StartupWrapperSeoProps> = ({ path: fixedPath, initialLang }) => {
 	const location = useLocation();
+	const [langVersion, setLangVersion] = useState(0);
 	const allowedLangs: LanguageCode[] = [...LANGUAGES];
 	const { lang } = useParams<{ lang?: string }>();
 	const urlLang =
@@ -38,9 +39,21 @@ const StartupWrapperSeo: React.FC<StartupWrapperSeoProps> = ({ path: fixedPath, 
 	const PageComponent = startupsMap[basePath] || startupsMap[pathToVision];
 
 	useLayoutEffect(() => {
+		const handleLanguageChange = (_event: Event) => {
+			setLangVersion((prev) => prev + 1);
+		};
+
+		window.addEventListener('languageChange', handleLanguageChange);
+
+		return () => {
+			window.removeEventListener('languageChange', handleLanguageChange);
+		};
+	}, []);
+
+	useLayoutEffect(() => {
 		document.documentElement.lang = htmlLangMap[currentLang];
 		localStorage.setItem('currentLang', currentLang);
-	}, [currentLang]);
+	}, [currentLang, langVersion]);
 
 	return (
 		<PageComponent

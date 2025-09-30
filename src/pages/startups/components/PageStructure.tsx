@@ -37,7 +37,7 @@ const PageStructure: React.FC<SinglePageProps> = ({ pageData, backButton, initia
 	// Initial language:
 	const [currentLang, setCurrentLang] = useState<LanguageCode>(initialLang || 'ua');
 	const availableLangs = useMemo(
-		() => [...LANGUAGES].filter((lang) => pageData?.[lang]?.length > 0),
+		() => [...LANGUAGES].filter((lang) => pageData?.[lang]?.length),
 		[pageData]
 	);
 
@@ -64,11 +64,17 @@ const PageStructure: React.FC<SinglePageProps> = ({ pageData, backButton, initia
 		document.documentElement.lang = htmlLangMap[currentLang];
 	}, [currentLang]);
 
+	// notify language change
+	const dispatchLanguageChange = (lang: LanguageCode) => {
+		window.dispatchEvent(new CustomEvent('languageChange', { detail: { lang } }));
+	};
+
 	const changeLanguage = useCallback(
 		(lang: LanguageCode) => {
 			if (pageData?.[lang]?.length) {
 				setCurrentLang(lang);
 				localStorage.setItem('currentLang', lang);
+				dispatchLanguageChange(lang);
 				allHeadingsMapRef.current.clear();
 				setHeadingsVersion((prev) => prev + 1);
 			}
@@ -131,11 +137,7 @@ const PageStructure: React.FC<SinglePageProps> = ({ pageData, backButton, initia
 
 		if (!pageContainer) return;
 
-		if (
-			!isDesktopSliderContentInitialized.current &&
-			initialLangReady &&
-			contentToRender.length > 0
-		) {
+		if (!isDesktopSliderContentInitialized.current && initialLangReady && contentToRender.length) {
 			setCurrentDesktopSliderContent(contentToRender[0]?.sliderContent || []);
 			isDesktopSliderContentInitialized.current = true;
 		}
@@ -150,7 +152,7 @@ const PageStructure: React.FC<SinglePageProps> = ({ pageData, backButton, initia
 
 	// Delayed Copyright Animation after content ready
 	useEffect(() => {
-		if (useTabletLarge && initialLangReady && contentToRender.length > 0) {
+		if (useTabletLarge && initialLangReady && contentToRender.length) {
 			const timer = setTimeout(() => setCanRenderCopyright(true), 1000);
 
 			return () => clearTimeout(timer);

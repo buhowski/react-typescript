@@ -1,5 +1,5 @@
 // Refactored MarkdownBlock - Final version with new logic
-import React, { useState, useEffect, useRef, memo, Children } from 'react';
+import React, { useState, useEffect, useRef, memo, Children, useCallback, useMemo } from 'react';
 import ReactMarkdown, { Components } from 'react-markdown';
 import { useTabletLargeQuery } from '../../../config/useMediaQuery';
 import Slider from '../../../components/Slider';
@@ -29,6 +29,15 @@ const createSlugify = () => {
 	};
 };
 
+// Helper to extract plain text from nested children
+const extractText = (node: React.ReactNode): string => {
+	if (typeof node === 'string') return node;
+	if (Array.isArray(node)) return node.map(extractText).join('');
+	if (React.isValidElement(node)) return extractText(node.props.children);
+	return '';
+};
+
+// Markdown block with heading extraction logic
 const MarkdownBlock = memo(
 	({
 		src,
@@ -38,16 +47,16 @@ const MarkdownBlock = memo(
 		onHeadingsExtracted,
 		pitchIndex,
 	}: MarkdownBlockProps) => {
-		const [text, setText] = useState('');
-		const [hasError, setHasError] = useState(false);
 		const useTabletLarge = useTabletLargeQuery();
-
 		const collectedHeadingsRef = useRef<{ text: string; level: number; id: string }[]>([]);
 		const slugifyRef = useRef(createSlugify());
+		const [text, setText] = useState('');
+		const [hasError, setHasError] = useState(false);
 
 		// Fetches markdown content on src change
 		useEffect(() => {
 			let isCanceled = false;
+
 			const textClearTimer = setTimeout(() => {
 				if (!isCanceled) {
 					setText('');
@@ -96,70 +105,70 @@ const MarkdownBlock = memo(
 			};
 		}, [src, onError, pitchIndex]);
 
-		// Pass extracted headings to parent
+		// Pass extracted headings to parent after render with new text
 		useEffect(() => {
-			if (onHeadingsExtracted && collectedHeadingsRef.current.length > 0) {
+			if (text && onHeadingsExtracted && collectedHeadingsRef.current.length > 0) {
 				onHeadingsExtracted(collectedHeadingsRef.current);
 			}
 		}, [text, onHeadingsExtracted]);
 
-		// Helper to extract plain text from nested children
-		const extractText = (node: React.ReactNode): string => {
-			if (typeof node === 'string') return node;
-			if (Array.isArray(node)) return node.map(extractText).join('');
-			if (React.isValidElement(node)) return extractText(node.props.children);
-			return '';
-		};
+		// Custom heading renderer that collects headings
+		const renderHeading = useCallback(
+			(children: React.ReactNode, level: number) => {
+				const rawText = extractText(children);
+				const slug = slugifyRef.current(rawText);
+				const id = `h${level}-${pitchIndex}-${slug}`;
+				const Tag = `h${level}` as keyof JSX.IntrinsicElements;
 
-		// Custom heading renderer
-		const renderHeading = (children: React.ReactNode, level: number) => {
-			const rawText = extractText(children);
-			const slug = slugifyRef.current(rawText);
-			const id = `h${level}-${pitchIndex}-${slug}`;
+				// Headings are collected during the render phase
+				collectedHeadingsRef.current.push({ text: rawText, level, id });
 
-			collectedHeadingsRef.current.push({ text: rawText, level, id });
+				return <Tag id={id}>{children}</Tag>;
+			},
 
-			const Tag = `h${level}` as keyof JSX.IntrinsicElements;
-			return <Tag id={id}>{children}</Tag>;
-		};
+			[pitchIndex]
+		);
 
 		// Custom renderers for markdown
-		const components: Components = {
-			h1: ({ children }) => renderHeading(children, 1),
-			h2: ({ children }) => renderHeading(children, 2),
-			h3: ({ children }) => renderHeading(children, 3),
-			p: ({ children }) => {
-				const childArray = Children.toArray(children);
-				const mobileSliderTag = '[mobile-slider]';
-				if (
-					childArray.length === 1 &&
-					typeof childArray[0] === 'string' &&
-					childArray[0].trim() === mobileSliderTag
-				) {
-					return useTabletLarge ? (
-						<Slider slides={sliderContent || []} currentLanguage={currentLanguage} />
-					) : null;
-				}
+		const components: Components = useMemo(
+			() => ({
+				h1: ({ children }) => renderHeading(children, 1),
+				h2: ({ children }) => renderHeading(children, 2),
+				h3: ({ children }) => renderHeading(children, 3),
+				p: ({ children }) => {
+					const childArray = Children.toArray(children);
+					const mobileSliderTag = '[mobile-slider]';
+					if (
+						childArray.length === 1 &&
+						typeof childArray[0] === 'string' &&
+						childArray[0].trim() === mobileSliderTag
+					) {
+						return useTabletLarge ? (
+							<Slider slides={sliderContent || []} currentLanguage={currentLanguage} />
+						) : null;
+					}
 
-				const hasEm = childArray.some(
-					(child) =>
-						React.isValidElement(child) && typeof child.type === 'string' && child.type === 'em'
-				);
-				return <p className={hasEm ? 'description__has-em' : undefined}>{children}</p>;
-			},
-			a: ({ href, children }) => (
-				<a href={href} target='_blank' rel='noopener noreferrer'>
-					<span>{children}</span>
-				</a>
-			),
-		};
+					const hasEm = childArray.some(
+						(child) =>
+							React.isValidElement(child) && typeof child.type === 'string' && child.type === 'em'
+					);
+					return <p className={hasEm ? 'description__has-em' : undefined}>{children}</p>;
+				},
+				a: ({ href, children }) => (
+					<a href={href} target='_blank' rel='noopener noreferrer'>
+						<span>{children}</span>
+					</a>
+				),
+			}),
+			[renderHeading, useTabletLarge, sliderContent, currentLanguage]
+		);
 
 		// Renders loader, error, or content
-		if (!text && hasError) {
-			return null;
-		}
+		if (!text) {
+			if (hasError) {
+				return null;
+			}
 
-		if (!text && !hasError) {
 			return (
 				<div className='markdown-loading'>
 					<Preloader />

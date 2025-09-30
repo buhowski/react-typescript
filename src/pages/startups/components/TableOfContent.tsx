@@ -15,6 +15,7 @@ const TableOfContent: React.FC<TocProps> = ({ onSelectIndex, activeHeadingId, he
 	// Update height on open/close
 	useEffect(() => {
 		if (!innerRef.current) return;
+
 		const extraHeight = window.innerWidth <= 1280 ? 60 : 0;
 
 		setListHeight(isTocOpen ? innerRef.current.scrollHeight + extraHeight : 0);
@@ -27,7 +28,9 @@ const TableOfContent: React.FC<TocProps> = ({ onSelectIndex, activeHeadingId, he
 				setIsTocOpen(false);
 			}
 		};
+
 		document.addEventListener('mousedown', handleClickOutside);
+
 		return () => document.removeEventListener('mousedown', handleClickOutside);
 	}, [isTocOpen]);
 
