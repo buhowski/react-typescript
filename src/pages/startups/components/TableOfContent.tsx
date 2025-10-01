@@ -67,7 +67,7 @@ const TableOfContent: React.FC<TocProps> = ({
 				<Preloader />
 			</div>
 		) : isTocOpen && !isLoadingContent && headings.length === 0 ? (
-			<p className='toc-message'>No content available.</p>
+			<p className='toc-message'>Nothing, reload page!</p>
 		) : null;
 
 	return (
