@@ -596,14 +596,15 @@ $nav-top: 2px;
 		font-weight: 500;
 		border-radius: 4px;
 		line-height: 1.8;
-		padding: 3px 7px;
+		padding: 3px 8px;
+		margin: 1px;
 		color: $link-color;
-		background-color: $link-bg-color;
+		background-color: $link-bg;
 		box-shadow: $link-shadow;
 		transition: 0.2s;
 
 		@include tablet {
-			padding: 2px 6px;
+			// padding: 2px 6px;
 		}
 
 		&:active {

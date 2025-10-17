@@ -29,17 +29,19 @@ $header-ltr-spc: 3px;
 
 $p-margin: 20px;
 
-$link-color: #000000;
-$link-bg-color: #ffe066;
+$link-color: #fff;
+$link-bg: #0077b8;
+$hover-link-color: #000;
+$hover-link-bg: #ffe066;
 $lnk-shd-px: inset 1px 1px 9px;
 $lnk-shd2-px: inset -1px -1px 9px;
-$link-shadow: $lnk-shd-px #8c6f1f, $lnk-shd2-px #85650d;
-$hover-link-shadow: $lnk-shd-px #084f80, $lnk-shd2-px #084f80;
+$hover-link-shadow: $lnk-shd-px #8c6f1f, $lnk-shd2-px #85650d;
+$link-shadow: $lnk-shd-px #02359c, $lnk-shd2-px #02359c, 2px 2px 2px #000;
 
 @mixin hover-text-link {
 	box-shadow: $hover-link-shadow;
-	background-color: #0d99ff;
-	color: #ffffff;
+	background-color: $hover-link-bg;
+	color: $hover-link-color;
 }
 
 @mixin social_hover {
