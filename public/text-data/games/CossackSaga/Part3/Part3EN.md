@@ -10,7 +10,7 @@ Centuries after the world abandoned religion, new alliances led by the Cossack L
 
 ## Main Idea
 
-The third part begins with a series of dynamic cinematic sequences that recap the events of the previous parts: [Part I](/cossack-saga-1), [Part II](/cossack-saga-2).
+The third part begins with a series of dynamic cinematic sequences that recap the events of [Part I](/cossack-saga-1) and [Part II](/cossack-saga-2).
 
 The scenes accelerate, showing how the ruins of the ancient world become futuristic cities, and tribes evolve into new civilizations. Time, compressed into a single stream, reveals an unknown world history where futurism intertwines with the legacy of ancient cultures.
 

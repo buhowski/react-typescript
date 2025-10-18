@@ -593,7 +593,6 @@ $nav-top: 2px;
 	a {
 		display: inline;
 		white-space: nowrap;
-		font-weight: 500;
 		border-radius: 5px;
 		line-height: 2;
 		padding: 4px 10px;
@@ -607,7 +606,7 @@ $nav-top: 2px;
 		&::after {
 			content: '→';
 			display: inline;
-			margin-left: 8px;
+			margin-left: 6px;
 		}
 
 		&:active {
