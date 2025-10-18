@@ -29,14 +29,18 @@ $header-ltr-spc: 3px;
 
 $p-margin: 20px;
 
+// Text Data Links
 $link-color: #fff;
-$link-bg: #0077b8;
+$link-bg: #006ea9;
+$link-bgShd: #001b93;
 $hover-link-color: #000;
-$hover-link-bg: #ffe066;
-$lnk-shd-px: inset 1px 1px 9px;
-$lnk-shd2-px: inset -1px -1px 9px;
-$hover-link-shadow: $lnk-shd-px #8c6f1f, $lnk-shd2-px #85650d;
-$link-shadow: $lnk-shd-px #02359c, $lnk-shd2-px #02359c, 2px 2px 2px #000;
+$hover-link-bg: #ffde5b;
+$hover-link-bgShd: #805e00;
+$lnk-shd-px: inset 1px 1px 10px;
+$lnk-shd2-px: inset -1px -1px 10px;
+$lnk-shd3-back: 0 0 4px #000;
+$hover-link-shadow: $lnk-shd-px $hover-link-bgShd, $lnk-shd2-px $hover-link-bgShd, $lnk-shd3-back;
+$link-shadow: $lnk-shd-px $link-bgShd, $lnk-shd2-px $link-bgShd, $lnk-shd3-back;
 
 @mixin hover-text-link {
 	box-shadow: $hover-link-shadow;
