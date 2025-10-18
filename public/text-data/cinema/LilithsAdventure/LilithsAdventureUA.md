@@ -84,7 +84,7 @@
 - [Clair Obscur: Expedition 33](https://store.steampowered.com/app/1903340/Clair_Obscur_Expedition_33/) — мотиви та інтриги антагоністів
 - [Solar Opposites, S4: The Wall](https://www.youtube.com/watch?v=K0a85gwgQ8A) — концепція антагоніста-Колекціонера і Тераріума Світів
 - [Fallout](https://www.imdb.com/title/tt12637874/), [Westworld](https://www.imdb.com/title/tt0475784/) — атмосфера та пошуку істини
-- Стиль анімації — поєднання енергії та гумору Rick and Morty з деталізацією, міським нуаром і дизайном Nier: [Replicant](https://store.steampowered.com/app/1113560/NieR_Replicant_ver122474487139/) / [Automata](https://store.steampowered.com/app/524220/NieRAutomata/)
+- Стиль анімації — поєднання енергії та гумору Rick and Morty з деталізацією, міським нуаром і дизайном [Nier: Replicant](https://store.steampowered.com/app/1113560/NieR_Replicant_ver122474487139/) / [Automata](https://store.steampowered.com/app/524220/NieRAutomata/)
 - [High On Life](https://store.steampowered.com/app/1583230/High_On_Life/) — ця гра демонструє, як чорний гумор, саркастичні діалоги і стьоб над жанром з анімаційних проєктів можуть працювати у відеоігровому форматі, що дає можливість створити гру за мотивами цього серіалу
 
 ## Деталі

@@ -84,7 +84,7 @@ The plot transforms into a continuous chase, full of new challenges. The heroes 
 - [Clair Obscur: Expedition 33](https://store.steampowered.com/app/1903340/Clair_Obscur_Expedition_33/) — the motives and intrigues of the antagonists
 - [Solar Opposites, S4: The Wall](https://www.youtube.com/watch?v=K0a85gwgQ8A) — the concept of the Collector antagonist and the Terrarium of Worlds
 - [Fallout](https://www.imdb.com/title/tt12637874/), [Westworld](https://www.imdb.com/title/tt0475784/) — atmosphere and the search for truth
-- Animation Style — a blend of Rick and Morty's energy and humor with the detail, urban noir, and design of Nier: [Replicant](https://store.steampowered.com/app/1113560/NieR_Replicant_ver122474487139/) / [Automata](https://store.steampowered.com/app/524220/NieRAutomata/)
+- Animation Style — a blend of Rick and Morty's energy and humor with the detail, urban noir, and design of [Nier: Replicant](https://store.steampowered.com/app/1113560/NieR_Replicant_ver122474487139/) / [Automata](https://store.steampowered.com/app/524220/NieRAutomata/)
 - [High On Life](https://store.steampowered.com/app/1583230/High_On_Life/) — this game demonstrates how black humor, sarcastic dialogues, and genre satire from animated projects can work in a video game format, offering the possibility of creating a game based on this series
 
 ## Details
