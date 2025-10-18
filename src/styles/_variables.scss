@@ -30,15 +30,18 @@ $header-ltr-spc: 3px;
 $p-margin: 20px;
 
 // Text Data Links
-$link-color: #fff;
-$link-bg: #006ea9;
-$link-bgShd: #001b93;
-$hover-link-color: #000;
-$hover-link-bg: #ffde5b;
-$hover-link-bgShd: #805e00;
+$link-bg: #00639d;
+$link-bgShd: #003554;
+$link-color: #e9f0f8;
+
+$hover-link-bg: #ffe647;
+$hover-link-bgShd: #b88700;
+$hover-link-color: #1a1a1a;
+
 $lnk-shd-px: inset 1px 1px 10px;
 $lnk-shd2-px: inset -1px -1px 10px;
-$lnk-shd3-back: 0 0 4px #000;
+$lnk-shd3-back: 0 0 2px #000000;
+
 $hover-link-shadow: $lnk-shd-px $hover-link-bgShd, $lnk-shd2-px $hover-link-bgShd, $lnk-shd3-back;
 $link-shadow: $lnk-shd-px $link-bgShd, $lnk-shd2-px $link-bgShd, $lnk-shd3-back;
 
