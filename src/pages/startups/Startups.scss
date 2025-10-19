@@ -594,7 +594,7 @@ $nav-top: 2px;
 		display: inline;
 		white-space: nowrap;
 		border-radius: 5px;
-		line-height: 2;
+		line-height: 1.9;
 		padding: 4px 10px;
 		margin: 1px;
 		color: $link-color;
@@ -604,9 +604,12 @@ $nav-top: 2px;
 
 		// icon for links
 		&::after {
-			content: '→';
-			display: inline;
-			margin-left: 6px;
+			content: '↑';
+			font-size: 19px;
+			transform: rotate(45deg);
+			display: inline-block;
+			line-height: 1;
+			margin-left: 8px;
 		}
 
 		&:active {
