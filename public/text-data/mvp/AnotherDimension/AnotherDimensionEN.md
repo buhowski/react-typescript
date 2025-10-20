@@ -18,9 +18,9 @@ I see the following structure:
 
 Three (the more, the better) relatively popular content creators are brought on as partners. [Presentation projects](/self-presentation) are filmed and feedback is analyzed — and this process continues until a path to the necessary investment for the magazine's MVP development is opened.
 
-### **Investment & "The Corp" Phase**
+### Investment & "The Corp .!." Phase
 
-Once sufficient investment is secured, the development of the magazine and the ["The Corp .!.”](/the-corp) series phase begins. This becomes a powerful stage of self-promotion and a demonstration of the quality of future content, expanding the audience and attracting new investments.
+Once sufficient investment is secured, the development of the magazine and the [The Corp .!.](/the-corp) series phase begins. This becomes a powerful stage of self-promotion and a demonstration of the quality of future content, expanding the audience and attracting new investments.
 
 ### Scaling
 

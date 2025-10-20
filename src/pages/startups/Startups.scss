@@ -605,11 +605,10 @@ $nav-top: 2px;
 		// icon for links
 		&::after {
 			content: '↑';
-			font-size: 19px;
 			transform: rotate(45deg);
 			display: inline-block;
 			line-height: 1;
-			margin-left: 6px;
+			margin-left: 7px;
 		}
 
 		&:active {
