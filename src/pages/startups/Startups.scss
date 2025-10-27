@@ -611,11 +611,13 @@ $nav-top: 2px;
 			margin-left: 7px;
 		}
 
-		&:active {
-			@include hover-text-link;
+		@media (hover: hover) and (pointer: fine) {
+			&:hover {
+				@include hover-text-link;
+			}
 		}
 
-		&:hover {
+		&:active {
 			@include hover-text-link;
 		}
 	}
