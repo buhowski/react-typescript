@@ -3,6 +3,13 @@ import React, { useState, useRef, useEffect, useLayoutEffect } from 'react';
 import Preloader from '../../../components/Preloader';
 import { TocProps } from '../../../types/common';
 
+const tocErrorText = (
+	<p className='toc-message'>
+		Oops, nothing here.
+		<span>Reload page!</span>
+	</p>
+);
+
 // TableOfContent component
 const TableOfContent: React.FC<TocProps> = ({
 	onSelectIndex,
@@ -67,7 +74,7 @@ const TableOfContent: React.FC<TocProps> = ({
 				<Preloader />
 			</div>
 		) : isTocOpen && !isLoadingContent && headings.length === 0 ? (
-			<p className='toc-message'>Nothing, reload page!</p>
+			tocErrorText
 		) : null;
 
 	return (

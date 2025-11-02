@@ -320,6 +320,11 @@ $toc-hover-color: #fff;
 	letter-spacing: 1px;
 	font-weight: bold;
 	color: #ff2e2e;
+
+	span {
+		display: block;
+		margin-top: 8px;
+	}
 }
 
 .toc-loading {
