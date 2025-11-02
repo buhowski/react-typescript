@@ -4,7 +4,7 @@
 
 ## Preface
 
-I aspire to build a corporation dedicated to developing key sectors that align with my vision: publishing, media, film, the gaming industry, and the IT sector. These are fields that inspire me, provide space for ideas, and, despite being underdeveloped in the local market, have high profit potential.
+My aspiration is to build a corporation dedicated to developing key sectors: publishing, media, film, the gaming industry, and the IT sector. These are fields that inspire me, provide space for ideas, and, despite being underdeveloped in the local market, have high profit potential.
 
 My individual projects are stepping stones toward this goal. I plan to monetize them and reinvest the profits into our own technologies, creating opportunities for like-minded individuals.
 
@@ -15,6 +15,14 @@ Project presentations are available in the navigation, and the corporation's pla
 [mobile-slider]
 
 ## For a Fuller Picture
+
+### In a Nutshell
+
+- The Magazine — the company's face. A popular magazine — the voice of the majority. A mega-popular magazine — sets the direction of development, rather than adjusting to prohibitions or restrictions (a strategy exists)
+- Production of high-quality films and games — a source of profit (scenarios exist)
+- Profits are reinvested into our own IT technologies — even greater profit (ideas exist)
+- Victory!
+- Risks: In the worst-case scenario, the result will only be a popular magazine with the ability to earn from advertising, a donation system for investment, and the production of film and gaming content for sale to other companies. At the same time, the foundation is preserved, and development is possible even under critical conditions
 
 ### Problems
 
@@ -62,7 +70,7 @@ The focus is on providing high-quality information that shapes our image and att
 - Donation System — for attracting investment for development and content monetization
 - The Platform as a Resource — for distributing our own projects
 
-### What I Can Offer
+## What I Can Offer
 
 - Provocative articles that challenge the usual order of things — with alternative strategies for the development of Ukraine and the world. Topics related to modern culture and social problems, with potential solutions
 - Counterculture, humor, and gonzo journalism. A media product that is not afraid to be different — one that influences events, not just reports on them
@@ -111,7 +119,7 @@ This modular approach allows for combining different formats, ensuring deep enga
 - Advertising and Partner Programs, adapted to the audience — honest, unobtrusive advertising with sponsors and brands that align with the platform's values
 - Monetization of new technologies — through VR, AR, and interactive content with artificial intelligence for entertainment, work, and education
 
-## Details
+## Existing Projects
 
 The implementation of the magazine and its strategy are considered separate projects. More details can be found here:
 
@@ -134,23 +142,11 @@ Thanks to their flexibility, my ideas can be easily integrated into any existing
 - MVP Development — creating a minimally viable magazine with initial content and functionality
 - Launch and Scaling — analysis of results, improvement, promotion, and attracting larger investments
 
-## Summary
-
-This is a complex, multifunctional, and multi-stage project that is challenging but entirely realistic. I chose the magazine as the foundation for development — a powerful tool for mass communication and influence.
-
-In the Ukrainian (and not only) media market, there are clear gaps: a lack of publications that are simultaneously popular, independent, high-quality, or close to the younger generation. Therefore, I am confident: occupying a niche as a leading new-generation media (at least an entertainment magazine) is not a problem.
-
-### In a Nutshell
-
-- The Magazine — the company's face. A popular magazine — the voice of the majority. A mega-popular magazine — sets the direction of development, rather than adjusting to prohibitions or restrictions (a strategy exists)
-- Production of high-quality films and games — a source of profit (scenarios exist)
-- Profits are reinvested into our own IT technologies — even greater profit (ideas exist)
-- Victory!
-- Risks: In the worst-case scenario, the result will only be a popular magazine with the ability to earn from advertising, a donation system for investment, and the production of film and gaming content for sale to other companies. At the same time, the foundation is preserved, and development is possible even under critical conditions
-
 ## Conclusion
 
 Overall, my vision is focused on large-scale development — creating a place separate from the state with its own independent ecosystem, which unites different areas of activity: from innovative technologies to creative thinking.
+
+In the Ukrainian (and not only) media market, there are clear gaps: a lack of publications that are simultaneously popular, independent, high-quality, or close to the younger generation. Therefore, I am confident: occupying a niche as a leading new-generation media (at least an entertainment magazine) is not a problem.
 
 And if we gather all the best in one place and organize a professional team of critically-thinking idealists and enthusiasts, an evolutionary leap will happen by itself.
 
