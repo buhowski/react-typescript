@@ -128,7 +128,7 @@ The implementation of the magazine and its strategy are considered separate proj
 The industry's key products are presented as individual scenarios. The presentations can be viewed here:
 
 - [Cinematic Concepts](/cinema)
-- [Gaming Ideas](/games)
+- [Game Concepts](/games)
 
 The [Self-Presentation Projects](/self-presentation) are pilot initiatives that can be implemented without funding. These are the initial stages of a feasibility assessment, which through feedback should validate all stated intentions. They pave the way for launching key ideas and creating the magazine, and will also help attract new investments for at least the next five years.
 

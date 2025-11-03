@@ -12,7 +12,7 @@ An improvisational show with prepared elements — a few minutes of conversation
 
 There are two hosts — a Main and an Additional (female + male) + a Background Character (possibly several) + a Guest.
 
-- The Main host asks the main and any other questions (the main questions are specially prepared and necessary for revealing key ideas).
+- The Main host asks the main and other questions (the main questions are specially prepared and necessary for revealing key ideas).
 - All questions are directed at the guest, but the Additional host constantly seizes the initiative: answering all questions or interrupting the guest, adding their own versions of events.
 - Both hosts need to expose the key idea as cool as possible, without letting the guest express themselves (if guests are even present — if they’re absent, the replacement is: dolls / plush toys that will be a-la-celebrities).
 - The Background Character is constantly present, busy with their own things, but steps into character when the main question is over, or sometimes bursts into the conversation and interrupts everyone.

@@ -1,6 +1,6 @@
-# Gaming Ideas
+# Game Concepts
 
-Below are ideas for video games, indie projects, and any other interactive entertainment. All of them have a well-formed concept, a strong foundation, and potential for large-scale development.
+Below is a selection of my own original concepts for video games and indie projects. Each of them has a well-formed concept, a strong foundation, and potential for large-scale development.
 
 The author is looking for resources and time to bring these ideas to life. If you know where or how to get support — let me know!
 
