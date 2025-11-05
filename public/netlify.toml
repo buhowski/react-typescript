@@ -25,17 +25,17 @@
 
 # Single Page Application (SPA) Routing (200)
 [[redirects]]
-  from = "/ua/*"
-  to = "/index.html"
-  status = 200
-
-[[redirects]]
   from = "/en/*"
   to = "/index.html"
   status = 200
 
 [[redirects]]
   from = "/ru/*"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/ua/*"
   to = "/index.html"
   status = 200
 
