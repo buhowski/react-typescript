@@ -16,7 +16,6 @@
 		}
 	],
 	"start_url": "/vision",
-	"scope": "/",
 	"display": "standalone",
 	"theme_color": "#202020",
 	"background_color": "#202020"
