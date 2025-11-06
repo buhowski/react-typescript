@@ -5,8 +5,8 @@ import { TocProps } from '../../../types/common';
 
 const tocErrorText = (
 	<p className='toc-message'>
-		Oops, nothing here.
-		<span>Reload page!</span>
+		Oops, nothing here
+		<span>Reload page</span>
 	</p>
 );
 
