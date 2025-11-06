@@ -3,35 +3,22 @@
 	"name": "Another Dimension",
 	"icons": [
 		{
-			"src": "fav.ico",
-			"sizes": "64x64 32x32 24x24 16x16",
-			"type": "image/x-icon"
-		},
-		{
-			"src": "logo.png",
-			"sizes": "128x128",
-			"type": "image/png"
-		},
-		{
 			"src": "logo.png",
 			"sizes": "192x192",
-			"type": "image/png"
+			"type": "image/png",
+			"purpose": "any maskable"
 		},
 		{
 			"src": "logo.png",
 			"sizes": "512x512",
-			"type": "image/png"
-		},
-		{
-			"src": "logoMaskable.png",
-			"sizes": "any",
 			"type": "image/png",
-			"purpose": "maskable"
+			"purpose": "any maskable"
 		}
 	],
-	"start_url": "/startup",
-	"display_override": ["standalone"],
+	"start_url": "/vision",
+	"scope": "/",
 	"display": "standalone",
 	"theme_color": "#202020",
-	"background_color": "#202020"
+	"background_color": "#202020",
+	"orientation": "portrait"
 }
