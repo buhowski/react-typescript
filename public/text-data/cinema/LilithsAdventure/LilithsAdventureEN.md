@@ -10,7 +10,7 @@ A charismatic adventurer, lost in parallel dimensions, searches for a way home. 
 
 ## Main Idea
 
-This animated comedy series tells the story of a sarcastic, sharp-tongued adventurer. Her travels through endless worlds became possible thanks to a unique artifact—a traveler's journal.
+This animated comedy series tells the story of a sarcastic, sharp-tongued adventurer. Her travels through endless worlds became possible thanks to a unique artifact — a traveler's journal.
 
 Her very first journey turned into a trap: due to carelessness, she permanently lost access to her home dimension. Now, lost in the unknown, the heroine tries to unravel the journal's secrets to find her way home. However, her impulsiveness and adventurous nature constantly lead her into new, even more dangerous escapades.
 
@@ -20,7 +20,7 @@ The key to Lilith's return to her home world is an artifact being toyed with by 
 
 The story begins with the heroine wandering through wondrous worlds. Her past is shrouded in mystery, and her present is a constant series of adventures, escapes from trouble, and skillful verbal manipulations that help her extract any information.
 
-Later, her travels gain a new purpose when she notices strange distortions in time and space—barely perceptible anomalies that indicate someone's interference. Intrigued but wary, she turns her adventures into a genuine investigation.
+Later, her travels gain a new purpose when she notices strange distortions in time and space — barely perceptible anomalies that indicate someone's interference. Intrigued but wary, she turns her adventures into a genuine investigation.
 
 With each new adventure, details of her past will gradually be revealed: the circumstances under which she found the journal, how she fell into the trap, and what actually happened to her home world and loved ones.
 
@@ -28,7 +28,7 @@ With each new adventure, details of her past will gradually be revealed: the cir
 
 The Supreme Architect is an artist and a creative soul, a master of manipulation, fascinated by ancient scriptures and the secrets of controlling gods. He toys with a powerful artifact that governs realities, creating his own game, which he himself doesn't fully comprehend yet.
 
-His artifact is the key to multiversal synchronicity, allowing him to influence reality everywhere and simultaneously. To him, worlds are like vast canvases where he paints, alters, or erases whatever displeases him. His colossal ego and penchant for eccentric antics threaten to break reality. He signs his creations: "Even gods get bored sometimes”.
+His artifact is the key to multiversal synchronicity, allowing him to influence reality everywhere and simultaneously. To him, worlds are like vast canvases where he paints, alters, or erases whatever displeases him. His colossal ego and penchant for eccentric antics threaten to break reality. He signs his creations: "Even gods get bored sometimes".
 
 His image combines the aesthetics of the Artist from the game [Clair Obscur: Expedition 33](https://store.steampowered.com/app/1903340/Clair_Obscur_Expedition_33/), whose paintings transform into traps and labyrinths of worlds, and the concept of the architect-narrator from the animated series [Rick and Morty, S4E6](https://www.imdb.com/title/tt10655686/), who constructs the plots of the universe.
 
@@ -91,4 +91,4 @@ The plot transforms into a continuous chase, full of new challenges. The heroes 
 
 *Under Construction …*
 
-The author is looking for resources and time to bring these ideas to life. If you know where or how to get support — let me know!
+I'm looking for resources and time to bring these ideas to life. If you know where to find support — write to me!

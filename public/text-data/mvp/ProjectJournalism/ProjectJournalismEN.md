@@ -4,7 +4,7 @@
 
 *Under Construction …*
 
-The author is looking for resources and time to bring these ideas to life. If you know where or how to get support — let me know!
+I'm looking for resources and time to bring these ideas to life. If you know where to find support — write to me!
 
 [mobile-slider]
 

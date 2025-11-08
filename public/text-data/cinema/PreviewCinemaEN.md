@@ -1,7 +1,7 @@
 # Cinematic Concepts
 
-Below is a selection of my own original concepts for film and media projects. Each of them has a well-formed concept, a strong foundation, and potential for large-scale development.
+Below are my concepts for film and media — with a clear vision, solid foundation, and potential for large-scale development.
 
-The author is looking for resources and time to bring these ideas to life. If you know where or how to get support — let me know!
+I'm looking for resources and time to bring these ideas to life. If you know where to find support — write to me!
 
-If this resonates with you and you have ideas on how to improve it — let’s team up. Doing awesome stuff together is always more interesting, especially with cool people!
+If this resonates with you — let’s team up. Making awesome stuff together is always more fun, especially with cool people!
