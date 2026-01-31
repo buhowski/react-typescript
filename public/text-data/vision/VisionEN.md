@@ -4,7 +4,7 @@
 
 ## Preface
 
-My aspiration is to build a corporation dedicated to developing key sectors: publishing, media, film, the gaming industry, and the IT sector. These are fields that inspire me, provide space for ideas, and, despite being underdeveloped in the local market, have high profit potential.
+My goal is to establish a corporation that integrates a magazine, media, cinema, the gaming industry, and the IT sector. These are fields that inspire me, provide space for ideas, and, despite being underdeveloped in the local market, have high profit potential.
 
 My individual projects are stepping stones toward this goal. I plan to monetize them and reinvest the profits into our own technologies, creating opportunities for like-minded individuals.
 
