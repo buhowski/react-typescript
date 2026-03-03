@@ -16,11 +16,12 @@ I am looking for partners for creative and business collaboration. Project prese
 
 ### In a Nutshell
 
-- The Magazine — the company's face. A popular magazine — the voice of the majority. A mega-popular magazine — sets the direction of development, rather than adjusting to prohibitions or restrictions (a strategy exists)
-- Production of high-quality films and games — a source of profit (scenarios exist)
+- [Magazine](/mvp) — the face of the company. A popular magazine reflects the voice of the majority. A highly popular magazine sets the direction, rather than adapting to restrictions or limitations (strategy in place)
+- [Cinema](/cinema) and [Games](/games) — sources of revenue (scenarios and concepts are ready)
 - Profits are reinvested into our own IT technologies — even greater profit (ideas exist)
 - Victory!
-- Risks: In the worst-case scenario, the result will only be a popular magazine with the ability to earn from advertising, a donation system for investment, and the production of film and gaming content for sale to other companies. At the same time, the foundation is preserved, and development is possible even under critical conditions
+
+Risks: In the worst-case scenario, we establish a popular magazine with an ad-based model, a donation system, and the production of film and game content for sale to other companies. The foundation remains intact, allowing for growth even under critical conditions.
 
 ### Problems
 
