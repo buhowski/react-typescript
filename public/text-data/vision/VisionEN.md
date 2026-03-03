@@ -4,13 +4,11 @@
 
 ## Preface
 
-My goal is to establish a corporation that integrates a magazine, media, cinema, the gaming industry, and the IT sector. These are fields that inspire me, provide space for ideas, and, despite being underdeveloped in the local market, have high profit potential.
+My goal is to create a unified ecosystem that integrates an entertainment magazine, counter-cultural media, cinema, the gaming industry, and technology. These fields inspire, provide a space for ideas, and hold high profit potential.
 
-My individual projects are stepping stones toward this goal. I plan to monetize them and reinvest the profits into our own technologies, creating opportunities for like-minded individuals.
+My projects are individual components of this system. I plan to monetize them and reinvest the profits into developing proprietary technologies.
 
-I invite people who are ready to join forces for creative partnerships and collective implementation.
-
-Project presentations are available in the navigation, and the corporation's plan is outlined below.
+I am looking for partners for creative and business collaboration. Project presentations are available in the navigation. The corporation's plan is below.
 
 [mobile-slider]
 
