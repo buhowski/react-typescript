@@ -1,12 +1,16 @@
 import DrawCanvas from './DrawCanvas';
 import Socials from '../../components/socials/Socials';
 import socialData from '../../components/socials/socialData';
+import PageHelmet from '../../components/PageHelmet';
+import { defaultMetaTags } from '../../components/metaTagsBasic';
 
 import './Home.scss';
 
 const Home = () => {
 	return (
 		<div className='wrapper home-wrapper'>
+			<PageHelmet metaTags={defaultMetaTags} />
+
 			<div className='name-container'>
 				<h1 className='name-container__title h1'>
 					Olexander <span>Tsiomakh</span>
