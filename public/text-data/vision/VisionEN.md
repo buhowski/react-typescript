@@ -6,9 +6,11 @@
 
 My goal is to create a unified ecosystem that integrates an entertainment magazine, counter-cultural media, cinema, the gaming industry, and technology. These fields inspire, provide a space for ideas, and hold high profit potential.
 
-My projects are individual components of this system. I plan to monetize them and reinvest the profits into developing proprietary technologies.
+My projects are individual components of this system, which I plan to monetize, with profits — reinvested into the development of our own technologies.
 
-I am looking for partners for creative and business collaboration. Project presentations are available in the navigation. The corporation's plan is below.
+I’m looking for people for creative and business collaboration, ready to join the creation and development of ideas.
+
+Project presentations — in the navigation, and below — the corporate plan.
 
 [mobile-slider]
 
