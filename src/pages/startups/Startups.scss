@@ -142,10 +142,14 @@ $section-width: 920px;
 		}
 
 		&.is-visible {
-			animation: typing 1.6s steps(18, end) 1s forwards, blink-caret 1s step-end infinite;
+			animation:
+				typing 1.6s steps(18, end) 1s forwards,
+				blink-caret 1s step-end infinite;
 
 			@include tabletBig {
-				animation: typing 1.6s steps(18, end) forwards, blink-caret 1s step-end infinite;
+				animation:
+					typing 1.6s steps(18, end) forwards,
+					blink-caret 1s step-end infinite;
 			}
 		}
 	}
@@ -323,7 +327,9 @@ $nav-top: 2px;
 		&.active {
 			background-color: $blue-main;
 			text-shadow: 0 0 0.6px $snow;
-			box-shadow: inset 30px 20px 40px #004a8f, inset -30px -20px 40px #066ac7;
+			box-shadow:
+				inset 30px 20px 40px #004a8f,
+				inset -30px -20px 40px #066ac7;
 			text-transform: uppercase;
 		}
 
@@ -378,7 +384,9 @@ $nav-top: 2px;
 		line-height: 1;
 		color: #000;
 		font-weight: bold;
-		transition: color 0.26s, background-color 0.26s;
+		transition:
+			color 0.26s,
+			background-color 0.26s;
 		border-radius: $radius-lang;
 
 		@media (hover: hover) and (pointer: fine) {
@@ -413,7 +421,9 @@ $nav-top: 2px;
 		/* Dynamic with JS */
 		width: var(--indicator-width, $lang-btn-width);
 		transform: translateX(var(--indicator-left, 0));
-		transition: transform 0.26s, width 0.26s;
+		transition:
+			transform 0.26s,
+			width 0.26s;
 		will-change: transform, width;
 	}
 }
@@ -696,7 +706,10 @@ $nav-top: 2px;
 	text-transform: uppercase;
 	padding: 16px 60px 14.5px 63px;
 	border-radius: 10px;
-	transition: box-shadow 0.25s, text-shadow 0.25s, color 0.25s;
+	transition:
+		box-shadow 0.25s,
+		text-shadow 0.25s,
+		color 0.25s;
 	will-change: box-shadow;
 	box-shadow: 0 0 4px rgba($black, 1);
 	background-color: #000000;
@@ -846,7 +859,9 @@ $nav-top: 2px;
 	left: 0;
 	color: $textGrey;
 	z-index: -1;
-	transition: z-index 0.25s ease, opacity 0.25s;
+	transition:
+		z-index 0.25s ease,
+		opacity 0.25s;
 	color: $snow;
 
 	img,
@@ -859,7 +874,10 @@ $nav-top: 2px;
 		visibility: hidden;
 		transform: scale(1.3);
 		border: none;
-		transition: transform 0.3s ease-out, opacity 0.3s ease, visibility 0.3s ease;
+		transition:
+			transform 0.3s ease-out,
+			opacity 0.3s ease,
+			visibility 0.3s ease;
 	}
 
 	iframe,
