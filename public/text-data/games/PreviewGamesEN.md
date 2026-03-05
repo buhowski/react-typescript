@@ -1,7 +1,7 @@
 # Game Concepts
 
-Below are my concepts for ambitious video games and interactive projects — with a clear vision, solid foundation, and potential for large-scale development.
+Below are my concepts for ambitious video games and interactive content. These are fully-fledged worlds with a solid foundation, a unique core, and high scaling potential.
 
-I'm looking for resources and time to bring these ideas to life. If you know where to find support — write to me!
+I am currently looking for the resources and time to bring these ideas to life. If you know where such initiatives can find support — please let me know!
 
-If this resonates with you — let’s team up. Making awesome stuff together is always more fun, especially with cool people!
+If this resonates — let’s team up. Creating awesome stuff is always more exciting when done with cool people!
