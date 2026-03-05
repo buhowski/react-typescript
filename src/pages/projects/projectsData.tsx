@@ -17,18 +17,9 @@ const projectsData = [
 		url: `${pathToVision}`,
 		urlCode: 'https://github.com/buhowski/react-typescript',
 		name: 'Business Plan',
-		description: `Startups include: Magazine ⋅ Media ⋅ Cinema ⋅ Games ⋅ Tech`,
+		description: `My own projects: Magazine ⋅ Media ⋅ Cinema ⋅ Games ⋅ Tech`,
 		skills: ['Scenario', 'Design', 'SCSS', 'TypeScript', 'React', 'SEO', 'PWA'],
 		alt: 'Screenshot of My Startups project homepage showcasing startup business plans, full development cycle execution, React and TypeScript programming, UI/UX design, creative scripting, genius-level problem solving, strategic brainstorming, innovative design systems, SCSS styling, SEO optimization, Progressive Web App functionality, media innovation, tech entrepreneurship, interactive digital solutions, inventive coding, forward-thinking creative projects',
-	},
-
-	{
-		img: sendpotion,
-		url: `https://demo-showcase-sendpotion.netlify.app`,
-		name: 'Potion AI',
-		description: `2022 | Responsive Web Design & Animations`,
-		skills: ['CSS', 'GSAP', 'JavaScript'],
-		alt: 'Screenshot of Potion AI website homepage showing responsive web design and animations',
 	},
 
 	{
@@ -41,15 +32,6 @@ const projectsData = [
 	},
 
 	{
-		img: nascentdesign,
-		url: `https://nascentdesign.com`,
-		name: 'Nascent Design',
-		description: `2021 | Cross-browser Responsive Web & Animations`,
-		skills: ['SCSS', 'JavaScript', 'GSAP'],
-		alt: 'Screenshot of Nascent Design website homepage with animations',
-	},
-
-	{
 		img: hbv,
 		url: 'https://homesbyvictoria.co.uk/',
 		name: 'Homes By Victoria',
@@ -59,12 +41,30 @@ const projectsData = [
 	},
 
 	{
-		img: bgBentley,
-		url: 'https://www.bentley-skinner.co.uk',
-		name: 'Bentley & Skinner',
-		description: '2022 | Cross-browser Responsive Web, Animations & WordPress',
-		skills: ['SCSS', 'JavaScript', 'GSAP', 'WordPress'],
-		alt: 'Screenshot of Bentley & Skinner jewelry and antique website homepage',
+		img: sendpotion,
+		url: `https://demo-showcase-sendpotion.netlify.app`,
+		name: 'Potion AI',
+		description: `2022 | Responsive Web Design & Animations`,
+		skills: ['CSS', 'GSAP', 'JavaScript'],
+		alt: 'Screenshot of Potion AI website homepage showing responsive web design and animations',
+	},
+
+	{
+		img: nascentdesign,
+		url: `https://nascentdesign.com`,
+		name: 'Nascent Design',
+		description: `2021 | Cross-browser Responsive Web & Animations`,
+		skills: ['SCSS', 'JavaScript', 'GSAP'],
+		alt: 'Screenshot of Nascent Design website homepage with animations',
+	},
+
+	{
+		img: bgEnde,
+		url: 'https://www-somosende-com.vercel.app',
+		name: 'Somos ENDE',
+		description: '2019 | Responsive Web with Animations',
+		skills: ['HTML', 'CSS', 'JavaScript', 'Animations'],
+		alt: 'Screenshot of Somos ENDE content studio website homepage with animations',
 	},
 
 	{
@@ -95,12 +95,12 @@ const projectsData = [
 	},
 
 	{
-		img: bgEnde,
-		url: 'https://www-somosende-com.vercel.app',
-		name: 'Somos ENDE',
-		description: '2019 | Responsive Web with Animations',
-		skills: ['HTML', 'CSS', 'JavaScript', 'Animations'],
-		alt: 'Screenshot of Somos ENDE content studio website homepage with animations',
+		img: bgBentley,
+		url: 'https://www.bentley-skinner.co.uk',
+		name: 'Bentley & Skinner',
+		description: '2022 | Cross-browser Responsive Web, Animations & WordPress',
+		skills: ['SCSS', 'JavaScript', 'GSAP', 'WordPress'],
+		alt: 'Screenshot of Bentley & Skinner jewelry and antique website homepage',
 	},
 ];
 
