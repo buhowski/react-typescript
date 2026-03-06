@@ -55,7 +55,7 @@ Looking for people, investment, or the opportunity to integrate ideas into exist
 
 ## Description
 
-Everything begins with the creation of an independent digital space — a new media platform format evolving from an information resource into a global ecosystem. It's a hybrid of a magazine and a social network at the intersection of leading publication aesthetics (Rolling Stone, VICE, Vogue), forum functionality (Reddit, 4chan) — with a full set of tools for everyday use: posts, videos, streams (Instagram/Threads, TikTok).
+Everything begins with the creation of an independent digital space — a new media platform format evolving from an information resource into a global ecosystem. It's a hybrid of a magazine and a social network at the intersection of leading publication aesthetics (Rolling Stone, VICE, Esquire), forum functionality (Reddit, 4chan) — with a full set of tools for everyday use: posts, videos, streams (Instagram/Threads, TikTok).
 
 This foundation gradually integrates a streaming video platform for distributing original films and a gaming hub for launching proprietary game dev projects, cutting-edge technologies, and related products.
 
