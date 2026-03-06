@@ -42,8 +42,14 @@ $lnk-shd-px: inset 1px 1px 10px;
 $lnk-shd2-px: inset -1px -1px 10px;
 $lnk-shd3-back: 0 0 2px #000000;
 
-$hover-link-shadow: $lnk-shd-px $hover-link-bgShd, $lnk-shd2-px $hover-link-bgShd, $lnk-shd3-back;
-$link-shadow: $lnk-shd-px $link-bgShd, $lnk-shd2-px $link-bgShd, $lnk-shd3-back;
+$hover-link-shadow:
+	$lnk-shd-px $hover-link-bgShd,
+	$lnk-shd2-px $hover-link-bgShd,
+	$lnk-shd3-back;
+$link-shadow:
+	$lnk-shd-px $link-bgShd,
+	$lnk-shd2-px $link-bgShd,
+	$lnk-shd3-back;
 
 @mixin hover-text-link {
 	box-shadow: $hover-link-shadow;
@@ -193,7 +199,9 @@ $bg-active-lang: #4e3e6f;
 		background-color: $blue-main;
 		z-index: -1;
 		transition: 0.25s ease;
-		box-shadow: inset 23px 23px 46px #004d96, inset -23px -23px 46px #006bd0;
+		box-shadow:
+			inset 23px 23px 46px #004d96,
+			inset -23px -23px 46px #006bd0;
 		will-change: height;
 	}
 
