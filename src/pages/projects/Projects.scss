@@ -26,7 +26,10 @@
 		height: calc(100% - 10px);
 		background-color: $blue-main;
 		transform: translateY(0);
-		transition: transform 0.25s ease 0.2s, height 0.25s ease 0.2s, width 0.25s ease 0.2s;
+		transition:
+			transform 0.25s ease 0.2s,
+			height 0.25s ease 0.2s,
+			width 0.25s ease 0.2s;
 		border-radius: 20px;
 
 		@include mobile {
