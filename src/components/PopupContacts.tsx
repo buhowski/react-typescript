@@ -6,7 +6,7 @@ const PopupContacts = () => {
 		<div className={`idea-contacts`}>
 			<Socials
 				socialData={socialData}
-				items={[{ id: 'instagram' }, { id: 'telegram' }, { id: 'mail' }, { id: 'linkedin' }]}
+				items={[{ id: 'telegram' }, { id: 'instagram' }, { id: 'linkedin' }, { id: 'mail' }]}
 			/>
 		</div>
 	);
