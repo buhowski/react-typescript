@@ -23,7 +23,7 @@ Project presentations — in the navigation, and below — the corporate plan.
 - Profits are reinvested into our own IT technologies — even greater profit (ideas exist)
 - Victory!
 
-Risks: In the worst-case scenario, we establish a popular magazine with an ad-based model, a donation system, and the production of film and game content for sale to other companies. The foundation remains intact, allowing for growth even under critical conditions.
+Risks: In the worst-case scenario, we establish a popular magazine with an ad-based model, a donation system, and the development of films and games for sale to other companies. The foundation remains intact, allowing for growth even under critical conditions.
 
 ### Problems
 
