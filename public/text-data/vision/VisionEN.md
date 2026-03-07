@@ -4,19 +4,15 @@
 
 ## Preface
 
-My goal is to create a unified ecosystem that integrates an entertainment magazine, countercultural media, film production, gamedev, and technology. These fields inspire, provide a space for ideas, and hold high profit potential.
+Building a unified ecosystem that combines an entertainment magazine, countercultural media, film production, game development, and technology. These are directions that inspire, open space for ideas, and carry strong profit potential. Each of them will be monetized, with profits reinvested into the development of our own technologies.
 
-My projects are individual components of this system, which I plan to monetize, with profits — reinvested into the development of our own technologies.
-
-I’m looking for people for creative and business collaboration, ready to join the creation and development of ideas.
+Looking for people ready for creative and business collaboration — to join the process of building and evolving these ideas.
 
 Project presentations — in the navigation, and below — the corporate plan.
 
 [mobile-slider]
 
-## For a Fuller Picture
-
-### In a Nutshell
+## In a Nutshell
 
 - [Magazine](/mvp) — the face of the company. A popular magazine reflects the voice of the majority. A highly popular magazine sets the direction, rather than adapting to restrictions or limitations (strategy in place)
 - [Cinema](/cinema) and [Games](/games) — sources of revenue (scenarios and concepts are ready)
@@ -25,13 +21,13 @@ Project presentations — in the navigation, and below — the corporate plan.
 
 Risks: In the worst-case scenario, we establish a popular magazine with an ad-based model, a donation system, and the development of films and games for sale to other companies. The foundation remains intact, allowing for growth even under critical conditions.
 
-### Problems
+## Problems
 
 We see a world where the system is created to constantly generate problems — because without them, it simply cannot exist. Bureaucracy intervenes in every part of our lives because it is its direct task. Politics has legalized mass murder, and some states have never understood the core message Orwell wanted to convey.
 
 The truth is that the majority of the world's population lives with a below-average income. Such a world structure and living conditions are far from suitable for everyone — especially for those who consciously seek a family, but are surrounded by an unpredictable and hostile environment. There are also those born "by default," whose desires and goals contradict their capabilities and basic instructions. And that's where things get interesting…
 
-### Solution
+## Solution
 
 The system is built exactly as it needs to be, which is why it works. And changing or improving it is not my task.
 
