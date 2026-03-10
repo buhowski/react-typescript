@@ -20,7 +20,7 @@ const Home = () => {
 
 				<Socials
 					socialData={socialData}
-					items={[{ id: 'github' }, { id: 'linkedin' }, { id: 'telegram' }, { id: 'instagram' }]}
+					items={[{ id: 'github' }, { id: 'linkedin' }, { id: 'instagram' }, { id: 'telegram' }]}
 				/>
 			</div>
 

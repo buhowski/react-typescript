@@ -93,8 +93,8 @@ const Header = () => {
 									items={[
 										{ id: 'github' },
 										{ id: 'linkedin' },
-										{ id: 'telegram' },
 										{ id: 'instagram' },
+										{ id: 'telegram' },
 									]}
 								/>
 							</nav>
