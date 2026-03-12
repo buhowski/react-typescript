@@ -1,4 +1,3 @@
-// Refactored MarkdownBlock - Final version with new logic
 import React, { useState, useEffect, useRef, memo, Children, useCallback, useMemo } from 'react';
 import ReactMarkdown, { Components } from 'react-markdown';
 import { useTabletLargeQuery } from '../../../config/useMediaQuery';
@@ -86,7 +85,11 @@ const MarkdownBlock = memo(
 					if (isHtmlDocument(fetchedText)) {
 						throw new Error(`Content is HTML, not Markdown. Path: ${src}`);
 					}
-					setText(fetchedText);
+
+					// UNIFY QUOTES & APOSTROPHES
+					const unifiedText = fetchedText.replace(/[“”„«»]/g, '"').replace(/[‘’]/g, "'");
+
+					setText(unifiedText);
 					clearTimeout(textClearTimer);
 				})
 				.catch((err) => {
@@ -126,7 +129,7 @@ const MarkdownBlock = memo(
 				return <Tag id={id}>{children}</Tag>;
 			},
 
-			[pitchIndex]
+			[pitchIndex],
 		);
 
 		// Custom renderers for markdown
@@ -150,7 +153,7 @@ const MarkdownBlock = memo(
 
 					const hasEm = childArray.some(
 						(child) =>
-							React.isValidElement(child) && typeof child.type === 'string' && child.type === 'em'
+							React.isValidElement(child) && typeof child.type === 'string' && child.type === 'em',
 					);
 					return <p className={hasEm ? 'description__has-em' : undefined}>{children}</p>;
 				},
@@ -160,7 +163,7 @@ const MarkdownBlock = memo(
 					</a>
 				),
 			}),
-			[renderHeading, useTabletLarge, sliderContent, currentLanguage]
+			[renderHeading, useTabletLarge, sliderContent, currentLanguage],
 		);
 
 		// Renders loader, error, or content
@@ -177,7 +180,7 @@ const MarkdownBlock = memo(
 		}
 
 		return <ReactMarkdown components={components}>{text}</ReactMarkdown>;
-	}
+	},
 );
 
 export default MarkdownBlock;
