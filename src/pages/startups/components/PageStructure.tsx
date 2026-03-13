@@ -1,4 +1,3 @@
-// PageStructure.tsx
 import React, { useState, useEffect, useMemo, useCallback, useRef } from 'react';
 import { useTabletLargeQuery } from '../../../config/useMediaQuery';
 import { getInitialLanguage } from '../helpers/languageHelper';

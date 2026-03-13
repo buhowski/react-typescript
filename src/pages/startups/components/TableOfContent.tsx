@@ -45,7 +45,7 @@ const TableOfContent: React.FC<TocProps> = ({
 	// Memoized TOC content
 	const tocContent = useMemo(() => {
 		// Show loader if content is fetching or initial headings not yet extracted
-		if (isLoadingContent) {
+		if (isTocOpen && isLoadingContent) {
 			return (
 				<div className='toc-loading'>
 					<Preloader />
@@ -54,7 +54,7 @@ const TableOfContent: React.FC<TocProps> = ({
 		}
 
 		// Render list if headings exist
-		if (headings.length > 0) {
+		if (!isLoadingContent && headings.length > 0) {
 			return headings.map((heading) => (
 				<button
 					key={heading.id}
