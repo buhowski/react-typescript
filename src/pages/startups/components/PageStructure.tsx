@@ -20,6 +20,7 @@ const PageStructure: React.FC<SinglePageProps> = ({ pageData, backButton, initia
 	const useTabletLarge = useTabletLargeQuery();
 	const isActive = useStickyHeader();
 
+	const [isInitialHeadingsLoading, setIsInitialHeadingsLoading] = useState(true);
 	const [initialLangReady, setInitialLangReady] = useState(false);
 	const [currentDesktopSliderContent, setCurrentDesktopSliderContent] = useState<any[]>([]);
 	const [canRenderCopyright, setCanRenderCopyright] = useState(false);
@@ -41,13 +42,16 @@ const PageStructure: React.FC<SinglePageProps> = ({ pageData, backButton, initia
 	const [currentLang, setCurrentLang] = useState<LanguageCode>(initialLang || 'ua');
 	const availableLangs = useMemo(
 		() => [...LANGUAGES].filter((lang) => pageData?.[lang]?.length),
-		[pageData]
+		[pageData],
 	);
 
 	useEffect(() => {
 		const langToSet = initialLang || getInitialLanguage(pageData, availableLangs);
 		localStorage.setItem('currentLang', langToSet);
 		if (langToSet !== currentLang) setCurrentLang(langToSet);
+
+		setIsInitialHeadingsLoading(true);
+
 		allHeadingsMapRef.current.clear();
 		setHeadingsVersion((prev) => prev + 1);
 		setInitialLangReady(true);
@@ -69,11 +73,14 @@ const PageStructure: React.FC<SinglePageProps> = ({ pageData, backButton, initia
 				setCurrentLang(lang);
 				localStorage.setItem('currentLang', lang);
 				dispatchLanguageChange(lang);
+
+				setIsInitialHeadingsLoading(true);
+
 				allHeadingsMapRef.current.clear();
 				setHeadingsVersion((prev) => prev + 1);
 			}
 		},
-		[pageData, allHeadingsMapRef, setHeadingsVersion]
+		[pageData, allHeadingsMapRef, setHeadingsVersion],
 	);
 
 	const contentToRender = useMemo(() => {
@@ -103,13 +110,15 @@ const PageStructure: React.FC<SinglePageProps> = ({ pageData, backButton, initia
 		(index: number, headings: any[]) => {
 			handleHeadingsExtracted(index, headings);
 			setPitchContainersLoading((prev) => ({ ...prev, [index]: false }));
+
+			setIsInitialHeadingsLoading(false);
 		},
-		[handleHeadingsExtracted]
+		[handleHeadingsExtracted],
 	);
 
 	const isContentLoading = useMemo(
 		() => Object.values(pitchContainersLoading).some((isLoading) => isLoading === true),
-		[pitchContainersLoading]
+		[pitchContainersLoading],
 	);
 
 	const handleScrollUpdateSlider = useCallback(() => {
@@ -137,7 +146,7 @@ const PageStructure: React.FC<SinglePageProps> = ({ pageData, backButton, initia
 		setCurrentDesktopSliderContent((prevContent) =>
 			JSON.stringify(newSliderContent) !== JSON.stringify(prevContent)
 				? newSliderContent
-				: prevContent
+				: prevContent,
 		);
 	}, [initialLangReady, contentToRender]);
 
@@ -219,7 +228,7 @@ const PageStructure: React.FC<SinglePageProps> = ({ pageData, backButton, initia
 							activeHeadingId={activeHeadingId}
 							onSelectIndex={handleTableOfContentSelect}
 							headings={sortedHeadings}
-							isLoadingContent={isContentLoading}
+							isLoadingContent={isContentLoading || isInitialHeadingsLoading}
 						/>
 
 						<div className='desktop-slider'>
