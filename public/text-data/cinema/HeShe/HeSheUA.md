@@ -16,7 +16,7 @@
 
 ## Основна Ідея
 
-Це епічна суміш реп-рок-опери та [Шекспірівської поезії](https://en.wikipedia.org/wiki/William_Shakespeare). Подібно до того, як фільм [Romeo + Juliet](https://www.imdb.com/title/tt0117509/) оновив класичну трагедію, цей проєкт переносить біблійні образи в сучасний урбаністичний світ з авторськими змінами. Бог — самотня юна дівчина, а Диявол — харизматичний хлопець, що ховає глибоку душевну самотність.
+Це епічна суміш реп-рок-опери та [Шекспірівської поезії (WIKI)](https://en.wikipedia.org/wiki/William_Shakespeare). Подібно до того, як фільм [Romeo + Juliet (IMDB)](https://www.imdb.com/title/tt0117509/) оновив класичну трагедію, цей проєкт переносить біблійні образи в сучасний урбаністичний світ з авторськими змінами. Бог — самотня юна дівчина, а Диявол — харизматичний хлопець, що ховає глибоку душевну самотність.
 
 Вони ще не знають про існування одне одного, але випадок зведе їхні шляхи на сімейному бал-маскараді, влаштованому на честь дня народження юної Богині. Друзі Диявола проникнуть туди без запрошення, і їхня перша зустріч відбудеться біля ліфту, що одразу стане коханням з першого погляду.
 
@@ -36,10 +36,10 @@
 
 ## Натхнення
 
-- [Romeo + Juliet, 1996](https://www.imdb.com/title/tt0117509/)
-- Хіп-Хопера: [Орфей & Еврідіка — Noize MC](https://www.youtube.com/watch?v=TbMYvqA8Tj4)
-- Переплетення класичних образів і тем, як у фільмі [The League of Extraordinary Gentlemen](https://www.imdb.com/title/tt0311429/): Джекіл і Гайд, Портрет Доріана Грея та інші
-- Пісні: [FFDP — Wrong Side of Heaven](https://open.spotify.com/track/11Ojp7JniVvwd0gmgvyKkd?si=_gtX3nIgTeOAt1k6oQf8Jg), [Black Sabbath — Planet Caravan](https://open.spotify.com/track/4VAAXfLf8YPiO1LzyYnMKb?si=H0yObqdcSwCUoofQdVV40g), [City Morgue — Screaming at the Rain](https://open.spotify.com/track/6dIMYXE0iAoXfjQGU1aFdy?si=rYTE-KXxTc2y6L4JSgZ-qw), [Ozzy Osbourne — Mr. Crowley](https://open.spotify.com/track/2ov8L95QD25TLpZAZPYWXL?si=FYXiBytqTp6G4HuEqX9B6A), [Black Sabbath — N.I.B.](https://open.spotify.com/track/3XclwoQxz4p6Dl7VUf90KW?si=6FHvsCUZREOZ4LxJcTXKfA)
+- [Romeo + Juliet, 1996 (IMDB)](https://www.imdb.com/title/tt0117509/)
+- Хіп-Хопера: [Орфей & Еврідіка — Noize MC (YT)](https://www.youtube.com/watch?v=TbMYvqA8Tj4)
+- Переплетення класичних образів і тем, як у фільмі [The League of Extraordinary Gentlemen (IMDB)](https://www.imdb.com/title/tt0311429/) — Джекіл і Гайд, Портрет Доріана Грея та інші
+- Пісні (Spotify): [FFDP — Wrong Side of Heaven](https://open.spotify.com/track/11Ojp7JniVvwd0gmgvyKkd?si=_gtX3nIgTeOAt1k6oQf8Jg) [Black Sabbath — Planet Caravan](https://open.spotify.com/track/4VAAXfLf8YPiO1LzyYnMKb?si=H0yObqdcSwCUoofQdVV40g) [City Morgue — Screaming at the Rain](https://open.spotify.com/track/6dIMYXE0iAoXfjQGU1aFdy?si=rYTE-KXxTc2y6L4JSgZ-qw) [Ozzy Osbourne — Mr. Crowley](https://open.spotify.com/track/2ov8L95QD25TLpZAZPYWXL?si=FYXiBytqTp6G4HuEqX9B6A) [Black Sabbath — N.I.B.](https://open.spotify.com/track/3XclwoQxz4p6Dl7VUf90KW?si=6FHvsCUZREOZ4LxJcTXKfA)
 
 ## Деталі
 

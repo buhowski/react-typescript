@@ -115,9 +115,9 @@ This modular approach allows for combining various formats, ensuring deep engage
 
 ## Existing Projects
 
-The implementation of the magazine and its strategy are treated as separate projects. More details here: [MVP: Another Dimension](/mvp).
+The implementation of the magazine and its strategy are treated as separate projects. More details here: [MVP: Another Dimension](/mvp)
 
-Key industry products are presented in separate scenarios. Presentations can be viewed here: [Cinematic Concepts](/cinema), [Game Dev Concepts](/games).
+Key industry products are presented in separate scenarios. Presentations can be viewed here: [Cinematic Concepts](/cinema) [Game Dev Concepts](/games)
 
 [Self-presentation projects](/self-presentation) — pilot projects implemented without funding. These are the initial stages of feasibility assessment, validating the stated intentions through feedback. They pave the way for launching core ideas and creating the magazine, as well as attracting investment for at least the next 5 years.
 

@@ -30,7 +30,7 @@
 
 Його артефакт є ключем до мультивсесвітної синхронності, що дозволяє йому впливати на реальність усюди й одночасно. Для нього світи — як величезні полотна, де він малює, змінює або стирає все, що йому не до вподоби. Його величезне его і схильність до ексцентричних витівок загрожують зламати реальність. Свої витвори він підписує: “Навіть богам іноді буває нудно”.
 
-Його образ поєднує естетику Художниці з гри [Clair Obscur: Expedition 33](https://store.steampowered.com/app/1903340/Clair_Obscur_Expedition_33/), чиї картини перетворюються на пастки та лабіринти світів, і концепцію архітектора-оповідача з мультсеріалу [Rick and Morty, S4E6](https://www.imdb.com/title/tt10655686/), що конструює сюжети всесвіту.
+Його образ поєднує естетику Художниці з гри [Clair Obscur: Expedition 33 (STEAM)](https://store.steampowered.com/app/1903340/Clair_Obscur_Expedition_33/) чиї картини перетворюються на пастки та лабіринти світів, і концепцію архітектора-оповідача з мультсеріалу [Rick and Morty, S4E6 (IMDB)](https://www.imdb.com/title/tt10655686/) що конструює сюжети всесвіту.
 
 Однак найнебезпечнішу загрозу становить таємничий Колекціонер, який прагне зібрати усі артефакти воєдино. Тих, хто наважується чинити опір або просто стає цікавим експонатом для його колекції, він перетворює на моторошну експозицію живих іграшок, ув’язнених у прозорих стінах гігантського Тераріуму Світів.
 
@@ -80,12 +80,12 @@
 ## Натхнення
 
 - Rick and Morty, S7E5 (сцена в слайдері) — драма мандрівника у вічному пошуку, що досліджує різні виміри
-- [Alice in Wonderland](https://www.imdb.com/title/tt1014759/) — сюрреалістичні, абсурдні світи та цікавість, яка веде в захопливу подорож
-- [Clair Obscur: Expedition 33](https://store.steampowered.com/app/1903340/Clair_Obscur_Expedition_33/) — мотиви та інтриги антагоністів
-- [Solar Opposites, S4: The Wall](https://www.youtube.com/watch?v=K0a85gwgQ8A) — концепція антагоніста-Колекціонера і Тераріума Світів
-- [Fallout](https://www.imdb.com/title/tt12637874/), [Westworld](https://www.imdb.com/title/tt0475784/) — атмосфера та пошуку істини
-- Стиль анімації — поєднання енергії та гумору Rick and Morty з деталізацією, міським нуаром і дизайном [Nier: Replicant](https://store.steampowered.com/app/1113560/NieR_Replicant_ver122474487139/) / [Automata](https://store.steampowered.com/app/524220/NieRAutomata/)
-- [High On Life](https://store.steampowered.com/app/1583230/High_On_Life/) — ця гра демонструє, як чорний гумор, саркастичні діалоги і стьоб над жанром з анімаційних проєктів можуть працювати у відеоігровому форматі, що дає можливість створити гру за мотивами цього серіалу
+- [Alice in Wonderland (IMDB)](https://www.imdb.com/title/tt1014759/) — сюрреалістичні, абсурдні світи та цікавість, яка веде в захопливу подорож
+- [Clair Obscur: Expedition 33 (STEAM)](https://store.steampowered.com/app/1903340/Clair_Obscur_Expedition_33/) — мотиви та інтриги антагоністів
+- [Solar Opposites, S4: The Wall (YT)](https://www.youtube.com/watch?v=K0a85gwgQ8A) — концепція антагоніста-Колекціонера і Тераріума Світів
+- [Fallout (IMDB)](https://www.imdb.com/title/tt12637874/) [Westworld (IMDB)](https://www.imdb.com/title/tt0475784/) — атмосфера та пошуку істини
+- Стиль анімації — поєднання енергії та гумору Rick and Morty з деталізацією, міським нуаром і дизайном [Nier: Replicant (STEAM)](https://store.steampowered.com/app/1113560/NieR_Replicant_ver122474487139/) / [Automata (STEAM)](https://store.steampowered.com/app/524220/NieRAutomata/)
+- [High On Life (STEAM)](https://store.steampowered.com/app/1583230/High_On_Life/) — ця гра демонструє, як чорний гумор, саркастичні діалоги і стьоб над жанром з анімаційних проєктів можуть працювати у відеоігровому форматі, що дає можливість створити гру за мотивами цього серіалу
 
 ## Деталі
 

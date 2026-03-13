@@ -20,7 +20,7 @@ This is a series that uses humor and satire to sharply and ironically reflect Uk
 
 ### Description
 
-The concept of the series is a fun mix, inspired by projects such as [Trailer Park Boys](https://www.imdb.com/title/tt0290988/), [It's Always Sunny in Philadelphia](https://www.imdb.com/title/tt0472954/), [Broad City](https://www.imdb.com/title/tt2578560/), and [New Kids Turbo](https://www.imdb.com/title/tt1648112/).
+The concept of the series is a fun mix, inspired by projects such as [Trailer Park Boys (IMDB) (IMDB)](https://www.imdb.com/title/tt0290988/) [It's Always Sunny in Philadelphia (IMDB) (IMDB)](https://www.imdb.com/title/tt0472954/) [Broad City (IMDB)](https://www.imdb.com/title/tt2578560/) and [New Kids Turbo (IMDB) (IMDB)](https://www.imdb.com/title/tt1648112/)
 
 Videos in the slider demonstrate typical scenes where the characters find themselves in an awkward, comical, or absurd position, which often leads to screaming, panic, or a complete collapse of the situation.
 

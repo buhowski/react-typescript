@@ -16,7 +16,7 @@ When the lonely heirs of rival business empires fall in love at first sight, the
 
 ## Main Idea
 
-This is an epic mix of rap-rock opera and [Shakespearean poetry](https://en.wikipedia.org/wiki/William_Shakespeare). Just as the film [Romeo + Juliet](https://www.imdb.com/title/tt0117509/) updated the classic tragedy, this project transports biblical images into a modern urban world with the author's own twists. God is a lonely young girl, and the Devil is a charismatic guy who hides a deep spiritual loneliness.
+This is an epic mix of rap-rock opera and [Shakespearean poetry (WIKI)](https://en.wikipedia.org/wiki/William_Shakespeare). Just as the film [Romeo + Juliet (IMDB)](https://www.imdb.com/title/tt0117509/) updated the classic tragedy, this project transports biblical images into a modern urban world with the author's own twists. God is a lonely young girl, and the Devil is a charismatic guy who hides a deep spiritual loneliness.
 
 They are not yet aware of each other's existence, but a twist of fate brings them together at a family masquerade ball, hosted for the young Goddess's birthday. The Devil's friends will sneak in without an invitation, and their first meeting will take place by the elevator, immediately sparking love at first sight.
 
@@ -36,10 +36,10 @@ From the very beginning, the characters were not meant to be together. This love
 
 ## Inspiration
 
-- [Romeo + Juliet, 1996](https://www.imdb.com/title/tt0117509/)
-- A Hip-Hopera: [Orpheus & Eurydice — Noize MC](https://www.youtube.com/watch?v=TbMYvqA8Tj4)
-- Interweaving of classic images and themes, like in the film [The League of Extraordinary Gentlemen](https://www.imdb.com/title/tt0311429/): Jekyll and Hyde, The Picture of Dorian Gray, and others
-- Songs: [FFDP — Wrong Side of Heaven](https://open.spotify.com/track/11Ojp7JniVvwd0gmgvyKkd?si=_gtX3nIgTeOAt1k6oQf8Jg), [Black Sabbath — Planet Caravan](https://open.spotify.com/track/4VAAXfLf8YPiO1LzyYnMKb?si=H0yObqdcSwCUoofQdVV40g), [City Morgue — Screaming at the Rain](https://open.spotify.com/track/6dIMYXE0iAoXfjQGU1aFdy?si=rYTE-KXxTc2y6L4JSgZ-qw), [Ozzy Osbourne — Mr. Crowley](https://open.spotify.com/track/2ov8L95QD25TLpZAZPYWXL?si=FYXiBytqTp6G4HuEqX9B6A), [Black Sabbath — N.I.B.](https://open.spotify.com/track/3XclwoQxz4p6Dl7VUf90KW?si=6FHvsCUZREOZ4LxJcTXKfA)
+- [Romeo + Juliet, 1996 (IMDB)](https://www.imdb.com/title/tt0117509/)
+- A Hip-Hopera: [Orpheus & Eurydice — Noize MC (YT)](https://www.youtube.com/watch?v=TbMYvqA8Tj4)
+- Interweaving of classic images and themes, like in the film [The League of Extraordinary Gentlemen (IMDB)](https://www.imdb.com/title/tt0311429/) — Jekyll and Hyde, The Picture of Dorian Gray, and others
+- Songs (Spotify): [FFDP — Wrong Side of Heaven](https://open.spotify.com/track/11Ojp7JniVvwd0gmgvyKkd?si=_gtX3nIgTeOAt1k6oQf8Jg) [Black Sabbath — Planet Caravan](https://open.spotify.com/track/4VAAXfLf8YPiO1LzyYnMKb?si=H0yObqdcSwCUoofQdVV40g) [City Morgue — Screaming at the Rain](https://open.spotify.com/track/6dIMYXE0iAoXfjQGU1aFdy?si=rYTE-KXxTc2y6L4JSgZ-qw) [Ozzy Osbourne — Mr. Crowley](https://open.spotify.com/track/2ov8L95QD25TLpZAZPYWXL?si=FYXiBytqTp6G4HuEqX9B6A) [Black Sabbath — N.I.B.](https://open.spotify.com/track/3XclwoQxz4p6Dl7VUf90KW?si=6FHvsCUZREOZ4LxJcTXKfA)
 
 ## Details
 

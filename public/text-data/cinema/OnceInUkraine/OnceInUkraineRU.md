@@ -40,11 +40,11 @@
 
 ## Вдохновение
 
-- [Requiem for a Dream, 2000](https://www.imdb.com/title/tt0180093/)
-- [21 Grams, 2003](https://www.imdb.com/title/tt0315733/)
-- [Crash, 2004](https://www.imdb.com/title/tt0375679/)
-- [Babel, 2006](https://www.imdb.com/title/tt0449467/)
-- [Once Upon a Time... in Hollywood, 2019](https://www.imdb.com/title/tt7131622/)
+- [Requiem for a Dream, 2000 (IMDB)](https://www.imdb.com/title/tt0180093/)
+- [21 Grams, 2003 (IMDB)](https://www.imdb.com/title/tt0315733/)
+- [Crash, 2004 (IMDB)](https://www.imdb.com/title/tt0375679/)
+- [Babel, 2006 (IMDB)](https://www.imdb.com/title/tt0449467/)
+- [Once Upon a Time... in Hollywood, 2019 (IMDB)](https://www.imdb.com/title/tt7131622/)
 
 ## Детали
 

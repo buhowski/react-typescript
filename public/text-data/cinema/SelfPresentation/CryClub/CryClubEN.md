@@ -10,7 +10,7 @@ In the elite fight club, physical combat is replaced by emotional chaos, where t
 
 ## Main Idea
 
-A satirical reality show in a wrestling ring — a mix of dark comedy, soap opera, social experiment, and rap battle. It mercilessly mocks wrestling, the theatricality of talk shows, the excessive seriousness of TV hosts and experts, and the emotional dependency of the viewers. Inspired by the [South Park S13E10](https://www.imdb.com/title/tt1532990/) (example in the slider).
+A satirical reality show in a wrestling ring — a mix of dark comedy, soap opera, social experiment, and rap battle. It mercilessly mocks wrestling, the theatricality of talk shows, the excessive seriousness of TV hosts and experts, and the emotional dependency of the viewers. Inspired by the [South Park S13E10 (IMDB)](https://www.imdb.com/title/tt1532990/) (example in the slider).
 
 The arena for this chaos is a dilapidated basement ring, soaked with sweat, tears, and shattered hopes. There are no rules here, because this wrestling is a battle of drama giants, where instead of punches, there are emotional traumas inflicted by shocking revelations and family scandals that tear sanity to shreds.
 

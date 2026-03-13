@@ -30,7 +30,7 @@ The Supreme Architect is an artist and a creative soul, a master of manipulation
 
 His artifact is the key to multiversal synchronicity, allowing him to influence reality everywhere and simultaneously. To him, worlds are like vast canvases where he paints, alters, or erases whatever displeases him. His colossal ego and penchant for eccentric antics threaten to break reality. He signs his creations: "Even gods get bored sometimes".
 
-His image combines the aesthetics of the Artist from the game [Clair Obscur: Expedition 33](https://store.steampowered.com/app/1903340/Clair_Obscur_Expedition_33/), whose paintings transform into traps and labyrinths of worlds, and the concept of the architect-narrator from the animated series [Rick and Morty, S4E6](https://www.imdb.com/title/tt10655686/), who constructs the plots of the universe.
+His image combines the aesthetics of the Artist from the game [Clair Obscur: Expedition 33 (STEAM)](https://store.steampowered.com/app/1903340/Clair_Obscur_Expedition_33/) whose paintings transform into traps and labyrinths of worlds, and the concept of the architect-narrator from the animated series [Rick and Morty, S4E6 (IMDB)](https://www.imdb.com/title/tt10655686/) who constructs the plots of the universe.
 
 However, the most dangerous threat comes from the mysterious Collector, who seeks to gather all the artifacts into one. Those who dare to resist, or simply become an interesting exhibit for his collection, are turned into a terrifying display of living toys, imprisoned within the transparent walls of a giant Terrarium of Worlds.
 
@@ -80,12 +80,12 @@ The plot transforms into a continuous chase, full of new challenges. The heroes 
 ## Inspiration
 
 - Rick and Morty, S7E5 (scene from the slider) — the drama of a traveler in eternal search, exploring different dimensions
-- [Alice in Wonderland](https://www.imdb.com/title/tt1014759/) — surreal, absurd worlds and curiosity that leads to a captivating journey
-- [Clair Obscur: Expedition 33](https://store.steampowered.com/app/1903340/Clair_Obscur_Expedition_33/) — the motives and intrigues of the antagonists
-- [Solar Opposites, S4: The Wall](https://www.youtube.com/watch?v=K0a85gwgQ8A) — the concept of the Collector antagonist and the Terrarium of Worlds
-- [Fallout](https://www.imdb.com/title/tt12637874/), [Westworld](https://www.imdb.com/title/tt0475784/) — atmosphere and the search for truth
-- Animation Style — a blend of Rick and Morty's energy and humor with the detail, urban noir, and design of [Nier: Replicant](https://store.steampowered.com/app/1113560/NieR_Replicant_ver122474487139/) / [Automata](https://store.steampowered.com/app/524220/NieRAutomata/)
-- [High On Life](https://store.steampowered.com/app/1583230/High_On_Life/) — this game demonstrates how black humor, sarcastic dialogues, and genre satire from animated projects can work in a video game format, offering the possibility of creating a game based on this series
+- [Alice in Wonderland (IMDB)](https://www.imdb.com/title/tt1014759/) — surreal, absurd worlds and curiosity that leads to a captivating journey
+- [Clair Obscur: Expedition 33 (STEAM)](https://store.steampowered.com/app/1903340/Clair_Obscur_Expedition_33/) — the motives and intrigues of the antagonists
+- [Solar Opposites, S4: The Wall (YT)](https://www.youtube.com/watch?v=K0a85gwgQ8A) — the concept of the Collector antagonist and the Terrarium of Worlds
+- [Fallout (IMDB)](https://www.imdb.com/title/tt12637874/) [Westworld (IMDB)](https://www.imdb.com/title/tt0475784/) — atmosphere and the search for truth
+- Animation Style — a blend of Rick and Morty's energy and humor with the detail, urban noir, and design of [Nier: Replicant (STEAM)](https://store.steampowered.com/app/1113560/NieR_Replicant_ver122474487139/) / [Automata (STEAM)](https://store.steampowered.com/app/524220/NieRAutomata/)
+- [High On Life (STEAM)](https://store.steampowered.com/app/1583230/High_On_Life/) — this game demonstrates how black humor, sarcastic dialogues, and genre satire from animated projects can work in a video game format, offering the possibility of creating a game based on this series
 
 ## Details
 

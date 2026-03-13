@@ -382,9 +382,9 @@ $nav-top: 2px;
 	box-shadow: 0 0 6px #000;
 
 	// Debugging styles
-	// position: sticky;
-	// top: 50px;
-	// z-index: 1000;
+	position: sticky;
+	top: 50px;
+	z-index: 1000;
 
 	@include tabletBig {
 		margin-top: 50px;
@@ -622,25 +622,19 @@ $nav-top: 2px;
 	}
 
 	a {
-		display: inline;
-		white-space: nowrap;
+		display: inline-flex;
+		align-items: baseline;
+		max-width: 100%;
+		width: fit-content;
 		border-radius: 5px;
-		line-height: 1.9;
-		padding: 4px 10px;
-		margin: 1px;
+		line-height: 1.17;
+		padding: 4px 9px;
+		margin: 3px;
 		color: $link-color;
 		background-color: $link-bg;
 		box-shadow: $link-shadow;
 		transition: 0.25s;
-
-		// icon for links
-		&::after {
-			content: '↑';
-			transform: rotate(45deg);
-			display: inline-block;
-			line-height: 1;
-			margin-left: 7px;
-		}
+		overflow: hidden;
 
 		@media (hover: hover) and (pointer: fine) {
 			&:hover {
@@ -650,6 +644,48 @@ $nav-top: 2px;
 
 		&:active {
 			@include hover-text-link;
+		}
+
+		// icon for links
+		&::after {
+			content: '';
+			display: block;
+			flex-shrink: 0;
+			width: 14px;
+			aspect-ratio: 1 / 1;
+			margin-left: 8px;
+			background-color: currentColor;
+
+			$svg-local: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="20" x2="20" y2="4"></line><polyline points="8 4 20 4 20 16"></polyline></svg>';
+			mask: url('data:image/svg+xml;charset=UTF-8,#{$svg-local}') no-repeat center / contain;
+			-webkit-mask: url('data:image/svg+xml;charset=UTF-8,#{$svg-local}') no-repeat center / contain;
+
+			@include tablet {
+				width: 13px;
+			}
+		}
+
+		&[href^='http'] {
+			&::after {
+				width: 17px;
+				transform: translateY(1px);
+
+				$svg-external: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>';
+				mask: url('data:image/svg+xml;charset=UTF-8,#{$svg-external}') no-repeat center / contain;
+				-webkit-mask: url('data:image/svg+xml;charset=UTF-8,#{$svg-external}') no-repeat center /
+					contain;
+
+				@include tablet {
+					width: 16px;
+				}
+			}
+		}
+
+		span {
+			display: block;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
 		}
 	}
 }

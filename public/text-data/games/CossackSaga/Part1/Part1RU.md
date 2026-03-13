@@ -41,7 +41,7 @@
 
 ## Описание
 
-Представьте геймплей, сочетающий глубину мира [The Witcher 3](https://store.steampowered.com/app/292030/The_Witcher_3_Wild_Hunt/), динамику паркура [Assassin's Creed](https://store.steampowered.com/app/33230/Assassins_Creed_2/) и кинематографическую постановку боёв [NieR: RepliCant](https://store.steampowered.com/app/1113560/NieR_Replicant_ver122474487139/) / [Automata](https://store.steampowered.com/app/524220/NieRAutomata/), интегрированные в наш уникальный историко-мистический мир. Это лишь ориентиры — игра предлагает собственное, уникальное дизайнерское видение.
+Представьте геймплей, сочетающий глубину мира [The Witcher 3 (STEAM)](https://store.steampowered.com/app/292030/The_Witcher_3_Wild_Hunt/) динамику паркура [Assassin's Creed (STEAM)](https://store.steampowered.com/app/33230/Assassins_Creed_2/) и кинематографическую постановку боёв [NieR: RepliCant (STEAM)](https://store.steampowered.com/app/1113560/NieR_Replicant_ver122474487139/) / [Automata (STEAM)](https://store.steampowered.com/app/524220/NieRAutomata/) интегрированные в наш уникальный историко-мистический мир. Это лишь ориентиры — игра предлагает собственное, уникальное дизайнерское видение.
 
 ### Сеттинг и Атмосфера
 
@@ -69,8 +69,8 @@
 
 ## Вдохновение
 
-- **Игры:** [The Witcher Series](https://www.thewitcher.com/ua/en/), [Ghost of Tsushima](https://store.steampowered.com/app/2215430/Ghost_of_Tsushima_DIRECTORS_CUT/), [Clair Obscur: Expedition 33](https://store.steampowered.com/app/1903340/Clair_Obscur_Expedition_33/), [Final Fantasy VII](https://store.steampowered.com/app/1462040/FINAL_FANTASY_VII_REMAKE_INTERGRADE/) / [XV](https://store.steampowered.com/app/637650/FINAL_FANTASY_XV_WINDOWS_EDITION/) — за глубокий мир, эпические квесты и сильный сюжет
-- **Режиссура и экспрессия:** [NieR: RepliCant](https://store.steampowered.com/app/1113560/NieR_Replicant_ver122474487139/) / [Automata](https://store.steampowered.com/app/524220/NieRAutomata/) — за шедевральное сочетание кинематографической постановки боёв, эмоционального напряжения и уникальной игровой атмосферы
+- **Игры:** [The Witcher Series](https://www.thewitcher.com/ua/en/) [Ghost of Tsushima (STEAM)](https://store.steampowered.com/app/2215430/Ghost_of_Tsushima_DIRECTORS_CUT/) [Clair Obscur: Expedition 33 (STEAM)](https://store.steampowered.com/app/1903340/Clair_Obscur_Expedition_33/) [Final Fantasy VII (STEAM)](https://store.steampowered.com/app/1462040/FINAL_FANTASY_VII_REMAKE_INTERGRADE/) / [XV (STEAM)](https://store.steampowered.com/app/637650/FINAL_FANTASY_XV_WINDOWS_EDITION/) — за глубокий мир, эпические квесты и сильный сюжет
+- **Режиссура и экспрессия:** [NieR: RepliCant (STEAM)](https://store.steampowered.com/app/1113560/NieR_Replicant_ver122474487139/) / [Automata (STEAM)](https://store.steampowered.com/app/524220/NieRAutomata/) — за шедевральное сочетание кинематографической постановки боёв, эмоционального напряжения и уникальной игровой атмосферы
 - **Культура и мифология:** Запорожские Казаки, славянская мифология и демонология — за аутентичность, магию и фольклорный лор.
 - **Сюжет и альтернативная история:** За множественные пути, которые бросают вызов устоявшимся историческим нарративам и формируют собственное драматическое повествование.
 

@@ -20,7 +20,7 @@
 
 ### Опис
 
-Концепція серіалу — це веселий мікс, навіяний такими проєктами, як [Trailer Park Boys](https://www.imdb.com/title/tt0290988/), [It's Always Sunny in Philadelphia](https://www.imdb.com/title/tt0472954/), [Broad City](https://www.imdb.com/title/tt2578560/) та [New Kids Turbo](https://www.imdb.com/title/tt1648112/).
+Концепція серіалу — це веселий мікс, навіяний такими проєктами, як [Trailer Park Boys (IMDB)](https://www.imdb.com/title/tt0290988/) [It's Always Sunny in Philadelphia (IMDB)](https://www.imdb.com/title/tt0472954/) [Broad City (IMDB)](https://www.imdb.com/title/tt2578560/) та [New Kids Turbo (IMDB)](https://www.imdb.com/title/tt1648112/)
 
 Відео у слайдері демонструють типові сцени, де персонажі опиняються в незручному, комічному або абсурдному становищі, що часто призводить до криків, паніки або повного розвалу ситуації.
 

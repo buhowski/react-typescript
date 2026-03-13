@@ -30,7 +30,7 @@ A flashback takes us to the bachelorette party: the women and their local friend
 
 They find out the men have disappeared and start their own comedic-detective investigation, turning their nocturnal drive through villages and fields into a drunken quest. All clues lead them to some sort of Gypsy-drug camp on the triple border of Ukraine, Poland, and Belarus, where even border guards are involved.
 
-The women develop a ["Charlie's Angels"](https://www.imdb.com/title/tt0160127/) style rescue plan and burst into the camp. Of course, everything goes wrong, turning into pure improvisation and chaos. In the commotion, they find and free the guys. Thanks to the "perfect" plan, everything accidentally catches fire, causing a domino effect. The characters escape like in a classic action movie, with flashes and explosions behind them, all covered in mud, beaten up, but alive — at least physically.
+The women develop a ["Charlie's Angels" (IMDB)](https://www.imdb.com/title/tt0160127/) style rescue plan and burst into the camp. Of course, everything goes wrong, turning into pure improvisation and chaos. In the commotion, they find and free the guys. Thanks to the "perfect" plan, everything accidentally catches fire, causing a domino effect. The characters escape like in a classic action movie, with flashes and explosions behind them, all covered in mud, beaten up, but alive — at least physically.
 
 Barely fitting into the car, the characters, completely mind-fucked by what happened, drive to the wedding in silence. Some Polish-Belarusian music plays on the radio, enhancing the atmosphere of booze and a beautiful sunrise on the road. They stop at a gas station, where, hungry, they greedily eat to the same strange music, nodding their heads, processing all the exciting events.
 
@@ -42,14 +42,14 @@ Then, scenes are shown of how the guys got into this drug predicament, similar t
 
 ### Films
 
-- [The Hangover, 2009](https://www.imdb.com/title/tt1119646/)
-- [A Few Best Men, 2011](https://www.imdb.com/title/tt1640711/)
-- [Game Night, 2018](https://www.imdb.com/title/tt2704998/)
+- [The Hangover, 2009 (IMDB)](https://www.imdb.com/title/tt1119646/)
+- [A Few Best Men, 2011 (IMDB)](https://www.imdb.com/title/tt1640711/)
+- [Game Night, 2018 (IMDB)](https://www.imdb.com/title/tt2704998/)
 
 ### Characters
 
-- The impulsiveness of the best man and maid of honor is inspired by the characters from the series [It's Always Sunny in Philadelphia](https://www.imdb.com/title/tt0472954/)
-- The personalities of the "plus-ones" are the complete opposite of their partners, and are generally similar to the character of Sarah in the film [Game Night](https://www.imdb.com/title/tt2704998/)
+- The impulsiveness of the best man and maid of honor is inspired by the characters from the series [It's Always Sunny in Philadelphia (IMDB)](https://www.imdb.com/title/tt0472954/)
+- The personalities of the "plus-ones" are the complete opposite of their partners, and are generally similar to the character of Sarah in the film [Game Night (IMDB)](https://www.imdb.com/title/tt2704998/)
 
 ## Details
 
