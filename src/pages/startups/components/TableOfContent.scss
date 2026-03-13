@@ -314,13 +314,14 @@ $toc-hover-color: #fff;
 	letter-spacing: 1px;
 	font-weight: bold;
 	color: #ff3e3e;
+	font-size: 18px;
 
 	span {
 		display: block;
 	}
 
 	&__text {
-		margin-top: 10px;
+		margin-top: 15px;
 	}
 
 	&__btn {
@@ -329,8 +330,9 @@ $toc-hover-color: #fff;
 		padding: 14px 30px;
 		border-radius: 10px;
 		color: #000000;
-		box-shadow: 0 0 5px #ff3e3e;
-		background-color: #ff5f5f;
+		box-shadow: 0 0 6px #ff4141;
+		background-color: #f95555;
+		font-size: 19px;
 	}
 }
 

@@ -4,7 +4,7 @@ import { TocProps } from '../../../types/common';
 
 const tocErrorText = (
 	<p className='toc-message'>
-		Oops
+		<span>Oops</span>
 		<span className='toc-message__text'>content not found</span>
 		<span
 			className='toc-message__btn'
@@ -93,11 +93,7 @@ const TableOfContent: React.FC<TocProps> = ({
 				<h3 className='table-content__title'>Table of Content</h3>
 				<div className='table-content__container'>
 					<div className='table-content__inner' ref={innerRef}>
-						<div className='table-content__wrapper'>
-							{tocErrorText}
-
-							{tocContent}
-						</div>
+						<div className='table-content__wrapper'>{tocContent}</div>
 					</div>
 				</div>
 			</div>
