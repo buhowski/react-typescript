@@ -1,59 +1,48 @@
-import React, { useState, useEffect, useMemo, useCallback } from 'react';
+import { useState, useEffect, useMemo, useCallback } from 'react';
 import { HeadingInfo, CollectedHeading } from '../../../types/common';
 
-// Custom Alert Component
 const showReloadAlert = (): void => {
-	alert('Page will reload due to resolution change. Stay Cool 😎 [Rock ’n’ Roll]');
+	alert('Page will reload due to resolution change.\nStay Cool 😎 [Rock ’n’ Roll]');
 	window.location.reload();
 };
 
 export const useActiveHeadingTracking = (
 	useTabletLarge: boolean,
-	allHeadingsMapRef: React.MutableRefObject<Map<number, HeadingInfo[]>>
+	allHeadingsMapRef: React.MutableRefObject<Map<number, HeadingInfo[]>>,
 ) => {
 	const [activeHeadingId, setActiveHeadingId] = useState<string | null>(null);
 	const [headingsVersion, setHeadingsVersion] = useState(0);
 
-	// handleHeadingsExtracted
+	// Extract headings data
 	const handleHeadingsExtracted = useCallback(
 		(pitchIndex: number, headings: CollectedHeading[]) => {
 			allHeadingsMapRef.current.set(
 				pitchIndex,
-				headings.map((h) => ({ ...h, pitchIndex }))
+				headings.map((h) => ({ ...h, pitchIndex })),
 			);
-
 			setHeadingsVersion((prev) => prev + 1);
 		},
-
-		[allHeadingsMapRef]
+		[allHeadingsMapRef],
 	);
 
-	// sortedHeadings
+	// Sort headings by index
 	const sortedHeadings = useMemo(() => {
 		const combinedHeadings: HeadingInfo[] = [];
-
 		Array.from(allHeadingsMapRef.current.keys())
 			.sort((a, b) => a - b)
 			.forEach((pitchIndex) => {
 				const headingsForPitch = allHeadingsMapRef.current.get(pitchIndex);
-
-				if (headingsForPitch) {
-					combinedHeadings.push(...headingsForPitch);
-				}
+				if (headingsForPitch) combinedHeadings.push(...headingsForPitch);
 			});
-
 		return combinedHeadings;
+
 		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [headingsVersion, allHeadingsMapRef]);
 
-	// Tracks active heading
+	// Track scroll position for active ID
 	useEffect(() => {
-		if (!document.querySelector('.page-container') || sortedHeadings.length === 0) {
-			return;
-		}
-
 		const container = document.querySelector('.page-container') as HTMLElement;
-		if (!container) return;
+		if (!container || sortedHeadings.length === 0) return;
 
 		const triggerOffset = useTabletLarge ? 95 : 150;
 
@@ -64,11 +53,9 @@ export const useActiveHeadingTracking = (
 
 			sortedHeadings.forEach((heading) => {
 				const headingElement = document.getElementById(heading.id);
-
 				if (headingElement) {
 					const topRelativeToContainer = headingElement.getBoundingClientRect().top - containerTop;
 					const distance = topRelativeToContainer - triggerOffset;
-
 					if (distance <= 0 && Math.abs(distance) < Math.abs(minDistance)) {
 						minDistance = distance;
 						newActiveHeadingId = heading.id;
@@ -83,11 +70,29 @@ export const useActiveHeadingTracking = (
 		return () => container.removeEventListener('scroll', handleScroll);
 	}, [useTabletLarge, headingsVersion, sortedHeadings]);
 
-	// Scrolls to TOC title
+	// Custom fast smooth scroll
+	const animateScroll = useCallback((container: HTMLElement, targetY: number, duration: number) => {
+		const startY = container.scrollTop;
+		const diff = targetY - startY;
+		let startTime: number | null = null;
+
+		const step = (currentTime: number) => {
+			if (!startTime) startTime = currentTime;
+			const progress = currentTime - startTime;
+			const percent = Math.min(progress / duration, 1);
+			const easing = 1 - Math.pow(1 - percent, 3); // easeOutCubic
+
+			container.scrollTop = startY + diff * easing;
+			if (progress < duration) window.requestAnimationFrame(step);
+		};
+		window.requestAnimationFrame(step);
+	}, []);
+
+	// Handle TOC selection
 	const handleTableOfContentSelect = useCallback(
 		(headingId: string) => {
 			const targetElement = document.getElementById(headingId);
-			const pageContainer = document.querySelector('.page-container');
+			const pageContainer = document.querySelector('.page-container') as HTMLElement;
 
 			if (targetElement && pageContainer) {
 				const scrollOffset = useTabletLarge ? 80 : 86;
@@ -96,16 +101,14 @@ export const useActiveHeadingTracking = (
 				const currentScrollTop = pageContainer.scrollTop;
 				const scrollTo = targetTop - containerTop + currentScrollTop - scrollOffset;
 
-				pageContainer.scrollTo({
-					top: scrollTo,
-					behavior: 'smooth',
-				});
+				// scroll speed animation
+				animateScroll(pageContainer, scrollTo, 400);
 			} else {
-				console.warn(`Could not find element with ID: ${headingId}.`);
+				console.warn(`Missing ID: ${headingId}`);
 				showReloadAlert();
 			}
 		},
-		[useTabletLarge]
+		[useTabletLarge, animateScroll],
 	);
 
 	return {

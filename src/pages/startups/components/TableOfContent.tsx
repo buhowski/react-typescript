@@ -31,7 +31,8 @@ const TableOfContent: React.FC<TocProps> = ({
 	useLayoutEffect(() => {
 		if (!innerRef.current) return;
 
-		const extraHeight = window.innerWidth <= 1280 ? 60 : 0;
+		const extraHeight = window.innerWidth <= 1280 ? 63 : 2;
+
 		setListHeight(isTocOpen ? innerRef.current.scrollHeight + extraHeight : 0);
 	}, [isTocOpen, headings, isLoadingContent]);
 
@@ -60,8 +61,8 @@ const TableOfContent: React.FC<TocProps> = ({
 							heading.level === 1
 								? 'h1-toc-item'
 								: heading.level === 2
-								? 'h2-toc-item'
-								: 'h3-toc-item'
+									? 'h2-toc-item'
+									: 'h3-toc-item'
 						}
 						data-text={heading.text}
 					>
