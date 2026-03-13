@@ -242,6 +242,10 @@ $nav-top: 2px;
 			box-shadow: 0 3px 10px #000000;
 		}
 
+		.idea-tabs__btn {
+			border-radius: 0;
+		}
+
 		.idea-back {
 			position: fixed;
 		}
@@ -258,8 +262,11 @@ $nav-top: 2px;
 }
 
 @mixin idea-tabs__btn_hover {
-	color: $blue-main;
+	color: #ffffff;
+	text-shadow: 0 0 8px rgba(#ffffff, 0.5);
 }
+
+$nav-btn-color: #f4f4f4;
 
 .idea-tabs {
 	display: flex;
@@ -297,8 +304,12 @@ $nav-top: 2px;
 		padding: 13px 50px 11px;
 		font-family: $LouisGeorgeCafBold;
 		font-size: 18px;
-		letter-spacing: 2px;
-		transition: color 0.25s;
+		letter-spacing: 1px;
+		transition:
+			color 0.25s,
+			border-radius 0.25s;
+		color: rgba($nav-btn-color, 0.6);
+		border-radius: 100px;
 
 		@include tabletBig {
 			flex-grow: 1;
@@ -309,6 +320,8 @@ $nav-top: 2px;
 
 		&.sub-active {
 			position: relative;
+			color: $nav-btn-color;
+			text-transform: uppercase;
 
 			&::before {
 				content: '';
@@ -317,16 +330,26 @@ $nav-top: 2px;
 				bottom: 0;
 				left: 50%;
 				transform: translateX(-50%);
-				width: 28%;
+				min-width: 35px;
+				max-width: 50px;
+				width: 30%;
 				height: 3px;
 				background-color: rgba($color: $blue-main, $alpha: 1);
 				border-radius: 20px;
+				transition:
+					width 0.25s,
+					max-width 0.25s;
+			}
+
+			&:hover::before {
+				max-width: 100%;
+				width: 100%;
 			}
 		}
 
 		&.active {
+			color: $nav-btn-color;
 			background-color: $blue-main;
-			text-shadow: 0 0 0.6px $snow;
 			box-shadow:
 				inset 30px 20px 40px #004a8f,
 				inset -30px -20px 40px #066ac7;
