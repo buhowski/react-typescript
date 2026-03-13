@@ -313,11 +313,24 @@ $toc-hover-color: #fff;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-weight: bold;
-	color: #ff2e2e;
+	color: #ff3e3e;
 
 	span {
 		display: block;
+	}
+
+	&__text {
 		margin-top: 10px;
+	}
+
+	&__btn {
+		margin: 20px 20px 0;
+		text-transform: uppercase;
+		padding: 14px 30px;
+		border-radius: 10px;
+		color: #000000;
+		box-shadow: 0 0 5px #ff3e3e;
+		background-color: #ff5f5f;
 	}
 }
 

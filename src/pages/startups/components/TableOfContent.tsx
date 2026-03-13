@@ -4,8 +4,15 @@ import { TocProps } from '../../../types/common';
 
 const tocErrorText = (
 	<p className='toc-message'>
-		Oops, nothing here
-		<span>Reload page</span>
+		Oops
+		<span className='toc-message__text'>content not found</span>
+		<span
+			className='toc-message__btn'
+			onClick={() => window.location.reload()}
+			style={{ cursor: 'pointer' }}
+		>
+			Reload page
+		</span>
 	</p>
 );
 
@@ -86,7 +93,11 @@ const TableOfContent: React.FC<TocProps> = ({
 				<h3 className='table-content__title'>Table of Content</h3>
 				<div className='table-content__container'>
 					<div className='table-content__inner' ref={innerRef}>
-						<div className='table-content__wrapper'>{tocContent}</div>
+						<div className='table-content__wrapper'>
+							{tocErrorText}
+
+							{tocContent}
+						</div>
 					</div>
 				</div>
 			</div>
