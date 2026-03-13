@@ -6,7 +6,7 @@
 
 I am currently looking for the resources and time to bring these ideas to life. If you know where such initiatives can find support — please let me know!
 
-If this resonates — let’s team up. Creating awesome stuff is always more exciting when done with cool people!
+If this resonates — letʼs team up. Creating awesome stuff is always more exciting when done with cool people!
 
 [mobile-slider]
 
@@ -26,9 +26,9 @@ Keeping first-person narrative diaries, immersing oneself in events, and becomin
 
 ### Future Exposition of a Verbal Gallery
 
-- What’s for breakfast? Your favorite shit — an exploration of the absurdity of human behavior through the consumption of “healthy food” from unhealthy information sources. And about how eating someone else's dirt allows you to criticize those who refuse to eat from their buffet.
+- Whatʼs for breakfast? Your favorite shit — an exploration of the absurdity of human behavior through the consumption of "healthy food" from unhealthy information sources. And about how eating someone else's dirt allows you to criticize those who refuse to eat from their buffet.
 - A favorite sport — the translation of responsibility: from parents to the system, from the system to society, and from society to the entertainment industry, whose direct task is to organize Sodom and Gomorrah and call it the norm.
 - We ain't even fuckin' needin' your Euro-Soviet — a manifesto on how bureaucracy and restrictions (which Ukraine will consume from Europe) hinder development, while true freedom is a partnership, not dependence on an outdated system.
-- The system’s shelf life has expired — a requiem before the global purge and the birth of a new millennium.
-- The theorem of cyclicality: how the legacy of hatred passes the baton to a new war, and the fascism of prohibition becomes one of its modern manifestations, turning every "Never Again" into "Again and Again”.
-- “What did God want to say?”, “Who is right in the evolutionary chain?”, “An interview with planet Earth,” and all the dimensions of human consciousness — from the subconscious to the surprises of the future genetic lottery…
+- The systemʼs shelf life has expired — a requiem before the global purge and the birth of a new millennium.
+- The theorem of cyclicality: how the legacy of hatred passes the baton to a new war, and the fascism of prohibition becomes one of its modern manifestations, turning every "Never Again" into "Again and Again".
+- "What did God want to say?", "Who is right in the evolutionary chain?", "An interview with planet Earth," and all the dimensions of human consciousness — from the subconscious to the surprises of the future genetic lottery…

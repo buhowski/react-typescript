@@ -12,7 +12,7 @@ A wedding story that everyone wanted except the couple themselves, and the night
 
 This is a feature-length comedy-drama with elements of black satire and absurdity, set in modern Volyn. The story follows two semi-successful natives of the Ukrainian provinces who return home to celebrate their wedding according to classic traditions. Although the main characters have long moved on from these archaic customs, they agree to it for their families, because sometimes old traditions are stronger than common sense.
 
-The main characters are the groom and the bride, as well as their friends: the best man, the maid of honor, and a “plus-one” for each of them. A separate intrigue exists between these two pairs, which is revealed throughout the plot.
+The main characters are the groom and the bride, as well as their friends: the best man, the maid of honor, and a "plus-one" for each of them. A separate intrigue exists between these two pairs, which is revealed throughout the plot.
 
 The best man and the maid of honor haven't met yet, but their personalities are similar: both are shortsighted, impulsive, and hysterical, yet at the same time sweet and kind. This causes them to constantly get into squabbles — both with each other and together against everyone else. Their "plus-ones" are the complete opposite of their partners, and they begin to flirt with each other behind their friends' backs.
 
@@ -24,7 +24,7 @@ Phone conversations reveal the backstory: the proposal has been made, the weddin
 
 Everyone arrives at the wedding location separately by car. The introduction happens there. Later, on the night before the wedding, the bachelor and bachelorette parties begin, mixing city and local traditions. They decide to split up: the men go to their party, and the women go to theirs.
 
-In a classic trope, the men’s night gets out of control: the first toast, a "boom," and a black screen. The men wake up in cages in an unknown place, and their peace is disturbed by a mix of Polish, Belarusian, and Gypsy languages, which instantly brings them to their senses but leaves them in shocking confusion.
+In a classic trope, the menʼs night gets out of control: the first toast, a "boom," and a black screen. The men wake up in cages in an unknown place, and their peace is disturbed by a mix of Polish, Belarusian, and Gypsy languages, which instantly brings them to their senses but leaves them in shocking confusion.
 
 A flashback takes us to the bachelorette party: the women and their local friends decide to visit a nightclub. There, they expertly fend off the local rednecks with a direct blow to the throat. They get bored and decide to find the guys to stir up some trouble.
 
@@ -36,7 +36,7 @@ Barely fitting into the car, the characters, completely mind-fucked by what happ
 
 In the finale, beaten up but dressed up, they arrive at the wedding. Everything goes well, everyone is happy. In the end, when everyone gets together, the maid of honor's "plus-one" says: "Turns out, I was filming everything on video. Want to watch? It's a fucking mess..." 
 
-Then, scenes are shown of how the guys got into this drug predicament, similar to the ending of “The Hangover”.
+Then, scenes are shown of how the guys got into this drug predicament, similar to the ending of "The Hangover".
 
 ## Inspiration
 
@@ -57,4 +57,4 @@ Then, scenes are shown of how the guys got into this drug predicament, similar t
 
 I am currently looking for the resources and time to bring these ideas to life. If you know where such initiatives can find support — please let me know!
 
-If this resonates — let’s team up. Creating awesome stuff is always more exciting when done with cool people!
+If this resonates — letʼs team up. Creating awesome stuff is always more exciting when done with cool people!

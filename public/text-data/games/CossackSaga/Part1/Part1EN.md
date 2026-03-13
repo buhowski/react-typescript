@@ -41,7 +41,7 @@ Now, with the truth revealed, he must make a choice that will determine their sh
 
 ## Description
 
-Imagine gameplay that combines the world depth of [The Witcher 3 (STEAM)](https://store.steampowered.com/app/292030/The_Witcher_3_Wild_Hunt/) the parkour dynamics of [Assassin's Creed (STEAM)](https://store.steampowered.com/app/33230/Assassins_Creed_2/) and the cinematic combat staging of [NieR: RepliCant (STEAM)](https://store.steampowered.com/app/1113560/NieR_Replicant_ver122474487139/) / [Automata (STEAM)](https://store.steampowered.com/app/524220/NieRAutomata/) all integrated into our unique historical-mystical world. These are only reference points — the game offers its own, unique design vision.
+Imagine gameplay that combines the world depth of [The Witcher 3 (STEAM)](https://store.steampowered.com/app/292030/The_Witcher_3_Wild_Hunt/) the parkour dynamics of [Assassin's Creed (STEAM)](https://store.steampowered.com/app/33230/Assassins_Creed_2/) and the cinematic combat staging of [NieR: RepliCant (STEAM)](https://store.steampowered.com/app/1113560/NieR_Replicant_ver122474487139/) [NieR: Automata (STEAM)](https://store.steampowered.com/app/524220/NieRAutomata/) all integrated into our unique historical-mystical world. These are only reference points — the game offers its own, unique design vision.
 
 ### Setting & Atmosphere
 
@@ -69,8 +69,8 @@ Local Groups — subordinates with their own leaders, assistants, and servants. 
 
 ## Inspiration
 
-- **Games:** [The Witcher Series](https://www.thewitcher.com/ua/en/) [Ghost of Tsushima (STEAM)](https://store.steampowered.com/app/2215430/Ghost_of_Tsushima_DIRECTORS_CUT/) [Clair Obscur: Expedition 33 (STEAM)](https://store.steampowered.com/app/1903340/Clair_Obscur_Expedition_33/) [Final Fantasy VII (STEAM)](https://store.steampowered.com/app/1462040/FINAL_FANTASY_VII_REMAKE_INTERGRADE/) / [XV (STEAM)](https://store.steampowered.com/app/637650/FINAL_FANTASY_XV_WINDOWS_EDITION/) — for deep world-building, epic quests, and a strong plot
-- **Direction and Expression:** [NieR: RepliCant (STEAM)](https://store.steampowered.com/app/1113560/NieR_Replicant_ver122474487139/) / [Automata (STEAM)](https://store.steampowered.com/app/524220/NieRAutomata/) — for the masterful combination of cinematic combat staging, emotional tension, and a unique game atmosphere
+- **Games:** [The Witcher Series](https://www.thewitcher.com/ua/en/) [Ghost of Tsushima (STEAM)](https://store.steampowered.com/app/2215430/Ghost_of_Tsushima_DIRECTORS_CUT/) [Clair Obscur: Expedition 33 (STEAM)](https://store.steampowered.com/app/1903340/Clair_Obscur_Expedition_33/) [Final Fantasy VII (STEAM)](https://store.steampowered.com/app/1462040/FINAL_FANTASY_VII_REMAKE_INTERGRADE/) [Final Fantasy XV (STEAM)](https://store.steampowered.com/app/637650/FINAL_FANTASY_XV_WINDOWS_EDITION/) — for deep world-building, epic quests, and a strong plot
+- **Direction and Expression:** [NieR: RepliCant (STEAM)](https://store.steampowered.com/app/1113560/NieR_Replicant_ver122474487139/) [NieR: Automata (STEAM)](https://store.steampowered.com/app/524220/NieRAutomata/) — for the masterful combination of cinematic combat staging, emotional tension, and a unique game atmosphere
 - **Culture and Mythology:** Zaporizhzhian Cossacks, Slavic mythology, and demonology — for authenticity, magic, and folkloric lore.
 - Drama and Emotions: The full palette of human emotions — from triumphs to tragedies
 - **Storytelling and Alternative History:** For multiple paths that challenge established historical narratives and form their own dramatic story.
@@ -87,4 +87,4 @@ I am seeking support and a team to bring this unique world to life. This is an o
 
 I am currently looking for the resources and time to bring these ideas to life. If you know where such initiatives can find support — please let me know!
 
-If this resonates — let’s team up. Creating awesome stuff is always more exciting when done with cool people!
+If this resonates — letʼs team up. Creating awesome stuff is always more exciting when done with cool people!

@@ -4,4 +4,4 @@ Below are my concepts for ambitious video games and interactive content. These a
 
 I am currently looking for the resources and time to bring these ideas to life. If you know where such initiatives can find support — please let me know!
 
-If this resonates — let’s team up. Creating awesome stuff is always more exciting when done with cool people!
+If this resonates — letʼs team up. Creating awesome stuff is always more exciting when done with cool people!

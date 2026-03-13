@@ -4,7 +4,7 @@
 
 ## Logline
 
-This is a mockumentary backstage series about creating [own corporation](/vision) from scratch. It’s an ironic reinterpretation of [The Office (IMDB)](https://www.imdb.com/title/tt0386676/) ideas, where a real work process is mixed with deliberate absurdity.
+This is a mockumentary backstage series about creating [own corporation](/vision) from scratch. Itʼs an ironic reinterpretation of [The Office (IMDB)](https://www.imdb.com/title/tt0386676/) ideas, where a real work process is mixed with deliberate absurdity.
 
 ## Main Idea
 
@@ -26,4 +26,4 @@ Filming takes place in a real space. The series does not copy the original "The 
 
 I am currently looking for the resources and time to bring these ideas to life. If you know where such initiatives can find support — please let me know!
 
-If this resonates — let’s team up. Creating awesome stuff is always more exciting when done with cool people!
+If this resonates — letʼs team up. Creating awesome stuff is always more exciting when done with cool people!

@@ -35,7 +35,7 @@ My idea is to cover what I believe lies outside the competence of mainstream med
 
 This is about separating from all possible "sticks in the wheels." About the freedom to express oneself without fear of being banned. About the opportunity to research, create cool ideas, experiment with new technologies, and, most importantly, not forget to have fun.
 
-To bring all of this to life on my own terms — this corporation, as I’ve conceptualized it, is exactly that place.
+To bring all of this to life on my own terms — this corporation, as Iʼve conceptualized it, is exactly that place.
 
 ## Mission
 
@@ -110,7 +110,7 @@ This modular approach allows for combining various formats, ensuring deep engage
 - Platform for creators — open functionality for monetization: personal subscriptions, donations, and direct content sales without unnecessary intermediaries
 - Marketplace for original projects — sales of proprietary games, videos, books, art objects, and exclusive merch
 - Donations and custom orders — an opportunity to support the ecosystem's development or commission the creation of specific content
-- Native advertising and partnerships — collaborations with brands that share the platform's values, without spam or "suffocation”
+- Native advertising and partnerships — collaborations with brands that share the platform's values, without spam or "suffocation"
 - Future technologies — monetization of interactive experiences through VR, AR, and gaming mechanics using AI
 
 ## Existing Projects
