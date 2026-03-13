@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect, useLayoutEffect, useMemo } from 'react';
+import React, { useState, useRef, useEffect, useLayoutEffect } from 'react';
 import Preloader from '../../../components/Preloader';
 import { TocProps } from '../../../types/common';
 
@@ -43,36 +43,26 @@ const TableOfContent: React.FC<TocProps> = ({
 	}, [isTocOpen]);
 
 	// Memoized TOC content
-	const tocContent = useMemo(() => {
-		// Show loader if content is fetching or initial headings not yet extracted
-		if (isTocOpen && isLoadingContent) {
-			return (
-				<div className='toc-loading'>
-					<Preloader />
-				</div>
-			);
-		}
-
-		// Render list if headings exist
-		if (!isLoadingContent && headings.length > 0) {
-			return headings.map((heading) => (
+	const tocContent =
+		!isLoadingContent && headings.length > 0 ? (
+			headings.map((heading) => (
 				<button
 					key={heading.id}
 					onClick={() => onSelectIndex(heading.id)}
 					className={activeHeadingId === heading.id ? 'is-active' : ''}
 				>
-					<mark className={`h${heading.level}-toc-item`}>{heading.text}</mark>
+					<mark className={`h${heading.level}-toc-item`} data-text={heading.text}>
+						{heading.text}
+					</mark>
 				</button>
-			));
-		}
-
-		// Show error only when open and definitely empty
-		if (isTocOpen && !isLoadingContent && headings.length === 0) {
-			return tocErrorText;
-		}
-
-		return null;
-	}, [isLoadingContent, headings, activeHeadingId, onSelectIndex, isTocOpen]);
+			))
+		) : isTocOpen && isLoadingContent ? (
+			<div className='toc-loading'>
+				<Preloader />
+			</div>
+		) : isTocOpen && !isLoadingContent && headings.length === 0 ? (
+			tocErrorText
+		) : null;
 
 	return (
 		<div className={`table-content ${isTocOpen ? 'is-open' : ''}`} ref={tocRef}>

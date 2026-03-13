@@ -19,7 +19,6 @@ const PageStructure: React.FC<SinglePageProps> = ({ pageData, backButton, initia
 	const useTabletLarge = useTabletLargeQuery();
 	const isActive = useStickyHeader();
 
-	const [isInitialHeadingsLoading, setIsInitialHeadingsLoading] = useState(true);
 	const [initialLangReady, setInitialLangReady] = useState(false);
 	const [currentDesktopSliderContent, setCurrentDesktopSliderContent] = useState<any[]>([]);
 	const [canRenderCopyright, setCanRenderCopyright] = useState(false);
@@ -49,8 +48,6 @@ const PageStructure: React.FC<SinglePageProps> = ({ pageData, backButton, initia
 		localStorage.setItem('currentLang', langToSet);
 		if (langToSet !== currentLang) setCurrentLang(langToSet);
 
-		setIsInitialHeadingsLoading(true);
-
 		allHeadingsMapRef.current.clear();
 		setHeadingsVersion((prev) => prev + 1);
 		setInitialLangReady(true);
@@ -72,8 +69,6 @@ const PageStructure: React.FC<SinglePageProps> = ({ pageData, backButton, initia
 				setCurrentLang(lang);
 				localStorage.setItem('currentLang', lang);
 				dispatchLanguageChange(lang);
-
-				setIsInitialHeadingsLoading(true);
 
 				allHeadingsMapRef.current.clear();
 				setHeadingsVersion((prev) => prev + 1);
@@ -109,8 +104,6 @@ const PageStructure: React.FC<SinglePageProps> = ({ pageData, backButton, initia
 		(index: number, headings: any[]) => {
 			handleHeadingsExtracted(index, headings);
 			setPitchContainersLoading((prev) => ({ ...prev, [index]: false }));
-
-			setIsInitialHeadingsLoading(false);
 		},
 		[handleHeadingsExtracted],
 	);
@@ -227,7 +220,7 @@ const PageStructure: React.FC<SinglePageProps> = ({ pageData, backButton, initia
 							activeHeadingId={activeHeadingId}
 							onSelectIndex={handleTableOfContentSelect}
 							headings={sortedHeadings}
-							isLoadingContent={isContentLoading || isInitialHeadingsLoading}
+							isLoadingContent={isContentLoading}
 						/>
 
 						<div className='desktop-slider'>
