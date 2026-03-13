@@ -223,6 +223,7 @@ $toc-hover-color: #fff;
 				letter-spacing: 0.3px;
 				line-height: 1;
 				color: $textGrey;
+				transition: padding 0.25s;
 
 				@include tabletBig {
 					padding: 5px 22px;
@@ -230,31 +231,31 @@ $toc-hover-color: #fff;
 				}
 
 				&::before {
-					// content: '➤';
 					content: '';
-					font-size: 14px;
 					display: none;
-					align-items: center;
-					justify-content: center;
 					height: 100%;
-					width: 3px;
-					background-color: currentColor;
-					color: currentColor;
+					border-left: 3px solid currentColor;
 					position: absolute;
 					top: 0;
 					left: 0;
 
 					@include tabletBig {
 						font-size: 11px;
-						width: 4px;
+						border-width: 4px;
 					}
 				}
 			}
 
 			&.is-active {
 				mark {
+					padding-left: 25px;
+
+					@include tabletBig {
+						padding-left: 20px;
+					}
+
 					&::before {
-						display: flex;
+						display: block;
 					}
 				}
 
