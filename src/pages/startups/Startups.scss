@@ -655,7 +655,7 @@ $nav-top: 2px;
 			content: '';
 			display: block;
 			flex-shrink: 0;
-			width: 15px;
+			width: 13px;
 			aspect-ratio: 1 / 1;
 			margin-left: 9px;
 			line-height: 1;
@@ -665,10 +665,6 @@ $nav-top: 2px;
 			mask: url('data:image/svg+xml;charset=UTF-8,#{$svg-local}') no-repeat center / contain;
 			-webkit-mask: url('data:image/svg+xml;charset=UTF-8,#{$svg-local}') no-repeat center / contain;
 			background-color: currentColor;
-
-			@include tablet {
-				width: 14px;
-			}
 		}
 
 		&[href^='http'] {

@@ -331,12 +331,12 @@ $toc-hover-color: #fff;
 
 .toc-message {
 	text-align: center;
-	padding: 18px 22px 40px;
+	padding: 20px 25px 25px;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-weight: bold;
-	color: #ff3e3e;
-	font-size: 19px;
+	color: #df3535;
+	font-size: 20px;
 
 	span {
 		display: block;
@@ -347,21 +347,21 @@ $toc-hover-color: #fff;
 	}
 
 	&__btn {
-		margin: 26px auto 0;
-		text-transform: uppercase;
-		padding: 13px 30px;
+		margin: 30px auto 0;
+		padding: 14px 30px;
 		border-radius: 10px;
-		color: #000000;
-		box-shadow: 0 0 8px #f13131;
-		background-color: #f95555;
-		font-size: 20px;
+		color: $textGrey;
+		background-color: #d62222;
+		box-shadow:
+			inset 20px 20px 30px #a21818,
+			inset -20px -20px 30px #b60e0e;
 		white-space: nowrap;
 		cursor: pointer;
 		width: 100%;
 		max-width: 260px;
 
 		&:hover {
-			background-color: rgba($textGrey, 0.6);
+			background-color: #000000;
 		}
 	}
 }
