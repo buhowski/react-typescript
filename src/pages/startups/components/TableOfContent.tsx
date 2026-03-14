@@ -59,7 +59,7 @@ const TableOfContent: React.FC<TocProps> = ({
 					className={activeHeadingId === heading.id ? 'is-active' : ''}
 				>
 					<mark className={`h${heading.level}-toc-item`} data-text={heading.text}>
-						{heading.text}
+						<span>{heading.text}</span>
 					</mark>
 				</button>
 			))

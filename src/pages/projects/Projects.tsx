@@ -52,7 +52,7 @@ const Projects = () => {
 			<h1 className='base-title h1'>Some Works</h1>
 			<div className='projects-container'>
 				<ResponsiveMasonry columnsCountBreakPoints={{ 320: 1, 666: 2, 1024: 3, 1281: 5 }}>
-					<MasonryTyped itemStyle={{ gap: '40px' }} className='projects-container__masonry'>
+					<MasonryTyped itemStyle={{ gap: '50px' }} className='projects-container__masonry'>
 						{projectsData.map(({ img, url, urlCode, name, description, skills, alt }, i) => (
 							<div className='project' key={i}>
 								{skills || description ? (

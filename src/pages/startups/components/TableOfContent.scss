@@ -220,10 +220,9 @@ $toc-hover-color: #fff;
 				padding: 5px 42px;
 				padding-right: 25px;
 				font-weight: bold;
-				letter-spacing: 0.3px;
-				line-height: 1;
+				letter-spacing: 0.36px;
+				line-height: 1.12;
 				color: $textGrey;
-				transition: padding 0.25s;
 
 				@include tabletBig {
 					padding: 5px 22px;
@@ -244,16 +243,15 @@ $toc-hover-color: #fff;
 						border-width: 4px;
 					}
 				}
+
+				span {
+					display: block;
+					transition: transform 0.2s;
+				}
 			}
 
 			&.is-active {
 				mark {
-					padding-left: 25px;
-
-					@include tabletBig {
-						padding-left: 20px;
-					}
-
 					&::before {
 						display: block;
 					}
@@ -261,21 +259,44 @@ $toc-hover-color: #fff;
 
 				.h1-toc-item {
 					color: darken($h1-title-color, 20%);
+
+					span {
+						transform: translateX(-20px);
+
+						@include tabletBig {
+							transform: translateX(-6px);
+						}
+					}
 				}
 
 				.h2-toc-item {
 					color: darken($h2-title-color, 20%);
+
+					span {
+						transform: translateX(-30px);
+
+						@include tabletBig {
+							transform: translateX(-16px);
+						}
+					}
 				}
 
 				.h3-toc-item {
 					color: darken($h3-title-color, 20%);
+
+					span {
+						transform: translateX(-43px);
+
+						@include tabletBig {
+							transform: translateX(-28px);
+						}
+					}
 				}
 			}
 
 			.h1-toc-item {
 				font-size: 16px;
-				margin-top: 6px;
-				margin-bottom: 2px;
+				margin-top: 10px;
 				color: $nav-btn-color;
 
 				@include tabletBig {
@@ -286,7 +307,7 @@ $toc-hover-color: #fff;
 			.h2-toc-item {
 				font-size: 14px;
 				padding-left: 52px;
-				color: rgba($textGrey, 0.85);
+				color: rgba($textGrey, 0.9);
 
 				@include tabletBig {
 					font-size: 13px;
@@ -297,10 +318,10 @@ $toc-hover-color: #fff;
 			.h3-toc-item {
 				font-size: 14px;
 				padding-left: 65px;
-				color: rgba($textGrey, 0.6);
+				color: rgba($textGrey, 0.56);
 
 				@include tabletBig {
-					padding-left: 42px;
+					padding-left: 44px;
 					font-size: 13px;
 				}
 			}
@@ -310,12 +331,12 @@ $toc-hover-color: #fff;
 
 .toc-message {
 	text-align: center;
-	padding: 30px 10px;
+	padding: 18px 22px 40px;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-weight: bold;
 	color: #ff3e3e;
-	font-size: 18px;
+	font-size: 19px;
 
 	span {
 		display: block;
@@ -326,14 +347,22 @@ $toc-hover-color: #fff;
 	}
 
 	&__btn {
-		margin: 20px 20px 0;
+		margin: 26px auto 0;
 		text-transform: uppercase;
-		padding: 14px 30px;
+		padding: 13px 30px;
 		border-radius: 10px;
 		color: #000000;
-		box-shadow: 0 0 6px #ff4141;
+		box-shadow: 0 0 8px #f13131;
 		background-color: #f95555;
-		font-size: 19px;
+		font-size: 20px;
+		white-space: nowrap;
+		cursor: pointer;
+		width: 100%;
+		max-width: 260px;
+
+		&:hover {
+			background-color: rgba($textGrey, 0.6);
+		}
 	}
 }
 
