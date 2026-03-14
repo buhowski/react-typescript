@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import PageHelmet from '../../components/PageHelmet';
 import { aboutMetaTags } from '../../components/metaTagsBasic';
-import dotsData from './aboutData';
-import PhotoBg from './images/body.png';
 import { useTabletQuery } from '../../config/useMediaQuery';
+import dotsData from './aboutData';
+import basePhoto from './images/body.png';
+
 import './About.scss';
 
 const About = () => {
@@ -30,7 +31,7 @@ const About = () => {
 				<div className=''>
 					<img
 						className='about-info__img'
-						src={PhotoBg}
+						src={basePhoto}
 						alt='Portrait of Tsiomakh Olexandr (Цьомах Олександр Віталійович) standing and looking forward, symbolizing a better future'
 					/>
 				</div>

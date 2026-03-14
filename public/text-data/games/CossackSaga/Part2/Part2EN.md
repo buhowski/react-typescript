@@ -10,7 +10,7 @@ Absorbing a piece of her beloved's soul, a heroine embarks on a bloody journey t
 
 ## Main Idea
 
-The second part continues the tragic story that began in the [Part I](/cossack-saga-1). The heroine finds refuge with her deceased lover's friends, where she regains her strength. It is here that she uncovers the true nature of the church's demonic rituals.
+The second part continues the tragic story that began in the [Part I](/cossack-saga-1) The heroine finds refuge with her deceased lover's friends, where she regains her strength. It is here that she uncovers the true nature of the church's demonic rituals.
 
 She realizes that at the moment of self-sacrifice, their mutual love created an unprecedented synergy. In response to her reciprocal willingness to sacrifice herself, her lover's soul responded, and in the epicenter of a magical surge, a fragment of his essence plunged into her heart. Thus, hope for salvation is born, and her journey begins.
 
@@ -18,11 +18,11 @@ Learning that the church cult has freed ancient demons and enslaved people, the 
 
 ### Plot
 
-The heroineʼs journey is a series of trials, interactive memories, deadly confrontations, and discoveries that reveal her past of captivity, suffering, and unyielding determination. Friends from the previous part and new allies join her on her travels. Their presence adds strength, but some may harbor their own intentions, creating unpredictable situations.
+The heroine’s journey is a series of trials, interactive memories, deadly confrontations, and discoveries that reveal her past of captivity, suffering, and unyielding determination. Friends from the previous part and new allies join her on her travels. Their presence adds strength, but some may harbor their own intentions, creating unpredictable situations.
 
 The world is on the brink: if the heroine fails, chaos will take over, and the demons will prove their case. The line between good and evil will blur, leaving only the consequences of decisions.
 
-The heroineʼs final goal is to unite all the artifacts to perform a dangerous ritual and touch the fragment of her beloved's soul. For this, she will have to pay the ultimate price: life for a life. It is a trial that will force her to challenge her own moral and physical limits to prove that love, the thirst for freedom, and determination are stronger than the darkness of the cult.
+The heroine’s final goal is to unite all the artifacts to perform a dangerous ritual and touch the fragment of her beloved's soul. For this, she will have to pay the ultimate price: life for a life. It is a trial that will force her to challenge her own moral and physical limits to prove that love, the thirst for freedom, and determination are stronger than the darkness of the cult.
 
 Reborn from the ashes, the heroine transforms the ashes of love into a devastating force that will burn all the evil that condemned her to suffering, and thus give her beloved a chance at a new life.
 
@@ -40,4 +40,4 @@ Along with the fragments of magical energy, a fragment of the supreme demon also
 
 I am currently looking for the resources and time to bring these ideas to life. If you know where such initiatives can find support — please let me know!
 
-If this resonates — letʼs team up. Creating awesome stuff is always more exciting when done with cool people!
+If this resonates — let’s team up. Creating awesome stuff is always more exciting when done with cool people!
