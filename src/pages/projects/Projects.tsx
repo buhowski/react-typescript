@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import Masonry from 'react-responsive-masonry';
 import { ResponsiveMasonry as ResponsiveMasonryBase } from 'react-responsive-masonry';
 import PageHelmet from '../../components/PageHelmet';
@@ -12,8 +12,17 @@ const ResponsiveMasonry = ResponsiveMasonryBase as unknown as React.FC<
 const MasonryTyped = Masonry as unknown as React.FC<React.PropsWithChildren<any>>;
 
 const Projects = () => {
+	const [gap, setGap] = useState('40px');
 	const descriptionRefs = useRef<Array<HTMLDivElement | null>>([]);
 	const linkRefs = useRef<Array<HTMLAnchorElement | null>>([]);
+
+	const handleResize = () => {
+		if (window.innerWidth <= 767) {
+			setGap('70px');
+		} else {
+			setGap('40px');
+		}
+	};
 
 	const adjustMargins = () => {
 		descriptionRefs.current.forEach((desc, i) => {
@@ -25,6 +34,9 @@ const Projects = () => {
 	};
 
 	useEffect(() => {
+		handleResize();
+		window.addEventListener('resize', handleResize);
+
 		// Use ResizeObserver if supported
 		const observers: ResizeObserver[] = [];
 		if (typeof ResizeObserver !== 'undefined') {
@@ -52,7 +64,7 @@ const Projects = () => {
 			<h1 className='base-title h1'>Some Works</h1>
 			<div className='projects-container'>
 				<ResponsiveMasonry columnsCountBreakPoints={{ 320: 1, 666: 2, 1024: 3, 1281: 5 }}>
-					<MasonryTyped itemStyle={{ gap: '50px' }} className='projects-container__masonry'>
+					<MasonryTyped itemStyle={{ gap }} className='projects-container__masonry'>
 						{projectsData.map(({ img, url, urlCode, name, description, skills, alt }, i) => (
 							<div className='project' key={i}>
 								{skills || description ? (
