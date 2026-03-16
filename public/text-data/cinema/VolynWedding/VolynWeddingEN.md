@@ -55,6 +55,4 @@ Then, scenes are shown of how the guys got into this drug predicament, similar t
 
 *Under Construction …*
 
-I am currently looking for the resources and time to bring these ideas to life. If you know where such initiatives can find support — please let me know!
-
-If this resonates — letʼs team up. Creating awesome stuff is always more exciting when done with cool people!
+Seeking resources and people to bring these ideas to life. If you know where such an initiative could be supported or want to team up — let’s talk!

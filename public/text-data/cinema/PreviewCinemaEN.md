@@ -1,7 +1,5 @@
 # Cinematic Concepts
 
-Below are my concepts for film, series, and other video content. Each project comes with a clear vision, a solid foundation, and the potential for scaling.
+Below are my concepts for films, series, animation, and other video content. Each has a clear vision, a solid foundation with a unique core, and scaling potential.
 
-I am currently looking for the resources and time to bring these ideas to life. If you know where such initiatives can find support — please let me know!
-
-If this resonates — letʼs team up. Creating awesome stuff is always more exciting when done with cool people!
+Seeking resources and people to bring these ideas to life. If you know where such an initiative could be supported or want to team up — let’s talk!

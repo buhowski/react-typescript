@@ -4,26 +4,26 @@
 
 ## Logline
 
-This is a mockumentary backstage series about creating [own corporation](/vision) from scratch. Itʼs an ironic reinterpretation of [The Office (IMDB)](https://www.imdb.com/title/tt0386676/) ideas, where a real work process is mixed with deliberate absurdity.
+A backstage look at building [a corporation](/vision) from scratch. An ironic deconstruction of office slavery and the illusion of growth through the lens of total absurdity. Anti-corporate satire where the main drama isn't the work, but everything done instead of it.
 
 ## Main Idea
 
-This project immerses the viewer into the inner workings of a company being built from the ground up. The series offers a satirical look at the modern corporate world: fascism in the details, galleys and rowers, a talent meat grinder, the illusion of a family atmosphere, and the senseless waste of resources.
+The project immerses you in the inner workings of a company being built right before your eyes. It is a satirical slice of the corporate world: fascism in the details, office galleys, the talent meat grinder, fake "family" vibes, and the senseless waste of resources.
 
-The story focuses not on business processes, but on the people who survive in offices where the main drama isn't the work itself, but everything that's done instead of it.
-
-The goal of the series is to show, with boundless self-irony, what work should not be like. Documentary reality here is intertwined with intentionally integrated absurdity, which makes the project lively and captivating.
-
-The open coverage of all stages of the corporation's creation will become not only the driving force behind the project's development but also its self-promotion.
-
-Filming takes place in a real space. The series does not copy the original "The Office", but rather adapts its concept to create a unique story based on flexible humor, absurdity, and vivid characters.
+The story focuses not on business processes, but on the people trying to survive in an environment where the imitation of activity is more important than the result. Documentary reality intertwines with intentional absurdity. The goal of the series is to show, with boundless self-irony, exactly what work should not be like.
 
 [mobile-slider]
+
+## Promotion Strategy
+
+Openly documenting every stage of building the business becomes both the plot’s engine and the primary marketing tool. This creates a direct connection with the audience: the backstage footage mocks the system, draws attention to other projects within the ecosystem, and gathers real-time feedback, turning the viewer into a witness (or accomplice) to the corporate chaos.
+
+- [The Office (IMDB)](https://www.imdb.com/title/tt0386676/) — mockumentary format, sense of presence, and cringe humor
+- [Nathan for You (IMDB)](https://www.imdb.com/title/tt2297757/) — the level of absurdity and involving real people in surreal situations
+- [Silicon Valley (IMDB)](https://www.imdb.com/title/tt2575988/) — satire on "changing the world" and the industry’s internal toxicity
 
 ## Details
 
 *Under Construction …*
 
-I am currently looking for the resources and time to bring these ideas to life. If you know where such initiatives can find support — please let me know!
-
-If this resonates — letʼs team up. Creating awesome stuff is always more exciting when done with cool people!
+Seeking resources and people to bring these ideas to life. If you know where such an initiative could be supported or want to team up — let’s talk!
