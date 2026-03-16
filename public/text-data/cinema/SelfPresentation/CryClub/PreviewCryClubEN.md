@@ -2,4 +2,4 @@
 
 # Santa Barbara Fight Club
 
-In the elite fight club, physical combat is replaced by emotional chaos, where the only allowed punch is a treacherous verbal betrayal, and the strongest knockout is a dramatic family revelation that drives the audience to hysterics.
+A territory of emotional violence, where psychological trauma replaces punches, and family scandals flow instead of blood. A trash-battle and chaos-therapy in the ring, mocking the theatricality of wrestling and societal pathologies through epic absurdity.

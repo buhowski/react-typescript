@@ -2,4 +2,4 @@
 
 # An Evening at GOD's
 
-A satirical-theatrical play-show where God, drinking beer between a TV and a papier-mâché globe, ridicules the absurdity of the world through humor, irony, and dramatic imagery, creating an evening that is both entertaining and thought-provoking.
+Divine cabaret, where the Creator mocks the absurdity of existence over a can of beer. Bureaucratic surrealism of the celestial office set in a living room. A satirical deconstruction of order that turns the end of the world into canned laughter and another bottle of brew.

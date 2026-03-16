@@ -4,7 +4,13 @@
 
 ## Logline
 
-An improvisational blend of [The Eric Andre Show (IMDB)](https://www.imdb.com/title/tt2244495/) [Between Two Ferns (IMDB)](https://www.imdb.com/title/tt9398640/) and podcasts in the style of "Let's pretend we know something and we're fucking experts in everything" — with references, metaphorical subtexts, unpredictable absurdity, and very outright black, fucked-up humor (not).
+Improvisational absurdity set in a "soviet-core" reality, where hosts dismantle the egos of celebrity guests and their own sanity. A mashup of podcasts in the style of "Let's pretend we actually know something and are fucking experts in everything" — filled with references, metaphorical subtexts, and unapologetically black humor.
+
+## Inspiration
+
+- [The Eric Andre Show (IMDB)](https://www.imdb.com/title/tt2244495/) — the level of destructive chaos, physical comedy, and visual psychodelia
+- [Between Two Ferns (IMDB)](https://www.imdb.com/title/tt1535002/) — the mastery of creating awkward silences, passive aggression, and absurd dialogues
+- [Da Ali G Show (IMDB)](https://www.imdb.com/title/tt0241088/) — the imitation of expertise and pushing interviews to the brink of total idiocy
 
 ## Script
 
@@ -12,11 +18,11 @@ An improvisational show with prepared elements — a few minutes of conversation
 
 There are two hosts — a Main and an Additional (female + male) + a Background Character (possibly several) + a Guest.
 
-- The Main host asks the main and other questions (the main questions are specially prepared and necessary for revealing key ideas).
+- The Main host asks the main and any other questions (the main questions are specially prepared and necessary for revealing key ideas).
 - All questions are directed at the guest, but the Additional host constantly seizes the initiative: answering all questions or interrupting the guest, adding their own versions of events.
-- Both hosts need to expose the key idea as cool as possible, without letting the guest express themselves (if guests are even present — if theyʼre absent, the replacement is: dolls / plush toys that will be a-la-celebrities).
+- Both hosts need to expose the key idea as cool as possible, without letting the guest express themselves (if guests are even present — if they’re absent, the replacement is: dolls / plush toys that will be a-la-celebrities).
 - The Background Character is constantly present, busy with their own things, but steps into character when the main question is over, or sometimes bursts into the conversation and interrupts everyone.
-- In the case of using a doll as a guest, the Background Character plays the role of this "celebrityʼs" thoughts or debates on any topic, joking that we are so unpopular that we couldnʼt even get a homeless person to come. (The script for the Background Character's actions must be purely improvisational and unknown to the hosts).
+- In the case of using a doll as a guest, the Background Character plays the role of this “celebrity’s” thoughts or debates on any topic, joking that we are so unpopular that we couldn’t even get a homeless person to come. (The script for the Background Character's actions must be purely improvisational and unknown to the hosts).
 
 ## Wildcard: Background Character
 
@@ -32,15 +38,15 @@ Another interpretation: The Character is an outdated mindset, a ghost of Christm
 
 The idea for the location is an abandoned factory or a Soviet-style ruin: carpets, old TVs, 80s furniture.
 
-During the show, the Background Character gradually destroys these elements. Itʼs not just decor, but the textures of an obsolete world that he replaces with new ones.
+During the show, the Background Character gradually destroys these elements. It’s not just decor, but the textures of an obsolete world that he replaces with new ones.
 
-This is a visual metaphor for the desire to get rid of Soviet-era thinking, fucking medievalism, and build oneʼs own free world.
+This is a visual metaphor for the desire to get rid of Soviet-era thinking, fucking medievalism, and build one’s own free world.
 
 ## Finale
 
 The filming option moves to a studio with a cool designer interior, as if we had been there the whole time.
 
-With the change of interior — the Background Characterʼs transformation: new suit, aristocratic pose, pipe, etc.
+With the change of interior — the Background Character’s transformation: new suit, aristocratic pose, pipe, etc.
 
 We show evolution in its purest form.
 
@@ -66,12 +72,12 @@ Danger Zone — unpredictably awful humor.
 
 - Greeting: "This is the pilot episode... The pilot of a Broiler-747 passenger plane, which has been crashing for... (looks at a watch that isn't there) ...539 seconds (show duration)...", followed by the same laugh — first to the co-host, then to the camera, then to another camera (a reference to Kalambur)
 - "Podcast-show-field-of-wonders", sector guest on the drum! Open the guest! We open a portrait on a stand (an ironic drawing, meme) and roll them in on a trolley
-- A joke about some kind of prohibition: "Are we in Nazi Germany or something?"
+- A joke about some kind of prohibition: "Are we in Nazi Germany or something?”
 - In the worst case — we'll just have a blast, in the best — two people will watch us
 - I'll give it 5 years and the Apple company itself will call me directly and say: "Give me ten," and I'll say: "The old lady doesn't hear, nine or ten?"... And then I'll give them ten years in prison!
 - If someone is a no-name, use absurd labels: "expert of shit and sticks", "some dick from the hill", "a fictional real person", "a beach bum"
 - An argument for something: "A dick from the hill — 'cause from a hill you see better"
-- So you're an IT guy? — Nah, IT guys are some awesome people, Iʼm a more functional organism
+- So you're an IT guy? — Nah, IT guys are some awesome people, I’m a more functional organism
 
 ### Intro
 
@@ -83,20 +89,20 @@ Before the greeting, it starts immediately:
 
 (the second host interrupts, continuing the same tone):
 
-— Playing ahead of your desire for another attempt to vent your unresolved psychological issues on us, instead of finally going to a psychologist and stop pouring out your existential diarrhea in the comments, weʼll still say than…
+— Playing ahead of your desire for another attempt to vent your unresolved psychological issues on us, instead of finally going to a psychologist and stop pouring out your existential diarrhea in the comments, we’ll still say than…
 
 (for a millisecond — silence. Then a strong, emotional, escalating scream takes over):
 
-— THAAAAAANk GO FUCK YOURSELF, YOU FUCKING CUNT! YOUʼRE DIRT FROM UNDER A FINGERNAIL! A CONSTANTLY LEAKING TOILET TANK! HALF A HEMORRHOID BETWEEN TWO PEOPLE! AN UNUSED LIFE PROMO CODE! A CUNT! A VIRGIN…
+— THAAAAAANk GO FUCK YOURSELF, YOU FUCKING CUNT! YOU’RE DIRT FROM UNDER A FINGERNAIL! A CONSTANTLY LEAKING TOILET TANK! HALF A HEMORRHOID BETWEEN TWO PEOPLE! AN UNUSED LIFE PROMO CODE! A CUNT! A VIRGIN…
 
 (a dramatic pause. Returns to a calm tone):
 
 — We love you. Like your parents never did.
 
-— ‘Cause thatʼs how real trust is built. Through pain, screaming, and the faint smell of booze.
+— ‘Cause that’s how real trust is built. Through pain, screaming, and the faint smell of booze.
 
 (transition to the start of the show):
 
-— Well, letʼs fucking go.
+— Well, let’s fucking go.
 
 — Welcome to the show. No one invited you, but since you're here — enjoy.

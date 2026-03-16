@@ -2,4 +2,4 @@
 
 # Dimension Minus Zero
 
-An improvised mix of [The Eric Andre Show (IMDB)](https://www.imdb.com/title/tt2244495/) [Between Two Ferns (IMDB)](https://www.imdb.com/title/tt9398640/) and podcasts in the style of "Let's pretend we know something and we're fucking experts in everything" — with references, metaphorical subtext, unpredictable absurdity, and unapologetically dark, bad humor (nope).
+Improvisational absurdity set in a "soviet-core" reality, where hosts dismantle the egos of celebrity guests and their own sanity. A mashup of podcasts in the style of "Let's pretend we actually know something and are fucking experts in everything" — filled with references, metaphorical subtexts, and unapologetically black humor.

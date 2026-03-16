@@ -4,11 +4,13 @@
 
 ## Logline
 
-In the elite fight club, physical combat is replaced by emotional chaos, where the only allowed punch is a treacherous verbal betrayal, and the strongest knockout is a dramatic family revelation that drives the audience to hysterics.
+A territory of emotional violence, where psychological trauma replaces punches, and family scandals flow instead of blood. A trash-battle and chaos-therapy in the ring, mocking the theatricality of wrestling and societal pathologies through epic absurdity.
 
 [mobile-slider]
 
 ## Main Idea
+
+The only allowed strike is a treacherous verbal betrayal; the ultimate knockout is a dramatic revelation that drives the audience into hysterics.
 
 A satirical reality show in a wrestling ring — a mix of dark comedy, soap opera, social experiment, and rap battle. It mercilessly mocks wrestling, the theatricality of talk shows, the excessive seriousness of TV hosts and experts, and the emotional dependency of the viewers. Inspired by the [South Park S13E10 (IMDB)](https://www.imdb.com/title/tt1532990/) (example in the slider).
 
