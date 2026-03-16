@@ -121,7 +121,7 @@
 	&__name {
 		color: $starYellow;
 		font-family: $LouisGeorgeCafBold;
-		letter-spacing: 2px;
+		letter-spacing: 1.5px;
 		margin-bottom: 25px;
 		text-align: center;
 		font-size: 19px;
@@ -144,15 +144,16 @@
 		display: flex;
 		margin-bottom: 45px;
 		justify-content: center;
-		gap: 35px;
+		gap: 30px;
 
 		.nav-link {
-			padding: 9px 5px 9px 9px;
+			padding: 10px 6px 10px 9px;
 			flex-grow: 1;
 			max-width: 60%;
-			border-radius: 10px;
+			border-radius: 5px;
 			transition: color 0.25s;
 			font-size: 17px;
+			letter-spacing: 2px;
 
 			&::after {
 				height: 100%;

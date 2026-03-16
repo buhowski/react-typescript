@@ -185,9 +185,9 @@ $section-width: 920px;
 	@include tabletBig {
 		position: fixed;
 		top: auto;
-		bottom: 10px;
+		bottom: 23px;
 		left: 0;
-		padding: 13px 15px;
+		padding: 12px 16px;
 		padding-right: 17px;
 		border-radius: 0 10px 10px 0;
 		margin: 0;
@@ -198,6 +198,10 @@ $section-width: 920px;
 		span {
 			display: none;
 		}
+	}
+
+	@include tabletSmall {
+		bottom: 14px;
 	}
 
 	@media (hover: hover) and (pointer: fine) {

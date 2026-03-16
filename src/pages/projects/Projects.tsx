@@ -81,17 +81,6 @@ const Projects = () => {
 											<p className='project-description__text'>{description}</p>
 
 											<div className='project-description__actions'>
-												{url && (
-													<a
-														href={url}
-														target='_blank'
-														rel='noopener noreferrer'
-														className='nav-link'
-													>
-														Demo
-													</a>
-												)}
-
 												{urlCode && (
 													<a
 														href={urlCode}
@@ -100,6 +89,17 @@ const Projects = () => {
 														className='nav-link'
 													>
 														Code
+													</a>
+												)}
+
+												{url && (
+													<a
+														href={url}
+														target='_blank'
+														rel='noopener noreferrer'
+														className='nav-link'
+													>
+														Demo
 													</a>
 												)}
 											</div>

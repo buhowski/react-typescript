@@ -16,9 +16,9 @@ const projectsData = [
 		img: bgStartup,
 		url: `${pathToVision}`,
 		urlCode: 'https://github.com/buhowski/react-typescript',
-		name: 'Business Plan',
-		description: `My own projects: Magazine ⋅ Media ⋅ Cinema ⋅ Games ⋅ Tech`,
-		skills: ['Scenario', 'Design', 'SCSS', 'TypeScript', 'React', 'SEO', 'PWA'],
+		name: 'Ecosystem',
+		description: `React platform for my startups: Magazine ⋅ Media ⋅ Cinema ⋅ Games ⋅ Tech`,
+		skills: ['React', 'TypeScript', 'SCSS', 'PWA', 'SEO', 'Design'],
 		alt: 'Screenshot of My Startups project homepage showcasing startup business plans, full development cycle execution, React and TypeScript programming, UI/UX design, creative scripting, genius-level problem solving, strategic brainstorming, innovative design systems, SCSS styling, SEO optimization, Progressive Web App functionality, media innovation, tech entrepreneurship, interactive digital solutions, inventive coding, forward-thinking creative projects',
 	},
 
@@ -27,7 +27,7 @@ const projectsData = [
 		url: 'https://markbuchananproperty.co.uk/',
 		name: 'Mark Buchanan',
 		description: '2025 | Cross-browser Responsive Web & WordPress',
-		skills: ['SCSS', 'JavaScript', 'PHP', 'WordPress'],
+		skills: ['JavaScript', 'SCSS', 'WordPress', 'PHP'],
 		alt: 'Screenshot of Mark Buchanan property website homepage',
 	},
 
@@ -36,7 +36,7 @@ const projectsData = [
 		url: 'https://homesbyvictoria.co.uk/',
 		name: 'Homes By Victoria',
 		description: '2024 | Cross-browser Responsive Web & WordPress',
-		skills: ['SCSS', 'JavaScript', 'PHP', 'WordPress'],
+		skills: ['JavaScript', 'SCSS', 'WordPress', 'PHP'],
 		alt: 'Screenshot of Homes By Victoria real estate website homepage',
 	},
 
@@ -45,7 +45,7 @@ const projectsData = [
 		url: `https://demo-showcase-sendpotion.netlify.app`,
 		name: 'Potion AI',
 		description: `2022 | Responsive Web Design & Animations`,
-		skills: ['CSS', 'GSAP', 'JavaScript'],
+		skills: ['JavaScript', 'GSAP', 'CSS'],
 		alt: 'Screenshot of Potion AI website homepage showing responsive web design and animations',
 	},
 
@@ -54,7 +54,7 @@ const projectsData = [
 		url: `https://nascentdesign.com`,
 		name: 'Nascent Design',
 		description: `2021 | Cross-browser Responsive Web & Animations`,
-		skills: ['SCSS', 'JavaScript', 'GSAP'],
+		skills: ['JavaScript', 'GSAP', 'SCSS'],
 		alt: 'Screenshot of Nascent Design website homepage with animations',
 	},
 
@@ -63,7 +63,7 @@ const projectsData = [
 		url: 'https://www-somosende-com.vercel.app',
 		name: 'Somos ENDE',
 		description: '2019 | Responsive Web with Animations',
-		skills: ['HTML', 'CSS', 'JavaScript', 'Animations'],
+		skills: ['JavaScript', 'Animations', 'HTML', 'CSS'],
 		alt: 'Screenshot of Somos ENDE content studio website homepage with animations',
 	},
 
@@ -72,7 +72,7 @@ const projectsData = [
 		url: 'https://faberacademy.com',
 		name: 'Faber Academy',
 		description: '2021 | Cross-browser Responsive Web, Animations & WordPress',
-		skills: ['SCSS', 'JavaScript', 'GSAP', 'Google Maps API'],
+		skills: ['JavaScript', 'GSAP', 'SCSS', 'WordPress', 'Google Maps API'],
 		alt: 'Screenshot of Faber Academy writing courses platform homepage',
 	},
 
@@ -81,7 +81,7 @@ const projectsData = [
 		url: 'https://www.faber.co.uk/',
 		name: 'Faber',
 		description: '2021 | Cross-browser Responsive Web, Animations & WordPress',
-		skills: ['SCSS', 'JavaScript', 'GSAP', 'Pixel Perfect', 'WordPress'],
+		skills: ['JavaScript', 'GSAP', 'SCSS', 'WordPress', 'Pixel Perfect'],
 		alt: 'Screenshot of Faber Books publisher website homepage',
 	},
 
@@ -90,7 +90,7 @@ const projectsData = [
 		url: 'https://nakashimawoodworkers.com/',
 		name: 'Nakashima Woodworkers',
 		description: '2019 | Cross-browser Responsive Web, Animations & Barba.js',
-		skills: ['HTML', 'CSS', 'JavaScript', 'Barba.js', 'JS Animations'],
+		skills: ['JavaScript', 'Barba.js', 'JS Animations', 'HTML', 'CSS'],
 		alt: 'Screenshot of Nakashima Woodworkers furniture studio website homepage',
 	},
 
@@ -99,7 +99,7 @@ const projectsData = [
 		url: 'https://www.bentley-skinner.co.uk',
 		name: 'Bentley & Skinner',
 		description: '2022 | Cross-browser Responsive Web, Animations & WordPress',
-		skills: ['SCSS', 'JavaScript', 'GSAP', 'WordPress'],
+		skills: ['JavaScript', 'GSAP', 'SCSS', 'WordPress'],
 		alt: 'Screenshot of Bentley & Skinner jewelry and antique website homepage',
 	},
 ];
