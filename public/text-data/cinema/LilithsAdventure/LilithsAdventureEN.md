@@ -77,7 +77,7 @@ The plot transforms into a continuous chase, full of new challenges. The heroes 
 - **Return:** Exiting the adventure with the weight of experience, exhaustion, and new repercussions that change the heroine
 - **Recovery:** After success or failure, the heroine recovers her strength, celebrates victories, and prepares for a new journey
 
-## Inspiration
+## References
 
 - Rick and Morty, S7E5 (scene from the slider) — the drama of a traveler in eternal search, exploring different dimensions
 - [Alice in Wonderland (IMDB)](https://www.imdb.com/title/tt1014759/) — surreal, absurd worlds and curiosity that leads to a captivating journey
@@ -87,7 +87,7 @@ The plot transforms into a continuous chase, full of new challenges. The heroes 
 - [Nier: Automata (STEAM)](https://store.steampowered.com/app/524220/NieRAutomata/) — an animation style featuring local noir design and detailing, combined with the energy and humor of "Rick and Morty"
 - [High On Life (STEAM)](https://store.steampowered.com/app/1583230/High_On_Life/) — this game demonstrates how black humor, sarcastic dialogues, and genre satire from animated projects can work in a video game format, offering the possibility of creating a game based on this series
 
-## Details
+## Status
 
 *Under Construction …*
 

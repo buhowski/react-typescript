@@ -39,7 +39,7 @@
 
 [mobile-slider]
 
-## Детали
+## Статус
 
 *Under Construction …*
 

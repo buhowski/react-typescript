@@ -39,7 +39,7 @@ The game world is a mixture of tribal futurism and the mythological heritage of 
 
 [mobile-slider]
 
-## Details
+## Status
 
 *Under Construction …*
 

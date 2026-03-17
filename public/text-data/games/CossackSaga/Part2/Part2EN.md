@@ -34,7 +34,7 @@ Along with the fragments of magical energy, a fragment of the supreme demon also
 
 [mobile-slider]
 
-## Details
+## Status
 
 *Under Construction …*
 

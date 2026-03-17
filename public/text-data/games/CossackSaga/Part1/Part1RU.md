@@ -67,7 +67,7 @@
 
 [mobile-slider]
 
-## Вдохновение
+## Референсы
 
 - **Игры:** [The Witcher Series](https://www.thewitcher.com/ua/en/) [Ghost of Tsushima (STEAM)](https://store.steampowered.com/app/2215430/Ghost_of_Tsushima_DIRECTORS_CUT/) [Clair Obscur: Expedition 33 (STEAM)](https://store.steampowered.com/app/1903340/Clair_Obscur_Expedition_33/) [Final Fantasy VII (STEAM)](https://store.steampowered.com/app/1462040/FINAL_FANTASY_VII_REMAKE_INTERGRADE/) [Final Fantasy XV (STEAM)](https://store.steampowered.com/app/637650/FINAL_FANTASY_XV_WINDOWS_EDITION/) — за глубокий мир, эпические квесты и сильный сюжет
 - **Режиссура и экспрессия:** [NieR: RepliCant (STEAM)](https://store.steampowered.com/app/1113560/NieR_Replicant_ver122474487139/) [NieR: Automata (STEAM)](https://store.steampowered.com/app/524220/NieRAutomata/) — за шедевральное сочетание кинематографической постановки боёв, эмоционального напряжения и уникальной игровой атмосферы
@@ -80,7 +80,7 @@
 
 Я ищу поддержки и команду, чтобы воплотить этот уникальный мир в жизнь. Это возможность объединить реальные события с мистикой и создать мощную игровую серию нового поколения о казаках. Моё видение оживляет неизвестные истории и формирует альтернативные миры, способные стать настоящими мировыми шедеврами.
 
-## Детали
+## Статус
 
 *Under Construction …*
 

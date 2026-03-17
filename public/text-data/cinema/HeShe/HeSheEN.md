@@ -34,7 +34,7 @@ From the very beginning, the characters were not meant to be together. This love
 - The characters' emotions are conveyed through a mystical background: changing weather, sudden thunderstorms, downpours, and other natural disasters reflect their inner state.
 - Conflicts are a poetic mix of medieval duels with modern weapons.
 
-## Inspiration
+## References
 
 - [William Shakespeare (WIKI)](https://en.wikipedia.org/wiki/William_Shakespeare)
 - [Romeo + Juliet, 1996 (IMDB)](https://www.imdb.com/title/tt0117509/)
@@ -47,7 +47,7 @@ From the very beginning, the characters were not meant to be together. This love
 [Ozzy Osbourne — Mr. Crowley](https://open.spotify.com/track/2ov8L95QD25TLpZAZPYWXL?si=FYXiBytqTp6G4HuEqX9B6A) 
 [Black Sabbath — N.I.B.](https://open.spotify.com/track/3XclwoQxz4p6Dl7VUf90KW?si=6FHvsCUZREOZ4LxJcTXKfA)
 
-## Details
+## Status
 
 *Under Construction …*
 

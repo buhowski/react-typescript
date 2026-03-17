@@ -4,7 +4,7 @@
 
 ## Logline
 
-A mosaic drama about the inhabitants of a city block: their small joys, monotonous weekdays, and eternal hopes for the better, as well as the dependencies and vices that hide behind every window. Today begins their last dawn. But will they make it to sunset?
+A mosaic of human destinies behind the windows of a typical neighborhood: joys, monotonous routines, addictions, and vices, eternal hopes for the best — and a morning that for many became the last.
 
 [mobile-slider]
 
@@ -20,7 +20,7 @@ We are awaited by scenes that show everyday life: from school lessons that bring
 
 Thus, step by step, a single picture is formed — an environment familiar to everyone. The scenes intertwine, sometimes causing laughter, sometimes cutting to the quick, highlighting poignant issues to lead the viewer to the finale.
 
-### Finale
+## Plot
 
 As evening falls, an air raid siren sounds. In the apartments, their own micro-world exists: family arguments drown out the sirens, someone, ignoring the danger, turns on their favorite TV show, while someone else frantically gathers their belongings for the bomb shelter. Different reactions, different fates that intersect in one moment.
 
@@ -34,19 +34,20 @@ The camera exits their window and slowly pulls away, while the song plays in the
 
 Although it would seem that everything should already be clear, what is needed to live a little more comfortably. The camera rises higher and higher, as if escaping from this world, leaving the city in eternal darkness.
 
-### Message
+## Message
 
 This film leads to the conclusion: the tragedy is not only in wars, but also in the people themselves. The system suffocates the younger generation, offering the same slave chains, but under different words, symbols, and flags. Life seems terrible and hopeless. Wars have been and will be, and you are just a small cog in the mechanism of a slave-owning democracy.
 
-## Inspiration
+## References
 
-- [Requiem for a Dream, 2000 (IMDB)](https://www.imdb.com/title/tt0180093/)
-- [21 Grams, 2003 (IMDB)](https://www.imdb.com/title/tt0315733/)
-- [Crash, 2004 (IMDB)](https://www.imdb.com/title/tt0375679/)
-- [Babel, 2006 (IMDB)](https://www.imdb.com/title/tt0449467/)
-- [Once Upon a Time... in Hollywood, 2019 (IMDB)](https://www.imdb.com/title/tt7131622/)
+- [Requiem for a Dream (IMDB)](https://www.imdb.com/title/tt0180093/) — visualization of addictions and the effect of personality disintegration
+- [11:14 (IMDB)](https://www.imdb.com/title/tt0331811/) — masterful geometry of coincidences where minor actions lead to a shared catastrophe
+- [Crash (IMDB)](https://www.imdb.com/title/tt0375679/) — the intertwining of chance encounters in a big city
+- [Babel (IMDB)](https://www.imdb.com/title/tt0449467/) — global disconnection of people living side by side
+- [Wild Tales (IMDB)](https://www.imdb.com/title/tt3011894/) — an anthology of human rage and absurdity arising from everyday conflicts
+- [Once Upon a Time... in Hollywood (IMDB)](https://www.imdb.com/title/tt7131622/) — the atmosphere of waiting for an inevitable finale and the author's reimagining of reality
 
-## Details
+## Status
 
 *Under Construction …*
 

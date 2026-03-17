@@ -34,7 +34,7 @@
 - Эмоции героев передаются через мистический фон: изменение погоды, неожиданные грозы, ливни и другие стихийные бедствия отражают их внутреннее состояние
 - Конфликты — это поэтическая смесь средневековых дуэлей с современным оружием
 
-## Вдохновение
+## Референсы
 
 - [Уильям Шекспир (WIKI)](https://en.wikipedia.org/wiki/William_Shakespeare)
 - [Romeo + Juliet, 1996 (IMDB)](https://www.imdb.com/title/tt0117509/)
@@ -47,7 +47,7 @@
 [Ozzy Osbourne — Mr. Crowley](https://open.spotify.com/track/2ov8L95QD25TLpZAZPYWXL?si=FYXiBytqTp6G4HuEqX9B6A) 
 [Black Sabbath — N.I.B.](https://open.spotify.com/track/3XclwoQxz4p6Dl7VUf90KW?si=6FHvsCUZREOZ4LxJcTXKfA)
 
-## Детали
+## Статус
 
 *Under Construction …*
 

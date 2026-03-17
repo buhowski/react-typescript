@@ -18,12 +18,12 @@ The narrative consists of several intertwined stories, each developing separatel
 
 Behind the chaotic plot and black humor hides a harsh satire. The film ridicules ideals and narratives that have become distorted over time and shows how corruption destroys even the purest images. It's a story where a fairy tale becomes a reflection of a brutal reality.
 
-## Inspiration
+## References
 
 - [Pulp Fiction, 1994 (IMDB)](https://www.imdb.com/title/tt0110912/) — non-linear narrative, stylish dialogues, and black humor
 - [Mikhail Elizarov (WIKI)](https://neolurk.org/wiki/%D0%9C%D0%B8%D1%85%D0%B0%D0%B8%D0%BB_%D0%95%D0%BB%D0%B8%D0%B7%D0%B0%D1%80%D0%BE%D0%B2) — “Burattini. Fascism Passed”: a harsh, absurd satire on the Soviet legacy
 
-## Details
+## Status
 
 *Under Construction …*
 

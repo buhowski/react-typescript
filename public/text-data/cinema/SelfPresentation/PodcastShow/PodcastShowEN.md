@@ -6,7 +6,7 @@
 
 Improvisational absurdity set in a "soviet-core" reality, where hosts dismantle the egos of celebrity guests and their own sanity. A mashup of podcasts in the style of "Let's pretend we actually know something and are fucking experts in everything" — filled with references, metaphorical subtexts, and unapologetically black humor.
 
-## Inspiration
+## References
 
 - [The Eric Andre Show (IMDB)](https://www.imdb.com/title/tt2244495/) — the level of destructive chaos, physical comedy, and visual psychodelia
 - [Between Two Ferns (IMDB)](https://www.imdb.com/title/tt1535002/) — the mastery of creating awkward silences, passive aggression, and absurd dialogues

@@ -67,7 +67,7 @@ Local Groups — subordinates with their own leaders, assistants, and servants. 
 
 [mobile-slider]
 
-## Inspiration
+## References
 
 - **Games:** [The Witcher Series](https://www.thewitcher.com/ua/en/) [Ghost of Tsushima (STEAM)](https://store.steampowered.com/app/2215430/Ghost_of_Tsushima_DIRECTORS_CUT/) [Clair Obscur: Expedition 33 (STEAM)](https://store.steampowered.com/app/1903340/Clair_Obscur_Expedition_33/) [Final Fantasy VII (STEAM)](https://store.steampowered.com/app/1462040/FINAL_FANTASY_VII_REMAKE_INTERGRADE/) [Final Fantasy XV (STEAM)](https://store.steampowered.com/app/637650/FINAL_FANTASY_XV_WINDOWS_EDITION/) — for deep world-building, epic quests, and a strong plot
 - **Direction and Expression:** [NieR: RepliCant (STEAM)](https://store.steampowered.com/app/1113560/NieR_Replicant_ver122474487139/) [NieR: Automata (STEAM)](https://store.steampowered.com/app/524220/NieRAutomata/) — for the masterful combination of cinematic combat staging, emotional tension, and a unique game atmosphere
@@ -81,7 +81,7 @@ No known religion or historical figure participated in the creation of this cons
 
 I am seeking support and a team to bring this unique world to life. This is an opportunity to combine real events with mysticism and create a powerful new-generation game series about the Cossacks. My vision brings unknown stories to life and shapes alternative worlds capable of becoming true global masterpieces.
 
-## Details
+## Status
 
 *Under Construction …*
 

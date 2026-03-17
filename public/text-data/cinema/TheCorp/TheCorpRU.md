@@ -18,13 +18,13 @@
 
 [mobile-slider]
 
-## Вдохновение
+## Референсы
 
 - [The Office (IMDB)](https://www.imdb.com/title/tt0386676/) — формат псевдодокументалистики, эффект присутствия и юмор неловкости
 - [Nathan for You (IMDB)](https://www.imdb.com/title/tt2297757/) — уровень абсурда и вовлечение реальных людей в нереальные ситуации
 - [Silicon Valley (IMDB)](https://www.imdb.com/title/tt2575988/) — сатира на "изменение мира" и внутреннюю токсичность индустрии
 
-## Детали
+## Статус
 
 *Under Construction …*
 

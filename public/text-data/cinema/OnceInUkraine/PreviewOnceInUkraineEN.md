@@ -2,4 +2,4 @@
 
 # Once Upon a Time... in Ukraine
 
-A mosaic drama about the inhabitants of a city block: their small joys, monotonous weekdays, and eternal hopes for the better, as well as the dependencies and vices that hide behind every window. Today begins their last dawn. But will they make it to sunset?
+A mosaic of human destinies behind the windows of a typical neighborhood: joys, monotonous routines, addictions, and vices, eternal hopes for the best — and a morning that for many became the last.
