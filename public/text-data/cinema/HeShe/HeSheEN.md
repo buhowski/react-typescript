@@ -10,7 +10,7 @@
 
 ## Logline
 
-When the lonely heirs of rival business empires fall in love at first sight, their forbidden passion threatens to unleash a new war that will shatter a fragile truce and plunge the world into chaos.
+Biblical archetypes in the underground of Shakespearean futurism: the heirs of rival empires — Goddess and Devil — fall in love at first sight, shattering a fragile truce and turning the city into a battlefield of eternal war.
 
 [mobile-slider]
 
@@ -28,19 +28,18 @@ In the chaos of the escape, he learns the truth: the girl he fell in love with b
 
 From the very beginning, the characters were not meant to be together. This love is forbidden by all the laws of the world. Their passion threatens to tear apart the fragile truce between the family business empires and unleash a new war that will reopen an ancient conflict and plunge the surrounding world into a whirlpool of unpredictable events.
 
-### Scene Ideas
+## Visual Language
 
-- Dialogues and scenes are rhymed, poetic, in the style of Shakespeare
-- The characters' emotions are conveyed through a mystical background: changing weather, sudden thunderstorms, downpours, and other natural disasters reflect their inner state.
-- Conflicts are a poetic mix of medieval duels with modern weapons.
+- Dialogues and scenes are rhymed — Shakespearean drama in the rhythm of the modern underground
+- Natural cataclysms, sudden storms, and downpours act as a direct mirror to the characters' emotional states
+- A lethal blend of medieval dueling codes and the cold fury of modern weaponry
 
 ## References
 
-- [William Shakespeare (WIKI)](https://en.wikipedia.org/wiki/William_Shakespeare)
-- [Romeo + Juliet, 1996 (IMDB)](https://www.imdb.com/title/tt0117509/)
-- [Orpheus & Eurydice — Noize MC (YT)](https://www.youtube.com/watch?v=TbMYvqA8Tj4) — Hip-Hopera
-- [The League of Extraordinary Gentlemen (IMDB)](https://www.imdb.com/title/tt0311429/) — a weaving of intriguing archetypes (Jekyll and Hyde, Dorian Gray, and others)
-- Songs (Spotify): 
+- [William Shakespeare (WIKI)](https://en.wikipedia.org/wiki/William_Shakespeare) — the foundation of plot structure and uncompromising tragedy
+- [Romeo + Juliet (IMDB)](https://www.imdb.com/title/tt0117509/) — visual style: modernizing classics through aggressive editing and religious pop art
+- [Noize MC — Orpheus & Eurydice (YT)](https://www.youtube.com/watch?v=TbMYvqA8Tj4) — transformation of ancient myth into modern hip-hopera with a sharp social subtext
+- Sound DNA — a fusion of heavy metal, occult rock, and cloud rap, forming an atmosphere of moral fracture, existential loneliness, and urban despair: 
 [FFDP — Wrong Side of Heaven](https://open.spotify.com/track/11Ojp7JniVvwd0gmgvyKkd?si=_gtX3nIgTeOAt1k6oQf8Jg) 
 [Black Sabbath — Planet Caravan](https://open.spotify.com/track/4VAAXfLf8YPiO1LzyYnMKb?si=H0yObqdcSwCUoofQdVV40g) 
 [City Morgue — Screaming at the Rain](https://open.spotify.com/track/6dIMYXE0iAoXfjQGU1aFdy?si=rYTE-KXxTc2y6L4JSgZ-qw) 

@@ -2,4 +2,4 @@
 
 # Lilith's Adventure
 
-A charismatic adventurer, lost in parallel dimensions, searches for a way home. Her journey leads her to a manipulative artist whose dangerous game with an artifact is both the key to her world and a threat to all of reality.
+A sarcastic adventurer is lost in the multiverse with a magical journal, where the only path home leads through a master manipulator artist whose boredom threatens to shatter reality faster than she can find her way back.

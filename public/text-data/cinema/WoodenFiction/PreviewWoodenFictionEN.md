@@ -2,4 +2,4 @@
 
 # Wooden Fiction
 
-A dark comedy where familiar characters from children's fairy tales become participants in criminal showdowns. Their brutal and absurd adventures are woven into a non-linear narrative, full of unexpected twists and black humor.
+Folk tale heroes in an uncompromising deconstruction of Soviet myths: criminal showdowns, aggressive absurdity, and a non-linear story where the fairy tale turns out to be a mirror of reality.

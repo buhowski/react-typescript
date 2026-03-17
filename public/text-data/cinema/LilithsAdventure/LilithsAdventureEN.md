@@ -4,7 +4,7 @@
 
 ## Logline
 
-A charismatic adventurer, lost in parallel dimensions, searches for a way home. Her journey leads her to a manipulative artist whose dangerous game with an artifact is both the key to her world and a threat to all of reality.
+A sarcastic adventurer is lost in the multiverse with a magical journal, where the only path home leads through a master manipulator artist whose boredom threatens to shatter reality faster than she can find her way back.
 
 [mobile-slider]
 
@@ -16,7 +16,7 @@ Her very first journey turned into a trap: due to carelessness, she permanently 
 
 The key to Lilith's return to her home world is an artifact being toyed with by the one who calls himself the Supreme Architect. His game is merely part of a much larger conflict, as numerous artifacts, imbued with unique power, are scattered throughout the multiverse.
 
-### Plot
+## Plot
 
 The story begins with the heroine wandering through wondrous worlds. Her past is shrouded in mystery, and her present is a constant series of adventures, escapes from trouble, and skillful verbal manipulations that help her extract any information.
 
@@ -24,7 +24,7 @@ Later, her travels gain a new purpose when she notices strange distortions in ti
 
 With each new adventure, details of her past will gradually be revealed: the circumstances under which she found the journal, how she fell into the trap, and what actually happened to her home world and loved ones.
 
-### Antagonists
+## Antagonists
 
 The Supreme Architect is an artist and a creative soul, a master of manipulation, fascinated by ancient scriptures and the secrets of controlling gods. He toys with a powerful artifact that governs realities, creating his own game, which he himself doesn't fully comprehend yet.
 
@@ -34,7 +34,7 @@ His image combines the aesthetics of the Artist from the game [Clair Obscur: Exp
 
 However, the most dangerous threat comes from the mysterious Collector, who seeks to gather all the artifacts into one. Those who dare to resist, or simply become an interesting exhibit for his collection, are turned into a terrifying display of living toys, imprisoned within the transparent walls of a giant Terrarium of Worlds.
 
-### The Diary's Mechanics
+## The Diary's Mechanics
 
 Portals between realities are created using the traveler's journal. By writing down a desired destination, a corridor opens between worlds or moments in time, which exists as long as the page with the entry is not destroyed.
 
@@ -66,7 +66,7 @@ On the loose, the heroine and the Architect begin a focused fight against the Co
 
 The plot transforms into a continuous chase, full of new challenges. The heroes encounter strange worlds, unusual characters, and powerful artifacts on their path to a decisive battle with the Collector.
 
-### Episode Cycle: The Formula of Adventure
+## Episode Cycle: The Formula of Adventure
 
 - **Comfort Zone:** A safe haven where the heroine regains strength and enjoys small pleasures
 - **Need:** An inner impulse that drives her towards adventures, investigations, or challenges
