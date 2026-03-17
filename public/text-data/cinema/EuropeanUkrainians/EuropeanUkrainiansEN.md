@@ -6,7 +6,7 @@
 
 An epic of collective survival within the absurdity of Ukrainian Europe: a tightrope walk between optimism, zero-fucks-given attitude, and uncontrollable hysteria. Black humor, selfish friendships, and fatal consequences — the only way to stay sane.
 
-## Main Idea
+## Concept
 
 A chronicle of collective madness, where mocking the system and one's own insignificance serves as the only safety valve against the loony bin. The plot revolves around a union of immoral egoists: they betray and abandon each other, yet stay together — because the chaos, constantly tossing up new idiocies, is easier to bear in company.
 

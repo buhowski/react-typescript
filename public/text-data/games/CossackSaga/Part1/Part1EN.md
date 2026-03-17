@@ -8,7 +8,7 @@
 
 Lost amidst fragmented memories, a mysterious traveler seeks the truth of his origins, for his body has become a battlefield for dark forces. He doesn't yet realize that his past is the only key to saving the world from a massive conspiracy.
 
-## Main Idea
+## Concept
 
 This is an open-world Action/RPG adventure. The main concept is exploring a mysterious universe where real history, Slavic mythology, and demonology are intertwined into a single game lore.
 

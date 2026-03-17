@@ -8,11 +8,9 @@ Divine cabaret, where the Creator mocks the absurdity of existence over a can of
 
 [mobile-slider]
 
-## Main Idea
+## Concept
 
 To adapt an early and little-known mini-play by Stephen King for modern times, raising sharp questions about order and chaos by adding original conceptual inserts, fresh humor, and metaphors to highlight the paradoxes of the world and the cyclical nature of contemporary existence.
-
-### Concept
 
 The show consists of short scenes: God, who is sitting, drinking beer, and talking to the TV, is approached by his colleagues, apostles, or other heavenly subordinates with documents, clarifications, or requests, distracting him from his favorite comedy shows. Each dialogue is quick and witty, ending with a signature or a resolved request.
 

@@ -8,7 +8,7 @@ A dark comedy where familiar characters from children's fairy tales become parti
 
 [mobile-slider]
 
-## Main Idea
+## Concept
 
 This is a satirical crime anthology that combines a non-linear narrative and sharp dialogue in the style of Tarantino with harsh humor and the grotesque aesthetic of post-Soviet reality, where absurdity becomes the norm.
 

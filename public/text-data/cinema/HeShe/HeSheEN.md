@@ -14,7 +14,7 @@ When the lonely heirs of rival business empires fall in love at first sight, the
 
 [mobile-slider]
 
-## Main Idea
+## Concept
 
 This is an epic mix of rap-rock opera and Shakespearean poetry. Just as the film [Romeo + Juliet (IMDB)](https://www.imdb.com/title/tt0117509/) updated the classic tragedy, this project transports biblical images into a modern urban world with the author's own twists. God is a lonely young girl, and the Devil is a charismatic guy who hides a deep spiritual loneliness.
 

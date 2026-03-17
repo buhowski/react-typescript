@@ -8,7 +8,7 @@ A charismatic adventurer, lost in parallel dimensions, searches for a way home. 
 
 [mobile-slider]
 
-## Main Idea
+## Concept
 
 This animated comedy series tells the story of a sarcastic, sharp-tongued adventurer. Her travels through endless worlds became possible thanks to a unique artifact — a traveler's journal.
 

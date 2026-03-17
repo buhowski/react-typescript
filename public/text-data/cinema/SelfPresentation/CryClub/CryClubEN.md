@@ -8,7 +8,7 @@ A territory of emotional violence, where psychological trauma replaces punches, 
 
 [mobile-slider]
 
-## Main Idea
+## Concept
 
 The only allowed strike is a treacherous verbal betrayal; the ultimate knockout is a dramatic revelation that drives the audience into hysterics.
 

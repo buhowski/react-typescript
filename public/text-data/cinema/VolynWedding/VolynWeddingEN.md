@@ -8,7 +8,7 @@ A wedding story that everyone wanted except the couple themselves, and the night
 
 [mobile-slider]
 
-## Main Idea
+## Concept
 
 This is a feature-length comedy-drama with elements of black satire and absurdity, set in modern Volyn. The story follows two semi-successful natives of the Ukrainian provinces who return home to celebrate their wedding according to classic traditions. Although the main characters have long moved on from these archaic customs, they agree to it for their families, because sometimes old traditions are stronger than common sense.
 

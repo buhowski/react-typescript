@@ -8,7 +8,7 @@ A mosaic drama about the inhabitants of a city block: their small joys, monotono
 
 [mobile-slider]
 
-## Main Idea
+## Concept
 
 This is a feature-length social drama with a mix of black satire and tragic irony. The action unfolds in a typical Soviet-era Ukrainian neighborhood: monotonous five-story buildings and high-rises, faceless courtyards, shabby entrances, the rumble of minibuses, the clamor of the market, the cold of the supermarket. The time is the present, living in the shadow of war.
 

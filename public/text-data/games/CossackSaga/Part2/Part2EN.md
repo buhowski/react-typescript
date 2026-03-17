@@ -8,7 +8,7 @@
 
 Absorbing a piece of her beloved's soul, a heroine embarks on a bloody journey to destroy a demonic cult, unaware that her thirst for vengeance could either save the world or plunge it into eternal chaos.
 
-## Main Idea
+## Concept
 
 The second part continues the tragic story that began in the [Part I](/cossack-saga-1) The heroine finds refuge with her deceased lover's friends, where she regains her strength. It is here that she uncovers the true nature of the church's demonic rituals.
 
