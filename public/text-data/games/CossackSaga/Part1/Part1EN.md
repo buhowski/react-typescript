@@ -6,7 +6,7 @@
 
 ## Logline
 
-Lost amidst fragmented memories, a mysterious traveler seeks the truth of his origins, for his body has become a battlefield for dark forces. He doesn't yet realize that his past is the only key to saving the world from a massive conspiracy.
+An unfinished experiment of the Church, a botched oversight by the executioners who left him for dead — he is the fatal glitch in their plan for demonic dominion. To tear down the conspirators, the hero must fight through a hell of shattered memories and master the darkness in his blood before it consumes him.
 
 ## Concept
 
@@ -14,9 +14,9 @@ This is an open-world Action/RPG adventure. The main concept is exploring a myst
 
 The game focuses on unraveling the mysteries of mystical rituals, internal struggle, and self-discovery. The main character, a mysterious figure with a tragic past, seeks allies to expose a grand conspiracy that threatens the world.
 
-## Plot
+## Synopsis
 
-The hero is between 25 and 30 years old. He remembers nothing but fragments of his childhood up to the age of six. While searching for the truth, he accidentally stumbles upon a mysterious ritual. A sense of déjà vu pierces his consciousness, unlocking his first true memory:
+The hero remembers nothing but fragments of his childhood up to the age of six. While searching for the truth, he accidentally stumbles upon a mysterious ritual. A sense of déjà vu pierces his consciousness, unlocking his first true memory:
 
 - A demonic baptism was once performed on him, but it was interrupted. His body became an arena for a battle of dark forces, but evil did not fully possess him, leaving a trace in the form of unique abilities he cannot yet control.
 

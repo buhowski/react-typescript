@@ -24,9 +24,9 @@ Our mission is to unite with all possible factions to prevent total annihilation
 
 An unexpected greeting from the past also awaits us — an heir to the fragments of ancient love, because evil is not the only thing that lives forever.
 
-## Description
+## World
 
-The game world is a mixture of tribal futurism and the mythological heritage of various peoples. At the start of the game, you create your hero and choose a faction, which determines a unique prologue and playstyle.
+A mixture of tribal futurism and the mythological heritage of various peoples. At the start of the game, you create your hero and choose a faction, which determines a unique prologue and playstyle.
 
 ### Factions
 

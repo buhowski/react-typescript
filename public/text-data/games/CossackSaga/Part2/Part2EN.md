@@ -16,7 +16,7 @@ She realizes that at the moment of self-sacrifice, their mutual love created an 
 
 Learning that the church cult has freed ancient demons and enslaved people, the heroine realizes her mission. To save her beloved, she must find the symbolic artifacts held by the cult's masters. By unraveling their secrets, she can confront and destroy the main overlord, who is the key to everything.
 
-### Plot
+## Synopsis
 
 The heroine’s journey is a series of trials, interactive memories, deadly confrontations, and discoveries that reveal her past of captivity, suffering, and unyielding determination. Friends from the previous part and new allies join her on her travels. Their presence adds strength, but some may harbor their own intentions, creating unpredictable situations.
 
@@ -28,7 +28,7 @@ Reborn from the ashes, the heroine transforms the ashes of love into a devastati
 
 By destroying the demonized religion that concealed otherworldly evil and closing all portals to the beyond, she causes a destructive explosion. Fragments of magical energy scatter throughout the world, giving different peoples power, knowledge, and self-belief, as well as the ability to resist darkness. The world changes, giving birth to an incredible, evolutionarily new dimension.
 
-### Epilogue
+## Epilogue
 
 Along with the fragments of magical energy, a fragment of the supreme demon also broke out into the world. It fell somewhere unknown, hidden in the darkness. And only time will tell when the ancient evil will find its new owner.
 
