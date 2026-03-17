@@ -65,14 +65,14 @@ A blend of the world-building depth of The Witcher 3, the parkour dynamics of As
 
 ## References
 
-- Deep world-building, epic quests, and large-scale storytelling: 
-[The Witcher Series](https://www.thewitcher.com/ua/en/) 
+- Deep world-building, epic quests, and large-scale storytelling:  
+[The Witcher Series (WEB)](https://www.thewitcher.com/ua/en/) 
 [Assassin's Creed (STEAM)](https://store.steampowered.com/app/242050/Assassins_Creed_IV_Black_Flag/) 
 [Ghost of Tsushima (STEAM)](https://store.steampowered.com/app/2215430/Ghost_of_Tsushima_DIRECTORS_CUT/) 
 [Final Fantasy VII (STEAM)](https://store.steampowered.com/app/1462040/FINAL_FANTASY_VII_REMAKE_INTERGRADE/) 
 [Final Fantasy XV (STEAM)](https://store.steampowered.com/app/637650/FINAL_FANTASY_XV_WINDOWS_EDITION/) 
 [Clair Obscur: Expedition 33 (STEAM)](https://store.steampowered.com/app/1903340/Clair_Obscur_Expedition_33/)
-- Cinematic combat direction, emotional tension, and unique atmosphere: 
+- Cinematic combat direction, emotional tension, and unique atmosphere:  
 [Nier: Automata (STEAM)](https://store.steampowered.com/app/524220/NieRAutomata/) 
 [NieR: RepliCant (STEAM)](https://store.steampowered.com/app/1113560/NieR_Replicant_ver122474487139/)
 

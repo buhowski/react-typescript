@@ -8,9 +8,9 @@ Improvisational absurdity set in a "soviet-core" reality, where hosts dismantle 
 
 ## References
 
-- The level of destructive chaos, physical comedy, and visual psychodelia: [The Eric Andre Show (IMDB)](https://www.imdb.com/title/tt2244495/)
-- The mastery of creating awkward silences, passive aggression, and absurd dialogues: [Between Two Ferns (IMDB)](https://www.imdb.com/title/tt1535002/)
-- The imitation of expertise and pushing interviews to the brink of total idiocy: [Da Ali G Show (IMDB)](https://www.imdb.com/title/tt0241088/)
+- [The Eric Andre Show (IMDB)](https://www.imdb.com/title/tt2244495/) — The level of destructive chaos, physical comedy, and visual psychodelia
+- [Between Two Ferns (IMDB)](https://www.imdb.com/title/tt1535002/) — The mastery of creating awkward silences, passive aggression, and absurd dialogues
+- [Da Ali G Show (IMDB)](https://www.imdb.com/title/tt0241088/) — The imitation of expertise and pushing interviews to the brink of total idiocy
 
 ## Script
 

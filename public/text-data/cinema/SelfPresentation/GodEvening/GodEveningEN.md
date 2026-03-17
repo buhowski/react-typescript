@@ -18,7 +18,7 @@ The finale is always the same: annoyed by human triviality, God vents his frustr
 
 The structure is cyclical: new visitors, new requests, but the conclusion remains unchanged — God is tired of Earth, and it is better to return to watching entertaining content. This creates the effect of an endless loop.
 
-The style and atmosphere are like a fever dream: [Franz Kafka (WIKI)](https://en.wikipedia.org/wiki/Franz_Kafka) meets [Monty Python (IMDB)](https://www.imdb.com/title/tt0063929/), where absurd bureaucracy intertwines with black humor and the grotesqueness of a divine cabaret.
+The style and atmosphere are like a fever dream: [Franz Kafka (WIKI)](https://en.wikipedia.org/wiki/Franz_Kafka) meets [Monty Python (IMDB)](https://www.imdb.com/title/tt0063929/) where absurd bureaucracy intertwines with black humor and the grotesqueness of a divine cabaret.
 
 ## Original Play
 

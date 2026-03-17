@@ -39,7 +39,7 @@ From the very beginning, the characters were not meant to be together. This love
 - [William Shakespeare (WIKI)](https://en.wikipedia.org/wiki/William_Shakespeare) — the foundation of plot structure and uncompromising tragedy
 - [Romeo + Juliet (IMDB)](https://www.imdb.com/title/tt0117509/) — visual style: modernizing classics through aggressive editing and religious pop art
 - [Noize MC — Orpheus & Eurydice (YT)](https://www.youtube.com/watch?v=TbMYvqA8Tj4) — transformation of ancient myth into modern hip-hopera with a sharp social subtext
-- Sound DNA — a fusion of heavy metal, occult rock, and cloud rap, forming an atmosphere of moral fracture, existential loneliness, and urban despair: 
+- Sound DNA — a fusion of heavy metal, occult rock, and cloud rap, forming an atmosphere of moral fracture, existential loneliness, and urban despair:  
 [FFDP — Wrong Side of Heaven](https://open.spotify.com/track/11Ojp7JniVvwd0gmgvyKkd?si=_gtX3nIgTeOAt1k6oQf8Jg) 
 [Black Sabbath — Planet Caravan](https://open.spotify.com/track/4VAAXfLf8YPiO1LzyYnMKb?si=H0yObqdcSwCUoofQdVV40g) 
 [City Morgue — Screaming at the Rain](https://open.spotify.com/track/6dIMYXE0iAoXfjQGU1aFdy?si=rYTE-KXxTc2y6L4JSgZ-qw) 

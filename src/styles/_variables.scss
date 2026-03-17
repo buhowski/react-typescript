@@ -32,13 +32,13 @@ $header-ltr-spc: 3px;
 $p-margin: 20px;
 
 // Text Data Links
-$link-color: #5098c2;
-$link-hover: #d19d5e;
+$link-color: #4589ad;
+$link-hover: #c4924e;
 
 @mixin hover-text-link {
 	color: $link-hover;
 	border-color: currentColor;
-	background-color: rgba(#000000, 0.4);
+	background-color: rgba(#000000, 0.6);
 }
 
 @mixin social_hover {
