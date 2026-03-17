@@ -14,7 +14,7 @@ This is an open-world Action/RPG adventure. The main concept is exploring a myst
 
 The game focuses on unraveling the mysteries of mystical rituals, internal struggle, and self-discovery. The main character, a mysterious figure with a tragic past, seeks allies to expose a grand conspiracy that threatens the world.
 
-### Plot
+## Plot
 
 The hero is between 25 and 30 years old. He remembers nothing but fragments of his childhood up to the age of six. While searching for the truth, he accidentally stumbles upon a mysterious ritual. A sense of déjà vu pierces his consciousness, unlocking his first true memory:
 
@@ -39,15 +39,13 @@ Infiltrating the ritual site, he sees her — his lost love. The memory hits him
 
 Now, with the truth revealed, he must make a choice that will determine their shared destiny.
 
-## Description
+## World
 
-Imagine gameplay that combines the world depth of [The Witcher 3 (STEAM)](https://store.steampowered.com/app/292030/The_Witcher_3_Wild_Hunt/) the parkour dynamics of [Assassin's Creed (STEAM)](https://store.steampowered.com/app/33230/Assassins_Creed_2/) and the cinematic combat staging of [NieR: RepliCant (STEAM)](https://store.steampowered.com/app/1113560/NieR_Replicant_ver122474487139/) [NieR: Automata (STEAM)](https://store.steampowered.com/app/524220/NieRAutomata/) all integrated into our unique historical-mystical world. These are only reference points — the game offers its own, unique design vision.
-
-### Setting & Atmosphere
-
-The plot combines real events from the territories of modern Ukraine from the 10th-18th centuries, Slavic mythology, demonology, a melancholic-dark atmosphere, personal drama, and light humor that harmoniously weaves in without breaking the mystical mood.
-
-The game questions established historical narratives, particularly the motives for the baptism of Kyivan Rus and the role of religion. It immerses the player in a world dominated by betrayals, bloody battles, forgotten legends, and sharp scenes that make the era feel alive and dangerous. A variety of characters, as well as magical and cultural elements, create a unique, vibrant world atmosphere.
+- **Locations and Environment:** Zaporizhzhian Sich, the Carpathian Mountains, Kyivan Rus. An interactive map merging camps, ruins, caves, temples, and fortresses into a seamless space.
+- **Atmosphere:** A melancholy-dark mood, personal drama, and "Cossack-distilled" black humor that stays true to the mystic tone. A world of betrayals, bloody battles, and forgotten legends, where the era feels alive and dangerous.
+- **Mythology and Magic:** Deep Slavic legends and demonology as the foundation of a unique folklore-driven lore. Magic is an essential part of daily life and a tool for uncovering hidden truths.
+- **Narrative:** A reimagining of real historical events from the 10th to 18th centuries. The game offers multiple story paths that challenge established narratives, forming its own dramatic tale and an alternative perspective on the role of religion.
+- **Interactivity:** Influence on the plot through quests and NPCs. Every player decision reveals new aspects of mythology and shapes the story's finale.
 
 ### Hermit Cossacks
 
@@ -59,27 +57,28 @@ The Supreme Leader — **"The Pope's Throne"**, the heart of the conspiracy. His
 
 Local Groups — subordinates with their own leaders, assistants, and servants. Created for each faith around the world, they infiltrate regions, seize local churches and cult institutions, using rituals and demonic interventions to gradually lead people to the dark side.
 
-### Game World
+## Gameplay
 
-- **Locations and Environment:** The main regions of the game are the Zaporizhzhian Sich, the Carpathians, Kyivan Rus, and others. The most interesting locations will be selected for each region — camps, ruins, caves, temples, and fortresses — all connected on an interactive map that preserves the atmosphere of history and mysticism.
-- **Mythology and Magic:** Deep Slavic legends are intertwined with history, forming a unique mystical lore. Demonology and magic are integral to the lives of the nomadic Cossacks, and their legends influence the fates of the heroes and reveal hidden truths.
-- **Interactivity:** Quests and NPCs allow the player to change the course of the plot, influence the fates of characters, and uncover hidden aspects of mythology, immersing them in the atmosphere of a magical and historical world.
+A blend of the world-building depth of The Witcher 3, the parkour dynamics of Assassin's Creed, and the cinematic combat direction of NieR. This fusion forms the gameplay foundation, integrated into a unique historical-mystic universe. However, these are merely benchmarks: the game offers its own distinct design vision.
 
 [mobile-slider]
 
 ## References
 
-- **Games:** [The Witcher Series](https://www.thewitcher.com/ua/en/) [Ghost of Tsushima (STEAM)](https://store.steampowered.com/app/2215430/Ghost_of_Tsushima_DIRECTORS_CUT/) [Clair Obscur: Expedition 33 (STEAM)](https://store.steampowered.com/app/1903340/Clair_Obscur_Expedition_33/) [Final Fantasy VII (STEAM)](https://store.steampowered.com/app/1462040/FINAL_FANTASY_VII_REMAKE_INTERGRADE/) [Final Fantasy XV (STEAM)](https://store.steampowered.com/app/637650/FINAL_FANTASY_XV_WINDOWS_EDITION/) — for deep world-building, epic quests, and a strong plot
-- **Direction and Expression:** [NieR: RepliCant (STEAM)](https://store.steampowered.com/app/1113560/NieR_Replicant_ver122474487139/) [NieR: Automata (STEAM)](https://store.steampowered.com/app/524220/NieRAutomata/) — for the masterful combination of cinematic combat staging, emotional tension, and a unique game atmosphere
-- **Culture and Mythology:** Zaporizhzhian Cossacks, Slavic mythology, and demonology — for authenticity, magic, and folkloric lore.
-- Drama and Emotions: The full palette of human emotions — from triumphs to tragedies
-- **Storytelling and Alternative History:** For multiple paths that challenge established historical narratives and form their own dramatic story.
+- Deep world-building, epic quests, and large-scale storytelling: 
+[The Witcher Series](https://www.thewitcher.com/ua/en/) 
+[Assassin's Creed (STEAM)](https://store.steampowered.com/app/242050/Assassins_Creed_IV_Black_Flag/) 
+[Ghost of Tsushima (STEAM)](https://store.steampowered.com/app/2215430/Ghost_of_Tsushima_DIRECTORS_CUT/) 
+[Final Fantasy VII (STEAM)](https://store.steampowered.com/app/1462040/FINAL_FANTASY_VII_REMAKE_INTERGRADE/) 
+[Final Fantasy XV (STEAM)](https://store.steampowered.com/app/637650/FINAL_FANTASY_XV_WINDOWS_EDITION/) 
+[Clair Obscur: Expedition 33 (STEAM)](https://store.steampowered.com/app/1903340/Clair_Obscur_Expedition_33/)
+- Cinematic combat direction, emotional tension, and unique atmosphere: 
+[Nier: Automata (STEAM)](https://store.steampowered.com/app/524220/NieRAutomata/) 
+[NieR: RepliCant (STEAM)](https://store.steampowered.com/app/1113560/NieR_Replicant_ver122474487139/)
 
-## Conclusion
+## Disclaimer
 
-No known religion or historical figure participated in the creation of this conspiracy. All coincidences with events are an artistic and psychological assessment of society under certain conditions.
-
-I am seeking support and a team to bring this unique world to life. This is an opportunity to combine real events with mysticism and create a powerful new-generation game series about the Cossacks. My vision brings unknown stories to life and shapes alternative worlds capable of becoming true global masterpieces.
+No known religion or historical figure participated in the creation of this conspiracy. All coincidences with real events are an artistic and psychological assessment of society under specific conditions.
 
 ## Status
 

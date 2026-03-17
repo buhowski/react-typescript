@@ -18,7 +18,7 @@ The arena for this chaos is a dilapidated basement ring, soaked with sweat, tear
 
 Spectators come not for blood, but for emotions that amaze, drive them crazy, cause panic attacks or uncontrollable laughter that can give you abs — because it's a sports show, after all.
 
-### Plot
+## Plot
 
 The plot starts with classic wrestling elements: introductions, threats, and verbal sparring. The concept is built on a transition from the setup to a chaotic finale.
 
@@ -30,7 +30,7 @@ In this theater of the absurd, even acts of aggression become part of the drama.
 
 In the chaotic finale, the fight never actually happens. Instead, the viewer gets a full spectrum of emotions, turning a regular wrestling match into a true session of chaos-therapy — a truthful lie for those who are tired of reality.
 
-### Example Characters
+## Example Characters
 
 - Viacheslav Tragic
 - Yelyzaveta Abort-addicted

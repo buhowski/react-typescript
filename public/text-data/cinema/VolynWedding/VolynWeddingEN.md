@@ -42,14 +42,14 @@ Then, scenes are shown of how the guys got into this drug predicament, similar t
 
 ### Films
 
-- [The Hangover, 2009 (IMDB)](https://www.imdb.com/title/tt1119646/)
-- [A Few Best Men, 2011 (IMDB)](https://www.imdb.com/title/tt1640711/)
-- [Game Night, 2018 (IMDB)](https://www.imdb.com/title/tt2704998/)
+- [The Hangover (IMDB)](https://www.imdb.com/title/tt1119646/) — hangover detective architecture: from a total blackout to piecing together the night's trash
+- [A Few Best Men (IMDB)](https://www.imdb.com/title/tt1640711/) — wedding catastrophe where cultural shock turns the celebration into survival
+- [Game Night (IMDB)](https://www.imdb.com/title/tt2704998/) — night quest dynamics where absurdity and danger drive the pace until the finale
 
 ### Characters
 
-- The impulsiveness of the best man and maid of honor is inspired by the characters from the series [It's Always Sunny in Philadelphia (IMDB)](https://www.imdb.com/title/tt0472954/)
-- The personalities of the "plus-ones" are the complete opposite of their partners, and are generally similar to the character of Sarah in the film [Game Night (IMDB)](https://www.imdb.com/title/tt2704998/)
+- [It's Always Sunny in Philadelphia (IMDB)](https://www.imdb.com/title/tt0472954/) — peak impulsivity: characters who first create chaos and then try to survive it
+- [Game Night (IMDB)](https://www.imdb.com/title/tt2704998/) — Sarah's archetype — rational contrast: sarcastic sanity in the middle of total madness
 
 ## Status
 

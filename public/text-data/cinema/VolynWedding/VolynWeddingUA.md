@@ -42,14 +42,14 @@
 
 ### Фільми
 
-- [The Hangover, 2009 (IMDB)](https://www.imdb.com/title/tt1119646/)
-- [A Few Best Men, 2011 (IMDB)](https://www.imdb.com/title/tt1640711/)
-- [Game Night, 2018 (IMDB)](https://www.imdb.com/title/tt2704998/)
+- [The Hangover (IMDB)](https://www.imdb.com/title/tt1119646/) — архітектура похмільного детективу: від повного блекауту до збору пазлів нічного трешу
+- [A Few Best Men (IMDB)](https://www.imdb.com/title/tt1640711/) — весільна катастрофа, де культурний шок перетворює свято на виживання
+- [Game Night (IMDB)](https://www.imdb.com/title/tt2704998/) — динаміка нічного квесту, де абсурд і небезпека тримають темп до фіналу
 
 ### Персонажі
 
-- Імпульсивність друга та подружки натхненна героями із серіалу [It's Always Sunny in Philadelphia (IMDB)](https://www.imdb.com/title/tt0472954/)
-- Характери "плюс-один" є повною протилежністю своїх партнерів, загалом схожі на образ Сари у фільмі [Game Night (IMDB)](https://www.imdb.com/title/tt2704998/)
+- [It's Always Sunny in Philadelphia (IMDB)](https://www.imdb.com/title/tt0472954/) — еталонна імпульсивність: герої, які спочатку створюють хаос, а потім намагаються в ньому вижити
+- [Game Night (IMDB)](https://www.imdb.com/title/tt2704998/) — образ Сари — раціональний контраст: саркастична адекватність посеред повного божевілля
 
 ## Статус
 
