@@ -1,5 +1,5 @@
 #### Dark Fantasy Adventure / Action RPG
 
-# Part II: Ashes of the Beloveds
+# Part II: Ashes of the Beloved
 
-Absorbing a piece of her beloved's soul, a heroine embarks on a bloody journey to destroy a demonic cult, unaware that her thirst for vengeance could either save the world or plunge it into eternal chaos.
+A martyr of the Church dungeons, she was snatched from the fires of execution at the cost of her lover's self-sacrifice. With a shard of his soul in place of her heart, she turns her pain into a devastating force to shatter the chains of a demonic cult — unaware that his life cannot be saved without sacrificing the world itself.

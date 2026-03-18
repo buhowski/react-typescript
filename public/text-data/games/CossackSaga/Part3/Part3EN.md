@@ -6,23 +6,27 @@
 
 ## Logline
 
-Centuries after the world abandoned religion, new alliances led by the Cossack Legion must unite to stop a totalitarian enemy that seeks to wipe continents he deems repulsive from the face of the Earth.
+A century after two lovers burned themselves alongside the gods, the world has changed — but evil has found a new patron. A new hero sets out toward the war, unaware that the answer to everything is hidden within the Citadel of Ash.
 
 ## Concept
 
-The third part begins with a series of dynamic cinematic sequences that recap the events of [Part I](/cossack-saga-1) and [Part II](/cossack-saga-2)
+The third chapter opens with a series of dynamic cinematic sequences revisiting the events of [Part I](/cossack-saga-1) and [Part II](/cossack-saga-2)
 
-The scenes accelerate, showing how the ruins of the ancient world become futuristic cities, and tribes evolve into new civilizations. Time, compressed into a single stream, reveals an unknown world history where futurism intertwines with the legacy of ancient cultures.
+The frames accelerate, showing the ruins of the ancient world transforming into futuristic cities as tribes evolve into new civilizations. Time, condensing into a single flow, reveals the history of a world where futurism is intertwined with the legacy of ancient cultures.
 
-Centuries after the destruction of the church's demonic influence, humanity, having abandoned religions, directed the remnants of magic towards the development of technology. This gave a push to a rapid evolutionary leap that completely changed the course of history and gave rise to a world in which a new society is based on self-belief, the strength of family, and mutual support. In this world, Cossacks, Vikings, and Native Americans have established their own technologically advanced colonies that either cooperate or maintain neutrality.
+After the demonic influence of the Church was destroyed, humanity abandoned religion and channeled the remnants of magic into technological advancement. A rapid evolutionary leap gave birth to a world where the new society is built on self-belief, the strength of family, and mutual support. Cossacks, Vikings, and Native Americans established their own technologically advanced colonies — some cooperate, while others maintain neutrality.
 
-However, such a world was not acceptable to everyone. A surviving fragment of evil found refuge in a new owner — a person who mastered extraordinary powers. By integrating the forgotten knowledge of the otherworldly into technology, he created neuro-engineering for mind control and an army of robotic people. This totalitarian enemy seeks to subjugate or destroy all who do not fit his idea of an ideal new-generation race.
+But this world did not suit everyone. A surviving shard of evil found a new master — a man who mastered forgotten otherworldly knowledge and fused it into technology. Neural engineering for mind control, an army of roboticized humans, and the drive to destroy everything that doesn't fit into his vision of an ideal world. War never ends.
 
-This conflict proves that the greatest evil is not demons but humanity's thirst for power, which always lurks and seeks opportunities to manifest. It reminds everyone that even in the most progressive future, the war never ends.
+The goal is to unite the factions, dive into the memories of the primordial evil, and stop the creation of a weapon that will erase everything. All roads lead to the Citadel of Ash. On this path, the hero awaits an unexpected greeting from the past — for it is not only evil that lives forever.
 
-Our mission is to unite with all possible factions to prevent total annihilation. We must delve into the ancient knowledge and memories of primeval evil, assemble a team of the best, and embark on a dangerous journey to withstand the attacks of the robotic army and prevent the creation of the world's most dangerous weapon.
+## The Citadel of Ash
 
-An unexpected greeting from the past also awaits us — an heir to the fragments of ancient love, because evil is not the only thing that lives forever.
+A scar on the face of the world — a grand temple standing over the epicenter of the ancient blast. Here, time has pooled like thick resin at the moment of their final second. The heroes did not turn to ash — they are hostages of their own immortality.
+
+The world built this temple as a remembrance — and for centuries, people felt a pulse beneath the stone. They took it as proof that the sacrifice was not in vain. Unaware that it was a heartbeat.
+
+The Citadel waits. And not only for the hero.
 
 ## World
 
@@ -30,12 +34,12 @@ A mixture of tribal futurism and the mythological heritage of various peoples. A
 
 ### Factions
 
-- **The Cossack Legion:** A combat brotherhood that combines diplomacy and advanced nano-weapons. Together with the Vikings, they form a mighty alliance that protects the Euro-continent.
-- **Vikings of the New Age:** Warlike clans that have integrated ancient runic knowledge with cybernetic technologies and robotics. This part of the alliance stands to defend freedom and independence.
-- **Maya-Fusion:** Native Americans have revived the grandeur of their temples and tribes that live in harmony with nature, using biotechnologies and solar energy to protect their lands.
-- **Star Sky Nomads:** The tribes of North America have preserved a unique culture, combining a nomadic lifestyle with astronomy and space technologies. They travel through endless spaces, relying on the power of cosmic bodies and prototypes of flying machines.
-- **African Tribes:** A continent where the enemy tested his nano-weapons. Refugees have preserved their mythology and culture, integrating into new alliances under the protection of the Cossack Legion.
-- **Asian Totalitarianism:** The main enemy that emerged after its leader mastered a fragment of ancient evil. The regime mercilessly exterminated everything that stood in the way of absolute power and seeks to subjugate the world with the help of nano-weapons.
+- **Cossack Legion:** A warrior brotherhood where diplomacy and nanoweapons are equal tools. Together with the Vikings, they hold the Eurocontinent.
+- **Vikings of the New Era:** Runic knowledge fused with cybernetics. They don't protect freedom — they reclaim it.
+- **Maya-Fusion:** Living in harmony with nature, protecting it with biotechnology and solar energy. Their temples are not relics, but fortresses.
+- **Star Sky Nomads:** They have no territory — they have the sky. A nomadic lifestyle, astronomy, and aircraft prototypes instead of borders.
+- **African Tribes:** The first to feel the enemy's weapon firsthand. The survivors have preserved the most ancient memory — and they are the ones who know what no one else does.
+- **Asian Totalitarianism:** The leader has seized a shard of ancient evil and rewritten it into the language of technology. The regime does not conquer — it erases everything that does not fit its vision of an ideal world.
 
 [mobile-slider]
 

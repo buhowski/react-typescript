@@ -2,8 +2,10 @@
 
 # Shadows of the Cossacks: Saga
 
-An epic game series that takes players on a journey from the mystical 9th-century Kyivan Rus, through the era of the Cossacks' rise, to an alternative cyber-futurism. This is a story where the collapse of religious institutions triggers an unprecedented technological leap.
+An epic game series spanning from the mystical Kievan Rus’ of the 9th century through the bloody era of the Cossacks to an alternative cyber-futurism. The collapse of religious institutions triggers an unprecedented technological leap.
 
-Through the destinies of mysterious heroes, religious conspiracies, ancient demonic cults, and otherworldly forces that shaped the world are revealed. It is a tale of the fight for freedom and love, the discovery of forbidden truths, and a choice that will forever change the future of humanity.
+Through the fates of enigmatic heroes, religious conspiracies, otherworldly cults, and ancient forces that shaped the world in shadows are revealed. Here, the struggle for freedom and love clashes with forbidden truths, and every choice forever rewrites the future of humanity.
 
-The world evolves from a mystical Middle Ages with magic and mythological creatures to a tribal scientific futurism. In each era, an indestructible cultural heritage confronts an ancient evil that constantly finds a new form, showing that the war never ends.
+The world evolves from a magical Middle Ages teeming with otherworldly beasts to tribal scientific futurism. An indestructible cultural heritage faces an eternal evil that never dies — it only changes form.
+
+This is the eternal struggle for freedom. From the ritual executions of Kievan Rus’ to the neon tyranny of the future — when religion becomes a tool of demonic dominion and the blood of cults pulses through the ages, carving out a single truth: war never ends.
