@@ -80,10 +80,10 @@
 		}
 
 		.project-link {
-			box-shadow: 10px 10px 10px rgba($color: $black, $alpha: 0.7);
+			box-shadow: 10px 10px 10px rgba($color: #000000, $alpha: 0.7);
 
 			@include mobile {
-				box-shadow: 0 10px 10px rgba($color: $black, $alpha: 0.7);
+				box-shadow: 0 10px 10px rgba($color: #000000, $alpha: 0.7);
 			}
 
 			&__img {
@@ -102,7 +102,7 @@
 	top: 13%;
 	left: 0;
 	width: 100%;
-	background-color: rgba($color: $black, $alpha: 0.8);
+	background-color: rgba($color: #000000, $alpha: 0.8);
 	backdrop-filter: blur(5px);
 	box-shadow: 0 0 10px #000000;
 	border: 2px solid #61676d;
@@ -134,7 +134,7 @@
 	// .project-description__text
 	&__text {
 		margin-bottom: 45px;
-		color: $textGrey;
+		color: $text-color;
 		font-size: 15px;
 		line-height: 1.5;
 	}
@@ -166,7 +166,7 @@
 	}
 
 	&__title {
-		color: $titlePink;
+		color: $h3-color;
 		font-family: $LouisGeorgeCaf;
 		font-weight: 600;
 		letter-spacing: 2px;

@@ -124,7 +124,7 @@ $section-width: 920px;
 .idea-copy {
 	display: inline-block;
 	font-size: 14px;
-	color: $textGrey;
+	color: $text-color;
 	font-family: $LouisGeorgeCafBold;
 
 	@include tabletBig {
@@ -274,7 +274,7 @@ $nav-top: 2px;
 	display: flex;
 	justify-content: center;
 	text-align: center;
-	background-color: $black;
+	background-color: #000000;
 	width: max-content;
 	min-width: 320px;
 	white-space: nowrap;
@@ -456,7 +456,7 @@ $nav-top: 2px;
 .idea-block {
 	font-size: 18px;
 	line-height: 1.5;
-	color: $textGrey;
+	color: $text-color;
 	letter-spacing: 0.26px;
 
 	@include tablet {
@@ -476,8 +476,8 @@ $nav-top: 2px;
 	li b,
 	p strong,
 	p b {
-		font-weight: bold;
-		color: #f6f6f6;
+		font-weight: $bold-weight;
+		color: $bold-color;
 	}
 
 	h1,
@@ -495,7 +495,7 @@ $nav-top: 2px;
 
 	h1 {
 		@include titleFont;
-		color: $h1-title-color;
+		color: $h1-color;
 		font-size: 44px;
 		text-align: center;
 		margin: 0 auto 45px;
@@ -512,7 +512,7 @@ $nav-top: 2px;
 
 	h2 {
 		@include titleFont;
-		color: $h2-title-color;
+		color: $h2-color;
 		font-size: 30px;
 		margin-bottom: 25px;
 		margin-top: 50px;
@@ -525,7 +525,7 @@ $nav-top: 2px;
 
 	h3 {
 		@include titleFont;
-		color: $h3-title-color;
+		color: $h3-color;
 		margin-bottom: 25px;
 		margin-top: 45px;
 		font-size: 24px;
@@ -547,7 +547,7 @@ $nav-top: 2px;
 		font-size: 16px;
 		line-height: 1.2;
 		margin-bottom: 8px;
-		color: $subtitle-color;
+		color: $h4-sub-color;
 		text-align: center;
 		letter-spacing: 0.8px;
 
@@ -603,7 +603,7 @@ $nav-top: 2px;
 				width: 5px;
 				height: 5px;
 				border-radius: 50%;
-				background: $titlePink;
+				background: $h3-color;
 				position: absolute;
 				top: 11px;
 				left: 0;
@@ -638,17 +638,17 @@ $nav-top: 2px;
 	a {
 		display: inline-flex;
 		align-items: center;
-		max-width: calc(100% - 1px);
 		width: fit-content;
-		color: $link-color;
-		padding-left: 13px;
-		margin: 1px;
-		border: 1px solid rgba($link-color, 0.4);
+		max-width: calc(100% - 1px);
 		border-radius: 100px;
-		background-color: rgba(#000000, 0.2);
+		padding-left: 14px;
+		margin: 1px;
+		color: $link-color;
+		border: 1px solid rgba($link-color, 0.45);
+		background-color: rgba(#000000, 0.47);
 		line-height: 1.4;
-		transition: 0.25s;
 		overflow: hidden;
+		transition: 0.25s;
 
 		@media (hover: hover) and (pointer: fine) {
 			&:hover {
@@ -668,10 +668,10 @@ $nav-top: 2px;
 			width: 12px;
 			aspect-ratio: 1 / 1;
 			margin-left: 6px;
-			margin-right: 10px;
+			margin-right: 11px;
 			line-height: 1;
 			transform: translateY(-0.5px);
-			opacity: 0.56;
+			opacity: 0.64;
 
 			$svg-local: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="20" x2="20" y2="4"></line><polyline points="8 4 20 4 20 16"></polyline></svg>';
 			mask: url('data:image/svg+xml;charset=UTF-8,#{$svg-local}') no-repeat center / contain;
@@ -776,7 +776,7 @@ $nav-top: 2px;
 		text-shadow 0.25s,
 		color 0.25s;
 	will-change: box-shadow;
-	box-shadow: 0 0 4px rgba($black, 1);
+	box-shadow: 0 0 4px rgba(#000000, 1);
 	background-color: #000000;
 
 	&::after {
@@ -806,7 +806,7 @@ $nav-top: 2px;
 	+ .pitch-container {
 		margin-top: 60px;
 		padding-top: 60px;
-		border-top: 1px solid rgba($subtitle-color, 0.26);
+		border-top: 1px solid rgba($h4-sub-color, 0.26);
 
 		@include tabletBig {
 			margin-top: 50px;
@@ -922,12 +922,12 @@ $nav-top: 2px;
 	position: absolute;
 	top: 0;
 	left: 0;
-	color: $textGrey;
+	color: $text-color;
 	z-index: -1;
 	transition:
 		z-index 0.25s ease,
 		opacity 0.25s;
-	color: $snow;
+	color: #ffffff;
 
 	img,
 	iframe,
@@ -972,7 +972,7 @@ $nav-top: 2px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: $black;
+	background-color: #000000;
 	cursor: pointer;
 
 	&.disabled {
@@ -1028,8 +1028,8 @@ $nav-top: 2px;
 		height: 100%;
 		padding: 15px 20px;
 		font-size: 14px;
-		color: rgba($textGrey, 0.9);
-		box-shadow: inset 0 -75px 80px rgba($black, 0.9);
+		color: rgba($text-color, 0.9);
+		box-shadow: inset 0 -75px 80px rgba(#000000, 0.9);
 		text-shadow: 1px 1px 2px #000000;
 		transition: 0.25s ease-out;
 
@@ -1057,7 +1057,7 @@ $nav-top: 2px;
 .slides-number {
 	@include titleFont;
 	font-weight: 500;
-	color: rgba($textGrey, 0.6);
+	color: rgba($text-color, 0.6);
 	margin: 0 10px;
 	min-width: 80px;
 	text-align: center;
@@ -1071,7 +1071,7 @@ $nav-top: 2px;
 .slider-btn-js {
 	padding: 13px;
 	border-radius: 10px;
-	background-color: rgba($textGrey, 0.4);
+	background-color: rgba($text-color, 0.4);
 	box-shadow: 0 0 5px #000000;
 	transition: 0.25s;
 
@@ -1079,7 +1079,7 @@ $nav-top: 2px;
 		display: block;
 		width: 12px;
 		height: 12px;
-		border: 3px solid rgba($textGrey, 1);
+		border: 3px solid rgba($text-color, 1);
 		border-width: 3px 3px 0 0;
 		transition: 0.2s;
 	}

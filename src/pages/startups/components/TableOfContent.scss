@@ -20,7 +20,7 @@ $toc-hover-color: #fff;
 	position: absolute;
 	top: $toc-top;
 	padding-bottom: $toc-top;
-	background-color: $black;
+	background-color: #000000;
 	border-radius: 10px 10px 0 0;
 	left: 0;
 	transform: translateY(-100%);
@@ -58,8 +58,8 @@ $toc-hover-color: #fff;
 		width: 100%;
 		display: flex;
 		align-items: center;
-		background-color: $black;
-		box-shadow: 0 0 6px rgba($black, 1);
+		background-color: #000000;
+		box-shadow: 0 0 6px rgba(#000000, 1);
 		border-radius: 10px 10px 0 0;
 		font-family: $LouisGeorgeCaf;
 		letter-spacing: 1px;
@@ -163,13 +163,13 @@ $toc-hover-color: #fff;
 			left: 0;
 			width: 100%;
 			z-index: 1;
-			color: rgba($textGrey, 0.6);
+			color: rgba($text-color, 0.6);
 		}
 	}
 
 	// .table-content__list
 	&__list {
-		background-color: $black;
+		background-color: #000000;
 		border-radius: 0 0 10px 10px;
 		box-shadow: 0 3px 6px #000000;
 		width: 100%;
@@ -227,10 +227,10 @@ $toc-hover-color: #fff;
 				font-weight: bold;
 				letter-spacing: 0.36px;
 				line-height: 1.12;
-				color: $textGrey;
+				color: $text-color;
 
 				@include tabletBig {
-					padding: 5px 22px;
+					padding: 4.5px 22px 4px;
 					padding-right: 20px;
 				}
 
@@ -263,7 +263,7 @@ $toc-hover-color: #fff;
 				}
 
 				.h1-toc-item {
-					color: darken($h1-title-color, 20%);
+					color: darken($h1-color, 20%);
 
 					span {
 						transform: translateX(-20px);
@@ -275,7 +275,7 @@ $toc-hover-color: #fff;
 				}
 
 				.h2-toc-item {
-					color: darken($h2-title-color, 20%);
+					color: darken($h2-color, 20%);
 
 					span {
 						transform: translateX(-30px);
@@ -287,7 +287,7 @@ $toc-hover-color: #fff;
 				}
 
 				.h3-toc-item {
-					color: darken($h3-title-color, 20%);
+					color: darken($h3-color, 20%);
 
 					span {
 						transform: translateX(-43px);
@@ -311,22 +311,22 @@ $toc-hover-color: #fff;
 
 			.h2-toc-item {
 				font-size: 14px;
-				padding-left: 52px;
-				color: rgba($textGrey, 0.9);
+				padding-left: 50px;
+				color: rgba($text-color, 0.9);
 
 				@include tabletBig {
 					font-size: 13px;
-					padding-left: 32px;
+					padding-left: 30px;
 				}
 			}
 
 			.h3-toc-item {
 				font-size: 14px;
-				padding-left: 65px;
-				color: rgba($textGrey, 0.56);
+				padding-left: 62px;
+				color: rgba($text-color, 0.65);
 
 				@include tabletBig {
-					padding-left: 44px;
+					padding-left: 40px;
 					font-size: 13px;
 				}
 			}
@@ -355,7 +355,7 @@ $toc-hover-color: #fff;
 		margin: 30px auto 0;
 		padding: 14px 30px;
 		border-radius: 10px;
-		color: $textGrey;
+		color: $text-color;
 		background-color: #d62222;
 		box-shadow:
 			inset 20px 20px 30px #a21818,

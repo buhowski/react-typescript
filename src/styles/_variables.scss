@@ -7,38 +7,37 @@ $LouisGeorgeCafBold: 'Louis George Caf Bold', 'Raleway', sans-serif;
 $font-primary: 'BlinkMacSystemFont', sans-serif;
 $Raleway: 'Raleway', sans-serif;
 
+// $colors: #9400ff #37ff8b;
 $darken: #202020;
 $darker: #181818;
 $darkest: #111111;
-$black: #000000;
-// $colors: #9400ff #37ff8b;
 $blue-main: #005cb3;
-$snow: #ffffff;
 $red: #af0303;
-$titlePink: #e8b2a3;
-$textGrey: #d4d4d4;
 $starYellow: #dfb842;
 
+// Text Data
+$header-ltr-spc: 3px;
+$p-margin: 20px;
+$bold-weight: 600;
+
+// Colors
+$toc-title-color: #b991e3;
 $nav-btn-color: #f4f4f4;
 
-$h1-title-color: #f6b96f;
-$subtitle-color: #858f8f;
-$h2-title-color: #82b4e2;
-$h3-title-color: $titlePink;
-$toc-title-color: #b991e3;
+$h4-sub-color: #858f8f;
+$h1-color: #f6b96f;
+$h2-color: #82b4e2;
+$h3-color: #e8b2a3;
+$text-color: #d4d4d4;
+$bold-color: #e2e2e2;
 
-$header-ltr-spc: 3px;
-
-$p-margin: 20px;
-
-// Text Data Links
-$link-color: #4589ad;
-$link-hover: #c4924e;
+$link-color: #55aadd;
+$link-hover: #d99f4e;
 
 @mixin hover-text-link {
 	color: $link-hover;
 	border-color: currentColor;
-	background-color: rgba(#000000, 0.6);
+	background-color: rgba(#000000, 0.8);
 }
 
 @mixin social_hover {
@@ -56,7 +55,7 @@ $link-hover: #c4924e;
 $slider-actions-color: #745a81;
 
 @mixin slider-arrows_hover {
-	background-color: rgba($textGrey, 0.2);
+	background-color: rgba($text-color, 0.2);
 
 	.chevron {
 		border-color: $toc-title-color;
