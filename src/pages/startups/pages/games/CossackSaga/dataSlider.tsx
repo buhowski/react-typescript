@@ -19,66 +19,57 @@ const automataTrailer = 'https://www.youtube-nocookie.com/embed/4bx02CEISLI';
 export const dataSliderCossackSaga = [
 	{
 		itemSrc: cossackDrummer,
-		itemAlt:
-			'AI-generated poster for Shadows of the Cossacks: Saga Part I–II featuring hero undergoing demonic baptism and Part II heroine bound to his soul, embarking on a bloody path of revenge; epic historical-mystical adventure game concept.',
-		itemCaption: `Saga I–II Parts Poster: Hero in Church’s Demonic Baptism / Heroine Bound to Hero's Soul, Embarking on a Bloody Path of Revenge.`,
+		itemAlt: `AI-generated poster for Cossack Saga Part I–II — demonic baptism ritual and a heroine bound to the hero's soul.`,
+		itemCaption: 'Saga I–II Poster — Demonic Baptism / Bound Souls',
 		putImgTitle: true,
 	},
-
 	{
 		itemPoster: automataPoster,
 		itemSrc: automataTrailer,
 		itemAlt:
-			'NieR Automata boss battle poster, showcasing sci-fi combat, android warriors, cinematic action, and video game storytelling.',
-		itemCaption: 'Video Refs: The Directing Style / Cinematic Boss Combat — NieR Automata.',
+			'NieR Automata boss combat — android warriors, cinematic sci-fi action and storytelling',
+		itemCaption: 'Cinematic Boss Combat — NieR Automata',
 	},
-
 	{
 		itemPoster: witcherPoster,
 		itemSrc: witcherTrailer,
 		itemAlt:
-			'The Witcher 3 poster, featuring Geralt of Rivia in a dark fantasy world, epic quests, magical monsters, immersive RPG gameplay, and medieval environments.',
-		itemCaption: 'Video Refs: Design / Immersive World — The Witcher 3 Wild Hunt.',
+			'The Witcher 3 Wild Hunt — Geralt in a dark fantasy world, epic quests and immersive RPG design',
+		itemCaption: 'Immersive World Design — The Witcher 3',
 	},
-
 	{
 		itemPoster: tsushimaPoster,
 		itemSrc: ghostOfTsushimaTrailer,
 		itemAlt:
-			'Ghost of Tsushima poster, depicting a samurai during the Mongol invasion, with cinematic landscapes, stealth action, epic battles, and Japanese culture.',
-		itemCaption: 'Video Refs: Setting / Historical Japanese Atmosphere — Ghost of Tsushima.',
+			'Ghost of Tsushima — samurai vs Mongol invasion, cinematic Japanese atmosphere and stealth action',
+		itemCaption: 'Historical Japanese Atmosphere — Ghost of Tsushima',
 	},
-
 	{
 		itemPoster: replicantPoster,
 		itemSrc: replicantTrailer,
 		itemAlt:
-			'NieR Replicant trailer poster, highlighting anime-style characters, intense combat, immersive fantasy world, and dramatic narrative.',
-		itemCaption:
-			'Video Refs: Unique World Atmosphere, Cinematic Combat, Emotional Intensity — NieR Replicant.',
+			'NieR Replicant — anime-style characters in cinematic combat, emotional narrative and unique fantasy world',
+		itemCaption: 'World Atmosphere / Emotional Intensity — NieR Replicant',
 	},
-
 	{
 		itemSrc: cossacksReplyLetter,
 		itemAlt:
-			'Painting of Ukrainian Cossacks writing a letter to the Turkish sultan, showing historical accuracy, traditional costumes, 17th-century military life, and cultural heritage.',
-		itemCaption: `Ukrainian Hermit Cossacks / Artistic Refs to History.`,
+			'Ukrainian Cossacks writing a reply letter to the Turkish sultan — historical painting, 17th century military life',
+		itemCaption: 'Ukrainian Cossacks / Historical Art Refs',
 		putImgTitle: true,
 	},
-
 	{
 		itemSrc: cossackWarrior,
 		itemAlt:
-			'Illustration of a Ukrainian Cossack warrior, depicting traditional armor, sabre, mustache, heroic stance, and Slavic cultural heritage.',
-		itemCaption: `Hermit Cossack Warrior vs Demonic Monk.`,
+			'Ukrainian Cossack warrior with sabre — traditional armor, heroic stance and Slavic cultural heritage',
+		itemCaption: 'Hermit Cossack Warrior vs Demonic Monk',
 		putImgTitle: true,
 	},
-
 	{
 		itemSrc: cossackSorcerers,
 		itemAlt:
-			'Illustration of a Ukrainian Cossack Charakternyk, combining warrior, shaman, and seer traits, mystical elements, folklore-inspired design, and dynamic Eastern European storytelling.',
-		itemCaption: `Hermit Cossack Sorcerer.`,
+			'Ukrainian Cossack Charakternyk sorcerer — warrior, shaman and seer, mystical folklore design',
+		itemCaption: 'Hermit Cossack Sorcerer',
 		putImgTitle: true,
 	},
 ];

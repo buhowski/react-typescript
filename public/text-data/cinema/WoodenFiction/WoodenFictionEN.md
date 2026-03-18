@@ -20,7 +20,7 @@ Behind the chaotic plot and dark humor lies a biting satire — how corruption d
 
 ## References
 
-- [Pulp Fiction, 1994 (IMDB)](https://www.imdb.com/title/tt0110912/) — non-linear narrative, sharp dialogues, and the aesthetics of criminal chaos
+- [Pulp Fiction (IMDB)](https://www.imdb.com/title/tt0110912/) — Non-linear narrative, sharp dialogues, and the aesthetics of criminal chaos
 - [Mikhail Elizarov (WIKI)](https://neolurk.org/wiki/%D0%9C%D0%B8%D1%85%D0%B0%D0%B8%D0%BB_%D0%95%D0%BB%D0%B8%D0%B7%D0%B0%D1%80%D0%BE%D0%B2) — "Burattini. Fascism has passed": harsh, absurd satire on the Soviet legacy
 
 ## Status

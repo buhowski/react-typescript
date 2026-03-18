@@ -71,10 +71,10 @@
 
 ## Референсы
 
-- [Trailer Park Boys (IMDB)](https://www.imdb.com/title/tt0290988/) — уровень бытового трэша и безнаказанного идиотизма
-- [It's Always Sunny in Philadelphia (IMDB)](https://www.imdb.com/title/tt0472954/) — абсолютная аморальность героев и их способность портить всё, к чему они прикасаются
-- [Broad City (IMDB)](https://www.imdb.com/title/tt2578560/) — хаотичная женская энергия, творческий пофигизм и способность находить приключения на ровном месте
-- [New Kids Turbo (IMDB)](https://www.imdb.com/title/tt1648112/) — агрессивный темп, нигилизм и визуальный абсурд
+- [Trailer Park Boys (IMDB)](https://www.imdb.com/title/tt0290988/) — Уровень бытового трэша и безнаказанного идиотизма
+- [It's Always Sunny in Philadelphia (IMDB)](https://www.imdb.com/title/tt0472954/) — Абсолютная аморальность героев и их способность портить всё, к чему они прикасаются
+- [Broad City (IMDB)](https://www.imdb.com/title/tt2578560/) — Хаотичная женская энергия, творческий пофигизм и способность находить приключения на ровном месте
+- [New Kids Turbo (IMDB)](https://www.imdb.com/title/tt1648112/) — Агрессивный темп, нигилизм и визуальный абсурд
 
 ## Статус
 

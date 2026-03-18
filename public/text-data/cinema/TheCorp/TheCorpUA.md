@@ -20,9 +20,9 @@
 
 ## Референси
 
-- [The Office (IMDB)](https://www.imdb.com/title/tt0386676/) — формат псевдодокументалістики, ефект присутності та гумор незручності
-- [Nathan for You (IMDB)](https://www.imdb.com/title/tt2297757/) — рівень абсурду та залучення реальних людей у нереальні ситуації
-- [Silicon Valley (IMDB)](https://www.imdb.com/title/tt2575988/) — сатира на "зміну світу" та внутрішню токсичність індустрії
+- [The Office (IMDB)](https://www.imdb.com/title/tt0386676/) — Формат псевдодокументалістики, ефект присутності та гумор незручності
+- [Nathan for You (IMDB)](https://www.imdb.com/title/tt2297757/) — Рівень абсурду та залучення реальних людей у нереальні ситуації
+- [Silicon Valley (IMDB)](https://www.imdb.com/title/tt2575988/) — Сатира на "зміну світу" та внутрішню токсичність індустрії
 
 ## Статус
 

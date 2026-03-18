@@ -40,12 +40,12 @@ This film leads to the conclusion: the tragedy is not only in wars, but also in 
 
 ## References
 
-- [Requiem for a Dream (IMDB)](https://www.imdb.com/title/tt0180093/) — visualization of addictions and the effect of personality disintegration
-- [11:14 (IMDB)](https://www.imdb.com/title/tt0331811/) — masterful geometry of coincidences where minor actions lead to a shared catastrophe
-- [Crash (IMDB)](https://www.imdb.com/title/tt0375679/) — the intertwining of chance encounters in a big city
-- [Babel (IMDB)](https://www.imdb.com/title/tt0449467/) — global disconnection of people living side by side
-- [Wild Tales (IMDB)](https://www.imdb.com/title/tt3011894/) — an anthology of human rage and absurdity arising from everyday conflicts
-- [Once Upon a Time... in Hollywood (IMDB)](https://www.imdb.com/title/tt7131622/) — the atmosphere of waiting for an inevitable finale and the author's reimagining of reality
+- [Requiem for a Dream (IMDB)](https://www.imdb.com/title/tt0180093/) — Visualization of addictions and the effect of personality disintegration
+- [11:14 (IMDB)](https://www.imdb.com/title/tt0331811/) — Masterful geometry of coincidences where minor actions lead to a shared catastrophe
+- [Crash (IMDB)](https://www.imdb.com/title/tt0375679/) — The intertwining of chance encounters in a big city
+- [Babel (IMDB)](https://www.imdb.com/title/tt0449467/) — Global disconnection of people living side by side
+- [Wild Tales (IMDB)](https://www.imdb.com/title/tt3011894/) — An anthology of human rage and absurdity arising from everyday conflicts
+- [Once Upon a Time... in Hollywood (IMDB)](https://www.imdb.com/title/tt7131622/) — The atmosphere of waiting for an inevitable finale and the author's reimagining of reality
 
 ## Status
 

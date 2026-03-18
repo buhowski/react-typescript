@@ -18,11 +18,11 @@ Openly documenting every stage of building the business becomes both the plot’
 
 [mobile-slider]
 
-## References
+## Inspiration
 
-- [The Office (IMDB)](https://www.imdb.com/title/tt0386676/) — mockumentary format, sense of presence, and cringe humor
-- [Nathan for You (IMDB)](https://www.imdb.com/title/tt2297757/) — the level of absurdity and involving real people in surreal situations
-- [Silicon Valley (IMDB)](https://www.imdb.com/title/tt2575988/) — satire on "changing the world" and the industry’s internal toxicity
+- [The Office (IMDB)](https://www.imdb.com/title/tt0386676/) — Mockumentary format, sense of presence, and cringe humor
+- [Nathan for You (IMDB)](https://www.imdb.com/title/tt2297757/) — The level of absurdity and involving real people in surreal situations
+- [Silicon Valley (IMDB)](https://www.imdb.com/title/tt2575988/) — Satire on "changing the world" and the industry’s internal toxicity
 
 ## Status
 

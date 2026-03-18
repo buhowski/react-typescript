@@ -40,12 +40,12 @@
 
 ## Референсы
 
-- [Requiem for a Dream (IMDB)](https://www.imdb.com/title/tt0180093/) — визуализация зависимостей и эффект распада личности
-- [11:14 (IMDB)](https://www.imdb.com/title/tt0331811/) — мастерская геометрия случайностей, где мелкие поступки приводят к общей катастрофе
-- [Crash (IMDB)](https://www.imdb.com/title/tt0375679/) — переплетение случайных встреч в большом городе
-- [Babel (IMDB)](https://www.imdb.com/title/tt0449467/) — глобальная разобщённость людей, живущих рядом
-- [Wild Tales (IMDB)](https://www.imdb.com/title/tt3011894/) — антология человеческой ярости и абсурда, возникающих из бытовых конфликтов
-- [Once Upon a Time... in Hollywood (IMDB)](https://www.imdb.com/title/tt7131622/) — атмосфера ожидания неизбежного финала и авторская пересборка реальности
+- [Requiem for a Dream (IMDB)](https://www.imdb.com/title/tt0180093/) — Визуализация зависимостей и эффект распада личности
+- [11:14 (IMDB)](https://www.imdb.com/title/tt0331811/) — Мастерская геометрия случайностей, где мелкие поступки приводят к общей катастрофе
+- [Crash (IMDB)](https://www.imdb.com/title/tt0375679/) — Переплетение случайных встреч в большом городе
+- [Babel (IMDB)](https://www.imdb.com/title/tt0449467/) — Глобальная разобщённость людей, живущих рядом
+- [Wild Tales (IMDB)](https://www.imdb.com/title/tt3011894/) — Антология человеческой ярости и абсурда, возникающих из бытовых конфликтов
+- [Once Upon a Time... in Hollywood (IMDB)](https://www.imdb.com/title/tt7131622/) — Атмосфера ожидания неизбежного финала и авторская пересборка реальности
 
 ## Статус
 

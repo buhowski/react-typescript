@@ -36,9 +36,9 @@
 
 ## Референси
 
-- [Вільям Шекспір (WIKI)](https://en.wikipedia.org/wiki/William_Shakespeare) — фундамент сюжетної структури та безкомпромісного трагізму
-- [Romeo + Juliet (IMDB)](https://www.imdb.com/title/tt0117509/) — візуальний стиль: модернізація класики крізь агресивний монтаж та релігійний поп-арт
-- [Noize MC — Орфей & Эвридика (YT)](https://www.youtube.com/watch?v=TbMYvqA8Tj4) — трансформація античного міфу в сучасну хіп-хоперу з гострим соціальним підтекстом
+- [Вільям Шекспір (WIKI)](https://en.wikipedia.org/wiki/William_Shakespeare) — Фундамент сюжетної структури та безкомпромісного трагізму
+- [Romeo + Juliet (IMDB)](https://www.imdb.com/title/tt0117509/) — Візуальний стиль: модернізація класики крізь агресивний монтаж та релігійний поп-арт
+- [Noize MC — Орфей & Эвридика (YT)](https://www.youtube.com/watch?v=TbMYvqA8Tj4) — Трансформація античного міфу в сучасну хіп-хоперу з гострим соціальним підтекстом
 - Sound DNA — поєднання важкого металу, окультного року та клауд-репу, що формує атмосферу морального розлому, екзистенційної самотності та урбаністичного відчаю:  
 [FFDP — Wrong Side of Heaven](https://open.spotify.com/track/11Ojp7JniVvwd0gmgvyKkd?si=_gtX3nIgTeOAt1k6oQf8Jg) 
 [Black Sabbath — Planet Caravan](https://open.spotify.com/track/4VAAXfLf8YPiO1LzyYnMKb?si=H0yObqdcSwCUoofQdVV40g) 

@@ -79,13 +79,13 @@
 
 ## Референси
 
-- Rick and Morty, S7E5 (сцена в слайдері) — драма мандрівника у вічному пошуку, що досліджує різні виміри
-- [Alice in Wonderland (IMDB)](https://www.imdb.com/title/tt1014759/) — сюрреалістичні, абсурдні світи та цікавість, яка веде в захопливу подорож
-- [Clair Obscur: Expedition 33 (STEAM)](https://store.steampowered.com/app/1903340/Clair_Obscur_Expedition_33/) — мотиви та інтриги антагоністів
-- [Solar Opposites, S4: The Wall (YT)](https://www.youtube.com/watch?v=K0a85gwgQ8A) — концепція антагоніста-Колекціонера і Тераріума Світів
-- [Fallout (IMDB)](https://www.imdb.com/title/tt12637874/) [Westworld (IMDB)](https://www.imdb.com/title/tt0475784/) — атмосфера та пошуку істини
-- [Nier: Automata (STEAM)](https://store.steampowered.com/app/524220/NieRAutomata/) — стиль анімації з деталізацією і дизайном місцевого нуару та поєднанням енергії та гумору "Rick and Morty"
-- [High On Life (STEAM)](https://store.steampowered.com/app/1583230/High_On_Life/) — гра демонструє, як чорний гумор, саркастичні діалоги і стьоб над жанром з анімаційних проєктів можуть працювати у відеоігровому форматі, що дає можливість створити гру за мотивами цього серіалу
+- Rick and Morty, S7E5 (сцена в слайдері) — Драма мандрівника у вічному пошуку, що досліджує різні виміри
+- [Alice in Wonderland (IMDB)](https://www.imdb.com/title/tt1014759/) — Сюрреалістичні, абсурдні світи та цікавість, яка веде в захопливу подорож
+- [Clair Obscur: Expedition 33 (STEAM)](https://store.steampowered.com/app/1903340/Clair_Obscur_Expedition_33/) — Мотиви та інтриги антагоністів
+- [Solar Opposites, S4: The Wall (YT)](https://www.youtube.com/watch?v=K0a85gwgQ8A) — Концепція антагоніста-Колекціонера і Тераріума Світів
+- [Fallout (IMDB)](https://www.imdb.com/title/tt12637874/) — Атмосфера та пошуку істини
+- [Nier: Automata (STEAM)](https://store.steampowered.com/app/524220/NieRAutomata/) — Стиль анімації з деталізацією і дизайном місцевого нуару та поєднанням енергії та гумору "Rick and Morty"
+- [High On Life (STEAM)](https://store.steampowered.com/app/1583230/High_On_Life/) — Гра демонструє, як чорний гумор, саркастичні діалоги і стьоб над жанром з анімаційних проєктів можуть працювати у відеоігровому форматі, що дає можливість створити гру за мотивами цього серіалу
 
 ## Статус
 

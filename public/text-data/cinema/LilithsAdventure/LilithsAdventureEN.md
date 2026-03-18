@@ -79,13 +79,13 @@ The plot transforms into a continuous chase, full of new challenges. The heroes 
 
 ## References
 
-- Rick and Morty, S7E5 (scene from the slider) — the drama of a traveler in eternal search, exploring different dimensions
-- [Alice in Wonderland (IMDB)](https://www.imdb.com/title/tt1014759/) — surreal, absurd worlds and curiosity that leads to a captivating journey
-- [Clair Obscur: Expedition 33 (STEAM)](https://store.steampowered.com/app/1903340/Clair_Obscur_Expedition_33/) — the motives and intrigues of the antagonists
-- [Solar Opposites, S4: The Wall (YT)](https://www.youtube.com/watch?v=K0a85gwgQ8A) — the concept of the Collector antagonist and the Terrarium of Worlds
-- [Fallout (IMDB)](https://www.imdb.com/title/tt12637874/) [Westworld (IMDB)](https://www.imdb.com/title/tt0475784/) — atmosphere and the search for truth
-- [Nier: Automata (STEAM)](https://store.steampowered.com/app/524220/NieRAutomata/) — an animation style featuring local noir design and detailing, combined with the energy and humor of "Rick and Morty"
-- [High On Life (STEAM)](https://store.steampowered.com/app/1583230/High_On_Life/) — this game demonstrates how black humor, sarcastic dialogues, and genre satire from animated projects can work in a video game format, offering the possibility of creating a game based on this series
+- Rick and Morty, S7E5 (scene from the slider) — The drama of a traveler in eternal search, exploring different dimensions
+- [Alice in Wonderland (IMDB)](https://www.imdb.com/title/tt1014759/) — Surreal, absurd worlds and curiosity that leads to a captivating journey
+- [Clair Obscur: Expedition 33 (STEAM)](https://store.steampowered.com/app/1903340/Clair_Obscur_Expedition_33/) — The motives and intrigues of the antagonists
+- [Solar Opposites, S4: The Wall (YT)](https://www.youtube.com/watch?v=K0a85gwgQ8A) — The concept of the Collector antagonist and the Terrarium of Worlds
+- [Fallout (IMDB)](https://www.imdb.com/title/tt12637874/) — Atmosphere and the search for truth
+- [Nier: Automata (STEAM)](https://store.steampowered.com/app/524220/NieRAutomata/) — An animation style featuring local noir design and detailing, combined with the energy and humor of "Rick and Morty"
+- [High On Life (STEAM)](https://store.steampowered.com/app/1583230/High_On_Life/) — This game demonstrates how black humor, sarcastic dialogues, and genre satire from animated projects can work in a video game format, offering the possibility of creating a game based on this series
 
 ## Status
 

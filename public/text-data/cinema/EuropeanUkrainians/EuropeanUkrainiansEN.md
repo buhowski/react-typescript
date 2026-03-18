@@ -71,10 +71,10 @@ Improvisation and Tarantino-esque dialogues are the foundation of every personal
 
 ## References
 
-- [Trailer Park Boys (IMDB)](https://www.imdb.com/title/tt0290988/) — the level of domestic trash and unpunished idiocy
-- [It's Always Sunny in Philadelphia (IMDB)](https://www.imdb.com/title/tt0472954/) — the absolute immorality of the characters and their knack for ruining everything they touch
-- [Broad City (IMDB)](https://www.imdb.com/title/tt2578560/) — chaotic female energy, creative apathy, and the ability to find trouble out of thin air
-- [New Kids Turbo (IMDB)](https://www.imdb.com/title/tt1648112/) — aggressive pacing, nihilism, and visual absurdity
+- [Trailer Park Boys (IMDB)](https://www.imdb.com/title/tt0290988/) — The level of domestic trash and unpunished idiocy
+- [It's Always Sunny in Philadelphia (IMDB)](https://www.imdb.com/title/tt0472954/) — The absolute immorality of the characters and their knack for ruining everything they touch
+- [Broad City (IMDB)](https://www.imdb.com/title/tt2578560/) — Chaotic female energy, creative apathy, and the ability to find trouble out of thin air
+- [New Kids Turbo (IMDB)](https://www.imdb.com/title/tt1648112/) — Aggressive pacing, nihilism, and visual absurdity
 
 ## Status
 

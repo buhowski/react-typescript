@@ -42,13 +42,13 @@ Then, scenes are shown of how the guys got into this drug predicament, similar t
 
 ### Films
 
-- [The Hangover (IMDB)](https://www.imdb.com/title/tt1119646/) — hangover detective architecture: from a total blackout to piecing together the night's trash
-- [A Few Best Men (IMDB)](https://www.imdb.com/title/tt1640711/) — wedding catastrophe where cultural shock turns the celebration into survival
-- [Game Night (IMDB)](https://www.imdb.com/title/tt2704998/) — night quest dynamics where absurdity and danger drive the pace until the finale
+- [The Hangover (IMDB)](https://www.imdb.com/title/tt1119646/) — Hangover detective architecture: from a total blackout to piecing together the night's trash
+- [A Few Best Men (IMDB)](https://www.imdb.com/title/tt1640711/) — Wedding catastrophe where cultural shock turns the celebration into survival
+- [Game Night (IMDB)](https://www.imdb.com/title/tt2704998/) — Night quest dynamics where absurdity and danger drive the pace until the finale
 
 ### Characters
 
-- [It's Always Sunny in Philadelphia (IMDB)](https://www.imdb.com/title/tt0472954/) — peak impulsivity: characters who first create chaos and then try to survive it
+- [It's Always Sunny in Philadelphia (IMDB)](https://www.imdb.com/title/tt0472954/) — Peak impulsivity: characters who first create chaos and then try to survive it
 - [Game Night (IMDB)](https://www.imdb.com/title/tt2704998/) — Sarah's archetype — rational contrast: sarcastic sanity in the middle of total madness
 
 ## Status
