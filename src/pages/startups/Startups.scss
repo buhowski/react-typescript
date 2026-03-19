@@ -368,7 +368,10 @@ $nav-top: 2px;
 
 		&:active {
 			@include idea-tabs__btn_hover;
-			transform: scale(0.9);
+
+			&:not(.sub-active) {
+				transform: scale(0.9);
+			}
 		}
 	}
 }
