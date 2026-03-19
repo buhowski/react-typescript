@@ -1,26 +1,14 @@
 import React, { useState, useRef, useEffect, useLayoutEffect } from 'react';
 import Preloader from '../../../components/Preloader';
-import { TocProps } from '../../../types/common';
-
-const tocErrorText = (
-	<p className='toc-message'>
-		<span>Oops</span>
-		<span className='toc-message__text'>content not found</span>
-		<span
-			className='toc-message__btn'
-			onClick={() => window.location.reload()}
-			style={{ cursor: 'pointer' }}
-		>
-			Reload page
-		</span>
-	</p>
-);
+import { LANGUAGES, TocProps } from '../../../types/common';
 
 const TableOfContent: React.FC<TocProps> = ({
 	onSelectIndex,
 	activeHeadingId,
 	headings,
 	isLoadingContent,
+	changeLanguage,
+	currentLang,
 }) => {
 	const [isTocOpen, setIsTocOpen] = useState(false);
 	const [listHeight, setListHeight] = useState(0);
@@ -28,6 +16,30 @@ const TableOfContent: React.FC<TocProps> = ({
 	const tocRef = useRef<HTMLDivElement>(null);
 	const listRef = useRef<HTMLDivElement>(null);
 	const innerRef = useRef<HTMLDivElement>(null);
+
+	const handleRetry = () => {
+		const fallbackLang = LANGUAGES.find((l) => l !== currentLang) || 'en';
+
+		changeLanguage(fallbackLang);
+
+		setTimeout(() => {
+			changeLanguage(currentLang);
+		}, 200);
+	};
+
+	const tocErrorText = (
+		<p className='toc-message'>
+			<span>Oops</span>
+			<span className='toc-message__text'>content not found</span>
+			<span
+				className='toc-message__btn'
+				// onClick={() => window.location.reload()}
+				onClick={handleRetry}
+			>
+				Wake up
+			</span>
+		</p>
+	);
 
 	const toggleToc = () => setIsTocOpen((prev) => !prev);
 

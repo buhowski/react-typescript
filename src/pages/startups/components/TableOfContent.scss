@@ -78,6 +78,7 @@ $toc-hover-color: #fff;
 
 		&:active {
 			@include toc-burger_hover;
+			transform: scale(0.9);
 		}
 
 		> h3 {
@@ -206,6 +207,7 @@ $toc-hover-color: #fff;
 			text-align: left;
 			width: 100%;
 			position: relative;
+			transition: transform 0.2s;
 
 			@media (hover: hover) and (pointer: fine) {
 				&:hover {
@@ -356,15 +358,22 @@ $toc-hover-color: #fff;
 		color: $text-color;
 		background-color: #d62222;
 		box-shadow:
-			inset 20px 20px 30px #a21818,
-			inset -20px -20px 30px #b60e0e;
+			inset 10px 10px 30px #850606,
+			inset -10px -10px 30px #6a1010;
 		white-space: nowrap;
 		cursor: pointer;
 		width: 100%;
 		max-width: 260px;
+		transition: 0.25s;
 
 		&:hover {
 			background-color: #000000;
+			box-shadow: 0 0 20px rgba(#d62222, 0.8);
+			color: #df3535;
+		}
+
+		&:active {
+			transform: scale(0.9);
 		}
 	}
 }

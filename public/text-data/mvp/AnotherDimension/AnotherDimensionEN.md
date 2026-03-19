@@ -2,13 +2,11 @@
 
 # Another Dimension
 
-***Status:** In search of mad geniuses*
-
-[mobile-slider]
-
 ## Current Position
 
 Right now, I am looking for team partners — this is the most difficult phase. The entire idea will take off as soon as the right people are in the right positions. Then, the perpetual motion machine will start.
+
+[mobile-slider]
 
 ## Action Plan
 

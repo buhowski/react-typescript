@@ -6,8 +6,12 @@ const detectBrowserLanguage = (): LanguageCode => {
 	const hasLang = (prefix: string) => langs.some((l) => l.toLowerCase().startsWith(prefix));
 
 	// console.log(navigator.languages, navigator.language);
+	const uaZones = ['Europe/Kyiv', 'Europe/Uzhgorod', 'Europe/Zaporozhye', 'Europe/Simferopol'];
 
-	if (hasLang('uk')) return 'ua';
+	if (hasLang('uk') || uaZones.includes(Intl.DateTimeFormat().resolvedOptions().timeZone)) {
+		return 'ua';
+	}
+
 	if (hasLang('ru')) return 'ru';
 
 	return 'en';
@@ -16,7 +20,7 @@ const detectBrowserLanguage = (): LanguageCode => {
 // Determine initial language
 export const getInitialLanguage = (
 	pageData: PageProps['pageData'],
-	availableLangs: LanguageCode[]
+	availableLangs: LanguageCode[],
 ): LanguageCode => {
 	const storedLang = localStorage.getItem('currentLang') as LanguageCode | null;
 	const browserLang = detectBrowserLanguage();

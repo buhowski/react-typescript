@@ -9,33 +9,34 @@ const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
 	const containerRef = useRef<HTMLDivElement>(null);
 
 	useLayoutEffect(() => {
-		if (!containerRef.current) return;
+		const container = containerRef.current;
+		if (!container) return;
 
-		// Update indicator position and width
+		// Update the CSS variables for the background indicator
 		const updateIndicator = () => {
-			const activeBtn = containerRef.current?.querySelector<HTMLElement>('.idea-lang__btn.active');
+			const activeBtn = container.querySelector<HTMLElement>('.idea-lang__btn.active');
 
-			if (activeBtn && containerRef.current) {
-				containerRef.current.style.setProperty('--indicator-left', `${activeBtn.offsetLeft}px`);
-				containerRef.current.style.setProperty('--indicator-width', `${activeBtn.offsetWidth}px`);
+			if (activeBtn) {
+				container.style.setProperty('--indicator-left', `${activeBtn.offsetLeft}px`);
+				container.style.setProperty('--indicator-width', `${activeBtn.offsetWidth}px`);
 			}
 		};
 
-		// Initial update
-		requestAnimationFrame(updateIndicator);
+		// Initial calculation after render
+		updateIndicator();
 
-		// Observe container changes
+		// Observe size changes of the container or buttons
 		const resizeObserver = new ResizeObserver(updateIndicator);
-		resizeObserver.observe(containerRef.current);
+		resizeObserver.observe(container);
 
-		// Fallback: update on window resize
+		// Handle window resize as a secondary fallback
 		window.addEventListener('resize', updateIndicator);
 
 		return () => {
 			resizeObserver.disconnect();
 			window.removeEventListener('resize', updateIndicator);
 		};
-	}, [currentLang]);
+	}, [currentLang, availableLangs]);
 
 	return (
 		<div className='idea-lang' ref={containerRef}>

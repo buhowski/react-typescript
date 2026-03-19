@@ -1,5 +1,6 @@
 // Define specific language codes
-export const LANGUAGES = ['en', 'ua', 'ru'] as const;
+// Lang Direction [0,1,2]
+export const LANGUAGES = ['ua', 'en', 'ru'] as const;
 export type LanguageCode = (typeof LANGUAGES)[number];
 
 // Map frontend codes to correct HTML lang
@@ -137,4 +138,6 @@ export interface TocProps {
 	activeHeadingId: string | null;
 	headings: HeadingInfo[];
 	isLoadingContent: boolean;
+	changeLanguage: (lang: LanguageCode) => void;
+	currentLang: LanguageCode;
 }

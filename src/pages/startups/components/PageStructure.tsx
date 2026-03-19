@@ -221,6 +221,8 @@ const PageStructure: React.FC<SinglePageProps> = ({ pageData, backButton, initia
 							onSelectIndex={handleTableOfContentSelect}
 							headings={sortedHeadings}
 							isLoadingContent={isContentLoading}
+							changeLanguage={changeLanguage}
+							currentLang={currentLang}
 						/>
 
 						<div className='desktop-slider'>

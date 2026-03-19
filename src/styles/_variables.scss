@@ -36,7 +36,7 @@ $link-hover: #d99f4e;
 @mixin hover-text-link {
 	color: $link-hover;
 	border-color: currentColor;
-	background-color: rgba(#000000, 0.8);
+	background-color: rgba(#000000, 1);
 }
 
 @mixin social_hover {

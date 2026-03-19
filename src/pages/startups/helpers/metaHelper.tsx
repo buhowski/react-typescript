@@ -46,7 +46,7 @@ export const generateHreflangUrls = (path: string): SeoLangsUrls => {
 		(langCode) => ({
 			hreflang: htmlLangMap[langCode],
 			href: buildUrl(`${LANGUAGES_MAP[langCode]}${path}`),
-		})
+		}),
 	);
 
 	langAlternates.push({
