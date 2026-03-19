@@ -30,7 +30,7 @@ A flashback takes us to the bachelorette party: the women and their local friend
 
 They find out the men have disappeared and start their own comedic-detective investigation, turning their nocturnal drive through villages and fields into a drunken quest. All clues lead them to some sort of Gypsy-drug camp on the triple border of Ukraine, Poland, and Belarus, where even border guards are involved.
 
-The women develop a [Charlie's Angels (IMDB)](https://www.imdb.com/title/tt0160127/) style rescue plan and burst into the camp. Of course, everything goes wrong, turning into pure improvisation and chaos. In the commotion, they find and free the guys. Thanks to the "perfect" plan, everything accidentally catches fire, causing a domino effect. The characters escape like in a classic action movie, with flashes and explosions behind them, all covered in mud, beaten up, but alive — at least physically.
+The women develop a "Charlie's Angels" style rescue plan and burst into the camp. Of course, everything goes wrong, turning into pure improvisation and chaos. In the commotion, they find and free the guys. Thanks to the "perfect" plan, everything accidentally catches fire, causing a domino effect. The characters escape like in a classic action movie, with flashes and explosions behind them, all covered in mud, beaten up, but alive — at least physically.
 
 Barely fitting into the car, the characters, completely mind-fucked by what happened, drive to the wedding in silence. Some Polish-Belarusian music plays on the radio, enhancing the atmosphere of booze and a beautiful sunrise on the road. They stop at a gas station, where, hungry, they greedily eat to the same strange music, nodding their heads, processing all the exciting events.
 
@@ -49,7 +49,7 @@ Then, scenes are shown of how the guys got into this drug predicament, similar t
 ### Characters
 
 - [It's Always Sunny in Philadelphia (IMDB)](https://www.imdb.com/title/tt0472954/) — Peak impulsivity: characters who first create chaos and then try to survive it
-- [Game Night (IMDB)](https://www.imdb.com/title/tt2704998/) — Sarah's archetype — rational contrast: sarcastic sanity in the middle of total madness
+- [Game Night (IMDB)](https://www.imdb.com/title/tt2704998/) — Sarah's archetype — Rational contrast: sarcastic sanity in the middle of total madness
 
 ## Status
 

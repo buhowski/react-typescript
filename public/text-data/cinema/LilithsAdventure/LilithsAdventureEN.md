@@ -30,7 +30,7 @@ The Supreme Architect is an artist and a creative soul, a master of manipulation
 
 His artifact is the key to multiversal synchronicity, allowing him to influence reality everywhere and simultaneously. To him, worlds are like vast canvases where he paints, alters, or erases whatever displeases him. His colossal ego and penchant for eccentric antics threaten to break reality. He signs his creations: "Even gods get bored sometimes”.
 
-His image combines the aesthetics of the Artist from the game [Clair Obscur: Expedition 33 (STEAM)](https://store.steampowered.com/app/1903340/Clair_Obscur_Expedition_33/) whose paintings transform into traps and labyrinths of worlds, and the concept of the architect-narrator from the animated series [Rick and Morty, S4E6 (IMDB)](https://www.imdb.com/title/tt10655686/) who constructs the plots of the universe.
+His image blends the aesthetic of the Paintress from "Clair Obscur: Expedition 33", whose paintings transform into traps and world-labyrinths, with the concept of the architect-storyteller from the "Never Ricking Morty" episode, who constructs the universe's narratives.
 
 However, the most dangerous threat comes from the mysterious Collector, who seeks to gather all the artifacts into one. Those who dare to resist, or simply become an interesting exhibit for his collection, are turned into a terrifying display of living toys, imprisoned within the transparent walls of a giant Terrarium of Worlds.
 
@@ -80,8 +80,9 @@ The plot transforms into a continuous chase, full of new challenges. The heroes 
 ## References
 
 - Rick and Morty, S7E5 (scene from the slider) — The drama of a traveler in eternal search, exploring different dimensions
+- [Rick and Morty, S4E6 (IMDb)](https://www.imdb.com/title/tt10655686/) — The architect-storyteller concept
+- [Clair Obscur: Expedition 33 (STEAM)](https://store.steampowered.com/app/1903340/Clair_Obscur_Expedition_33/) — The Paintress aesthetic, along with antagonist motives and intrigues
 - [Alice in Wonderland (IMDB)](https://www.imdb.com/title/tt1014759/) — Surreal, absurd worlds and curiosity that leads to a captivating journey
-- [Clair Obscur: Expedition 33 (STEAM)](https://store.steampowered.com/app/1903340/Clair_Obscur_Expedition_33/) — The motives and intrigues of the antagonists
 - [Solar Opposites, S4: The Wall (YT)](https://www.youtube.com/watch?v=K0a85gwgQ8A) — The concept of the Collector antagonist and the Terrarium of Worlds
 - [Fallout (IMDB)](https://www.imdb.com/title/tt12637874/) — Atmosphere and the search for truth
 - [Nier: Automata (STEAM)](https://store.steampowered.com/app/524220/NieRAutomata/) — An animation style featuring local noir design and detailing, combined with the energy and humor of "Rick and Morty"

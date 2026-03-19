@@ -16,7 +16,7 @@ Biblical archetypes in the underground of Shakespearean futurism: the heirs of r
 
 ## Concept
 
-This is an epic mix of rap-rock opera and Shakespearean poetry. Just as the film [Romeo + Juliet (IMDB)](https://www.imdb.com/title/tt0117509/) updated the classic tragedy, this project transports biblical images into a modern urban world with the author's own twists. God is a lonely young girl, and the Devil is a charismatic guy who hides a deep spiritual loneliness.
+This is an epic mix of rap-rock opera and Shakespearean poetry. Just as the film "Romeo + Juliet" updated the classic tragedy, this project transports biblical images into a modern urban world with the author's own twists. God is a lonely young girl, and the Devil is a charismatic guy who hides a deep spiritual loneliness.
 
 They are not yet aware of each other's existence, but a twist of fate brings them together at a family masquerade ball, hosted for the young Goddess's birthday. The Devil's friends will sneak in without an invitation, and their first meeting will take place by the elevator, immediately sparking love at first sight.
 
