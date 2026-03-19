@@ -122,9 +122,9 @@ At the launch, posting will be limited to partners — to establish a high-quali
 
 ## Existing Projects
 
-The implementation of the magazine and its strategy are treated as separate projects. More details here: [MVP: Another Dimension](/mvp)
+The magazine and its development strategy are separate, independent projects. More details: [MVP: Another Dimension](/mvp)
 
-Key industry products are presented in separate scenarios. Presentations can be viewed here: [Cinematic Concepts](/cinema) [Game Dev Concepts](/games)
+Key industry products — in comprehensive concept presentations: [Cinematic Concepts](/cinema) [Game Dev Concepts](/games)
 
 [Self-presentation projects](/self-presentation) — pilot projects for the first stage of exploring possibilities. Through feedback, they validate the stated intentions and open the path to launching key ideas and building the magazine. And lay the groundwork for attracting investment for at least the next 5 years.
 

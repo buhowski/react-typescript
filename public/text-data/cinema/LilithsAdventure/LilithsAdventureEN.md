@@ -16,7 +16,7 @@ Her very first journey turned into a trap: due to carelessness, she permanently 
 
 The key to Lilith's return to her home world is an artifact being toyed with by the one who calls himself the Supreme Architect. His game is merely part of a much larger conflict, as numerous artifacts, imbued with unique power, are scattered throughout the multiverse.
 
-## Plot
+## Synopsis
 
 The story begins with the heroine wandering through wondrous worlds. Her past is shrouded in mystery, and her present is a constant series of adventures, escapes from trouble, and skillful verbal manipulations that help her extract any information.
 
@@ -79,7 +79,6 @@ The plot transforms into a continuous chase, full of new challenges. The heroes 
 
 ## References
 
-- Rick and Morty, S7E5 (scene from the slider) — The drama of a traveler in eternal search, exploring different dimensions
 - [Rick and Morty, S4E6 (IMDb)](https://www.imdb.com/title/tt10655686/) — The architect-storyteller concept
 - [Clair Obscur: Expedition 33 (STEAM)](https://store.steampowered.com/app/1903340/Clair_Obscur_Expedition_33/) — The Paintress aesthetic, along with antagonist motives and intrigues
 - [Alice in Wonderland (IMDB)](https://www.imdb.com/title/tt1014759/) — Surreal, absurd worlds and curiosity that leads to a captivating journey

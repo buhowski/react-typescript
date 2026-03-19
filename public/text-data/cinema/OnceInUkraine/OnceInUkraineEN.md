@@ -20,7 +20,7 @@ We are awaited by scenes that show everyday life: from school lessons that bring
 
 Thus, step by step, a single picture is formed — an environment familiar to everyone. The scenes intertwine, sometimes causing laughter, sometimes cutting to the quick, highlighting poignant issues to lead the viewer to the finale.
 
-## Plot
+## Synopsis
 
 As evening falls, an air raid siren sounds. In the apartments, their own micro-world exists: family arguments drown out the sirens, someone, ignoring the danger, turns on their favorite TV show, while someone else frantically gathers their belongings for the bomb shelter. Different reactions, different fates that intersect in one moment.
 

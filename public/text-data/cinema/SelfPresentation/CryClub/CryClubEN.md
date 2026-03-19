@@ -20,7 +20,7 @@ The arena for this chaos is a dilapidated basement ring, soaked with sweat, tear
 
 Spectators come not for blood, but for emotions that amaze, drive them crazy, cause panic attacks or uncontrollable laughter that can give you abs — because it's a sports show, after all.
 
-## Plot
+## Synopsis
 
 The plot starts with classic wrestling elements: introductions, threats, and verbal sparring. The concept is built on a transition from the setup to a chaotic finale.
 
