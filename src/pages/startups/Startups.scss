@@ -2,13 +2,13 @@
 @import '../../styles/animation';
 @import './components/TableOfContent.scss';
 
-@mixin titleFont {
-	font-family: $Raleway;
+@mixin title-style {
+	font-family: $font-raleway;
 	font-weight: 600;
-	letter-spacing: 0.4px;
+	letter-spacing: 0.6px;
 	line-height: 1.32;
 
-	@include tablet {
+	@include tabletBig {
 		letter-spacing: 1px;
 	}
 }
@@ -493,11 +493,15 @@ $nav-top: 2px;
 		}
 	}
 
+	h1,
+	h2,
+	h3 {
+		@include title-style;
+	}
+
 	h1 {
-		@include titleFont;
 		color: $h1-color;
 		font-size: 44px;
-		text-align: center;
 		margin: 0 auto 45px;
 
 		@include tablet {
@@ -511,22 +515,20 @@ $nav-top: 2px;
 	}
 
 	h2 {
-		@include titleFont;
 		color: $h2-color;
-		font-size: 30px;
-		margin-bottom: 25px;
-		margin-top: 50px;
+		font-size: 29px;
+		margin-bottom: 20px;
+		margin-top: 55px;
 
 		@include tablet {
+			margin-top: 50px;
 			font-size: 26px;
-			margin-bottom: 20px;
 		}
 	}
 
 	h3 {
-		@include titleFont;
 		color: $h3-color;
-		margin-bottom: 25px;
+		margin-bottom: 20px;
 		margin-top: 45px;
 		font-size: 24px;
 
@@ -544,11 +546,10 @@ $nav-top: 2px;
 	h4 {
 		font-family: $LouisGeorgeCafBold;
 		margin-bottom: 0;
-		font-size: 16px;
+		font-size: 15px;
 		line-height: 1.2;
 		margin-bottom: 8px;
 		color: $h4-sub-color;
-		text-align: center;
 		letter-spacing: 0.8px;
 
 		@include tablet {
@@ -752,35 +753,62 @@ $nav-top: 2px;
 
 .idea-block__action {
 	display: flex;
-	justify-content: flex-end;
 	margin-top: 52px;
+	justify-content: flex-end;
 
 	@include tabletBig {
 		margin-top: 46px;
-		justify-content: center;
+		justify-content: flex-start;
 	}
 }
 
 @mixin idea-block__more_hover {
-	text-shadow: 0 0 0.8px $link-hover;
-	color: $link-hover;
+	background: rgba(#000000, 0.2);
+
+	&::before,
+	&::after {
+		width: 100%;
+		height: 100%;
+	}
 }
 
 .idea-block__more {
-	@include navLink;
+	position: relative;
+	white-space: nowrap;
+	font-family: $LouisGeorgeCafBold;
+	letter-spacing: 3px;
 	text-transform: uppercase;
-	padding: 16px 60px 14.5px 63px;
-	border-radius: 10px;
-	transition:
-		box-shadow 0.25s,
-		text-shadow 0.25s,
-		color 0.25s;
-	will-change: box-shadow;
-	box-shadow: 0 0 4px rgba(#000000, 1);
-	background-color: #000000;
+	text-align: center;
+	padding: 14px 52px;
+	padding-left: 55px;
+	color: $h1-color;
+	text-shadow: 0 0 0.5px currentColor;
+	border: 1px solid rgba($h1-color, 0.45);
+	transition: background 0.25s;
+
+	&::before,
+	&::after {
+		content: '';
+		position: absolute;
+		width: 12px;
+		height: 12px;
+		transition:
+			width 0.3s,
+			height 0.3s;
+	}
+
+	&::before {
+		top: -1px;
+		left: -1px;
+		border-top: 1px solid $h1-color;
+		border-left: 1px solid $h1-color;
+	}
 
 	&::after {
-		display: none;
+		bottom: -1px;
+		right: -1px;
+		border-bottom: 1px solid $h1-color;
+		border-right: 1px solid $h1-color;
 	}
 
 	@media (hover: hover) and (pointer: fine) {
@@ -1057,7 +1085,7 @@ $nav-top: 2px;
 }
 
 .slides-number {
-	@include titleFont;
+	@include title-style;
 	font-weight: 500;
 	color: rgba($text-color, 0.6);
 	margin: 0 10px;

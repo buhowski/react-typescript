@@ -5,7 +5,7 @@ $cs: 'Coming Soon', cursive;
 $LouisGeorgeCaf: 'Louis George Caf', 'Raleway', sans-serif;
 $LouisGeorgeCafBold: 'Louis George Caf Bold', 'Raleway', sans-serif;
 $font-primary: 'BlinkMacSystemFont', sans-serif;
-$Raleway: 'Raleway', sans-serif;
+$font-raleway: 'Raleway', sans-serif;
 
 // $colors: #9400ff #37ff8b;
 $darken: #202020;
@@ -16,7 +16,6 @@ $red: #af0303;
 $starYellow: #dfb842;
 
 // Text Data
-$header-ltr-spc: 3px;
 $p-margin: 20px;
 $bold-weight: 600;
 
@@ -26,8 +25,8 @@ $nav-btn-color: #f4f4f4;
 
 $h4-sub-color: #858f8f;
 $h1-color: #f6b96f;
-$h2-color: #82b4e2;
-$h3-color: #e8b2a3;
+$h2-color: #82aad0;
+$h3-color: #dab1ab;
 $text-color: #d4d4d4;
 $bold-color: #e2e2e2;
 
@@ -163,13 +162,13 @@ $bg-active-lang: #4e3e6f;
 // Nav Link
 @mixin navLink {
 	position: relative;
-	z-index: 1;
 	white-space: nowrap;
 	font-family: $LouisGeorgeCafBold;
 	padding: 13px 16px 13px 20px;
 	text-align: center;
-	letter-spacing: $header-ltr-spc;
+	letter-spacing: 3px;
 	overflow: hidden;
+	z-index: 1;
 
 	&:after {
 		content: '';

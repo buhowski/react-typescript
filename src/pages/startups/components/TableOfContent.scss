@@ -203,9 +203,8 @@ $toc-hover-color: #fff;
 
 		button {
 			display: block;
-			width: 100%;
-			font-family: $Raleway;
 			text-align: left;
+			width: 100%;
 			position: relative;
 
 			@media (hover: hover) and (pointer: fine) {
@@ -219,14 +218,13 @@ $toc-hover-color: #fff;
 			}
 
 			mark {
-				text-overflow: ellipsis;
-				overflow: hidden;
+				font-family: $font-raleway;
+				font-weight: 600;
+				letter-spacing: 0.5px;
+				line-height: 1.12;
 				position: relative;
 				padding: 5px 42px;
 				padding-right: 25px;
-				font-weight: bold;
-				letter-spacing: 0.36px;
-				line-height: 1.12;
 				color: $text-color;
 
 				@include tabletBig {
@@ -263,7 +261,7 @@ $toc-hover-color: #fff;
 				}
 
 				.h1-toc-item {
-					color: darken($h1-color, 20%);
+					color: darken($h1-color, 14%);
 
 					span {
 						transform: translateX(-20px);
@@ -275,7 +273,7 @@ $toc-hover-color: #fff;
 				}
 
 				.h2-toc-item {
-					color: darken($h2-color, 20%);
+					color: darken($h2-color, 14%);
 
 					span {
 						transform: translateX(-30px);
@@ -287,7 +285,7 @@ $toc-hover-color: #fff;
 				}
 
 				.h3-toc-item {
-					color: darken($h3-color, 20%);
+					color: darken($h3-color, 14%);
 
 					span {
 						transform: translateX(-43px);
