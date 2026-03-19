@@ -763,7 +763,7 @@ $nav-top: 2px;
 }
 
 @mixin idea-block__more_hover {
-	background: rgba(#000000, 0.2);
+	background: rgba(#000000, 0.25);
 
 	&::before,
 	&::after {
@@ -779,11 +779,11 @@ $nav-top: 2px;
 	letter-spacing: 3px;
 	text-transform: uppercase;
 	text-align: center;
-	padding: 14px 52px;
-	padding-left: 55px;
+	padding: 15px 55px;
+	padding-left: 58px;
 	color: $h1-color;
-	text-shadow: 0 0 0.5px currentColor;
-	border: 1px solid rgba($h1-color, 0.45);
+	text-shadow: 0 0 0.6px currentColor;
+	border: 1px solid rgba($h1-color, 0.4);
 	transition: background 0.25s;
 
 	&::before,
@@ -834,12 +834,7 @@ $nav-top: 2px;
 	+ .pitch-container {
 		margin-top: 60px;
 		padding-top: 60px;
-		border-top: 1px solid rgba($h4-sub-color, 0.26);
-
-		@include tabletBig {
-			margin-top: 50px;
-			padding-top: 50px;
-		}
+		border-top: 1px solid rgba($h4-sub-color, 0.25);
 	}
 }
 

@@ -12,7 +12,9 @@ A territory of emotional violence, where psychological trauma replaces punches, 
 
 The only allowed strike is a treacherous verbal betrayal; the ultimate knockout is a dramatic revelation that drives the audience into hysterics.
 
-A satirical reality show in a wrestling ring — a mix of dark comedy, soap opera, social experiment, and rap battle. It mercilessly mocks wrestling, the theatricality of talk shows, the excessive seriousness of TV hosts and experts, and the emotional dependency of the viewers. Inspired by the [South Park S13E10 (IMDB)](https://www.imdb.com/title/tt1532990/) (example in the slider).
+A satirical reality show in a wrestling ring — a mix of dark comedy, soap opera, social experiment, and rap battle. It mercilessly mocks wrestling, the theatricality of talk shows, the excessive seriousness of TV hosts and experts, and the emotional dependency of the viewers.
+
+[South Park S13E10 "W.T.F." (IMDB)](https://www.imdb.com/title/tt1532990/) — A perfect embodiment of how low-brow drama and fabricated suffering turn a simple fight into epic idiocy.
 
 The arena for this chaos is a dilapidated basement ring, soaked with sweat, tears, and shattered hopes. There are no rules here, because this wrestling is a battle of drama giants, where instead of punches, there are emotional traumas inflicted by shocking revelations and family scandals that tear sanity to shreds.
 
