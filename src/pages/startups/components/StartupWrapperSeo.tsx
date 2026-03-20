@@ -15,6 +15,7 @@ const StartupWrapperSeo: React.FC<StartupWrapperSeoProps> = ({ path: fixedPath, 
 	const [langVersion, setLangVersion] = useState(0);
 	const allowedLangs: LanguageCode[] = [...LANGUAGES];
 	const { lang } = useParams<{ lang?: string }>();
+
 	const urlLang =
 		lang && allowedLangs.includes(lang as LanguageCode) ? (lang as LanguageCode) : undefined;
 
@@ -25,31 +26,39 @@ const StartupWrapperSeo: React.FC<StartupWrapperSeoProps> = ({ path: fixedPath, 
 	const rawPath = fixedPath ?? location.pathname;
 	const basePath = normalizePath(rawPath);
 
+	// Check if current path exists in the map
+	const isExistingPage = !!startupsMap[basePath];
+
+	// Strict check: vision path?
+	const isStrictlyAtVision = basePath === pathToVision;
+
+	// Fallback to Vision
+	const PageComponent = startupsMap[basePath] || startupsMap[pathToVision];
+
 	// SEO URLs
 	const metaURL = generateHreflangUrls(basePath);
 	const resolvedCanonicalUrl = buildUrl(`/${currentLang}${basePath}`);
 
-	// for canonical without lang URLs
-	// const hasLangPrefix = langPrefixRegex.test(rawPath);
-	// const canonicalWithLangOrClean = hasLangPrefix
-	// 	? buildUrl(`/${currentLang}${basePath}`)
-	// 	: metaURL.canonicalUrl;
+	// Hard redirect to clean URL
+	useLayoutEffect(() => {
+		if (!isExistingPage && !isStrictlyAtVision) {
+			window.location.replace(pathToVision);
+		}
+	}, [isExistingPage, isStrictlyAtVision]);
 
-	// Page Component
-	const PageComponent = startupsMap[basePath] || startupsMap[pathToVision];
-
+	// Language sync
 	useLayoutEffect(() => {
 		const handleLanguageChange = (_event: Event) => {
 			setLangVersion((prev) => prev + 1);
 		};
 
 		window.addEventListener('languageChange', handleLanguageChange);
-
 		return () => {
 			window.removeEventListener('languageChange', handleLanguageChange);
 		};
 	}, []);
 
+	// Update Metadata
 	useLayoutEffect(() => {
 		document.documentElement.lang = htmlLangMap[currentLang];
 		localStorage.setItem('currentLang', currentLang);
