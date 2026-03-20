@@ -78,7 +78,11 @@ $toc-hover-color: #fff;
 
 		&:active {
 			@include toc-burger_hover;
-			transform: scale(0.9);
+			transform: scale(0.96);
+
+			@include tabletBig {
+				transform: scale(0.8);
+			}
 		}
 
 		> h3 {
