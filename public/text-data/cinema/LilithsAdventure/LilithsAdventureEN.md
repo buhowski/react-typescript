@@ -10,19 +10,25 @@ A sarcastic adventurer is lost in the multiverse with a magical journal, where t
 
 ## Concept
 
-This animated comedy series tells the story of a sarcastic, sharp-tongued adventurer. Her travels through endless worlds became possible thanks to a unique artifact — a traveler's journal.
+Lilith is an adventurer drifting through the multiverse with a magic diary. The artifact creates one-way portals: every journey is a one-way ticket with no possibility of returning to the same point of space-time.
 
-Her very first journey turned into a trap: due to carelessness, she permanently lost access to her home dimension. Now, lost in the unknown, the heroine tries to unravel the journal's secrets to find her way home. However, her impulsiveness and adventurous nature constantly lead her into new, even more dangerous escapades.
+Due to her own impulsivity, the protagonist burned her path back to her home dimension and now hops between worlds, looking for a way to hack the diary’s mechanics and roll everything back.
 
-The key to Lilith's return to her home world is an artifact being toyed with by the one who calls himself the Supreme Architect. His game is merely part of a much larger conflict, as numerous artifacts, imbued with unique power, are scattered throughout the multiverse.
+Survival in aggressive realities depends on her ability to talk her way out of anything and her natural cunningness. Lilith masterfully manipulates the locals, extracts the necessary information, and vanishes just before the situation starts to fall apart.
+
+Her morality is flexible: she might rob a despot to fund her next jump or save a village from extinction simply because she liked the local booze.
+
+This is egoism with good intentions — she helps others only when it doesn’t interfere with her main goal or when she gets bored and her own conscience screams too loud. She consciously dives into shit for the sake of entertainment, just to avoid losing her mind from loneliness and the infinity of the road.
 
 ## Synopsis
 
-The story begins with the heroine wandering through wondrous worlds. Her past is shrouded in mystery, and her present is a constant series of adventures, escapes from trouble, and skillful verbal manipulations that help her extract any information.
+The story starts with yet another journey: the viewer knows neither the protagonist's past nor the diary's origin. Each new adventure becomes a step toward the truth of who she really is and what power the artifact hides.
 
-Later, her travels gain a new purpose when she notices strange distortions in time and space — barely perceptible anomalies that indicate someone's interference. Intrigued but wary, she turns her adventures into a genuine investigation.
+Chaotic survival gains meaning when Lilith notices spatial anomalies — traces of outside interference that erase the environment, warp reality, or instantly annihilate all living things. These distortions turn her wanderings into a focused, dangerous investigation.
 
-With each new adventure, details of her past will gradually be revealed: the circumstances under which she found the journal, how she fell into the trap, and what actually happened to her home world and loved ones.
+The artifact causing this chaos is held by one who calls himself the Grand Architect. While Lilith plays detective, investigating anomalies and trying to survive, he is simply fucking around with his own toy, not even suspecting the girl's existence.
+
+Their paths cross when it turns out that the object the Architect is playing with is the key capable of returning Lilith to her home dimension. But this game is just the tip of the iceberg. Scattered throughout the multiverse are other unique artifacts hunted by creatures far more dangerous than an egocentric tyrant.
 
 ## Antagonists
 
