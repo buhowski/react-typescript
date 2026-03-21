@@ -2,4 +2,4 @@
 
 # Wooden Fiction
 
-Folk tale heroes in an uncompromising deconstruction of Soviet myths: criminal showdowns, aggressive absurdity, and a non-linear story where the fairy tale turns out to be a mirror of reality.
+Folk tale heroes in an uncompromising trepanation of Soviet myths: crime wars, aggressive absurdity, and a non-linear labyrinth of events where the fairy tale becomes a mirror of reality.

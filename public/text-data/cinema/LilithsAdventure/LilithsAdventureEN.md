@@ -4,7 +4,7 @@
 
 ## Logline
 
-A sarcastic adventurer is lost in the multiverse with a magical journal, where the only path home leads through a master manipulator artist whose boredom threatens to shatter reality faster than she can find her way back.
+A sarcastic adventurer with a magic journal is trapped in a multiverse loop, where her ticket home is held by a manipulative artist. His existential boredom threatens to erase reality faster than she can find a way out of his game.
 
 [mobile-slider]
 
@@ -97,4 +97,4 @@ The plot transforms into a continuous chase, full of new challenges. The heroes 
 
 *Under Construction …*
 
-Seeking resources and people to bring these ideas to life. If you know where such an initiative could be supported or want to team up — let’s talk!
+Seeking resources and people to bring this to life. If you know where such ideas could find support or want to team up — let's talk!

@@ -4,17 +4,25 @@
 
 ## Logline
 
-An epic of collective survival within the absurdity of Ukrainian Europe: a tightrope walk between optimism, zero-fucks-given attitude, and uncontrollable hysteria. Black humor, selfish friendships, and fatal consequences — the only way to stay sane.
+An epic of survival in the absurdity of Ukrainian Europe: balancing on a thin line between optimism, indifference, and the uncontrolled hysteria of egocentric sociopaths. Black humor directed at the system and fatal consequences for those around them — as the only way to keep from losing one's mind.
 
 ## Concept
 
 This is a chronicle of collective madness, where radical self-irony and mocking the system are the only safeguards against going full-blown mental. At its core is a union of amoral egoists: they betray and abandon everyone around them, yet they stick together because existential chaos is easier to digest in company.
+
+Together they form a perfect ecosystem, where each subsequent act is more immoral than the last. This is intellectual hooliganism in its purest form, where the characters do not evolve but only sink deeper into their personal hell-dimension.
 
 An ironic manifesto on Ukraine's path toward European integration, which in reality brings nothing but refined idiocy, fascist bureaucracy, and a head-on collision with absurd cultural stereotypes.
 
 The story begins with a fatal coincidence, where the air is thick only with the heavy dregs of yesterday’s binge and a general disappointment in tomorrow. The plot inevitably binds the characters through pain, screams, and the faint stench of stale booze — because that is the only way true love is born.
 
 The project’s visual rhythm is a series of awkward, absurd, and frankly comic moments that inevitably end in panic, screams, and the total collapse of reality. The delivery style and the characters' temperaments grow out of Ukrainian realities and the euro-soviet context. The key here is a sense of authenticity: the characters exist in a state of terminal sincerity, turning themselves or those kindred in spirit inside out.
+
+Each episode is a new venture: to hack the system or figure out a way to entertain themselves:
+
+- Securing a cultural development grant and blowing it all on a party for the homeless to buy their votes
+- Selling the idea of a ticket queue to Austrians as a new form of immersive theater
+- Trips to other countries for assimilation: trying to convince the police that moonshining in the center of Berlin is part of a traditional purification ritual
 
 ## Themes
 
@@ -26,46 +34,48 @@ The project’s visual rhythm is a series of awkward, absurd, and frankly comic 
 
 ## Characters
 
-Improvisation and Tarantino-esque dialogues are the foundation of every personality.
+Improvisation and Tarantino-esque dialogues are the foundation of each character. They lack empathy and a moral compass, yet possess a specific etiquette of self-respect. They are a pure concentrate of the worst human traits, pushed to the point of absurdity. The main dissonance: they look and behave more nobly than the surrounding crowd.
 
 ### Male Character 01
 
-- Alcohol is a constant: a travel mug or a chalice with handcrafted cocktails is always at hand
-- Keeps the situation under control — even when he shouldn't
-- Kind, stylish, positive, with a well-placed use of profanity
-- Master of bro-quotes quotes and dumb toasts (sarcasm and self-irony)
-- Favorite drink — port wine
+- Alcohol is a constant: a thermal mug, a goblet, or a glass with a custom cocktail always in hand
+- Favorite drink: port wine
+- Keeps the situation under control even when everything is going to hell
+- Motto: we will build our own Europe here, with blackjack and hookers
 
 ### Male Character 02
 
-- Marijuana, sci-fi, and psychology — his triangle of stability
-- Regularly zones out of reality, vividly imagining how events might unfold (example: the last video in the slider)
+- Marijuana, science fiction, and psychology: his triangle of stability
+- Stoned intellectual with a god complex
+- Conspiracy theories that defy the laws of physics or logic
+- Regularly drops out of reality due to hypertrophied views of the world (example: the last video in the slider)
 
 ### Male Character 03
 
-- Healthy lifestyle with no bad habits — though he realizes there's no such thing as a healthy lifestyle, only common sense
-- An athlete, non-stereotypical, treats everything without judgment
+- Non-stereotypical athlete and adept of common sense (because a healthy lifestyle does not exist)
+- A walking manual on abuse
 - Strong character and iron self-control
-- A gambler
+- Reckless gambler
 
 ### Female Character 01
 
-- Energetic, optimistically emotional, creative; art is her natural habitat
-- Sharp tongue and dark humor — often inappropriate
-- From marginality to an aesthete — one step
+- Energy, creativity, and feigned optimistic emotionality
+- Sharp tongue and a suicidal level of indifference
+- Art as a habitat: from marginality to aesthete in a single second
 
 ### Female Character 02
 
-- Calm, rational, a strategist with a diplomatic mindset
-- Finds common ground with people, even though she generally hates them
-- Riding a skateboard in a business suit and heels — that's her norm
+- Calm strategist with a diplomatic mindset
+- Riding a skateboard in a business suit and heels is the norm
+- Finds common ground with people, although she generally hates them
+- Indifference to the feelings of others
 
-### Wildcard Character (age 55+)
+### Wildcard Character (55+ years)
 
-- Cunning, cynical, a sarcastic orator with a sharp mind
-- Rich experience and a feeling that he’s way too old for this shit
-- A lone wolf, but works with the team when necessary
-- Freedom and independence are the only values
+- Sly, cynical orator, too old for this shit
+- A chaotic creature that consciously chose degradation
+- Lives outside the system, feeds on whatever he catches (rats, dogs, other wildlife)
+- Lone wolf for whom freedom is the only value
 
 [mobile-slider]
 
@@ -80,4 +90,4 @@ Improvisation and Tarantino-esque dialogues are the foundation of every personal
 
 *Under Construction …*
 
-Seeking resources and people to bring these ideas to life. If you know where such an initiative could be supported or want to team up — let’s talk!
+Seeking resources and people to bring this to life. If you know where such ideas could find support or want to team up — let's talk!

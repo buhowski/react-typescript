@@ -6,7 +6,7 @@
 
 ## Logline
 
-An unfinished experiment of the Church, a botched oversight by the executioners who left him for dead — he is the fatal glitch in their plan for demonic dominion. To tear down the conspirators, the hero must fight through a hell of shattered memories and master the darkness in his blood before it consumes him.
+He is an unfinished experiment of the Church, a botched mistake of the executioners who survived despite their plan for demonic dominion. To piece himself together from the shards of oblivion, he must endure the hell of shattered memories and tame the darkness in his blood that hungers for control.
 
 ## Concept
 
@@ -84,4 +84,4 @@ No known religion or historical figure participated in the creation of this cons
 
 *Under Construction …*
 
-Seeking resources and people to bring these ideas to life. If you know where such an initiative could be supported or want to team up — let’s talk!
+Seeking resources and people to bring this to life. If you know where such ideas could find support or want to team up — let's talk!

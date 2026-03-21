@@ -50,4 +50,4 @@ From the very beginning, the characters were not meant to be together. This love
 
 *Under Construction …*
 
-Seeking resources and people to bring these ideas to life. If you know where such an initiative could be supported or want to team up — let’s talk!
+Seeking resources and people to bring this to life. If you know where such ideas could find support or want to team up — let's talk!

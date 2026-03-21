@@ -2,4 +2,4 @@
 
 # Part I: Whispers of the Forgotten
 
-An unfinished experiment of the Church, a botched oversight by the executioners who left him for dead — he is the fatal glitch in their plan for demonic dominion. To tear down the conspirators, the hero must fight through a hell of shattered memories and master the darkness in his blood before it consumes him.
+He is an unfinished experiment of the Church, a botched mistake of the executioners who survived despite their plan for demonic dominion. To piece himself together from the shards of oblivion, he must endure the hell of shattered memories and tame the darkness in his blood that hungers for control.

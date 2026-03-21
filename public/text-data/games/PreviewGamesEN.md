@@ -1,5 +1,5 @@
 # Game Dev Concepts
 
-Below are my concepts for ambitious video games and interactive content. These are fully developed worlds with a solid foundation, a unique core, and high scaling potential.
+Below are my concepts for ambitious video games and interactive content. Each comes with a production-ready foundation, a distinct creative vision, a unique core, and scaling potential.
 
-Seeking resources and people to bring these ideas to life. If you know where such an initiative could be supported or want to team up — let’s talk!
+Seeking resources and people to bring this to life. If you know where such ideas could find support or want to team up — let's talk!

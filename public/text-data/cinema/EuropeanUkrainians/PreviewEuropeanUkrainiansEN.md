@@ -2,4 +2,4 @@
 
 # European Ukrainians
 
-An epic of collective survival within the absurdity of Ukrainian Europe: a tightrope walk between optimism, zero-fucks-given attitude, and uncontrollable hysteria. Black humor, selfish friendships, and fatal consequences — the only way to stay sane.
+An epic of survival in the absurdity of Ukrainian Europe: balancing on a thin line between optimism, indifference, and the uncontrolled hysteria of egocentric sociopaths. Black humor directed at the system and fatal consequences for those around them — as the only way to keep from losing one's mind.

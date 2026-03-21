@@ -49,4 +49,4 @@ Then, scenes are shown of how the guys got into this drug predicament, similar t
 
 *Under Construction …*
 
-Seeking resources and people to bring these ideas to life. If you know where such an initiative could be supported or want to team up — let’s talk!
+Seeking resources and people to bring this to life. If you know where such ideas could find support or want to team up — let's talk!

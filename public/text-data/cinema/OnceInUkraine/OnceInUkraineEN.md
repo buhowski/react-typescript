@@ -4,7 +4,7 @@
 
 ## Logline
 
-A mosaic of human destinies behind the windows of a typical neighborhood: joys, monotonous routines, addictions, vices, eternal hopes for the best — and a morning that for many became the last.
+A mosaic of survival in a typical neighborhood: from naive hopes to deep-seated vices. A kaleidoscope of routines, everyday absurdity, and eternal expectations... All in vain — ahead lies only the morning that will be their last.
 
 [mobile-slider]
 
@@ -51,4 +51,4 @@ This film leads to the conclusion: the tragedy is not only in wars, but also in 
 
 *Under Construction …*
 
-Seeking resources and people to bring these ideas to life. If you know where such an initiative could be supported or want to team up — let’s talk!
+Seeking resources and people to bring this to life. If you know where such ideas could find support or want to team up — let's talk!

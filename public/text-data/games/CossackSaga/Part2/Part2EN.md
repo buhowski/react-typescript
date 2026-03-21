@@ -6,7 +6,7 @@
 
 ## Logline
 
-A martyr of the Church dungeons, she was snatched from the fires of execution at the cost of her lover's self-sacrifice. With a shard of his soul in place of her heart, she turns her pain into a devastating force to shatter the chains of a demonic cult — unaware that his life cannot be saved without sacrificing the world itself.
+She is a martyr of the church dungeons, plucked from the flames of execution at the cost of her lover's self-sacrifice. With a fragment of his soul in place of a heart, she turns her own pain into a crushing force to shatter the chains of the Church's demonic cult. But the life of her betrothed cannot be saved without sacrificing the world.
 
 ## Backstory
 
@@ -54,4 +54,4 @@ Along with the fragments of pure energy, a shard of the High Demon escaped into 
 
 *Under Construction …*
 
-Seeking resources and people to bring these ideas to life. If you know where such an initiative could be supported or want to team up — let’s talk!
+Seeking resources and people to bring this to life. If you know where such ideas could find support or want to team up — let's talk!

@@ -21,7 +21,7 @@ Project presentations — in the navigation, and below — the corporate plan.
 
 **Risks:** In the worst-case scenario, we establish a popular magazine with an ad-based model, a donation system, and the development of films and games for sale to other companies. The foundation remains intact, allowing for growth even under critical conditions.
 
-## Problems
+## Challenges
 
 We see a world where the system is created to constantly generate problems — because without them, it simply cannot exist. Bureaucracy intervenes in every part of our lives because it is its direct task. Politics has legalized mass murder, and some states have never understood the core message Orwell wanted to convey.
 
@@ -29,7 +29,7 @@ The truth is that most of the world's population survives on below-average means
 
 And then there are those born "by default," whose desires and goals contradict their circumstances and basic instructions. And that's where things get interesting…
 
-## Solution
+## Solutions
 
 The system is built exactly as it needs to be, which is why it works. And changing or improving it is not my task.
 

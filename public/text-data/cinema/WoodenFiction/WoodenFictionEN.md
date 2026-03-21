@@ -4,7 +4,7 @@
 
 ## Logline
 
-Folk tale heroes in an uncompromising deconstruction of Soviet myths: criminal showdowns, aggressive absurdity, and a non-linear story where the fairy tale turns out to be a mirror of reality.
+Folk tale heroes in an uncompromising trepanation of Soviet myths: crime wars, aggressive absurdity, and a non-linear labyrinth of events where the fairy tale becomes a mirror of reality.
 
 [mobile-slider]
 
@@ -27,4 +27,4 @@ Behind the chaotic plot and dark humor lies a biting satire — how corruption d
 
 *Under Construction …*
 
-Seeking resources and people to bring these ideas to life. If you know where such an initiative could be supported or want to team up — let’s talk!
+Seeking resources and people to bring this to life. If you know where such ideas could find support or want to team up — let's talk!
