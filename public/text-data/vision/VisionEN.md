@@ -65,7 +65,7 @@ To achieve these goals, I have developed a structure where each element reinforc
 
 It all begins with a private digital space — a media platform evolving from an information resource into a global ecosystem.
 
-A hybrid of a magazine and a social network, blending the aesthetics of iconic publications (Rolling Stone, VICE, Esquire) with the functionality of forums (Reddit, 4chan). A full suite of tools for daily interaction: personal profiles, posts, videos, and lives.
+A hybrid of a magazine and a social network, blending the aesthetics of iconic publications (Rolling Stone, VICE, Esquire) with the functionality of forums (Reddit, 4chan). A full suite of tools for daily interaction: personal accounts, posts, videos, and lives.
 
 Over time, a streaming service and a gaming hub will be integrated for the distribution of our own projects.
 
