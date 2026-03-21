@@ -2,9 +2,9 @@
 
 # Self-Presentation Projects
 
-Below are ideas for a quick start based on pure initiative. These projects are for those ready to dive into the unknown for the sake of experience, drive, and an interesting result.
+Below are ideas for a quick start on pure initiative. For those ready to dive into the unknown for the sake of experience and compelling results.
 
-If you are just planning to get into content making or want to try new formats — letʼs make it happen together. You can use all the completed projects on your own channels.
+If you are planning to get into content creation or looking for new formats — let's build them together. All completed projects are yours to use on your own channels.
 
 ### List
 
