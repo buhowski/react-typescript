@@ -14,8 +14,8 @@ Project presentations — in the navigation, and below — the corporate plan.
 
 ## In a Nutshell
 
-- [Magazine](/mvp) — the face of the company. A popular magazine reflects the voice of the majority. A highly popular magazine sets the direction, rather than adapting to restrictions or limitations (strategy in place)
-- [Cinema](/cinema) and [Games](/games) — sources of revenue (scenarios and concepts are ready)
+- Magazine — the face of the company. A popular magazine reflects the voice of the majority. A highly popular magazine sets the direction, rather than adapting to restrictions or limitations. [Strategy Ready](/mvp)
+- Production — sources of revenue: [Cinema](/cinema) [Game Dev](/games)
 - Profits are reinvested into our own IT technologies — even greater profit (ideas exist)
 - Victory!
 
