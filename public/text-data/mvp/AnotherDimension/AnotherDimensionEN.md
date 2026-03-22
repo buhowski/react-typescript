@@ -14,11 +14,11 @@ I see the following structure:
 
 ### Start
 
-At least one media partner is brought in with a vision for expansion. [Projects](/self-presentation) are produced and feedback is analyzed — this process continues until investment for MVP development is secured.
+At least one media partner is brought in with a vision for expansion. [Projects](/pilots) are produced and feedback is analyzed — this process continues until investment for MVP development is secured.
 
 ### Investment & "The Corp .!.” Phase
 
-Once funding is secured, magazine development and [The Corp .!.](/the-corp) series launch begin — this stage of active self-promotion and quality showcase expands the audience and attracts new investment.
+Once funding is secured, magazine development and [The Corp .!.](/corp) series launch begin — this stage of active self-promotion and quality showcase expands the audience and attracts new investment.
 
 ### Scaling
 

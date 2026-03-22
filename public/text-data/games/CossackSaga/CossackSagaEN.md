@@ -12,6 +12,6 @@ This is the eternal struggle for freedom. From the ritual executions of Kievan R
 
 ### List
 
-- [Part I: Whispers of the Forgotten](/cossack-saga-1)
-- [Part II: Ashes of the Beloved](/cossack-saga-2)
-- [Part III: Quantum Leap](/cossack-saga-3)
+- [Part I: Whispers of the Forgotten](/saga-1)
+- [Part II: Ashes of the Beloved](/saga-2)
+- [Part III: Quantum Leap](/saga-3)

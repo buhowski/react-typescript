@@ -23,6 +23,84 @@
   status = 301
   force = true
 
+[[redirects]]
+  from = "/the-corp"
+  to = "/corp"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/european-ukrainians"
+  to = "/ukropeans"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/volyn-wedding"
+  to = "/volyn"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/once-in-ukraine"
+  to = "/once"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/wooden-fiction"
+  to = "/wooden"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/liliths-adventure"
+  to = "/lilith"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/self-presentation"
+  to = "/pilots"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/podcast-show"
+  to = "/podcast"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/god-evening"
+  to = "/god"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/cossack-saga"
+  to = "/saga"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/cossack-saga-1"
+  to = "/saga-1"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/cossack-saga-2"
+  to = "/saga-2"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/cossack-saga-3"
+  to = "/saga-3"
+  status = 301
+  force = true
+
 # Single Page Application (SPA) Routing (200)
 [[redirects]]
   from = "/en/*"

@@ -14,7 +14,7 @@ The lovers lived in seclusion, hiding from the world in dreams of a future toget
 
 While he wandered through the chaos with nothing but ashes for memories, she endured the hell of the Church's secrets. They forced her to partake in horrific human experiments, breaking her will and cauterizing her humanity. She survived this nightmare only to be condemned to a public execution.
 
-In the [first part's](/cossack-saga-1) finale, her beloved finds her at the ritual site — she was the last missing shard of his memory. Sacrificing himself, he tears her from the fire. Now, she is a weapon, forged in the flames of loss.
+In the [first part's](/saga-1) finale, her beloved finds her at the ritual site — she was the last missing shard of his memory. Sacrificing himself, he tears her from the fire. Now, she is a weapon, forged in the flames of loss.
 
 ## Concept
 

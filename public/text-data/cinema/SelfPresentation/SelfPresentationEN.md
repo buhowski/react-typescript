@@ -8,6 +8,6 @@ If you are planning to get into content creation or looking for new formats — 
 
 ### List
 
-- [Dimension Minus Zero](/podcast-show)
-- [An Evening at GOD's](/god-evening)
+- [Dimension Minus Zero](/podcast)
+- [An Evening at GOD's](/god)
 - [Santa Barbara Fight Club](/cry-club)

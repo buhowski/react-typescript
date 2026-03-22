@@ -15,28 +15,28 @@ export const pathToMVP = '/mvp';
 
 // CINEMA
 export const pathToCinema = '/cinema';
-export const pathToEuropeanUkrainians = '/european-ukrainians';
-export const pathToTheCorp = '/the-corp';
+export const pathToEuropeanUkrainians = '/ukropeans';
+export const pathToTheCorp = '/corp';
 
-export const pathToOnceInUkraine = '/once-in-ukraine';
-export const pathToVolynWedding = '/volyn-wedding';
+export const pathToOnceInUkraine = '/once';
+export const pathToVolynWedding = '/volyn';
 export const pathToHeShe = '/he-she';
 
-export const pathToWoodenFiction = '/wooden-fiction';
-export const pathToLilithsAdventure = '/liliths-adventure';
+export const pathToWoodenFiction = '/wooden';
+export const pathToLilithsAdventure = '/lilith';
 
 // Self Presentation
-export const pathToSelfPresentation = '/self-presentation';
-export const pathToPodcastShow = '/podcast-show';
-export const pathToGodEvening = '/god-evening';
+export const pathToSelfPresentation = '/pilots';
+export const pathToPodcastShow = '/podcast';
+export const pathToGodEvening = '/god';
 export const pathToCryClub = '/cry-club';
 
 // Games
 export const pathToGames = '/games';
-export const pathToCossackSaga = '/cossack-saga';
-export const pathToCossackSagaPart1 = '/cossack-saga-1';
-export const pathToCossackSagaPart2 = '/cossack-saga-2';
-export const pathToCossackSagaPart3 = '/cossack-saga-3';
+export const pathToCossackSaga = '/saga';
+export const pathToCossackSagaPart1 = '/saga-1';
+export const pathToCossackSagaPart2 = '/saga-2';
+export const pathToCossackSagaPart3 = '/saga-3';
 
 // Separate Projects presentation URLs
 export const startupsNav = [

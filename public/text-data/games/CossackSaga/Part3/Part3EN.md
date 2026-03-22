@@ -10,7 +10,7 @@ A century after two lovers burned themselves alongside the gods, the world has c
 
 ## Concept
 
-The third chapter opens with a series of dynamic cinematic sequences revisiting the events of [Part I](/cossack-saga-1) and [Part II](/cossack-saga-2)
+The third chapter opens with a series of dynamic cinematic sequences revisiting the events of [Part I](/saga-1) and [Part II](/saga-2)
 
 The frames accelerate, showing the ruins of the ancient world transforming into futuristic cities as tribes evolve into new civilizations. Time, condensing into a single flow, reveals the history of a world where futurism is intertwined with the legacy of ancient cultures.
 

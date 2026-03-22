@@ -126,7 +126,7 @@ The magazine and its development strategy are separate, independent projects. Mo
 
 Key industry products — in comprehensive concept presentations: [Cinematic Concepts](/cinema) [Game Dev Concepts](/games)
 
-[Self-presentation projects](/self-presentation) — pilot projects for the first stage of exploring possibilities. Through feedback, they validate the stated intentions and open the path to launching key ideas and building the magazine. And lay the groundwork for attracting investment for at least the next 5 years.
+[Self-presentation projects](/pilots) — pilot projects for the first stage of exploring possibilities. Through feedback, they validate the stated intentions and open the path to launching key ideas and building the magazine. And lay the groundwork for attracting investment for at least the next 5 years.
 
 Initially, this will help build popularity with the Ukrainian audience, followed by international expansion and presentation on the global market.
 
