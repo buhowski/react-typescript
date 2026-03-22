@@ -16,7 +16,7 @@ The main characters are the groom and the bride, as well as their friends: the b
 
 The best man and the maid of honor haven't met yet, but their personalities are similar: both are shortsighted, impulsive, and hysterical, yet at the same time sweet and kind. This causes them to constantly get into squabbles — both with each other and together against everyone else. Their "plus-ones" are the complete opposite of their partners, and they begin to flirt with each other behind their friends' backs.
 
-## Plot
+## Synopsis
 
 Everything begins in the city, where the characters are bustling about, taking care of last-minute tasks before heading to the Holy Volyn — the wedding location.
 
