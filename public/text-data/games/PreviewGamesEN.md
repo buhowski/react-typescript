@@ -1,5 +1,5 @@
 # Game Dev Concepts
 
-Below are my concepts for ambitious video games and interactive content. Each comes with a production-ready foundation, a distinct creative vision, a unique core, and scaling potential.
+Below are my concepts for ambitious video games and interactive media. Fully-realized worlds with a unique vision, deep lore, and a reimagined history of humanity — all with a solid foundation for production.
 
-Seeking resources and people to bring this to life. If you know where such ideas could find support or want to team up — let's talk!
+Seeking partners and resources. If you’re down to team up or know where these belong — get in touch!

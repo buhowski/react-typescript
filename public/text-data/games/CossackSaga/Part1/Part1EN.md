@@ -84,4 +84,4 @@ No known religion or historical figure participated in the creation of this cons
 
 *Under Construction …*
 
-Seeking resources and people to bring this to life. If you know where such ideas could find support or want to team up — let's talk!
+Seeking partners and resources. If you’re down to team up or know where these belong — get in touch!

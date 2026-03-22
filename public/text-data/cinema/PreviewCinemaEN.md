@@ -1,5 +1,5 @@
 # Cinematic Concepts
 
-Below are my concepts for cinema, series, animation, and other video content. Each features a production-ready foundation, a unique core, a creator's vision, and scaling potential.
+Below are my concepts for film, series, animation, and other video content. With a distinct author's vision and a production-ready foundation, spanning various genres and formats — each with its own identity.
 
-Seeking resources and people to bring this to life. If you know where such ideas could find support or want to team up — let's talk!
+Seeking partners and resources. If you’re down to team up or know where these belong — get in touch!
