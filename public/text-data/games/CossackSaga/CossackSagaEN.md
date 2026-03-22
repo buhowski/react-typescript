@@ -4,7 +4,7 @@
 
 An epic game series spanning from the mystical Kievan Rus’ of the 9th century through the bloody era of the Cossacks to an alternative cyber-futurism. The collapse of religious institutions triggers an unprecedented technological leap.
 
-Through the fates of enigmatic heroes, religious conspiracies, otherworldly cults, and ancient forces that shaped the world in shadows are revealed. Here, the struggle for freedom and love clashes with forbidden truths, and every choice forever rewrites the future of humanity.
+Through the fates of enigmatic heroes, religious conspiracies, otherworldly cults, and ancient forces that shaped the world are revealed. Here, the sovereignty over one's fate and love become a challenge to forbidden truths, where every choice irreversibly alters the course of history.
 
 The world evolves from a magical Middle Ages teeming with otherworldly beasts to tribal scientific futurism. An indestructible cultural heritage faces an eternal evil that never dies — it only changes form.
 
