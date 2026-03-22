@@ -8,7 +8,7 @@ Through the fates of enigmatic heroes, religious conspiracies, otherworldly cult
 
 The world evolves from a magical Middle Ages teeming with otherworldly beasts to tribal scientific futurism. An indestructible cultural heritage faces an eternal evil that never dies — it only changes form.
 
-This is the eternal struggle for freedom. From the ritual executions of Kievan Rus’ to the neon tyranny of the future — when religion becomes a tool of demonic dominion and the blood of cults pulses through the ages, carving out a single truth: war never ends.
+This is the eternal struggle for freedom. From the ritual executions of the Middle Ages to the neon tyranny of the future — when religion becomes a tool of demonic dominion and the blood of cults pulses through the ages, carving out a single truth: war never ends.
 
 ### List
 
