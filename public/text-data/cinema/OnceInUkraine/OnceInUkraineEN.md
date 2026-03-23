@@ -14,13 +14,13 @@ This is a feature-length social drama with a mix of black satire and tragic iron
 
 The film is structured as a mosaic of human destinies. The camera wanders from one home to another, peering into the windows: here's a young family that has just moved in; lonely mothers with different fates; old people living out their age; teenagers rebelling against their parents; students and workers exhausted by the gray routine; local alcoholics and homeless people who are slowly fading away. They are almost strangers, only occasionally crossing paths in the courtyard, in a queue, or in the stairwell.
 
+## Synopsis
+
 A special accent is placed on an apartment in the building across the street, where a young dreamer lives with his girlfriend. He smokes roll-ups, washes down his cigarette with morning alcohol, and loves to listen to music — he tries to escape from reality into his own fantasies.
 
 We are awaited by scenes that show everyday life: from school lessons that bring on boredom, to a difficult, hot workday. Already in the first frames, we see the main character in a supermarket, as well as a brazen "I'm a mother" who cuts into the line, and this small scene immediately returns him to the mundane reality he's so desperately trying to escape.
 
 Thus, step by step, a single picture is formed — an environment familiar to everyone. The scenes intertwine, sometimes causing laughter, sometimes cutting to the quick, highlighting poignant issues to lead the viewer to the finale.
-
-## Synopsis
 
 As evening falls, an air raid siren sounds. In the apartments, their own micro-world exists: family arguments drown out the sirens, someone, ignoring the danger, turns on their favorite TV show, while someone else frantically gathers their belongings for the bomb shelter. Different reactions, different fates that intersect in one moment.
 
