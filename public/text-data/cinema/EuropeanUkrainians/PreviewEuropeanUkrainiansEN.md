@@ -1,4 +1,4 @@
-#### Dark Comedy / Series
+#### Nihilistic Absurdist Satire / Series
 
 # European Ukrainians
 

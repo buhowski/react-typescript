@@ -1,4 +1,4 @@
-#### Adventure Dark Comedy / Animated Series
+#### Animated Dark Fantasy Comedy / Series
 
 # Пригоди Ліліт
 

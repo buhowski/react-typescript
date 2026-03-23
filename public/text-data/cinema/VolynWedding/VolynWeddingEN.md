@@ -1,16 +1,16 @@
-#### Action Dark Comedy / Movie
+#### Borderline Action Farce / Movie 
 
 # Volyn Wedding: The Groom's Room
 
 ## Logline
 
-The wedding everyone wanted except the bride and groom — and a pre-wedding night: a total memory blackout, a cage on a triple border, and a rescue quest through corrupt guards and Gypsy-Polish-Belarusian drug dealers.
+A pre-wedding night on a triple border, where a hangover blackout turns into an armed quest through corrupt border guards, Romani barons, Polish-Belarusian drug lords, and relatives who want the party even more than the couple themselves.
 
 [mobile-slider]
 
 ## Concept
 
-This is a feature-length comedy-drama with elements of black satire and absurdity, set in modern Volyn. The story follows two semi-successful natives of the Ukrainian provinces who return home to celebrate their wedding according to classic traditions. Although the main characters have long moved on from these archaic customs, they agree to it for their families, because sometimes old traditions are stronger than common sense.
+High-octane black satire on provincial rituals, set in modern-day Volyn. The story follows two semi-successful natives of the Ukrainian provinces who return home to celebrate their wedding according to classic traditions. Although the main characters have long moved on from these archaic customs, they agree to it for their families, because sometimes old traditions are stronger than common sense.
 
 The main characters are the groom and the bride, as well as their friends: the best man, the maid of honor, and a “plus-one” for each of them. A separate intrigue exists between these two pairs, which is revealed throughout the plot.
 

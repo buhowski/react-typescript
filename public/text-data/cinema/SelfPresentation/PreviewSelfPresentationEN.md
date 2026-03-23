@@ -1,4 +1,4 @@
-# Self-Presentation Projects
+# Pilot Projects
 
 Below are ready-made scripts and a concept to kick-start — all that's missing is the team. For those ready to dive into the unknown for the sake of experience and results.
 

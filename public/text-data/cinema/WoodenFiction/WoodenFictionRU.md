@@ -1,4 +1,4 @@
-#### Animated Dark Crime Comedy
+#### Animated Folk Noir Crime Comedy
 
 # Деревянное Чтиво
 

@@ -1,4 +1,4 @@
-#### Reality-Based Mockumentary / Series
+#### Reality Satire Mockumentary / Series
 
 # The Corp .!.
 

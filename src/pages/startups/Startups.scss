@@ -392,9 +392,9 @@ $nav-top: 2px;
 	box-shadow: 0 0 6px #000;
 
 	// ### Debugging styles ###
-	// position: sticky;
-	// top: 50px;
-	// z-index: 1000;
+	position: sticky;
+	top: 50px;
+	z-index: 1000;
 
 	@include tabletBig {
 		margin-top: 50px;

@@ -1,4 +1,4 @@
-#### Reality-Based Mockumentary / Series
+#### Reality Satire Mockumentary / Series
 
 # The Corp .!.
 
@@ -8,7 +8,7 @@ A backstage look at building [a corporation](/vision) from scratch. An ironic de
 
 ## Concept
 
-The project immerses you in the inner workings of a company being built right before your eyes. It is a satirical slice of the corporate world: fascism in the details, office galleys, the talent meat grinder, fake "family" vibes, and the senseless waste of resources.
+The project immerses you in the inner workings of a company being built right before your eyes. A series that creates itself in real time: every episode is a documented step toward success or the public self-immolation of the corporation. It is a satirical slice of the corporate world: fascism in the details, office galleys, the talent meat grinder, fake "family" vibes, and the senseless waste of resources.
 
 The story focuses not on business processes, but on the people trying to survive in an environment where the imitation of activity is more important than the result. Documentary reality intertwines with intentional absurdity. The goal of the series is to show, with boundless self-irony, exactly what work should not be like.
 
