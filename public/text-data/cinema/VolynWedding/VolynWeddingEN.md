@@ -49,4 +49,4 @@ Then, scenes are shown of how the guys got into this drug predicament, similar t
 
 *Under Construction …*
 
-Seeking partners and resources. If you’re down to team up or know where these belong — get in touch!
+Seeking partners and resources to bring this to life. If you want to team up or know where to take this — get in touch!

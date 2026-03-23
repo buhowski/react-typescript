@@ -97,4 +97,4 @@ The plot transforms into a continuous chase, full of new challenges. The heroes 
 
 *Under Construction …*
 
-Seeking partners and resources. If you’re down to team up or know where these belong — get in touch!
+Seeking partners and resources to bring this to life. If you want to team up or know where to take this — get in touch!

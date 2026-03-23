@@ -50,4 +50,4 @@ From the very beginning, the characters were not meant to be together. This love
 
 *Under Construction …*
 
-Seeking partners and resources. If you’re down to team up or know where these belong — get in touch!
+Seeking partners and resources to bring this to life. If you want to team up or know where to take this — get in touch!

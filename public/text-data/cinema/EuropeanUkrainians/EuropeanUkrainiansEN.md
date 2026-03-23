@@ -4,7 +4,7 @@
 
 ## Logline
 
-An epic of survival in the absurdity of Ukrainian Europe: balancing on a thin line between optimism, indifference, and the uncontrolled hysteria of egocentric sociopaths. Black humor directed at the system and fatal consequences for those around them — as the only way to keep from losing one's mind.
+An epic of survival in the absurdity of Ukrainian Europe: balancing on a thin line between optimism, a zero-fucks-given attitude, and the uncontrolled hysteria of egocentric sociopaths. Black humor directed at the system and fatal consequences for others — as the only way not to fucking lose their minds.
 
 ## Concept
 
@@ -90,4 +90,4 @@ Improvisation and Tarantino-esque dialogues are the foundation of each character
 
 *Under Construction …*
 
-Seeking partners and resources. If you’re down to team up or know where these belong — get in touch!
+Seeking partners and resources to bring this to life. If you want to team up or know where to take this — get in touch!

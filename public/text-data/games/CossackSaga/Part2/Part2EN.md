@@ -54,4 +54,4 @@ Along with the fragments of pure energy, a shard of the High Demon escaped into 
 
 *Under Construction …*
 
-Seeking partners and resources. If you’re down to team up or know where these belong — get in touch!
+Seeking partners and resources to bring this to life. If you want to team up or know where to take this — get in touch!
