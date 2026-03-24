@@ -1,12 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { renderToStaticMarkup } from 'react-dom/server';
 
-import tgIcon from './assets/tg.png';
-import igIcon from './assets/insta.png';
-import inIcon from './assets/in.png';
-import emIcon from './assets/mail.png';
-import siteIcon from './assets/site.png';
-
 const C = {
 	bodyBg: '#212121',
 	cardBg: '#1a1a1a',
@@ -180,12 +174,16 @@ export const EmailDivider = () => (
 );
 
 // --- Icons Config ---
+
+const SITE_URL = 'https://buhowski.netlify.app';
+const EMAIL_ICONS_URL = `${SITE_URL}/assets/icons`;
+
 export const emailIcons = {
-	tg: { src: tgIcon, alt: 'Telegram' },
-	ig: { src: igIcon, alt: 'Instagram' },
-	in: { src: inIcon, alt: 'LinkedIn' },
-	em: { src: emIcon, alt: 'Gmail' },
-	site: { src: siteIcon, alt: 'Website' },
+	tg: { src: `${EMAIL_ICONS_URL}/tg.png`, alt: 'Telegram' },
+	ig: { src: `${EMAIL_ICONS_URL}/insta.png`, alt: 'Instagram' },
+	in: { src: `${EMAIL_ICONS_URL}/in.png`, alt: 'LinkedIn' },
+	em: { src: `${EMAIL_ICONS_URL}/mail.png`, alt: 'Gmail' },
+	site: { src: `${EMAIL_ICONS_URL}/site.png`, alt: 'Website' },
 };
 
 // Footer Links
@@ -260,6 +258,7 @@ export const EmailFooter = ({
 												display: 'block',
 												border: 0,
 												outline: 'none',
+												fontSize: '12px',
 											}}
 										/>
 									</a>
