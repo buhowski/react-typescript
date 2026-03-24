@@ -69,10 +69,6 @@ import {
 import { visionMetaTags } from './pages/startups/components/startupsMetaTags';
 import { PageProps } from './types/common';
 
-// HTML Email Builder
-import { EmailBuilder } from './email-builder/EmailTemplate';
-import EmailToCoOwnersUA from './email-builder/EmailToCoOwnersUA';
-
 // Main Routes
 export const mainRoutes = [
 	{ pathTo: '/', pageComponent: Home },
@@ -127,15 +123,3 @@ export const startupSubPaths: Record<string, string[] | Record<string, any> | nu
 		[pathToSelfPresentation]: [pathToPodcastShow, pathToGodEvening, pathToCryClub],
 	},
 };
-
-// HTML Email Routes
-export const emailRoutes = [
-	{
-		pathTo: '/mail',
-		pageComponent: () => (
-			<EmailBuilder>
-				<EmailToCoOwnersUA lang='uk' />
-			</EmailBuilder>
-		),
-	},
-];

@@ -1,6 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { renderToStaticMarkup } from 'react-dom/server';
 
+import tgIcon from './assets/tg.png';
+import igIcon from './assets/insta.png';
+import inIcon from './assets/in.png';
+import emIcon from './assets/mail.png';
+import siteIcon from './assets/site.png';
+
 const C = {
 	bodyBg: '#212121',
 	cardBg: '#1a1a1a',
@@ -25,7 +31,6 @@ const TABLE_PROPS = {
 	cellPadding: 0,
 	cellSpacing: 0,
 	border: 0,
-	role: 'article',
 };
 
 const S = {
@@ -48,8 +53,6 @@ const S = {
 	}),
 };
 
-const EMAIL_ICONS_URL = 'https://buhowski.github.io/js-email-builder/assets';
-
 // --- Components ---
 export const EmailHeader = () => (
 	<tr>
@@ -57,7 +60,7 @@ export const EmailHeader = () => (
 	</tr>
 );
 
-export const EmailH2 = ({ content, top = 20 }: { content: React.ReactNode; top?: number }) => (
+export const EmailH2 = ({ content, top = 20 }: { content: string; top?: number }) => (
 	<tr>
 		<td style={S.cell(top)}>
 			<h2 style={{ ...S.titleBase(), color: C.accent1, fontSize: '18px' }}>{content}</h2>
@@ -65,7 +68,7 @@ export const EmailH2 = ({ content, top = 20 }: { content: React.ReactNode; top?:
 	</tr>
 );
 
-export const EmailH3 = ({ content, top = 10 }: { content: React.ReactNode; top?: number }) => (
+export const EmailH3 = ({ content, top = 10 }: { content: string; top?: number }) => (
 	<tr>
 		<td style={S.cell(top)}>
 			<p style={{ ...S.titleBase(), color: C.accent2, fontSize: '15px' }}>{content}</p>
@@ -73,7 +76,7 @@ export const EmailH3 = ({ content, top = 10 }: { content: React.ReactNode; top?:
 	</tr>
 );
 
-export const EmailText = ({ content }: { content: React.ReactNode }) => (
+export const EmailText = ({ content }: { content: string }) => (
 	<tr>
 		<td style={S.cell()}>
 			<p style={S.textBase()}>{content}</p>
@@ -178,11 +181,11 @@ export const EmailDivider = () => (
 
 // --- Icons Config ---
 export const emailIcons = {
-	tg: { src: `${EMAIL_ICONS_URL}/tg.png`, alt: 'Telegram' },
-	ig: { src: `${EMAIL_ICONS_URL}/insta.png`, alt: 'Instagram' },
-	in: { src: `${EMAIL_ICONS_URL}/in.png`, alt: 'LinkedIn' },
-	em: { src: `${EMAIL_ICONS_URL}/mail.png`, alt: 'Gmail' },
-	site: { src: `${EMAIL_ICONS_URL}/site.png`, alt: 'Website' },
+	tg: { src: tgIcon, alt: 'Telegram' },
+	ig: { src: igIcon, alt: 'Instagram' },
+	in: { src: inIcon, alt: 'LinkedIn' },
+	em: { src: emIcon, alt: 'Gmail' },
+	site: { src: siteIcon, alt: 'Website' },
 };
 
 // Footer Links
@@ -223,7 +226,7 @@ export const EmailFooter = ({
 							textDecoration: 'none',
 							letterSpacing: '1.1px',
 							fontSize: '13px',
-							color: '#777777',
+							color: '#676767',
 							padding: '10px',
 						}}
 					>
@@ -270,6 +273,29 @@ export const EmailFooter = ({
 	);
 };
 
+export const EmailPreheader = ({ text }: { text: string }) => (
+	<tr>
+		<td>
+			<p
+				style={{
+					display: 'none',
+					fontSize: '1px',
+					color: C.bodyBg,
+					lineHeight: '1px',
+					maxHeight: '0px',
+					maxWidth: '0px',
+					opacity: 0,
+					overflow: 'hidden',
+					margin: 0,
+				}}
+			>
+				{text}
+				{'\u200C\u00A0'.repeat(20)}
+			</p>
+		</td>
+	</tr>
+);
+
 // --- EXPORTER ---
 export const EmailToHtml = (Element: React.ReactElement) => {
 	const lang = Element.props.lang || 'uk';
@@ -296,6 +322,7 @@ export const EmailLayout = ({ children, lang }: { children: React.ReactNode; lan
 		lang={lang}
 		{...TABLE_PROPS}
 		width='100%'
+		role='presentation'
 		bgcolor={C.bodyBg}
 		style={{ fontFamily: UI.font }}
 	>
@@ -325,9 +352,6 @@ export const EmailLayout = ({ children, lang }: { children: React.ReactNode; lan
 
 export const EmailBuilder = ({ children }: { children: React.ReactElement }) => {
 	const [copied, setCopied] = useState(false);
-	let isDev = process.env.NODE_ENV === 'development';
-
-	isDev = true;
 
 	useEffect(() => {}, []);
 
@@ -336,43 +360,37 @@ export const EmailBuilder = ({ children }: { children: React.ReactElement }) => 
 
 		navigator.clipboard.writeText(html).then(() => {
 			setCopied(true);
-			setTimeout(() => setCopied(false), 1000);
+			setTimeout(() => setCopied(false), 1500);
 		});
 	};
 
 	return (
 		<>
 			<style>{`
-          table { 
-            text-rendering: auto;
-            -webkit-font-smoothing: auto;
-          }
+        body { overflow: auto }
+        table { text-rendering: auto; -webkit-font-smoothing: auto; }
+        table a { display: inline }
+    `}</style>
 
-          table a { 
-            display: inline
-          }
-          
-        `}</style>
-
-			{isDev && (
-				<button
-					onClick={handleCopy}
-					style={{
-						position: 'fixed',
-						top: '5px',
-						right: '5px',
-						zIndex: 999999,
-						padding: '5px 10px',
-						background: '#000000',
-						color: '#ffffff',
-						borderRadius: '10px',
-						cursor: 'pointer',
-						fontSize: '14px',
-					}}
-				>
-					{copied ? '✅' : '⚡️'}
-				</button>
-			)}
+			<button
+				onClick={handleCopy}
+				title='Copy HTML'
+				style={{
+					position: 'fixed',
+					top: '5px',
+					right: '15px',
+					zIndex: 999999,
+					padding: '4px 8px',
+					background: '#000000',
+					color: '#ffffff',
+					borderRadius: '10px',
+					cursor: 'pointer',
+					fontSize: '14px',
+					border: 'none',
+				}}
+			>
+				{copied ? 'HTML Copied ✅' : '📋'}
+			</button>
 
 			{children}
 		</>

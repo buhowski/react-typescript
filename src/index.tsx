@@ -15,16 +15,14 @@ const Root = () => {
 	const [showPreloader, setShowPreloader] = useState(true);
 
 	useEffect(() => {
-		if (!rootElement) return;
-
 		const timer = setTimeout(() => {
 			setShowPreloader(false);
-			rootElement.classList.add('is-ready');
+			rootElement?.classList.add('is-ready');
 		}, 900);
 
 		return () => {
 			clearTimeout(timer);
-			rootElement.classList.remove('is-ready');
+			rootElement?.classList.remove('is-ready');
 		};
 	}, []);
 

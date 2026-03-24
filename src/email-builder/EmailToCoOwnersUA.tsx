@@ -1,5 +1,6 @@
 import {
 	EmailLayout,
+	EmailPreheader,
 	EmailHeader,
 	EmailH2,
 	EmailH3,
@@ -13,6 +14,9 @@ import {
 const EmailToCoOwnersUA = ({ lang }: { lang?: string }) => {
 	return (
 		<EmailLayout lang={lang}>
+			{/* Preview Message Subject */}
+			<EmailPreheader text='Пропозиція творчої та ділової співпраці — контркультурна екосистема.' />
+
 			<EmailHeader />
 
 			<EmailText content='Привіт.' />
