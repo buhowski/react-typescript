@@ -15,7 +15,7 @@ const C = {
 };
 
 const UI = {
-	padX: 28,
+	padX: 27,
 	spacing: 15,
 	borderW: 2,
 	font: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
@@ -109,7 +109,7 @@ export const EmailLinkList = ({ items }: { items: { title: string; url: string }
 											<tr>
 												<td
 													style={{
-														padding: '13px 0 13px 22px',
+														padding: '13px 0 13px 20px',
 														color: C.link,
 														fontSize: UI.fSize,
 														lineHeight: 1.22,
@@ -120,7 +120,7 @@ export const EmailLinkList = ({ items }: { items: { title: string; url: string }
 												</td>
 												<td
 													align='right'
-													style={{ padding: '0 20px 0 6px', color: C.accent1, fontSize: '21px' }}
+													style={{ padding: '0 19px 0 6px', color: C.accent1, fontSize: '21px' }}
 												>
 													→
 												</td>
