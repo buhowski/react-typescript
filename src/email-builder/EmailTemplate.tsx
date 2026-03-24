@@ -48,15 +48,7 @@ const S = {
 	}),
 };
 
-// --- Icons Config ---
 const EMAIL_ICONS_URL = 'https://buhowski.github.io/js-email-builder/assets';
-export const emailIcons = {
-	tg: { src: `${EMAIL_ICONS_URL}/tg.png`, alt: 'Telegram' },
-	ig: { src: `${EMAIL_ICONS_URL}/insta.png`, alt: 'Instagram' },
-	in: { src: `${EMAIL_ICONS_URL}/in.png`, alt: 'LinkedIn' },
-	em: { src: `${EMAIL_ICONS_URL}/mail.png`, alt: 'Gmail' },
-	site: { src: `${EMAIL_ICONS_URL}/site.png`, alt: 'Website' },
-};
 
 // --- Components ---
 export const EmailHeader = () => (
@@ -65,26 +57,26 @@ export const EmailHeader = () => (
 	</tr>
 );
 
-export const EmailH2 = ({ children, top = 20 }: { children: React.ReactNode; top?: number }) => (
+export const EmailH2 = ({ content, top = 20 }: { content: React.ReactNode; top?: number }) => (
 	<tr>
 		<td style={S.cell(top)}>
-			<h2 style={{ ...S.titleBase(), color: C.accent1, fontSize: '18px' }}>{children}</h2>
+			<h2 style={{ ...S.titleBase(), color: C.accent1, fontSize: '18px' }}>{content}</h2>
 		</td>
 	</tr>
 );
 
-export const EmailH3 = ({ children, top = 10 }: { children: React.ReactNode; top?: number }) => (
+export const EmailH3 = ({ content, top = 10 }: { content: React.ReactNode; top?: number }) => (
 	<tr>
 		<td style={S.cell(top)}>
-			<p style={{ ...S.titleBase(), color: C.accent2, fontSize: '15px' }}>{children}</p>
+			<p style={{ ...S.titleBase(), color: C.accent2, fontSize: '15px' }}>{content}</p>
 		</td>
 	</tr>
 );
 
-export const EmailText = ({ children }: { children: React.ReactNode }) => (
+export const EmailText = ({ content }: { content: React.ReactNode }) => (
 	<tr>
 		<td style={S.cell()}>
-			<p style={S.textBase()}>{children}</p>
+			<p style={S.textBase()}>{content}</p>
 		</td>
 	</tr>
 );
@@ -184,67 +176,120 @@ export const EmailDivider = () => (
 	</tr>
 );
 
+// --- Icons Config ---
+export const emailIcons = {
+	tg: { src: `${EMAIL_ICONS_URL}/tg.png`, alt: 'Telegram' },
+	ig: { src: `${EMAIL_ICONS_URL}/insta.png`, alt: 'Instagram' },
+	in: { src: `${EMAIL_ICONS_URL}/in.png`, alt: 'LinkedIn' },
+	em: { src: `${EMAIL_ICONS_URL}/mail.png`, alt: 'Gmail' },
+	site: { src: `${EMAIL_ICONS_URL}/site.png`, alt: 'Website' },
+};
+
+// Footer Links
+export const socialLinks = [
+	{
+		url: 'https://t.me/olexander_tsiomakh',
+		icon: emailIcons.tg.src,
+		alt: emailIcons.tg.alt,
+	},
+	{
+		url: 'https://www.instagram.com/buhowski',
+		icon: emailIcons.ig.src,
+		alt: emailIcons.ig.alt,
+	},
+	{
+		url: 'https://www.linkedin.com/in/olexander-tsiomakh-34a364239/',
+		icon: emailIcons.in.src,
+		alt: emailIcons.in.alt,
+	},
+];
+
 export const EmailFooter = ({
-	socialLinks,
+	links = socialLinks,
 }: {
-	socialLinks: { url: string; icon: string; alt: string }[];
-}) => (
-	<tr>
-		<td align='center' style={{ backgroundColor: C.footerBg, padding: '40px 18px' }}>
-			<p style={{ margin: '0 0 26px', textAlign: 'center' }}>
-				<a
-					href='https://buhowski.dev'
-					target='_blank'
-					rel='noopener noreferrer'
-					style={{
-						textDecoration: 'none',
-						letterSpacing: '1.1px',
-						fontSize: '13px',
-						color: '#666666',
-						padding: '10px',
-					}}
-				>
-					{new Date().getFullYear()} © Olexander Tsiomakh
-				</a>
-			</p>
-			<table {...TABLE_PROPS} align='center'>
-				<tbody>
-					<tr>
-						{socialLinks.map((link, i) => (
-							<td key={i} style={{ padding: '0 9.5px' }}>
-								<a
-									href={link.url}
-									target='_blank'
-									rel='noopener noreferrer'
-									style={{
-										display: 'inline-block',
-										borderRadius: '50%',
-										border: `2px solid ${C.border}`,
-										backgroundColor: C.cardBg,
-									}}
-								>
-									<img
-										src={link.icon}
-										alt={link.alt}
-										width='51'
-										height='51'
+	links?: { url: string; icon: string; alt: string }[];
+}) => {
+	const imgRatio = '52px';
+
+	return (
+		<tr>
+			<td align='center' style={{ backgroundColor: C.footerBg, padding: '40px 18px' }}>
+				<p style={{ margin: '0 0 26px', textAlign: 'center' }}>
+					<a
+						href='https://buhowski.dev'
+						target='_blank'
+						rel='noopener noreferrer'
+						style={{
+							textDecoration: 'none',
+							letterSpacing: '1.1px',
+							fontSize: '13px',
+							color: '#777777',
+							padding: '10px',
+						}}
+					>
+						{new Date().getFullYear()} © Olexander Tsiomakh
+					</a>
+				</p>
+				<table {...TABLE_PROPS} align='center'>
+					<tbody>
+						<tr>
+							{links.map((link, i) => (
+								<td key={i} style={{ padding: '0 9px' }}>
+									<a
+										href={link.url}
+										target='_blank'
+										rel='noopener noreferrer'
 										style={{
-											width: '51px',
-											height: '51px',
-											display: 'block',
-											border: 0,
-											outline: 'none',
+											display: 'inline-block',
+											borderRadius: '50%',
+											border: `2px solid ${C.border}`,
+											backgroundColor: C.cardBg,
 										}}
-									/>
-								</a>
-							</td>
-						))}
-					</tr>
-				</tbody>
-			</table>
-		</td>
-	</tr>
-);
+									>
+										<img
+											src={link.icon}
+											alt={link.alt}
+											width={`${imgRatio}`}
+											height={`${imgRatio}`}
+											style={{
+												width: `${imgRatio}`,
+												height: `${imgRatio}`,
+												display: 'block',
+												border: 0,
+												outline: 'none',
+											}}
+										/>
+									</a>
+								</td>
+							))}
+						</tr>
+					</tbody>
+				</table>
+			</td>
+		</tr>
+	);
+};
+
+// --- EXPORTER ---
+export const EmailToHtml = (Element: React.ReactElement) => {
+	const lang = Element.props.lang || 'uk';
+	const content = renderToStaticMarkup(Element);
+
+	return `<!DOCTYPE html>
+<html lang="${lang}" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="x-apple-disable-message-reformatting">
+  <meta name="color-scheme" content="dark">
+  <title>Startup</title>
+</head>
+<body style="margin: 0; padding: 0; background-color: ${C.bodyBg}; font-family: ${UI.font}; font-size: 100%;">
+  ${content}
+</body>
+</html>`;
+};
 
 export const EmailLayout = ({ children, lang }: { children: React.ReactNode; lang?: string }) => (
 	<table
@@ -278,30 +323,11 @@ export const EmailLayout = ({ children, lang }: { children: React.ReactNode; lan
 	</table>
 );
 
-// --- EXPORTER ---
-export const EmailToHtml = (Element: React.ReactElement) => {
-	const lang = Element.props.lang || 'uk';
-	const content = renderToStaticMarkup(Element);
-
-	return `<!DOCTYPE html>
-<html lang="${lang}" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <meta name="x-apple-disable-message-reformatting">
-  <meta name="color-scheme" content="dark">
-  <title>Startup</title>
-</head>
-<body style="margin: 0; padding: 0; background-color: ${C.bodyBg}; font-family: ${UI.font}; font-size: 100%;">
-  ${content}
-</body>
-</html>`;
-};
-
 export const EmailBuilder = ({ children }: { children: React.ReactElement }) => {
 	const [copied, setCopied] = useState(false);
-	const isDev = process.env.NODE_ENV === 'development';
+	let isDev = process.env.NODE_ENV === 'development';
+
+	isDev = true;
 
 	useEffect(() => {}, []);
 

@@ -1,5 +1,4 @@
 import {
-	emailIcons,
 	EmailLayout,
 	EmailHeader,
 	EmailH2,
@@ -12,78 +11,62 @@ import {
 } from './EmailTemplate';
 
 const EmailToCoOwnersUA = ({ lang }: { lang?: string }) => {
-	const socialLinks = [
-		{
-			url: 'https://t.me/olexander_tsiomakh',
-			icon: emailIcons.tg.src,
-			alt: emailIcons.tg.alt,
-		},
-		{
-			url: 'https://www.instagram.com/buhowski',
-			icon: emailIcons.ig.src,
-			alt: emailIcons.ig.alt,
-		},
-		{
-			url: 'https://www.linkedin.com/in/olexander-tsiomakh-34a364239/',
-			icon: emailIcons.in.src,
-			alt: emailIcons.in.alt,
-		},
-	];
-
 	return (
 		<EmailLayout lang={lang}>
 			<EmailHeader />
 
-			<EmailText>Привіт.</EmailText>
+			<EmailText content='Привіт.' />
 
-			<EmailText>
-				Я Олександр — ідейний розробник, сценарист і дослідник. Пишу тобі, бо бачу потенціал для
-				синергії у створенні продукту, що виходить за межі стандартних IT-рішень.
-			</EmailText>
+			<EmailText content='Я Олександр — ідейний розробник, сценарист і дослідник. Створюю незалежний медіапростір і пишу з пропозицією творчої та ділової співпраці для формування кола партнерів.' />
 
-			<EmailH2>ПРОЄКТ</EmailH2>
+			<EmailH2 content='ПРОЄКТ' />
 
-			<EmailText>
-				Розважальний контркультурний журнал та соціальна платформа для тих, хто втомився від
-				"успішного успіху" і шукає справжність, інтелектуальний гумор та естетику андерграунду.
-			</EmailText>
+			<EmailText content='Розважальний контркультурний журнал та соціальна платформа масштабуються у кіновиробництво, геймдев і технологічні розробки.' />
 
-			<EmailH2>ГОЛОВНА ПРЕЗЕНТАЦІЯ</EmailH2>
+			<EmailText content='Наступний крок — запуск стрімінгового сервісу та ігрового хабу під власні проєкти.' />
+
+			<EmailText content='Зараз на етапі формування команди.' />
+
+			<EmailText content='Є детальна презентація, стратегія та готові сценарії. Концепти для кіно, серіалів, анімації, пілотних шоу і геймдев-проєктів.' />
+
+			<EmailH2 content='ГОЛОВНА ПРЕЗЕНТАЦІЯ' />
 
 			<EmailLinkList
-				items={[{ title: 'Візія / Бізнес-план / Цінності', url: 'https://buhowski.dev/vision' }]}
+				items={[{ title: 'Повна картина / Бізнес-план', url: 'https://buhowski.dev/vision' }]}
 			/>
 
-			<EmailH3 top={25}>ТЕХНІЧНИЙ СТЕК ТА MVP</EmailH3>
+			<EmailH3 top={10} content='ДЕТАЛІ' />
 
 			<EmailLinkList
 				items={[
-					{ title: 'MVP / Прототип журналу', url: 'https://buhowski.dev/mvp' },
-
-					{ title: 'Кіновиробництво (Cinema Industry)', url: 'https://buhowski.dev/cinema' },
+					{ title: 'Стратегія / Журнал', url: 'https://buhowski.dev/mvp' },
+					{ title: 'Кіновиробництво', url: 'https://buhowski.dev/cinema' },
+					{ title: 'Геймдев', url: 'https://buhowski.dev/cinema' },
+					{ title: 'Презентаційні шоу', url: 'https://buhowski.dev/cinema' },
 				]}
 			/>
 
-			<EmailH2>ШУКАЮ В ПАРТНЕРИ</EmailH2>
+			<EmailH2 content='ШУКАЮ' />
+
+			<EmailText content='Співзасновників, партнерів і творців з критичним мисленням, схожою оцінкою реальності та вайбом інтелектуального хуліганства.' />
+
+			<EmailH2 content='ПРОПОНУЮ' />
 
 			<EmailBulletList
 				items={[
-					'Співзасновників з експертизою в маркетингу або дистрибуції',
+					'Рівноправне партнерство з часткою в екосистемі та участь у формуванні стратегії.',
 
-					'Креаторів, готових до експериментів зі смислами',
+					'Власний напрям всередині платформи — з повною творчою свободою і автономією.',
 
-					'Людей, які цінують вайб інтелектуального хуліганства',
+					'Співавторство або консультування проєктів.',
 				]}
 			/>
 
-			<EmailText>
-				Якщо тобі відгукується такий підхід — переглянь презентацію. Буду радий обговорити можливі
-				точки дотику за кавою або в месенджері.
-			</EmailText>
+			<EmailText content='Якщо відгукнулось — напишіть, обговоримо деталі.' />
 
 			<EmailDivider />
 
-			<EmailFooter socialLinks={socialLinks} />
+			<EmailFooter />
 		</EmailLayout>
 	);
 };
