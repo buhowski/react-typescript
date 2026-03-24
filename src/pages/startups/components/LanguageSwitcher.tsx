@@ -6,6 +6,7 @@ const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
 	availableLangs,
 	changeLanguage,
 }) => {
+	const isDev = process.env.NODE_ENV === 'development';
 	const containerRef = useRef<HTMLDivElement>(null);
 
 	useLayoutEffect(() => {
@@ -39,7 +40,7 @@ const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
 	}, [currentLang, availableLangs]);
 
 	return (
-		<div className='idea-lang' ref={containerRef}>
+		<div className={`idea-lang ${isDev ? 'idea-lang--dev-mode' : ''}`} ref={containerRef}>
 			{availableLangs.map((lang) => (
 				<button
 					key={lang}
