@@ -373,7 +373,6 @@ export const EmailLayout = ({ children, lang }: { children: React.ReactNode; lan
         :root { color-scheme: dark; supported-color-schemes: dark; }
         [data-ogsc] .dark-img { display:block !important; width: auto !important; overflow: visible !important; float: none !important; max-height:inherit !important; max-width:inherit !important; line-height: auto !important; visibility:visible !important; }
         [data-ogsc] .light-img { display:none; display:none !important; }
-        body { overflow: auto }
         table { text-rendering: auto; -webkit-font-smoothing: auto; border-collapse: collapse; border-spacing: 0; }
         table a { display: inline }
       `}</style>
@@ -452,7 +451,7 @@ export const EmailBuilder = ({
 					top: '5px',
 					right: '15px',
 					zIndex: 9999,
-					padding: '4px 8px',
+					padding: '4px 9px',
 					background: '#000000',
 					color: '#ffffff',
 					borderRadius: '10px',
@@ -473,8 +472,9 @@ export const EmailBuilder = ({
 						textAlign: 'center',
 						maxWidth: '500px',
 						margin: '0 auto',
-						lineHeight: 1.4,
-						letterSpacing: '1px',
+						lineHeight: 1.5,
+						letterSpacing: '1.2px',
+						fontWeight: '600',
 					}}
 				>
 					EMAIL: {subject}
