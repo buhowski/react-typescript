@@ -24,7 +24,7 @@ const TableOfContent: React.FC<TocProps> = ({
 
 		setTimeout(() => {
 			changeLanguage(currentLang);
-		}, 300);
+		}, 400);
 	};
 
 	const tocErrorText = (

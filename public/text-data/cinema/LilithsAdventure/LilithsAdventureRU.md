@@ -85,7 +85,7 @@
 
 ## Референсы
 
-- [Rick and Morty, S4E6 (IMDb)](https://www.imdb.com/title/tt10655686/) — Концепція архітектора-оповідача, що конструює сюжети всесвіту
+- [Rick and Morty, S4E6 (IMDb)](https://www.imdb.com/title/tt10655686/) — Концепция архитектора-повествователя
 - [Clair Obscur: Expedition 33 (STEAM)](https://store.steampowered.com/app/1903340/Clair_Obscur_Expedition_33/) — Эстетика Художницы, а также мотивы и интриги антагонистов
 - [Alice in Wonderland (IMDB)](https://www.imdb.com/title/tt1014759/) — Сюрреалистичные, абсурдные миры и любопытство, которое ведёт в захватывающее путешествие
 - [Solar Opposites, S4 The Wall (YT)](https://www.youtube.com/watch?v=K0a85gwgQ8A) — Концепция антагониста-Коллекционера и Террариума Миров
