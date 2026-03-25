@@ -247,7 +247,7 @@ export const EmailFooter = ({
 							letterSpacing: '1.1px',
 							fontSize: '13px',
 							color: '#676767',
-							padding: '10px',
+							padding: '12px 16px',
 						}}
 					>
 						{new Date().getFullYear()} © Olexander Tsiomakh
@@ -379,7 +379,7 @@ export const EmailLayout = ({ children, lang }: { children: React.ReactNode; lan
 
 			<tbody>
 				<tr>
-					<td align='center' style={{ padding: '30px 8px' }}>
+					<td align='center' style={{ padding: '30px 4px' }}>
 						<table
 							{...TABLE_PROPS}
 							width='600'
@@ -477,7 +477,7 @@ export const EmailBuilder = ({
 						fontWeight: '600',
 					}}
 				>
-					EMAIL: {subject}
+					@EMAIL: {subject}
 				</h1>
 			)}
 
