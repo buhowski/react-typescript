@@ -497,7 +497,7 @@ export const EmailBuilder = ({
 						fontWeight: '600',
 					}}
 				>
-					@EMAIL: {subject}
+					@subject: {subject}
 				</h1>
 			)}
 
