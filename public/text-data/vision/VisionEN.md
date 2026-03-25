@@ -69,7 +69,7 @@ Over time, a streaming service and a gaming hub will be integrated for the distr
 
 The magazine provides the freedom to shape the direction of growth and instantly adapt to any changes, combining an authorial voice with effective solutions for strategy and monetization.
 
-This is the sole entry point into “Another Dimension” — designed to replace the daily news feed and free people from consuming informational garbage. And for those hooked on such "treats" — there will be special categories.
+This is the sole entry point into "Another Dimension" — an alternative operating system for reality. The project is designed to replace the daily news feed and free people from consuming informational garbage. And for those hooked on such "treats" — there will be special categories.
 
 ## Arsenal
 

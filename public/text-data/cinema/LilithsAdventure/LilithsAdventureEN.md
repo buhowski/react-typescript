@@ -34,7 +34,7 @@ Their paths cross when it turns out that the object the Architect is playing wit
 
 The Supreme Architect is an artist and a creative soul, a master of manipulation, fascinated by ancient scriptures and the secrets of controlling gods. He toys with a powerful artifact that governs realities, creating his own game, which he himself doesn't fully comprehend yet.
 
-His artifact is the key to multiversal synchronicity, allowing him to influence reality everywhere and simultaneously. To him, worlds are like vast canvases where he paints, alters, or erases whatever displeases him. His colossal ego and penchant for eccentric antics threaten to break reality. He signs his creations: "Even gods get bored sometimes”.
+His artifact is the key to multiversal synchronicity, allowing him to influence reality everywhere and simultaneously. To him, worlds are like vast canvases where he paints, alters, or erases whatever displeases him. His colossal ego and penchant for eccentric antics threaten to break reality. He signs his creations: "Even gods get bored sometimes".
 
 His image blends the aesthetic of the Paintress from "Clair Obscur: Expedition 33", whose paintings transform into traps and world-labyrinths, with the concept of the architect-storyteller from the "Never Ricking Morty" episode, who constructs the universe's narratives.
 

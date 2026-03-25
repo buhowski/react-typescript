@@ -1,8 +1,9 @@
 import { Routes, Route, useLocation } from 'react-router-dom';
 import { normalizePath } from '../pages/startups/helpers/metaHelper';
 import { EmailBuilder } from './EmailTemplate';
-import EmailToInvestorsUA from './letters/EmailToInvestorsUA';
-import EmailToCoOwnersUA from './letters/EmailToCoOwnersUA';
+import InvestorsUA from './letters/InvestorsUA';
+import CoOwnersUA from './letters/CoOwnersUA';
+import CoProductionUA from './letters/CoProductionUA';
 
 const emailRouteBuilder = (path: string, Element: React.ReactElement, subject?: string) => ({
 	pathTo: path,
@@ -17,21 +18,21 @@ const emailRouteBuilder = (path: string, Element: React.ReactElement, subject?: 
 // collab-ua
 export const emailRoutes = [
 	emailRouteBuilder(
-		'/test',
-		<EmailToInvestorsUA lang='uk' />,
-		'Інвестиції та стратегічне партнерство: Контркультурна екосистема (Медіа, Кіно, Геймдев, Tech)',
-	),
-
-	emailRouteBuilder(
 		'/investors-ua',
-		<EmailToInvestorsUA lang='uk' />,
+		<InvestorsUA lang='uk' />,
 		'Інвестиції та стратегічне партнерство: Контркультурна екосистема (Медіа, Кіно, Геймдев, Tech)',
 	),
 
 	emailRouteBuilder(
 		'/co-owners-ua',
-		<EmailToCoOwnersUA lang='uk' />,
+		<CoOwnersUA lang='uk' />,
 		'Партнерство: Контркультурна екосистема (Медіа, Кіно, Геймдев, Tech)',
+	),
+
+	emailRouteBuilder(
+		'/co-production-ua',
+		<CoProductionUA lang='uk' />,
+		'Co-Production / Pitch: Cinematic Concepts',
 	),
 ];
 

@@ -12,6 +12,7 @@ const C = {
 	text: '#c8c8c8',
 	link: '#4d9fc4',
 	listBg: '#141414',
+	copy: '#676767',
 };
 
 const UI = {
@@ -67,7 +68,7 @@ export const EmailH2 = ({ content, top = 20 }: { content: string; top?: number }
 export const EmailH3 = ({ content, top = 10 }: { content: string; top?: number }) => (
 	<tr>
 		<td style={S.cell(top)}>
-			<p style={{ ...S.titleBase(), color: C.accent2, fontSize: '16px' }}>{content}</p>
+			<p style={{ ...S.titleBase(), color: C.accent2, fontSize: '15px' }}>{content}</p>
 		</td>
 	</tr>
 );
@@ -80,7 +81,11 @@ export const EmailText = ({ content }: { content: string }) => (
 	</tr>
 );
 
-export const EmailLinkList = ({ items }: { items: { title: string; url: string }[] }) => (
+export const EmailLinkList = ({
+	items,
+}: {
+	items: { title: string; url: string; genre?: string }[];
+}) => (
 	<tr>
 		<td style={S.cell(0, 20)}>
 			<table {...TABLE_PROPS} width='100%'>
@@ -113,9 +118,23 @@ export const EmailLinkList = ({ items }: { items: { title: string; url: string }
 														color: C.link,
 														fontSize: UI.fSize,
 														lineHeight: 1.22,
-														letterSpacing: '0.38px',
+														letterSpacing: '0.4px',
 													}}
 												>
+													{item.genre ? (
+														<p
+															style={{
+																marginBottom: '4px',
+																color: C.copy,
+																fontSize: '11px',
+																lineHeight: 1.3,
+																letterSpacing: '0.7px',
+															}}
+														>
+															{item.genre}
+														</p>
+													) : null}
+
 													{item.title}
 												</td>
 												<td
@@ -246,7 +265,7 @@ export const EmailFooter = ({
 							textDecoration: 'none',
 							letterSpacing: '1.1px',
 							fontSize: '13px',
-							color: '#676767',
+							color: C.copy,
 							padding: '12px 16px',
 						}}
 					>
@@ -387,7 +406,7 @@ export const EmailLayout = ({ children, lang }: { children: React.ReactNode; lan
 							style={{
 								width: '100%',
 								maxWidth: '600px',
-								minWidth: '300px',
+								minWidth: '312px',
 								borderRadius: '20px',
 								overflow: 'hidden',
 								backgroundColor: C.cardBg,

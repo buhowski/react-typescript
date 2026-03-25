@@ -90,7 +90,7 @@
 - [Alice in Wonderland (IMDB)](https://www.imdb.com/title/tt1014759/) — Сюрреалистичные, абсурдные миры и любопытство, которое ведёт в захватывающее путешествие
 - [Solar Opposites, S4 The Wall (YT)](https://www.youtube.com/watch?v=K0a85gwgQ8A) — Концепция антагониста-Коллекционера и Террариума Миров
 - [Fallout (IMDB)](https://www.imdb.com/title/tt12637874/) — Атмосфера и поиск истины
-- [Nier: Automata (STEAM)](https://store.steampowered.com/app/524220/NieRAutomata/) — Стиль анимации с детализацией и дизайном местного нуара, а также сочетанием энергии и юмора "Rick and Morty”
+- [Nier: Automata (STEAM)](https://store.steampowered.com/app/524220/NieRAutomata/) — Стиль анимации с детализацией и дизайном местного нуара, а также сочетанием энергии и юмора "Rick and Morty"
 - [High On Life (STEAM)](https://store.steampowered.com/app/1583230/High_On_Life/) — Игра демонстрирует, как чёрный юмор, саркастические диалоги и стёб над жанром из анимационных проектов могут работать в видеоигровом формате, что даёт возможность создать игру по мотивам этого сериала
 
 ## Статус

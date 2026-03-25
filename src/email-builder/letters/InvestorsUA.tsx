@@ -10,11 +10,11 @@ import {
 	EmailFooter,
 } from '../EmailTemplate';
 
-const EmailToInvestorsUA = ({ lang }: { lang?: string }) => {
+const InvestorsUA = ({ lang }: { lang?: string }) => {
 	return (
 		<EmailLayout lang={lang}>
 			{/* Preview Subject */}
-			<EmailPreheader text='Капіталізуємо смисли — масштабуємо незалежне медіа-ядро в IT-екосистему' />
+			<EmailPreheader text='Капіталізуємо смисли — масштабуємо незалежне медіа-ядро в альтернативну операційну систему реальності' />
 
 			<EmailHeader />
 
@@ -70,4 +70,4 @@ const EmailToInvestorsUA = ({ lang }: { lang?: string }) => {
 	);
 };
 
-export default EmailToInvestorsUA;
+export default InvestorsUA;
