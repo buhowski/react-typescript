@@ -124,11 +124,13 @@ export const EmailLinkList = ({
 													{item.genre ? (
 														<p
 															style={{
-																marginBottom: '4px',
-																color: C.copy,
+																margin: '0 0 5px',
+																padding: '0',
+																color: C.text,
+																opacity: 0.5,
 																fontSize: '11px',
 																lineHeight: 1.3,
-																letterSpacing: '0.7px',
+																fontWeight: 300,
 															}}
 														>
 															{item.genre}
@@ -316,7 +318,7 @@ export const EmailFooter = ({
 };
 
 export const EmailPreheader = ({ text }: { text: string }) => {
-	const preheaderText = `≪${text}≫`;
+	const preheaderText = `«${text}»`;
 	const invisibleTail = '&nbsp;&zwnj;'.repeat(200);
 	const combinedStyles = `
     display: none !important;
