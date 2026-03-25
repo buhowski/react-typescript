@@ -4,6 +4,8 @@ import { EmailBuilder } from './EmailTemplate';
 import InvestorsUA from './letters/InvestorsUA';
 import CoOwnersUA from './letters/CoOwnersUA';
 import CoProductionUA from './letters/CoProductionUA';
+import CoDevelopmentUA from './letters/CoDevelopmentUA';
+import CollabUA from './letters/CollabUA';
 
 const emailRouteBuilder = (path: string, Element: React.ReactElement, subject?: string) => ({
 	pathTo: path,
@@ -11,11 +13,6 @@ const emailRouteBuilder = (path: string, Element: React.ReactElement, subject?: 
 });
 
 // HTML Email Routes URLs
-// investors-ua
-// co-owners-ua
-// co-production-ua
-// co-development-ua
-// collab-ua
 export const emailRoutes = [
 	emailRouteBuilder(
 		'/investors-ua',
@@ -33,6 +30,18 @@ export const emailRoutes = [
 		'/co-production-ua',
 		<CoProductionUA lang='uk' />,
 		'Co-Production / Pitch: Cinematic Concepts',
+	),
+
+	emailRouteBuilder(
+		'/co-development-ua',
+		<CoDevelopmentUA lang='uk' />,
+		'Co-Development / Pitch: Gamedev Concepts',
+	),
+
+	emailRouteBuilder(
+		'/collab-ua',
+		<CollabUA lang='uk' />,
+		'Колаборація / Пітч: Час робити контркультуру',
 	),
 ];
 

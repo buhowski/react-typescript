@@ -9,7 +9,7 @@ const C = {
 	border: '#393939',
 	accent1: '#e8a85a',
 	accent2: '#d0887d',
-	text: '#c8c8c8',
+	text: '#bfbfbf',
 	link: '#4d9fc4',
 	listBg: '#141414',
 	copy: '#676767',
@@ -45,7 +45,7 @@ const S = {
 		margin: 0,
 		fontSize: UI.fSize,
 		lineHeight: 1.5,
-		letterSpacing: '0.22px',
+		letterSpacing: '0.2px',
 		color: C.text,
 	}),
 };

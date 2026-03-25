@@ -2,7 +2,6 @@ import {
 	EmailLayout,
 	EmailPreheader,
 	EmailHeader,
-	EmailH3,
 	EmailH2,
 	EmailText,
 	EmailLinkList,
