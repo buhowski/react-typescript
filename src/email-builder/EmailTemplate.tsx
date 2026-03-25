@@ -392,6 +392,7 @@ export const EmailLayout = ({ children, lang }: { children: React.ReactNode; lan
         :root { color-scheme: dark; supported-color-schemes: dark; }
         [data-ogsc] .dark-img { display:block !important; width: auto !important; overflow: visible !important; float: none !important; max-height:inherit !important; max-width:inherit !important; line-height: auto !important; visibility:visible !important; }
         [data-ogsc] .light-img { display:none; display:none !important; }
+        .email-builder { user-select: text; }
         table { text-rendering: auto; -webkit-font-smoothing: auto; border-collapse: collapse; border-spacing: 0; }
         table a { display: inline }
       `}</style>
@@ -461,7 +462,7 @@ export const EmailBuilder = ({
 	};
 
 	return (
-		<>
+		<div className='email-builder'>
 			<button
 				onClick={handleCopy}
 				title='Copy HTML'
@@ -501,6 +502,6 @@ export const EmailBuilder = ({
 			)}
 
 			{children}
-		</>
+		</div>
 	);
 };
