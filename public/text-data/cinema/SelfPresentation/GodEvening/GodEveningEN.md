@@ -1,4 +1,4 @@
-#### Satirical Comedy / Theatrical Show
+#### Satirical Theatrical Farce / Stage Show
 
 # An Evening at GOD's
 

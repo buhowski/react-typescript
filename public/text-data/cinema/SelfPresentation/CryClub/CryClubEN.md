@@ -1,4 +1,4 @@
-#### Dark Comedy / Reality Show
+#### Absurdist Dark Comedy / Reality Show
 
 # Santa Barbara Fight Club
 

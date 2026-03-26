@@ -1,4 +1,4 @@
-#### Sketch Comedy / Talk Show
+#### Chaotic Sketch Comedy / Talk Show
 
 # Измерение Минус Ноль
 
