@@ -12,9 +12,9 @@ Looking for partners for creative and business collaboration. Project presentati
 
 ## In a Nutshell
 
-- Magazine — the face of the company. Popular magazine — the voice of the majority. Cult magazine — sets the course for promoting common sense, rather than adapting to bans or restrictions. [Strategy Ready](/mvp)
+- Magazine — the face of the company. Popular magazine — the voice of the majority. Cult magazine — sets the direction of common sense, rather than adapting to bans or restrictions: [Strategy Ready](/mvp)
 - Production — sources of revenue: [Cinema Ready](/cinema) [Gamedev Ready](/games)
-- Profits are reinvested into our own IT technologies — even greater profit. Ideas — got ’em
+- Profits are reinvested into our own IT technologies — even greater profit: Ideas Ready
 - Victory!
 
 **Risks:** In the worst-case scenario, we establish a popular magazine with an ad-based model, a donation system, and the development of films and games for sale to other companies. The foundation remains intact, allowing for growth even under critical conditions.
