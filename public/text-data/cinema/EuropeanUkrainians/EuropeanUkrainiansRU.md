@@ -1,4 +1,4 @@
-#### Nihilistic Absurdist Satire / Series
+#### Nihilistic Absurdist Comedy / Series
 
 # Европейские Украинцы
 
