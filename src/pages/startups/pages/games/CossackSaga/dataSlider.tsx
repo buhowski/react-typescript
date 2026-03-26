@@ -1,6 +1,5 @@
 // Images
 import cossacksReplyLetter from '../../../../../assets/startup/games/cossacks-refs.webp';
-import cossackWarrior from '../../../../../assets/startup/games/warrior-refs.webp';
 import cossackDrummer from '../../../../../assets/startup/games/saga-poster.webp';
 import cossackSorcerers from '../../../../../assets/startup/games/sorcerers.webp';
 
@@ -58,13 +57,7 @@ export const dataSliderCossackSaga = [
 		itemCaption: 'Ukrainian Cossacks / Historical Art Refs',
 		putImgTitle: true,
 	},
-	{
-		itemSrc: cossackWarrior,
-		itemAlt:
-			'Ukrainian Cossack warrior with sabre — traditional armor, heroic stance and Slavic cultural heritage',
-		itemCaption: 'Hermit Cossack Warrior vs Demonic Monk',
-		putImgTitle: true,
-	},
+
 	{
 		itemSrc: cossackSorcerers,
 		itemAlt:

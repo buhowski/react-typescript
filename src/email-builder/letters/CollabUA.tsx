@@ -13,7 +13,7 @@ const CollabUA = ({ lang }: { lang?: string }) => {
 	return (
 		<EmailLayout lang={lang}>
 			{/* Preview Subject */}
-			<EmailPreheader text='Готові пілоти — шукаю творчих спільників для безкомпромісного ляпасу застарілому мисленню' />
+			<EmailPreheader text='Готові пілоти — творчий ляпас застарілому мисленню' />
 
 			<EmailHeader />
 

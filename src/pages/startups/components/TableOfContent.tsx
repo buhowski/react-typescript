@@ -36,7 +36,7 @@ const TableOfContent: React.FC<TocProps> = ({
 				// onClick={() => window.location.reload()}
 				onClick={handleRetry}
 			>
-				Wake up
+				Wake up neo
 			</span>
 		</p>
 	);

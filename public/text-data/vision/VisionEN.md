@@ -12,7 +12,7 @@ Looking for partners for creative and business collaboration. Project presentati
 
 ## In a Nutshell
 
-- Magazine — the face of the company. A popular magazine reflects the voice of the majority. A highly popular magazine sets the direction, rather than adapting to restrictions or limitations. [Strategy Ready](/mvp)
+- Magazine — the face of the company. Popular magazine — the voice of the majority. Cult magazine — sets the course for promoting common sense, rather than adapting to bans or restrictions. [Strategy Ready](/mvp)
 - Production — sources of revenue: [Cinema Ready](/cinema) [Gamedev Ready](/games)
 - Profits are reinvested into our own IT technologies — even greater profit. Ideas — got ’em
 - Victory!

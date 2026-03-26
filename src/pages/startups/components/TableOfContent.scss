@@ -168,7 +168,7 @@ $toc-hover-color: #fff;
 			left: 0;
 			width: 100%;
 			z-index: 1;
-			color: rgba($text-color, 0.6);
+			color: rgba($h4-sub-color, 0.85);
 		}
 	}
 
@@ -340,23 +340,23 @@ $toc-hover-color: #fff;
 
 .toc-message {
 	text-align: center;
-	padding: 20px 25px 25px;
+	padding: 15px 25px 0;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-weight: bold;
 	color: #df3535;
-	font-size: 20px;
+	font-size: 18px;
 
 	span {
 		display: block;
 	}
 
 	&__text {
-		margin-top: 15px;
+		margin-top: 6px;
 	}
 
 	&__btn {
-		margin: 30px auto 0;
+		margin: 27px auto 0;
 		padding: 14px 30px;
 		border-radius: 10px;
 		color: $text-color;

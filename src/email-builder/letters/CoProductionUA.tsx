@@ -13,7 +13,7 @@ const CoProductionUA = ({ lang }: { lang?: string }) => {
 	return (
 		<EmailLayout lang={lang}>
 			{/* Preview Subject */}
-			<EmailPreheader text='Пакет сценаріїв із власним характером: від кіно та серіалів до анімації — концепти та логлайни всередині' />
+			<EmailPreheader text='Авторські сценарії та концепти — кіно, серіали, анімація' />
 
 			<EmailHeader />
 
