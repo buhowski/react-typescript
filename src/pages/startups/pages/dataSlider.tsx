@@ -2,11 +2,12 @@
 import planPoster from '../../../assets/startup/vision.jpg';
 import posterProjectsDev from '../../../assets/startup/brain.jpg';
 import writer from '../../../assets/startup/writer.webp';
-import posterOnceInUkraine from '../../../assets/startup/cinema/once-in-ukraine-poster.webp';
+import posterOnceInUkraine from '../../../assets/startup/cinema/once.webp';
 import posterVolynWedding from '../../../assets/startup/cinema/volyn-wedding-poster.webp';
-import posterHeShe from '../../../assets/startup/cinema/he-she-poster.webp';
-import posterWoodenFiction from '../../../assets/startup/cinema/wooden-fiction-poster.webp';
-import posterLilithsAdventure from '../../../assets/startup/cinema/liliths-adventure-poster.webp';
+import posterHeShe from '../../../assets/startup/cinema/he-she.webp';
+import posterWoodenFiction from '../../../assets/startup/cinema/wooden.webp';
+import poster2WoodenFiction from '../../../assets/startup/cinema/wooden-2.webp';
+import posterLilithsAdventure from '../../../assets/startup/cinema/lilit-poster.webp';
 import LilithVideoExamplePoster from '../../../assets/startup/cinema/post-credit-poster.webp';
 
 // Videos
@@ -61,6 +62,11 @@ export const dataSliderHeShe = [
 ];
 
 export const dataSliderWoodenFiction = [
+	{
+		itemSrc: poster2WoodenFiction,
+		itemAlt:
+			'Wooden Fiction — animated dark crime comedy poster, twisted fairytale characters, post-Soviet grotesque style.',
+	},
 	{
 		itemSrc: posterWoodenFiction,
 		itemAlt:

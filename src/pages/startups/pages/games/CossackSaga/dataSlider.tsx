@@ -1,7 +1,7 @@
 // Images
 import cossacksReplyLetter from '../../../../../assets/startup/games/cossacks-refs.webp';
 import cossackDrummer from '../../../../../assets/startup/games/saga-poster.webp';
-import cossackSorcerers from '../../../../../assets/startup/games/sorcerers.webp';
+import cossackSorcerers from '../../../../../assets/startup/games/saga-3.webp';
 
 // Posters
 import witcherPoster from '../../../../../assets/startup/games/witcher-poster.webp';
@@ -54,7 +54,7 @@ export const dataSliderCossackSaga = [
 		itemSrc: cossacksReplyLetter,
 		itemAlt:
 			'Ukrainian Cossacks writing a reply letter to the Turkish sultan — historical painting, 17th century military life',
-		itemCaption: 'Ukrainian Cossacks / Historical Art Refs',
+		itemCaption: 'Hermit Cossacks Refs',
 		putImgTitle: true,
 	},
 
@@ -62,7 +62,7 @@ export const dataSliderCossackSaga = [
 		itemSrc: cossackSorcerers,
 		itemAlt:
 			'Ukrainian Cossack Charakternyk sorcerer — warrior, shaman and seer, mystical folklore design',
-		itemCaption: 'Hermit Cossack Sorcerer',
+		itemCaption: 'Part III Poster',
 		putImgTitle: true,
 	},
 ];
