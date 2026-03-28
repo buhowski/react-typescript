@@ -68,18 +68,18 @@ export const cinemaPage = createData([
 		pagePreviewUrl: pathToHeShe,
 	},
 
-	// Wooden Fiction
-	{
-		markdownAPI: '/text-data/cinema/WoodenFiction/PreviewWoodenFiction.md',
-		sliderContent: dataSliderWoodenFiction,
-		pagePreviewUrl: pathToWoodenFiction,
-	},
-
 	// Lilith's Adventure
 	{
 		markdownAPI: '/text-data/cinema/LilithsAdventure/PreviewLilithsAdventure.md',
 		sliderContent: dataSliderLilithsAdventure,
 		pagePreviewUrl: pathToLilithsAdventure,
+	},
+
+	// Wooden Fiction
+	{
+		markdownAPI: '/text-data/cinema/WoodenFiction/PreviewWoodenFiction.md',
+		sliderContent: dataSliderWoodenFiction,
+		pagePreviewUrl: pathToWoodenFiction,
 	},
 
 	// Self Presentation

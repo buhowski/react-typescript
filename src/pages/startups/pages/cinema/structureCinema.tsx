@@ -52,18 +52,18 @@ export const volynWeddingPage = createData([
 	},
 ]);
 
-// Wooden Fiction
-export const woodenFictionPage = createData([
-	{
-		markdownAPI: '/text-data/cinema/WoodenFiction/WoodenFiction.md',
-		sliderContent: dataSliderWoodenFiction,
-	},
-]);
-
 // Lilith's Adventure
 export const lilithsAdventurePage = createData([
 	{
 		markdownAPI: '/text-data/cinema/LilithsAdventure/LilithsAdventure.md',
 		sliderContent: dataSliderLilithsAdventure,
+	},
+]);
+
+// Wooden Fiction
+export const woodenFictionPage = createData([
+	{
+		markdownAPI: '/text-data/cinema/WoodenFiction/WoodenFiction.md',
+		sliderContent: dataSliderWoodenFiction,
 	},
 ]);

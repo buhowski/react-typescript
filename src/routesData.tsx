@@ -89,8 +89,8 @@ export const startupDataMap: Record<string, PageProps> = {
 	[pathToHeShe]: { pageData: heShePage },
 	[pathToOnceInUkraine]: { pageData: onceInUkrainePage },
 	[pathToVolynWedding]: { pageData: volynWeddingPage },
-	[pathToWoodenFiction]: { pageData: woodenFictionPage },
 	[pathToLilithsAdventure]: { pageData: lilithsAdventurePage },
+	[pathToWoodenFiction]: { pageData: woodenFictionPage },
 
 	// Self Presentations
 	[pathToSelfPresentation]: { pageData: selfPresentationPage },
