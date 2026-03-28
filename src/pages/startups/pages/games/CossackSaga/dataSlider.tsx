@@ -19,8 +19,8 @@ export const dataSliderCossackSaga = [
 	{
 		itemSrc: cossackDrummer,
 		itemAlt: `AI-generated poster for Cossack Saga Part I–II — demonic baptism ritual and a heroine bound to the hero's soul.`,
-		itemCaption: 'Saga I–II Poster — Demonic Baptism / Bound Souls',
-		putImgTitle: true,
+		// itemCaption: 'Poster — Demonic Baptism / Bound Souls',
+		// putImgTitle: true,
 	},
 	{
 		itemPoster: automataPoster,
