@@ -49,7 +49,7 @@ Looking for people, investment, or the opportunity to integrate ideas into exist
 - Virtual Reality
 - IT Sector: Blockchain, AI, Neurotechnology, Robotics
 
-## The Foundation
+## Architecture
 
 To achieve these goals, I have developed a structure where each element reinforces the others — an autonomous mechanism on its own platform:
 
@@ -59,7 +59,7 @@ To achieve these goals, I have developed a structure where each element reinforc
 - **Donation System** — for attracting investment for development and content monetization
 - **The Platform as a Resource** — for distributing our own projects
 
-## Description
+## Entry Point
 
 It all begins with a private digital space — a media platform evolving from an information resource into a global ecosystem.
 
