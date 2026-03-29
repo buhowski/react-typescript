@@ -9,34 +9,34 @@ import {
 } from '../../../../../components/urlsData';
 
 // specific slider data
-import { dataSliderCossackSaga } from './dataSlider';
+import { dataSliderSaga, dataSliderSaga2, dataSliderSaga3 } from './dataSlider';
 
 // Shadows of the Cossacks: Saga
 export const cossackSagaPage = createData([
 	// Saga Preface
 	{
 		markdownAPI: '/text-data/games/CossackSaga/PreviewCossackSaga.md',
-		sliderContent: dataSliderCossackSaga,
+		sliderContent: dataSliderSaga,
 	},
 
 	// Cossack Part I
 	{
 		markdownAPI: '/text-data/games/CossackSaga/Part1/PreviewPart1.md',
-		sliderContent: dataSliderCossackSaga,
+		sliderContent: dataSliderSaga,
 		pagePreviewUrl: pathToCossackSagaPart1,
 	},
 
 	// Cossack Part II
 	{
 		markdownAPI: '/text-data/games/CossackSaga/Part2/PreviewPart2.md',
-		sliderContent: dataSliderCossackSaga,
+		sliderContent: dataSliderSaga2,
 		pagePreviewUrl: pathToCossackSagaPart2,
 	},
 
 	// Cossack Part III
 	{
 		markdownAPI: '/text-data/games/CossackSaga/Part3/PreviewPart3.md',
-		sliderContent: dataSliderCossackSaga,
+		sliderContent: dataSliderSaga3,
 		pagePreviewUrl: pathToCossackSagaPart3,
 	},
 ]);
@@ -45,7 +45,7 @@ export const cossackSagaPage = createData([
 export const cossackSaga1Page = createData([
 	{
 		markdownAPI: '/text-data/games/CossackSaga/Part1/Part1.md',
-		sliderContent: dataSliderCossackSaga,
+		sliderContent: dataSliderSaga,
 	},
 ]);
 
@@ -53,7 +53,7 @@ export const cossackSaga1Page = createData([
 export const cossackSaga2Page = createData([
 	{
 		markdownAPI: '/text-data/games/CossackSaga/Part2/Part2.md',
-		sliderContent: dataSliderCossackSaga,
+		sliderContent: dataSliderSaga2,
 	},
 ]);
 
@@ -61,6 +61,6 @@ export const cossackSaga2Page = createData([
 export const cossackSaga3Page = createData([
 	{
 		markdownAPI: '/text-data/games/CossackSaga/Part3/Part3.md',
-		sliderContent: dataSliderCossackSaga,
+		sliderContent: dataSliderSaga3,
 	},
 ]);

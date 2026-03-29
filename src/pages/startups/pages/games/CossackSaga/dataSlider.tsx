@@ -1,7 +1,8 @@
 // Images
 import cossacksReplyLetter from '../../../../../assets/startup/games/cossacks-refs.webp';
 import cossackDrummer from '../../../../../assets/startup/games/saga-poster.webp';
-import cossackSorcerers from '../../../../../assets/startup/games/saga-3.webp';
+import saga2Poster from '../../../../../assets/startup/games/saga-2.webp';
+import saga3Poster from '../../../../../assets/startup/games/saga-3.webp';
 
 // Posters
 import witcherPoster from '../../../../../assets/startup/games/witcher-poster.webp';
@@ -15,7 +16,7 @@ import witcherTrailer from '../../../../../assets/startup/games/videos/witcherTr
 const replicantTrailer = 'https://www.youtube-nocookie.com/embed/sPcf4pfTqfY';
 const automataTrailer = 'https://www.youtube-nocookie.com/embed/4bx02CEISLI';
 
-export const dataSliderCossackSaga = [
+export const dataSliderSaga = [
 	{
 		itemSrc: cossackDrummer,
 		itemAlt: `AI-generated poster for Cossack Saga Part I–II — demonic baptism ritual and a heroine bound to the hero's soul.`,
@@ -57,12 +58,20 @@ export const dataSliderCossackSaga = [
 		itemCaption: 'Hermit Cossacks Refs',
 		putImgTitle: true,
 	},
+];
 
+export const dataSliderSaga2 = [
 	{
-		itemSrc: cossackSorcerers,
+		itemSrc: saga2Poster,
 		itemAlt:
 			'Ukrainian Cossack Charakternyk sorcerer — warrior, shaman and seer, mystical folklore design',
-		itemCaption: 'Part III Poster',
-		putImgTitle: true,
+	},
+];
+
+export const dataSliderSaga3 = [
+	{
+		itemSrc: saga3Poster,
+		itemAlt:
+			'Ukrainian Cossack Charakternyk sorcerer — warrior, shaman and seer, mystical folklore design',
 	},
 ];

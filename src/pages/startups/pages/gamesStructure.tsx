@@ -5,7 +5,7 @@ import { createData } from '../helpers/pageDataFactory';
 import { pathToCossackSaga } from '../../../components/urlsData';
 
 // specific slider data
-import { dataSliderCossackSaga } from './games/CossackSaga/dataSlider';
+import { dataSliderSaga } from './games/CossackSaga/dataSlider';
 import { dataSliderProjectDev } from './dataSlider';
 
 // Games Page
@@ -19,7 +19,7 @@ export const gamesPage = createData([
 	// Cossacks Saga
 	{
 		markdownAPI: '/text-data/games/CossackSaga/CossackSaga.md',
-		sliderContent: dataSliderCossackSaga,
+		sliderContent: dataSliderSaga,
 		pagePreviewUrl: pathToCossackSaga,
 	},
 ]);
