@@ -111,7 +111,7 @@ const CoProductionUA = ({ lang }: { lang?: string }) => {
 
 			<EmailH2 content='МАСШТАБ' />
 
-			<EmailText content="Кіно — частина цілісної екосистеми, яка об'єднує журнал, контркультурне медіа, геймдев і технології:" />
+			<EmailText content='Кіно — частина глобальної екосистеми (журнал, контркультурне медіа, геймдев, технології):' />
 
 			<EmailLinkList
 				items={[{ title: 'Повна картина / Бізнес-план', url: 'https://buhowski.dev/vision' }]}
