@@ -58,7 +58,7 @@ const Projects = () => {
 	}, []);
 
 	return (
-		<div className='wrapper'>
+		<div className='wrapper wrapper--projects'>
 			<PageHelmet metaTags={portfolioMetaTags} />
 
 			<h1 className='base-title h1'>Some Works</h1>

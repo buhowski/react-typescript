@@ -39,40 +39,40 @@ export const useActiveHeadingTracking = (
 		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [headingsVersion, allHeadingsMapRef]);
 
-	// Track scroll position for active ID
+	// Track scroll position
 	useEffect(() => {
-		const container = document.querySelector('.page-container') as HTMLElement;
-		if (!container || sortedHeadings.length === 0) return;
+		if (sortedHeadings.length === 0) return;
 
 		const triggerOffset = useTabletLarge ? 95 : 150;
 
 		const handleScroll = () => {
-			const containerTop = container.getBoundingClientRect().top;
-			let newActiveHeadingId: string | null = null;
-			let minDistance = Infinity;
+			let currentActiveId: string | null = null;
 
-			sortedHeadings.forEach((heading) => {
-				const headingElement = document.getElementById(heading.id);
-				if (headingElement) {
-					const topRelativeToContainer = headingElement.getBoundingClientRect().top - containerTop;
-					const distance = topRelativeToContainer - triggerOffset;
-					if (distance <= 0 && Math.abs(distance) < Math.abs(minDistance)) {
-						minDistance = distance;
-						newActiveHeadingId = heading.id;
+			for (const heading of sortedHeadings) {
+				const element = document.getElementById(heading.id);
+
+				if (element) {
+					const rect = element.getBoundingClientRect();
+
+					if (rect.top <= triggerOffset) {
+						currentActiveId = heading.id;
+					} else {
+						break;
 					}
 				}
-			});
-			setActiveHeadingId(newActiveHeadingId);
+			}
+
+			setActiveHeadingId(currentActiveId);
 		};
 
-		container.addEventListener('scroll', handleScroll, { passive: true });
+		window.addEventListener('scroll', handleScroll, { passive: true });
 		handleScroll();
-		return () => container.removeEventListener('scroll', handleScroll);
-	}, [useTabletLarge, headingsVersion, sortedHeadings]);
+		return () => window.removeEventListener('scroll', handleScroll);
+	}, [useTabletLarge, sortedHeadings]);
 
 	// Custom fast smooth scroll
-	const animateScroll = useCallback((container: HTMLElement, targetY: number, duration: number) => {
-		const startY = container.scrollTop;
+	const animateScroll = useCallback((targetY: number, duration: number) => {
+		const startY = window.scrollY || document.documentElement.scrollTop;
 		const diff = targetY - startY;
 		let startTime: number | null = null;
 
@@ -82,8 +82,11 @@ export const useActiveHeadingTracking = (
 			const percent = Math.min(progress / duration, 1);
 			const easing = 1 - Math.pow(1 - percent, 3); // easeOutCubic
 
-			container.scrollTop = startY + diff * easing;
-			if (progress < duration) window.requestAnimationFrame(step);
+			window.scrollTo(0, startY + diff * easing);
+
+			if (progress < duration) {
+				window.requestAnimationFrame(step);
+			}
 		};
 		window.requestAnimationFrame(step);
 	}, []);
@@ -92,17 +95,14 @@ export const useActiveHeadingTracking = (
 	const handleTableOfContentSelect = useCallback(
 		(headingId: string) => {
 			const targetElement = document.getElementById(headingId);
-			const pageContainer = document.querySelector('.page-container') as HTMLElement;
 
-			if (targetElement && pageContainer) {
-				const scrollOffset = useTabletLarge ? 80 : 86;
-				const containerTop = pageContainer.getBoundingClientRect().top;
-				const targetTop = targetElement.getBoundingClientRect().top;
-				const currentScrollTop = pageContainer.scrollTop;
-				const scrollTo = targetTop - containerTop + currentScrollTop - scrollOffset;
+			if (targetElement) {
+				const scrollOffset = useTabletLarge ? 80 : 90;
+				// rect.top + current scroll = absolute position in document
+				const targetTop = targetElement.getBoundingClientRect().top + window.scrollY;
+				const scrollTo = targetTop - scrollOffset;
 
-				// scroll speed animation
-				animateScroll(pageContainer, scrollTo, 400);
+				animateScroll(scrollTo, 400);
 			} else {
 				console.warn(`Missing ID: ${headingId}`);
 				showReloadAlert();

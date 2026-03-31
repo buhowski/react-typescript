@@ -15,6 +15,10 @@ const Root = () => {
 	const [showPreloader, setShowPreloader] = useState(true);
 
 	useEffect(() => {
+		if ('scrollRestoration' in window.history) {
+			window.history.scrollRestoration = 'manual';
+		}
+
 		const timer = setTimeout(() => {
 			setShowPreloader(false);
 			rootElement?.classList.add('is-ready');

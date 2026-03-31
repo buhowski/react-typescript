@@ -4,18 +4,22 @@ export const useStickyHeader = () => {
 	const [isActive, setIsActive] = useState(false);
 
 	useEffect(() => {
-		const pageContainer = document.querySelector('.page-container');
 		const startupAction = document.querySelector('.startup-action');
-		if (!pageContainer || !startupAction) return;
+
+		if (!startupAction) return;
 
 		const handleScroll = () => {
-			const newIsActive =
-				startupAction.getBoundingClientRect().top <= pageContainer.getBoundingClientRect().top;
+			const rect = startupAction.getBoundingClientRect();
+			const newIsActive = rect.top <= 0;
+
 			setIsActive((prev) => (prev === newIsActive ? prev : newIsActive));
 		};
 
-		pageContainer.addEventListener('scroll', handleScroll);
-		return () => pageContainer.removeEventListener('scroll', handleScroll);
+		window.addEventListener('scroll', handleScroll, { passive: true });
+
+		handleScroll();
+
+		return () => window.removeEventListener('scroll', handleScroll);
 	}, []);
 
 	return isActive;

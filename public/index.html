@@ -5,13 +5,13 @@
   <meta charset="utf-8" />
   <meta name="robots" content="index, follow" />
   <meta name="google" content="notranslate" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, viewport-fit=cover" />
   <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#202020" />
   <meta name="mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#202020" />
   <meta name="msapplication-navbutton-color" content="#202020" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="#202020" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
   <!-- Site metadata from .env -->
   <meta name="author" content="%REACT_APP_AUTHOR%" />
@@ -56,6 +56,7 @@
       -webkit-text-size-adjust: none;
       -moz-text-size-adjust: none;
       text-size-adjust: none;
+      background-color: #202020;
     }
 
     body {
@@ -68,13 +69,15 @@
       -webkit-font-smoothing: antialiased;
       width: 100%;
       user-select: none;
+      cursor: default;
+      min-height: 100svh;
     }
 
-    #root .page-container {
+    #root>div:not(.preloader) {
       opacity: 0;
     }
 
-    #root.is-ready .page-container {
+    #root.is-ready>div:not(.preloader) {
       opacity: 1;
     }
   </style>

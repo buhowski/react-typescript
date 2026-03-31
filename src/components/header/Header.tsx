@@ -1,22 +1,42 @@
-import React from 'react';
+import { useState, useEffect } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import { pathToVision, pathToAbout, pathToProjects } from '../urlsData';
 import { useTabletQuery } from '../../config/useMediaQuery';
 import Socials from '../socials/Socials';
 import socialData from '../socials/socialData';
 import { headerLogo } from '../../assets/svg/icons';
-// Reusable path matching function
 import { isPathActive } from '../../config/pathUtils';
 import { startupsMap } from '../../pages/startups/startupsMap';
+import { fastScrollTo, toggleScrollLock } from '../../config/navigationHelper';
+import { NEXT_PAGE_RATIO } from '../../App';
 
 import './Header.scss';
 
+interface MobileMenuProps {
+	isOpen: boolean;
+	navItems: React.ReactNode;
+}
+
+const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, navItems }) => {
+	return (
+		<nav className={`pos-abs mobile-menu${isOpen ? ' open' : ''}`}>
+			<nav className='mobile-menu__content'>
+				<ul className='mobile-nav'>{navItems}</ul>
+				<Socials
+					socialData={socialData}
+					items={[{ id: 'github' }, { id: 'linkedin' }, { id: 'telegram' }, { id: 'instagram' }]}
+				/>
+			</nav>
+		</nav>
+	);
+};
+
 const Header = () => {
 	const tabletQuery = useTabletQuery();
-	const [menuOpen, setMenuOpen] = React.useState(false);
+	const [menuOpen, setMenuOpen] = useState(false);
 
-	const { pathname } = useLocation();
-	const isActive = isPathActive(Object.keys(startupsMap), pathname);
+	const location = useLocation();
+	const isActive = isPathActive(Object.keys(startupsMap), location.pathname);
 
 	const linksData = [
 		{
@@ -54,61 +74,53 @@ const Header = () => {
 		);
 	};
 
+	const toggleMenu = () => setMenuOpen((prev) => !prev);
+
+	useEffect(() => {
+		toggleScrollLock(menuOpen);
+
+		return () => toggleScrollLock(false);
+	}, [menuOpen]);
+
+	useEffect(() => {
+		const timer = setTimeout(() => {
+			fastScrollTo(1, 10);
+			setMenuOpen(false);
+		}, NEXT_PAGE_RATIO);
+
+		return () => {
+			clearTimeout(timer);
+		};
+	}, [location.pathname]);
+
 	return (
-		<header className={`header ${menuOpen ? ' header-overflow' : ''}`}>
-			<div className='wrapper'>
-				{tabletQuery ? (
-					<>
-						<LogoNavLink />
+		<>
+			<header className={`header ${menuOpen ? ' header-overflow' : ''}`}>
+				<div className='wrapper'>
+					{tabletQuery ? (
+						<>
+							<LogoNavLink />
 
-						<div
-							className='mobile-menu-btn'
-							onClick={() => {
-								const pageContainer = document.querySelector('.page-container');
+							<div className='mobile-menu-btn' onClick={toggleMenu}>
+								{Array.from({ length: 6 }).map((_, i) => (
+									<span key={i} />
+								))}
+							</div>
+						</>
+					) : (
+						<>
+							<nav className='header-nav header-nav--desktop'>
+								<LogoNavLink />
 
-								if (pageContainer) {
-									pageContainer.scrollTo({ top: 0, behavior: 'smooth' });
-
-									(pageContainer as HTMLElement).style.overflowY = `${
-										menuOpen ? 'auto' : 'hidden'
-									}`;
-								}
-
-								setMenuOpen((o) => !o);
-							}}
-						>
-							<span></span>
-							<span></span>
-							<span></span>
-							<span></span>
-							<span></span>
-							<span></span>
-						</div>
-
-						<nav className={`pos-abs mobile-menu${menuOpen ? ' open' : ''}`}>
-							<nav className={`mobile-menu__content`}>
-								<ul className='mobile-nav'>{navLinkItems}</ul>
-								<Socials
-									socialData={socialData}
-									items={[
-										{ id: 'github' },
-										{ id: 'linkedin' },
-										{ id: 'telegram' },
-										{ id: 'instagram' },
-									]}
-								/>
+								<ul className='header-nav__list'>{navLinkItems}</ul>
 							</nav>
-						</nav>
-					</>
-				) : (
-					<nav className='header-nav header-nav--desktop'>
-						<LogoNavLink />
+						</>
+					)}
+				</div>
+			</header>
 
-						<ul className='header-nav__list'>{navLinkItems}</ul>
-					</nav>
-				)}
-			</div>
-		</header>
+			{tabletQuery && <MobileMenu isOpen={menuOpen} navItems={navLinkItems} />}
+		</>
 	);
 };
 

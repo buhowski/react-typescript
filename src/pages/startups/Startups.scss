@@ -394,7 +394,7 @@ $nav-top: 2px;
 	&--dev-mode {
 		position: sticky;
 		top: 50px;
-		z-index: 1000;
+		z-index: 90;
 	}
 
 	@include tabletBig {

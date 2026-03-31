@@ -1,13 +1,13 @@
 @import '../../styles/variables';
 
 .about-wrapper {
-	margin-bottom: -80px;
+	// margin-bottom: -80px;
 	display: flex;
 	flex-direction: column;
-	height: calc(100% - 90px);
+	min-height: calc(100dvh - 90px);
 
 	@include tablet {
-		height: calc(100% - 80px);
+		min-height: calc(100dvh - 80px);
 		padding-bottom: 45px;
 
 		.base-title {

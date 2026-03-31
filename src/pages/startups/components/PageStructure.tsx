@@ -114,11 +114,8 @@ const PageStructure: React.FC<SinglePageProps> = ({ pageData, backButton, initia
 	);
 
 	const handleScrollUpdateSlider = useCallback(() => {
-		const pageContainer = document.querySelector('.page-container');
+		if (!initialLangReady || !contentToRender.length) return;
 
-		if (!pageContainer || !initialLangReady || !contentToRender.length) return;
-
-		const containerTop = pageContainer.getBoundingClientRect().top;
 		let scrollOffset = 200;
 		let newActivePitchIndex = 0;
 
@@ -127,7 +124,7 @@ const PageStructure: React.FC<SinglePageProps> = ({ pageData, backButton, initia
 			if (pitchElement) {
 				const rect = pitchElement.getBoundingClientRect();
 
-				if (rect.top <= containerTop + scrollOffset && rect.bottom > containerTop) {
+				if (rect.top <= scrollOffset && rect.bottom > 0) {
 					newActivePitchIndex = i;
 					break;
 				}
@@ -143,18 +140,14 @@ const PageStructure: React.FC<SinglePageProps> = ({ pageData, backButton, initia
 	}, [initialLangReady, contentToRender]);
 
 	useEffect(() => {
-		const pageContainer = document.querySelector('.page-container');
-		if (!pageContainer) return;
-
 		if (!isDesktopSliderContentInitialized.current && initialLangReady && contentToRender.length) {
 			setCurrentDesktopSliderContent(contentToRender[0]?.sliderContent || []);
 			isDesktopSliderContentInitialized.current = true;
 		}
 
-		pageContainer.addEventListener('scroll', handleScrollUpdateSlider, { passive: true });
 		handleScrollUpdateSlider();
 
-		return () => pageContainer.removeEventListener('scroll', handleScrollUpdateSlider);
+		return () => window.removeEventListener('scroll', handleScrollUpdateSlider);
 	}, [handleScrollUpdateSlider, initialLangReady, contentToRender]);
 
 	useEffect(() => {

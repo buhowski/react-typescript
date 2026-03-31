@@ -1,12 +1,11 @@
 @import '../../styles/variables';
 
 .home-wrapper {
-	min-height: calc(100% - 90px);
-	height: auto;
 	display: flex;
+	min-height: calc(100dvh - 90px);
 
 	@include tablet {
-		min-height: calc(100% - 80px);
+		min-height: calc(100dvh - 80px);
 	}
 
 	@include tabletSmall {
