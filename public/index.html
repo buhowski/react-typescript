@@ -11,7 +11,7 @@
   <meta name="mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="msapplication-navbutton-color" content="#202020" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
   <!-- Site metadata from .env -->
   <meta name="author" content="%REACT_APP_AUTHOR%" />
@@ -73,11 +73,11 @@
       min-height: 100svh;
     }
 
-    #root>div:not(.preloader) {
+    body .application {
       opacity: 0;
     }
 
-    #root.is-ready>div:not(.preloader) {
+    body.is-ready .application {
       opacity: 1;
     }
   </style>

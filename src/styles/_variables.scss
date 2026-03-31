@@ -11,7 +11,12 @@ $font-raleway: 'Raleway', sans-serif;
 $darken: #202020;
 $darker: #181818;
 $darkest: #111111;
-$blue-main: #0074ff;
+
+$blue-light: #1fa9ff;
+$blue-main: #006df3;
+$blue-deep: #00488b;
+$blue-darkest: #001a3a;
+
 $red: #af0303;
 $starYellow: #dfb842;
 
@@ -184,15 +189,16 @@ $bg-active-lang: #4e3e6f;
 		background-color: $blue-main;
 		z-index: -1;
 		transition: 0.25s ease;
-		box-shadow:
-			inset 23px 23px 46px #004d96,
-			inset -23px -23px 46px #006bd0;
+
 		will-change: height;
 	}
 
 	&.active,
 	&:hover {
 		&:after {
+			box-shadow:
+				inset 23px 23px 46px $blue-deep,
+				inset -23px -23px 46px $blue-main;
 			height: 100%;
 		}
 	}

@@ -190,6 +190,9 @@
 
 			&:before {
 				background-color: $blue-main;
+				box-shadow:
+					inset 23px 23px 46px #004d96,
+					inset -23px -23px 46px $blue-main;
 				animation: menuAnim 0.3s ease;
 			}
 

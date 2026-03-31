@@ -1,9 +1,9 @@
 .startup-actions {
 	position: relative;
-	// z-index: 0;
+	z-index: 12;
 
 	&.is-hidden {
-		z-index: 12;
+		z-index: 0;
 	}
 }
 
@@ -169,6 +169,11 @@ $nav-top: 2px;
 		}
 	}
 
+	// .startup-nav__links
+	&__links {
+		overflow-x: auto;
+	}
+
 	// .startup-nav__inner
 	&__inner {
 		display: flex;
@@ -177,24 +182,23 @@ $nav-top: 2px;
 		min-width: 100%;
 	}
 
-	// .startup-nav__links
-	&__links {
-		overflow-x: auto;
-	}
-
 	// .startup-nav__btn
 	&__btn {
-		padding: 13px 60px 11px;
+		padding: 14px 60px 12px;
 		font-family: $LouisGeorgeCafBold;
 		font-size: 18px;
 		letter-spacing: 1px;
-		transition:
-			color 0.25s,
-			border-radius 0.25s;
 		color: rgba($nav-btn-color, 0.6);
-		border-radius: 100px;
-		transition: transform 0.2s;
 		flex-shrink: 0;
+		border-radius: 100px;
+		overflow: hidden;
+		position: relative;
+		z-index: 0;
+		transition:
+			transform 0.2s,
+			color 0.2s,
+			background-color 0.3s,
+			box-shadow 0.3s;
 
 		@include tabletBig {
 			flex-grow: 1;
@@ -203,42 +207,65 @@ $nav-top: 2px;
 			letter-spacing: 0;
 		}
 
-		&.sub-active {
-			position: relative;
-			color: $nav-btn-color;
-			text-transform: uppercase;
+		&::after {
+			content: '';
+			display: block;
+			position: absolute;
+			width: 0;
+			min-width: 0;
+			bottom: 0;
+			left: 50%;
+			transform: translateX(-50%);
+			max-width: 50px;
+			height: 3px;
+			background-color: rgba($color: $blue-main, $alpha: 1);
+			border-radius: 100px;
+			transition:
+				width 0.25s,
+				min-width 0.25s,
+				max-width 0.25s;
+		}
 
-			&::before {
-				content: '';
-				display: block;
-				position: absolute;
-				bottom: 0;
-				left: 50%;
-				transform: translateX(-50%);
-				min-width: 35px;
-				max-width: 50px;
-				width: 30%;
-				height: 3px;
-				background-color: rgba($color: $blue-main, $alpha: 1);
-				border-radius: 20px;
-				transition:
-					width 0.25s,
-					max-width 0.25s;
-			}
-
-			&:hover::before {
-				max-width: 100%;
-				width: 100%;
-			}
+		&::before {
+			content: '';
+			display: block;
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			background-color: $blue-main;
+			box-shadow:
+				inset 30px 20px 40px $blue-deep,
+				inset -30px -20px 40px $blue-main;
+			width: 100%;
+			height: 100%;
+			z-index: -1;
+			transform: translateY(-110%);
+			transition: transform 0.2s;
 		}
 
 		&.active {
 			color: $nav-btn-color;
-			background-color: $blue-main;
-			box-shadow:
-				inset 30px 20px 40px #004a8f,
-				inset -30px -20px 40px #066ac7;
 			text-transform: uppercase;
+
+			&::before {
+				transform: translateY(0%);
+			}
+		}
+
+		&.sub-active {
+			color: $nav-btn-color;
+			text-transform: uppercase;
+			overflow: visible;
+
+			&::after {
+				min-width: 35px;
+				width: 30%;
+			}
+
+			&:hover::after {
+				max-width: 100%;
+				width: 100%;
+			}
 		}
 
 		@media (hover: hover) and (pointer: fine) {
@@ -291,6 +318,29 @@ $nav-top: 2px;
 
 	$lang-btn-width: 42px;
 
+	&::before {
+		content: '';
+		position: absolute;
+		z-index: -1;
+		left: 0;
+		height: 100%;
+		background-color: $bg-active-lang;
+		border-radius: $radius-lang;
+		/* Fallbacks */
+		width: $lang-btn-width;
+		transform: translateX(0);
+
+		/* Dynamic with JS */
+
+		width: var(--indicator-width, $lang-btn-width);
+		transform: translateX(var(--indicator-x, 0));
+
+		transition:
+			transform 250ms ease,
+			width 250ms ease;
+		will-change: transform, width;
+	}
+
 	// .idea-lang__btn
 	&__btn {
 		border: none;
@@ -319,27 +369,5 @@ $nav-top: 2px;
 			color: #fff;
 			pointer-events: none;
 		}
-	}
-
-	&::before {
-		content: '';
-		position: absolute;
-		z-index: -1;
-		left: 0;
-		height: 100%;
-		background-color: $bg-active-lang;
-		border-radius: $radius-lang;
-
-		/* Fallbacks */
-		width: $lang-btn-width;
-		transform: translateX(0);
-
-		/* Dynamic with JS */
-		width: var(--indicator-width, $lang-btn-width);
-		transform: translateX(var(--indicator-left, 0));
-		transition:
-			transform 0.25s,
-			width 0.25s;
-		will-change: transform, width;
 	}
 }

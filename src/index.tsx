@@ -21,12 +21,12 @@ const Root = () => {
 
 		const timer = setTimeout(() => {
 			setShowPreloader(false);
-			rootElement?.classList.add('is-ready');
+			document.body?.classList.add('is-ready');
 		}, 900);
 
 		return () => {
 			clearTimeout(timer);
-			rootElement?.classList.remove('is-ready');
+			document.body?.classList.remove('is-ready');
 		};
 	}, []);
 

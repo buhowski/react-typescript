@@ -5,9 +5,6 @@
 @import '../styles/base';
 @import '../styles/animation';
 
-$blue-light: #3392f9;
-$blue-deep: #00315c;
-
 $start-height: 20px;
 
 @keyframes transitionReload {
@@ -68,7 +65,9 @@ body.is-locked {
 	min-height: 100dvh;
 	background-color: $darken;
 	opacity: 1;
-	transition: opacity 1ms linear var(--next-page-ratio);
+	transition:
+		opacity 0.2s linear calc(var(--next-page-ratio) - 0.1s),
+		height 0.2s;
 
 	@include tabletBig {
 		margin-top: -25px;
@@ -89,7 +88,9 @@ body.is-locked {
 		left: 50%;
 		z-index: 1000;
 		background-color: $blue-main;
-		background: linear-gradient(178deg, $blue-main 0%, $blue-light 15%, $blue-deep 100%);
+		background:
+			radial-gradient(ellipse at 85% 90%, rgba($blue-light, 0.4) 0%, transparent 50%),
+			linear-gradient(170deg, $blue-darkest 0%, $blue-deep 55%, $blue-main 100%);
 		will-change: width, height, bottom;
 		overflow: hidden;
 
@@ -98,6 +99,9 @@ body.is-locked {
 		// height: 90%;
 	}
 
+	// &[class*='active'] {
+	// }
+
 	&.slide-exit {
 		padding-bottom: 500px;
 		opacity: 0;
@@ -105,7 +109,7 @@ body.is-locked {
 
 	&.slide-enter {
 		&:after {
-			animation: transitionReload var(--next-page-time) cubic-bezier(0.86, 0, 0.07, 1) forwards;
+			animation: transitionReload var(--next-page-time) cubic-bezier(0.76, 0, 0.24, 1) forwards;
 		}
 	}
 }

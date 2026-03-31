@@ -1,5 +1,6 @@
-import React, { useLayoutEffect, useRef } from 'react';
+import React, { useRef } from 'react';
 import { LanguageSwitcherProps } from '../../../types/common';
+import { useActiveIndicator } from '../helpers/useActiveIndicator';
 
 const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
 	currentLang,
@@ -9,38 +10,10 @@ const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
 	const isDev = process.env.NODE_ENV === 'development';
 	const containerRef = useRef<HTMLDivElement>(null);
 
-	useLayoutEffect(() => {
-		const container = containerRef.current;
-		if (!container) return;
-
-		// Update the CSS variables for the background indicator
-		const updateIndicator = () => {
-			const activeBtn = container.querySelector<HTMLElement>('.idea-lang__btn.active');
-
-			if (activeBtn) {
-				container.style.setProperty('--indicator-left', `${activeBtn.offsetLeft}px`);
-				container.style.setProperty('--indicator-width', `${activeBtn.offsetWidth}px`);
-			}
-		};
-
-		// Initial calculation after render
-		updateIndicator();
-
-		// Observe size changes of the container or buttons
-		const resizeObserver = new ResizeObserver(updateIndicator);
-		resizeObserver.observe(container);
-
-		// Handle window resize as a secondary fallback
-		window.addEventListener('resize', updateIndicator);
-
-		return () => {
-			resizeObserver.disconnect();
-			window.removeEventListener('resize', updateIndicator);
-		};
-	}, [currentLang, availableLangs]);
+	useActiveIndicator(containerRef, '.idea-lang__btn.active');
 
 	return (
-		<div className={`idea-lang ${isDev ? 'idea-lang--dev-mode' : ''}`} ref={containerRef}>
+		<div ref={containerRef} className={`idea-lang ${isDev ? 'idea-lang--dev-mode' : ''}`}>
 			{availableLangs.map((lang) => (
 				<button
 					key={lang}

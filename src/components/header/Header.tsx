@@ -84,7 +84,7 @@ const Header = () => {
 
 	useEffect(() => {
 		const timer = setTimeout(() => {
-			fastScrollTo(1, 10);
+			fastScrollTo(1, 0);
 			setMenuOpen(false);
 		}, NEXT_PAGE_RATIO);
 

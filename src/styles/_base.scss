@@ -165,18 +165,8 @@ svg {
 	z-index: 0;
 }
 
-// .page:first-of-type:has(+ .page) .startup-action {
-// 	z-index: 0;
-// }
-
-.page.slide-enter .table-content__btn,
 .nav-link.active,
-.idea-tabs__btn.active,
-.page.slide-exit .idea-tabs__btn,
-.page.slide-exit .idea-block__more,
-.page.slide-exit .idea-back,
-.page.slide-exit .nav-link,
-.page.slide-exit .logo-link {
+.startup-nav__btn.active {
 	pointer-events: none;
 }
 
