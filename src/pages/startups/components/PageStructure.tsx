@@ -1,23 +1,19 @@
 import React, { useState, useEffect, useMemo, useCallback, useRef } from 'react';
 import { useTabletLargeQuery } from '../../../config/useMediaQuery';
 import { getInitialLanguage } from '../helpers/languageHelper';
-import { useStickyHeader } from '../helpers/useStickyHeader';
 import { useActiveHeadingTracking } from '../helpers/useActiveHeadingTracking';
 import { VideoPlaybackProvider } from '../helpers/VideoPlaybackContext';
 import PopupContacts from '../../../components/PopupContacts';
 import Copyright from '../../../components/Copyright';
 import PitchContainer from './PitchContainer';
-import LanguageSwitcher from './LanguageSwitcher';
-import StartupNavigation from './StartupNavigation';
 import Slider from '../../../components/Slider';
 import TableOfContent from './TableOfContent';
 import { SinglePageProps, LANGUAGES, LanguageCode, htmlLangMap } from '../../../types/common';
 import BackButton from './BackButton';
 import '../Startups.scss';
 
-const PageStructure: React.FC<SinglePageProps> = ({ pageData, backButton, initialLang }) => {
+const PageStructure: React.FC<SinglePageProps> = ({ pageData, backButtonPath, initialLang }) => {
 	const useTabletLarge = useTabletLargeQuery();
-	const isActive = useStickyHeader();
 
 	const [initialLangReady, setInitialLangReady] = useState(false);
 	const [currentDesktopSliderContent, setCurrentDesktopSliderContent] = useState<any[]>([]);
@@ -43,6 +39,21 @@ const PageStructure: React.FC<SinglePageProps> = ({ pageData, backButton, initia
 		[pageData],
 	);
 
+	// Sync with global language change
+	useEffect(() => {
+		const handleGlobalLangChange = (e: any) => {
+			const newLang = e.detail.lang;
+			if (newLang !== currentLang) {
+				setCurrentLang(newLang);
+				allHeadingsMapRef.current.clear();
+				setHeadingsVersion((prev) => prev + 1);
+			}
+		};
+
+		window.addEventListener('languageChange', handleGlobalLangChange);
+		return () => window.removeEventListener('languageChange', handleGlobalLangChange);
+	}, [currentLang, setHeadingsVersion]);
+
 	useEffect(() => {
 		const langToSet = initialLang || getInitialLanguage(pageData, availableLangs);
 		localStorage.setItem('currentLang', langToSet);
@@ -59,16 +70,12 @@ const PageStructure: React.FC<SinglePageProps> = ({ pageData, backButton, initia
 		document.documentElement.lang = htmlLangMap[currentLang];
 	}, [currentLang]);
 
-	const dispatchLanguageChange = (lang: LanguageCode) => {
-		window.dispatchEvent(new CustomEvent('languageChange', { detail: { lang } }));
-	};
-
 	const changeLanguage = useCallback(
 		(lang: LanguageCode) => {
 			if (pageData?.[lang]?.length) {
 				setCurrentLang(lang);
 				localStorage.setItem('currentLang', lang);
-				dispatchLanguageChange(lang);
+				window.dispatchEvent(new CustomEvent('languageChange', { detail: { lang } }));
 
 				allHeadingsMapRef.current.clear();
 				setHeadingsVersion((prev) => prev + 1);
@@ -147,6 +154,7 @@ const PageStructure: React.FC<SinglePageProps> = ({ pageData, backButton, initia
 
 		handleScrollUpdateSlider();
 
+		window.addEventListener('scroll', handleScrollUpdateSlider);
 		return () => window.removeEventListener('scroll', handleScrollUpdateSlider);
 	}, [handleScrollUpdateSlider, initialLangReady, contentToRender]);
 
@@ -160,22 +168,6 @@ const PageStructure: React.FC<SinglePageProps> = ({ pageData, backButton, initia
 
 	return (
 		<VideoPlaybackProvider>
-			<LanguageSwitcher
-				currentLang={currentLang}
-				availableLangs={availableLangs}
-				changeLanguage={changeLanguage}
-			/>
-
-			<div className={`startup-action ${isActive ? 'is-active' : ''}`}>
-				{!useTabletLarge && backButton && (
-					<div className='wrapper'>
-						<BackButton to={backButton} />
-					</div>
-				)}
-
-				<StartupNavigation />
-			</div>
-
 			<div className='wrapper wrapper--idea'>
 				<div className='idea-section'>
 					<div className='idea-info' lang={htmlLangMap[currentLang]}>
@@ -208,7 +200,7 @@ const PageStructure: React.FC<SinglePageProps> = ({ pageData, backButton, initia
 						)}
 					</div>
 
-					<div className={`lang-sidebar ${'lang-sidebar--has-toc'}`}>
+					<div className='lang-sidebar lang-sidebar--has-toc'>
 						<TableOfContent
 							activeHeadingId={activeHeadingId}
 							onSelectIndex={handleTableOfContentSelect}
@@ -225,7 +217,7 @@ const PageStructure: React.FC<SinglePageProps> = ({ pageData, backButton, initia
 						</div>
 					</div>
 
-					{useTabletLarge && backButton && <BackButton to={backButton} />}
+					{useTabletLarge && backButtonPath && <BackButton to={backButtonPath} />}
 				</div>
 			</div>
 		</VideoPlaybackProvider>

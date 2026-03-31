@@ -95,7 +95,7 @@ body,
 
 .wrapper--idea,
 .wrapper--projects,
-.startup-action .wrapper {
+.startup-actions .wrapper {
 	overflow: visible;
 }
 
@@ -154,20 +154,20 @@ svg {
 .page.slide-enter .header,
 .page.slide-enter .idea-lang,
 .page.slide-enter .lang-sidebar,
-.page.slide-enter .startup-action,
 .page.slide-enter .idea-block__more,
 .page.slide-enter .table-content,
 .page.slide-enter .table-content__btn,
 .page.slide-enter .project-description,
-.page.slide-enter .idea-back,
+.page.slide-enter .idea-section .idea-back,
+.page.slide-enter .startap-actions,
 .page.slide-enter .pos-abs,
 .page.slide-enter .about-item .ball {
 	z-index: 0;
 }
 
-.page:first-of-type:has(+ .page) .startup-action {
-	z-index: 0;
-}
+// .page:first-of-type:has(+ .page) .startup-action {
+// 	z-index: 0;
+// }
 
 .page.slide-enter .table-content__btn,
 .nav-link.active,

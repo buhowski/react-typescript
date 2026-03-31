@@ -7,7 +7,7 @@ import socialData from '../socials/socialData';
 import { headerLogo } from '../../assets/svg/icons';
 import { isPathActive } from '../../config/pathUtils';
 import { startupsMap } from '../../pages/startups/startupsMap';
-import { fastScrollTo, toggleScrollLock } from '../../config/navigationHelper';
+import { fastScrollTo, toggleScrollLock } from '../../pages/startups/helpers/navigationHelper';
 import { NEXT_PAGE_RATIO } from '../../App';
 
 import './Header.scss';

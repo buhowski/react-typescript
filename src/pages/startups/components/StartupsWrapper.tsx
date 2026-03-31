@@ -7,7 +7,7 @@ import { visionMetaTags } from './startupsMetaTags';
 // Wrapper component for any single startup page
 const StartupsWrapper: React.FC<SinglePageProps> = ({
 	pageData,
-	backButton,
+	backButtonPath,
 	initialLang,
 	metaTags,
 }) => {
@@ -17,7 +17,11 @@ const StartupsWrapper: React.FC<SinglePageProps> = ({
 			<PageHelmet metaTags={metaTags || visionMetaTags} />
 
 			{/* Page */}
-			<PageStructure pageData={pageData} backButton={backButton} initialLang={initialLang} />
+			<PageStructure
+				pageData={pageData}
+				backButtonPath={backButtonPath}
+				initialLang={initialLang}
+			/>
 		</>
 	);
 };

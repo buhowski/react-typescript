@@ -19,11 +19,11 @@ export const startupsMap: Record<string, React.FC<InitialLangProp>> = Object.fro
 			(props: InitialLangProp) => (
 				<StartupsWrapper
 					{...pageData}
-					backButton={parent}
+					backButtonPath={parent}
 					initialLang={props.initialLang}
 					metaTags={{ ...defaultMeta, ...props.metaTags }}
 				/>
 			),
 		];
-	})
+	}),
 );

@@ -5,10 +5,9 @@
 @import '../styles/base';
 @import '../styles/animation';
 
-$blue-light: #3e99fa;
-$blue-deep: #002b5c;
+$blue-light: #3392f9;
+$blue-deep: #00315c;
 
-$pause: 10ms;
 $start-height: 20px;
 
 @keyframes transitionReload {
@@ -53,6 +52,8 @@ body.is-locked {
 // }
 
 .application {
+	min-width: 320px;
+
 	&:has(.slide-enter) {
 		pointer-events: none;
 		touch-action: none;
@@ -65,14 +66,16 @@ body.is-locked {
 	left: 0;
 	width: 100%;
 	min-height: 100dvh;
-	padding-top: 90px;
 	background-color: $darken;
-
 	opacity: 1;
-	transition: opacity $pause linear calc(var(--next-page-ratio) - $pause);
+	transition: opacity 1ms linear var(--next-page-ratio);
 
-	@include tablet {
-		padding-top: 80px;
+	@include tabletBig {
+		margin-top: -25px;
+	}
+
+	@include tabletSmall {
+		margin-top: 0;
 	}
 
 	&:after {
@@ -86,7 +89,7 @@ body.is-locked {
 		left: 50%;
 		z-index: 1000;
 		background-color: $blue-main;
-		background: linear-gradient(176deg, $blue-main 0%, $blue-light 20%, $blue-deep 100%);
+		background: linear-gradient(178deg, $blue-main 0%, $blue-light 15%, $blue-deep 100%);
 		will-change: width, height, bottom;
 		overflow: hidden;
 

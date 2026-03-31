@@ -31,18 +31,3 @@ export const toggleScrollLock = (isLocked: boolean): void => {
 		body.classList.remove('is-locked');
 	}
 };
-
-export const isIOSInternalBrowser = () => {
-	if (typeof window === 'undefined') return false;
-
-	const ua = navigator.userAgent;
-
-	// iOS/iPadOS
-	const isIOS =
-		/iPhone|iPad|iPod/i.test(ua) || (/Macintosh/i.test(ua) && navigator.maxTouchPoints > 1);
-
-	// Telegram, Threads, Instagram, FBAN, FB_IAB
-	const isInApp = /Telegram|Threads|Instagram|FBAN|FB_IAB|WebView/i.test(ua);
-
-	return isIOS && isInApp;
-};

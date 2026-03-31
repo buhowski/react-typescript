@@ -11,11 +11,9 @@
 }
 
 .header {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
+	position: relative;
 	z-index: 100;
+	width: 100%;
 	display: flex;
 	align-items: center;
 	padding: 20px 0 17px;

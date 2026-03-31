@@ -104,7 +104,7 @@ export interface LanguageSwitcherProps {
 // PageStructure component Props
 export interface PageProps {
 	pageData: Record<LanguageCode, TextDataItem[]>;
-	backButton?: string | null;
+	backButtonPath?: string | null;
 	metaTags?: MetaTags;
 }
 

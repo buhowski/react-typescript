@@ -1,6 +1,7 @@
 @import '../../styles/variables';
 @import '../../styles/animation';
 @import './components/TableOfContent.scss';
+@import './startup-actions.scss';
 
 @mixin title-style {
 	font-family: $font-raleway;
@@ -62,8 +63,6 @@
 	}
 }
 
-$section-width: 920px;
-
 .idea-section {
 	padding: 70px 40px 110px;
 	display: flex;
@@ -97,7 +96,7 @@ $section-width: 920px;
 	position: relative;
 
 	@include tabletBig {
-		padding-top: 112px;
+		padding-top: 100px;
 		height: auto;
 		width: 100%;
 		flex-shrink: unset;
@@ -105,7 +104,7 @@ $section-width: 920px;
 	}
 
 	@include tabletSmall {
-		padding-top: 40px;
+		padding-top: 55px;
 	}
 }
 
@@ -155,308 +154,6 @@ $section-width: 920px;
 
 	span {
 		font-size: 15px;
-	}
-}
-
-@mixin idea-back_hover {
-	color: white;
-
-	svg {
-		transform: translateX(-10px);
-	}
-}
-
-.idea-back {
-	font-family: $LouisGeorgeCafBold;
-	font-size: 18px;
-	letter-spacing: 1.6px;
-	color: $toc-title-color;
-	padding: 10px;
-	padding-left: 0;
-	display: inline-flex;
-	align-items: center;
-	line-height: 1.2;
-	gap: 10px;
-	position: absolute;
-	top: 4px;
-	z-index: 1;
-	transition: transform 0.2s;
-
-	@include tabletBig {
-		position: fixed;
-		top: auto;
-		bottom: 23px;
-		left: 0;
-		padding: 10px 17px;
-		border-radius: 0 10px 10px 0;
-		margin: 0;
-		background-color: #000000;
-		box-shadow: 0 0 2px #000000;
-		z-index: 10;
-
-		span {
-			display: none;
-		}
-	}
-
-	@include tabletSmall {
-		bottom: 15px;
-	}
-
-	@media (hover: hover) and (pointer: fine) {
-		&:hover {
-			@include idea-back_hover;
-		}
-	}
-
-	&:active {
-		@include idea-back_hover;
-		transform: scale(0.9);
-	}
-
-	span,
-	svg {
-		transition: 0.2s;
-	}
-
-	svg {
-		width: 16px;
-		fill: currentColor;
-
-		@include tabletBig {
-			width: 24px;
-		}
-	}
-}
-
-$nav-top: 2px;
-
-// StartupNavigation
-.startup-action {
-	position: sticky;
-	top: -$nav-top;
-	z-index: 11;
-	transition: 0.25s;
-
-	&.is-active {
-		.idea-tabs {
-			padding-top: $nav-top;
-			min-width: 100%;
-			border-radius: 0;
-			box-shadow: 0 3px 10px #000000;
-		}
-
-		.idea-tabs__btn {
-			border-radius: 0;
-		}
-
-		.idea-back {
-			position: fixed;
-		}
-
-		~ .wrapper--idea {
-			.table-content__list {
-				@include tabletBig {
-					position: fixed;
-					top: 40px;
-				}
-			}
-		}
-	}
-}
-
-@mixin idea-tabs__btn_hover {
-	color: #ffffff;
-	text-shadow: 0 0 8px rgba(#ffffff, 0.5);
-}
-
-.idea-tabs {
-	display: flex;
-	justify-content: center;
-	text-align: center;
-	background-color: #000000;
-	width: max-content;
-	min-width: 320px;
-	white-space: nowrap;
-	margin: 65px auto;
-	border-radius: 100px;
-	box-shadow: 0 0 6px #000000;
-	overflow: hidden;
-	padding-top: 0;
-	transition: 0.25s;
-
-	@include tabletBig {
-		width: calc(100% - 80px);
-		max-width: $section-width;
-		margin: 60px auto -47px;
-		box-shadow: 0 0 4px #000000;
-	}
-
-	@include tabletSmall {
-		margin-top: 50px;
-		margin-bottom: 16px;
-	}
-
-	@include mobile {
-		width: calc(100% - 30px);
-	}
-
-	// .idea-tabs__btn
-	&__btn {
-		padding: 13px 50px 11px;
-		font-family: $LouisGeorgeCafBold;
-		font-size: 18px;
-		letter-spacing: 1px;
-		transition:
-			color 0.25s,
-			border-radius 0.25s;
-		color: rgba($nav-btn-color, 0.6);
-		border-radius: 100px;
-		transition: transform 0.2s;
-
-		@include tabletBig {
-			flex-grow: 1;
-			padding: 14.5px 10px 12px;
-			font-size: 16px;
-			letter-spacing: 0;
-		}
-
-		&.sub-active {
-			position: relative;
-			color: $nav-btn-color;
-			text-transform: uppercase;
-
-			&::before {
-				content: '';
-				display: block;
-				position: absolute;
-				bottom: 0;
-				left: 50%;
-				transform: translateX(-50%);
-				min-width: 35px;
-				max-width: 50px;
-				width: 30%;
-				height: 3px;
-				background-color: rgba($color: $blue-main, $alpha: 1);
-				border-radius: 20px;
-				transition:
-					width 0.25s,
-					max-width 0.25s;
-			}
-
-			&:hover::before {
-				max-width: 100%;
-				width: 100%;
-			}
-		}
-
-		&.active {
-			color: $nav-btn-color;
-			background-color: $blue-main;
-			box-shadow:
-				inset 30px 20px 40px #004a8f,
-				inset -30px -20px 40px #066ac7;
-			text-transform: uppercase;
-		}
-
-		@media (hover: hover) and (pointer: fine) {
-			&:hover {
-				@include idea-tabs__btn_hover;
-			}
-		}
-
-		&:active {
-			@include idea-tabs__btn_hover;
-
-			&:not(.sub-active) {
-				transform: scale(0.9);
-			}
-		}
-	}
-}
-
-.idea-lang {
-	width: max-content;
-	display: flex;
-	font-family: $font-primary;
-	background-color: $bg-color-lang;
-	margin: 60px auto 0;
-	font-size: 14px;
-	border-radius: $radius-lang;
-	position: relative;
-	z-index: 5;
-	overflow: hidden;
-	border: 2px solid $bg-color-lang;
-	gap: 2px;
-	box-shadow: 0 0 6px #000;
-
-	// ### Debugging styles ###
-	&--dev-mode {
-		position: sticky;
-		top: 50px;
-		z-index: 90;
-	}
-
-	@include tabletBig {
-		margin-top: 50px;
-	}
-
-	@include tablet {
-		margin-top: 25px;
-	}
-
-	$lang-btn-width: 42px;
-
-	// .idea-lang__btn
-	&__btn {
-		border: none;
-		background: none;
-		width: $lang-btn-width;
-		padding: 14px 10px 13px;
-		line-height: 1;
-		color: #000;
-		font-weight: bold;
-		transition:
-			color 0.25s,
-			background-color 0.25s;
-		border-radius: $radius-lang;
-
-		@media (hover: hover) and (pointer: fine) {
-			&:not(.active):hover {
-				@include idea-lang__btn_hover;
-			}
-		}
-
-		&:active {
-			@include idea-lang__btn_hover;
-		}
-
-		&.active {
-			color: #fff;
-			pointer-events: none;
-		}
-	}
-
-	&::before {
-		content: '';
-		position: absolute;
-		z-index: -1;
-		left: 0;
-		height: 100%;
-		background-color: $bg-active-lang;
-		border-radius: $radius-lang;
-
-		/* Fallbacks */
-		width: $lang-btn-width;
-		transform: translateX(0);
-
-		/* Dynamic with JS */
-		width: var(--indicator-width, $lang-btn-width);
-		transform: translateX(var(--indicator-left, 0));
-		transition:
-			transform 0.25s,
-			width 0.25s;
-		will-change: transform, width;
 	}
 }
 
