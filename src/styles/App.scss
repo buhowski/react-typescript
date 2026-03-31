@@ -5,10 +5,10 @@
 @import '../styles/base';
 @import '../styles/animation';
 
-$blue-light: #48a0ff;
+$blue-light: #3e99fa;
 $blue-deep: #002b5c;
 
-$pause: 15ms;
+$pause: 10ms;
 $start-height: 20px;
 
 @keyframes transitionReload {
@@ -86,13 +86,13 @@ body.is-locked {
 		left: 50%;
 		z-index: 1000;
 		background-color: $blue-main;
-		background: linear-gradient(175deg, $blue-light 0%, $blue-main 20%, $blue-deep 100%);
+		background: linear-gradient(176deg, $blue-main 0%, $blue-light 20%, $blue-deep 100%);
 		will-change: width, height, bottom;
 		overflow: hidden;
 
 		// Debugging styles
-		// width: 100%;
-		// height: 90%;
+		width: 100%;
+		height: 90%;
 	}
 
 	&.slide-exit {
