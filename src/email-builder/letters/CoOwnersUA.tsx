@@ -14,7 +14,7 @@ const CoOwnersUA = ({ lang }: { lang?: string }) => {
 	return (
 		<EmailLayout lang={lang}>
 			{/* Preview Subject */}
-			<EmailPreheader text='Шукаю співучасників — запуск альтернативної операційної системи реальності' />
+			<EmailPreheader text='Шукаю співучасників — альтернативна операційна система реальності' />
 
 			<EmailHeader />
 

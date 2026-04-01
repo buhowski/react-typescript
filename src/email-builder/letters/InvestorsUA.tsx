@@ -14,7 +14,7 @@ const InvestorsUA = ({ lang }: { lang?: string }) => {
 	return (
 		<EmailLayout lang={lang}>
 			{/* Preview Subject */}
-			<EmailPreheader text='Капіталізуємо смисли — інвестиції в альтернативну операційну систему реальності' />
+			<EmailPreheader text='Капіталізую смисли — альтернативна операційна система реальності' />
 
 			<EmailHeader />
 

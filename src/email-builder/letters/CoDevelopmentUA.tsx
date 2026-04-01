@@ -13,7 +13,7 @@ const CoDevelopmentUA = ({ lang }: { lang?: string }) => {
 	return (
 		<EmailLayout lang={lang}>
 			{/* Preview Subject */}
-			<EmailPreheader text='Dark Fantasy Odyssey у трьох частинах — Тіні Козаків. Сага' />
+			<EmailPreheader text='Dark Fantasy Action RPG у трьох частинах — Тіні Козаків. Сага' />
 
 			<EmailHeader />
 
