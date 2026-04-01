@@ -36,7 +36,7 @@ const About = () => {
 					/>
 				</div>
 
-				{dotsData.map(({ classItem, title, titleSub, img, alt }, index) => {
+				{dotsData.map(({ classItem, title, titleSub, img }, index) => {
 					return (
 						<div className={`pos-abs about-item ${classItem}`} key={index}>
 							<div
@@ -52,7 +52,7 @@ const About = () => {
 									{title}
 								</p>
 
-								<img className='line-drawing-pic' src={img} alt={alt} />
+								{img}
 							</div>
 						</div>
 					);

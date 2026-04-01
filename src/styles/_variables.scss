@@ -13,7 +13,7 @@ $darker: #181818;
 $darkest: #111111;
 
 $blue-light: #1fa9ff;
-$blue-main: #006df3;
+$blue-main: #0074ff;
 $blue-deep: #00488b;
 $blue-darkest: #001a3a;
 
@@ -21,12 +21,12 @@ $red: #af0303;
 $starYellow: #dfb842;
 
 $bg-main:
-	radial-gradient(ellipse at 80% 80%, rgba($blue-light, 0.4) 0%, transparent 50%),
+	radial-gradient(ellipse at 85% 85%, rgba($blue-light, 0.2) 0%, transparent 50%),
 	linear-gradient(170deg, $blue-deep 0%, $blue-main 100%);
 
 $box-shadow-main:
-	inset 20px 15px 45px $blue-deep,
-	inset -30px -15px 30px rgba($blue-light, 0.6);
+	inset 10px 15px 35px $blue-deep,
+	inset -15px -15px 35px $blue-main;
 
 // Text Container
 $section-width: 920px;

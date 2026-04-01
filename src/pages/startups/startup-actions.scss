@@ -216,8 +216,7 @@ $nav-top: 2px;
 			transform: translateX(-50%);
 			max-width: 60px;
 			height: 3px;
-			background-color: $blue-main;
-			background: $bg-main;
+			background-color: rgba($blue-main, 0.8);
 			border-radius: 100px;
 			overflow: hidden;
 			transition:

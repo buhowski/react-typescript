@@ -153,13 +153,14 @@
 			transition: color 0.25s;
 			font-size: 17px;
 			letter-spacing: 2px;
+			transition: transform 0.2s;
 
 			&::after {
 				height: 100%;
 			}
 
 			&:hover {
-				color: $starYellow;
+				transform: scale(1.15);
 			}
 		}
 	}
