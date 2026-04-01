@@ -8,7 +8,6 @@ import { useStickyHeader } from '../helpers/useStickyHeader';
 import { findParentPath } from '../helpers/backButtonPathHelper';
 import { startupSubPaths } from '../../../routesData';
 import BackButton from './BackButton';
-import { useActiveIndicator } from '../helpers/useActiveIndicator';
 
 type Props = {
 	onActiveChange?: (active: boolean) => void;
@@ -19,14 +18,11 @@ const StartupNavigation: React.FC<Props> = ({ onActiveChange, delayedPathKey }) 
 	const { pathname } = useLocation();
 	const useTabletLarge = useTabletLargeQuery();
 	const navRef = useRef<HTMLDivElement>(null);
-	const containerRef = useRef<HTMLDivElement>(null);
 	const isActive = useStickyHeader(navRef);
 	const backButtonPath = useMemo(
 		() => (delayedPathKey ? findParentPath(startupSubPaths, delayedPathKey) : null),
 		[delayedPathKey],
 	);
-
-	useActiveIndicator(containerRef, '.startup-nav__btn.active');
 
 	useEffect(() => {
 		onActiveChange?.(isActive);
@@ -43,7 +39,7 @@ const StartupNavigation: React.FC<Props> = ({ onActiveChange, delayedPathKey }) 
 			<div className='startup-nav__container'>
 				<div className='startup-nav__wrapper'>
 					<div className='startup-nav__links'>
-						<div className='startup-nav__inner' ref={containerRef}>
+						<div className='startup-nav__inner'>
 							{startupsNav.map(({ pageLink, pageName }, index) => {
 								const isMainActive = normalizePath(pathname) === pageLink;
 								const isSubActive = isPathSubActive(pageLink, pathname);
