@@ -65,9 +65,7 @@ body.is-locked {
 	min-height: 100dvh;
 	background-color: $darken;
 	opacity: 1;
-	transition:
-		opacity 0.2s linear calc(var(--next-page-ratio) - 0.1s),
-		height 0.2s;
+	transition: opacity 0.2s linear calc(var(--next-page-ratio) - 0.1s);
 
 	@include tabletBig {
 		margin-top: -25px;
@@ -88,9 +86,7 @@ body.is-locked {
 		left: 50%;
 		z-index: 1000;
 		background-color: $blue-main;
-		background:
-			radial-gradient(ellipse at 85% 90%, rgba($blue-light, 0.4) 0%, transparent 50%),
-			linear-gradient(170deg, $blue-darkest 0%, $blue-deep 55%, $blue-main 100%);
+		background: $bg-main;
 		will-change: width, height, bottom;
 		overflow: hidden;
 
