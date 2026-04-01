@@ -96,9 +96,14 @@ $nav-top: 2px;
 
 		.startup-nav__wrapper {
 			padding-top: $nav-top;
+			min-width: 100%;
 			border-radius: 0;
 			box-shadow: 0 3px 10px #000000;
-			min-width: 100%;
+			padding: 0 80px;
+
+			@include tabletBig {
+				padding: 0;
+			}
 		}
 
 		.startup-nav__btn {
@@ -124,7 +129,7 @@ $nav-top: 2px;
 	position: relative;
 	z-index: 11;
 	margin-top: 60px;
-	padding-bottom: 115px;
+	padding-bottom: 120px;
 	height: 50px;
 
 	@include tabletBig {
@@ -151,17 +156,20 @@ $nav-top: 2px;
 		max-width: max-content;
 		min-width: 320px;
 		margin: auto;
-		transition: 0.25s;
 		text-align: center;
 		background-color: #000000;
 		border-radius: 100px;
-		box-shadow: 0 0 6px #000000;
+		box-shadow: 0 0 4px #000000;
 		overflow: hidden;
+		transition:
+			padding 0.3s,
+			min-width 0.3s,
+			border-radius 0.3s,
+			box-shadow 0.3s;
 
 		@include tabletBig {
-			width: calc(100% - 80px);
 			max-width: $section-width;
-			box-shadow: 0 0 4px #000000;
+			width: calc(100% - 80px);
 		}
 
 		@include mobile {
@@ -178,28 +186,56 @@ $nav-top: 2px;
 	&__inner {
 		display: flex;
 		justify-content: center;
-		width: max-content;
-		min-width: 100%;
+		width: 100%;
+		margin: auto;
+		overflow: hidden;
+		max-width: 1440px;
+
+		// Active indicator sliding
+		// &::before {
+		// 	content: '';
+		// 	display: block;
+		// 	height: 100%;
+		// 	position: absolute;
+		// 	bottom: 0;
+		// 	left: 0;
+		// 	z-index: -1;
+		// background-color: $blue-main;
+		// background: $bg-main;
+		// /* Fallbacks */
+		// width: max-content;
+		// transform: translateX(0);
+
+		// /* Dynamic with JS */
+		// width: var(--indicator-width, max-content);
+		// transform: translateX(var(--indicator-x, 0));
+
+		// transition:
+		// 	transform 250ms ease,
+		// 	width 250ms ease;
+		// will-change: transform, width;
+		// }
 	}
 
 	// .startup-nav__btn
 	&__btn {
-		padding: 14px 60px 12px;
+		padding: 14px 70px 12px;
 		font-family: $LouisGeorgeCafBold;
-		font-size: 18px;
+		font-size: 19px;
 		letter-spacing: 1px;
 		color: rgba($nav-btn-color, 0.6);
 		flex-shrink: 0;
+		flex-grow: 1;
 		border-radius: 100px;
 		overflow: hidden;
 		position: relative;
 		z-index: 0;
 		transition:
 			transform 0.2s,
-			color 0.2s;
+			color 0.25s,
+			border-radius 0.3s;
 
 		@include tabletBig {
-			flex-grow: 1;
 			padding: 15.5px 15px 13px;
 			font-size: 16px;
 			letter-spacing: 0;
@@ -216,7 +252,7 @@ $nav-top: 2px;
 			transform: translateX(-50%);
 			max-width: 60px;
 			height: 3px;
-			background-color: rgba($blue-main, 0.8);
+			background-color: rgba($blue-main, 0.85);
 			border-radius: 100px;
 			overflow: hidden;
 			transition:
@@ -236,8 +272,22 @@ $nav-top: 2px;
 			width: 100%;
 			height: 100%;
 			z-index: -1;
-			transform: translateY(-105%);
+			transform: scaleX(0);
 			transition: transform 0.3s;
+		}
+
+		span {
+			display: block;
+
+			&::before {
+				content: attr(data-text);
+				text-transform: uppercase;
+				display: block;
+				height: 0;
+				overflow: hidden;
+				visibility: hidden;
+				pointer-events: none;
+			}
 		}
 
 		&.active {
@@ -245,7 +295,7 @@ $nav-top: 2px;
 			text-transform: uppercase;
 
 			&::before {
-				transform: translateY(0%);
+				transform: scaleX(1);
 			}
 		}
 
@@ -259,7 +309,14 @@ $nav-top: 2px;
 				width: 35%;
 			}
 
-			&:hover::after {
+			@media (hover: hover) and (pointer: fine) {
+				&:hover::after {
+					max-width: 100%;
+					width: 100%;
+				}
+			}
+
+			&:active::after {
 				max-width: 100%;
 				width: 100%;
 			}
