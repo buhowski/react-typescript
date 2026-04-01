@@ -106,7 +106,8 @@ $nav-top: 2px;
 			}
 		}
 
-		.startup-nav__btn {
+		.startup-nav__btn,
+		.startup-nav__btn::before {
 			border-radius: 0;
 		}
 
@@ -252,7 +253,7 @@ $nav-top: 2px;
 			transform: translateX(-50%);
 			max-width: 60px;
 			height: 3px;
-			background-color: rgba($blue-main, 0.85);
+			background-color: rgba($blue-main, 0.86);
 			border-radius: 100px;
 			overflow: hidden;
 			transition:
@@ -272,22 +273,11 @@ $nav-top: 2px;
 			width: 100%;
 			height: 100%;
 			z-index: -1;
-			transform: scaleX(0);
-			transition: transform 0.3s;
-		}
-
-		span {
-			display: block;
-
-			&::before {
-				content: attr(data-text);
-				text-transform: uppercase;
-				display: block;
-				height: 0;
-				overflow: hidden;
-				visibility: hidden;
-				pointer-events: none;
-			}
+			border-radius: 100px;
+			transform: scale(0, 1) translateY(100%);
+			transition:
+				transform 0.3s,
+				border-radius 0.3s;
 		}
 
 		&.active {
@@ -295,7 +285,7 @@ $nav-top: 2px;
 			text-transform: uppercase;
 
 			&::before {
-				transform: scaleX(1);
+				transform: scale(1, 1) translateY(0);
 			}
 		}
 
@@ -333,6 +323,20 @@ $nav-top: 2px;
 
 			&:not(.sub-active) {
 				transform: scale(0.9);
+			}
+		}
+
+		span {
+			display: block;
+
+			&::before {
+				content: attr(data-text);
+				text-transform: uppercase;
+				display: block;
+				height: 0;
+				overflow: hidden;
+				visibility: hidden;
+				pointer-events: none;
 			}
 		}
 	}
