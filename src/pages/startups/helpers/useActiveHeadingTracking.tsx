@@ -97,12 +97,12 @@ export const useActiveHeadingTracking = (
 			const targetElement = document.getElementById(headingId);
 
 			if (targetElement) {
-				const scrollOffset = useTabletLarge ? 80 : 90;
+				const scrollOffset = useTabletLarge ? 90 : 95;
 				// rect.top + current scroll = absolute position in document
 				const targetTop = targetElement.getBoundingClientRect().top + window.scrollY;
 				const scrollTo = targetTop - scrollOffset;
 
-				animateScroll(scrollTo, 400);
+				animateScroll(scrollTo, 450);
 			} else {
 				console.warn(`Missing ID: ${headingId}`);
 				showReloadAlert();

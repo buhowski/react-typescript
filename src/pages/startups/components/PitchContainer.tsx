@@ -19,7 +19,7 @@ const PitchContainer = React.memo(
 				(headings: { text: string; level: number; id: string }[]) => {
 					onHeadingsExtracted?.(index, headings);
 				},
-				[index, onHeadingsExtracted]
+				[index, onHeadingsExtracted],
 			);
 
 			// Determine if an error message should be displayed for the markdown content
@@ -56,8 +56,8 @@ const PitchContainer = React.memo(
 					)}
 				</section>
 			);
-		}
-	)
+		},
+	),
 );
 
 export default PitchContainer;

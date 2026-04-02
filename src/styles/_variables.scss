@@ -82,10 +82,6 @@ $radius-lang: 100px;
 $bg-color-lang: #a69d9d;
 $bg-active-lang: #4e3e6f;
 
-@mixin idea-lang__btn_hover {
-	background-color: rgba($bg-active-lang, 0.45);
-}
-
 // nav burger icon
 @mixin burgerIcon($burger-width: 40px, $burger-height: 25px, $border-width: 3px) {
 	width: $burger-width;

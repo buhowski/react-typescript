@@ -55,7 +55,7 @@ export const dataSliderSaga = [
 		itemSrc: cossacksReplyLetter,
 		itemAlt:
 			'Ukrainian Cossacks writing a reply letter to the Turkish sultan — historical painting, 17th century military life',
-		itemCaption: 'Hermit Cossacks Refs',
+		itemCaption: 'Hermit Cossacks / Gypsy Punks',
 		putImgTitle: true,
 	},
 ];
