@@ -5,7 +5,7 @@ import { createData } from '../../helpers/pageDataFactory';
 import {
 	dataSliderOnceInUkraine,
 	dataSliderVolynWedding,
-	dataSliderHeShe,
+	dataSliderSheHe,
 	dataSliderWoodenFiction,
 	dataSliderLilithsAdventure,
 } from '../dataSlider';
@@ -29,10 +29,10 @@ export const europeanUkrainiansPage = createData([
 ]);
 
 // She + He
-export const heShePage = createData([
+export const sheHePage = createData([
 	{
-		markdownAPI: '/text-data/cinema/HeShe/HeShe.md',
-		sliderContent: dataSliderHeShe,
+		markdownAPI: '/text-data/cinema/SheHe/SheHe.md',
+		sliderContent: dataSliderSheHe,
 	},
 ]);
 

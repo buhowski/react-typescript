@@ -4,7 +4,7 @@ import posterProjectsDev from '../../../assets/startup/brain.jpg';
 import writer from '../../../assets/startup/writer.webp';
 import posterOnceInUkraine from '../../../assets/startup/cinema/once.webp';
 import posterVolynWedding from '../../../assets/startup/cinema/volyn-wedding-poster.webp';
-import posterHeShe from '../../../assets/startup/cinema/she-he.webp';
+import posterSheHe from '../../../assets/startup/cinema/she-he.webp';
 import posterWoodenFiction from '../../../assets/startup/cinema/wooden.webp';
 import poster2WoodenFiction from '../../../assets/startup/cinema/wooden-2.webp';
 import posterLilithsAdventure from '../../../assets/startup/cinema/lilit-poster.webp';
@@ -53,9 +53,9 @@ export const dataSliderVolynWedding = [
 	},
 ];
 
-export const dataSliderHeShe = [
+export const dataSliderSheHe = [
 	{
-		itemSrc: posterHeShe,
+		itemSrc: posterSheHe,
 		itemAlt:
 			'She + He — tragic romance poster, man in devil armor and woman as goddess at masquerade, urban mystical atmosphere.',
 	},

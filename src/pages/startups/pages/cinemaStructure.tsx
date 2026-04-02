@@ -6,7 +6,7 @@ import {
 	pathToEuropeanUkrainians,
 	pathToSelfPresentation,
 	pathToTheCorp,
-	pathToHeShe,
+	pathToSheHe,
 	pathToOnceInUkraine,
 	pathToVolynWedding,
 	pathToLilithsAdventure,
@@ -18,7 +18,7 @@ import {
 	dataSliderProjectDev,
 	dataSliderOnceInUkraine,
 	dataSliderVolynWedding,
-	dataSliderHeShe,
+	dataSliderSheHe,
 	dataSliderWoodenFiction,
 	dataSliderLilithsAdventure,
 } from './dataSlider';
@@ -63,9 +63,9 @@ export const cinemaPage = createData([
 
 	// She + He
 	{
-		markdownAPI: '/text-data/cinema/HeShe/PreviewHeShe.md',
-		sliderContent: dataSliderHeShe,
-		pagePreviewUrl: pathToHeShe,
+		markdownAPI: '/text-data/cinema/SheHe/PreviewSheHe.md',
+		sliderContent: dataSliderSheHe,
+		pagePreviewUrl: pathToSheHe,
 	},
 
 	// Lilith's Adventure
