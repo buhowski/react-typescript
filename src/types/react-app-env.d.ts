@@ -1,6 +1,7 @@
 /// <reference types="react-scripts" />
 
-// You can add more custom type declarations or type extensions here as needed.
+// STATIC ASSETS
+
 declare module '*.pdf' {
 	const content: string;
 	export default content;
@@ -16,7 +17,14 @@ declare module '*.webm' {
 	export default content;
 }
 
-// Global declaration for the YouTube IFrame API
+// STYLE IMPORTS
+
+declare module '*.css';
+declare module '*.scss';
+declare module '*.sass';
+
+// GLOBAL YOUTUBE IFRAME API
+
 declare global {
 	interface Window {
 		YT: any;
