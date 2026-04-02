@@ -97,7 +97,7 @@ export const useActiveHeadingTracking = (
 			const targetElement = document.getElementById(headingId);
 
 			if (targetElement) {
-				const scrollOffset = useTabletLarge ? 90 : 95;
+				const scrollOffset = useTabletLarge ? 85 : 95;
 				// rect.top + current scroll = absolute position in document
 				const targetTop = targetElement.getBoundingClientRect().top + window.scrollY;
 				const scrollTo = targetTop - scrollOffset;
