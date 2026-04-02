@@ -13,16 +13,18 @@ const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
 	useActiveIndicator(containerRef, '.idea-lang__btn.active');
 
 	return (
-		<div ref={containerRef} className={`idea-lang ${isDev ? 'idea-lang--dev-mode' : ''}`}>
-			{availableLangs.map((lang) => (
-				<button
-					key={lang}
-					onClick={() => changeLanguage(lang)}
-					className={`idea-lang__btn ${currentLang === lang ? 'active' : ''}`}
-				>
-					{lang.toUpperCase()}
-				</button>
-			))}
+		<div className={`${isDev ? 'idea-devMode' : ''}`}>
+			<div ref={containerRef} className={`idea-lang`}>
+				{availableLangs.map((lang) => (
+					<button
+						key={lang}
+						onClick={() => changeLanguage(lang)}
+						className={`idea-lang__btn ${currentLang === lang ? 'active' : ''}`}
+					>
+						{lang.toUpperCase()}
+					</button>
+				))}
+			</div>
 		</div>
 	);
 };

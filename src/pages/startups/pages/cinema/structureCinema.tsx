@@ -28,7 +28,7 @@ export const europeanUkrainiansPage = createData([
 	},
 ]);
 
-// He + She
+// She + He
 export const heShePage = createData([
 	{
 		markdownAPI: '/text-data/cinema/HeShe/HeShe.md',

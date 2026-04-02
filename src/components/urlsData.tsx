@@ -20,7 +20,7 @@ export const pathToTheCorp = '/corp';
 
 export const pathToOnceInUkraine = '/once';
 export const pathToVolynWedding = '/volyn';
-export const pathToHeShe = '/he-she';
+export const pathToHeShe = '/she-he';
 
 export const pathToWoodenFiction = '/wooden';
 export const pathToLilithsAdventure = '/lilith';

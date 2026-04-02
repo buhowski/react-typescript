@@ -76,8 +76,8 @@ const CoProductionUA = ({ lang }: { lang?: string }) => {
 			<EmailLinkList
 				items={[
 					{
-						title: 'Він + Вона',
-						url: 'https://buhowski.dev/he-she',
+						title: 'Вона + Він',
+						url: 'https://buhowski.dev/she-he',
 						genre: 'Urban Verse Tragic Romance',
 					},
 				]}

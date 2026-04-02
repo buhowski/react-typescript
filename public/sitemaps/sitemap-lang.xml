@@ -206,32 +206,32 @@
   </url>
 
   <url>
-    <loc>https://buhowski.dev/he-she</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://buhowski.dev/en/he-she" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://buhowski.dev/ru/he-she" />
-    <xhtml:link rel="alternate" hreflang="uk" href="https://buhowski.dev/ua/he-she" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://buhowski.dev/he-she" />
+    <loc>https://buhowski.dev/she-he</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://buhowski.dev/en/she-he" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://buhowski.dev/ru/she-he" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://buhowski.dev/ua/she-he" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://buhowski.dev/she-he" />
   </url>
   <url>
-    <loc>https://buhowski.dev/en/he-she</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://buhowski.dev/en/he-she" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://buhowski.dev/ru/he-she" />
-    <xhtml:link rel="alternate" hreflang="uk" href="https://buhowski.dev/ua/he-she" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://buhowski.dev/he-she" />
+    <loc>https://buhowski.dev/en/she-he</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://buhowski.dev/en/she-he" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://buhowski.dev/ru/she-he" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://buhowski.dev/ua/she-he" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://buhowski.dev/she-he" />
   </url>
   <url>
-    <loc>https://buhowski.dev/ru/he-she</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://buhowski.dev/en/he-she" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://buhowski.dev/ru/he-she" />
-    <xhtml:link rel="alternate" hreflang="uk" href="https://buhowski.dev/ua/he-she" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://buhowski.dev/he-she" />
+    <loc>https://buhowski.dev/ru/she-he</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://buhowski.dev/en/she-he" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://buhowski.dev/ru/she-he" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://buhowski.dev/ua/she-he" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://buhowski.dev/she-he" />
   </url>
   <url>
-    <loc>https://buhowski.dev/ua/he-she</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://buhowski.dev/en/he-she" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://buhowski.dev/ru/he-she" />
-    <xhtml:link rel="alternate" hreflang="uk" href="https://buhowski.dev/ua/he-she" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://buhowski.dev/he-she" />
+    <loc>https://buhowski.dev/ua/she-he</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://buhowski.dev/en/she-he" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://buhowski.dev/ru/she-he" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://buhowski.dev/ua/she-he" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://buhowski.dev/she-he" />
   </url>
 
   <url>

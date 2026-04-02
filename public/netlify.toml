@@ -12,6 +12,12 @@
   force = true
 
 [[redirects]]
+  from = "/he-she"
+  to = "/she-he"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/projects"
   to = "/portfolio"
   status = 301

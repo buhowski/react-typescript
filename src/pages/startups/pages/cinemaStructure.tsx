@@ -61,7 +61,7 @@ export const cinemaPage = createData([
 		pagePreviewUrl: pathToOnceInUkraine,
 	},
 
-	// He + She
+	// She + He
 	{
 		markdownAPI: '/text-data/cinema/HeShe/PreviewHeShe.md',
 		sliderContent: dataSliderHeShe,
