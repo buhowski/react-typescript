@@ -170,10 +170,6 @@ $nav-top: 2px;
 	// .startup-nav__container
 	&__container {
 		width: 100%;
-
-		@include tabletBig {
-			margin-bottom: -40px;
-		}
 	}
 
 	// .startup-nav__wrapper

@@ -67,14 +67,6 @@ body.is-locked {
 	opacity: 1;
 	transition: opacity 0.2s linear calc(var(--next-page-ratio) - 0.1s);
 
-	@include tabletBig {
-		margin-top: -25px;
-	}
-
-	@include tabletSmall {
-		margin-top: 0;
-	}
-
 	&:after {
 		content: '';
 		display: block;
