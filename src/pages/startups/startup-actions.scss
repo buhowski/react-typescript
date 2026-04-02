@@ -105,7 +105,7 @@ $nav-top: 2px;
 			.idea-lang {
 				position: fixed;
 				left: 50%;
-				top: 50px;
+				top: 55px;
 				transform: translateX(-50%);
 				z-index: 12;
 			}
@@ -118,19 +118,14 @@ $nav-top: 2px;
 		}
 
 		.startup-nav__wrapper {
-			padding-top: $nav-top;
 			min-width: 100%;
 			border-radius: 0;
 			box-shadow: 0 3px 10px #000000;
-			padding: 0 80px;
+			padding: $nav-top 80px 0;
 
 			@include tabletBig {
-				padding: 0;
+				padding: $nav-top 0 0;
 			}
-		}
-
-		.startup-nav__btn {
-			flex-grow: 1;
 		}
 
 		.startup-nav__btn,
@@ -150,16 +145,6 @@ $nav-top: 2px;
 				}
 			}
 		}
-
-		.startup-nav > .wrapper ~ {
-			.startup-nav__container .startup-nav__btn {
-				flex-grow: 0;
-
-				@include tabletBig {
-					flex-grow: 1;
-				}
-			}
-		}
 	}
 }
 
@@ -167,8 +152,8 @@ $nav-top: 2px;
 	position: relative;
 	z-index: 11;
 	margin-top: 60px;
-	padding-bottom: 120px;
-	height: 50px;
+	padding-bottom: 125px;
+	height: 52px;
 
 	@include tabletBig {
 		padding-bottom: 0;
@@ -217,6 +202,7 @@ $nav-top: 2px;
 
 	// .startup-nav__links
 	&__links {
+		overflow-y: hidden;
 		overflow-x: auto;
 	}
 
@@ -224,40 +210,15 @@ $nav-top: 2px;
 	&__inner {
 		display: flex;
 		justify-content: center;
-		width: 100%;
+		width: max-content;
+		min-width: 100%;
 		margin: auto;
-		overflow: hidden;
 		max-width: 1440px;
-
-		// Active indicator sliding
-		// &::before {
-		// 	content: '';
-		// 	display: block;
-		// 	height: 100%;
-		// 	position: absolute;
-		// 	bottom: 0;
-		// 	left: 0;
-		// 	z-index: -1;
-		// background-color: $blue-main;
-		// background: $bg-main;
-		// /* Fallbacks */
-		// width: max-content;
-		// transform: translateX(0);
-
-		// /* Dynamic with JS */
-		// width: var(--indicator-width, max-content);
-		// transform: translateX(var(--indicator-x, 0));
-
-		// transition:
-		// 	transform 250ms ease,
-		// 	width 250ms ease;
-		// will-change: transform, width;
-		// }
 	}
 
 	// .startup-nav__btn
 	&__btn {
-		padding: 14px 70px 12px;
+		padding: 14px 70px 13px;
 		font-family: $LouisGeorgeCafBold;
 		font-size: 19px;
 		letter-spacing: 1px;
@@ -266,6 +227,7 @@ $nav-top: 2px;
 		border-radius: 100px;
 		overflow: hidden;
 		position: relative;
+		flex-grow: 1;
 		z-index: 0;
 		transition:
 			transform 0.2s,
@@ -273,10 +235,9 @@ $nav-top: 2px;
 			border-radius 0.3s;
 
 		@include tabletBig {
-			padding: 15.5px 15px 13px;
+			padding: 16px 14px 14px;
 			font-size: 16px;
 			letter-spacing: 0;
-			flex-grow: 1;
 		}
 
 		&::after {
@@ -374,6 +335,16 @@ $nav-top: 2px;
 				overflow: hidden;
 				visibility: hidden;
 				pointer-events: none;
+			}
+		}
+	}
+
+	> .wrapper ~ {
+		.startup-nav__container .startup-nav__btn {
+			flex-grow: 0;
+
+			@include tabletBig {
+				flex-grow: 1;
 			}
 		}
 	}
