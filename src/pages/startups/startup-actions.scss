@@ -155,7 +155,7 @@ $nav-top: 2px;
 	position: relative;
 	z-index: 11;
 	margin-top: 60px;
-	padding-bottom: 125px;
+	padding-bottom: 130px;
 	height: 52px;
 
 	@include tabletBig {
@@ -181,7 +181,7 @@ $nav-top: 2px;
 		text-align: center;
 		background-color: #000000;
 		border-radius: 100px;
-		box-shadow: 0 0 4px #000000;
+		box-shadow: 0 0 3px #000000;
 		overflow: hidden;
 		transition:
 			padding 0.3s,
@@ -217,7 +217,7 @@ $nav-top: 2px;
 
 	// .startup-nav__btn
 	&__btn {
-		padding: 15px 70px 13px;
+		padding: 14px 70px 13px;
 		font-family: $LouisGeorgeCafBold;
 		font-size: 19px;
 		letter-spacing: 1px;
@@ -234,7 +234,7 @@ $nav-top: 2px;
 			border-radius 0.3s;
 
 		@include tabletBig {
-			padding: 16px 14px 13px;
+			padding: 16px 14px 14px;
 			font-size: 16px;
 			letter-spacing: 0;
 		}
@@ -289,10 +289,10 @@ $nav-top: 2px;
 			overflow: visible;
 
 			&::after {
-				width: 55px;
+				width: 56px;
 
 				@include tabletBig {
-					width: 35px;
+					width: 38px;
 				}
 			}
 
