@@ -42,7 +42,7 @@ const CoDevelopmentUA = ({ lang }: { lang?: string }) => {
 
 			<EmailH2 content='МАСШТАБ' />
 
-			<EmailText content='Геймдев — частина глобальної екосистеми (журнал, контркультурне медіа, кіновиробництво, технології):' />
+			<EmailText content='Геймдев — частина глобальної екосистеми (контркультурний журнал, кіновиробництво, технології):' />
 
 			<EmailLinkList
 				items={[{ title: 'Повна картина / Бізнес-план', url: 'https://buhowski.dev/vision' }]}
