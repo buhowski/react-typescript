@@ -7,6 +7,8 @@ import {
 	htmlLangMap,
 } from '../../../types/common';
 
+import { website } from '../../../components/metaTagsBasic';
+
 // Map frontend codes to URL prefixes
 const LANGUAGES_MAP: Record<LanguageCode, string> = {
 	en: '/en',
@@ -17,9 +19,6 @@ const LANGUAGES_MAP: Record<LanguageCode, string> = {
 // Types
 export type BaseUrls = Required<Pick<MetaTags, 'canonicalUrl' | 'ogUrl'>>;
 export type SeoLangsUrls = Required<Pick<MetaTags, 'canonicalUrl' | 'ogUrl' | 'langAlternates'>>;
-
-// Base Website URL
-export const website = 'https://buhowski.dev';
 
 // Build absolute URL
 export const buildUrl = (path: string) =>

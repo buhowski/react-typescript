@@ -82,12 +82,12 @@
 		&:after {
 			content: '';
 			display: block;
-			width: 14px;
-			height: 14px;
+			width: 18px;
+			height: 18px;
 			background: currentColor;
 			border-radius: 50%;
-			filter: drop-shadow(0 0 4px #000);
-			box-shadow: 0 0 2px currentColor;
+			filter: drop-shadow(0 0 5px #000);
+			box-shadow: 0 0 3px currentColor;
 		}
 	}
 
@@ -112,7 +112,7 @@
 
 		.title {
 			right: -25%;
-			top: 3%;
+			top: 0;
 			transform: rotate(12deg);
 
 			@include mobile {

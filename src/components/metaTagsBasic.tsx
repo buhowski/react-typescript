@@ -1,5 +1,8 @@
 import { pathToAbout, pathToProjects } from './urlsData';
-import { website, generatePageMeta } from '../pages/startups/helpers/metaHelper';
+import { generatePageMeta } from '../pages/startups/helpers/metaHelper';
+
+// Base Website URL
+export const website = 'https://buhowski.dev';
 
 // Author and page titles
 const author = 'Olexander Tsiomakh — ';
@@ -15,11 +18,18 @@ const aboutDescription =
 const portfolioDescription =
 	'Dive into a collection of projects that combine creativity, functionality, and quality web design.';
 
+// Social Preview Screenshots
+// const homeScreen = `${website}/screenshot_home.png`
+const aboutScreen = `${website}/screenshot_about.png`;
+const portfolioScreen = `${website}/screenshot_portfolio.png`;
+const visionScreen = `${website}/screenshot_plan.png`;
+
 // Open Graph images
-const ogImages = {
-	home: `${website}/screenshot_plan.jpg`,
-	about: `${website}/screenshot_about.jpg`,
-	portfolio: `${website}/screenshot_portfolio.jpg`,
+export const ogImages = {
+	home: visionScreen,
+	about: aboutScreen,
+	portfolio: portfolioScreen,
+	vision: visionScreen,
 };
 
 // Meta tags exports

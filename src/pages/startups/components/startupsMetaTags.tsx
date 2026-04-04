@@ -1,10 +1,6 @@
-import { website, generateStartupsMeta } from '../helpers/metaHelper';
+import { generateStartupsMeta } from '../helpers/metaHelper';
 import { pathToVision } from '../../../components/urlsData';
-
-// Screenshots
-const ogImages = {
-	vision: `${website}/screenshot_plan.jpg`,
-};
+import { ogImages } from '../../../components/metaTagsBasic';
 
 // Main Website Meta Tags
 const visionTitle = 'Another Dimension — Digital Magazine & Entertainment Startups';
