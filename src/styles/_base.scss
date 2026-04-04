@@ -126,7 +126,6 @@ svg {
 	font-size: 41px;
 	font-size: clamp(38px, 2.8vw, 70px);
 	margin-top: 70px;
-	white-space: nowrap;
 
 	@include mobile {
 		margin-top: 35px;
