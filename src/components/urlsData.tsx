@@ -31,8 +31,8 @@ export const pathToPodcastShow = '/podcast';
 export const pathToGodEvening = '/god';
 export const pathToCryClub = '/cry-club';
 
-// Games
-export const pathToGames = '/games';
+// GameDev
+export const pathToGamedev = '/gamedev';
 export const pathToCossackSaga = '/saga';
 export const pathToCossackSagaPart1 = '/saga-1';
 export const pathToCossackSagaPart2 = '/saga-2';
@@ -49,7 +49,7 @@ export const startupsNav = [
 		pageName: `Cinema`,
 	},
 	{
-		pageLink: pathToGames,
+		pageLink: pathToGamedev,
 		pageName: `Games`,
 	},
 	{

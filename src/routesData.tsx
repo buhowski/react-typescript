@@ -27,13 +27,13 @@ import {
 } from './pages/startups/pages/cinema/SelfPresentation/structureSelfPresentation';
 
 // GAMING INDUSTRY
-import { gamesPage } from './pages/startups/pages/gamesStructure';
+import { gamesPage } from './pages/startups/pages/gamedevStructure';
 import {
 	cossackSagaPage,
 	cossackSaga1Page,
 	cossackSaga2Page,
 	cossackSaga3Page,
-} from './pages/startups/pages/games/CossackSaga/structureCossackSaga';
+} from './pages/startups/pages/gamedev/CossackSaga/structureCossackSaga';
 
 // URLs
 import {
@@ -59,7 +59,7 @@ import {
 	pathToCryClub,
 
 	// GAMING INDUSTRY
-	pathToGames,
+	pathToGamedev,
 	pathToCossackSaga,
 	pathToCossackSagaPart1,
 	pathToCossackSagaPart2,
@@ -99,7 +99,7 @@ export const startupDataMap: Record<string, PageProps> = {
 	[pathToCryClub]: { pageData: cryClubPage },
 
 	// GAMING INDUSTRY
-	[pathToGames]: { pageData: gamesPage },
+	[pathToGamedev]: { pageData: gamesPage },
 	[pathToCossackSaga]: { pageData: cossackSagaPage },
 	[pathToCossackSagaPart1]: { pageData: cossackSaga1Page },
 	[pathToCossackSagaPart2]: { pageData: cossackSaga2Page },
@@ -108,7 +108,7 @@ export const startupDataMap: Record<string, PageProps> = {
 
 // Subpath for nested pages
 export const startupSubPaths: Record<string, string[] | Record<string, any> | null> = {
-	[pathToGames]: {
+	[pathToGamedev]: {
 		[pathToCossackSaga]: [pathToCossackSagaPart1, pathToCossackSagaPart2, pathToCossackSagaPart3],
 	},
 

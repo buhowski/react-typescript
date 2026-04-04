@@ -411,32 +411,32 @@
 
   <!-- GAMES -->
   <url>
-    <loc>https://buhowski.dev/games</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://buhowski.dev/en/games" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://buhowski.dev/ru/games" />
-    <xhtml:link rel="alternate" hreflang="uk" href="https://buhowski.dev/ua/games" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://buhowski.dev/games" />
+    <loc>https://buhowski.dev/gamedev</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://buhowski.dev/en/gamedev" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://buhowski.dev/ru/gamedev" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://buhowski.dev/ua/gamedev" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://buhowski.dev/gamedev" />
   </url>
   <url>
-    <loc>https://buhowski.dev/en/games</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://buhowski.dev/en/games" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://buhowski.dev/ru/games" />
-    <xhtml:link rel="alternate" hreflang="uk" href="https://buhowski.dev/ua/games" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://buhowski.dev/games" />
+    <loc>https://buhowski.dev/en/gamedev</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://buhowski.dev/en/gamedev" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://buhowski.dev/ru/gamedev" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://buhowski.dev/ua/gamedev" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://buhowski.dev/gamedev" />
   </url>
   <url>
-    <loc>https://buhowski.dev/ru/games</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://buhowski.dev/en/games" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://buhowski.dev/ru/games" />
-    <xhtml:link rel="alternate" hreflang="uk" href="https://buhowski.dev/ua/games" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://buhowski.dev/games" />
+    <loc>https://buhowski.dev/ru/gamedev</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://buhowski.dev/en/gamedev" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://buhowski.dev/ru/gamedev" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://buhowski.dev/ua/gamedev" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://buhowski.dev/gamedev" />
   </url>
   <url>
-    <loc>https://buhowski.dev/ua/games</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://buhowski.dev/en/games" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://buhowski.dev/ru/games" />
-    <xhtml:link rel="alternate" hreflang="uk" href="https://buhowski.dev/ua/games" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://buhowski.dev/games" />
+    <loc>https://buhowski.dev/ua/gamedev</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://buhowski.dev/en/gamedev" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://buhowski.dev/ru/gamedev" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://buhowski.dev/ua/gamedev" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://buhowski.dev/gamedev" />
   </url>
 
   <url>

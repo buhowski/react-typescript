@@ -13,7 +13,7 @@ Looking for partners for creative and business collaboration. Project presentati
 ## In a Nutshell
 
 - Magazine — the face of the company. Popular magazine — the voice of the majority. Cult magazine — sets the direction of common sense, rather than adapting to bans or restrictions: [Strategy Ready](/mvp)
-- Production — sources of revenue: [Cinema Ready](/cinema) [Gamedev Ready](/games)
+- Production — sources of revenue: [Cinema Ready](/cinema) [Gamedev Ready](/gamedev)
 - Profits are reinvested into our own IT technologies — even greater profit: Ideas Ready
 - Victory!
 
@@ -123,7 +123,7 @@ At launch, publications are partners-only — to form a high-quality core audien
 
 The magazine and its development strategy are separate, independent projects. More details: [MVP: Another Dimension](/mvp)
 
-Key industry products — in comprehensive concept presentations: [Cinematic Concepts](/cinema) [Game Dev Concepts](/games)
+Key industry products — in comprehensive concept presentations: [Cinematic Concepts](/cinema) [Game Dev Concepts](/gamedev)
 
 [Self-presentation projects](/pilots) — pilot projects for the first stage of exploring possibilities. Through feedback, they validate the stated intentions and open the path to launching key ideas and building the magazine. And lay the groundwork for attracting investment for at least the next 5 years.
 

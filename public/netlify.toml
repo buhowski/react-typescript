@@ -84,6 +84,12 @@
   force = true
 
 [[redirects]]
+  from = "/games"
+  to = "/gamedev"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/cossack-saga-1"
   to = "/saga-1"
   status = 301

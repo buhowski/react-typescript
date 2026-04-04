@@ -5,20 +5,20 @@ import { createData } from '../helpers/pageDataFactory';
 import { pathToCossackSaga } from '../../../components/urlsData';
 
 // specific slider data
-import { dataSliderSaga } from './games/CossackSaga/dataSlider';
+import { dataSliderSaga } from './gamedev/CossackSaga/dataSlider';
 import { dataSliderProjectDev } from './dataSlider';
 
-// Games Page
+// Gamedev Page
 export const gamesPage = createData([
 	// Preface
 	{
-		markdownAPI: '/text-data/games/PreviewGames.md',
+		markdownAPI: '/text-data/gamedev/PreviewGamedev.md',
 		sliderContent: dataSliderProjectDev,
 	},
 
 	// Cossacks Saga
 	{
-		markdownAPI: '/text-data/games/CossackSaga/CossackSaga.md',
+		markdownAPI: '/text-data/gamedev/CossackSaga/CossackSaga.md',
 		sliderContent: dataSliderSaga,
 		pagePreviewUrl: pathToCossackSaga,
 	},

@@ -1,19 +1,19 @@
 // Images
-import sagaPoster from '../../../../../assets/startup/games/shadows-of-the-cossacks-saga-part1-whispers-of-the-forgotten-poster.webp';
-import saga2Poster from '../../../../../assets/startup/games/shadows-of-the-cossacks-saga-part2-ashes-of-the-beloved-poster.webp';
-import saga3Poster from '../../../../../assets/startup/games/shadows-of-the-cossacks-saga-part3-quantum-leap-poster.webp';
-import image1 from '../../../../../assets/startup/games/zaporozhian-cossack-gypsy-punks-dark-fantasy-repin.webp';
-import image2 from '../../../../../assets/startup/games/hermit-cossacks-gypsy-punks-dark-fantasy-game-art.webp';
+import sagaPoster from '../../../../../assets/startup/gamedev/shadows-of-the-cossacks-saga-part1-whispers-of-the-forgotten-poster.webp';
+import saga2Poster from '../../../../../assets/startup/gamedev/shadows-of-the-cossacks-saga-part2-ashes-of-the-beloved-poster.webp';
+import saga3Poster from '../../../../../assets/startup/gamedev/shadows-of-the-cossacks-saga-part3-quantum-leap-poster.webp';
+import image1 from '../../../../../assets/startup/gamedev/zaporozhian-cossack-gypsy-punks-dark-fantasy-repin.webp';
+import image2 from '../../../../../assets/startup/gamedev/hermit-cossacks-gypsy-punks-dark-fantasy-game-art.webp';
 
 // Posters
-import witcherPoster from '../../../../../assets/startup/games/witcher3-wild-hunt-dark-fantasy-rpg-world-design-reference.webp';
-import tsushimaPoster from '../../../../../assets/startup/games/ghost-of-tsushima-samurai-cinematic-action-rpg-reference.webp';
-import replicantPoster from '../../../../../assets/startup/games/nier-replicant-emotional-narrative-fantasy-combat-reference.webp';
-import automataPoster from '../../../../../assets/startup/games/nier-automata-cinematic-boss-combat-android-action-reference.webp';
+import witcherPoster from '../../../../../assets/startup/gamedev/witcher3-wild-hunt-dark-fantasy-rpg-world-design-reference.webp';
+import tsushimaPoster from '../../../../../assets/startup/gamedev/ghost-of-tsushima-samurai-cinematic-action-rpg-reference.webp';
+import replicantPoster from '../../../../../assets/startup/gamedev/nier-replicant-emotional-narrative-fantasy-combat-reference.webp';
+import automataPoster from '../../../../../assets/startup/gamedev/nier-automata-cinematic-boss-combat-android-action-reference.webp';
 
 // Videos
-import ghostOfTsushimaTrailer from '../../../../../assets/startup/games/videos/ghostOfTsushimaTrailer.mp4';
-import witcherTrailer from '../../../../../assets/startup/games/videos/witcherTrailer.mp4';
+import ghostOfTsushimaTrailer from '../../../../../assets/startup/gamedev/videos/ghostOfTsushimaTrailer.mp4';
+import witcherTrailer from '../../../../../assets/startup/gamedev/videos/witcherTrailer.mp4';
 const replicantTrailer = 'https://www.youtube-nocookie.com/embed/sPcf4pfTqfY';
 const automataTrailer = 'https://www.youtube-nocookie.com/embed/4bx02CEISLI';
 

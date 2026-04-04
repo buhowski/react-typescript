@@ -2,7 +2,7 @@
 
 ## Another Dimension Startup
 
-### [ Magazine ⋅ Media ⋅ Cinema ⋅ Games ⋅ Technologies ](https://buhowski.dev/vision)
+### [ Magazine ⋅ Media ⋅ Cinema ⋅ Gamedev ⋅ Technologies ](https://buhowski.dev/vision)
 
 I want to Create an Information and Entertainment Media Magazine and Transform It into a Company Producing Its Own Technologies
 
@@ -10,7 +10,7 @@ I want to Create an Information and Entertainment Media Magazine and Transform I
 
 ### [ Cinematic Concepts ](https://buhowski.dev/cinema)
 
-### [ Gaming Ideas ](https://buhowski.dev/games)
+### [ Game Dev Concepts ](https://buhowski.dev/gamedev)
 
 ### [ Magazine ⋅ Strategy ](https://buhowski.dev/mvp)
 

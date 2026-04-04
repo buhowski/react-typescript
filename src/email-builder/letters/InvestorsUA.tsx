@@ -56,7 +56,7 @@ const InvestorsUA = ({ lang }: { lang?: string }) => {
 				items={[
 					{ title: 'Журнал / Стратегія', url: 'https://buhowski.dev/mvp' },
 					{ title: 'Кіновиробництво', url: 'https://buhowski.dev/cinema' },
-					{ title: 'Геймдев', url: 'https://buhowski.dev/games' },
+					{ title: 'Геймдев', url: 'https://buhowski.dev/gamedev' },
 					{ title: 'Пілотні проєкти', url: 'https://buhowski.dev/pilots' },
 				]}
 			/>
