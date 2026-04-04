@@ -14,10 +14,10 @@ import { pathToVision } from '../../components/urlsData';
 const projectsData = [
 	{
 		img: bgStartup,
-		url: `${pathToVision}`,
+		url: pathToVision,
 		urlCode: 'https://github.com/buhowski/react-typescript',
-		name: 'Ecosystem',
-		description: `React platform for my startups: Magazine ⋅ Media ⋅ Cinema ⋅ Games ⋅ Tech`,
+		name: 'Counterculture OS',
+		description: `Scalable ecosystem for a multifunctional corporation: Magazine ⋅ Media ⋅ Cinema ⋅ Gamedev ⋅ Tech`,
 		skills: ['React', 'TypeScript', 'SCSS', 'PWA', 'SEO', 'Design'],
 		alt: 'Screenshot of My Startups project homepage showcasing startup business plans, full development cycle execution, React and TypeScript programming, UI/UX design, creative scripting, genius-level problem solving, strategic brainstorming, innovative design systems, SCSS styling, SEO optimization, Progressive Web App functionality, media innovation, tech entrepreneurship, interactive digital solutions, inventive coding, forward-thinking creative projects',
 	},

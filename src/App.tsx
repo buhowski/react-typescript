@@ -30,9 +30,13 @@ const App = () => {
 
 	const shouldShowStartupUI = isStartupPage || delayedStartupEntry !== null;
 
+	// CHECK IF EMAIL PAGE
 	const isEmailPage = emailRoutes.some(
 		(route) => normalizePath(route.pathTo) === normalizePath(location.pathname),
 	);
+
+	// CHECK IF CV PAGE
+	const isCVPage = pathKey === normalizePath('/cv');
 
 	// ANIMATION BUFFER
 	useEffect(() => {
@@ -71,21 +75,24 @@ const App = () => {
 
 	return (
 		<div className='application'>
-			<div ref={navRef} className={`application__nav ${isStartupNavActive ? 'nav-active' : ''}`}>
-				<Header />
+			{/* Hide whole nav container if it is CV page */}
+			{!isCVPage && (
+				<div ref={navRef} className={`application__nav ${isStartupNavActive ? 'nav-active' : ''}`}>
+					<Header />
 
-				{/* Guard: not a startup page */}
-				{shouldShowStartupUI && (
-					<div className={`startup-actions ${isStartupReady ? 'is-visible' : ''}`}>
-						<StartupLanguage pageData={(startupEntry ?? delayedStartupEntry)!.pageData} />
+					{/* Guard: not a startup page */}
+					{shouldShowStartupUI && (
+						<div className={`startup-actions ${isStartupReady ? 'is-visible' : ''}`}>
+							<StartupLanguage pageData={(startupEntry ?? delayedStartupEntry)!.pageData} />
 
-						<StartupNavigation
-							onActiveChange={setIsStartupNavActive}
-							delayedPathKey={delayedPathKey}
-						/>
-					</div>
-				)}
-			</div>
+							<StartupNavigation
+								onActiveChange={setIsStartupNavActive}
+								delayedPathKey={delayedPathKey}
+							/>
+						</div>
+					)}
+				</div>
+			)}
 
 			<TransitionGroup component={null}>
 				<CSSTransition
