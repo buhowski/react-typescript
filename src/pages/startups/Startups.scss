@@ -322,10 +322,10 @@
 
 			&:has(a) {
 				&::before {
-					top: 12.5px;
+					top: 12px;
 
 					@include tablet {
-						top: 11.5px;
+						top: 11px;
 					}
 				}
 			}
