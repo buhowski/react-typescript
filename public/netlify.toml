@@ -24,12 +24,6 @@
   force = true
 
 [[redirects]]
-  from = "/cv"
-  to = "/CV_Olexander_Tsiomakh_Frontend.pdf"
-  status = 301
-  force = true
-
-[[redirects]]
   from = "/the-corp"
   to = "/corp"
   status = 301

@@ -10,6 +10,8 @@ import { mainRoutes, startupDataMap } from './routesData';
 import { normalizePath } from './pages/startups/helpers/metaHelper';
 import { PageProps } from './types/common';
 
+import CVPage from './pages/CVPage';
+
 export const NEXT_PAGE_TIME = 1000;
 export const NEXT_PAGE_RATIO = 700;
 
@@ -118,6 +120,9 @@ const App = () => {
 										element={<StartupWrapperSeo path={pathTo} />}
 									/>
 								))}
+
+								{/* RESUME PAGE */}
+								<Route path={normalizePath('/cv')} element={<CVPage />} />
 
 								{/* SEO catch-all for language-specific startup pages */}
 								<Route path='/:lang/*' element={<StartupWrapperSeo />} />

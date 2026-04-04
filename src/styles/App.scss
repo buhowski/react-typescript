@@ -78,7 +78,7 @@ body.is-locked {
 		left: 50%;
 		z-index: 1000;
 		background-color: $blue-main;
-		background: $bg-gradient-main;
+		background: $bg-gradient;
 		will-change: width, height, bottom;
 		overflow: hidden;
 
@@ -98,6 +98,92 @@ body.is-locked {
 	&.slide-enter {
 		&:after {
 			animation: transitionReload var(--next-page-time) cubic-bezier(0.76, 0, 0.24, 1) forwards;
+		}
+	}
+}
+
+.resume {
+	position: relative;
+	z-index: 0;
+
+	&.is-loaded .resume__frame {
+		opacity: 1;
+	}
+
+	.wrapper {
+		height: calc(100dvh - 90px);
+		padding: 65px 40px 0;
+
+		@include tablet {
+			height: calc(100dvh - 80px);
+			padding: 65px 0 0;
+		}
+	}
+
+	// .resume__wrapper
+	&__wrapper {
+		position: relative;
+		height: 100%;
+		background-color: #313131;
+		box-shadow: 0 0 20px #000000;
+		border-radius: 20px 20px 0 0;
+		border: 1px solid #61676d;
+		border-bottom: 0;
+		padding-top: 15px;
+		-webkit-overflow-scrolling: touch;
+	}
+
+	.preloader {
+		position: absolute;
+		z-index: 12;
+		border-radius: 20px;
+
+		&__spinner-span:before {
+			background-color: $blue-main;
+		}
+	}
+
+	// .cv-page__frame
+	&__frame {
+		display: block;
+		opacity: 0;
+		transition: opacity 0.25s;
+		height: 100%;
+		width: 100%;
+	}
+
+	// .resume__actions
+	&__actions {
+		position: absolute;
+		top: 16px;
+		left: 50%;
+		transform: translateX(-50%);
+		font-family: $LouisGeorgeCafBold;
+		z-index: 10;
+		letter-spacing: 1px;
+		white-space: nowrap;
+		display: flex;
+		align-items: center;
+
+		span {
+			display: inline-block;
+			margin-right: 18px;
+			text-transform: uppercase;
+			font-size: 17px;
+			line-height: 1;
+		}
+	}
+
+	// .resume__download
+	&__download {
+		background-color: #000000;
+		background: $bg-gradient;
+		padding: 6px 17px;
+		box-shadow: 0 0 5px #000000;
+
+		&:hover {
+			background: #ffffff;
+			color: #000000;
 		}
 	}
 }
