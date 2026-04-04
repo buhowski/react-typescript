@@ -12,6 +12,7 @@
 
 .project {
 	width: 100%;
+	min-height: 420px;
 	position: relative;
 	border-radius: 20px;
 	transform: translate(0, 0);
@@ -29,6 +30,7 @@
 		width: calc(100% - 10px);
 		height: calc(100% - 10px);
 		background-color: $blue-main;
+		background: $bg-gradient-main;
 		transform: translateY(0);
 		transition:
 			transform 0.25s ease 0.2s,
@@ -45,7 +47,8 @@
 	&-link {
 		display: block;
 		position: relative;
-		background-color: $bg-main;
+		height: 100%;
+		background-color: #000000;
 		border-radius: 20px;
 		box-shadow: 0 0 10px #000000;
 		transition: box-shadow 0.3s ease;
