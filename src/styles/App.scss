@@ -63,7 +63,7 @@ body.is-locked {
 	left: 0;
 	width: 100%;
 	min-height: 100dvh;
-	background-color: $darken;
+	background-color: $bg-main;
 	opacity: 1;
 	transition: opacity 0.2s linear calc(var(--next-page-ratio) - 0.1s);
 
@@ -78,7 +78,7 @@ body.is-locked {
 		left: 50%;
 		z-index: 1000;
 		background-color: $blue-main;
-		background: $bg-main;
+		background: $bg-gradient-main;
 		will-change: width, height, bottom;
 		overflow: hidden;
 

@@ -41,12 +41,12 @@ const Header = () => {
 	const linksData = [
 		{
 			pageLink: pathToVision,
-			pageName: `My Startups`,
+			pageName: `Universe`,
 			activeClass: isActive ? 'active' : '',
 		},
 		{
 			pageLink: pathToAbout,
-			pageName: 'About Me',
+			pageName: 'About',
 			activeClass: '',
 		},
 		{

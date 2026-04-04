@@ -13,9 +13,9 @@
 		height: 60px;
 		border-radius: 50%;
 		position: relative;
-		background-color: $darker;
+		background-color: $bg-darker;
 		flex-shrink: 0;
-		box-shadow: 0 0 10px rgba($color: $darker, $alpha: 1);
+		box-shadow: 0 0 10px rgba($color: $bg-darker, $alpha: 1);
 		transition: transform 0.2s;
 
 		@include tabletBig {

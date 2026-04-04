@@ -8,8 +8,8 @@ $font-primary: 'BlinkMacSystemFont', sans-serif;
 $font-raleway: 'Raleway', sans-serif;
 
 // $colors: #9400ff #37ff8b;
-$darken: #202020;
-$darker: #181818;
+$bg-main: #202020;
+$bg-darker: #181818;
 $darkest: #111111;
 
 $blue-light: #1fa9ff;
@@ -20,7 +20,7 @@ $blue-darkest: #001a3a;
 $red: #af0303;
 $starYellow: #dfb842;
 
-$bg-main:
+$bg-gradient-main:
 	radial-gradient(ellipse at 80% 80%, rgba($blue-light, 0.3) 0%, transparent 50%),
 	linear-gradient(130deg, $blue-deep 0%, $blue-main 100%);
 
@@ -176,7 +176,8 @@ $bg-active-lang: #4e3e6f;
 	position: relative;
 	white-space: nowrap;
 	font-family: $LouisGeorgeCafBold;
-	padding: 13px 16px 13px 20px;
+	padding: 12px 22px;
+	padding-left: 26px;
 	text-align: center;
 	letter-spacing: 3px;
 	overflow: hidden;

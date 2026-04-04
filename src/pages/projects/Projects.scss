@@ -11,6 +11,7 @@
 }
 
 .project {
+	width: 100%;
 	position: relative;
 	border-radius: 20px;
 	transform: translate(0, 0);
@@ -44,7 +45,7 @@
 	&-link {
 		display: block;
 		position: relative;
-		background-color: $darken;
+		background-color: $bg-main;
 		border-radius: 20px;
 		box-shadow: 0 0 10px #000000;
 		transition: box-shadow 0.3s ease;

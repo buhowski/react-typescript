@@ -84,7 +84,8 @@
 			height: 14px;
 			background: currentColor;
 			border-radius: 50%;
-			filter: drop-shadow(0 0 3px rgba($color: $darkest, $alpha: 1));
+			filter: drop-shadow(0 0 4px #000);
+			box-shadow: 0 0 2px currentColor;
 		}
 	}
 

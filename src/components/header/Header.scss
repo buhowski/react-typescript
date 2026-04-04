@@ -1,25 +1,17 @@
 @import '../../styles/variables';
 
-.nav-link {
-	font-size: 21px;
-	letter-spacing: 4px;
-	font-family: $LouisGeorgeCafBold;
-
-	@include tablet {
-		font-size: 23px;
-	}
-}
-
 .header {
 	position: relative;
 	z-index: 100;
 	width: 100%;
 	display: flex;
 	align-items: center;
-	padding: 20px 0 17px;
+	padding: 17px 0;
+	height: 90px;
 	overflow: hidden;
 
 	@include tablet {
+		height: 80px;
 		padding: 15px 0;
 
 		.wrapper {
@@ -64,14 +56,15 @@
 }
 
 .nav-item {
-	margin-right: 80px;
+	margin-right: 75px;
 	display: flex;
 	justify-content: center;
+	text-align: center;
+	position: relative;
 
 	@include tablet {
-		text-align: center;
 		margin-right: 0;
-		margin-bottom: 35px;
+		margin-bottom: 36px;
 	}
 
 	&:last-child {
@@ -81,6 +74,14 @@
 
 .nav-link {
 	@include navLink;
+
+	font-size: 23px;
+	letter-spacing: 4px;
+	font-family: $LouisGeorgeCafBold;
+
+	@include tablet {
+		font-size: 25px;
+	}
 }
 
 .mobile-menu-btn,
@@ -124,6 +125,8 @@
 		}
 
 		.nav-link {
+			min-width: 190px;
+
 			&:after {
 				transform: scale(0);
 				height: 100%;
@@ -195,7 +198,7 @@
 			}
 
 			&:after {
-				background-color: $darken;
+				background-color: $bg-main;
 				animation: menuAnim 0.5s ease;
 			}
 		}
