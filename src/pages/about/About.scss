@@ -82,11 +82,11 @@
 		&:after {
 			content: '';
 			display: block;
-			width: 18px;
-			height: 18px;
+			width: 15px;
+			height: 15px;
 			background: currentColor;
 			border-radius: 50%;
-			filter: drop-shadow(0 0 5px #000);
+			filter: drop-shadow(0 0 4px #000);
 			box-shadow: 0 0 3px currentColor;
 		}
 	}
