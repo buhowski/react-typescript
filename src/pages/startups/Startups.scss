@@ -407,8 +407,7 @@
 		}
 
 		&:not(:only-child) {
-			max-width: calc(100% - 3px);
-			margin: 5px 3px;
+			margin: 6px 3px;
 		}
 	}
 }
