@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import Preloader from '../components/Preloader';
+import PageHelmet from '../components/PageHelmet';
+import { cvMetaTags } from '../components/metaTagsBasic';
 import { pathToProjects } from '../components/urlsData';
 
 const docId = '12rOT1Pa4Z-Usau2Xkh-QTXweDTZJJTKvadrJKmRpCk0';
@@ -68,18 +70,22 @@ const CVPage = () => {
 	const [loaded, setLoaded] = useState(false);
 
 	return (
-		<div className={`resume ${loaded ? 'is-loaded' : ''}`}>
-			<CVActions />
+		<>
+			<PageHelmet metaTags={cvMetaTags} />
 
-			{!loaded && <Preloader />}
+			<div className={`resume ${loaded ? 'is-loaded' : ''}`}>
+				<CVActions />
 
-			<iframe
-				onLoad={() => setLoaded(true)}
-				src={previewDoc}
-				title='Resume Preview'
-				className='resume__frame'
-			/>
-		</div>
+				{!loaded && <Preloader />}
+
+				<iframe
+					onLoad={() => setLoaded(true)}
+					src={previewDoc}
+					title='Resume Preview'
+					className='resume__frame'
+				/>
+			</div>
+		</>
 	);
 };
 

@@ -53,3 +53,11 @@ export const portfolioMetaTags = generatePageMeta({
 	path: pathToProjects,
 	ogImage: ogImages.portfolio,
 });
+
+export const cvMetaTags = generatePageMeta({
+	title: ` Resume — ${author} Frontend Developer`,
+	description:
+		'Architect of a countercultural ecosystem. Developing an alternative operating system for reality through Gonzo Journalism, Cinema, GameDev & Tech.',
+	path: '/cv',
+	ogImage: ogImages.about,
+});
