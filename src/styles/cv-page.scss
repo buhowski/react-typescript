@@ -3,6 +3,7 @@
 	position: relative;
 	width: 100%;
 	z-index: 1;
+	height: 100dvh;
 
 	&.is-loaded .resume__frame {
 		opacity: 1;
@@ -81,14 +82,14 @@
 	&__frame {
 		display: block;
 		width: 100%;
-		height: 100dvh;
+		height: 100%;
 		border: none;
 		background-color: #ffffff;
 		color-scheme: light;
 		forced-color-adjust: none;
 		-webkit-text-fill-color: initial;
 		opacity: 0;
-		transition: opacity 0.3s;
+		transition: opacity 0.35s;
 		// padding-top: 50px;
 	}
 }
