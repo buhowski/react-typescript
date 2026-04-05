@@ -37,17 +37,6 @@ body.is-locked {
 	width: 100%;
 }
 
-// .has-overflow {
-// 	position: relative;
-// 	height: 100svh;
-// 	overflow: hidden;
-
-// 	body {
-// overflow: auto;
-// height: 100%;
-// 	}
-// }
-
 .application {
 	min-width: 320px;
 
@@ -112,30 +101,28 @@ body.is-locked {
 	}
 
 	.wrapper {
-		max-width: 920px;
+		max-width: 960px;
 		height: 100dvh;
 		padding: 70px 0 0;
+		overflow: visible;
 	}
 
 	// .resume__wrapper
 	&__wrapper {
 		position: relative;
 		height: 100%;
-		background-color: #313131;
+		background-color: #57606a;
 		box-shadow: 0 0 20px #000000;
 		border-radius: 20px 20px 0 0;
-		border: 3px solid #61676d;
+		border: 3px solid #57606a;
 		border-bottom: 0;
-		overflow: hidden;
 		isolation: isolate;
-		mask-image: radial-gradient(white, black);
-		-webkit-mask-image: -webkit-radial-gradient(white, black);
 	}
 
 	.preloader {
 		position: absolute;
 		z-index: 12;
-		border-radius: 20px;
+		border-radius: 18px 18px 0 0;
 
 		&__spinner-span:before {
 			background-color: $blue-main;
@@ -151,6 +138,8 @@ body.is-locked {
 		border: none;
 		opacity: 0;
 		transition: opacity 0.3s;
+		border-radius: 18px 18px 0 0;
+		isolation: isolate;
 	}
 
 	// .resume__actions
@@ -168,7 +157,6 @@ body.is-locked {
 		justify-content: center;
 		text-align: center;
 		width: 100%;
-		overflow: hidden;
 		gap: 23px;
 		overflow: hidden;
 
@@ -199,7 +187,7 @@ body.is-locked {
 			width: auto;
 			height: 20px;
 			fill: currentColor;
-			margin-right: 10px;
+			margin-right: 12px;
 		}
 	}
 }
