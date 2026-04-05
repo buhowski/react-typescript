@@ -13,6 +13,7 @@ const helmetContext: Record<string, any> = {};
 const Root = () => {
 	// Preloader visibility state
 	const [showPreloader, setShowPreloader] = useState(true);
+	const isCVPage = window.location.pathname === '/cv';
 
 	useEffect(() => {
 		if ('scrollRestoration' in window.history) {
@@ -32,11 +33,11 @@ const Root = () => {
 
 	return (
 		<>
-			{showPreloader && <Preloader />}
+			{!isCVPage && showPreloader && <Preloader />}
 
 			<HelmetProvider context={helmetContext}>
 				<BrowserRouter>
-					<App />
+					<App isCVPage={isCVPage} />
 				</BrowserRouter>
 			</HelmetProvider>
 		</>

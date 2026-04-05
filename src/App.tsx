@@ -15,7 +15,7 @@ import CVPage from './pages/CVPage';
 export const NEXT_PAGE_TIME = 1000;
 export const NEXT_PAGE_RATIO = 700;
 
-const App = () => {
+const App = ({ isCVPage }: { isCVPage: boolean }) => {
 	const location = useLocation();
 	const pathKey = normalizePath(location.pathname);
 	const startupEntry = startupDataMap[pathKey];
@@ -34,9 +34,6 @@ const App = () => {
 	const isEmailPage = emailRoutes.some(
 		(route) => normalizePath(route.pathTo) === normalizePath(location.pathname),
 	);
-
-	// CHECK IF CV PAGE
-	const isCVPage = pathKey === normalizePath('/cv');
 
 	// ANIMATION BUFFER
 	useEffect(() => {
@@ -73,26 +70,27 @@ const App = () => {
 	// SPEC HTML EMAIL PAGE
 	if (isEmailPage) return <EmailApp />;
 
+	// CV PAGE WITHOUT ANIMATIONS
+	if (isCVPage) return <CVPage />;
+
 	return (
 		<div className='application'>
 			{/* Hide whole nav container if it is CV page */}
-			{!isCVPage && (
-				<div ref={navRef} className={`application__nav ${isStartupNavActive ? 'nav-active' : ''}`}>
-					<Header />
+			<div ref={navRef} className={`application__nav ${isStartupNavActive ? 'nav-active' : ''}`}>
+				<Header />
 
-					{/* Guard: not a startup page */}
-					{shouldShowStartupUI && (
-						<div className={`startup-actions ${isStartupReady ? 'is-visible' : ''}`}>
-							<StartupLanguage pageData={(startupEntry ?? delayedStartupEntry)!.pageData} />
+				{/* Guard: not a startup page */}
+				{shouldShowStartupUI && (
+					<div className={`startup-actions ${isStartupReady ? 'is-visible' : ''}`}>
+						<StartupLanguage pageData={(startupEntry ?? delayedStartupEntry)!.pageData} />
 
-							<StartupNavigation
-								onActiveChange={setIsStartupNavActive}
-								delayedPathKey={delayedPathKey}
-							/>
-						</div>
-					)}
-				</div>
-			)}
+						<StartupNavigation
+							onActiveChange={setIsStartupNavActive}
+							delayedPathKey={delayedPathKey}
+						/>
+					</div>
+				)}
+			</div>
 
 			<TransitionGroup component={null}>
 				<CSSTransition
@@ -127,9 +125,6 @@ const App = () => {
 										element={<StartupWrapperSeo path={pathTo} />}
 									/>
 								))}
-
-								{/* RESUME PAGE */}
-								<Route path={normalizePath('/cv')} element={<CVPage />} />
 
 								{/* SEO catch-all for language-specific startup pages */}
 								<Route path='/:lang/*' element={<StartupWrapperSeo />} />

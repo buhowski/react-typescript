@@ -6,12 +6,15 @@
   <meta name="robots" content="index, follow" />
   <meta name="google" content="notranslate" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, viewport-fit=cover" />
-  <meta name="color-scheme" content="dark">
-  <meta name="theme-color" content="black" />
-  <meta name="mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="msapplication-navbutton-color" content="black" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+  <meta name="color-scheme" content="dark light">
+  <meta name="theme-color" content="#111111" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#111111" media="(prefers-color-scheme: light)">
+
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="msapplication-navbutton-color" content="#111111">
 
   <!-- Site metadata from .env -->
   <meta name="author" content="%REACT_APP_AUTHOR%" />
@@ -52,7 +55,6 @@
   <!-- Styles and global CSS -->
   <style>
     html {
-      color-scheme: only dark;
       -webkit-text-size-adjust: none;
       -moz-text-size-adjust: none;
       text-size-adjust: none;

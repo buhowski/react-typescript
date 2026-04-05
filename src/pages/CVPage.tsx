@@ -11,27 +11,8 @@ const CVPage = () => {
 
 	return (
 		<div className={`resume ${loaded ? 'is-loaded' : ''}`}>
-			{/* PRELOADER OVERLAY */}
-
-			<div className='wrapper'>
-				<div className='resume__wrapper'>
-					{!loaded && <Preloader />}
-
-					<iframe
-						onLoad={() => setLoaded(true)}
-						src={cvPreview}
-						title='Resume Preview'
-						className='resume__frame'
-						style={{
-							width: '100%',
-							height: '100%',
-						}}
-					/>
-				</div>
-			</div>
-
 			<div className='resume__actions'>
-				<span>Resume</span>
+				<h1>Resume</h1>
 
 				<a
 					href={cvDownload}
@@ -56,6 +37,17 @@ const CVPage = () => {
 				>
 					Full View
 				</a>
+			</div>
+
+			<div className='resume__wrapper'>
+				{!loaded && <Preloader />}
+
+				<iframe
+					onLoad={() => setLoaded(true)}
+					src={cvPreview}
+					title='Resume Preview'
+					className='resume__frame'
+				/>
 			</div>
 		</div>
 	);
