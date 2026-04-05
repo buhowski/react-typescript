@@ -1,7 +1,9 @@
 // CV PAGE
 .resume {
 	position: relative;
-	z-index: 0;
+	width: 100%;
+	height: 100vh;
+	z-index: 2;
 
 	&.is-loaded .resume__frame {
 		opacity: 1;
@@ -9,11 +11,16 @@
 
 	// .resume__actions
 	&__actions {
-		// position: absolute;
-		// top: 0;
-		// left: 50%;
-		// transform: translateX(-50%);
+		width: 100%;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 20;
+		background-color: #000000;
+		border-bottom: 3px solid #57606a;
+		box-shadow: 0 1px 10px rgba(#000000, 0.9);
 		padding: 10px 0;
+		gap: 23px;
 		font-family: $LouisGeorgeCafBold;
 		letter-spacing: 1px;
 		white-space: nowrap;
@@ -21,9 +28,8 @@
 		align-items: center;
 		justify-content: center;
 		text-align: center;
-		width: 100%;
 		overflow: hidden;
-		gap: 23px;
+		flex-shrink: 0;
 
 		h1 {
 			display: inline-block;
@@ -34,23 +40,9 @@
 		}
 	}
 
-	// .resume__wrapper
-	&__wrapper {
-		background-color: #57606a;
-		border: 3px solid #57606a;
-		border-bottom: 0;
-		border-radius: 26px 26px 0 0;
-		max-width: 960px;
-		height: calc(100vh - 56px);
-		margin: auto;
-		position: relative;
-		z-index: 0;
-	}
-
 	.preloader {
 		position: absolute;
-		z-index: 12;
-		border-radius: 26px 26px 0 0;
+		z-index: 19;
 
 		&__spinner-span:before {
 			background-color: $blue-main;
@@ -59,14 +51,14 @@
 
 	// .resume__frame
 	&__frame {
-		position: absolute;
 		display: block;
+		min-width: 100%;
+		min-height: 100vh;
 		width: 100%;
 		height: 100%;
 		border: none;
 		opacity: 0;
 		transition: opacity 0.3s;
-		border-radius: 25px 25px 0 0;
 		background-color: #ffffff;
 		color-scheme: light;
 		forced-color-adjust: none;
