@@ -4,16 +4,20 @@ import PageHelmet from '../components/PageHelmet';
 import { cvMetaTags } from '../components/metaTagsBasic';
 import { pathToProjects } from '../components/urlsData';
 
-// const previewDoc = `https://docs.google.com/document/d/${docId}/preview?rm=minimal&chrome=false&embedded=true`;
-// const previewPDF = `https://docs.google.com/viewer?url=${encodeURIComponent(downloadDoc)}&embedded=true`;
+const docId = '12rOT1Pa4Z-Usau2Xkh-QTXweDTZJJTKvadrJKmRpCk0';
+const docExportPDF = `https://docs.google.com/document/d/${docId}/export?format=pdf`;
+const doc = `https://docs.google.com/document/d/${docId}/edit?usp=sharing`;
 
-const CVActions = ({ fileDownload }: { fileDownload: string }) => {
+// const doc = `https://docs.google.com/document/d/${docId}/preview?rm=minimal&chrome=false&embedded=true`;
+// previewDoc = `https://docs.google.com/viewer?url=${encodeURIComponent(downloadDoc)}&embedded=true`;
+
+const CVActions = ({ link, downloadFile }: { link: string; downloadFile: string }) => {
 	return (
 		<nav className='resume__actions'>
 			{/* <h1>Resume</h1> */}
 
 			<a
-				href={pathToProjects}
+				href={link}
 				target='_blank'
 				rel='noopener noreferrer'
 				className='resume__btn'
@@ -32,7 +36,7 @@ const CVActions = ({ fileDownload }: { fileDownload: string }) => {
 			</a>
 
 			<a
-				href={fileDownload}
+				href={downloadFile}
 				download='CV_Olexander_Tsiomakh_Frontend.pdf'
 				target='_blank'
 				rel='noopener noreferrer'
@@ -55,15 +59,7 @@ const CVActions = ({ fileDownload }: { fileDownload: string }) => {
 };
 
 const CVPage = () => {
-	const docId = '12rOT1Pa4Z-Usau2Xkh-QTXweDTZJJTKvadrJKmRpCk0';
-	const downloadDoc = `https://docs.google.com/document/d/${docId}/export?format=pdf`;
-	const sharingDoc = `https://docs.google.com/document/d/${docId}/edit?usp=sharing`;
-
 	const [loaded, setLoaded] = useState(false);
-
-	const handleLoad = () => {
-		setLoaded(true);
-	};
 
 	return (
 		<div className={`resume ${loaded ? 'is-loaded' : ''}`}>
@@ -71,12 +67,11 @@ const CVPage = () => {
 
 			{!loaded && <Preloader />}
 
-			<CVActions fileDownload={downloadDoc} />
+			<CVActions link={pathToProjects} downloadFile={docExportPDF} />
 
 			<iframe
-				onLoad={handleLoad}
-				onError={handleLoad}
-				src={sharingDoc}
+				onLoad={() => setLoaded(true)}
+				src={doc}
 				title='Resume Preview'
 				className='resume__frame'
 				loading='lazy'
@@ -87,3 +82,37 @@ const CVPage = () => {
 };
 
 export default CVPage;
+
+// const CVPage = () => {
+// 	const docId = '12rOT1Pa4Z-Usau2Xkh-QTXweDTZJJTKvadrJKmRpCk0';
+// 	const downloadDoc = `https://docs.google.com/document/d/${docId}/export?format=pdf`;
+// 	const sharingDoc = `https://docs.google.com/document/d/${docId}/edit?usp=sharing`;
+
+// 	const [loaded, setLoaded] = useState(false);
+
+// 	const handleLoad = () => {
+// 		setLoaded(true);
+// 	};
+
+// 	return (
+// 		<div className={`resume ${loaded ? 'is-loaded' : ''}`}>
+// 			<PageHelmet metaTags={cvMetaTags} />
+
+// 			{!loaded && <Preloader />}
+
+// 			<CVActions fileDownload={downloadDoc} />
+
+// 			<iframe
+// 				onLoad={handleLoad}
+// 				onError={handleLoad}
+// 				src={sharingDoc}
+// 				title='Resume Preview'
+// 				className='resume__frame'
+// 				loading='lazy'
+// 				referrerPolicy='no-referrer'
+// 			/>
+// 		</div>
+// 	);
+// };
+
+// export default CVPage;
