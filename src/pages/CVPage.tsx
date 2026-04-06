@@ -8,9 +8,9 @@ const docId = '12rOT1Pa4Z-Usau2Xkh-QTXweDTZJJTKvadrJKmRpCk0';
 const docExportPDF = `https://docs.google.com/document/d/${docId}/export?format=pdf`;
 // const doc = `https://docs.google.com/document/d/${docId}/preview?rm=minimal&embedded=true`;
 
-//TODO: Make separate for chrome mobile condition
-const doc = `https://docs.google.com/document/d/${docId}/edit?usp=sharing&rm=minimal`;
-// previewDoc = `https://docs.google.com/viewer?url=${encodeURIComponent(downloadDoc)}&embedded=true`;
+//TODO: Make condition for chrome mobile
+// const doc = `https://docs.google.com/document/d/${docId}/edit?usp=sharing&rm=minimal`;
+const doc = `https://docs.google.com/viewer?url=${encodeURIComponent(docExportPDF)}&embedded=true`;
 
 const CVActions = ({ link, downloadFile }: { link: string; downloadFile: string }) => {
 	return (
@@ -83,37 +83,3 @@ const CVPage = () => {
 };
 
 export default CVPage;
-
-// const CVPage = () => {
-// 	const docId = '12rOT1Pa4Z-Usau2Xkh-QTXweDTZJJTKvadrJKmRpCk0';
-// 	const downloadDoc = `https://docs.google.com/document/d/${docId}/export?format=pdf`;
-// 	const sharingDoc = `https://docs.google.com/document/d/${docId}/edit?usp=sharing`;
-
-// 	const [loaded, setLoaded] = useState(false);
-
-// 	const handleLoad = () => {
-// 		setLoaded(true);
-// 	};
-
-// 	return (
-// 		<div className={`resume ${loaded ? 'is-loaded' : ''}`}>
-// 			<PageHelmet metaTags={cvMetaTags} />
-
-// 			{!loaded && <Preloader />}
-
-// 			<CVActions fileDownload={downloadDoc} />
-
-// 			<iframe
-// 				onLoad={handleLoad}
-// 				onError={handleLoad}
-// 				src={sharingDoc}
-// 				title='Resume Preview'
-// 				className='resume__frame'
-// 				loading='lazy'
-// 				referrerPolicy='no-referrer'
-// 			/>
-// 		</div>
-// 	);
-// };
-
-// export default CVPage;
