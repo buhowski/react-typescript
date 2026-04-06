@@ -6,9 +6,10 @@ import { pathToProjects } from '../components/urlsData';
 
 const docId = '12rOT1Pa4Z-Usau2Xkh-QTXweDTZJJTKvadrJKmRpCk0';
 const downloadDoc = `https://docs.google.com/document/d/${docId}/export?format=pdf`;
+const shareDoc = `https://docs.google.com/document/d/${docId}/edit?usp=sharing&rm=minimal&chrome=false`;
+
 // const previewDoc = `https://docs.google.com/document/d/${docId}/preview?rm=minimal&chrome=false&embedded=true`;
 // const previewPDF = `https://docs.google.com/viewer?url=${encodeURIComponent(downloadDoc)}&embedded=true`;
-const shareDoc = `https://docs.google.com/document/d/${docId}/edit?usp=sharing&rm=minimal&chrome=false`;
 
 const CVActions = () => {
 	return (
