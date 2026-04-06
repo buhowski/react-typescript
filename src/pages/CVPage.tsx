@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Preloader from '../components/Preloader';
-import PageHelmet from '../components/PageHelmet';
-import { cvMetaTags } from '../components/metaTagsBasic';
+// import PageHelmet from '../components/PageHelmet';
+// import { cvMetaTags } from '../components/metaTagsBasic';
 import { pathToProjects } from '../components/urlsData';
 
 const docId = '12rOT1Pa4Z-Usau2Xkh-QTXweDTZJJTKvadrJKmRpCk0';
@@ -74,7 +74,7 @@ const CVPage = () => {
 
 	return (
 		<div className={`resume ${loaded ? 'is-loaded' : ''}`}>
-			<PageHelmet metaTags={cvMetaTags} />
+			{/* <PageHelmet metaTags={cvMetaTags} /> */}
 
 			<CVActions />
 
