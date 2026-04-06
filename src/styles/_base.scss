@@ -6,6 +6,10 @@ $scrollbar-radius: 10px;
 $scrollbar-width: 4px;
 $scrollbar-mob-width: 2px;
 
+:root {
+	color-scheme: dark light;
+}
+
 ::-webkit-scrollbar {
 	width: $scrollbar-width;
 	height: $scrollbar-width;
@@ -40,9 +44,6 @@ body,
 .mobile-menu__content,
 .table-content__inner {
 	overflow-y: scroll;
-	scrollbar-gutter: stable;
-	overscroll-behavior-y: none;
-	-webkit-overflow-scrolling: touch;
 
 	// WebKit (Chrome, Safari, Edge, iOS)
 	&::-webkit-scrollbar {
