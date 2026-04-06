@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Preloader from '../components/Preloader';
 import PageHelmet from '../components/PageHelmet';
 import { cvMetaTags } from '../components/metaTagsBasic';
@@ -63,10 +63,6 @@ const CVPage = () => {
 	const [loaded, setLoaded] = useState(false);
 	const [urlIndex, setUrlIndex] = useState(0);
 
-	const handleLoad = () => {
-		setLoaded(true);
-	};
-
 	// IFRAME ERROR FALLBACK
 	const handleError = () => {
 		if (urlIndex < PREVIEW_URLS.length - 1) {
@@ -74,6 +70,18 @@ const CVPage = () => {
 			setLoaded(false);
 		}
 	};
+
+	useEffect(() => {
+		// setLoaded(true);
+		if (loaded) return;
+
+		const timer = setTimeout(() => {
+			if (!loaded && urlIndex < PREVIEW_URLS.length - 1) {
+				setUrlIndex((prev) => prev + 1);
+			}
+		}, 10000);
+		return () => clearTimeout(timer);
+	}, [urlIndex, loaded]);
 
 	return (
 		<div className={`resume ${loaded ? 'is-loaded' : ''}`}>
@@ -85,13 +93,15 @@ const CVPage = () => {
 
 			<iframe
 				key={urlIndex}
-				onLoad={handleLoad}
+				onLoad={() => setLoaded(true)}
 				onError={handleError}
 				src={PREVIEW_URLS[urlIndex]}
 				title='Resume Preview'
 				className='resume__frame'
 				loading='lazy'
+				allowFullScreen
 				referrerPolicy='no-referrer'
+				// sandbox='allow-scripts allow-same-origin allow-popups allow-forms'
 			/>
 		</div>
 	);
