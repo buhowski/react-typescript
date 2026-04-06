@@ -100,7 +100,10 @@ const CVPage = () => {
 				title='Resume Preview'
 				className='resume__frame'
 				loading='lazy'
-				referrerPolicy='no-referrer'
+				// allow='fullscreen'
+				// allowFullScreen
+				// referrerPolicy='no-referrer'
+				// sandbox='allow-scripts allow-same-origin allow-forms allow-popups'
 			/>
 		</div>
 	);
