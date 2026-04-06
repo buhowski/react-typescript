@@ -7,7 +7,7 @@ import { pathToProjects } from '../components/urlsData';
 const docId = '12rOT1Pa4Z-Usau2Xkh-QTXweDTZJJTKvadrJKmRpCk0';
 const downloadDoc = `https://docs.google.com/document/d/${docId}/export?format=pdf`;
 // const previewDoc = `https://docs.google.com/document/d/${docId}/preview?rm=minimal&chrome=false&embedded=true`;
-const previewDoc = `https://docs.google.com/document/d/12rOT1Pa4Z-Usau2Xkh-QTXweDTZJJTKvadrJKmRpCk0/preview?usp=sharing&rm=minimal&chrome=false&embedded=true`;
+const previewDoc = `https://docs.google.com/document/d/12rOT1Pa4Z-Usau2Xkh-QTXweDTZJJTKvadrJKmRpCk0/edit?usp=sharing`;
 // const fullPreviewDoc = `https://drive.google.com/file/d/${docId}/view`;
 
 const CVActions = () => {
