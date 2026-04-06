@@ -10,7 +10,7 @@ const previewDoc = `https://docs.google.com/document/d/${docId}/preview?rm=minim
 const previewPDF = `https://docs.google.com/viewer?url=${encodeURIComponent(downloadDoc)}&embedded=true`;
 const sharingDoc = `https://docs.google.com/document/d/${docId}/edit?usp=sharing&rm=minimal&chrome=false&embedded=true`;
 
-const PREVIEW_URLS = [previewDoc, sharingDoc, previewPDF];
+const PREVIEW_URLS = [sharingDoc, previewDoc, previewPDF];
 
 const CVActions = () => {
 	return (
