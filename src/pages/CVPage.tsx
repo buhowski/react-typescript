@@ -4,15 +4,10 @@ import PageHelmet from '../components/PageHelmet';
 import { cvMetaTags } from '../components/metaTagsBasic';
 import { pathToProjects } from '../components/urlsData';
 
-const docId = '12rOT1Pa4Z-Usau2Xkh-QTXweDTZJJTKvadrJKmRpCk0';
-const downloadDoc = `https://docs.google.com/document/d/${docId}/export?format=pdf`;
-const previewDoc = `https://docs.google.com/document/d/${docId}/preview?rm=minimal&chrome=false&embedded=true`;
-const previewPDF = `https://docs.google.com/viewer?url=${encodeURIComponent(downloadDoc)}&embedded=true`;
-const sharingDoc = `https://docs.google.com/document/d/${docId}/edit?usp=sharing&rm=minimal&chrome=false&embedded=true`;
+// const previewDoc = `https://docs.google.com/document/d/${docId}/preview?rm=minimal&chrome=false&embedded=true`;
+// const previewPDF = `https://docs.google.com/viewer?url=${encodeURIComponent(downloadDoc)}&embedded=true`;
 
-const PREVIEW_URLS = [sharingDoc, previewDoc, previewPDF];
-
-const CVActions = () => {
+const CVActions = ({ fileDownload }: { fileDownload: string }) => {
 	return (
 		<nav className='resume__actions'>
 			{/* <h1>Resume</h1> */}
@@ -37,7 +32,7 @@ const CVActions = () => {
 			</a>
 
 			<a
-				href={downloadDoc}
+				href={fileDownload}
 				download='CV_Olexander_Tsiomakh_Frontend.pdf'
 				target='_blank'
 				rel='noopener noreferrer'
@@ -60,19 +55,14 @@ const CVActions = () => {
 };
 
 const CVPage = () => {
+	const docId = '12rOT1Pa4Z-Usau2Xkh-QTXweDTZJJTKvadrJKmRpCk0';
+	const downloadDoc = `https://docs.google.com/document/d/${docId}/export?format=pdf`;
+	const sharingDoc = `https://docs.google.com/document/d/${docId}/edit?usp=sharing`;
+
 	const [loaded, setLoaded] = useState(false);
-	const [urlIndex, setUrlIndex] = useState(0);
 
 	const handleLoad = () => {
 		setLoaded(true);
-	};
-
-	// IFRAME ERROR FALLBACK
-	const handleError = () => {
-		if (urlIndex < PREVIEW_URLS.length - 1) {
-			setUrlIndex((i) => i + 1);
-			setLoaded(false);
-		}
 	};
 
 	return (
@@ -81,13 +71,12 @@ const CVPage = () => {
 
 			{!loaded && <Preloader />}
 
-			<CVActions />
+			<CVActions fileDownload={downloadDoc} />
 
 			<iframe
-				key={urlIndex}
 				onLoad={handleLoad}
-				onError={handleError}
-				src={PREVIEW_URLS[urlIndex]}
+				onError={handleLoad}
+				src={sharingDoc}
 				title='Resume Preview'
 				className='resume__frame'
 				loading='lazy'
