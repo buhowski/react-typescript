@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Preloader from '../components/Preloader';
 import PageHelmet from '../components/PageHelmet';
 import { cvMetaTags } from '../components/metaTagsBasic';
@@ -6,9 +6,13 @@ import { pathToProjects } from '../components/urlsData';
 
 const docId = '12rOT1Pa4Z-Usau2Xkh-QTXweDTZJJTKvadrJKmRpCk0';
 const downloadDoc = `https://docs.google.com/document/d/${docId}/export?format=pdf`;
-// const previewDoc = `https://docs.google.com/document/d/${docId}/preview?rm=minimal&chrome=false&embedded=true`;
-const previewDoc = `https://docs.google.com/document/d/12rOT1Pa4Z-Usau2Xkh-QTXweDTZJJTKvadrJKmRpCk0/edit?usp=sharing`;
+const previewDoc = `https://docs.google.com/document/d/${docId}/preview?rm=minimal&chrome=false&embedded=true`;
+const previewPDF = `https://docs.google.com/viewer?url=${encodeURIComponent(downloadDoc)}&embedded=true`;
+const viewerDoc = `https://docs.google.com/viewer?srcid=${docId}&embedded=true`;
+
 // const fullPreviewDoc = `https://drive.google.com/file/d/${docId}/view`;
+
+const PREVIEW_URLS = [previewDoc, viewerDoc, previewPDF];
 
 const CVActions = () => {
 	return (
@@ -69,6 +73,29 @@ const CVActions = () => {
 
 const CVPage = () => {
 	const [loaded, setLoaded] = useState(false);
+	const [urlIndex, setUrlIndex] = useState(0);
+
+	const handleLoad = () => {
+		setLoaded(true);
+	};
+
+	// IFRAME ERROR FALLBACK
+	const handleError = () => {
+		if (urlIndex < PREVIEW_URLS.length - 1) {
+			setUrlIndex((i) => i + 1);
+			setLoaded(false);
+		}
+	};
+
+	useEffect(() => {
+		const timer = setTimeout(() => {
+			if (!loaded && urlIndex === 0) {
+				setUrlIndex(1);
+			}
+		}, 5000);
+
+		return () => clearTimeout(timer);
+	}, [loaded, urlIndex]);
 
 	return (
 		<div className={`resume ${loaded ? 'is-loaded' : ''}`}>
@@ -79,10 +106,14 @@ const CVPage = () => {
 			{!loaded && <Preloader />}
 
 			<iframe
-				onLoad={() => setLoaded(true)}
-				src={previewDoc}
+				key={urlIndex}
+				onLoad={handleLoad}
+				onError={handleError}
+				src={PREVIEW_URLS[urlIndex]}
 				title='Resume Preview'
 				className='resume__frame'
+				loading='lazy'
+				referrerPolicy='no-referrer'
 			/>
 		</div>
 	);
