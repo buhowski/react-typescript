@@ -5,9 +5,12 @@ import { cvMetaTags } from '../components/metaTagsBasic';
 import { pathToProjects } from '../components/urlsData';
 
 const docId = '12rOT1Pa4Z-Usau2Xkh-QTXweDTZJJTKvadrJKmRpCk0';
-const previewDoc = `https://docs.google.com/document/d/${docId}/preview?rm=minimal&chrome=false&embedded=true`;
-const downloadDoc = `https://docs.google.com/document/d/${docId}/export?format=pdf`;
+
 // const fullPreviewDoc = `https://drive.google.com/file/d/${docId}/view`;
+// const previewDoc = `https://docs.google.com/document/d/${docId}/edit?usp=sharing`;
+
+const previewDoc = `https://docs.google.com/document/d/${docId}/preview`;
+const downloadDoc = `https://docs.google.com/document/d/${docId}/export?format=pdf`;
 
 const CVActions = () => {
 	return (
@@ -70,22 +73,20 @@ const CVPage = () => {
 	const [loaded, setLoaded] = useState(false);
 
 	return (
-		<>
+		<div className={`resume ${loaded ? 'is-loaded' : ''}`}>
 			<PageHelmet metaTags={cvMetaTags} />
 
-			<div className={`resume ${loaded ? 'is-loaded' : ''}`}>
-				<CVActions />
+			<CVActions />
 
-				{!loaded && <Preloader />}
+			{!loaded && <Preloader />}
 
-				<iframe
-					onLoad={() => setLoaded(true)}
-					src={previewDoc}
-					title='Resume Preview'
-					className='resume__frame'
-				/>
-			</div>
-		</>
+			<iframe
+				onLoad={() => setLoaded(true)}
+				src={previewDoc}
+				title='Resume Preview'
+				className='resume__frame'
+			/>
+		</div>
 	);
 };
 
