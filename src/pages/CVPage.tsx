@@ -63,6 +63,10 @@ const CVPage = () => {
 	const [loaded, setLoaded] = useState(false);
 	const [urlIndex, setUrlIndex] = useState(0);
 
+	const handleLoad = () => {
+		setLoaded(true);
+	};
+
 	// IFRAME ERROR FALLBACK
 	const handleError = () => {
 		if (urlIndex < PREVIEW_URLS.length - 1) {
@@ -81,15 +85,13 @@ const CVPage = () => {
 
 			<iframe
 				key={urlIndex}
-				onLoad={() => setLoaded(true)}
+				onLoad={handleLoad}
 				onError={handleError}
 				src={PREVIEW_URLS[urlIndex]}
 				title='Resume Preview'
 				className='resume__frame'
 				loading='lazy'
-				allowFullScreen
 				referrerPolicy='no-referrer'
-				sandbox='allow-scripts allow-same-origin allow-popups allow-forms'
 			/>
 		</div>
 	);
