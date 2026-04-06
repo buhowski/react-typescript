@@ -1,16 +1,17 @@
 import { useState } from 'react';
 import Preloader from '../components/Preloader';
-// import PageHelmet from '../components/PageHelmet';
-// import { cvMetaTags } from '../components/metaTagsBasic';
+import PageHelmet from '../components/PageHelmet';
+import { cvMetaTags } from '../components/metaTagsBasic';
 import { pathToProjects } from '../components/urlsData';
 
 const docId = '12rOT1Pa4Z-Usau2Xkh-QTXweDTZJJTKvadrJKmRpCk0';
 
+const downloadDoc = `https://docs.google.com/document/d/${docId}/export?format=pdf`;
+// const previewDoc = `https://docs.google.com/viewer?url=${encodeURIComponent(downloadDoc)}&embedded=true`;
+
 // const fullPreviewDoc = `https://drive.google.com/file/d/${docId}/view`;
 // const previewDoc = `https://docs.google.com/document/d/${docId}/edit?usp=sharing`;
-
 const previewDoc = `https://docs.google.com/document/d/${docId}/preview`;
-const downloadDoc = `https://docs.google.com/document/d/${docId}/export?format=pdf`;
 
 const CVActions = () => {
 	return (
@@ -74,7 +75,7 @@ const CVPage = () => {
 
 	return (
 		<div className={`resume ${loaded ? 'is-loaded' : ''}`}>
-			{/* <PageHelmet metaTags={cvMetaTags} /> */}
+			<PageHelmet metaTags={cvMetaTags} />
 
 			<CVActions />
 
