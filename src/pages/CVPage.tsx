@@ -73,9 +73,7 @@ const CVPage = () => {
 				className='resume__frame'
 				loading='lazy'
 				allowFullScreen
-				allow='autoplay; encrypted-media; fullscreen'
 				referrerPolicy='no-referrer'
-				sandbox='allow-scripts allow-same-origin allow-popups allow-forms'
 			/>
 		</div>
 	);
