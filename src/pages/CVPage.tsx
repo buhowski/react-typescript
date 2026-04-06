@@ -9,7 +9,7 @@ const docExportPDF = `https://docs.google.com/document/d/${docId}/export?format=
 // WORKED DOC
 // const doc = `https://docs.google.com/document/d/${docId}/edit?usp=sharing&rm=minimal`;
 
-const doc = `https://docs.google.com/document/d/${docId}/preview?rm=minimal&embedded=true`;
+const doc = `https://docs.google.com/document/d/${docId}/preview?rm=minimal`;
 // previewDoc = `https://docs.google.com/viewer?url=${encodeURIComponent(downloadDoc)}&embedded=true`;
 
 const CVActions = ({ link, downloadFile }: { link: string; downloadFile: string }) => {
