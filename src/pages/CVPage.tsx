@@ -6,11 +6,9 @@ import { pathToProjects } from '../components/urlsData';
 
 const docId = '12rOT1Pa4Z-Usau2Xkh-QTXweDTZJJTKvadrJKmRpCk0';
 const downloadDoc = `https://docs.google.com/document/d/${docId}/export?format=pdf`;
-const previewDoc = `https://docs.google.com/document/d/${docId}/preview?rm=minimal&chrome=false&embedded=true`;
-const previewPDF = `https://docs.google.com/viewer?url=${encodeURIComponent(downloadDoc)}&embedded=true`;
-const sharingDoc = `https://docs.google.com/document/d/${docId}/edit?usp=sharing&rm=minimal&chrome=false&embedded=true`;
-
-const PREVIEW_URLS = [sharingDoc, previewDoc, previewPDF];
+// const previewDoc = `https://docs.google.com/document/d/${docId}/preview?rm=minimal&chrome=false&embedded=true`;
+// const previewPDF = `https://docs.google.com/viewer?url=${encodeURIComponent(downloadDoc)}&embedded=true`;
+const shareDoc = `https://docs.google.com/document/d/${docId}/edit?usp=sharing&rm=minimal&chrome=false`;
 
 const CVActions = () => {
 	return (
@@ -61,19 +59,6 @@ const CVActions = () => {
 
 const CVPage = () => {
 	const [loaded, setLoaded] = useState(false);
-	const [urlIndex, setUrlIndex] = useState(0);
-
-	const handleLoad = () => {
-		setLoaded(true);
-	};
-
-	// IFRAME ERROR FALLBACK
-	const handleError = () => {
-		if (urlIndex < PREVIEW_URLS.length - 1) {
-			setUrlIndex((i) => i + 1);
-			setLoaded(false);
-		}
-	};
 
 	return (
 		<div className={`resume ${loaded ? 'is-loaded' : ''}`}>
@@ -84,14 +69,14 @@ const CVPage = () => {
 			{!loaded && <Preloader />}
 
 			<iframe
-				key={urlIndex}
-				onLoad={handleLoad}
-				onError={handleError}
-				src={PREVIEW_URLS[urlIndex]}
+				onLoad={() => setLoaded(true)}
+				src={shareDoc}
 				title='Resume Preview'
 				className='resume__frame'
 				loading='lazy'
+				allowFullScreen
 				referrerPolicy='no-referrer'
+				sandbox='allow-scripts allow-same-origin allow-popups allow-forms'
 			/>
 		</div>
 	);
