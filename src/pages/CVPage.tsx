@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Preloader from '../components/Preloader';
 import PageHelmet from '../components/PageHelmet';
 import { cvMetaTags } from '../components/metaTagsBasic';
@@ -7,9 +7,10 @@ import { pathToProjects } from '../components/urlsData';
 const docId = '12rOT1Pa4Z-Usau2Xkh-QTXweDTZJJTKvadrJKmRpCk0';
 const downloadDoc = `https://docs.google.com/document/d/${docId}/export?format=pdf`;
 const previewDoc = `https://docs.google.com/document/d/${docId}/preview?rm=minimal&chrome=false&embedded=true`;
-const viewerDoc = `https://docs.google.com/document/d/${docId}/edit?usp=sharing&rm=minimal&chrome=false&embedded=true`;
+const previewPDF = `https://docs.google.com/viewer?url=${encodeURIComponent(downloadDoc)}&embedded=true`;
+const sharingDoc = `https://docs.google.com/document/d/${docId}/edit?usp=sharing&rm=minimal&chrome=false&embedded=true`;
 
-const PREVIEW_URLS = [previewDoc, viewerDoc];
+const PREVIEW_URLS = [previewDoc, sharingDoc, previewPDF];
 
 const CVActions = () => {
 	return (
