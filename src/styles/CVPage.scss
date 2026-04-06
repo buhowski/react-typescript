@@ -5,6 +5,8 @@
 	width: 100%;
 	height: 100dvh;
 	transition: height 0.2s;
+	display: flex;
+	flex-direction: column;
 
 	&.is-loaded .resume__frame {
 		opacity: 1;
@@ -85,9 +87,11 @@
 
 	// .resume__frame
 	&__frame {
+		margin-top: 52px;
 		display: block;
 		width: 100%;
 		height: 100%;
+		flex-grow: 1;
 		border: none;
 		background-color: #ffffff;
 		color-scheme: light;
@@ -97,6 +101,5 @@
 		transition:
 			opacity 0.35s,
 			height 0.2s;
-		// padding-top: 50px;
 	}
 }

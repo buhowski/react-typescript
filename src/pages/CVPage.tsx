@@ -3,12 +3,18 @@ import Preloader from '../components/Preloader';
 import PageHelmet from '../components/PageHelmet';
 import { cvMetaTags } from '../components/metaTagsBasic';
 import { pathToProjects } from '../components/urlsData';
+// import useChromeMobile from '../config/useChromeMobile';
 
 const docId = '12rOT1Pa4Z-Usau2Xkh-QTXweDTZJJTKvadrJKmRpCk0';
 const docExportPDF = `https://docs.google.com/document/d/${docId}/export?format=pdf`;
+
+// DEFAULT (Desktop/Safari/In-App)
 // const doc = `https://docs.google.com/document/d/${docId}/preview?rm=minimal&embedded=true`;
 
-const doc = '/.netlify/functions/cv';
+// CHROME MOBILE ONLY (Proxy Viewer)
+// const docMobile = `https://docs.google.com/viewer?url=${encodeURIComponent(docExportPDF)}`;
+
+const docPDF = `https://drive.google.com/file/d/${docId}/preview`;
 
 const CVActions = ({ link, downloadFile }: { link: string; downloadFile: string }) => {
 	return (
@@ -59,6 +65,7 @@ const CVActions = ({ link, downloadFile }: { link: string; downloadFile: string 
 
 const CVPage = () => {
 	const [loaded, setLoaded] = useState(false);
+	// const isChromeMobile = useChromeMobile();
 
 	return (
 		<div className={`resume ${loaded ? 'is-loaded' : ''}`}>
@@ -69,12 +76,15 @@ const CVPage = () => {
 			<CVActions link={pathToProjects} downloadFile={docExportPDF} />
 
 			<iframe
-				src={doc}
+				// src={isChromeMobile ? docPDF : doc}
+				src={docPDF}
 				onLoad={() => setLoaded(true)}
 				title='Resume Preview'
 				className='resume__frame'
-				loading='lazy'
+				sandbox='allow-scripts allow-same-origin allow-forms allow-popups'
 				referrerPolicy='no-referrer'
+				allow='autoplay; fullscreen'
+				allowFullScreen
 			/>
 		</div>
 	);
