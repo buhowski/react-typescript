@@ -8,11 +8,8 @@ const docId = '12rOT1Pa4Z-Usau2Xkh-QTXweDTZJJTKvadrJKmRpCk0';
 const downloadDoc = `https://docs.google.com/document/d/${docId}/export?format=pdf`;
 const previewDoc = `https://docs.google.com/document/d/${docId}/preview?rm=minimal&chrome=false&embedded=true`;
 const previewPDF = `https://docs.google.com/viewer?url=${encodeURIComponent(downloadDoc)}&embedded=true`;
-const viewerDoc = `https://docs.google.com/viewer?srcid=${docId}&embedded=true`;
 
-// const fullPreviewDoc = `https://drive.google.com/file/d/${docId}/view`;
-
-const PREVIEW_URLS = [previewDoc, viewerDoc, previewPDF];
+const PREVIEW_URLS = [previewDoc, previewPDF];
 
 const CVActions = () => {
 	return (
@@ -57,16 +54,6 @@ const CVActions = () => {
 				</svg>
 				Get CV
 			</a>
-
-			{/* <a
-				href={fullPreviewDoc}
-				target='_blank'
-				rel='noopener noreferrer'
-				className='resume__btn'
-				title='Open PDF version in new tab'
-			>
-				Open CV
-			</a> */}
 		</nav>
 	);
 };
@@ -92,7 +79,7 @@ const CVPage = () => {
 			if (!loaded && urlIndex === 0) {
 				setUrlIndex(1);
 			}
-		}, 5000);
+		}, 10000);
 
 		return () => clearTimeout(timer);
 	}, [loaded, urlIndex]);
