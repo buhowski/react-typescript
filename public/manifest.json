@@ -1,5 +1,5 @@
 {
-	"short_name": "#Розбійник",
+	"short_name": "Розбійник",
 	"name": "Another Dimension",
 	"icons": [
 		{
@@ -15,8 +15,8 @@
 			"purpose": "any maskable"
 		}
 	],
-	"start_url": "/vision",
+	"start_url": "/mvp",
 	"display": "standalone",
-	"theme_color": "#202020",
-	"background_color": "#202020"
+	"theme_color": "#111111",
+	"background_color": "#111111"
 }
