@@ -5,8 +5,6 @@
 	width: 100%;
 	height: 100dvh;
 	transition: height 0.2s;
-	display: flex;
-	flex-direction: column;
 
 	&.is-loaded .resume__frame {
 		opacity: 1;
@@ -21,9 +19,9 @@
 		z-index: 20;
 		background-color: #000000;
 		border-bottom: 2px solid #4e5d69;
-		box-shadow: 0 1px 10px #000000;
+		box-shadow: 0 2px 12px #000000;
 		padding: 8px 15px 7px;
-		gap: 22px;
+		gap: 20px;
 		font-family: $LouisGeorgeCafBold;
 		letter-spacing: 1px;
 		white-space: nowrap;
@@ -34,10 +32,6 @@
 
 		@include mobileSmall {
 			gap: 15px;
-		}
-
-		.c18 {
-			padding: 0;
 		}
 
 		// h1 {
@@ -51,15 +45,15 @@
 
 	// .resume__btn
 	&__btn {
-		background-color: #000000;
+		background-color: $blue-main;
 		background: $bg-gradient;
-		padding: 8px 15px;
-		box-shadow: 0 0 5px #000000;
+		padding: 7px 15px;
+		box-shadow: 0 0 4px $blue-main;
 		display: flex;
 		align-items: center;
 		text-align: center;
 		justify-content: center;
-		max-width: 156px;
+		max-width: 140px;
 		width: 100%;
 
 		&:hover {
@@ -87,19 +81,16 @@
 
 	// .resume__frame
 	&__frame {
-		margin-top: 52px;
+		padding-top: 52px;
 		display: block;
 		width: 100%;
 		height: 100%;
 		flex-grow: 1;
 		border: none;
-		background-color: #ffffff;
-		color-scheme: light;
-		forced-color-adjust: none;
-		-webkit-text-fill-color: initial;
+		background-color: #1e1e1e;
 		opacity: 0;
 		transition:
-			opacity 0.35s,
+			opacity 0.3s,
 			height 0.2s;
 	}
 }

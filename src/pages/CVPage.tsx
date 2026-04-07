@@ -79,12 +79,11 @@ const CVPage = () => {
 				// src={isChromeMobile ? docPDF : doc}
 				src={docPDF}
 				onLoad={() => setLoaded(true)}
-				title='Resume Preview'
 				className='resume__frame'
-				sandbox='allow-scripts allow-same-origin allow-forms allow-popups'
-				referrerPolicy='no-referrer'
-				allow='autoplay; fullscreen'
-				allowFullScreen
+				title='Resume'
+				allow='fullscreen'
+				sandbox='allow-downloads allow-scripts allow-same-origin allow-forms allow-popups allow-popups-to-escape-sandbox allow-modals'
+				// referrerPolicy='no-referrer'
 			/>
 		</div>
 	);
