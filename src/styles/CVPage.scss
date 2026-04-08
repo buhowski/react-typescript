@@ -16,7 +16,7 @@
 		background-color: #000000;
 		border-bottom: 2px solid #4e5d69;
 		box-shadow: 0 2px 12px #000000;
-		padding: 8px 15px 7px;
+		padding: 6px 15px 5px;
 		gap: 20px;
 		font-family: $LouisGeorgeCafBold;
 		letter-spacing: 1px;
@@ -35,8 +35,8 @@
 	&__btn {
 		background-color: $blue-main;
 		background: $bg-gradient;
-		padding: 7px 15px;
-		box-shadow: 0 0 4px $blue-main;
+		padding: 8px 15px;
+		box-shadow: 0 0 4px $blue-light;
 		display: flex;
 		align-items: center;
 		text-align: center;
@@ -69,7 +69,7 @@
 
 	// .resume__frame
 	&__frame {
-		padding-top: 52px;
+		padding-top: 50px;
 		display: block;
 		width: 100%;
 		height: 100dvh;
