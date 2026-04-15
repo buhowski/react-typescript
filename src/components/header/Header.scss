@@ -6,7 +6,7 @@
 	width: 100%;
 	display: flex;
 	align-items: center;
-	padding: 17px 0;
+	padding: 12px 0;
 	height: 90px;
 	overflow: hidden;
 
@@ -78,10 +78,6 @@
 	font-size: 23px;
 	letter-spacing: 4px;
 	font-family: $LouisGeorgeCafBold;
-
-	@include tablet {
-		font-size: 25px;
-	}
 }
 
 .mobile-menu-btn,
@@ -125,17 +121,26 @@
 		}
 
 		.nav-link {
-			min-width: 190px;
+			min-width: 230px;
+			padding-top: 15px;
+			padding-bottom: 15px;
+			border: 1px solid rgba(#61676d, 0.4);
+			transition: border-color 0.25s;
+			border-radius: 100px;
 
 			&:after {
 				transform: scale(0);
 				height: 100%;
 				width: 100%;
-				will-change: transform;
+				border-radius: 100px;
 			}
 
-			&.active:after {
-				transform: scale(1);
+			&.active {
+				border-color: transparent;
+
+				&:after {
+					transform: scale(1);
+				}
 			}
 		}
 

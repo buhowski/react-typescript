@@ -65,6 +65,36 @@ $link-hover: #d99f4e;
 	}
 }
 
+// More BTM
+@mixin btn-more_decor($color: $h1-color, $size: 12px, $offset: -1px, $bdr: 1px solid $color) {
+	border: 1px solid rgba($color, 0.4);
+
+	&::before,
+	&::after {
+		content: '';
+		position: absolute;
+		width: $size;
+		height: $size;
+		transition:
+			width 0.26s,
+			height 0.26s;
+	}
+
+	&::after {
+		top: $offset;
+		left: $offset;
+		border-top: $bdr;
+		border-left: $bdr;
+	}
+
+	&::before {
+		bottom: $offset;
+		right: $offset;
+		border-bottom: $bdr;
+		border-right: $bdr;
+	}
+}
+
 // Slider
 $slider-actions-color: #745a81;
 
@@ -175,8 +205,8 @@ $bg-active-lang: #4e3e6f;
 	position: relative;
 	white-space: nowrap;
 	font-family: $LouisGeorgeCafBold;
-	padding: 12px 22px;
-	padding-left: 26px;
+	padding: 13px 28px;
+	padding-left: 32px;
 	text-align: center;
 	letter-spacing: 3px;
 	overflow: hidden;
@@ -192,8 +222,7 @@ $bg-active-lang: #4e3e6f;
 		height: 2px;
 		background-color: $blue-main;
 		z-index: -1;
-		transition: 0.25s ease;
-		will-change: height;
+		transition: 0.25s;
 	}
 
 	&.active,
