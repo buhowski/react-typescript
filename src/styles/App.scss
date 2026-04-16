@@ -63,7 +63,7 @@ body.is-locked {
 		transform: translateX(-50%);
 		position: fixed;
 		width: 0;
-		height: $start-height;
+		height: 0;
 		bottom: 0;
 		left: 50%;
 		z-index: 1000;

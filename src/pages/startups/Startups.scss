@@ -365,7 +365,7 @@
 
 		&:active {
 			@include hover-text-link;
-			transform: scale(0.85);
+			transform: scale(0.9);
 		}
 
 		// icon for links
@@ -469,7 +469,7 @@
 	}
 }
 
-@mixin idea-block__more_hover {
+@mixin btn-more_hover {
 	background: rgba(#000000, 0.25);
 
 	&::before,
@@ -498,13 +498,13 @@
 
 	@media (hover: hover) and (pointer: fine) {
 		&:hover {
-			@include idea-block__more_hover;
+			@include btn-more_hover;
 		}
 	}
 
 	&:active {
-		@include idea-block__more_hover;
-		transform: scale(0.9);
+		@include btn-more_hover;
+		transform: scale(0.85);
 	}
 }
 
@@ -803,7 +803,7 @@
 
 	&:active {
 		@include slider-arrows_hover;
-		transform: scale(0.9);
+		transform: scale(0.8);
 	}
 
 	&-next {

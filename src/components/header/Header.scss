@@ -121,12 +121,18 @@
 		}
 
 		.nav-link {
-			min-width: 230px;
+			min-width: 235px;
 			padding-top: 15px;
 			padding-bottom: 15px;
-			border: 1px solid rgba(#61676d, 0.4);
-			transition: border-color 0.25s;
+			border: 1px solid rgba(#61676d, 0.5);
+			transition:
+				border-color 0.25s,
+				transform 0.25s;
 			border-radius: 100px;
+
+			&:active {
+				transform: scale(0.8);
+			}
 
 			&:after {
 				transform: scale(0);

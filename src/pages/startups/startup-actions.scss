@@ -73,7 +73,7 @@
 
 	&:active {
 		@include idea-back_hover;
-		transform: scale(0.9);
+		transform: scale(0.8);
 	}
 
 	span,
@@ -229,8 +229,7 @@ $nav-top: 2px;
 		flex-grow: 1;
 		z-index: 0;
 		transition:
-			transform 0.2s,
-			color 0.25s,
+			color 0.26s,
 			border-radius 0.3s;
 
 		@include tabletBig {
@@ -315,14 +314,11 @@ $nav-top: 2px;
 
 		&:active {
 			@include startup-nav__btn-hover;
-
-			&:not(.sub-active) {
-				transform: scale(0.9);
-			}
 		}
 
 		span {
 			display: block;
+			transition: 0.2s;
 
 			&::before {
 				content: attr(data-text);
