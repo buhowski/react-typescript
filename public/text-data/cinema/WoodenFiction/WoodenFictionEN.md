@@ -27,4 +27,4 @@ Behind the chaotic plot and dark humor lies a biting satire — how corruption d
 
 *Under Construction …*
 
-Seeking partners and resources to bring this to life. If you want to team up or know where to take this — get in touch!
+Looking for like-minded partners and resources for joint realization. If you are ready to team up or know how to scale this — write me.

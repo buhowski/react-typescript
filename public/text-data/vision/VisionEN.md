@@ -1,6 +1,6 @@
-#### Multifunctional Corporation Concept
+#### Multifunctional Corporation Vision
 
-# Business Plan
+# The Plan
 
 ## Preface
 
@@ -37,9 +37,9 @@ It is about breaking free from all possible "spokes in the wheel". About the fre
 
 And to make all of this happen on my own terms — this corporation is exactly that place.
 
-## The Plan
+## Vector
 
-I wrote the strategy and project script: "How to create an entertainment magazine and turn it into a company producing its own technologies".
+I have developed the strategy and project script: "How to create an entertainment magazine and turn it into a company producing its own technologies".
 
 Looking for people, investment, or the opportunity to integrate ideas into existing projects — to shape the future in these areas:
 
@@ -123,7 +123,7 @@ At launch, publications are partners-only — to form a high-quality core audien
 
 The magazine and its development strategy are separate, independent projects. More details: [MVP: Another Dimension](/mvp)
 
-Key industry products — in comprehensive concept presentations: [Cinematic Concepts](/cinema) [Game Dev Concepts](/gamedev)
+Key industry products — in comprehensive concept presentations: [Cinematic Concepts](/cinema) [Game Development](/gamedev)
 
 [Self-presentation projects](/pilots) — pilot projects for the first stage of exploring possibilities. Through feedback, they validate the stated intentions and open the path to launching key ideas and building the magazine. And lay the groundwork for attracting investment for at least the next 5 years.
 

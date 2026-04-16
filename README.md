@@ -10,7 +10,7 @@ I want to Create an Information and Entertainment Media Magazine and Transform I
 
 ### [ Cinematic Concepts ](https://buhowski.dev/cinema)
 
-### [ Game Dev Concepts ](https://buhowski.dev/gamedev)
+### [ Game Development ](https://buhowski.dev/gamedev)
 
 ### [ Magazine ⋅ Strategy ](https://buhowski.dev/mvp)
 

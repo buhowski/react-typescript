@@ -1,5 +1,5 @@
-# Game Dev Concepts
+# Game Development
 
-Below are my concepts for ambitious video games and interactive media. Fully-realized worlds with a unique vision, deep lore, and a reimagined history of humanity — all with a solid foundation for production.
+Digital ecosystems with their own identity — original concepts for video games and complex interactivity with a production-ready foundation. Proprietary mythology and a reimagined history of humanity as an intellectual superstructure and lore.
 
-Seeking partners and resources to bring this to life. If you want to team up or know where to take this — get in touch!
+Looking for like-minded partners and resources for joint realization. If you are ready to team up or know how to scale this — write me.

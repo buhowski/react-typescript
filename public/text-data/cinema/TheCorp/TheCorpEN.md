@@ -28,4 +28,4 @@ Openly documenting every stage of building the business becomes both the plot’
 
 *Under Construction …*
 
-Seeking partners and resources to bring this to life. If you want to team up or know where to take this — get in touch!
+Looking for like-minded partners and resources for joint realization. If you are ready to team up or know how to scale this — write me.

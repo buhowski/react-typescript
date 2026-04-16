@@ -1,5 +1,5 @@
 # Cinematic Concepts
 
-Below are my concepts for film, series, animation, and other video content, with a distinct authorial vision and a production-ready foundation. Different genres and formats — each with its own identity.
+A cinematic universe with its own identity — original concepts for film, TV series, and animation. Nihilistic satire, existential tragedy, folk noir, dirty realism, sharp and taboo subjects — production-ready foundations.
 
-Seeking partners and resources to bring this to life. If you want to team up or know where to take this — get in touch!
+Looking for like-minded partners and resources for joint realization. If you are ready to team up or know how to scale this — write me.

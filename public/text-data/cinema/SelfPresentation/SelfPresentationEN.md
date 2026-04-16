@@ -2,9 +2,11 @@
 
 # Pilot Projects
 
-Below are ready-made scripts and a concept to kick-start — all that's missing is the team. For those ready to dive into the unknown for the sake of experience and results.
+Intellectual provocation (improvisation, black humor, the aesthetic of the absurd) as self-presentation tools for creating a countercultural magazine.
 
-If you are planning to get into creatorship or looking for new formats — let's build them together. All completed projects are yours to use on your own channels.
+Scripts and concepts are ready for launch — all that's missing is the team.
+
+I am looking for creators to change the rules of the game. All completed projects are yours to use on your own channels.
 
 ### List
 
