@@ -1,4 +1,4 @@
-#### Animated Folk Noir Crime Comedy
+#### Folk Noir / Animated Movie
 
 # Деревʼяне Чтиво
 

@@ -31,7 +31,7 @@ const CollabUA = ({ lang }: { lang?: string }) => {
 					{
 						title: 'Вимір Мінус Ноль',
 						url: 'https://buhowski.dev/podcast',
-						genre: 'Sketch Comedy / Talk Show',
+						genre: 'Sketch Talk Show',
 					},
 					{
 						title: 'Вечір у БОГА',

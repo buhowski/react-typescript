@@ -1,4 +1,4 @@
-#### Chaotic Sketch Comedy / Talk Show
+#### Sketch Talk Show
 
 # Вимір Мінус Ноль
 

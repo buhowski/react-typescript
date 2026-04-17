@@ -1,4 +1,4 @@
-#### Satirical Theatrical Farce / Stage Show
+#### Satirical Stage Show
 
 # Вечер у БОГА
 

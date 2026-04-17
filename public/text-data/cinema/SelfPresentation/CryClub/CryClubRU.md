@@ -1,4 +1,4 @@
-#### Absurdist Dark Comedy / Reality Show
+#### Trash Reality Performance
 
 # Бойцовский клуб Санта Барбара
 

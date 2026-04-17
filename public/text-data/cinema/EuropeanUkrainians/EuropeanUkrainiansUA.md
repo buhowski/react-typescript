@@ -1,4 +1,4 @@
-#### Nihilistic Absurdist Comedy / Series
+#### Absurdist Comedy / Series
 
 # Європейські Українці
 
