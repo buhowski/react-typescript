@@ -123,7 +123,7 @@ At launch, publications are partners-only — to form a high-quality core audien
 
 The magazine and its development strategy are separate, independent projects. More details: [MVP: Another Dimension](/mvp)
 
-Key industry products — in comprehensive concept presentations: [Cinematic Concepts](/cinema) [Game Development](/gamedev)
+Key industry products — in comprehensive concept presentations: [Cinematic Concepts](/cinema) [Gamedev Concepts](/gamedev)
 
 [Self-presentation projects](/pilots) — pilot projects for the first stage of exploring possibilities. Through feedback, they validate the stated intentions and open the path to launching key ideas and building the magazine. And lay the groundwork for attracting investment for at least the next 5 years.
 
