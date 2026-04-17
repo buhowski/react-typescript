@@ -127,10 +127,11 @@ export const EmailLinkList = ({
 																margin: '0 0 5px',
 																padding: '0',
 																color: C.text,
-																opacity: 0.5,
+																opacity: 0.4,
 																fontSize: '11px',
 																lineHeight: 1.3,
 																fontWeight: 300,
+																fontStyle: 'italic',
 															}}
 														>
 															{item.genre}

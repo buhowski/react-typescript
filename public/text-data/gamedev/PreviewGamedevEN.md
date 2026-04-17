@@ -1,5 +1,5 @@
 # Game Development
 
-Digital ecosystems with their own identity — original concepts for video games and complex interactivity with a production-ready foundation. Proprietary mythology and a reimagined history of humanity as an intellectual superstructure and lore.
+Digital dimensions with their own identity — original video game concepts and complex interactive media with a production-ready foundation. Narrative labyrinths and intellectual candor as the bedrock for creating new virtual worlds.
 
 Looking for like-minded partners and resources for joint realization. If you are ready to team up or know how to scale this — write me.
