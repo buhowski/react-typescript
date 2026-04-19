@@ -97,4 +97,4 @@ The plot transforms into a continuous chase, full of new challenges. The heroes 
 
 *Under Construction …*
 
-Seeking like-minded accomplices and resources for joint realization. If you are ready to team up or know how to scale this — reach out.
+In need of like-minded accomplices and resources for joint realization. If you are ready to team up or know how to scale this — reach out.

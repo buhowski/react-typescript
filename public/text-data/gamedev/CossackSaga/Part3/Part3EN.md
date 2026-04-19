@@ -47,4 +47,4 @@ A mixture of tribal futurism and the mythological heritage of various peoples. A
 
 *Under Construction …*
 
-Seeking like-minded accomplices and resources for joint realization. If you are ready to team up or know how to scale this — reach out.
+In need of like-minded accomplices and resources for joint realization. If you are ready to team up or know how to scale this — reach out.

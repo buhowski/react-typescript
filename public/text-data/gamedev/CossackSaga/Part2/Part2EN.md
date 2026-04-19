@@ -54,4 +54,4 @@ Along with the fragments of pure energy, a shard of the High Demon escaped into 
 
 *Under Construction …*
 
-Seeking like-minded accomplices and resources for joint realization. If you are ready to team up or know how to scale this — reach out.
+In need of like-minded accomplices and resources for joint realization. If you are ready to team up or know how to scale this — reach out.
