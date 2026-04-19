@@ -4,7 +4,7 @@
 
 *Under Construction …*
 
-Looking for like-minded partners and resources for joint realization. If you are ready to team up or know how to scale this — write me.
+Seeking like-minded accomplices and resources for joint realization. If you are ready to team up or know how to scale this — reach out.
 
 [mobile-slider]
 

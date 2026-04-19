@@ -2,11 +2,11 @@
 
 # Pilot Projects
 
-Intellectual provocation (improvisation, black humor, the aesthetic of the absurd) as self-presentation tools for creating a countercultural magazine.
+Intellectual provocation (improvisation, dark humor, the aesthetic of the absurd) as a tool for presenting a countercultural ecosystem and a slap in the face to outdated thinking.
 
-Scripts and concepts are ready for launch — all that's missing is the team.
+Scripts and concepts are ready for launch — seeking creator-accomplices to change the rules of the game.
 
-I am looking for creators to change the rules of the game. All completed projects are yours to use on your own channels.
+You are free to use all realized projects on your own channels.
 
 ### List
 
