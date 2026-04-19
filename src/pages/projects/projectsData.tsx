@@ -3,7 +3,7 @@ import bgEnde from './images/ende.jpg';
 import bgFaberAcademy from './images/faber-academy.jpeg';
 import bgFaberBooks from './images/faber.jpg';
 import bgBentley from './images/bentley.jpg';
-import bgStartup from './images/startup-poster.jpg';
+import bgStartup from './images/startup.jpg';
 import nascentdesign from './images/nascent.jpg';
 import sendpotion from './images/sendpotion.jpg';
 import hbv from './images/hbv.jpg';

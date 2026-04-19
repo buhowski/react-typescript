@@ -44,6 +44,7 @@
 		}
 	}
 
+	// .project-link
 	&-link {
 		display: block;
 		position: relative;
@@ -54,8 +55,9 @@
 		transition: box-shadow 0.3s ease;
 		overflow: hidden;
 
+		// .project-link__img
 		&__img {
-			filter: brightness(0.55);
+			filter: brightness(0.666);
 			border-radius: 20px;
 			height: 100%;
 			object-fit: contain;
@@ -106,8 +108,8 @@
 	top: 13%;
 	left: 0;
 	width: 100%;
-	background-color: rgba($color: #000000, $alpha: 0.8);
-	backdrop-filter: blur(5px);
+	background-color: rgba(#000000, 0.78);
+	backdrop-filter: blur(4px);
 	box-shadow: 0 0 10px #000000;
 	border: 2px solid #61676d;
 	border-radius: 20px;
