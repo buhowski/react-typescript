@@ -23,8 +23,8 @@
 
 .logo-link {
 	color: #fff;
-	padding: 14px 0;
-	width: 190px;
+	padding: 15px 0;
+	width: 195px;
 
 	svg {
 		width: 100%;
@@ -124,9 +124,11 @@
 			min-width: 235px;
 			padding-top: 15px;
 			padding-bottom: 15px;
-			border: 1px solid rgba(#61676d, 0.5);
+			border: 1px solid rgba(#61676d, 0.4);
+			background-color: rgba(#000000, 0.16);
 			transition:
 				border-color 0.25s,
+				background-color 0.25s,
 				transform 0.25s;
 			border-radius: 100px;
 
@@ -143,6 +145,7 @@
 
 			&.active {
 				border-color: transparent;
+				background-color: transparent;
 
 				&:after {
 					transform: scale(1);
