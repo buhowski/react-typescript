@@ -2,11 +2,11 @@
 
 # Pilot Projects
 
-Intellectual provocation (improvisation, dark humor, the aesthetic of the absurd) as a tool for presenting a countercultural ecosystem and a slap in the face to outdated thinking.
+Ready-made auteur scripts and video show concepts for presenting a countercultural ecosystem. A slap in the face to outdated thinking and an intellectual provocation: black humor, the aesthetic of the absurd, sharp satire, and taboo topics.
 
-Scripts and concepts are ready for launch — seeking creator-accomplices to change the rules of the game.
+Creator-accomplices wanted to change the rules of the game.
 
-You are free to use all realized projects on your own channels.
+All completed projects are available for use on your own channels.
 
 ### List
 
