@@ -4,4 +4,4 @@ Ready-made auteur scripts and video show concepts for presenting a countercultur
 
 Creator-accomplices wanted to change the rules of the game.
 
-All completed projects are available for use on your own channels.
+Feel free to use all completed content on your own channels.
