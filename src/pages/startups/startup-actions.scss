@@ -116,8 +116,6 @@ $nav-top: 2px;
 
 		.startup-nav__container {
 			position: fixed;
-			top: -$nav-top;
-			left: 0;
 		}
 
 		.startup-nav__wrapper {
@@ -170,6 +168,9 @@ $nav-top: 2px;
 	// .startup-nav__container
 	&__container {
 		width: 100%;
+		position: relative;
+		top: -$nav-top;
+		left: 0;
 	}
 
 	// .startup-nav__wrapper
