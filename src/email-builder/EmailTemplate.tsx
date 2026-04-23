@@ -3,24 +3,24 @@ import { renderToStaticMarkup } from 'react-dom/server';
 import { urlTelegram, urlLinkedIn, urlInstagram } from '../components/urlsData';
 
 const C = {
-	bodyBg: '#212121',
-	cardBg: '#1a1a1a',
-	footerBg: '#111111',
-	border: '#393939',
-	accent1: '#e8a85a',
+	bodyBg: '#252525',
+	cardBg: '#202020',
+	footerBg: '#101010',
+	border: '#444a4d',
+	accent1: '#f6b96f',
 	accent2: '#d0887d',
-	text: '#bfbfbf',
-	link: '#4d9fc4',
-	listBg: '#141414',
+	text: '#d4d4d4',
+	link: '#55aadd',
+	listLinkBg: '#161616',
 	copy: '#676767',
 };
 
 const UI = {
-	padX: 27,
-	spacing: 15,
+	padX: 28,
+	spacing: 16,
 	borderW: 2,
 	font: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
-	fSize: '15px',
+	fSize: '16px',
 };
 
 const TABLE_PROPS = {
@@ -34,18 +34,20 @@ const S = {
 	cell: (t = 0, b = UI.spacing): React.CSSProperties => ({
 		padding: `${t}px ${UI.padX}px ${b}px`,
 	}),
+
 	titleBase: (): React.CSSProperties => ({
 		margin: 0,
 		fontWeight: 'normal',
 		textTransform: 'uppercase',
 		lineHeight: 1.3,
-		letterSpacing: '1px',
+		letterSpacing: '1.2px',
 	}),
+
 	textBase: (): React.CSSProperties => ({
 		margin: 0,
 		fontSize: UI.fSize,
-		lineHeight: 1.5,
-		letterSpacing: '0.2px',
+		lineHeight: 1.53,
+		letterSpacing: '0.25px',
 		color: C.text,
 	}),
 };
@@ -94,7 +96,7 @@ export const EmailLinkList = ({
 						<tr key={i}>
 							<td
 								style={{
-									borderLeft: `${UI.borderW}px solid ${C.link}`,
+									borderLeft: `2px solid ${C.link}`,
 									borderBottom: i < items.length - 1 ? `1px solid ${C.border}` : 'none',
 								}}
 							>
@@ -105,7 +107,7 @@ export const EmailLinkList = ({
 									style={{
 										display: 'block',
 										textDecoration: 'none',
-										backgroundColor: C.listBg,
+										backgroundColor: C.listLinkBg,
 										color: C.link,
 									}}
 								>
@@ -118,7 +120,7 @@ export const EmailLinkList = ({
 														color: C.link,
 														fontSize: UI.fSize,
 														lineHeight: 1.22,
-														letterSpacing: '0.4px',
+														letterSpacing: '0.5px',
 													}}
 												>
 													{item.genre ? (
@@ -127,11 +129,10 @@ export const EmailLinkList = ({
 																margin: '0 0 5px',
 																padding: '0',
 																color: C.text,
-																opacity: 0.4,
+																opacity: 0.45,
 																fontSize: '11px',
 																lineHeight: 1.3,
 																fontWeight: 300,
-																fontStyle: 'italic',
 															}}
 														>
 															{item.genre}
@@ -266,8 +267,8 @@ export const EmailFooter = ({
 						rel='noopener noreferrer'
 						style={{
 							textDecoration: 'none',
-							letterSpacing: '1.1px',
-							fontSize: '13px',
+							letterSpacing: '1.2px',
+							fontSize: '12px',
 							color: C.copy,
 							padding: '12px 16px',
 						}}
@@ -402,7 +403,7 @@ export const EmailLayout = ({ children, lang }: { children: React.ReactNode; lan
 
 			<tbody>
 				<tr>
-					<td align='center' style={{ padding: '30px 4px' }}>
+					<td align='center' style={{ padding: '40px 0' }}>
 						<table
 							{...TABLE_PROPS}
 							width='600'
@@ -465,7 +466,7 @@ export const EmailBuilder = ({
 	};
 
 	return (
-		<div className='email-builder'>
+		<div className='email-builder' style={{ backgroundColor: C.bodyBg }}>
 			<button
 				onClick={handleCopy}
 				title='Copy HTML'
@@ -500,7 +501,7 @@ export const EmailBuilder = ({
 						fontWeight: '600',
 					}}
 				>
-					@subject: {subject}
+					@SUBJECT: {subject}
 				</h1>
 			)}
 
