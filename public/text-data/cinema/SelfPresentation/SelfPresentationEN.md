@@ -2,11 +2,11 @@
 
 # Pilot Projects
 
-Ready-made auteur scripts and video show concepts. A slap in the face to outdated thinking and an intellectual provocation: black humor, the aesthetic of the absurd, sharp satire, and taboo topics.
+Ready-made scripts and video show concepts: dark humor, the aesthetics of the absurd, sharp satire, taboo subjects, and intellectual provocation — a slap in the face of an outdated mindset.
 
-Creator-accomplices wanted to change the rules of the game.
+In need of creators-accomplices to change the rules of the game.
 
-Feel free to use all completed content on your own channels.
+Everything realized can be used on your own channels.
 
 ### List
 
