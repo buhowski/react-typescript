@@ -4,7 +4,11 @@
 
 ## Logline
 
-Improvisational absurdity set in a soviet-core reality, where hosts dismantle the egos of celebrity guests and their own sanity. A mashup of podcasts in the style of "Let's pretend we actually know something and are fucking experts in everything" — filled with references, metaphorical subtexts, and unapologetically black humor.
+Improvisational absurdity set in a soviet-core reality, where hosts dismantle the egos of celebrity guests and their own sanity. Through humor and chaos, this psychedelic art experiment transforms on-screen textures into an evolutionary trial.
+
+## Concept
+
+A mashup of podcasts in the style of "Let's pretend we actually know something and are fucking experts in everything" — filled with references, metaphorical subtexts, and unapologetically black humor.
 
 ## References
 
@@ -22,7 +26,7 @@ There are two hosts — a Main and an Additional (female + male) + a Background 
 - All questions are directed at the guest, but the Additional host constantly seizes the initiative: answering all questions or interrupting the guest, adding their own versions of events.
 - Both hosts need to expose the key idea as cool as possible, without letting the guest express themselves (if guests are even present — if they’re absent, the replacement is: dolls / plush toys that will be a-la-celebrities).
 - The Background Character is constantly present, busy with their own things, but steps into character when the main question is over, or sometimes bursts into the conversation and interrupts everyone.
-- In the case of using a doll as a guest, the Background Character plays the role of this "celebrity’s" thoughts or debates on any topic, joking that we are so unpopular that we couldn’t even get a homeless person to come. (The script for the Background Character's actions must be purely improvisational and unknown to the hosts).
+- In the case of using a doll as a guest, the Background Character plays the role of this “celebrity’s” thoughts or debates on any topic, joking that we are so unpopular that we couldn’t even get a homeless person to come. (The script for the Background Character's actions must be purely improvisational and unknown to the hosts).
 
 ## Wildcard: Background Character
 
@@ -72,7 +76,7 @@ Danger Zone — unpredictably awful humor.
 
 - Greeting: "This is the pilot episode... The pilot of a Broiler-747 passenger plane, which has been crashing for... (looks at a watch that isn't there) ...539 seconds (show duration)...", followed by the same laugh — first to the co-host, then to the camera, then to another camera (a reference to Kalambur)
 - "Podcast-show-field-of-wonders", sector guest on the drum! Open the guest! We open a portrait on a stand (an ironic drawing, meme) and roll them in on a trolley
-- A joke about some kind of prohibition: "Are we in Nazi Germany or something?"
+- A joke about some kind of prohibition: "Are we in Nazi Germany or something?”
 - In the worst case — we'll just have a blast, in the best — two people will watch us
 - I'll give it 5 years and the Apple company itself will call me directly and say: "Give me ten," and I'll say: "The old lady doesn't hear, nine or ten?"... And then I'll give them ten years in prison!
 - If someone is a no-name, use absurd labels: "expert of shit and sticks", "some dick from the hill", "a fictional real person", "a beach bum"
