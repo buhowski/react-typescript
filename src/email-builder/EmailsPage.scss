@@ -1,4 +1,8 @@
 .emails-page {
 	display: flex;
 	min-height: 100dvh;
+
+	// td:has(> a) {
+	// 	border-bottom: 10px solid transparent !important;
+	// }
 }

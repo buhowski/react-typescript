@@ -9,33 +9,37 @@ export const pathToEmails = '/emails';
 export const emailsConfig = [
 	{
 		path: '/investors-ua',
-		label: 'Для інвесторів',
+		label: 'Інвестори',
 		subject:
 			'Інвестиції та стратегічне партнерство: Контркультурна екосистема (Медіа, Кіно, Геймдев, Tech)',
 		element: <InvestorsUA lang='uk' />,
 	},
+
 	{
 		path: '/co-owners-ua',
-		label: 'Партнерство',
+		label: 'Співвласники',
 		subject: 'Партнерство: Контркультурна екосистема (Медіа, Кіно, Геймдев, Tech)',
 		element: <CoOwnersUA lang='uk' />,
 	},
-	{
-		path: '/co-production-ua',
-		label: 'Co-Production',
-		subject: 'Co-Production / Pitch: Cinematic Concepts',
-		element: <CoProductionUA lang='uk' />,
-	},
-	{
-		path: '/co-development-ua',
-		label: 'Co-Development',
-		subject: 'Co-Development / Pitch: Gamedev Concepts',
-		element: <CoDevelopmentUA lang='uk' />,
-	},
+
 	{
 		path: '/collab-ua',
 		label: 'Колаборація',
 		subject: 'Колаборація / Пітч: Час робити контркультуру',
 		element: <CollabUA lang='uk' />,
+	},
+
+	{
+		path: '/co-production-ua',
+		label: 'Кінематограф',
+		subject: 'Co-Production / Pitch: Cinematic Concepts',
+		element: <CoProductionUA lang='uk' />,
+	},
+
+	{
+		path: '/co-development-ua',
+		label: 'Геймдев',
+		subject: 'Co-Development / Pitch: Gamedev Concepts',
+		element: <CoDevelopmentUA lang='uk' />,
 	},
 ];

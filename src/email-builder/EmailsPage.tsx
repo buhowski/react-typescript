@@ -21,7 +21,7 @@ const EmailsPage = ({ lang }: { lang?: string }) => {
 			<EmailLayout lang={lang}>
 				<EmailPad />
 
-				<EmailH2 content='E' />
+				<EmailH2 content='Пропозиції' />
 
 				<EmailLinkList items={navItems} />
 

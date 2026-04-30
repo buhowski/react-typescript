@@ -6,7 +6,7 @@ const C = {
 	bodyBg: '#252525',
 	cardBg: '#202020',
 	footerBg: '#101010',
-	border: '#444a4d',
+	border: '#424242',
 	accent1: '#f6b96f',
 	accent2: '#d0887d',
 	text: '#d4d4d4',
@@ -18,7 +18,8 @@ const C = {
 const UI = {
 	padX: 28,
 	spacing: 16,
-	borderW: 2,
+	borderW: 1,
+	borderRd: 16,
 	font: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
 	fSize: '16px',
 };
@@ -46,7 +47,7 @@ const S = {
 	textBase: (): React.CSSProperties => ({
 		margin: 0,
 		fontSize: UI.fSize,
-		lineHeight: 1.53,
+		lineHeight: 1.5,
 		letterSpacing: '0.25px',
 		color: C.text,
 	}),
@@ -203,10 +204,10 @@ export const EmailDivider = () => (
 					<tr>
 						<td
 							style={{
-								borderTop: `${UI.borderW}px solid ${C.border}`,
+								backgroundColor: C.border,
 								fontSize: 0,
 								lineHeight: 0,
-								height: '1px',
+								height: `${UI.borderW}px`,
 							}}
 						>
 							&nbsp;
@@ -271,6 +272,7 @@ export const EmailFooter = ({
 							fontSize: '12px',
 							color: C.copy,
 							padding: '12px 16px',
+							outline: 'none',
 						}}
 					>
 						{new Date().getFullYear()} © Olexander Tsiomakh
@@ -288,8 +290,14 @@ export const EmailFooter = ({
 										style={{
 											display: 'block',
 											borderRadius: '50%',
-											border: `2px solid ${C.border}`,
+											border: `${UI.borderW}px solid ${C.border}`,
 											backgroundColor: C.cardBg,
+											outline: 'none',
+											textDecoration: 'none',
+											overflow: 'hidden',
+											// @ts-ignore
+											msOpaque: '1',
+											msoEffectsNone: 'all',
 										}}
 									>
 										<img
@@ -306,6 +314,8 @@ export const EmailFooter = ({
 												fontSize: '12px',
 												textDecoration: 'none',
 												verticalAlign: 'middle',
+												pointerEvents: 'none',
+												borderRadius: '50%',
 											}}
 										/>
 									</a>
@@ -412,7 +422,7 @@ export const EmailLayout = ({ children, lang }: { children: React.ReactNode; lan
 								width: '100%',
 								maxWidth: '600px',
 								minWidth: '312px',
-								borderRadius: '20px',
+								borderRadius: `${UI.borderRd}px`,
 								overflow: 'hidden',
 								backgroundColor: C.cardBg,
 							}}
@@ -426,7 +436,7 @@ export const EmailLayout = ({ children, lang }: { children: React.ReactNode; lan
 											display: 'block',
 											backgroundColor: C.cardBg,
 											border: `${UI.borderW}px solid ${C.border}`,
-											borderRadius: '20px',
+											borderRadius: `${UI.borderRd}px`,
 											overflow: 'hidden',
 										}}
 									>
