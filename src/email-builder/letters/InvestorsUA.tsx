@@ -1,7 +1,7 @@
 import {
 	EmailLayout,
 	EmailPreheader,
-	EmailHeader,
+	EmailPad,
 	EmailH2,
 	EmailText,
 	EmailLinkList,
@@ -16,7 +16,7 @@ const InvestorsUA = ({ lang }: { lang?: string }) => {
 			{/* Preview Subject */}
 			<EmailPreheader text='Капіталізую смисли — альтернативна операційна система реальності' />
 
-			<EmailHeader />
+			<EmailPad />
 
 			<EmailText content='Привіт.' />
 

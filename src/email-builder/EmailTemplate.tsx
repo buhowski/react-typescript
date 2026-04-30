@@ -53,7 +53,7 @@ const S = {
 };
 
 // --- Components ---
-export const EmailHeader = () => (
+export const EmailPad = () => (
 	<tr>
 		<td style={{ padding: `40px ${UI.padX}px 0` }} />
 	</tr>

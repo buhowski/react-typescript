@@ -1,7 +1,7 @@
 import {
 	EmailLayout,
 	EmailPreheader,
-	EmailHeader,
+	EmailPad,
 	EmailH2,
 	EmailText,
 	EmailLinkList,
@@ -15,7 +15,7 @@ const CoDevelopmentUA = ({ lang }: { lang?: string }) => {
 			{/* Preview Subject */}
 			<EmailPreheader text='Dark Fantasy Action RPG у трьох частинах — Тіні Козаків. Сага' />
 
-			<EmailHeader />
+			<EmailPad />
 
 			<EmailText content='Привіт.' />
 

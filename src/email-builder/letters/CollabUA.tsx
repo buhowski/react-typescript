@@ -1,7 +1,7 @@
 import {
 	EmailLayout,
 	EmailPreheader,
-	EmailHeader,
+	EmailPad,
 	EmailH2,
 	EmailText,
 	EmailLinkList,
@@ -15,7 +15,7 @@ const CollabUA = ({ lang }: { lang?: string }) => {
 			{/* Preview Subject */}
 			<EmailPreheader text='Готові пілоти — творчий ляпас застарілому мисленню' />
 
-			<EmailHeader />
+			<EmailPad />
 
 			<EmailText content='Привіт.' />
 

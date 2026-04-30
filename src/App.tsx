@@ -9,6 +9,7 @@ import StartupNavigation from './pages/startups/components/StartupNavigation';
 import StartupWrapperSeo from './pages/startups/components/StartupWrapperSeo';
 import CVPage from './pages/CVPage';
 import EmailApp, { emailRoutes } from './email-builder/EmailApp';
+import { pathToEmails } from './email-builder/emailsConfig';
 
 import { mainRoutes, startupDataMap } from './routesData';
 import { normalizePath } from './pages/startups/helpers/metaHelper';
@@ -23,7 +24,9 @@ const App = () => {
 
 	// Special pages (CV & EMAIL)
 	const isCVPage = pathKey === '/cv';
-	const isEmailPage = emailRoutes.some((route) => normalizePath(route.pathTo) === pathKey);
+	const isEmailPage =
+		pathKey === pathToEmails ||
+		emailRoutes.some((route) => normalizePath(route.pathTo) === pathKey);
 	const disablePreloader = isCVPage || isEmailPage;
 
 	// Startup page
