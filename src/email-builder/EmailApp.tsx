@@ -2,9 +2,7 @@ import { Routes, Route, useLocation } from 'react-router-dom';
 import { normalizePath } from '../pages/startups/helpers/metaHelper';
 import { EmailBuilder } from './EmailTemplate';
 import { pathToEmails, emailsConfig } from './emailsConfig';
-import EmailsPage from './letters/EmailsPage';
-
-import './EmailsPage.scss';
+import EmailsPage from './EmailsPage';
 
 export const emailRoutes = emailsConfig.map(({ path, label, subject, element }) => ({
 	pathTo: path,

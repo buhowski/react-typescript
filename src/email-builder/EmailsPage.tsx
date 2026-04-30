@@ -5,9 +5,10 @@ import {
 	EmailLinkList,
 	EmailDivider,
 	EmailFooter,
-} from '../EmailTemplate';
+} from './EmailTemplate';
+import { emailsConfig } from './emailsConfig';
 
-import { emailsConfig } from '../emailsConfig';
+import './EmailsPage.scss';
 
 const EmailsPage = ({ lang }: { lang?: string }) => {
 	const navItems = emailsConfig.map((item) => ({
