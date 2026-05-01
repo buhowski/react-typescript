@@ -1,9 +1,6 @@
 import React, { useState } from 'react';
 import { renderToStaticMarkup } from 'react-dom/server';
 import { urlTelegram, urlLinkedIn, urlInstagram } from '../components/urlsData';
-import icon1 from './tg.svg';
-import icon2 from './inst.svg';
-import icon3 from './in.svg';
 
 const C = {
 	bodyBg: '#333333',
@@ -101,66 +98,79 @@ export const EmailLinkList = ({
 				<table {...TABLE_PROPS} style={{ borderRadius: linkBdrRds, overflow: 'hidden' }}>
 					<tbody>
 						{items.map((item, i) => (
-							<tr key={i}>
-								<td
-									style={{
-										borderBottom: i < items.length - 1 ? `1px solid ${C.bodyBg}` : 'none',
-									}}
-								>
-									<a
-										href={item.url}
-										target='_blank'
-										rel='noopener noreferrer'
-										style={{
-											display: 'block',
-											textDecoration: 'none',
-											outline: 'none',
-											backgroundColor: C.listLinkBg,
-											color: C.link,
-											fontSize: UI.fSize,
-											lineHeight: 1.3,
-											letterSpacing: '0.8px',
-										}}
-									>
-										<table {...TABLE_PROPS}>
-											<tbody>
-												<tr>
-													<td
-														style={{
-															padding: '15px 0 15px 22px',
-														}}
-													>
-														{item.genre ? (
-															<p
-																style={{
-																	margin: '0 0 5px',
-																	padding: '0',
-																	color: C.copy,
-																	fontSize: '10px',
-																	textTransform: 'uppercase',
-																	lineHeight: 1.3,
-																	letterSpacing: '0.5px',
-																	fontWeight: 300,
-																}}
-															>
-																{item.genre}
-															</p>
-														) : null}
+							<React.Fragment key={i}>
+								<tr>
+									<td>
+										<a
+											href={item.url}
+											target='_blank'
+											rel='noopener noreferrer'
+											style={{
+												display: 'block',
+												textDecoration: 'none',
+												outline: 'none',
+												backgroundColor: C.listLinkBg,
+												color: C.link,
+												fontSize: UI.fSize,
+												lineHeight: 1.3,
+												letterSpacing: '0.8px',
+											}}
+										>
+											<table {...TABLE_PROPS}>
+												<tbody>
+													<tr>
+														<td style={{ padding: '15px 0 15px 22px' }}>
+															{item.genre ? (
+																<p
+																	style={{
+																		margin: '0 0 5px',
+																		padding: '0',
+																		color: C.copy,
+																		fontSize: '10px',
+																		textTransform: 'uppercase',
+																		lineHeight: 1.3,
+																		letterSpacing: '0.5px',
+																		fontWeight: 300,
+																	}}
+																>
+																	{item.genre}
+																</p>
+															) : null}
+															{item.title}
+														</td>
+														<td
+															align='right'
+															style={{
+																padding: '0 20px 0 5px',
+																color: C.accent1,
+																fontSize: '23px',
+															}}
+														>
+															→
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</a>
+									</td>
+								</tr>
 
-														{item.title}
-													</td>
-													<td
-														align='right'
-														style={{ padding: '0 20px 0 5px', color: C.accent1, fontSize: '22px' }}
-													>
-														→
-													</td>
-												</tr>
-											</tbody>
-										</table>
-									</a>
-								</td>
-							</tr>
+								{i < items.length - 1 && (
+									<tr>
+										<td
+											height='1'
+											style={{
+												backgroundColor: C.bodyBg,
+												fontSize: '1px',
+												lineHeight: '1px',
+												height: '1px',
+											}}
+										>
+											&nbsp;
+										</td>
+									</tr>
+								)}
+							</React.Fragment>
 						))}
 					</tbody>
 				</table>
@@ -209,9 +219,9 @@ const SITE_URL = 'https://buhowski.netlify.app';
 const EMAIL_ICONS_URL = `${SITE_URL}/assets/icons`;
 
 export const emailIcons = {
-	tg: { src: `${EMAIL_ICONS_URL}/tg.svg`, alt: 'Telegram' },
-	ig: { src: `${EMAIL_ICONS_URL}/inst.svg`, alt: 'Instagram' },
-	in: { src: `${EMAIL_ICONS_URL}/in.svg`, alt: 'LinkedIn' },
+	tg: { src: `${EMAIL_ICONS_URL}/tg.png`, alt: 'Telegram' },
+	ig: { src: `${EMAIL_ICONS_URL}/inst.png`, alt: 'Instagram' },
+	in: { src: `${EMAIL_ICONS_URL}/in.png`, alt: 'LinkedIn' },
 	// em: { src: `${EMAIL_ICONS_URL}/mail.png`, alt: 'Gmail' },
 	// site: { src: `${EMAIL_ICONS_URL}/site.png`, alt: 'Website' },
 
@@ -249,123 +259,101 @@ export const EmailFooter = ({
 
 	return (
 		<>
+			{/* Spacer перед футером */}
 			<tr>
 				<td style={{ fontSize: 0, lineHeight: 0, height: '20px' }}>&nbsp;</td>
 			</tr>
 
 			<tr>
-				<td
-					align='center'
-					style={{ backgroundColor: C.footerBg, padding: `40px ${UI.padX}px 30px` }}
-				>
-					<table {...tablePropsNoWidth} align='center'>
-						<tbody>
-							<tr>
-								{links.map((link, i) => (
-									<td key={i} style={{ padding: '0 10px' }}>
-										<a
-											href={link.url}
-											target='_blank'
-											rel='noopener noreferrer'
-											style={{
-												display: 'block',
-												borderRadius: '50%',
-												backgroundColor: C.bodyBg,
-												padding: '1px',
-												outline: 'none',
-												textDecoration: 'none',
-												overflow: 'hidden',
-												// @ts-ignore
-												msOpaque: '1',
-												msoEffectsNone: 'all',
-											}}
-										>
-											<span
-												style={{
-													display: 'block',
-													backgroundColor: C.listLinkBg,
-													borderRadius: '50%',
-													overflow: 'hidden',
-													padding: '14px',
-													pointerEvents: 'none',
-													outline: 'none',
-												}}
-											>
-												<img
-													src={link.icon}
-													alt={link.alt}
-													width={imgRatio}
-													height={imgRatio}
-													style={{
-														display: 'block',
-														width: `${imgRatio}px`,
-														height: `${imgRatio}px`,
-														border: 0,
-														outline: 'none',
-														textDecoration: 'none',
-														pointerEvents: 'none',
-														background: C.listLinkBg,
-													}}
-												/>
-											</span>
-										</a>
-									</td>
-								))}
-							</tr>
-						</tbody>
-					</table>
-
+				<td align='center' style={{ background: C.footerBg, padding: `40px ${UI.padX}px 30px` }}>
 					<table {...TABLE_PROPS}>
 						<tbody>
 							<tr>
-								<td style={{ paddingTop: '20px' }}>
-									<table {...TABLE_PROPS}>
+								<td align='center'>
+									<table {...tablePropsNoWidth} style={{ margin: '0 auto' }}>
 										<tbody>
 											<tr>
-												<td
-													style={{
-														backgroundColor: C.bodyBg,
-														fontSize: 0,
-														lineHeight: 0,
-														height: `1px`,
-													}}
-												>
-													&nbsp;
-												</td>
+												{links.map((link, i) => (
+													<td key={i} style={{ padding: '0 10px' }}>
+														<a
+															href={link.url}
+															target='_blank'
+															rel='noopener noreferrer'
+															style={{
+																display: 'block',
+																borderRadius: '50%',
+																background: C.bodyBg,
+																padding: '14px',
+																textDecoration: 'none',
+																outline: 'none',
+																overflow: 'hidden',
+															}}
+														>
+															<img
+																src={link.icon}
+																alt={link.alt}
+																width={imgRatio}
+																height={imgRatio}
+																style={{
+																	display: 'block',
+																	width: `${imgRatio}px`,
+																	height: `${imgRatio}px`,
+																	border: 0,
+																	outline: 'none',
+																	pointerEvents: 'none',
+																	background: 'transparent',
+																}}
+															/>
+														</a>
+													</td>
+												))}
 											</tr>
 										</tbody>
 									</table>
 								</td>
 							</tr>
-						</tbody>
-					</table>
 
-					<table {...TABLE_PROPS}>
-						<tbody>
 							<tr>
-								<td style={{ paddingTop: '12px' }}>
-									<span style={{ fontSize: '11px', color: C.copy, letterSpacing: '0.9px' }}>
-										{new Date().getFullYear()} © Olexander Tsiomakh
-									</span>
-								</td>
-
-								<td align='right' style={{ paddingTop: '12px' }}>
-									<a
-										href='https://buhowski.dev'
-										target='_blank'
-										rel='noopener noreferrer'
+								<td style={{ paddingTop: '20px' }}>
+									<div
 										style={{
-											textDecoration: 'none',
-											color: C.link,
-											fontSize: '12px',
-											padding: '14px',
-											paddingRight: '0',
-											letterSpacing: '1.62px',
-											outline: 'none',
+											backgroundColor: C.bodyBg,
+											fontSize: '1px',
+											lineHeight: '1px',
+											height: '1px',
 										}}
 									>
-										buhowski.dev
-									</a>
+										&nbsp;
+									</div>
+								</td>
+							</tr>
+
+							<tr>
+								<td style={{ paddingTop: '12px' }}>
+									<table {...TABLE_PROPS}>
+										<tbody>
+											<tr>
+												<td style={{ fontSize: '11px', color: C.copy, letterSpacing: '0.9px' }}>
+													{new Date().getFullYear()} © Olexander Tsiomakh
+												</td>
+												<td align='right'>
+													<a
+														href='https://buhowski.dev'
+														target='_blank'
+														rel='noopener noreferrer'
+														style={{
+															textDecoration: 'none',
+															color: C.link,
+															fontSize: '12px',
+															letterSpacing: '1.62px',
+														}}
+													>
+														buhowski.dev
+													</a>
+												</td>
+											</tr>
+										</tbody>
+									</table>
 								</td>
 							</tr>
 						</tbody>
