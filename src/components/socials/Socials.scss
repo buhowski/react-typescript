@@ -35,15 +35,15 @@
 		}
 	}
 
+	// .contact-menu__icon
 	&__icon {
 		display: block;
-		width: 25px;
+		width: 26px;
 	}
 
 	svg {
 		fill: #ffffff;
 		transition: fill 0.25s;
-		will-change: fill;
 	}
 
 	.title {
@@ -60,6 +60,5 @@
 			transform 0.25s;
 		white-space: nowrap;
 		font-size: 21px;
-		will-change: opacity, transform;
 	}
 }
