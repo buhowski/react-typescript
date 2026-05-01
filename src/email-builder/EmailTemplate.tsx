@@ -338,7 +338,7 @@ export const EmailFooter = ({
 									<table {...TABLE_PROPS}>
 										<tbody>
 											<tr>
-												<td style={{ fontSize: '11px', color: C.copy, letterSpacing: '1px' }}>
+												<td style={{ fontSize: '11px', color: C.copy, letterSpacing: '1.2px' }}>
 													{new Date().getFullYear()} © Olexander Tsiomakh
 												</td>
 
@@ -352,8 +352,8 @@ export const EmailFooter = ({
 															outline: 'none',
 															color: C.link,
 															fontSize: '11px',
-															letterSpacing: '1.2px',
-															padding: '15px 0 16px 6px',
+															letterSpacing: '1.4px',
+															padding: '14px 0 14px 6px',
 															// textTransform: 'uppercase',
 														}}
 													>
