@@ -217,9 +217,9 @@ const SITE_URL = 'https://buhowski.netlify.app';
 const EMAIL_ICONS_URL = `${SITE_URL}/assets/icons`;
 
 export const emailIcons = {
-	tg: { src: `${EMAIL_ICONS_URL}/tg.svg`, alt: 'Telegram' },
-	ig: { src: `${EMAIL_ICONS_URL}/ig.svg`, alt: 'Instagram' },
-	in: { src: `${EMAIL_ICONS_URL}/in.svg`, alt: 'LinkedIn' },
+	tg: { src: `${EMAIL_ICONS_URL}/tg.png`, alt: 'Telegram' },
+	ig: { src: `${EMAIL_ICONS_URL}/ig.png`, alt: 'Instagram' },
+	in: { src: `${EMAIL_ICONS_URL}/in.png`, alt: 'LinkedIn' },
 	// em: { src: `${EMAIL_ICONS_URL}/mail.png`, alt: 'Gmail' },
 	// site: { src: `${EMAIL_ICONS_URL}/site.png`, alt: 'Website' },
 
@@ -279,7 +279,6 @@ export const EmailFooter = ({
 															rel='noopener noreferrer'
 															style={{
 																display: 'block',
-																aspectRatio: '1 / 1',
 																borderRadius: '50%',
 																background: C.bodyBg,
 																padding: '1px',
@@ -294,10 +293,7 @@ export const EmailFooter = ({
 																	background: C.listLinkBg,
 																	borderRadius: '50%',
 																	padding: '13px',
-																	outline: 'none',
-																	pointerEvents: 'none',
 																	overflow: 'hidden',
-																	aspectRatio: '1 / 1',
 																}}
 															>
 																<img
@@ -310,9 +306,8 @@ export const EmailFooter = ({
 																		width: `${imgRatio}px`,
 																		height: `${imgRatio}px`,
 																		border: 0,
-																		outline: 'none',
-																		pointerEvents: 'none',
 																		background: 'transparent',
+																		outline: 'none',
 																	}}
 																/>
 															</span>
