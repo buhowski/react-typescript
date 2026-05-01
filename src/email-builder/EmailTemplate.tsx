@@ -278,7 +278,7 @@ export const EmailFooter = ({
 															style={{
 																display: 'block',
 																borderRadius: '50%',
-																background: C.bodyBg,
+																background: C.cardBg,
 																padding: '1px',
 																textDecoration: 'none',
 																outline: 'none',
@@ -334,7 +334,7 @@ export const EmailFooter = ({
 							</tr>
 
 							<tr>
-								<td style={{ padding: '13px 0 0' }}>
+								<td style={{ padding: '12px 0 0' }}>
 									<table {...TABLE_PROPS}>
 										<tbody>
 											<tr>
@@ -351,9 +351,10 @@ export const EmailFooter = ({
 															textDecoration: 'none',
 															outline: 'none',
 															color: C.link,
-															fontSize: '12px',
-															letterSpacing: '1.7px',
-															padding: '16px 0 16px 5px',
+															fontSize: '11px',
+															letterSpacing: '1.2px',
+															padding: '15px 0 16px 6px',
+															// textTransform: 'uppercase',
 														}}
 													>
 														buhowski.dev
