@@ -206,9 +206,9 @@ const SITE_URL = 'https://buhowski.netlify.app';
 const EMAIL_ICONS_URL = `${SITE_URL}/assets/icons`;
 
 export const emailIcons = {
-	tg: { src: `${EMAIL_ICONS_URL}/tg.png`, alt: 'Telegram' },
-	ig: { src: `${EMAIL_ICONS_URL}/inst.png`, alt: 'Instagram' },
-	in: { src: `${EMAIL_ICONS_URL}/in.png`, alt: 'LinkedIn' },
+	tg: { src: `${EMAIL_ICONS_URL}/tg.svg`, alt: 'Telegram' },
+	ig: { src: `${EMAIL_ICONS_URL}/inst.svg`, alt: 'Instagram' },
+	in: { src: `${EMAIL_ICONS_URL}/in.svg`, alt: 'LinkedIn' },
 	// em: { src: `${EMAIL_ICONS_URL}/mail.png`, alt: 'Gmail' },
 	// site: { src: `${EMAIL_ICONS_URL}/site.png`, alt: 'Website' },
 
