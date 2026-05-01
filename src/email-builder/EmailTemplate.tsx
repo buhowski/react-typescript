@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { renderToStaticMarkup } from 'react-dom/server';
 import { urlTelegram, urlLinkedIn, urlInstagram } from '../components/urlsData';
+import icon1 from './tg.svg';
+import icon2 from './inst.svg';
+import icon3 from './in.svg';
 
 const C = {
 	bodyBg: '#333333',
@@ -206,15 +209,15 @@ const SITE_URL = 'https://buhowski.netlify.app';
 const EMAIL_ICONS_URL = `${SITE_URL}/assets/icons`;
 
 export const emailIcons = {
-	tg: { src: `${EMAIL_ICONS_URL}/tg.svg`, alt: 'Telegram' },
-	ig: { src: `${EMAIL_ICONS_URL}/inst.svg`, alt: 'Instagram' },
-	in: { src: `${EMAIL_ICONS_URL}/in.svg`, alt: 'LinkedIn' },
+	// tg: { src: `${EMAIL_ICONS_URL}/tg.svg`, alt: 'Telegram' },
+	// ig: { src: `${EMAIL_ICONS_URL}/inst.svg`, alt: 'Instagram' },
+	// in: { src: `${EMAIL_ICONS_URL}/in.svg`, alt: 'LinkedIn' },
 	// em: { src: `${EMAIL_ICONS_URL}/mail.png`, alt: 'Gmail' },
 	// site: { src: `${EMAIL_ICONS_URL}/site.png`, alt: 'Website' },
 
-	// tg: { src: icon1, alt: 'Telegram' },
-	// ig: { src: icon2, alt: 'Instagram' },
-	// in: { src: icon3, alt: 'LinkedIn' },
+	tg: { src: icon1, alt: 'Telegram' },
+	ig: { src: icon2, alt: 'Instagram' },
+	in: { src: icon3, alt: 'LinkedIn' },
 };
 
 // Footer Links
@@ -241,7 +244,7 @@ export const EmailFooter = ({
 }: {
 	links?: { url: string; icon: string; alt: string }[];
 }) => {
-	const imgRatio = 50;
+	const imgRatio = 23;
 	const { width, ...tablePropsNoWidth } = TABLE_PROPS;
 
 	return (
@@ -277,24 +280,34 @@ export const EmailFooter = ({
 												msoEffectsNone: 'all',
 											}}
 										>
-											<img
-												src={link.icon}
-												alt={link.alt}
-												width={imgRatio}
-												height={imgRatio}
+											<span
 												style={{
-													width: `${imgRatio}px`,
-													height: `${imgRatio}px`,
 													display: 'block',
-													border: 0,
-													outline: 'none',
-													fontSize: '12px',
-													textDecoration: 'none',
-													verticalAlign: 'middle',
-													pointerEvents: 'none',
+													backgroundColor: C.listLinkBg,
 													borderRadius: '50%',
+													overflow: 'hidden',
+													padding: '14px',
+													pointerEvents: 'none',
+													outline: 'none',
 												}}
-											/>
+											>
+												<img
+													src={link.icon}
+													alt={link.alt}
+													width={imgRatio}
+													height={imgRatio}
+													style={{
+														display: 'block',
+														width: `${imgRatio}px`,
+														height: `${imgRatio}px`,
+														border: 0,
+														outline: 'none',
+														textDecoration: 'none',
+														pointerEvents: 'none',
+														background: C.listLinkBg,
+													}}
+												/>
+											</span>
 										</a>
 									</td>
 								))}
