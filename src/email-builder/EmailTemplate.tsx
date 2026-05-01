@@ -108,17 +108,23 @@ export const EmailLinkList = ({
 												display: 'block',
 												textDecoration: 'none',
 												outline: 'none',
-												backgroundColor: C.listLinkBg,
+												background: C.listLinkBg,
 												color: C.link,
 												fontSize: UI.fSize,
-												lineHeight: 1.3,
-												letterSpacing: '0.8px',
 											}}
 										>
 											<table {...TABLE_PROPS}>
 												<tbody>
 													<tr>
-														<td style={{ padding: '14px 0 14px 20px' }}>
+														<td
+															style={{
+																padding: '14px 0 14px 20px',
+																color: C.link,
+																fontSize: UI.fSize,
+																lineHeight: 1.3,
+																letterSpacing: '0.8px',
+															}}
+														>
 															{item.genre ? (
 																<p
 																	style={{
@@ -134,8 +140,10 @@ export const EmailLinkList = ({
 																	{item.genre}
 																</p>
 															) : null}
+
 															{item.title}
 														</td>
+
 														<td
 															align='right'
 															style={{
@@ -270,7 +278,7 @@ export const EmailFooter = ({
 										<tbody>
 											<tr>
 												{links.map((link, i) => (
-													<td key={i} style={{ padding: '0 9px' }}>
+													<td key={i} style={{ padding: '0 10px' }}>
 														<a
 															href={link.url}
 															target='_blank'
@@ -458,7 +466,7 @@ export const EmailLayout = ({ children, lang }: { children: React.ReactNode; lan
 
 			<tbody>
 				<tr>
-					<td align='center' style={{ padding: '42px 0' }}>
+					<td align='center' style={{ padding: '45px 0' }}>
 						<table
 							{...TABLE_PROPS}
 							width='600'
