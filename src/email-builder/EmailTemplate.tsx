@@ -3,21 +3,21 @@ import { renderToStaticMarkup } from 'react-dom/server';
 import { urlTelegram, urlLinkedIn, urlInstagram } from '../components/urlsData';
 
 const C = {
-	bodyBg: '#393939',
+	bodyBg: '#3a3a3a',
 	cardBg: '#242424',
 	footerBg: '#121212',
 	accent1: '#f6b96f',
 	accent2: '#d0887d',
 	text: '#e2e2e2',
 	link: '#55aadd',
-	listLinkBg: '#1d1d1d',
+	listLinkBg: '#1a1a1a',
 	copy: '#686868',
 };
 
 const UI = {
 	padX: 28,
 	spacing: 18,
-	borderRd: 18,
+	borderRd: 20,
 	font: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
 	fSize: '16px',
 };
@@ -84,7 +84,7 @@ export const EmailText = ({ content }: { content: string }) => (
 	</tr>
 );
 
-const linkBdrRds = '8px';
+const linkBdrRds = '6px';
 
 export const EmailLinkList = ({
 	items,
@@ -92,7 +92,7 @@ export const EmailLinkList = ({
 	items: { title: string; url: string; genre?: string }[];
 }) => (
 	<tr>
-		<td style={S.cell(0, 20)}>
+		<td style={S.cell(0, 18)}>
 			<div style={{ borderRadius: linkBdrRds, overflow: 'hidden' }}>
 				<table {...TABLE_PROPS} style={{ borderRadius: linkBdrRds, overflow: 'hidden' }}>
 					<tbody>
@@ -118,7 +118,7 @@ export const EmailLinkList = ({
 											<table {...TABLE_PROPS}>
 												<tbody>
 													<tr>
-														<td style={{ padding: '15px 0 15px 22px' }}>
+														<td style={{ padding: '14px 0 14px 20px' }}>
 															{item.genre ? (
 																<p
 																	style={{
@@ -128,7 +128,6 @@ export const EmailLinkList = ({
 																		fontSize: '10px',
 																		textTransform: 'uppercase',
 																		lineHeight: 1.3,
-																		letterSpacing: '0.5px',
 																		fontWeight: 300,
 																	}}
 																>
@@ -140,7 +139,7 @@ export const EmailLinkList = ({
 														<td
 															align='right'
 															style={{
-																padding: '0 20px 0 5px',
+																padding: '0 18px 0 5px',
 																color: C.accent1,
 																fontSize: '23px',
 															}}
@@ -218,9 +217,9 @@ const SITE_URL = 'https://buhowski.netlify.app';
 const EMAIL_ICONS_URL = `${SITE_URL}/assets/icons`;
 
 export const emailIcons = {
-	tg: { src: `${EMAIL_ICONS_URL}/tg.png`, alt: 'Telegram' },
-	ig: { src: `${EMAIL_ICONS_URL}/ig.png`, alt: 'Instagram' },
-	in: { src: `${EMAIL_ICONS_URL}/in.png`, alt: 'LinkedIn' },
+	tg: { src: `${EMAIL_ICONS_URL}/tg.svg`, alt: 'Telegram' },
+	ig: { src: `${EMAIL_ICONS_URL}/ig.svg`, alt: 'Instagram' },
+	in: { src: `${EMAIL_ICONS_URL}/in.svg`, alt: 'LinkedIn' },
 	// em: { src: `${EMAIL_ICONS_URL}/mail.png`, alt: 'Gmail' },
 	// site: { src: `${EMAIL_ICONS_URL}/site.png`, alt: 'Website' },
 
@@ -253,7 +252,7 @@ export const EmailFooter = ({
 }: {
 	links?: { url: string; icon: string; alt: string }[];
 }) => {
-	const imgRatio = 22;
+	const imgRatio = 26;
 	const { width, ...tablePropsNoWidth } = TABLE_PROPS;
 
 	return (
@@ -294,7 +293,7 @@ export const EmailFooter = ({
 																	display: 'block',
 																	background: C.listLinkBg,
 																	borderRadius: '50%',
-																	padding: '14px',
+																	padding: '13px',
 																	outline: 'none',
 																	pointerEvents: 'none',
 																	overflow: 'hidden',
@@ -313,7 +312,7 @@ export const EmailFooter = ({
 																		border: 0,
 																		outline: 'none',
 																		pointerEvents: 'none',
-																		background: C.listLinkBg,
+																		background: 'transparent',
 																	}}
 																/>
 															</span>
@@ -342,13 +341,14 @@ export const EmailFooter = ({
 							</tr>
 
 							<tr>
-								<td style={{ paddingTop: '12px' }}>
+								<td style={{ padding: '16px 0 0' }}>
 									<table {...TABLE_PROPS}>
 										<tbody>
 											<tr>
-												<td style={{ fontSize: '11px', color: C.copy, letterSpacing: '0.9px' }}>
+												<td style={{ fontSize: '11px', color: C.copy, letterSpacing: '1px' }}>
 													{new Date().getFullYear()} © Olexander Tsiomakh
 												</td>
+
 												<td align='right'>
 													<a
 														href='https://buhowski.dev'
@@ -356,9 +356,11 @@ export const EmailFooter = ({
 														rel='noopener noreferrer'
 														style={{
 															textDecoration: 'none',
+															outline: 'none',
 															color: C.link,
 															fontSize: '12px',
-															letterSpacing: '1.62px',
+															letterSpacing: '1.7px',
+															padding: '16px 0 16px 5px',
 														}}
 													>
 														buhowski.dev
@@ -460,7 +462,7 @@ export const EmailLayout = ({ children, lang }: { children: React.ReactNode; lan
 
 			<tbody>
 				<tr>
-					<td align='center' style={{ padding: '40px 0' }}>
+					<td align='center' style={{ padding: '35px 0' }}>
 						<table
 							{...TABLE_PROPS}
 							width='600'
