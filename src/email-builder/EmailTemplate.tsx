@@ -220,8 +220,6 @@ export const emailIcons = {
 	tg: { src: `${EMAIL_ICONS_URL}/tg.png`, alt: 'Telegram' },
 	ig: { src: `${EMAIL_ICONS_URL}/ig.png`, alt: 'Instagram' },
 	in: { src: `${EMAIL_ICONS_URL}/in.png`, alt: 'LinkedIn' },
-	// em: { src: `${EMAIL_ICONS_URL}/mail.png`, alt: 'Gmail' },
-	// site: { src: `${EMAIL_ICONS_URL}/site.png`, alt: 'Website' },
 
 	// tg: { src: icon1, alt: 'Telegram' },
 	// ig: { src: icon2, alt: 'Instagram' },
@@ -263,7 +261,7 @@ export const EmailFooter = ({
 			</tr>
 
 			<tr>
-				<td align='center' style={{ background: C.footerBg, padding: `35px ${UI.padX}px 30px` }}>
+				<td align='center' style={{ background: C.footerBg, padding: `38px ${UI.padX}px 30px` }}>
 					<table {...TABLE_PROPS}>
 						<tbody>
 							<tr>
