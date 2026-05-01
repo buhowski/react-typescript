@@ -1,11 +1,4 @@
-import {
-	EmailLayout,
-	EmailPad,
-	EmailH2,
-	EmailLinkList,
-	EmailDivider,
-	EmailFooter,
-} from './EmailTemplate';
+import { EmailLayout, EmailPadding, EmailH2, EmailLinkList, EmailFooter } from './EmailTemplate';
 import { emailsConfig } from './emailsConfig';
 
 import './EmailsPage.scss';
@@ -19,13 +12,12 @@ const EmailsPage = ({ lang }: { lang?: string }) => {
 	return (
 		<div className='emails-page'>
 			<EmailLayout lang={lang}>
-				<EmailPad />
+				<EmailPadding />
 
 				<EmailH2 content='Пропозиції' />
 
 				<EmailLinkList items={navItems} />
 
-				<EmailDivider />
 				<EmailFooter />
 			</EmailLayout>
 		</div>

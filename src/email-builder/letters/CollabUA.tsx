@@ -1,11 +1,10 @@
 import {
 	EmailLayout,
 	EmailPreheader,
-	EmailPad,
+	EmailPadding,
 	EmailH2,
 	EmailText,
 	EmailLinkList,
-	EmailDivider,
 	EmailFooter,
 } from '../EmailTemplate';
 
@@ -15,7 +14,7 @@ const CollabUA = ({ lang }: { lang?: string }) => {
 			{/* Preview Subject */}
 			<EmailPreheader text='Готові пілоти — творчий ляпас застарілому мисленню' />
 
-			<EmailPad />
+			<EmailPadding />
 
 			<EmailText content='Привіт.' />
 
@@ -26,22 +25,25 @@ const CollabUA = ({ lang }: { lang?: string }) => {
 			<EmailText content='Вже готові сценарії та ідеї для старту. Імпровізація, чорний гумор та естетика абсурду як інструмент інтелектуальної провокації:' />
 
 			<EmailLinkList
+				items={[{ title: 'Список з логлайнами', url: 'https://buhowski.dev/pilots' }]}
+			/>
+
+			<EmailLinkList
 				items={[
-					{ title: 'Список з логлайнами', url: 'https://buhowski.dev/pilots' },
 					{
+						genre: 'Sketch Talk Show',
 						title: 'Вимір Мінус Ноль',
 						url: 'https://buhowski.dev/podcast',
-						genre: 'Sketch Talk Show',
 					},
 					{
+						genre: 'Satirical Comedy / Theatrical Show',
 						title: 'Вечір у БОГА',
 						url: 'https://buhowski.dev/god',
-						genre: 'Satirical Comedy / Theatrical Show',
 					},
 					{
+						genre: 'Dark Comedy / Reality Show',
 						title: 'Бійцівський Клуб Санта Барбара',
 						url: 'https://buhowski.dev/cry-club',
-						genre: 'Dark Comedy / Reality Show',
 					},
 				]}
 			/>
@@ -61,8 +63,6 @@ const CollabUA = ({ lang }: { lang?: string }) => {
 			/>
 
 			<EmailText content='Якщо відгукнулось — напишіть, обговоримо деталі.' />
-
-			<EmailDivider />
 
 			<EmailFooter />
 		</EmailLayout>

@@ -3,21 +3,21 @@ import { renderToStaticMarkup } from 'react-dom/server';
 import { urlTelegram, urlLinkedIn, urlInstagram } from '../components/urlsData';
 
 const C = {
-	bodyBg: '#252525',
-	cardBg: '#202020',
-	footerBg: '#101010',
-	border: '#424242',
+	bodyBg: '#303030',
+	cardBg: '#222222',
+	footerBg: '#161616',
+	border: '#4a4a4a',
 	accent1: '#f6b96f',
 	accent2: '#d0887d',
 	text: '#d4d4d4',
 	link: '#55aadd',
-	listLinkBg: '#161616',
+	listLinkBg: '#171717',
 	copy: '#676767',
 };
 
 const UI = {
 	padX: 28,
-	spacing: 16,
+	spacing: 18,
 	borderW: 1,
 	borderRd: 16,
 	font: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
@@ -29,6 +29,7 @@ const TABLE_PROPS = {
 	cellSpacing: 0,
 	border: 0,
 	role: 'presentation',
+	width: '100%',
 };
 
 const S = {
@@ -41,7 +42,7 @@ const S = {
 		fontWeight: 'normal',
 		textTransform: 'uppercase',
 		lineHeight: 1.3,
-		letterSpacing: '1.2px',
+		letterSpacing: '1.4px',
 	}),
 
 	textBase: (): React.CSSProperties => ({
@@ -49,12 +50,13 @@ const S = {
 		fontSize: UI.fSize,
 		lineHeight: 1.5,
 		letterSpacing: '0.25px',
+		wordSpacing: '0.5px',
 		color: C.text,
 	}),
 };
 
 // --- Components ---
-export const EmailPad = () => (
+export const EmailPadding = () => (
 	<tr>
 		<td style={{ padding: `40px ${UI.padX}px 0` }} />
 	</tr>
@@ -91,72 +93,73 @@ export const EmailLinkList = ({
 }) => (
 	<tr>
 		<td style={S.cell(0, 20)}>
-			<table {...TABLE_PROPS} width='100%'>
-				<tbody>
-					{items.map((item, i) => (
-						<tr key={i}>
-							<td
-								style={{
-									borderLeft: `2px solid ${C.link}`,
-									borderBottom: i < items.length - 1 ? `1px solid ${C.border}` : 'none',
-								}}
-							>
-								<a
-									href={item.url}
-									target='_blank'
-									rel='noopener noreferrer'
+			<div style={{ borderRadius: '8px', overflow: 'hidden' }}>
+				<table {...TABLE_PROPS} style={{ borderRadius: '8px', overflow: 'hidden' }}>
+					<tbody>
+						{items.map((item, i) => (
+							<tr key={i}>
+								<td
 									style={{
-										display: 'block',
-										textDecoration: 'none',
-										backgroundColor: C.listLinkBg,
-										color: C.link,
+										borderBottom: i < items.length - 1 ? `1px solid ${C.border}` : 'none',
 									}}
 								>
-									<table {...TABLE_PROPS} width='100%'>
-										<tbody>
-											<tr>
-												<td
-													style={{
-														padding: '13px 0 13px 20px',
-														color: C.link,
-														fontSize: UI.fSize,
-														lineHeight: 1.22,
-														letterSpacing: '0.5px',
-													}}
-												>
-													{item.genre ? (
-														<p
-															style={{
-																margin: '0 0 5px',
-																padding: '0',
-																color: C.text,
-																opacity: 0.45,
-																fontSize: '11px',
-																lineHeight: 1.3,
-																fontWeight: 300,
-															}}
-														>
-															{item.genre}
-														</p>
-													) : null}
+									<a
+										href={item.url}
+										target='_blank'
+										rel='noopener noreferrer'
+										style={{
+											display: 'block',
+											textDecoration: 'none',
+											outline: 'none',
+											backgroundColor: C.listLinkBg,
+											color: C.link,
+											fontSize: UI.fSize,
+											lineHeight: 1.24,
+											letterSpacing: '1px',
+										}}
+									>
+										<table {...TABLE_PROPS}>
+											<tbody>
+												<tr>
+													<td
+														style={{
+															padding: '16px 0 16px 20px',
+														}}
+													>
+														{item.genre ? (
+															<p
+																style={{
+																	margin: '0 0 6px',
+																	padding: '0',
+																	color: C.copy,
+																	fontSize: '10px',
+																	textTransform: 'uppercase',
+																	lineHeight: 1.3,
+																	fontWeight: 300,
+																}}
+															>
+																{item.genre}
+															</p>
+														) : null}
 
-													{item.title}
-												</td>
-												<td
-													align='right'
-													style={{ padding: '0 19px 0 6px', color: C.accent1, fontSize: '21px' }}
-												>
-													→
-												</td>
-											</tr>
-										</tbody>
-									</table>
-								</a>
-							</td>
-						</tr>
-					))}
-				</tbody>
-			</table>
+														{item.title}
+													</td>
+													<td
+														align='right'
+														style={{ padding: '0 19px 0 6px', color: C.accent1, fontSize: '22px' }}
+													>
+														→
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</a>
+								</td>
+							</tr>
+						))}
+					</tbody>
+				</table>
+			</div>
 		</td>
 	</tr>
 );
@@ -164,7 +167,7 @@ export const EmailLinkList = ({
 export const EmailBulletList = ({ items }: { items: string[] }) => (
 	<tr>
 		<td style={S.cell(0, 15)}>
-			<table {...TABLE_PROPS} width='100%'>
+			<table {...TABLE_PROPS}>
 				<tbody>
 					{items.map((item, i) => (
 						<tr key={i}>
@@ -196,31 +199,7 @@ export const EmailBulletList = ({ items }: { items: string[] }) => (
 	</tr>
 );
 
-export const EmailDivider = () => (
-	<tr>
-		<td style={{ padding: '25px 0 0' }}>
-			<table {...TABLE_PROPS} width='100%'>
-				<tbody>
-					<tr>
-						<td
-							style={{
-								backgroundColor: C.border,
-								fontSize: 0,
-								lineHeight: 0,
-								height: `${UI.borderW}px`,
-							}}
-						>
-							&nbsp;
-						</td>
-					</tr>
-				</tbody>
-			</table>
-		</td>
-	</tr>
-);
-
 // --- Icons Config ---
-
 const SITE_URL = 'https://buhowski.netlify.app';
 const EMAIL_ICONS_URL = `${SITE_URL}/assets/icons`;
 
@@ -257,75 +236,124 @@ export const EmailFooter = ({
 	links?: { url: string; icon: string; alt: string }[];
 }) => {
 	const imgRatio = 52;
+	const { width, ...tablePropsNoWidth } = TABLE_PROPS;
 
 	return (
-		<tr>
-			<td align='center' style={{ backgroundColor: C.footerBg, padding: '40px 18px' }}>
-				<p style={{ margin: '0 0 26px', textAlign: 'center' }}>
-					<a
-						href='https://buhowski.dev'
-						target='_blank'
-						rel='noopener noreferrer'
-						style={{
-							textDecoration: 'none',
-							letterSpacing: '1.2px',
-							fontSize: '12px',
-							color: C.copy,
-							padding: '12px 16px',
-							outline: 'none',
-						}}
-					>
-						{new Date().getFullYear()} © Olexander Tsiomakh
-					</a>
-				</p>
-				<table {...TABLE_PROPS} align='center'>
-					<tbody>
-						<tr>
-							{links.map((link, i) => (
-								<td key={i} style={{ padding: '0 9px' }}>
+		<>
+			<tr>
+				<td style={{ fontSize: 0, lineHeight: 0, height: '20px' }}>&nbsp;</td>
+			</tr>
+
+			<tr>
+				<td
+					align='center'
+					style={{ backgroundColor: C.footerBg, padding: `36px ${UI.padX}px 28px` }}
+				>
+					<table {...tablePropsNoWidth} align='center'>
+						<tbody>
+							<tr>
+								{links.map((link, i) => (
+									<td key={i} style={{ padding: '0 10px' }}>
+										<a
+											href={link.url}
+											target='_blank'
+											rel='noopener noreferrer'
+											style={{
+												display: 'block',
+												borderRadius: '50%',
+												border: `${UI.borderW}px solid ${C.border}`,
+												backgroundColor: C.cardBg,
+												outline: 'none',
+												textDecoration: 'none',
+												overflow: 'hidden',
+												// @ts-ignore
+												msOpaque: '1',
+												msoEffectsNone: 'all',
+											}}
+										>
+											<img
+												src={link.icon}
+												alt={link.alt}
+												width={imgRatio}
+												height={imgRatio}
+												style={{
+													width: `${imgRatio}px`,
+													height: `${imgRatio}px`,
+													display: 'block',
+													border: 0,
+													outline: 'none',
+													fontSize: '12px',
+													textDecoration: 'none',
+													verticalAlign: 'middle',
+													pointerEvents: 'none',
+													borderRadius: '50%',
+												}}
+											/>
+										</a>
+									</td>
+								))}
+							</tr>
+						</tbody>
+					</table>
+
+					<table {...TABLE_PROPS}>
+						<tbody>
+							<tr>
+								<td style={{ paddingTop: '24px' }}>
+									<table {...TABLE_PROPS}>
+										<tbody>
+											<tr>
+												<td
+													style={{
+														backgroundColor: C.bodyBg,
+														fontSize: 0,
+														lineHeight: 0,
+														height: `1px`,
+													}}
+												>
+													&nbsp;
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<table {...TABLE_PROPS}>
+						<tbody>
+							<tr>
+								<td style={{ paddingTop: '12px' }}>
+									<span style={{ fontSize: '11px', color: C.copy, letterSpacing: '0.9px' }}>
+										{new Date().getFullYear()} © Olexander Tsiomakh
+									</span>
+								</td>
+
+								<td align='right' style={{ paddingTop: '12px' }}>
 									<a
-										href={link.url}
+										href='https://buhowski.dev'
 										target='_blank'
 										rel='noopener noreferrer'
 										style={{
-											display: 'block',
-											borderRadius: '50%',
-											border: `${UI.borderW}px solid ${C.border}`,
-											backgroundColor: C.cardBg,
-											outline: 'none',
 											textDecoration: 'none',
-											overflow: 'hidden',
-											// @ts-ignore
-											msOpaque: '1',
-											msoEffectsNone: 'all',
+											color: C.link,
+											fontSize: '12px',
+											padding: '14px',
+											paddingRight: '0',
+											letterSpacing: '1.62px',
+											outline: 'none',
 										}}
 									>
-										<img
-											src={link.icon}
-											alt={link.alt}
-											width={imgRatio}
-											height={imgRatio}
-											style={{
-												width: `${imgRatio}px`,
-												height: `${imgRatio}px`,
-												display: 'block',
-												border: 0,
-												outline: 'none',
-												fontSize: '12px',
-												textDecoration: 'none',
-												verticalAlign: 'middle',
-												pointerEvents: 'none',
-												borderRadius: '50%',
-											}}
-										/>
+										buhowski.dev
 									</a>
 								</td>
-							))}
-						</tr>
-					</tbody>
-				</table>
-			</td>
-		</tr>
+							</tr>
+						</tbody>
+					</table>
+				</td>
+			</tr>
+		</>
 	);
 };
 
@@ -398,7 +426,6 @@ export const EmailLayout = ({ children, lang }: { children: React.ReactNode; lan
 		<table
 			lang={lang}
 			{...TABLE_PROPS}
-			width='100%'
 			style={{ fontFamily: UI.font, borderSpacing: 0 }}
 			bgcolor={C.bodyBg}
 		>
@@ -413,7 +440,7 @@ export const EmailLayout = ({ children, lang }: { children: React.ReactNode; lan
 
 			<tbody>
 				<tr>
-					<td align='center' style={{ padding: '40px 0' }}>
+					<td align='center' style={{ padding: '46px 2px' }}>
 						<table
 							{...TABLE_PROPS}
 							width='600'
@@ -435,16 +462,12 @@ export const EmailLayout = ({ children, lang }: { children: React.ReactNode; lan
 										style={{
 											display: 'block',
 											backgroundColor: C.cardBg,
-											border: `${UI.borderW}px solid ${C.border}`,
+											// border: `${UI.borderW}px solid ${C.border}`,
 											borderRadius: `${UI.borderRd}px`,
 											overflow: 'hidden',
 										}}
 									>
-										<table
-											{...TABLE_PROPS}
-											width='100%'
-											style={{ width: '100%', borderCollapse: 'collapse' }}
-										>
+										<table {...TABLE_PROPS} style={{ width: '100%', borderCollapse: 'collapse' }}>
 											<tbody>{children}</tbody>
 										</table>
 									</td>

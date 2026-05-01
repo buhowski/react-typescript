@@ -1,12 +1,11 @@
 import {
 	EmailLayout,
 	EmailPreheader,
-	EmailPad,
+	EmailPadding,
 	EmailH2,
 	EmailText,
 	EmailLinkList,
 	EmailBulletList,
-	EmailDivider,
 	EmailFooter,
 } from '../EmailTemplate';
 
@@ -16,7 +15,7 @@ const CoOwnersUA = ({ lang }: { lang?: string }) => {
 			{/* Preview Subject */}
 			<EmailPreheader text='Шукаю співучасників — альтернативна операційна система реальності' />
 
-			<EmailPad />
+			<EmailPadding />
 
 			<EmailText content='Привіт.' />
 
@@ -62,8 +61,6 @@ const CoOwnersUA = ({ lang }: { lang?: string }) => {
 			/>
 
 			<EmailText content='Якщо відгукнулось — напишіть, обговоримо деталі.' />
-
-			<EmailDivider />
 
 			<EmailFooter />
 		</EmailLayout>

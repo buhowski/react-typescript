@@ -1,11 +1,10 @@
 import {
 	EmailLayout,
 	EmailPreheader,
-	EmailPad,
+	EmailPadding,
 	EmailH2,
 	EmailText,
 	EmailLinkList,
-	EmailDivider,
 	EmailFooter,
 } from '../EmailTemplate';
 
@@ -15,7 +14,7 @@ const CoDevelopmentUA = ({ lang }: { lang?: string }) => {
 			{/* Preview Subject */}
 			<EmailPreheader text='Dark Fantasy Action RPG у трьох частинах — Тіні Козаків. Сага' />
 
-			<EmailPad />
+			<EmailPadding />
 
 			<EmailText content='Привіт.' />
 
@@ -49,8 +48,6 @@ const CoDevelopmentUA = ({ lang }: { lang?: string }) => {
 			/>
 
 			<EmailText content='Якщо відгукнулось — напишіть, обговоримо деталі.' />
-
-			<EmailDivider />
 
 			<EmailFooter />
 		</EmailLayout>

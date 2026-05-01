@@ -1,11 +1,10 @@
 import {
 	EmailLayout,
 	EmailPreheader,
-	EmailPad,
+	EmailPadding,
 	EmailH2,
 	EmailText,
 	EmailLinkList,
-	EmailDivider,
 	EmailFooter,
 } from '../EmailTemplate';
 
@@ -15,7 +14,7 @@ const CoProductionUA = ({ lang }: { lang?: string }) => {
 			{/* Preview Subject */}
 			<EmailPreheader text='Авторські сценарії та концепти — кіно, серіали, анімація' />
 
-			<EmailPad />
+			<EmailPadding />
 
 			<EmailText content='Привіт.' />
 
@@ -118,8 +117,6 @@ const CoProductionUA = ({ lang }: { lang?: string }) => {
 			/>
 
 			<EmailText content='Якщо відгукнулось — напишіть, обговоримо деталі.' />
-
-			<EmailDivider />
 
 			<EmailFooter />
 		</EmailLayout>
