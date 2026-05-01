@@ -2,6 +2,11 @@ import React, { useState } from 'react';
 import { renderToStaticMarkup } from 'react-dom/server';
 import { urlTelegram, urlLinkedIn, urlInstagram } from '../components/urlsData';
 
+// TESTING ICONS
+// import icon1 from './tg.png';
+// import icon2 from './ig.png';
+// import icon3 from './in.png';
+
 const C = {
 	bodyBg: '#303030',
 	cardBg: '#242424',
@@ -11,7 +16,7 @@ const C = {
 	text: '#e2e2e2',
 	link: '#55aadd',
 	listLinkBg: '#1a1a1a',
-	copy: '#686868',
+	copy: '#696969',
 };
 
 const UI = {
@@ -362,7 +367,8 @@ export const EmailFooter = ({
 															outline: 'none',
 															color: C.link,
 															fontSize: '11px',
-															letterSpacing: '1.4px',
+															opacity: 0.7,
+															letterSpacing: '1.2px',
 															padding: '13px 0 13px 6px',
 															// textTransform: 'uppercase',
 														}}
