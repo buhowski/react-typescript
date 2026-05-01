@@ -252,7 +252,7 @@ export const EmailFooter = ({
 }: {
 	links?: { url: string; icon: string; alt: string }[];
 }) => {
-	const imgRatio = 26;
+	const imgRatio = 25;
 	const { width, ...tablePropsNoWidth } = TABLE_PROPS;
 
 	return (
@@ -321,7 +321,7 @@ export const EmailFooter = ({
 							</tr>
 
 							<tr>
-								<td style={{ paddingTop: '20px' }}>
+								<td style={{ paddingTop: '22px' }}>
 									<div
 										style={{
 											backgroundColor: C.bodyBg,
@@ -336,7 +336,7 @@ export const EmailFooter = ({
 							</tr>
 
 							<tr>
-								<td style={{ padding: '16px 0 0' }}>
+								<td style={{ padding: '13px 0 0' }}>
 									<table {...TABLE_PROPS}>
 										<tbody>
 											<tr>
