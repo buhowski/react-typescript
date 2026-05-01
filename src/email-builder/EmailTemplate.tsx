@@ -3,22 +3,21 @@ import { renderToStaticMarkup } from 'react-dom/server';
 import { urlTelegram, urlLinkedIn, urlInstagram } from '../components/urlsData';
 
 const C = {
-	bodyBg: '#333333',
+	bodyBg: '#393939',
 	cardBg: '#242424',
 	footerBg: '#121212',
 	accent1: '#f6b96f',
 	accent2: '#d0887d',
 	text: '#e2e2e2',
 	link: '#55aadd',
-	listLinkBg: '#1b1b1b',
+	listLinkBg: '#1d1d1d',
 	copy: '#686868',
 };
 
 const UI = {
 	padX: 28,
 	spacing: 18,
-	borderW: 1,
-	borderRd: 16,
+	borderRd: 18,
 	font: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
 	fSize: '16px',
 };
@@ -85,7 +84,7 @@ export const EmailText = ({ content }: { content: string }) => (
 	</tr>
 );
 
-const linkBdrRds = '9px';
+const linkBdrRds = '8px';
 
 export const EmailLinkList = ({
 	items,
@@ -220,7 +219,7 @@ const EMAIL_ICONS_URL = `${SITE_URL}/assets/icons`;
 
 export const emailIcons = {
 	tg: { src: `${EMAIL_ICONS_URL}/tg.png`, alt: 'Telegram' },
-	ig: { src: `${EMAIL_ICONS_URL}/inst.png`, alt: 'Instagram' },
+	ig: { src: `${EMAIL_ICONS_URL}/ig.png`, alt: 'Instagram' },
 	in: { src: `${EMAIL_ICONS_URL}/in.png`, alt: 'LinkedIn' },
 	// em: { src: `${EMAIL_ICONS_URL}/mail.png`, alt: 'Gmail' },
 	// site: { src: `${EMAIL_ICONS_URL}/site.png`, alt: 'Website' },
@@ -254,7 +253,7 @@ export const EmailFooter = ({
 }: {
 	links?: { url: string; icon: string; alt: string }[];
 }) => {
-	const imgRatio = 23;
+	const imgRatio = 22;
 	const { width, ...tablePropsNoWidth } = TABLE_PROPS;
 
 	return (
@@ -265,7 +264,7 @@ export const EmailFooter = ({
 			</tr>
 
 			<tr>
-				<td align='center' style={{ background: C.footerBg, padding: `40px ${UI.padX}px 30px` }}>
+				<td align='center' style={{ background: C.footerBg, padding: `35px ${UI.padX}px 30px` }}>
 					<table {...TABLE_PROPS}>
 						<tbody>
 							<tr>
@@ -274,36 +273,50 @@ export const EmailFooter = ({
 										<tbody>
 											<tr>
 												{links.map((link, i) => (
-													<td key={i} style={{ padding: '0 10px' }}>
+													<td key={i} style={{ padding: '0 9px' }}>
 														<a
 															href={link.url}
 															target='_blank'
 															rel='noopener noreferrer'
 															style={{
 																display: 'block',
+																aspectRatio: '1 / 1',
 																borderRadius: '50%',
 																background: C.bodyBg,
-																padding: '14px',
+																padding: '1px',
 																textDecoration: 'none',
 																outline: 'none',
 																overflow: 'hidden',
 															}}
 														>
-															<img
-																src={link.icon}
-																alt={link.alt}
-																width={imgRatio}
-																height={imgRatio}
+															<span
 																style={{
 																	display: 'block',
-																	width: `${imgRatio}px`,
-																	height: `${imgRatio}px`,
-																	border: 0,
+																	background: C.listLinkBg,
+																	borderRadius: '50%',
+																	padding: '14px',
 																	outline: 'none',
 																	pointerEvents: 'none',
-																	background: 'transparent',
+																	overflow: 'hidden',
+																	aspectRatio: '1 / 1',
 																}}
-															/>
+															>
+																<img
+																	src={link.icon}
+																	alt={link.alt}
+																	width={imgRatio}
+																	height={imgRatio}
+																	style={{
+																		display: 'block',
+																		width: `${imgRatio}px`,
+																		height: `${imgRatio}px`,
+																		border: 0,
+																		outline: 'none',
+																		pointerEvents: 'none',
+																		background: C.listLinkBg,
+																	}}
+																/>
+															</span>
 														</a>
 													</td>
 												))}
@@ -447,7 +460,7 @@ export const EmailLayout = ({ children, lang }: { children: React.ReactNode; lan
 
 			<tbody>
 				<tr>
-					<td align='center' style={{ padding: '46px 2px' }}>
+					<td align='center' style={{ padding: '40px 0' }}>
 						<table
 							{...TABLE_PROPS}
 							width='600'
@@ -469,7 +482,6 @@ export const EmailLayout = ({ children, lang }: { children: React.ReactNode; lan
 										style={{
 											display: 'block',
 											backgroundColor: C.cardBg,
-											// border: `${UI.borderW}px solid ${C.border}`,
 											borderRadius: `${UI.borderRd}px`,
 											overflow: 'hidden',
 										}}
