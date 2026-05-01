@@ -3,7 +3,7 @@ import { renderToStaticMarkup } from 'react-dom/server';
 import { urlTelegram, urlLinkedIn, urlInstagram } from '../components/urlsData';
 
 const C = {
-	bodyBg: '#3a3a3a',
+	bodyBg: '#303030',
 	cardBg: '#242424',
 	footerBg: '#121212',
 	accent1: '#f6b96f',
@@ -17,7 +17,7 @@ const C = {
 const UI = {
 	padX: 28,
 	spacing: 18,
-	borderRd: 20,
+	borderRd: 12,
 	font: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
 	fSize: '16px',
 };
@@ -306,6 +306,8 @@ export const EmailFooter = ({
 																		border: 0,
 																		background: 'transparent',
 																		outline: 'none',
+																		overflow: 'visible',
+																		fontSize: '10px',
 																	}}
 																/>
 															</span>
@@ -353,7 +355,7 @@ export const EmailFooter = ({
 															color: C.link,
 															fontSize: '11px',
 															letterSpacing: '1.4px',
-															padding: '14px 0 14px 6px',
+															padding: '13px 0 13px 6px',
 															// textTransform: 'uppercase',
 														}}
 													>
@@ -456,7 +458,7 @@ export const EmailLayout = ({ children, lang }: { children: React.ReactNode; lan
 
 			<tbody>
 				<tr>
-					<td align='center' style={{ padding: '35px 0' }}>
+					<td align='center' style={{ padding: '42px 0' }}>
 						<table
 							{...TABLE_PROPS}
 							width='600'
@@ -509,7 +511,7 @@ export const EmailBuilder = ({
 		const html = EmailToHtml(children);
 		navigator.clipboard.writeText(html).then(() => {
 			setCopied(true);
-			setTimeout(() => setCopied(false), 1500);
+			setTimeout(() => setCopied(false), 2000);
 		});
 	};
 
@@ -520,7 +522,7 @@ export const EmailBuilder = ({
 				title='Copy HTML'
 				style={{
 					position: 'fixed',
-					top: '5px',
+					top: '10px',
 					right: '15px',
 					zIndex: 9999,
 					padding: '4px 9px',
@@ -528,7 +530,7 @@ export const EmailBuilder = ({
 					color: '#ffffff',
 					borderRadius: '10px',
 					cursor: 'pointer',
-					fontSize: '14px',
+					fontSize: '15px',
 					border: 'none',
 				}}
 			>
@@ -538,18 +540,18 @@ export const EmailBuilder = ({
 			{subject && (
 				<h1
 					style={{
-						color: C.accent1,
+						color: '#b991e3',
 						padding: '40px 10px 10px',
-						fontSize: '21px',
+						fontSize: '18px',
 						textAlign: 'center',
-						maxWidth: '500px',
+						maxWidth: '600px',
 						margin: '0 auto',
 						lineHeight: 1.5,
-						letterSpacing: '1.2px',
-						fontWeight: '600',
+						letterSpacing: '1px',
+						fontWeight: '500',
 					}}
 				>
-					@SUBJECT: {subject}
+					@ SUBJECT <span style={{ display: 'block' }}>{subject}</span>
 				</h1>
 			)}
 
