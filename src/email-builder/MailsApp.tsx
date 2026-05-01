@@ -1,8 +1,8 @@
 import { Routes, Route, useLocation } from 'react-router-dom';
 import { normalizePath } from '../pages/startups/helpers/metaHelper';
 import { EmailBuilder } from './EmailTemplate';
-import { pathToEmails, emailsConfig } from './emailsConfig';
-import EmailsPage from './EmailsPage';
+import { pathToMails, emailsConfig } from './emailsConfig';
+import MailsPage from './MailsPage';
 
 export const emailRoutes = emailsConfig.map(({ path, label, subject, element }) => ({
 	pathTo: path,
@@ -10,12 +10,12 @@ export const emailRoutes = emailsConfig.map(({ path, label, subject, element }) 
 	pageComponent: () => <EmailBuilder subject={subject}>{element}</EmailBuilder>,
 }));
 
-const EmailApp = () => {
+const MailsApp = () => {
 	const location = useLocation();
 
 	return (
 		<Routes location={location}>
-			<Route path={pathToEmails} element={<EmailsPage />} />
+			<Route path={pathToMails} element={<MailsPage />} />
 
 			{emailRoutes.map(({ pathTo, pageComponent: PageComponent }) => (
 				<Route key={pathTo} path={normalizePath(pathTo)} element={<PageComponent />} />
@@ -24,4 +24,4 @@ const EmailApp = () => {
 	);
 };
 
-export default EmailApp;
+export default MailsApp;

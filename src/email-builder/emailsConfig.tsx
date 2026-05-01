@@ -4,7 +4,7 @@ import CoProductionUA from './letters/CoProductionUA';
 import CoDevelopmentUA from './letters/CoDevelopmentUA';
 import CollabUA from './letters/CollabUA';
 
-export const pathToEmails = '/emails';
+export const pathToMails = '/mails';
 
 export const emailsConfig = [
 	{
