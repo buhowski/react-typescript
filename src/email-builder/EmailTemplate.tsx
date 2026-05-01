@@ -3,16 +3,15 @@ import { renderToStaticMarkup } from 'react-dom/server';
 import { urlTelegram, urlLinkedIn, urlInstagram } from '../components/urlsData';
 
 const C = {
-	bodyBg: '#303030',
-	cardBg: '#222222',
-	footerBg: '#161616',
-	border: '#4a4a4a',
+	bodyBg: '#333333',
+	cardBg: '#242424',
+	footerBg: '#121212',
 	accent1: '#f6b96f',
 	accent2: '#d0887d',
-	text: '#d4d4d4',
+	text: '#e2e2e2',
 	link: '#55aadd',
-	listLinkBg: '#171717',
-	copy: '#676767',
+	listLinkBg: '#1b1b1b',
+	copy: '#686868',
 };
 
 const UI = {
@@ -86,6 +85,8 @@ export const EmailText = ({ content }: { content: string }) => (
 	</tr>
 );
 
+const linkBdrRds = '9px';
+
 export const EmailLinkList = ({
 	items,
 }: {
@@ -93,14 +94,14 @@ export const EmailLinkList = ({
 }) => (
 	<tr>
 		<td style={S.cell(0, 20)}>
-			<div style={{ borderRadius: '8px', overflow: 'hidden' }}>
-				<table {...TABLE_PROPS} style={{ borderRadius: '8px', overflow: 'hidden' }}>
+			<div style={{ borderRadius: linkBdrRds, overflow: 'hidden' }}>
+				<table {...TABLE_PROPS} style={{ borderRadius: linkBdrRds, overflow: 'hidden' }}>
 					<tbody>
 						{items.map((item, i) => (
 							<tr key={i}>
 								<td
 									style={{
-										borderBottom: i < items.length - 1 ? `1px solid ${C.border}` : 'none',
+										borderBottom: i < items.length - 1 ? `1px solid ${C.bodyBg}` : 'none',
 									}}
 								>
 									<a
@@ -114,8 +115,8 @@ export const EmailLinkList = ({
 											backgroundColor: C.listLinkBg,
 											color: C.link,
 											fontSize: UI.fSize,
-											lineHeight: 1.24,
-											letterSpacing: '1px',
+											lineHeight: 1.3,
+											letterSpacing: '0.8px',
 										}}
 									>
 										<table {...TABLE_PROPS}>
@@ -123,18 +124,19 @@ export const EmailLinkList = ({
 												<tr>
 													<td
 														style={{
-															padding: '16px 0 16px 20px',
+															padding: '15px 0 15px 22px',
 														}}
 													>
 														{item.genre ? (
 															<p
 																style={{
-																	margin: '0 0 6px',
+																	margin: '0 0 5px',
 																	padding: '0',
 																	color: C.copy,
 																	fontSize: '10px',
 																	textTransform: 'uppercase',
 																	lineHeight: 1.3,
+																	letterSpacing: '0.5px',
 																	fontWeight: 300,
 																}}
 															>
@@ -146,7 +148,7 @@ export const EmailLinkList = ({
 													</td>
 													<td
 														align='right'
-														style={{ padding: '0 19px 0 6px', color: C.accent1, fontSize: '22px' }}
+														style={{ padding: '0 20px 0 5px', color: C.accent1, fontSize: '22px' }}
 													>
 														→
 													</td>
@@ -205,10 +207,14 @@ const EMAIL_ICONS_URL = `${SITE_URL}/assets/icons`;
 
 export const emailIcons = {
 	tg: { src: `${EMAIL_ICONS_URL}/tg.png`, alt: 'Telegram' },
-	ig: { src: `${EMAIL_ICONS_URL}/insta.png`, alt: 'Instagram' },
+	ig: { src: `${EMAIL_ICONS_URL}/inst.png`, alt: 'Instagram' },
 	in: { src: `${EMAIL_ICONS_URL}/in.png`, alt: 'LinkedIn' },
-	em: { src: `${EMAIL_ICONS_URL}/mail.png`, alt: 'Gmail' },
-	site: { src: `${EMAIL_ICONS_URL}/site.png`, alt: 'Website' },
+	// em: { src: `${EMAIL_ICONS_URL}/mail.png`, alt: 'Gmail' },
+	// site: { src: `${EMAIL_ICONS_URL}/site.png`, alt: 'Website' },
+
+	// tg: { src: icon1, alt: 'Telegram' },
+	// ig: { src: icon2, alt: 'Instagram' },
+	// in: { src: icon3, alt: 'LinkedIn' },
 };
 
 // Footer Links
@@ -235,7 +241,7 @@ export const EmailFooter = ({
 }: {
 	links?: { url: string; icon: string; alt: string }[];
 }) => {
-	const imgRatio = 52;
+	const imgRatio = 50;
 	const { width, ...tablePropsNoWidth } = TABLE_PROPS;
 
 	return (
@@ -247,7 +253,7 @@ export const EmailFooter = ({
 			<tr>
 				<td
 					align='center'
-					style={{ backgroundColor: C.footerBg, padding: `36px ${UI.padX}px 28px` }}
+					style={{ backgroundColor: C.footerBg, padding: `40px ${UI.padX}px 30px` }}
 				>
 					<table {...tablePropsNoWidth} align='center'>
 						<tbody>
@@ -261,8 +267,8 @@ export const EmailFooter = ({
 											style={{
 												display: 'block',
 												borderRadius: '50%',
-												border: `${UI.borderW}px solid ${C.border}`,
-												backgroundColor: C.cardBg,
+												backgroundColor: C.bodyBg,
+												padding: '1px',
 												outline: 'none',
 												textDecoration: 'none',
 												overflow: 'hidden',
@@ -299,7 +305,7 @@ export const EmailFooter = ({
 					<table {...TABLE_PROPS}>
 						<tbody>
 							<tr>
-								<td style={{ paddingTop: '24px' }}>
+								<td style={{ paddingTop: '20px' }}>
 									<table {...TABLE_PROPS}>
 										<tbody>
 											<tr>
