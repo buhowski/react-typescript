@@ -274,7 +274,7 @@ export const EmailFooter = ({
 			</tr>
 
 			<tr>
-				<td align='center' style={{ background: C.footerBg, padding: `40px ${UI.padX}px 16px` }}>
+				<td align='center' style={{ background: C.footerBg, padding: `40px ${UI.padX}px 20px` }}>
 					<table {...TABLE_PROPS}>
 						<tbody>
 							<tr>
@@ -349,29 +349,36 @@ export const EmailFooter = ({
 							</tr>
 
 							<tr>
-								<td style={{ padding: '12px 0 0' }}>
+								<td style={{ padding: '14px 0 0' }}>
 									<table {...TABLE_PROPS}>
 										<tbody>
 											<tr>
-												<td style={{ fontSize: '11px', color: C.copy, letterSpacing: '1.2px' }}>
+												<td
+													style={{
+														fontSize: '11px',
+														color: C.copy,
+														letterSpacing: '1.2px',
+														verticalAlign: 'baseline',
+													}}
+												>
 													{new Date().getFullYear()} © Olexander Tsiomakh
 												</td>
 
-												<td align='right'>
+												<td align='right' style={{ verticalAlign: 'baseline' }}>
 													<a
 														href='https://buhowski.dev'
 														target='_blank'
 														rel='noopener noreferrer'
 														style={{
 															textDecoration: 'none',
+															display: 'inline',
 															outline: 'none',
 															color: C.link,
 															fontSize: '11px',
 															opacity: 0.68,
 															letterSpacing: '1.6px',
-															padding: '14px 0 14px 5px',
+															padding: '14px 0 14px 6px',
 															fontWeight: '600',
-															// textTransform: 'uppercase',
 														}}
 													>
 														buhowski.dev
