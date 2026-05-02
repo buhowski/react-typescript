@@ -270,11 +270,11 @@ export const EmailFooter = ({
 		<>
 			{/* Spacer перед футером */}
 			<tr>
-				<td style={{ fontSize: 0, lineHeight: 0, height: '20px' }}>&nbsp;</td>
+				<td style={{ fontSize: 0, lineHeight: 0, height: '22px' }}>&nbsp;</td>
 			</tr>
 
 			<tr>
-				<td align='center' style={{ background: C.footerBg, padding: `38px ${UI.padX}px 30px` }}>
+				<td align='center' style={{ background: C.footerBg, padding: `40px ${UI.padX}px 16px` }}>
 					<table {...TABLE_PROPS}>
 						<tbody>
 							<tr>
@@ -367,9 +367,10 @@ export const EmailFooter = ({
 															outline: 'none',
 															color: C.link,
 															fontSize: '11px',
-															opacity: 0.7,
-															letterSpacing: '1.2px',
-															padding: '13px 0 13px 6px',
+															opacity: 0.68,
+															letterSpacing: '1.6px',
+															padding: '14px 0 14px 5px',
+															fontWeight: '600',
 															// textTransform: 'uppercase',
 														}}
 													>
