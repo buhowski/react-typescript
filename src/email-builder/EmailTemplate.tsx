@@ -274,7 +274,7 @@ export const EmailFooter = ({
 			</tr>
 
 			<tr>
-				<td align='center' style={{ background: C.footerBg, padding: `40px ${UI.padX}px 20px` }}>
+				<td align='center' style={{ background: C.footerBg, padding: `40px ${UI.padX}px 18px` }}>
 					<table {...TABLE_PROPS}>
 						<tbody>
 							<tr>
@@ -349,7 +349,7 @@ export const EmailFooter = ({
 							</tr>
 
 							<tr>
-								<td style={{ padding: '14px 0 0' }}>
+								<td style={{ padding: '12px 0 0', verticalAlign: 'baseline' }}>
 									<table {...TABLE_PROPS}>
 										<tbody>
 											<tr>
@@ -370,8 +370,8 @@ export const EmailFooter = ({
 														target='_blank'
 														rel='noopener noreferrer'
 														style={{
-															textDecoration: 'none',
 															display: 'inline',
+															textDecoration: 'none',
 															outline: 'none',
 															color: C.link,
 															fontSize: '11px',
@@ -379,6 +379,7 @@ export const EmailFooter = ({
 															letterSpacing: '1.6px',
 															padding: '14px 0 14px 6px',
 															fontWeight: '600',
+															lineHeight: 1,
 														}}
 													>
 														buhowski.dev
