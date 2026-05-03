@@ -1,6 +1,6 @@
 # Pilot Projects
 
-Ready-made scripts and video show concepts: dark humor, the aesthetics of the absurd, sharp satire, taboo subjects, and intellectual provocation — a slap in the face of an outdated mindset.
+Dark humor, aesthetics of absurdity, sharp satire, taboo subjects, intellectual provocation — ready-made scripts and concepts for video shows. A slap in the face of an outdated mindset.
 
 In need of creators-accomplices to change the rules of the game.
 

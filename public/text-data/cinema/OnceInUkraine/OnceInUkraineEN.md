@@ -51,4 +51,4 @@ This film leads to the conclusion: the tragedy is not only in wars, but also in 
 
 *Under Construction …*
 
-In need of like-minded accomplices and resources for joint realization. If you are ready to team up or know how to scale this — reach out.
+In need of like-minded accomplices and resources to make it happen. If you have the drive or know how to scale this — reach out.
