@@ -1,4 +1,4 @@
-#### Dark Fantasy Adventure / Action RPG
+#### Dark Fantasy / Action RPG
 
 # **Shadows of the Cossacks**: Whispers of the Forgotten
 
@@ -10,7 +10,7 @@ He is an unfinished experiment of the Church, a botched mistake of the execution
 
 ## Concept
 
-This is an open-world Action/RPG adventure. The main concept is exploring a mysterious universe where real history, Slavic mythology, and demonology are intertwined into a single game lore.
+This is an open-world Action RPG adventure. The main concept is exploring a mysterious universe where real history, Slavic mythology, and demonology are intertwined into a single game lore.
 
 The game focuses on unraveling the mysteries of mystical rituals, internal struggle, and self-discovery. The main character, a mysterious figure with a tragic past, seeks allies to expose a grand conspiracy that threatens the world.
 

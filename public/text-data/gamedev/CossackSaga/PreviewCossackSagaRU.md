@@ -1,4 +1,4 @@
-#### Dark Fantasy Odyssey / Action RPG Series
+#### Dark Fantasy / Action RPG Series
 
 # Тени Казаков: Нерассказанная правда
 

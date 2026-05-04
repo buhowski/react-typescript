@@ -1,4 +1,4 @@
-#### Dark Fantasy Adventure / Action RPG
+#### Dark Fantasy / Action RPG
 
 # Shadows of the Cossacks: Ashes of the Beloved
 

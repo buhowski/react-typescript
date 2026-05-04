@@ -1,4 +1,4 @@
-#### Dark Fantasy Adventure / Action RPG
+#### Dark Fantasy / Action RPG
 
 # Часть I: Шёпот Забытых
 
