@@ -2,7 +2,7 @@
 
 # Shadows of the Cossacks: The Untold Truth
 
-A saga. From pagan shrines and otherworldly beasts, through the demonic baptism of Kyivan Rus and the bloody era of the Cossacks — to the neon tyranny of tribal cyber-futurism.
+From pagan shrines and otherworldly beasts, through the demonic baptism of Kyivan Rus and the bloody era of the Cossacks — to the neon tyranny of tribal cyber-futurism.
 
 A chronicle of resistance by those who refused to be fodder for the Church's experiments. The Papal Throne — patron of reality, clutching power with the demonic hand of dogma.
 

@@ -2,7 +2,7 @@
 
 # Shadows of the Cossacks: The Untold Truth
 
-A saga. From pagan shrines and otherworldly beasts, through the demonic baptism of Kyivan Rus and the bloody era of the Cossacks — to the neon tyranny of tribal cyber-futurism.
+From pagan shrines and otherworldly beasts, through the demonic baptism of Kyivan Rus and the bloody era of the Cossacks — to the neon tyranny of tribal cyber-futurism.
 
 A chronicle of resistance by those who refused to be fodder for the Church's experiments. The Papal Throne — patron of reality, clutching power with the demonic hand of dogma.
 
@@ -12,7 +12,7 @@ The technological rupture will unite nations with no shared history — Zaporozh
 
 The blood of cults pulses through the ages, carving out a single truth: war never ends.
 
-### List
+### Saga
 
 - [Part I: Whispers of the Forgotten](/saga-1)
 - [Part II: Ashes of the Beloved](/saga-2)
