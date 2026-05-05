@@ -1,4 +1,4 @@
-#### Dark Fantasy / Action RPG
+#### Cyber Fantasy / Action RPG
 
 # Часть III: Квантовый Скачок
 

@@ -1,4 +1,4 @@
-#### Dark Fantasy / Action RPG
+#### Cyber Fantasy / Action RPG
 
 # Part III: Quantum Leap
 
