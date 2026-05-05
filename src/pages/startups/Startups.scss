@@ -41,6 +41,12 @@
 		&__item {
 			background-color: #141414;
 
+			&:not(:hover) {
+				svg {
+					fill: #d9d9d9;
+				}
+			}
+
 			&:not(:last-child) {
 				margin-right: 15px;
 			}
