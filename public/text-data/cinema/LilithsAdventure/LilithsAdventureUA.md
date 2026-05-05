@@ -1,4 +1,4 @@
-#### Dark Fantasy / Animated Series
+#### Sci-Fi Fantasy / Animated Series
 
 # Пригоди Ліліт
 
