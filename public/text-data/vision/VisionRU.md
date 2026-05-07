@@ -1,6 +1,6 @@
-#### Multifunctional Corporation Vision
+#### Multifunctional Ecosystem Vision
 
-# The Plan
+# The Plan: Another Dimension
 
 ## Предисловие
 
