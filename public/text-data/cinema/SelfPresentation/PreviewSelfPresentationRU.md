@@ -1,4 +1,4 @@
-#### Presentation Tools / Media Formats
+#### Presentation Tools
 
 # Пилотные проекты
 

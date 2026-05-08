@@ -72,7 +72,7 @@
 }
 
 .idea-section {
-	padding: 70px 40px 110px;
+	padding: 80px 40px 120px;
 	display: flex;
 	align-items: flex-start;
 	position: relative;
@@ -80,14 +80,12 @@
 	border-radius: 20px;
 
 	@include tabletBig {
-		border-radius: 20px;
-		max-height: none;
-		height: auto;
 		flex-direction: column-reverse;
 		max-width: $section-width;
 		width: calc(100% - 80px);
+		padding: 0 0 90px;
 		margin: 0 auto;
-		padding: 0 0 100px;
+		border-radius: 20px;
 	}
 
 	@include tabletSmall {
@@ -212,12 +210,12 @@
 
 	h1 {
 		color: $h1-color;
-		font-size: 44px;
-		margin: 0 auto 40px;
+		font-size: 45px;
+		margin: 0 auto 42px;
 
 		@include tablet {
-			margin-bottom: 34px;
-			font-size: 34px;
+			font-size: 35px;
+			margin-bottom: 35px;
 		}
 
 		+ h2 {
@@ -259,9 +257,9 @@
 		margin-bottom: 0;
 		font-size: 15px;
 		line-height: 1.2;
-		margin-bottom: 8px;
+		margin-bottom: 10px;
 		color: $h4-sub-color;
-		letter-spacing: 0.8px;
+		letter-spacing: 1px;
 
 		@include tablet {
 			font-size: 14px;

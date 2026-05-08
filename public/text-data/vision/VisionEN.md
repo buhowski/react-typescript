@@ -1,4 +1,4 @@
-#### Multifunctional Ecosystem Vision
+#### Counterculture Ecosystem
 
 # The Plan: Another Dimension
 

@@ -1,4 +1,4 @@
-#### Core Dimension / Colonization Field
+#### Colonization Field
 
 # Gamedev Concepts
 
