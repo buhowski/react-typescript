@@ -1,6 +1,6 @@
 #### Colonization Field
 
-# Gamedev Concepts
+# Gamedev Dimension
 
 Folk labyrinths, reality trepanation, intellectual sabotage, moral decay — ready-made concepts for video games and complex interactives. A digital dimension with a personality of its own
 
