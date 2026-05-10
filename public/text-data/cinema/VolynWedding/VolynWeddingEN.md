@@ -1,6 +1,6 @@
 #### Action Farce / Movie  
 
-# *Volyn Wedding:* The Groom's Room
+# Volyn Wedding: `The Groom's Room`
 
 ## Logline
 

@@ -1,6 +1,6 @@
 #### Dark Fantasy / Action RPG
 
-# *Shadows of the Cossacks:* Ashes of the Beloved
+# Shadows of the Cossacks: `Ashes of the Beloved`
 
 ***Saga:** Part II*
 

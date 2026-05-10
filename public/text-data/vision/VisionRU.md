@@ -1,6 +1,6 @@
 #### Counterculture Ecosystem
 
-# *The Plan:* Another Dimension
+# The Plan: `Another Dimension`
 
 ## Предисловие
 

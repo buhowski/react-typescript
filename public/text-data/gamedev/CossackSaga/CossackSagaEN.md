@@ -1,6 +1,6 @@
 #### Dark Fantasy / Action RPG Series
 
-# *Shadows of the Cossacks:* The Untold Truth
+# Shadows of the Cossacks: `The Untold Truth`
 
 From pagan shrines and otherworldly beasts, through the demonic baptism of Kyivan Rus and the bloody era of the Cossacks — to the neon tyranny of tribal cyber-futurism.
 
