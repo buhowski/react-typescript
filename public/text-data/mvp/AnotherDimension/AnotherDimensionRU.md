@@ -1,6 +1,6 @@
 #### Magazine / Strategy
 
-# MVP: Another Dimension
+# *MVP:* Another Dimension
 
 ## Текущая позиция
 

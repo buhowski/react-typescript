@@ -1,6 +1,6 @@
 #### Cyber Fantasy / Action RPG
 
-# Shadows of the Cossacks: Quantum Leap
+# *Shadows of the Cossacks:* Quantum Leap
 
 ***Saga:** Part III*
 

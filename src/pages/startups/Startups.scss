@@ -181,14 +181,6 @@
 		}
 	}
 
-	li strong,
-	li b,
-	p strong,
-	p b {
-		font-weight: $bold-weight;
-		color: $bold-color;
-	}
-
 	h1,
 	h2,
 	h3,
@@ -197,9 +189,19 @@
 	h6,
 	a {
 		* {
-			font-style: inherit;
-			font-weight: inherit;
+			font: inherit;
+			letter-spacing: inherit;
+			line-height: inherit;
+			color: inherit;
 		}
+	}
+
+	li strong,
+	li b,
+	p strong,
+	p b {
+		font-weight: $bold-weight;
+		color: $bold-color;
 	}
 
 	h1,
@@ -216,6 +218,15 @@
 		@include tablet {
 			font-size: 35px;
 			margin-bottom: 35px;
+		}
+
+		code {
+			display: inline-block;
+		}
+
+		em,
+		i {
+			display: block;
 		}
 
 		+ h2 {

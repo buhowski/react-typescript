@@ -17,11 +17,12 @@ canvas,
 header,
 nav,
 button,
+code,
 a {
+	font: inherit;
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font: inherit;
 	vertical-align: baseline;
 	text-decoration: none;
 }

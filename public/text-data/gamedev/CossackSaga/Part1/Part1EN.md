@@ -1,6 +1,6 @@
 #### Dark Fantasy / Action RPG
 
-# **Shadows of the Cossacks**: Whispers of the Forgotten
+# *Shadows of the Cossacks:* Whispers of the Forgotten
 
 ***Saga:** Part I*
 
