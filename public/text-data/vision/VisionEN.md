@@ -14,7 +14,7 @@ Looking for partners for creative and business collaboration. Project presentati
 
 - Magazine — the face of the company. Popular magazine — the voice of the majority. Cult magazine — sets the direction of common sense, rather than adapting to bans or restrictions: [Strategy Ready](/mvp)
 - Production — sources of revenue: [Cinema Ready](/cinema) [Gamedev Ready](/gamedev)
-- Profits are reinvested into our own IT technologies — even greater profit: Ideas Ready
+- Profits are reinvested into our own technologies — even greater profit: Ideas Ready
 - Victory!
 
 **Risks:** In the worst-case scenario, we establish a popular magazine with an ad-based model, a donation system, and the development of films and games for sale to other companies. The foundation remains intact, allowing for growth even under critical conditions.
