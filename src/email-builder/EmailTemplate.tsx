@@ -226,7 +226,7 @@ export const EmailBulletList = ({ items }: { items: string[] }) => (
 );
 
 // --- Icons Config ---
-const SITE_URL = 'https://buhowski.netlify.app';
+const SITE_URL = 'https://buhowski.dev';
 const EMAIL_ICONS_URL = `${SITE_URL}/assets/icons`;
 
 export const emailIcons = {
