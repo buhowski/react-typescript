@@ -1,19 +1,25 @@
-# Website Content
+# Code. Culture. Colonization.
 
-## Another Dimension Startup
+## UI/UX | Frontend
 
-### [ Magazine ⋅ Media ⋅ Cinema ⋅ Gamedev ⋅ Technologies ](https://buhowski.dev/vision)
+- [Portfolio](https://buhowski.dev/portfolio)
+- [Resume](https://buhowski.dev/cv)
 
-I want to Create an Information and Entertainment Media Magazine and Transform It into a Company Producing Its Own Technologies
+## Counterculture Ecosystem
 
-## Startup Projects
+I developed the architecture to build an entertainment magazine and scale it into a company that produces its own technologies:
 
-### [ Cinematic Concepts ](https://buhowski.dev/cinema)
+- [Another Dimension](https://buhowski.dev/vision)
 
-### [ Gamedev Concepts ](https://buhowski.dev/gamedev)
+## Colonization Field
 
-### [ Magazine ⋅ Strategy ](https://buhowski.dev/mvp)
+- [Magazine](https://buhowski.dev/mvp)
+- [Cinematic Dimension](https://buhowski.dev/cinema)
+- [Gamedev Dimension](https://buhowski.dev/gamedev)
+- [Presentation Tools](https://buhowski.dev/pilots)
 
-## Front-End Development Portfolio / CV
+## Collaboration
 
-### [ Projects ](https://buhowski.dev/portfolio)
+Outreach letters for co-founders, investors, and partners across media, cinema, gamedev, and tech:
+
+- [Proposals](https://buhowski.dev/mails)
