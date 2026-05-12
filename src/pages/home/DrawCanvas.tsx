@@ -1,4 +1,5 @@
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
+
 import myImage from '../../assets/home/photo.png';
 import illustrationImage from '../../assets/home/photo-drawing.png';
 
@@ -8,80 +9,80 @@ interface Point {
 	y: number;
 }
 
+const POINT_LIFETIME = 1000;
+const MIN_WIDTH = 80;
+const MAX_WIDTH = 80;
+const MAX_SPEED = 200;
+
 const DrawCanvas = () => {
+	const photoContainerRef = useRef<HTMLDivElement>(null);
+	const drawCanvasRef = useRef<HTMLDivElement>(null);
+	const imageRef = useRef<HTMLImageElement>(null);
+
 	useEffect(() => {
+		const photoContainer = photoContainerRef.current;
+		const drawCanvasElement = drawCanvasRef.current;
+		const image = imageRef.current;
+
+		if (!photoContainer || !drawCanvasElement || !image) return;
+
 		const imageCanvas = document.createElement('canvas');
 		const lineCanvas = document.createElement('canvas');
 		const imageCanvasContext = imageCanvas.getContext('2d');
 		const lineCanvasContext = lineCanvas.getContext('2d');
-		const pointLifetime = 1000;
+
+		if (!imageCanvasContext || !lineCanvasContext) return;
+
+		let animationFrameId = 0;
 		let points: Point[] = [];
 
-		const image = document.querySelector('.illustrationImage') as HTMLImageElement;
+		const resizeCanvases = () => {
+			const width = photoContainer.offsetWidth;
+			const height = photoContainer.offsetHeight;
 
-		const start = () => {
-			imageCanvas.addEventListener('mousemove', onMouseMove);
-			imageCanvas.addEventListener('touchmove', onTouchMove, { passive: true });
-			window.addEventListener('resize', resizeCanvases);
-			document.querySelector('.drawCanvas')?.appendChild(imageCanvas);
+			imageCanvas.width = lineCanvas.width = width;
+			imageCanvas.height = lineCanvas.height = height;
+		};
 
-			resizeCanvases();
-			tick();
+		const addPoint = (x: number, y: number) => {
+			const rect = imageCanvas.getBoundingClientRect();
+
+			points.push({
+				time: Date.now(),
+				x: x - rect.left,
+				y: y - rect.top,
+			});
 		};
 
 		const onMouseMove = (event: MouseEvent) => {
-			const rect = imageCanvas.getBoundingClientRect();
-			points.push({
-				time: Date.now(),
-				x: event.pageX - rect.left,
-				y: event.pageY - rect.top,
-			});
+			addPoint(event.clientX, event.clientY);
 		};
 
 		const onTouchMove = (event: TouchEvent) => {
 			const touch = event.targetTouches[0];
-			const rect = imageCanvas.getBoundingClientRect();
-			points.push({
-				time: Date.now(),
-				x: touch.pageX - rect.left,
-				y: touch.pageY - rect.top,
-			});
-		};
 
-		const resizeCanvases = () => {
-			const photoContainer = document.querySelector('.photoContainer') as HTMLElement;
-			if (imageCanvas && lineCanvas && photoContainer) {
-				imageCanvas.width = lineCanvas.width = photoContainer.offsetWidth || 0;
-				imageCanvas.height = lineCanvas.height = photoContainer.offsetHeight || 0;
-			}
-		};
+			if (!touch) return;
 
-		const tick = () => {
-			points = points.filter((point) => Date.now() - point.time < pointLifetime);
-			drawLineCanvas();
-			drawImageCanvas();
-			requestAnimationFrame(tick);
+			addPoint(touch.clientX, touch.clientY);
 		};
 
 		const drawLineCanvas = () => {
-			const minWidth = 80;
-			const maxWidth = 80;
-			const maxSpeed = 200;
-			if (!lineCanvasContext) return;
-
 			lineCanvasContext.clearRect(0, 0, lineCanvas.width, lineCanvas.height);
 			lineCanvasContext.lineCap = 'round';
+			lineCanvasContext.lineJoin = 'round';
 
 			for (let i = 1; i < points.length; i++) {
 				const point = points[i];
 				const prev = points[i - 1];
 				const dist = Math.hypot(point.x - prev.x, point.y - prev.y);
-				const speed = Math.max(0, Math.min(maxSpeed, dist));
-				const percWidth = (maxSpeed - speed) / maxSpeed;
-				lineCanvasContext.lineWidth = minWidth + percWidth * (maxWidth - minWidth);
+				const speed = Math.max(0, Math.min(MAX_SPEED, dist));
+				const percWidth = (MAX_SPEED - speed) / MAX_SPEED;
+
+				lineCanvasContext.lineWidth = MIN_WIDTH + percWidth * (MAX_WIDTH - MIN_WIDTH);
 
 				const age = Date.now() - point.time;
-				const opacity = (pointLifetime - age) / pointLifetime;
+				const opacity = (POINT_LIFETIME - age) / POINT_LIFETIME;
+
 				lineCanvasContext.strokeStyle = `rgba(0,0,0,${opacity})`;
 
 				lineCanvasContext.beginPath();
@@ -92,35 +93,73 @@ const DrawCanvas = () => {
 		};
 
 		const drawImageCanvas = () => {
-			if (!imageCanvasContext || !image) return;
-			const drawCanvasElement = document.querySelector('.drawCanvas') as HTMLElement;
-			if (!drawCanvasElement) return;
-
-			imageCanvas.width = drawCanvasElement.offsetWidth || 0;
-			imageCanvas.height = drawCanvasElement.offsetHeight || 0;
+			imageCanvasContext.clearRect(0, 0, imageCanvas.width, imageCanvas.height);
 
 			let width = imageCanvas.width;
 			let height = (imageCanvas.width / image.naturalWidth) * image.naturalHeight;
+
 			if (height < imageCanvas.height) {
 				width = (imageCanvas.height / image.naturalHeight) * image.naturalWidth;
+
 				height = imageCanvas.height;
 			}
 
-			imageCanvasContext.clearRect(0, 0, width, height);
 			imageCanvasContext.globalCompositeOperation = 'source-over';
 			imageCanvasContext.drawImage(image, 0, 0, width, height);
 			imageCanvasContext.globalCompositeOperation = 'destination-in';
 			imageCanvasContext.drawImage(lineCanvas, 0, 0);
 		};
 
-		if (image && image.complete) start();
-		else if (image) image.onload = start;
+		const tick = () => {
+			const now = Date.now();
+
+			points = points.filter((point) => now - point.time < POINT_LIFETIME);
+
+			drawLineCanvas();
+			drawImageCanvas();
+
+			animationFrameId = requestAnimationFrame(tick);
+		};
+
+		const start = () => {
+			drawCanvasElement.appendChild(imageCanvas);
+			imageCanvas.addEventListener('mousemove', onMouseMove);
+			imageCanvas.addEventListener('touchmove', onTouchMove, {
+				passive: true,
+			});
+
+			window.addEventListener('resize', resizeCanvases);
+
+			resizeCanvases();
+			tick();
+		};
+
+		if (image.complete) {
+			start();
+		} else {
+			image.onload = start;
+		}
+
+		return () => {
+			cancelAnimationFrame(animationFrameId);
+			imageCanvas.removeEventListener('mousemove', onMouseMove);
+			imageCanvas.removeEventListener('touchmove', onTouchMove);
+			window.removeEventListener('resize', resizeCanvases);
+			imageCanvas.remove();
+		};
 	}, []);
 
 	return (
-		<div className='photoContainer'>
-			<div className='drawCanvas' style={{ backgroundImage: `url(${myImage})` }}>
+		<div ref={photoContainerRef} className='photoContainer'>
+			<div
+				ref={drawCanvasRef}
+				className='drawCanvas'
+				style={{
+					backgroundImage: `url(${myImage})`,
+				}}
+			>
 				<img
+					ref={imageRef}
 					className='illustrationImage'
 					src={illustrationImage}
 					alt='Hand-drawn digital portrait illustration of Tsiomakh Olexandr (Цьомах Олександр Віталійович), Frontend Developer, Writer, and Screenwriter'

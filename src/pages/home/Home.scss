@@ -3,6 +3,7 @@
 .home-wrapper {
 	display: flex;
 	min-height: calc(100dvh - 90px);
+	overflow: visible;
 
 	@include tablet {
 		min-height: calc(100dvh - 80px);
@@ -109,7 +110,7 @@ canvas {
 	background-position: top;
 	padding-bottom: 82.6%;
 	position: relative;
-	filter: drop-shadow(0 0 5px rgba($color: $darkest, $alpha: 0.8));
+	filter: drop-shadow(0 -1px 5px rgba(#000000, 0.5));
 	overflow: hidden;
 
 	canvas,
