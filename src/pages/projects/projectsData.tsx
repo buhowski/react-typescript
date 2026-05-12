@@ -17,7 +17,7 @@ const projectsData = [
 		url: pathToVision,
 		urlCode: 'https://github.com/buhowski/react-typescript',
 		name: 'Media Ecosystem',
-		description: `Designed and developed a high-performance SPA from scratch`,
+		description: `Designed and developed a high-performance multilingual SPA from scratch`,
 		skills: ['React', 'TypeScript', 'SCSS', 'PWA', 'SEO', 'UI/UX'],
 		alt: 'Screenshot of My Startups project homepage showcasing startup business plans, full development cycle execution, React and TypeScript programming, UI/UX design, creative scripting, genius-level problem solving, strategic brainstorming, innovative design systems, SCSS styling, SEO optimization, Progressive Web App functionality, media innovation, tech entrepreneurship, interactive digital solutions, inventive coding, forward-thinking creative projects',
 	},
