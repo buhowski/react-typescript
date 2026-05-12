@@ -3,7 +3,7 @@ import bgEnde from './images/ende.jpg';
 import bgFaberAcademy from './images/faber-academy.jpeg';
 import bgFaberBooks from './images/faber.jpg';
 import bgBentley from './images/bentley.jpg';
-import bgStartup from './images/startup.jpg';
+import bgStartup from './images/startup.webp';
 import nascentdesign from './images/nascent.jpg';
 import sendpotion from './images/sendpotion.jpg';
 import hbv from './images/hbv.jpg';
@@ -16,9 +16,9 @@ const projectsData = [
 		img: bgStartup,
 		url: pathToVision,
 		urlCode: 'https://github.com/buhowski/react-typescript',
-		name: 'Countercultural OS of Reality',
-		description: `Scalable ecosystem for a multifunctional corporation: Magazine ⋅ Media ⋅ Cinema ⋅ Gamedev ⋅ Tech`,
-		skills: ['React', 'TypeScript', 'SCSS', 'PWA', 'SEO', 'Design'],
+		name: 'Media Ecosystem',
+		description: `Designed and developed a high-performance SPA from scratch`,
+		skills: ['React', 'TypeScript', 'SCSS', 'PWA', 'SEO', 'UI/UX'],
 		alt: 'Screenshot of My Startups project homepage showcasing startup business plans, full development cycle execution, React and TypeScript programming, UI/UX design, creative scripting, genius-level problem solving, strategic brainstorming, innovative design systems, SCSS styling, SEO optimization, Progressive Web App functionality, media innovation, tech entrepreneurship, interactive digital solutions, inventive coding, forward-thinking creative projects',
 	},
 
