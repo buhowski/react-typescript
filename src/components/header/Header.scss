@@ -121,11 +121,12 @@
 		}
 
 		.nav-link {
-			min-width: 235px;
+			min-width: 215px;
 			padding-top: 15px;
 			padding-bottom: 15px;
-			border: 1px solid rgba(#61676d, 0.4);
-			background-color: rgba(#000000, 0.16);
+			border: 1px solid rgba(#61676d, 0.55);
+			background-color: rgba(#000000, 0.25);
+			box-shadow: 0 0 5px rgba(#000000, 0.65);
 			transition:
 				border-color 0.25s,
 				background-color 0.25s,

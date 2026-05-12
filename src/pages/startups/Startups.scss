@@ -39,8 +39,6 @@
 	.contact-menu {
 		// .contact-menu__item
 		&__item {
-			background-color: #141414;
-
 			&:not(:hover) {
 				svg {
 					fill: $bold-color;
