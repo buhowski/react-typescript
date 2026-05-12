@@ -35,7 +35,8 @@ $scrollbar-mob-width: 2px;
 }
 
 body {
-	color: #ffffff;
+	// color: #ffffff;
+	color: $text-color-main;
 	font-family: $font-primary;
 	position: relative;
 }

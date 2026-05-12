@@ -22,7 +22,6 @@
 }
 
 .logo-link {
-	color: #fff;
 	padding: 15px 0;
 	width: 195px;
 
@@ -126,6 +125,7 @@
 			padding-bottom: 15px;
 			border: 1px solid rgba(#61676d, 0.5);
 			background-color: rgba(#000000, 0.25);
+			background: linear-gradient(160deg, #1b1b1b, #141414);
 			box-shadow: 0 0 3px rgba(#000000, 0.8);
 			transition:
 				border-color 0.25s,
