@@ -26,7 +26,7 @@ const projectsData = [
 		img: mb,
 		url: 'https://markbuchananproperty.co.uk/',
 		name: 'Mark Buchanan',
-		description: '2025 | Conversion‑focused WordPress online store with responsive UI/UX',
+		description: '2025 | Conversion‑focused WordPress e‑commerce with responsive UI/UX',
 		skills: ['JavaScript', 'SCSS', 'WordPress', 'PHP'],
 		alt: 'Screenshot of Mark Buchanan property website homepage',
 	},
