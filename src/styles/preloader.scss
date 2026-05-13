@@ -1,3 +1,5 @@
+@import '../styles/variables';
+
 @keyframes loaderSpinner {
 	0%,
 	100%,
@@ -18,7 +20,7 @@ $spinTime: 0.9s;
 	z-index: 10000;
 	width: 100%;
 	height: 100%;
-	background-color: #202020;
+	background-color: $bg-main;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -44,7 +46,7 @@ $spinTime: 0.9s;
 				width: 2px;
 				height: 16px;
 				border-radius: 20px;
-				background-color: #ffffff;
+				background-color: $color-main;
 			}
 
 			@for $i from 1 through 12 {
