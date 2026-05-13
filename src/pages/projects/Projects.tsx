@@ -86,9 +86,9 @@ const Projects = () => {
 														href={url}
 														target='_blank'
 														rel='noopener noreferrer'
-														className='nav-link'
+														className='project-description__action'
 													>
-														Demo
+														LIVE
 													</a>
 												)}
 
@@ -97,14 +97,14 @@ const Projects = () => {
 														href={urlCode}
 														target='_blank'
 														rel='noopener noreferrer'
-														className='nav-link'
+														className='project-description__action'
 													>
 														Code
 													</a>
 												)}
 											</div>
 
-											{skills && <p className='project-description__title'>Skills:</p>}
+											{skills && <p className='project-description__title'>Skills</p>}
 
 											<div className='project-description__items'>
 												{skills?.map((skill, i) => (

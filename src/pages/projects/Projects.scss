@@ -108,8 +108,8 @@
 	top: 13%;
 	left: 0;
 	width: 100%;
-	background-color: rgba(#000000, 0.78);
-	backdrop-filter: blur(4px);
+	background-color: rgba(#000000, 0.8);
+	backdrop-filter: blur(8px);
 	box-shadow: 0 0 10px #000000;
 	border: 2px solid #61676d;
 	border-radius: 20px;
@@ -127,9 +127,9 @@
 	&__name {
 		color: $h1-color;
 		font-family: $LouisGeorgeCafBold;
-		letter-spacing: 1.5px;
+		letter-spacing: 1.2px;
 		margin-bottom: 25px;
-		font-size: 19px;
+		font-size: 21px;
 
 		span {
 			animation: LowLine 0.4s infinite;
@@ -138,47 +138,51 @@
 
 	// .project-description__text
 	&__text {
-		margin-bottom: 45px;
-		color: $text-color;
-		font-size: 15px;
+		margin-bottom: 35px;
 		line-height: 1.5;
 	}
 
 	// .project-description__actions
 	&__actions {
 		display: flex;
-		margin-bottom: 45px;
 		justify-content: center;
-		gap: 30px;
+		margin-bottom: 35px;
+		justify-content: center;
+		gap: 20px;
+	}
 
-		.nav-link {
-			padding: 10px 6px 10px 9px;
-			flex-grow: 1;
-			max-width: 60%;
-			border-radius: 5px;
-			transition: color 0.25s;
-			font-size: 17px;
-			letter-spacing: 2px;
-			transition: transform 0.2s;
-			box-shadow: 0 0 5px #000000;
+	&__action {
+		text-align: center;
+		font-family: $LouisGeorgeCafBold;
+		text-transform: uppercase;
+		padding: 8px 10px;
+		flex-grow: 1;
+		width: 100%;
+		max-width: 130px;
+		letter-spacing: 0.8px;
+		box-shadow: 1px 1px 4px #000000;
+		border: 1px solid rgba($link-color, 0.46);
+		border-radius: 100px;
+		background-color: rgba(#000000, 0.4);
+		color: $link-color;
+		transition:
+			box-shadow 0.26s,
+			background-color 0.26s,
+			color 0.26s;
 
-			&::after {
-				height: 100%;
-				background: $bg-gradient;
-			}
-
-			&:hover {
-				transform: scale(1.1);
-			}
+		&:hover {
+			background-color: $link-color;
+			color: #000000;
+			box-shadow: 0 0 12px #000000;
 		}
 	}
 
+	// .project-description__title
 	&__title {
 		color: $h3-color;
-		font-family: $LouisGeorgeCaf;
-		font-weight: 600;
-		letter-spacing: 2px;
-		font-size: 15px;
+		font-family: $LouisGeorgeCafBold;
+		letter-spacing: 1.2px;
+		text-transform: uppercase;
 	}
 
 	// .project-description__items
@@ -186,8 +190,8 @@
 		font-family: $LouisGeorgeCaf;
 		display: flex;
 		flex-wrap: wrap;
-		gap: 6px;
-		margin-top: 10px;
+		gap: 7px;
+		margin-top: 12px;
 
 		span {
 			display: inline-block;

@@ -63,17 +63,6 @@ $link-color: #55aadd;
 	background-color: rgba(#000000, 1);
 }
 
-@mixin social_hover {
-	> .title {
-		opacity: 1;
-		transform: translateX(-55%) rotate(-5deg);
-	}
-
-	svg {
-		fill: $blue-main;
-	}
-}
-
 // More BTM
 @mixin btn-more_decor($color: $h1-color, $size: 12px, $offset: -1px, $bdr: 1px solid $color) {
 	border: 1px solid rgba($color, 0.4);

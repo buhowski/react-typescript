@@ -27,7 +27,14 @@
 		}
 
 		&:hover {
-			@include social_hover;
+			> .title {
+				opacity: 1;
+				transform: translateX(-55%) rotate(-5deg);
+			}
+
+			svg {
+				fill: $blue-main;
+			}
 		}
 
 		&:active {
@@ -44,12 +51,12 @@
 	svg {
 		fill: $color-main;
 		transition: fill 0.25s;
+		transform: translateZ(0);
 	}
 
 	.title {
 		font-family: $indie;
 		color: $blue-main;
-		backface-visibility: hidden;
 		position: absolute;
 		top: -35px;
 		left: 50%;
@@ -60,5 +67,6 @@
 			transform 0.25s;
 		white-space: nowrap;
 		font-size: 21px;
+		will-change: transform, opacity;
 	}
 }

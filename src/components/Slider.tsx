@@ -50,6 +50,7 @@ const VideoPreview: React.FC<VideoPreviewProps> = ({
 		{itemPoster && <img src={itemPoster} alt={itemAlt} onLoad={onLoad} />}
 
 		<p className='video-preview__title'>{itemCaption}</p>
+
 		{playIcon}
 	</div>
 );
@@ -228,6 +229,7 @@ const Slider: React.FC<SliderProps> = ({ slides }) => {
 										alt={currentSlide.itemAlt}
 										onLoad={handleContentLoad}
 									/>
+
 									{currentSlide.putImgTitle && (
 										<p className='video-preview__title'>{currentSlide.itemCaption}</p>
 									)}
