@@ -281,7 +281,7 @@ $bg-active-lang: #41355c;
 }
 
 @mixin mobileSmall {
-	@media screen and (max-width: 359px) {
+	@media screen and (max-width: 360px) {
 		@content;
 	}
 }

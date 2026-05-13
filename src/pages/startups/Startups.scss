@@ -412,6 +412,10 @@
 			margin: 5px 3px 6px;
 		}
 	}
+
+	> *:last-child {
+		margin-bottom: 0;
+	}
 }
 
 .lang-sidebar {
@@ -729,11 +733,11 @@
 		background-color: rgba(#000000, 0.8);
 
 		@include tabletBig {
-			padding: 13px 40px;
+			padding: 10px 40px;
 		}
 
 		@include tabletSmall {
-			padding: 6px 15px;
+			padding: 8px 15px 5px;
 		}
 	}
 }

@@ -35,7 +35,7 @@ $scrollbar-mob-width: 2px;
 }
 
 body {
-	// color: #ffffff;
+	min-width: 320px;
 	color: $color-main;
 	font-family: $font-primary;
 	position: relative;
@@ -131,10 +131,6 @@ svg {
 
 	@include mobile {
 		margin-top: 35px;
-	}
-
-	@include mobileSmall {
-		font-size: 35px;
 	}
 }
 

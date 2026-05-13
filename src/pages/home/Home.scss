@@ -26,12 +26,11 @@
 	}
 
 	@include tablet {
-		margin-bottom: 30px;
+		margin-bottom: 40px;
 	}
 
 	@include tabletSmall {
 		width: 100%;
-		margin-bottom: 5px;
 		margin-top: 35px;
 	}
 
@@ -40,6 +39,7 @@
 		font-size: 80px;
 		font-size: clamp(64px, 5vw, 98px);
 		margin-bottom: min(5vh, 60px);
+		line-height: 1.32;
 
 		@include tabletSmall {
 			font-size: 44px;
@@ -97,7 +97,6 @@ canvas {
 	@include tabletSmall {
 		width: calc(100% + 30px);
 		margin-left: -15px;
-		margin-top: 30px;
 	}
 
 	canvas {
