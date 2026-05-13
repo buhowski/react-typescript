@@ -19,7 +19,7 @@ $blue-darkest: #001a3a;
 
 $red: #af0303;
 
-$photo-shadows: drop-shadow(0 0 5px rgba(#000000, 0.3)) drop-shadow(0 2px 8px rgba(#000000, 0.25));
+$photo-shadows: drop-shadow(0 0 5px rgba(#000000, 0.15)) drop-shadow(0 1px 12px rgba(#000000, 0.2));
 
 $bg-gradient:
 	radial-gradient(ellipse at 80% 80%, rgba($blue-light, 0.3) 0%, transparent 50%),
@@ -107,7 +107,7 @@ $slider-actions-color: #745a81;
 // Lang bar
 $radius-lang: 100px;
 $bg-color-lang: #a69d9d;
-$bg-active-lang: #41355c;
+$bg-active-lang: #4b4063;
 
 // nav burger icon
 @mixin burgerIcon($burger-width: 40px, $burger-height: 25px, $border-width: 3px) {
