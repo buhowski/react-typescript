@@ -9,16 +9,17 @@ $font-raleway: 'Raleway', sans-serif;
 
 // $colors: #9400ff #37ff8b;
 $bg-main: #202020;
-$bg-darker: #1d1d1d;
-// $bg-darker: #181818;
-$darkest: #111111;
+$bg-darker: #1b1b1b;
 $color-main: #e0e0e0;
+
 $blue-light: #1fa9ff;
 $blue-main: #0074ff;
 $blue-deep: #00488b;
 $blue-darkest: #001a3a;
 
 $red: #af0303;
+
+$photo-shadows: drop-shadow(0 0 4px rgba(#000000, 0.25)) drop-shadow(0 2px 10px rgba(#000000, 0.2));
 
 $bg-gradient:
 	radial-gradient(ellipse at 80% 80%, rgba($blue-light, 0.3) 0%, transparent 50%),
@@ -47,6 +48,15 @@ $text-color: #d4d4d4;
 $bold-color: #e2e2e2;
 
 $link-color: #55aadd;
+
+@mixin startup-nav-shadows {
+	border-radius: 10px;
+	background-color: #000000;
+	box-shadow:
+		0 2px 4px rgba(#000000, 0.45),
+		0 0 5px rgba($toc-title-color, 0.2),
+		0 4px 10px rgba(#000000, 0.65);
+}
 
 @mixin hover-text-link {
 	color: $h1-color;
@@ -109,7 +119,7 @@ $slider-actions-color: #745a81;
 // Lang bar
 $radius-lang: 100px;
 $bg-color-lang: #a69d9d;
-$bg-active-lang: #4e3e6f;
+$bg-active-lang: #41355c;
 
 // nav burger icon
 @mixin burgerIcon($burger-width: 40px, $burger-height: 25px, $border-width: 3px) {

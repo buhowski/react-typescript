@@ -1,5 +1,4 @@
 import { useState, useEffect, useCallback, useRef, useMemo } from 'react';
-import Copyright from './Copyright';
 import PopupContacts from './PopupContacts';
 import { useTabletLargeQuery } from '../config/useMediaQuery';
 import { playIcon } from '../assets/svg/playIcon';
@@ -49,6 +48,7 @@ const VideoPreview: React.FC<VideoPreviewProps> = ({
 }) => (
 	<div className='video-preview' onClick={onClick}>
 		{itemPoster && <img src={itemPoster} alt={itemAlt} onLoad={onLoad} />}
+
 		<p className='video-preview__title'>{itemCaption}</p>
 		{playIcon}
 	</div>
@@ -73,7 +73,7 @@ const Slider: React.FC<SliderProps> = ({ slides }) => {
 				if (iframeRef.current)
 					iframeRef.current.contentWindow?.postMessage(
 						'{"event":"command","func":"pauseVideo","args":""}',
-						'*'
+						'*',
 					);
 			},
 			resetVideo: () => {
@@ -87,7 +87,7 @@ const Slider: React.FC<SliderProps> = ({ slides }) => {
 				setIsPlayingVideo(false);
 			},
 		}),
-		[]
+		[],
 	);
 
 	const currentSlide = useMemo(() => {
@@ -153,7 +153,6 @@ const Slider: React.FC<SliderProps> = ({ slides }) => {
 		sliderInnerContent = (
 			<div className='slider-wrapper disabled'>
 				<div className='slider-wrapper__empty slider-js'>No Examples Yet</div>
-				<div className='slider-actions'>{!useTabletLarge && <Copyright />}</div>
 			</div>
 		);
 	} else {
@@ -162,19 +161,18 @@ const Slider: React.FC<SliderProps> = ({ slides }) => {
 				'Slider: currentSlide is unexpectedly undefined after validation. Index:',
 				activeIndex,
 				' Slides:',
-				slides
+				slides,
 			);
 			sliderInnerContent = (
 				<div className='slider-wrapper disabled'>
 					<div className='slider-wrapper__empty slider-js'>Error loading content</div>
-					<div className='slider-actions'>{!useTabletLarge && <Copyright />}</div>
 				</div>
 			);
 		} else {
 			const isVideo = isYouTubeUrl(currentSlide.itemSrc) || isDirectVideoFile(currentSlide.itemSrc);
 
 			sliderInnerContent = (
-				<div className={`slider-wrapper ${slides.length > 1 ? '' : 'disabled'}`}>
+				<div className={`slider-wrapper`}>
 					<div className='idea-slider slider-js'>
 						{isContentLoading && !isPlayingVideo && (
 							<div className='slider-loader'>
@@ -237,32 +235,32 @@ const Slider: React.FC<SliderProps> = ({ slides }) => {
 							)}
 						</div>
 					</div>
-					<div className='slider-actions'>
-						{!useTabletLarge && <Copyright />}
-						<button
-							className='slider-btn-js slider-btn-js-prev'
-							type='button'
-							aria-label='Go to previous slide'
-							onClick={handlePrevWithLoader}
-							disabled={slides.length <= 1}
-						>
-							<i className='chevron' />
-						</button>
-						<span className='slides-number h2'>
-							{`${activeIndex + 1 < 10 ? '0' : ''}${activeIndex + 1} / ${
-								slides.length < 10 ? '0' : ''
-							}${slides.length}`}
-						</span>
-						<button
-							className='slider-btn-js slider-btn-js-next'
-							type='button'
-							aria-label='Go to next slide'
-							onClick={handleNextWithLoader}
-							disabled={slides.length <= 1}
-						>
-							<i className='chevron' />
-						</button>
-					</div>
+
+					{slides.length > 1 && (
+						<div className='slider-actions'>
+							<button
+								className='slider-btn-js slider-btn-js-prev'
+								type='button'
+								aria-label='Go to previous slide'
+								onClick={handlePrevWithLoader}
+							>
+								<i className='chevron' />
+							</button>
+							<span className='slides-number h2'>
+								{`${activeIndex + 1 < 10 ? '0' : ''}${activeIndex + 1} / ${
+									slides.length < 10 ? '0' : ''
+								}${slides.length}`}
+							</span>
+							<button
+								className='slider-btn-js slider-btn-js-next'
+								type='button'
+								aria-label='Go to next slide'
+								onClick={handleNextWithLoader}
+							>
+								<i className='chevron' />
+							</button>
+						</div>
+					)}
 				</div>
 			);
 		}

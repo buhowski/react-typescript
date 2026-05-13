@@ -45,16 +45,15 @@
 	transition: transform 0.2s;
 
 	@include tabletBig {
+		padding: 10px 16px;
+		margin: 0;
 		position: fixed;
 		top: auto;
-		bottom: 23px;
-		left: 0;
-		padding: 10px 17px;
-		border-radius: 0 10px 10px 0;
-		margin: 0;
-		background-color: #000000;
-		box-shadow: 0 0 2px #000000;
+		bottom: 25px;
+		left: 30px;
+
 		z-index: 10;
+		@include startup-nav-shadows;
 
 		span {
 			display: none;
@@ -62,6 +61,7 @@
 	}
 
 	@include tabletSmall {
+		left: 14px;
 		bottom: 15px;
 	}
 
@@ -387,7 +387,7 @@ $nav-top: 2px;
 		width: $lang-btn-width;
 		padding: 14px 10px 13px;
 		line-height: 1;
-		color: #000;
+		color: #000000;
 		font-weight: bold;
 		transition:
 			color 0.2s,

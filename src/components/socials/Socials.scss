@@ -14,11 +14,8 @@
 		height: 60px;
 		border-radius: 50%;
 		position: relative;
-		// background-color: $bg-darker;
-		background: linear-gradient(160deg, #262626, #161616);
-		box-shadow:
-			0.5px 1px 3px rgba(#000000, 0.5),
-			0.5px 3px 6px rgba(#000000, 0.3);
+		background-color: $bg-darker;
+		box-shadow: 0 1px 2px rgba(#000000, 0.5);
 		transition: transform 0.2s;
 
 		@include tabletBig {
@@ -54,7 +51,7 @@
 		color: $blue-main;
 		backface-visibility: hidden;
 		position: absolute;
-		top: -30px;
+		top: -35px;
 		left: 50%;
 		transform: translateX(-35%) rotate(0deg);
 		opacity: 0;

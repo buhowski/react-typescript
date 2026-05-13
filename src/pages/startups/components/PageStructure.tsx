@@ -159,63 +159,65 @@ const PageStructure: React.FC<SinglePageProps> = ({ pageData, backButtonPath, in
 	}, [handleScrollUpdateSlider, initialLangReady, contentToRender]);
 
 	useEffect(() => {
-		if (useTabletLarge && initialLangReady && contentToRender.length) {
+		if (initialLangReady && contentToRender.length) {
 			const timer = setTimeout(() => setCanRenderCopyright(true), 1000);
 
 			return () => clearTimeout(timer);
 		}
-	}, [initialLangReady, contentToRender, useTabletLarge]);
+	}, [initialLangReady, contentToRender]);
 
 	return (
 		<VideoPlaybackProvider>
 			<div className='wrapper wrapper--idea'>
 				<div className='idea-section'>
-					<div className='idea-info' lang={htmlLangMap[currentLang]}>
-						{initialLangReady &&
-							contentToRender.map((structure, index) => {
-								const fallbackFilmsPreview = pageData.en?.[index]?.pagePreviewUrl;
+					<div className='idea-section__inner'>
+						<div className='idea-info' lang={htmlLangMap[currentLang]}>
+							{initialLangReady &&
+								contentToRender.map((structure, index) => {
+									const fallbackFilmsPreview = pageData.en?.[index]?.pagePreviewUrl;
 
-								return (
-									<PitchContainer
-										key={index}
-										index={index}
-										ref={(el) => (pitchRefs.current[index] = el)}
-										structure={{
-											...structure,
-											pagePreviewUrl: structure.pagePreviewUrl || fallbackFilmsPreview,
-										}}
-										currentLanguage={currentLang}
-										sliderContent={structure.sliderContent}
-										onHeadingsExtracted={handleHeadingsExtractedWithLoading}
-									/>
-								);
-							})}
+									return (
+										<PitchContainer
+											key={index}
+											index={index}
+											ref={(el) => (pitchRefs.current[index] = el)}
+											structure={{
+												...structure,
+												pagePreviewUrl: structure.pagePreviewUrl || fallbackFilmsPreview,
+											}}
+											currentLanguage={currentLang}
+											sliderContent={structure.sliderContent}
+											onHeadingsExtracted={handleHeadingsExtractedWithLoading}
+										/>
+									);
+								})}
 
-						{useTabletLarge && (
-							<div className='copy-tablet'>
-								{canRenderCopyright && <Copyright />}
-
-								<PopupContacts />
-							</div>
-						)}
-					</div>
-
-					<div className='lang-sidebar lang-sidebar--has-toc'>
-						<TableOfContent
-							activeHeadingId={activeHeadingId}
-							onSelectIndex={handleTableOfContentSelect}
-							headings={sortedHeadings}
-							isLoadingContent={isContentLoading}
-							changeLanguage={changeLanguage}
-							currentLang={currentLang}
-						/>
-
-						<div className='desktop-slider'>
-							{!useTabletLarge && (
-								<Slider slides={currentDesktopSliderContent} currentLanguage={currentLang} />
+							{useTabletLarge && (
+								<div className='copy-tablet'>
+									<PopupContacts />
+								</div>
 							)}
 						</div>
+
+						<div className='lang-sidebar lang-sidebar--has-toc'>
+							<TableOfContent
+								activeHeadingId={activeHeadingId}
+								onSelectIndex={handleTableOfContentSelect}
+								headings={sortedHeadings}
+								isLoadingContent={isContentLoading}
+								changeLanguage={changeLanguage}
+								currentLang={currentLang}
+							/>
+
+							<div className='desktop-slider'>
+								{!useTabletLarge && (
+									<Slider slides={currentDesktopSliderContent} currentLanguage={currentLang} />
+								)}
+							</div>
+						</div>
 					</div>
+
+					<div className='copyright-wrapper'>{canRenderCopyright && <Copyright />}</div>
 
 					{useTabletLarge && backButtonPath && <BackButton to={backButtonPath} />}
 				</div>

@@ -86,15 +86,13 @@ $toc-hover-color: #fff;
 		}
 
 		@include tabletBig {
-			border-radius: 6px;
 			width: fit-content;
+			padding: 14px 16px;
 			position: fixed;
 			bottom: 25px;
 			right: 30px;
 			z-index: 100;
-			padding: 14px 16px;
-			box-shadow: 0 0 2px #000000;
-			background-color: #000000;
+			@include startup-nav-shadows;
 
 			> h3 {
 				display: none;
@@ -103,7 +101,7 @@ $toc-hover-color: #fff;
 
 		@include tabletSmall {
 			bottom: 15px;
-			right: 15px;
+			right: 14px;
 		}
 
 		mark {
