@@ -9,9 +9,9 @@ interface Point {
 	y: number;
 }
 
-const POINT_LIFETIME = 950;
+const POINT_LIFETIME = 1000;
 const BRUSH_WIDTH = 96;
-const MIN_DIST = 1;
+const MIN_DIST = 2;
 
 export default function DrawCanvas() {
 	const containerRef = useRef<HTMLDivElement>(null);
@@ -32,7 +32,6 @@ export default function DrawCanvas() {
 
 		if (!ctx || !maskCtx) return;
 
-		const dpr = window.devicePixelRatio || 1;
 		let rafId = 0;
 		let points: Point[] = [];
 		let width = 0;
@@ -45,20 +44,22 @@ export default function DrawCanvas() {
 			height = container.offsetHeight;
 
 			[canvas, mask].forEach((c) => {
-				c.width = width * dpr;
-				c.height = height * dpr;
+				c.width = width;
+				c.height = height;
 				c.style.width = `${width}px`;
 				c.style.height = `${height}px`;
 			});
-
-			ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-			maskCtx.setTransform(dpr, 0, 0, dpr, 0, 0);
 		};
 
-		const addPoint = (clientX: number, clientY: number) => {
+		const addPoint = (clientX: number, clientY: number, isNewStroke = false) => {
 			const rect = canvas.getBoundingClientRect();
 			const x = clientX - rect.left;
 			const y = clientY - rect.top;
+
+			if (isNewStroke) {
+				lastX = null;
+				lastY = null;
+			}
 
 			if (lastX !== null && lastY !== null) {
 				const dx = x - lastX;
@@ -75,7 +76,7 @@ export default function DrawCanvas() {
 
 		const onTouchStart = (e: TouchEvent) => {
 			const touch = e.touches[0];
-			if (touch) addPoint(touch.clientX, touch.clientY);
+			if (touch) addPoint(touch.clientX, touch.clientY, true);
 		};
 
 		const onTouchMove = (e: TouchEvent) => {
@@ -123,7 +124,8 @@ export default function DrawCanvas() {
 			}
 
 			ctx.globalCompositeOperation = 'source-over';
-			ctx.drawImage(image, 0, 0, imgW, imgH);
+			ctx.drawImage(image, (width - imgW) / 2, (height - imgH) / 2, imgW, imgH);
+
 			ctx.globalCompositeOperation = 'destination-in';
 			ctx.drawImage(mask, 0, 0, width, height);
 		};
