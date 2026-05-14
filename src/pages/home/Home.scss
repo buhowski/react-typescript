@@ -111,12 +111,15 @@ canvas {
 	padding-bottom: 82.6%;
 	position: relative;
 	filter: $photo-shadows;
+	opacity: 0.97;
 
 	canvas,
 	.illustrationImage {
 		position: absolute;
 		top: 0;
 		left: 0;
+		transform: translateZ(0);
+		backface-visibility: hidden;
 	}
 
 	.illustrationImage {
