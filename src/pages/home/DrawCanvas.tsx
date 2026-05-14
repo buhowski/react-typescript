@@ -3,15 +3,16 @@ import { useEffect, useRef } from 'react';
 import myImage from '../../assets/home/photo.png';
 import illustrationImage from '../../assets/home/photo-drawing.png';
 
-// COMPONENT: brush reveal — illustration appears on mousemove/touch over photo
 interface Point {
 	time: number;
 	x: number;
 	y: number;
 }
 
-const POINT_LIFETIME = 900; // Speed follow, ms
-const BRUSH_WIDTH = 95; // brush size
+const POINT_LIFETIME = 1000;
+const MIN_WIDTH = 80;
+const MAX_WIDTH = 80;
+const MAX_SPEED = 200;
 
 const DrawCanvas = () => {
 	const photoContainerRef = useRef<HTMLDivElement>(null);
@@ -27,110 +28,108 @@ const DrawCanvas = () => {
 
 		const imageCanvas = document.createElement('canvas');
 		const lineCanvas = document.createElement('canvas');
-		const imageCtx = imageCanvas.getContext('2d');
-		const lineCtx = lineCanvas.getContext('2d');
+		const imageCanvasContext = imageCanvas.getContext('2d');
+		const lineCanvasContext = lineCanvas.getContext('2d');
 
-		if (!imageCtx || !lineCtx) return;
+		if (!imageCanvasContext || !lineCanvasContext) return;
 
-		const dpr = window.devicePixelRatio || 1;
 		let animationFrameId = 0;
 		let points: Point[] = [];
 
-		// FUNCTION: resize both canvases to container size with DPR
 		const resizeCanvases = () => {
-			const w = photoContainer.offsetWidth;
-			const h = photoContainer.offsetHeight;
+			const width = photoContainer.offsetWidth;
+			const height = photoContainer.offsetHeight;
 
-			for (const canvas of [imageCanvas, lineCanvas]) {
-				canvas.width = w * dpr;
-				canvas.height = h * dpr;
-				canvas.style.width = `${w}px`;
-				canvas.style.height = `${h}px`;
-			}
-
-			imageCtx.setTransform(1, 0, 0, 1, 0, 0);
-			lineCtx.setTransform(1, 0, 0, 1, 0, 0);
-			imageCtx.scale(dpr, dpr);
-			lineCtx.scale(dpr, dpr);
-
-			imageCtx.imageSmoothingEnabled = true;
-			imageCtx.imageSmoothingQuality = 'high';
+			imageCanvas.width = lineCanvas.width = width;
+			imageCanvas.height = lineCanvas.height = height;
 		};
 
-		// fresh getBoundingClientRect on every event — scroll-safe
-		const addPoint = (clientX: number, clientY: number) => {
-			const r = imageCanvas.getBoundingClientRect();
+		const addPoint = (x: number, y: number) => {
+			const rect = imageCanvas.getBoundingClientRect();
+
 			points.push({
 				time: Date.now(),
-				x: clientX - r.left,
-				y: clientY - r.top,
+				x: x - rect.left,
+				y: y - rect.top,
 			});
 		};
 
-		const onMouseMove = (e: MouseEvent) => addPoint(e.clientX, e.clientY);
-
-		const onTouchMove = (e: TouchEvent) => {
-			const touch = e.targetTouches[0];
-			if (touch) addPoint(touch.clientX, touch.clientY);
+		const onMouseMove = (event: MouseEvent) => {
+			addPoint(event.clientX, event.clientY);
 		};
 
-		// FUNCTION: draw fading brush trail onto lineCanvas
-		const drawLineCanvas = () => {
-			const w = photoContainer.offsetWidth;
-			const h = photoContainer.offsetHeight;
-			const now = Date.now();
+		const onTouchMove = (event: TouchEvent) => {
+			const touch = event.targetTouches[0];
 
-			lineCtx.clearRect(0, 0, w, h);
-			lineCtx.lineCap = 'round';
-			lineCtx.lineJoin = 'round';
-			lineCtx.lineWidth = BRUSH_WIDTH;
+			if (!touch) return;
+
+			addPoint(touch.clientX, touch.clientY);
+		};
+
+		const drawLineCanvas = () => {
+			lineCanvasContext.clearRect(0, 0, lineCanvas.width, lineCanvas.height);
+			lineCanvasContext.lineCap = 'round';
+			lineCanvasContext.lineJoin = 'round';
 
 			for (let i = 1; i < points.length; i++) {
 				const point = points[i];
 				const prev = points[i - 1];
+				const dist = Math.hypot(point.x - prev.x, point.y - prev.y);
+				const speed = Math.max(0, Math.min(MAX_SPEED, dist));
+				const percWidth = (MAX_SPEED - speed) / MAX_SPEED;
 
-				lineCtx.strokeStyle = `rgba(0,0,0,${1 - (now - point.time) / POINT_LIFETIME})`;
-				lineCtx.beginPath();
-				lineCtx.moveTo(prev.x, prev.y);
-				lineCtx.lineTo(point.x, point.y);
-				lineCtx.stroke();
+				lineCanvasContext.lineWidth = MIN_WIDTH + percWidth * (MAX_WIDTH - MIN_WIDTH);
+
+				const age = Date.now() - point.time;
+				const opacity = (POINT_LIFETIME - age) / POINT_LIFETIME;
+
+				lineCanvasContext.strokeStyle = `rgba(0,0,0,${opacity})`;
+
+				lineCanvasContext.beginPath();
+				lineCanvasContext.moveTo(prev.x, prev.y);
+				lineCanvasContext.lineTo(point.x, point.y);
+				lineCanvasContext.stroke();
 			}
 		};
 
-		// FUNCTION: composite illustration masked by lineCanvas onto imageCanvas
 		const drawImageCanvas = () => {
-			const w = photoContainer.offsetWidth;
-			const h = photoContainer.offsetHeight;
+			imageCanvasContext.clearRect(0, 0, imageCanvas.width, imageCanvas.height);
 
-			imageCtx.clearRect(0, 0, w, h);
+			let width = imageCanvas.width;
+			let height = (imageCanvas.width / image.naturalWidth) * image.naturalHeight;
 
-			let imgW = w;
-			let imgH = (w / image.naturalWidth) * image.naturalHeight;
+			if (height < imageCanvas.height) {
+				width = (imageCanvas.height / image.naturalHeight) * image.naturalWidth;
 
-			if (imgH < h) {
-				imgW = (h / image.naturalHeight) * image.naturalWidth;
-				imgH = h;
+				height = imageCanvas.height;
 			}
 
-			imageCtx.globalCompositeOperation = 'source-over';
-			imageCtx.drawImage(image, 0, 0, imgW, imgH);
-			imageCtx.globalCompositeOperation = 'destination-in';
-			imageCtx.drawImage(lineCanvas, 0, 0, w, h);
+			imageCanvasContext.globalCompositeOperation = 'source-over';
+			imageCanvasContext.drawImage(image, 0, 0, width, height);
+			imageCanvasContext.globalCompositeOperation = 'destination-in';
+			imageCanvasContext.drawImage(lineCanvas, 0, 0);
 		};
 
 		const tick = () => {
 			const now = Date.now();
-			points = points.filter((p) => now - p.time < POINT_LIFETIME);
+
+			points = points.filter((point) => now - point.time < POINT_LIFETIME);
+
 			drawLineCanvas();
 			drawImageCanvas();
+
 			animationFrameId = requestAnimationFrame(tick);
 		};
 
 		const start = () => {
 			drawCanvasElement.appendChild(imageCanvas);
 			imageCanvas.addEventListener('mousemove', onMouseMove);
-			imageCanvas.addEventListener('touchmove', onTouchMove, { passive: true });
+			imageCanvas.addEventListener('touchmove', onTouchMove, {
+				passive: true,
+			});
+
 			window.addEventListener('resize', resizeCanvases);
+
 			resizeCanvases();
 			tick();
 		};
@@ -138,7 +137,7 @@ const DrawCanvas = () => {
 		if (image.complete) {
 			start();
 		} else {
-			image.addEventListener('load', start, { once: true });
+			image.onload = start;
 		}
 
 		return () => {
@@ -146,7 +145,6 @@ const DrawCanvas = () => {
 			imageCanvas.removeEventListener('mousemove', onMouseMove);
 			imageCanvas.removeEventListener('touchmove', onTouchMove);
 			window.removeEventListener('resize', resizeCanvases);
-			image.removeEventListener('load', start);
 			imageCanvas.remove();
 		};
 	}, []);
@@ -156,7 +154,9 @@ const DrawCanvas = () => {
 			<div
 				ref={drawCanvasRef}
 				className='drawCanvas'
-				style={{ backgroundImage: `url(${myImage})` }}
+				style={{
+					backgroundImage: `url(${myImage})`,
+				}}
 			>
 				<img
 					ref={imageRef}
