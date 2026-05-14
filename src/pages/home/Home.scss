@@ -116,10 +116,9 @@ canvas {
 		width: 100%;
 		height: 100%;
 		background: inherit;
-		filter: drop-shadow(0 0 6px rgba(#000000, 0.4));
 		z-index: -1;
 		pointer-events: none;
-		will-change: transform;
+		filter: drop-shadow(0 0 5px rgba(#000000, 0.32));
 	}
 
 	canvas,
@@ -130,9 +129,9 @@ canvas {
 	}
 
 	canvas {
-		will-change: transform;
 		transform: translateZ(0);
 		backface-visibility: hidden;
+		will-change: transform;
 	}
 
 	.illustrationImage {

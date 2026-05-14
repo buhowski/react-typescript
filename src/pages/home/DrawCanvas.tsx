@@ -9,9 +9,9 @@ interface Point {
 	y: number;
 }
 
-const POINT_LIFETIME = 900;
-const BRUSH_WIDTH = 95;
-const MIN_DIST = 2;
+const POINT_LIFETIME = 950;
+const BRUSH_WIDTH = 96;
+const MIN_DIST = 1;
 
 export default function DrawCanvas() {
 	const containerRef = useRef<HTMLDivElement>(null);
@@ -73,6 +73,11 @@ export default function DrawCanvas() {
 
 		const onMouseMove = (e: MouseEvent) => addPoint(e.clientX, e.clientY);
 
+		const onTouchStart = (e: TouchEvent) => {
+			const touch = e.touches[0];
+			if (touch) addPoint(touch.clientX, touch.clientY);
+		};
+
 		const onTouchMove = (e: TouchEvent) => {
 			const touch = e.touches[0];
 			if (touch) addPoint(touch.clientX, touch.clientY);
@@ -84,18 +89,25 @@ export default function DrawCanvas() {
 			maskCtx.lineJoin = 'round';
 			maskCtx.lineWidth = BRUSH_WIDTH;
 
-			for (let i = 1; i < points.length; i++) {
+			for (let i = 0; i < points.length; i++) {
 				const p = points[i];
-				const prev = points[i - 1];
 				const alpha = 1 - (now - p.time) / POINT_LIFETIME;
 
 				if (alpha <= 0) continue;
 
-				maskCtx.strokeStyle = `rgba(0,0,0,${alpha})`;
+				maskCtx.fillStyle = `rgba(0,0,0,${alpha})`;
 				maskCtx.beginPath();
-				maskCtx.moveTo(prev.x, prev.y);
-				maskCtx.lineTo(p.x, p.y);
-				maskCtx.stroke();
+				maskCtx.arc(p.x, p.y, BRUSH_WIDTH / 2, 0, Math.PI * 2);
+				maskCtx.fill();
+
+				if (i > 0) {
+					const prev = points[i - 1];
+					maskCtx.strokeStyle = `rgba(0,0,0,${alpha})`;
+					maskCtx.beginPath();
+					maskCtx.moveTo(prev.x, prev.y);
+					maskCtx.lineTo(p.x, p.y);
+					maskCtx.stroke();
+				}
 			}
 		};
 
@@ -112,7 +124,6 @@ export default function DrawCanvas() {
 
 			ctx.globalCompositeOperation = 'source-over';
 			ctx.drawImage(image, 0, 0, imgW, imgH);
-
 			ctx.globalCompositeOperation = 'destination-in';
 			ctx.drawImage(mask, 0, 0, width, height);
 		};
@@ -134,6 +145,7 @@ export default function DrawCanvas() {
 		const start = () => {
 			wrapper.appendChild(canvas);
 			canvas.addEventListener('mousemove', onMouseMove);
+			canvas.addEventListener('touchstart', onTouchStart, { passive: true });
 			canvas.addEventListener('touchmove', onTouchMove, { passive: true });
 			window.addEventListener('resize', resize);
 
@@ -151,6 +163,7 @@ export default function DrawCanvas() {
 			cancelAnimationFrame(rafId);
 			image.removeEventListener('load', start);
 			canvas.removeEventListener('mousemove', onMouseMove);
+			canvas.removeEventListener('touchstart', onTouchStart);
 			canvas.removeEventListener('touchmove', onTouchMove);
 			window.removeEventListener('resize', resize);
 			canvas.remove();
@@ -164,7 +177,7 @@ export default function DrawCanvas() {
 					ref={imageRef}
 					className='illustrationImage'
 					src={illustrationImage}
-					alt='Hand-drawn digital portrait illustration of Tsiomakh Olexandr (Цьомах Олександр Віталійович), Frontend Developer, Writer, and Screenwriter'
+					alt='Hand-drawn digital portrait illustration of Tsiomakh Olexander (Цьомах Олександр Віталійович), Frontend Developer, Writer, Screenwriter'
 				/>
 			</div>
 		</div>
