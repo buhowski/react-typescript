@@ -28,8 +28,6 @@ $blue-main: #0074ff;
 $blue-deep: #00488b;
 $blue-darkest: #001a3a;
 
-$photo-shadows: drop-shadow(0 0 6px rgba(#000000, 0.42));
-
 $bg-gradient:
 	radial-gradient(ellipse at 80% 80%, rgba($blue-light, 0.3) 0%, transparent 50%),
 	linear-gradient(130deg, $blue-deep 0%, $blue-main 100%);

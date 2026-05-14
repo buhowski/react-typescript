@@ -36,7 +36,7 @@
 	svg,
 	img {
 		pointer-events: none;
-		filter: $photo-shadows;
+		filter: drop-shadow(0 0 5px rgba(#000000, 0.42));
 	}
 
 	.title {
