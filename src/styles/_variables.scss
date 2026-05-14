@@ -1,23 +1,32 @@
-$indie: 'Indie Flower', cursive;
-$cs: 'Coming Soon', cursive;
-
-// Refactored
-$LouisGeorgeCaf: 'Louis George Caf', 'Raleway', sans-serif;
-$LouisGeorgeCafBold: 'Louis George Caf Bold', 'Raleway', sans-serif;
+// Fonts
 $font-primary: 'BlinkMacSystemFont', sans-serif;
 $font-raleway: 'Raleway', sans-serif;
 
-// $colors: #9400ff #37ff8b;
+$LouisGeorgeCaf: 'Louis George Caf', 'Raleway', sans-serif;
+$LouisGeorgeCafBold: 'Louis George Caf Bold', 'Raleway', sans-serif;
+$IndieFlower: 'Indie Flower', cursive;
+$ComingSoon: 'Coming Soon', cursive;
+
+// Colors
 $bg-main: #202020;
 $bg-darker: #1b1b1b;
-$color-main: #e0e0e0;
+$body-color: #e7e7e7;
+
+$h4-sub-color: #858f8f;
+$h1-color: #f6b96f;
+$h2-color: #82aad0;
+$h3-color: #dab1ab;
+$text-color: #dadada;
+$bold-color: $body-color;
+
+$nav-btn-color: #f4f4f4;
+$toc-title-color: #b991e3;
+$link-color: #55aadd;
 
 $blue-light: #1fa9ff;
 $blue-main: #0074ff;
 $blue-deep: #00488b;
 $blue-darkest: #001a3a;
-
-$red: #af0303;
 
 $photo-shadows: drop-shadow(0 0 3px rgba(#000000, 0.2)) drop-shadow(0 0 4px rgba(#000000, 0.15))
 	drop-shadow(0 0 6px rgba(#000000, 0.12)) drop-shadow(0 0 8px rgba(#000000, 0.09))
@@ -38,25 +47,13 @@ $section-width: 920px;
 $p-margin: 20px;
 $bold-weight: 600;
 
-// Colors
-$toc-title-color: #b991e3;
-$nav-btn-color: #f4f4f4;
-
-$h4-sub-color: #858f8f;
-$h1-color: #f6b96f;
-$h2-color: #82aad0;
-$h3-color: #dab1ab;
-$text-color: #d4d4d4;
-$bold-color: #e2e2e2;
-
-$link-color: #55aadd;
-
 @mixin startup-nav-shadows {
-	border-radius: 10px;
+	border-radius: 8px;
 	background-color: #000000;
 	box-shadow:
-		0 1px 4px rgba(#000000, 0.65),
-		0 5px 10px rgba(#000000, 0.45);
+		0 0 3px rgba(#000000, 0.4),
+		0 2px 4px rgba(#000000, 0.3),
+		0 5px 12px rgba(#000000, 0.45);
 }
 
 @mixin hover-text-link {
