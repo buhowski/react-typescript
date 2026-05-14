@@ -45,14 +45,6 @@ And to make all of this happen on my own terms — this corporation is exactly t
 
 A strategy for transforming an entertainment magazine into a proprietary tech production house. Each vertical capitalizes the other — elements reinforce one another, forging a zone of intellectual freedom.
 
-### Expansion Territory
-
-- Entertainment Magazine
-- Next-Gen Counterculture Media
-- Leading Film Production & Game Development
-- Virtual Reality
-- IT Sector: Blockchain, AI, Neurotechnology, Robotics
-
 ### Ecosystem Mechanisms
 
 - **The Magazine** — a strategic asset to seize the position of a leading media outlet. A tool for aggressive marketing and audience attention management
@@ -60,6 +52,14 @@ A strategy for transforming an entertainment magazine into a proprietary tech pr
 - **Imageboard Forum** — for sharing experience and archiving proven solutions
 - **Donation System** — fuel for growth and content monetization
 - **Platform as a Resource** — a hub for the distribution of proprietary projects
+
+### Expansion Territory
+
+- Entertainment Magazine
+- Next-Gen Counterculture Media
+- Leading Film Production & Game Development
+- Virtual Reality
+- IT Sector: Blockchain, AI, Neurotechnology, Robotics
 
 ## Entry Point
 
