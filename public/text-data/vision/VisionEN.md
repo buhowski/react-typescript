@@ -6,9 +6,9 @@
 
 Engineered an autonomous ecosystem uniting an entertainment magazine, countercultural media, filmmaking, gamedev, and tech.
 
-Developed ready-to-launch projects for every industry and prepared a market colonization strategy.
+For each industry — production-ready concepts and a market colonization strategy.
 
-In need of creative accomplices, partners, and investors for a collective movement.
+In need of creative accomplices, partners, and investors.
 
 Project details — in the navigation. Corporate roadmap — below.
 
