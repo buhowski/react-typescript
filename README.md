@@ -1,4 +1,4 @@
-# UI/UX • Frontend
+# Frontend & UI/UX
 
 ### [Portfolio](https://buhowski.dev/portfolio)
 

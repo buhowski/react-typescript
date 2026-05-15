@@ -199,7 +199,7 @@ const PageStructure: React.FC<SinglePageProps> = ({ pageData, backButtonPath, in
 							)}
 						</div>
 
-						<div className='lang-sidebar lang-sidebar--has-toc'>
+						<div className='lang-sidebar'>
 							<TableOfContent
 								activeHeadingId={activeHeadingId}
 								onSelectIndex={handleTableOfContentSelect}

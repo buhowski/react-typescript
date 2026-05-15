@@ -49,8 +49,9 @@
 .idea-section {
 	position: relative;
 	padding: 80px 40px 110px;
-	box-shadow: 0 0 12px #000000;
 	border-radius: 20px;
+	box-shadow: $bx-shd-main;
+	border: $bdr-main;
 
 	@include tabletBig {
 		max-width: $section-width;
@@ -420,9 +421,10 @@
 
 .lang-sidebar {
 	display: flex;
+	flex-direction: column;
 	width: 50%;
 	position: sticky;
-	top: 80px;
+	top: 90px;
 	margin-left: 80px;
 	z-index: 10;
 
@@ -430,18 +432,8 @@
 		margin-left: 0;
 		width: 100%;
 		position: relative;
-		top: 0;
-	}
-
-	// .lang-sidebar--has-toc
-	&--has-toc {
-		top: 130px;
-		margin-top: 45px;
-
-		@include tabletBig {
-			top: unset;
-			margin-top: 0;
-		}
+		top: unset;
+		margin-top: 0;
 	}
 }
 
@@ -596,9 +588,12 @@
 	aspect-ratio: 16 / 9;
 	position: relative;
 	overflow: hidden;
-	background-color: #000000;
-	box-shadow: 0 0 6px #000000;
+	background-color: $bg-darkest;
 	border-radius: 0 0 10px 10px;
+	border: $bdr-main;
+	border-top: 0;
+	box-shadow: $bx-shd-main;
+
 	transition: transform 0.3s ease-in;
 
 	@include tabletBig {
@@ -745,11 +740,10 @@
 .slider-actions {
 	display: flex;
 	align-items: center;
-	margin-top: 16px;
+	margin-top: 20px;
 	margin-bottom: -10px;
 
 	@include tabletBig {
-		margin-top: 20px;
 		margin-bottom: 0;
 	}
 }
@@ -769,17 +763,18 @@
 }
 
 .slider-btn-js {
-	padding: 13px;
+	padding: 13px 14px;
 	border-radius: 10px;
-	background-color: rgba($text-color, 0.4);
-	box-shadow: 0 0 5px #000000;
+	background-color: $bg-darkest;
+	border: $bdr-main;
+	box-shadow: $bx-shd-main;
 	transition: 0.2s;
 
 	.chevron {
 		display: block;
 		width: 12px;
 		height: 12px;
-		border: 3px solid rgba($text-color, 1);
+		border: 3px solid rgba($text-color, 0.65);
 		border-width: 3px 3px 0 0;
 		transition: 0.2s;
 	}

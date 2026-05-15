@@ -121,7 +121,7 @@ $nav-top: 2px;
 		.startup-nav__wrapper {
 			min-width: 100%;
 			border-radius: 0;
-			box-shadow: 0 3px 10px #000000;
+			border-width: 0 0 1px 0;
 			padding: $nav-top 40px 0;
 
 			@include tabletBig {
@@ -180,15 +180,17 @@ $nav-top: 2px;
 		min-width: 320px;
 		margin: auto;
 		text-align: center;
-		background-color: #000000;
+		background-color: $bg-darkest;
 		border-radius: 100px;
-		box-shadow: 0 0 3px #000000;
 		overflow: hidden;
 		transition:
 			padding 0.2s,
 			min-width 0.3s,
 			border-radius 0.3s,
 			box-shadow 0.3s;
+
+		border: $bdr-main;
+		box-shadow: $bx-shd-main;
 
 		@include tabletBig {
 			max-width: $section-width;
@@ -220,7 +222,7 @@ $nav-top: 2px;
 		font-family: $LouisGeorgeCafBold;
 		font-size: 19px;
 		letter-spacing: 1px;
-		color: rgba($nav-btn-color, 0.6);
+		color: rgba($nav-color, 0.5);
 		flex-shrink: 0;
 		border-radius: 100px;
 		overflow: hidden;
@@ -273,7 +275,7 @@ $nav-top: 2px;
 		}
 
 		&.active {
-			color: $nav-btn-color;
+			color: $nav-color;
 			text-transform: uppercase;
 
 			&::before {
@@ -282,7 +284,7 @@ $nav-top: 2px;
 		}
 
 		&.sub-active {
-			color: #ffffff;
+			color: $nav-color;
 			text-transform: uppercase;
 			overflow: visible;
 
@@ -342,6 +344,18 @@ $nav-top: 2px;
 	}
 }
 
+.language-bar {
+	display: flex;
+	justify-content: center;
+
+	// .language-bar__inner
+	&__inner {
+		border-radius: 100px;
+		box-shadow: $bx-shd-main;
+	}
+}
+
+$lang-btn-width: 42px;
 .idea-lang {
 	width: max-content;
 	display: flex;
@@ -355,9 +369,6 @@ $nav-top: 2px;
 	overflow: hidden;
 	border: 2px solid $bg-color-lang;
 	gap: 2px;
-	box-shadow: 0 0 6px #000;
-
-	$lang-btn-width: 42px;
 
 	&::before {
 		content: '';

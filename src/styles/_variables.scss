@@ -10,6 +10,7 @@ $ComingSoon: 'Coming Soon', cursive;
 // Colors
 $bg-main: #202020;
 $bg-darker: #1b1b1b;
+$bg-darkest: #111111;
 $body-color: #e7e7e7;
 
 $h4-sub-color: #858f8f;
@@ -21,17 +22,25 @@ $text-color: #dadada;
 $bold-color: $body-color;
 $link-color: #55aadd;
 
-$nav-btn-color: #f4f4f4;
+$nav-color: #f3f3f3;
 $toc-title-color: #b991e3;
+
+$bx-shd-main: 0 6px 30px rgba(#000000, 0.46);
+$bx-shd-main-mob: 0 4px 12px rgba(#000000, 0.6);
+$bdr-main: 1px solid #2c2c2c;
 
 @mixin startup-nav-shadows {
 	border-radius: 8px;
-	background: #2c2c34;
-	box-shadow:
-		0 0 4px rgba(#000000, 1),
-		0 2px 8px rgba(#000000, 0.8),
-		inset 0 1px 2px rgba(#ffffff, 0.22),
-		inset 0 -1px 2px rgba(#000000, 0.6);
+	// background: #2c2c34;
+	// background-color: $bg-darkest;
+	// border: 1px solid #2c2c2c;
+	// box-shadow: 0 4px 12px rgba(#000000, 0.5);
+
+	// box-shadow:
+	// 	0 0 4px rgba(#000000, 1),
+	// 	0 2px 8px rgba(#000000, 0.8),
+	// 	inset 0 1px 2px rgba(#ffffff, 0.22),
+	// 	inset 0 -1px 2px rgba(#000000, 0.6);
 }
 
 $blue-light: #1fa9ff;
@@ -99,10 +108,10 @@ $bold-weight: 600;
 $slider-actions-color: #745a81;
 
 @mixin slider-arrows_hover {
-	background-color: rgba($text-color, 0.2);
+	border-color: rgba($nav-color, 0.3);
 
 	.chevron {
-		border-color: $toc-title-color;
+		border-color: $nav-color;
 	}
 }
 
