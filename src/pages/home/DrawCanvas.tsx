@@ -10,11 +10,12 @@ interface TrailPoint {
 	strokeStart: boolean; // true = first point of a new stroke, skip fill to prev
 }
 
-const POINT_LIFETIME = 900;
+const MIN_DIST_SQ = 4; // MIN_DIST = 2px, squared for cheap distance check
+const POINT_LIFETIME = 600;
 const BRUSH_SIZE = 98; // brush diameter in px
 const BRUSH_RADIUS = BRUSH_SIZE / 2;
 const FILL_DENSITY = 0.1; // smaller = smoother trail (default = 0.5)
-const MIN_DIST_SQ = 4; // MIN_DIST = 2px, squared for cheap distance check
+const FADE_CURVE = 1; // trail fade curve — 1 = linear, 2 = smooth, 3+ = sharp
 
 // brush canvas over image
 export default function DrawCanvas() {
@@ -97,7 +98,7 @@ export default function DrawCanvas() {
 
 			for (let i = 0; i < trailPoints.length; i++) {
 				const p = trailPoints[i];
-				const alpha = Math.pow(1 - (now - p.time) / POINT_LIFETIME, 2);
+				const alpha = Math.pow(1 - (now - p.time) / POINT_LIFETIME, FADE_CURVE);
 
 				if (alpha <= 0) continue;
 
