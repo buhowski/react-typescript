@@ -5,7 +5,7 @@ const Copyright = () => {
 	const [pRef, isVisible] = useAnimateOnScroll<HTMLParagraphElement>(0.5);
 
 	return (
-		<div className='idea-copy'>
+		<div className='copyright'>
 			<p ref={pRef} className={`copyright-text ${isVisible ? 'is-visible' : ''}`}>
 				{new Date().getFullYear()} <span className='symbol'>&copy;</span> Olexander Tsiomakh
 			</p>

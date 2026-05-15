@@ -1,78 +1,86 @@
 import { useEffect, useRef } from 'react';
 
-import myImage from '../../assets/home/photo.png';
+import photoImage from '../../assets/home/photo.png';
 import illustrationImage from '../../assets/home/photo-drawing.png';
 
-interface Point {
+// COMPONENT: brush-reveal canvas over illustration image
+
+interface TrailPoint {
 	time: number;
 	x: number;
 	y: number;
+	strokeStart: boolean; // true = first point of a new stroke, skip line to prev
 }
 
-const POINT_LIFETIME = 1000;
-const BRUSH_WIDTH = 96;
-const MIN_DIST = 2;
+const POINT_LIFETIME = 900;
+const BRUSH_SIZE = 96; // brush diameter in px
+const BRUSH_RADIUS = BRUSH_SIZE / 2; // derived, don't edit
+const MIN_DIST_SQ = 4; // MIN_DIST = 2px, squared for cheap distance check
 
 export default function DrawCanvas() {
 	const containerRef = useRef<HTMLDivElement>(null);
-	const wrapperRef = useRef<HTMLDivElement>(null);
-	const imageRef = useRef<HTMLImageElement>(null);
+	const canvasWrapperRef = useRef<HTMLDivElement>(null);
+	const illustrationRef = useRef<HTMLImageElement>(null);
 
 	useEffect(() => {
 		const container = containerRef.current;
-		const wrapper = wrapperRef.current;
-		const image = imageRef.current;
+		const canvasWrapper = canvasWrapperRef.current;
+		const illustration = illustrationRef.current;
 
-		if (!container || !wrapper || !image) return;
+		if (!container || !canvasWrapper || !illustration) return;
 
-		const canvas = document.createElement('canvas');
-		const mask = document.createElement('canvas');
-		const ctx = canvas.getContext('2d');
-		const maskCtx = mask.getContext('2d');
+		const revealCanvas = document.createElement('canvas');
+		const maskCanvas = document.createElement('canvas');
+		const revealCtx = revealCanvas.getContext('2d');
+		const maskCtx = maskCanvas.getContext('2d');
 
-		if (!ctx || !maskCtx) return;
+		if (!revealCtx || !maskCtx) return;
 
-		let rafId = 0;
-		let points: Point[] = [];
-		let width = 0;
-		let height = 0;
+		let animFrameId = 0;
+		let trailPoints: TrailPoint[] = [];
+		let canvasW = 0;
+		let canvasH = 0;
 		let lastX: number | null = null;
 		let lastY: number | null = null;
 
-		const resize = () => {
-			width = container.offsetWidth;
-			height = container.offsetHeight;
-
-			[canvas, mask].forEach((c) => {
-				c.width = width;
-				c.height = height;
-				c.style.width = `${width}px`;
-				c.style.height = `${height}px`;
-			});
+		const resetStroke = () => {
+			lastX = null;
+			lastY = null;
 		};
 
-		const addPoint = (clientX: number, clientY: number, isNewStroke = false) => {
-			const rect = canvas.getBoundingClientRect();
+		const resize = () => {
+			canvasW = container.offsetWidth;
+			canvasH = container.offsetHeight;
+
+			for (const c of [revealCanvas, maskCanvas]) {
+				c.width = canvasW;
+				c.height = canvasH;
+				c.style.width = `${canvasW}px`;
+				c.style.height = `${canvasH}px`;
+			}
+		};
+
+		const addPoint = (clientX: number, clientY: number, strokeStart = false) => {
+			if (strokeStart) resetStroke();
+
+			const rect = revealCanvas.getBoundingClientRect();
 			const x = clientX - rect.left;
 			const y = clientY - rect.top;
-
-			if (isNewStroke) {
-				lastX = null;
-				lastY = null;
-			}
 
 			if (lastX !== null && lastY !== null) {
 				const dx = x - lastX;
 				const dy = y - lastY;
-				if (dx * dx + dy * dy < MIN_DIST * MIN_DIST) return;
+				if (dx * dx + dy * dy < MIN_DIST_SQ) return;
 			}
 
+			const isStrokeStart = strokeStart || lastX === null;
 			lastX = x;
 			lastY = y;
-			points.push({ time: performance.now(), x, y });
+			trailPoints.push({ time: performance.now(), x, y, strokeStart: isStrokeStart });
 		};
 
 		const onMouseMove = (e: MouseEvent) => addPoint(e.clientX, e.clientY);
+		const onMouseLeave = () => resetStroke(); // prevents jump-line on canvas re-entry
 
 		const onTouchStart = (e: TouchEvent) => {
 			const touch = e.touches[0];
@@ -85,24 +93,22 @@ export default function DrawCanvas() {
 		};
 
 		const drawMask = (now: number) => {
-			maskCtx.clearRect(0, 0, width, height);
-			maskCtx.lineCap = 'round';
-			maskCtx.lineJoin = 'round';
-			maskCtx.lineWidth = BRUSH_WIDTH;
+			maskCtx.clearRect(0, 0, canvasW, canvasH);
 
-			for (let i = 0; i < points.length; i++) {
-				const p = points[i];
+			for (let i = 0; i < trailPoints.length; i++) {
+				const p = trailPoints[i];
 				const alpha = 1 - (now - p.time) / POINT_LIFETIME;
 
 				if (alpha <= 0) continue;
 
 				maskCtx.fillStyle = `rgba(0,0,0,${alpha})`;
 				maskCtx.beginPath();
-				maskCtx.arc(p.x, p.y, BRUSH_WIDTH / 2, 0, Math.PI * 2);
+				maskCtx.arc(p.x, p.y, BRUSH_RADIUS, 0, Math.PI * 2);
 				maskCtx.fill();
 
-				if (i > 0) {
-					const prev = points[i - 1];
+				// skip line if this is the first point of a new stroke
+				if (i > 0 && !p.strokeStart) {
+					const prev = trailPoints[i - 1];
 					maskCtx.strokeStyle = `rgba(0,0,0,${alpha})`;
 					maskCtx.beginPath();
 					maskCtx.moveTo(prev.x, prev.y);
@@ -112,71 +118,79 @@ export default function DrawCanvas() {
 			}
 		};
 
-		const drawImage = () => {
-			ctx.clearRect(0, 0, width, height);
+		// FUNCTION: draw illustration clipped to mask (object-fit: cover behavior)
+		const drawReveal = () => {
+			revealCtx.clearRect(0, 0, canvasW, canvasH);
 
-			let imgW = width;
-			let imgH = (width / image.naturalWidth) * image.naturalHeight;
+			let imgW = canvasW;
+			let imgH = (canvasW / illustration.naturalWidth) * illustration.naturalHeight;
 
-			if (imgH < height) {
-				imgW = (height / image.naturalHeight) * image.naturalWidth;
-				imgH = height;
+			if (imgH < canvasH) {
+				imgW = (canvasH / illustration.naturalHeight) * illustration.naturalWidth;
+				imgH = canvasH;
 			}
 
-			ctx.globalCompositeOperation = 'source-over';
-			ctx.drawImage(image, (width - imgW) / 2, (height - imgH) / 2, imgW, imgH);
+			revealCtx.globalCompositeOperation = 'source-over';
+			revealCtx.drawImage(illustration, (canvasW - imgW) / 2, (canvasH - imgH) / 2, imgW, imgH);
 
-			ctx.globalCompositeOperation = 'destination-in';
-			ctx.drawImage(mask, 0, 0, width, height);
+			revealCtx.globalCompositeOperation = 'destination-in';
+			revealCtx.drawImage(maskCanvas, 0, 0, canvasW, canvasH);
 		};
 
 		const tick = () => {
 			const now = performance.now();
-			points = points.filter((p) => now - p.time < POINT_LIFETIME);
+			trailPoints = trailPoints.filter((p) => now - p.time < POINT_LIFETIME);
 
-			if (points.length === 0) {
-				lastX = null;
-				lastY = null;
-			}
+			if (trailPoints.length === 0) resetStroke();
 
 			drawMask(now);
-			drawImage();
-			rafId = requestAnimationFrame(tick);
+			drawReveal();
+			animFrameId = requestAnimationFrame(tick);
 		};
 
-		const start = () => {
-			wrapper.appendChild(canvas);
-			canvas.addEventListener('mousemove', onMouseMove);
-			canvas.addEventListener('touchstart', onTouchStart, { passive: true });
-			canvas.addEventListener('touchmove', onTouchMove, { passive: true });
+		const init = () => {
+			maskCtx.lineCap = 'round';
+			maskCtx.lineJoin = 'round';
+			maskCtx.lineWidth = BRUSH_SIZE;
+
+			canvasWrapper.appendChild(revealCanvas);
+			revealCanvas.addEventListener('mousemove', onMouseMove);
+			revealCanvas.addEventListener('mouseleave', onMouseLeave);
+			revealCanvas.addEventListener('touchstart', onTouchStart, { passive: true });
+			revealCanvas.addEventListener('touchmove', onTouchMove, { passive: true });
 			window.addEventListener('resize', resize);
 
 			resize();
 			tick();
 		};
 
-		if (image.complete) {
-			start();
+		if (illustration.complete) {
+			init();
 		} else {
-			image.addEventListener('load', start, { once: true });
+			illustration.addEventListener('load', init, { once: true });
 		}
 
 		return () => {
-			cancelAnimationFrame(rafId);
-			image.removeEventListener('load', start);
-			canvas.removeEventListener('mousemove', onMouseMove);
-			canvas.removeEventListener('touchstart', onTouchStart);
-			canvas.removeEventListener('touchmove', onTouchMove);
+			cancelAnimationFrame(animFrameId);
+			illustration.removeEventListener('load', init); // edge case: unmount before load
+			revealCanvas.removeEventListener('mousemove', onMouseMove);
+			revealCanvas.removeEventListener('mouseleave', onMouseLeave);
+			revealCanvas.removeEventListener('touchstart', onTouchStart);
+			revealCanvas.removeEventListener('touchmove', onTouchMove);
 			window.removeEventListener('resize', resize);
-			canvas.remove();
+			revealCanvas.remove();
 		};
 	}, []);
 
 	return (
 		<div ref={containerRef} className='photoContainer'>
-			<div ref={wrapperRef} className='drawCanvas' style={{ backgroundImage: `url(${myImage})` }}>
+			<div
+				ref={canvasWrapperRef}
+				className='drawCanvas'
+				style={{ backgroundImage: `url(${photoImage})` }}
+			>
 				<img
-					ref={imageRef}
+					ref={illustrationRef}
 					className='illustrationImage'
 					src={illustrationImage}
 					alt='Hand-drawn digital portrait illustration of Tsiomakh Olexander (Цьомах Олександр Віталійович), Frontend Developer, Writer, Screenwriter'

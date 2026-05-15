@@ -16,17 +16,23 @@ $h4-sub-color: #858f8f;
 $h1-color: #f6b96f;
 $h2-color: #82aad0;
 $h3-color: #dab1ab;
+
 $text-color: #dadada;
 $bold-color: $body-color;
+$link-color: #55aadd;
 
 $nav-btn-color: #f4f4f4;
 $toc-title-color: #b991e3;
-$link-color: #55aadd;
 
 $blue-light: #1fa9ff;
 $blue-main: #0074ff;
 $blue-deep: #00488b;
 $blue-darkest: #001a3a;
+
+// Lang bar
+$radius-lang: 100px;
+$bg-color-lang: #a69d9d;
+$bg-active-lang: #4c3c6b;
 
 $bg-gradient:
 	radial-gradient(ellipse at 80% 80%, rgba($blue-light, 0.3) 0%, transparent 50%),
@@ -98,11 +104,6 @@ $slider-actions-color: #745a81;
 		border-color: $toc-title-color;
 	}
 }
-
-// Lang bar
-$radius-lang: 100px;
-$bg-color-lang: #a69d9d;
-$bg-active-lang: #4b4063;
 
 // nav burger icon
 @mixin burgerIcon($burger-width: 40px, $burger-height: 25px, $border-width: 3px) {
