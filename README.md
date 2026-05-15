@@ -1,6 +1,7 @@
 # UI/UX • Frontend
 
 ### [Portfolio](https://buhowski.dev/portfolio)
+
 ### [Resume](https://buhowski.dev/cv)
 
 # Counterculture Ecosystem
@@ -12,8 +13,11 @@ I developed the architecture to build an entertainment magazine and scale it int
 # Colonization Field
 
 ### [Magazine](https://buhowski.dev/mvp)
+
 ### [Cinema](https://buhowski.dev/cinema)
+
 ### [Gamedev](https://buhowski.dev/gamedev)
+
 ### [Presentation Tools](https://buhowski.dev/pilots)
 
 # Collaboration
