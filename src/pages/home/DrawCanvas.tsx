@@ -3,20 +3,20 @@ import { useEffect, useRef } from 'react';
 import photoImage from '../../assets/home/photo.png';
 import illustrationImage from '../../assets/home/photo-drawing.png';
 
-// COMPONENT: brush-reveal canvas over illustration image
-
 interface TrailPoint {
 	time: number;
 	x: number;
 	y: number;
-	strokeStart: boolean; // true = first point of a new stroke, skip line to prev
+	strokeStart: boolean; // true = first point of a new stroke, skip fill to prev
 }
 
 const POINT_LIFETIME = 900;
-const BRUSH_SIZE = 96; // brush diameter in px
-const BRUSH_RADIUS = BRUSH_SIZE / 2; // derived, don't edit
+const BRUSH_SIZE = 98; // brush diameter in px
+const BRUSH_RADIUS = BRUSH_SIZE / 2;
+const FILL_DENSITY = 0.1; // smaller = smoother trail (default = 0.5)
 const MIN_DIST_SQ = 4; // MIN_DIST = 2px, squared for cheap distance check
 
+// brush canvas over image
 export default function DrawCanvas() {
 	const containerRef = useRef<HTMLDivElement>(null);
 	const canvasWrapperRef = useRef<HTMLDivElement>(null);
@@ -97,7 +97,7 @@ export default function DrawCanvas() {
 
 			for (let i = 0; i < trailPoints.length; i++) {
 				const p = trailPoints[i];
-				const alpha = 1 - (now - p.time) / POINT_LIFETIME;
+				const alpha = Math.pow(1 - (now - p.time) / POINT_LIFETIME, 2);
 
 				if (alpha <= 0) continue;
 
@@ -106,14 +106,20 @@ export default function DrawCanvas() {
 				maskCtx.arc(p.x, p.y, BRUSH_RADIUS, 0, Math.PI * 2);
 				maskCtx.fill();
 
-				// skip line if this is the first point of a new stroke
+				// fill gap between prev and current point with interpolated circles
 				if (i > 0 && !p.strokeStart) {
 					const prev = trailPoints[i - 1];
-					maskCtx.strokeStyle = `rgba(0,0,0,${alpha})`;
-					maskCtx.beginPath();
-					maskCtx.moveTo(prev.x, prev.y);
-					maskCtx.lineTo(p.x, p.y);
-					maskCtx.stroke();
+					const dx = p.x - prev.x;
+					const dy = p.y - prev.y;
+					const dist = Math.sqrt(dx * dx + dy * dy);
+					const steps = Math.ceil(dist / (BRUSH_RADIUS * FILL_DENSITY));
+
+					for (let s = 1; s < steps; s++) {
+						const t = s / steps;
+						maskCtx.beginPath();
+						maskCtx.arc(prev.x + dx * t, prev.y + dy * t, BRUSH_RADIUS, 0, Math.PI * 2);
+						maskCtx.fill();
+					}
 				}
 			}
 		};
@@ -149,10 +155,6 @@ export default function DrawCanvas() {
 		};
 
 		const init = () => {
-			maskCtx.lineCap = 'round';
-			maskCtx.lineJoin = 'round';
-			maskCtx.lineWidth = BRUSH_SIZE;
-
 			canvasWrapper.appendChild(revealCanvas);
 			revealCanvas.addEventListener('mousemove', onMouseMove);
 			revealCanvas.addEventListener('mouseleave', onMouseLeave);
