@@ -1,6 +1,9 @@
 import React, { useState, useRef, useEffect, useLayoutEffect } from 'react';
 import Preloader from '../../../components/Preloader';
 import { LANGUAGES, TocProps } from '../../../types/common';
+import { useTabletLargeQuery } from '../../../config/useMediaQuery';
+
+const TOC_PADDING_TOP = 70;
 
 const TableOfContent: React.FC<TocProps> = ({
 	onSelectIndex,
@@ -10,6 +13,7 @@ const TableOfContent: React.FC<TocProps> = ({
 	changeLanguage,
 	currentLang,
 }) => {
+	const isTabletLarge = useTabletLargeQuery();
 	const [isTocOpen, setIsTocOpen] = useState(false);
 	const [listHeight, setListHeight] = useState(0);
 
@@ -46,9 +50,10 @@ const TableOfContent: React.FC<TocProps> = ({
 	// Update TOC height dynamically
 	useLayoutEffect(() => {
 		if (!innerRef.current) return;
-		const extraHeight = window.innerWidth <= 1280 ? 63 : 2;
+		const extraHeight = isTabletLarge ? TOC_PADDING_TOP + 2 : 2;
+
 		setListHeight(isTocOpen ? innerRef.current.scrollHeight + extraHeight : 0);
-	}, [isTocOpen, headings, isLoadingContent]);
+	}, [isTocOpen, headings, isLoadingContent, isTabletLarge]);
 
 	// Close TOC on outside click
 	useEffect(() => {
@@ -57,7 +62,9 @@ const TableOfContent: React.FC<TocProps> = ({
 				setIsTocOpen(false);
 			}
 		};
+
 		document.addEventListener('mousedown', handleClickOutside);
+
 		return () => document.removeEventListener('mousedown', handleClickOutside);
 	}, [isTocOpen]);
 
@@ -103,7 +110,15 @@ const TableOfContent: React.FC<TocProps> = ({
 
 			<div className='table-content__list' ref={listRef} style={{ height: `${listHeight}px` }}>
 				<h3 className='table-content__title'>Table of Content</h3>
-				<div className='table-content__container'>
+
+				<div
+					className='table-content__container'
+					style={
+						{
+							'--toc-padding-top': `${TOC_PADDING_TOP}px`,
+						} as React.CSSProperties
+					}
+				>
 					<div className='table-content__inner' ref={innerRef}>
 						<div className='table-content__wrapper'>{tocContent}</div>
 					</div>

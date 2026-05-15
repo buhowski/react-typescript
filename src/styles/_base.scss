@@ -45,6 +45,7 @@ body,
 .mobile-menu__content,
 .table-content__inner {
 	overflow-y: scroll;
+	scrollbar-gutter: stable;
 
 	// WebKit (Chrome, Safari, Edge, iOS)
 	&::-webkit-scrollbar {

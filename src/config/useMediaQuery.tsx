@@ -1,41 +1,37 @@
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
-const useMediaQuery = (query: string, dimension: string) => {
+const useMediaQuery = (query: string) => {
 	const [matches, setMatches] = useState(false);
 
 	useEffect(() => {
-		const checkMatches = () => {
-			if (dimension === 'width') {
-				setMatches(window.innerWidth <= parseInt(query));
-			} else if (dimension === 'height') {
-				setMatches(window.innerHeight <= parseInt(query));
-			}
+		const media = window.matchMedia(query);
+
+		const listener = () => {
+			setMatches(media.matches);
 		};
 
-		checkMatches();
+		listener();
 
-		window.addEventListener('resize', checkMatches);
+		media.addEventListener('change', listener);
 
-		return () => window.removeEventListener('resize', checkMatches);
-	}, [query, dimension]);
+		return () => media.removeEventListener('change', listener);
+	}, [query]);
 
 	return matches;
 };
 
-const useMobMenuHeightQuery = () => {
-	return useMediaQuery('518', 'height');
+export const useMobileQuery = () => {
+	return useMediaQuery('(max-width: 768px)');
 };
 
-const useMobileQuery = () => {
-	return useMediaQuery('768', 'width');
+export const useTabletQuery = () => {
+	return useMediaQuery('(max-width: 1024px)');
 };
 
-const useTabletQuery = () => {
-	return useMediaQuery('1024', 'width');
+export const useTabletLargeQuery = () => {
+	return useMediaQuery('(max-width: 1280px)');
 };
 
-const useTabletLargeQuery = () => {
-	return useMediaQuery('1280', 'width');
+export const useMobMenuHeightQuery = () => {
+	return useMediaQuery('(max-height: 518px)');
 };
-
-export { useMobMenuHeightQuery, useMobileQuery, useTabletQuery, useTabletLargeQuery };

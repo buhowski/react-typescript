@@ -126,7 +126,7 @@ $toc-hover-color: #fff;
 		height: 100%;
 
 		@include tabletBig {
-			padding-top: 70px;
+			padding-top: var(--toc-padding-top);
 		}
 	}
 
@@ -298,7 +298,9 @@ $toc-hover-color: #fff;
 
 			&:first-child {
 				.h1-toc-item {
-					margin-top: 2px;
+					@include tabletBig {
+						margin-top: 2px;
+					}
 				}
 			}
 
