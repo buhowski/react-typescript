@@ -126,12 +126,17 @@ svg {
 }
 
 .base-title {
-	font-size: 41px;
-	font-size: clamp(38px, 2.8vw, 70px);
+	font-size: 64px;
 	margin-top: 70px;
+
+	@include tablet {
+		font-size: 48px;
+	}
 
 	@include mobile {
 		margin-top: 35px;
+		letter-spacing: 4px;
+		font-size: 36px;
 	}
 }
 
