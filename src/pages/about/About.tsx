@@ -38,7 +38,7 @@ const About = () => {
 
 				{dotsData.map(({ classItem, title, titleSub, img }, index) => {
 					return (
-						<div className={`pos-abs about-item ${classItem}`} key={index}>
+						<div className={`about-item ${classItem}`} key={index}>
 							<div
 								id={classItem}
 								onMouseEnter={!useTablet ? addActiveClass : undefined}

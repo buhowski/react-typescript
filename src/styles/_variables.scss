@@ -24,6 +24,16 @@ $link-color: #55aadd;
 $nav-btn-color: #f4f4f4;
 $toc-title-color: #b991e3;
 
+@mixin startup-nav-shadows {
+	border-radius: 8px;
+	background: #2c2c34;
+	box-shadow:
+		0 0 4px rgba(#000000, 1),
+		0 3px 10px rgba(#000000, 0.86),
+		inset 0 1px 2px rgba(#ffffff, 0.28),
+		inset 0 -1px 2px rgba(#000000, 0.8);
+}
+
 $blue-light: #1fa9ff;
 $blue-main: #0074ff;
 $blue-deep: #00488b;
@@ -48,15 +58,6 @@ $section-width: 920px;
 // Text Data
 $p-margin: 20px;
 $bold-weight: 600;
-
-@mixin startup-nav-shadows {
-	border-radius: 8px;
-	background-color: #000000;
-	box-shadow:
-		0 0 3px rgba(#000000, 0.4),
-		0 2px 4px rgba(#000000, 0.3),
-		0 5px 12px rgba(#000000, 0.45);
-}
 
 @mixin hover-text-link {
 	color: $h1-color;

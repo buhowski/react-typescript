@@ -17,6 +17,14 @@
 	}
 }
 
+.about-item {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
 .about-info {
 	position: relative;
 	color: $blue-main;
@@ -45,9 +53,10 @@
 		letter-spacing: 2px;
 		line-height: normal;
 		width: 61%;
-		backface-visibility: hidden;
 		text-align: center;
 		font-weight: 600;
+		text-shadow: 0 2px 5px rgba(#000000, 0.5);
+		backface-visibility: hidden;
 
 		@include mobile {
 			font-size: 14px;

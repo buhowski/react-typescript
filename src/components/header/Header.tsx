@@ -19,7 +19,7 @@ interface MobileMenuProps {
 
 const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, navItems }) => {
 	return (
-		<nav className={`pos-abs mobile-menu${isOpen ? ' open' : ''}`}>
+		<nav className={`mobile-menu ${isOpen ? 'open' : ''}`}>
 			<nav className='mobile-menu__content'>
 				<ul className='mobile-nav'>{navItems}</ul>
 				<Socials
