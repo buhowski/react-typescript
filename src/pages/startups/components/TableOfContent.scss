@@ -19,7 +19,13 @@
 
 .table-content {
 	position: relative;
+	box-shadow: var(--box-shd-main);
+	border-radius: var(--startup-nav-rad) var(--startup-nav-rad) 0 0;
 	z-index: 20;
+
+	@include tabletBig {
+		box-shadow: none;
+	}
 
 	&.is-open {
 		.table-content__btn {
@@ -41,10 +47,6 @@
 				@include burgerIconOpen;
 			}
 		}
-
-		.table-content__list {
-			border-width: 1px;
-		}
 	}
 
 	h3 {
@@ -62,23 +64,26 @@
 		font-size: 17px;
 		font-weight: 600;
 		gap: 22px;
-		padding: 12px 20px;
-		color: $toc-color;
+		padding: 13px 20px 11px;
+		@include bg-gradient(180deg);
+		color: $subtitle-color;
 		border-radius: var(--startup-nav-rad) var(--startup-nav-rad) 0 0;
-		background-color: $bg-darkest;
 		border: $bdr-main;
-		box-shadow: var(--box-shd-main);
+		text-shadow: 0 1px 2px rgba(#000000, 0.5);
+		border-bottom-width: 0;
 		transition:
 			color 0.2s,
 			transform 0.2s;
 
 		@include tabletBig {
 			width: max-content;
-			padding: 15px 16px;
+			padding: 14px 16px;
+			border-bottom-width: 1px;
 			position: fixed;
 			bottom: var(--startup-nav-pos);
 			right: var(--startup-nav-pos);
 			border-radius: var(--startup-nav-rad);
+			box-shadow: var(--box-shd-main), $nav-mob-light;
 			z-index: 100;
 
 			> h3 {
@@ -87,11 +92,11 @@
 		}
 
 		@include desktop-hover {
-			color: $body-color;
+			color: $nav-color;
 		}
 
 		&:active {
-			color: $body-color;
+			color: $nav-color;
 
 			@include tabletBig {
 				transform: scale(0.8);
@@ -167,10 +172,10 @@
 		height: 0;
 		position: absolute;
 		right: 0;
-		top: calc(100% - 1px);
+		top: 100%;
 		background-color: $bg-darkest;
 		border: $bdr-main;
-		border-width: 0 1px 0 1px;
+		border-top-width: 0;
 		box-shadow: var(--box-shd-main);
 		overflow: hidden;
 		z-index: -1;

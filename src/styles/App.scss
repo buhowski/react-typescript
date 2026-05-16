@@ -68,7 +68,7 @@ body.is-locked {
 		left: 50%;
 		z-index: 1000;
 		background-color: $blue-main;
-		background: $bg-gradient;
+		background: $transition-gradient;
 		will-change: width, height, bottom;
 		overflow: hidden;
 

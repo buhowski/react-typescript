@@ -41,8 +41,9 @@
 
 		// .contact-menu__item
 		&__item {
-			border: $bdr-main;
+			border: $bdr-main-l;
 			box-shadow: var(--box-shd-main);
+			@include bg-gradient(145deg, #1f1f1f, $bg-darker);
 
 			&:not(:last-child) {
 				margin-right: 15px;
@@ -56,7 +57,7 @@
 	padding: 80px 40px 110px;
 	border-radius: 20px;
 	box-shadow: var(--box-shd-main);
-	border: $bdr-main;
+	border: $bdr-main-l;
 
 	@include tabletBig {
 		max-width: $section-width;
@@ -581,13 +582,13 @@
 	min-height: 240px;
 	max-height: min(420px, 50vh);
 	aspect-ratio: 16 / 9;
+	overflow: hidden;
 	border-radius: 0 0 10px 10px;
-	background-color: $bg-darkest;
 	border: $bdr-main;
 	border-top-width: 0;
 	box-shadow: var(--box-shd-main);
 	transition: box-shadow 0.2s;
-	overflow: hidden;
+	@include bg-gradient(145deg);
 
 	@include tabletBig {
 		border-radius: 0;
@@ -646,6 +647,7 @@
 	@include desktop-hover {
 		img {
 			transform: scale(1.2) translateZ(0);
+			opacity: 1;
 		}
 
 		.video-preview__svg {
@@ -656,11 +658,34 @@
 	&:active {
 		img {
 			transform: scale(1.2) translateZ(0);
+			opacity: 1;
 		}
 
 		.video-preview__svg {
 			transform: translate(-50%, -50%) scale(0.76) translateZ(0);
 		}
+	}
+
+	// &::before {
+	// 	content: '';
+	// 	display: block;
+	// 	width: 100%;
+	// 	height: 100%;
+	// 	position: absolute;
+	// 	inset: 0;
+	// 	background:
+	// 		radial-gradient(circle, transparent 20%, rgba(0, 0, 0, 0.4) 100%),
+	// 		linear-gradient(
+	// 			180deg,
+	// 			rgba(0, 0, 0, 0.7) 0%,
+	// 			transparent 20%,
+	// 			transparent 80%,
+	// 			rgba(0, 0, 0, 0.8) 100%
+	// 		);
+	// }
+
+	img {
+		opacity: 0.7;
 	}
 
 	// .video-preview__svg
@@ -672,7 +697,7 @@
 		width: 85px;
 		aspect-ratio: 1 / 1;
 		border-radius: 50%;
-		box-shadow: 0 6px 18px rgba(#000000, 0.9);
+		box-shadow: 0 8px 24px rgba(#000000, 0.8);
 		border: $bdr-main;
 		overflow: hidden;
 
@@ -681,7 +706,7 @@
 		}
 
 		.play-circle {
-			fill: $toc-color;
+			fill: $subtitle-color;
 		}
 
 		.play-triangle {
@@ -741,30 +766,31 @@
 }
 
 @mixin slider-arrows_hover {
-	border-color: rgba($text-color, 0.36);
+	border-color: rgba($nav-color, 0.38);
 
 	.chevron {
-		border-color: $toc-color;
+		border-color: $nav-color;
 	}
 }
 
 .slider-btn-js {
 	padding: 13px 14px;
 	border-radius: 10px;
-	background-color: $bg-darkest;
 	border: $bdr-main;
 	box-shadow: var(--box-shd-main);
+	@include bg-gradient(135deg);
+
 	transition:
 		transform 0.2s,
-		border 0.2s;
+		border-color 0.2s;
 
 	.chevron {
 		display: block;
 		width: 12px;
 		height: 12px;
-		border: 3px solid rgba($text-color, 0.8);
+		border: 3px solid $subtitle-color;
 		border-width: 3px 3px 0 0;
-		transition: border 0.2s;
+		transition: border-color 0.2s;
 	}
 
 	@include desktop-hover {

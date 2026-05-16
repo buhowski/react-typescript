@@ -33,27 +33,29 @@
 	font-size: 18px;
 	letter-spacing: 1.6px;
 	color: $toc-color;
-	padding: 12px;
-	padding-left: 0;
+	padding: 11px 25px;
+	border-radius: 100px;
 	display: inline-flex;
 	align-items: center;
-	line-height: 1.2;
 	gap: 10px;
 	position: absolute;
 	top: 4px;
 	z-index: 1;
+	border: $bdr-main;
+	box-shadow: var(--box-shd-main);
+
+	@include bg-gradient;
 	transition: transform 0.2s;
 
 	@include tabletBig {
-		padding: 11px 16px;
+		padding: 10px 16px;
 		margin: 0;
 		position: fixed;
 		top: auto;
 		bottom: var(--startup-nav-pos);
 		left: var(--startup-nav-pos);
-		background-color: $bg-darkest;
 		border-radius: var(--startup-nav-rad);
-		box-shadow: var(--box-shd-main);
+		box-shadow: var(--box-shd-main), $nav-mob-light;
 		border: $bdr-main;
 		z-index: 10;
 
@@ -180,8 +182,9 @@ $nav-top: 2px;
 		min-width: 320px;
 		margin: auto;
 		text-align: center;
-		background-color: $bg-darkest;
 		border-radius: 100px;
+		@include bg-gradient;
+
 		overflow: hidden;
 		transition:
 			padding 0.2s,
@@ -222,7 +225,7 @@ $nav-top: 2px;
 		font-family: $LouisGeorgeCafBold;
 		font-size: 19px;
 		letter-spacing: 1px;
-		color: rgba($nav-color, 0.5);
+		color: rgba($subtitle-color, 0.75);
 		flex-shrink: 0;
 		border-radius: 100px;
 		overflow: hidden;
@@ -262,7 +265,7 @@ $nav-top: 2px;
 			left: 0;
 			bottom: 0;
 			background-color: $blue-main;
-			background: $bg-gradient;
+			background: $transition-gradient;
 			width: 100%;
 			height: 100%;
 			z-index: -1;
@@ -343,34 +346,35 @@ $nav-top: 2px;
 }
 
 // Lang bar
+$bg-active-lang: #443356;
+$lang-btn-width: 42px;
+$lang-radius: 100px;
+
 .language-bar {
 	display: flex;
 	justify-content: center;
 
 	// .language-bar__inner
 	&__inner {
+		width: max-content;
 		border-radius: 100px;
+		padding: 1px;
+		border: 1px solid #6e6a6a;
+		@include bg-gradient(165deg, #858080, #6e6a6a);
 		box-shadow: var(--box-shd-main);
+		overflow: hidden;
 	}
 }
 
-$radius-lang: 100px;
-$bg-lang: #a69d9d;
-$bg-active-lang: #4c3c6b;
-$lang-btn-width: 42px;
-
 .idea-lang {
-	width: max-content;
 	display: flex;
 	font-family: $font-primary;
-	background-color: $bg-lang;
 	margin: auto;
 	font-size: 14px;
-	border-radius: $radius-lang;
+	border-radius: $lang-radius;
 	position: relative;
 	z-index: 12;
-	overflow: hidden;
-	border: 2px solid $bg-lang;
+	color: #0b0b0b;
 	gap: 2px;
 
 	&::before {
@@ -381,7 +385,7 @@ $lang-btn-width: 42px;
 		left: 0;
 		height: 100%;
 		background-color: $bg-active-lang;
-		border-radius: $radius-lang;
+		border-radius: $lang-radius;
 		/* Fallbacks */
 		width: $lang-btn-width;
 		transform: translateX(0);
@@ -396,18 +400,15 @@ $lang-btn-width: 42px;
 
 	// .idea-lang__btn
 	&__btn {
-		border: none;
-		background: none;
 		width: $lang-btn-width;
 		padding: 14px 10px 13px;
 		line-height: 1;
-		color: #000000;
 		font-weight: bold;
 		transition:
 			color 0.2s,
 			transform 0.2s,
 			background-color 0.2s;
-		border-radius: $radius-lang;
+		border-radius: $lang-radius;
 
 		@include desktop-hover {
 			&:not(.active) {
@@ -420,7 +421,7 @@ $lang-btn-width: 42px;
 		}
 
 		&.active {
-			color: #ffffff;
+			color: $body-color;
 			pointer-events: none;
 		}
 	}

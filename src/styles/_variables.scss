@@ -8,12 +8,17 @@ $IndieFlower: 'Indie Flower', cursive;
 $ComingSoon: 'Coming Soon', cursive;
 
 // Colors
+$blue-light: #1fa9ff;
+$blue-main: #0074ff;
+$blue-deep: #00488b;
+$blue-darkest: #001a3a;
+
 $bg-main: #202020;
 $bg-darker: #1b1b1b;
-$bg-darkest: #111111;
+$bg-darkest: #101010;
 $body-color: #e7e7e7;
 
-$subtitle-color: #858f8f;
+$subtitle-color: #879494;
 $h1-color: #f6b96f;
 $h2-color: #82aad0;
 $h3-color: #dab1ab;
@@ -23,17 +28,22 @@ $bold-color: $body-color;
 $link-color: #55aadd;
 
 $nav-color: #f3f3f3;
-// $toc-color: #bc92e8;
-$toc-color: #b19ffb;
+$toc-color: #768686;
 
-$bdr-main: 1px solid #292929;
+// Borders
+$bdr-color: mix(#ffffff, $bg-darkest, 7%);
+$bdr-color-l: mix(#ffffff, $bg-main, 4%);
 
-$blue-light: #1fa9ff;
-$blue-main: #0074ff;
-$blue-deep: #00488b;
-$blue-darkest: #001a3a;
+$bdr-main: 1px solid $bdr-color;
+$bdr-main-l: 1px solid $bdr-color-l;
 
-$bg-gradient:
+$nav-mob-light: inset 0 1px 0 rgba(#ffffff, 0.1);
+
+@mixin bg-gradient($deg: 177deg, $c1: #141414, $c2: $bg-darkest) {
+	background: linear-gradient($deg, $c1 0%, $c2 100%);
+}
+
+$transition-gradient:
 	radial-gradient(ellipse at 80% 80%, rgba($blue-light, 0.3) 0%, transparent 50%),
 	linear-gradient(130deg, $blue-deep 0%, $blue-main 100%);
 
@@ -303,6 +313,7 @@ $burger-transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 
 @include tablet {
 	:root {
-		--box-shd-main: 0 4px 12px #{rgba(#000000, 0.6)};
+		// --box-shd-main: 0 4px 12px #{rgba(#000000, 0.5)};
+		--box-shd-main: 0 8px 24px #{rgba(#000000, 0.5)};
 	}
 }
