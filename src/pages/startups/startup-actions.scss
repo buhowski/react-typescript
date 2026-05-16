@@ -32,7 +32,7 @@
 	font-family: $LouisGeorgeCafBold;
 	font-size: 18px;
 	letter-spacing: 1.6px;
-	color: $toc-title-color;
+	color: $toc-color;
 	padding: 12px;
 	padding-left: 0;
 	display: inline-flex;
@@ -65,10 +65,8 @@
 		bottom: 15px;
 	}
 
-	@media (hover: hover) and (pointer: fine) {
-		&:hover {
-			@include idea-back_hover;
-		}
+	@include desktop-hover {
+		@include idea-back_hover;
 	}
 
 	&:active {
@@ -142,7 +140,7 @@ $nav-top: 2px;
 			.table-content__list {
 				@include tabletBig {
 					position: fixed;
-					top: 42px;
+					top: 46px;
 				}
 			}
 		}
@@ -296,8 +294,8 @@ $nav-top: 2px;
 				}
 			}
 
-			@media (hover: hover) and (pointer: fine) {
-				&:hover::after {
+			@include desktop-hover {
+				&::after {
 					width: 100%;
 				}
 			}
@@ -307,10 +305,8 @@ $nav-top: 2px;
 			}
 		}
 
-		@media (hover: hover) and (pointer: fine) {
-			&:hover {
-				@include startup-nav__btn-hover;
-			}
+		@include desktop-hover {
+			@include startup-nav__btn-hover;
 		}
 
 		&:active {
@@ -406,8 +402,8 @@ $lang-btn-width: 42px;
 			background-color 0.2s;
 		border-radius: $radius-lang;
 
-		@media (hover: hover) and (pointer: fine) {
-			&:not(.active):hover {
+		@include desktop-hover {
+			&:not(.active) {
 				@include idea-lang__btn_hover;
 			}
 		}

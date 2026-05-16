@@ -23,11 +23,12 @@ $bold-color: $body-color;
 $link-color: #55aadd;
 
 $nav-color: #f3f3f3;
-$toc-title-color: #b991e3;
+// $toc-color: #bc92e8;
+$toc-color: #b19ffb;
 
 $bx-shd-main: 0 6px 30px rgba(#000000, 0.46);
 $bx-shd-main-mob: 0 4px 12px rgba(#000000, 0.6);
-$bdr-main: 1px solid #2c2c2c;
+$bdr-main: 1px solid #292929;
 
 @mixin startup-nav-shadows {
 	border-radius: 8px;
@@ -107,33 +108,35 @@ $bold-weight: 600;
 // Slider
 $slider-actions-color: #745a81;
 
-@mixin slider-arrows_hover {
-	border-color: rgba($nav-color, 0.3);
-
-	.chevron {
-		border-color: $nav-color;
-	}
-}
-
 // nav burger icon
-@mixin burgerIcon($burger-width: 40px, $burger-height: 25px, $border-width: 3px) {
+$burger-transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+
+@mixin burgerIcon(
+	$burger-width: 40px,
+	$burger-height: 25px,
+	$border-width: 3px,
+	$color: $blue-main
+) {
 	width: $burger-width;
 	height: $burger-height;
 	position: relative;
 	margin-left: auto;
 	transform: rotate(0deg);
-	transition: 0.5s ease-in-out;
 
 	span {
 		display: block;
 		position: absolute;
 		width: calc(50% + 1px);
 		height: 0;
-		border-bottom: $border-width solid $blue-main;
+		border-bottom: $border-width solid $color;
 		opacity: 1;
 		transform: rotate(0deg);
-		transition: 0.3s ease-in-out;
-		will-change: transform, left, top, bottom, opacity;
+		transition:
+			transform $burger-transition,
+			left $burger-transition,
+			top $burger-transition,
+			bottom $burger-transition,
+			opacity $burger-transition;
 	}
 
 	span:nth-child(even) {
@@ -234,6 +237,14 @@ $slider-actions-color: #745a81;
 		&:after {
 			box-shadow: $box-shadow-main;
 			height: 100%;
+		}
+	}
+}
+
+@mixin desktop-hover {
+	@media (hover: hover) and (pointer: fine) {
+		&:hover {
+			@content;
 		}
 	}
 }

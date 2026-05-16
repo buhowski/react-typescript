@@ -200,6 +200,12 @@ const PageStructure: React.FC<SinglePageProps> = ({ pageData, backButtonPath, in
 						</div>
 
 						<div className='lang-sidebar'>
+							<div className='desktop-slider'>
+								{!useTabletLarge && (
+									<Slider slides={currentDesktopSliderContent} currentLanguage={currentLang} />
+								)}
+							</div>
+
 							<TableOfContent
 								activeHeadingId={activeHeadingId}
 								onSelectIndex={handleTableOfContentSelect}
@@ -208,12 +214,6 @@ const PageStructure: React.FC<SinglePageProps> = ({ pageData, backButtonPath, in
 								changeLanguage={changeLanguage}
 								currentLang={currentLang}
 							/>
-
-							<div className='desktop-slider'>
-								{!useTabletLarge && (
-									<Slider slides={currentDesktopSliderContent} currentLanguage={currentLang} />
-								)}
-							</div>
 						</div>
 					</div>
 

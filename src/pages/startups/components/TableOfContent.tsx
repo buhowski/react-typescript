@@ -75,11 +75,9 @@ const TableOfContent: React.FC<TocProps> = ({
 				<button
 					key={heading.id}
 					onClick={() => onSelectIndex(heading.id)}
-					className={activeHeadingId === heading.id ? 'is-active' : ''}
+					className={`h${heading.level}-toc-item ${activeHeadingId === heading.id ? 'is-active' : ''}`}
 				>
-					<mark className={`h${heading.level}-toc-item`} data-text={heading.text}>
-						<span>{heading.text}</span>
-					</mark>
+					<span>{heading.text}</span>
 				</button>
 			))
 		) : isTocOpen && isLoadingContent ? (
@@ -105,6 +103,7 @@ const TableOfContent: React.FC<TocProps> = ({
 					<span></span>
 					<span></span>
 				</mark>
+
 				<h3>Table of Content</h3>
 			</button>
 

@@ -51,7 +51,7 @@ const VideoPreview: React.FC<VideoPreviewProps> = ({
 
 		<p className='video-preview__title'>{itemCaption}</p>
 
-		{playIcon}
+		<div className='video-preview__svg'>{playIcon}</div>
 	</div>
 );
 

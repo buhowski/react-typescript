@@ -1,11 +1,11 @@
 export const playIcon = (
-	<svg className='play-icon' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'>
-		<circle className='play-circle' cx='32' cy='32' r='30' fill='#b991e3' />
+	<svg className='play-icon' xmlns='http://www.w3.org/2000/svg' viewBox='2 2 60 60'>
+		<circle className='play-circle' cx='32' cy='32' r='30' fill='#b991e3'></circle>
 		<path
 			className='play-triangle'
 			fill='#121212'
 			d='M43.5 30.3C44.8 31.1 44.8 32.9 43.5 33.7L28.5 42.4C27.2 43.2 25.5 42.2 25.5 40.7L25.5 23.3C25.5 21.8 27.2 20.8 28.5 21.6L43.5 30.3Z'
-		/>
+		></path>
 	</svg>
 
 	// <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 75.83 512 360.35' width='70' height='70'>
