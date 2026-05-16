@@ -37,10 +37,12 @@
 	}
 
 	.contact-menu {
+		justify-content: center;
+
 		// .contact-menu__item
 		&__item {
 			border: $bdr-main;
-			box-shadow: $bx-shd-main;
+			box-shadow: var(--box-shd-main);
 
 			&:not(:last-child) {
 				margin-right: 15px;
@@ -53,7 +55,7 @@
 	position: relative;
 	padding: 80px 40px 110px;
 	border-radius: 20px;
-	box-shadow: $bx-shd-main;
+	box-shadow: var(--box-shd-main);
 	border: $bdr-main;
 
 	@include tabletBig {
@@ -68,6 +70,7 @@
 		width: 100%;
 		border-radius: 0;
 		box-shadow: none;
+		border: none;
 	}
 
 	// .idea-section__inner
@@ -261,7 +264,7 @@
 		font-size: 15px;
 		line-height: 1.2;
 		margin-bottom: 10px;
-		color: $h4-sub-color;
+		color: $subtitle-color;
 		letter-spacing: 1px;
 
 		@include tablet {
@@ -547,13 +550,6 @@
 // Slider default style
 .slider-container {
 	width: 100%;
-	display: flex;
-	flex-direction: column;
-	position: relative;
-
-	@include tabletBig {
-		display: block;
-	}
 }
 
 .slider-wrapper {
@@ -580,22 +576,23 @@
 }
 
 .slider-js {
-	width: 100%;
-	min-height: 230px;
-	max-height: min(420px, 52vh);
-	aspect-ratio: 16 / 9;
 	position: relative;
-	overflow: hidden;
-	background-color: $bg-darkest;
+	width: 100%;
+	min-height: 240px;
+	max-height: min(420px, 50vh);
+	aspect-ratio: 16 / 9;
 	border-radius: 0 0 10px 10px;
+	background-color: $bg-darkest;
 	border: $bdr-main;
-	border-top: 0;
-	box-shadow: $bx-shd-main;
+	border-top-width: 0;
+	box-shadow: var(--box-shd-main);
 	transition: box-shadow 0.2s;
+	overflow: hidden;
 
 	@include tabletBig {
 		border-radius: 0;
 		max-height: 420px;
+		border-width: 1px 0 1px 0;
 	}
 }
 
@@ -705,8 +702,8 @@
 		padding: 10px 20px;
 		font-size: 14px;
 		color: $text-color;
-		text-shadow: 1px 1px 1px #000000;
-		background-color: rgba(#000000, 0.8);
+		text-shadow: 1px 1px 2px #000000;
+		background-color: rgba(#000000, 0.82);
 
 		@include tabletBig {
 			padding: 10px 40px;
@@ -721,7 +718,7 @@
 .slider-actions {
 	display: flex;
 	align-items: center;
-	margin-top: 20px;
+	margin-top: 22px;
 	margin-bottom: -10px;
 
 	@include tabletBig {
@@ -744,10 +741,10 @@
 }
 
 @mixin slider-arrows_hover {
-	border-color: rgba($body-color, 0.35);
+	border-color: rgba($text-color, 0.36);
 
 	.chevron {
-		border-color: $body-color;
+		border-color: $toc-color;
 	}
 }
 
@@ -756,7 +753,7 @@
 	border-radius: 10px;
 	background-color: $bg-darkest;
 	border: $bdr-main;
-	box-shadow: $bx-shd-main;
+	box-shadow: var(--box-shd-main);
 	transition:
 		transform 0.2s,
 		border 0.2s;
@@ -765,7 +762,7 @@
 		display: block;
 		width: 12px;
 		height: 12px;
-		border: 3px solid rgba($toc-color, 0.8);
+		border: 3px solid rgba($text-color, 0.8);
 		border-width: 3px 3px 0 0;
 		transition: border 0.2s;
 	}

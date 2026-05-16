@@ -13,7 +13,7 @@ $bg-darker: #1b1b1b;
 $bg-darkest: #111111;
 $body-color: #e7e7e7;
 
-$h4-sub-color: #858f8f;
+$subtitle-color: #858f8f;
 $h1-color: #f6b96f;
 $h2-color: #82aad0;
 $h3-color: #dab1ab;
@@ -26,33 +26,12 @@ $nav-color: #f3f3f3;
 // $toc-color: #bc92e8;
 $toc-color: #b19ffb;
 
-$bx-shd-main: 0 6px 30px rgba(#000000, 0.46);
-$bx-shd-main-mob: 0 4px 12px rgba(#000000, 0.6);
 $bdr-main: 1px solid #292929;
-
-@mixin startup-nav-shadows {
-	border-radius: 8px;
-	// background: #2c2c34;
-	// background-color: $bg-darkest;
-	// border: 1px solid #2c2c2c;
-	// box-shadow: 0 4px 12px rgba(#000000, 0.5);
-
-	// box-shadow:
-	// 	0 0 4px rgba(#000000, 1),
-	// 	0 2px 8px rgba(#000000, 0.8),
-	// 	inset 0 1px 2px rgba(#ffffff, 0.22),
-	// 	inset 0 -1px 2px rgba(#000000, 0.6);
-}
 
 $blue-light: #1fa9ff;
 $blue-main: #0074ff;
 $blue-deep: #00488b;
 $blue-darkest: #001a3a;
-
-// Lang bar
-$radius-lang: 100px;
-$bg-color-lang: #a69d9d;
-$bg-active-lang: #4c3c6b;
 
 $bg-gradient:
 	radial-gradient(ellipse at 80% 80%, rgba($blue-light, 0.3) 0%, transparent 50%),
@@ -75,7 +54,7 @@ $bold-weight: 600;
 	background-color: rgba(#000000, 1);
 }
 
-// More BTM
+// More button
 @mixin btn-more_decor($color: $h1-color, $size: 12px, $offset: -1px, $bdr: 1px solid $color) {
 	border: 1px solid rgba($color, 0.4);
 
@@ -104,9 +83,6 @@ $bold-weight: 600;
 		border-right: $bdr;
 	}
 }
-
-// Slider
-$slider-actions-color: #745a81;
 
 // nav burger icon
 $burger-transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
@@ -207,7 +183,7 @@ $burger-transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 	}
 }
 
-// Nav Link
+// Header Links
 @mixin navLink {
 	position: relative;
 	white-space: nowrap;
@@ -241,6 +217,7 @@ $burger-transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 	}
 }
 
+// Hover helper
 @mixin desktop-hover {
 	@media (hover: hover) and (pointer: fine) {
 		&:hover {
@@ -249,6 +226,7 @@ $burger-transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 	}
 }
 
+// MEDIA QUERY
 @mixin heightTopMax {
 	@media screen and (min-width: 769px) and (max-height: 860px) {
 		@content;
@@ -300,5 +278,31 @@ $burger-transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 @mixin mobileSmall {
 	@media screen and (max-width: 359px) {
 		@content;
+	}
+}
+
+// CSS VARS
+:root {
+	// Startup Page
+	--box-shd-main: 0 6px 30px #{rgba(#000000, 0.46)};
+	--startup-nav-rad: 10px;
+	--startup-nav-pos: 30px;
+}
+
+@include tabletBig {
+	:root {
+		--startup-nav-rad: 8px;
+	}
+}
+
+@include tabletSmall {
+	:root {
+		--startup-nav-pos: 14px;
+	}
+}
+
+@include tablet {
+	:root {
+		--box-shd-main: 0 4px 12px #{rgba(#000000, 0.6)};
 	}
 }

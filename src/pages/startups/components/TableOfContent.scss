@@ -1,8 +1,21 @@
-// padding
-$toc-pad: 45px;
-$toc-pad-h2: 65px;
-$toc-pad-h3: 85px;
-$toc-pad-mob: 30px;
+// CSS VARS
+:root {
+	--toc-pad: 45px;
+	--toc-pad-h2: 65px;
+	--toc-pad-h3: 85px;
+
+	--active-toc-move: 25px;
+}
+
+@include tabletBig {
+	:root {
+		--toc-pad: 20px;
+		--toc-pad-h2: 36px;
+		--toc-pad-h3: 52px;
+
+		--active-toc-move: 16px;
+	}
+}
 
 .table-content {
 	position: relative;
@@ -13,6 +26,15 @@ $toc-pad-mob: 30px;
 			h3,
 			mark {
 				opacity: 0.35;
+			}
+
+			@include tabletBig {
+				opacity: 0.6;
+
+				h3,
+				mark {
+					opacity: 1;
+				}
 			}
 
 			mark {
@@ -42,28 +64,26 @@ $toc-pad-mob: 30px;
 		gap: 22px;
 		padding: 12px 20px;
 		color: $toc-color;
-		border-radius: 10px 10px 0 0;
+		border-radius: var(--startup-nav-rad) var(--startup-nav-rad) 0 0;
 		background-color: $bg-darkest;
 		border: $bdr-main;
-		box-shadow: $bx-shd-main;
-		transition: color 0.2s;
+		box-shadow: var(--box-shd-main);
+		transition:
+			color 0.2s,
+			transform 0.2s;
 
 		@include tabletBig {
-			width: fit-content;
-			padding: 14px 16px;
+			width: max-content;
+			padding: 15px 16px;
 			position: fixed;
-			bottom: 25px;
-			right: 30px;
+			bottom: var(--startup-nav-pos);
+			right: var(--startup-nav-pos);
+			border-radius: var(--startup-nav-rad);
 			z-index: 100;
 
 			> h3 {
 				display: none;
 			}
-		}
-
-		@include tabletSmall {
-			bottom: 15px;
-			right: 14px;
 		}
 
 		@include desktop-hover {
@@ -135,7 +155,7 @@ $toc-pad-mob: 30px;
 			left: 0;
 			width: 100%;
 			z-index: 1;
-			color: rgba($body-color, 0.86);
+			color: $subtitle-color;
 		}
 	}
 
@@ -151,7 +171,7 @@ $toc-pad-mob: 30px;
 		background-color: $bg-darkest;
 		border: $bdr-main;
 		border-width: 0 1px 0 1px;
-		box-shadow: $bx-shd-main;
+		box-shadow: var(--box-shd-main);
 		overflow: hidden;
 		z-index: -1;
 		transition:
@@ -176,18 +196,13 @@ $toc-pad-mob: 30px;
 			position: relative;
 			display: block;
 			width: 100%;
-			padding: 6px $toc-pad 3px;
+			padding: 6px var(--toc-pad) 3px;
 			padding-right: 20px;
 			text-align: left;
 			font-family: $font-raleway;
 			font-weight: 600;
 			letter-spacing: 0.5px;
 			line-height: 1.14;
-
-			@include tabletBig {
-				padding: 6px 20px 3px;
-				padding-right: 15px;
-			}
 
 			@include desktop-hover {
 				color: $body-color;
@@ -218,9 +233,6 @@ $toc-pad-mob: 30px;
 			}
 
 			&.is-active {
-				$go-left: 25px;
-				$go-left-mob: 15px;
-
 				&::before {
 					display: block;
 				}
@@ -229,11 +241,7 @@ $toc-pad-mob: 30px;
 					color: $h1-color;
 
 					span {
-						transform: translateX($go-left - $toc-pad);
-
-						@include tabletBig {
-							transform: translateX(-5px);
-						}
+						transform: translateX(calc(var(--active-toc-move) - var(--toc-pad)));
 					}
 				}
 
@@ -241,11 +249,7 @@ $toc-pad-mob: 30px;
 					color: $h2-color;
 
 					span {
-						transform: translateX($go-left - $toc-pad-h2);
-
-						@include tabletBig {
-							transform: translateX($go-left-mob + $toc-pad-mob - $toc-pad-h2);
-						}
+						transform: translateX(calc(var(--active-toc-move) - var(--toc-pad-h2)));
 					}
 				}
 
@@ -253,11 +257,7 @@ $toc-pad-mob: 30px;
 					color: $h3-color;
 
 					span {
-						transform: translateX($go-left - $toc-pad-h3);
-
-						@include tabletBig {
-							transform: translateX($go-left-mob + $toc-pad-mob - $toc-pad-h3);
-						}
+						transform: translateX(calc(var(--active-toc-move) - var(--toc-pad-h3)));
 					}
 				}
 			}
@@ -285,34 +285,29 @@ $toc-pad-mob: 30px;
 			}
 
 			+ .h3-toc-item {
-				padding-left: $toc-pad-h2;
+				padding-left: var(--toc-pad-h2);
 
-				@include tabletBig {
-					padding-left: $toc-pad-h2 - $toc-pad-mob;
+				&.is-active {
+					span {
+						transform: translateX(calc(var(--active-toc-move) - var(--toc-pad-h2)));
+					}
 				}
 			}
 		}
 
 		.h2-toc-item {
-			padding-left: $toc-pad-h2;
-			color: rgba($toc-color, 0.8);
-
-			@include tabletBig {
-				padding-left: $toc-pad-h2 - $toc-pad-mob;
-			}
+			padding-left: var(--toc-pad-h2);
+			color: rgba($toc-color, 0.88);
 		}
 
 		.h3-toc-item {
-			padding-left: $toc-pad-h3;
-			color: rgba($toc-color, 0.55);
-
-			@include tabletBig {
-				padding-left: $toc-pad-h3 - $toc-pad-mob;
-			}
+			padding-left: var(--toc-pad-h3);
+			color: rgba($toc-color, 0.56);
 		}
 	}
 }
 
+// ERROR RENDER EMPTY TOC
 .toc-message {
 	text-align: center;
 	padding: 15px 25px 0;

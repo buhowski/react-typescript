@@ -1,8 +1,8 @@
 @mixin idea-back_hover {
-	color: white;
+	color: $body-color;
 
 	svg {
-		transform: translateX(-10px);
+		transform: translateX(-8px);
 	}
 }
 
@@ -45,15 +45,17 @@
 	transition: transform 0.2s;
 
 	@include tabletBig {
-		padding: 10px 16px;
+		padding: 11px 16px;
 		margin: 0;
 		position: fixed;
 		top: auto;
-		bottom: 25px;
-		left: 30px;
-
+		bottom: var(--startup-nav-pos);
+		left: var(--startup-nav-pos);
+		background-color: $bg-darkest;
+		border-radius: var(--startup-nav-rad);
+		box-shadow: var(--box-shd-main);
+		border: $bdr-main;
 		z-index: 10;
-		@include startup-nav-shadows;
 
 		span {
 			display: none;
@@ -188,7 +190,7 @@ $nav-top: 2px;
 			box-shadow 0.3s;
 
 		border: $bdr-main;
-		box-shadow: $bx-shd-main;
+		box-shadow: var(--box-shd-main);
 
 		@include tabletBig {
 			max-width: $section-width;
@@ -340,6 +342,7 @@ $nav-top: 2px;
 	}
 }
 
+// Lang bar
 .language-bar {
 	display: flex;
 	justify-content: center;
@@ -347,23 +350,27 @@ $nav-top: 2px;
 	// .language-bar__inner
 	&__inner {
 		border-radius: 100px;
-		box-shadow: $bx-shd-main;
+		box-shadow: var(--box-shd-main);
 	}
 }
 
+$radius-lang: 100px;
+$bg-lang: #a69d9d;
+$bg-active-lang: #4c3c6b;
 $lang-btn-width: 42px;
+
 .idea-lang {
 	width: max-content;
 	display: flex;
 	font-family: $font-primary;
-	background-color: $bg-color-lang;
+	background-color: $bg-lang;
 	margin: auto;
 	font-size: 14px;
 	border-radius: $radius-lang;
 	position: relative;
 	z-index: 12;
 	overflow: hidden;
-	border: 2px solid $bg-color-lang;
+	border: 2px solid $bg-lang;
 	gap: 2px;
 
 	&::before {
