@@ -4,6 +4,11 @@ $bdr-lang: #827e88;
 $lang-btn-width: 42px;
 $lang-radius: 100px;
 
+.language-bar__inner,
+.idea-lang::before {
+	will-change: transform;
+}
+
 .language-bar {
 	display: flex;
 	justify-content: center;
@@ -12,9 +17,9 @@ $lang-radius: 100px;
 	&__inner {
 		width: max-content;
 		border-radius: 100px;
-		padding: 1px;
-		border: 1px solid $bdr-lang;
-		@include bg-gradient($deg-x, #b0adb7, $bdr-lang);
+		padding: 2px;
+		border: 1px solid mix(#000000, $bdr-lang, 20%);
+		@include bg-gradient($deg-x, #adabb2, $bdr-lang);
 		box-shadow: var(--box-shd-main);
 		color: #141414;
 		overflow: hidden;
@@ -47,9 +52,7 @@ $lang-radius: 100px;
 		/* Dynamic with JS */
 		width: var(--indicator-width, $lang-btn-width);
 		transform: translateX(var(--indicator-x, 0));
-
 		transition: transform $transition-s;
-		will-change: transform;
 	}
 
 	// .idea-lang__btn

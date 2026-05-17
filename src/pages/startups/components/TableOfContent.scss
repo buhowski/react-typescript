@@ -5,10 +5,8 @@
 	--toc-pad-h3: 85px;
 
 	--active-toc-move: 25px;
-}
 
-@include tabletBig {
-	:root {
+	@include tabletBig {
 		--toc-pad: 22px;
 		--toc-pad-h2: 40px;
 		--toc-pad-h3: 58px;

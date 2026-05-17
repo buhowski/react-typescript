@@ -84,6 +84,33 @@ const App = () => {
 		return () => observer.disconnect();
 	}, []);
 
+	// Block scroll during route transition
+	useEffect(() => {
+		const scrollKeys = new Set(['ArrowUp', 'ArrowDown', 'PageUp', 'PageDown', ' ']);
+
+		const prevent = (e: Event) => e.preventDefault();
+		const preventKey = (e: KeyboardEvent) => {
+			if (scrollKeys.has(e.key)) e.preventDefault();
+		};
+
+		window.addEventListener('wheel', prevent, { passive: false });
+		window.addEventListener('touchmove', prevent, { passive: false });
+		window.addEventListener('keydown', preventKey);
+
+		const timer = setTimeout(() => {
+			window.removeEventListener('wheel', prevent);
+			window.removeEventListener('touchmove', prevent);
+			window.removeEventListener('keydown', preventKey);
+		}, NEXT_PAGE_TIME);
+
+		return () => {
+			clearTimeout(timer);
+			window.removeEventListener('wheel', prevent);
+			window.removeEventListener('touchmove', prevent);
+			window.removeEventListener('keydown', preventKey);
+		};
+	}, [pathKey]);
+
 	// SPECIAL APPS
 	if (isCVPage) return <CVPage />;
 	if (isEmailPage) return <EmailApp />;

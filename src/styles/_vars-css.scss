@@ -1,22 +1,25 @@
+$deep-shd: #060412;
+
 // CSS VARS
 :root {
-	// Startup Page
-	// --box-shd-main: 0 6px 30px #{rgba(#000000, 0.46)};
 	--box-shd-main:
-		0 1px 3px #{rgba(#000000, 0.2)}, 0 4px 18px #{rgba(#000000, 0.1)},
-		0 6px 30px #{rgba(#060412, 0.28)};
+		0 1px 4px #{rgba(#000000, 0.2)}, 0 4px 18px #{rgba(#000000, 0.08)},
+		0 6px 30px #{rgba($deep-shd, 0.26)};
+
 	--startup-nav-rad: 10px;
+
 	--startup-nav-posX: 79px;
 	--startup-nav-posY: 25px;
 
+	// RESPONSIVE VARS
 	@include tabletBig {
 		--startup-nav-rad: 8px;
 	}
 
 	@include tablet {
-		--box-shd-mobile:
-			0 1px 2px #{rgba(#000000, 0.18)}, 0 3px 12px #{rgba(#000000, 0.08)},
-			0 5px 20px #{rgba(#060412, 0.22)};
+		--box-shd-main:
+			0 1px 4px #{rgba(#000000, 0.2)}, 0 4px 14px #{rgba(#000000, 0.1)},
+			0 5px 20px #{rgba($deep-shd, 0.46)};
 	}
 
 	@include tabletSmall {

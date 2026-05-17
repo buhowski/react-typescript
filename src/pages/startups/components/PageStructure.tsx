@@ -9,10 +9,9 @@ import PitchContainer from './PitchContainer';
 import Slider from '../../../components/Slider';
 import TableOfContent from './TableOfContent';
 import { SinglePageProps, LANGUAGES, LanguageCode, htmlLangMap } from '../../../types/common';
-import BackButton from './BackButton';
 import '../Startups.scss';
 
-const PageStructure: React.FC<SinglePageProps> = ({ pageData, backButtonPath, initialLang }) => {
+const PageStructure: React.FC<SinglePageProps> = ({ pageData, initialLang }) => {
 	const useTabletLarge = useTabletLargeQuery();
 
 	const [initialLangReady, setInitialLangReady] = useState(false);

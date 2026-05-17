@@ -38,6 +38,10 @@ body.is-locked {
 	width: 100%;
 }
 
+.page:after {
+	will-change: transform, width, height, bottom;
+}
+
 .application {
 	min-width: 320px;
 
@@ -69,7 +73,6 @@ body.is-locked {
 		z-index: 1000;
 		background-color: $blue-main;
 		background: $transition-gradient;
-		will-change: width, height, bottom;
 		overflow: hidden;
 
 		// Debugging styles

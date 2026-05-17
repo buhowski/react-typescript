@@ -106,7 +106,7 @@
 		opacity: 0;
 		visibility: hidden;
 		overflow: hidden;
-		will-change: height, opacity, visibility;
+		will-change: transform, height, opacity, visibility;
 
 		&:after,
 		&:before {
@@ -117,7 +117,7 @@
 			top: 0;
 			left: 0;
 			z-index: 1;
-			will-change: height, transform, bottom;
+			will-change: transform, height, bottom;
 		}
 
 		.nav-link {
@@ -168,7 +168,6 @@
 		.contact-menu {
 			transform: scale(0);
 			transition: $transition-s;
-			will-change: transform;
 		}
 
 		.contact-menu {

@@ -1,3 +1,15 @@
+// Hover helper
+@mixin desktop-hover {
+	@media (hover: hover) and (pointer: fine) {
+		&:hover {
+			@content;
+		}
+	}
+}
+
+// nav burger icon
+$burger-transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+
 // BURGER ICON
 @mixin burgerIcon(
 	$burger-width: 40px,
@@ -131,15 +143,17 @@
 }
 
 // STARTUP NAV
-$nav-mob-light: inset 0 1px 0 rgba(#ffffff, 0.25);
+$nav-mob-light:
+	inset 0 1px 0 rgba(#ffffff, 0.34),
+	inset 0 0 1px rgba(#ffffff, 0.25);
 
 @mixin mob-nav-btns {
 	position: fixed;
 	bottom: var(--startup-nav-posY);
 
+	@include bg-gradient($deg-l);
+
 	border: $bdr-main;
 	border-radius: var(--startup-nav-rad);
 	box-shadow: var(--box-shd-main), $nav-mob-light;
-
-	@include bg-gradient($deg-l);
 }

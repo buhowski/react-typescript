@@ -4,6 +4,12 @@
 @import './components/LanguageSwitcher.scss';
 @import './components/StartupNavigation.scss';
 
+// Text Data
+:root {
+	--p-margin: 20px;
+	--bold-weight: 600;
+}
+
 @mixin title-style {
 	font-family: $font-raleway;
 	font-weight: 600;
@@ -43,7 +49,7 @@
 		// .contact-menu__item
 		&__item {
 			@include bg-gradient($deg-l, $bg-darker, $bg-darkest);
-			border: 1px solid mix(#ffffff, $bg-darker, 4%);
+			border: 1px solid mix(#ffffff, $bg-darker, 3%);
 			color: rgba($text-color, 0.86);
 			box-shadow: var(--box-shd-main);
 
@@ -203,7 +209,7 @@
 	li b,
 	p strong,
 	p b {
-		font-weight: $bold-weight;
+		font-weight: var(--bold-weight);
 		color: $bold-color;
 	}
 
@@ -282,7 +288,7 @@
 
 	p + p,
 	li + li {
-		margin-top: $p-margin;
+		margin-top: var(--p-margin);
 	}
 
 	p.description__has-em {
@@ -304,7 +310,7 @@
 
 	// .idea-block__list
 	ul {
-		margin: $p-margin 0;
+		margin: var(--p-margin) 0;
 
 		li {
 			position: relative;
@@ -631,6 +637,17 @@
 	}
 }
 
+@mixin video-preview-hover {
+	img {
+		transform: scale(1.25);
+		opacity: 1;
+	}
+
+	.video-preview__svg {
+		transform: translate(-50%, -50%) scale(0.75);
+	}
+}
+
 // Video poster preview
 .video-preview {
 	position: absolute;
@@ -639,33 +656,19 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: #000000;
 	cursor: pointer;
+	@include bg-gradient($deg-s);
 
 	&.disabled {
 		display: none;
 	}
 
 	@include desktop-hover {
-		img {
-			transform: scale(1.24);
-			opacity: 1;
-		}
-
-		.video-preview__svg {
-			transform: translate(-50%, -50%) scale(0.76);
-		}
+		@include video-preview-hover;
 	}
 
 	&:active {
-		img {
-			transform: scale(1.24);
-			opacity: 1;
-		}
-
-		.video-preview__svg {
-			transform: translate(-50%, -50%) scale(0.76);
-		}
+		@include video-preview-hover;
 	}
 
 	// &::before {
@@ -687,7 +690,7 @@
 	// }
 
 	img {
-		opacity: 0.76;
+		opacity: 0.74;
 	}
 
 	// .video-preview__svg
@@ -710,10 +713,13 @@
 			position: absolute;
 			inset: 0;
 			border-radius: 50%;
-			background-color: rgba($bg-darkest, 0.2);
-			backdrop-filter: blur(6px);
-			border: 1px solid rgba(#ffffff, 0.36);
-			box-shadow: 0 6px 30px rgba(#000000, 0.9);
+			background-color: rgba($bg-darkest, 0.8);
+			border: 1px solid rgba(#ffffff, 0.3);
+			box-shadow:
+				0 5px 32px rgba(#000000, 0.9),
+				inset 0 0 30px rgba(#ffffff, 0.08),
+				inset 0 1px 0 rgba(#ffffff, 0.2),
+				inset 0 -1px 0 rgba(#000000, 0.9);
 			z-index: -1;
 		}
 
@@ -729,7 +735,7 @@
 	// .video-preview__title
 	&__title {
 		position: absolute;
-		bottom: 0;
+		bottom: -1px;
 		left: 0;
 		width: 100%;
 		display: flex;
@@ -777,7 +783,7 @@
 	}
 }
 
-@mixin slider-arrows_hover {
+@mixin slider-arrows-hover {
 	border-color: rgba($light-color, 0.38);
 
 	.chevron {
@@ -806,13 +812,12 @@
 	}
 
 	@include desktop-hover {
-		@include slider-arrows_hover;
+		@include slider-arrows-hover;
 	}
 
 	&:active {
+		@include slider-arrows-hover;
 		transform: scale(0.8);
-
-		@include slider-arrows_hover;
 	}
 
 	&-next {

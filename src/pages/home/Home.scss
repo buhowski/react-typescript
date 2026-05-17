@@ -100,6 +100,12 @@ canvas {
 	}
 }
 
+.drawCanvas,
+.drawCanvas::before,
+.drawCanvas canvas {
+	will-change: transform;
+}
+
 .drawCanvas {
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -130,12 +136,6 @@ canvas {
 		position: absolute;
 		top: 0;
 		left: 0;
-	}
-
-	canvas {
-		transform: translateZ(0);
-		backface-visibility: hidden;
-		will-change: transform;
 	}
 
 	.illustrationImage {
