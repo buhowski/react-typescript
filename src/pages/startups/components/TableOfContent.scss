@@ -10,8 +10,8 @@
 @include tabletBig {
 	:root {
 		--toc-pad: 22px;
-		--toc-pad-h2: 36px;
-		--toc-pad-h3: 52px;
+		--toc-pad-h2: 40px;
+		--toc-pad-h3: 58px;
 
 		--active-toc-move: 16px;
 	}
@@ -51,7 +51,7 @@
 
 	h3 {
 		text-transform: uppercase;
-		transition: transform 0.2s;
+		transition: transform $transition-s;
 	}
 
 	// .table-content__btn
@@ -66,14 +66,14 @@
 		gap: 22px;
 		padding: 13px 20px 11px;
 		@include bg-gradient(180deg);
-		color: $subtitle-color;
+		color: $toc-title;
 		border-radius: var(--startup-nav-rad) var(--startup-nav-rad) 0 0;
 		border: $bdr-main;
 		text-shadow: 0 1px 2px rgba(#000000, 0.5);
 		border-bottom-width: 0;
 		transition:
-			color 0.2s,
-			transform 0.2s;
+			color $transition-s,
+			transform $transition-s;
 
 		@include tabletBig {
 			width: max-content;
@@ -93,11 +93,11 @@
 		}
 
 		@include desktop-hover {
-			color: $nav-color;
+			color: $lighter-color;
 		}
 
 		&:active {
-			color: $nav-color;
+			color: $lighter-color;
 
 			@include tabletBig {
 				transform: scale(0.8);
@@ -141,7 +141,7 @@
 		padding: 26px 0 30px;
 
 		@include tabletBig {
-			padding: 2px 0 20px;
+			padding: 5px 0 20px;
 		}
 	}
 
@@ -150,9 +150,9 @@
 		display: none;
 
 		@include tabletBig {
-			padding-top: 33px;
+			padding-top: 34px;
 			font-size: 18px;
-			letter-spacing: 0.8px;
+			letter-spacing: 1px;
 			font-family: $LouisGeorgeCafBold;
 			text-align: center;
 			display: block;
@@ -181,15 +181,15 @@
 		overflow: hidden;
 		z-index: -1;
 		transition:
-			height 0.2s,
-			border 0.2s;
+			height $transition-s,
+			border $transition-s;
 
 		@include tabletBig {
 			top: 18px;
 			right: 50%;
 			max-height: 84dvh;
 			min-width: 280px;
-			max-width: calc(100% - 40px);
+			max-width: calc(100% - 50px);
 			width: max-content;
 			transform: translateX(50%);
 		}
@@ -202,13 +202,14 @@
 			position: relative;
 			display: block;
 			width: 100%;
-			padding: 6px var(--toc-pad) 3px;
+			padding: 7px var(--toc-pad) 3px;
 			padding-right: 20px;
 			text-align: left;
 			font-family: $font-raleway;
 			font-weight: 600;
-			letter-spacing: 0.5px;
+			letter-spacing: 0.8px;
 			line-height: 1.14;
+			color: $toc-color;
 
 			@include desktop-hover {
 				color: $body-color;
@@ -235,7 +236,7 @@
 
 			span {
 				display: block;
-				transition: transform 0.2s;
+				transition: transform $transition-s;
 			}
 
 			&.is-active {
@@ -244,7 +245,7 @@
 				}
 
 				&.h1-toc-item {
-					color: $h1-color;
+					color: darken($h1-color, 7%);
 
 					span {
 						transform: translateX(calc(var(--active-toc-move) - var(--toc-pad)));
@@ -252,7 +253,7 @@
 				}
 
 				&.h2-toc-item {
-					color: $h2-color;
+					color: darken($h2-color, 16%);
 
 					span {
 						transform: translateX(calc(var(--active-toc-move) - var(--toc-pad-h2)));
@@ -260,7 +261,7 @@
 				}
 
 				&.h3-toc-item {
-					color: $h3-color;
+					color: darken($h3-color, 12%);
 
 					span {
 						transform: translateX(calc(var(--active-toc-move) - var(--toc-pad-h3)));
@@ -271,23 +272,22 @@
 
 		.h2-toc-item,
 		.h3-toc-item {
-			font-size: 14px;
+			font-size: 15px;
 
 			@include tabletBig {
-				font-size: 13px;
+				font-size: 14px;
 			}
 		}
 
 		.h1-toc-item {
 			font-size: 16px;
-			color: $toc-color;
 
 			@include tabletBig {
 				font-size: 15px;
 			}
 
 			&:not(:first-of-type) {
-				margin-top: 14px;
+				margin-top: 13px;
 			}
 
 			+ .h3-toc-item {

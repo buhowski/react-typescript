@@ -1,5 +1,5 @@
 // Lang bar
-$bg-active-lang: #443356;
+$bg-active-lang: #4a3d66;
 $lang-btn-width: 42px;
 $lang-radius: 100px;
 
@@ -12,9 +12,10 @@ $lang-radius: 100px;
 		width: max-content;
 		border-radius: 100px;
 		padding: 1px;
-		border: 1px solid #6e6a6a;
-		@include bg-gradient(165deg, #858080, #6e6a6a);
+		border: 1px solid #9c98aa;
+		@include bg-gradient(170deg, #a9a1b8, #8e8e9f);
 		box-shadow: var(--box-shd-main);
+		color: #141414;
 		overflow: hidden;
 	}
 }
@@ -27,7 +28,6 @@ $lang-radius: 100px;
 	border-radius: $lang-radius;
 	position: relative;
 	z-index: 12;
-	color: #0b0b0b;
 	gap: 2px;
 
 	&::before {
@@ -47,7 +47,7 @@ $lang-radius: 100px;
 		width: var(--indicator-width, $lang-btn-width);
 		transform: translateX(var(--indicator-x, 0));
 
-		transition: transform 0.2s;
+		transition: transform $transition-s;
 		will-change: transform;
 	}
 
@@ -58,9 +58,9 @@ $lang-radius: 100px;
 		line-height: 1;
 		font-weight: bold;
 		transition:
-			color 0.2s,
-			transform 0.2s,
-			background-color 0.2s;
+			color $transition-s,
+			transform $transition-s,
+			background-color $transition-s;
 		border-radius: $lang-radius;
 
 		@include desktop-hover {

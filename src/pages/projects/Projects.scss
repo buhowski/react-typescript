@@ -52,7 +52,7 @@
 		background-color: #000000;
 		border-radius: 20px;
 		box-shadow: 0 0 10px #000000;
-		transition: box-shadow 0.3s ease;
+		transition: box-shadow $transition-l ease;
 		overflow: hidden;
 
 		// .project-link__img
@@ -61,7 +61,7 @@
 			border-radius: 20px;
 			height: 100%;
 			object-fit: contain;
-			transition: filter 0.3s ease;
+			transition: filter $transition-l ease;
 		}
 	}
 

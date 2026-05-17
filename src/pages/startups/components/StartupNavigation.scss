@@ -1,5 +1,3 @@
-$transtition-nav-time: 0.3s;
-
 @mixin idea-back_hover {
 	color: $body-color;
 
@@ -103,8 +101,8 @@ $nav-top: 2px;
 	box-shadow: var(--box-shd-main);
 	@include bg-gradient(145deg);
 	transition:
-		transform 0.2s,
-		border-color $transtition-nav-time;
+		transform $transition-s,
+		border-color $transition-l;
 
 	@include tabletBig {
 		padding: 10px 16px;
@@ -134,7 +132,7 @@ $nav-top: 2px;
 
 	span,
 	svg {
-		transition: 0.2s;
+		transition: $transition-s;
 	}
 
 	svg {
@@ -185,10 +183,10 @@ $nav-top: 2px;
 		box-shadow: var(--box-shd-main);
 		@include bg-gradient;
 		transition:
-			padding 0.2s,
-			min-width $transtition-nav-time,
-			border-radius $transtition-nav-time,
-			box-shadow $transtition-nav-time;
+			padding $transition-s,
+			min-width $transition-l,
+			border-radius $transition-l,
+			box-shadow $transition-l;
 
 		@include tabletBig {
 			max-width: $section-width;
@@ -220,7 +218,7 @@ $nav-top: 2px;
 		font-family: $LouisGeorgeCafBold;
 		font-size: 19px;
 		letter-spacing: 1px;
-		color: rgba($subtitle-color, 0.75);
+		color: rgba($toc-title, 0.75);
 		flex-shrink: 0;
 		border-radius: 100px;
 		overflow: hidden;
@@ -228,8 +226,8 @@ $nav-top: 2px;
 		flex-grow: 1;
 		z-index: 0;
 		transition:
-			color 0.26s,
-			border-radius $transtition-nav-time;
+			color $transition-s,
+			border-radius $transition-l;
 
 		@include tabletBig {
 			padding: 16px 14px 14px;
@@ -250,7 +248,7 @@ $nav-top: 2px;
 			width: 0;
 			height: 3px;
 			overflow: hidden;
-			transition: width $transtition-nav-time;
+			transition: width $transition-l;
 		}
 
 		&::before {
@@ -268,12 +266,12 @@ $nav-top: 2px;
 			overflow: hidden;
 			transform: scale(0, 1) translateY(100%);
 			transition:
-				transform $transtition-nav-time,
-				border-radius $transtition-nav-time;
+				transform $transition-l,
+				border-radius $transition-l;
 		}
 
 		&.active {
-			color: $nav-color;
+			color: $lighter-color;
 			text-transform: uppercase;
 
 			&::before {
@@ -282,7 +280,7 @@ $nav-top: 2px;
 		}
 
 		&.sub-active {
-			color: $nav-color;
+			color: $lighter-color;
 			text-transform: uppercase;
 			overflow: visible;
 
@@ -315,7 +313,7 @@ $nav-top: 2px;
 
 		span {
 			display: block;
-			transition: 0.2s;
+			transition: $transition-s;
 
 			&::before {
 				content: attr(data-text);

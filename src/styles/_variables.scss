@@ -7,6 +7,9 @@ $LouisGeorgeCafBold: 'Louis George Caf Bold', 'Raleway', sans-serif;
 $IndieFlower: 'Indie Flower', cursive;
 $ComingSoon: 'Coming Soon', cursive;
 
+$transition-s: 0.2s;
+$transition-l: 0.3s;
+
 // Colors
 $blue-light: #1fa9ff;
 $blue-main: #0074ff;
@@ -16,7 +19,9 @@ $blue-darkest: #001a3a;
 $bg-main: #202020;
 $bg-darker: #1b1b1b;
 $bg-darkest: #101010;
+
 $body-color: #e7e7e7;
+$lighter-color: #f3f3f3;
 
 $subtitle-color: #879494;
 $h1-color: #f6b96f;
@@ -24,11 +29,11 @@ $h2-color: #82aad0;
 $h3-color: #dab1ab;
 
 $text-color: #dadada;
-$bold-color: $body-color;
 $link-color: #55aadd;
+$bold-color: $body-color;
 
-$nav-color: #f3f3f3;
-$toc-color: #768686;
+$toc-title: #8597ae;
+$toc-color: mix(#ffffff, $toc-title, 25%);
 
 // Borders
 $bdr-color: mix(#ffffff, $bg-darkest, 7%);
@@ -37,7 +42,7 @@ $bdr-color-l: mix(#ffffff, $bg-main, 4%);
 $bdr-main: 1px solid $bdr-color;
 $bdr-main-l: 1px solid $bdr-color-l;
 
-$nav-mob-light: inset 0 1px 0 rgba(#ffffff, 0.16);
+$nav-mob-light: inset 0 1px 0 rgba(#ffffff, 0.18);
 
 @mixin bg-gradient($deg: 177deg, $c1: #141414, $c2: $bg-darkest) {
 	background: linear-gradient($deg, $c1 0%, $c2 100%);
@@ -294,7 +299,10 @@ $burger-transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 // CSS VARS
 :root {
 	// Startup Page
-	--box-shd-main: 0 6px 30px #{rgba(#000000, 0.46)};
+	// --box-shd-main: 0 6px 30px #{rgba(#000000, 0.46)};
+	--box-shd-main:
+		0 1px 3px #{rgba(#000000, 0.2)}, 0 4px 18px #{rgba(#000000, 0.1)},
+		0 6px 30px #{rgba(#060412, 0.28)};
 	--startup-nav-rad: 10px;
 	--startup-nav-posX: 79px;
 	--startup-nav-posY: 25px;
@@ -308,8 +316,9 @@ $burger-transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 
 @include tablet {
 	:root {
-		// --box-shd-main: 0 4px 12px #{rgba(#000000, 0.5)};
-		--box-shd-main: 0 8px 24px #{rgba(#000000, 0.5)};
+		--box-shd-mobile:
+			0 1px 2px #{rgba(#000000, 0.18)}, 0 3px 12px #{rgba(#000000, 0.08)},
+			0 5px 20px #{rgba(#060412, 0.22)};
 	}
 }
 

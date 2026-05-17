@@ -167,7 +167,7 @@
 		.nav-item,
 		.contact-menu {
 			transform: scale(0);
-			transition: 0.2s;
+			transition: $transition-s;
 			will-change: transform;
 		}
 
@@ -198,7 +198,7 @@
 			}
 
 			.contact-menu {
-				transition-delay: 0.3s;
+				transition-delay: $transition-l;
 			}
 
 			&:after,
@@ -210,7 +210,7 @@
 			&:before {
 				background-color: $blue-main;
 				box-shadow: $box-shadow-main;
-				animation: menuAnim 0.3s ease;
+				animation: menuAnim $transition-l ease;
 			}
 
 			&:after {

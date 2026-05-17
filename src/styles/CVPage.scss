@@ -76,7 +76,7 @@
 		background-color: #1e1e1e;
 		opacity: 0;
 		transition:
-			opacity 0.3s,
-			height 0.2s;
+			opacity $transition-l,
+			height $transition-s;
 	}
 }

@@ -366,7 +366,7 @@
 		background-color: rgba(#000000, 0.55);
 		line-height: 1.4;
 		overflow: hidden;
-		transition: 0.2s;
+		transition: $transition-s;
 
 		@include desktop-hover {
 			@include hover-text-link;
@@ -495,8 +495,8 @@
 	color: $h1-color;
 	text-shadow: 0 0 1px currentColor;
 	transition:
-		background-color 0.2s,
-		transform 0.2s;
+		background-color $transition-s,
+		transform $transition-s;
 
 	@include btn-more_decor;
 
@@ -522,7 +522,7 @@
 	+ .pitch-container {
 		margin-top: 60px;
 		padding-top: 60px;
-		border-top: 1px solid rgba($subtitle-color, 0.14);
+		border-top: 1px solid rgba($subtitle-color, 0.18);
 	}
 }
 
@@ -588,7 +588,7 @@
 	border: $bdr-main;
 	border-top-width: 0;
 	box-shadow: var(--box-shd-main);
-	transition: box-shadow 0.2s;
+	transition: box-shadow $transition-s;
 	@include bg-gradient(145deg);
 
 	@include tabletBig {
@@ -608,9 +608,9 @@
 	video,
 	.video-preview__svg {
 		transition:
-			transform 0.3s,
-			opacity 0.3s,
-			visibility 0.3s;
+			transform $transition-l,
+			opacity $transition-l,
+			visibility $transition-l;
 	}
 
 	img,
@@ -694,24 +694,34 @@
 		position: absolute;
 		top: 50%;
 		left: 50%;
-		transform: translate(-50%, -50%) scale(1) translateZ(0);
+		transform: translate(-50%, -50%);
 		width: 85px;
-		aspect-ratio: 1 / 1;
 		border-radius: 50%;
-		box-shadow: 0 8px 24px rgba(#000000, 0.8);
-		border: $bdr-main;
-		overflow: hidden;
+		aspect-ratio: 1 / 1;
 
 		@include tabletBig {
-			width: 70px;
+			width: 75px;
+		}
+
+		&::before {
+			content: '';
+			display: block;
+			position: absolute;
+			inset: 0;
+			border-radius: 50%;
+			background: rgba($toc-title, 0.25);
+			backdrop-filter: blur(8px);
+			border: 1px solid rgba(#ffffff, 0.35);
+			box-shadow: 0 8px 24px rgba(#000000, 0.8);
+			z-index: -1;
 		}
 
 		.play-circle {
-			fill: $subtitle-color;
+			fill: transparent;
 		}
 
 		.play-triangle {
-			fill: $bg-darkest;
+			fill: $lighter-color;
 		}
 	}
 
@@ -767,10 +777,10 @@
 }
 
 @mixin slider-arrows_hover {
-	border-color: rgba($nav-color, 0.38);
+	border-color: rgba($lighter-color, 0.38);
 
 	.chevron {
-		border-color: $nav-color;
+		border-color: $lighter-color;
 	}
 }
 
@@ -782,16 +792,16 @@
 	@include bg-gradient(135deg);
 
 	transition:
-		transform 0.2s,
-		border-color 0.2s;
+		transform $transition-s,
+		border-color $transition-s;
 
 	.chevron {
 		display: block;
 		width: 12px;
 		height: 12px;
-		border: 3px solid $subtitle-color;
+		border: 3px solid $toc-title;
 		border-width: 3px 3px 0 0;
-		transition: border-color 0.2s;
+		transition: border-color $transition-s;
 	}
 
 	@include desktop-hover {

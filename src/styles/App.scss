@@ -55,7 +55,7 @@ body.is-locked {
 	min-height: 100dvh;
 	background-color: $bg-main;
 	opacity: 1;
-	transition: opacity 0.2s linear calc(var(--next-page-ratio) - 0.1s);
+	transition: opacity $transition-s linear calc(var(--next-page-ratio) - 0.1s);
 
 	&:after {
 		content: '';
