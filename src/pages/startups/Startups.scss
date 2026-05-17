@@ -48,10 +48,14 @@
 
 		// .contact-menu__item
 		&__item {
-			@include bg-gradient($deg-l, $bg-darker, $bg-darkest);
+			@include bg-gradient($deg-l, $bg-darker, #131313);
 			border: 1px solid mix(#ffffff, $bg-darker, 3%);
 			color: rgba($text-color, 0.86);
 			box-shadow: var(--box-shd-main);
+
+			@include tabletBig {
+				box-shadow: var(--box-shd-main-mobile);
+			}
 
 			&:not(:last-child) {
 				margin-right: 15px;
@@ -562,12 +566,6 @@
 }
 
 .slider-wrapper {
-	@include tabletBig {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
-
 	&.disabled {
 		display: block;
 	}
@@ -608,6 +606,8 @@
 .slider-item-js {
 	width: 100%;
 	height: 100%;
+	position: absolute;
+	inset: 0;
 
 	img,
 	svg,
@@ -714,7 +714,7 @@
 			inset: 0;
 			border-radius: 50%;
 			background-color: rgba($bg-darkest, 0.8);
-			border: 1px solid rgba(#ffffff, 0.3);
+			border: 1px solid rgba(#ffffff, 0.25);
 			box-shadow:
 				0 5px 32px rgba(#000000, 0.9),
 				inset 0 0 30px rgba(#ffffff, 0.08),
@@ -761,11 +761,13 @@
 .slider-actions {
 	display: flex;
 	align-items: center;
+	justify-content: flex-end;
 	margin-top: 22px;
 	margin-bottom: -10px;
 
 	@include tabletBig {
 		margin-bottom: 0;
+		justify-content: center;
 	}
 }
 
@@ -802,6 +804,10 @@
 		transform $transition-s,
 		border-color $transition-s;
 
+	@include tabletBig {
+		box-shadow: var(--box-shd-main-mobile);
+	}
+
 	.chevron {
 		display: block;
 		width: 12px;
@@ -828,8 +834,6 @@
 
 	// .slider-btn-js-prev
 	&-prev {
-		margin-left: auto;
-
 		.chevron {
 			transform: rotate(-135deg) translate(-2px, 2px);
 		}

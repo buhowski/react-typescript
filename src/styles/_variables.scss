@@ -58,6 +58,7 @@ $transition-gradient:
 $deg-s: 135deg;
 $deg-l: 165deg;
 $deg-x: 178deg;
+
 @mixin bg-gradient($deg: 180deg, $c1: #151515, $c2: $bg-darkest) {
 	background: linear-gradient($deg, $c1 0%, $c2 100%);
 }

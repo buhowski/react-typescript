@@ -6,6 +6,10 @@ $deep-shd: #060412;
 		0 1px 4px #{rgba(#000000, 0.2)}, 0 4px 18px #{rgba(#000000, 0.08)},
 		0 6px 30px #{rgba($deep-shd, 0.26)};
 
+	--box-shd-main-mobile:
+		0 1px 4px #{rgba(#000000, 0.2)}, 0 3px 10px #{rgba(#000000, 0.08)},
+		0 4px 12px #{rgba($deep-shd, 0.5)};
+
 	--startup-nav-rad: 10px;
 
 	--startup-nav-posX: 79px;
