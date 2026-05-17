@@ -218,8 +218,6 @@ const PageStructure: React.FC<SinglePageProps> = ({ pageData, backButtonPath, in
 					</div>
 
 					<div className='copyright-wrapper'>{canRenderCopyright && <Copyright />}</div>
-
-					{useTabletLarge && backButtonPath && <BackButton to={backButtonPath} />}
 				</div>
 			</div>
 		</VideoPlaybackProvider>

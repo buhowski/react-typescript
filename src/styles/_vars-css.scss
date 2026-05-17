@@ -1,0 +1,30 @@
+// CSS VARS
+:root {
+	// Startup Page
+	// --box-shd-main: 0 6px 30px #{rgba(#000000, 0.46)};
+	--box-shd-main:
+		0 1px 3px #{rgba(#000000, 0.2)}, 0 4px 18px #{rgba(#000000, 0.1)},
+		0 6px 30px #{rgba(#060412, 0.28)};
+	--startup-nav-rad: 10px;
+	--startup-nav-posX: 79px;
+	--startup-nav-posY: 25px;
+
+	@include tabletBig {
+		--startup-nav-rad: 8px;
+	}
+
+	@include tablet {
+		--box-shd-mobile:
+			0 1px 2px #{rgba(#000000, 0.18)}, 0 3px 12px #{rgba(#000000, 0.08)},
+			0 5px 20px #{rgba(#060412, 0.22)};
+	}
+
+	@include tabletSmall {
+		--startup-nav-posX: 39px;
+		--startup-nav-posY: 14px;
+	}
+
+	@include mobile {
+		--startup-nav-posX: 14px;
+	}
+}

@@ -1,0 +1,145 @@
+// BURGER ICON
+@mixin burgerIcon(
+	$burger-width: 40px,
+	$burger-height: 25px,
+	$border-width: 3px,
+	$color: $blue-main
+) {
+	width: $burger-width;
+	height: $burger-height;
+	position: relative;
+	margin-left: auto;
+	transform: rotate(0deg);
+
+	span {
+		display: block;
+		position: absolute;
+		width: calc(50% + 1px);
+		height: 0;
+		border-bottom: $border-width solid $color;
+		opacity: 1;
+		transform: rotate(0deg);
+		transition:
+			transform $burger-transition,
+			left $burger-transition,
+			top $burger-transition,
+			bottom $burger-transition,
+			opacity $burger-transition;
+	}
+
+	span:nth-child(even) {
+		left: 50%;
+		border-radius: 0 10px 10px 0;
+	}
+
+	span:nth-child(odd) {
+		left: 0px;
+		border-radius: 10px 0 0 10px;
+	}
+
+	span:nth-child(1),
+	span:nth-child(2) {
+		top: 0px;
+	}
+
+	span:nth-child(3),
+	span:nth-child(4) {
+		top: calc(50% - $border-width / 2);
+	}
+
+	span:nth-child(5),
+	span:nth-child(6) {
+		bottom: 0;
+	}
+}
+
+// BURGER ICON OPEN
+@mixin burgerIconOpen {
+	span:nth-child(1),
+	span:nth-child(6) {
+		transform: rotate(45deg);
+	}
+
+	span:nth-child(2),
+	span:nth-child(5) {
+		transform: rotate(-45deg);
+	}
+
+	span:nth-child(1) {
+		left: 3px;
+		top: 5px;
+	}
+
+	span:nth-child(2) {
+		left: calc(50% - 3px);
+		top: 5px;
+	}
+
+	span:nth-child(3) {
+		left: -50%;
+		opacity: 0;
+	}
+
+	span:nth-child(4) {
+		left: 100%;
+		opacity: 0;
+	}
+
+	span:nth-child(5) {
+		left: 3px;
+		bottom: 4px;
+	}
+
+	span:nth-child(6) {
+		left: calc(50% - 4px);
+		bottom: 4px;
+	}
+}
+
+// Header Links
+@mixin navLink {
+	position: relative;
+	white-space: nowrap;
+	font-family: $LouisGeorgeCafBold;
+	padding: 12px 28px;
+	padding-left: 32px;
+	text-align: center;
+	letter-spacing: 3px;
+	overflow: hidden;
+	z-index: 1;
+
+	&:after {
+		content: '';
+		position: absolute;
+		display: block;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		height: 2px;
+		background-color: $blue-main;
+		z-index: -1;
+		transition: 0.25s;
+	}
+
+	&.active,
+	&:hover {
+		&:after {
+			box-shadow: $box-shadow-main;
+			height: 100%;
+		}
+	}
+}
+
+// STARTUP NAV
+$nav-mob-light: inset 0 1px 0 rgba(#ffffff, 0.25);
+
+@mixin mob-nav-btns {
+	position: fixed;
+	bottom: var(--startup-nav-posY);
+
+	border: $bdr-main;
+	border-radius: var(--startup-nav-rad);
+	box-shadow: var(--box-shd-main), $nav-mob-light;
+
+	@include bg-gradient($deg-l);
+}

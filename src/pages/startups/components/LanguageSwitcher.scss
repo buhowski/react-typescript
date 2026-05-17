@@ -1,5 +1,6 @@
 // Lang bar
 $bg-active-lang: #4a3d66;
+$bdr-lang: #827e88;
 $lang-btn-width: 42px;
 $lang-radius: 100px;
 
@@ -12,8 +13,8 @@ $lang-radius: 100px;
 		width: max-content;
 		border-radius: 100px;
 		padding: 1px;
-		border: 1px solid #9c98aa;
-		@include bg-gradient(170deg, #a9a1b8, #8e8e9f);
+		border: 1px solid $bdr-lang;
+		@include bg-gradient($deg-x, #b0adb7, $bdr-lang);
 		box-shadow: var(--box-shd-main);
 		color: #141414;
 		overflow: hidden;

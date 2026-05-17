@@ -15,6 +15,7 @@
 		border-radius: 50%;
 		position: relative;
 		background-color: $bg-darker;
+		color: $body-color;
 		box-shadow: 0 1px 2px rgba(#000000, 0.5);
 		transition: transform $transition-s;
 
@@ -50,9 +51,10 @@
 	}
 
 	svg {
-		fill: $body-color;
-		transition: fill 0.25s;
-		transform: translateZ(0);
+		fill: currentColor;
+		transition:
+			color $transition-s,
+			fill $transition-s;
 	}
 
 	.title {
@@ -68,9 +70,9 @@
 		visibility: hidden;
 
 		transition:
-			visibility 0.25s,
-			opacity 0.25s,
-			transform 0.25s;
+			visibility $transition-s,
+			opacity $transition-s,
+			transform $transition-s;
 		will-change: transform, opacity, visibility;
 	}
 }

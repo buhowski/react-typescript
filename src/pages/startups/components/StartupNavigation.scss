@@ -1,11 +1,24 @@
+:root {
+	--fsz-nav: 19px;
+	--ltr-sp-nav: 1px;
+
+	@include tabletBig {
+		--fsz-nav: 16px;
+		--ltr-sp-nav: 0;
+	}
+}
+
+$nav-top: 2px;
+
 @mixin idea-back_hover {
-	color: $body-color;
+	color: $light-color;
 
 	svg {
 		transform: translateX(-6px);
 	}
 }
 
+// ROUTING FIX
 .startup-actions {
 	position: relative;
 	z-index: 0;
@@ -16,7 +29,7 @@
 	}
 
 	@include tablet {
-		margin-top: 27px;
+		margin-top: 28px;
 	}
 
 	&.is-visible {
@@ -25,10 +38,9 @@
 }
 
 // StartupNavigation
-$nav-top: 2px;
 @mixin startup-nav__btn-hover {
-	color: #ffffff;
-	text-shadow: 0 0 8px rgba(#ffffff, 0.5);
+	color: $light-color;
+	text-shadow: 0 0 8px rgba($light-color, 0.45);
 }
 
 .application__nav {
@@ -67,9 +79,10 @@ $nav-top: 2px;
 			border-radius: 0;
 		}
 
-		.idea-back {
+		.wrapper .idea-back {
 			position: fixed;
 			border-color: transparent;
+			box-shadow: none;
 		}
 
 		~ .page {
@@ -85,35 +98,28 @@ $nav-top: 2px;
 
 // Back Navigation button
 .idea-back {
-	font-family: $LouisGeorgeCafBold;
-	font-size: 18px;
-	letter-spacing: 1.6px;
-	color: $toc-color;
-	padding: 15px 40px 13px;
+	@include bg-gradient($deg-l);
+	padding: 14px 40px 13px;
 	border-radius: 100px;
 	display: inline-flex;
 	align-items: center;
-	gap: 10px;
+	gap: 12px;
 	position: absolute;
 	top: -$nav-top;
 	z-index: 1;
 	border: $bdr-main;
 	box-shadow: var(--box-shd-main);
-	@include bg-gradient(145deg);
 	transition:
 		transform $transition-s,
+		box-shadow $transition-l,
 		border-color $transition-l;
 
 	@include tabletBig {
+		@include mob-nav-btns;
 		padding: 10px 16px;
 		margin: 0;
-		position: fixed;
-		top: auto;
-		bottom: var(--startup-nav-posY);
+		top: unset;
 		left: var(--startup-nav-posX);
-		border-radius: var(--startup-nav-rad);
-		box-shadow: var(--box-shd-main), $nav-mob-light;
-		border: $bdr-main;
 		z-index: 10;
 
 		span {
@@ -136,7 +142,7 @@ $nav-top: 2px;
 	}
 
 	svg {
-		width: 16px;
+		width: 19px;
 		fill: currentColor;
 
 		@include tabletBig {
@@ -152,6 +158,10 @@ $nav-top: 2px;
 	margin-top: 60px;
 	padding-bottom: 130px;
 	height: 52px;
+	font-size: var(--fsz-nav);
+	letter-spacing: var(--ltr-sp-nav);
+	color: $nav-title;
+	font-family: $LouisGeorgeCafBold;
 
 	@include tabletBig {
 		padding-bottom: 0;
@@ -172,6 +182,7 @@ $nav-top: 2px;
 
 	// .startup-nav__wrapper
 	&__wrapper {
+		@include bg-gradient($deg-x);
 		overflow: hidden;
 		width: 100%;
 		max-width: max-content;
@@ -181,7 +192,6 @@ $nav-top: 2px;
 		border-radius: 100px;
 		border: $bdr-main;
 		box-shadow: var(--box-shd-main);
-		@include bg-gradient;
 		transition:
 			padding $transition-s,
 			min-width $transition-l,
@@ -215,24 +225,18 @@ $nav-top: 2px;
 	// .startup-nav__btn
 	&__btn {
 		padding: 14px 70px 13px;
-		font-family: $LouisGeorgeCafBold;
-		font-size: 19px;
-		letter-spacing: 1px;
-		color: rgba($toc-title, 0.75);
 		flex-shrink: 0;
-		border-radius: 100px;
-		overflow: hidden;
-		position: relative;
 		flex-grow: 1;
+		border-radius: 100px;
+		position: relative;
 		z-index: 0;
+		overflow: hidden;
 		transition:
 			color $transition-s,
 			border-radius $transition-l;
 
 		@include tabletBig {
 			padding: 16px 14px 14px;
-			font-size: 16px;
-			letter-spacing: 0;
 		}
 
 		&::after {
@@ -271,8 +275,9 @@ $nav-top: 2px;
 		}
 
 		&.active {
-			color: $lighter-color;
+			color: $light-color;
 			text-transform: uppercase;
+			text-shadow: 0 0 8px rgba(#000000, 0.6);
 
 			&::before {
 				transform: scale(1, 1) translateY(0);
@@ -280,8 +285,9 @@ $nav-top: 2px;
 		}
 
 		&.sub-active {
-			color: $lighter-color;
+			color: $light-color;
 			text-transform: uppercase;
+			text-shadow: 0 0 6px rgba(#ffffff, 0.35);
 			overflow: visible;
 
 			&::after {

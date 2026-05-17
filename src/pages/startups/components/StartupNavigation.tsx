@@ -30,8 +30,8 @@ const StartupNavigation: React.FC<Props> = ({ onActiveChange, delayedPathKey }) 
 
 	return (
 		<div ref={navRef} className={`startup-nav`}>
-			{!useTabletLarge && backButtonPath && (
-				<div className='wrapper'>
+			{backButtonPath && (
+				<div className={useTabletLarge ? `` : 'wrapper'}>
 					<BackButton to={backButtonPath} />
 				</div>
 			)}

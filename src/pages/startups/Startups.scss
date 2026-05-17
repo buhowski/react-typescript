@@ -42,9 +42,10 @@
 
 		// .contact-menu__item
 		&__item {
-			border: $bdr-main-l;
+			@include bg-gradient($deg-l, $bg-darker, $bg-darkest);
+			border: 1px solid mix(#ffffff, $bg-darker, 4%);
+			color: rgba($text-color, 0.86);
 			box-shadow: var(--box-shd-main);
-			@include bg-gradient(145deg, #1f1f1f, $bg-darker);
 
 			&:not(:last-child) {
 				margin-right: 15px;
@@ -589,7 +590,7 @@
 	border-top-width: 0;
 	box-shadow: var(--box-shd-main);
 	transition: box-shadow $transition-s;
-	@include bg-gradient(145deg);
+	@include bg-gradient($deg-l);
 
 	@include tabletBig {
 		border-radius: 0;
@@ -619,7 +620,7 @@
 		object-position: center;
 		object-fit: cover;
 		height: 100%;
-		transform: scale(1) translateZ(0);
+		transform: scale(1);
 		border: none;
 	}
 
@@ -647,23 +648,23 @@
 
 	@include desktop-hover {
 		img {
-			transform: scale(1.2) translateZ(0);
+			transform: scale(1.24);
 			opacity: 1;
 		}
 
 		.video-preview__svg {
-			transform: translate(-50%, -50%) scale(0.76) translateZ(0);
+			transform: translate(-50%, -50%) scale(0.76);
 		}
 	}
 
 	&:active {
 		img {
-			transform: scale(1.2) translateZ(0);
+			transform: scale(1.24);
 			opacity: 1;
 		}
 
 		.video-preview__svg {
-			transform: translate(-50%, -50%) scale(0.76) translateZ(0);
+			transform: translate(-50%, -50%) scale(0.76);
 		}
 	}
 
@@ -686,7 +687,7 @@
 	// }
 
 	img {
-		opacity: 0.7;
+		opacity: 0.76;
 	}
 
 	// .video-preview__svg
@@ -709,10 +710,10 @@
 			position: absolute;
 			inset: 0;
 			border-radius: 50%;
-			background: rgba($toc-title, 0.25);
-			backdrop-filter: blur(8px);
-			border: 1px solid rgba(#ffffff, 0.35);
-			box-shadow: 0 8px 24px rgba(#000000, 0.8);
+			background-color: rgba($bg-darkest, 0.2);
+			backdrop-filter: blur(6px);
+			border: 1px solid rgba(#ffffff, 0.36);
+			box-shadow: 0 6px 30px rgba(#000000, 0.9);
 			z-index: -1;
 		}
 
@@ -721,7 +722,7 @@
 		}
 
 		.play-triangle {
-			fill: $lighter-color;
+			fill: $light-color;
 		}
 	}
 
@@ -777,19 +778,19 @@
 }
 
 @mixin slider-arrows_hover {
-	border-color: rgba($lighter-color, 0.38);
+	border-color: rgba($light-color, 0.38);
 
 	.chevron {
-		border-color: $lighter-color;
+		border-color: $light-color;
 	}
 }
 
 .slider-btn-js {
-	padding: 13px 14px;
+	padding: 14px 15px;
 	border-radius: 10px;
 	border: $bdr-main;
 	box-shadow: var(--box-shd-main);
-	@include bg-gradient(135deg);
+	@include bg-gradient($deg-s);
 
 	transition:
 		transform $transition-s,
@@ -799,7 +800,7 @@
 		display: block;
 		width: 12px;
 		height: 12px;
-		border: 3px solid $toc-title;
+		border: 3px solid $nav-title;
 		border-width: 3px 3px 0 0;
 		transition: border-color $transition-s;
 	}
