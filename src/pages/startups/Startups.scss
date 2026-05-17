@@ -1,7 +1,8 @@
 @import '../../styles/variables';
 @import '../../styles/animation';
 @import './components/TableOfContent.scss';
-@import './startup-actions.scss';
+@import './components/LanguageSwitcher.scss';
+@import './components/StartupNavigation.scss';
 
 @mixin title-style {
 	font-family: $font-raleway;
@@ -521,7 +522,7 @@
 	+ .pitch-container {
 		margin-top: 60px;
 		padding-top: 60px;
-		border-top: $bdr-main;
+		border-top: 1px solid rgba($subtitle-color, 0.14);
 	}
 }
 

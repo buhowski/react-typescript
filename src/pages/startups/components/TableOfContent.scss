@@ -1,6 +1,6 @@
 // CSS VARS
 :root {
-	--toc-pad: 45px;
+	--toc-pad: 46px;
 	--toc-pad-h2: 65px;
 	--toc-pad-h3: 85px;
 
@@ -9,7 +9,7 @@
 
 @include tabletBig {
 	:root {
-		--toc-pad: 20px;
+		--toc-pad: 22px;
 		--toc-pad-h2: 36px;
 		--toc-pad-h3: 52px;
 
@@ -31,11 +31,11 @@
 		.table-content__btn {
 			h3,
 			mark {
-				opacity: 0.35;
+				opacity: 0.4;
 			}
 
 			@include tabletBig {
-				opacity: 0.6;
+				opacity: 0.86;
 
 				h3,
 				mark {
@@ -80,10 +80,11 @@
 			padding: 14px 16px;
 			border-bottom-width: 1px;
 			position: fixed;
-			bottom: var(--startup-nav-pos);
-			right: var(--startup-nav-pos);
+			bottom: var(--startup-nav-posY);
+			right: var(--startup-nav-posX);
 			border-radius: var(--startup-nav-rad);
 			box-shadow: var(--box-shd-main), $nav-mob-light;
+			@include bg-gradient(145deg);
 			z-index: 100;
 
 			> h3 {
@@ -140,7 +141,7 @@
 		padding: 26px 0 30px;
 
 		@include tabletBig {
-			padding: 6px 0 20px;
+			padding: 2px 0 20px;
 		}
 	}
 
@@ -149,7 +150,7 @@
 		display: none;
 
 		@include tabletBig {
-			padding-top: 34px;
+			padding-top: 33px;
 			font-size: 18px;
 			letter-spacing: 0.8px;
 			font-family: $LouisGeorgeCafBold;

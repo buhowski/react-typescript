@@ -37,7 +37,7 @@ $bdr-color-l: mix(#ffffff, $bg-main, 4%);
 $bdr-main: 1px solid $bdr-color;
 $bdr-main-l: 1px solid $bdr-color-l;
 
-$nav-mob-light: inset 0 1px 0 rgba(#ffffff, 0.1);
+$nav-mob-light: inset 0 1px 0 rgba(#ffffff, 0.16);
 
 @mixin bg-gradient($deg: 177deg, $c1: #141414, $c2: $bg-darkest) {
 	background: linear-gradient($deg, $c1 0%, $c2 100%);
@@ -296,7 +296,8 @@ $burger-transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 	// Startup Page
 	--box-shd-main: 0 6px 30px #{rgba(#000000, 0.46)};
 	--startup-nav-rad: 10px;
-	--startup-nav-pos: 30px;
+	--startup-nav-posX: 79px;
+	--startup-nav-posY: 25px;
 }
 
 @include tabletBig {
@@ -305,15 +306,21 @@ $burger-transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 	}
 }
 
-@include tabletSmall {
-	:root {
-		--startup-nav-pos: 14px;
-	}
-}
-
 @include tablet {
 	:root {
 		// --box-shd-main: 0 4px 12px #{rgba(#000000, 0.5)};
 		--box-shd-main: 0 8px 24px #{rgba(#000000, 0.5)};
+	}
+}
+
+@include tabletSmall {
+	:root {
+		--startup-nav-posX: 39px;
+		--startup-nav-posY: 14px;
+	}
+}
+@include mobile {
+	:root {
+		--startup-nav-posX: 14px;
 	}
 }
