@@ -49,7 +49,7 @@
 		// .contact-menu__item
 		&__item {
 			@include bg-gradient($deg-l, $bg-darker, #131313);
-			border: 1px solid mix(#ffffff, $bg-darker, 3%);
+			border: 1px solid mix(#ffffff, $bg-darker, 6%);
 			color: rgba($text-color, 0.86);
 			box-shadow: var(--box-shd-main);
 
@@ -533,7 +533,7 @@
 	+ .pitch-container {
 		margin-top: 60px;
 		padding-top: 60px;
-		border-top: 1px solid rgba($subtitle-color, 0.18);
+		border-top: 1px solid rgba($subtitle-color, 0.24);
 	}
 }
 
@@ -553,7 +553,6 @@
 
 			// .preloader__spinner-span:before
 			&-span:before {
-				background-color: $toc-color;
 				height: 14px;
 			}
 		}
@@ -786,7 +785,7 @@
 }
 
 @mixin slider-arrows-hover {
-	border-color: rgba($light-color, 0.38);
+	border-color: rgba($light-color, 0.4);
 
 	.chevron {
 		border-color: $light-color;
@@ -794,7 +793,7 @@
 }
 
 .slider-btn-js {
-	padding: 14px 15px;
+	padding: 14px;
 	border-radius: 10px;
 	border: $bdr-main;
 	box-shadow: var(--box-shd-main);
@@ -810,8 +809,8 @@
 
 	.chevron {
 		display: block;
-		width: 12px;
-		height: 12px;
+		width: 13px;
+		height: 13px;
 		border: 3px solid $nav-title;
 		border-width: 3px 3px 0 0;
 		transition: border-color $transition-s;
@@ -823,7 +822,7 @@
 
 	&:active {
 		@include slider-arrows-hover;
-		transform: scale(0.8);
+		transform: scale(0.75);
 	}
 
 	&-next {
@@ -842,16 +841,8 @@
 
 .slider-loader {
 	.preloader {
-		background: #000;
+		@include bg-gradient($deg-s);
 		position: absolute;
 		z-index: 10;
-
-		// .preloader__spinner
-		&__spinner {
-			// .preloader__spinner-span:before
-			&-span:before {
-				background-color: rgba($bg-active-lang, 1);
-			}
-		}
 	}
 }

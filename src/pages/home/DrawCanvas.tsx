@@ -12,7 +12,7 @@ interface TrailPoint {
 
 const MIN_DIST_SQ = 4; // MIN_DIST = 2px, squared for cheap distance check
 const POINT_LIFETIME = 600;
-const BRUSH_SIZE = 98; // brush diameter in px
+const BRUSH_SIZE = 100; // brush diameter in px
 const BRUSH_RADIUS = BRUSH_SIZE / 2;
 const FILL_DENSITY = 0.1; // smaller = smoother trail (default = 0.5)
 const FADE_CURVE = 1; // trail fade curve — 1 = linear, 2 = smooth, 3+ = sharp

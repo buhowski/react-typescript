@@ -154,7 +154,7 @@
 			left: 0;
 			width: 100%;
 			z-index: 1;
-			color: rgba($light-color, 0.45);
+			color: rgba($subtitle-color, 0.6);
 		}
 	}
 
@@ -296,7 +296,7 @@
 
 		.h2-toc-item {
 			padding-left: var(--toc-pad-h2);
-			color: rgba($toc-color, 0.88);
+			color: rgba($toc-color, 0.8);
 		}
 
 		.h3-toc-item {
@@ -357,7 +357,6 @@
 	.preloader {
 		background-color: transparent;
 		position: static;
-		z-index: 10;
 
 		// .preloader__spinner
 		&__spinner {
@@ -367,7 +366,6 @@
 			// .preloader__spinner-span:before
 			&-span:before {
 				height: 10px;
-				background-color: $toc-color;
 			}
 		}
 	}

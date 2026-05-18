@@ -161,3 +161,11 @@ svg {
 .ball {
 	cursor: pointer;
 }
+
+// PRELOADER ON TEXT DATA PAGE
+.resume .preloader__spinner-span:before,
+.markdown-loading .preloader__spinner-span:before,
+.slider-loader .preloader__spinner-span:before,
+.toc-loading .preloader__spinner-span:before {
+	background: $transition-gradient;
+}

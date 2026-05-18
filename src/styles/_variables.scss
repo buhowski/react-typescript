@@ -19,7 +19,7 @@ $blue-deep: #00488b;
 $blue-darkest: #001a3a;
 
 $bg-main: #202020;
-$bg-darker: #1b1b1b;
+$bg-darker: #1a1a1a;
 $bg-darkest: #101010;
 
 $body-color: #e7e7e7;
@@ -38,8 +38,8 @@ $nav-title: #7f8fa4;
 $toc-color: mix(#ffffff, $nav-title, 25%);
 
 // Borders
-$bdr-color: mix(#ffffff, $bg-darkest, 7%);
-$bdr-color-l: mix(#ffffff, $bg-main, 4.2%);
+$bdr-color: mix(#ffffff, $bg-darkest, 10%);
+$bdr-color-l: mix(#ffffff, $bg-main, 4.6%);
 
 $bdr-main: 1px solid $bdr-color;
 $bdr-main-l: 1px solid $bdr-color-l;
@@ -59,7 +59,7 @@ $deg-s: 135deg;
 $deg-l: 165deg;
 $deg-x: 178deg;
 
-@mixin bg-gradient($deg: 180deg, $c1: #151515, $c2: $bg-darkest) {
+@mixin bg-gradient($deg: 180deg, $c1: #171717, $c2: $bg-darkest) {
 	background: linear-gradient($deg, $c1 0%, $c2 100%);
 }
 

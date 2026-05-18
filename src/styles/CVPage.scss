@@ -60,10 +60,6 @@
 	.preloader {
 		position: absolute;
 		z-index: 16;
-
-		&__spinner-span:before {
-			background-color: $blue-main;
-		}
 	}
 
 	// .resume__frame
