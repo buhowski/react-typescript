@@ -49,7 +49,7 @@
 		// .contact-menu__item
 		&__item {
 			@include bg-gradient($deg-l, $bg-darker, #131313);
-			border: 1px solid mix(#ffffff, $bg-darker, 8%);
+			border: 1px solid mix(#ffffff, $bg-darker, 10%);
 			color: rgba($text-color, 0.86);
 			box-shadow: var(--box-shd-main);
 
