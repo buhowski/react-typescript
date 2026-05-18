@@ -125,8 +125,8 @@
 			padding-top: 15px;
 			padding-bottom: 15px;
 			background: $bg-darker;
-			border: 1px solid rgba($body-color, 0.1);
-			box-shadow: 0 0 4px rgba(#000000, 0.35);
+			border: $bdr-darkest;
+			box-shadow: 0 2px 3px rgba(#000000, 0.4);
 
 			transition:
 				border-color 0.25s,

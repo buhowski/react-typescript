@@ -201,7 +201,7 @@ $nav-mob-light:
 
 	@include bg-gradient($deg-l);
 
-	border: $bdr-main;
+	border: $bdr-darkest;
 	border-radius: var(--startup-nav-rad);
 	box-shadow: var(--box-shd-main-mobile), $nav-mob-light;
 }

@@ -35,14 +35,14 @@ $link-color: #55aadd;
 $bold-color: $body-color;
 
 $nav-title: #7f8fa4;
-$toc-color: mix(#ffffff, $nav-title, 25%);
+$toc-color: mix(#ffffff, $nav-title, 26%);
 
 // Borders
-$bdr-color: mix(#ffffff, $bg-darkest, 11%);
-$bdr-color-l: mix(#ffffff, $bg-main, 4.6%);
+$bdr-color-main: mix(#ffffff, $bg-main, 5%);
+$bdr-color-darkest: mix(#ffffff, $bg-darkest, 12%);
 
-$bdr-main: 1px solid $bdr-color;
-$bdr-main-l: 1px solid $bdr-color-l;
+$bdr-main: 1px solid $bdr-color-main;
+$bdr-darkest: 1px solid $bdr-color-darkest;
 
 $box-shadow-main:
 	inset 10px 15px 35px $blue-deep,

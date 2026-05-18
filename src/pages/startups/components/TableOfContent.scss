@@ -66,7 +66,7 @@
 		@include bg-gradient;
 		color: $nav-title;
 		border-radius: var(--startup-nav-rad) var(--startup-nav-rad) 0 0;
-		border: $bdr-main;
+		border: $bdr-darkest;
 		text-shadow: 0 1px 2px rgba(#000000, 0.5);
 		border-bottom-width: 0;
 		transition:
@@ -168,7 +168,7 @@
 		right: 0;
 		top: 100%;
 		background-color: $bg-darkest;
-		border: $bdr-main;
+		border: $bdr-darkest;
 		border-top-width: 0;
 		box-shadow: var(--box-shd-main);
 		overflow: hidden;

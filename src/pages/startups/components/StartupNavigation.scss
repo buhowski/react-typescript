@@ -120,7 +120,7 @@ $nav-top: 2px;
 	position: absolute;
 	top: -$nav-top;
 	z-index: 1;
-	border: $bdr-main;
+	border: $bdr-darkest;
 	box-shadow: var(--box-shd-main);
 	overflow: hidden;
 	transition:
@@ -220,7 +220,7 @@ $nav-top: 2px;
 		margin: auto;
 		text-align: center;
 		border-radius: 100px;
-		border: $bdr-main;
+		border: $bdr-darkest;
 		box-shadow: var(--box-shd-main);
 		transition:
 			padding $transition-s,
@@ -250,6 +250,10 @@ $nav-top: 2px;
 		justify-content: center;
 		margin: auto;
 		max-width: 1520px;
+
+		@include tabletBig {
+			justify-content: unset;
+		}
 	}
 
 	// .startup-nav__btn
