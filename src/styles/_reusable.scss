@@ -142,6 +142,54 @@ $burger-transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 	}
 }
 
+// TEXT DATA DARK DESIGN
+
+// Text Link Hover
+@mixin hover-text-link {
+	color: $h1-color;
+	border-color: currentColor;
+	background-color: rgba(#000000, 1);
+}
+
+// BG gradient for flying block
+$deg-s: 135deg;
+$deg-l: 165deg;
+$deg-x: 178deg;
+
+@mixin bg-gradient($deg: 180deg, $c1: #171717, $c2: $bg-darkest) {
+	background: linear-gradient($deg, $c1 0%, $c2 100%);
+}
+
+// More button
+@mixin btn-more_decor($color: $h1-color, $size: 12px, $offset: -1px, $bdr: 1px solid $color) {
+	border: 1px solid rgba($color, 0.4);
+
+	&::before,
+	&::after {
+		content: '';
+		position: absolute;
+		width: $size;
+		height: $size;
+		transition:
+			width 0.26s,
+			height 0.26s;
+	}
+
+	&::after {
+		top: $offset;
+		left: $offset;
+		border-top: $bdr;
+		border-left: $bdr;
+	}
+
+	&::before {
+		bottom: $offset;
+		right: $offset;
+		border-bottom: $bdr;
+		border-right: $bdr;
+	}
+}
+
 // STARTUP NAV
 $nav-mob-light:
 	inset 0 1px 0 rgba(#ffffff, 0.34),

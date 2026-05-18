@@ -145,7 +145,7 @@
 		@include tabletBig {
 			padding-top: 30px;
 			font-size: 18px;
-			letter-spacing: 1px;
+			letter-spacing: 1.2px;
 			font-family: $LouisGeorgeCafBold;
 			text-align: center;
 			display: block;
@@ -154,7 +154,7 @@
 			left: 0;
 			width: 100%;
 			z-index: 1;
-			color: rgba($subtitle-color, 0.6);
+			color: rgba($subtitle-color, 0.66);
 		}
 	}
 

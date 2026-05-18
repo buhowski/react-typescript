@@ -38,7 +38,7 @@ $nav-title: #7f8fa4;
 $toc-color: mix(#ffffff, $nav-title, 25%);
 
 // Borders
-$bdr-color: mix(#ffffff, $bg-darkest, 10%);
+$bdr-color: mix(#ffffff, $bg-darkest, 11%);
 $bdr-color-l: mix(#ffffff, $bg-main, 4.6%);
 
 $bdr-main: 1px solid $bdr-color;
@@ -54,50 +54,6 @@ $section-width: 920px;
 $transition-gradient:
 	radial-gradient(ellipse at 80% 80%, rgba($blue-light, 0.3) 0%, transparent 50%),
 	linear-gradient(130deg, $blue-deep 0%, $blue-main 100%);
-
-$deg-s: 135deg;
-$deg-l: 165deg;
-$deg-x: 178deg;
-
-@mixin bg-gradient($deg: 180deg, $c1: #171717, $c2: $bg-darkest) {
-	background: linear-gradient($deg, $c1 0%, $c2 100%);
-}
-
-@mixin hover-text-link {
-	color: $h1-color;
-	border-color: currentColor;
-	background-color: rgba(#000000, 1);
-}
-
-// More button
-@mixin btn-more_decor($color: $h1-color, $size: 12px, $offset: -1px, $bdr: 1px solid $color) {
-	border: 1px solid rgba($color, 0.4);
-
-	&::before,
-	&::after {
-		content: '';
-		position: absolute;
-		width: $size;
-		height: $size;
-		transition:
-			width 0.26s,
-			height 0.26s;
-	}
-
-	&::after {
-		top: $offset;
-		left: $offset;
-		border-top: $bdr;
-		border-left: $bdr;
-	}
-
-	&::before {
-		bottom: $offset;
-		right: $offset;
-		border-bottom: $bdr;
-		border-right: $bdr;
-	}
-}
 
 // Reusable variables
 @import './vars-css';
