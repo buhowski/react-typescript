@@ -7,9 +7,9 @@
 	--active-toc-move: 25px;
 
 	@include tabletBig {
-		--toc-pad: 22px;
-		--toc-pad-h2: 40px;
-		--toc-pad-h3: 58px;
+		--toc-pad: 25px;
+		--toc-pad-h2: 42px;
+		--toc-pad-h3: 60px;
 
 		--active-toc-move: 16px;
 	}

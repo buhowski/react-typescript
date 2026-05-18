@@ -42,8 +42,6 @@ body.is-locked {
 }
 
 .application {
-	min-width: 320px;
-
 	&:has(.slide-enter) {
 		pointer-events: none;
 		touch-action: none;
