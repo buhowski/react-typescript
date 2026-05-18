@@ -345,16 +345,21 @@ $nav-top: 2px;
 
 		&:active {
 			@include startup-nav__btn-hover;
+
+			// span {
+			// 	transform: translate(0, 08%) scale(0.8);
+			// }
 		}
 
 		span {
 			display: block;
-			transition: $transition-s;
+			// transition: transform $transition-l;
 
 			&::before {
 				content: attr(data-text);
 				text-transform: uppercase;
 				display: block;
+				width: 100%;
 				height: 0;
 				overflow: hidden;
 				visibility: hidden;
