@@ -191,11 +191,7 @@ const PageStructure: React.FC<SinglePageProps> = ({ pageData, initialLang }) => 
 									);
 								})}
 
-							{useTabletLarge && (
-								<div className='copy-tablet'>
-									<PopupContacts />
-								</div>
-							)}
+							{useTabletLarge && <PopupContacts />}
 						</div>
 
 						<div className='lang-sidebar'>

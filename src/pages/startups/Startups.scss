@@ -130,13 +130,13 @@
 	@include tabletSmall {
 		padding-top: 55px;
 	}
-}
 
-.copy-tablet {
-	display: none;
+	.idea-contacts {
+		display: none;
 
-	@include tabletBig {
-		display: flex;
+		@include tabletBig {
+			display: block;
+		}
 	}
 }
 
@@ -165,7 +165,7 @@
 
 		&.is-visible {
 			animation:
-				typing 2s steps(25, end) forwards,
+				typing 1.8s steps(18, end) forwards,
 				blink-caret 1s step-end infinite;
 		}
 	}
