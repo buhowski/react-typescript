@@ -153,7 +153,7 @@
 .copyright {
 	display: inline-block;
 	font-size: 14px;
-	color: rgba($text-color, 0.2);
+	color: rgba($text-color, 0.22);
 	font-family: $LouisGeorgeCafBold;
 
 	.copyright-text {
@@ -165,7 +165,7 @@
 
 		&.is-visible {
 			animation:
-				typing 1.6s steps(18, end) forwards,
+				typing 2s steps(25, end) forwards,
 				blink-caret 1s step-end infinite;
 		}
 	}
