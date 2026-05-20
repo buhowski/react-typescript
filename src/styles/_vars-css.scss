@@ -8,7 +8,7 @@ $deep-shd: #060412;
 
 	--box-shd-main-mobile:
 		0 1px 3px #{rgba(#000000, 0.1)}, 0 2px 8px #{rgba(#000000, 0.08)},
-		0 5px 10px #{rgba($deep-shd, 0.38)};
+		0 5px 10px #{rgba($deep-shd, 0.3)};
 
 	--startup-nav-rad: 10px;
 
@@ -22,8 +22,8 @@ $deep-shd: #060412;
 
 	@include tablet {
 		--box-shd-main:
-			0 1px 4px #{rgba(#000000, 0.1)}, 0 4px 12px #{rgba(#000000, 0.08)},
-			0 6px 18px #{rgba($deep-shd, 0.33)};
+			0 1px 4px #{rgba(#000000, 0.08)}, 0 4px 12px #{rgba(#000000, 0.08)},
+			0 6px 18px #{rgba($deep-shd, 0.3)};
 	}
 
 	@include tabletSmall {

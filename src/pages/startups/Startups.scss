@@ -599,6 +599,10 @@
 		border-radius: 0;
 		max-height: 420px;
 		border-width: 1px 0 1px 0;
+		box-shadow:
+			0 0 5px #{rgba(#000000, 0.26)},
+			0 3px 9px #{rgba(#000000, 0.16)},
+			0 4px 16px #{rgba($deep-shd, 0.4)};
 	}
 }
 
