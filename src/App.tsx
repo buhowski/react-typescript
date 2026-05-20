@@ -43,7 +43,7 @@ const App = () => {
 
 	const shouldShowStartupUI = isStartupPage || delayedStartupEntry !== null;
 
-	// INITIAL PRELOADER
+	// PRELOADER
 	useEffect(() => {
 		const timer = setTimeout(() => {
 			setShowPreloader(false);
