@@ -353,14 +353,13 @@ $nav-top: 2px;
 			@include startup-nav__btn-hover;
 
 			span {
-				transform: scale(0.76);
+				transform: scale(0.8);
 			}
 		}
 
 		span {
 			display: block;
 			transition: transform $transition-l;
-			transform-origin: center bottom;
 
 			&::before {
 				content: attr(data-text);
