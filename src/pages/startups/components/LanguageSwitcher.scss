@@ -1,7 +1,10 @@
 // Lang bar
-$bg-active-lang: #4a3d66;
-$bg-lang-top: #a5a2ad;
-$bg-lang-bottom: #8b8790;
+$bg-lang-top: #b5b5bc;
+$bg-lang-bottom: #8d8d94;
+$border-lang: #c2c2c8;
+$color-lang: #1e1c26;
+$color-active-lang: #eee9ff;
+$bg-active-lang: #4a3d62;
 $lang-btn-width: 42px;
 $lang-radius: 100px;
 
@@ -19,10 +22,10 @@ $lang-radius: 100px;
 		width: max-content;
 		border-radius: 100px;
 		padding: 2px;
-		border: 1px solid $bg-lang-top;
+		border: 1px solid $border-lang;
 		@include bg-gradient($deg-x, $bg-lang-top, $bg-lang-bottom);
 		box-shadow: var(--box-shd-main);
-		color: #141414;
+		color: $color-lang;
 		overflow: hidden;
 	}
 }
@@ -79,7 +82,7 @@ $lang-radius: 100px;
 		}
 
 		&.active {
-			color: $body-color;
+			color: $color-active-lang;
 			pointer-events: none;
 		}
 	}
