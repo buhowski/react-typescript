@@ -25,7 +25,7 @@ const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
 							onClick={() => changeLanguage(lang)}
 							className={`idea-lang__btn ${currentLang === lang ? 'active' : ''}`}
 						>
-							{lang.toUpperCase()}
+							<span>{lang.toUpperCase()}</span>
 						</button>
 					))}
 				</div>

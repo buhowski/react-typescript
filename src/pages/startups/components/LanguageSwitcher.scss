@@ -1,7 +1,7 @@
 // Lang bar
-$bg-lang-top: #b5b5bc;
-$bg-lang-bottom: #8d8d94;
-$border-lang: #c2c2c8;
+$bg-lang-top: #b8b8c1;
+$bg-lang-bottom: #9595a0;
+$border-lang: #c5c5d2;
 $color-lang: #1e1c26;
 $color-active-lang: #eee9ff;
 $bg-active-lang: #4a3d62;
@@ -79,11 +79,20 @@ $lang-radius: 100px;
 
 		&:active {
 			background-color: rgba($bg-active-lang, 0.45);
+
+			span {
+				transform: scale(0.8);
+			}
 		}
 
 		&.active {
 			color: $color-active-lang;
 			pointer-events: none;
+		}
+
+		span {
+			display: block;
+			transition: transform $transition-s;
 		}
 	}
 }
