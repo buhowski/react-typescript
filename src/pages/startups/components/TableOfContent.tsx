@@ -3,7 +3,7 @@ import Preloader from '../../../components/Preloader';
 import { LANGUAGES, TocProps } from '../../../types/common';
 import { useTabletLargeQuery } from '../../../config/useMediaQuery';
 
-const TOC_PADDING_TOP = 70;
+const TOC_PADDING_TOP = 65;
 
 const TableOfContent: React.FC<TocProps> = ({
 	onSelectIndex,
