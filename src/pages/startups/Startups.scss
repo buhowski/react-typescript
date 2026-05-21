@@ -6,8 +6,15 @@
 
 // Text Data
 :root {
+	--padding-left-li: 27px;
+	--bullet-size: 5px;
+
 	--p-margin: 20px;
 	--bold-weight: 600;
+
+	@include tablet {
+		--padding-left-li: 23px;
+	}
 }
 
 @mixin title-style {
@@ -318,37 +325,20 @@
 
 		li {
 			position: relative;
-			padding-left: 26px;
-			margin-left: 2px;
-
-			@include tablet {
-				padding-left: 22px;
-			}
+			padding-left: var(--padding-left-li);
+			margin-left: 3px;
 
 			&::before {
 				content: '';
-				display: block;
-				width: 5px;
-				height: 5px;
+				display: inline-block;
+				vertical-align: middle;
+				width: var(--bullet-size);
+				height: var(--bullet-size);
 				border-radius: 50%;
 				background: $h3-color;
-				position: absolute;
-				top: 11px;
-				left: 0;
-
-				@include tablet {
-					top: 10px;
-				}
-			}
-
-			&:has(a:not(:only-child)):not(:has(br)) {
-				&::before {
-					top: 17px;
-
-					@include tablet {
-						top: 16px;
-					}
-				}
+				margin-bottom: 0.1em;
+				margin-left: calc(-1 * var(--padding-left-li));
+				margin-right: calc(var(--padding-left-li) - var(--bullet-size));
 			}
 		}
 	}
