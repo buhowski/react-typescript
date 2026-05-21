@@ -6,14 +6,14 @@
 
 // Text Data
 :root {
-	--padding-left-li: 27px;
+	--padding-left-li: 28px;
 	--bullet-size: 5px;
 
 	--p-margin: 20px;
 	--bold-weight: 600;
 
 	@include tablet {
-		--padding-left-li: 23px;
+		--padding-left-li: 24px;
 	}
 }
 
@@ -326,7 +326,7 @@
 		li {
 			position: relative;
 			padding-left: var(--padding-left-li);
-			margin-left: 3px;
+			margin-left: 4px;
 
 			&::before {
 				content: '';
@@ -336,7 +336,7 @@
 				height: var(--bullet-size);
 				border-radius: 50%;
 				background: $h3-color;
-				margin-bottom: 0.1em;
+				margin-bottom: 0.11em;
 				margin-left: calc(-1 * var(--padding-left-li));
 				margin-right: calc(var(--padding-left-li) - var(--bullet-size));
 			}
