@@ -377,7 +377,8 @@
 			margin-right: 14px;
 			line-height: 1;
 			transform: translateY(-0.5px);
-			opacity: 0.8;
+			opacity: 0.68;
+			transition: opacity $transition-s;
 
 			// ARROW
 			$svg-local: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="20" x2="20" y2="4"></line><polyline points="8 4 20 4 20 16"></polyline></svg>';

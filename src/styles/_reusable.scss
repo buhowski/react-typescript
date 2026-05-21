@@ -149,6 +149,10 @@ $burger-transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 	color: $h1-color;
 	border-color: currentColor;
 	background-color: rgba(#000000, 1);
+
+	&::after {
+		opacity: 1;
+	}
 }
 
 // BG gradient for flying block
