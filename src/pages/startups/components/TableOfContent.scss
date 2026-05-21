@@ -147,7 +147,7 @@
 		@include tabletBig {
 			padding-top: 29px;
 			font-size: 18px;
-			letter-spacing: 1.2px;
+			letter-spacing: 1.4px;
 			font-family: $LouisGeorgeCafBold;
 			text-align: center;
 			display: block;
@@ -156,7 +156,7 @@
 			left: 0;
 			width: 100%;
 			z-index: 1;
-			color: rgba($subtitle-color, 0.66);
+			color: rgba($toc-color, 0.52);
 		}
 	}
 
@@ -302,7 +302,7 @@
 
 		.h3-toc-item {
 			padding-left: var(--toc-pad-h3);
-			color: rgba($toc-color, 0.6);
+			color: rgba($toc-color, 0.65);
 		}
 	}
 }
