@@ -124,10 +124,10 @@ canvas {
 		background: inherit;
 		z-index: -1;
 		pointer-events: none;
-		filter: drop-shadow(0 3px 12px rgba(#000000, 0.34));
+		filter: drop-shadow(0 2px 10px rgba(#000000, 0.34));
 
 		@include tabletSmall {
-			filter: drop-shadow(0 1px 6px rgba(#000000, 0.34));
+			filter: drop-shadow(0 1px 5px rgba(#000000, 0.34));
 		}
 	}
 
