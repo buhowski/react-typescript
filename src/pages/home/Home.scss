@@ -26,12 +26,12 @@
 	}
 
 	@include tablet {
-		margin-bottom: 40px;
+		margin-bottom: 45px;
 	}
 
 	@include tabletSmall {
 		width: 100%;
-		margin-top: 35px;
+		margin-top: 30px;
 	}
 
 	// .name-container__title
@@ -124,10 +124,10 @@ canvas {
 		background: inherit;
 		z-index: -1;
 		pointer-events: none;
-		filter: drop-shadow(0 4px 10px rgba(#000000, 0.4));
+		filter: drop-shadow(0 3px 12px rgba(#000000, 0.34));
 
 		@include tabletSmall {
-			filter: drop-shadow(0 2px 6px rgba(#000000, 0.4));
+			filter: drop-shadow(0 1px 6px rgba(#000000, 0.34));
 		}
 	}
 
