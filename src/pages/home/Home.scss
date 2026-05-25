@@ -18,14 +18,14 @@
 
 .name-container {
 	align-self: center;
-	margin-bottom: 125px;
+	margin-bottom: 110px;
 	width: 40%;
 
-	@media screen and (max-width: 1366px) {
-		margin-bottom: 70px;
+	@include heightTopMinMax {
+		margin-bottom: 50px;
 	}
 
-	@include tablet {
+	@include tabletBig {
 		margin-bottom: 45px;
 	}
 
@@ -36,14 +36,24 @@
 
 	// .name-container__title
 	&__title {
-		font-size: 80px;
-		font-size: clamp(64px, 5vw, 98px);
-		margin-bottom: min(5vh, 60px);
-		line-height: 1.32;
+		font-size: 96px;
+		margin-bottom: 45px;
 
-		@include tabletSmall {
-			font-size: 44px;
+		@include heightTopMinMax {
+			font-size: 86px;
+		}
+
+		@include tabletBig {
+			font-size: 76px;
 			margin-bottom: 30px;
+		}
+
+		@include tablet {
+			font-size: 66px;
+		}
+
+		@include mobile {
+			font-size: 50px;
 		}
 
 		span {
@@ -51,20 +61,27 @@
 		}
 	}
 
-	// ..name-container__position
+	// .name-container__position
 	&__position {
-		font-size: 26px;
-		font-size: clamp(26px, 1.6vw, 40px);
-		margin-bottom: min(6.6vh, 70px);
+		font-size: 33px;
+		margin-bottom: 50px;
 		font-family: $LouisGeorgeCaf;
 		letter-spacing: 2px;
 		white-space: nowrap;
 		color: $blue-main;
 
-		@include tabletSmall {
-			letter-spacing: 1px;
-			font-size: 23px;
-			margin-bottom: 36px;
+		@include tabletBig {
+			font-size: 28px;
+			margin-bottom: 35px;
+		}
+
+		@include tablet {
+			font-size: 26px;
+		}
+
+		@include mobile {
+			font-size: 24px;
+			letter-spacing: 1.2px;
 		}
 	}
 }
