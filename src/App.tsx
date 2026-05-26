@@ -22,7 +22,7 @@ const App = () => {
 	const location = useLocation();
 	const pathKey = normalizePath(location.pathname);
 
-	// Special pages (CV & EMAIL)
+	// Special page check
 	const isCVPage = pathKey === '/cv';
 	const isEmailPage =
 		pathKey === pathToMails || emailRoutes.some((route) => normalizePath(route.pathTo) === pathKey);
@@ -84,7 +84,7 @@ const App = () => {
 		return () => observer.disconnect();
 	}, []);
 
-	// Block scroll during route transition
+	// Stop scroll during route transition
 	useEffect(() => {
 		const scrollKeys = new Set(['ArrowUp', 'ArrowDown', 'PageUp', 'PageDown', ' ']);
 
@@ -147,7 +147,7 @@ const App = () => {
 							className='page'
 							style={
 								{
-									paddingTop: `${navHeight}px`,
+									paddingTop: `${navHeight - 1}px`,
 									'--next-page-time': `${NEXT_PAGE_TIME}ms`,
 									'--next-page-ratio': `${NEXT_PAGE_RATIO}ms`,
 								} as React.CSSProperties

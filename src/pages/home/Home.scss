@@ -2,27 +2,25 @@
 
 .home-wrapper {
 	display: flex;
-	min-height: calc(100dvh - 90px);
+	min-height: var(--no-header-height);
 	overflow: visible;
-
-	@include tablet {
-		min-height: calc(100dvh - 80px);
-	}
+	padding-top: 50px;
 
 	@include tabletSmall {
 		overflow: hidden;
 		flex-direction: column;
 		justify-content: space-between;
+		padding-top: 30px;
 	}
 }
 
 .name-container {
 	align-self: center;
-	margin-bottom: 110px;
+	margin-bottom: 90px;
 	width: 40%;
 
 	@include heightTopMinMax {
-		margin-bottom: 50px;
+		margin-bottom: 30px;
 	}
 
 	@include tabletBig {
@@ -31,7 +29,6 @@
 
 	@include tabletSmall {
 		width: 100%;
-		margin-top: 30px;
 	}
 
 	// .name-container__title
@@ -141,7 +138,11 @@ canvas {
 		background: inherit;
 		z-index: -1;
 		pointer-events: none;
-		filter: drop-shadow(0 0 5px rgba(#000000, 0.35));
+		filter: drop-shadow(0 0 6px rgba(#000000, 0.3));
+
+		@include tabletBig {
+			filter: drop-shadow(0 0 5px rgba(#000000, 0.3));
+		}
 	}
 
 	canvas,

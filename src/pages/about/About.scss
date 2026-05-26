@@ -3,10 +3,9 @@
 .about-wrapper {
 	display: flex;
 	flex-direction: column;
-	min-height: calc(100dvh - 90px);
+	min-height: var(--no-header-height);
 
 	@include tablet {
-		min-height: calc(100dvh - 80px);
 		padding-bottom: 45px;
 
 		.base-title {

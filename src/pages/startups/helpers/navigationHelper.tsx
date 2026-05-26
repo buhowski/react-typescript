@@ -23,11 +23,5 @@ export const fastScrollTo = (targetY: number = 0, duration: number = 20): void =
 };
 
 export const toggleScrollLock = (isLocked: boolean): void => {
-	const body = document.body;
-
-	if (isLocked) {
-		body.classList.add('is-locked');
-	} else {
-		body.classList.remove('is-locked');
-	}
+	document.documentElement.classList.toggle('is-locked', isLocked);
 };
