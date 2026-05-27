@@ -81,9 +81,9 @@ const CVPage = () => {
 				src={docPDF}
 				onLoad={() => setLoaded(true)}
 				className='resume__frame'
-				// title='Resume'
 				allow='fullscreen'
 				sandbox='allow-downloads allow-scripts allow-same-origin allow-forms allow-popups allow-popups-to-escape-sandbox allow-modals'
+				// title='Resume'
 				// referrerPolicy='no-referrer'
 			/>
 		</div>
