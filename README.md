@@ -1,27 +1,23 @@
-# Frontend & UI/UX
+# Frontend • UI/UX
 
-### [Portfolio](https://buhowski.dev/portfolio)
+- [Portfolio](https://buhowski.dev/portfolio)
+- [Resume](https://buhowski.dev/cv)
 
-### [Resume](https://buhowski.dev/cv)
+# Ecosystem
 
-# Counterculture Ecosystem
+A strategy for transforming an entertainment magazine into a proprietary tech production house uniting countercultural media, filmmaking, gamedev, and tech:
 
-I developed the architecture to build an entertainment magazine and scale it into a company that produces its own technologies:
+- **[Another Dimension](https://buhowski.dev/vision)**
 
-### [Another Dimension](https://buhowski.dev/vision)
+# Fields
 
-# Colonization Field
+- [Magazine](https://buhowski.dev/mvp)
+- [Cinema](https://buhowski.dev/cinema)
+- [Gamedev](https://buhowski.dev/gamedev)
+- [Presentation Tools](https://buhowski.dev/pilots)
 
-### [Magazine](https://buhowski.dev/mvp)
-
-### [Cinema](https://buhowski.dev/cinema)
-
-### [Gamedev](https://buhowski.dev/gamedev)
-
-### [Presentation Tools](https://buhowski.dev/pilots)
-
-# Collaboration
+# Collab
 
 Outreach letters for co-founders, investors, and partners across media, cinema, gamedev, and tech:
 
-### [Proposals](https://buhowski.dev/mails)
+- [Proposals](https://buhowski.dev/mails)
