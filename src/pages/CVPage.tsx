@@ -75,12 +75,13 @@ const CVPage = () => {
 
 			<CVActions link={pathToProjects} downloadFile={docExportPDF} />
 
+			{/* eslint-disable-next-line jsx-a11y/iframe-has-title */}
 			<iframe
 				// src={isChromeMobile ? docPDF : doc}
 				src={docPDF}
 				onLoad={() => setLoaded(true)}
 				className='resume__frame'
-				title='Resume'
+				// title='Resume'
 				allow='fullscreen'
 				sandbox='allow-downloads allow-scripts allow-same-origin allow-forms allow-popups allow-popups-to-escape-sandbox allow-modals'
 				// referrerPolicy='no-referrer'
