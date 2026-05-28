@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Preloader from '../components/Preloader';
 import PageHelmet from '../components/PageHelmet';
 import { cvMetaTags } from '../components/metaTagsBasic';
-import { pathToProjects } from '../components/urlsData';
+// import { pathToProjects } from '../components/urlsData';
 // import useChromeMobile from '../config/useChromeMobile';
 
 const docId = '12rOT1Pa4Z-Usau2Xkh-QTXweDTZJJTKvadrJKmRpCk0';
@@ -73,7 +73,7 @@ const CVPage = () => {
 
 			{!loaded && <Preloader />}
 
-			<CVActions link={pathToProjects} downloadFile={docExportPDF} />
+			<CVActions link={'/'} downloadFile={docExportPDF} />
 
 			{/* eslint-disable-next-line jsx-a11y/iframe-has-title */}
 			<iframe
