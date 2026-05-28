@@ -62,58 +62,61 @@ const Projects = () => {
 			<PageHelmet metaTags={portfolioMetaTags} />
 
 			<h1 className='base-title h1'>Some Works</h1>
+
 			<div className='projects-container'>
 				<ResponsiveMasonry columnsCountBreakPoints={{ 320: 1, 666: 2, 1024: 3, 1281: 5 }}>
 					<MasonryTyped itemStyle={{ gap }} className='projects-container__masonry'>
-						{projectsData.map(({ img, url, urlCode, name, description, skills, alt }, i) => (
+						{projectsData.map(({ img, url, urlCode, name, year, description, skills, alt }, i) => (
 							<div className='project' key={i}>
-								{skills || description ? (
-									<div
-										className='project-description'
-										ref={(el) => (descriptionRefs.current[i] = el)}
-									>
-										<div className='project-description__container'>
+								<div
+									className='project-description'
+									ref={(el) => (descriptionRefs.current[i] = el)}
+								>
+									<div className='project-description__container'>
+										{name && (
 											<p className='project-description__name'>
 												{name}
 												<span>_</span>
 											</p>
+										)}
 
-											<p className='project-description__text'>{description}</p>
+										{year && <p className='project-description__year'>{year}</p>}
 
-											<div className='project-description__actions'>
-												{url && (
-													<a
-														href={url}
-														target='_blank'
-														rel='noopener noreferrer'
-														className='project-description__action'
-													>
-														LIVE
-													</a>
-												)}
+										{description && <p className='project-description__text'>{description}</p>}
 
-												{urlCode && (
-													<a
-														href={urlCode}
-														target='_blank'
-														rel='noopener noreferrer'
-														className='project-description__action'
-													>
-														Code
-													</a>
-												)}
-											</div>
-
-											{skills && <p className='project-description__title'>Skills</p>}
-
+										{skills && (
 											<div className='project-description__items'>
 												{skills?.map((skill, i) => (
 													<span key={i}>{skill}</span>
 												))}
 											</div>
+										)}
+
+										<div className='project-description__actions'>
+											{url && (
+												<a
+													href={url}
+													target='_blank'
+													rel='noopener noreferrer'
+													className='project-description__action'
+												>
+													LIVE
+												</a>
+											)}
+
+											{urlCode && (
+												<a
+													href={urlCode}
+													target='_blank'
+													rel='noopener noreferrer'
+													className='project-description__action'
+												>
+													Code
+												</a>
+											)}
 										</div>
 									</div>
-								) : null}
+								</div>
 
 								<a
 									className='project-link'

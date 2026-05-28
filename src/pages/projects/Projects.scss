@@ -17,11 +17,11 @@
 	border-radius: 20px;
 	transform: translate(0, 0);
 	transition:
-		transform 0.25s,
-		box-shadow 0.25s,
-		border-color 0.25s;
-	border: 2px solid rgba(#61676d, 0.5);
-	box-shadow: 0 8px 24px rgba(#000000, 0.84);
+		transform $transition-s,
+		box-shadow $transition-s,
+		border-color $transition-s;
+	border: 1px solid rgba(#61676d, 0.6);
+	box-shadow: 0 6px 24px rgba(#000000, 0.9);
 
 	@include tablet {
 		box-shadow: 0 3px 15px rgba(#000000, 0.84);
@@ -39,9 +39,9 @@
 		background: $transition-gradient;
 		transform: translateY(0);
 		transition:
-			transform 0.25s ease 0.2s,
-			height 0.25s ease 0.2s,
-			width 0.25s ease 0.2s;
+			transform $transition-s $transition-s,
+			height $transition-s $transition-s,
+			width $transition-s $transition-s;
 		border-radius: 20px;
 
 		@include mobile {
@@ -58,7 +58,7 @@
 		background-color: #000000;
 		border-radius: 20px;
 		// box-shadow: 0 0 10px #000000;
-		transition: box-shadow $transition-l;
+		transition: box-shadow $transition-s;
 		overflow: hidden;
 
 		// .project-link__img
@@ -67,7 +67,7 @@
 			border-radius: 20px;
 			height: 100%;
 			object-fit: contain;
-			transition: filter $transition-l;
+			transition: filter $transition-s;
 		}
 	}
 
@@ -115,19 +115,19 @@
 	top: 13%;
 	left: 0;
 	width: 100%;
-	background-color: rgba(#000000, 0.84);
-	backdrop-filter: blur(6px);
+	background-color: rgba(#000000, 0.9);
+	backdrop-filter: blur(5px);
 	box-shadow: 0 6px 18px rgba(#000000, 0.88);
-	border: 2px solid rgba(#61676d, 0.7);
+	border: 1px solid rgba(#61676d, 0.8);
 	border-radius: 20px;
 	overflow: hidden;
 	z-index: 4;
 	opacity: 0;
-	transition: opacity 0.25s ease;
+	transition: opacity $transition-s;
 
 	// .project-description__container
 	&__container {
-		padding: 40px 15px;
+		padding: 45px 15px 55px;
 	}
 
 	// .project-description__name
@@ -135,7 +135,7 @@
 		color: $h1-color;
 		font-family: $LouisGeorgeCafBold;
 		letter-spacing: 1px;
-		margin-bottom: 30px;
+		margin-bottom: 6px;
 		font-size: 23px;
 
 		span {
@@ -143,19 +143,44 @@
 		}
 	}
 
+	// .project-description__year
+	&__year {
+		color: $subtitle-color;
+		font-size: 15px;
+		font-family: $LouisGeorgeCafBold;
+		letter-spacing: 0.6px;
+		margin-bottom: 30px;
+	}
+
 	// .project-description__text
 	&__text {
-		margin-bottom: 40px;
+		margin-bottom: 30px;
 		font-size: 15px;
 		line-height: 1.5;
 		letter-spacing: 0.25px;
 	}
 
+	// .project-description__items
+	&__items {
+		font-family: $LouisGeorgeCaf;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 6px;
+		margin-bottom: 50px;
+
+		span {
+			display: inline-block;
+			background-color: rgba(#61676d, 0.14);
+			border: 1px solid rgba(#61676d, 0.26);
+			padding: 5px 7px 3px;
+			border-radius: 5px;
+			font-size: 13px;
+		}
+	}
+
 	// .project-description__actions
 	&__actions {
 		display: flex;
-		justify-content: center;
-		margin-bottom: 45px;
 		justify-content: center;
 		gap: 20px;
 	}
@@ -167,47 +192,22 @@
 		padding: 7px 10px;
 		flex-grow: 1;
 		width: 100%;
-		max-width: 120px;
+		max-width: 130px;
 		letter-spacing: 1px;
 		box-shadow: 0 1px 3px rgba(#000000, 0.8);
-		border: 1px solid rgba($link-color, 0.46);
+		border: 1px solid rgba($link-color, 0.4);
 		border-radius: 100px;
-		background-color: rgba(#000000, 0.46);
+		background-color: rgba(#000000, 0.5);
 		color: $link-color;
 		transition:
-			box-shadow 0.26s,
-			background-color 0.26s,
-			color 0.26s;
+			box-shadow $transition-s,
+			background-color $transition-s,
+			color $transition-s;
 
 		&:hover {
 			background-color: $link-color;
 			color: #000000;
 			box-shadow: 0 0 12px #000000;
-		}
-	}
-
-	// .project-description__title
-	&__title {
-		color: $h3-color;
-		font-family: $LouisGeorgeCafBold;
-		letter-spacing: 1.2px;
-		text-transform: uppercase;
-	}
-
-	// .project-description__items
-	&__items {
-		font-family: $LouisGeorgeCaf;
-		display: flex;
-		flex-wrap: wrap;
-		gap: 7px;
-		margin-top: 15px;
-
-		span {
-			display: inline-block;
-			background-color: rgba(#ffffff, 0.2);
-			padding: 5px 8px 4px;
-			border-radius: 5px;
-			font-size: 13px;
 		}
 	}
 }
