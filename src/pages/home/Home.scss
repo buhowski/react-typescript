@@ -19,6 +19,10 @@
 	margin-bottom: 120px;
 	width: 40%;
 
+	@media screen and (min-width: 851px) and (max-height: 630px) {
+		margin-bottom: 70px;
+	}
+
 	@include heightTopMinMax {
 		margin-bottom: 60px;
 	}
@@ -43,7 +47,7 @@
 		}
 
 		@include tablet {
-			font-size: 66px;
+			font-size: 65px;
 		}
 
 		@include mobile {
@@ -94,11 +98,11 @@ canvas {
 	width: 59%;
 
 	@include heightTopMax {
-		width: 55%;
+		width: 54%;
 	}
 
 	@include heightTopMin {
-		width: 52%;
+		width: 51%;
 	}
 
 	@include heightTopMinMax {

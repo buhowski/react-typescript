@@ -1,7 +1,6 @@
 // Lang bar
 $bg-lang-top: #b8b8c1;
 $bg-lang-bottom: #8e8e9a;
-$border-lang: $bg-lang-top;
 $color-lang: #1e1c26;
 $color-active-lang: #eee9ff;
 $bg-active-lang: #4a3d62;
@@ -21,8 +20,7 @@ $lang-radius: 100px;
 	&__inner {
 		width: max-content;
 		border-radius: 100px;
-		padding: 1px;
-		border: 1px solid $border-lang;
+		padding: 2px;
 		@include bg-gradient($deg-x, $bg-lang-top, $bg-lang-bottom);
 		box-shadow: var(--box-shd-main);
 		color: $color-lang;
@@ -49,11 +47,10 @@ $lang-radius: 100px;
 		height: 100%;
 		background-color: $bg-active-lang;
 		border-radius: $lang-radius;
-		/* Fallbacks */
+		// Fallbacks
 		width: $lang-btn-width;
-		transform: translateX(0);
 
-		/* Dynamic with JS */
+		//  Dynamic with JS
 		width: var(--indicator-width, $lang-btn-width);
 		transform: translateX(var(--indicator-x, 0));
 		transition: transform $transition-s;
