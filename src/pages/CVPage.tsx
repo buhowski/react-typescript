@@ -2,25 +2,16 @@ import { useState } from 'react';
 import Preloader from '../components/Preloader';
 import PageHelmet from '../components/PageHelmet';
 import { cvMetaTags } from '../components/metaTagsBasic';
-// import { pathToProjects } from '../components/urlsData';
-// import useChromeMobile from '../config/useChromeMobile';
 
 const docId = '12rOT1Pa4Z-Usau2Xkh-QTXweDTZJJTKvadrJKmRpCk0';
 const docExportPDF = `https://docs.google.com/document/d/${docId}/export?format=pdf`;
 
-// DEFAULT (Desktop/Safari/In-App)
-// const doc = `https://docs.google.com/document/d/${docId}/preview?rm=minimal&embedded=true`;
-
-// CHROME MOBILE ONLY (Proxy Viewer)
-// const docMobile = `https://docs.google.com/viewer?url=${encodeURIComponent(docExportPDF)}`;
-
 const docPDF = `https://drive.google.com/file/d/${docId}/preview`;
+// const docPDF = `https://docs.google.com/document/d/${docId}/preview?rm=minimal`;
 
 const CVActions = ({ link, downloadFile }: { link: string; downloadFile: string }) => {
 	return (
 		<nav className='resume__actions'>
-			{/* <h1>Resume</h1> */}
-
 			<a
 				href={link}
 				target='_blank'
@@ -65,26 +56,24 @@ const CVActions = ({ link, downloadFile }: { link: string; downloadFile: string 
 
 const CVPage = () => {
 	const [loaded, setLoaded] = useState(false);
-	// const isChromeMobile = useChromeMobile();
 
 	return (
 		<div className={`resume ${loaded ? 'is-loaded' : ''}`}>
 			<PageHelmet metaTags={cvMetaTags} />
 
-			{!loaded && <Preloader />}
-
 			<CVActions link={'/'} downloadFile={docExportPDF} />
+
+			{!loaded && <Preloader />}
 
 			{/* eslint-disable-next-line jsx-a11y/iframe-has-title */}
 			<iframe
-				// src={isChromeMobile ? docPDF : doc}
 				src={docPDF}
 				onLoad={() => setLoaded(true)}
 				className='resume__frame'
 				allow='fullscreen'
-				sandbox='allow-downloads allow-scripts allow-same-origin allow-forms allow-popups allow-popups-to-escape-sandbox allow-modals'
-				// title='Resume'
+				// sandbox='allow-downloads allow-scripts allow-same-origin allow-forms allow-popups allow-popups-to-escape-sandbox allow-modals'
 				// referrerPolicy='no-referrer'
+				// title='Resume'
 			/>
 		</div>
 	);
