@@ -170,8 +170,8 @@
 
 		span {
 			display: inline-block;
-			background-color: rgba(#ffffff, 0.09);
-			border: 1px solid rgba(#ffffff, 0.12);
+			background-color: rgba(#ffffff, 0.1);
+			border: 1px solid rgba(#ffffff, 0.14);
 			padding: 5px 10px 3px;
 			border-radius: 6px;
 			font-size: 13px;
@@ -189,16 +189,19 @@
 		text-align: center;
 		font-family: $LouisGeorgeCafBold;
 		text-transform: uppercase;
-		padding: 7px 10px;
+		padding: 8px 10px;
 		flex-grow: 1;
 		width: 100%;
-		max-width: 130px;
+		max-width: 140px;
 		letter-spacing: 1px;
 		border-radius: 100px;
 		color: $link-color;
-		border: 1px solid rgba($link-color, 0.4);
-		background-color: rgba(#000000, 0.5);
-		box-shadow: 0 1px 3px rgba(#000000, 0.8);
+		text-shadow: 0 0 5px rgba($link-color, 0.88);
+		border: 1px solid rgba($link-color, 0.55);
+		background-color: #000000;
+		box-shadow:
+			0 0 5px 1px rgba(#000000, 1),
+			0 0 10px rgba(#ffffff, 0.16);
 		transition:
 			box-shadow $transition-s,
 			background-color $transition-s,
@@ -207,7 +210,9 @@
 		&:hover {
 			background-color: $link-color;
 			color: #000000;
-			box-shadow: 0 0 12px #000000;
+			box-shadow:
+				0 0 5px 1px #000000,
+				0 0 10px rgba($link-color, 0.95);
 		}
 	}
 }
