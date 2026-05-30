@@ -29,7 +29,7 @@
 
 	@include tabletSmall {
 		width: 100%;
-		margin-bottom: 45px;
+		margin-bottom: 40px;
 	}
 
 	// .name-container__title
@@ -43,7 +43,7 @@
 
 		@include tabletBig {
 			font-size: 76px;
-			margin-bottom: 30px;
+			margin-bottom: 28px;
 		}
 
 		@include tablet {
@@ -139,10 +139,10 @@ canvas {
 		background: inherit;
 		z-index: -1;
 		pointer-events: none;
-		filter: drop-shadow(0 0 6px rgba(#000000, 0.3));
+		filter: drop-shadow(0 -1px 8px rgba(#000000, 0.26));
 
 		@include tabletBig {
-			filter: drop-shadow(0 0 5px rgba(#000000, 0.3));
+			filter: drop-shadow(0 -1px 5px rgba(#000000, 0.26));
 		}
 	}
 

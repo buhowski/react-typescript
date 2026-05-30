@@ -3,32 +3,32 @@ import { brainIcon, rootsIcon, keyboardIcon, writerIcon, backpackIcon } from './
 const dotsData = [
 	{
 		classItem: 'brain',
-		titleSub: 'Idea Thinker,',
-		title: 'Enthusiast, Explorer',
+		titleSub: 'Explorer,',
+		title: 'Developer, Creator',
 		img: brainIcon,
 	},
 	{
 		classItem: 'writer',
-		titleSub: 'Innovative Vision,',
-		title: 'Inventing Solutions & Scenario Creator',
+		titleSub: 'Storyteller,',
+		title: 'Directing Freedom, Counterculture Architect',
 		img: writerIcon,
 	},
 	{
 		classItem: 'keyboard',
-		titleSub: 'Tech Stack:',
-		title: 'HTML, SCSS, TypeScript, React, Redux, Webpack, Git',
+		titleSub: 'Tech:',
+		title: 'React, TypeScript, Node.js, HTML5, CSS3, SCSS, WordPress',
 		img: keyboardIcon,
 	},
 	{
 		classItem: 'backpack',
-		titleSub: 'Hiker & ',
-		title: 'Wanderlust Adventurer',
+		titleSub: 'Wanderlust Adventurer,',
+		title: 'Traveler, Hiker',
 		img: backpackIcon,
 	},
 	{
 		classItem: 'roots',
-		titleSub: 'Self-Development &',
-		title: 'Growth',
+		titleSub: 'Breaking Patterns,',
+		title: 'Self-Rebuilding, Wild Growth',
 		img: rootsIcon,
 	},
 ];

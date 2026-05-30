@@ -16,7 +16,9 @@
 		position: relative;
 		background-color: $bg-darker;
 		color: $body-color;
-		box-shadow: 0 2px 2px rgba(#000000, 0.48);
+		box-shadow:
+			0 1px 1px 1px rgba(#000000, 0.55),
+			0 -1px 1px 0 rgba(#ffffff, 0.12);
 		transition: transform $transition-s;
 		will-change: transform;
 
