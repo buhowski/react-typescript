@@ -3,11 +3,11 @@ import Preloader from '../components/Preloader';
 import PageHelmet from '../components/PageHelmet';
 import { cvMetaTags } from '../components/metaTagsBasic';
 
-const docId = '12rOT1Pa4Z-Usau2Xkh-QTXweDTZJJTKvadrJKmRpCk0';
-const docExportPDF = `https://docs.google.com/document/d/${docId}/export?format=pdf`;
+const fileId = '12rOT1Pa4Z-Usau2Xkh-QTXweDTZJJTKvadrJKmRpCk0';
+const exportFilePDF = `https://docs.google.com/document/d/${fileId}/export?format=pdf`;
 
-const docPDF = `https://drive.google.com/file/d/${docId}/preview`;
-// const docPDF = `https://docs.google.com/document/d/${docId}/preview?rm=minimal`;
+// const previewFile = `https://docs.google.com/document/d/${fileId}/preview?rm=minimal`;
+const previewFile = `https://docs.google.com/file/d/${fileId}/preview?rm=minimal`;
 
 const CVActions = ({ link, downloadFile }: { link: string; downloadFile: string }) => {
 	return (
@@ -61,19 +61,19 @@ const CVPage = () => {
 		<div className={`resume ${loaded ? 'is-loaded' : ''}`}>
 			<PageHelmet metaTags={cvMetaTags} />
 
-			<CVActions link={'/'} downloadFile={docExportPDF} />
+			<CVActions link={'/'} downloadFile={exportFilePDF} />
 
 			{!loaded && <Preloader />}
 
-			{/* eslint-disable-next-line jsx-a11y/iframe-has-title */}
+			{/* CV Content */}
 			<iframe
-				src={docPDF}
-				onLoad={() => setLoaded(true)}
+				src={previewFile}
+				width='100%'
+				height='100%'
 				className='resume__frame'
-				allow='fullscreen'
-				// sandbox='allow-downloads allow-scripts allow-same-origin allow-forms allow-popups allow-popups-to-escape-sandbox allow-modals'
-				// referrerPolicy='no-referrer'
-				// title='Resume'
+				allow='autoplay fullscreen'
+				onLoad={() => setLoaded(true)}
+				title='CV Olexander Tsiomakh Frontend Developer'
 			/>
 		</div>
 	);
