@@ -2,12 +2,13 @@ import { useState } from 'react';
 import Preloader from '../components/Preloader';
 import PageHelmet from '../components/PageHelmet';
 import { cvMetaTags } from '../components/metaTagsBasic';
+import file from '../assets/CV_Olexander_Tsiomakh_Frontend.pdf';
 
 const fileId = '12rOT1Pa4Z-Usau2Xkh-QTXweDTZJJTKvadrJKmRpCk0';
 const exportFilePDF = `https://docs.google.com/document/d/${fileId}/export?format=pdf`;
 
 // const previewFile = `https://docs.google.com/document/d/${fileId}/preview?rm=minimal`;
-const previewFile = `https://docs.google.com/file/d/${fileId}/preview?rm=minimal`;
+// const previewFile = `https://docs.google.com/file/d/${fileId}/preview?rm=minimal`;
 
 const CVActions = ({ link, downloadFile }: { link: string; downloadFile: string }) => {
 	return (
@@ -67,11 +68,10 @@ const CVPage = () => {
 
 			{/* CV Content */}
 			<iframe
-				src={previewFile}
+				src={`${file}#toolbar=0&navpanes=0&pagemode=none`}
 				width='100%'
 				height='100%'
 				className='resume__frame'
-				allow='autoplay fullscreen'
 				onLoad={() => setLoaded(true)}
 				title='CV Olexander Tsiomakh Frontend Developer'
 			/>
