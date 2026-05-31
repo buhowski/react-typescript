@@ -153,7 +153,7 @@
 				width: 70%;
 				left: auto;
 				top: -7%;
-				right: -6%;
+				right: -5%;
 				transform: rotate(6deg);
 			}
 		}
@@ -178,8 +178,8 @@
 
 			@include mobile {
 				width: 65%;
-				top: -7%;
-				left: -2%;
+				top: -8%;
+				left: -1%;
 			}
 		}
 	}
@@ -202,7 +202,7 @@
 
 			@include mobile {
 				bottom: 28%;
-				right: -10%;
+				right: -9%;
 				width: 50%;
 			}
 		}
@@ -228,7 +228,7 @@
 			@include mobile {
 				left: unset;
 				bottom: 28%;
-				right: -7%;
+				right: -5%;
 				width: 150px;
 			}
 		}
