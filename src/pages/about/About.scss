@@ -173,7 +173,7 @@
 		.title {
 			top: 6%;
 			left: -27%;
-			transform: rotate(-10deg);
+			transform: rotate(-8deg);
 			text-align: left;
 
 			@include mobile {
@@ -230,6 +230,7 @@
 				bottom: 28%;
 				right: -5%;
 				width: 150px;
+				transform: rotate(10deg);
 			}
 		}
 	}

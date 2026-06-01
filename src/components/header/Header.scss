@@ -63,7 +63,7 @@
 
 	@include tablet {
 		margin-right: 0;
-		margin-bottom: 36px;
+		margin-bottom: 40px;
 	}
 
 	&:last-child {
@@ -106,7 +106,6 @@
 		opacity: 0;
 		visibility: hidden;
 		overflow: hidden;
-		will-change: transform, height, opacity, visibility;
 
 		&:after,
 		&:before {
@@ -117,7 +116,6 @@
 			top: 0;
 			left: 0;
 			z-index: 1;
-			will-change: transform, height, bottom;
 		}
 
 		.nav-link {
@@ -157,11 +155,16 @@
 
 		// .mobile-menu__content
 		&__content {
-			height: 100dvh;
+			height: 100%;
 			overflow-x: hidden;
-			padding-top: 100px;
-			padding-top: max(90px, 25vh);
-			padding-bottom: 40px;
+			display: flex;
+		}
+
+		// .mobile-menu__inner
+		&__inner {
+			padding: 100px 0 50px;
+			margin: auto;
+			flex-shrink: 0;
 		}
 
 		.nav-item,

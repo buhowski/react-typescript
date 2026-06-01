@@ -21,11 +21,13 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, navItems }) => {
 	return (
 		<nav className={`mobile-menu ${isOpen ? 'open' : ''}`}>
 			<nav className='mobile-menu__content'>
-				<ul className='mobile-nav'>{navItems}</ul>
-				<Socials
-					socialData={socialData}
-					items={[{ id: 'github' }, { id: 'linkedin' }, { id: 'telegram' }, { id: 'instagram' }]}
-				/>
+				<div className='mobile-menu__inner'>
+					<ul className='mobile-nav'>{navItems}</ul>
+					<Socials
+						socialData={socialData}
+						items={[{ id: 'github' }, { id: 'linkedin' }, { id: 'telegram' }, { id: 'instagram' }]}
+					/>
+				</div>
 			</nav>
 		</nav>
 	);
