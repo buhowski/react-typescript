@@ -2,7 +2,7 @@ import DrawCanvas from './DrawCanvas';
 import Socials from '../../components/socials/Socials';
 import socialData from '../../components/socials/socialData';
 import PageHelmet from '../../components/PageHelmet';
-import { defaultMetaTags } from '../../components/metaTagsBasic';
+import { firstName, nickName, defaultMetaTags } from '../../components/metaTagsBasic';
 
 import './Home.scss';
 
@@ -13,7 +13,8 @@ const Home = () => {
 
 			<div className='name-container'>
 				<h1 className='name-container__title h1'>
-					Olexander <span>Tsiomakh</span>
+					{firstName}
+					<span>{nickName}</span>
 				</h1>
 
 				<h2 className='name-container__position'>Front-End Developer</h2>

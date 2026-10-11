@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { renderToStaticMarkup } from 'react-dom/server';
 import { urlTelegram, urlLinkedIn, urlInstagram } from '../components/urlsData';
-
+import { authorPseudo } from '../components/metaTagsBasic';
 // DEV TESTING ICONS
 // import icon1 from './tg.png';
 // import icon2 from './ig.png';
@@ -369,7 +369,7 @@ export const EmailFooter = ({
 														verticalAlign: 'baseline',
 													}}
 												>
-													{new Date().getFullYear()} © Olexander Tsiomakh
+													{new Date().getFullYear()} © {authorPseudo}
 												</td>
 
 												<td align='right' style={{ verticalAlign: 'baseline' }}>

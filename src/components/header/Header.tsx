@@ -9,6 +9,7 @@ import { isPathActive } from '../../config/pathUtils';
 import { startupsMap } from '../../pages/startups/startupsMap';
 import { fastScrollTo, toggleScrollLock } from '../../pages/startups/helpers/navigationHelper';
 import { NEXT_PAGE_RATIO } from '../../App';
+import { nickName } from '../../components/metaTagsBasic';
 
 import './Header.scss';
 
@@ -70,7 +71,7 @@ const Header = () => {
 
 	const LogoNavLink = () => {
 		return (
-			<NavLink className='logo-link' to='/' aria-label='Buhowski'>
+			<NavLink className='logo-link' to='/' aria-label={nickName}>
 				{headerLogo}
 			</NavLink>
 		);

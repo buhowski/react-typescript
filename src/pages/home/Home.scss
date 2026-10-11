@@ -35,7 +35,8 @@
 	// .name-container__title
 	&__title {
 		font-size: 96px;
-		margin-bottom: 45px;
+		margin-bottom: 40px;
+		line-height: 1.32;
 
 		@include heightTopMinMax {
 			font-size: 86px;
@@ -43,7 +44,7 @@
 
 		@include tabletBig {
 			font-size: 76px;
-			margin-bottom: 28px;
+			margin-bottom: 26px;
 		}
 
 		@include tablet {

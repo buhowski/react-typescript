@@ -1,14 +1,21 @@
 import { pathToAbout, pathToProjects } from './urlsData';
 import { generatePageMeta } from '../pages/startups/helpers/metaHelper';
 
+// Author's name
+export const firstName = 'Olexander';
+export const secondName = 'Tsiomakh';
+export const nickName = 'Buhowski';
+
+export const authorName = `${firstName} ${secondName}`;
+export const authorPseudo = `${firstName} ${nickName}`;
+
 // Base Website URL
 export const website = 'https://buhowski.dev';
 
-// Author and page titles
-const author = 'Olexander Tsiomakh — ';
+// Page titles
 const shortTitleAbout = 'Explorer ⋅ Developer ⋅ Creator';
 const shortTitlePortfolio = 'Creative Portfolio ⋅ Dev & Design';
-const baseShorTitle = `${author}${shortTitleAbout}`;
+const baseShorTitle = `${authorPseudo} — ${shortTitleAbout}`;
 
 // Page descriptions
 const defaultDescription =
@@ -48,14 +55,14 @@ export const aboutMetaTags = generatePageMeta({
 });
 
 export const portfolioMetaTags = generatePageMeta({
-	title: `${author}${shortTitlePortfolio}`,
+	title: `${authorPseudo} — ${shortTitlePortfolio}`,
 	description: portfolioDescription,
 	path: pathToProjects,
 	ogImage: ogImages.portfolio,
 });
 
 export const cvMetaTags = generatePageMeta({
-	title: ` Resume — ${author} Frontend Developer`,
+	title: ` Resume — ${authorPseudo} — Frontend Developer`,
 	description:
 		'Architect of a countercultural ecosystem. Developing an alternative operating system for reality through Gonzo Journalism, Cinema, GameDev & Tech.',
 	path: '/cv',
